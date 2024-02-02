@@ -1,0 +1,92 @@
+label,
+input,
+optgroup,
+select,
+textarea {
+  font-family: var(--font-family-secondary);
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 124px;
+  resize: vertical;
+}
+
+input[type="password"] {
+  text-transform: none;
+}
+
+input[type="number"] {
+  padding-right: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    pointer-events: none;
+  }
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+
+  &:checked::after {
+    content: "⬤";
+  }
+}
+
+input,
+textarea {
+  @include placeholder {
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $color-grey-base;
+    opacity: 1;
+  }
+}
+
+input,
+textarea,
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  font-family: var(--font-family-secondary);
+  appearance: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: $color-white;
+  border: 1px solid $color-black;
+  border-radius: 0;
+  cursor: text;
+}
+
+.input-narrow {
+  max-width: 250px;
+}
+
+.input-fixed {
+  width: 250px !important;
+}
+
+.element-select select {
+  padding: 10px;
+  font-size: 1em;
+}

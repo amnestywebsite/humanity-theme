@@ -1,0 +1,37 @@
+.customCard textarea.customCard-label {
+  background-color: $color-grey-x-light;
+  color: $color-black-mid-dark;
+}
+
+.customCard-content textarea {
+  text-align: center;
+  background-color: $color-grey-x-light;
+  color: $color-black-mid-dark;
+}
+
+.customCard-content .btn {
+  color: $color-black-mid-dark;
+  background-color: $color-primary;
+}
+
+.is-style-style-2 textarea.customCard-label,
+.is-style-style-2 .customCard-content textarea {
+  background-color: $color-black-x-dark;
+  color: $color-white;
+}
+
+.is-style-style-2 .customCard-content .btn {
+  color: $color-black-mid-dark;
+  background-color: $color-primary;
+}
+
+.is-style-style-3 textarea.customCard-label,
+.is-style-style-3 .customCard-content textarea {
+  background-color: $color-primary;
+  color: $color-black-mid-dark;
+}
+
+.is-style-style-3 .customCard-content .btn {
+  color: $color-white;
+  background-color: $color-black-x-dark;
+}

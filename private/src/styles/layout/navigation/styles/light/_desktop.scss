@@ -1,0 +1,46 @@
+.page-header.is-light .menu-item:hover > a,
+.page-header.is-light .menu-item a:active,
+.page-header.is-light .menu-item a:focus,
+.page-header.is-light .menu-item:focus-within > a {
+  background-color: $color-grey-light;
+  color: $color-black;
+}
+
+.page-header.is-light .page-nav--main .current-menu-item > a,
+.page-header.is-light .page-nav--main .current-menu-ancestor > a,
+.page-header.is-light .page-nav--main .current-menu-parent > a {
+  background-color: $color-black;
+  color: $color-white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-grey-mid-dark;
+    color: $color-white;
+  }
+}
+
+.page-header.is-light .sub-menu {
+  background-color: $color-grey-light;
+  color: $color-black;
+}
+
+.page-header.is-light .sub-menu .menu-item {
+  background-color: $color-grey-dark;
+  color: $color-white;
+}
+
+.page-header.is-light .sub-menu .menu-item a:hover,
+.page-header.is-light .sub-menu .menu-item a:focus {
+  background-color: $color-grey-mid-dark;
+  color: $color-white;
+}
+
+.page-header.is-light .sub-menu .menu-item a:active {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.page-header.is-light .site-separator {
+  background-color: $color-grey-light;
+}

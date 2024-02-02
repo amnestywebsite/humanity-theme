@@ -1,0 +1,20 @@
+{
+  "name": "amnestywebsite/humanity-theme",
+  "type": "project",
+  "license": "none",
+  "minimum-stability": "stable",
+  "require-dev": {
+    "bigbite/phpcs-config": "v2.0.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "lint": "./vendor/bin/phpcs wp-content/themes/humanity-theme"
+  },
+  "scripts-descriptions": {
+    "lint": "Runs PHP coding standard checks"
+  }
+}

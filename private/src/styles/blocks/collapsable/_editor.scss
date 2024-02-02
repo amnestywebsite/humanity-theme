@@ -1,0 +1,13 @@
+.wp-block-amnesty-core-collapsable .dashicon {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.wp-block-amnesty-core-collapsable-inner {
+  border: 1px dashed;
+  min-height: 70px;
+}
+
+.wp-block-amnesty-core-collapsable.is-collapsed .wp-block-amnesty-core-collapsable-inner {
+  min-height: unset;
+}

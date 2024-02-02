@@ -1,0 +1,96 @@
+.customCard {
+  position: relative;
+  margin: 0;
+  max-width: 350px;
+  font-family: var(--font-family-secondary);
+  font-weight: bold;
+  background-color: $color-grey-x-light;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.customCard.is-centred {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.customCard.actionBlock--wide {
+  width: 480px;
+  max-width: 100%;
+}
+
+.customCard-figure {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.customCard-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: rgba($color-black, .25);
+}
+
+.customCard-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.customCard-label {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  background-color: $color-grey-x-light;
+  color: $color-black-mid-dark;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.customCard-content {
+  text-align: center;
+  font-weight: normal;
+  font-family: var(--font-family-primary);
+  padding: 10px;
+  font-size: 16px;
+  background-color: $color-grey-x-light;
+  color: $color-black-mid-dark;
+  margin-top: auto;
+}
+
+.customCard.aligncenter {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.customCard.is-style-style-2 {
+  background-color: $color-black-x-dark;
+}
+
+.customCard.is-style-style-3 {
+  background-color: $color-primary;
+}
+
+.is-style-style-2 .customCard-label,
+.is-style-style-2 .customCard-content,
+.is-style-style-2 .customCard {
+  background-color: $color-black-x-dark;
+  color: $color-white;
+}
+
+.is-style-style-3 .customCard-label,
+.is-style-style-3 .customCard-content,
+.is-style-style-3 .customCard {
+  background-color: $color-primary;
+  color: $color-black-mid-dark;
+}
+
+.is-style-style-3 .btn,
+.is-style-style-3 .customCard {
+  background-color: $color-black-x-dark;
+  color: $color-white;
+}

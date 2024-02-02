@@ -1,0 +1,34 @@
+.ai-cmb-inline {
+  display: inline-flex;
+  width: 49%;
+}
+
+.ai-cmb-inline::after {
+  display: none !important;
+}
+
+.ai-cmb-inline:nth-child(2n + 2) {
+  margin-left: 2% !important;
+}
+
+.ai-cmb-inline .cmb-th,
+.ai-cmb-inline .cmb-td {
+  width: auto;
+}
+
+.ai-cmb-inline .cmb-th label {
+  white-space: nowrap;
+}
+
+.ai-cmb-inline .cmb-td input,
+.ai-cmb-inline .cmb-td select,
+.ai-cmb-inline .cmb-td textarea {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+// not ideal, but necessary
+.ai-cmb-group-title-wide .cmb-td [data-groupid] > .cmb-row > .cmb-th {
+  padding: 10px 0 20px !important;
+  width: 100% !important;
+}

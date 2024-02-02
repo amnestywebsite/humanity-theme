@@ -1,0 +1,105 @@
+.single-product .post-figure {
+  min-height: 300px;
+}
+
+.single-product a.remove {
+  line-height: .85em;
+}
+
+.single-product .woocommerce-ordering {
+  margin: 0;
+}
+
+.single-product .site-main > .container {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.single-product .product_title {
+  font-size: map-get($desktop-header-sizes, "h2");
+}
+
+.product-description h2 {
+  margin-bottom: $spacing-unit--half;
+}
+
+.product-description p {
+  font-family: var(--font-family-secondary);
+  font-weight: bold;
+}
+
+.variations_form {
+  @include mq(x-small) {
+    max-width: 250px;
+  }
+}
+
+.woocommerce-product-gallery .flex-viewport {
+  border: 1px solid $color-grey-light;
+  margin-bottom: $spacing-unit;
+  max-width: 472px;
+}
+
+.flex-viewport .woocommerce-product-gallery__image img {
+  max-height: 375px;
+  width: auto !important;
+  max-width: 100%;
+  margin: 50px auto;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+  padding: 5px;
+  max-width: 100px;
+  border: 1px solid $color-grey-light;
+
+  & + li {
+    margin-left: $spacing-unit;
+  }
+}
+
+.single-product .variations .label {
+  padding-right: $spacing-unit;
+  font-family: var(--font-family-secondary);
+  text-transform: uppercase;
+}
+
+.single-product .variations .value {
+  padding-bottom: $spacing-unit;
+}
+
+.single-product .reset_variations {
+  margin-bottom: $spacing-unit;
+}
+
+.single-product .price {
+  margin-top: 0;
+  margin-bottom: $spacing-unit;
+  font-family: var(--font-family-primary);
+  color: $color-black;
+}
+
+.single-product .related > .container {
+  border-top: 1px solid $color-grey-light;
+}
+
+.single-product .related .postlist-header {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.single-product .related .postlist-headerTitle {
+  font-size: map-get($desktop-header-sizes, "h2");
+}
+
+.single-product .related .post-title {
+  font-size: $base-font-size;
+}
+
+.single-product .related .post-content {
+  text-align: left;
+}
+
+.product .nyp .nyp-input {
+  margin-bottom: 0;
+  text-align: left;
+}

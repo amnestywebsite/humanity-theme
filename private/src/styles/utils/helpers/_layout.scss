@@ -1,0 +1,29 @@
+/**
+ * Clearfix
+ */
+.u-cf {
+  @include clearfix;
+}
+
+/**
+ * Floats
+ */
+.u-floatLeft,
+.alignleft {
+  float: left !important;
+}
+
+.u-floatRight,
+.alignright {
+  float: right !important;
+}
+
+.u-floatNone {
+  float: none !important;
+}
+
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

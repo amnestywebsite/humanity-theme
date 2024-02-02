@@ -1,0 +1,14 @@
+dl {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+}
+
+dt {
+  grid-column-start: 1;
+  font-weight: bold;
+}
+
+dd {
+  grid-column-start: 2;
+  margin-left: 0;
+}

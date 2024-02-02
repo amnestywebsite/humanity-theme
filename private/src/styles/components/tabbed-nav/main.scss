@@ -1,0 +1,49 @@
+.tabs-nav ul,
+.tabs-nav li {
+  list-style: none;
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  transform: translateY(1px);
+}
+
+.tabs-nav li a {
+  display: block;
+  padding: 20px 40px;
+  border-top: 1px solid $color-grey-light;
+  background: $color-grey-light;
+  text-transform: uppercase;
+  font-family: var(--font-family-secondary);
+  cursor: pointer;
+}
+
+.tabs-nav li a.is-selected {
+  background: $color-white;
+}
+
+.tabs-nav li {
+  &:first-of-type a {
+    border-left: 1px solid $color-grey-light;
+    border-right: 1px solid $color-grey-light;
+  }
+
+  &:last-of-type a {
+    border-right: 1px solid $color-grey-light;
+  }
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.is-selected {
+  display: block;
+}
+
+.tabs-content {
+  padding: 30px;
+  border: 1px solid $color-grey-light;
+}

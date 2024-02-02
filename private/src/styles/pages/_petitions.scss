@@ -1,0 +1,58 @@
+.page-template-page-petitions .petition-index-title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.page-template-page-petitions .petition-index-btn {
+  font-size: 16px;
+  position: absolute;
+  bottom: 12px;
+  width: calc(100% - 30px);
+}
+
+.page-template-page-petitions .petition-index-excerpt p {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.page-template-page-petitions .petition-index-excerpt {
+  margin-bottom: 12px;
+}
+
+.page-template-page-petitions .petition-index-category a {
+  color: $color-white;
+  background-color: $color-black;
+  position: relative;
+  left: 5px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  display: inline-block;
+
+  &::before {
+    padding: 0;
+    width: auto;
+    content: "";
+  }
+}
+
+.page-template-page-petitions .petitions-figure {
+  height: auto;
+}
+
+.page-template-page-petitions .petition-index-category {
+  position: absolute;
+  bottom: 0;
+}
+
+.page-template-page-petitions .petitions-item .actionBlock-content p {
+  min-height: 0;
+}
+
+.page-template-page-petitions .petitions-item .actionBlock-content {
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.page-template-page-petitions .petitions-item {
+  min-height: 0;
+}

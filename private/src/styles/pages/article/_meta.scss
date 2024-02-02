@@ -1,0 +1,29 @@
+.article-meta {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: spacing(half);
+}
+
+.article-metaActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: spacing(half);
+}
+
+.article-metaData {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.article-metaDataRow > *:not(:last-child)::after {
+  content: var(--list-separator);
+}
+
+.article-metaData .updatedDate {
+  text-align: right;
+}

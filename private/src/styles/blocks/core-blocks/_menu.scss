@@ -1,0 +1,20 @@
+.postlist-categories .current-menu-item a {
+  background-color: $color-grey-light;
+  border: 1px solid $color-grey-light;
+}
+
+.postlist-categories a:active, .postlist-categories a:hover, .postlist-categories a:focus {
+  background-color: $color-grey-md-light;
+}
+
+.postlist-categoriesContainer.section--dark .current-menu-item a {
+  border: 1px solid $color-grey-md-light;
+  background-color: $color-grey-light;
+}
+
+.postlist-categoriesContainer.section--dark .postlist-categories a:hover,
+.postlist-categoriesContainer.section--dark .postlist-categories a:focus,
+.postlist-categoriesContainer.section--dark .postlist-categories a:active {
+  border: 1px solid $color-grey-md-light;
+  background-color: $color-grey-md-light;
+}

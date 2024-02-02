@@ -1,0 +1,49 @@
+@mixin icon-dimensions($scale: 1) {
+  background-size: 313px * $scale 300px * $scale;
+}
+
+@mixin icon-wrapper() {
+  pointer-events: none;
+  background-image: url("../images/sprite.svg?1.16.1"), none;
+  background-repeat: no-repeat;
+}
+
+@mixin icon-size($width: 0, $height: 0) {
+  @if ($width > 0) {
+    width: $width;
+  }
+
+  @if ($height > 0) {
+    height: $height;
+  }
+}
+
+@mixin icon-position($posx, $posy) {
+  background-position: -#{$posx} -#{$posy};
+}
+
+@mixin icon($posx, $posy, $width, $height) {
+  @include icon-wrapper();
+  @include icon-dimensions();
+  @include icon-size($width, $height);
+  @include icon-position($posx, $posy);
+}
+
+// new
+@mixin icon-scaled($posx, $posy, $width, $height, $scale) {
+  @include icon-wrapper();
+  @include icon-dimensions($scale);
+  @include icon-size($width * $scale, $height * $scale);
+  @include icon-position($posx * $scale, $posy * $scale);
+}
+
+// old
+@mixin icon_scale($posx, $posy, $width, $height, $scale) {
+  pointer-events: none;
+  background-image: url("../images/sprite.svg"), none;
+  background-repeat: no-repeat;
+  background-size: 313px * $scale 300px * $scale;
+  width: $width * $scale;
+  height: $height * $scale;
+  background-position: -#{$posx * $scale} -#{$posy * $scale};
+}

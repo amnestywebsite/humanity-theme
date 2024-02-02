@@ -1,0 +1,10 @@
+.wp-block-rss__item-title,
+.wp-block-rss__item-title a,
+.section li a {
+  font-family: var(--font-family-secondary);
+}
+
+.wp-block-rss.is-grid {
+  padding-top: 0;
+  margin: auto;
+}

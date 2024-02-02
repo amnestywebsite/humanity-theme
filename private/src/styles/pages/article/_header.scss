@@ -1,0 +1,36 @@
+.article-header {
+  margin-bottom: 16px;
+
+  @include mq(small) {
+    margin-bottom: 24px;
+  }
+}
+
+.article-header .article-header-block {
+  display: inline-block;
+  padding: 16px;
+  margin-bottom: 32px;
+  background: $color-black;
+  color: $color-white;
+}
+
+.article-header .article-header-block h1 {
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.article-header .article-term {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: var(--font-family-secondary);
+}
+
+.article-header.is-narrow,
+.article-content.is-narrow {
+  padding-right: 60px;
+
+  .rtl & {
+    padding-right: 0;
+    padding-left: 60px;
+  }
+}

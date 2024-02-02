@@ -1,0 +1,8 @@
+.wp-block-file a + a.wp-block-file__button {
+  margin-left: spacing();
+}
+
+.rtl .wp-block-file a + a.wp-block-file__button {
+  margin-right: spacing();
+  margin-left: unset;
+}

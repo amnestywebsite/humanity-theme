@@ -1,0 +1,48 @@
+.pop-in {
+  position: relative;
+  background-color: $color-grey-light;
+  box-shadow: inset 0 -5px 9px -7px $color-black;
+  max-height: 1000px;
+  overflow-y: hidden;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, .5, 1);
+}
+
+.pop-in.is-closed {
+  max-height: 0;
+}
+
+.pop-in-close {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 0;
+  display: inline-block;
+  margin-top: spacing();
+  margin-right: spacing();
+  appearance: none;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: $color-black;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+
+  .rtl & {
+    margin-right: 0;
+    margin-left: spacing();
+  }
+}
+
+.pop-in[aria-hidden="false"] ~ .page-header--transparent-light {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+// negishim
+.pop-in[aria-hidden="false"] ~ .accessibility_component .btn_accessibility {
+  top: 165px;
+}

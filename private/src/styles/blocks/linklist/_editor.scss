@@ -1,0 +1,7 @@
+.linkList-itemAuthor::before {
+  content: " ";
+  height: 12px;
+  width: 1px;
+  background: $color-black;
+  margin: 10px;
+}

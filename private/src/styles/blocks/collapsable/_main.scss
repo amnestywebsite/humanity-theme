@@ -1,0 +1,80 @@
+// author styles define this class without scope
+.wp-block-amnesty-core-collapsable.is-collapsed {
+  max-height: unset;
+  padding: unset;
+  position: unset;
+  overflow: unset;
+  content: unset;
+}
+
+.wp-block-amnesty-core-collapsable.is-collapsed::before {
+  content: unset;
+}
+
+.wp-block-amnesty-core-collapsable figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: spacing(half) 0;
+  border-bottom: 1px solid $color-black;
+}
+
+.wp-block-amnesty-core-collapsable + .wp-block-amnesty-core-collapsable {
+  margin-top: spacing(half);
+}
+
+.wp-block-amnesty-core-collapsable + .wp-block-amnesty-core-collapsable figcaption {
+  padding-top: 0;
+}
+
+.wp-block-amnesty-core-collapsable figcaption h2 {
+  margin: 0 !important;
+  font-size: map-get($desktop-header-sizes, "h3");
+}
+
+.wp-block-amnesty-core-collapsable .btn--blank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  outline: none;
+}
+
+.wp-block-amnesty-core-collapsable .btn--blank:focus-visible {
+  border: 1px solid $color-black;
+}
+
+.wp-block-amnesty-core-collapsable .icon {
+  display: block;
+  pointer-events: none;
+  transform: rotate(180deg);
+  transition: transform .3s ease-in-out;
+}
+
+.wp-block-amnesty-core-collapsable .icon-arrow-down {
+  @extend %icon-arrow-down-dark;
+  transform: rotate(180deg);
+}
+
+.wp-block-amnesty-core-collapsable.is-collapsed .icon-arrow-down {
+  transform: rotate(0deg);
+}
+
+.wp-block-amnesty-core-collapsable-inner {
+  padding-top: spacing(half);
+  max-height: 2000px;
+}
+
+.wp-block-amnesty-core-collapsable.is-collapsed .wp-block-amnesty-core-collapsable-inner {
+  padding-top: 0;
+  max-height: 0;
+  overflow-y: hidden;
+}
+
+.wp-block-amnesty-core-collapsable-inner > *:last-child {
+  margin-bottom: 0;
+}

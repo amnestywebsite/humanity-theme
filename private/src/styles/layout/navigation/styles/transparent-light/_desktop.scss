@@ -1,0 +1,51 @@
+.page-header.is-transparent-light .menu-item:hover > a,
+.page-header.is-transparent-light .menu-item a:active,
+.page-header.is-transparent-light .menu-item a:focus,
+.page-header.is-transparent-light .menu-item:focus-within > a {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.page-header.is-transparent-light .page-nav--main .current-menu-item > a,
+.page-header.is-transparent-light .page-nav--main .current-menu-ancestor > a,
+.page-header.is-transparent-light .page-nav--main .current-menu-parent > a {
+  background-color: $color-black;
+  color: $color-white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-grey-sm-light;
+    color: $color-black;
+  }
+}
+
+.page-header.is-transparent-light .menu-item:focus-within > a {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.page-header.is-transparent-light .sub-menu {
+  background-color: $color-grey-light;
+  color: $color-black;
+}
+
+.page-header.is-transparent-light .sub-menu .menu-item {
+  background-color: $color-grey-dark;
+  color: $color-white;
+}
+
+.page-header.is-transparent-light .sub-menu .menu-item a:hover,
+.page-header.is-transparent-light .sub-menu .menu-item a:focus {
+  background-color: $color-grey-mid-dark;
+  color: $color-white;
+}
+
+.page-header.is-transparent-light .sub-menu .menu-item a:active {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.page-header.is-transparent-light .site-separator {
+  display: none;
+}

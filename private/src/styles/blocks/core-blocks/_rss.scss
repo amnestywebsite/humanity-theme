@@ -1,0 +1,59 @@
+.wp-block-rss {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.wp-block-rss__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: spacing();
+}
+
+.wp-block-rss__item-title {
+  margin-bottom: 12px;
+  font-family: var(--font-family-secondary);
+  font-size: map-get($mobile-header-sizes, h4);
+  font-weight: bold;
+  line-height: 1.12;
+  color: $color-black;
+
+  a {
+    text-decoration: none !important;
+  }
+
+  @include mq(small) {
+    font-size: map-get($desktop-header-sizes, h4);
+  }
+}
+
+.wp-block-rss__item-publish-date {
+  margin-bottom: 10px;
+  order: 1;
+  font-family: var(--font-family-secondary);
+  font-size: 14px;
+  color: $color-black;
+}
+
+.wp-block-rss__item-excerpt {
+  order: 3;
+  margin-top: 6px;
+  font-size: 18px;
+  line-height: 1;
+  text-align: justify;
+  color: $color-black;
+}
+
+.wp-block-rss__item-author {
+  order: 4;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-grey-md-light;
+  padding-top: 16px;
+  padding-bottom: 40px;
+  font-family: var(--font-family-secondary);
+}
+
+.wp-block-rss.is-grid {
+  padding-top: 90px;
+  margin: auto;
+}

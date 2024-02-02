@@ -1,0 +1,10 @@
+.countdownClock {
+  font-size: 5.2em;
+  color: $color-black;
+  font-family: var(--font-family-secondary);
+  text-transform: uppercase;
+}
+
+.section--textWhite .countdownClock {
+  color: $color-white;
+}

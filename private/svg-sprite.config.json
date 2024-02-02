@@ -1,0 +1,17 @@
+{
+  "dest": "../wp-content/themes/amnesty-core/assets/images",
+  "log": null,
+  "shape": {
+    "dimension": {
+      "attributes": true
+    },
+    "transform": []
+  },
+  "mode": {
+    "defs": {
+      "dest": "./",
+      "sprite": "./sprite.defs.svg",
+      "inline": true
+    }
+  }
+}

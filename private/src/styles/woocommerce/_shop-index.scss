@@ -1,0 +1,38 @@
+.shop .price {
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  font-weight: normal;
+  color: $color-black;
+}
+
+.shop .post {
+  min-height: 0;
+  text-align: center;
+
+  @include mq(x-small) {
+    min-height: 400px;
+  }
+}
+
+.shop .post .post-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 335px;
+  border: 1px solid $color-grey-light;
+  background-color: transparent;
+
+  img {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+
+.shop .post .post-content {
+  align-items: center;
+}

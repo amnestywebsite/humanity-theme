@@ -1,0 +1,40 @@
+.avatarContainer {
+  padding-right: 10px;
+}
+
+.authorInfoContainer {
+  align-self: center;
+  font-size: 1rem;
+  text-decoration-skip-ink: auto;
+}
+
+.authorTwitter {
+  padding-left: 6px;
+  font-family: var(--font-family-primary);
+  white-space: nowrap;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &::before {
+    content: " ";
+    display: inline-block;
+    transform: scale(.6);
+    vertical-align: -20%;
+
+    @include icon(246px, 131px, 20px, 17px);
+  }
+}
+
+.authorName {
+  font-family: var(--font-family-primary);
+  font-weight: 300;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

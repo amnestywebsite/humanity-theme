@@ -1,0 +1,40 @@
+.wp-block-file a.wp-block-file__button,
+.wp-block-button .wp-block-button__link,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.btn {
+  @extend %btn-base;
+  padding: 12px 24px;
+  color: $color-black;
+  background-color: $color-primary;
+  border: 1px solid $color-primary-state;
+  border-radius: $base-border-radius;
+  font-family: var(--font-family-secondary);
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-primary-state;
+    background-color: $color-primary-state;
+    color: $color-white;
+  }
+}
+
+.woocommerce a.button,
+.btn--white,
+.btn.is-style-light {
+  border: 1px solid $color-black;
+  background-color: $color-white;
+  color: $color-black;
+
+  &:hover,
+  &:focus {
+    background-color: $color-grey-brand;
+    border-color: $color-grey-brand;
+    color: $color-black
+  }
+}

@@ -1,0 +1,23 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  background-color: rgba($color-black, .25);
+}
+
+.admin-bar .overlay {
+  top: 118px;
+
+  @include mq(wp-adminbar) {
+    top: 104px;
+  }
+}
+
+html[class*="-open"] .overlay,
+html.search-active .overlay {
+  display: block;
+}

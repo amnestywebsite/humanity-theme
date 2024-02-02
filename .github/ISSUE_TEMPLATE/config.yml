@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: I have a Question
+    url: https://github.com/amnestywebsite/humanity-theme/discussions/new?category=q-a
+    about: Submit a question
+  - name: New Feature Request
+    url: https://github.com/amnestywebsite/humanity-theme/discussions/new?category=feature-requests
+    about: Submit a request for a new feature
+  - name: Feature Change Request
+    url: https://github.com/amnestywebsite/humanity-theme/discussions/new?category=enhancement-requests
+    about: Submit a request for a change to an existing feature

@@ -1,0 +1,275 @@
+.grid-item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex: 1 1 100%;
+  max-width: none;
+  min-height: 360px;
+  padding: 24px;
+  background-color: $color-grey-md-light;
+  background-position: center;
+  background-size: cover;
+
+  @include flexy-grid(1, flexy-gutter());
+
+  @include mq(x-small) {
+    @include flexy-grid(2, flexy-gutter());
+
+    .article-sidebar & {
+      flex: 1 1 100%;
+      max-width: none;
+      min-width: 49%;
+    }
+  }
+}
+
+.grid-item .grid-content {
+  max-width: 100%;
+}
+
+.grid-itemMeta {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: var(--font-family-secondary);
+  font-weight: bold;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: $color-white;
+}
+
+.grid-itemMeta a {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 2px 12px;
+  width: max-content;
+  background-color: $color-black;
+  color: $color-white;
+  text-decoration: none;
+}
+
+.grid-itemTitle {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2px 12px;
+  max-width: 100%;
+  font-size: map-get($desktop-header-sizes, "h5");
+  text-decoration: none;
+}
+
+h3.grid-itemTitle > span,
+h3.grid-itemTitle > a {
+  color: $color-black;
+  background-color: $color-white;
+  box-shadow: -12px 0 0 0 $color-white, 12px 0 0 0 $color-white;
+  box-decoration-break: clone;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.grid-itemTitle a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grid-itemContent {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.no-js .grid-item:hover .grid-itemContent,
+.no-js .grid-item:focus .grid-itemContent {
+  display: block;
+}
+
+.no-js .grid-item:focus-within .grid-itemContent {
+  display: block;
+}
+
+.grid-itemContent p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 12px;
+  color: $color-black;
+  line-height: 1.4;
+  font-size: 16px;
+  background-color: $color-white;
+  max-width: 100%;
+}
+
+.grid-itemContent a {
+  color: $color-black;
+  font-weight: bold;
+  font-family: var(--font-family-secondary);
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.grid-many {
+  grid-template-columns: 1fr;
+
+  @include mq(x-small) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include mq($from: x-small, $until: medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid .grid-item {
+  max-width: 100%;
+  width: 100%;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+
+  @include mq(x-small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-5 {
+  grid-template-columns: 1fr;
+
+  @include mq(x-small) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include mq($from: x-small, $until: medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-5 :nth-child(n+3) {
+  grid-column: span 3;
+
+  @include mq($from: x-small, $until: medium) {
+    grid-column: span 1;
+  }
+
+  @include mq(medium) {
+    grid-column: span 2;
+  }
+}
+
+.grid-5 :nth-child(-n+2) {
+  grid-column: span 3;
+
+  @include mq($from: x-small, $until: medium) {
+    grid-column: span 1;
+  }
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+
+  @include mq(x-small) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-1 .grid-item {
+  width: 33%;
+}
+
+.grid-6 {
+  grid-template-columns: 1fr;
+
+  @include mq(x-small) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include mq($from: x-small, $until: medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-6 :nth-child(-n+2) {
+  grid-column: span 1;
+
+  @include mq(x-small) {
+    grid-column: span 2;
+  }
+
+  @include mq($from: x-small, $until: medium) {
+    grid-column: span 1;
+  }
+}
+
+.grid-7 {
+  grid-template-columns: 1fr;
+
+  @include mq(x-small) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include mq($from: x-small, $until: medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-7 :nth-child(-n+3) {
+  grid-column: span 1;
+
+  @include mq(x-small) {
+    grid-column: span 4;
+  }
+
+  @include mq($from: x-small, $until: medium) {
+    grid-column: span 1;
+  }
+}
+
+.grid-7 :nth-child(n+4) {
+  grid-column: span 1;
+
+  @include mq(x-small) {
+    grid-column: span 3;
+  }
+
+  @include mq($from: x-small, $until: medium) {
+    grid-column: span 1;
+  }
+}
+
+.ie .grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ie .grid img {
+  width: 500px;
+}
+
+.ie .grid .grid-item {
+  max-width: 350px;
+  width: 350px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+}
+
+.ie .petition-item .petition-itemImage {
+  width: 350px;
+}
+
+:lang(fa-IR) .grid .grid-content > * {
+  line-height: 1.75;
+}

@@ -1,0 +1,41 @@
+.page-template-my-account .woocommerce-Address-title a {
+  line-height: map-get($desktop-header-sizes, "h3");
+}
+
+.page-template-my-account .linkList li {
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+  &:first-child {
+    border-top: 1px solid $color-grey-light;
+  }
+
+  &.is-active,
+  &:hover,
+  &:active {
+    background-color: $color-black;
+    color: $color-white;
+
+    a {
+      color: $color-white;
+    }
+  }
+}
+
+.page-template-my-account .linkList li:focus-within {
+  background-color: $color-black;
+  color: $color-white;
+
+  a {
+    color: $color-white;
+  }
+}
+
+.page-template-my-account .linkList a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.page-template-my-account .linkList li + li {
+  margin: 0;
+  border-bottom: 1px solid $color-grey-light;
+}

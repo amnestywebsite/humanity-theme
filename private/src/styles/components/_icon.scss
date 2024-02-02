@@ -1,0 +1,119 @@
+.icon {
+  @include icon-wrapper();
+  @include icon-dimensions();
+  display: inline-block;
+}
+
+.icon-arrow-left {
+  @include icon(234px, 240px, 16px, 16px);
+  display: inline-block;
+
+  .rtl & {
+    @include icon(110px, 265px, 16px, 16px);
+  }
+}
+
+.icon-remove {
+  @include icon(0, 285px, 16px, 16px);
+  display: inline-block;
+
+  .remove-link:hover &,
+  .remove-link:active &,
+  .remove-link:focus & {
+    background-position: -20px -285px;
+  }
+}
+
+.icon-remove-alt {
+  @include icon(20px, 285px, 16px, 16px);
+  display: inline-block;
+}
+
+.icon-document {
+  @include icon(26px, 265px, 16px, 16px);
+  display: inline-block;
+}
+
+.icon-cart {
+  @include icon-size(22px, 22px);
+}
+
+%icon-cart-dark {
+  @include icon-position(284px, 230px);
+}
+
+%icon-cart-light {
+  @include icon-position(284px, 260px);
+}
+
+.icon-search {
+  @include icon-size(18px, 18px);
+}
+
+%icon-search-dark {
+  @include icon-position(128px, 240px);
+}
+
+%icon-search-light {
+  @include icon-position(105px, 240px);
+}
+
+.icon-close {
+  @include icon-dimensions(1.5);
+  @include icon-size(24px, 24px);
+
+  @include mq(small) {
+    @include icon-dimensions(2);
+    @include icon-size(32px, 32px);
+  }
+}
+
+%icon-close-dark {
+  @include icon-position(291px, 397.5px);
+
+  @include mq(small) {
+    @include icon-position(388px, 530px);
+  }
+}
+
+%icon-close-light {
+  @include icon-position(406.5px, 354px);
+
+  @include mq(small) {
+    @include icon-position(542px, 472px);
+  }
+}
+
+.icon-arrow-down {
+  @include icon-dimensions(1.5);
+  @include icon-size(24px, 24px);
+}
+
+%icon-arrow-down-dark {
+  @include icon-position(406.5px, 322.5px);
+}
+
+%icon-arrow-down-light {
+  @include icon-position(406.5px, 196.5px);
+}
+
+%icon-arrow-up-dark {
+  @include icon-position(322.5px, 397.5px);
+}
+
+%icon-arrow-up-light {
+  @include icon-position(406.5px, 291px);
+}
+
+.icon-burger {
+  @include icon-dimensions(2);
+  @include icon-size(24px, 32px);
+}
+
+%icon-burger-dark {
+  @include icon-position(80px, 570px);
+}
+
+%icon-burger-light {
+  @include icon-position(120px, 570px);
+}

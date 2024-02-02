@@ -1,0 +1,25 @@
+.search-menu-item a::after {
+  @include icon-wrapper();
+  @include icon-dimensions();
+  @include icon-size(18px, 18px);
+  @extend %icon-search-dark;
+  display: inline-block;
+  margin-left: spacing(half);
+  content: "";
+
+  @include mq(xm-large) {
+    margin-left: 0;
+  }
+}
+
+.search-menu-item span {
+  @include mq(xm-large) {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+  }
+}

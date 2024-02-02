@@ -1,0 +1,23 @@
+.page-header.is-light {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.page-header.stick {
+  border-bottom: 1px solid $color-grey-light;
+}
+
+.page-header.is-light .page-headerButton:hover,
+.page-header.is-light .page-headerButton:active,
+.page-header.is-light .page-headerButton:focus {
+  background-color: $color-grey-light;
+  color: $color-black;
+}
+
+.page-header.is-light .icon-cart {
+  @extend %icon-cart-dark;
+}
+
+.page-header.is-light .page-nav--main .current-menu-item .icon-cart {
+  @extend %icon-cart-light;
+}

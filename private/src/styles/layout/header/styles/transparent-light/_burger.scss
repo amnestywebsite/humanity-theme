@@ -1,0 +1,28 @@
+.page-header.is-transparent-light .burger:hover,
+.page-header.is-transparent-light .burger:active,
+.page-header.is-transparent-light .burger:focus {
+  background-color: $color-white;
+}
+
+.page-header.is-transparent-light .burger .icon-burger {
+  @extend %icon-burger-light;
+}
+
+.page-header.is-transparent-light .burger:hover .icon-burger,
+.page-header.is-transparent-light .burger:active .icon-burger,
+.page-header.is-transparent-light .burger:focus .icon-burger {
+  @extend %icon-burger-dark;
+}
+
+.mobile-menu-open .page-header.is-transparent-light .burger {
+  background-color: $color-black;
+}
+
+.mobile-menu-open .page-header.is-transparent-light .burger:hover,
+.mobile-menu-open .page-header.is-transparent-light .burger:active {
+  background-color: $color-grey-mid-dark;
+}
+
+.mobile-menu-open .page-header.is-transparent-light .burger .icon-close {
+  @extend %icon-close-light;
+}

@@ -1,0 +1,25 @@
+.coupon {
+  display: flex;
+}
+
+.menu-item-cart > a > span {
+  display: flex;
+}
+
+.product-remove .remove-link {
+  border-radius: 50%;
+  display: block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-black;
+  }
+}
+
+.cart_item .product-thumbnail .image-caption {
+  display: none;
+}

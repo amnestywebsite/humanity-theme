@@ -1,0 +1,11 @@
+.page-header.is-light .search-menu-item span::after {
+  @extend %icon-search-dark;
+}
+
+.page-header.is-light .search-menu-item.current-menu-item span::after {
+  @extend %icon-search-light;
+}
+
+.page-header.is-light .search-menu-item.current-menu-item a::after {
+  @extend %icon-search-light;
+}

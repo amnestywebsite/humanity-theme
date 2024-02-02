@@ -1,0 +1,28 @@
+# editorconfig.org
+root = true
+
+[*]
+indent_style = space
+end_of_line = lf
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{html,php,twig}]
+indent_size = 4
+
+[*.php]
+indent_style = tab
+
+[*.md]
+trim_trailing_whitespace = false
+
+# shfmt -i 2 -ln=bash -bn -ci -sr -kp -w .
+[*.sh]
+shell_variant = posix
+binary_next_line = true
+switch_case_indent = true
+space_redirects = true
+keep_padding = true
+function_next_line = false

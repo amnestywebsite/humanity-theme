@@ -1,0 +1,20 @@
+.article-backLink {
+  display: inline-flex;
+  text-decoration: underline;
+  font-size: 14px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.article-backLink .arrow-icon {
+  display: inline-flex;
+
+  &::before {
+    @include icon(290px, 200px, 17px, 11px);
+    content: " ";
+  }
+
+  .rtl & {
+    order: 1;
+  }
+}

@@ -1,0 +1,116 @@
+@import "./initial-filters";
+@import "./additional-filters";
+
+.horizontal-search {
+  margin-bottom: spacing();
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-search .section {
+  flex-direction: column;
+}
+
+.horizontal-search .search-button {
+  padding: spacing(half);
+  line-height: 1.15;
+
+  @include mq(medium) {
+    padding: spacing(half) spacing();
+  }
+}
+
+.horizontal-search .search-input {
+  grid-column: 1 / span 8;
+  order: 1;
+  display: flex;
+  margin-bottom: 0;
+  height: 100%;
+
+  p * {
+    height: 100%;
+  }
+
+  @include mq(xx-small) {
+    grid-column: 1 / span 9;
+  }
+
+  @include mq(medium) {
+    grid-column: 1 / span 4;
+  }
+}
+
+// search button
+.horizontal-search .default-search-filters p {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.horizontal-search .default-search-filters .search-input .btn,
+.horizontal-search .default-search-filters > .btn.is-expanded {
+  background-color: $color-grey-mid-light;
+  color: $color-white;
+  border-color: $color-grey-mid-light;
+}
+
+.horizontal-search .default-search-filters .search-input .btn.is-active {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-black;
+}
+
+.btn.toggle-search-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0 !important;
+  border-color: $color-black;
+  background-color: $color-black;
+  color: $color-white;
+  grid-column: 10 / span 2;
+  word-break: keep-all;
+
+  &:hover,
+  &:focus {
+    background-color: $color-grey-mid-dark;
+    border-color: $color-grey-mid-dark;
+    color: $color-white;
+  }
+}
+
+.btn.toggle-search-filters .icon-arrow-down {
+  @extend %icon-arrow-down-light;
+  transform: scale(.75);
+  transition: transform .3s;
+}
+
+.btn.toggle-search-filters.is-expanded .icon-arrow-down {
+  transform: scale(.75) rotate(180deg);
+}
+
+.horizontal-search .section.postlist-categoriesContainer {
+  width: 100%;
+  padding: 0 spacing();
+  margin: 0;
+}
+
+.horizontal-search .icon-search {
+  @extend %icon-search-light;
+  display: block;
+
+  @include mq(medium) {
+    display: none;
+  }
+}
+
+.horizontal-search .btn.is-active .icon-search {
+  @extend %icon-search-dark;
+}
+
+.horizontal-search .search-button-text {
+  word-break: keep-all;
+
+  @include mq($until: medium) {
+    display: none;
+  }
+}

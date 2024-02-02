@@ -1,0 +1,49 @@
+.page-headerButtonWrapper {
+  position: relative;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+
+.page-headerButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 spacing();
+  min-width: 60px;
+  width: auto;
+  height: 60px;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: inherit;
+  font-size: inherit;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+  cursor: pointer;
+
+  @include mq(small) {
+    min-width: 72px;
+    height: 72px;
+  }
+}
+
+.page-headerButton:active,
+.page-headerButton:focus {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.page-headerButtonText {
+  display: none;
+  margin-right: 5px;
+
+  .rtl {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+}
+
+.page-headerButton span {
+  pointer-events: none;
+}

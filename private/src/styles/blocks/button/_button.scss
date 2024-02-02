@@ -1,0 +1,43 @@
+.wp-block-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.wp-block-buttons > .wp-block-button {
+  max-width: 850px;
+}
+
+.btn.has-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px;
+}
+
+.btn.has-icon span[class*="icon-"] {
+  &:first-child {
+    margin-right: 8px;
+  }
+
+  &:last-child {
+    margin-left: 8px;
+  }
+
+  .rtl & {
+    &:first-child {
+      margin-left: 8px;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 8px;
+      margin-left: 0;
+    }
+  }
+}
+
+.section--textWhite .btn {
+  color: $color-black;
+}

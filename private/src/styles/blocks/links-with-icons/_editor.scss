@@ -1,0 +1,223 @@
+.wide-column-left .block-editor-block-list__block:first-child,
+.wide-column-right .block-editor-block-list__block:last-child {
+  flex-basis: calc((100% / 3) * 2) !important;
+}
+
+.wide-column-left .block-editor-block-list__block:not(:first-child),
+.wide-column-right .block-editor-block-list__block:not(:last-child) {
+  flex-basis: calc(100% / 3) !important;
+}
+
+.linksWithIcons-group {
+  display: block;
+  margin: 0 -30px;
+  padding: 30px;
+  font-family: var(--font-family-primary);
+}
+
+.linksWithIcons > * {
+  margin-top: 40px !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.linksWithIcons-group.is-style-square {
+  display: block;
+}
+
+.linksWithIcons-group.is-style-square .linksWithIcons > * {
+  margin-top: spacing() !important;
+}
+
+.linksWithIcons-bigtext {
+  line-height: 1em !important;
+}
+
+.linksWithIcons-group.is-vertical .block-editor-block-list__block-edit:first-child {
+  margin-top: 0;
+}
+
+.linksWithIcons-group .block-editor-block-list__layout:first-child {
+  margin-left: -20px;
+}
+
+.linksWithIcons-group .block-editor-block-list__layout:last-child {
+  margin-right: -20px;
+}
+
+.linksWithIcons-group.is-style-square .block-editor-block-list__layout:first-child {
+  margin-left: 0;
+}
+
+.linksWithIcons-group.is-style-square .block-editor-block-list__layout:last-child {
+  margin-right: 0;
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-type="core/columns"],
+.block-editor-block-list__layout .block-editor-block-list__block[data-type="amnesty-core/repeatable-block"] {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+  max-width: 1024px;
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-type="amnesty-core/repeatable-block"] > .block-editor-block-list__block-edit {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 30px;
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-type="amnesty-core/repeatable-block"] > .block-editor-block-list__block-edit::before {
+  bottom: 5px;
+}
+
+.linksWithIcons-group > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.linksWithIcons-group > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="amnesty-core/repeatable-block"] {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 0;
+}
+
+.linksWithIcons-group > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="amnesty-core/repeatable-block"] .block-editor-block-list__block-edit {
+  flex-basis: 100%;
+}
+
+.linksWithIcons-group.is-vertical .block-editor-block-list__layout {
+  flex-direction: column;
+}
+
+.linksWithIcons-group.is-style-square .block-editor-block-list__block {
+  border: 1px solid;
+  margin-bottom: 24px;
+}
+
+.linksWithIcons-group.is-horizontal.is-style-square .block-editor-block-list__block {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 24px;
+  flex: 0 0 calc((100% - (24px * 3)) / 4);
+  max-width: calc((100% - (24px * 3)) / 4);
+
+  &:first-child,
+  &:nth-child(4n+5) {
+    margin-left: 0;
+  }
+}
+
+@for $cols from 2 through 4 {
+  .linksWithIcons-group.is-horizontal.has-#{$cols}-items .block-editor-block-list__block {
+    flex: 0 0 calc(100% / #{$cols});
+    max-width: calc(100% / #{$cols});
+  }
+
+  .linksWithIcons-group.is-horizontal.is-style-square.has-#{$cols}-items .block-editor-block-list__block {
+    flex: 0 0 calc((100% - (24px * 3)) / #{$cols});
+    max-width: calc((100% - (24px * 3)) / #{$cols});
+  }
+}
+
+.linksWithIcons-group.is-horizontal.is-style-square .block-editor-block-list__block .linksWithIcons {
+  flex-basis: unset;
+  max-width: 100%;
+}
+
+.linksWithIcons-group .linksWithIcons {
+  max-width: none;
+}
+
+.linksWithIcons-group .linksWithIcons-bigtext [data-rich-text-placeholder] {
+  font-size: 48px;
+}
+
+.linksWithIcons-group.is-style-square .linksWithIcons {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin: 0;
+  height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.linksWithIcons-group.is-vertical .block-editor-block-list__block {
+  margin-right: initial;
+  margin-left: initial;
+  flex: 1 0 50%;
+  max-width: 100%;
+}
+
+.linksWithIcons-group.is-vertical .block-editor-block-list__block-edit {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+@include mq(600px) {
+  .linksWithIcons-group .block-editor-block-list__block .block-editor-block-contextual-toolbar {
+    top: 100%;
+  }
+}
+
+.linksWithIcons-group.has-1-items.has-background .linksWithIcons {
+  padding: 20px;
+}
+
+.linksWithIcons-bigtext.has-underline[data-is-placeholder-visible="true"] {
+  left: 0;
+  border-bottom: none;
+}
+
+.linksWithIcons-buttonWrapper {
+  position: relative;
+}
+
+.linksWithIcons-buttonWrapper > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.editor-rich-text__tinymce.mce-content-body.linksWithIcons-button {
+  line-height: 36px;
+}
+
+.linksWithIcons-buttonWrapper .editor-url-input__button {
+  position: absolute;
+}
+
+.linksWithIcons-buttonWrapper .editor-url-input__button-modal {
+  position: absolute;
+  min-width: 300px;
+  left: -150px;
+  top: 110%;
+}
+
+.linksWithIcons-group.icon-arrow.is-horizontal .block-editor-block-list__block[data-type="amnesty-core/links-with-icons"] .linksWithIcons-spacer,
+.linksWithIcons-group.icon-ampersand.is-horizontal .block-editor-block-list__block[data-type="amnesty-core/links-with-icons"] .linksWithIcons-spacer,
+.linksWithIcons-group.icon-none.is-horizontal .block-editor-block-list__block[data-type="amnesty-core/links-with-icons"] .linksWithIcons-spacer {
+  display: block !important;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.linksWithIcons-group.icon-arrow.is-vertical .block-editor-block-list__block[data-type="amnesty-core/links-with-icons"] .linksWithIcons-spacer {
+  display: block !important;
+}
+
+.linksWithIcons-group.is-horizontal .block-editor-block-list__block[data-type="amnesty-core/links-with-icons"]:last-child .linksWithIcons-spacer,
+.linksWithIcons-group.is-vertical .block-editor-block-list__block[data-type="amnesty-core/links-with-icons"]:last-child .linksWithIcons-spacer {
+  display: none !important;
+}
+
+.linksWithIcons-group .linksWithIcons-spacer:last-child {
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linksWithIcons-group.has-no-lines .linksWithIcons-spacer:last-child {
+  display: none !important;
+}

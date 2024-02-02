@@ -1,0 +1,66 @@
+.page-header.is-transparent-light {
+  background: linear-gradient($color-black, transparent);
+  color: $color-white;
+}
+
+.page-header.is-transparent-light.stick {
+  background: $color-white;
+  color: $color-black;
+  border-bottom: 1px solid $color-grey-light;
+}
+
+.page-header.is-transparent-light ~ .page-hero {
+  margin-top: -72px;
+}
+
+.page-header.is-transparent-light .menu-item:hover > a,
+.page-header.is-transparent-light .menu-item a:active,
+.page-header.is-transparent-light .menu-item a:focus,
+.page-header.is-transparent-light .menu-item:focus-within > a,
+.page-header.is-transparent-light .page-headerButton:hover,
+.page-header.is-transparent-light .page-headerButton:active,
+.page-header.is-transparent-light .page-headerButton:focus {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.page-header.is-transparent-light .mobile-menu .menu-item a:hover,
+.page-header.is-transparent-light .mobile-menu .menu-item a:active,
+.page-header.is-transparent-light .mobile-menu .menu-item a:focus {
+  background-color: $color-grey-light;
+}
+
+.page-header.is-transparent-light .mobile-menu .menu-item-has-children.is-open > a {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.page-header.is-transparent-light .mobile-menu .menu-item-has-children.is-open > a:hover,
+.page-header.is-transparent-light .mobile-menu .menu-item-has-children.is-open > a:active,
+.page-header.is-transparent-light .mobile-menu .menu-item-has-children.is-open > a:focus,
+.page-header.is-transparent-light .sub-menu .menu-item a:hover,
+.page-header.is-transparent-light .sub-menu .menu-item a:active,
+.page-header.is-transparent-light .sub-menu .menu-item a:focus {
+  background-color: $color-grey-mid-dark;
+  color: $color-white;
+}
+
+.page-header.is-transparent-light .page-nav--main .current-menu-item,
+.page-header.is-transparent-light .page-nav--main .current-menu-ancestor {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.page-header.is-transparent-light .page-nav--main .mobile-menu .current-menu-item,
+.page-header.is-transparent-light .page-nav--main .mobile-menu .current-menu-ancestor {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.page-header.is-transparent-light .icon-cart {
+  @extend %icon-cart-light;
+}
+
+.page-header.is-transparent-light .site-separator {
+  display: none;
+}

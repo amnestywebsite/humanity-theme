@@ -1,0 +1,37 @@
+.woocommerce-message {
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+}
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+  border-top-color: $color-black;
+  font-weight: normal;
+  color: $color-black;
+  background-color: $color-grey-xx-light;
+
+  &::before {
+    top: unset;
+    left: 2em;
+    color: $color-black;
+  }
+}
+
+// .woocommerce-success {}
+// .woocommerce-info {}
+// .woocommerce-error {}
+
+.woocommerce form .form-row {
+  padding: 0;
+}
+
+.woocommerce .section::before,
+.woocommerce .section::after {
+  display: none;
+}

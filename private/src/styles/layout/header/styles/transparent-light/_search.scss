@@ -1,0 +1,17 @@
+.page-header.is-transparent-light .search-menu-item a::after {
+  @extend %icon-search-light;
+}
+
+.page-header.is-transparent-light .search-menu-item a:hover::after,
+.page-header.is-transparent-light .search-menu-item a:active::after,
+.page-header.is-transparent-light .search-menu-item a:focus::after {
+  @extend %icon-search-dark;
+}
+
+.page-header.is-transparent-light.stick .search-menu-item a::after {
+  @extend %icon-search-dark;
+}
+
+.page-header.is-transparent-light .mobile-menu .search-menu-item a::after {
+  @extend %icon-search-dark;
+}

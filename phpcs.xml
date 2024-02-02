@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<ruleset name="Humanity Theme" namespace="BigBite">
+  <description>PHPCS linting rules for the Humanity Theme</description>
+  <config name="minimum_supported_wp_version" value="5.8" />
+  <rule ref="./vendor/bigbite/phpcs-config/BigBite" />
+</ruleset>

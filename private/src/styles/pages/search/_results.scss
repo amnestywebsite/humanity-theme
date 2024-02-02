@@ -1,0 +1,49 @@
+body.search main,
+body.page-template-searchpage main {
+  margin-top: spacing();
+  margin-bottom: spacing();
+}
+
+body.search .section,
+body.page-template-searchpage .search-results {
+  padding: spacing();
+}
+
+body.search .post-pagination,
+body.page-template-searchpage .post-pagination {
+  padding-bottom: 0;
+}
+
+body.search .section .page-search,
+body.page-template-searchpage .section .page-search {
+  flex-direction: column;
+  background-color: unset;
+
+  @include mq(xx-small) {
+    flex-direction: row;
+  }
+}
+
+body.search .section .page-search input,
+body.page-template-searchpage .section .page-search input {
+  margin-bottom: 10px;
+
+  @include mq(xx-small) {
+    margin-bottom: 0;
+  }
+}
+
+.post--result {
+  @include state-background($color-grey-light);
+  position: relative;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: spacing();
+}
+
+.search-results {
+  flex-basis: 75%;
+}

@@ -1,0 +1,122 @@
+[data-type="amnesty-core/header"] {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.headerBlock .container {
+  padding: 0 flexy-gutter();
+  display: flex;
+}
+
+.headerBlock .page-heroTitle span {
+  line-height: 1.2;
+}
+
+.headerBlock .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.headerBlock.headerBlock.page-heroAlignment--centre .hero-content {
+  align-items: center;
+}
+
+.page-heroAlignment--center .container {
+  display: flex;
+  justify-content: center;
+}
+
+.page-heroAlignment--right .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-heroAlignment--left .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-hero .donation {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-hero .container .hero-content {
+  flex-direction: column;
+
+  > * {
+    margin-bottom: 12px;
+  }
+}
+
+.page-hero .container {
+  @include mq($from: xx-small, $until: medium-sm) {
+    flex-wrap: wrap;
+  }
+}
+
+.page-heroAlignment--right .container .hero-content {
+  order: 2;
+}
+
+.page-heroAlignment--right .container .page-heroCta {
+  order: 2;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.page-heroAlignment--right .page-heroTitle {
+  margin-left: 0;
+}
+
+.page-heroAlignment--center .donation {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.page-heroAlignment--right .donation {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rtl .page-heroAlignment--right .page-heroContent {
+  margin-right: 0;
+}
+
+.rtl .page-heroAlignment--left .page-heroContent {
+  margin-left: 0;
+}
+
+.rtl .page-heroAlignment--center .container .hero-content {
+  margin-left: 10%;
+  margin-right: auto;
+  order: 2;
+}
+
+.rtl .page-heroAlignment--center .donation {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.rtl .page-heroAlignment--left .container .hero-content {
+  margin-left: 20%;
+  order: 2;
+  text-align: end;
+}
+
+.rtl .page-heroAlignment--right .container .hero-content {
+  order: 0;
+  text-align: left;
+  margin-right: 20%;
+  margin-left: 10%;
+}
+
+.rtl .page-heroAlignment--right .page-heroTitle {
+  margin-right: 0;
+}
+
+.rtl .page-heroAlignment--left .container .page-heroCta {
+  margin-right: 0;
+  margin-left: auto;
+}

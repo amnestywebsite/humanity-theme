@@ -1,0 +1,12 @@
+fieldset {
+  margin: 12px -12px;
+  padding: 12px;
+  border: none;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+fieldset legend {
+  display: block;
+  width: 100%;
+  float: left;
+}

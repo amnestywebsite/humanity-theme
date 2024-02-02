@@ -1,0 +1,21 @@
+ul.article-share {
+  display: flex;
+  gap: .5rem;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.article-share a {
+  @include state-background(lighten($color-black, 20%));
+  display: block;
+  padding: 8px;
+  width: 47px;
+  height: 47px;
+  text-align: center;
+  background-color: $color-black;
+}
+
+.article-share img {
+  max-height: 100%;
+}

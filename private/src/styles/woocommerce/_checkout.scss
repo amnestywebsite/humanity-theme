@@ -1,0 +1,30 @@
+/* stylelint-disable selector-max-id */
+
+.page-template-checkout-flow main {
+  padding-top: 50px;
+}
+
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment,
+.woocommerce table.shop_table {
+  border-radius: 0;
+}
+
+#order_review_heading {
+  margin-top: $spacing-unit;
+}
+
+#ship-to-different-address h3 {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.woocommerce .woocommerce-customer-details address {
+  border: none;
+  border-radius: 0;
+}
+
+.recurring-totals th {
+  border-top-width: 3px;
+}

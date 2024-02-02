@@ -1,0 +1,13 @@
+.post-type-archive-product .post {
+  text-align: left;
+}
+
+.post-type-archive-product .post-title,
+.post-type-archive-product .price {
+  font-size: $base-font-size;
+}
+
+.post-type-archive-product .post-content {
+  padding-right: 0;
+  padding-left: 0;
+}

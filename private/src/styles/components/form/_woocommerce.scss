@@ -1,0 +1,43 @@
+/* stylelint-disable selector-max-id */
+
+.woocommerce form .form-row {
+  display: block;
+}
+
+.woocommerce form .form-row-login {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+  border-radius: 0;
+}
+
+.woocommerce form .lost_password {
+  margin-bottom: 0;
+}
+
+.woocommerce form .form-row .input-checkbox {
+  display: inline-block;
+}
+
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  width: 100px;
+}
+
+.woocommerce .woocommerce-form-login .woocommerce-form__label-for-checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 5px;
+
+  input {
+    margin-right: 5px;
+  }
+}
