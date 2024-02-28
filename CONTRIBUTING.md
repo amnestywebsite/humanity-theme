@@ -26,13 +26,13 @@ Are you already a contributor to our theme who has previously fixed one or more 
 Would you like to get more involved, find out more about the movement and contribute on a regular basis?  
 Are you an employed developer or engineer looking to spend multiple Corporate Social Responsibility (CSR) days at Amnesty?  
 
-If so, we would love to hear from you. This is managed by @SophieAmnesty. For more information, email website[at]amnesty.org.  
+If so, we would love to hear from you. This is managed by [Sophie](https://github.com/SophieAmnesty). For more information, email website[at]amnesty.org.  
 
 #### Events & Hackathons  
 
 Do you run a hackathon and want to set one of our feature requests as a challenge?  
 
-If so, we would love to hear from you. This is managed by @SophieAmnesty. For more information, email website[at]amnesty.org.  
+If so, we would love to hear from you. This is managed by [Sophie](https://github.com/SophieAmnesty). For more information, email website[at]amnesty.org.  
 
 #### CSR and Pro Bono Programmes  
 
@@ -40,7 +40,7 @@ Are you managing a CSR programme and would like to partner with us to fight glob
 Would you like to partner with us to deliver team / group engineering's days or weeks at Amnesty?  
 Are you looking to partner with organisations where you can make a large impact by offering pro bono services?  
 
-If so, we would love to hear from you. This is managed by @DaveAmnesty. For more information, email website[at]amnesty.org.  
+If so, we would love to hear from you. This is managed by [Dave](https://github.com/daveamnesty). For more information, email website[at]amnesty.org.  
 
 #### WordPress Agencies  
 
@@ -48,7 +48,7 @@ Are you a developer or engineer at a WordPress agency that wants to help our cau
 Are you an agency owner or manager that wants to help the cause?  
 Are you a WordPress engineer already working with an Amnesty section or team and want to get more involved?  
 
-If so, we would love to hear from you. This is managed by @AmnestyAM. For more information, email website[at]amnesty.org.  
+If so, we would love to hear from you. This is managed by [AmnestyAM](https://github.com/AmnestyAM). For more information, email website[at]amnesty.org.  
 
 * No paid work will come of any volunteering  
 
@@ -56,7 +56,7 @@ If so, we would love to hear from you. This is managed by @AmnestyAM. For more i
 
 We encourage our colleagues at other nonprofit organizations to use and build upon the Humanity Theme.  
 Since the project was initially set up to help teams across the global Amnesty International movement, it meets many of the unique requirements for grassroots campaigning organizations.  
-If you work for a nonprofit and have any questions about the Humanity Theme, you can contact @carolinejcourtney.  
+If you work for a nonprofit and have any questions about the Humanity Theme, you can contact [Caroline](https://github.com/carolinejcourtney). For more information, email website[at]amnesty.org.  
 
 
 ### Expectations   
