@@ -17,9 +17,6 @@ registerBlockType('amnesty-core/block-section', {
     background: {
       type: 'string',
     },
-    padding: {
-      type: 'string',
-    },
     sectionId: {
       type: 'string',
     },

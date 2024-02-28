@@ -1,11 +1,7 @@
 .section {
   @include clearfix;
-  padding: 20px 0;
+  padding: 25px;
   color: $color-black;
-
-  @include mq(medium) {
-    padding: 60px 0;
-  }
 }
 
 .section.is-fullWidth--mobile,
@@ -14,10 +10,6 @@
     padding: 0;
     width: 100%;
   }
-}
-
-.section--small {
-  padding: 25px;
 }
 
 .section--tinted {

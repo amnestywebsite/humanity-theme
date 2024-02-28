@@ -2,6 +2,60 @@ import classnames from 'classnames';
 
 const { assign } = lodash;
 const { InnerBlocks } = wp.blockEditor;
+const { __ } = wp.i18n;
+
+const v3 = {
+  attributes: {
+    background: {
+      type: 'string',
+    },
+    padding: {
+      type: 'string',
+    },
+    sectionId: {
+      type: 'string',
+    },
+    sectionName: {
+      type: 'string',
+    },
+    backgroundImage: {
+      type: 'string',
+      default: '',
+    },
+    backgroundImageHeight: {
+      type: 'number',
+      default: 0,
+    },
+    backgroundImageOrigin: {
+      type: 'string',
+      default: '',
+    },
+    enableBackgroundGradient: {
+      type: 'boolean',
+      default: false,
+    },
+    minHeight: {
+      type: 'number',
+      default: 0,
+    },
+    textColour: {
+      type: 'string',
+      default: 'black',
+    },
+    backgroundImageId: {
+      type: 'number',
+      default: 0,
+    },
+    hideImageCaption: {
+      type: 'boolean',
+      default: true,
+    },
+    hideImageCopyright: {
+      type: 'boolean',
+      default: false,
+    },
+  },
+};
 
 const v2 = {
   attributes: {
@@ -114,6 +168,6 @@ const v1 = {
   ),
 };
 
-const deprecated = [v2, v1];
+const deprecated = [v3, v2, v1];
 
 export default deprecated;

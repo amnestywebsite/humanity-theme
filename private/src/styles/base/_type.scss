@@ -20,6 +20,21 @@
 
 p {
   overflow-wrap: break-word;
+  max-width: 860px;
+}
+
+p.has-text-align-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p.has-text-align-right {
+  margin-left: auto;
+}
+
+.rtl p.has-text-align-right {
+  margin-right: auto;
+  margin-left: 0;
 }
 
 p.has-drop-cap:not(:focus)::first-letter {

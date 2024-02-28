@@ -145,29 +145,6 @@ class DisplayComponent extends Component {
           />
           <SelectControl
             // translators: [admin]
-            label={__('Padding', 'amnesty')}
-            options={[
-              {
-                // translators: [admin]
-                label: __('Normal', 'amnesty'),
-                value: '',
-              },
-              {
-                // translators: [admin]
-                label: __('Small', 'amnesty'),
-                value: 'small',
-              },
-              {
-                // translators: [admin]
-                label: __('None', 'amnesty'),
-                value: 'no-padding',
-              },
-            ]}
-            value={attributes.padding}
-            onChange={this.createUpdateAttribute('padding')}
-          />
-          <SelectControl
-            // translators: [admin]
             label={__('Text Colour', 'amnesty')}
             options={[
               {
