@@ -190,6 +190,13 @@ jobs:
     env:
       secure: "ZlZNn8d0XQ/KE/JBRk6f4ZwL6JksXRjks4lUciOMB8jfB5U747HOsv/KUxQReji2KFuUrJwsIBAOYUkP8iaWNZdM9Pgcvh4XlaCCQjKVRI63g1oKkiJ1RQajYkqDHynoYWoKE4gLqhi4OMf0vECDpsIvSouSkL4pIEXqP1S0Qvj3ttoJng7gf2zfQc/9k90uv5LLJ3jTxjoWeC61HW0lsNYT/DEQKlRFFxflJVRv3NxaFpRHAExovH9FFKHIz3vxoOoUyZ+gcQTGflIg5xrU5xbLPpYC1n8uorkkEZtZJmA+5t8xx6ae3L+lz6wJy+4VoE9dlPVb4D1ws/LzE1gTSVbq6pAgXaWXJxh2M3D9eAN+/KIQ5sceoenYOWADiWAJElf4qyFqrEfyhvi88DBouKHX4VwL45tj2qrHZK9RvFyTE63rSVbto+Iw4H/9brGbEA1iWmadySjP7RAo/hKhbE8GRZe0NNZOUCCaUrvyxwXOVQl/zpr3MmimyUzBIOYOaSkMYCL7tUf9zdksliwqxuAFQWbEEijRoZIOTBcib8HqpOd/I82lLmbC1nIgDh28aVpfLbA/41l4zkPbeH8xY0oc2WORcWOZutBhJ/sMH1vDUjMTd9IYpFGX5TpgdjIsiUJfb3OEL0QRkqmGFPXYyT1MWsAEWwCMmMEITiXxlhM="
   - stage: Deploy to [STG]
+    name: Mx6yxrhr
+    install: ./private/bin/install.sh
+    before_script: ./private/bin/build.sh
+    script: ./private/bin/deploy.sh
+    env:
+      secure: "NBTZdYz5j0zdZv+ULzxjdOtUSOUCbcz97g32ui3fjDqJC0A9F24i7U3PNvPA16ZMTilA4OX61m+EyQGbUUJgXXrlxRX66dDsbYIhzF6JgH460sl5l/kBgEI9oW5r1w1yPubXvEpNq6S2vDEujmk1DEBluh6+xV4vvRLaAhYHfMYpNYsF+0OiyhhOUOrlVwbVIMfhPqrwPaFRBSsY5C3TDgqaTtdVb968brCdjfp+m32sncL6mXnfoZhUu/Rr/kk3arff/5iDYdlOM7Xw0h4eKc7W0iy5PxkJv282N0hrAiKvvY8j5EqQ5OoF5+0/iZUBmaT49GblsMRFRgx4jUi7uf7jcH/6/GERXVsE3dzgmn2tnxU7v86ha4EEAH7w2yURMhCagzo6PMGsWyQngt/GPGFY2j/6sSWyLa8hyOehF0L9hODAm8uW7qbJVBaJrafN4jJ9KnIBLV0v2/mWvrux9QFKiTJaErADGa91NCqKy0HDAeeilLlvlv7coetYos/oAszcuiyh4l9HdJY09Hn7eZikyjR99pNjea+qKDyuwghEnlZqUYzzvQGOovR3ZlEEW6bf7Y4iFlk6y4cFivT1mm5GEaSpKo1G/kcqXPS5XVQfrvZ8f9WmFDBKmxoQdT34OU60yyDmTV3yaUZPavcPs5tbWgCTbUN844Sdzc4u9jk="
+  - stage: Deploy to [STG]
     name: HnSJG6TQ
     install: ./private/bin/install.sh
     before_script: ./private/bin/build.sh
@@ -399,6 +406,13 @@ jobs:
     script: ./private/bin/deploy.sh
     env:
       secure: "cWSWlRzHTrJnXx/aVoCrTaoXyLdljWNtipZpz4BNAavcAJ3Lc0dMjquRMIB+GI0DfYFWOGChlALy4hlb86XWxFlNPDm7TijKmdYBl/smrwIftccFrPSLeEyZOFCQa88X1zXtvOXDf6Wvi8++uQptbVvnapkV81tA8MiIV7E60ywUhlMN3w5wqXacaiteKKmmZNWtAqOJxkYCwRnF1dCpMewmTojG/7mycOvUHDByxdZCqi4YE2tj+tWa1wKMoseVm8vOoTaBtRMT3FdNcjyMlb9BW9VBuxYSVx8f0kcbwFs8ohV3FJmFClaXh55wjEObF8yx7Z7pT+8DYPsvy3Q5reBa+f8wYa6Wk/Rr/R3Z02MiFMVdZyjkXONQyNEXvTW+ffjuYzzQ2HpW5us96z0sehRZU/juxh08b2YT9pNP98i4txM0ROVB+MBZpESJFmbVKeAKiuE5nxotvZEFuBe6Dz6KxhruNp/2eWoJyYYZ6tKsE0SVeu+fB1psYP3yK9wZEnAzmvyzT2bIlwj9BCtznpfLDiMXclzzLevFo1QpQ5Z/iwN2Nny6rGv0rEOW258bIGePRLe7LkQRvBoHu+E4nUPHu7NAHjoq6+kwj3jhT032c2ibow3BDrSYtl48V3bQ12jY2bYfvnSrgUlEpzaSleDcP2SebFF6svN+jHzgFBY="
+  - stage: Deploy to [PRD]
+    name: GriLaxXQ
+    install: ./private/bin/install.sh
+    before_script: ./private/bin/build.sh
+    script: ./private/bin/deploy.sh
+    env:
+      secure: "cvxxSywqweDrwPamE9qur50KzYbyQXFWd1MoSSF37rDU20hq5Ikypb43DEyV6srop9FnRMQmO+y1iQpGCZcxLleJuerFphTGpq+ajr0VxF0TIm2E6tGvETMCQcstyNzvGAeHMB4v+q4bnU31QwscflgB3xrzlGdIJc+fWYv7eKRKjjVKDEcipalfDCEE56RYs3BdvDWsrYegV7OmIASbRxr8secyfnv7InW/nukty27ZaAN8Mhnz+CdQy/vTnmni1husaXmx217qLlaSZervzR8EPN53vNkLrRGyinfD4l7mfKOCVX7NSQJoR86gdj4o2JAKdSfw/juLwdYJIhLFudbFjYxBz3VF9UHjDGf/NX+4YswP9N02xlNkGMA/EcRk1UHXIxsCHCICsK5J57K/W8N0QE78840mpXOl7Z8Kdcn8xcPz/DySZaMGetJplR8HNJ4o8GhxMSgIoQUP6MBEcxY5RnZWdhNNJaJBj2OdkhC0TJ4VF/PejUp2ogl3XGsOf3yg82wh4MGe8VJFhBsPNRMrOm9VP/hfywsHRC2s3br9aEuVttrKAtMYsHCN6RmaX/vTHMixJrwzI/nL5vnqExSiwbjG2eqWcCHYRIgjfjMm/28Ksx9Cz1zEz8i7t9NN6txkWCL+FUhFP9FSbhqOS0+MNTOjc4+nc7+abk+mmog="
   - stage: Deploy to [PRD]
     name: 8i8A5yiV
     install: ./private/bin/install.sh
