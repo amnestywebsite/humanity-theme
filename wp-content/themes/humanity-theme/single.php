@@ -21,7 +21,11 @@ $article_has_sidebar = empty( $max_post_content ) ? 'has-sidebar' : '';
 ?>
 
 <main id="main">
-	<?php get_template_part( 'partials/single/featured-image' ); ?>
+	<?php
+	if ( !amnesty_post_has_header() ) {
+		get_template_part( 'partials/single/featured-image' );
+	}
+	?>
 	<div class="section container article-container">
 		<section class="article <?php echo esc_attr( $article_has_sidebar ); ?>">
 			<header class="article-header">
