@@ -22,7 +22,7 @@ $article_has_sidebar = empty( $max_post_content ) ? 'has-sidebar' : '';
 
 <main id="main">
 	<?php
-	if ( !amnesty_post_has_header() ) {
+	if ( ! amnesty_post_has_header() ) {
 		get_template_part( 'partials/single/featured-image' );
 	}
 	?>
