@@ -87,7 +87,7 @@ class Header_Block_Renderer {
 	 * @return string
 	 */
 	public function render(): string {
-		spaceless();
+		ob_start();
 
 		$this->image();
 		$this->open();
@@ -100,7 +100,7 @@ class Header_Block_Renderer {
 		$this->metadata();
 		$this->close();
 
-		return endspaceless( false );
+		return ob_get_clean( false );
 	}
 
 	/**
