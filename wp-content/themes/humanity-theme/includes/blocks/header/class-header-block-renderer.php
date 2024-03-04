@@ -100,7 +100,7 @@ class Header_Block_Renderer {
 		$this->metadata();
 		$this->close();
 
-		return ob_get_clean( false );
+		return ob_get_clean();
 	}
 
 	/**
