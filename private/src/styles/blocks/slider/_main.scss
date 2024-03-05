@@ -221,6 +221,9 @@
 
 .slider {
   position: relative;
+  max-width: 1468px;
+  margin: 0 auto;
+  width: 100%;
 
   .flickity-enabled {
     display: flex;
