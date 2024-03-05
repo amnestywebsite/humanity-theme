@@ -183,7 +183,7 @@ class Header_Block_Renderer {
 		$hide_caption = true === amnesty_validate_boolish( $this->attributes['hideImageCaption'] );
 		$hide_credit  = true === amnesty_validate_boolish( $this->attributes['hideImageCopyright'] );
 
-		if ( $hide_caption && $hide_credit ) {
+		if ( $hide_caption && $hide_credit || 'video' === $this->attributes['type']) {
 			return;
 		}
 
