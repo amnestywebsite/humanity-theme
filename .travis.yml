@@ -16,6 +16,7 @@ cache:
 
 before_install:
 - phpenv config-rm xdebug.ini
+- openssl aes-256-cbc -K $encrypted_264f0dad5034_key -iv $encrypted_264f0dad5034_iv -in private/key.enc -out ~/.ssh/id_rsa -d && chmod 0600 ~/.ssh/id_rsa
 
 stages:
   - name: Lint
