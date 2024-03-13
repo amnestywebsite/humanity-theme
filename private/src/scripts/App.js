@@ -28,6 +28,7 @@ import iframeButton from './modules/iframe-button';
 import collapsableBlock from './modules/collapsable-block';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
 import downloadBlock from './modules/download-block';
+import restrictParagraphWidth from './modules/paragraph-width';
 
 const App = () => {
   browserDetector();
@@ -55,6 +56,7 @@ const App = () => {
   iframeButton();
   collapsableBlock();
   addFlickityToTabs();
+  restrictParagraphWidth();
 
   fluidText(document.getElementsByClassName('article-shareTitle'), 0.9);
 
