@@ -51,10 +51,6 @@
 .linksWithIcons-group.is-horizontal .linksWithIcons {
   @include mq(medium-sm) {
     flex-basis: 33%;
-
-    &:nth-child(5) {
-      margin-top: 0;
-    }
   }
 }
 
@@ -81,10 +77,6 @@
 
   @include mq(medium-sm) {
     flex-basis: 24%;
-
-    &:nth-child(7) {
-      margin-top: 0;
-    }
   }
 }
 
