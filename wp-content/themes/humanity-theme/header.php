@@ -13,11 +13,13 @@ $hero_show = false;
 $object = get_queried_object();
 if ( ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) {
 	if ( is_archive() && is_object( $object ) ) {
-		$hero_data['title']   = $object->label;
-		$hero_data['content'] = $object->labels->archives ?? $object->description;
+		$hero_data['attrs']['title']   = $object->label;
+		$hero_data['attrs']['content'] = $object->labels->archives ?? $object->description;
 	}
 
-	$hero_show = ! empty( $hero_data['title'] ) || ! empty( $hero_data['imageID'] );
+	$hero_show = ! empty( $hero_data['attrs']['title'] ) ||
+		! empty( $hero_data['attrs']['imageID'] ) ||
+		has_post_thumbnail();
 }
 
 $body_class = [];
@@ -46,7 +48,12 @@ get_template_part( 'partials/language-selector' );
 get_template_part( 'partials/navigation/desktop' );
 
 if ( $hero_show ) {
-	// phpcs:ignore
-	echo \Amnesty\Blocks\amnesty_render_header_block( $hero_data );
+	if ( 'amnesty-core/hero' === $hero_data['name'] ) {
+		echo wp_kses_post( render_hero_block( $hero_data['attrs'] ) );
+	} else {
+		// phpcs:ignore
+		echo \Amnesty\Blocks\amnesty_render_header_block( $hero_data['attrs'] );
+	}
+
 	amnesty_remove_header_from_content();
 }

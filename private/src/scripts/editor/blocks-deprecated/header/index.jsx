@@ -15,71 +15,48 @@ registerBlockType('amnesty-core/block-hero', {
   ],
   supports: {
     multiple: false,
+    inserter: false,
   },
   attributes: {
     title: {
       type: 'string',
-      source: 'meta',
-      meta: '_hero_title',
     },
     content: {
       type: 'string',
-      source: 'meta',
-      meta: '_hero_content',
     },
     ctaLink: {
       type: 'string',
-      source: 'meta',
-      meta: '_hero_cta_link',
     },
     ctaText: {
       type: 'string',
-      source: 'meta',
-      meta: '_hero_cta_text',
     },
     alignment: {
       type: 'string',
-      source: 'meta',
-      meta: '_hero_alignment',
     },
     background: {
       type: 'string',
-      source: 'meta',
-      meta: '_hero_background',
       default: 'dark',
     },
     hideImageCaption: {
       type: 'boolean',
-      source: 'meta',
-      meta: '_hero_hide_image_caption',
       default: true,
     },
     hideImageCopyright: {
       type: 'boolean',
-      source: 'meta',
-      meta: '_hero_hide_image_copyright',
       default: false,
     },
     size: {
       type: 'string',
-      source: 'meta',
-      meta: '_hero_size',
       default: 'small',
     },
     type: {
       type: 'string',
-      source: 'meta',
-      meta: '_hero_type',
     },
     embed: {
       type: 'string',
-      source: 'meta',
-      meta: '_hero_embed',
     },
     featuredVideoId: {
-      type: 'string',
-      source: 'meta',
-      meta: '_hero_video_id',
+      type: 'number',
     },
   },
 
@@ -98,6 +75,12 @@ registerBlockType('amnesty-core/block-hero', {
         isMultiBlock: false,
         blocks: ['amnesty-core/header'],
         transform: (attributes) => createBlock('amnesty-core/header', attributes),
+      },
+      {
+        type: 'block',
+        isMultiBlock: true,
+        blocks: ['amnesty-core/hero'],
+        transform: (attributes) => createBlock('amnesty-core/hero', attributes),
       },
     ],
   },

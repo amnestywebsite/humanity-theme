@@ -96,3 +96,18 @@ if ( ! function_exists( 'amnesty_get_query_var' ) ) {
 		return get_query_var( $variable ) ?: ( $wp->query_vars[ $variable ] ?? '' );
 	}
 }
+
+if ( ! function_exists( 'amnesty_render_blocks' ) ) {
+	/**
+	 * Render an array of blocks
+	 *
+	 * @package Amnesty
+	 *
+	 * @param array<int,array<string,mixed>> $blocks the blocks to render
+	 *
+	 * @return string
+	 */
+	function amnesty_render_blocks( array $blocks ): string {
+		return implode( '', array_map( 'render_block', $blocks ) );
+	}
+}

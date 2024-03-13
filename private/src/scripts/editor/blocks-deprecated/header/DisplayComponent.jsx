@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import PostFeaturedVideo from './PostFeaturedVideo.jsx';
+import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
 
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl, ToggleControl, withFilters } = wp.components;
@@ -80,57 +80,31 @@ class DisplayComponent extends Component {
     });
   };
 
-  render() {
-    const { attributes = {}, setAttributes } = this.props;
-    const { media } = this.props;
-
-    const classes = classnames('page-hero', {
-      'page-heroSize--full': attributes.size === 'large',
-      'page-heroBackground--transparent': !attributes.background,
-      'page-heroAlignment--left': !attributes.alignment,
-      [`page-heroSize--${attributes.size}`]: attributes.size,
-      [`page-heroBackground--${attributes.background || 'dark'}`]: attributes.background || true,
-      [`page-heroAlignment--${attributes.alignment}`]: attributes.alignment || false,
-      'page-hero--video': attributes.type === 'video',
-    });
-
-    const contentClasses = classnames('hero-content', {
-      'has-donation-block': this.props.hasInnerBlock.length > 0,
-    });
-
-    const shouldShowImageCaption =
-      this.state.imageData?.caption &&
-      !attributes.hideImageCaption &&
-      this.state.imageData?.caption !== this.state.imageData?.description;
-
-    const shouldShowImageCredit =
-      this.state.imageData?.description && !attributes.hideImageCopyright;
-
-    const sectionStyles = {};
-    if (media?.source_url) {
-      sectionStyles.backgroundImage = `url("${media.source_url}")`;
-    }
-
+  /**
+   *
+   * @param attributes - the block attributes
+   * @returns {JSX.Element}
+   */
+  renderInspectorControls = (attributes) => {
     return (
-      <Fragment>
-        <InspectorControls>
+      <InspectorControls>
           <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
             <SelectControl
               // translators: [admin]
               label={__('Alignment', 'amnesty')}
               options={[
                 {
-                  /* translators: [admin] text alignment. for RTL languages, localise as 'Right' */
+                  /* translators: [admin/front] text alignment */
                   label: __('Left', 'amnesty'),
                   value: 'left',
                 },
                 {
-                  // translators: [admin] text alignment.
+                  /* translators: [admin/front] text alignment */
                   label: __('Centre', 'amnesty'),
                   value: 'center',
                 },
                 {
-                  /* translators: [admin] text alignment. for RTL languages, localise as 'Left' */
+                  /* translators: [admin/front] text alignment */
                   label: __('Right', 'amnesty'),
                   value: 'right',
                 },
@@ -233,6 +207,43 @@ class DisplayComponent extends Component {
             </PanelBody>
           )}
         </InspectorControls>
+    );
+  };
+
+  render() {
+    const { attributes = {}, setAttributes } = this.props;
+    const { media } = this.props;
+
+    const classes = classnames('page-hero', {
+      'page-heroSize--full': attributes.size === 'large',
+      'page-heroBackground--transparent': !attributes.background,
+      'page-heroAlignment--left': !attributes.alignment,
+      [`page-heroSize--${attributes.size}`]: attributes.size,
+      [`page-heroBackground--${attributes.background || 'dark'}`]: attributes.background || true,
+      [`page-heroAlignment--${attributes.alignment}`]: attributes.alignment || false,
+      'page-hero--video': attributes.type === 'video',
+    });
+
+    const contentClasses = classnames('hero-content', {
+      'has-donation-block': this.props.hasInnerBlock.length > 0,
+    });
+
+    const shouldShowImageCaption =
+      this.state.imageData?.caption &&
+      !attributes.hideImageCaption &&
+      this.state.imageData?.caption !== this.state.imageData?.description;
+
+    const shouldShowImageCredit =
+      this.state.imageData?.description && !attributes.hideImageCopyright;
+
+    const sectionStyles = {};
+    if (media?.source_url) {
+      sectionStyles.backgroundImage = `url("${media.source_url}")`;
+    }
+
+    return (
+      <Fragment>
+        {this.renderInspectorControls(attributes)};
         <section className={classes} style={sectionStyles}>
           {this.state.videoUrl && (
             <div className="page-heroVideoContainer">

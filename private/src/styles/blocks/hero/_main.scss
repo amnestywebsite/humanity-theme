@@ -1,0 +1,173 @@
+.header {
+  display: flex;
+  min-height: 710px;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 111px;
+  padding-bottom: 110px;
+  position: relative;
+  width: 100%;
+  max-width: $flexy-container;
+  margin: auto;
+
+  @include mq(small) {
+    padding-bottom: 80px;
+    height: auto;
+  }
+}
+
+.header > *:not(.image-meta) {
+  margin-bottom: 12px;
+}
+
+.header .container {
+  z-index: 1;
+  padding: 0 24px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .headerTitle {
+  margin: 0;
+  padding: 0 16px;
+  font-size: 4.5rem;
+  line-height: 1.3 !important;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  max-width: 840px;
+  text-transform: uppercase;
+  box-decoration-break: clone;
+
+  @include mq(xx-small) {
+    font-size: 48px;
+    padding: 0 20px;
+  }
+
+  @include mq(small) {
+    font-size: 72px;
+  }
+}
+
+.header p.headerContent {
+  display: table;
+  padding: 10px 16px;
+  max-width: 460px;
+  font-size: 1.5rem;
+  background-color: rgba($color-black, .45);
+
+  @include mq(xx-small) {
+    padding: 10px 20px;
+  }
+}
+
+.header .headerCta {
+  display: inline-block;
+  background-color: rgba($color-black, .45);
+  padding: 16px;
+
+  @include mq(xx-small) {
+    padding: 20px;
+  }
+}
+
+.header.headerBackground--dark .headerTitle,
+.header.headerBackground--dark p.headerContent,
+.header.headerBackground--dark .headerCta {
+  color: $color-white;
+  background-color: $color-black;
+}
+
+.header.headerBackground--light .headerTitle,
+.header.headerBackground--light p.headerContent,
+.header.headerBackground--light .headerCta {
+  color: $color-black;
+  background-color: $color-white;
+}
+
+.header.headerBackground--light .headerCta .btn {
+  background-color: $color-black;
+  color: $color-white;
+  border: none;
+}
+
+.header.headerAlignment--center .container {
+  justify-content: center;
+}
+
+.header.headerAlignment--center .header-content {
+  text-align: center;
+}
+
+.header.headerAlignment--center .header-content .headerContent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header.headerAlignment--right .container {
+  flex-direction: row-reverse;
+}
+
+.header.headerAlignment--right .header-content {
+  text-align: right;
+}
+
+.header.headerAlignment--right .header-content .headerContent {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.header .image-meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  background-color: rgba($color-black, .55);
+  color: $color-white;
+  word-break: keep-all;
+}
+
+.header .image-meta .image-metaItem {
+  display: block;
+  padding: 4px;
+}
+
+.header .container .image-meta .headerimage_caption {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.header .container .image-meta .headerimage_credit {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.headerBackgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.headerBackgroundVideo .headerVideo {
+  position: absolute;
+  min-height: 100% !important;
+  object-fit: cover;
+  min-width: 100%;
+
+  @include mq(small) {
+    display: block;
+  }
+}
+
+.rtl .header .header-content {
+  text-align: right;
+}
+
+.rtl .header.headerAlignment--center .header-content {
+  text-align: center;
+}
