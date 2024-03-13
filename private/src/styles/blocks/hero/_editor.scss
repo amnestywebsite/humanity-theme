@@ -1,0 +1,219 @@
+[data-type="amnesty-core/hero"] {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+[data-type="amnesty-core/hero"][data-align] .wp-block {
+  min-width: 100%;
+}
+
+.wp-block-amnesty-core-hero {
+  display: flex;
+  min-height: 710px;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 111px;
+  padding-bottom: 110px;
+  position: relative;
+  width: 100%;
+
+  @include mq(small) {
+    padding-bottom: 80px;
+    height: auto;
+  }
+}
+
+.wp-block-amnesty-core-hero > *:not(.image-meta) {
+  margin-bottom: 12px;
+}
+
+.wp-block-amnesty-core-hero .container {
+  width: 100%;
+  z-index: 1;
+  padding: 0 24px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wp-block-amnesty-core-hero .headerTitle {
+  margin: 0;
+  padding: 0 16px;
+  font-size: 4.5rem;
+  line-height: 1.3 !important;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  max-width: 840px;
+  text-transform: uppercase;
+  box-decoration-break: clone;
+  overflow: hidden;
+
+  @include mq(xx-small) {
+    font-size: 48px;
+    padding: 0 20px;
+  }
+
+  @include mq(small) {
+    font-size: 72px;
+  }
+}
+
+.wp-block-amnesty-core-hero p.headerContent {
+  display: table;
+  padding: 10px 16px;
+  max-width: 460px;
+  font-size: 1.5rem;
+  background-color: rgba($color-black, .45);
+
+  @include mq(xx-small) {
+    padding: 10px 20px;
+  }
+}
+
+.wp-block-amnesty-core-hero .headerCta {
+  display: inline-block;
+  background-color: rgba($color-black, .45);
+  padding: 16px;
+
+  .btn {
+    font-size: 24px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+
+    @include mq(xx-small) {
+      padding: 11px 20px;
+    }
+  }
+
+  @include mq(xx-small) {
+    padding: 20px;
+  }
+}
+
+.wp-block-amnesty-core-hero.headerBackground--dark .headerTitle,
+.wp-block-amnesty-core-hero.headerBackground--dark p.headerContent,
+.wp-block-amnesty-core-hero.headerBackground--dark .headerCta {
+  color: $color-white;
+  background-color: $color-black;
+}
+
+.wp-block-amnesty-core-hero.headerBackground--light .headerTitle,
+.wp-block-amnesty-core-hero.headerBackground--light p.headerContent,
+.wp-block-amnesty-core-hero.headerBackground--light .headerCta {
+  color: $color-black;
+  background-color: $color-white;
+}
+
+.wp-block-amnesty-core-hero.headerBackground--light .headerCta .btn {
+  background-color: $color-black;
+  color: $color-white;
+  border: none;
+}
+
+[data-type="amnesty-core/hero"][data-align="center"] .wp-block-amnesty-core-hero .container {
+  justify-content: center;
+}
+
+[data-type="amnesty-core/hero"][data-align="center"] .wp-block-amnesty-core-hero .header-content {
+  text-align: center;
+}
+
+[data-type="amnesty-core/hero"][data-align="center"] .wp-block-amnesty-core-hero .header-content .headerContent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-type="amnesty-core/hero"][data-align="right"] .wp-block-amnesty-core-hero .container {
+  flex-direction: row-reverse;
+}
+
+[data-type="amnesty-core/hero"][data-align="right"] .wp-block-amnesty-core-hero .header-content {
+  text-align: right;
+}
+
+[data-type="amnesty-core/hero"][data-align="right"] .wp-block-amnesty-core-hero .header-content .headerContent {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.wp-block-amnesty-core-hero .image-meta {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  background-color: rgba($color-black, .55);
+  color: $color-white;
+  word-break: keep-all;
+}
+
+.wp-block-amnesty-core-hero .image-meta .image-metaItem {
+  display: block;
+  padding: 4px;
+}
+
+.image-metaItem.headerImageCaption {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.image-metaItem.headerImageCredit {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.headerBackgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.headerBackgroundVideo .headerVideo {
+  position: absolute;
+  min-height: 100% !important;
+  object-fit: cover;
+
+  @include mq(small) {
+    display: block;
+  }
+}
+
+.rtl .wp-block-amnesty-core-hero .container {
+  flex-direction: row-reverse;
+}
+
+.rtl .wp-block-amnesty-core-hero .header-content h1 {
+  text-align: right;
+}
+
+.rtl .wp-block-amnesty-core-hero .header-content p {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.rtl .wp-block-amnesty-core-hero .header-content .headerCta {
+  float: right;
+}
+
+.rtl [data-align="center"] .wp-block-amnesty-core-hero .header-content h1 {
+  text-align: center;
+}
+
+.rtl [data-align="center"] .wp-block-amnesty-core-hero .header-content p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rtl [data-align="center"] .wp-block-amnesty-core-hero .header-content .headerCta {
+  float: none;
+}
+
+.rtl [data-align="right"] .wp-block-amnesty-core-hero .container {
+  flex-direction: row;
+}

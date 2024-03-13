@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import PostFeaturedVideo from './PostFeaturedVideo.jsx';
+import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
 
 const { InspectorControls, MediaUpload, RichText, URLInputButton } = wp.blockEditor;
 const { IconButton, PanelBody, SelectControl, TextControl, ToggleControl } = wp.components;
