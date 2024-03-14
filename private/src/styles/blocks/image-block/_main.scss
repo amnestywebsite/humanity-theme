@@ -113,13 +113,13 @@
 }
 
 .imageBlock-title {
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
   font-size: 41px;
   font-weight: bold;
 }
 
 .imageBlock-content {
-  font-family: var(--font-family-primary);
+  font-family: var(--wp-preset--font-family--primary);
   font-size: 21px;
 
   > p:last-child {
@@ -134,7 +134,7 @@
 .imageBlock-caption {
   margin-top: 7px !important;
   font-size: 14px;
-  font-family: var(--font-family-primary);
+  font-family: var(--wp-preset--font-family--primary);
   line-height: 1.4;
   color: $color-grey-base;
 }

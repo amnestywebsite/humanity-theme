@@ -42,7 +42,6 @@
 @import "base/links";
 @import "base/blockquotes";
 @import "base/images";
-@import "base/fonts";
 @import "base/container";
 @import "base/overlay";
 
@@ -52,8 +51,7 @@
 @import "layout/navigation/main";
 @import "layout/page-hero";
 @import "layout/page-section";
-@import "layout/page-foot";
-@import "pages/article";
+@import "layout/footer/main";
 
 // Components
 @import "components/list/all";
@@ -117,6 +115,7 @@
 @import "pages/petitions";
 @import "pages/single";
 @import "pages/author";
+@import "pages/article";
 
 // WooCommerce
 @import "woocommerce/base";

@@ -17,7 +17,7 @@
   background-color: $color-grey-light;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
   flex: 1 1 auto;
   font-weight: bold;
   border: none;
@@ -194,11 +194,11 @@
   }
 
   h1, h2 {
-    font-family: var(--font-family-secondary);
+    font-family: var(--wp-preset--font-family--secondary);
   }
 
   p, .slide-content {
-    font-family: var(--font-family-primary);
+    font-family: var(--wp-preset--font-family--primary);
   }
 
   h1, h2, p, span, .slide-content {
@@ -497,7 +497,7 @@ h2.slide-subtitle {
   background: $color-white;
   padding: 20px;
   z-index: 1;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
   text-transform: uppercase;
   font-size: 18px;
 

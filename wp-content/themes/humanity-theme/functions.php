@@ -75,7 +75,6 @@ require_once realpath( __DIR__ . '/includes/admin/theme-options/analytics.php' )
 require_once realpath( __DIR__ . '/includes/admin/theme-options/localisation.php' );
 require_once realpath( __DIR__ . '/includes/admin/theme-options/localisation/class-taxonomy-labels.php' );
 require_once realpath( __DIR__ . '/includes/admin/class-accessibility.php' );
-require_once realpath( __DIR__ . '/includes/admin/class-fonts.php' );
 require_once realpath( __DIR__ . '/includes/admin/class-permalink-settings.php' );
 require_once realpath( __DIR__ . '/includes/admin/user-options.php' );
 #endregion admin
@@ -90,7 +89,10 @@ require_once realpath( __DIR__ . '/includes/theme-setup/no-js.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/rewrite-rules.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/disable-emoji-support.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/supports.php' );
+require_once realpath( __DIR__ . '/includes/theme-setup/wp-head.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/wp-head-cleanup.php' );
+require_once realpath( __DIR__ . '/includes/theme-setup/wp-body-open.php' );
+require_once realpath( __DIR__ . '/includes/theme-setup/body-class.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/media.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/class-desktop-nav-walker.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/class-mobile-nav-walker.php' );
@@ -130,11 +132,17 @@ require_once realpath( __DIR__ . '/includes/blocks/remove-stale-metadata.php' );
 require_once realpath( __DIR__ . '/includes/blocks/render-header-on-single.php' );
 #endregion blocks
 
+#region fse-blocks
+require_once realpath( __DIR__ . '/includes/full-site-editing/blocks/register.php' );
+#endregion fse-blocks
+
 /**
  * Theme core block modification includes
  */
 #region coreblocks
 require_once realpath( __DIR__ . '/includes/core-blocks/image/filters.php' );
+require_once realpath( __DIR__ . '/includes/core-blocks/button/styles.php' );
+require_once realpath( __DIR__ . '/includes/core-blocks/social-icons/styles.php' );
 #endregion coreblocks
 
 /**

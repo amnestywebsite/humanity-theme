@@ -31,7 +31,7 @@
   display: block;
   text-transform: uppercase;
   font-size: 18px;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
   font-weight: bold;
   max-width: 100%;
   overflow: hidden;
@@ -110,7 +110,7 @@ h3.grid-itemTitle > a {
 .grid-itemContent a {
   color: $color-black;
   font-weight: bold;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
   text-transform: uppercase;
 }
 
