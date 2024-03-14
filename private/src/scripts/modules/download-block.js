@@ -2,6 +2,10 @@ const setupFormControl = (block) => {
   const choices = block.querySelector('.checkboxGroup');
   const download = block.querySelector('.btn--download');
 
+  if (!choices || !download) {
+    return;
+  }
+
   choices.addEventListener('change', (event) => {
     const { target } = event;
     const {
