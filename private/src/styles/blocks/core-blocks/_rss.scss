@@ -11,7 +11,7 @@
 
 .wp-block-rss__item-title {
   margin-bottom: 12px;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
   font-size: map-get($mobile-header-sizes, h4);
   font-weight: bold;
   line-height: 1.12;
@@ -29,7 +29,7 @@
 .wp-block-rss__item-publish-date {
   margin-bottom: 10px;
   order: 1;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
   font-size: 14px;
   color: $color-black;
 }
@@ -50,7 +50,7 @@
   color: $color-grey-md-light;
   padding-top: 16px;
   padding-bottom: 40px;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
 }
 
 .wp-block-rss.is-grid {

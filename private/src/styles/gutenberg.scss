@@ -27,13 +27,13 @@
 @import "utils/mixins/states";
 
 // Base
-@import "base/fonts";
 @import "base/images-editor";
 
 // Layout
 @import "layout/page-hero";
 @import "layout/page-hero-editor";
 @import "layout/page-section";
+@import "layout/footer/editor";
 
 // Components
 @import "components/grid/all";
@@ -42,6 +42,7 @@
 @import "components/fluid";
 @import "components/icon";
 @import "components/pop-in/editor";
+@import "components/social";
 
 // Blocks
 @import "blocks/action-block/main";
@@ -104,7 +105,7 @@
   --ms-ratio: 1.2;
 }
 
-.wp-block {
+.block-editor .wp-block {
   max-width: 960px;
 }
 
@@ -121,7 +122,7 @@
 .editor-post-title__block .editor-post-title__input,
 .block-editor-block-list__layout,
 .editor-styles-wrapper {
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
 }
 
 .block-editor-block-list__layout,
@@ -129,11 +130,11 @@
   li,
   p,
   a {
-    font-family: var(--font-family-primary);
+    font-family: var(--wp-preset--font-family--primary);
   }
 
   strong {
-    font-family: var(--font-family-secondary);
+    font-family: var(--wp-preset--font-family--secondary);
   }
 }
 

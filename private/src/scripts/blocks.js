@@ -51,3 +51,6 @@ import './editor/blocks/embed-infogram/index.jsx';
 import './editor/blocks/embed-tickcounter/index.jsx';
 import './editor/blocks/related-content/index.jsx';
 import './editor/blocks/collapsable/index.jsx';
+
+import './editor/fse-blocks/pop-in/index.jsx';
+import './editor/fse-blocks/site-header/index.jsx';

@@ -34,11 +34,11 @@
 .linkList-itemMeta {
   display: inline-flex;
   align-items: center;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
 }
 
 .grid-itemContent {
-  font-family: var(--font-family-primary);
+  font-family: var(--wp-preset--font-family--primary);
 }
 
 .linkList-options {

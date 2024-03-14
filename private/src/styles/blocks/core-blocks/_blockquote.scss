@@ -7,7 +7,7 @@ blockquote,
 .blockquote {
   position: relative;
   margin: 70px auto 24px;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp-preset--font-family--secondary);
   text-align: center;
 
   @include mq(small) {
@@ -20,7 +20,7 @@ blockquote::before,
   content: open-quote;
   position: absolute;
   left: calc(50% - 16px);
-  font-family: var(--font-family-secondary) !important;
+  font-family: var(--wp-preset--font-family--secondary) !important;
   font-weight: bold;
   font-size: 60px !important;
   line-height: 1px;
