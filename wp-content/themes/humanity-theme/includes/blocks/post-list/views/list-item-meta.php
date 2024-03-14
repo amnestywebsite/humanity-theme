@@ -4,6 +4,10 @@ if ( ! isset( $data['tag'], $data['tag_link'] ) ) {
 	return;
 }
 
+if ( ! $data['tag'] ) {
+	return;
+}
+
 $output = esc_html( $data['tag'] );
 
 if ( isset( $data['tag_link'] ) && (bool) $data['tag_link'] ) {

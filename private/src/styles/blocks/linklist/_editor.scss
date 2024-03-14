@@ -1,7 +1,51 @@
-.linkList-itemAuthor::before {
-  content: " ";
-  height: 12px;
-  width: 1px;
-  background: $color-black;
-  margin: 10px;
+.linkList,
+.linkList * {
+  box-sizing: border-box;
+}
+
+.linkList-itemMeta,
+.linkList-itemTitle,
+.linkList-itemDate {
+  position: static;
+  gap: 6px;
+}
+
+.linkList-itemMeta {
+  display: inline-flex;
+}
+
+.linkList-itemTitle {
+  display: flex;
+}
+
+.linkList-itemTitle > a::after {
+  display: none;
+}
+
+.linkList-itemMeta .components-button,
+.linkList-itemTitle .components-button,
+.linkList-itemDate .components-button {
+  background: $color-white;
+}
+
+.linkList-itemDate {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.linkList-itemDate .dateTerm {
+  padding: 0;
+}
+
+.linkList-itemDateData {
+  display: block;
+  width: 100%;
+}
+
+.linkList-datePicker {
+  position: absolute;
+  z-index: 100;
+  border: 1px solid #949292;
+  padding: 6px;
+  background: $color-white;
 }

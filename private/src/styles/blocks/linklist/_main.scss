@@ -1,6 +1,7 @@
 .linkList {
   list-style: none;
   margin-left: 0;
+  padding: 0;
 }
 
 .linkList li {
@@ -66,7 +67,7 @@
 
 .postInfo-container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
 .linkList-itemDate {
@@ -93,7 +94,7 @@
 
 .linkList-itemAuthor {
   display: flex;
-  align-items: baseline;
+  margin-bottom: 0;
 }
 
 .linkList-authorDivider {
