@@ -161,7 +161,7 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 	 */
 	function render_language_selector_dropdown_item( object $site, array $sites ): string {
 		// change this to site id
-		if ( $site->site_id === get_current_blog_id() ) {
+		if ( get_current_blog_id() === $site->site_id ) {
 			return '';
 		}
 
