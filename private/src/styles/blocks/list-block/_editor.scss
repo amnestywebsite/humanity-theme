@@ -2,7 +2,7 @@
   clear: both;
 }
 
-.wp-block[data-align=center]:has(.block-editor-block-list__layout .block-editor-block-list__block) {
+.wp-block[data-align="center"]:has(.block-editor-block-list__layout .block-editor-block-list__block) {
   display: flex;
   justify-content: center;
 }
