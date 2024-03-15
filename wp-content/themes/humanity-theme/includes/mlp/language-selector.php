@@ -125,7 +125,7 @@ if ( ! function_exists( 'render_language_selector_dropdown' ) ) {
 		$other_items_close  = '</ul>';
 
 		foreach ( amnesty_get_sites() as $site ) {
-			$other_items_inner .= render_language_selector_dropdown_item( $site, $others, $language );
+			$other_items_inner .= render_language_selector_dropdown_item( $site, $others );
 		}
 
 		$html = implode(
@@ -154,14 +154,14 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 	 * @package Amnesty\Plugins\Multilingualpress
 	 * @see render_language_selector_dropdown()
 	 *
-	 * @param object $site     the site object
-	 * @param array  $sites    the list of sites
-	 * @param string $language the current language
+	 * @param object $site  the site object
+	 * @param array  $sites the list of sites
 	 *
 	 * @return string
 	 */
-	function render_language_selector_dropdown_item( object $site, array $sites, string $language ): string {
-		if ( $site->code === $language ) {
+	function render_language_selector_dropdown_item( object $site, array $sites ): string {
+		// change this to site id
+		if ( $site->site_id === get_current_blog_id() ) {
 			return '';
 		}
 
