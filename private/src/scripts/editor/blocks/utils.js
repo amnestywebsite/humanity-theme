@@ -160,6 +160,13 @@ export const randId = () =>
  * @returns {String}
  */
 export const httpsOnly = (string) => {
-  const url = new URL(string.replace(/^http:/, 'https:'));
+  let url;
+
+  try {
+    url = new URL(string.replace(/^http:/, 'https:'));
+  } catch (e) {
+    return '';
+  }
+
   return url.protocol === 'https:' ? url.toString() : '';
 };
