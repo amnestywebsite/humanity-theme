@@ -72,13 +72,13 @@ if ( ! function_exists( 'amnesty_maybe_override_search_uri' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $url  the generated URI
-	 * @param string $path the requested path
+	 * @param string      $url  the generated URI
+	 * @param string|null $path the requested path
 	 *
 	 * @return string
 	 */
-	function amnesty_maybe_override_search_uri( string $url, string $path ): string {
-		if ( ! str_starts_with( $path, '/search/' ) ) {
+	function amnesty_maybe_override_search_uri( string $url, ?string $path = '/' ): string {
+		if ( ! str_starts_with( strval( $path ), '/search/' ) ) {
 			return $url;
 		}
 
