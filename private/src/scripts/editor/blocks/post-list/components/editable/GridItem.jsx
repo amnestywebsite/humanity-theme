@@ -5,21 +5,21 @@ const { get } = lodash;
 
 const GridItem = (props) => (
   <article className="grid-item" style={{ backgroundImage: `url(${props.featured_image})` }}>
-    <span className="grid-itemMeta">
-      <RichText
-        tagName="span"
-        onChange={props.createUpdate('tagText')}
-        value={props.tagText}
-        // translators: [admin]
-        placeholder={__('(Insert Tag)', 'amnesty')}
-        keepPlaceholderOnFocus={true}
-        allowedFormats={[]}
-        format="string"
-      />
-      <URLInputButton url={props.tagLink} onChange={props.createUpdate('tagLink')} />
-    </span>
-    <h3 className="grid-itemTitle">
-      <a>
+    <div className="grid-itemContent">
+      <span className="grid-itemMeta">
+        <RichText
+          tagName="span"
+          onChange={props.createUpdate('tagText')}
+          value={props.tagText}
+          // translators: [admin]
+          placeholder={__('(Insert Tag)', 'amnesty')}
+          keepPlaceholderOnFocus={true}
+          allowedFormats={[]}
+          format="string"
+        />
+        <URLInputButton url={props.tagLink} onChange={props.createUpdate('tagLink')} />
+      </span>
+      <h3 className="grid-itemTitle">
         <RichText
           tagName="span"
           onChange={props.createUpdate('title')}
@@ -31,19 +31,7 @@ const GridItem = (props) => (
           format="string"
         />
         <URLInputButton url={props.titleLink} onChange={props.createUpdate('titleLink')} />
-      </a>
-    </h3>
-    <div className="grid-itemContent">
-      <RichText
-        tagName="p"
-        onChange={props.createUpdate('excerpt')}
-        value={props.excerpt}
-        // translators: [admin]
-        placeholder={__('(Insert Content)', 'amnesty')}
-        keepPlaceholderOnFocus={true}
-        allowedFormats={[]}
-        format="string"
-      />
+      </h3>
     </div>
     <div className="linkList-options">
       {props.featured_image_id && props.featured_image_id !== -1 && (

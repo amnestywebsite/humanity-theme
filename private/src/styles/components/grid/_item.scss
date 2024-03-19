@@ -27,6 +27,24 @@
   max-width: 100%;
 }
 
+.grid-itemContent p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 12px;
+  color: $color-black;
+  line-height: 1.4;
+  font-size: 16px;
+  background-color: $color-white;
+  max-width: 100%;
+}
+
+.grid-itemContent a {
+  color: $color-black;
+  font-weight: bold;
+  font-family: var(--wp-preset--font-family--secondary);
+  text-transform: uppercase;
+}
+
 .grid-itemMeta {
   display: block;
   text-transform: uppercase;
@@ -94,24 +112,6 @@ h3.grid-itemTitle > a {
 
 .no-js .grid-item:focus-within .grid-itemContent {
   display: block;
-}
-
-.grid-itemContent p {
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding: 12px;
-  color: $color-black;
-  line-height: 1.4;
-  font-size: 16px;
-  background-color: $color-white;
-  max-width: 100%;
-}
-
-.grid-itemContent a {
-  color: $color-black;
-  font-weight: bold;
-  font-family: var(--wp-preset--font-family--secondary);
-  text-transform: uppercase;
 }
 
 .grid {
