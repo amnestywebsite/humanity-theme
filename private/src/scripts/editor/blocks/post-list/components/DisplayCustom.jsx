@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import LinkList from './editable/LinkList.jsx';
 import GridItem from './editable/GridItem.jsx';
+import Appender from './Appender.jsx';
 
 const { BlockIcon } = wp.blockEditor;
 const { Component } = wp.element;
@@ -114,12 +115,7 @@ class DisplayCustom extends Component {
 
     let appender = null;
     if (custom.length < 8) {
-      appender = (
-        <button onClick={this.addItem} className="add-more-button">
-          <BlockIcon icon="plus-alt" />
-          <span>{/* translators: [admin] */ __('Add another item', 'amnesty')}</span>
-        </button>
-      );
+      appender = <Appender onClick={this.addItem} />
     }
 
     if (style !== 'grid') {
@@ -145,7 +141,26 @@ class DisplayCustom extends Component {
     // style === 'grid'
     if ([1, 2, 3, 5, 6, 7].indexOf(custom.length) > -1) {
       return (
-        <div className={`grid grid-${custom.length}`}>
+        <div>
+          <div className={`grid grid-${custom.length}`}>
+            {custom.map((item, index) => (
+              <GridItem
+                key={`${prefix}-${index}`}
+                {...item}
+                createUpdate={this.createUpdateAttribute(index)}
+                createRemove={this.createRemoveItem(index)}
+                updateMedia={this.createUpdateMediaAttribute(index)}
+              />
+            ))}
+          </div>
+          {appender}
+        </div>
+      );
+    }
+
+    return (
+      <div>
+        <div className={`grid grid-many`}>
           {custom.map((item, index) => (
             <GridItem
               key={`${prefix}-${index}`}
@@ -155,22 +170,7 @@ class DisplayCustom extends Component {
               updateMedia={this.createUpdateMediaAttribute(index)}
             />
           ))}
-          {appender}
         </div>
-      );
-    }
-
-    return (
-      <div className={`grid grid-many`}>
-        {custom.map((item, index) => (
-          <GridItem
-            key={`${prefix}-${index}`}
-            {...item}
-            createUpdate={this.createUpdateAttribute(index)}
-            createRemove={this.createRemoveItem(index)}
-            updateMedia={this.createUpdateMediaAttribute(index)}
-          />
-        ))}
         {appender}
       </div>
     );
