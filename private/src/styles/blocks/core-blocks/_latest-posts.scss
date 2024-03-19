@@ -3,10 +3,6 @@
   margin-left: 0;
   padding: 24px;
   width: 100%;
-
-  @include mq(xx-small) {
-    width: 320px;
-  }
 }
 
 .wp-block-latest-posts.is-grid {
