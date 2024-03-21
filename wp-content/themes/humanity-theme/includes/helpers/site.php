@@ -49,13 +49,63 @@ if ( ! function_exists( 'get_site_language_code' ) ) {
 			switch_to_blog( $blog_id );
 		}
 
-		$lang = preg_replace( '/^([a-z]{2})[-_][a-zA-Z]{2,}$/', '$1', get_option( 'WPLANG' ) ?: 'en_US' );
+		$lang = get_option( 'WPLANG' ) ?: 'en_US';
+
+		if ( true === apply_filters( 'amnesty_strip_locale_country_code', true ) ) {
+			$lang = preg_replace( '/^([a-z]{2,})[-_][a-zA-Z]{2,}$/', '$1', $lang );
+		}
 
 		if ( is_multisite() && $blog_id ) {
 			restore_current_blog();
 		}
 
 		return $lang;
+	}
+}
+
+if ( ! function_exists( 'get_site_language_name' ) ) {
+	/**
+	 * Retrieve the current site's language name
+	 *
+	 * @package Amnesty
+	 *
+	 * @param int|null $blog_id the site to get the language name for
+	 *
+	 * @return string
+	 */
+	function get_site_language_name( int $blog_id = null ): string {
+		$override = get_blog_option( $blog_id, 'amnesty_language_name' );
+
+		if ( $override ) {
+			return $override;
+		}
+
+		$lang = get_blog_option( $blog_id, 'WPLANG' );
+		$lang = $lang ?: get_site_option( 'WPLANG' );
+		$lang = $lang ?: ( $GLOBALS['wp_local_package'] ?? false );
+		$lang = $lang ?: 'en_GB';
+
+		$lang = Locale::getDisplayName( $lang, $lang );
+
+		return strip_language_name_parentheticals( $lang );
+	}
+}
+
+if ( ! function_exists( 'strip_language_name_parentheticals' ) ) {
+	/**
+	 * Strips locale names from language names
+	 *
+	 * @param string $language the language name
+	 *
+	 * @return string
+	 */
+	function strip_language_name_parentheticals( string $language ): string {
+		if ( false === apply_filters( 'amnesty_strip_locale_country', true ) ) {
+			return $language;
+		}
+
+		$stripped = preg_replace( '/\s*?([(（]).*?([)）])\s*?/ui', '', $language );
+		return $stripped ?: '';
 	}
 }
 
