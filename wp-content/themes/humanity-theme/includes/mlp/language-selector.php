@@ -130,6 +130,10 @@ if ( ! function_exists( 'render_language_selector_dropdown' ) ) {
 		$other_items_close  = '</ul>';
 
 		foreach ( amnesty_get_sites() as $site ) {
+			if ( $site->current ) {
+				continue;
+			}
+
 			$other_items_inner .= render_language_selector_dropdown_item( $site, $others );
 		}
 
@@ -165,12 +169,7 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 	 * @return string
 	 */
 	function render_language_selector_dropdown_item( object $site, array $sites ): string {
-		// change this to site id
-		if ( get_current_blog_id() === $site->site_id ) {
-			return '';
-		}
-
-		$found = array_filter( $sites, fn ( object $remote ): bool => $remote->name === $site->name );
+		$found = array_filter( $sites, fn ( object $remote ): bool => $remote->blog_id === $site->site_id );
 		$found = array_values( $found );
 
 		// fallback to homepage if no translation
