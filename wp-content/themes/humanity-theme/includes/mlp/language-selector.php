@@ -50,8 +50,13 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 				}
 			}
 
+			$lang = get_site_language_name( $translation->remoteSiteId() );
+			if ( ! $lang ) {
+				$lang = strip_language_name_parentheticals( $language->name() );
+			}
+
 			$i18n_sites[] = (object) [
-				'lang'      => preg_replace( '/\s*?([(（]).*?([)）])\s*?/ui', '', $language->name() ),
+				'lang'      => $lang,
 				'code'      => $language->isoCode(),
 				'direction' => $language->isRtl() ? 'rtl' : 'ltr',
 				'name'      => get_blog_option( $translation->remoteSiteId(), 'blogname' ),
@@ -99,10 +104,9 @@ if ( ! function_exists( 'render_language_selector_dropdown' ) ) {
 			}
 		}
 
-		$language = get_site_language_code();
-		$others   = array_filter( $sites, fn ( object $site ): bool => $language !== $site->code );
-		$current  = array_filter( $sites, fn ( object $site ): bool => $language === $site->code );
-		$current  = array_values( $current );
+		$others  = array_filter( $sites, fn ( object $site ): bool => get_current_blog_id() !== $site->blog_id );
+		$current = array_filter( $sites, fn ( object $site ): bool => get_current_blog_id() === $site->blog_id );
+		$current = array_values( $current );
 
 		if ( ! count( $current ) ) {
 			return;
@@ -111,9 +115,10 @@ if ( ! function_exists( 'render_language_selector_dropdown' ) ) {
 		$wrapper_open  = sprintf( '<nav class="page-nav page-nav--left" aria-label="%s" aria-expanded="false"><ul class="site-selector">', /* translators: [front] */ esc_attr__( 'Available languages', 'amnesty' ) );
 		$wrapper_close = '</ul></nav><div class="site-separator"></div>';
 
+		$current_item_name = get_blog_option( $current[0]->blog_id, 'amnesty_language_name' ) ?: $current[0]->lang;
 		$current_item_open = sprintf(
 			'<li id="menu-item-%2$s-%3$s" class="menu-item menu-item-current menu-item-has-children menu-item-%2$s-%3$s" dir="%4$s"><span>%1$s</span>',
-			esc_html( ucwords( $current[0]->lang, 'UTF-8' ) ),
+			esc_html( ucwords( $current_item_name, 'UTF-8' ) ),
 			esc_attr( $current[0]->blog_id ),
 			esc_attr( $current[0]->item_id ),
 			esc_attr( $current[0]->direction ),
@@ -125,6 +130,10 @@ if ( ! function_exists( 'render_language_selector_dropdown' ) ) {
 		$other_items_close  = '</ul>';
 
 		foreach ( amnesty_get_sites() as $site ) {
+			if ( $site->current ) {
+				continue;
+			}
+
 			$other_items_inner .= render_language_selector_dropdown_item( $site, $others );
 		}
 
@@ -160,19 +169,16 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 	 * @return string
 	 */
 	function render_language_selector_dropdown_item( object $site, array $sites ): string {
-		// change this to site id
-		if ( get_current_blog_id() === $site->site_id ) {
-			return '';
-		}
-
-		$found = array_filter( $sites, fn ( object $remote ): bool => $remote->code === $site->code );
+		$found = array_filter( $sites, fn ( object $remote ): bool => $remote->blog_id === $site->site_id );
 		$found = array_values( $found );
 
 		// fallback to homepage if no translation
 		if ( ! count( $found ) ) {
+			$name = get_blog_option( $site->site_id, 'ammesty_language_name' ) ?: $site->lang;
+
 			return sprintf(
 				'<li id="menu-item-%3$s-%4$s" class="menu-item menu-item-%3$s-%4$s" dir="%5$s"><a href="%2$s">%1$s</a></li>',
-				esc_html( $site->lang ),
+				esc_html( $name ),
 				esc_url( $site->url ),
 				esc_attr( $site->site_id ),
 				esc_attr( $site->post_id ),
@@ -182,10 +188,11 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 
 		$item = $found[0];
 		$link = 'post' === $item->type ? get_blog_permalink( $item->blog_id, $item->item_id ) : get_blog_term_link( $item->blog_id, $item->item_id );
+		$name = get_blog_option( $item->blog_id, 'ammesty_language_name' ) ?: $item->lang;
 
 		return sprintf(
 			'<li id="menu-item-%3$s-%4$s" class="menu-item menu-item-%3$s-%4$s" dir="%5$s"><a href="%2$s">%1$s</a></li>',
-			esc_html( $item->lang ),
+			esc_html( $name ),
 			esc_url( $link ),
 			esc_attr( $item->blog_id ),
 			esc_attr( $item->item_id ),

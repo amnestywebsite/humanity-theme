@@ -57,7 +57,7 @@ class Core_Site_List {
 			switch_to_blog( $blog_id );
 
 			$sites[] = (object) [
-				'lang'      => $this->get_lang( $blog_id ),
+				'lang'      => get_site_language_name( $blog_id ),
 				'code'      => get_site_language_code( $blog_id ),
 				'direction' => $this->get_direction( $blog_id ),
 				'name'      => get_bloginfo( 'name' ),
@@ -114,25 +114,6 @@ class Core_Site_List {
 		add_blog_option( $blog_id, 'amnesty_text_direction', $direction );
 
 		return $direction;
-	}
-
-	/**
-	 * Retrieve language identifier for blog.
-	 *
-	 * @param int $blog_id the blog context
-	 *
-	 * @return string
-	 */
-	protected function get_lang( $blog_id = 0 ) {
-		$lang = $this->get_locale( $blog_id );
-		$lang = locale_get_display_name( $lang, $lang );
-
-		if ( false === apply_filters( 'amnesty_strip_locale_country', true ) ) {
-			return $lang;
-		}
-
-		// strip country identifier from language display name
-		return preg_replace( '/\s*?([(（]).*?([)）])\s*?/ui', '', $lang );
 	}
 
 }
