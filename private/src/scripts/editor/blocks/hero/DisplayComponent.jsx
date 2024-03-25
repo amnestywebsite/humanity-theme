@@ -197,7 +197,7 @@ const DisplayComponent = (props) => {
 
   return (
     <Fragment>
-      <BlockInspectorControls />
+      {BlockInspectorControls}
       <section className={classes} style={sectionBackground}>
       {attributes.type !== 'video' && (
         <div className="linkList-options">
