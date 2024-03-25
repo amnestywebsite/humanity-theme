@@ -50,7 +50,7 @@ class Header_Block_Renderer {
 	 *
 	 * @var \Amnesty\Get_Image_Data
 	 */
-	protected Get_Image_Data $image;
+	protected Get_Image_Data $image, $video;
 
 	/**
 	 * Constructor
@@ -79,6 +79,7 @@ class Header_Block_Renderer {
 		);
 
 		$this->image = new Get_Image_Data( $this->attributes['imageID'] );
+		$this->video = new Get_Image_Data( $this->attributes['featuredVideoId'] );
 	}
 
 	/**
@@ -176,18 +177,19 @@ class Header_Block_Renderer {
 	 * @return void
 	 */
 	protected function metadata() {
-		if ( ! $this->image->id() ) {
+		if ( ! $this->image->id() || ! $this->video->id() ) {
 			return;
 		}
 
 		$hide_caption = true === amnesty_validate_boolish( $this->attributes['hideImageCaption'] );
 		$hide_credit  = true === amnesty_validate_boolish( $this->attributes['hideImageCopyright'] );
 
-		if ( $hide_caption && $hide_credit || 'video' === $this->attributes['type'] ) {
+		if ( $hide_caption && $hide_credit ) {
 			return;
 		}
 
 		echo wp_kses_post( $this->image->metadata( ! $hide_caption, ! $hide_credit ) );
+		echo wp_kses_post( $this->video->metadata( ! $hide_caption, ! $hide_credit ) );
 	}
 
 	/**
