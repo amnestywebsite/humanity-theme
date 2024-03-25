@@ -17,3 +17,18 @@ ul.alignright {
   margin-right: 0;
   float: none !important;
 }
+
+.rtl ul.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rtl ul.alignleft {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.rtl ul.alignright {
+  margin-left: 0;
+  margin-right: auto;
+}
