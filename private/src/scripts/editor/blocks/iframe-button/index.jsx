@@ -43,18 +43,13 @@ registerBlockType('amnesty-core/iframe-button', {
     {
       name: 'default',
       // translators: [admin]
-      label: __('Primary (Yellow)', 'amnesty'),
+      label: __('Primary', 'amnesty'),
       isDefault: true,
     },
     {
       name: 'dark',
       // translators: [admin]
       label: __('Dark', 'amnesty'),
-    },
-    {
-      name: 'light',
-      // translators: [admin]
-      label: __('Light', 'amnesty'),
     },
   ],
 
