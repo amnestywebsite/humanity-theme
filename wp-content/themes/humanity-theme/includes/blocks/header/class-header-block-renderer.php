@@ -50,7 +50,14 @@ class Header_Block_Renderer {
 	 *
 	 * @var \Amnesty\Get_Image_Data
 	 */
-	protected Get_Image_Data $image, $video;
+	protected Get_Image_Data $image;
+
+	/**
+	 * The video data object
+	 *
+	 * @var \Amnesty\Get_Image_Data
+	 */
+	protected Get_Image_Data $video;
 
 	/**
 	 * Constructor
