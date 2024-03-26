@@ -56,6 +56,8 @@ require_once __DIR__ . '/tweet-action/register.php';
 require_once __DIR__ . '/tweet-action/render.php';
 require_once __DIR__ . '/related-content/register.php';
 require_once __DIR__ . '/related-content/render.php';
+require_once __DIR__ . '/hero/register.php';
+require_once __DIR__ . '/hero/render.php';
 
 if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 	/**
@@ -90,6 +92,7 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 		register_term_list_block();
 		register_tweet_action_block();
 		register_related_content_block();
+		register_hero_block();
 	}
 }
 

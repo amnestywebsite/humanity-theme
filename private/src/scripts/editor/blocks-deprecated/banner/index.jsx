@@ -12,6 +12,7 @@ registerBlockType('amnesty-core/header', {
   keywords: [__('Banner', 'amnesty')],
   supports: {
     className: false,
+    inserter: false,
   },
   attributes: {
     title: {
@@ -75,6 +76,12 @@ registerBlockType('amnesty-core/header', {
         isMultiBlock: false,
         blocks: ['amnesty-core/block-hero'],
         transform: (attributes) => createBlock('amnesty-core/block-hero', attributes),
+      },
+      {
+        type: 'block',
+        isMultiBlock: false,
+        blocks: ['amnesty-core/hero'],
+        transform: (attributes) => createBlock('amnesty-core/hero', attributes),
       },
     ],
   },

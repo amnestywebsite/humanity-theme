@@ -10,8 +10,21 @@ get_header();
 the_post();
 
 if ( amnesty_post_has_header() ) {
-	// phpcs:ignore
-	echo \Amnesty\Blocks\amnesty_render_header_block( amnesty_get_header_data() );
+	$header_data = amnesty_get_header_data();
+
+	if ( 'amnesty-core/hero' === $header_data['name'] ) {
+		echo wp_kses_post(
+			render_hero_block(
+				$header_data['attrs'],
+				amnesty_render_blocks( $header_data['innerBlocks'] ),
+				$header_data['name']
+			)
+		);
+	} else {
+		// phpcs:ignore
+		echo \Amnesty\Blocks\amnesty_render_header_block( $header_data['attrs'] );
+	}
+
 	amnesty_remove_header_from_content();
 }
 

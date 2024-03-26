@@ -15,8 +15,14 @@ get_header( 'shop' );
 the_post();
 
 if ( amnesty_post_has_header() ) {
-	// phpcs:ignore
-	echo \Amnesty\Blocks\amnesty_render_header_block( amnesty_get_header_data() );
+	$header_data = amnesty_get_header_data();
+
+	if ( 'amnesty-core/hero' === $header_data['name'] ) {
+		echo wp_kses_post( render_hero_block( $header_data['attrs'] ) );
+	} else {
+		// phpcs:ignore
+		echo \Amnesty\Blocks\amnesty_render_header_block( $header_data['attrs'] );
+	}
 }
 
 $categories = get_terms(
@@ -25,7 +31,7 @@ $categories = get_terms(
 		'hide_empty' => true,
 		'orderby'    => 'menu_order',
 		'order'      => 'ASC',
-	] 
+	]
 );
 
 ?>

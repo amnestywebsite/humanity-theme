@@ -22,8 +22,14 @@ $archive_page = get_option( 'amnesty_woocommerce_options_page' );
 $archive_page = isset( $archive_page['category_archive_page'][0] ) ? $archive_page['category_archive_page'][0] : 0;
 
 if ( amnesty_post_has_header( $archive_page ) ) {
-	// phpcs:ignore
-	echo \Amnesty\Blocks\amnesty_render_header_block( amnesty_get_header_data( $archive_page ) );
+	$header_data = amnesty_get_header_data( $archive_page );
+
+	if ( 'amnesty-core/hero' === $header_data['name'] ) {
+		echo wp_kses_post( render_hero_block( $header_data['attrs'] ) );
+	} else {
+		// phpcs:ignore
+		echo \Amnesty\Blocks\amnesty_render_header_block( $header_data['attrs'] );
+	}
 }
 
 

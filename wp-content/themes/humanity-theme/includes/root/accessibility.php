@@ -54,7 +54,7 @@ add_filter(
 	function ( array $allowed ) {
 		$allowed['div']['style'] = true;
 		return $allowed;
-	} 
+	}
 );
 
 if ( ! function_exists( 'amnesty_add_a11y_labels_to_tables' ) ) {
@@ -90,7 +90,7 @@ if ( ! function_exists( 'amnesty_add_a11y_labels_to_tables' ) ) {
 
 				return $open . $ths . $close;
 			},
-			$content 
+			$content
 		);
 
 		$content = preg_replace( '/<table([^>]*?)>/', '<table $1 role="table">', $content );
