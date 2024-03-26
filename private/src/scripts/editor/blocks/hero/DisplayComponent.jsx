@@ -215,7 +215,7 @@ const DisplayComponent = (props) => {
                 onSelect={(media) => {
                   setAttributes({
                     imageID: media.id,
-                    imageURL: media.originalImageURL,
+                    imageURL: media.url,
                   });
                 }
               }
