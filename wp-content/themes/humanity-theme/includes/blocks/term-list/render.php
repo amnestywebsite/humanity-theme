@@ -32,10 +32,6 @@ if ( ! function_exists( 'amnesty_term_list_block_get_terms' ) ) {
 							'compare' => 'NOT EXISTS',
 						],
 					],
-					[
-						'key'     => 'hidden',
-						'compare' => 'NOT EXISTS',
-					],
 				],
 			]
 		);
