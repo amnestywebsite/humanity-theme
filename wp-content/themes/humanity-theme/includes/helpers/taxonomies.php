@@ -422,22 +422,6 @@ if ( ! function_exists( 'amnesty_get_locations_by_type' ) ) {
 			];
 		}
 
-		// exclude "hidden" terms from results
-		if ( false === $args['show_hidden'] ) {
-			$args['get_terms']['meta_query'][] = [
-				'relation' => 'OR',
-				[
-					'key'     => 'hidden',
-					'compare' => 'NOT EXISTS',
-				],
-				[
-					'key'     => 'hidden',
-					'value'   => 'on',
-					'compare' => '!=',
-				],
-			];
-		}
-
 		// ensure type is set correctly
 		if ( ! in_array( $args['type'], [ 'default', 'region', 'subregion' ], true ) ) {
 			$args['type'] = 'default';
@@ -637,12 +621,6 @@ if ( ! function_exists( 'get_terms_from_query_var' ) ) {
 			'taxonomy' => $tax ?: $qvar,
 		];
 
-		// prevent retrieval of hidden locations
-		if ( ( get_option( 'amnesty_location_slug' ) ?: 'location' ) === $args['taxonomy'] ) {
-			$args['meta_key']     = 'hidden';
-			$args['meta_compare'] = 'NOT EXISTS';
-		}
-
 		$term_list = get_terms( $args );
 
 		if ( is_wp_error( $term_list ) ) {
@@ -678,10 +656,6 @@ if ( ! function_exists( 'amnesty_find_locations' ) ) {
 			// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
 			'meta_query' => [
 				'relation' => 'AND',
-				[
-					'key'     => 'hidden',
-					'compare' => 'NOT EXISTS',
-				],
 				[
 					'key'     => 'type',
 					'value'   => [ 'region', 'subregion', 'default' ],
@@ -817,12 +791,6 @@ if ( ! function_exists( 'amnesty_taxonomy_to_option_list' ) ) {
 	function amnesty_taxonomy_to_option_list( WP_Taxonomy $taxonomy ): array {
 		$args = [ 'taxonomy' => $taxonomy->name ];
 		$opts = [];
-
-		// prevent retrieval of hidden locations
-		if ( ( get_option( 'amnesty_location_slug' ) ?: 'location' ) === $args['taxonomy'] ) {
-			$args['meta_key']     = 'hidden';
-			$args['meta_compare'] = 'NOT EXISTS';
-		}
 
 		$terms = get_terms( $args );
 
