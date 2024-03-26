@@ -15,7 +15,7 @@ if ( $attrs['background'] ) {
 $classname = classnames( $name, 'header', $alignment, $background );
 ?>
 
-<section class="<?php echo esc_attr( $classname ); ?>" style="background-image:url('<?php echo esc_url( $image_url ); ?>')">
+<section class="<?php echo esc_attr( $classname ); ?>" style="aiic:ignore; background-image:url('<?php echo esc_url( $image_url ); ?>')">
 	<?php echo wp_kses_post( $video_output ); ?>
 	<div class="container">
 		<div class="header-content">
