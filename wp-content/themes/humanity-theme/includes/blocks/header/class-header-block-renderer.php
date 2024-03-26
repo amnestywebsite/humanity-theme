@@ -114,7 +114,7 @@ class Header_Block_Renderer {
 		$alignment  = $this->attributes['alignment'];
 		$background = $this->attributes['background'] ?: 'dark';
 
-		$has_credit = ! ! $this->image->credit();
+		$has_credit = (bool) $this->image->credit();
 
 		$classlist = classnames(
 			'page-hero',

@@ -3,7 +3,7 @@
 $has_credit = false;
 
 if ( $data['featured_image_id'] ?? false ) {
-	$has_credit = ! ! amnesty_get_image_credit( $data['featured_image_id'] );
+	$has_credit = (bool) amnesty_get_image_credit( $data['featured_image_id'] );
 }
 
 // translators: [front] %s: the title of the article

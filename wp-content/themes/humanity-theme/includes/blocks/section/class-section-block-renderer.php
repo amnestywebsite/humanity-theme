@@ -168,10 +168,10 @@ class Section_Block_Renderer {
 			[
 				'section--tinted'                          => 'grey' === $this->attributes['background'],
 				'section--textWhite'                       => 'white' === $this->attributes['textColour'],
-				'section--has-bg-image'                    => ! ! $this->attributes['backgroundImage'],
-				'section--has-bg-overlay'                  => ! ! $this->attributes['enableBackgroundGradient'],
-				sprintf( 'section--%s', $padding )         => ! ! $padding,
-				sprintf( 'section--bgOrigin-%s', $origin ) => ! ! $origin,
+				'section--has-bg-image'                    => (bool) $this->attributes['backgroundImage'],
+				'section--has-bg-overlay'                  => (bool) $this->attributes['enableBackgroundGradient'],
+				sprintf( 'section--%s', $padding )         => (bool) $padding,
+				sprintf( 'section--bgOrigin-%s', $origin ) => (bool) $origin,
 			]
 		);
 

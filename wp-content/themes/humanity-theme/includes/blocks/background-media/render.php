@@ -21,9 +21,9 @@ if ( ! function_exists( 'render_background_media_column' ) ) {
 		$classes = classnames(
 			'text-media--itemContainer',
 			[
-				"align{$attributes['horizontalAlignment']}" => ! ! $attributes['horizontalAlignment'],
-				"is-vertically-aligned-{$attributes['verticalAlignment']}" => ! ! $attributes['verticalAlignment'],
-				"has-{$attributes['background']}-background-color" => ! ! $attributes['background'],
+				"align{$attributes['horizontalAlignment']}" => (bool) $attributes['horizontalAlignment'],
+				"is-vertically-aligned-{$attributes['verticalAlignment']}" => (bool) $attributes['verticalAlignment'],
+				"has-{$attributes['background']}-background-color" => (bool) $attributes['background'],
 			] 
 		);
 

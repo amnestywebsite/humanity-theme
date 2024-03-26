@@ -24,7 +24,7 @@ if ( ! function_exists( 'amnesty_validate_boolish' ) ) {
 			'off', 'no', 'false', 'n', '0' => false,
 			'on', 'yes', 'true', 'y', '1' => true,
 			null => $default_value,
-			default => ! ! $variable,
+			default => (bool) $variable,
 		};
 	}
 }
