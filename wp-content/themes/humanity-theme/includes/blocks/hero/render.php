@@ -64,7 +64,7 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 			// $video_output used in hero.php view
 			$video_output .= sprintf(
 				'<div class="headerBackgroundVideo">
-					<video class="headerVideo" autoplay loop muted>
+					<video class="headerVideo video" autoplay loop muted>
 						<source src="%s" />
 					</video>
 				</div>',
