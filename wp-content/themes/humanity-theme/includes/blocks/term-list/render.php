@@ -75,31 +75,18 @@ if ( ! function_exists( 'amnesty_render_term_list_block' ) ) {
 			wp_cache_add( $cache_key, $terms );
 		}
 
-		$groups = [];
-
-		foreach ( $terms as $term ) {
-			$key = $term->name;
-			$key = remove_arabic_the( $key );
-			$key = mb_substr( $key, 0, 1, 'UTF-8' );
-			$key = mb_strtoupper( $key, 'UTF-8' );
-			$key = remove_accents( $key );
-			$key = remove_arabic_diacritics( $key );
-
-			if ( ! isset( $groups[ $key ] ) ) {
-				$groups[ $key ] = [];
-			}
-
-			$groups[ $key ][] = $term;
-		}
-
-		ksort( $groups );
+		$groups = group_terms_by_initial_ascii_letter( $terms );
 
 		foreach ( $groups as $key => &$terms ) {
-			usort( $terms, fn ( WP_Term $a, WP_Term $b ): int => $a->name <=> $b->name );
+			usort(
+				$terms,
+				fn ( WP_Term $a, WP_Term $b ): int =>
+					remove_accents( $a->name ) <=> remove_accents( $b->name )
+			);
 		}
 
 		$letters = array_keys( $groups );
-		$first   = $letters[0];
+		$first   = $letters[0]; // used in view
 
 		spaceless();
 		require realpath( __DIR__ . '/views/term-list.php' );

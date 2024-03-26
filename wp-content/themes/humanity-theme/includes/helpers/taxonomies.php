@@ -859,3 +859,35 @@ if ( ! function_exists( 'amnesty_filter_object_taxonomies_callback' ) ) {
 		return true;
 	}
 }
+
+if ( ! function_exists( 'group_terms_by_initial_ascii_letter' ) ) {
+	/**
+	 * Group an array of taxonomy terms by their first letters as ASCII
+	 *
+	 * @param array<int,WP_Term> $terms the terms to sort
+	 *
+	 * @return array<string,array<int,WP_Term>
+	 */
+	function group_terms_by_initial_ascii_letter( array $terms ): array {
+		$groups = [];
+
+		foreach ( $terms as $term ) {
+			$key = $term->name;
+			$key = remove_arabic_the( $key );
+			$key = mb_substr( $key, 0, 1, 'UTF-8' );
+			$key = mb_strtoupper( $key, 'UTF-8' );
+			$key = remove_accents( $key );
+			$key = remove_arabic_diacritics( $key );
+
+			if ( ! isset( $groups[ $key ] ) ) {
+				$groups[ $key ] = [];
+			}
+
+			$groups[ $key ][] = $term;
+		}
+
+		ksort( $groups );
+
+		return $groups;
+	}
+}
