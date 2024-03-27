@@ -1522,6 +1522,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@braintree/sanitize-url@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "@braintree/sanitize-url@npm:7.0.1"
+  checksum: d849b93f494aef173c5c1d419c1ad0851e9119e038dcc331155ffcf5f6e9c02cf3de8e571fbf91e042337e0890bf1ee0474896cd043c050f3b0be0c6d9af5176
+  languageName: node
+  linkType: hard
+
 "@csstools/css-parser-algorithms@npm:^2.3.1":
   version: 2.3.2
   resolution: "@csstools/css-parser-algorithms@npm:2.3.2"
@@ -5341,6 +5348,7 @@ __metadata:
     "@babel/plugin-transform-optional-chaining": "npm:^7.23.4"
     "@babel/preset-env": "npm:^7.16.8"
     "@babel/preset-react": "npm:^7.16.7"
+    "@braintree/sanitize-url": "npm:^7.0.1"
     "@wordpress/eslint-plugin": "npm:^17.4.0"
     "@wordpress/i18n": "npm:^4.2.4"
     autoprefixer: "npm:^10.4.0"
