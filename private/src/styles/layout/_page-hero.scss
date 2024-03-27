@@ -13,7 +13,7 @@
 
   @include mq(small) {
     padding-bottom: 80px;
-    min-height: 710px;
+    min-height: 450px;
     max-height: none;
     height: auto;
   }
@@ -94,6 +94,12 @@ p.page-heroContent {
 .page-heroSize--small {
   @include mq(small) {
     min-height: 450px;
+  }
+}
+
+.page-heroSize--large {
+  @include mq(small) {
+    min-height: 710px;
   }
 }
 
