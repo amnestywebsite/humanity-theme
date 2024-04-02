@@ -14,7 +14,7 @@ if ( ! function_exists( 'amnesty_add_taxonomy_filter_support_to_query' ) ) {
 	 */
 	function amnesty_add_taxonomy_filter_support_to_query( WP_Query $query ) {
 		// only modify main query on front end
-		if ( ! $query->is_main_query() || is_admin() || defined( 'REST_REQUEST' ) && REST_REQUEST ) {
+		if ( ( ! $query->is_main_query() || is_admin() || defined( 'REST_REQUEST' ) ) && REST_REQUEST ) {
 			return;
 		}
 
