@@ -132,11 +132,11 @@ if ( ! function_exists( 'map_array_to_boolean' ) ) {
 		}
 
 		if ( 'or' === strtolower( $mode ) ) {
-			$reducer = fn ( $input, $carry ) => $carry || ! ! $input;
+			$reducer = fn ( $input, $carry ) => $carry || (bool) $input;
 		}
 
 		if ( 'and' === strtolower( $mode ) ) {
-			$reducer = fn ( $input, $carry ) => $carry && ! ! $input;
+			$reducer = fn ( $input, $carry ) => $carry && (bool) $input;
 		}
 
 		return array_reduce( array_map( $callback, $the_array ), $reducer, null );
