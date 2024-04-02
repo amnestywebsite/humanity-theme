@@ -76,7 +76,11 @@ class DisplayComponent extends Component {
     wp.apiRequest({
       path: `/wp/v2/media/${featuredVideoId}`,
     }).then((resp) => {
-      this.setState({ videoUrl: resp.source_url });
+      this.setState({
+        videoUrl: resp.source_url,
+        videoCaption: resp.caption.rendered.replace(/<[^>]+>/g, ''),
+        videoDescription: resp.description.rendered.replace(/<[^>]+>/g, ''),
+      });
     });
   };
 
@@ -193,25 +197,34 @@ class DisplayComponent extends Component {
               value={attributes.type}
               onChange={this.createUpdateAttribute('type')}
             />
-
-            {attributes.type !== 'video' && (
-              <>
-                <ToggleControl
-                  // translators: [admin]
-                  label={__('Hide Image Caption', 'amnesty')}
-                  checked={attributes.hideImageCaption}
-                  onChange={() => setAttributes({ hideImageCaption: !attributes.hideImageCaption })}
-                />
-                <ToggleControl
-                  // translators: [admin]
-                  label={__('Hide Image Credit', 'amnesty')}
-                  checked={attributes.hideImageCopyright}
-                  onChange={() =>
-                    setAttributes({ hideImageCopyright: !attributes.hideImageCopyright })
-                  }
-                />
-              </>
-            )}
+            <>
+              <ToggleControl
+                // translators: [admin]
+                label={
+                  attributes.type === 'video'
+                    ? // translators: [admin]
+                      __('Hide Video Caption', 'amnesty')
+                    : // translators: [admin]
+                      __('Hide Image Caption', 'amnesty')
+                }
+                checked={attributes.hideImageCaption}
+                onChange={() => setAttributes({ hideImageCaption: !attributes.hideImageCaption })}
+              />
+              <ToggleControl
+                // translators: [admin]
+                label={
+                  attributes.type === 'video'
+                    ? // translators: [admin]
+                      __('Hide Video Credit', 'amnesty')
+                    : // translators: [admin]
+                      __('Hide Image Credit', 'amnesty')
+                }
+                checked={attributes.hideImageCopyright}
+                onChange={() =>
+                  setAttributes({ hideImageCopyright: !attributes.hideImageCopyright })
+                }
+              />
+            </>
           </PanelBody>
           <PanelBody
             title={
@@ -286,7 +299,7 @@ class DisplayComponent extends Component {
             </div>
             <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
           </div>
-          {this.state.imageData && (
+          {this.state.imageData && attributes.type === '' && (
             <div className="image-metadata">
               {shouldShowImageCaption && (
                 <span className="image-metadataItem image-caption">
@@ -296,6 +309,20 @@ class DisplayComponent extends Component {
               {shouldShowImageCredit && (
                 <span className="image-metadataItem image-copyright">
                   {this.state.imageData.description}
+                </span>
+              )}
+            </div>
+          )}
+          {this.state.videoUrl && attributes.type === 'video' && (
+            <div className="image-metadata">
+              {shouldShowImageCaption && (
+                <span className="image-metadataItem image-caption">
+                  {this.state.videoCaption}
+                </span>
+              )}
+              {shouldShowImageCredit && (
+                <span className="image-metadataItem image-copyright">
+                  {this.state.videoDescription}
                 </span>
               )}
             </div>

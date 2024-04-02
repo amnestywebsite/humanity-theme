@@ -240,7 +240,7 @@
 .page-hero.headerBlock.page-hero--video .container .image-metadata:nth-child(2) {
   display: flex;
 
-  @include mq("md-small") {
+  @include mq("small") {
     display: none;
   }
 }
@@ -248,7 +248,7 @@
 .page-hero.headerBlock.page-hero--video .container .image-metadata:nth-child(3) {
   display: none;
 
-  @include mq("md-small") {
+  @include mq("small") {
     display: flex;
   }
 }
