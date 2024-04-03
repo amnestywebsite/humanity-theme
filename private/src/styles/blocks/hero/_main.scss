@@ -164,6 +164,35 @@
   }
 }
 
+.header.has-video .headerBackgroundVideo {
+  display: none;
+
+  @include mq(small) {
+    display: block;
+  }
+}
+
+.header.has-video .container .image-metadata {
+  display: flex;
+
+  @include mq(small) {
+    display: none;
+  }
+}
+
+.header.has-video .image-metadata {
+  display: none;
+  margin-bottom: 0;
+
+  @include mq(small) {
+    display: flex;
+  }
+}
+
+.header .image-metadata:first-of-type {
+  display: none;
+}
+
 .rtl .header .header-content {
   text-align: right;
 }

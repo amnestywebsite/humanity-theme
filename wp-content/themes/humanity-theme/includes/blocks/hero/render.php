@@ -50,8 +50,8 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 			$image_url = get_the_post_thumbnail_url();
 		}
 
-		// Get image credit markup
 		$image = new Get_Image_Data( $image_id );
+		$video = new Get_Image_Data( $attrs['featuredVideoId'] );
 
 		// Define $video_output before it is used to prevent warnings
 		$video_output = '';
@@ -67,15 +67,17 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 					<video class="headerVideo video" autoplay loop muted>
 						<source src="%s" />
 					</video>
-				</div>',
-				esc_url( wp_get_attachment_url( $attrs['featuredVideoId'] ) )
+				</div>
+				%s',
+				esc_url( wp_get_attachment_url( $attrs['featuredVideoId'] ) ),
+				$video->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'] )
 			);
-		} elseif ( 'video' !== $attrs['type'] ) {
-			// Build output for the image caption and credit
-			// $image_meta_output used in hero.php view
-			// Reverse the boolean value of the arguments to match the value of the arguments in the function
-			$image_meta_output .= $image->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'] );
 		}
+
+		// Build output for the image/video caption and credit
+		// $image_meta_output used in hero.php view
+		// Reverse the boolean value of the arguments to match the value of the arguments in the function
+		$image_meta_output .= $image->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'] );
 
 		// Define $inner_blocks before it is used to prevent warnings
 		$inner_blocks = '';

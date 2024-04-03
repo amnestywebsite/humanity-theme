@@ -12,7 +12,13 @@ if ( $attrs['background'] ) {
 	$background = 'headerBackground--' . $attrs['background'];
 }
 
-$classname = classnames( $name, 'header', $alignment, $background );
+$has_video = '';
+
+if ( $attrs['type'] === 'video' ) {
+	$has_video = 'has-video';
+}
+
+$classname = classnames( $name, 'header', $alignment, $background, $has_video );
 ?>
 
 <section class="<?php echo esc_attr( $classname ); ?>" style="aiic:ignore; background-image:url('<?php echo esc_url( $image_url ); ?>')">

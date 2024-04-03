@@ -11,7 +11,7 @@ const { __ } = wp.i18n;
 
 const DisplayComponent = (props) => {
   const [imageData, setImageData] = useState({});
-  const [videoUrl, setVideoUrl] = useState(null);
+  const [videoData, setVideoData] = useState({});
   const { attributes = {}, setAttributes, className } = props;
   const videoRef = useRef();
 
@@ -115,7 +115,11 @@ const DisplayComponent = (props) => {
     wp.apiFetch({
       path: `/wp/v2/media/${featuredVideoId}`,
     }).then((media) => {
-      setVideoUrl(media.source_url);
+      setVideoData({
+        caption: media.caption.rendered.replace(/<[^>]+>/g, ''),
+        credit: media.description.rendered.replace(/<[^>]+>/g, ''),
+        url: media.source_url,
+      })
     });
   }
 
@@ -161,20 +165,30 @@ const DisplayComponent = (props) => {
           value={attributes.type || 'image'}
           onChange={(type) => setAttributes({ type })}
         />
-        {attributes.type !== 'video' && (
-          <>
-            <ToggleControl
-              label={/* translators: [admin] */ __('Hide Image Caption', 'amnesty')}
-              checked={attributes.hideImageCaption}
-              onChange={() => setAttributes({ hideImageCaption: !attributes.hideImageCaption })}
-            />
-            <ToggleControl
-              label={/* translators: [admin] */ __('Hide Image Credit', 'amnesty')}
-              checked={attributes.hideImageCredit}
-              onChange={() => setAttributes({ hideImageCredit: !attributes.hideImageCredit })}
-            />
-          </>
-        )}
+        <>
+          <ToggleControl
+            label={
+              attributes.type === 'video'
+                ? /* translators: [admin] */
+                  __('Hide Video Caption', 'amnesty')
+                : /* translators: [admin] */
+                  __('Hide Image Caption', 'amnesty')
+              }
+            checked={attributes.hideImageCaption}
+            onChange={() => setAttributes({ hideImageCaption: !attributes.hideImageCaption })}
+          />
+          <ToggleControl
+            label={
+              attributes.type === 'video'
+                ? /* translators: [admin] */
+                  __('Hide Video Credit', 'amnesty')
+                : /* translators: [admin] */
+                  __('Hide Image Credit', 'amnesty')
+            }
+            checked={attributes.hideImageCredit}
+            onChange={() => setAttributes({ hideImageCredit: !attributes.hideImageCredit })}
+          />
+        </>
       </PanelBody>
       <PanelBody title={mediaPanelTitle(attributes.type)}>
         <PostFeaturedImage />
@@ -186,7 +200,7 @@ const DisplayComponent = (props) => {
               featuredVideoId={attributes.featuredVideoId}
               onUpdate={(featuredVideoId) => {
                 setAttributes({ featuredVideoId });
-                setVideoUrl(null);
+                setVideoData({});
               }}
             />
           </PanelBody>
@@ -224,10 +238,10 @@ const DisplayComponent = (props) => {
               )}
             </div>
         )}
-        {videoUrl && attributes.type === 'video' && (
+        {videoData.url && attributes.type === 'video' && (
           <div className="headerBackgroundVideo">
             <video className="headerVideo" ref={videoRef}>
-              <source src={videoUrl} />
+              <source src={videoData.url} />
             </video>
           </div>
         )}
@@ -282,6 +296,20 @@ const DisplayComponent = (props) => {
               {showImageCredit && (
                 <span className="image-metaItem headerImageCredit">
                   {imageData.credit}
+                </span>
+              )}
+            </div>
+          )}
+          {videoData.url && attributes.type === 'video' && (
+            <div className="image-meta">
+              {showImageCaption && (
+                <span className="image-metaItem headerImageCaption">
+                  {videoData.caption}
+                </span>
+              )}
+              {showImageCredit && (
+                <span className="image-metaItem headerImageCredit">
+                  {videoData.credit}
                 </span>
               )}
             </div>
