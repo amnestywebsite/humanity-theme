@@ -217,6 +217,7 @@ require_once realpath( __DIR__ . '/includes/rest-api/users.php' );
  */
 #region rss
 require_once realpath( __DIR__ . '/includes/rss/filter-feed-by-term.php' );
+require_once realpath( __DIR__ . '/includes/rss/class-rss-feed-filters.php' );
 #endregion rss
 
 /**
