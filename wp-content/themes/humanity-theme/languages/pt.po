@@ -2,607 +2,160 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Amnesty Core\n"
 "Report-Msgid-Bugs-To: @github:amnestywebsite/amnesty-wp-theme/issues\n"
-"POT-Creation-Date: 2023-03-06 19:20+0000\n"
-"PO-Revision-Date: 2023-02-16 11:41+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-03-06 19:20+0000\n"
+"PO-Revision-Date: 2023-02-16 11:41+0000\n"
+"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: wp-content/themes/amnesty-wp-theme/header-petitions.php:40
+#. translators: [front] Accessibility label for screen reader/keyboard users
+#: header-shop.php:20
+#: header-taxonomy.php:21
+#: header.php:40
 msgid "Skip to main content"
 msgstr "Saltar para o conteúdo principal"
 
-#. translators: Link to return to all posts of category %s
 #. translators: [front] Link to return to all posts of category %s
-#: wp-content/themes/amnesty-wp-theme/attachment-remote.php:75
-#: wp-content/themes/amnesty-wp-theme/attachment.php:58
-#: wp-content/themes/amnesty-wp-theme/partials/single/meta.php:21
+#: partials/single/meta-area.php:34
+#: partials/single/term-area.php:38
 #, php-format
 msgid "Back to %s"
 msgstr "Voltar para %s"
 
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/attachment-remote.php:86
-#: wp-content/themes/amnesty-wp-theme/attachment.php:69
-#: wp-content/themes/amnesty-wp-theme/partials/single/recipients.php:18
-msgid "View Recipients"
-msgstr "Exibir destinatários"
-
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/attachment-remote.php:96
-#: wp-content/themes/amnesty-wp-theme/attachment.php:79
-#: wp-content/themes/amnesty-wp-theme/partials/single/termlist.php:19
-msgid "Topics"
-msgstr "Tópicos"
-
-#. translators: [front] ARIA
 #. translators: [admin]
-#. translators: [front] ARIA the page or post sidebar
-#. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/attachment-remote.php:106
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:22
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:73
-#: wp-content/themes/amnesty-wp-theme/single.php:57
-#: wp-content/themes/amnesty-wp-theme/attachment.php:89
+#: includes/post-types/sidebar.php:22
+#: includes/post-types/sidebar.php:73
+#: assets/scripts/blocks.js:9714
 msgid "Sidebar"
 msgstr "Barra Lateral"
 
 #. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/order/order-details.php:43
-msgid "Order details"
-msgstr "Detalhes do pedido"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/order/order-details.php:48
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/review-order.php:23
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:32
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:79
-msgid "Product"
-msgstr "Produto"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/order/order-details.php:49
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/review-order.php:24
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:34
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:103
+#. translators: [admin]
+#: woocommerce/order/order-details.php:52
+#: assets/scripts/blocks.js:27271
+#: assets/scripts/blocks.js:32520
 msgid "Quantity"
 msgstr "Quantidade"
 
 #. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/order/order-details.php:50
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:33
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:99
+#: woocommerce/order/order-details.php:53
 msgid "Price"
 msgstr "Preço"
 
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/woocommerce/order/order-details.php:88
-msgid "Note:"
-msgstr "Nota:"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/order/order-details.php:123
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-empty.php:32
-msgid "Return to shop"
-msgstr "Retornar para loja"
-
-#. translators: [front] Donate
-#. translators: [front] Donate forms
-#: wp-content/themes/amnesty-wp-theme/woocommerce/order/order-details-customer.php:29
-#: wp-content/themes/amnesty-wp-theme/partials/orders/customer-details-with-shipping.php:35
-msgid "Billing address"
-msgstr "Endereço de cobrança"
-
-#. translators: [front] Donate
-#. translators: [admin]
-#. translators: [front] Donate forms
-#: wp-content/themes/amnesty-wp-theme/woocommerce/order/order-details-customer.php:31
-#: wp-content/themes/amnesty-wp-theme/includes/woo/emails.php:28
-#: wp-content/themes/amnesty-wp-theme/includes/woo/emails.php:69
-#: wp-content/themes/amnesty-wp-theme/partials/orders/customer-details-with-shipping.php:37
-#: wp-content/themes/amnesty-wp-theme/partials/orders/customer-details-with-shipping.php:44
-msgid "N/A"
-msgstr "N/D"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/downloads.php:39
-msgid "No downloads available yet."
-msgstr "Ainda não há downloads disponíveis."
-
-#. translators: [front] Donate
-#. translators: [front] Donate Shop
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/downloads.php:44
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:86
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/orders.php:37
-msgid "Browse products"
-msgstr "Navegar produtos"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:21
-msgid "Subscription"
-msgstr "Assinatura"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:22
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:36
-msgid "Status"
-msgstr "Status"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:23
-msgctxt "table heading"
-msgid "Next payment"
-msgstr "Próximo pagamento"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:24
-msgctxt "table heading"
-msgid "Total"
-msgstr "Total"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:32
-#: wp-content/themes/amnesty-wp-theme/includes/admin/list-table-filters.php:18
-msgid "ID"
-msgstr "ID"
-
-#. translators: %s the order number
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:33
-#, php-format
-msgctxt "hash before order number"
-msgid "#%s"
-msgstr "#%s"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:39
-msgctxt "table heading"
-msgid "Next Payment"
-msgstr "Próximo pagamento"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:45
-msgctxt "Used in data attribute. Escaped"
-msgid "Total"
-msgstr "Total"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:49
-msgctxt "view a subscription"
-msgid "View"
-msgstr "Ver"
-
-#. translators: [front] Donate
-#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/
+#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #. translators: [front]
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Previous post navigation label
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest
 #. translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:60
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/slider/render.php:16
-#: wp-content/themes/amnesty-wp-theme/partials/myaccount/orders.php:73
-#: wp-content/themes/amnesty-wp-theme/partials/archive/filters.php:40
-#: wp-content/themes/amnesty-wp-theme/partials/archive/categories.php:56
-#: wp-content/themes/amnesty-wp-theme/partials/pagination.php:10
-#: wp-content/themes/amnesty-wp-theme/partials/pagination.php:33
-#: wp-content/themes/amnesty-wp-theme/partials/search/pagination.php:12
-#: wp-content/themes/amnesty-wp-theme/partials/search/pagination.php:37
+#. translators: [admin]
+#: includes/blocks/slider/render.php:16
+#: partials/archive/categories.php:49
+#: partials/pagination.php:10
+#: partials/pagination.php:35
+#: partials/search/pagination.php:18
+#: partials/search/pagination.php:45
+#: assets/scripts/blocks.js:31032
+#: assets/scripts/blocks.js:31588
+#: assets/scripts/blocks.js:31678
+#: assets/scripts/blocks.js:31792
+#: assets/scripts/blocks.js:31903
+#: assets/scripts/blocks.js:32016
+#: assets/scripts/blocks.js:32061
+#: assets/scripts/blocks.js:32106
 msgid "Previous"
 msgstr "Anterior"
 
-#. translators: [front] Donate
-#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/
+#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #. translators: [front]
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Next post navigation label
-#. translators: [front]  https://isaidotorgstg.wpengine.com/en/latest/
+#. translators: [front]  https://isaidotorgstg.wpengine.com/en/latest
 #. translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label
-#. translators: [front]  https://isaidotorgstg.wpengine.com/en/latest/
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:64
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/slider/render.php:15
-#: wp-content/themes/amnesty-wp-theme/partials/myaccount/orders.php:77
-#: wp-content/themes/amnesty-wp-theme/partials/archive/filters.php:41
-#: wp-content/themes/amnesty-wp-theme/partials/archive/categories.php:57
-#: wp-content/themes/amnesty-wp-theme/partials/pagination.php:12
-#: wp-content/themes/amnesty-wp-theme/partials/pagination.php:48
-#: wp-content/themes/amnesty-wp-theme/partials/search/pagination.php:14
-#: wp-content/themes/amnesty-wp-theme/partials/search/pagination.php:52
+#. translators: [admin]
+#: includes/blocks/slider/render.php:15
+#: partials/archive/categories.php:50
+#: partials/pagination.php:12
+#: partials/pagination.php:50
+#: partials/search/pagination.php:20
+#: partials/search/pagination.php:60
+#: assets/scripts/blocks.js:31029
+#: assets/scripts/blocks.js:31585
+#: assets/scripts/blocks.js:31675
+#: assets/scripts/blocks.js:31789
+#: assets/scripts/blocks.js:31900
+#: assets/scripts/blocks.js:32013
+#: assets/scripts/blocks.js:32058
+#: assets/scripts/blocks.js:32103
 msgid "Next"
 msgstr "Próximo"
 
-#. translators: [front] %1$s: open link html, %2$s: close link html
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:76
-#, php-format
-msgid ""
-"You have reached the end of subscriptions. Go to the %1$sfirst page%2$s."
-msgstr ""
-"Você chegou ao fim das assinaturas. Vá para a primeira página de "
-"%1$sfirst%2$s."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/my-subscriptions.php:79
-msgid "You have no active subscriptions."
-msgstr "Você não tem nenhuma assinatura ativa no momento."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/myaccount/orders.php:33
-msgid "No order has been made yet."
-msgstr "Nenhum pedido foi feito ainda."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/review-order.php:25
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/review-order.php:58
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/recurring-totals.php:27
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/recurring-totals.php:28
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:35
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:125
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-totals.php:30
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-totals.php:32
-msgid "Subtotal"
-msgstr "Subtotal"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/review-order.php:110
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-totals.php:104
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-totals.php:106
-msgid "Total"
-msgstr "Total"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/form-coupon.php:25
-msgid "Have a coupon?"
-msgstr "Tem um cupom?"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/form-coupon.php:27
-msgid "Click here to enter your code"
-msgstr "Clique aqui para inserir seu código"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/form-coupon.php:36
-msgid "If you have a coupon code, please apply it below."
-msgstr "Se você tiver um código de cupom, aplique-o abaixo."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/form-coupon.php:39
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:140
-msgid "Coupon code"
-msgstr "Código do cupom"
-
-#. translators: [front]
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/form-coupon.php:40
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:140
-msgid "Apply coupon"
-msgstr "Aplicar cupom"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/payment.php:34
-msgid "Please fill in your details above to see available payment methods."
-msgstr ""
-"Por favor, preencha os seus dados acima para ver os métodos de pagamento "
-"disponíveis."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/payment.php:38
-msgid ""
-"Sorry, it seems that there are no available payment methods for your state. "
-"Please contact us if you require assistance or wish to make alternate "
-"arrangements."
-msgstr ""
-"Desculpe, parece que não há métodos de pagamento disponíveis para o seu "
-"estado. Por favor, entre em contato conosco se precisar de ajuda ou desejar "
-"fazer o pagamento por meios alternativos."
-
-#. translators: [front] Donate $1 and $2 opening and closing emphasis tags respectively
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/payment.php:50
-#, php-format
-msgid ""
-"Since your browser does not support JavaScript, or it is disabled, please "
-"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
-"You may be charged more than the amount stated above if you fail to do so."
-msgstr ""
-"Como seu navegador não suporta JavaScript, ou está desativado, clique no "
-"botão %1$sAtualizar total%2$s antes de fazer seu pedido. Se não fizer isso, "
-"o valor a ser cobrado será maior que o valor indicado acima."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/payment.php:52
-msgid "Update totals"
-msgstr "Atualizar totais"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/recurring-totals.php:19
-msgid "Recurring totals"
-msgstr "Totais recorrentes"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/recurring-totals.php:124
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/recurring-totals.php:125
-msgid "Recurring total"
-msgstr "Total recorrente"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:24
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:43
-msgid "Thank you. Your order has been received."
-msgstr "Obrigado. Seu pedido foi recebido."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:31
-msgid ""
-"Unfortunately your order cannot be processed as the originating bank/"
-"merchant has declined your transaction. Please attempt your purchase again."
-msgstr ""
-"Infelizmente o seu pedido não pode ser processado, seu banco (ou operadora) "
-"não aprovou seu pagamento. Por favor, tente sua compra novamente."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:34
-msgid "Pay"
-msgstr "Pagar"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:37
-msgid "My account"
-msgstr "Minha conta"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:47
-msgid "Order number:"
-msgstr "Número do pedido:"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:52
-msgid "Date:"
-msgstr "Data:"
-
-#. translators: [front] Donate
 #. translators: [front] Donate forms
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:58
-#: wp-content/themes/amnesty-wp-theme/partials/orders/customer-details-with-shipping.php:17
+#: partials/orders/customer-details-with-shipping.php:17
 msgid "Email:"
 msgstr "E-mail:"
 
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:64
-msgid "Total:"
-msgstr "Total:"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/thankyou.php:70
-msgid "Payment method:"
-msgstr "Método de pagamento:"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/form-shipping.php:27
-msgid "Ship to a different address?"
-msgstr "Enviar para um endereço diferente?"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/checkout/form-shipping.php:58
-msgid "Additional information"
-msgstr "Informação adicional"
-
 #. translators: [front] Donate %s: product category
-#: wp-content/themes/amnesty-wp-theme/woocommerce/archive-product_cat.php:41
+#: woocommerce/archive-product_cat.php:41
 #, php-format
 msgid "Products in the %s category"
 msgstr "Produtos na categoria %s"
 
-#. translators: [front] Donate
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/woocommerce/archive-product.php:42
-#: wp-content/themes/amnesty-wp-theme/partials/shop/catalogue-header.php:17
+#. translators: [front] Donate
+#: partials/shop/catalogue-header.php:17
+#: woocommerce/archive-product.php:42
 msgid "All products"
 msgstr "Todos os produtos"
 
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate/
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:58
-#: wp-content/themes/amnesty-wp-theme/includes/woo/cart.php:83
-msgid "Remove this item"
-msgstr "Remover este item"
-
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:94
-msgid "Available on backorder"
-msgstr "Disponível em ordem pendente"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:140
-msgid "Coupon:"
-msgstr "Cupom:"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart.php:145
-msgid "Update cart"
-msgstr "Atualizar carrinho"
-
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-shipping.php:52
-#, php-format
-msgid "Shipping to %s."
-msgstr "Entrega em %s."
-
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-shipping.php:53
-msgid "Change address"
-msgstr "Alterar endereço"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-shipping.php:56
-msgid "Shipping options will be updated during checkout."
-msgstr ""
-"*Mais opções de envio serão apresentadas durante a finalização da compra."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-shipping.php:64
-msgid "Enter your address to view shipping options."
-msgstr "Digite seu endereço para ver as opções de remessa."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-shipping.php:67
-msgid ""
-"There are no shipping options available. Please ensure that your address has "
-"been entered correctly, or contact us if you need any help."
-msgstr ""
-"Não há Formas de Entrega disponíveis. Por favor, verifique se o seu Endereço "
-"foi digitado corretamente ou entre em Contato conosco se precisar de ajuda."
-
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-shipping.php:70
-#, php-format
-msgid "No shipping options were found for %s."
-msgstr "Não foram encontradas opções de remessa para %s."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-shipping.php:72
-msgid "Enter a different address"
-msgstr "Digite um endereço diferente"
-
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/shipping-calculator.php:24
-msgid "Calculate shipping"
-msgstr "Calcular frete"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/shipping-calculator.php:31
-msgid "Select a country&hellip;"
-msgstr "Selecione um país&hellip;"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/shipping-calculator.php:50
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/shipping-calculator.php:55
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/shipping-calculator.php:67
-msgid "State / County"
-msgstr "Estado"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/shipping-calculator.php:56
-msgid "Select an option&hellip;"
-msgstr "Selecione uma opção&hellip;"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/shipping-calculator.php:76
-msgid "City"
-msgstr "Cidade"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/shipping-calculator.php:82
-msgid "Postcode / ZIP"
-msgstr "CEP"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/shipping-calculator.php:86
-msgid "Update"
-msgstr "Atualizar"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-totals.php:25
-msgid "Cart totals"
-msgstr "Total do Carrinho"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-totals.php:54
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-totals.php:56
-msgid "Shipping"
-msgstr "Envio"
-
-#. translators: [front] %s location.
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/cart-totals.php:76
-#, php-format
-msgid "(estimated for %s)"
-msgstr "(estimado para %s)"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/cart/proceed-to-checkout-button.php:26
-msgid "Proceed to checkout"
-msgstr "Finalizar compra"
-
-#. translators: [front] Donate product description
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/tabs/tabs.php:34
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:60
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/abstract-class-taxonomy.php:256
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/abstract-class-taxonomy.php:285
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:185
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:237
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:266
+#: includes/taxonomies/class-taxonomy-content-types.php:185
 msgid "Description"
 msgstr "Descrição"
 
-#. translators: [front] Donate Shop
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/add-to-cart/variable.php:32
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/add-to-cart/variable-subscription.php:25
-msgid "This product is currently out of stock and unavailable."
-msgstr "Este produto está fora de estoque e indisponível."
-
-#. translators: [front] Donate Clear Cart
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/add-to-cart/variable.php:48
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/add-to-cart/variable.php:58
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/add-to-cart/variable-subscription.php:71
-msgid "Clear"
-msgstr "Limpar"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/add-to-cart/variable-subscription.php:30
-msgid "Resubscribe"
-msgstr "Re-assinar"
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/add-to-cart/variable-subscription.php:32
-msgid "You have an active subscription to this product already."
-msgstr "Você já tem uma assinatura ativa deste produto."
-
-#. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/add-to-cart/variable-subscription.php:36
-msgid "You have added a variation of this product to the cart already."
-msgstr "Você já adicionou uma variação deste produto para o carrinho."
-
 #. translators: [front] Donate related products
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/related.php:34
+#: woocommerce/single-product/related.php:36
 msgid "Related Items"
 msgstr "Itens relacionados"
 
-#. translators: [front] Donate Label for shop index
 #. translators: [front] Label for shop index
-#: wp-content/themes/amnesty-wp-theme/woocommerce/single-product/related.php:37
-#: wp-content/themes/amnesty-wp-theme/partials/shop/catalogue-header.php:25
+#. translators: [front] Donate Label for shop index
+#: partials/shop/catalogue-header.php:25
+#: woocommerce/single-product/related.php:39
 msgid "Catalogue"
 msgstr "Catálogo"
 
 #. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/global/quantity-input.php:39
-#: wp-content/themes/amnesty-wp-theme/woocommerce/global/quantity-input.php:51
+#: woocommerce/global/quantity-input.php:39
+#: woocommerce/global/quantity-input.php:51
 msgid "Qty"
 msgstr "Qtd"
 
 #. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/woocommerce/loop/result-count.php:27
+#: woocommerce/loop/result-count.php:27
 msgid "Showing one result"
 msgstr "Mostrando um resultado"
 
 #. translators: [front] Donate %d: total results
-#: wp-content/themes/amnesty-wp-theme/woocommerce/loop/result-count.php:33
+#: woocommerce/loop/result-count.php:33
 #, php-format
 msgid "Showing all %d result"
 msgid_plural "Showing all %d results"
 msgstr[0] "Exibindo %d resultado"
 msgstr[1] "Mostrando todos os %d resultados"
 
-#: wp-content/themes/amnesty-wp-theme/woocommerce/loop/result-count.php:43
+#. translators: [front] Donate 1: first result 2: last result 3: total results
+#: woocommerce/loop/result-count.php:43
 #, php-format
 msgctxt "shown with first and last result on product pages"
 msgid "Showing %1$d&ndash;%2$d of %3$d result"
@@ -610,260 +163,241 @@ msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
 msgstr[0] "Showing %1$d&ndash;%2$d of %3$d results"
 msgstr[1] "Mostrando %1$d&ndash;%2$d de %3$d resultados"
 
-#. translators: [front] Donate Label for post sorting options
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
-#: wp-content/themes/amnesty-wp-theme/woocommerce/loop/orderby.php:29
-#: wp-content/themes/amnesty-wp-theme/partials/archive/header.php:33
-#: wp-content/themes/amnesty-wp-theme/partials/search/header.php:25
+#. translators: [front] Donate Label for post sorting options
+#: partials/archive/header.php:44
+#: partials/search/header.php:36
+#: woocommerce/loop/orderby.php:29
 msgid "Sort by"
 msgstr "Ordenar por"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404/ ARIA
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404/
-#: wp-content/themes/amnesty-wp-theme/404.php:15
-#: wp-content/themes/amnesty-wp-theme/404.php:16
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: 404.php:15
+#: 404.php:16
 msgid "Page Not Found"
 msgstr "Página não encontrada"
 
-#: wp-content/themes/amnesty-wp-theme/404.php:18
+#: 404.php:18
 msgid "The page you are looking for does not exist."
 msgstr "A página que você está procurando não existe."
 
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404/
-#: wp-content/themes/amnesty-wp-theme/404.php:19
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: 404.php:19
 msgid "Go to the Homepage"
 msgstr "Ir para a homepage"
 
 #. translators: [front] ARIA https://www.amnesty.eu/news/ a number followed by the string on the list of posts
-#: wp-content/themes/amnesty-wp-theme/archive.php:66
+#: archive.php:66
 msgid "Results"
 msgstr "Resultados"
 
 #. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/term-list/render.php:56
+#. translators: [admin]
+#: includes/blocks/term-list/render.php:60
+#: assets/scripts/blocks.js:34332
+#: assets/scripts/blocks.js:34389
 msgid "A-Z of Countries and Regions"
 msgstr "A-Z de Países e Regiões"
 
-#. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block/
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/regions/render.php:18
+#. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#. translators: [admin]
+#: includes/blocks/regions/render.php:20
+#: assets/scripts/blocks.js:34639
 msgid "Explore by Region"
 msgstr "Explorar por Região"
 
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block/
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/regions/render.php:73
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#: includes/blocks/regions/render.php:82
 msgid "Hierarchical list of terms"
 msgstr "Lista hierárquica de termos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/block-category.php:20
-#: wp-content/themes/amnesty-wp-theme/includes/block-patterns/pattern-category.php:21
+#: includes/block-patterns/pattern-category.php:23
+#: includes/blocks/block-category.php:24
 msgid "Amnesty Core"
 msgstr "Núcleo de anistia"
 
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/
 #. translators: [front]
 #. translators: [front] AM I think this is used on the petition index or petition block
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars
 #. translators: [front] used by sections on petition forms
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/petition-list/render.php:54
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/iframe-button/register.php:27
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/iframe-button/render.php:19
-#: wp-content/themes/amnesty-wp-theme/partials/petitions/item.php:41
+#. translators: [admin]
+#: includes/blocks/iframe-button/register.php:29
+#: includes/blocks/iframe-button/render.php:21
+#: includes/blocks/petition-list/render.php:54
+#: partials/petitions/item.php:41
+#: assets/scripts/blocks.js:13436
+#: assets/scripts/blocks.js:29758
+#: assets/scripts/blocks.js:29798
+#: assets/scripts/blocks.js:30408
 msgid "Act Now"
 msgstr "Agir agora"
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/  used by sections, when a form rather than an Iframe is used
 #. translators: [front] used by sections on petition forms
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/petition-list/render.php:57
-#: wp-content/themes/amnesty-wp-theme/partials/petitions/item.php:38
+#: includes/blocks/petition-list/render.php:57
+#: partials/petitions/item.php:38
 msgctxt "User has signed this petition."
 msgid "Signed!"
 msgstr "Assinado!"
 
 #. translators: [front] ARIA
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/tweet-action/render.php:38
-#: wp-content/themes/amnesty-wp-theme/partials/article-share.php:22
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: includes/blocks/tweet-action/render.php:41
+#: partials/article-share.php:20
 msgid "Twitter Logo"
 msgstr "Logotipo do Twitter"
 
-#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action/
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/tweet-action/render.php:53
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/tweet-action/render.php:54
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action
+#. translators: [admin]
+#: includes/blocks/tweet-action/render.php:56
+#: includes/blocks/tweet-action/render.php:57
+#: assets/scripts/blocks.js:29280
+#: assets/scripts/blocks.js:29282
+#: assets/scripts/blocks.js:29373
+#: assets/scripts/blocks.js:29375
+#: assets/scripts/blocks.js:29415
+#: assets/scripts/blocks.js:29417
 msgid "Send this Tweet"
 msgstr "Enviar este tweet"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/slider/views/slide.php:17
+#. translators: [admin]
+#: includes/blocks/slider/views/slide.php:20
+#: assets/scripts/blocks.js:31318
+#: assets/scripts/blocks.js:31388
+#: assets/scripts/blocks.js:31428
+#: assets/scripts/blocks.js:31509
 msgid "Tap here to return to gallery"
 msgstr "Toque aqui para regressar à Galeria"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/slider/views/slide.php:38
+#. translators: [admin]
+#: includes/blocks/slider/views/slide.php:41
+#: assets/scripts/blocks.js:31334
+#: assets/scripts/blocks.js:31404
+#: assets/scripts/blocks.js:31444
+#: assets/scripts/blocks.js:31523
+#: assets/scripts/blocks.js:31664
+#: assets/scripts/blocks.js:31777
+#: assets/scripts/blocks.js:31888
+#: assets/scripts/blocks.js:32000
 msgid "Toggle Content"
 msgstr "Alternar o conteúdo"
 
 #. translators: [front]
-#. translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource/
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/download/render.php:23
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/download/render.php:68
+#. translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource
+#. translators: [admin]
+#: includes/blocks/download/render.php:23
+#: includes/blocks/download/render.php:68
+#: assets/scripts/blocks.js:32356
 msgid "Download"
 msgstr "Download"
 
-#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/menu/render.php:23
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:24
 msgid "Category List"
 msgstr "Lista de categorias"
 
-#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/menu/render.php:88
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/menu/render.php:124
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:97
+#: includes/blocks/menu/render.php:135
 msgid "List of page sections"
 msgstr "Lista de subcategorias"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/post-list/views/list-item.php:38
+#: includes/blocks/post-list/views/list-item-date.php:10
 msgid "Date"
 msgstr "Data"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/post-list/views/list-item.php:43
+#: includes/blocks/post-list/views/list-item-date.php:23
 msgid "Updated"
 msgstr "Atualizado"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/post-list/views/list-item.php:53
+#. translators: [admin]
+#: includes/blocks/post-list/views/list-item-author.php:9
+#: assets/scripts/blocks.js:26862
 msgid "Author"
 msgstr "Autor"
 
 #. translators: [front] no context avalible
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/embed-sutori/render.php:27
+#: includes/blocks/embed-sutori/render.php:27
 msgctxt "Toggle visibility of Sutori Timeline"
 msgid "Click to show/hide timeline"
 msgstr "Clique para mostrar/ocultar a linha do tempo"
 
-#. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/header/class-header-block-renderer.php:189
-msgid "List of terms assigned to this post."
-msgstr "Lista de termos atribuídos a este post."
-
-#. translators: [front] Header Block https://wordpresstheme.amnesty.org/blocks/b000-header/
-#: wp-content/themes/amnesty-wp-theme/includes/blocks/header/class-header-block-renderer.php:355
-msgid "Play video"
-msgstr "Reproduzir vídeo"
-
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
-#: wp-content/themes/amnesty-wp-theme/includes/query-filters/sort-order.php:15
+#: includes/query-filters/sort-order.php:15
 msgid "Most Recent"
 msgstr "Mais recente"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
-#: wp-content/themes/amnesty-wp-theme/includes/query-filters/sort-order.php:16
+#: includes/query-filters/sort-order.php:16
 msgid "Oldest First"
 msgstr "Antigos primeiro"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
-#: wp-content/themes/amnesty-wp-theme/includes/query-filters/sort-order.php:17
+#: includes/query-filters/sort-order.php:17
 msgid "Title - Ascending"
 msgstr "Título (crescente)"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
-#: wp-content/themes/amnesty-wp-theme/includes/query-filters/sort-order.php:18
+#: includes/query-filters/sort-order.php:18
 msgid "Title - Descending"
 msgstr "Título (decrescente)"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
-#: wp-content/themes/amnesty-wp-theme/includes/query-filters/sort-order.php:22
+#: includes/query-filters/sort-order.php:22
 msgid "Most Relevant"
 msgstr "Mais relevantes"
 
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-wp-rest-related-content-controller.php:53
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-wp-rest-related-content-controller.php:147
-msgid "Unique identifier for the post."
-msgstr "Identificador exclusivo para o usuário."
-
 #. translators: [front] shown on post single
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-wp-rest-related-content-controller.php:143
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-related-content.php:118
+#. translators: [admin]
+#: includes/features/related-content/class-related-content.php:119
+#: includes/features/related-content/class-wp-rest-related-content-controller.php:150
+#: assets/scripts/blocks.js:35517
+#: assets/scripts/blocks.js:35530
+#: assets/scripts/blocks.js:35681
 msgid "Related Content"
 msgstr "Itens relacionados"
 
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-wp-rest-related-content-controller.php:153
-msgid "Type of post."
-msgstr "Tipo de postagem."
-
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-wp-rest-related-content-controller.php:159
-msgid "URL to the post."
-msgstr "URL para o Post."
-
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-wp-rest-related-content-controller.php:166
-msgid "HTML title for the post, transformed for display."
-msgstr "Título HTML para o post, transformado para exibição."
-
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-wp-rest-related-content-controller.php:172
-msgid "HTML excerpt for the post, transformed for display."
-msgstr "Trecho HTML para o post, transformado para exibição."
-
 #. translators: [API/admin]
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-wp-rest-related-content-controller.php:179
+#: includes/features/related-content/class-wp-rest-related-content-controller.php:186
 msgid "The featured image for the post."
 msgstr "Definir imagem destacada"
 
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-wp-rest-related-content-controller.php:227
-#, php-format
-msgid "The terms assigned to the post in the %s taxonomy."
-msgstr "Os termos atribuídos à postagem na taxonomia %s."
-
-#: wp-content/themes/amnesty-wp-theme/includes/features/related-content/class-related-content.php:386
+#. translators: [admin]
+#: includes/features/related-content/class-related-content.php:401
+#: assets/scripts/blocks.js:35481
 msgid "Country"
 msgstr "País"
 
-#. translators: [front] %s: taxonomy label
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/taxonomy-search.php:30
-#, php-format
-msgid "Limit results to specific %s"
-msgstr "Limitar resultados a %s específicos"
-
-#. translators: [front] %s: taxonomy label
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/taxonomy-search.php:31
-#, php-format
-msgid "Select %s"
-msgstr "Selecionar %s"
-
-#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:109
-#, php-format
-msgid "%d result"
-msgid_plural "%d results"
-msgstr[0] "%d resultado"
-msgstr[1] "%d resultados"
-
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:122
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:185
+#: includes/features/search/class-search-filters.php:249
 #, php-format
 msgctxt "search results title suffix for the search term"
 msgid "for “%s”"
 msgstr "%s"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:128
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:191
+#: includes/features/search/class-search-filters.php:255
 #, php-format
 msgctxt "search results title suffix for term exclusions"
 msgid "excluding “%s”"
 msgstr "excluindo \"%s\""
 
 #. translators: [front] appended to search results title (n results for...); %s: the month searched for
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:135
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:198
+#: includes/features/search/class-search-filters.php:278
 #, php-format
 msgctxt "search results title suffix for month published"
 msgid "for the month of %s"
 msgstr "para o mês de %s"
 
 #. translators: [front] appended to search results title (n results for...); %s: the year searched for
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:143
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:206
+#: includes/features/search/class-search-filters.php:295
 #, php-format
 msgctxt "search results title suffix for year published"
 msgid "in the year %s"
@@ -871,2491 +405,1699 @@ msgstr "no ano %s"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
 #. translators: Singular/Plural number of posts.
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/class-amnesty-search-filters.php:173
-#: wp-content/themes/amnesty-wp-theme/partials/archive/header.php:17
-#: wp-content/themes/amnesty-wp-theme/partials/search/header.php:9
+#: includes/features/search/class-search-filters.php:189
+#: partials/archive/header.php:17
+#: partials/search/header.php:15
 #, php-format
 msgid "%s result"
 msgid_plural "%s results"
 msgstr[0] "%s resultado"
 msgstr[1] "%s resultados"
 
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/permalink.php:37
+#: includes/features/search/permalink.php:39
 msgid "The ID of the page that should display the search interface"
 msgstr ""
 
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/permalink.php:42
+#: includes/features/search/permalink.php:45
 msgid "Search page"
 msgstr ""
 
-#: wp-content/themes/amnesty-wp-theme/includes/features/search/permalink.php:47
-msgid "&mdash; Select &mdash;"
-msgstr ""
-
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/block-patterns/social-share.php:21
+#: includes/block-patterns/social-share.php:23
 msgid "Social Share"
 msgstr "Compartilhamento Social"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/block-patterns/social-share.php:23
-msgid ""
-"Three column layout with headings, tweet action, social icons, video embed "
-"and buttons"
-msgstr ""
-"Layout de três colunas com títulos, ação do tweet, ícones sociais, "
-"incorporação de vídeo e botões"
+#: includes/block-patterns/social-share.php:25
+msgid "Three column layout with headings, tweet action, social icons, video embed and buttons"
+msgstr "Layout de três colunas com títulos, ação do tweet, ícones sociais, incorporação de vídeo e botões"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options.php:17
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options.php:22
+#: includes/admin/theme-options.php:18
+#: includes/admin/theme-options.php:23
 msgid "Theme Options"
 msgstr "Opções do Tema"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:41
+#: includes/admin/network/class-network-options.php:42
 msgid "Network Options"
 msgstr "Opções da Rede"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:69
+#: includes/admin/network/class-network-options.php:72
 msgid "Features"
 msgstr "Características"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:71
+#: includes/admin/network/class-network-options.php:74
 msgid "Manage available features"
 msgstr "Gerenciar recursos disponíveis"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:95
+#: includes/admin/network/class-network-options.php:101
 msgid "Dedicated language selector"
 msgstr "Seleção de idioma"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:103
+#: includes/admin/network/class-network-options.php:112
 msgid "Language button menu"
 msgstr "Seleção de idioma"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:105
-msgid ""
-"Enables a button in the main navigation which triggers a language selection "
-"menu"
-msgstr ""
-"Habilita um botão na navegação principal que aciona um menu de seleção de "
-"idioma"
+#: includes/admin/network/class-network-options.php:114
+msgid "Enables a button in the main navigation which triggers a language selection menu"
+msgstr "Habilita um botão na navegação principal que aciona um menu de seleção de idioma"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:123
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/pop-in.php:14
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/pop-in.php:18
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:26
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:77
+#: includes/admin/network/class-network-options.php:135
+#: includes/admin/theme-options/pop-in.php:25
+#: includes/admin/theme-options/pop-in.php:29
+#: includes/post-types/pop-in.php:26
+#: includes/post-types/pop-in.php:77
 msgid "Pop-in"
 msgstr "Pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:140
+#: includes/admin/network/class-network-options.php:155
 msgid "Index Page Filter Types"
 msgstr "Tipos de filtro de página de índice"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:145
+#: includes/admin/network/class-network-options.php:160
 msgid "Categories Only"
 msgstr "Somente categorias"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:147
+#: includes/admin/network/class-network-options.php:162
 msgid "Taxonomies & Terms"
 msgstr "Taxonomias & Termos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:163
+#: includes/admin/network/class-network-options.php:181
 msgid "Related Content (Posts)"
 msgstr "(conteúdo do cabeçalho)"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:165
+#: includes/admin/network/class-network-options.php:183
 msgid "Enable the Related Content area on the post single template"
 msgstr "Habilitar a área Conteúdo Relacionado no modelo único de postagem"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:179
+#: includes/admin/network/class-network-options.php:199
 msgid "Post Types"
 msgstr "Tipos de Post"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:181
+#: includes/admin/network/class-network-options.php:201
 msgid "Manage available post types"
 msgstr "Gerenciar os tipos de postagem disponíveis"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:198
+#: includes/admin/network/class-network-options.php:220
 msgid "Taxonomies"
 msgstr "Taxonomias"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/network/class-network-options.php:200
+#: includes/admin/network/class-network-options.php:222
 msgid "Manage available taxonomies"
 msgstr "Gerenciar taxonomias disponíveis"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:122
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:124
+#: includes/admin/class-fonts.php:129
+#: includes/admin/class-fonts.php:131
 msgid "Fonts"
 msgstr "Fontes"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:136
+#: includes/admin/class-fonts.php:145
 msgid "Font Declaration Type"
 msgstr "Tipo de declaração da fonte"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:138
-msgid ""
-"Do you wish to use the default theme fonts (Amnesty Trade Gothic, Amnesty "
-"Trade Gothic Condensed), or use Google Fonts?"
-msgstr ""
-"Deseja usar as fontes de tema padrão (Anistia Trade Gótico, Anistia Comércio "
-"Gótico Condensado) ou usar Fontes do Google?"
+#: includes/admin/class-fonts.php:147
+msgid "Do you wish to use the default theme fonts (Amnesty Trade Gothic, Amnesty Trade Gothic Condensed), or use Google Fonts?"
+msgstr "Deseja usar as fontes de tema padrão (Anistia Trade Gótico, Anistia Comércio Gótico Condensado) ou usar Fontes do Google?"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:142
+#: includes/admin/class-fonts.php:151
 msgid "Theme Default"
 msgstr "Tema padrão"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:144
+#: includes/admin/class-fonts.php:153
 msgid "Google Fonts"
 msgstr "Fontes do Google"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:152
+#: includes/admin/class-fonts.php:163
 msgid "Primary Font Family"
 msgstr "Família de Fontes Primárias"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:154
+#: includes/admin/class-fonts.php:165
 msgid "The primary font family is used for body text."
 msgstr "A família de fontes primárias é usada para texto corporal."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:164
+#: includes/admin/class-fonts.php:177
 msgid "Secondary Font Family"
 msgstr "Fonte Secundária"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:166
-msgid ""
-"The secondary font family is used for headings.<br>If you only have one font "
-"family, declare the secondary font family to be the same as the primary."
-msgstr ""
-"A família de fontes secundárias é usada para títulos.<br>Se você tiver "
-"apenas uma família de fontes, declare a família de fontes secundária como "
-"sendo a mesma que a primária."
+#: includes/admin/class-fonts.php:179
+msgid "The secondary font family is used for headings.<br>If you only have one font family, declare the secondary font family to be the same as the primary."
+msgstr "A família de fontes secundárias é usada para títulos.<br>Se você tiver apenas uma família de fontes, declare a família de fontes secundária como sendo a mesma que a primária."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:176
+#: includes/admin/class-fonts.php:191
 msgid "Font Face URL"
 msgstr "URL do Facebook"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-fonts.php:178
-msgid ""
-"Paste the Google Fonts URL from which the CSS file should be loaded.<br>This "
-"should start with https://fonts.googleapis.com/."
-msgstr ""
-"Cole a URL do Google Fonts a partir da qual o arquivo CSS deve ser carregado."
-"<br>Isso deve começar com https://fonts.googleapis.com/."
+#: includes/admin/class-fonts.php:193
+msgid "Paste the Google Fonts URL from which the CSS file should be loaded.<br>This should start with https://fonts.googleapis.com/."
+msgstr "Cole a URL do Google Fonts a partir da qual o arquivo CSS deve ser carregado.<br>Isso deve começar com https://fonts.googleapis.com/."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-permalink-settings.php:32
+#: includes/admin/class-permalink-settings.php:35
 msgid "Amnesty Permalinks"
 msgstr "Anistia Permalinks"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-permalink-settings.php:41
-msgid ""
-"If you like, you may enter custom URL slugs for post types and taxonomies "
-"here. This allows you to create URL structures in your language."
-msgstr ""
-"Se você quiser, você pode inserir lesmas de URL personalizadas para tipos de "
-"postagem e taxonomias aqui. Isso permite que você crie estruturas de URL em "
-"seu idioma."
+#: includes/admin/class-permalink-settings.php:44
+msgid "If you like, you may enter custom URL slugs for post types and taxonomies here. This allows you to create URL structures in your language."
+msgstr "Se você quiser, você pode inserir lesmas de URL personalizadas para tipos de postagem e taxonomias aqui. Isso permite que você crie estruturas de URL em seu idioma."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-permalink-settings.php:42
-msgid ""
-"Please note that changing these from their defaults may require you to set "
-"rewrite rules if you have existing content. Only change them if you know "
-"what you are doing."
-msgstr ""
-"Observe que alterá-los de seus padrões pode exigir que você defina regras de "
-"reescrita se você tiver conteúdo existente. Só os mude se souber o que está "
-"fazendo."
+#: includes/admin/class-permalink-settings.php:45
+msgid "Please note that changing these from their defaults may require you to set rewrite rules if you have existing content. Only change them if you know what you are doing."
+msgstr "Observe que alterá-los de seus padrões pode exigir que você defina regras de reescrita se você tiver conteúdo existente. Só os mude se souber o que está fazendo."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/woo/product-general-options.php:19
-msgid "Is Donation"
-msgstr "É Doação"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/woo/theme-options.php:20
+#: includes/admin/woo/theme-options.php:31
 msgid "Shop Index Page"
 msgstr "Página de índice de loja"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/woo/theme-options.php:22
+#: includes/admin/woo/theme-options.php:33
 msgid "Select the page used for the Shop Index"
 msgstr "Selecione a página usada para o Índice de Loja"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/woo/theme-options.php:37
+#: includes/admin/woo/theme-options.php:50
 msgid "Category Archive Page"
 msgstr "Páginas de Categoria & Arquivo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/woo/theme-options.php:39
+#: includes/admin/woo/theme-options.php:52
 msgid "Select the page used for the Product Category Archive"
 msgstr "Selecione a página usada para o Arquivo da Categoria do Produto"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/news.php:8
+#: includes/admin/theme-options/news.php:19
 msgid "News"
 msgstr "Notícias"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/news.php:15
-msgid "Show active filters"
-msgstr "Ativar filtros"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/news.php:17
-msgid ""
-"Display a list of the user’s currently-selected filters on the news index."
-msgstr ""
-"Exiba uma lista dos filtros selecionados atualmente pelo usuário no índice "
-"de notícias."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/news.php:24
+#: includes/admin/theme-options/news.php:28
 msgid "Default Post sidebar"
 msgstr "Barra lateral padrão do borne"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/news.php:26
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/news.php:44
-msgid ""
-"Drag posts from the left column to the right column to attach them to this "
-"page.<br />Only the first sidebar selected will be used."
-msgstr ""
-"Arraste as mensagens da coluna da esquerda para a coluna à direita para "
-"anexá-las a esta página. < br/> somente a primeira barra lateral selecionada "
-"será usada."
+#: includes/admin/theme-options/news.php:30
+#: includes/admin/theme-options/news.php:50
+msgid "Drag posts from the left column to the right column to attach them to this page.<br />Only the first sidebar selected will be used."
+msgstr "Arraste as mensagens da coluna da esquerda para a coluna à direita para anexá-las a esta página. < br/> somente a primeira barra lateral selecionada será usada."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/news.php:42
+#: includes/admin/theme-options/news.php:48
 msgid "Default Page sidebar"
 msgstr "Barra lateral da página padrão"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/pop-in.php:25
+#: includes/admin/theme-options/pop-in.php:38
 msgid "Active Pop-in Call to Action"
 msgstr "Chamada pop-in ativa à ação"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/pop-in.php:27
+#: includes/admin/theme-options/pop-in.php:40
 msgid "Drag a pop-in from the left column to the right column to activate."
-msgstr ""
-"Arraste um pop-in da coluna esquerda para a coluna direita para ativar."
+msgstr "Arraste um pop-in da coluna esquerda para a coluna direita para ativar."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/pop-in.php:43
+#: includes/admin/theme-options/pop-in.php:58
 msgid "Timeout"
 msgstr "Tempo esgotado"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/pop-in.php:45
+#: includes/admin/theme-options/pop-in.php:60
 msgid "After how many days should a dismissed pop-in be re-shown to the user?"
-msgstr ""
-"Depois de quantos dias um pop-in descartado deve ser re-mostrado ao usuário?"
+msgstr "Depois de quantos dias um pop-in descartado deve ser re-mostrado ao usuário?"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:18
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:22
+#: includes/admin/theme-options/localisation.php:19
+#: includes/admin/theme-options/localisation.php:23
 msgid "Localisation"
 msgstr "Localização"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:29
+#: includes/admin/theme-options/localisation.php:32
 msgid "Ordered List Character Choice"
 msgstr "Escolha do personagem da lista ordenada"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:33
+#: includes/admin/theme-options/localisation.php:36
 msgid "Please select"
 msgstr "Por favor selecione"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:37
+#: includes/admin/theme-options/localisation.php:40
 msgid "Default; Western Arabic numerals"
 msgstr "Padrão; Algarismos árabes ocidentais"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:39
+#: includes/admin/theme-options/localisation.php:42
 msgid "Arabic-Indic numbers"
 msgstr "Números árabe-indiciados"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:41
+#: includes/admin/theme-options/localisation.php:44
 msgid "Bengali numbering"
 msgstr "Numeração bengali"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:43
+#: includes/admin/theme-options/localisation.php:46
 msgid "Cambodian/Khmer numbering"
 msgstr "Numeração cambojana/khmer"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:45
+#: includes/admin/theme-options/localisation.php:48
 msgid "Devanagari numbering"
 msgstr "Numeração devanagari"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:47
+#: includes/admin/theme-options/localisation.php:50
 msgid "Ethiopic numbering"
 msgstr "Numeração ethiopica"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:49
+#: includes/admin/theme-options/localisation.php:52
 msgid "Formal Korean Han numbering"
 msgstr "Numeração han coreana formal"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:51
+#: includes/admin/theme-options/localisation.php:54
 msgid "Gujarati numbering"
 msgstr "Numeração gujarati"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:53
+#: includes/admin/theme-options/localisation.php:56
 msgid "Gurmukhi numbering"
 msgstr "Numeração gurmukhi"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:55
+#: includes/admin/theme-options/localisation.php:58
 msgid "Han \"Earthly Branch\" ordinals"
 msgstr "Ordinals han \"Earthly Branch\""
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:57
+#: includes/admin/theme-options/localisation.php:60
 msgid "Han \"Heavenly Stem\" ordinals"
 msgstr "Ordinals han \"Heavenly Stem\""
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:59
+#: includes/admin/theme-options/localisation.php:62
 msgid "Japanese formal numbering"
 msgstr "Numeração formal japonesa"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:61
+#: includes/admin/theme-options/localisation.php:64
 msgid "Japanese informal numbering"
 msgstr "Numeração informal japonesa"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:63
+#: includes/admin/theme-options/localisation.php:66
 msgid "Kannada numbering"
 msgstr "Numeração kannada"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:65
+#: includes/admin/theme-options/localisation.php:68
 msgid "Korean hangul numbering"
 msgstr "Numeração coreana hangul"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:67
+#: includes/admin/theme-options/localisation.php:70
 msgid "Korean hanja numbering"
 msgstr "Numeração de hanja coreana"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:69
+#: includes/admin/theme-options/localisation.php:72
 msgid "Laotian numbering"
 msgstr "Numeração laosiana"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:71
+#: includes/admin/theme-options/localisation.php:74
 msgid "Lowercase Armenian numbering"
 msgstr "Numeração armênia minúscula"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:73
+#: includes/admin/theme-options/localisation.php:76
 msgid "Lowercase ASCII letters"
 msgstr "Letras ASCII minúsculas"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:75
+#: includes/admin/theme-options/localisation.php:78
 msgid "Lowercase classical Greek."
 msgstr "Grego clássico minúsculo."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:77
+#: includes/admin/theme-options/localisation.php:80
 msgid "Lowercase Roman numerals."
 msgstr "Numerais romanos minúsculos."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:79
+#: includes/admin/theme-options/localisation.php:82
 msgid "Malayalam numbering"
 msgstr "Numeração de malayalamo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:81
+#: includes/admin/theme-options/localisation.php:84
 msgid "Mongolian numbering"
 msgstr "Numeração mongol"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:83
+#: includes/admin/theme-options/localisation.php:86
 msgid "Myanmar (Burmese) numbering"
 msgstr "Numeração de Mianmar (Birmanês)"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:85
+#: includes/admin/theme-options/localisation.php:88
 msgid "Oriya numbering"
 msgstr "Número do pedido:"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:87
+#: includes/admin/theme-options/localisation.php:90
 msgid "Persian numbering"
 msgstr "Número de páginas"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:89
+#: includes/admin/theme-options/localisation.php:92
 msgid "Simplified Chinese formal numbering"
 msgstr "Numeração formal chinesa simplificada"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:91
+#: includes/admin/theme-options/localisation.php:94
 msgid "Simplified Chinese informal numbering"
 msgstr "Numeração informal chinesa simplificada"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:93
+#: includes/admin/theme-options/localisation.php:96
 msgid "Tamil numbering"
 msgstr "Numeração tâmil"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:95
+#: includes/admin/theme-options/localisation.php:98
 msgid "Telugu numbering"
 msgstr "Numeração de Telugu"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:97
+#: includes/admin/theme-options/localisation.php:100
 msgid "Thai numbering"
 msgstr "Número de páginas"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:99
+#: includes/admin/theme-options/localisation.php:102
 msgid "Tibetan numbering"
 msgstr "Numeração tibetana"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:101
+#: includes/admin/theme-options/localisation.php:104
 msgid "Traditional Armenian numbering"
 msgstr "Numeração tradicional armênia"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:103
+#: includes/admin/theme-options/localisation.php:106
 msgid "Traditional Chinese formal numbering"
 msgstr "Informação adicional"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:105
+#: includes/admin/theme-options/localisation.php:108
 msgid "Traditional Chinese informal numbering"
 msgstr "Informação adicional"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:107
+#: includes/admin/theme-options/localisation.php:110
 msgid "Traditional Georgian numbering"
 msgstr "Numeração tradicional georgiana"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:109
+#: includes/admin/theme-options/localisation.php:112
 msgid "Traditional Hebrew numbering"
 msgstr "Numeração hebraica tradicional"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:111
+#: includes/admin/theme-options/localisation.php:114
 msgid "Traditional uppercase Armenian numbering"
 msgstr "Numeração tradicional de maiúsão armênio"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:113
+#: includes/admin/theme-options/localisation.php:116
 msgid "Uppercase ASCII letters"
 msgstr "Letras ASCII maiúsculas"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/localisation.php:115
+#: includes/admin/theme-options/localisation.php:118
 msgid "Uppercase Roman numerals."
 msgstr "Numerais romanos maiústos."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/display-options.php:8
-msgid "Display Options"
-msgstr "Opções de exibição"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/display-options.php:15
-msgid "Hide Category Label"
-msgstr "Lista de categorias"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/display-options.php:21
-msgid "Yes"
-msgstr "Sim"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/display-options.php:23
-msgid "No"
-msgstr "Não"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:10
-msgid "Contact"
-msgstr "Contato"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:14
-msgid "Contact Info"
-msgstr "Informações de Contato"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:22
-msgid "IS Office"
-msgstr "IS Office"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:31
-msgid "Contact info for the International Secretariat office"
-msgstr "Informações de contato para o escritório da Secretaria Internacional"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:37
-msgid "Name"
-msgstr "Nome"
-
-#. translators: [admin]
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:44
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:157
-#: wp-content/themes/amnesty-wp-theme/partials/taxonomy/location/office.php:33
-msgid "Address"
-msgstr "Endereço"
-
-#. translators: [admin]
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:51
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:164
-#: wp-content/themes/amnesty-wp-theme/partials/taxonomy/location/office.php:38
-msgid "Phone"
-msgstr "Telefone"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:58
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:171
-msgid "Fax"
-msgstr "Fax"
-
-#. translators: [admin]
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:65
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:178
-#: wp-content/themes/amnesty-wp-theme/partials/taxonomy/location/office.php:43
-msgid "Email"
-msgstr "E-mail"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:72
-msgid "Link to contact page"
-msgstr "Link para página de contato"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/contact.php:74
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document.php:57
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document-deprecated.php:29
-msgid "Please select only one item"
-msgstr "Selecione apenas um item"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/header.php:8
+#: includes/admin/theme-options/header.php:19
+#: assets/scripts/blocks.js:1209
+#: assets/scripts/blocks.js:12234
+#: assets/scripts/blocks.js:12239
 msgid "Header"
 msgstr "Cabeçalho"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/header.php:15
+#: includes/admin/theme-options/header.php:28
 msgid "Site Logotype"
 msgstr "Logotipo do site"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/header.php:32
+#: includes/admin/theme-options/header.php:47
 msgid "Site Logomark"
 msgstr "Site logomark"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/header.php:49
+#: includes/admin/theme-options/header.php:66
 msgid "Logo Link"
 msgstr "Link do Logo"
 
-#. translators: [admin]
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:10
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:14
-#: wp-content/themes/amnesty-wp-theme/footer.php:35
+#. translators: [admin]
+#: footer.php:34
+#: includes/admin/theme-options/footer.php:15
+#: includes/admin/theme-options/footer.php:19
 msgid "Footer"
 msgstr "Rodapé"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:21
-msgid "Hide Site Langauges"
-msgstr "Esconder o site Langauges"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:29
+#: includes/admin/theme-options/footer.php:28
 msgid "Section Title"
 msgstr "Título da Seção"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:36
+#: includes/admin/theme-options/footer.php:37
 msgid "Section Content"
 msgstr "Conteúdo da Secção"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:43
+#: includes/admin/theme-options/footer.php:46
 msgid "Section Call to Action text"
 msgstr "Chamada de seção para texto de ação"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:50
+#: includes/admin/theme-options/footer.php:55
 msgid "Section Call to Action url"
 msgstr "Chamada de seção para URL de ação"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:56
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:60
+#: includes/admin/theme-options/footer.php:62
+#: includes/admin/theme-options/footer.php:67
 msgid "Copyright info"
 msgstr "Informações de copyright"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/footer.php:62
-msgid ""
-"By default, the copyright info outputs the current year followed by the site "
-"name; add content to this field to override this."
-msgstr ""
-"Por padrão, as informações de direitos autorais são fornecidas no ano atual "
-"seguidas pelo nome do site; adicionar conteúdo a este campo para substituir "
-"isso."
+#: includes/admin/theme-options/footer.php:69
+msgid "By default, the copyright info outputs the current year followed by the site name; add content to this field to override this."
+msgstr "Por padrão, as informações de direitos autorais são fornecidas no ano atual seguidas pelo nome do site; adicionar conteúdo a este campo para substituir isso."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:12
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:16
+#: includes/admin/theme-options/analytics.php:21
+#: includes/admin/theme-options/analytics.php:25
 msgid "Analytics"
 msgstr "Análises"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:26
+#: includes/admin/theme-options/analytics.php:37
 msgid "Google Tag Manager Code"
 msgstr "Código do gerenciador de etiquetas do Google"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:28
+#: includes/admin/theme-options/analytics.php:39
 msgid "Paste your Google Tag Manager Code"
 msgstr "Cole seu código de gerente de etiquetas do Google"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:35
+#: includes/admin/theme-options/analytics.php:48
 msgid "GTM Consent Mode"
 msgstr "Modo de consentimento GTM"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:37
-msgid ""
-"The status, and default value of, Google's Consent Mode (see https://support."
-"google.com/analytics/answer/9976101). Note that, when using Consent Mode, "
-"you will have to implement targeting via a cookie control plugin such as "
-"Civic"
-msgstr ""
-"O status e o valor padrão do Modo de Consentimento do Google (ver https://"
-"support.google.com/analytics/answer/9976101). Observe que, ao usar o Modo de "
-"Consentimento, você terá que implementar o direcionamento através de um "
-"plugin de controle de cookies, como o Civic"
+#: includes/admin/theme-options/analytics.php:50
+msgid "The status, and default value of, Google's Consent Mode (see https://support.google.com/analytics/answer/9976101). Note that, when using Consent Mode, you will have to implement targeting via a cookie control plugin such as Civic"
+msgstr "O status e o valor padrão do Modo de Consentimento do Google (ver https://support.google.com/analytics/answer/9976101). Observe que, ao usar o Modo de Consentimento, você terá que implementar o direcionamento através de um plugin de controle de cookies, como o Civic"
 
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:41
+#: includes/admin/theme-options/analytics.php:54
 msgid "Not Enabled"
 msgstr "Não encontrado"
 
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:42
+#: includes/admin/theme-options/analytics.php:55
 msgid "Enabled, denied"
 msgstr "Habilitado, negado"
 
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:43
+#: includes/admin/theme-options/analytics.php:56
 msgid "Enabled, granted"
 msgstr "Habilitar gradiente de fundo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:50
+#: includes/admin/theme-options/analytics.php:65
 msgid "Google Analytics Code"
 msgstr "Código Google Analytics"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:52
+#: includes/admin/theme-options/analytics.php:67
 msgid "Paste your Google Analytics Code"
 msgstr "Cole o seu código do Google Analytics"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:59
+#: includes/admin/theme-options/analytics.php:76
 msgid "Google Analytics v4 Code"
 msgstr "Código Google Analytics"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:61
-msgid ""
-"Paste your Google Analytics v4 Code; you must also have entered your GA Code "
-"above"
-msgstr ""
-"Cole seu Código V4 do Google Analytics; você também deve ter inserido o seu "
-"Código GA acima"
+#: includes/admin/theme-options/analytics.php:78
+msgid "Paste your Google Analytics v4 Code; you must also have entered your GA Code above"
+msgstr "Cole seu Código V4 do Google Analytics; você também deve ter inserido o seu Código GA acima"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:68
+#: includes/admin/theme-options/analytics.php:87
 msgid "Hotjar Site ID:"
 msgstr "Hotjar site ID:"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:70
+#: includes/admin/theme-options/analytics.php:89
 msgid "Paste your Hotjar Site ID (example: 552474)"
 msgstr "Cole o seu ID do site Hotjar (exemplo: 552474)"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:77
+#: includes/admin/theme-options/analytics.php:98
 msgid "VWO Account ID"
 msgstr "ID da conta VWO"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:79
+#: includes/admin/theme-options/analytics.php:100
 msgid "Paste your VWO Account ID here"
 msgstr "Cole o seu ID de conta VWO aqui"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:91
+#: includes/admin/theme-options/analytics.php:114
 msgid "Site Meta Tags"
 msgstr "Site Meta Tags"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:98
+#: includes/admin/theme-options/analytics.php:123
 msgid "Meta Tags"
 msgstr "Meta Tags"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:100
-msgid ""
-"Add your site meta tags (&lt;meta name=\"thing\" /&gt;) here; useful for "
-"things like site verification tags"
-msgstr ""
-"Adicione as meta tags do seu site (<meta name=\"coisa\" />) aqui; útil para "
-"coisas como tags de verificação do site"
-
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:100
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:134
-msgid ""
-"If using WordPress SEO (Yoast) or similar, you may wish to use their built-"
-"in alternatives"
-msgstr ""
-"Se usar o WordPress SEO (Yoast) ou similar, você pode querer usar suas "
-"alternativas incorporadas"
+#: includes/admin/theme-options/analytics.php:125
+msgid "Add your site meta tags (&lt;meta name=\"thing\" /&gt;) here; useful for things like site verification tags"
+msgstr "Adicione as meta tags do seu site (<meta name=\"coisa\" />) aqui; útil para coisas como tags de verificação do site"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:104
+#: includes/admin/theme-options/analytics.php:125
+#: includes/admin/theme-options/analytics.php:167
+msgid "If using WordPress SEO (Yoast) or similar, you may wish to use their built-in alternatives"
+msgstr "Se usar o WordPress SEO (Yoast) ou similar, você pode querer usar suas alternativas incorporadas"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:129
 msgid "Add Tag"
 msgstr "Adicionar Tag"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:106
+#: includes/admin/theme-options/analytics.php:131
 msgid "Remove Tag"
 msgstr "Remover Marcação"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:115
+#: includes/admin/theme-options/analytics.php:143
 msgid "Meta Name"
 msgstr "Meta nome"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:117
+#: includes/admin/theme-options/analytics.php:145
 msgid "e.g. google-site-verification"
 msgstr "por exemplo, verificação do site do Google"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:125
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:159
+#: includes/admin/theme-options/analytics.php:156
+#: includes/admin/theme-options/analytics.php:198
 msgid "Meta Value"
 msgstr "Valor de metadados"
 
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:133
+#: includes/admin/theme-options/analytics.php:166
 msgid "RDF Tags"
 msgstr "RDF Tags"
 
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:134
-msgid ""
-"Add your site rdf tags (&lt;meta property=\"thing\" /&gt;) here; useful for "
-"things like Facebook pages"
-msgstr ""
-"Adicione as tags rdf do site (<meta property=\"coisa\" />) aqui; útil para "
-"coisas como páginas do Facebook"
+#: includes/admin/theme-options/analytics.php:167
+msgid "Add your site rdf tags (&lt;meta property=\"thing\" /&gt;) here; useful for things like Facebook pages"
+msgstr "Adicione as tags rdf do site (<meta property=\"coisa\" />) aqui; útil para coisas como páginas do Facebook"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:138
+#: includes/admin/theme-options/analytics.php:171
 msgid "Add Property"
 msgstr "Adicionar Imóvel"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:140
+#: includes/admin/theme-options/analytics.php:173
 msgid "Remove Property"
 msgstr "Remover propriedade"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:149
+#: includes/admin/theme-options/analytics.php:185
 msgid "Meta Property"
 msgstr "Meta Propriedade"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:151
+#: includes/admin/theme-options/analytics.php:187
 msgid "e.g. fb:pages"
 msgstr "por exemplo, fb:páginas"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:174
+#: includes/admin/theme-options/analytics.php:215
 msgid "Deprecated fields"
 msgstr "Campos preteridos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:181
-msgid ""
-"The below fields are deprecated. Avoid using them if they are not currently "
-"in use on this site"
-msgstr ""
-"Os campos abaixo são preteridos. Evite usá-los se eles não estiverem em uso "
-"neste site"
+#: includes/admin/theme-options/analytics.php:224
+msgid "The below fields are deprecated. Avoid using them if they are not currently in use on this site"
+msgstr "Os campos abaixo são preteridos. Evite usá-los se eles não estiverem em uso neste site"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:187
+#: includes/admin/theme-options/analytics.php:232
 msgid "Google Tag Manager Script"
 msgstr "Script do Google tag Manager"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:189
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:198
+#: includes/admin/theme-options/analytics.php:234
+#: includes/admin/theme-options/analytics.php:245
 msgid "Deprecated. Do not use unless already in use."
 msgstr "deprecado. Não use a menos que já em uso."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/analytics.php:196
+#: includes/admin/theme-options/analytics.php:243
 msgid "Google Tag Manager Noscript"
 msgstr "Noscript do Gerenciador de tags do Google"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/social.php:8
+#: includes/admin/theme-options/social.php:19
 msgid "Social Media"
 msgstr "Redes Sociais"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/social.php:15
+#: includes/admin/theme-options/social.php:28
 msgid "Facebook URL"
 msgstr "URL do Facebook"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/social.php:22
+#: includes/admin/theme-options/social.php:37
 msgid "Twitter Handle"
 msgstr "Punho do Twitter"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/social.php:29
+#: includes/admin/theme-options/social.php:46
 msgid "Youtube URL"
 msgstr "URL do Youtube"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/social.php:36
+#: includes/admin/theme-options/social.php:55
 msgid "Instagram Handle"
 msgstr "Alça do Instagram"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/theme-options/social.php:43
+#: includes/admin/theme-options/social.php:64
 msgid "Telegram Handle"
 msgstr "Alça do Instagram"
 
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/media-library-filters.php:20
-msgid "Amnesty Info"
-msgstr "Informações sobre Anistia"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/media-library-filters.php:53
-msgid "Has Caption"
-msgstr "Tem legenda"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/media-library-filters.php:57
-msgid "Has Alt Text"
-msgstr "Tem texto Alt"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/media-library-filters.php:61
-msgid "Has Credit"
-msgstr "Tem Crédito"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:24
-msgid "User Profile Metabox"
-msgstr "Perfil do usuário Metabox"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:32
-msgid "Author Page Info"
-msgstr "Informações da página do autor"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:34
-msgid "This information will be used for your personal author page"
-msgstr "Essas informações serão usadas para sua página de autor pessoal"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:42
-msgid "Avatar"
-msgstr "Avatar"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:44
-msgid "This will be displayed as your profile picture"
-msgstr "Isso será exibido como sua foto de perfil"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:51
-msgid "Banner Image"
-msgstr "Imagem do Banner"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:53
-msgid "This will be displayed as a header"
-msgstr "Isso será exibido como um cabeçalho"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:62
-msgid ""
-"This should be a short sentence about yourself to be displayed on your "
-"profile page"
-msgstr ""
-"Esta deve ser uma frase curta sobre você mesmo para ser exibida em sua "
-"página de perfil"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:69
-#: wp-content/themes/amnesty-wp-theme/author.php:70
+#: author.php:68
 msgid "Biography"
 msgstr "Biografia"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/user-options.php:71
-msgid ""
-"This can be a longer biography which will be used for users to learn more "
-"about you"
-msgstr ""
-"Esta pode ser uma biografia mais longa que será usada para os usuários "
-"aprenderem mais sobre você"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-accessibility.php:83
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-accessibility.php:85
+#: includes/admin/class-accessibility.php:84
+#: includes/admin/class-accessibility.php:86
 msgid "Accessibility"
 msgstr "Acessibilidade"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-accessibility.php:97
+#: includes/admin/class-accessibility.php:100
 msgid "Negishim"
 msgstr "Negishim"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/admin/class-accessibility.php:99
+#: includes/admin/class-accessibility.php:102
 msgid "Load the Negishim Accessibility widget (Hebrew)."
 msgstr "Carregue o widget negishim accessibility (hebraico)."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/users/meta.php:9
+#: includes/users/meta.php:19
 msgid "Amnesty Umbraco User Info"
 msgstr "Informações do Usuário da Anistia Umbraco"
 
 #. translators: [admin] user settings
-#: wp-content/themes/amnesty-wp-theme/includes/users/contact-methods.php:17
+#: includes/users/contact-methods.php:17
 msgid "Twitter Username (without the @)"
 msgstr "Nome de usuário do Twitter (sem o @)"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/users/class-wp-rest-users-controller.php:55
-msgid "Unique identifier for the user."
-msgstr "Identificador exclusivo para o usuário."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/users/class-wp-rest-users-controller.php:82
-msgid "Required to be true, as users do not support trashing."
-msgstr "É necessário ser verdade, pois os usuários não suportam lixo."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/users/class-wp-rest-users-controller.php:87
-msgid "Reassign the deleted user's posts and links to this user ID."
-msgstr ""
-"Reatribuir as postagens e links do usuário excluído para esse ID de usuário."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/users/class-wp-rest-users-controller.php:245
-msgid "Invalid user ID."
-msgstr "ID de usuário inválido."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/users/class-wp-rest-users-controller.php:279
-msgid "Cannot create existing user."
-msgstr "Não é possível criar usuário existente."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/users/class-wp-rest-users-controller.php:302
-msgid "Invalid user parameter(s)."
-msgstr "Parâmetros de usuário inválidos)."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/users/class-wp-rest-users-controller.php:326
-msgid "Error creating new user."
-msgstr "Erro ao criar novo utilizador."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:20
+#: includes/post-types/pop-in.php:20
 msgctxt "Post Type General Name"
 msgid "Pop-in variants"
 msgstr "Variantes pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:22
+#: includes/post-types/pop-in.php:22
 msgctxt "Post Type Singular Name"
 msgid "Pop-in"
 msgstr "Pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:24
+#: includes/post-types/pop-in.php:24
 msgid "Pop-in variants"
 msgstr "Variantes pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:28
+#: includes/post-types/pop-in.php:28
 msgid "Pop-in Archives"
 msgstr "Arquivos Pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:30
+#: includes/post-types/pop-in.php:30
 msgid "Pop-in Attributes"
 msgstr "Atributos pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:32
+#: includes/post-types/pop-in.php:32
 msgid "Parent Pop-in:"
 msgstr "Pai Pop-in:"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:34
+#: includes/post-types/pop-in.php:34
 msgid "All Pop-in variants"
 msgstr "Todas as variantes Pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:36
+#: includes/post-types/pop-in.php:36
 msgid "Add New Pop-in variant"
 msgstr "Adicionar nova variante Pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:38
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:188
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:34
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:97
+#: includes/post-types/pop-in.php:38
+#: includes/post-types/sidebar.php:34
 msgid "Add New"
 msgstr "Adicionar Novo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:40
+#: includes/post-types/pop-in.php:40
 msgid "New Pop-in"
 msgstr "Novo Pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:42
+#: includes/post-types/pop-in.php:42
 msgid "Edit Pop-in"
 msgstr "Editar Pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:44
+#: includes/post-types/pop-in.php:44
 msgid "Update Pop-in"
 msgstr "Atualizar pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:46
+#: includes/post-types/pop-in.php:46
 msgid "View Pop-in"
 msgstr "Ver Pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:48
+#: includes/post-types/pop-in.php:48
 msgid "View Pop-in variants"
 msgstr "Ver variantes pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:50
+#: includes/post-types/pop-in.php:50
 msgid "Search Pop-in variants"
 msgstr "Pesquisar variantes Pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:52
+#: includes/post-types/pop-in.php:52
 msgid "No pop-in variants found"
 msgstr "Nenhuma variante pop-in encontrada"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:54
+#: includes/post-types/pop-in.php:54
 msgid "No pop-in variants found in Trash"
 msgstr "Sem variantes pop-in encontradas no Lixo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:56
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:206
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:52
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:115
+#: includes/post-types/pop-in.php:56
+#: includes/post-types/sidebar.php:52
+#: assets/scripts/blocks.js:12110
 msgid "Featured Image"
 msgstr "Imagem em destaque"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:58
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:208
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:54
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:117
+#: includes/post-types/pop-in.php:58
+#: includes/post-types/sidebar.php:54
 msgid "Set featured image"
 msgstr "Definir imagem destacada"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:60
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:210
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:56
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:119
+#: includes/post-types/pop-in.php:60
+#: includes/post-types/sidebar.php:56
 msgid "Remove featured image"
 msgstr "Remover imagem em destaque"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:62
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:212
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:58
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:121
+#: includes/post-types/pop-in.php:62
+#: includes/post-types/sidebar.php:58
 msgid "Use as featured image"
 msgstr "Usar como imagem destacada"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:64
+#: includes/post-types/pop-in.php:64
 msgid "Insert into pop-in"
 msgstr "Insira no pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:66
+#: includes/post-types/pop-in.php:66
 msgid "Uploaded to this pop-in"
 msgstr "Carregado para este pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:68
+#: includes/post-types/pop-in.php:68
 msgid "Pop-in variants list"
 msgstr "Lista de variantes pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:70
+#: includes/post-types/pop-in.php:70
 msgid "Pop-in variants list navigation"
 msgstr "Variantes pop-in listam navegação"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:72
+#: includes/post-types/pop-in.php:72
 msgid "Filter pop-in variants"
 msgstr "Filtrar variantes pop-in"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/pop-in.php:79
-msgid ""
-"A Pop-in is a call to action which renders at the very top of a page, "
-"pushing the entire page content down."
-msgstr ""
-"Um Pop-in é uma chamada à ação que é renderizada no topo de uma página, "
-"empurrando todo o conteúdo da página para baixo."
+#: includes/post-types/pop-in.php:79
+msgid "A Pop-in is a call to action which renders at the very top of a page, pushing the entire page content down."
+msgstr "Um Pop-in é uma chamada à ação que é renderizada no topo de uma página, empurrando todo o conteúdo da página para baixo."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:108
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:110
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:174
-msgid "Annual Reports"
-msgstr "Relatórios Anuais"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:119
-msgid "Default Annual Report Sidebar"
-msgstr "Barra lateral do relatório anual padrão"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:121
-msgid ""
-"Choose the Sidebar to use as the default for Annual Reports. Only the first "
-"sidebar selected will be used."
-msgstr ""
-"Escolha a barra lateral para usar como padrão para relatórios anuais. Apenas "
-"a primeira barra lateral selecionada será usada."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:159
-msgid "An Annual Report."
-msgstr "Relatório Anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:170
-msgctxt "Post Type General Name"
-msgid "Annual Reports"
-msgstr "Relatórios Anuais"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:172
-msgctxt "Post Type Singular Name"
-msgid "Annual Report"
-msgstr "Relatório Anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:176
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-intro.php:12
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-intro.php:26
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document.php:15
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document.php:29
-msgid "Annual Report"
-msgstr "Relatório Anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:178
-msgid "Annual Report Archives"
-msgstr "Arquivos de relatórios anuais"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:180
-msgid "Annual Report Attributes"
-msgstr "Atributos do Relatório Anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:182
-msgid "Parent Annual Report:"
-msgstr "Relatório Anual dos Pais:"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:184
-msgid "All Annual Reports"
-msgstr "Todos os Relatórios Anuais"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:186
-msgid "Add New Annual Report"
-msgstr "Adicionar novo relatório anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:190
-msgid "New Annual Report"
-msgstr "Novo Relatório Anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:192
-msgid "Edit Annual Report"
-msgstr "Editar relatório anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:194
-msgid "Update Annual Report"
-msgstr "Relatório Anual de atualização"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:196
-msgid "View Annual Report"
-msgstr "Ver relatório anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:198
-msgid "View Annual Reports"
-msgstr "Exibir relatórios anuais"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:200
-msgid "Search Annual Reports"
-msgstr "Pesquise relatórios anuais"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:202
-msgid "No Annual Reports found"
-msgstr "Nenhum relatório anual encontrado"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:204
-msgid "No Annual Reports found in Trash"
-msgstr "Nenhum relatório anual encontrado no lixo"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:214
-msgid "Insert into Annual Report"
-msgstr "Insira no Relatório Anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:216
-msgid "Uploaded to this Annual Report"
-msgstr "Enviado para este Relatório Anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:218
-msgid "Annual Reports list"
-msgstr "Lista de relatórios anuais"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:220
-msgid "Annual Reports list navigation"
-msgstr "Navegação de lista de relatórios anuais"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-annual-report.php:222
-msgid "Filter Annual Reports"
-msgstr "Filtrar relatórios anuais"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:16
+#: includes/post-types/sidebar.php:16
 msgctxt "Post Type General Name"
 msgid "Sidebars"
 msgstr "Barras Laterais"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:18
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: includes/post-types/sidebar.php:18
+#: single.php:42
 msgctxt "Post Type Singular Name"
 msgid "Sidebar"
 msgstr "Barra Lateral"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:20
+#: includes/post-types/sidebar.php:20
 msgid "Sidebars"
 msgstr "Barras Laterais"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:24
+#: includes/post-types/sidebar.php:24
 msgid "Sidebar Archives"
 msgstr "Arquivos Sidebar"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:26
+#: includes/post-types/sidebar.php:26
 msgid "Sidebar Attributes"
 msgstr "Atributos da barra lateral"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:28
+#: includes/post-types/sidebar.php:28
 msgid "Parent Sidebar:"
 msgstr "Barra lateral do pai:"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:30
+#: includes/post-types/sidebar.php:30
 msgid "All Sidebars"
 msgstr "Todas as Barras Laterais"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:32
+#: includes/post-types/sidebar.php:32
 msgid "Add New Sidebar"
 msgstr "Adicionar nova barra lateral"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:36
+#: includes/post-types/sidebar.php:36
 msgid "New Sidebar"
 msgstr "Nova barra lateral"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:38
+#: includes/post-types/sidebar.php:38
 msgid "Edit Sidebar"
 msgstr "Editar barra lateral"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:40
+#: includes/post-types/sidebar.php:40
 msgid "Update Sidebar"
 msgstr "Atualizar barra lateral"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:42
+#: includes/post-types/sidebar.php:42
 msgid "View Sidebar"
 msgstr "Ver barra lateral"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:44
+#: includes/post-types/sidebar.php:44
 msgid "View Sidebars"
 msgstr "Ver sidebars"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:46
+#: includes/post-types/sidebar.php:46
 msgid "Search Sidebar"
 msgstr "Barra lateral de Pesquisa"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:48
+#: includes/post-types/sidebar.php:48
 msgid "Not Found"
 msgstr "Não encontrado"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:50
+#: includes/post-types/sidebar.php:50
 msgid "Not Found in Trash"
 msgstr "Não Encontrado na Lixeira"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:60
+#: includes/post-types/sidebar.php:60
 msgid "Insert into sidebar"
 msgstr "Inserir na barra lateral"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:62
+#: includes/post-types/sidebar.php:62
 msgid "Uploaded to this item"
 msgstr "Enviado para este item"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:64
+#: includes/post-types/sidebar.php:64
 msgid "Sidebars list"
 msgstr "Lista de sidebars"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:66
+#: includes/post-types/sidebar.php:66
 msgid "Sidebars list navigation"
 msgstr "Sidebars lista de navegação"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:68
+#: includes/post-types/sidebar.php:68
 msgid "Filter sidebar list"
 msgstr "Filtrar lista Sidebar"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/sidebar.php:75
+#: includes/post-types/sidebar.php:75
 msgid "Sidebar post type"
 msgstr "Tipo de post Sidebar"
 
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:68
-msgid "An Office contains all of the contact information for a Section."
-msgstr "Um Escritório contém todas as informações de contato de uma Seção."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:79
-msgctxt "Post Type General Name"
-msgid "Offices"
-msgstr "Escritórios"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:81
-msgctxt "Post Type Singular Name"
-msgid "Office"
-msgstr "Escritório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:83
-msgid "Offices"
-msgstr "Escritórios"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:85
-msgid "Office"
-msgstr "Escritório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:87
-msgid "Office Archives"
-msgstr "Arquivos do Escritório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:89
-msgid "Office Attributes"
-msgstr "Atributos do Escritório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:91
-msgid "Parent Office:"
-msgstr "Escritório dos Pais:"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:93
-msgid "All Offices"
-msgstr "Todas Imobiliáias"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:95
-msgid "Add New Office"
-msgstr "Add Nova Imobiliária"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:99
-msgid "New Office"
-msgstr "Nova Imobiliária"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:101
-msgid "Edit Office"
-msgstr "Editar Imobiliária"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:103
-msgid "Update Office"
-msgstr "Escritório de atualização"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:105
-msgid "View Office"
-msgstr "Ver Imobiliáia"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:107
-msgid "View Offices"
-msgstr "Ver escritórios"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:109
-msgid "Search Offices"
-msgstr "Escritórios de pesquisa"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:111
-msgid "No offices found"
-msgstr "Nenhum escritório encontrado"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:113
-msgid "No offices found in Trash"
-msgstr "Nenhum escritório encontrado no lixo"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:123
-msgid "Insert into office"
-msgstr "Insira no escritório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:125
-msgid "Uploaded to this office"
-msgstr "Enviado para este escritório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:127
-msgid "Offices list"
-msgstr "Lista de escritórios"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:129
-msgid "Offices list navigation"
-msgstr "Escritórios listam navegação"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:131
-msgid "Filter offices"
-msgstr "Escritórios de filtro"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:148
-msgid "Office Details"
-msgstr "Detalhes do escritório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/post-types/class-post-type-office.php:185
-msgid "Office Website"
-msgstr "Site do Escritório"
-
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate/
-#: wp-content/themes/amnesty-wp-theme/includes/woo/cart.php:29
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/cart.php:29
 msgid "Number of items in your cart"
 msgstr "Número de itens em seu carrinho"
 
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate/
-#: wp-content/themes/amnesty-wp-theme/includes/woo/order.php:15
-msgid ""
-"Your order has been processed. Your order details are shown below for your "
-"reference:"
-msgstr ""
-"Sua ordem foi processada. Os detalhes do pedido são mostrados abaixo para "
-"sua referência:"
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/order.php:15
+msgid "Your order has been processed. Your order details are shown below for your reference:"
+msgstr "Sua ordem foi processada. Os detalhes do pedido são mostrados abaixo para sua referência:"
 
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate/
-#: wp-content/themes/amnesty-wp-theme/includes/woo/checkout.php:26
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/checkout.php:26
 msgid "Thank You!"
 msgstr "Obrigado!"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/woo/emails.php:21
+#: includes/woo/emails.php:21
 msgid "Title image"
 msgstr "Esconder imagem de destaque"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/woo/emails.php:23
-msgid ""
-"URL to an image you want to show above the title. Upload images using the "
-"media uploader (Admin > Media)."
-msgstr ""
-"URL para uma imagem que você deseja mostrar acima do título. Faça upload de "
-"imagens usando o uploader de mídia (Administrador > Mídia)."
+#: includes/woo/emails.php:23
+msgid "URL to an image you want to show above the title. Upload images using the media uploader (Admin > Media)."
+msgstr "URL para uma imagem que você deseja mostrar acima do título. Faça upload de imagens usando o uploader de mídia (Administrador > Mídia)."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/woo/emails.php:62
+#: includes/woo/emails.php:62
 msgid "Footer image"
 msgstr "Imagem de Rodapé"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/woo/emails.php:64
-msgid ""
-"URL to an image you want to show in the footer. Upload images using the "
-"media uploader (Admin > Media)."
-msgstr ""
-"URL para uma imagem que você deseja mostrar no rodapé. Faça upload de "
-"imagens usando o uploader de mídia (Administrador > Mídia)."
-
-#: wp-content/themes/amnesty-wp-theme/includes/seo/class-yoast-redirects.php:303
-msgid "Old URL:"
-msgstr "URL antigo:"
-
-#: wp-content/themes/amnesty-wp-theme/includes/seo/class-yoast-redirects.php:304
-msgid "New URL:"
-msgstr "Novo URL:"
+#: includes/woo/emails.php:64
+msgid "URL to an image you want to show in the footer. Upload images using the media uploader (Admin > Media)."
+msgstr "URL para uma imagem que você deseja mostrar no rodapé. Faça upload de imagens usando o uploader de mídia (Administrador > Mídia)."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/supports.php:70
+#: includes/theme-setup/supports.php:73
 msgid "Standard Post Template"
 msgstr "Modelo padrão do borne"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:84
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:239
+#: includes/theme-setup/scripts-and-styles.php:247
 msgctxt "list item separator"
 msgid ", "
 msgstr ", "
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:96
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:241
+#: includes/theme-setup/scripts-and-styles.php:89
+#: includes/theme-setup/scripts-and-styles.php:249
 msgctxt "open double quote"
 msgid "“"
 msgstr "“"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:97
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:243
+#: includes/theme-setup/scripts-and-styles.php:90
+#: includes/theme-setup/scripts-and-styles.php:251
 msgctxt "close double quote"
 msgid "”"
 msgstr "”"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:98
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:245
+#: includes/theme-setup/scripts-and-styles.php:91
+#: includes/theme-setup/scripts-and-styles.php:253
 msgctxt "open single quote"
 msgid "‘"
 msgstr "‘"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:99
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/scripts-and-styles.php:247
+#: includes/theme-setup/scripts-and-styles.php:92
+#: includes/theme-setup/scripts-and-styles.php:255
 msgctxt "close single quote"
 msgid "’"
 msgstr "’"
 
 #. translators: %s the button title
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/class-mobile-nav-walker.php:302
+#: includes/theme-setup/class-mobile-nav-walker.php:302
 #, php-format
 msgid "Expand %s list"
 msgstr ""
 
 #. translators: [front] Accessibility text for logo
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/navigation.php:25
+#: includes/theme-setup/navigation.php:29
 msgid "Amnesty International Logotype"
 msgstr "Logotipo da Anistia Internacional"
 
 #. translators: [front] Accessibility text for logo
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/navigation.php:33
+#: includes/theme-setup/navigation.php:42
 msgid "Amnesty International Logomark"
 msgstr "Anistia Internacional logomark"
 
 #. translators: [front] Screen reader accessibility text for logo to give context when clicking
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/navigation.php:41
+#: includes/theme-setup/navigation.php:51
 msgid "Visit the Amnesty International home page"
 msgstr "Visite a Home Page da Amnistia Internacional"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/navigation.php:132
+#: includes/theme-setup/navigation.php:145
 msgid "Main Menu"
 msgstr "Menu Principal"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/navigation.php:134
+#: includes/theme-setup/navigation.php:147
 msgid "Site Selector"
 msgstr "Seletor de site"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/navigation.php:136
+#: includes/theme-setup/navigation.php:149
 msgid "Footer Main"
 msgstr "Rodapé Principal"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/theme-setup/navigation.php:138
+#: includes/theme-setup/navigation.php:151
 msgid "Footer Legal"
 msgstr "Rodapé legal"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/abstract-class-taxonomy.php:258
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/abstract-class-taxonomy.php:288
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:239
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:269
-msgid ""
-"The description is not prominent by default; however, some themes may show "
-"it."
-msgstr ""
-"A descrição não é notada por padrão; no entanto alguns temas pode mostra-la."
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:81
+#: includes/taxonomies/class-taxonomy-locations.php:81
 msgctxt "taxonomy general name"
 msgid "Countries"
 msgstr "Países"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:83
+#: includes/taxonomies/class-taxonomy-locations.php:83
 msgctxt "taxonomy singular name"
 msgid "Country"
 msgstr "País"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:85
+#: includes/taxonomies/class-taxonomy-locations.php:85
 msgid "Search Countries"
 msgstr "Pesquisar Países"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:87
+#: includes/taxonomies/class-taxonomy-locations.php:87
 msgid "All Countries"
 msgstr "Todos os Países"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:89
+#: includes/taxonomies/class-taxonomy-locations.php:89
 msgid "Parent Country"
 msgstr "País Pai"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:91
+#: includes/taxonomies/class-taxonomy-locations.php:91
 msgid "Parent Country:"
 msgstr "País Pai:"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:93
+#: includes/taxonomies/class-taxonomy-locations.php:93
 msgid "Edit Country"
 msgstr "Editar País"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:95
+#: includes/taxonomies/class-taxonomy-locations.php:95
 msgid "View Country"
 msgstr "Visualizar País"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:97
+#: includes/taxonomies/class-taxonomy-locations.php:97
 msgid "Update Country"
 msgstr "Atualizar País"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:99
+#: includes/taxonomies/class-taxonomy-locations.php:99
 msgid "Add New Country"
 msgstr "Adicionar Novo País"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:101
+#: includes/taxonomies/class-taxonomy-locations.php:101
 msgid "New Country Name"
 msgstr "Novo Nome do País"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:103
+#: includes/taxonomies/class-taxonomy-locations.php:103
 msgid "Add or remove Countries"
 msgstr "Adicionar ou remover Países"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:105
+#: includes/taxonomies/class-taxonomy-locations.php:105
 msgid "Choose from most frequently used Countries"
 msgstr "Escolha entre os países mais usados"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:107
+#: includes/taxonomies/class-taxonomy-locations.php:107
 msgid "No Countries found."
 msgstr "Nenhum país foi encontrado."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:109
+#: includes/taxonomies/class-taxonomy-locations.php:109
 msgid "No Countries"
 msgstr "Nenhum País"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:111
+#: includes/taxonomies/class-taxonomy-locations.php:111
 msgid "Countries list navigation"
 msgstr "Navegação da listagem de Países"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:113
+#: includes/taxonomies/class-taxonomy-locations.php:113
 msgid "Countries list"
 msgstr "Lista de Países"
 
 #. translators: [admin] Tab heading when selecting from the most used terms.
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:115
+#: includes/taxonomies/class-taxonomy-locations.php:115
 msgctxt "countries"
 msgid "Most Used"
 msgstr "Mais usado"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-locations.php:117
+#: includes/taxonomies/class-taxonomy-locations.php:117
 msgid "&larr; Back to Countries"
 msgstr "← de volta aos países"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:156
+#: includes/taxonomies/class-taxonomy-topics.php:156
 msgctxt "taxonomy general name"
 msgid "Topics"
 msgstr "Tópicos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:158
+#: includes/taxonomies/class-taxonomy-topics.php:158
 msgctxt "taxonomy singular name"
 msgid "Topic"
 msgstr "Tópico"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:160
+#: includes/taxonomies/class-taxonomy-topics.php:160
 msgid "Search Topics"
 msgstr "Pesquisar tópicos de aula"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:162
+#: includes/taxonomies/class-taxonomy-topics.php:162
 msgid "All Topics"
 msgstr "Todos os Topicos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:164
+#: includes/taxonomies/class-taxonomy-topics.php:164
 msgid "Parent Topic"
 msgstr "Tópico pai"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:166
+#: includes/taxonomies/class-taxonomy-topics.php:166
 msgid "Parent Topic:"
 msgstr "Tópico pai:"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:168
+#: includes/taxonomies/class-taxonomy-topics.php:168
 msgid "Edit Topic"
 msgstr "Editar Tópico"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:170
+#: includes/taxonomies/class-taxonomy-topics.php:170
 msgid "View Topic"
 msgstr "Ver Tópico"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:172
+#: includes/taxonomies/class-taxonomy-topics.php:172
 msgid "Update Topic"
 msgstr "Atualizar Tópico"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:174
+#: includes/taxonomies/class-taxonomy-topics.php:174
 msgid "Add New Topic"
 msgstr "Adicionar Novo Tópico"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:176
+#: includes/taxonomies/class-taxonomy-topics.php:176
 msgid "New Topic"
 msgstr "Novo Topico"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:178
+#: includes/taxonomies/class-taxonomy-topics.php:178
 msgid "Add or remove Topics"
 msgstr "Adicionar ou remover tópicos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:180
+#: includes/taxonomies/class-taxonomy-topics.php:180
 msgid "Choose from most frequently used Topics"
 msgstr "Escolha entre tópicos mais usados"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:182
+#: includes/taxonomies/class-taxonomy-topics.php:182
 msgid "No Topics found."
 msgstr "Não foram encontrados tópicos."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:184
+#: includes/taxonomies/class-taxonomy-topics.php:184
 msgid "No Topics"
 msgstr "Sem tópicos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:186
+#: includes/taxonomies/class-taxonomy-topics.php:186
 msgid "Topics list navigation"
 msgstr "Navegação da lista de tópicos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:188
+#: includes/taxonomies/class-taxonomy-topics.php:188
 msgid "Topics list"
 msgstr "Lista de tópicos"
 
 #. translators: [admin] Tab heading when selecting from the most used terms.
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:190
+#: includes/taxonomies/class-taxonomy-topics.php:190
 msgctxt "topics"
 msgid "Most Used"
 msgstr "Mais usado"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-topics.php:192
+#: includes/taxonomies/class-taxonomy-topics.php:192
 msgid "&larr; Back to Topics"
 msgstr "← de volta aos tópicos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/precedence.php:22
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/precedence.php:27
+#: includes/taxonomies/custom-fields/precedence.php:26
+#: includes/taxonomies/custom-fields/precedence.php:32
 msgid "Taxonomy Precedence"
 msgstr "Precedência da taxonomia"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/precedence.php:29
-msgid ""
-"In which order taxonomies should be ranked when retrieving a term to display "
-"prominently for an item"
-msgstr ""
-"Em que taxonomias de ordem devem ser classificadas ao recuperar um termo "
-"para exibir proeminentemente para um item"
+#: includes/taxonomies/custom-fields/precedence.php:34
+msgid "In which order taxonomies should be ranked when retrieving a term to display prominently for an item"
+msgstr "Em que taxonomias de ordem devem ser classificadas ao recuperar um termo para exibir proeminentemente para um item"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-intro-deprecated.php:15
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document-deprecated.php:18
-msgid "Annual Report [DEPRECATED]"
-msgstr "Relatório Anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-intro-deprecated.php:23
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-intro.php:51
-msgid "Introductory Text"
-msgstr "Texto Introdutório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-intro.php:30
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document.php:33
-msgid "Report Data #{#}"
-msgstr "Relatório de Dados #{#}"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-intro.php:32
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document.php:35
-msgid "Add Report Year"
-msgstr "Ano do Relatório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-intro.php:34
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document.php:37
-msgid "Remove Year"
-msgstr "Remover Marcação"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-intro.php:42
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document.php:45
-msgid "Report Year"
-msgstr "Ano do Relatório"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/global-settings.php:9
-msgid "Settings"
-msgstr "Configurações"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/global-settings.php:30
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/global-settings.php:39
-msgid "Annual Report Settings"
-msgstr "Configurações do relatório anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/global-settings.php:46
-msgid "Settings for the Annual Report for all countries"
-msgstr "Ajustes para o Relatório Anual para todos os países"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/global-settings.php:53
-msgid "Report Year, for configuration"
-msgstr "Ano de Relatório, para configuração"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/global-settings.php:62
-msgid "Report Year, for frontend display"
-msgstr "Ano de Relatório, para exibição frontend"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/global-settings.php:70
-msgid "Background Image"
-msgstr "Imagem de Fundo"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/global-settings.php:84
-msgid "Link to report document"
-msgstr "Link para relatar documento"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document.php:55
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/annual-reports/report-document-deprecated.php:27
-msgid "Link to Annual Report"
-msgstr "Link para Relatório Anual"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/death-penalty.php:7
-msgid "Death Penalty"
-msgstr "Pena de Morte"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/custom-fields/death-penalty.php:15
-msgid "Status in Law"
-msgstr "Status"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:91
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:93
+#: includes/taxonomies/class-taxonomy-content-types.php:91
+#: includes/taxonomies/class-taxonomy-content-types.php:93
 msgctxt "taxonomy general name"
 msgid "Content Types"
 msgstr "Tipos de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:95
+#: includes/taxonomies/class-taxonomy-content-types.php:95
 msgctxt "taxonomy singular name"
 msgid "Content Type"
 msgstr "Tipo de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:97
+#: includes/taxonomies/class-taxonomy-content-types.php:97
 msgid "Search Content Types"
 msgstr "Tipos de conteúdo de pesquisa"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:100
+#: includes/taxonomies/class-taxonomy-content-types.php:100
 msgid "All Content Types"
 msgstr "Todos os tipos de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:102
+#: includes/taxonomies/class-taxonomy-content-types.php:102
 msgid "Parent Content Type"
 msgstr "Tipo de conteúdo pai"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:104
+#: includes/taxonomies/class-taxonomy-content-types.php:104
 msgid "Parent Content Type:"
 msgstr "Tipo de conteúdo pai:"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:106
+#: includes/taxonomies/class-taxonomy-content-types.php:106
 msgid "Edit Content Type"
 msgstr "Editar tipo de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:108
+#: includes/taxonomies/class-taxonomy-content-types.php:108
 msgid "View Content Type"
 msgstr "Exibir tipo de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:110
+#: includes/taxonomies/class-taxonomy-content-types.php:110
 msgid "Update Content Type"
 msgstr "Atualizar o tipo de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:112
+#: includes/taxonomies/class-taxonomy-content-types.php:112
 msgid "Add New Content Type"
 msgstr "Adicionar novo tipo de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:114
+#: includes/taxonomies/class-taxonomy-content-types.php:114
 msgid "New Content Type"
 msgstr "Novo tipo de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:119
+#: includes/taxonomies/class-taxonomy-content-types.php:119
 msgid "No Content Types found."
 msgstr "Nenhum tipo de conteúdo encontrado."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:121
+#: includes/taxonomies/class-taxonomy-content-types.php:121
 msgid "No Content Types"
 msgstr "Sem tipos de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:123
+#: includes/taxonomies/class-taxonomy-content-types.php:123
 msgid "Content Types list navigation"
 msgstr "Tipos de conteúdo listam navegação"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:125
+#: includes/taxonomies/class-taxonomy-content-types.php:125
 msgid "Content Types list"
 msgstr "Lista de tipos de conteúdo"
 
 #. translators: [admin] Tab heading when selecting from the most used terms.
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:127
+#: includes/taxonomies/class-taxonomy-content-types.php:127
 msgctxt "Content Types"
 msgid "Most Used"
 msgstr "Mais usado"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-content-types.php:129
+#: includes/taxonomies/class-taxonomy-content-types.php:129
 msgid "&larr; Back to Content Types"
 msgstr "← de volta aos tipos de conteúdo"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:157
+#: includes/taxonomies/class-taxonomy-resource-types.php:157
 msgctxt "taxonomy general name"
 msgid "Resource Types"
 msgstr "Tipos de recursos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:159
+#: includes/taxonomies/class-taxonomy-resource-types.php:159
 msgctxt "taxonomy singular name"
 msgid "Resource Type"
 msgstr "Tipo de Indentificação"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:161
+#: includes/taxonomies/class-taxonomy-resource-types.php:161
 msgid "Search Resource Types"
 msgstr "Tipos de recursos de pesquisa"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:163
+#: includes/taxonomies/class-taxonomy-resource-types.php:163
 msgid "All Resource Types"
 msgstr "Todos os tipos de recursos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:165
+#: includes/taxonomies/class-taxonomy-resource-types.php:165
 msgid "Parent Resource Type"
 msgstr "Tipo de recurso pai"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:167
+#: includes/taxonomies/class-taxonomy-resource-types.php:167
 msgid "Parent Resource Type:"
 msgstr "Tipo de recurso pai:"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:169
+#: includes/taxonomies/class-taxonomy-resource-types.php:169
 msgid "Edit Resource Type"
 msgstr "Editar tipo de recurso"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:171
+#: includes/taxonomies/class-taxonomy-resource-types.php:171
 msgid "View Resource Type"
 msgstr "Exibir tipo de recurso"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:173
+#: includes/taxonomies/class-taxonomy-resource-types.php:173
 msgid "Update Resource Type"
 msgstr "Atualizar tipo de recurso"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:175
+#: includes/taxonomies/class-taxonomy-resource-types.php:175
 msgid "Add New Resource Type"
 msgstr "Adicionar novo tipo de recurso"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:177
+#: includes/taxonomies/class-taxonomy-resource-types.php:177
 msgid "New Resource Type"
 msgstr "Novo tipo de recurso"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:179
+#: includes/taxonomies/class-taxonomy-resource-types.php:179
 msgid "Add or remove Resource Types"
 msgstr "Adicionar ou remover tipos de recursos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:181
+#: includes/taxonomies/class-taxonomy-resource-types.php:181
 msgid "Choose from most frequently used Resource Types"
 msgstr "Escolha entre os tipos de recursos mais usados"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:183
+#: includes/taxonomies/class-taxonomy-resource-types.php:183
 msgid "No Resource Types found."
 msgstr "Nenhum tipo de recurso encontrado."
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:185
+#: includes/taxonomies/class-taxonomy-resource-types.php:185
 msgid "No Resource Types"
 msgstr "Sem tipos de recursos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:187
+#: includes/taxonomies/class-taxonomy-resource-types.php:187
 msgid "Resource Types list navigation"
 msgstr "Tipos de recursos listam navegação"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:189
+#: includes/taxonomies/class-taxonomy-resource-types.php:189
 msgid "Resource Types list"
 msgstr "Lista de tipos de recursos"
 
 #. translators: [admin] Tab heading when selecting from the most used terms.
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:191
+#: includes/taxonomies/class-taxonomy-resource-types.php:191
 msgctxt "Resource Types"
 msgid "Most Used"
 msgstr "Mais usado"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/taxonomies/class-taxonomy-resource-types.php:193
+#: includes/taxonomies/class-taxonomy-resource-types.php:193
 msgid "&larr; Back to Resource Types"
 msgstr "← de volta aos tipos de recursos"
 
-#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/archive.php:64
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#: includes/helpers/archive.php:66
 msgid "View now"
 msgstr "Ver agora"
 
-#. translators: [front] ARIA page number pagination prefix, e.g. "[Page] 1" https://isaidotorgstg.wpengine.com/en/latest/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/pagination.php:33
+#. translators: [front] ARIA page number pagination prefix, e.g. "[Page] 1" https://isaidotorgstg.wpengine.com/en/latest
+#: includes/helpers/pagination.php:33
 msgid "Page"
 msgstr "Página"
 
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/ AIR country report download
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/annual-reports.php:59
-msgid "View Report"
-msgstr "Exibir relatório"
-
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/ AIR full report download
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/annual-reports.php:69
-msgid "View the full report"
-msgstr "Veja o relatório completo"
-
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/death-penalty.php:20
-msgctxt "death penalty status"
-msgid "Abolitionist for all crimes"
-msgstr "Abolicionista para todos os crimes"
-
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/death-penalty.php:22
-msgid "Does not use the death penalty"
-msgstr "Não usa a pena de morte"
-
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/death-penalty.php:26
-msgctxt "death penalty status"
-msgid "Abolitionist for ordinary crimes"
-msgstr "Abolicionista por crimes comuns"
-
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/death-penalty.php:28
-msgid ""
-"Retains the death penalty only for serious crimes, such as those committed "
-"during times of war"
-msgstr ""
-"Mantém a pena de morte apenas para crimes graves, como aqueles cometidos em "
-"tempos de guerra"
-
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/death-penalty.php:32
-msgctxt "death penalty status"
-msgid "Abolitionist in practice"
-msgstr "Abolicionista na prática"
-
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/death-penalty.php:34
-msgid ""
-"Retains the death penalty in law, but hasn’t executed for at least 10 years"
-msgstr "Mantém a pena de morte na lei, mas não executa há pelo menos 10 anos."
-
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/death-penalty.php:38
-msgctxt "death penalty status"
-msgid "Retentionist"
-msgstr "Retencionista"
-
-#. translators: [front] Location single template https://isaidotorgstg.wpengine.com/en/location/asia-and-the-pacific/south-asia/afghanistan/
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/death-penalty.php:40
-msgid "Retains the death penalty in law"
-msgstr "Mantém a pena de morte na lei"
-
 #. translators: [front] AM not sure yet
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/frontend.php:26
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/frontend.php:32
+#: includes/helpers/frontend.php:27
+#: includes/helpers/frontend.php:39
+#: includes/helpers/frontend.php:45
 msgid "Choose an option"
 msgstr "Escolha uma opção"
 
 #. translators: [front] shown as a label for a region in search results
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/taxonomies.php:764
+#: includes/helpers/taxonomies.php:797
 msgid "Location Profile"
 msgstr "Perfil de localização"
 
 #. translators: [front] shown as a label for a country in search results
-#: wp-content/themes/amnesty-wp-theme/includes/helpers/taxonomies.php:768
+#: includes/helpers/taxonomies.php:801
 msgid "Country Profile"
 msgstr "Perfil do País"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/rest-api/post-data.php:37
-msgid "For use when an item has had a major update"
-msgstr "Para uso quando um item teve uma grande atualização"
-
-#. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/includes/rest-api/post-data.php:47
+#: includes/rest-api/post-data.php:40
 msgid "Raw Umbraco data for this item"
 msgstr "Dados brutos da Umbraco para este item"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/includes/mlp/language-selector.php:87
-#: wp-content/themes/amnesty-wp-theme/includes/mlp/language-selector.php:212
+#: includes/mlp/language-selector.php:109
 msgid "Available languages"
 msgstr "Idiomas disponíveis"
 
 #. translators: [front] %1$s: the object type, %2$s: the object type's language
-#: wp-content/themes/amnesty-wp-theme/includes/mlp/helpers.php:161
+#: includes/mlp/helpers.php:109
 #, php-format
 msgid "View this %1$s in %2$s"
 msgstr "Veja este %1$s em %2$s"
 
-#. translators: [front] ARIA https://wordpresstheme.amnesty.org/the-theme/templates/b050-petition-index/
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/archive-petition.php:20
-#: wp-content/themes/amnesty-wp-theme/page-petitions.php:50
+#: page-petitions.php:58
 msgid "All Petitions"
 msgstr "Todas as Petições"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/search.php:30
-#: wp-content/themes/amnesty-wp-theme/searchpage.php:30
+#: search.php:16
+#: searchpage.php:30
 msgid "Search results"
 msgstr "Resultados da pesquisa"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/footer.php:38
+#: footer.php:37
 msgid "Footer Menus"
 msgstr "Menus de rodapé"
 
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/footer.php:41
-msgid "Site Language"
-msgstr "Idioma do site"
-
 #. translators: [front] ARIA Social Media sharing options
 #. translators: [front] Social Media sharing options
-#: wp-content/themes/amnesty-wp-theme/footer.php:81
+#: footer.php:69
 msgid "Follow us on:"
 msgstr "Siga-nos no Twitter"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/footer.php:84
+#: footer.php:72
 msgid "Follow us on Facebook"
 msgstr "Nos siga no Facebook"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/footer.php:87
+#: footer.php:75
 msgid "Follow us on Twitter"
 msgstr "Siga-nos no Twitter"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/footer.php:90
+#: footer.php:78
 msgid "Subscribe to our YouTube channel"
 msgstr "Subscrever o nosso canal do YouTube"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/footer.php:93
+#: footer.php:81
 msgid "Follow us on Instagram"
 msgstr "Siga-nos no Instagram"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/footer.php:96
+#: footer.php:84
 msgid "Follow us on Telegram"
 msgstr "Siga-nos no Telegram"
 
 #. translators: [front] ARIA
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ Accessibility text
-#: wp-content/themes/amnesty-wp-theme/templates/without-sidebar.php:24
-#: wp-content/themes/amnesty-wp-theme/single.php:52
-#: wp-content/themes/amnesty-wp-theme/author.php:102
-#: wp-content/themes/amnesty-wp-theme/partials/article-share.php:12
+#: author.php:101
+#: partials/article-share.php:12
 msgid "Social sharing options"
 msgstr "Opções de compartilhamento social"
 
 #. translators: [front] ARIA List of product categories
-#: wp-content/themes/amnesty-wp-theme/templates/shop-index.php:38
+#: templates/shop-index.php:40
 msgid "Product Catalogue"
 msgstr "Catálogo de Produtos"
 
-#: wp-content/themes/amnesty-wp-theme/author.php:51
+#: author.php:53
 msgid "Follow"
 msgstr "Seguir"
 
-#: wp-content/themes/amnesty-wp-theme/author.php:75
+#: author.php:73
 msgid "Read more"
 msgstr "Leia mais"
 
-#: wp-content/themes/amnesty-wp-theme/author.php:78
+#: author.php:76
 msgid "More from this author"
 msgstr "Mais deste autor"
 
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/myaccount/orders.php:33
-msgctxt "hash before order number"
-msgid "#"
-msgstr "#"
-
-#. translators: [front] %1$s: formatted order total %2$s: total order items
-#: wp-content/themes/amnesty-wp-theme/partials/myaccount/orders.php:45
-#, php-format
-msgid "%1$s for %2$s item"
-msgid_plural "%1$s for %2$s items"
-msgstr[0] "%1$s por %2$s item"
-msgstr[1] "%1$s por %2$s itens"
-
-#: wp-content/themes/amnesty-wp-theme/partials/post/post-search.php:27
-#: wp-content/themes/amnesty-wp-theme/partials/post/post-content.php:16
+#: partials/post/post-content.php:16
+#: partials/post/post-search.php:27
 msgctxt "updated date label"
 msgid "Updated"
 msgstr "Atualizado"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/partials/post/post-search.php:45
-#: wp-content/themes/amnesty-wp-theme/partials/post/post-content.php:26
+#: partials/post/post-content.php:25
+#: partials/post/post-search.php:47
 msgid "Post published date"
 msgstr "Data de publicação publicada"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/partials/post/post-search.php:47
-#: wp-content/themes/amnesty-wp-theme/partials/post/post-content.php:28
+#: partials/post/post-content.php:27
+#: partials/post/post-search.php:49
 msgid "Post updated date"
 msgstr "Cronograma atualizado"
 
 #. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/news/2021/05/china-three-child-policy-still-a-violation/ placeholder is category name
-#: wp-content/themes/amnesty-wp-theme/partials/post/post-content.php:23
+#: partials/post/post-content.php:22
 #, php-format
 msgid "Article category %s"
 msgstr "Categoria do artigo %s"
 
-#. translators: [front] Accessibility help for scren readers using filtering on search or latest
-#: wp-content/themes/amnesty-wp-theme/partials/archive/filters.php:26
-msgid ""
-"Refine your search results by targeting specific topics from the list of "
-"available taxonomies."
-msgstr ""
-"Refine seus resultados de pesquisa direcionando tópicos específicos da lista "
-"de taxonomias disponíveis."
-
-#. translators: [front] Accessibility help for scren readers using filtering on search or latest
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/archive/filters.php:27
-#: wp-content/themes/amnesty-wp-theme/partials/archive/categories.php:35
+#: partials/archive/categories.php:28
 msgid "Filter results by category"
 msgstr "Filtrar resultados por categoria"
 
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/
 #. translators: [front] search results left hand side of page button
-#: wp-content/themes/amnesty-wp-theme/partials/archive/filters.php:42
-#: wp-content/themes/amnesty-wp-theme/partials/search/filters.php:22
+#: partials/forms/taxonomy-filters.php:32
 msgid "Apply"
 msgstr "Aplicar"
 
 #. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
-#: wp-content/themes/amnesty-wp-theme/partials/archive/filters-active.php:62
+#: partials/archive/filters-active.php:45
 msgid "Filters applied"
 msgstr "Escritórios de filtro"
 
 #. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
-#: wp-content/themes/amnesty-wp-theme/partials/archive/filters-active.php:97
+#: partials/archive/filters-active.php:80
 msgid "Clear all"
 msgstr "Limpar tudo"
 
 #. translators: 1: number of results for search query, 2: don't translate (dynamic search term)
-#: wp-content/themes/amnesty-wp-theme/partials/archive/header.php:21
-#: wp-content/themes/amnesty-wp-theme/partials/search/header.php:13
+#: partials/archive/header.php:21
+#: partials/search/header.php:19
 #, php-format
 msgid "%1$s result for '%2$s'"
 msgid_plural "%1$s results for '%2$s'"
@@ -3363,303 +2105,316 @@ msgstr[0] "%1$s resultado para '%2$s'"
 msgstr[1] "%1$s resulta em '%2$s'"
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options
-#: wp-content/themes/amnesty-wp-theme/partials/archive/header.php:28
-#: wp-content/themes/amnesty-wp-theme/partials/search/header.php:20
+#: partials/archive/header.php:28
+#: partials/search/header.php:26
 msgid "Results information"
 msgstr "Informações sobre os resultados"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/archive/categories.php:64
+#: partials/archive/subcategories.php:55
 msgid "List of subcategories"
 msgstr "Lista de subcategorias"
 
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/archive/categories.php:66
-msgid "List of second-level categories"
-msgstr "Lista de categorias de segundo nível"
-
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/archive/categories.php:69
-#: wp-content/themes/amnesty-wp-theme/partials/archive/categories.php:100
-msgid "Select a sub filter"
-msgstr "Selecione um filtro sub"
-
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/archive/categories.php:97
-msgid "List of third-level categories"
-msgstr "Lista de categorias de terceiro nível"
-
-#: wp-content/themes/amnesty-wp-theme/partials/pagination.php:26
-#: wp-content/themes/amnesty-wp-theme/partials/search/pagination.php:30
+#: partials/pagination.php:28
+#: partials/search/pagination.php:38
 msgid "Pagination"
 msgstr "Paginação"
 
-#. translators: [front] AIRA https://isaidotorgstg.wpengine.com/en/latest/
-#: wp-content/themes/amnesty-wp-theme/partials/pagination.php:37
-#: wp-content/themes/amnesty-wp-theme/partials/search/pagination.php:41
+#. translators: [front] AIRA https://isaidotorgstg.wpengine.com/en/latest
+#: partials/pagination.php:39
+#: partials/search/pagination.php:49
 msgid "Page numbers"
 msgstr "Número de páginas"
 
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/article-share.php:13
-msgid "Share"
-msgstr "Compartilhar"
-
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
-#: wp-content/themes/amnesty-wp-theme/partials/article-share.php:16
+#: partials/article-share.php:14
 msgid "Share on Facebook"
 msgstr "Compartilhar no Facebook"
 
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/
-#: wp-content/themes/amnesty-wp-theme/partials/article-share.php:17
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: partials/article-share.php:15
 msgid "Facebook Logo"
 msgstr "Logotipo do Facebook"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
-#: wp-content/themes/amnesty-wp-theme/partials/article-share.php:21
+#: partials/article-share.php:19
 msgid "Share on Twitter"
 msgstr "Compartilhar no Twitter"
 
 #. translators: [front] Label for category archive navigation
-#: wp-content/themes/amnesty-wp-theme/partials/shop/catalogue-header.php:13
+#: partials/shop/catalogue-header.php:13
 msgid "Product information"
 msgstr "Informações do produto"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/partials/admin/permalinks-post-type.php:18
+#: partials/admin/permalinks-post-type.php:18
 msgid "Post Type Settings"
 msgstr "Configurações de tipos de posts"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/partials/admin/permalinks-post-type.php:26
-#: wp-content/themes/amnesty-wp-theme/partials/admin/permalinks-taxonomy.php:26
+#: partials/admin/permalinks-post-type.php:26
+#: partials/admin/permalinks-taxonomy.php:26
 msgid "URL base"
 msgstr "Base de URL"
 
 #. translators: [admin] %s: the default slug for this item
-#: wp-content/themes/amnesty-wp-theme/partials/admin/permalinks-post-type.php:30
-#: wp-content/themes/amnesty-wp-theme/partials/admin/permalinks-taxonomy.php:30
+#: partials/admin/permalinks-post-type.php:30
+#: partials/admin/permalinks-taxonomy.php:30
 #, php-format
 msgid "Default: %s"
 msgstr "Padrão: %s"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/partials/admin/permalinks-post-type.php:35
-#: wp-content/themes/amnesty-wp-theme/partials/admin/permalinks-taxonomy.php:35
+#: partials/admin/permalinks-post-type.php:35
+#: partials/admin/permalinks-taxonomy.php:35
 msgid "Use hierarchical URLs"
 msgstr "Use URLs hierárquicos"
 
 #. translators: [admin]
-#: wp-content/themes/amnesty-wp-theme/partials/admin/permalinks-taxonomy.php:18
+#: partials/admin/permalinks-taxonomy.php:18
 msgid "Taxonomy Settings"
 msgstr "Configurações de taxonomia"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/partials/navigation/desktop.php:17
+#: partials/navigation/desktop.php:17
 msgid "Page Header"
 msgstr "Cabeçalho da página"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/partials/navigation/desktop.php:25
+#: partials/navigation/desktop.php:25
 msgid "Amnesty Group Websites"
 msgstr "Sites do grupo de anistia"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/partials/navigation/desktop.php:33
+#: partials/navigation/desktop.php:33
 msgid "Primary navigation"
 msgstr "Navegação primária"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/navigation/desktop.php:42
+#: partials/navigation/desktop.php:42
 msgid "Open navigation"
 msgstr "Navegação aberta"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/single/docref.php:18
-msgid "Document Reference: "
-msgstr "Referência do documento:"
-
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/single/meta.php:27
+#: partials/single/publish-date.php:19
 msgid "Post published timestamp"
 msgstr "Pós publicado timestamp"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/single/meta.php:29
+#: partials/single/updated-date.php:25
 msgid "Post updated timestamp"
 msgstr "Cronograma atualizado"
 
-#. translators: [front] %s: the updated date
-#: wp-content/themes/amnesty-wp-theme/partials/single/meta.php:33
-#, php-format
-msgid "Updated: %s"
-msgstr "Atualizado: %s"
-
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/single/byline.php:33
+#: partials/single/byline.php:33
 msgctxt "author attribution (as in \"written by\")"
 msgid "By"
 msgstr "Por"
 
 #. translators: [front] %s: prefix for a post's author attribution
-#: wp-content/themes/amnesty-wp-theme/partials/single/byline.php:72
+#: partials/single/byline.php:72
 #, php-format
 msgctxt "prefix for a post's author attribution"
 msgid "By %s"
 msgstr "Por %s"
 
 #. translators: [front] ARIA Donate %s: the product category name
-#: wp-content/themes/amnesty-wp-theme/partials/product/category.php:24
+#: partials/product/category.php:24
 #, php-format
 msgid "Product Category: %s"
 msgstr "Categoria do artigo %s"
 
 #. translators: [front] ARIA
-#: wp-content/themes/amnesty-wp-theme/partials/search/filters.php:13
+#: partials/forms/taxonomy-filters.php:14
 msgid "Filter results by topic"
 msgstr "Filtrar resultados por tópico"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:5
+#: includes/features/search/helpers.php:135
 msgid "January"
 msgstr "Janeiro"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:6
+#: includes/features/search/helpers.php:136
 msgid "Febuary"
 msgstr "Fevereiro"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:7
+#: includes/features/search/helpers.php:137
 msgid "March"
 msgstr "Março"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:8
+#: includes/features/search/helpers.php:138
 msgid "April"
 msgstr "Abril"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:9
+#: includes/features/search/helpers.php:139
 msgid "May"
 msgstr "Maio"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:10
+#: includes/features/search/helpers.php:140
 msgid "June"
 msgstr "Junho"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:11
+#: includes/features/search/helpers.php:141
 msgid "July"
 msgstr "Julho"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:12
+#: includes/features/search/helpers.php:142
 msgid "August"
 msgstr "Agosto"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:13
+#: includes/features/search/helpers.php:143
 msgid "September"
 msgstr "Setembro"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:14
+#: includes/features/search/helpers.php:144
 msgid "October"
 msgstr "Outubro"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:15
+#: includes/features/search/helpers.php:145
 msgid "November"
 msgstr "Novembro"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:16
+#: includes/features/search/helpers.php:146
 msgid "December"
 msgstr "Dezembro"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:43
+#: partials/search/horizontal-search.php:39
 msgid "Search"
 msgstr "Pesquisar"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:57
+#: partials/search/horizontal-search.php:12
+#: partials/search/horizontal-search.php:52
 msgid "Year"
 msgstr "Ano"
 
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:65
+#: partials/search/horizontal-search.php:13
+#: partials/search/horizontal-search.php:62
 msgid "Month"
 msgstr "Mês"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/search/horizontal-search.php:73
+#: partials/search/horizontal-search.php:77
 msgid "Filters"
 msgstr "Filtros"
 
 #. translators: [front] screen reader text for search field
-#: wp-content/themes/amnesty-wp-theme/partials/search/forminput.php:3
+#: partials/search/forminput.php:13
 msgid "Search input"
 msgstr "Pesquisa de entrada"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/search/forminput.php:4
+#: partials/search/forminput.php:14
 msgid "What are you looking for?"
 msgstr "O que você está procurando?"
 
-#. translators: [front] Countries Locations Page
-#: wp-content/themes/amnesty-wp-theme/partials/taxonomy/location/news.php:20
-msgctxt "news section heading"
-msgid "News"
-msgstr "Notícias"
-
-#. translators: [front] Countries Locations Page
-#: wp-content/themes/amnesty-wp-theme/partials/taxonomy/location/news.php:43
-msgctxt "news section button"
-msgid "View all News"
-msgstr "Ver todas as novidades"
-
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/taxonomy/location/office.php:48
-msgid "Website"
-msgstr "Site"
-
-#. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/taxonomy/location/office.php:49
-msgid "Go to section website"
-msgstr "Vá para o site da seção"
-
-#. translators: [front] %s: location name
-#: wp-content/themes/amnesty-wp-theme/partials/taxonomy/location/office.php:55
-#, php-format
-msgctxt "Link label"
-msgid "View %s"
-msgstr "Ver %s"
-
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector/
-#: wp-content/themes/amnesty-wp-theme/partials/language-selector.php:17
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:17
 msgid "Language Selection"
 msgstr "Seleção de idioma"
 
 #. translators: [front]
-#: wp-content/themes/amnesty-wp-theme/partials/language-selector.php:19
+#: partials/language-selector.php:19
 msgid "Which language would you like to use this site in?"
 msgstr "Em qual idioma você gostaria de usar este site?"
 
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector/
-#: wp-content/themes/amnesty-wp-theme/partials/language-selector.php:20
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:20
 msgid "Choose a language"
 msgstr "Escolher uma língua"
 
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector/
-#: wp-content/themes/amnesty-wp-theme/partials/language-selector.php:26
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:26
 msgid "Close"
 msgstr "Fechar"
 
 #. translators: [front] Donate
-#: wp-content/themes/amnesty-wp-theme/partials/orders/customer-details-with-shipping.php:13
+#: partials/orders/customer-details-with-shipping.php:13
 msgid "Customer Details"
 msgstr "Detalhes do Cliente"
 
 #. translators: [front] Donate forms
-#: wp-content/themes/amnesty-wp-theme/partials/orders/customer-details-with-shipping.php:21
+#: partials/orders/customer-details-with-shipping.php:21
 msgid "Tel:"
 msgstr "Tel:"
 
 #. translators: [front] Donate forms
-#: wp-content/themes/amnesty-wp-theme/partials/orders/customer-details-with-shipping.php:28
+#: partials/orders/customer-details-with-shipping.php:28
 msgid "Payment Method"
 msgstr "Método de Pagamento"
 
-#. translators: [front] Donate forms
-#: wp-content/themes/amnesty-wp-theme/partials/orders/customer-details-with-shipping.php:42
-msgid "Shipping address"
-msgstr "Endereço de entrega"
+#. Theme Name of the theme
+msgid "Humanity Theme"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://github.com/amnestywebsite/humanity-theme"
+msgstr ""
+
+#. Description of the theme
+msgid "The Amnesty International WordPress Humanity Theme"
+msgstr ""
+
+#. Author of the theme
+msgid "Amnesty International"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.amnesty.org"
+msgstr ""
+
+#. translators: [front] %s: the title of the article
+#: includes/blocks/post-list/views/grid-item.php:10
+#: includes/blocks/post-list/views/list-item.php:4
+#: partials/post/post-full.php:16
+#: partials/post/post-none.php:10
+#: partials/post/post-search.php:31
+msgid "Article: %s"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title.
+#: includes/features/search/class-search-filters.php:149
+msgctxt "search results title"
+msgid "Search results"
+msgstr ""
+
+#: includes/rest-api/users.php:82
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Petition Index"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subcategories.php:33
+#: partials/archive/subcategories.php:61
+msgid "Second level category"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subsubcategories.php:31
+#: partials/archive/subsubcategories.php:54
+msgid "Third level category"
+msgstr ""
+
+#. translators: [front]
+#: partials/single/updated-date.php:26
+msgctxt "prefix for post updated date"
+msgid "Updated:"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Search Page"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Checkout Flow"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Account Management"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Shop Index"
+msgstr ""

@@ -33,6 +33,8 @@ if ( ! function_exists( 'amnesty_admin_styles' ) ) {
 		wp_enqueue_script( 'theme-admin', amnesty_asset_uri( 'scripts' ) . '/admin.js', [ 'jquery-core', 'lodash' ], $theme->get( 'Version' ), true );
 		wp_add_inline_style( 'theme-admin', '.nopad th,.nopad td{padding:0}' );
 
+		wp_set_script_translations( 'theme-admin', 'amnesty', get_template_directory() . '/languages' );
+
 		$ol_characters = amnesty_get_option( 'ol_locale_option', 'amnesty_localisation_options_page' );
 		if ( $ol_characters ) {
 			$chosen_ol_format = sprintf( 'ol{list-style-type:%s;}', $ol_characters );
