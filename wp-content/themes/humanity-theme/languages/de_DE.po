@@ -8,10 +8,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-03-06 19:20+0000\n"
-"PO-Revision-Date: 2023-02-16 11:39+0000\n"
+"PO-Revision-Date: 2024-04-09 13:19+0100\n"
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -367,7 +367,7 @@ msgstr "Verwandte Artikel"
 #. translators: [API/admin]
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:186
 msgid "The featured image for the post."
-msgstr "Beitragsbild festlegen"
+msgstr "Beitragsbild festlegen."
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:401
@@ -420,7 +420,7 @@ msgstr ""
 
 #: includes/features/search/permalink.php:45
 msgid "Search page"
-msgstr ""
+msgstr "Suchseite"
 
 #. translators: [admin]
 #: includes/block-patterns/social-share.php:23
@@ -601,7 +601,7 @@ msgstr "Shop-Index-Seite"
 #. translators: [admin]
 #: includes/admin/woo/theme-options.php:33
 msgid "Select the page used for the Shop Index"
-msgstr "Wählen Sie die Seite aus, die für den Shop-Index verwendet wird."
+msgstr "Wählen Sie die Seite aus, die für den Shop-Index verwendet wird"
 
 #. translators: [admin]
 #: includes/admin/woo/theme-options.php:50
@@ -611,7 +611,7 @@ msgstr "Kategorie Archivseite"
 #. translators: [admin]
 #: includes/admin/woo/theme-options.php:52
 msgid "Select the page used for the Product Category Archive"
-msgstr "Wählen Sie die Seite aus, die für das Produktkategoriearchiv verwendet wird."
+msgstr "Wählen Sie die Seite aus, die für das Produktkategoriearchiv verwendet wird"
 
 #. translators: [admin]
 #: includes/admin/theme-options/news.php:19
@@ -793,7 +793,7 @@ msgstr "Myanmar (birmanisch) Nummerierung"
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:88
 msgid "Oriya numbering"
-msgstr "Bestellnummer:"
+msgstr "Bestellnummer"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:90
@@ -956,7 +956,7 @@ msgstr "GTM-Zustimmungsmodus"
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:50
 msgid "The status, and default value of, Google's Consent Mode (see https://support.google.com/analytics/answer/9976101). Note that, when using Consent Mode, you will have to implement targeting via a cookie control plugin such as Civic"
-msgstr "Status und Standardwert des Zustimmungsmodus von Google (siehe https://support.google.com/analytics/answer/9976101). Beachten Sie, dass Sie bei der Verwendung des Zustimmungsmodus das Targeting über ein Cookie-Control-Plugin wie Civic implementieren müssen."
+msgstr "Status und Standardwert des Zustimmungsmodus von Google (siehe https://support.google.com/analytics/answer/9976101). Beachten Sie, dass Sie bei der Verwendung des Zustimmungsmodus das Targeting über ein Cookie-Control-Plugin wie Civic implementieren müssen"
 
 #: includes/admin/theme-options/analytics.php:54
 msgid "Not Enabled"
@@ -1346,7 +1346,7 @@ msgstr "Seitenleistenattribute"
 #. translators: [admin]
 #: includes/post-types/sidebar.php:28
 msgid "Parent Sidebar:"
-msgstr "Eltern-Seitenleiste"
+msgstr "Eltern-Seitenleiste:"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:30
@@ -2356,7 +2356,7 @@ msgstr ""
 
 #. Author of the theme
 msgid "Amnesty International"
-msgstr ""
+msgstr "Amnesty International"
 
 #. Author URI of the theme
 msgid "https://www.amnesty.org"
@@ -2375,15 +2375,15 @@ msgstr ""
 #: includes/features/search/class-search-filters.php:149
 msgctxt "search results title"
 msgid "Search results"
-msgstr ""
+msgstr "Suchergebnisse"
 
 #: includes/rest-api/users.php:82
 msgid "Sorry, you are not allowed to do that."
-msgstr ""
+msgstr "Bedaure, Sie sind nicht berechtigt, dies ausführen."
 
 #. Template Name of the theme
 msgid "Petition Index"
-msgstr ""
+msgstr "Petitionsindex"
 
 #. translators: [front]
 #: partials/archive/subcategories.php:33
@@ -2401,11 +2401,11 @@ msgstr ""
 #: partials/single/updated-date.php:26
 msgctxt "prefix for post updated date"
 msgid "Updated:"
-msgstr ""
+msgstr "Aktualisiert:"
 
 #. Template Name of the theme
 msgid "Search Page"
-msgstr ""
+msgstr "Suchseite"
 
 #. Template Name of the theme
 msgid "Checkout Flow"
@@ -2413,7 +2413,7 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Account Management"
-msgstr ""
+msgstr "Kontoverwaltung"
 
 #. Template Name of the theme
 msgid "Shop Index"

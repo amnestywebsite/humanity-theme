@@ -10,8 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2023-03-06 19:20+0000\n"
 "PO-Revision-Date: \n"
 "Language: he_IL\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? 2 : 3);\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -1352,7 +1352,7 @@ msgstr "תכונות סרגל צידי"
 #. translators: [admin]
 #: includes/post-types/sidebar.php:28
 msgid "Parent Sidebar:"
-msgstr "母侧边栏"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:30

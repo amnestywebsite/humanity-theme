@@ -10,8 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2023-03-06 19:20+0000\n"
 "PO-Revision-Date: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -367,7 +367,7 @@ msgstr "Documents connexes"
 #. translators: [API/admin]
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:186
 msgid "The featured image for the post."
-msgstr "Définir une image d'illustration"
+msgstr "Définir une image d'illustration."
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:401
@@ -380,7 +380,7 @@ msgstr "Pays"
 #, php-format
 msgctxt "search results title suffix for the search term"
 msgid "for “%s”"
-msgstr "Nom (%s)"
+msgstr "nom (%s)"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
 #: includes/features/search/class-search-filters.php:255
@@ -420,7 +420,7 @@ msgstr ""
 
 #: includes/features/search/permalink.php:45
 msgid "Search page"
-msgstr ""
+msgstr "Page de recherche"
 
 #. translators: [admin]
 #: includes/block-patterns/social-share.php:23
@@ -441,7 +441,7 @@ msgstr "Options du thème"
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:42
 msgid "Network Options"
-msgstr "options réseau"
+msgstr "Options Réseau"
 
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:72
@@ -925,7 +925,7 @@ msgstr "Section appel à l'action URL"
 #: includes/admin/theme-options/footer.php:62
 #: includes/admin/theme-options/footer.php:67
 msgid "Copyright info"
-msgstr "Information Copyright "
+msgstr "Information Copyright"
 
 #. translators: [admin]
 #: includes/admin/theme-options/footer.php:69
@@ -1049,7 +1049,7 @@ msgstr "Nom du méta"
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:145
 msgid "e.g. google-site-verification"
-msgstr "Par exemple, google-site-verification"
+msgstr "par exemple, google-site-verification"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:156
@@ -1104,7 +1104,7 @@ msgstr "Google tag Manager script"
 #: includes/admin/theme-options/analytics.php:234
 #: includes/admin/theme-options/analytics.php:245
 msgid "Deprecated. Do not use unless already in use."
-msgstr "obsolescent. Ne pas utiliser à moins qu’il ne soit déjà utilisé."
+msgstr "Obsolescent. Ne pas utiliser à moins qu’il ne soit déjà utilisé."
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:243
@@ -2356,7 +2356,7 @@ msgstr ""
 
 #. Author of the theme
 msgid "Amnesty International"
-msgstr ""
+msgstr "Amnesty International"
 
 #. Author URI of the theme
 msgid "https://www.amnesty.org"
@@ -2375,15 +2375,15 @@ msgstr ""
 #: includes/features/search/class-search-filters.php:149
 msgctxt "search results title"
 msgid "Search results"
-msgstr ""
+msgstr "Résultats de la recherche"
 
 #: includes/rest-api/users.php:82
 msgid "Sorry, you are not allowed to do that."
-msgstr ""
+msgstr "Vous n’êtes pas autorisé à effectuer cela."
 
 #. Template Name of the theme
 msgid "Petition Index"
-msgstr ""
+msgstr "Pétition"
 
 #. translators: [front]
 #: partials/archive/subcategories.php:33
@@ -2401,11 +2401,11 @@ msgstr ""
 #: partials/single/updated-date.php:26
 msgctxt "prefix for post updated date"
 msgid "Updated:"
-msgstr ""
+msgstr "Mis à jour :"
 
 #. Template Name of the theme
 msgid "Search Page"
-msgstr ""
+msgstr "Rechercher"
 
 #. Template Name of the theme
 msgid "Checkout Flow"
@@ -2413,8 +2413,8 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Account Management"
-msgstr ""
+msgstr "Gestion du Compte"
 
 #. Template Name of the theme
 msgid "Shop Index"
-msgstr ""
+msgstr "Index de la boutique"

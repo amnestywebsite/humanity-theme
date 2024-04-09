@@ -8,10 +8,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-03-06 19:20+0000\n"
-"PO-Revision-Date: 2023-04-18 11:33+0100\n"
+"PO-Revision-Date: 2024-04-09 13:18+0100\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -2372,7 +2372,7 @@ msgstr ""
 
 #. Author of the theme
 msgid "Amnesty International"
-msgstr ""
+msgstr "منظمة العفو الدولية"
 
 #. Author URI of the theme
 msgid "https://www.amnesty.org"
@@ -2391,15 +2391,15 @@ msgstr ""
 #: includes/features/search/class-search-filters.php:149
 msgctxt "search results title"
 msgid "Search results"
-msgstr ""
+msgstr "نتائج البحث"
 
 #: includes/rest-api/users.php:82
 msgid "Sorry, you are not allowed to do that."
-msgstr ""
+msgstr "نرجوا المعذرة ، لا يسمح لك أن تفعل ذلك."
 
 #. Template Name of the theme
 msgid "Petition Index"
-msgstr ""
+msgstr "فهرس الالتماسات"
 
 #. translators: [front]
 #: partials/archive/subcategories.php:33
@@ -2417,11 +2417,11 @@ msgstr ""
 #: partials/single/updated-date.php:26
 msgctxt "prefix for post updated date"
 msgid "Updated:"
-msgstr ""
+msgstr "تم التحديث:"
 
 #. Template Name of the theme
 msgid "Search Page"
-msgstr ""
+msgstr "صفحة البحث"
 
 #. Template Name of the theme
 msgid "Checkout Flow"
@@ -2429,8 +2429,8 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Account Management"
-msgstr ""
+msgstr "ادارة الحساب"
 
 #. Template Name of the theme
 msgid "Shop Index"
-msgstr ""
+msgstr "فهرس المتجر"
