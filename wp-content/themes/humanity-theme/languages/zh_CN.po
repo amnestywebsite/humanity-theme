@@ -11,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -307,7 +307,7 @@ msgstr "子类别列表"
 #. translators: [front]
 #: includes/blocks/post-list/views/list-item-date.php:10
 msgid "Date"
-msgstr "日期："
+msgstr "日期"
 
 #. translators: [front]
 #: includes/blocks/post-list/views/list-item-date.php:23
@@ -417,7 +417,7 @@ msgstr ""
 
 #: includes/features/search/permalink.php:45
 msgid "Search page"
-msgstr ""
+msgstr "搜索页面"
 
 #. translators: [admin]
 #: includes/block-patterns/social-share.php:23
@@ -790,7 +790,7 @@ msgstr "緬甸（緬甸）編號"
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:88
 msgid "Oriya numbering"
-msgstr "订单号："
+msgstr "订单号"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:90
@@ -2352,7 +2352,7 @@ msgstr ""
 
 #. Author of the theme
 msgid "Amnesty International"
-msgstr ""
+msgstr "大赦国际"
 
 #. Author URI of the theme
 msgid "https://www.amnesty.org"
@@ -2371,15 +2371,15 @@ msgstr ""
 #: includes/features/search/class-search-filters.php:149
 msgctxt "search results title"
 msgid "Search results"
-msgstr ""
+msgstr "搜索结果"
 
 #: includes/rest-api/users.php:82
 msgid "Sorry, you are not allowed to do that."
-msgstr ""
+msgstr "很抱歉, 您没有足够的权限编辑。"
 
 #. Template Name of the theme
 msgid "Petition Index"
-msgstr ""
+msgstr "请愿指数"
 
 #. translators: [front]
 #: partials/archive/subcategories.php:33
@@ -2397,11 +2397,11 @@ msgstr ""
 #: partials/single/updated-date.php:26
 msgctxt "prefix for post updated date"
 msgid "Updated:"
-msgstr ""
+msgstr "更新："
 
 #. Template Name of the theme
 msgid "Search Page"
-msgstr ""
+msgstr "搜索页面"
 
 #. Template Name of the theme
 msgid "Checkout Flow"
@@ -2409,8 +2409,8 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Account Management"
-msgstr ""
+msgstr "账户管理"
 
 #. Template Name of the theme
 msgid "Shop Index"
-msgstr ""
+msgstr "商店索引页面"

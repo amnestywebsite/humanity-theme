@@ -8,10 +8,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-03-06 19:20+0000\n"
-"PO-Revision-Date: 2023-02-16 11:38+0000\n"
-"Language: pl_PLMIME-Version: 1.0\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.2.2\n"
+"PO-Revision-Date: 2024-04-09 13:25+0100\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -423,7 +423,7 @@ msgstr ""
 
 #: includes/features/search/permalink.php:45
 msgid "Search page"
-msgstr ""
+msgstr "Strona wyszukiwania"
 
 #. translators: [admin]
 #: includes/block-patterns/social-share.php:23
@@ -2213,7 +2213,7 @@ msgstr "Znacznik czasu aktualizacji"
 #: partials/single/byline.php:33
 msgctxt "author attribution (as in \"written by\")"
 msgid "By"
-msgstr "Autor:"
+msgstr "Autor"
 
 #. translators: [front] %s: prefix for a post's author attribution
 #: partials/single/byline.php:72
@@ -2235,51 +2235,51 @@ msgstr "Filtrowanie wyników według tematu"
 
 #: includes/features/search/helpers.php:135
 msgid "January"
-msgstr ""
+msgstr "Styczeń"
 
 #: includes/features/search/helpers.php:136
 msgid "Febuary"
-msgstr ""
+msgstr "Luty"
 
 #: includes/features/search/helpers.php:137
 msgid "March"
-msgstr ""
+msgstr "Marzec"
 
 #: includes/features/search/helpers.php:138
 msgid "April"
-msgstr ""
+msgstr "Kwiecień"
 
 #: includes/features/search/helpers.php:139
 msgid "May"
-msgstr ""
+msgstr "Maj"
 
 #: includes/features/search/helpers.php:140
 msgid "June"
-msgstr ""
+msgstr "Czerwiec"
 
 #: includes/features/search/helpers.php:141
 msgid "July"
-msgstr ""
+msgstr "Lipiec"
 
 #: includes/features/search/helpers.php:142
 msgid "August"
-msgstr ""
+msgstr "Sierpień"
 
 #: includes/features/search/helpers.php:143
 msgid "September"
-msgstr ""
+msgstr "Wrzesień"
 
 #: includes/features/search/helpers.php:144
 msgid "October"
-msgstr ""
+msgstr "Październik"
 
 #: includes/features/search/helpers.php:145
 msgid "November"
-msgstr ""
+msgstr "Listopad"
 
 #: includes/features/search/helpers.php:146
 msgid "December"
-msgstr ""
+msgstr "Grudzień"
 
 #. translators: [front]
 #: partials/search/horizontal-search.php:39
@@ -2360,7 +2360,7 @@ msgstr ""
 
 #. Author of the theme
 msgid "Amnesty International"
-msgstr ""
+msgstr "Amnesty International"
 
 #. Author URI of the theme
 msgid "https://www.amnesty.org"
@@ -2379,15 +2379,15 @@ msgstr ""
 #: includes/features/search/class-search-filters.php:149
 msgctxt "search results title"
 msgid "Search results"
-msgstr ""
+msgstr "Wyniki wyszukiwania"
 
 #: includes/rest-api/users.php:82
 msgid "Sorry, you are not allowed to do that."
-msgstr ""
+msgstr "Przepraszamy, nie możesz tego zrobić."
 
 #. Template Name of the theme
 msgid "Petition Index"
-msgstr ""
+msgstr "Indeks petycji */"
 
 #. translators: [front]
 #: partials/archive/subcategories.php:33
@@ -2405,11 +2405,11 @@ msgstr ""
 #: partials/single/updated-date.php:26
 msgctxt "prefix for post updated date"
 msgid "Updated:"
-msgstr ""
+msgstr "Aktualizowano:"
 
 #. Template Name of the theme
 msgid "Search Page"
-msgstr ""
+msgstr "Strona wyszukiwania"
 
 #. Template Name of the theme
 msgid "Checkout Flow"
@@ -2417,8 +2417,8 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Account Management"
-msgstr ""
+msgstr "Zarządzanie kontem"
 
 #. Template Name of the theme
 msgid "Shop Index"
-msgstr ""
+msgstr "Spis sklepów"

@@ -8,10 +8,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-03-06 19:20+0000\n"
-"PO-Revision-Date: 2023-02-16 11:41+0000\n"
+"PO-Revision-Date: 2024-04-09 13:27+0100\n"
 "Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -367,7 +367,7 @@ msgstr "Itens relacionados"
 #. translators: [API/admin]
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:186
 msgid "The featured image for the post."
-msgstr "Definir imagem destacada"
+msgstr "Definir imagem destacada."
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:401
@@ -420,7 +420,7 @@ msgstr ""
 
 #: includes/features/search/permalink.php:45
 msgid "Search page"
-msgstr ""
+msgstr "Página de pesquisa"
 
 #. translators: [admin]
 #: includes/block-patterns/social-share.php:23
@@ -793,7 +793,7 @@ msgstr "Numeração de Mianmar (Birmanês)"
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:88
 msgid "Oriya numbering"
-msgstr "Número do pedido:"
+msgstr "Número do pedido"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:90
@@ -1104,7 +1104,7 @@ msgstr "Script do Google tag Manager"
 #: includes/admin/theme-options/analytics.php:234
 #: includes/admin/theme-options/analytics.php:245
 msgid "Deprecated. Do not use unless already in use."
-msgstr "deprecado. Não use a menos que já em uso."
+msgstr "Deprecado. Não use a menos que já em uso."
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:243
@@ -2000,7 +2000,7 @@ msgstr "Menus de rodapé"
 #. translators: [front] Social Media sharing options
 #: footer.php:69
 msgid "Follow us on:"
-msgstr "Siga-nos no Twitter"
+msgstr "Siga-nos no Twitter:"
 
 #. translators: [front] ARIA
 #: footer.php:72
@@ -2356,7 +2356,7 @@ msgstr ""
 
 #. Author of the theme
 msgid "Amnesty International"
-msgstr ""
+msgstr "Anistia Internacional"
 
 #. Author URI of the theme
 msgid "https://www.amnesty.org"
@@ -2375,15 +2375,15 @@ msgstr ""
 #: includes/features/search/class-search-filters.php:149
 msgctxt "search results title"
 msgid "Search results"
-msgstr ""
+msgstr "Resultados da pesquisa"
 
 #: includes/rest-api/users.php:82
 msgid "Sorry, you are not allowed to do that."
-msgstr ""
+msgstr "Lamento, você não tem permissão para fazer isso."
 
 #. Template Name of the theme
 msgid "Petition Index"
-msgstr ""
+msgstr "Índice de Petição"
 
 #. translators: [front]
 #: partials/archive/subcategories.php:33
@@ -2401,11 +2401,11 @@ msgstr ""
 #: partials/single/updated-date.php:26
 msgctxt "prefix for post updated date"
 msgid "Updated:"
-msgstr ""
+msgstr "Atualizado:"
 
 #. Template Name of the theme
 msgid "Search Page"
-msgstr ""
+msgstr "Página de Pesquisa"
 
 #. Template Name of the theme
 msgid "Checkout Flow"
@@ -2413,8 +2413,8 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Account Management"
-msgstr ""
+msgstr "Gestão de Conta"
 
 #. Template Name of the theme
 msgid "Shop Index"
-msgstr ""
+msgstr "Página de loja"

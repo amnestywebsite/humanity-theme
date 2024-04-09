@@ -8,10 +8,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-03-06 19:20+0000\n"
-"PO-Revision-Date: 2023-02-16 11:41+0000\n"
+"PO-Revision-Date: 2024-04-09 13:28+0100\n"
 "Language: ru_RU\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -311,7 +311,7 @@ msgstr "Перечень подкатегорий"
 #. translators: [front]
 #: includes/blocks/post-list/views/list-item-date.php:10
 msgid "Date"
-msgstr "Дата:"
+msgstr "Дата"
 
 #. translators: [front]
 #: includes/blocks/post-list/views/list-item-date.php:23
@@ -354,7 +354,7 @@ msgstr "ЗАГОЛОВОК Я-А"
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
 #: includes/query-filters/sort-order.php:22
 msgid "Most Relevant"
-msgstr "ПО РЕЛЕВАНТНОСТИ "
+msgstr "ПО РЕЛЕВАНТНОСТИ"
 
 #. translators: [front] shown on post single
 #. translators: [admin]
@@ -369,7 +369,7 @@ msgstr "Материалы по теме"
 #. translators: [API/admin]
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:186
 msgid "The featured image for the post."
-msgstr "Установить изображение"
+msgstr "Установить изображение."
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:401
@@ -423,7 +423,7 @@ msgstr ""
 
 #: includes/features/search/permalink.php:45
 msgid "Search page"
-msgstr ""
+msgstr "Страница поиска"
 
 #. translators: [admin]
 #: includes/block-patterns/social-share.php:23
@@ -671,7 +671,7 @@ msgstr "Выбор символа упорядоченного списка"
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:36
 msgid "Please select"
-msgstr "пожалуйста, выберите только один элемент"
+msgstr "Пожалуйста, выберите только один элемент"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:40
@@ -796,7 +796,7 @@ msgstr "Нумерация Мьянма (Бирма)"
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:88
 msgid "Oriya numbering"
-msgstr "Номер заказа:"
+msgstr "Номер заказа"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:90
@@ -959,7 +959,7 @@ msgstr "Режим согласия GTM"
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:50
 msgid "The status, and default value of, Google's Consent Mode (see https://support.google.com/analytics/answer/9976101). Note that, when using Consent Mode, you will have to implement targeting via a cookie control plugin such as Civic"
-msgstr "Состояние и значение по умолчанию режима согласия Google (см. https://support.google.com/analytics/answer/9976101). Обратите внимание, что при использовании режима согласия вам придется реализовать таргетинг с помощью плагина управления файлами cookie, такого как Civic."
+msgstr "Состояние и значение по умолчанию режима согласия Google (см. https://support.google.com/analytics/answer/9976101). Обратите внимание, что при использовании режима согласия вам придется реализовать таргетинг с помощью плагина управления файлами cookie, такого как Civic"
 
 #: includes/admin/theme-options/analytics.php:54
 msgid "Not Enabled"
@@ -1449,7 +1449,7 @@ msgstr "Спасибо!"
 #. translators: [admin]
 #: includes/woo/emails.php:21
 msgid "Title image"
-msgstr "изображение заголовка "
+msgstr "Изображение заголовка"
 
 #. translators: [admin]
 #: includes/woo/emails.php:23
@@ -2360,7 +2360,7 @@ msgstr ""
 
 #. Author of the theme
 msgid "Amnesty International"
-msgstr ""
+msgstr "Amnesty International"
 
 #. Author URI of the theme
 msgid "https://www.amnesty.org"
@@ -2379,15 +2379,15 @@ msgstr ""
 #: includes/features/search/class-search-filters.php:149
 msgctxt "search results title"
 msgid "Search results"
-msgstr ""
+msgstr "Результаты поиска"
 
 #: includes/rest-api/users.php:82
 msgid "Sorry, you are not allowed to do that."
-msgstr ""
+msgstr "Извините, вы не можете сделать это."
 
 #. Template Name of the theme
 msgid "Petition Index"
-msgstr ""
+msgstr "Инициатива"
 
 #. translators: [front]
 #: partials/archive/subcategories.php:33
@@ -2405,11 +2405,11 @@ msgstr ""
 #: partials/single/updated-date.php:26
 msgctxt "prefix for post updated date"
 msgid "Updated:"
-msgstr ""
+msgstr "Обновлено:"
 
 #. Template Name of the theme
 msgid "Search Page"
-msgstr ""
+msgstr "Поиск"
 
 #. Template Name of the theme
 msgid "Checkout Flow"
@@ -2417,8 +2417,8 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Account Management"
-msgstr ""
+msgstr "Управление аккаунтом"
 
 #. Template Name of the theme
 msgid "Shop Index"
-msgstr ""
+msgstr "Страница индекса магазина"
