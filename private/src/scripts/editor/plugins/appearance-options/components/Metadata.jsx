@@ -2,6 +2,7 @@ import Byline from './Byline.jsx';
 import ShareButtons from './ShareButtons.jsx';
 
 const { PanelBody, ToggleControl } = wp.components;
+const { compose, ifCondition } = wp.compose;
 const { __ } = wp.i18n;
 
 /**
@@ -72,4 +73,6 @@ const Metadata = ({ createMetaUpdate, props }) => {
   );
 };
 
-export default Metadata;
+export default compose([
+  ifCondition(() => wp.data.select('core/editor').getEditedPostAttribute('type') === 'post'),
+])(Metadata);

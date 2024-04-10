@@ -212,3 +212,7 @@ p.page-heroContent {
 .page-heroBackground--light .play-icon {
   border-color: transparent transparent transparent $color-white;
 }
+
+.page-hero + main .article-container {
+  padding-top: 0;
+}
