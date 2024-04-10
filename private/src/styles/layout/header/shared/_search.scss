@@ -7,13 +7,13 @@
   margin-left: spacing(half);
   content: "";
 
-  @include mq(xm-large) {
+  @include mq(mobile-nav) {
     margin-left: 0;
   }
 }
 
 .search-menu-item span {
-  @include mq(xm-large) {
+  @include mq(mobile-nav) {
     position: absolute !important;
     overflow: hidden !important;
     width: 1px !important;
