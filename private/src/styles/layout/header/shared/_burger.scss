@@ -13,7 +13,7 @@
     width: 70px;
   }
 
-  @include mq(xm-large) {
+  @include mq(mobile-nav) {
     display: none;
   }
 }

@@ -23,7 +23,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: left;
-  padding: spacing(half) spacing();
+  padding: spacing(half) 22px;
   width: 100%;
   height: 100%;
 
@@ -94,7 +94,7 @@
 .page-nav--main > ul > .menu-item {
   display: none;
 
-  @include mq(xm-large) {
+  @include mq(mobile-nav) {
     display: flex;
   }
 }
