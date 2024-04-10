@@ -13,6 +13,7 @@
 .article-container {
   @include flexy-wrapper;
   margin-top: spacing();
+  padding: 0 40px;
 
   @include mq(large) {
     flex-wrap: nowrap;
