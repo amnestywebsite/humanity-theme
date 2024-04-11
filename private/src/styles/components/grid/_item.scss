@@ -27,6 +27,23 @@
   max-width: 100%;
 }
 
+.grid-itemContent p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 12px;
+  color: $color-black;
+  line-height: 1.4;
+  font-size: 16px;
+  background-color: $color-white;
+  max-width: 100%;
+}
+
+.grid-itemContent a {
+  color: $color-black;
+  font-weight: bold;
+  font-family: var(--font-family-secondary);
+}
+
 .grid-itemMeta {
   display: block;
   text-transform: uppercase;
@@ -78,40 +95,6 @@ h3.grid-itemTitle > a {
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-.grid-itemContent {
-  position: relative;
-  display: none;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.no-js .grid-item:hover .grid-itemContent,
-.no-js .grid-item:focus .grid-itemContent {
-  display: block;
-}
-
-.no-js .grid-item:focus-within .grid-itemContent {
-  display: block;
-}
-
-.grid-itemContent p {
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding: 12px;
-  color: $color-black;
-  line-height: 1.4;
-  font-size: 16px;
-  background-color: $color-white;
-  max-width: 100%;
-}
-
-.grid-itemContent a {
-  color: $color-black;
-  font-weight: bold;
-  font-family: var(--font-family-secondary);
-  text-transform: uppercase;
 }
 
 .grid {

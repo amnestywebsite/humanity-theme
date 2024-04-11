@@ -153,25 +153,6 @@ p.has-larger-font-size {
   font-size: 2rem !important;
 }
 
-.add-more-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 24px;
-  padding: 24px;
-  width: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: $color-white;
-  border: 1px solid $color-blue-mid-dark;
-
-  .dashicon {
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
-    vertical-align: top;
-  }
-}
-
 .form-row {
   display: flex;
 }

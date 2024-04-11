@@ -4,9 +4,13 @@ if ( ! isset( $data['tag'], $data['tag_link'] ) ) {
 	return;
 }
 
+if ( ! $data['tag'] ) {
+	return;
+}
+
 $output = esc_html( $data['tag'] );
 
-if ( isset( $data['tag_link'] ) && ! ! $data['tag_link'] ) {
+if ( $data['tag_link'] ) {
 	$output = sprintf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['tag_link'] ), esc_html( $data['tag'] ) );
 }
 

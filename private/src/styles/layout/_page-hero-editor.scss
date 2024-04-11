@@ -6,10 +6,11 @@
 .page-hero {
   padding-top: 111px;
   padding-bottom: 80px;
-  min-height: 710px;
+  min-height: 450px;
   background-size: cover;
   background-position: center center;
   color: $color-white;
+
 }
 
 .page-hero + .components-base-control {
@@ -72,6 +73,10 @@ p.page-heroContent {
 
 .page-heroSize--small {
   min-height: 450px;
+}
+
+.page-heroSize--large {
+  min-height: 710px;
 }
 
 .page-heroBackground--dark .page-heroContent,

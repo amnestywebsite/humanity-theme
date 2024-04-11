@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import LinkList from './editable/LinkList.jsx';
 import GridItem from './editable/GridItem.jsx';
+import Appender from './Appender.jsx';
 
 const { BlockIcon } = wp.blockEditor;
 const { Component } = wp.element;
@@ -15,6 +16,8 @@ class DisplayCustom extends Component {
     tagLink: '',
     title: '',
     titleLink: '',
+    date: null,
+    authorName: '',
   };
 
   // eslint-disable-next-line camelcase
@@ -102,26 +105,43 @@ class DisplayCustom extends Component {
     let { custom = [] } = this.props;
     const { style, prefix } = this.props;
 
-    if (!custom.length > 0) {
+    if (style === 'petition') {
+      return null;
+    }
+
+    if (!custom.length) {
       custom = [{ ...DisplayCustom.defaultObject }];
     }
 
-    return (
-      <div>
-        {style !== 'grid' && (
+    let appender = null;
+    if (custom.length < 8) {
+      appender = <Appender onClick={this.addItem} />
+    }
+
+    if (style !== 'grid') {
+      return (
+        <div>
           <ul className="linkList">
             {custom.map((item, index) => (
               <LinkList
                 key={`${prefix}-${index}`}
                 {...item}
+                showAuthor={this.props.showAuthor}
+                showPostDate={this.props.showPostDate}
                 createUpdate={this.createUpdateAttribute(index)}
                 createRemove={this.createRemoveItem(index)}
               />
             ))}
           </ul>
-        )}
+          {appender}
+        </div>
+      );
+    }
 
-        {style === 'grid' && [1, 2, 3, 5, 6, 7].indexOf(custom.length) > -1 ? (
+    // style === 'grid'
+    if ([1, 2, 3, 5, 6, 7].indexOf(custom.length) > -1) {
+      return (
+        <div>
           <div className={`grid grid-${custom.length}`}>
             {custom.map((item, index) => (
               <GridItem
@@ -133,26 +153,25 @@ class DisplayCustom extends Component {
               />
             ))}
           </div>
-        ) : (
-          <div className={`grid grid-many`}>
-            {custom.map((item, index) => (
-              <GridItem
-                key={`${prefix}-${index}`}
-                {...item}
-                createUpdate={this.createUpdateAttribute(index)}
-                createRemove={this.createRemoveItem(index)}
-                updateMedia={this.createUpdateMediaAttribute(index)}
-              />
-            ))}
-          </div>
-        )}
+          {appender}
+        </div>
+      );
+    }
 
-        {custom.length < 8 && (
-          <button onClick={this.addItem} className="add-more-button">
-            <BlockIcon icon="plus-alt" />
-            <span>{/* translators: [admin] */ __('Add another item', 'amnesty')}</span>
-          </button>
-        )}
+    return (
+      <div>
+        <div className={`grid grid-many`}>
+          {custom.map((item, index) => (
+            <GridItem
+              key={`${prefix}-${index}`}
+              {...item}
+              createUpdate={this.createUpdateAttribute(index)}
+              createRemove={this.createRemoveItem(index)}
+              updateMedia={this.createUpdateMediaAttribute(index)}
+            />
+          ))}
+        </div>
+        {appender}
       </div>
     );
   }
