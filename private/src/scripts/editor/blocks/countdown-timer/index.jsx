@@ -37,13 +37,5 @@ registerBlockType('amnesty-core/countdown-timer', {
 
   edit: DisplayComponent,
 
-  save({ attributes }) {
-    const { date, expiredText } = attributes;
-
-    return (
-      <div className="clockdiv" style={{ textAlign: attributes.alignment }}>
-        <div className="countdownClock" data-timestamp={date} data-expiredText={expiredText} />
-      </div>
-    );
-  },
+  save: () => null,
 });
