@@ -388,7 +388,7 @@ if ( ! function_exists( 'amnesty_render_list_item' ) ) {
 		$post_date      = isset( $data['date'] ) ? $data['date'] : '';
 		$show_author    = isset( $data['showAuthor'] ) ? $data['showAuthor'] : '';
 		$show_post_date = isset( $data['showPostDate'] ) ? $data['showPostDate'] : '';
-		$post_updated   = get_post_meta( $data['id'], 'amnesty_updated', true );
+		$post_updated   = isset( $data['id'] ) ? get_post_meta( $data['id'], 'amnesty_updated', true ) : '';
 
 		if ( $show_post_date && $post_updated ) {
 			$post_updated = wp_date( get_option( 'date_format' ), strtotime( $post_updated ), new DateTimeZone( 'UTC' ) );
