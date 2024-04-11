@@ -4,7 +4,7 @@ declare( strict_types = 1 );
 
 if ( ! function_exists( 'amnesty_render_countdown_block' ) ) {
 	/**
-	 * Render a download block
+	 * Render a countdown timer block
 	 *
 	 * @package Amnesty\Blocks
 	 *

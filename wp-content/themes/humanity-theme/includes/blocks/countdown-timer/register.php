@@ -4,7 +4,7 @@ declare( strict_types = 1 );
 
 if ( ! function_exists( 'register_countdown_block' ) ) {
 	/**
-	 * Register the Download block
+	 * Register the countdown timer block
 	 *
 	 * @package Amnesty\Blocks
 	 *
