@@ -43,5 +43,5 @@ registerBlockType('amnesty-core/block-call-to-action', {
 
   edit: DisplayComponent,
 
-  save: () => null,
+  save: () => <InnerBlocks.Content />,
 });
