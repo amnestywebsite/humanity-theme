@@ -38,6 +38,8 @@ require_once __DIR__ . '/image/register.php';
 require_once __DIR__ . '/image/render.php';
 require_once __DIR__ . '/link-group/register.php';
 require_once __DIR__ . '/link-group/render.php';
+require_once __DIR__ . '/links-with-icons/register.php';
+require_once __DIR__ . '/links-with-icons/render.php';
 require_once __DIR__ . '/post-list/register.php';
 require_once __DIR__ . '/post-list/render.php';
 require_once __DIR__ . '/menu/register.php';
@@ -81,6 +83,7 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 		register_iframe_block();
 		register_image_block();
 		register_link_group_block();
+		register_links_with_icons_block();
 		register_list_block();
 		register_menu_block();
 		register_petition_list_block();

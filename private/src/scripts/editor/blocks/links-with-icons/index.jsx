@@ -92,33 +92,7 @@ registerBlockType('amnesty-core/repeatable-block', {
   ],
   edit: DisplayComponent,
 
-  save({ attributes, className }) {
-    const {
-      quantity,
-      orientation = 'horizontal',
-      backgroundColor,
-      hideLines,
-      dividerIcon = 'none',
-    } = attributes;
-    const classes = classnames(
-      'linksWithIcons-group',
-      `is-${orientation}`,
-      `has-${quantity}-items`,
-      {
-        className: !!className,
-        'has-background': !!backgroundColor,
-        'has-no-lines': !!hideLines,
-        [`has-${backgroundColor}-background-color`]: !!backgroundColor,
-        [`icon-${dividerIcon}`]: !!dividerIcon,
-      },
-    );
-
-    return (
-      <div className={classes}>
-        <InnerBlocks.Content />
-      </div>
-    );
-  },
+  save: () => <InnerBlocks.Content />,
 });
 
 registerBlockStyle('amnesty-core/repeatable-block', {
