@@ -19,7 +19,7 @@ if ( ! function_exists( 'amnesty_render_cta_block' ) ) {
 		// Parse the attributes
 		$pre_heading = isset( $attrs['preheading'] ) ? $attrs['preheading'] : '';
 		$heading     = isset( $attrs['title'] ) ? $attrs['title'] : '';
-		$cta_content     = isset( $attrs['content'] ) ? $attrs['content'] : '';
+		$cta_content = isset( $attrs['content'] ) ? $attrs['content'] : '';
 
 		// Set the classes
 		$classes = classnames(
