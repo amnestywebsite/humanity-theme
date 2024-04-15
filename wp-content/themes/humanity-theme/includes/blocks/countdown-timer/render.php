@@ -19,9 +19,9 @@ if ( ! function_exists( 'amnesty_render_countdown_block' ) ) {
 			'<div class="clockdiv" style= text-align:%s;>
 			  <div class="countdownClock" data-timestamp=%s data-expiredText="%s" />
 			</div>',
-			$attrs['alignment'],
-			$attrs['date'],
-			$attrs['expiredText']
+			esc_attr( $attrs['alignment'] ),
+			esc_attr( $attrs['date'] ),
+			esc_attr( $attrs['expiredText'] )
 		);
 	}
 }
