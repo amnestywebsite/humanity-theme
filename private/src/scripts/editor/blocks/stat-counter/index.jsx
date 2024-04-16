@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 import blockIcon from './icon.jsx';
 import DisplayComponent from './DisplayComponent.jsx';
+import deprecated from './deprecated.jsx';
 
 const { registerBlockType } = wp.blocks;
 const { __ } = wp.i18n;
@@ -35,36 +36,8 @@ registerBlockType('amnesty-core/counter', {
     },
   },
 
+  deprecated,
   edit: DisplayComponent,
 
-  save: ({ attributes, className }) => {
-    const { alignment, duration, value } = attributes;
-
-    const blockClasses = classnames(className, {
-      [`align${alignment}`]: !!alignment,
-    });
-
-    return (
-      <div className={blockClasses} data-duration={duration} data-value={value}>
-        {value}
-      </div>
-    );
-  },
-  deprecated: [
-    {
-      save: ({ attributes, className }) => {
-        const { alignment, duration, value } = attributes;
-
-        const blockClasses = classnames(className, {
-          [`align${alignment}`]: !!alignment,
-        });
-
-        return (
-          <div className={blockClasses} data-duration={duration}>
-            {value}
-          </div>
-        );
-      },
-    },
-  ],
+  save: () => null,
 });
