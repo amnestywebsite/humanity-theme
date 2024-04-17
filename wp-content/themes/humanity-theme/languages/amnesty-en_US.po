@@ -1,0 +1,4619 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Amnesty Core\n"
+"Report-Msgid-Bugs-To: @github:amnestywebsite/amnesty-wp-theme/issues\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-03-06 19:20+0000\n"
+"PO-Revision-Date: 2024-04-17 11:39+0100\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. translators: [front] Accessibility label for screen reader/keyboard users
+#: header-shop.php:20
+#: header-taxonomy.php:21
+#: header.php:40
+msgid "Skip to main content"
+msgstr "Skip to main content"
+
+#. translators: [front] Link to return to all posts of category %s
+#: partials/single/meta-area.php:34
+#: partials/single/term-area.php:38
+#, php-format
+msgid "Back to %s"
+msgstr "Back to %s"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:22
+#: includes/post-types/sidebar.php:73
+#: assets/scripts/blocks.js:9714
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#. translators: [front] Donate
+#. translators: [admin]
+#: woocommerce/order/order-details.php:52
+#: assets/scripts/blocks.js:27271
+#: assets/scripts/blocks.js:32520
+msgid "Quantity"
+msgstr "Quantity"
+
+#. translators: [front] Donate
+#: woocommerce/order/order-details.php:53
+msgid "Price"
+msgstr "Price"
+
+#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#. translators: [front]
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Previous post navigation label
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest
+#. translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label
+#. translators: [admin]
+#: includes/blocks/slider/render.php:16
+#: partials/archive/categories.php:49
+#: partials/pagination.php:10
+#: partials/pagination.php:35
+#: partials/search/pagination.php:18
+#: partials/search/pagination.php:45
+#: assets/scripts/blocks.js:31032
+#: assets/scripts/blocks.js:31588
+#: assets/scripts/blocks.js:31678
+#: assets/scripts/blocks.js:31792
+#: assets/scripts/blocks.js:31903
+#: assets/scripts/blocks.js:32016
+#: assets/scripts/blocks.js:32061
+#: assets/scripts/blocks.js:32106
+msgid "Previous"
+msgstr "Previous"
+
+#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#. translators: [front]
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Next post navigation label
+#. translators: [front]  https://isaidotorgstg.wpengine.com/en/latest
+#. translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label
+#. translators: [admin]
+#: includes/blocks/slider/render.php:15
+#: partials/archive/categories.php:50
+#: partials/pagination.php:12
+#: partials/pagination.php:50
+#: partials/search/pagination.php:20
+#: partials/search/pagination.php:60
+#: assets/scripts/blocks.js:31029
+#: assets/scripts/blocks.js:31585
+#: assets/scripts/blocks.js:31675
+#: assets/scripts/blocks.js:31789
+#: assets/scripts/blocks.js:31900
+#: assets/scripts/blocks.js:32013
+#: assets/scripts/blocks.js:32058
+#: assets/scripts/blocks.js:32103
+msgid "Next"
+msgstr "Next"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:17
+msgid "Email:"
+msgstr "Email:"
+
+#. translators: [front] Donate %s: product category
+#: woocommerce/archive-product_cat.php:41
+#, php-format
+msgid "Products in the %s category"
+msgstr "Products in the %s category"
+
+#. translators: [front]
+#. translators: [front] Donate
+#: partials/shop/catalogue-header.php:17
+#: woocommerce/archive-product.php:42
+msgid "All products"
+msgstr "All products"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:185
+msgid "Description"
+msgstr "Description"
+
+#. translators: [front] Donate related products
+#: woocommerce/single-product/related.php:36
+msgid "Related Items"
+msgstr "Related Items"
+
+#. translators: [front] Label for shop index
+#. translators: [front] Donate Label for shop index
+#: partials/shop/catalogue-header.php:25
+#: woocommerce/single-product/related.php:39
+msgid "Catalogue"
+msgstr "Catalogue"
+
+#. translators: [front] Donate
+#: woocommerce/global/quantity-input.php:39
+#: woocommerce/global/quantity-input.php:51
+msgid "Qty"
+msgstr "Qty"
+
+#. translators: [front] Donate
+#: woocommerce/loop/result-count.php:27
+msgid "Showing one result"
+msgstr "Showing one result"
+
+#. translators: [front] Donate %d: total results
+#: woocommerce/loop/result-count.php:33
+#, php-format
+msgid "Showing all %d result"
+msgid_plural "Showing all %d results"
+msgstr[0] "Showing all %d result"
+msgstr[1] "Showing all %d results"
+
+#. translators: [front] Donate 1: first result 2: last result 3: total results
+#: woocommerce/loop/result-count.php:43
+#, php-format
+msgctxt "shown with first and last result on product pages"
+msgid "Showing %1$d&ndash;%2$d of %3$d result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] "Showing %1$d&ndash;%2$d of %3$d result"
+msgstr[1] "Showing %1$d&ndash;%2$d of %3$d results"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
+#. translators: [front] Donate Label for post sorting options
+#: partials/archive/header.php:44
+#: partials/search/header.php:36
+#: woocommerce/loop/orderby.php:29
+msgid "Sort by"
+msgstr "Sort by"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404/ ARIA
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: 404.php:15
+#: 404.php:16
+msgid "Page Not Found"
+msgstr "Page Not Found"
+
+#: 404.php:18
+msgid "The page you are looking for does not exist."
+msgstr "The page you are looking for does not exist."
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: 404.php:19
+msgid "Go to the Homepage"
+msgstr "Go to the Homepage"
+
+#. translators: [front] ARIA https://www.amnesty.eu/news/ a number followed by the string on the list of posts
+#: archive.php:66
+msgid "Results"
+msgstr "Results"
+
+#. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
+#. translators: [admin]
+#: includes/blocks/term-list/render.php:60
+#: assets/scripts/blocks.js:34332
+#: assets/scripts/blocks.js:34389
+msgid "A-Z of Countries and Regions"
+msgstr "A-Z of Countries and Regions"
+
+#. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#. translators: [admin]
+#: includes/blocks/regions/render.php:20
+#: assets/scripts/blocks.js:34639
+msgid "Explore by Region"
+msgstr "Explore by Region"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#: includes/blocks/regions/render.php:82
+msgid "Hierarchical list of terms"
+msgstr "Hierarchical list of terms"
+
+#. translators: [admin]
+#: includes/block-patterns/pattern-category.php:23
+#: includes/blocks/block-category.php:24
+msgid "Amnesty Core"
+msgstr "Amnesty Core"
+
+#. translators: [front]
+#. translators: [front] AM I think this is used on the petition index or petition block
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars
+#. translators: [front] used by sections on petition forms
+#. translators: [admin]
+#: includes/blocks/iframe-button/register.php:29
+#: includes/blocks/iframe-button/render.php:21
+#: includes/blocks/petition-list/render.php:54
+#: partials/petitions/item.php:41
+#: assets/scripts/blocks.js:13436
+#: assets/scripts/blocks.js:29758
+#: assets/scripts/blocks.js:29798
+#: assets/scripts/blocks.js:30408
+msgid "Act Now"
+msgstr "Act Now"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/  used by sections, when a form rather than an Iframe is used
+#. translators: [front] used by sections on petition forms
+#: includes/blocks/petition-list/render.php:57
+#: partials/petitions/item.php:38
+msgctxt "User has signed this petition."
+msgid "Signed!"
+msgstr "Signed!"
+
+#. translators: [front] ARIA
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: includes/blocks/tweet-action/render.php:41
+#: partials/article-share.php:20
+msgid "Twitter Logo"
+msgstr "Twitter Logo"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action
+#. translators: [admin]
+#: includes/blocks/tweet-action/render.php:56
+#: includes/blocks/tweet-action/render.php:57
+#: assets/scripts/blocks.js:29280
+#: assets/scripts/blocks.js:29282
+#: assets/scripts/blocks.js:29373
+#: assets/scripts/blocks.js:29375
+#: assets/scripts/blocks.js:29415
+#: assets/scripts/blocks.js:29417
+msgid "Send this Tweet"
+msgstr "Send this Tweet"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery
+#. translators: [admin]
+#: includes/blocks/slider/views/slide.php:20
+#: assets/scripts/blocks.js:31318
+#: assets/scripts/blocks.js:31388
+#: assets/scripts/blocks.js:31428
+#: assets/scripts/blocks.js:31509
+msgid "Tap here to return to gallery"
+msgstr "Tap here to return to gallery"
+
+#. translators: [front]
+#. translators: [admin]
+#: includes/blocks/slider/views/slide.php:41
+#: assets/scripts/blocks.js:31334
+#: assets/scripts/blocks.js:31404
+#: assets/scripts/blocks.js:31444
+#: assets/scripts/blocks.js:31523
+#: assets/scripts/blocks.js:31664
+#: assets/scripts/blocks.js:31777
+#: assets/scripts/blocks.js:31888
+#: assets/scripts/blocks.js:32000
+msgid "Toggle Content"
+msgstr "Toggle Content"
+
+#. translators: [front]
+#. translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource
+#. translators: [admin]
+#: includes/blocks/download/render.php:23
+#: includes/blocks/download/render.php:68
+#: assets/scripts/blocks.js:32356
+msgid "Download"
+msgstr "Download"
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:24
+msgid "Category List"
+msgstr "Category List"
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:97
+#: includes/blocks/menu/render.php:135
+msgid "List of page sections"
+msgstr "List of page sections"
+
+#. translators: [front]
+#: includes/blocks/post-list/views/list-item-date.php:10
+msgid "Date"
+msgstr "Date"
+
+#. translators: [front]
+#: includes/blocks/post-list/views/list-item-date.php:23
+msgid "Updated"
+msgstr "Updated"
+
+#. translators: [front]
+#. translators: [admin]
+#: includes/blocks/post-list/views/list-item-author.php:9
+#: assets/scripts/blocks.js:26862
+msgid "Author"
+msgstr "Author"
+
+#. translators: [front] no context avalible
+#: includes/blocks/embed-sutori/render.php:27
+msgctxt "Toggle visibility of Sutori Timeline"
+msgid "Click to show/hide timeline"
+msgstr "Click to show/hide timeline"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:15
+msgid "Most Recent"
+msgstr "Most Recent"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:16
+msgid "Oldest First"
+msgstr "Oldest First"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:17
+msgid "Title - Ascending"
+msgstr "Title - Ascending"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:18
+msgid "Title - Descending"
+msgstr "Title - Descending"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
+#: includes/query-filters/sort-order.php:22
+msgid "Most Relevant"
+msgstr "Most Relevant"
+
+#. translators: [front] shown on post single
+#. translators: [admin]
+#: includes/features/related-content/class-related-content.php:119
+#: includes/features/related-content/class-wp-rest-related-content-controller.php:150
+#: assets/scripts/blocks.js:35517
+#: assets/scripts/blocks.js:35530
+#: assets/scripts/blocks.js:35681
+msgid "Related Content"
+msgstr "Related Content"
+
+#. translators: [API/admin]
+#: includes/features/related-content/class-wp-rest-related-content-controller.php:186
+msgid "The featured image for the post."
+msgstr "The featured image for the post."
+
+#. translators: [admin]
+#: includes/features/related-content/class-related-content.php:401
+#: assets/scripts/blocks.js:35481
+msgid "Country"
+msgstr "Country"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
+#: includes/features/search/class-search-filters.php:249
+#, php-format
+msgctxt "search results title suffix for the search term"
+msgid "for “%s”"
+msgstr "for “%s”"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
+#: includes/features/search/class-search-filters.php:255
+#, php-format
+msgctxt "search results title suffix for term exclusions"
+msgid "excluding “%s”"
+msgstr "excluding “%s”"
+
+#. translators: [front] appended to search results title (n results for...); %s: the month searched for
+#: includes/features/search/class-search-filters.php:278
+#, php-format
+msgctxt "search results title suffix for month published"
+msgid "for the month of %s"
+msgstr "for the month of %s"
+
+#. translators: [front] appended to search results title (n results for...); %s: the year searched for
+#: includes/features/search/class-search-filters.php:295
+#, php-format
+msgctxt "search results title suffix for year published"
+msgid "in the year %s"
+msgstr "in the year %s"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
+#. translators: Singular/Plural number of posts.
+#: includes/features/search/class-search-filters.php:189
+#: partials/archive/header.php:17
+#: partials/search/header.php:15
+#, php-format
+msgid "%s result"
+msgid_plural "%s results"
+msgstr[0] "%s result"
+msgstr[1] "%s results"
+
+#: includes/features/search/permalink.php:39
+msgid "The ID of the page that should display the search interface"
+msgstr "The ID of the page that should display the search interface"
+
+#: includes/features/search/permalink.php:45
+msgid "Search page"
+msgstr "Search page"
+
+#. translators: [admin]
+#: includes/block-patterns/social-share.php:23
+msgid "Social Share"
+msgstr "Social Share"
+
+#. translators: [admin]
+#: includes/block-patterns/social-share.php:25
+msgid "Three column layout with headings, tweet action, social icons, video embed and buttons"
+msgstr "Three column layout with headings, tweet action, social icons, video embed and buttons"
+
+#. translators: [admin]
+#: includes/admin/theme-options.php:18
+#: includes/admin/theme-options.php:23
+msgid "Theme Options"
+msgstr "Theme Options"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:42
+msgid "Network Options"
+msgstr "Network Options"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:72
+msgid "Features"
+msgstr "Features"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:74
+msgid "Manage available features"
+msgstr "Manage available features"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:101
+msgid "Dedicated language selector"
+msgstr "Dedicated language selector"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:112
+msgid "Language button menu"
+msgstr "Language button menu"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:114
+msgid "Enables a button in the main navigation which triggers a language selection menu"
+msgstr "Enables a button in the main navigation which triggers a language selection menu"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:135
+#: includes/admin/theme-options/pop-in.php:25
+#: includes/admin/theme-options/pop-in.php:29
+#: includes/post-types/pop-in.php:26
+#: includes/post-types/pop-in.php:77
+msgid "Pop-in"
+msgstr "Pop-in"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:155
+msgid "Index Page Filter Types"
+msgstr "Index Page Filter Types"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:160
+msgid "Categories Only"
+msgstr "Categories Only"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:162
+msgid "Taxonomies & Terms"
+msgstr "Taxonomies & Terms"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:181
+msgid "Related Content (Posts)"
+msgstr "Related Content (Posts)"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:183
+msgid "Enable the Related Content area on the post single template"
+msgstr "Enable the Related Content area on the post single template"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:199
+msgid "Post Types"
+msgstr "Post Types"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:201
+msgid "Manage available post types"
+msgstr "Manage available post types"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:220
+msgid "Taxonomies"
+msgstr "Taxonomies"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:222
+msgid "Manage available taxonomies"
+msgstr "Manage available taxonomies"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:129
+#: includes/admin/class-fonts.php:131
+msgid "Fonts"
+msgstr "Fonts"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:145
+msgid "Font Declaration Type"
+msgstr "Font Declaration Type"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:147
+msgid "Do you wish to use the default theme fonts (Amnesty Trade Gothic, Amnesty Trade Gothic Condensed), or use Google Fonts?"
+msgstr "Do you wish to use the default theme fonts (Amnesty Trade Gothic, Amnesty Trade Gothic Condensed), or use Google Fonts?"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:151
+msgid "Theme Default"
+msgstr "Theme Default"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:153
+msgid "Google Fonts"
+msgstr "Google Fonts"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:163
+msgid "Primary Font Family"
+msgstr "Primary Font Family"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:165
+msgid "The primary font family is used for body text."
+msgstr "The primary font family is used for body text."
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:177
+msgid "Secondary Font Family"
+msgstr "Secondary Font Family"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:179
+msgid "The secondary font family is used for headings.<br>If you only have one font family, declare the secondary font family to be the same as the primary."
+msgstr "The secondary font family is used for headings.<br>If you only have one font family, declare the secondary font family to be the same as the primary."
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:191
+msgid "Font Face URL"
+msgstr "Font Face URL"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:193
+msgid "Paste the Google Fonts URL from which the CSS file should be loaded.<br>This should start with https://fonts.googleapis.com/."
+msgstr "Paste the Google Fonts URL from which the CSS file should be loaded.<br>This should start with https://fonts.googleapis.com/."
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:35
+msgid "Amnesty Permalinks"
+msgstr "Amnesty Permalinks"
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:44
+msgid "If you like, you may enter custom URL slugs for post types and taxonomies here. This allows you to create URL structures in your language."
+msgstr "If you like, you may enter custom URL slugs for post types and taxonomies here. This allows you to create URL structures in your language."
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:45
+msgid "Please note that changing these from their defaults may require you to set rewrite rules if you have existing content. Only change them if you know what you are doing."
+msgstr "Please note that changing these from their defaults may require you to set rewrite rules if you have existing content. Only change them if you know what you are doing."
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:31
+msgid "Shop Index Page"
+msgstr "Shop Index Page"
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:33
+msgid "Select the page used for the Shop Index"
+msgstr "Select the page used for the Shop Index"
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:50
+msgid "Category Archive Page"
+msgstr "Category Archive Page"
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:52
+msgid "Select the page used for the Product Category Archive"
+msgstr "Select the page used for the Product Category Archive"
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:19
+msgid "News"
+msgstr "News"
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:28
+msgid "Default Post sidebar"
+msgstr "Default Post sidebar"
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:30
+#: includes/admin/theme-options/news.php:50
+msgid "Drag posts from the left column to the right column to attach them to this page.<br />Only the first sidebar selected will be used."
+msgstr "Drag posts from the left column to the right column to attach them to this page.<br />Only the first sidebar selected will be used."
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:48
+msgid "Default Page sidebar"
+msgstr "Default Page sidebar"
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:38
+msgid "Active Pop-in Call to Action"
+msgstr "Active Pop-in Call to Action"
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:40
+msgid "Drag a pop-in from the left column to the right column to activate."
+msgstr "Drag a pop-in from the left column to the right column to activate."
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:58
+msgid "Timeout"
+msgstr "Timeout"
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:60
+msgid "After how many days should a dismissed pop-in be re-shown to the user?"
+msgstr "After how many days should a dismissed pop-in be re-shown to the user?"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:19
+#: includes/admin/theme-options/localisation.php:23
+msgid "Localisation"
+msgstr "Localisation"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:32
+msgid "Ordered List Character Choice"
+msgstr "Ordered List Character Choice"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:36
+msgid "Please select"
+msgstr "Please select"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:40
+msgid "Default; Western Arabic numerals"
+msgstr "Default; Western Arabic numerals"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:42
+msgid "Arabic-Indic numbers"
+msgstr "Arabic-Indic numbers"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:44
+msgid "Bengali numbering"
+msgstr "Bengali numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:46
+msgid "Cambodian/Khmer numbering"
+msgstr "Cambodian/Khmer numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:48
+msgid "Devanagari numbering"
+msgstr "Devanagari numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:50
+msgid "Ethiopic numbering"
+msgstr "Ethiopic numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:52
+msgid "Formal Korean Han numbering"
+msgstr "Formal Korean Han numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:54
+msgid "Gujarati numbering"
+msgstr "Gujarati numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:56
+msgid "Gurmukhi numbering"
+msgstr "Gurmukhi numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:58
+msgid "Han \"Earthly Branch\" ordinals"
+msgstr "Han “Earthly Branch” ordinals"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:60
+msgid "Han \"Heavenly Stem\" ordinals"
+msgstr "Han “Heavenly Stem” ordinals"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:62
+msgid "Japanese formal numbering"
+msgstr "Japanese formal numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:64
+msgid "Japanese informal numbering"
+msgstr "Japanese informal numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:66
+msgid "Kannada numbering"
+msgstr "Kannada numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:68
+msgid "Korean hangul numbering"
+msgstr "Korean Hangul numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:70
+msgid "Korean hanja numbering"
+msgstr "Korean hanja numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:72
+msgid "Laotian numbering"
+msgstr "Laotian numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:74
+msgid "Lowercase Armenian numbering"
+msgstr "Lowercase Armenian numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:76
+msgid "Lowercase ASCII letters"
+msgstr "Lowercase ASCII letters"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:78
+msgid "Lowercase classical Greek."
+msgstr "Lowercase classical Greek."
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:80
+msgid "Lowercase Roman numerals."
+msgstr "Lowercase Roman numerals."
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:82
+msgid "Malayalam numbering"
+msgstr "Malayalam numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:84
+msgid "Mongolian numbering"
+msgstr "Mongolian numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:86
+msgid "Myanmar (Burmese) numbering"
+msgstr "Myanmar (Burmese) numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:88
+msgid "Oriya numbering"
+msgstr "Oriya numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:90
+msgid "Persian numbering"
+msgstr "Persian numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:92
+msgid "Simplified Chinese formal numbering"
+msgstr "Simplified Chinese formal numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:94
+msgid "Simplified Chinese informal numbering"
+msgstr "Simplified Chinese informal numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:96
+msgid "Tamil numbering"
+msgstr "Tamil numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:98
+msgid "Telugu numbering"
+msgstr "Telugu numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:100
+msgid "Thai numbering"
+msgstr "Thai numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:102
+msgid "Tibetan numbering"
+msgstr "Tibetan numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:104
+msgid "Traditional Armenian numbering"
+msgstr "Traditional Armenian numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:106
+msgid "Traditional Chinese formal numbering"
+msgstr "Traditional Chinese formal numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:108
+msgid "Traditional Chinese informal numbering"
+msgstr "Traditional Chinese informal numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:110
+msgid "Traditional Georgian numbering"
+msgstr "Traditional Georgian numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:112
+msgid "Traditional Hebrew numbering"
+msgstr "Traditional Hebrew numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:114
+msgid "Traditional uppercase Armenian numbering"
+msgstr "Traditional uppercase Armenian numbering"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:116
+msgid "Uppercase ASCII letters"
+msgstr "Uppercase ASCII letters"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:118
+msgid "Uppercase Roman numerals."
+msgstr "Uppercase Roman numerals."
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:19
+#: assets/scripts/blocks.js:1209
+#: assets/scripts/blocks.js:12234
+#: assets/scripts/blocks.js:12239
+msgid "Header"
+msgstr "Header"
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:28
+msgid "Site Logotype"
+msgstr "Site Logotype"
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:47
+msgid "Site Logomark"
+msgstr "Site Logomark"
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:66
+msgid "Logo Link"
+msgstr "Logo Link"
+
+#. translators: [front] ARIA
+#. translators: [admin]
+#: footer.php:34
+#: includes/admin/theme-options/footer.php:15
+#: includes/admin/theme-options/footer.php:19
+msgid "Footer"
+msgstr "Footer"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:28
+msgid "Section Title"
+msgstr "Section Title"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:37
+msgid "Section Content"
+msgstr "Section Content"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:46
+msgid "Section Call to Action text"
+msgstr "Section Call to Action text"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:55
+msgid "Section Call to Action url"
+msgstr "Section Call to Action url"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:62
+#: includes/admin/theme-options/footer.php:67
+msgid "Copyright info"
+msgstr "Copyright info"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:69
+msgid "By default, the copyright info outputs the current year followed by the site name; add content to this field to override this."
+msgstr "By default, the copyright info outputs the current year followed by the site name; add content to this field to override this."
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:21
+#: includes/admin/theme-options/analytics.php:25
+msgid "Analytics"
+msgstr "Analytics"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:37
+msgid "Google Tag Manager Code"
+msgstr "Google Tag Manager Code"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:39
+msgid "Paste your Google Tag Manager Code"
+msgstr "Paste your Google Tag Manager Code"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:48
+msgid "GTM Consent Mode"
+msgstr "GTM Consent Mode"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:50
+msgid "The status, and default value of, Google's Consent Mode (see https://support.google.com/analytics/answer/9976101). Note that, when using Consent Mode, you will have to implement targeting via a cookie control plugin such as Civic"
+msgstr "The status, and default value of, Google’s Consent Mode (see https://support.google.com/analytics/answer/9976101). Note that, when using Consent Mode, you will have to implement targeting via a cookie control plugin such as Civic"
+
+#: includes/admin/theme-options/analytics.php:54
+msgid "Not Enabled"
+msgstr "Not Enabled"
+
+#: includes/admin/theme-options/analytics.php:55
+msgid "Enabled, denied"
+msgstr "Enabled, denied"
+
+#: includes/admin/theme-options/analytics.php:56
+msgid "Enabled, granted"
+msgstr "Enabled, granted"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:65
+msgid "Google Analytics Code"
+msgstr "Google Analytics Code"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:67
+msgid "Paste your Google Analytics Code"
+msgstr "Paste your Google Analytics Code"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:76
+msgid "Google Analytics v4 Code"
+msgstr "Google Analytics v4 Code"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:78
+msgid "Paste your Google Analytics v4 Code; you must also have entered your GA Code above"
+msgstr "Paste your Google Analytics v4 Code; you must also have entered your GA Code above"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:87
+msgid "Hotjar Site ID:"
+msgstr "Hotjar Site ID:"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:89
+msgid "Paste your Hotjar Site ID (example: 552474)"
+msgstr "Paste your Hotjar Site ID (example: 552474)"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:98
+msgid "VWO Account ID"
+msgstr "VWO Account ID"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:100
+msgid "Paste your VWO Account ID here"
+msgstr "Paste your VWO Account ID here"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:114
+msgid "Site Meta Tags"
+msgstr "Site Meta Tags"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:123
+msgid "Meta Tags"
+msgstr "Meta Tags"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:125
+msgid "Add your site meta tags (&lt;meta name=\"thing\" /&gt;) here; useful for things like site verification tags"
+msgstr "Add your site meta tags (&lt;meta name=\"thing\" /&gt;) here; useful for things like site verification tags"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:125
+#: includes/admin/theme-options/analytics.php:167
+msgid "If using WordPress SEO (Yoast) or similar, you may wish to use their built-in alternatives"
+msgstr "If using WordPress SEO (Yoast) or similar, you may wish to use their built-in alternatives"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:129
+msgid "Add Tag"
+msgstr "Add Tag"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:131
+msgid "Remove Tag"
+msgstr "Remove Tag"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:143
+msgid "Meta Name"
+msgstr "Meta Name"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:145
+msgid "e.g. google-site-verification"
+msgstr "e.g. google-site-verification"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:156
+#: includes/admin/theme-options/analytics.php:198
+msgid "Meta Value"
+msgstr "Meta Value"
+
+#: includes/admin/theme-options/analytics.php:166
+msgid "RDF Tags"
+msgstr "RDF Tags"
+
+#: includes/admin/theme-options/analytics.php:167
+msgid "Add your site rdf tags (&lt;meta property=\"thing\" /&gt;) here; useful for things like Facebook pages"
+msgstr "Add your site rdf tags (&lt;meta property=\"thing\" /&gt;) here; useful for things like Facebook pages"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:171
+msgid "Add Property"
+msgstr "Add Property"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:173
+msgid "Remove Property"
+msgstr "Remove Property"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:185
+msgid "Meta Property"
+msgstr "Meta Property"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:187
+msgid "e.g. fb:pages"
+msgstr "e.g. fb:pages"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:215
+msgid "Deprecated fields"
+msgstr "Deprecated fields"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:224
+msgid "The below fields are deprecated. Avoid using them if they are not currently in use on this site"
+msgstr "The below fields are deprecated. Avoid using them if they are not currently in use on this site"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:232
+msgid "Google Tag Manager Script"
+msgstr "Google Tag Manager Script"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:234
+#: includes/admin/theme-options/analytics.php:245
+msgid "Deprecated. Do not use unless already in use."
+msgstr "Deprecated. Do not use unless already in use."
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:243
+msgid "Google Tag Manager Noscript"
+msgstr "Google Tag Manager Noscript"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:19
+msgid "Social Media"
+msgstr "Social Media"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:28
+msgid "Facebook URL"
+msgstr "Facebook URL"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:37
+msgid "Twitter Handle"
+msgstr "Twitter Handle"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:46
+msgid "Youtube URL"
+msgstr "Youtube URL"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:55
+msgid "Instagram Handle"
+msgstr "Instagram Handle"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:64
+msgid "Telegram Handle"
+msgstr "Telegram Handle"
+
+#: author.php:68
+msgid "Biography"
+msgstr "Biography"
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:84
+#: includes/admin/class-accessibility.php:86
+msgid "Accessibility"
+msgstr "Accessibility"
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:100
+msgid "Negishim"
+msgstr "Negishim"
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:102
+msgid "Load the Negishim Accessibility widget (Hebrew)."
+msgstr "Load the Negishim Accessibility widget (Hebrew)."
+
+#. translators: [admin]
+#: includes/users/meta.php:19
+msgid "Amnesty Umbraco User Info"
+msgstr "Amnesty Umbraco User Info"
+
+#. translators: [admin] user settings
+#: includes/users/contact-methods.php:17
+msgid "Twitter Username (without the @)"
+msgstr "Twitter Username (without the @)"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:20
+msgctxt "Post Type General Name"
+msgid "Pop-in variants"
+msgstr "Pop-in variants"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:22
+msgctxt "Post Type Singular Name"
+msgid "Pop-in"
+msgstr "Pop-in"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:24
+msgid "Pop-in variants"
+msgstr "Pop-in variants"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:28
+msgid "Pop-in Archives"
+msgstr "Pop-in Archives"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:30
+msgid "Pop-in Attributes"
+msgstr "Pop-in Attributes"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:32
+msgid "Parent Pop-in:"
+msgstr "Parent Pop-in:"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:34
+msgid "All Pop-in variants"
+msgstr "All Pop-in variants"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:36
+msgid "Add New Pop-in variant"
+msgstr "Add New Pop-in variant"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:38
+#: includes/post-types/sidebar.php:34
+msgid "Add New"
+msgstr "Add New"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:40
+msgid "New Pop-in"
+msgstr "New Pop-in"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:42
+msgid "Edit Pop-in"
+msgstr "Edit Pop-in"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:44
+msgid "Update Pop-in"
+msgstr "Update Pop-in"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:46
+msgid "View Pop-in"
+msgstr "View Pop-in"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:48
+msgid "View Pop-in variants"
+msgstr "View Pop-in variants"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:50
+msgid "Search Pop-in variants"
+msgstr "Search Pop-in variants"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:52
+msgid "No pop-in variants found"
+msgstr "No pop-in variants found"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:54
+msgid "No pop-in variants found in Trash"
+msgstr "No pop-in variants found in Trash"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:56
+#: includes/post-types/sidebar.php:52
+#: assets/scripts/blocks.js:12110
+msgid "Featured Image"
+msgstr "Featured Image"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:58
+#: includes/post-types/sidebar.php:54
+msgid "Set featured image"
+msgstr "Set featured image"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:60
+#: includes/post-types/sidebar.php:56
+msgid "Remove featured image"
+msgstr "Remove featured image"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:62
+#: includes/post-types/sidebar.php:58
+msgid "Use as featured image"
+msgstr "Use as featured image"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:64
+msgid "Insert into pop-in"
+msgstr "Insert into pop-in"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:66
+msgid "Uploaded to this pop-in"
+msgstr "Uploaded to this pop-in"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:68
+msgid "Pop-in variants list"
+msgstr "Pop-in variants list"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:70
+msgid "Pop-in variants list navigation"
+msgstr "Pop-in variants list navigation"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:72
+msgid "Filter pop-in variants"
+msgstr "Filter pop-in variants"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:79
+msgid "A Pop-in is a call to action which renders at the very top of a page, pushing the entire page content down."
+msgstr "A Pop-in is a call to action which renders at the very top of a page, pushing the entire page content down."
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:16
+msgctxt "Post Type General Name"
+msgid "Sidebars"
+msgstr "Sidebars"
+
+#. translators: [admin]
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: includes/post-types/sidebar.php:18
+#: single.php:42
+msgctxt "Post Type Singular Name"
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:20
+msgid "Sidebars"
+msgstr "Sidebars"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:24
+msgid "Sidebar Archives"
+msgstr "Sidebar Archives"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:26
+msgid "Sidebar Attributes"
+msgstr "Sidebar Attributes"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:28
+msgid "Parent Sidebar:"
+msgstr "Parent Sidebar:"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:30
+msgid "All Sidebars"
+msgstr "All Sidebars"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:32
+msgid "Add New Sidebar"
+msgstr "Add New Sidebar"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:36
+msgid "New Sidebar"
+msgstr "New Sidebar"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:38
+msgid "Edit Sidebar"
+msgstr "Edit Sidebar"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:40
+msgid "Update Sidebar"
+msgstr "Update Sidebar"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:42
+msgid "View Sidebar"
+msgstr "View Sidebar"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:44
+msgid "View Sidebars"
+msgstr "View Sidebars"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:46
+msgid "Search Sidebar"
+msgstr "Search Sidebar"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:48
+msgid "Not Found"
+msgstr "Not Found"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:50
+msgid "Not Found in Trash"
+msgstr "Not Found in Trash"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:60
+msgid "Insert into sidebar"
+msgstr "Insert into sidebar"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:62
+msgid "Uploaded to this item"
+msgstr "Uploaded to this item"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:64
+msgid "Sidebars list"
+msgstr "Sidebars list"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:66
+msgid "Sidebars list navigation"
+msgstr "Sidebars list navigation"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:68
+msgid "Filter sidebar list"
+msgstr "Filter sidebar list"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:75
+msgid "Sidebar post type"
+msgstr "Sidebar post type"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/cart.php:29
+msgid "Number of items in your cart"
+msgstr "Number of items in your cart"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/order.php:15
+msgid "Your order has been processed. Your order details are shown below for your reference:"
+msgstr "Your order has been processed. Your order details are shown below for your reference:"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/checkout.php:26
+msgid "Thank You!"
+msgstr "Thank You!"
+
+#. translators: [admin]
+#: includes/woo/emails.php:21
+msgid "Title image"
+msgstr "Title image"
+
+#. translators: [admin]
+#: includes/woo/emails.php:23
+msgid "URL to an image you want to show above the title. Upload images using the media uploader (Admin > Media)."
+msgstr "URL to an image you want to show above the title. Upload images using the media uploader (Admin > Media)."
+
+#. translators: [admin]
+#: includes/woo/emails.php:62
+msgid "Footer image"
+msgstr "Footer image"
+
+#. translators: [admin]
+#: includes/woo/emails.php:64
+msgid "URL to an image you want to show in the footer. Upload images using the media uploader (Admin > Media)."
+msgstr "URL to an image you want to show in the footer. Upload images using the media uploader (Admin > Media)."
+
+#. translators: [admin]
+#: includes/theme-setup/supports.php:73
+msgid "Standard Post Template"
+msgstr "Standard Post Template"
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:249
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:91
+#: includes/theme-setup/scripts-and-styles.php:251
+msgctxt "open double quote"
+msgid "“"
+msgstr "“"
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:92
+#: includes/theme-setup/scripts-and-styles.php:253
+msgctxt "close double quote"
+msgid "”"
+msgstr "”"
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:93
+#: includes/theme-setup/scripts-and-styles.php:255
+msgctxt "open single quote"
+msgid "‘"
+msgstr "‘"
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:94
+#: includes/theme-setup/scripts-and-styles.php:257
+msgctxt "close single quote"
+msgid "’"
+msgstr "’"
+
+#. translators: %s the button title
+#: includes/theme-setup/class-mobile-nav-walker.php:302
+#, php-format
+msgid "Expand %s list"
+msgstr "Expand %s list"
+
+#. translators: [front] Accessibility text for logo
+#: includes/theme-setup/navigation.php:29
+msgid "Amnesty International Logotype"
+msgstr "Amnesty International Logotype"
+
+#. translators: [front] Accessibility text for logo
+#: includes/theme-setup/navigation.php:42
+msgid "Amnesty International Logomark"
+msgstr "Amnesty International Logomark"
+
+#. translators: [front] Screen reader accessibility text for logo to give context when clicking
+#: includes/theme-setup/navigation.php:51
+msgid "Visit the Amnesty International home page"
+msgstr "Visit the Amnesty International home page"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:145
+msgid "Main Menu"
+msgstr "Main Menu"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:147
+msgid "Site Selector"
+msgstr "Site Selector"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:149
+msgid "Footer Main"
+msgstr "Footer Main"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:151
+msgid "Footer Legal"
+msgstr "Footer Legal"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:81
+msgctxt "taxonomy general name"
+msgid "Countries"
+msgstr "Countries"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:83
+msgctxt "taxonomy singular name"
+msgid "Country"
+msgstr "Country"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:85
+msgid "Search Countries"
+msgstr "Search Countries"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:87
+msgid "All Countries"
+msgstr "All Countries"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:89
+msgid "Parent Country"
+msgstr "Parent Country"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:91
+msgid "Parent Country:"
+msgstr "Parent Country:"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:93
+msgid "Edit Country"
+msgstr "Edit Country"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:95
+msgid "View Country"
+msgstr "View Country"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:97
+msgid "Update Country"
+msgstr "Update Country"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:99
+msgid "Add New Country"
+msgstr "Add New Country"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:101
+msgid "New Country Name"
+msgstr "New Country Name"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:103
+msgid "Add or remove Countries"
+msgstr "Add or remove Countries"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:105
+msgid "Choose from most frequently used Countries"
+msgstr "Choose from most frequently used Countries"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:107
+msgid "No Countries found."
+msgstr "No Countries found."
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:109
+msgid "No Countries"
+msgstr "No Countries"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:111
+msgid "Countries list navigation"
+msgstr "Countries list navigation"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:113
+msgid "Countries list"
+msgstr "Countries list"
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-locations.php:115
+msgctxt "countries"
+msgid "Most Used"
+msgstr "Most Used"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:117
+msgid "&larr; Back to Countries"
+msgstr "&larr; Back to Countries"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:156
+msgctxt "taxonomy general name"
+msgid "Topics"
+msgstr "Topics"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:158
+msgctxt "taxonomy singular name"
+msgid "Topic"
+msgstr "Topic"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:160
+msgid "Search Topics"
+msgstr "Search Topics"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:162
+msgid "All Topics"
+msgstr "All Topics"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:164
+msgid "Parent Topic"
+msgstr "Parent Topic"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:166
+msgid "Parent Topic:"
+msgstr "Parent Topic:"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:168
+msgid "Edit Topic"
+msgstr "Edit Topic"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:170
+msgid "View Topic"
+msgstr "View Topic"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:172
+msgid "Update Topic"
+msgstr "Update Topic"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:174
+msgid "Add New Topic"
+msgstr "Add New Topic"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:176
+msgid "New Topic"
+msgstr "New Topic"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:178
+msgid "Add or remove Topics"
+msgstr "Add or remove Topics"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:180
+msgid "Choose from most frequently used Topics"
+msgstr "Choose from most frequently used Topics"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:182
+msgid "No Topics found."
+msgstr "No Topics found."
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:184
+msgid "No Topics"
+msgstr "No Topics"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:186
+msgid "Topics list navigation"
+msgstr "Topics list navigation"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:188
+msgid "Topics list"
+msgstr "Topics list"
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-topics.php:190
+msgctxt "topics"
+msgid "Most Used"
+msgstr "Most Used"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:192
+msgid "&larr; Back to Topics"
+msgstr "&larr; Back to Topics"
+
+#. translators: [admin]
+#: includes/taxonomies/custom-fields/precedence.php:26
+#: includes/taxonomies/custom-fields/precedence.php:32
+msgid "Taxonomy Precedence"
+msgstr "Taxonomy Precedence"
+
+#. translators: [admin]
+#: includes/taxonomies/custom-fields/precedence.php:34
+msgid "In which order taxonomies should be ranked when retrieving a term to display prominently for an item"
+msgstr "In which order taxonomies should be ranked when retrieving a term to display prominently for an item"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:91
+#: includes/taxonomies/class-taxonomy-content-types.php:93
+msgctxt "taxonomy general name"
+msgid "Content Types"
+msgstr "Content Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:95
+msgctxt "taxonomy singular name"
+msgid "Content Type"
+msgstr "Content Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:97
+msgid "Search Content Types"
+msgstr "Search Content Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:100
+msgid "All Content Types"
+msgstr "All Content Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:102
+msgid "Parent Content Type"
+msgstr "Parent Content Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:104
+msgid "Parent Content Type:"
+msgstr "Parent Content Type:"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:106
+msgid "Edit Content Type"
+msgstr "Edit Content Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:108
+msgid "View Content Type"
+msgstr "View Content Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:110
+msgid "Update Content Type"
+msgstr "Update Content Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:112
+msgid "Add New Content Type"
+msgstr "Add New Content Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:114
+msgid "New Content Type"
+msgstr "New Content Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:119
+msgid "No Content Types found."
+msgstr "No Content Types found."
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:121
+msgid "No Content Types"
+msgstr "No Content Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:123
+msgid "Content Types list navigation"
+msgstr "Content Types list navigation"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:125
+msgid "Content Types list"
+msgstr "Content Types list"
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-content-types.php:127
+msgctxt "Content Types"
+msgid "Most Used"
+msgstr "Most Used"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:129
+msgid "&larr; Back to Content Types"
+msgstr "&larr; Back to Content Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:157
+msgctxt "taxonomy general name"
+msgid "Resource Types"
+msgstr "Resource Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:159
+msgctxt "taxonomy singular name"
+msgid "Resource Type"
+msgstr "Resource Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:161
+msgid "Search Resource Types"
+msgstr "Search Resource Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:163
+msgid "All Resource Types"
+msgstr "All Resource Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:165
+msgid "Parent Resource Type"
+msgstr "Parent Resource Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:167
+msgid "Parent Resource Type:"
+msgstr "Parent Resource Type:"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:169
+msgid "Edit Resource Type"
+msgstr "Edit Resource Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:171
+msgid "View Resource Type"
+msgstr "View Resource Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:173
+msgid "Update Resource Type"
+msgstr "Update Resource Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:175
+msgid "Add New Resource Type"
+msgstr "Add New Resource Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:177
+msgid "New Resource Type"
+msgstr "New Resource Type"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:179
+msgid "Add or remove Resource Types"
+msgstr "Add or remove Resource Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:181
+msgid "Choose from most frequently used Resource Types"
+msgstr "Choose from most frequently used Resource Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:183
+msgid "No Resource Types found."
+msgstr "No Resource Types found."
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:185
+msgid "No Resource Types"
+msgstr "No Resource Types"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:187
+msgid "Resource Types list navigation"
+msgstr "Resource Types list navigation"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:189
+msgid "Resource Types list"
+msgstr "Resource Types list"
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-resource-types.php:191
+msgctxt "Resource Types"
+msgid "Most Used"
+msgstr "Most Used"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:193
+msgid "&larr; Back to Resource Types"
+msgstr "&larr; Back to Resource Types"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#: includes/helpers/archive.php:66
+msgid "View now"
+msgstr "View now"
+
+#. translators: [front] ARIA page number pagination prefix, e.g. "[Page] 1" https://isaidotorgstg.wpengine.com/en/latest
+#: includes/helpers/pagination.php:33
+msgid "Page"
+msgstr "Page"
+
+#. translators: [front] AM not sure yet
+#: includes/helpers/frontend.php:27
+#: includes/helpers/frontend.php:39
+#: includes/helpers/frontend.php:45
+msgid "Choose an option"
+msgstr "Choose an option"
+
+#. translators: [front] shown as a label for a region in search results
+#: includes/helpers/taxonomies.php:797
+msgid "Location Profile"
+msgstr "Location Profile"
+
+#. translators: [front] shown as a label for a country in search results
+#: includes/helpers/taxonomies.php:801
+msgid "Country Profile"
+msgstr "Country Profile"
+
+#. translators: [admin]
+#: includes/rest-api/post-data.php:40
+msgid "Raw Umbraco data for this item"
+msgstr "Raw Umbraco data for this item"
+
+#. translators: [front]
+#: includes/mlp/language-selector.php:109
+msgid "Available languages"
+msgstr "Available languages"
+
+#. translators: [front] %1$s: the object type, %2$s: the object type's language
+#: includes/mlp/helpers.php:109
+#, php-format
+msgid "View this %1$s in %2$s"
+msgstr "View this %1$s in %2$s"
+
+#. translators: [front]
+#: page-petitions.php:58
+msgid "All Petitions"
+msgstr "All Petitions"
+
+#. translators: [front] ARIA
+#: search.php:16
+#: searchpage.php:30
+msgid "Search results"
+msgstr "Search results"
+
+#. translators: [front] ARIA
+#: footer.php:37
+msgid "Footer Menus"
+msgstr "Footer Menus"
+
+#. translators: [front] ARIA Social Media sharing options
+#. translators: [front] Social Media sharing options
+#: footer.php:69
+msgid "Follow us on:"
+msgstr "Follow us on:"
+
+#. translators: [front] ARIA
+#: footer.php:72
+msgid "Follow us on Facebook"
+msgstr "Follow us on Facebook"
+
+#. translators: [front] ARIA
+#: footer.php:75
+msgid "Follow us on Twitter"
+msgstr "Follow us on Twitter"
+
+#. translators: [front] ARIA
+#: footer.php:78
+msgid "Subscribe to our YouTube channel"
+msgstr "Subscribe to our YouTube channel"
+
+#. translators: [front]
+#: footer.php:81
+msgid "Follow us on Instagram"
+msgstr "Follow us on Instagram"
+
+#. translators: [front]
+#: footer.php:84
+msgid "Follow us on Telegram"
+msgstr "Follow us on Telegram"
+
+#. translators: [front] ARIA
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ Accessibility text
+#: author.php:101
+#: partials/article-share.php:12
+msgid "Social sharing options"
+msgstr "Social sharing options"
+
+#. translators: [front] ARIA List of product categories
+#: templates/shop-index.php:40
+msgid "Product Catalogue"
+msgstr "Product Catalogue"
+
+#: author.php:53
+msgid "Follow"
+msgstr "Follow"
+
+#: author.php:73
+msgid "Read more"
+msgstr "Read more"
+
+#: author.php:76
+msgid "More from this author"
+msgstr "More from this author"
+
+#: partials/post/post-content.php:16
+#: partials/post/post-search.php:27
+msgctxt "updated date label"
+msgid "Updated"
+msgstr "Updated"
+
+#. translators: [front] ARIA
+#: partials/post/post-content.php:25
+#: partials/post/post-search.php:47
+msgid "Post published date"
+msgstr "Post published date"
+
+#. translators: [front] ARIA
+#: partials/post/post-content.php:27
+#: partials/post/post-search.php:49
+msgid "Post updated date"
+msgstr "Post updated date"
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/news/2021/05/china-three-child-policy-still-a-violation/ placeholder is category name
+#: partials/post/post-content.php:22
+#, php-format
+msgid "Article category %s"
+msgstr "Article category %s"
+
+#. translators: [front]
+#: partials/archive/categories.php:28
+msgid "Filter results by category"
+msgstr "Filter results by category"
+
+#. translators: [front] search results left hand side of page button
+#: partials/forms/taxonomy-filters.php:32
+msgid "Apply"
+msgstr "Apply"
+
+#. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
+#: partials/archive/filters-active.php:45
+msgid "Filters applied"
+msgstr "Filters applied"
+
+#. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
+#: partials/archive/filters-active.php:80
+msgid "Clear all"
+msgstr "Clear all"
+
+#. translators: 1: number of results for search query, 2: don't translate (dynamic search term)
+#: partials/archive/header.php:21
+#: partials/search/header.php:19
+#, php-format
+msgid "%1$s result for '%2$s'"
+msgid_plural "%1$s results for '%2$s'"
+msgstr[0] "%1$s result for '%2$s'"
+msgstr[1] "%1$s results for '%2$s'"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options
+#: partials/archive/header.php:28
+#: partials/search/header.php:26
+msgid "Results information"
+msgstr "Results information"
+
+#. translators: [front]
+#: partials/archive/subcategories.php:55
+msgid "List of subcategories"
+msgstr "List of subcategories"
+
+#: partials/pagination.php:28
+#: partials/search/pagination.php:38
+msgid "Pagination"
+msgstr "Pagination"
+
+#. translators: [front] AIRA https://isaidotorgstg.wpengine.com/en/latest
+#: partials/pagination.php:39
+#: partials/search/pagination.php:49
+msgid "Page numbers"
+msgstr "Page numbers"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
+#: partials/article-share.php:14
+msgid "Share on Facebook"
+msgstr "Share on Facebook"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: partials/article-share.php:15
+msgid "Facebook Logo"
+msgstr "Facebook Logo"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
+#: partials/article-share.php:19
+msgid "Share on Twitter"
+msgstr "Share on Twitter"
+
+#. translators: [front] Label for category archive navigation
+#: partials/shop/catalogue-header.php:13
+msgid "Product information"
+msgstr "Product information"
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:18
+msgid "Post Type Settings"
+msgstr "Post Type Settings"
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:26
+#: partials/admin/permalinks-taxonomy.php:26
+msgid "URL base"
+msgstr "URL base"
+
+#. translators: [admin] %s: the default slug for this item
+#: partials/admin/permalinks-post-type.php:30
+#: partials/admin/permalinks-taxonomy.php:30
+#, php-format
+msgid "Default: %s"
+msgstr "Default: %s"
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:35
+#: partials/admin/permalinks-taxonomy.php:35
+msgid "Use hierarchical URLs"
+msgstr "Use hierarchical URLs"
+
+#. translators: [admin]
+#: partials/admin/permalinks-taxonomy.php:18
+msgid "Taxonomy Settings"
+msgstr "Taxonomy Settings"
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:17
+msgid "Page Header"
+msgstr "Page Header"
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:25
+msgid "Amnesty Group Websites"
+msgstr "Amnesty Group Websites"
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:33
+msgid "Primary navigation"
+msgstr "Primary navigation"
+
+#. translators: [front]
+#: partials/navigation/desktop.php:42
+msgid "Open navigation"
+msgstr "Open navigation"
+
+#. translators: [front]
+#: partials/single/publish-date.php:19
+msgid "Post published timestamp"
+msgstr "Post published timestamp"
+
+#. translators: [front]
+#: partials/single/updated-date.php:25
+msgid "Post updated timestamp"
+msgstr "Post updated timestamp"
+
+#. translators: [front]
+#: partials/single/byline.php:33
+msgctxt "author attribution (as in \"written by\")"
+msgid "By"
+msgstr "By"
+
+#. translators: [front] %s: prefix for a post's author attribution
+#: partials/single/byline.php:72
+#, php-format
+msgctxt "prefix for a post's author attribution"
+msgid "By %s"
+msgstr "By %s"
+
+#. translators: [front] ARIA Donate %s: the product category name
+#: partials/product/category.php:24
+#, php-format
+msgid "Product Category: %s"
+msgstr "Product Category: %s"
+
+#. translators: [front] ARIA
+#: partials/forms/taxonomy-filters.php:14
+msgid "Filter results by topic"
+msgstr "Filter results by topic"
+
+#: includes/features/search/helpers.php:135
+msgid "January"
+msgstr "January"
+
+#: includes/features/search/helpers.php:136
+msgid "Febuary"
+msgstr "Febuary"
+
+#: includes/features/search/helpers.php:137
+msgid "March"
+msgstr "March"
+
+#: includes/features/search/helpers.php:138
+msgid "April"
+msgstr "April"
+
+#: includes/features/search/helpers.php:139
+msgid "May"
+msgstr "May"
+
+#: includes/features/search/helpers.php:140
+msgid "June"
+msgstr "June"
+
+#: includes/features/search/helpers.php:141
+msgid "July"
+msgstr "July"
+
+#: includes/features/search/helpers.php:142
+msgid "August"
+msgstr "August"
+
+#: includes/features/search/helpers.php:143
+msgid "September"
+msgstr "September"
+
+#: includes/features/search/helpers.php:144
+msgid "October"
+msgstr "October"
+
+#: includes/features/search/helpers.php:145
+msgid "November"
+msgstr "November"
+
+#: includes/features/search/helpers.php:146
+msgid "December"
+msgstr "December"
+
+#. translators: [front]
+#: partials/search/horizontal-search.php:39
+msgid "Search"
+msgstr "Search"
+
+#: partials/search/horizontal-search.php:12
+#: partials/search/horizontal-search.php:52
+msgid "Year"
+msgstr "Year"
+
+#: partials/search/horizontal-search.php:13
+#: partials/search/horizontal-search.php:62
+msgid "Month"
+msgstr "Month"
+
+#. translators: [front]
+#: partials/search/horizontal-search.php:77
+msgid "Filters"
+msgstr "Filters"
+
+#. translators: [front] screen reader text for search field
+#: partials/search/forminput.php:13
+msgid "Search input"
+msgstr "Search input"
+
+#. translators: [front]
+#: partials/search/forminput.php:14
+msgid "What are you looking for?"
+msgstr "What are you looking for?"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:17
+msgid "Language Selection"
+msgstr "Language Selection"
+
+#. translators: [front]
+#: partials/language-selector.php:19
+msgid "Which language would you like to use this site in?"
+msgstr "Which language would you like to use this site in?"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:20
+msgid "Choose a language"
+msgstr "Choose a language"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:26
+msgid "Close"
+msgstr "Close"
+
+#. translators: [front] Donate
+#: partials/orders/customer-details-with-shipping.php:13
+msgid "Customer Details"
+msgstr "Customer Details"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:21
+msgid "Tel:"
+msgstr "Tel:"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:28
+msgid "Payment Method"
+msgstr "Payment Method"
+
+#. Theme Name of the theme
+msgid "Humanity Theme"
+msgstr "Humanity Theme"
+
+#. Theme URI of the theme
+msgid "https://github.com/amnestywebsite/humanity-theme"
+msgstr "https://github.com/amnestywebsite/humanity-theme"
+
+#. Description of the theme
+msgid "The Amnesty International WordPress Humanity Theme"
+msgstr "The Amnesty International WordPress Humanity Theme"
+
+#. Author of the theme
+msgid "Amnesty International"
+msgstr "Amnesty International"
+
+#. Author URI of the theme
+msgid "https://www.amnesty.org"
+msgstr "https://www.amnesty.org"
+
+#. translators: [front] %s: the title of the article
+#: includes/blocks/post-list/views/grid-item.php:10
+#: includes/blocks/post-list/views/list-item.php:4
+#: partials/post/post-full.php:16
+#: partials/post/post-none.php:10
+#: partials/post/post-search.php:31
+msgid "Article: %s"
+msgstr "Article: %s"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title.
+#: includes/features/search/class-search-filters.php:149
+msgctxt "search results title"
+msgid "Search results"
+msgstr "Search results"
+
+#: includes/rest-api/users.php:82
+msgid "Sorry, you are not allowed to do that."
+msgstr "Sorry, you are not allowed to do that."
+
+#. Template Name of the theme
+msgid "Petition Index"
+msgstr "Petition Index"
+
+#. translators: [front]
+#: partials/archive/subcategories.php:33
+#: partials/archive/subcategories.php:61
+msgid "Second level category"
+msgstr "Second level category"
+
+#. translators: [front]
+#: partials/archive/subsubcategories.php:31
+#: partials/archive/subsubcategories.php:54
+msgid "Third level category"
+msgstr "Third level category"
+
+#. translators: [front]
+#: partials/single/updated-date.php:26
+msgctxt "prefix for post updated date"
+msgid "Updated:"
+msgstr "Updated:"
+
+#. Template Name of the theme
+msgid "Search Page"
+msgstr "Search Page"
+
+#. Template Name of the theme
+msgid "Checkout Flow"
+msgstr "Checkout Flow"
+
+#. Template Name of the theme
+msgid "Account Management"
+msgstr "Account Management"
+
+#. Template Name of the theme
+msgid "Shop Index"
+msgstr "Shop Index"
+
+#. translators: [admin]
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:1
+#: assets/scripts/blocks.js:34977
+#: assets/scripts/bundle.js:1995
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d day"
+msgstr[1] "%d days"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:1
+#: assets/scripts/bundle.js:2008
+msgctxt "time format(prefix translated separately) i.e. \"x, H:i:s\""
+msgid "%1$s, %2$s:%3$s:%4$s"
+msgstr "%1$s, %2$s:%3$s:%4$s"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:1
+#: assets/scripts/bundle.js:2022
+msgctxt "time format, H:i:s"
+msgid "%1$s:%2$s:%3$s"
+msgstr "%1$s:%2$s:%3$s"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:424
+#: assets/scripts/blocks.js:11194
+#: assets/scripts/blocks.js:12089
+#: assets/scripts/blocks.js:12636
+msgid "Hide Image Caption"
+msgstr "Hide Image Caption"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:430
+#: assets/scripts/blocks.js:11200
+#: assets/scripts/blocks.js:12095
+#: assets/scripts/blocks.js:12642
+msgid "Hide Image Credit"
+msgstr "Hide Image Credit"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:461
+#: assets/scripts/blocks.js:476
+msgctxt "block style"
+msgid "Dark"
+msgstr "Dark"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:467
+msgctxt "block style"
+msgid "Back Link"
+msgstr "Back Link"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:482
+msgctxt "block style"
+msgid "Dark Circle"
+msgstr "Dark Circle"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:488
+#: assets/scripts/blocks.js:550
+msgctxt "block style"
+msgid "Light"
+msgstr "Light"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:494
+msgctxt "block style"
+msgid "Light Circle"
+msgstr "Light Circle"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:500
+msgctxt "block style"
+msgid "Yellow"
+msgstr "Yellow"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:506
+msgctxt "block style"
+msgid "Yellow Circle"
+msgstr "Yellow Circle"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:512
+msgctxt "block style"
+msgid "Logos Only Dark"
+msgstr "Logos Only Dark"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:518
+msgctxt "block style"
+msgid "Logos Only Light"
+msgstr "Logos Only Light"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:524
+msgctxt "block style"
+msgid "Logos Only Yellow"
+msgstr "Logos Only Yellow"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:557
+msgctxt "block style"
+msgid "Grey"
+msgstr "Grey"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:566
+msgctxt "block style"
+msgid "Responsive"
+msgstr "Responsive"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:578
+msgid "Row Column"
+msgstr "Row Column"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:670
+#: assets/scripts/blocks.js:13749
+#: assets/scripts/blocks.js:13792
+#: assets/scripts/blocks.js:27606
+#: assets/scripts/blocks.js:27655
+#: assets/scripts/blocks.js:32545
+msgid "(Insert Title)"
+msgstr "(Insert Title)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:680
+#: assets/scripts/blocks.js:13806
+msgid "(Insert Content)"
+msgstr "(Insert Content)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1133
+msgid "Document Reference:"
+msgstr "Document Reference:"
+
+#: assets/scripts/blocks.js:1158
+msgid "Hide featured image"
+msgstr "Hide featured image"
+
+#: assets/scripts/blocks.js:1159
+msgid "Hide the featured image."
+msgstr "Hide the featured image."
+
+#: assets/scripts/blocks.js:1171
+msgid "Hide featured image caption"
+msgstr "Hide featured image caption"
+
+#: assets/scripts/blocks.js:1172
+msgid "Hide the image caption for the featured image"
+msgstr "Hide the image caption for the featured image"
+
+#: assets/scripts/blocks.js:1211
+msgid "Use transparent header"
+msgstr "Use transparent header"
+
+#: assets/scripts/blocks.js:1212
+msgid "Enable transparent mode on the main header. Requires the use of a header block with a featured image"
+msgstr "Enable transparent mode on the main header. Requires the use of a header block with a featured image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1305
+msgid "Enable public byline"
+msgstr "Enable public byline"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1306
+msgid "Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated"
+msgstr "Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1318
+msgid "Use author profile for byline"
+msgstr "Use author profile for byline"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1329
+msgid "Byline Name"
+msgstr "Byline Name"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1331
+msgid "The individual, group, or entity to be named as the author"
+msgstr "The individual, group, or entity to be named as the author"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1339
+msgid "Byline Context"
+msgstr "Byline Context"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1341
+msgid "Additional context for the byline; e.g. job title, short summary, location, etc"
+msgstr "Additional context for the byline; e.g. job title, short summary, location, etc"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1374
+msgid "Disable Sharing"
+msgstr "Disable Sharing"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1376
+msgid "Disable Share Buttons for this post"
+msgstr "Disable Share Buttons for this post"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1410
+msgid "Show published date"
+msgstr "Show published date"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1411
+msgid "Show the post published date"
+msgstr "Show the post published date"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1433
+msgid "Show updated date"
+msgstr "Show updated date"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1434
+msgid "Show the \"updated at\" date"
+msgstr "Show the \"updated at\" date"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1457
+msgid "Metadata"
+msgstr "Metadata"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1484
+msgid "Disable Related Content"
+msgstr "Disable Related Content"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1486
+msgid "Removes the Related Content section for this post"
+msgstr "Removes the Related Content section for this post"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9681
+#: assets/scripts/blocks.js:13353
+#: assets/scripts/blocks.js:26090
+#: assets/scripts/blocks.js:26140
+#: assets/scripts/blocks.js:26507
+msgid "Loading"
+msgstr "Loading"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9683
+msgid "Select a sidebar"
+msgstr "Select a sidebar"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9717
+msgid "Maximize Content"
+msgstr "Maximize Content"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9719
+msgid "Remove the sidebar and the sidebar area on posts and pages. Generally used to create pages with a full-width page design."
+msgstr "Remove the sidebar and the sidebar area on posts and pages. Generally used to create pages with a full-width page design."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9732
+msgid "Disable Sidebar"
+msgstr "Disable Sidebar"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9734
+msgid "Remove the sidebar, but not the sidebar area; this keeps an empty space to the side of the content. Generally used for text heavy pages."
+msgstr "Remove the sidebar, but not the sidebar area; this keeps an empty space to the side of the content. Generally used for text heavy pages."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9784
+#: assets/scripts/blocks.js:25032
+msgid "Select Term"
+msgstr "Select Term"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9804
+msgid "Feature on content type:"
+msgstr "Feature on content type:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9841
+msgid "Page Options"
+msgstr "Page Options"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9863
+msgid "Post Options"
+msgstr "Post Options"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9880
+msgid "Appearance"
+msgstr "Appearance"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10149
+msgid "Pop-in Settings"
+msgstr "Pop-in Settings"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10153
+msgid "Render Title"
+msgstr "Render Title"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10155
+msgid "Should the title be rendered when showing this pop-in to the user?"
+msgstr "Should the title be rendered when showing this pop-in to the user?"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10229
+#: assets/scripts/blocks.js:10572
+#: assets/scripts/blocks.js:12049
+#: assets/scripts/blocks.js:12610
+#: assets/scripts/blocks.js:29219
+#: assets/scripts/blocks.js:29517
+msgid "Size"
+msgstr "Size"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10234
+#: assets/scripts/blocks.js:29522
+msgid "Standard"
+msgstr "Standard"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10236
+#: assets/scripts/blocks.js:29524
+msgid "Wide"
+msgstr "Wide"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10241
+msgid "Scroll To Link"
+msgstr "Scroll To Link"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10252
+#: assets/scripts/blocks.js:29560
+msgid "(Label)"
+msgstr "(Label)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10262
+#: assets/scripts/blocks.js:12676
+#: assets/scripts/blocks.js:13823
+#: assets/scripts/blocks.js:28540
+#: assets/scripts/blocks.js:29536
+#: assets/scripts/blocks.js:30519
+#: assets/scripts/blocks.js:33790
+msgid "Remove Image"
+msgstr "Remove Image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10291
+#: assets/scripts/blocks.js:11714
+#: assets/scripts/blocks.js:29568
+msgid "Content"
+msgstr "Content"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10299
+#: assets/scripts/blocks.js:29576
+msgid "Button Text"
+msgstr "Button Text"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10460
+msgid "Custom Card"
+msgstr "Custom Card"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10462
+msgid "Custom Card block"
+msgstr "Custom Card block"
+
+#. translators: [admin] text alignment. for RTL languages, localise as 'Right'
+#. translators: [admin]
+#: assets/scripts/blocks.js:10513
+#: assets/scripts/blocks.js:11225
+#: assets/scripts/blocks.js:12012
+#: assets/scripts/blocks.js:12575
+#: assets/scripts/blocks.js:28516
+#: assets/scripts/blocks.js:30687
+msgid "Left"
+msgstr "Left"
+
+#. translators: [admin] text alignment
+#. translators: [admin] text alignment/.
+#. translators: [admin]
+#: assets/scripts/blocks.js:10515
+#: assets/scripts/blocks.js:28514
+#: assets/scripts/blocks.js:29224
+#: assets/scripts/blocks.js:29336
+msgid "Default"
+msgstr "Default"
+
+#. translators: [admin] text alignment. for RTL languages, localise as 'Left'
+#. translators: [admin]
+#: assets/scripts/blocks.js:10520
+#: assets/scripts/blocks.js:11215
+#: assets/scripts/blocks.js:12022
+#: assets/scripts/blocks.js:12585
+#: assets/scripts/blocks.js:28520
+#: assets/scripts/blocks.js:30691
+msgid "Right"
+msgstr "Right"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10565
+#: assets/scripts/blocks.js:12008
+#: assets/scripts/blocks.js:12571
+#: assets/scripts/blocks.js:28507
+msgid "Alignment"
+msgstr "Alignment"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10577
+#: assets/scripts/blocks.js:12615
+#: assets/scripts/blocks.js:27510
+msgid "Small"
+msgstr "Small"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10579
+#: assets/scripts/blocks.js:27512
+msgid "Medium"
+msgstr "Medium"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10581
+#: assets/scripts/blocks.js:12058
+#: assets/scripts/blocks.js:27514
+msgid "Large"
+msgstr "Large"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10586
+#: assets/scripts/blocks.js:11124
+msgid "Text Colour"
+msgstr "Text Colour"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10591
+#: assets/scripts/blocks.js:11128
+#: assets/scripts/blocks.js:12040
+#: assets/scripts/blocks.js:12603
+msgid "Black"
+msgstr "Black"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10593
+#: assets/scripts/blocks.js:11253
+#: assets/scripts/blocks.js:12926
+#: assets/scripts/blocks.js:27300
+#: assets/scripts/blocks.js:29886
+#: assets/scripts/blocks.js:32535
+#: assets/scripts/blocks.js:33751
+#: assets/scripts/blocks.js:34574
+msgid "Grey"
+msgstr "Grey"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10595
+#: assets/scripts/blocks.js:11133
+#: assets/scripts/blocks.js:11248
+#: assets/scripts/blocks.js:12035
+#: assets/scripts/blocks.js:12601
+#: assets/scripts/blocks.js:29884
+#: assets/scripts/blocks.js:33746
+#: assets/scripts/blocks.js:34572
+msgid "White"
+msgstr "White"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10601
+msgid "Capitalise"
+msgstr "Capitalise"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10603
+msgid "Capitalise the content."
+msgstr "Capitalise the content."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10610
+msgid "Line"
+msgstr "Line"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10612
+msgid "Toggle display of line embellishment."
+msgstr "Toggle display of line embellishment."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10624
+msgid "(Insert Quote Text)"
+msgstr "(Insert Quote Text)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10635
+msgid "(Insert Citation)"
+msgstr "(Insert Citation)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10931
+msgid "Blockquote"
+msgstr "Blockquote"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10933
+msgid "Add a blockquote block"
+msgstr "Add a blockquote block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11115
+#: assets/scripts/blocks.js:11668
+#: assets/scripts/blocks.js:12005
+#: assets/scripts/blocks.js:12568
+#: assets/scripts/blocks.js:12914
+#: assets/scripts/blocks.js:26889
+#: assets/scripts/blocks.js:30021
+#: assets/scripts/blocks.js:30227
+#: assets/scripts/blocks.js:30378
+#: assets/scripts/blocks.js:30875
+#: assets/scripts/blocks.js:32819
+msgid "Options"
+msgstr "Options"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11118
+msgid "Section Name"
+msgstr "Section Name"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11141
+msgid "Background Options"
+msgstr "Background Options"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11153
+msgid "Edit image"
+msgstr "Edit image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11163
+msgid "Remove image"
+msgstr "Remove image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11168
+msgid "Select background image"
+msgstr "Select background image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11178
+msgid "Min image height as viewport percentage"
+msgstr "Min image height as viewport percentage"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11188
+msgid "Toggle Background Overlay"
+msgstr "Toggle Background Overlay"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11206
+msgid "Background Image Origin"
+msgstr "Background Image Origin"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11210
+#: assets/scripts/blocks.js:27528
+msgid "Top"
+msgstr "Top"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11220
+msgid "Bottom"
+msgstr "Bottom"
+
+#. translators: [admin]
+#. translators: [admin] text alignment.
+#: assets/scripts/blocks.js:11230
+#: assets/scripts/blocks.js:12017
+#: assets/scripts/blocks.js:12580
+#: assets/scripts/blocks.js:28518
+#: assets/scripts/blocks.js:30689
+msgid "Centre"
+msgstr "Centre"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11235
+msgid "Initial"
+msgstr "Initial"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11244
+#: assets/scripts/blocks.js:12031
+#: assets/scripts/blocks.js:12594
+#: assets/scripts/blocks.js:27293
+#: assets/scripts/blocks.js:30051
+#: assets/scripts/blocks.js:32528
+#: assets/scripts/blocks.js:33737
+#: assets/scripts/blocks.js:34569
+msgid "Background Colour"
+msgstr "Background Colour"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11521
+#: assets/scripts/blocks.js:11525
+msgid "Section"
+msgstr "Section"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11585
+msgid "50% | 50%"
+msgstr "50% | 50%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11592
+msgid "66.6% | 33.3%"
+msgstr "66.6% | 33.3%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11599
+msgid "33.3% | 66.6%"
+msgstr "33.3% | 66.6%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11606
+msgid "33.3% | 33.3% | 33.3%"
+msgstr "33.3% | 33.3% | 33.3%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11613
+msgid "50% | 25% | 25%"
+msgstr "50% | 25% | 25%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11620
+msgid "25% | 50% | 25%"
+msgstr "25% | 50% | 25%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11627
+msgid "25% | 25% | 50%"
+msgstr "25% | 25% | 50%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11634
+msgid "25% | 25% | 25% | 25%"
+msgstr "25% | 25% | 25% | 25%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11671
+msgid "Layout Style"
+msgstr "Layout Style"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11708
+#: assets/scripts/blocks.js:11718
+msgid "Columns"
+msgstr "Columns"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11716
+msgid "Row"
+msgstr "Row"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11784
+#: assets/scripts/blocks.js:12343
+msgid "Set featured video"
+msgstr "Set featured video"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11786
+#: assets/scripts/blocks.js:12345
+msgid "Remove featured video"
+msgstr "Remove featured video"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11856
+#: assets/scripts/blocks.js:12416
+#: assets/scripts/blocks.js:28639
+#: assets/scripts/blocks.js:28649
+msgid "Replace Video"
+msgstr "Replace Video"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12053
+#: assets/scripts/blocks.js:12613
+msgid "Normal"
+msgstr "Normal"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12068
+#: assets/scripts/blocks.js:12622
+#: assets/scripts/blocks.js:28707
+msgid "Background Type"
+msgstr "Background Type"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12072
+#: assets/scripts/blocks.js:12625
+#: assets/scripts/blocks.js:28711
+msgid "Image"
+msgstr "Image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12077
+#: assets/scripts/blocks.js:12627
+#: assets/scripts/blocks.js:28716
+msgid "Video"
+msgstr "Video"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12108
+msgid "Background Image"
+msgstr "Background Image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12116
+#: assets/scripts/blocks.js:12661
+msgid "Featured Video"
+msgstr "Featured Video"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12140
+msgid "(Header Title)"
+msgstr "(Header Title)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12151
+msgid "(Header Content)"
+msgstr "(Header Content)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12163
+#: assets/scripts/blocks.js:12731
+msgid "(Call to action)"
+msgstr "(Call to action)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12597
+msgid "Translucent black"
+msgstr "Translucent black"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12599
+#: assets/scripts/blocks.js:27223
+#: assets/scripts/blocks.js:27298
+#: assets/scripts/blocks.js:32533
+msgid "None"
+msgstr "None"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12650
+msgid "Embed URL"
+msgstr "Embed URL"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12652
+msgid "Setting this will override the call to action link and will now open a modal with the embed."
+msgstr "Setting this will override the call to action link and will now open a modal with the embed."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12709
+msgid "(Banner Title)"
+msgstr "(Banner Title)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12719
+msgid "(Banner Content)"
+msgstr "(Banner Content)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12773
+#: assets/scripts/blocks.js:12777
+msgid "Banner"
+msgstr "Banner"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12917
+#: assets/scripts/blocks.js:30970
+msgid "Background Style"
+msgstr "Background Style"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12921
+#: assets/scripts/blocks.js:27576
+#: assets/scripts/blocks.js:30499
+#: assets/scripts/blocks.js:30698
+#: assets/scripts/blocks.js:32294
+#: assets/scripts/blocks.js:32836
+msgid "Light"
+msgstr "Light"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12944
+msgid "(Pre-heading)"
+msgstr "(Pre-heading)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12954
+#: assets/scripts/blocks.js:31083
+msgid "(Heading)"
+msgstr "(Heading)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12964
+#: assets/scripts/blocks.js:28589
+#: assets/scripts/blocks.js:31107
+msgid "(Content)"
+msgstr "(Content)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13204
+#: assets/scripts/blocks.js:13208
+msgid "Call To Action"
+msgstr "Call To Action"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13355
+#: assets/scripts/blocks.js:26092
+msgid "Select a category"
+msgstr "Select a category"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13625
+#: assets/scripts/blocks.js:14015
+#: assets/scripts/blocks.js:24929
+#: assets/scripts/blocks.js:24983
+#: assets/scripts/blocks.js:24998
+#: assets/scripts/blocks.js:25942
+#: assets/scripts/blocks.js:26348
+#: assets/scripts/blocks.js:26647
+msgid "Loading…"
+msgstr "Loading…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13634
+msgid "Select a category."
+msgstr "Select a category."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13644
+#: assets/scripts/blocks.js:25961
+#: assets/scripts/blocks.js:26367
+#: assets/scripts/blocks.js:26656
+msgid "No Items found"
+msgstr "No Items found"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13736
+msgid "(Tag Name)"
+msgstr "(Tag Name)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13778
+msgid "(Insert Tag)"
+msgstr "(Insert Tag)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13996
+msgid "Add another item"
+msgstr "Add another item"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14020
+#: assets/scripts/blocks.js:24904
+msgid "No Posts."
+msgstr "No Posts."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24885
+msgid "Loading Posts…"
+msgstr "Loading Posts…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24893
+msgid "Your query yielded no results, please try again."
+msgstr "Your query yielded no results, please try again."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24931
+msgid "Load More"
+msgstr "Load More"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24970
+msgid "Please enter your search query…"
+msgstr "Please enter your search query…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24978
+msgid "Post Type:"
+msgstr "Post Type:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24993
+#: assets/scripts/blocks.js:26967
+msgid "Taxonomy:"
+msgstr "Taxonomy:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25005
+msgid "Select Taxonomy"
+msgstr "Select Taxonomy"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25021
+#: assets/scripts/blocks.js:26974
+msgid "Terms:"
+msgstr "Terms:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25025
+msgid "No taxonomy selected"
+msgstr "No taxonomy selected"
+
+#: assets/scripts/blocks.js:25135
+msgid "No terms selected"
+msgstr "No terms selected"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25951
+msgid "Select a taxonomy."
+msgstr "Select a taxonomy."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26142
+msgid "Select terms"
+msgstr "Select terms"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26357
+msgid "Select an author."
+msgstr "Select an author."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26509
+msgid "Select author"
+msgstr "Select author"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26829
+msgid "Link List"
+msgstr "Link List"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26834
+msgid "Grid"
+msgstr "Grid"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26842
+msgid "Category"
+msgstr "Category"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26847
+#: assets/scripts/blocks.js:34782
+msgid "Object Selection"
+msgstr "Object Selection"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26852
+msgid "Custom"
+msgstr "Custom"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26857
+msgid "Taxonomy"
+msgstr "Taxonomy"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26893
+#: assets/scripts/blocks.js:27488
+msgid "Style"
+msgstr "Style"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26901
+msgid "Type"
+msgstr "Type"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26908
+msgid "Category:"
+msgstr "Category:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26920
+#: assets/scripts/blocks.js:26930
+#: assets/scripts/blocks.js:26940
+msgid "Number of posts to show:"
+msgstr "Number of posts to show:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26950
+msgid "Use related categories where supported"
+msgstr "Use related categories where supported"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26959
+msgid "Hide Preview"
+msgstr "Hide Preview"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26961
+msgid "Show Preview"
+msgstr "Show Preview"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26987
+msgid "Author:"
+msgstr "Author:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26998
+msgid "Display Post Author"
+msgstr "Display Post Author"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27004
+msgid "Display Post Date"
+msgstr "Display Post Date"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27154
+msgid "Post List"
+msgstr "Post List"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27159
+msgid "List"
+msgstr "List"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27161
+msgid "post-list"
+msgstr "post-list"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27163
+msgid "Posts"
+msgstr "Posts"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27228
+msgid "Arrow"
+msgstr "Arrow"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27233
+msgid "Ampersand"
+msgstr "Ampersand"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27280
+msgid "Orientation"
+msgstr "Orientation"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27285
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27287
+msgid "Vertical"
+msgstr "Vertical"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27306
+msgid "Hide Lines"
+msgstr "Hide Lines"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27314
+msgid "Divider Style"
+msgstr "Divider Style"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27405
+msgid "Pick an image"
+msgstr "Pick an image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27424
+msgid "(Insert Fact)"
+msgstr "(Insert Fact)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27493
+msgid "Use Image"
+msgstr "Use Image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27495
+msgid "Use Text"
+msgstr "Use Text"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27497
+msgid "Plain"
+msgstr "Plain"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27503
+msgid "Icon Size"
+msgstr "Icon Size"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27508
+msgid "Extra Small"
+msgstr "Extra Small"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27521
+msgid "Icon Position"
+msgstr "Icon Position"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27526
+msgid "Middle"
+msgstr "Middle"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27535
+msgid "Hide Image Credit Display"
+msgstr "Hide Image Credit Display"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27544
+msgid "Has Underline"
+msgstr "Has Underline"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27550
+msgid "Font Size"
+msgstr "Font Size"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27562
+msgid "Display Action"
+msgstr "Display Action"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27569
+#: assets/scripts/blocks.js:32285
+#: assets/scripts/blocks.js:32822
+msgid "Button Style"
+msgstr "Button Style"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27572
+#: assets/scripts/blocks.js:30488
+#: assets/scripts/blocks.js:32826
+msgid "Primary (Yellow)"
+msgstr "Primary (Yellow)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27574
+#: assets/scripts/blocks.js:30494
+#: assets/scripts/blocks.js:30696
+#: assets/scripts/blocks.js:32289
+#: assets/scripts/blocks.js:32831
+msgid "Dark"
+msgstr "Dark"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27666
+msgid "(Insert Body Text)"
+msgstr "(Insert Body Text)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27679
+msgid "(Insert Link Text)"
+msgstr "(Insert Link Text)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27982
+msgid "Links with Icons"
+msgstr "Links with Icons"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27984
+msgid "Add a links-with-icons block"
+msgstr "Add a links-with-icons block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28214
+msgid "Links with Icons Group"
+msgstr "Links with Icons Group"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28216
+msgid "Add a repeatable links-with-icons block"
+msgstr "Add a repeatable links-with-icons block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28320
+msgid "Square"
+msgstr "Square"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28448
+msgid "(Link Text)"
+msgstr "(Link Text)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28458
+msgid "Remove Button"
+msgstr "Remove Button"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28495
+msgid "Image Style"
+msgstr "Image Style"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28500
+msgid "Fixed Height (600px)"
+msgstr "Fixed Height (600px)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28502
+msgid "Actual Height"
+msgstr "Actual Height"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28509
+msgid "Only has an effect on images smaller than their container"
+msgstr "Only has an effect on images smaller than their container"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28582
+msgid "(Title)"
+msgstr "(Title)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28601
+msgid "Add Button"
+msgstr "Add Button"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28621
+#: assets/scripts/blocks.js:28627
+msgid "Choose Video"
+msgstr "Choose Video"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28655
+msgid "Remove Video"
+msgstr "Remove Video"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28730
+msgid "Display Overlay"
+msgstr "Display Overlay"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28736
+msgid "Enable Parallax"
+msgstr "Enable Parallax"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28759
+msgid "(Insert Caption, if required)"
+msgstr "(Insert Caption, if required)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29150
+msgid "Image Block"
+msgstr "Image Block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29152
+msgid "Add a flexible image block with optional overlay"
+msgstr "Add a flexible image block with optional overlay"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29226
+msgid "Narrow"
+msgstr "Narrow"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29231
+msgid "Embed Link"
+msgstr "Embed Link"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29233
+msgid "Includes a link to current post/page in tweet"
+msgstr "Includes a link to current post/page in tweet"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29252
+msgid "(Action Title)"
+msgstr "(Action Title)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29262
+msgid "(Place Tweet text proforma here)"
+msgstr "(Place Tweet text proforma here)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29269
+msgid "A link to the current page/post will now appear below the Tweet content when published/updated."
+msgstr "A link to the current page/post will now appear below the Tweet content when published/updated."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29316
+msgid "Tweet Action"
+msgstr "Tweet Action"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29318
+msgid "Add a Tweet Action block"
+msgstr "Add a Tweet Action block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29338
+msgid "Alternative"
+msgstr "Alternative"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29849
+msgid "Action"
+msgstr "Action"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29851
+msgid "Add an Action block"
+msgstr "Add an Action block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29895
+msgid "Select a menu…"
+msgstr "Select a menu…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29973
+msgid "Select a menu in the sidebar"
+msgstr "Select a menu in the sidebar"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29976
+msgid "Loading Menu…"
+msgstr "Loading Menu…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30023
+msgid "Loading Menus…"
+msgstr "Loading Menus…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30027
+#: assets/scripts/blocks.js:30042
+#: assets/scripts/blocks.js:30086
+#: assets/scripts/blocks.js:30091
+msgid "Menu"
+msgstr "Menu"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30029
+msgid "Which type of menu you would like to add to the page"
+msgstr "Which type of menu you would like to add to the page"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30033
+msgid "Standard Menu"
+msgstr "Standard Menu"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30035
+msgid "In-page Menu"
+msgstr "In-page Menu"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30093
+msgid "Navigation"
+msgstr "Navigation"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30148
+#: assets/scripts/blocks.js:30422
+msgid "Iframe URL"
+msgstr "Iframe URL"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30159
+#: assets/scripts/blocks.js:30424
+msgid "Enter URL to embed here…"
+msgstr "Enter URL to embed here…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30162
+#: assets/scripts/blocks.js:35189
+#: assets/scripts/blocks.js:35265
+#: assets/scripts/blocks.js:35330
+#: assets/scripts/blocks.js:35412
+msgid "Embed"
+msgstr "Embed"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30207
+msgid "Write caption…"
+msgstr "Write caption…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30230
+msgid "Width"
+msgstr "Width"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30237
+msgid "Required when specifying a height"
+msgstr "Required when specifying a height"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30244
+msgid "Height"
+msgstr "Height"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30251
+msgid "Required when specifying a width"
+msgstr "Required when specifying a width"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30258
+msgid "Minimum Height"
+msgstr "Minimum Height"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30267
+msgid "Required if not using width/height, optional otherwise"
+msgstr "Required if not using width/height, optional otherwise"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30275
+#: assets/scripts/blocks.js:30389
+msgid "Iframe Title"
+msgstr "Iframe Title"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30277
+#: assets/scripts/blocks.js:30391
+msgid "Set the text alternative for the iframe"
+msgstr "Set the text alternative for the iframe"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30284
+msgid "Reset Embed Url"
+msgstr "Reset Embed Url"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30317
+msgid "Responsive Iframe"
+msgstr "Responsive Iframe"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30322
+#: assets/scripts/blocks.js:30457
+msgid "Iframe"
+msgstr "Iframe"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30324
+msgid "Responsive"
+msgstr "Responsive"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30326
+msgid "Fluid"
+msgstr "Fluid"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30381
+msgid "Iframe Height"
+msgstr "Iframe Height"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30429
+#: assets/scripts/blocks.js:33363
+#: assets/scripts/blocks.js:34869
+msgid "Preview"
+msgstr "Preview"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30450
+msgid "Iframe Button"
+msgstr "Iframe Button"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30452
+msgid "A button which, when clicked, will toggle visibility of an iframe"
+msgstr "A button which, when clicked, will toggle visibility of an iframe"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30459
+#: assets/scripts/blocks.js:32887
+#: assets/scripts/blocks.js:32891
+msgid "Button"
+msgstr "Button"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30515
+msgid "Set Image"
+msgstr "Set Image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30517
+#: assets/scripts/blocks.js:33781
+msgid "Replace Image"
+msgstr "Replace Image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30703
+msgid "Opaque"
+msgstr "Opaque"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30705
+msgid "Translucent"
+msgstr "Translucent"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30707
+msgid "Transparent"
+msgstr "Transparent"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30840
+msgid "Do you wish to delete this slide? This action is irreversible"
+msgstr "Do you wish to delete this slide? This action is irreversible"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30878
+msgid "Show Arrows"
+msgstr "Show Arrows"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30885
+msgid "Has Content"
+msgstr "Has Content"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30891
+msgid "By disabling this you will hide the content in *ALL* slides. To disable this on only one slide, select the desired slide and toggle the \"Hide Content\" field in the \"Slide Options\" panel."
+msgstr "By disabling this you will hide the content in *ALL* slides. To disable this on only one slide, select the desired slide and toggle the \"Hide Content\" field in the \"Slide Options\" panel."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30902
+msgid "Show Tabs"
+msgstr "Show Tabs"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30908
+msgid "Hide the tabs on the front end, these will still show in the panel to allow you to navigate through each slide."
+msgstr "Hide the tabs on the front end, these will still show in the panel to allow you to navigate through each slide."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30918
+msgid "Timeline Options"
+msgstr "Timeline Options"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30921
+msgid "Slider Title"
+msgstr "Slider Title"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30927
+msgid "Timeline Style"
+msgstr "Timeline Style"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30935
+msgid "Slide Options"
+msgstr "Slide Options"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30938
+msgid "Slide Title"
+msgstr "Slide Title"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30944
+msgid "Slide Timeline Text"
+msgstr "Slide Timeline Text"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30954
+msgid "Slide Background"
+msgstr "Slide Background"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30963
+msgid "Content Alignment"
+msgstr "Content Alignment"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30977
+msgid "Hide Content"
+msgstr "Hide Content"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30983
+msgid "By enabling this you will hide the content on *THIS* slide. To disable content on all slides go to the \"Options\" and toggle the \"Has Content\" field."
+msgstr "By enabling this you will hide the content on *THIS* slide. To disable content on all slides go to the \"Options\" and toggle the \"Has Content\" field."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30994
+msgid "Remove Slide"
+msgstr "Remove Slide"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30998
+msgid "This is irreversible."
+msgstr "This is irreversible."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31016
+msgid "(Slider Title)"
+msgstr "(Slider Title)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31041
+msgid "Add a slide below."
+msgstr "Add a slide below."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31044
+#: assets/scripts/blocks.js:31169
+msgid "Add Slide"
+msgstr "Add Slide"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31067
+msgid "(TimeLine Content)"
+msgstr "(TimeLine Content)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31095
+msgid "(Sub-Heading)"
+msgstr "(Sub-Heading)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31119
+#: assets/scripts/blocks.js:32850
+msgid "(Button Text)"
+msgstr "(Button Text)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31149
+#: assets/scripts/blocks.js:31163
+msgid "(No Title)"
+msgstr "(No Title)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32142
+#: assets/scripts/blocks.js:32147
+msgid "Slider"
+msgstr "Slider"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32149
+msgid "Carousel"
+msgstr "Carousel"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32151
+msgid "Scroller"
+msgstr "Scroller"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32177
+msgid "Uploading…"
+msgstr "Uploading…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32179
+msgid "Uploading failed"
+msgstr "Uploading failed"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32181
+msgid "Uploading complete"
+msgstr "Uploading complete"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32263
+msgid "Select File(s)"
+msgstr "Select File(s)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32265
+msgid "Upload media files or pick from your media library."
+msgstr "Upload media files or pick from your media library."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32343
+msgid "Select a file to download"
+msgstr "Select a file to download"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32363
+msgid "Clear File(s)"
+msgstr "Clear File(s)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32384
+msgid "Resource Download"
+msgstr "Resource Download"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32386
+msgid "Add a button to download resource(s)"
+msgstr "Add a button to download resource(s)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32486
+msgid "Key Facts"
+msgstr "Key Facts"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32488
+msgid "Add a key facts block"
+msgstr "Add a key facts block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32704
+#: assets/scripts/blocks.js:32720
+msgid "Name"
+msgstr "Name"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32707
+#: assets/scripts/blocks.js:32729
+msgid "Role"
+msgstr "Role"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32741
+msgid "Add Row"
+msgstr "Add Row"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32758
+msgid "Recipients"
+msgstr "Recipients"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32760
+msgid "Add a list of recipients"
+msgstr "Add a list of recipients"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33063
+#: assets/scripts/blocks.js:33203
+msgid "Further Reading"
+msgstr "Further Reading"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33077
+msgid "Type link"
+msgstr "Type link"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33093
+msgid "Open in new tab"
+msgstr "Open in new tab"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33101
+#: assets/scripts/blocks.js:33104
+msgid "Add a link"
+msgstr "Add a link"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33191
+msgid "Link Block"
+msgstr "Link Block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33193
+msgid "A collection of links, used for things such as further reading suggestions."
+msgstr "A collection of links, used for things such as further reading suggestions."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33201
+msgid "Links"
+msgstr "Links"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33335
+msgid "Edit Counter"
+msgstr "Edit Counter"
+
+#: assets/scripts/blocks.js:33335
+msgid "Preview Counter"
+msgstr "Preview Counter"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33343
+msgid "Duration"
+msgstr "Duration"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33345
+msgid "How long it should take the counter to count up"
+msgstr "How long it should take the counter to count up"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33362
+msgid "Edit"
+msgstr "Edit"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33371
+msgid "Enter the value to which this field should count"
+msgstr "Enter the value to which this field should count"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33397
+#: assets/scripts/blocks.js:33407
+#: assets/scripts/blocks.js:35414
+msgid "Counter"
+msgstr "Counter"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33399
+msgid "Add a numeric field which, when scrolled into view, will count up from zero"
+msgstr "Add a numeric field which, when scrolled into view, will count up from zero"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33405
+msgid "Stat"
+msgstr "Stat"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33715
+msgid "Image Settings"
+msgstr "Image Settings"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33718
+msgid "Focal Point"
+msgstr "Focal Point"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33726
+msgid "Opacity"
+msgstr "Opacity"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33740
+msgid "Colour"
+msgstr "Colour"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33783
+msgid "Add Image"
+msgstr "Add Image"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34081
+msgid "Background Media Column"
+msgstr "Background Media Column"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34083
+msgid "Column layout for Background Media block"
+msgstr "Column layout for Background Media block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34146
+msgid "Background Media"
+msgstr "Background Media"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34148
+msgid "Two-column layout with background images"
+msgstr "Two-column layout with background images"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34152
+msgid "Background"
+msgstr "Background"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34154
+msgid "Media"
+msgstr "Media"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34156
+msgid "Text"
+msgstr "Text"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34289
+#: assets/scripts/blocks.js:34566
+msgid "Display Options"
+msgstr "Display Options"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34292
+#: assets/scripts/blocks.js:34581
+msgid "Choose taxonomy to display"
+msgstr "Choose taxonomy to display"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34371
+msgid "Term A-Z"
+msgstr "Term A-Z"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34373
+msgid "List all visible terms in a taxonomy, grouped by first letter"
+msgstr "List all visible terms in a taxonomy, grouped by first letter"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34376
+msgid "Term List"
+msgstr "Term List"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34378
+msgid "A-Z Terms"
+msgstr "A-Z Terms"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34380
+msgid "Countries"
+msgstr "Countries"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34589
+msgid "Max depth"
+msgstr "Max depth"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34598
+msgid "Show only Regions/Subregions"
+msgstr "Show only Regions/Subregions"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34657
+msgid "Terms List"
+msgstr "Terms List"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34659
+msgid "Terms"
+msgstr "Terms"
+
+#: assets/scripts/blocks.js:34708
+msgid "Petition Settings"
+msgstr "Petition Settings"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34762
+#: assets/scripts/blocks.js:34772
+msgid "Petitions"
+msgstr "Petitions"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34787
+msgid "Feed"
+msgstr "Feed"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34796
+msgid "Petition List"
+msgstr "Petition List"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34798
+msgid "Petition list"
+msgstr "Petition list"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34800
+msgid "Petition"
+msgstr "Petition"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34893
+msgid "Write HTML…"
+msgstr "Write HTML…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34895
+msgid "HTML"
+msgstr "HTML"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34919
+msgid "Raw Code"
+msgstr "Raw Code"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34992
+msgctxt "format for timer, i.e. \"x days, H:m:s\""
+msgid "%1$s, %2$s:%3$s:%4$s"
+msgstr "%1$s, %2$s:%3$s:%4$s"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35006
+msgctxt "time format, i.e. \"H:m:s\""
+msgid "%1$s:%2$s:%3$s"
+msgstr "%1$s:%2$s:%3$s"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35053
+msgid "Time Expired Text"
+msgstr "Time Expired Text"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35058
+msgid "enter text here"
+msgstr "enter text here"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35080
+msgid "Countdown Timer"
+msgstr "Countdown Timer"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35084
+msgid "Countdown"
+msgstr "Countdown"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35086
+msgid "Timer"
+msgstr "Timer"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35163
+msgid "The Flourish embed source (not the full URL)."
+msgstr "The Flourish embed source (not the full URL)."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35167
+#: assets/scripts/blocks.js:35243
+msgid "Preview Embed"
+msgstr "Preview Embed"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35182
+msgid "Flourish Embed"
+msgstr "Flourish Embed"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35187
+msgid "Flourish"
+msgstr "Flourish"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35240
+msgid "The Sutori embed code"
+msgstr "The Sutori embed code"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35258
+msgid "Sutori Embed"
+msgstr "Sutori Embed"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35263
+msgid "Sutori"
+msgstr "Sutori"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35290
+msgid "The embed code"
+msgstr "The embed code"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35297
+msgid "The embed type"
+msgstr "The embed type"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35304
+msgid "The embed title"
+msgstr "The embed title"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35308
+msgid "Ending the Death Penalty"
+msgstr "Ending the Death Penalty"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35323
+msgid "Infogram Embed"
+msgstr "Infogram Embed"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35328
+msgid "Infogram"
+msgstr "Infogram"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35375
+#: assets/scripts/blocks.js:35405
+msgid "Tickcounter Embed"
+msgstr "Tickcounter Embed"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35378
+msgid "This embed cannot be previewed in the editor. Preview the %s itself to see the embed in action"
+msgstr "This embed cannot be previewed in the editor. Preview the %s itself to see the embed in action"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35389
+msgid "The Tickcounter embed code"
+msgstr "The Tickcounter embed code"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35410
+msgid "Tickcounter"
+msgstr "Tickcounter"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35683
+msgid "Add a grid of posts that are related to the current post"
+msgstr "Add a grid of posts that are related to the current post"
+
+#: assets/scripts/blocks.js:35733
+msgid "Settings"
+msgstr "Settings"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35737
+msgid "Collapsed by default"
+msgstr "Collapsed by default"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35739
+msgid "Whether the block contents should be hidden by default"
+msgstr "Whether the block contents should be hidden by default"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35748
+msgid "Label this block with an HTML anchor (#example)."
+msgstr "Label this block with an HTML anchor (#example)."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35760
+msgid "Find out more"
+msgstr "Find out more"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35789
+msgid "Collapsable"
+msgstr "Collapsable"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35794
+msgid "collapsible"
+msgstr "collapsible"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35796
+msgid "accordion"
+msgstr "accordion"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35798
+msgid "drawer"
+msgstr "drawer"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35800
+msgid "open"
+msgstr "open"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35802
+msgid "closed"
+msgstr "closed"
