@@ -50,8 +50,8 @@ if ( ! function_exists( 'get_theme_image_sizes' ) ) {
 			'hero-lg'          => [ 2560, 710, true ],
 			'hero-md'          => [ 1468, 710, true ],
 			'hero-sm'          => [ 770, 710, true ],
-			'logotype'         => [ 180, 72, false ],
-			'logotype@2x'      => [ 360, 144, false ],
+			'logotype'         => [ 0, 72, false ],
+			'logotype@2x'      => [ 0, 144, false ],
 			'logomark'         => [ 60, 60, false ],
 			'logomark@2x'      => [ 120, 120, false ],
 			'lwi-block-sm'     => [ 200, 200, false ],
@@ -119,7 +119,7 @@ if ( ! function_exists( 'amnesty_custom_image_sizes' ) ) {
 				'wc-thumb'         => 'WC thumb',
 				'action-wide'      => 'Action Wide',
 				'action-wide@2x'   => 'Action Wide Retina',
-			] 
+			]
 		);
 	}
 }

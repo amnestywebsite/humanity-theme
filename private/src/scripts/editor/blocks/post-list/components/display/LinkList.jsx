@@ -11,16 +11,16 @@ const LinkItem = (props) => (
       </h3>
       <div className="postInfo-container">
         {props.showPostDate && (
-          <span className="linkList-itemDate">
-            <p className="dateTerm">Date: </p>
-            <p className="dateDescription"> {props.date} </p>
-          </span>
+          <p className="linkList-itemDate">
+            <span className="dateTerm">Date: </span>
+            <span className="dateDescription">{props.date}</span>
+          </p>
         )}
         {props.showAuthor && (
-          <span className="linkList-itemAuthor">
-            <p className="authorTerm"> Author: </p>
-            <p className="authorDescription"> {props.authorName} </p>
-          </span>
+          <p className="linkList-itemAuthor">
+            <span className="authorTerm">Author: </span>
+            <span className="authorDescription">{props.authorName}</span>
+          </p>
         )}
       </div>
     </article>

@@ -25,8 +25,7 @@ if ( ! function_exists( 'amnesty_logo' ) ) {
 				false,
 				[
 					'class' => 'logo-logoType',
-					/* translators: [front] Accessibility text for logo */
-					'alt'   => __( 'Amnesty International Logotype', 'amnesty' ),
+					'alt'   => get_bloginfo( 'name' ),
 				]
 			);
 		}
@@ -38,8 +37,7 @@ if ( ! function_exists( 'amnesty_logo' ) ) {
 				false,
 				[
 					'class' => 'logo-logoMark',
-					/* translators: [front] Accessibility text for logo */
-					'alt'   => __( 'Amnesty International Logomark', 'amnesty' ),
+					'alt'   => get_bloginfo( 'name' ),
 				]
 			);
 		}
@@ -47,8 +45,7 @@ if ( ! function_exists( 'amnesty_logo' ) ) {
 		printf(
 			'<a class="logo" href="%s" aria-label="%s">%s</a>',
 			esc_url( $logo_link ),
-			/* translators: [front] Screen reader accessibility text for logo to give context when clicking  */
-			esc_attr__( 'Visit the Amnesty International home page', 'amnesty' ),
+			esc_attr( get_bloginfo( 'name' ) ),
 			$logotype . $logomark // phpcs:ignore
 		);
 	}

@@ -1,4 +1,6 @@
 .add-more-button {
+  grid-column-start: 1;
+  grid-column-end: 4;
   display: flex;
   justify-content: center;
   align-items: center;

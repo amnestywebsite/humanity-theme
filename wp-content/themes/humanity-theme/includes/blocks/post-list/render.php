@@ -210,27 +210,45 @@ if ( ! function_exists( 'amnesty_list_process_custom' ) ) {
 			return false;
 		}
 
+		$show_author = $attributes['displayAuthor'] ?? false;
+		$show_date   = $attributes['displayPostDate'] ?? false;
+
 		return array_map(
-			// phpcs:ignore Universal.FunctionDeclarations.NoLongClosures.ExceedsMaximum
-			function ( $data ) {
-				$featured_image = '';
-
-				if ( isset( $data['featured_image_id'] ) && $data['featured_image_id'] ) {
-						$featured_image = wp_get_attachment_image_url( $data['featured_image_id'], 'post-half@2x' );
-				}
-
-				return [
-					'title'             => isset( $data['title'] ) ? $data['title'] : false,
-					'link'              => isset( $data['titleLink'] ) ? $data['titleLink'] : false,
-					'tag'               => isset( $data['tagText'] ) ? $data['tagText'] : false,
-					'tag_link'          => isset( $data['tagLink'] ) ? $data['tagLink'] : false,
-					'featured_image'    => $featured_image,
-					'featured_image_id' => $data['featured_image_id'] ?? 0,
-					'excerpt'           => isset( $data['excerpt'] ) ? $data['excerpt'] : false,
-				];
-			},
+			fn ( array $data ): array => amnesty_list_process_custom_item_data( $data, $show_author, $show_date ),
 			$attributes['custom']
 		);
+	}
+}
+
+if ( ! function_exists( 'amnesty_list_process_custom_item_data' ) ) {
+	/**
+	 * Process a custom item's attributes
+	 *
+	 * @package Amnesty\Blocks
+	 *
+	 * @param array<string,mixed> $data the item data
+	 * @param bool                $show_author whether to render author info
+	 * @param bool                $show_date   whether to render specified date
+	 *
+	 * @return array<string,mixed>
+	 */
+	function amnesty_list_process_custom_item_data( array $data, bool $show_author, bool $show_date ): array {
+		$image = wp_get_attachment_image_url( $data['featured_image_id'] ?? 0, 'post-half@2x' );
+		$date  = amnesty_locale_date( strtotime( $data['date'] ?? '' ) );
+
+		return [
+			'title'             => $data['title'] ?? false,
+			'link'              => $data['titleLink'] ?? false,
+			'tag'               => $data['tagText'] ?? false,
+			'tag_link'          => $data['tagLink'] ?? false,
+			'featured_image'    => $image,
+			'featured_image_id' => $data['featured_image_id'] ?? 0,
+			'excerpt'           => $data['excerpt'] ?? false,
+			'showPostDate'      => $show_date,
+			'date'              => $date,
+			'showAuthor'        => $show_author,
+			'author'            => $data['authorName'] ?? '',
+		];
 	}
 }
 
@@ -370,7 +388,7 @@ if ( ! function_exists( 'amnesty_render_list_item' ) ) {
 		$post_date      = isset( $data['date'] ) ? $data['date'] : '';
 		$show_author    = isset( $data['showAuthor'] ) ? $data['showAuthor'] : '';
 		$show_post_date = isset( $data['showPostDate'] ) ? $data['showPostDate'] : '';
-		$post_updated   = get_post_meta( $data['id'], 'amnesty_updated', true );
+		$post_updated   = isset( $data['id'] ) ? get_post_meta( $data['id'], 'amnesty_updated', true ) : '';
 
 		if ( $show_post_date && $post_updated ) {
 			$post_updated = wp_date( get_option( 'date_format' ), strtotime( $post_updated ), new DateTimeZone( 'UTC' ) );
