@@ -1,977 +1,58 @@
-# Copyright (C) 2024 Amnesty International
-# This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Humanity Theme 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/humanity-theme\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: Amnesty Core\n"
+"Report-Msgid-Bugs-To: @github:amnestywebsite/amnesty-wp-theme/issues\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-04-17T10:28:45+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
-"X-Domain: amnesty\n"
-
-#. Theme Name of the theme
-msgid "Humanity Theme"
-msgstr ""
-
-#. Theme URI of the theme
-msgid "https://github.com/amnestywebsite/humanity-theme"
-msgstr ""
-
-#. Description of the theme
-msgid "The Amnesty International WordPress Humanity Theme"
-msgstr ""
-
-#. Author of the theme
-msgid "Amnesty International"
-msgstr ""
-
-#. Author URI of the theme
-msgid "https://www.amnesty.org"
-msgstr ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404/ ARIA
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
-#: 404.php:15
-#: 404.php:16
-msgid "Page Not Found"
-msgstr ""
-
-#: 404.php:18
-msgid "The page you are looking for does not exist."
-msgstr ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
-#: 404.php:19
-msgid "Go to the Homepage"
-msgstr ""
-
-#. translators: [front] ARIA https://www.amnesty.eu/news/ a number followed by the string on the list of posts
-#: archive.php:66
-msgid "Results"
-msgstr ""
-
-#: author.php:53
-msgid "Follow"
-msgstr ""
-
-#: author.php:68
-msgid "Biography"
-msgstr ""
-
-#: author.php:73
-msgid "Read more"
-msgstr ""
-
-#: author.php:76
-msgid "More from this author"
-msgstr ""
-
-#. translators: [front] ARIA
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ Accessibility text
-#: author.php:101
-#: partials/article-share.php:12
-msgid "Social sharing options"
-msgstr ""
-
-#. translators: [front] ARIA
-#. translators: [admin]
-#: footer.php:34
-#: includes/admin/theme-options/footer.php:15
-#: includes/admin/theme-options/footer.php:19
-msgid "Footer"
-msgstr ""
-
-#. translators: [front] ARIA
-#: footer.php:37
-msgid "Footer Menus"
-msgstr ""
-
-#. translators: [front] ARIA Social Media sharing options
-#. translators: [front] Social Media sharing options
-#: footer.php:69
-msgid "Follow us on:"
-msgstr ""
-
-#. translators: [front] ARIA
-#: footer.php:72
-msgid "Follow us on Facebook"
-msgstr ""
-
-#. translators: [front] ARIA
-#: footer.php:75
-msgid "Follow us on Twitter"
-msgstr ""
-
-#. translators: [front] ARIA
-#: footer.php:78
-msgid "Subscribe to our YouTube channel"
-msgstr ""
-
-#. translators: [front]
-#: footer.php:81
-msgid "Follow us on Instagram"
-msgstr ""
-
-#. translators: [front]
-#: footer.php:84
-msgid "Follow us on Telegram"
-msgstr ""
+"POT-Creation-Date: 2023-03-06 19:20+0000\n"
+"PO-Revision-Date: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. translators: [front] Accessibility label for screen reader/keyboard users
 #: header-shop.php:20
 #: header-taxonomy.php:21
 #: header.php:40
 msgid "Skip to main content"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-accessibility.php:84
-#: includes/admin/class-accessibility.php:86
-msgid "Accessibility"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-accessibility.php:100
-msgid "Negishim"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-accessibility.php:102
-msgid "Load the Negishim Accessibility widget (Hebrew)."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:129
-#: includes/admin/class-fonts.php:131
-msgid "Fonts"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:145
-msgid "Font Declaration Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:147
-msgid "Do you wish to use the default theme fonts (Amnesty Trade Gothic, Amnesty Trade Gothic Condensed), or use Google Fonts?"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:151
-msgid "Theme Default"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:153
-msgid "Google Fonts"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:163
-msgid "Primary Font Family"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:165
-msgid "The primary font family is used for body text."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:177
-msgid "Secondary Font Family"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:179
-msgid "The secondary font family is used for headings.<br>If you only have one font family, declare the secondary font family to be the same as the primary."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:191
-msgid "Font Face URL"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-fonts.php:193
-msgid "Paste the Google Fonts URL from which the CSS file should be loaded.<br>This should start with https://fonts.googleapis.com/."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-permalink-settings.php:35
-msgid "Amnesty Permalinks"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-permalink-settings.php:44
-msgid "If you like, you may enter custom URL slugs for post types and taxonomies here. This allows you to create URL structures in your language."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/class-permalink-settings.php:45
-msgid "Please note that changing these from their defaults may require you to set rewrite rules if you have existing content. Only change them if you know what you are doing."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:42
-msgid "Network Options"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:72
-msgid "Features"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:74
-msgid "Manage available features"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:101
-msgid "Dedicated language selector"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:112
-msgid "Language button menu"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:114
-msgid "Enables a button in the main navigation which triggers a language selection menu"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:135
-#: includes/admin/theme-options/pop-in.php:25
-#: includes/admin/theme-options/pop-in.php:29
-#: includes/post-types/pop-in.php:26
-#: includes/post-types/pop-in.php:77
-msgid "Pop-in"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:155
-msgid "Index Page Filter Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:160
-msgid "Categories Only"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:162
-msgid "Taxonomies & Terms"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:181
-msgid "Related Content (Posts)"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:183
-msgid "Enable the Related Content area on the post single template"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:199
-msgid "Post Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:201
-msgid "Manage available post types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:220
-msgid "Taxonomies"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/network/class-network-options.php:222
-msgid "Manage available taxonomies"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options.php:18
-#: includes/admin/theme-options.php:23
-msgid "Theme Options"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:21
-#: includes/admin/theme-options/analytics.php:25
-msgid "Analytics"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:37
-msgid "Google Tag Manager Code"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:39
-msgid "Paste your Google Tag Manager Code"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:48
-msgid "GTM Consent Mode"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:50
-msgid "The status, and default value of, Google's Consent Mode (see https://support.google.com/analytics/answer/9976101). Note that, when using Consent Mode, you will have to implement targeting via a cookie control plugin such as Civic"
-msgstr ""
-
-#: includes/admin/theme-options/analytics.php:54
-msgid "Not Enabled"
-msgstr ""
-
-#: includes/admin/theme-options/analytics.php:55
-msgid "Enabled, denied"
-msgstr ""
-
-#: includes/admin/theme-options/analytics.php:56
-msgid "Enabled, granted"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:65
-msgid "Google Analytics Code"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:67
-msgid "Paste your Google Analytics Code"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:76
-msgid "Google Analytics v4 Code"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:78
-msgid "Paste your Google Analytics v4 Code; you must also have entered your GA Code above"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:87
-msgid "Hotjar Site ID:"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:89
-msgid "Paste your Hotjar Site ID (example: 552474)"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:98
-msgid "VWO Account ID"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:100
-msgid "Paste your VWO Account ID here"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:114
-msgid "Site Meta Tags"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:123
-msgid "Meta Tags"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:125
-msgid "Add your site meta tags (&lt;meta name=\"thing\" /&gt;) here; useful for things like site verification tags"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:125
-#: includes/admin/theme-options/analytics.php:167
-msgid "If using WordPress SEO (Yoast) or similar, you may wish to use their built-in alternatives"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:129
-msgid "Add Tag"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:131
-msgid "Remove Tag"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:143
-msgid "Meta Name"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:145
-msgid "e.g. google-site-verification"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:156
-#: includes/admin/theme-options/analytics.php:198
-msgid "Meta Value"
-msgstr ""
-
-#: includes/admin/theme-options/analytics.php:166
-msgid "RDF Tags"
-msgstr ""
-
-#: includes/admin/theme-options/analytics.php:167
-msgid "Add your site rdf tags (&lt;meta property=\"thing\" /&gt;) here; useful for things like Facebook pages"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:171
-msgid "Add Property"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:173
-msgid "Remove Property"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:185
-msgid "Meta Property"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:187
-msgid "e.g. fb:pages"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:215
-msgid "Deprecated fields"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:224
-msgid "The below fields are deprecated. Avoid using them if they are not currently in use on this site"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:232
-msgid "Google Tag Manager Script"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:234
-#: includes/admin/theme-options/analytics.php:245
-msgid "Deprecated. Do not use unless already in use."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/analytics.php:243
-msgid "Google Tag Manager Noscript"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/footer.php:28
-msgid "Section Title"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/footer.php:37
-msgid "Section Content"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/footer.php:46
-msgid "Section Call to Action text"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/footer.php:55
-msgid "Section Call to Action url"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/footer.php:62
-#: includes/admin/theme-options/footer.php:67
-msgid "Copyright info"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/footer.php:69
-msgid "By default, the copyright info outputs the current year followed by the site name; add content to this field to override this."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/header.php:19
-#: assets/scripts/blocks.js:1209
-#: assets/scripts/blocks.js:12234
-#: assets/scripts/blocks.js:12239
-msgid "Header"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/header.php:28
-msgid "Site Logotype"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/header.php:47
-msgid "Site Logomark"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/header.php:66
-msgid "Logo Link"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:19
-#: includes/admin/theme-options/localisation.php:23
-msgid "Localisation"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:32
-msgid "Ordered List Character Choice"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:36
-msgid "Please select"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:40
-msgid "Default; Western Arabic numerals"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:42
-msgid "Arabic-Indic numbers"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:44
-msgid "Bengali numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:46
-msgid "Cambodian/Khmer numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:48
-msgid "Devanagari numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:50
-msgid "Ethiopic numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:52
-msgid "Formal Korean Han numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:54
-msgid "Gujarati numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:56
-msgid "Gurmukhi numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:58
-msgid "Han \"Earthly Branch\" ordinals"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:60
-msgid "Han \"Heavenly Stem\" ordinals"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:62
-msgid "Japanese formal numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:64
-msgid "Japanese informal numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:66
-msgid "Kannada numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:68
-msgid "Korean hangul numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:70
-msgid "Korean hanja numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:72
-msgid "Laotian numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:74
-msgid "Lowercase Armenian numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:76
-msgid "Lowercase ASCII letters"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:78
-msgid "Lowercase classical Greek."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:80
-msgid "Lowercase Roman numerals."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:82
-msgid "Malayalam numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:84
-msgid "Mongolian numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:86
-msgid "Myanmar (Burmese) numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:88
-msgid "Oriya numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:90
-msgid "Persian numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:92
-msgid "Simplified Chinese formal numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:94
-msgid "Simplified Chinese informal numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:96
-msgid "Tamil numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:98
-msgid "Telugu numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:100
-msgid "Thai numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:102
-msgid "Tibetan numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:104
-msgid "Traditional Armenian numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:106
-msgid "Traditional Chinese formal numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:108
-msgid "Traditional Chinese informal numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:110
-msgid "Traditional Georgian numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:112
-msgid "Traditional Hebrew numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:114
-msgid "Traditional uppercase Armenian numbering"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:116
-msgid "Uppercase ASCII letters"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:118
-msgid "Uppercase Roman numerals."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/news.php:19
-msgid "News"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/news.php:28
-msgid "Default Post sidebar"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/news.php:30
-#: includes/admin/theme-options/news.php:50
-msgid "Drag posts from the left column to the right column to attach them to this page.<br />Only the first sidebar selected will be used."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/news.php:48
-msgid "Default Page sidebar"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/pop-in.php:38
-msgid "Active Pop-in Call to Action"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/pop-in.php:40
-msgid "Drag a pop-in from the left column to the right column to activate."
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/pop-in.php:58
-msgid "Timeout"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/pop-in.php:60
-msgid "After how many days should a dismissed pop-in be re-shown to the user?"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/social.php:19
-msgid "Social Media"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/social.php:28
-msgid "Facebook URL"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/social.php:37
-msgid "Twitter Handle"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/social.php:46
-msgid "Youtube URL"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/social.php:55
-msgid "Instagram Handle"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/social.php:64
-msgid "Telegram Handle"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/woo/theme-options.php:31
-msgid "Shop Index Page"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/woo/theme-options.php:33
-msgid "Select the page used for the Shop Index"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/woo/theme-options.php:50
-msgid "Category Archive Page"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/woo/theme-options.php:52
-msgid "Select the page used for the Product Category Archive"
-msgstr ""
-
-#. translators: [admin]
-#: includes/block-patterns/pattern-category.php:23
-#: includes/blocks/block-category.php:24
-msgid "Amnesty Core"
-msgstr ""
-
-#. translators: [admin]
-#: includes/block-patterns/social-share.php:23
-msgid "Social Share"
-msgstr ""
-
-#. translators: [admin]
-#: includes/block-patterns/social-share.php:25
-msgid "Three column layout with headings, tweet action, social icons, video embed and buttons"
-msgstr ""
-
-#. translators: [front]
-#. translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource
-#. translators: [admin]
-#: includes/blocks/download/render.php:23
-#: includes/blocks/download/render.php:68
-#: assets/scripts/blocks.js:32356
-msgid "Download"
-msgstr ""
-
-#. translators: [front] no context avalible
-#: includes/blocks/embed-sutori/render.php:27
-msgctxt "Toggle visibility of Sutori Timeline"
-msgid "Click to show/hide timeline"
-msgstr ""
-
-#. translators: [front]
-#. translators: [front] AM I think this is used on the petition index or petition block
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars
-#. translators: [front] used by sections on petition forms
-#. translators: [admin]
-#: includes/blocks/iframe-button/register.php:29
-#: includes/blocks/iframe-button/render.php:21
-#: includes/blocks/petition-list/render.php:54
-#: partials/petitions/item.php:41
-#: assets/scripts/blocks.js:13436
-#: assets/scripts/blocks.js:29758
-#: assets/scripts/blocks.js:29798
-#: assets/scripts/blocks.js:30408
-msgid "Act Now"
-msgstr ""
-
-#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
-#: includes/blocks/menu/render.php:24
-msgid "Category List"
-msgstr ""
-
-#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
-#: includes/blocks/menu/render.php:97
-#: includes/blocks/menu/render.php:135
-msgid "List of page sections"
-msgstr ""
-
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/  used by sections, when a form rather than an Iframe is used
-#. translators: [front] used by sections on petition forms
-#: includes/blocks/petition-list/render.php:57
-#: partials/petitions/item.php:38
-msgctxt "User has signed this petition."
-msgid "Signed!"
-msgstr ""
-
-#. translators: [front] %s: the title of the article
-#: includes/blocks/post-list/views/grid-item.php:10
-#: includes/blocks/post-list/views/list-item.php:4
-#: partials/post/post-full.php:16
-#: partials/post/post-none.php:10
-#: partials/post/post-search.php:31
-msgid "Article: %s"
-msgstr ""
-
-#. translators: [front]
-#. translators: [admin]
-#: includes/blocks/post-list/views/list-item-author.php:9
-#: assets/scripts/blocks.js:26862
-msgid "Author"
-msgstr ""
-
-#. translators: [front]
-#: includes/blocks/post-list/views/list-item-date.php:10
-msgid "Date"
-msgstr ""
-
-#. translators: [front]
-#: includes/blocks/post-list/views/list-item-date.php:23
-msgid "Updated"
-msgstr ""
-
-#. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
-#. translators: [admin]
-#: includes/blocks/regions/render.php:20
-#: assets/scripts/blocks.js:34639
-msgid "Explore by Region"
-msgstr ""
-
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
-#: includes/blocks/regions/render.php:82
-msgid "Hierarchical list of terms"
-msgstr ""
-
-#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
-#. translators: [front]
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Next post navigation label
-#. translators: [front]  https://isaidotorgstg.wpengine.com/en/latest
-#. translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label
-#. translators: [admin]
-#: includes/blocks/slider/render.php:15
-#: partials/archive/categories.php:50
-#: partials/pagination.php:12
-#: partials/pagination.php:50
-#: partials/search/pagination.php:20
-#: partials/search/pagination.php:60
-#: assets/scripts/blocks.js:31029
-#: assets/scripts/blocks.js:31585
-#: assets/scripts/blocks.js:31675
-#: assets/scripts/blocks.js:31789
-#: assets/scripts/blocks.js:31900
-#: assets/scripts/blocks.js:32013
-#: assets/scripts/blocks.js:32058
-#: assets/scripts/blocks.js:32103
-msgid "Next"
-msgstr ""
+msgstr "跳转到主要内容"
+
+#. translators: [front] Link to return to all posts of category %s
+#: partials/single/meta-area.php:34
+#: partials/single/term-area.php:38
+#, php-format
+msgid "Back to %s"
+msgstr "返回%s"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:22
+#: includes/post-types/sidebar.php:73
+#: assets/scripts/blocks.js:9714
+msgid "Sidebar"
+msgstr "侧边栏"
+
+#. translators: [front] Donate
+#. translators: [admin]
+#: woocommerce/order/order-details.php:52
+#: assets/scripts/blocks.js:27271
+#: assets/scripts/blocks.js:32520
+msgid "Quantity"
+msgstr "数量"
+
+#. translators: [front] Donate
+#: woocommerce/order/order-details.php:53
+msgid "Price"
+msgstr "价格"
 
 #. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #. translators: [front]
@@ -994,7 +75,190 @@ msgstr ""
 #: assets/scripts/blocks.js:32061
 #: assets/scripts/blocks.js:32106
 msgid "Previous"
-msgstr ""
+msgstr "上一个"
+
+#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#. translators: [front]
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Next post navigation label
+#. translators: [front]  https://isaidotorgstg.wpengine.com/en/latest
+#. translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label
+#. translators: [admin]
+#: includes/blocks/slider/render.php:15
+#: partials/archive/categories.php:50
+#: partials/pagination.php:12
+#: partials/pagination.php:50
+#: partials/search/pagination.php:20
+#: partials/search/pagination.php:60
+#: assets/scripts/blocks.js:31029
+#: assets/scripts/blocks.js:31585
+#: assets/scripts/blocks.js:31675
+#: assets/scripts/blocks.js:31789
+#: assets/scripts/blocks.js:31900
+#: assets/scripts/blocks.js:32013
+#: assets/scripts/blocks.js:32058
+#: assets/scripts/blocks.js:32103
+msgid "Next"
+msgstr "下一个"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:17
+msgid "Email:"
+msgstr "电子邮件："
+
+#. translators: [front] Donate %s: product category
+#: woocommerce/archive-product_cat.php:41
+#, php-format
+msgid "Products in the %s category"
+msgstr "%s 类别中的产品"
+
+#. translators: [front]
+#. translators: [front] Donate
+#: partials/shop/catalogue-header.php:17
+#: woocommerce/archive-product.php:42
+msgid "All products"
+msgstr "所有产品"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:185
+msgid "Description"
+msgstr "描述"
+
+#. translators: [front] Donate related products
+#: woocommerce/single-product/related.php:36
+msgid "Related Items"
+msgstr "相关项目"
+
+#. translators: [front] Label for shop index
+#. translators: [front] Donate Label for shop index
+#: partials/shop/catalogue-header.php:25
+#: woocommerce/single-product/related.php:39
+msgid "Catalogue"
+msgstr "目录"
+
+#. translators: [front] Donate
+#: woocommerce/global/quantity-input.php:39
+#: woocommerce/global/quantity-input.php:51
+msgid "Qty"
+msgstr "数量"
+
+#. translators: [front] Donate
+#: woocommerce/loop/result-count.php:27
+msgid "Showing one result"
+msgstr "显示一个结果"
+
+#. translators: [front] Donate %d: total results
+#: woocommerce/loop/result-count.php:33
+#, php-format
+msgid "Showing all %d result"
+msgid_plural "Showing all %d results"
+msgstr[0] "显示所有 %d 结果"
+
+#. translators: [front] Donate 1: first result 2: last result 3: total results
+#: woocommerce/loop/result-count.php:43
+#, php-format
+msgctxt "shown with first and last result on product pages"
+msgid "Showing %1$d&ndash;%2$d of %3$d result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] "显示 %1$d&ndash;%2$d 个结果（共 %3$d 个结果）"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
+#. translators: [front] Donate Label for post sorting options
+#: partials/archive/header.php:44
+#: partials/search/header.php:36
+#: woocommerce/loop/orderby.php:29
+msgid "Sort by"
+msgstr "排序"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404/ ARIA
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: 404.php:15
+#: 404.php:16
+msgid "Page Not Found"
+msgstr "找不到网页"
+
+#: 404.php:18
+msgid "The page you are looking for does not exist."
+msgstr "你正在寻找的页面不存在。"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: 404.php:19
+msgid "Go to the Homepage"
+msgstr "转到主页"
+
+#. translators: [front] ARIA https://www.amnesty.eu/news/ a number followed by the string on the list of posts
+#: archive.php:66
+msgid "Results"
+msgstr "结果"
+
+#. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
+#. translators: [admin]
+#: includes/blocks/term-list/render.php:60
+#: assets/scripts/blocks.js:34332
+#: assets/scripts/blocks.js:34389
+msgid "A-Z of Countries and Regions"
+msgstr "A-Z 国家和地区"
+
+#. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#. translators: [admin]
+#: includes/blocks/regions/render.php:20
+#: assets/scripts/blocks.js:34639
+msgid "Explore by Region"
+msgstr "按地区浏览"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#: includes/blocks/regions/render.php:82
+msgid "Hierarchical list of terms"
+msgstr "术语的分层列表"
+
+#. translators: [admin]
+#: includes/block-patterns/pattern-category.php:23
+#: includes/blocks/block-category.php:24
+msgid "Amnesty Core"
+msgstr "特赦核心"
+
+#. translators: [front]
+#. translators: [front] AM I think this is used on the petition index or petition block
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars
+#. translators: [front] used by sections on petition forms
+#. translators: [admin]
+#: includes/blocks/iframe-button/register.php:29
+#: includes/blocks/iframe-button/render.php:21
+#: includes/blocks/petition-list/render.php:54
+#: partials/petitions/item.php:41
+#: assets/scripts/blocks.js:13436
+#: assets/scripts/blocks.js:29758
+#: assets/scripts/blocks.js:29798
+#: assets/scripts/blocks.js:30408
+msgid "Act Now"
+msgstr "立即行动"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/  used by sections, when a form rather than an Iframe is used
+#. translators: [front] used by sections on petition forms
+#: includes/blocks/petition-list/render.php:57
+#: partials/petitions/item.php:38
+msgctxt "User has signed this petition."
+msgid "Signed!"
+msgstr "签署！"
+
+#. translators: [front] ARIA
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: includes/blocks/tweet-action/render.php:41
+#: partials/article-share.php:20
+msgid "Twitter Logo"
+msgstr "推特标志"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action
+#. translators: [admin]
+#: includes/blocks/tweet-action/render.php:56
+#: includes/blocks/tweet-action/render.php:57
+#: assets/scripts/blocks.js:29280
+#: assets/scripts/blocks.js:29282
+#: assets/scripts/blocks.js:29373
+#: assets/scripts/blocks.js:29375
+#: assets/scripts/blocks.js:29415
+#: assets/scripts/blocks.js:29417
+msgid "Send this Tweet"
+msgstr "发送此推文"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery
 #. translators: [admin]
@@ -1004,7 +268,7 @@ msgstr ""
 #: assets/scripts/blocks.js:31428
 #: assets/scripts/blocks.js:31509
 msgid "Tap here to return to gallery"
-msgstr ""
+msgstr "点击此处返回库"
 
 #. translators: [front]
 #. translators: [admin]
@@ -1018,35 +282,75 @@ msgstr ""
 #: assets/scripts/blocks.js:31888
 #: assets/scripts/blocks.js:32000
 msgid "Toggle Content"
-msgstr ""
+msgstr "切换内容"
 
-#. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
+#. translators: [front]
+#. translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource
 #. translators: [admin]
-#: includes/blocks/term-list/render.php:60
-#: assets/scripts/blocks.js:34332
-#: assets/scripts/blocks.js:34389
-msgid "A-Z of Countries and Regions"
-msgstr ""
+#: includes/blocks/download/render.php:23
+#: includes/blocks/download/render.php:68
+#: assets/scripts/blocks.js:32356
+msgid "Download"
+msgstr "下载"
 
-#. translators: [front] ARIA
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
-#: includes/blocks/tweet-action/render.php:41
-#: partials/article-share.php:20
-msgid "Twitter Logo"
-msgstr ""
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:24
+msgid "Category List"
+msgstr "分类列表"
 
-#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:97
+#: includes/blocks/menu/render.php:135
+msgid "List of page sections"
+msgstr "子类别列表"
+
+#. translators: [front]
+#: includes/blocks/post-list/views/list-item-date.php:10
+msgid "Date"
+msgstr "日期"
+
+#. translators: [front]
+#: includes/blocks/post-list/views/list-item-date.php:23
+msgid "Updated"
+msgstr "更新"
+
+#. translators: [front]
 #. translators: [admin]
-#: includes/blocks/tweet-action/render.php:56
-#: includes/blocks/tweet-action/render.php:57
-#: assets/scripts/blocks.js:29280
-#: assets/scripts/blocks.js:29282
-#: assets/scripts/blocks.js:29373
-#: assets/scripts/blocks.js:29375
-#: assets/scripts/blocks.js:29415
-#: assets/scripts/blocks.js:29417
-msgid "Send this Tweet"
-msgstr ""
+#: includes/blocks/post-list/views/list-item-author.php:9
+#: assets/scripts/blocks.js:26862
+msgid "Author"
+msgstr "作者"
+
+#. translators: [front] no context avalible
+#: includes/blocks/embed-sutori/render.php:27
+msgctxt "Toggle visibility of Sutori Timeline"
+msgid "Click to show/hide timeline"
+msgstr "单击以显示/隐藏时间线"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:15
+msgid "Most Recent"
+msgstr "最新"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:16
+msgid "Oldest First"
+msgstr "最旧"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:17
+msgid "Title - Ascending"
+msgstr "标题 - 升序"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:18
+msgid "Title - Descending"
+msgstr "标题 - 降序"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
+#: includes/query-filters/sort-order.php:22
+msgid "Most Relevant"
+msgstr "最相关"
 
 #. translators: [front] shown on post single
 #. translators: [admin]
@@ -1056,106 +360,56 @@ msgstr ""
 #: assets/scripts/blocks.js:35530
 #: assets/scripts/blocks.js:35681
 msgid "Related Content"
-msgstr ""
+msgstr "相关内容"
+
+#. translators: [API/admin]
+#: includes/features/related-content/class-wp-rest-related-content-controller.php:186
+msgid "The featured image for the post."
+msgstr "设置特色图片"
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:401
 #: assets/scripts/blocks.js:35481
 msgid "Country"
-msgstr ""
+msgstr "国家"
 
-#. translators: [API/admin]
-#: includes/features/related-content/class-wp-rest-related-content-controller.php:186
-msgid "The featured image for the post."
-msgstr ""
+#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
+#: includes/features/search/class-search-filters.php:249
+#, php-format
+msgctxt "search results title suffix for the search term"
+msgid "for “%s”"
+msgstr "由 %s"
 
-#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title.
-#: includes/features/search/class-search-filters.php:149
-msgctxt "search results title"
-msgid "Search results"
-msgstr ""
+#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
+#: includes/features/search/class-search-filters.php:255
+#, php-format
+msgctxt "search results title suffix for term exclusions"
+msgid "excluding “%s”"
+msgstr "不包括“%s”"
+
+#. translators: [front] appended to search results title (n results for...); %s: the month searched for
+#: includes/features/search/class-search-filters.php:278
+#, php-format
+msgctxt "search results title suffix for month published"
+msgid "for the month of %s"
+msgstr "对于%s月"
+
+#. translators: [front] appended to search results title (n results for...); %s: the year searched for
+#: includes/features/search/class-search-filters.php:295
+#, php-format
+msgctxt "search results title suffix for year published"
+msgid "in the year %s"
+msgstr "在%s年"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
 #. translators: Singular/Plural number of posts.
 #: includes/features/search/class-search-filters.php:189
 #: partials/archive/header.php:17
 #: partials/search/header.php:15
+#, php-format
 msgid "%s result"
 msgid_plural "%s results"
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
-#: includes/features/search/class-search-filters.php:249
-msgctxt "search results title suffix for the search term"
-msgid "for “%s”"
-msgstr ""
-
-#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
-#: includes/features/search/class-search-filters.php:255
-msgctxt "search results title suffix for term exclusions"
-msgid "excluding “%s”"
-msgstr ""
-
-#. translators: [front] appended to search results title (n results for...); %s: the month searched for
-#: includes/features/search/class-search-filters.php:278
-msgctxt "search results title suffix for month published"
-msgid "for the month of %s"
-msgstr ""
-
-#. translators: [front] appended to search results title (n results for...); %s: the year searched for
-#: includes/features/search/class-search-filters.php:295
-msgctxt "search results title suffix for year published"
-msgid "in the year %s"
-msgstr ""
-
-#: includes/features/search/helpers.php:135
-msgid "January"
-msgstr ""
-
-#: includes/features/search/helpers.php:136
-msgid "Febuary"
-msgstr ""
-
-#: includes/features/search/helpers.php:137
-msgid "March"
-msgstr ""
-
-#: includes/features/search/helpers.php:138
-msgid "April"
-msgstr ""
-
-#: includes/features/search/helpers.php:139
-msgid "May"
-msgstr ""
-
-#: includes/features/search/helpers.php:140
-msgid "June"
-msgstr ""
-
-#: includes/features/search/helpers.php:141
-msgid "July"
-msgstr ""
-
-#: includes/features/search/helpers.php:142
-msgid "August"
-msgstr ""
-
-#: includes/features/search/helpers.php:143
-msgid "September"
-msgstr ""
-
-#: includes/features/search/helpers.php:144
-msgid "October"
-msgstr ""
-
-#: includes/features/search/helpers.php:145
-msgid "November"
-msgstr ""
-
-#: includes/features/search/helpers.php:146
-msgid "December"
-msgstr ""
+msgstr[0] "%s 个结果"
 
 #: includes/features/search/permalink.php:39
 msgid "The ID of the page that should display the search interface"
@@ -1163,193 +417,905 @@ msgstr ""
 
 #: includes/features/search/permalink.php:45
 msgid "Search page"
-msgstr ""
+msgstr "搜索页面"
 
-#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
-#: includes/helpers/archive.php:66
-msgid "View now"
-msgstr ""
+#. translators: [admin]
+#: includes/block-patterns/social-share.php:23
+msgid "Social Share"
+msgstr "社交分享"
 
-#. translators: [front] AM not sure yet
-#: includes/helpers/frontend.php:27
-#: includes/helpers/frontend.php:39
-#: includes/helpers/frontend.php:45
-msgid "Choose an option"
-msgstr ""
+#. translators: [admin]
+#: includes/block-patterns/social-share.php:25
+msgid "Three column layout with headings, tweet action, social icons, video embed and buttons"
+msgstr "三列布局，标题、推文动作、社交图标、视频嵌入和按钮"
 
-#. translators: [front] ARIA page number pagination prefix, e.g. "[Page] 1" https://isaidotorgstg.wpengine.com/en/latest
-#: includes/helpers/pagination.php:33
-msgid "Page"
-msgstr ""
+#. translators: [admin]
+#: includes/admin/theme-options.php:18
+#: includes/admin/theme-options.php:23
+msgid "Theme Options"
+msgstr "主题选项"
 
-#. translators: [front] shown as a label for a region in search results
-#: includes/helpers/taxonomies.php:797
-msgid "Location Profile"
-msgstr ""
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:42
+msgid "Network Options"
+msgstr "网络设置"
 
-#. translators: [front] shown as a label for a country in search results
-#: includes/helpers/taxonomies.php:801
-msgid "Country Profile"
-msgstr ""
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:72
+msgid "Features"
+msgstr "特征"
 
-#. translators: [front] %1$s: the object type, %2$s: the object type's language
-#: includes/mlp/helpers.php:109
-msgid "View this %1$s in %2$s"
-msgstr ""
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:74
+msgid "Manage available features"
+msgstr "管理可用功能"
 
-#. translators: [front]
-#: includes/mlp/language-selector.php:109
-msgid "Available languages"
-msgstr ""
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:101
+msgid "Dedicated language selector"
+msgstr "语言选择"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:112
+msgid "Language button menu"
+msgstr "语言选择"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:114
+msgid "Enables a button in the main navigation which triggers a language selection menu"
+msgstr "在主导航中启用一个按钮，该按钮会触发语言选择菜单"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:135
+#: includes/admin/theme-options/pop-in.php:25
+#: includes/admin/theme-options/pop-in.php:29
+#: includes/post-types/pop-in.php:26
+#: includes/post-types/pop-in.php:77
+msgid "Pop-in"
+msgstr "弹出"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:155
+msgid "Index Page Filter Types"
+msgstr "索引页过滤器类型"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:160
+msgid "Categories Only"
+msgstr "仅类别"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:162
+msgid "Taxonomies & Terms"
+msgstr "分类和条款"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:181
+msgid "Related Content (Posts)"
+msgstr "（标题内容）"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:183
+msgid "Enable the Related Content area on the post single template"
+msgstr "在发布单个模板上启用“相关内容”区域"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:199
+msgid "Post Types"
+msgstr "文章类型"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:201
+msgid "Manage available post types"
+msgstr "管理可用的帖子类型"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:220
+msgid "Taxonomies"
+msgstr "分类法"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:222
+msgid "Manage available taxonomies"
+msgstr "管理可用的分类"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:129
+#: includes/admin/class-fonts.php:131
+msgid "Fonts"
+msgstr "字体"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:145
+msgid "Font Declaration Type"
+msgstr "字体声明类型"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:147
+msgid "Do you wish to use the default theme fonts (Amnesty Trade Gothic, Amnesty Trade Gothic Condensed), or use Google Fonts?"
+msgstr "是否要使用默认主题字体（特赦贸易哥特式，特赦贸易哥特式浓缩），或使用谷歌字体？"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:151
+msgid "Theme Default"
+msgstr "主题默认"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:153
+msgid "Google Fonts"
+msgstr "谷歌字体"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:163
+msgid "Primary Font Family"
+msgstr "主要字体"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:165
+msgid "The primary font family is used for body text."
+msgstr "主字体系列用于正文文本。"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:177
+msgid "Secondary Font Family"
+msgstr "次级字体系列"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:179
+msgid "The secondary font family is used for headings.<br>If you only have one font family, declare the secondary font family to be the same as the primary."
+msgstr "辅助字体系列用于标题。<br>如果只有一个字体系列，则声明辅助字体系列与主字体系列相同。"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:191
+msgid "Font Face URL"
+msgstr "字体 URL"
+
+#. translators: [admin]
+#: includes/admin/class-fonts.php:193
+msgid "Paste the Google Fonts URL from which the CSS file should be loaded.<br>This should start with https://fonts.googleapis.com/."
+msgstr "粘贴应从中加载 CSS 文件的 Google 字体 URL。<br>这应该从https://fonts.googleapis.com/开始。"
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:35
+msgid "Amnesty Permalinks"
+msgstr "大赦国际永久链接"
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:44
+msgid "If you like, you may enter custom URL slugs for post types and taxonomies here. This allows you to create URL structures in your language."
+msgstr "如果您喜欢，您可以在此处为帖子类型和分类项输入自定义 URL slug。这允许您使用语言创建 URL 结构。"
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:45
+msgid "Please note that changing these from their defaults may require you to set rewrite rules if you have existing content. Only change them if you know what you are doing."
+msgstr "请注意，如果存在现有内容，则从默认值更改这些内容可能需要设置重写规则。只有当你知道你在做什么时，才能改变它们。"
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:31
+msgid "Shop Index Page"
+msgstr "商店索引页面"
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:33
+msgid "Select the page used for the Shop Index"
+msgstr "选择用于商店索引的页面"
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:50
+msgid "Category Archive Page"
+msgstr "类别存档页面"
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:52
+msgid "Select the page used for the Product Category Archive"
+msgstr "选择用于产品类别存档的页面"
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:19
+msgid "News"
+msgstr "新闻"
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:28
+msgid "Default Post sidebar"
+msgstr "默认后侧边栏"
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:30
+#: includes/admin/theme-options/news.php:50
+msgid "Drag posts from the left column to the right column to attach them to this page.<br />Only the first sidebar selected will be used."
+msgstr "将帖子从左列拖动到右列以将其附加到此页面。<br />将仅使用选定的第一个侧边栏。"
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:48
+msgid "Default Page sidebar"
+msgstr "默认页面侧边栏"
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:38
+msgid "Active Pop-in Call to Action"
+msgstr "主动弹出行动号召"
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:40
+msgid "Drag a pop-in from the left column to the right column to activate."
+msgstr "将弹出项从左列拖到右列以激活。"
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:58
+msgid "Timeout"
+msgstr "超时"
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:60
+msgid "After how many days should a dismissed pop-in be re-shown to the user?"
+msgstr "多少次后，应重新向用户显示已拒绝的弹出项？"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:19
+#: includes/admin/theme-options/localisation.php:23
+msgid "Localisation"
+msgstr "导航"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:32
+msgid "Ordered List Character Choice"
+msgstr "有序清單字元選擇"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:36
+msgid "Please select"
+msgstr "请只选择一个项目"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:40
+msgid "Default; Western Arabic numerals"
+msgstr "預設值;西方阿拉伯數位"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:42
+msgid "Arabic-Indic numbers"
+msgstr "阿拉伯-印度數位"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:44
+msgid "Bengali numbering"
+msgstr "孟加拉語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:46
+msgid "Cambodian/Khmer numbering"
+msgstr "柬埔寨文/高棉語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:48
+msgid "Devanagari numbering"
+msgstr "梵文編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:50
+msgid "Ethiopic numbering"
+msgstr "衣索比亞編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:52
+msgid "Formal Korean Han numbering"
+msgstr "正式韓文漢字編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:54
+msgid "Gujarati numbering"
+msgstr "古吉拉特語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:56
+msgid "Gurmukhi numbering"
+msgstr "果魯穆奇語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:58
+msgid "Han \"Earthly Branch\" ordinals"
+msgstr "漢\"地支\"序數"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:60
+msgid "Han \"Heavenly Stem\" ordinals"
+msgstr "漢\"天幹\"序數"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:62
+msgid "Japanese formal numbering"
+msgstr "日語正式編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:64
+msgid "Japanese informal numbering"
+msgstr "日語非正式編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:66
+msgid "Kannada numbering"
+msgstr "卡納達語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:68
+msgid "Korean hangul numbering"
+msgstr "韓文韓文編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:70
+msgid "Korean hanja numbering"
+msgstr "韓文漢字編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:72
+msgid "Laotian numbering"
+msgstr "老撾語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:74
+msgid "Lowercase Armenian numbering"
+msgstr "小寫亞美尼亞語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:76
+msgid "Lowercase ASCII letters"
+msgstr "小寫 ASCII 字母"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:78
+msgid "Lowercase classical Greek."
+msgstr "小寫的古典希臘語。"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:80
+msgid "Lowercase Roman numerals."
+msgstr "小寫羅馬數位。"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:82
+msgid "Malayalam numbering"
+msgstr "馬拉雅拉姆語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:84
+msgid "Mongolian numbering"
+msgstr "蒙古語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:86
+msgid "Myanmar (Burmese) numbering"
+msgstr "緬甸（緬甸）編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:88
+msgid "Oriya numbering"
+msgstr "订单号"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:90
+msgid "Persian numbering"
+msgstr "页码"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:92
+msgid "Simplified Chinese formal numbering"
+msgstr "簡體中文正式編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:94
+msgid "Simplified Chinese informal numbering"
+msgstr "簡體中文非正式編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:96
+msgid "Tamil numbering"
+msgstr "泰米爾語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:98
+msgid "Telugu numbering"
+msgstr "泰盧固語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:100
+msgid "Thai numbering"
+msgstr "页码"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:102
+msgid "Tibetan numbering"
+msgstr "藏文編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:104
+msgid "Traditional Armenian numbering"
+msgstr "傳統亞美尼亞語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:106
+msgid "Traditional Chinese formal numbering"
+msgstr "附加信息"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:108
+msgid "Traditional Chinese informal numbering"
+msgstr "附加信息"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:110
+msgid "Traditional Georgian numbering"
+msgstr "傳統喬治亞語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:112
+msgid "Traditional Hebrew numbering"
+msgstr "傳統希伯來語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:114
+msgid "Traditional uppercase Armenian numbering"
+msgstr "傳統大寫亞美尼亞語編號"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:116
+msgid "Uppercase ASCII letters"
+msgstr "大寫的 ASCII 字母"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:118
+msgid "Uppercase Roman numerals."
+msgstr "大寫羅馬數位。"
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:19
+#: assets/scripts/blocks.js:1209
+#: assets/scripts/blocks.js:12234
+#: assets/scripts/blocks.js:12239
+msgid "Header"
+msgstr "页眉"
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:28
+msgid "Site Logotype"
+msgstr "网站徽标类型"
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:47
+msgid "Site Logomark"
+msgstr "网站徽标"
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:66
+msgid "Logo Link"
+msgstr "Logo链接"
+
+#. translators: [front] ARIA
+#. translators: [admin]
+#: footer.php:34
+#: includes/admin/theme-options/footer.php:15
+#: includes/admin/theme-options/footer.php:19
+msgid "Footer"
+msgstr "页脚"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:28
+msgid "Section Title"
+msgstr "章节标题"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:37
+msgid "Section Content"
+msgstr "章节内容"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:46
+msgid "Section Call to Action text"
+msgstr "章节行动呼吁文本"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:55
+msgid "Section Call to Action url"
+msgstr "章节行动调用 URL"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:62
+#: includes/admin/theme-options/footer.php:67
+msgid "Copyright info"
+msgstr "版權資訊"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:69
+msgid "By default, the copyright info outputs the current year followed by the site name; add content to this field to override this."
+msgstr "默認情況下，版權信息輸出當前年份，後跟網站名稱;向此欄位添加內容以覆蓋此欄位。"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:21
+#: includes/admin/theme-options/analytics.php:25
+msgid "Analytics"
+msgstr "分析"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:37
+msgid "Google Tag Manager Code"
+msgstr "谷歌标签管理器代码"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:39
+msgid "Paste your Google Tag Manager Code"
+msgstr "粘贴您的谷歌标签管理器代码"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:48
+msgid "GTM Consent Mode"
+msgstr "GTM 同意模式"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:50
+msgid "The status, and default value of, Google's Consent Mode (see https://support.google.com/analytics/answer/9976101). Note that, when using Consent Mode, you will have to implement targeting via a cookie control plugin such as Civic"
+msgstr "Google 同意模式的狀態和預設值（請參閱 https://support.google.com/analytics/answer/9976101）。請注意，使用同意模式時，您必須通過Cookie控制外掛程式（如Civic）實現定位"
+
+#: includes/admin/theme-options/analytics.php:54
+msgid "Not Enabled"
+msgstr "未找到"
+
+#: includes/admin/theme-options/analytics.php:55
+msgid "Enabled, denied"
+msgstr "已啟用，已拒絕"
+
+#: includes/admin/theme-options/analytics.php:56
+msgid "Enabled, granted"
+msgstr "启用后台梯度"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:65
+msgid "Google Analytics Code"
+msgstr "谷歌分析代码"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:67
+msgid "Paste your Google Analytics Code"
+msgstr "粘贴您的 Google 分析代码"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:76
+msgid "Google Analytics v4 Code"
+msgstr "谷歌分析代码"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:78
+msgid "Paste your Google Analytics v4 Code; you must also have entered your GA Code above"
+msgstr "粘貼您的谷歌分析v4代碼;您還必須在上面輸入您的GA代碼"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:87
+msgid "Hotjar Site ID:"
+msgstr "Hotjar 站点 ID："
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:89
+msgid "Paste your Hotjar Site ID (example: 552474)"
+msgstr "粘贴 Hotjar 站点 ID（例如：552474）"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:98
+msgid "VWO Account ID"
+msgstr "VWO 帐户 ID"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:100
+msgid "Paste your VWO Account ID here"
+msgstr "在此处粘贴您的 VWO 帐户 ID"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:114
+msgid "Site Meta Tags"
+msgstr "网站元标签"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:123
+msgid "Meta Tags"
+msgstr "网站元标签"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:125
+msgid "Add your site meta tags (&lt;meta name=\"thing\" /&gt;) here; useful for things like site verification tags"
+msgstr "在此处添加您的网站元标签（<元名称]\"东西\"/>）;有用的东西，如网站验证标签"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:125
+#: includes/admin/theme-options/analytics.php:167
+msgid "If using WordPress SEO (Yoast) or similar, you may wish to use their built-in alternatives"
+msgstr "如果使用WordPress SEO（约斯特）或类似，您可能需要使用其内置的替代方案"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:129
+msgid "Add Tag"
+msgstr "添加标签"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:131
+msgid "Remove Tag"
+msgstr "移除标记"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:143
+msgid "Meta Name"
+msgstr "Meta 名称"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:145
+msgid "e.g. google-site-verification"
+msgstr "例如谷歌网站验证"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:156
+#: includes/admin/theme-options/analytics.php:198
+msgid "Meta Value"
+msgstr "元数据值"
+
+#: includes/admin/theme-options/analytics.php:166
+msgid "RDF Tags"
+msgstr "在此处添加您的网站 rdf 标签（<元属性]\"东西\"/>）;有用的东西，如脸谱网页"
+
+#: includes/admin/theme-options/analytics.php:167
+msgid "Add your site rdf tags (&lt;meta property=\"thing\" /&gt;) here; useful for things like Facebook pages"
+msgstr "在此处添加您的网站 rdf 标签（<元属性]\"东西\"/>）;有用的东西，如脸谱网页"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:171
+msgid "Add Property"
+msgstr "添加房源"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:173
+msgid "Remove Property"
+msgstr "移除属性  Remove Property"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:185
+msgid "Meta Property"
+msgstr "元属性"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:187
+msgid "e.g. fb:pages"
+msgstr "例如，fb：页"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:215
+msgid "Deprecated fields"
+msgstr "废弃的字段"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:224
+msgid "The below fields are deprecated. Avoid using them if they are not currently in use on this site"
+msgstr "下面的字段被弃用。如果当前未在此站点上使用，请避免使用它们"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:232
+msgid "Google Tag Manager Script"
+msgstr "谷歌标签管理器脚本"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:234
+#: includes/admin/theme-options/analytics.php:245
+msgid "Deprecated. Do not use unless already in use."
+msgstr "荒废的。除非已经在使用中，否则不要使用。"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:243
+msgid "Google Tag Manager Noscript"
+msgstr "谷歌标签管理器无脚本"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:19
+msgid "Social Media"
+msgstr "社交媒体"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:28
+msgid "Facebook URL"
+msgstr "Facebook网址"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:37
+msgid "Twitter Handle"
+msgstr "Twitter句柄"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:46
+msgid "Youtube URL"
+msgstr "Youtube URL"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:55
+msgid "Instagram Handle"
+msgstr "英斯塔格拉姆手柄"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:64
+msgid "Telegram Handle"
+msgstr "英斯塔格拉姆手柄"
+
+#: author.php:68
+msgid "Biography"
+msgstr "简介"
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:84
+#: includes/admin/class-accessibility.php:86
+msgid "Accessibility"
+msgstr "无障碍"
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:100
+msgid "Negishim"
+msgstr "内吉希姆"
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:102
+msgid "Load the Negishim Accessibility widget (Hebrew)."
+msgstr "加载 Negishim 辅助功能小部件（希伯来语）。"
+
+#. translators: [admin]
+#: includes/users/meta.php:19
+msgid "Amnesty Umbraco User Info"
+msgstr "大赦国际乌姆布拉科用户信息"
+
+#. translators: [admin] user settings
+#: includes/users/contact-methods.php:17
+msgid "Twitter Username (without the @)"
+msgstr "推特用户名 （不带 *）"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:20
 msgctxt "Post Type General Name"
 msgid "Pop-in variants"
-msgstr ""
+msgstr "流行变型"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:22
 msgctxt "Post Type Singular Name"
 msgid "Pop-in"
-msgstr ""
+msgstr "弹出"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:24
 msgid "Pop-in variants"
-msgstr ""
+msgstr "流行变型"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:28
 msgid "Pop-in Archives"
-msgstr ""
+msgstr "流行档案"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:30
 msgid "Pop-in Attributes"
-msgstr ""
+msgstr "流行属性"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:32
 msgid "Parent Pop-in:"
-msgstr ""
+msgstr "父弹出："
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:34
 msgid "All Pop-in variants"
-msgstr ""
+msgstr "所有流行变型"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:36
 msgid "Add New Pop-in variant"
-msgstr ""
+msgstr "添加新的流行式变体"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:38
 #: includes/post-types/sidebar.php:34
 msgid "Add New"
-msgstr ""
+msgstr "添加新的"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:40
 msgid "New Pop-in"
-msgstr ""
+msgstr "新弹出"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:42
 msgid "Edit Pop-in"
-msgstr ""
+msgstr "编辑弹出"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:44
 msgid "Update Pop-in"
-msgstr ""
+msgstr "更新弹出"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:46
 msgid "View Pop-in"
-msgstr ""
+msgstr "查看弹出"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:48
 msgid "View Pop-in variants"
-msgstr ""
+msgstr "查看流行式变体"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:50
 msgid "Search Pop-in variants"
-msgstr ""
+msgstr "搜索流行式变体"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:52
 msgid "No pop-in variants found"
-msgstr ""
+msgstr "未找到弹出式变体"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:54
 msgid "No pop-in variants found in Trash"
-msgstr ""
+msgstr "在回收站中未找到弹出式变体"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:56
 #: includes/post-types/sidebar.php:52
 #: assets/scripts/blocks.js:12110
 msgid "Featured Image"
-msgstr ""
+msgstr "特色图片"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:58
 #: includes/post-types/sidebar.php:54
 msgid "Set featured image"
-msgstr ""
+msgstr "设置特色图片"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:60
 #: includes/post-types/sidebar.php:56
 msgid "Remove featured image"
-msgstr ""
+msgstr "移除特色图片"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:62
 #: includes/post-types/sidebar.php:58
 msgid "Use as featured image"
-msgstr ""
+msgstr "作为缩略图"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:64
 msgid "Insert into pop-in"
-msgstr ""
+msgstr "插入到弹出"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:66
 msgid "Uploaded to this pop-in"
-msgstr ""
+msgstr "已上传到此弹出"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:68
 msgid "Pop-in variants list"
-msgstr ""
+msgstr "流行变型列表"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:70
 msgid "Pop-in variants list navigation"
-msgstr ""
+msgstr "弹出式变体列表导航"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:72
 msgid "Filter pop-in variants"
-msgstr ""
+msgstr "筛选弹出式变体"
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:79
 msgid "A Pop-in is a call to action which renders at the very top of a page, pushing the entire page content down."
-msgstr ""
+msgstr "弹出式请求是一种行动调用，它呈现在页面的正顶，向下推送整个页面内容。"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:16
 msgctxt "Post Type General Name"
 msgid "Sidebars"
-msgstr ""
+msgstr "侧边栏"
 
 #. translators: [admin]
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
@@ -1357,745 +1323,1063 @@ msgstr ""
 #: single.php:42
 msgctxt "Post Type Singular Name"
 msgid "Sidebar"
-msgstr ""
+msgstr "侧边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:20
 msgid "Sidebars"
-msgstr ""
-
-#. translators: [admin]
-#: includes/post-types/sidebar.php:22
-#: includes/post-types/sidebar.php:73
-#: assets/scripts/blocks.js:9714
-msgid "Sidebar"
-msgstr ""
+msgstr "侧边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:24
 msgid "Sidebar Archives"
-msgstr ""
+msgstr "存档页侧栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:26
 msgid "Sidebar Attributes"
-msgstr ""
+msgstr "边栏属性"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:28
 msgid "Parent Sidebar:"
-msgstr ""
+msgstr "父侧边栏："
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:30
 msgid "All Sidebars"
-msgstr ""
+msgstr "所有边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:32
 msgid "Add New Sidebar"
-msgstr ""
+msgstr "添加新的侧边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:36
 msgid "New Sidebar"
-msgstr ""
+msgstr "新侧边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:38
 msgid "Edit Sidebar"
-msgstr ""
+msgstr "编辑边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:40
 msgid "Update Sidebar"
-msgstr ""
+msgstr "更新侧边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:42
 msgid "View Sidebar"
-msgstr ""
+msgstr "查看边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:44
 msgid "View Sidebars"
-msgstr ""
+msgstr "查看侧边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:46
 msgid "Search Sidebar"
-msgstr ""
+msgstr "搜索侧边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:48
 msgid "Not Found"
-msgstr ""
+msgstr "未找到"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:50
 msgid "Not Found in Trash"
-msgstr ""
+msgstr "在回收站中找不到文件"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:60
 msgid "Insert into sidebar"
-msgstr ""
+msgstr "插入侧边栏"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:62
 msgid "Uploaded to this item"
-msgstr ""
+msgstr "上传到此项目"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:64
 msgid "Sidebars list"
-msgstr ""
+msgstr "侧边栏列表"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:66
 msgid "Sidebars list navigation"
-msgstr ""
+msgstr "侧边栏列表导航"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:68
 msgid "Filter sidebar list"
-msgstr ""
+msgstr "筛选器侧边栏列表"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:75
 msgid "Sidebar post type"
-msgstr ""
+msgstr "侧边栏后类型"
 
-#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
-#: includes/query-filters/sort-order.php:15
-msgid "Most Recent"
-msgstr ""
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/cart.php:29
+msgid "Number of items in your cart"
+msgstr "购物车中的项目数量"
 
-#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
-#: includes/query-filters/sort-order.php:16
-msgid "Oldest First"
-msgstr ""
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/order.php:15
+msgid "Your order has been processed. Your order details are shown below for your reference:"
+msgstr "您的订单已处理。您的订单详情如下所示，供参考："
 
-#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
-#: includes/query-filters/sort-order.php:17
-msgid "Title - Ascending"
-msgstr ""
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/checkout.php:26
+msgid "Thank You!"
+msgstr "谢谢！"
 
-#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
-#: includes/query-filters/sort-order.php:18
-msgid "Title - Descending"
-msgstr ""
-
-#. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
-#: includes/query-filters/sort-order.php:22
-msgid "Most Relevant"
-msgstr ""
-
-#. translators: [admin]
-#: includes/rest-api/post-data.php:40
-msgid "Raw Umbraco data for this item"
-msgstr ""
-
-#: includes/rest-api/users.php:82
-msgid "Sorry, you are not allowed to do that."
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:91
-#: includes/taxonomies/class-taxonomy-content-types.php:93
-msgctxt "taxonomy general name"
-msgid "Content Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:95
-msgctxt "taxonomy singular name"
-msgid "Content Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:97
-msgid "Search Content Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:100
-msgid "All Content Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:102
-msgid "Parent Content Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:104
-msgid "Parent Content Type:"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:106
-msgid "Edit Content Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:108
-msgid "View Content Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:110
-msgid "Update Content Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:112
-msgid "Add New Content Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:114
-msgid "New Content Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:119
-msgid "No Content Types found."
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:121
-msgid "No Content Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:123
-msgid "Content Types list navigation"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:125
-msgid "Content Types list"
-msgstr ""
-
-#. translators: [admin] Tab heading when selecting from the most used terms.
-#: includes/taxonomies/class-taxonomy-content-types.php:127
-msgctxt "Content Types"
-msgid "Most Used"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:129
-msgid "&larr; Back to Content Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-content-types.php:185
-msgid "Description"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:81
-msgctxt "taxonomy general name"
-msgid "Countries"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:83
-msgctxt "taxonomy singular name"
-msgid "Country"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:85
-msgid "Search Countries"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:87
-msgid "All Countries"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:89
-msgid "Parent Country"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:91
-msgid "Parent Country:"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:93
-msgid "Edit Country"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:95
-msgid "View Country"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:97
-msgid "Update Country"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:99
-msgid "Add New Country"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:101
-msgid "New Country Name"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:103
-msgid "Add or remove Countries"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:105
-msgid "Choose from most frequently used Countries"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:107
-msgid "No Countries found."
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:109
-msgid "No Countries"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:111
-msgid "Countries list navigation"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:113
-msgid "Countries list"
-msgstr ""
-
-#. translators: [admin] Tab heading when selecting from the most used terms.
-#: includes/taxonomies/class-taxonomy-locations.php:115
-msgctxt "countries"
-msgid "Most Used"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:117
-msgid "&larr; Back to Countries"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:157
-msgctxt "taxonomy general name"
-msgid "Resource Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:159
-msgctxt "taxonomy singular name"
-msgid "Resource Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:161
-msgid "Search Resource Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:163
-msgid "All Resource Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:165
-msgid "Parent Resource Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:167
-msgid "Parent Resource Type:"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:169
-msgid "Edit Resource Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:171
-msgid "View Resource Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:173
-msgid "Update Resource Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:175
-msgid "Add New Resource Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:177
-msgid "New Resource Type"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:179
-msgid "Add or remove Resource Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:181
-msgid "Choose from most frequently used Resource Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:183
-msgid "No Resource Types found."
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:185
-msgid "No Resource Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:187
-msgid "Resource Types list navigation"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:189
-msgid "Resource Types list"
-msgstr ""
-
-#. translators: [admin] Tab heading when selecting from the most used terms.
-#: includes/taxonomies/class-taxonomy-resource-types.php:191
-msgctxt "Resource Types"
-msgid "Most Used"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-resource-types.php:193
-msgid "&larr; Back to Resource Types"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:156
-msgctxt "taxonomy general name"
-msgid "Topics"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:158
-msgctxt "taxonomy singular name"
-msgid "Topic"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:160
-msgid "Search Topics"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:162
-msgid "All Topics"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:164
-msgid "Parent Topic"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:166
-msgid "Parent Topic:"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:168
-msgid "Edit Topic"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:170
-msgid "View Topic"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:172
-msgid "Update Topic"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:174
-msgid "Add New Topic"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:176
-msgid "New Topic"
-msgstr ""
-
 #. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:178
-msgid "Add or remove Topics"
-msgstr ""
+#: includes/woo/emails.php:21
+msgid "Title image"
+msgstr "标题图像"
 
 #. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:180
-msgid "Choose from most frequently used Topics"
-msgstr ""
+#: includes/woo/emails.php:23
+msgid "URL to an image you want to show above the title. Upload images using the media uploader (Admin > Media)."
+msgstr "要在标题上方显示的图像的 URL。使用媒体上传器上传图像（管理 + 媒体）。"
 
 #. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:182
-msgid "No Topics found."
-msgstr ""
+#: includes/woo/emails.php:62
+msgid "Footer image"
+msgstr "页脚图片"
 
 #. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:184
-msgid "No Topics"
-msgstr ""
+#: includes/woo/emails.php:64
+msgid "URL to an image you want to show in the footer. Upload images using the media uploader (Admin > Media)."
+msgstr "要在页脚中显示的图像的 URL。使用媒体上传器上传图像（管理 + 媒体）。"
 
 #. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:186
-msgid "Topics list navigation"
-msgstr ""
+#: includes/theme-setup/supports.php:73
+msgid "Standard Post Template"
+msgstr "标准帖子模板"
 
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:188
-msgid "Topics list"
-msgstr ""
-
-#. translators: [admin] Tab heading when selecting from the most used terms.
-#: includes/taxonomies/class-taxonomy-topics.php:190
-msgctxt "topics"
-msgid "Most Used"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-topics.php:192
-msgid "&larr; Back to Topics"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/custom-fields/precedence.php:26
-#: includes/taxonomies/custom-fields/precedence.php:32
-msgid "Taxonomy Precedence"
-msgstr ""
-
-#. translators: [admin]
-#: includes/taxonomies/custom-fields/precedence.php:34
-msgid "In which order taxonomies should be ranked when retrieving a term to display prominently for an item"
-msgstr ""
-
-#. translators: %s the button title
-#: includes/theme-setup/class-mobile-nav-walker.php:302
-msgid "Expand %s list"
-msgstr ""
-
-#. translators: [front] Accessibility text for logo
-#: includes/theme-setup/navigation.php:29
-msgid "Amnesty International Logotype"
-msgstr ""
-
-#. translators: [front] Accessibility text for logo
-#: includes/theme-setup/navigation.php:42
-msgid "Amnesty International Logomark"
-msgstr ""
-
-#. translators: [front] Screen reader accessibility text for logo to give context when clicking
-#: includes/theme-setup/navigation.php:51
-msgid "Visit the Amnesty International home page"
-msgstr ""
-
-#. translators: [admin]
-#: includes/theme-setup/navigation.php:145
-msgid "Main Menu"
-msgstr ""
-
-#. translators: [admin]
-#: includes/theme-setup/navigation.php:147
-msgid "Site Selector"
-msgstr ""
-
-#. translators: [admin]
-#: includes/theme-setup/navigation.php:149
-msgid "Footer Main"
-msgstr ""
-
-#. translators: [admin]
-#: includes/theme-setup/navigation.php:151
-msgid "Footer Legal"
-msgstr ""
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:249
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:91
 #: includes/theme-setup/scripts-and-styles.php:251
 msgctxt "open double quote"
 msgid "“"
-msgstr ""
+msgstr "\""
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:92
 #: includes/theme-setup/scripts-and-styles.php:253
 msgctxt "close double quote"
 msgid "”"
-msgstr ""
+msgstr "\""
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:93
 #: includes/theme-setup/scripts-and-styles.php:255
 msgctxt "open single quote"
 msgid "‘"
-msgstr ""
+msgstr "'"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:94
 #: includes/theme-setup/scripts-and-styles.php:257
 msgctxt "close single quote"
 msgid "’"
+msgstr "'"
+
+#. translators: %s the button title
+#: includes/theme-setup/class-mobile-nav-walker.php:302
+#, php-format
+msgid "Expand %s list"
 msgstr ""
+
+#. translators: [front] Accessibility text for logo
+#: includes/theme-setup/navigation.php:29
+msgid "Amnesty International Logotype"
+msgstr "大赦国际标志"
+
+#. translators: [front] Accessibility text for logo
+#: includes/theme-setup/navigation.php:42
+msgid "Amnesty International Logomark"
+msgstr "大赦国际标志"
+
+#. translators: [front] Screen reader accessibility text for logo to give context when clicking
+#: includes/theme-setup/navigation.php:51
+msgid "Visit the Amnesty International home page"
+msgstr "访问大赦国际主页"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:145
+msgid "Main Menu"
+msgstr "主菜单"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:147
+msgid "Site Selector"
+msgstr "站点选择器"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:149
+msgid "Footer Main"
+msgstr "脚脚主"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:151
+msgid "Footer Legal"
+msgstr "页法"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:81
+msgctxt "taxonomy general name"
+msgid "Countries"
+msgstr "国家／地区"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:83
+msgctxt "taxonomy singular name"
+msgid "Country"
+msgstr "国家"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:85
+msgid "Search Countries"
+msgstr "搜索国家"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:87
+msgid "All Countries"
+msgstr "所有国家"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:89
+msgid "Parent Country"
+msgstr "父级国家"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:91
+msgid "Parent Country:"
+msgstr "父国家/地区："
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:93
+msgid "Edit Country"
+msgstr "编辑国家"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:95
+msgid "View Country"
+msgstr "查看国家/地区"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:97
+msgid "Update Country"
+msgstr "更新国家"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:99
+msgid "Add New Country"
+msgstr "新增国家"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:101
+msgid "New Country Name"
+msgstr "新的国家名"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:103
+msgid "Add or remove Countries"
+msgstr "添加或是移除国家"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:105
+msgid "Choose from most frequently used Countries"
+msgstr "从最常用的国家/地区进行选择"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:107
+msgid "No Countries found."
+msgstr "未找到国家/地区。"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:109
+msgid "No Countries"
+msgstr "无国家/地区"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:111
+msgid "Countries list navigation"
+msgstr "国家/地区列表导航"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:113
+msgid "Countries list"
+msgstr "国家/地区列表"
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-locations.php:115
+msgctxt "countries"
+msgid "Most Used"
+msgstr "最常用"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:117
+msgid "&larr; Back to Countries"
+msgstr "←返回国家"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:156
+msgctxt "taxonomy general name"
+msgid "Topics"
+msgstr "主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:158
+msgctxt "taxonomy singular name"
+msgid "Topic"
+msgstr "主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:160
+msgid "Search Topics"
+msgstr "搜索主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:162
+msgid "All Topics"
+msgstr "所有主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:164
+msgid "Parent Topic"
+msgstr "父主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:166
+msgid "Parent Topic:"
+msgstr "上级话题："
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:168
+msgid "Edit Topic"
+msgstr "编辑主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:170
+msgid "View Topic"
+msgstr "查看主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:172
+msgid "Update Topic"
+msgstr "更新主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:174
+msgid "Add New Topic"
+msgstr "增加新主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:176
+msgid "New Topic"
+msgstr "新话题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:178
+msgid "Add or remove Topics"
+msgstr "添加或删除主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:180
+msgid "Choose from most frequently used Topics"
+msgstr "从最常用的主题中选择"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:182
+msgid "No Topics found."
+msgstr "未找到主题。"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:184
+msgid "No Topics"
+msgstr "没有主题"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:186
+msgid "Topics list navigation"
+msgstr "主题列表导航"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:188
+msgid "Topics list"
+msgstr "话题列表"
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-topics.php:190
+msgctxt "topics"
+msgid "Most Used"
+msgstr "最常用"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:192
+msgid "&larr; Back to Topics"
+msgstr "←返回主题"
+
+#. translators: [admin]
+#: includes/taxonomies/custom-fields/precedence.php:26
+#: includes/taxonomies/custom-fields/precedence.php:32
+msgid "Taxonomy Precedence"
+msgstr "分类优先"
+
+#. translators: [admin]
+#: includes/taxonomies/custom-fields/precedence.php:34
+msgid "In which order taxonomies should be ranked when retrieving a term to display prominently for an item"
+msgstr "在哪个顺序分类时，检索一个术语，以突出显示一个项目"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:91
+#: includes/taxonomies/class-taxonomy-content-types.php:93
+msgctxt "taxonomy general name"
+msgid "Content Types"
+msgstr "内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:95
+msgctxt "taxonomy singular name"
+msgid "Content Type"
+msgstr "内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:97
+msgid "Search Content Types"
+msgstr "搜索内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:100
+msgid "All Content Types"
+msgstr "所有内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:102
+msgid "Parent Content Type"
+msgstr "父内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:104
+msgid "Parent Content Type:"
+msgstr "父内容类型："
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:106
+msgid "Edit Content Type"
+msgstr "编辑内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:108
+msgid "View Content Type"
+msgstr "查看内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:110
+msgid "Update Content Type"
+msgstr "更新内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:112
+msgid "Add New Content Type"
+msgstr "新增内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:114
+msgid "New Content Type"
+msgstr "新内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:119
+msgid "No Content Types found."
+msgstr "未找到内容类型。"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:121
+msgid "No Content Types"
+msgstr "无内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:123
+msgid "Content Types list navigation"
+msgstr "内容类型列表导航"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:125
+msgid "Content Types list"
+msgstr "内容类型列表"
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-content-types.php:127
+msgctxt "Content Types"
+msgid "Most Used"
+msgstr "最常用"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:129
+msgid "&larr; Back to Content Types"
+msgstr "←返回内容类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:157
+msgctxt "taxonomy general name"
+msgid "Resource Types"
+msgstr "资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:159
+msgctxt "taxonomy singular name"
+msgid "Resource Type"
+msgstr "资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:161
+msgid "Search Resource Types"
+msgstr "搜索资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:163
+msgid "All Resource Types"
+msgstr "所有资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:165
+msgid "Parent Resource Type"
+msgstr "父资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:167
+msgid "Parent Resource Type:"
+msgstr "父资源类型："
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:169
+msgid "Edit Resource Type"
+msgstr "编辑资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:171
+msgid "View Resource Type"
+msgstr "查看资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:173
+msgid "Update Resource Type"
+msgstr "更新资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:175
+msgid "Add New Resource Type"
+msgstr "添加新资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:177
+msgid "New Resource Type"
+msgstr "新资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:179
+msgid "Add or remove Resource Types"
+msgstr "添加或删除资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:181
+msgid "Choose from most frequently used Resource Types"
+msgstr "从最常用的资源类型中选择"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:183
+msgid "No Resource Types found."
+msgstr "未找到资源类型。"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:185
+msgid "No Resource Types"
+msgstr "无资源类型"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:187
+msgid "Resource Types list navigation"
+msgstr "资源类型列表导航"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:189
+msgid "Resource Types list"
+msgstr "资源类型列表"
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-resource-types.php:191
+msgctxt "Resource Types"
+msgid "Most Used"
+msgstr "最常用"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:193
+msgid "&larr; Back to Resource Types"
+msgstr "←返回资源类型"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#: includes/helpers/archive.php:66
+msgid "View now"
+msgstr "查看"
+
+#. translators: [front] ARIA page number pagination prefix, e.g. "[Page] 1" https://isaidotorgstg.wpengine.com/en/latest
+#: includes/helpers/pagination.php:33
+msgid "Page"
+msgstr "页面"
+
+#. translators: [front] AM not sure yet
+#: includes/helpers/frontend.php:27
+#: includes/helpers/frontend.php:39
+#: includes/helpers/frontend.php:45
+msgid "Choose an option"
+msgstr "选择一个选项"
+
+#. translators: [front] shown as a label for a region in search results
+#: includes/helpers/taxonomies.php:797
+msgid "Location Profile"
+msgstr "位置简介"
+
+#. translators: [front] shown as a label for a country in search results
+#: includes/helpers/taxonomies.php:801
+msgid "Country Profile"
+msgstr "国家概况"
+
+#. translators: [admin]
+#: includes/rest-api/post-data.php:40
+msgid "Raw Umbraco data for this item"
+msgstr "此项目的原始乌姆布拉科数据"
 
 #. translators: [front]
-#: includes/theme-setup/scripts-and-styles.php:249
-msgctxt "list item separator"
-msgid ", "
-msgstr ""
+#: includes/mlp/language-selector.php:109
+msgid "Available languages"
+msgstr "可用语言"
 
-#. translators: [admin]
-#: includes/theme-setup/supports.php:73
-msgid "Standard Post Template"
-msgstr ""
-
-#. translators: [admin] user settings
-#: includes/users/contact-methods.php:17
-msgid "Twitter Username (without the @)"
-msgstr ""
-
-#. translators: [admin]
-#: includes/users/meta.php:19
-msgid "Amnesty Umbraco User Info"
-msgstr ""
-
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
-#: includes/woo/cart.php:29
-msgid "Number of items in your cart"
-msgstr ""
-
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
-#: includes/woo/checkout.php:26
-msgid "Thank You!"
-msgstr ""
-
-#. translators: [admin]
-#: includes/woo/emails.php:21
-msgid "Title image"
-msgstr ""
-
-#. translators: [admin]
-#: includes/woo/emails.php:23
-msgid "URL to an image you want to show above the title. Upload images using the media uploader (Admin > Media)."
-msgstr ""
-
-#. translators: [admin]
-#: includes/woo/emails.php:62
-msgid "Footer image"
-msgstr ""
-
-#. translators: [admin]
-#: includes/woo/emails.php:64
-msgid "URL to an image you want to show in the footer. Upload images using the media uploader (Admin > Media)."
-msgstr ""
-
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
-#: includes/woo/order.php:15
-msgid "Your order has been processed. Your order details are shown below for your reference:"
-msgstr ""
-
-#. Template Name of the theme
-msgid "Petition Index"
-msgstr ""
+#. translators: [front] %1$s: the object type, %2$s: the object type's language
+#: includes/mlp/helpers.php:109
+#, php-format
+msgid "View this %1$s in %2$s"
+msgstr "查看此 %1$s（以 %2$s 美元）表示"
 
 #. translators: [front]
 #: page-petitions.php:58
 msgid "All Petitions"
-msgstr ""
+msgstr "所有请愿书"
 
-#. translators: [admin]
-#: partials/admin/permalinks-post-type.php:18
-msgid "Post Type Settings"
-msgstr ""
+#. translators: [front] ARIA
+#: search.php:16
+#: searchpage.php:30
+msgid "Search results"
+msgstr "搜索结果"
 
-#. translators: [admin]
-#: partials/admin/permalinks-post-type.php:26
-#: partials/admin/permalinks-taxonomy.php:26
-msgid "URL base"
-msgstr ""
+#. translators: [front] ARIA
+#: footer.php:37
+msgid "Footer Menus"
+msgstr "页脚菜单"
 
-#. translators: [admin] %s: the default slug for this item
-#: partials/admin/permalinks-post-type.php:30
-#: partials/admin/permalinks-taxonomy.php:30
-msgid "Default: %s"
-msgstr ""
+#. translators: [front] ARIA Social Media sharing options
+#. translators: [front] Social Media sharing options
+#: footer.php:69
+msgid "Follow us on:"
+msgstr "关注我们："
 
-#. translators: [admin]
-#: partials/admin/permalinks-post-type.php:35
-#: partials/admin/permalinks-taxonomy.php:35
-msgid "Use hierarchical URLs"
-msgstr ""
+#. translators: [front] ARIA
+#: footer.php:72
+msgid "Follow us on Facebook"
+msgstr "在Facebook上关注我们"
 
-#. translators: [admin]
-#: partials/admin/permalinks-taxonomy.php:18
-msgid "Taxonomy Settings"
-msgstr ""
+#. translators: [front] ARIA
+#: footer.php:75
+msgid "Follow us on Twitter"
+msgstr "在推特上关注我们"
+
+#. translators: [front] ARIA
+#: footer.php:78
+msgid "Subscribe to our YouTube channel"
+msgstr "订阅我们的 YouTube 频道"
+
+#. translators: [front]
+#: footer.php:81
+msgid "Follow us on Instagram"
+msgstr "在Instagram上关注我们"
+
+#. translators: [front]
+#: footer.php:84
+msgid "Follow us on Telegram"
+msgstr "在Telegram上关注我们"
+
+#. translators: [front] ARIA
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ Accessibility text
+#: author.php:101
+#: partials/article-share.php:12
+msgid "Social sharing options"
+msgstr "社交共享选项"
+
+#. translators: [front] ARIA List of product categories
+#: templates/shop-index.php:40
+msgid "Product Catalogue"
+msgstr "产品目录"
+
+#: author.php:53
+msgid "Follow"
+msgstr "关注"
+
+#: author.php:73
+msgid "Read more"
+msgstr "阅读更多"
+
+#: author.php:76
+msgid "More from this author"
+msgstr "更多来自本作者"
+
+#: partials/post/post-content.php:16
+#: partials/post/post-search.php:27
+msgctxt "updated date label"
+msgid "Updated"
+msgstr "更新"
+
+#. translators: [front] ARIA
+#: partials/post/post-content.php:25
+#: partials/post/post-search.php:47
+msgid "Post published date"
+msgstr "发布日期"
+
+#. translators: [front] ARIA
+#: partials/post/post-content.php:27
+#: partials/post/post-search.php:49
+msgid "Post updated date"
+msgstr "发布更新的时间戳"
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/news/2021/05/china-three-child-policy-still-a-violation/ placeholder is category name
+#: partials/post/post-content.php:22
+#, php-format
+msgid "Article category %s"
+msgstr "文章类别 %s"
 
 #. translators: [front]
 #: partials/archive/categories.php:28
 msgid "Filter results by category"
-msgstr ""
+msgstr "按类别筛选结果"
+
+#. translators: [front] search results left hand side of page button
+#: partials/forms/taxonomy-filters.php:32
+msgid "Apply"
+msgstr "主题"
 
 #. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
 #: partials/archive/filters-active.php:45
 msgid "Filters applied"
-msgstr ""
+msgstr "应用筛选器"
 
 #. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
 #: partials/archive/filters-active.php:80
 msgid "Clear all"
-msgstr ""
+msgstr "清除所有"
 
 #. translators: 1: number of results for search query, 2: don't translate (dynamic search term)
 #: partials/archive/header.php:21
 #: partials/search/header.php:19
+#, php-format
 msgid "%1$s result for '%2$s'"
 msgid_plural "%1$s results for '%2$s'"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s 结果为\"%2$s\""
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options
 #: partials/archive/header.php:28
 #: partials/search/header.php:26
 msgid "Results information"
+msgstr "结果信息"
+
+#. translators: [front]
+#: partials/archive/subcategories.php:55
+msgid "List of subcategories"
+msgstr "子类别列表"
+
+#: partials/pagination.php:28
+#: partials/search/pagination.php:38
+msgid "Pagination"
+msgstr "分页"
+
+#. translators: [front] AIRA https://isaidotorgstg.wpengine.com/en/latest
+#: partials/pagination.php:39
+#: partials/search/pagination.php:49
+msgid "Page numbers"
+msgstr "页码"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
+#: partials/article-share.php:14
+msgid "Share on Facebook"
+msgstr "分享到Facebook"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: partials/article-share.php:15
+msgid "Facebook Logo"
+msgstr "脸谱标志"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
+#: partials/article-share.php:19
+msgid "Share on Twitter"
+msgstr "分享到Twitter"
+
+#. translators: [front] Label for category archive navigation
+#: partials/shop/catalogue-header.php:13
+msgid "Product information"
+msgstr "产品信息"
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:18
+msgid "Post Type Settings"
+msgstr "文章类型设置"
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:26
+#: partials/admin/permalinks-taxonomy.php:26
+msgid "URL base"
+msgstr "URL 基"
+
+#. translators: [admin] %s: the default slug for this item
+#: partials/admin/permalinks-post-type.php:30
+#: partials/admin/permalinks-taxonomy.php:30
+#, php-format
+msgid "Default: %s"
+msgstr "默认: %s"
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:35
+#: partials/admin/permalinks-taxonomy.php:35
+msgid "Use hierarchical URLs"
+msgstr "使用分层 URL"
+
+#. translators: [admin]
+#: partials/admin/permalinks-taxonomy.php:18
+msgid "Taxonomy Settings"
+msgstr "分类设置"
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:17
+msgid "Page Header"
+msgstr "页面页眉"
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:25
+msgid "Amnesty Group Websites"
+msgstr "大赦国际集团网站"
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:33
+msgid "Primary navigation"
+msgstr "主导航"
+
+#. translators: [front]
+#: partials/navigation/desktop.php:42
+msgid "Open navigation"
+msgstr "打开导航"
+
+#. translators: [front]
+#: partials/single/publish-date.php:19
+msgid "Post published timestamp"
+msgstr "发布发布时间戳"
+
+#. translators: [front]
+#: partials/single/updated-date.php:25
+msgid "Post updated timestamp"
+msgstr "发布更新的时间戳"
+
+#. translators: [front]
+#: partials/single/byline.php:33
+msgctxt "author attribution (as in \"written by\")"
+msgid "By"
+msgstr "由"
+
+#. translators: [front] %s: prefix for a post's author attribution
+#: partials/single/byline.php:72
+#, php-format
+msgctxt "prefix for a post's author attribution"
+msgid "By %s"
+msgstr "由 %s"
+
+#. translators: [front] ARIA Donate %s: the product category name
+#: partials/product/category.php:24
+#, php-format
+msgid "Product Category: %s"
+msgstr "产品类别： %s"
+
+#. translators: [front] ARIA
+#: partials/forms/taxonomy-filters.php:14
+msgid "Filter results by topic"
+msgstr "按主题筛选结果"
+
+#: includes/features/search/helpers.php:135
+msgid "January"
+msgstr "一月"
+
+#: includes/features/search/helpers.php:136
+msgid "Febuary"
+msgstr "二月"
+
+#: includes/features/search/helpers.php:137
+msgid "March"
+msgstr "三月"
+
+#: includes/features/search/helpers.php:138
+msgid "April"
+msgstr "四月"
+
+#: includes/features/search/helpers.php:139
+msgid "May"
+msgstr "五月"
+
+#: includes/features/search/helpers.php:140
+msgid "June"
+msgstr "六月"
+
+#: includes/features/search/helpers.php:141
+msgid "July"
+msgstr "七月"
+
+#: includes/features/search/helpers.php:142
+msgid "August"
+msgstr "八月"
+
+#: includes/features/search/helpers.php:143
+msgid "September"
+msgstr "九月"
+
+#: includes/features/search/helpers.php:144
+msgid "October"
+msgstr "十月"
+
+#: includes/features/search/helpers.php:145
+msgid "November"
+msgstr "十一月"
+
+#: includes/features/search/helpers.php:146
+msgid "December"
+msgstr "十二月"
+
+#. translators: [front]
+#: partials/search/horizontal-search.php:39
+msgid "Search"
+msgstr "搜索"
+
+#: partials/search/horizontal-search.php:12
+#: partials/search/horizontal-search.php:52
+msgid "Year"
+msgstr "年"
+
+#: partials/search/horizontal-search.php:13
+#: partials/search/horizontal-search.php:62
+msgid "Month"
+msgstr "月"
+
+#. translators: [front]
+#: partials/search/horizontal-search.php:77
+msgid "Filters"
+msgstr "筛选器"
+
+#. translators: [front] screen reader text for search field
+#: partials/search/forminput.php:13
+msgid "Search input"
+msgstr "搜索字段"
+
+#. translators: [front]
+#: partials/search/forminput.php:14
+msgid "What are you looking for?"
+msgstr "在找什么?"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:17
+msgid "Language Selection"
+msgstr "语言选择"
+
+#. translators: [front]
+#: partials/language-selector.php:19
+msgid "Which language would you like to use this site in?"
+msgstr "您希望使用本网站的语言？"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:20
+msgid "Choose a language"
+msgstr "选择语言"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:26
+msgid "Close"
+msgstr "关闭"
+
+#. translators: [front] Donate
+#: partials/orders/customer-details-with-shipping.php:13
+msgid "Customer Details"
+msgstr "客户详细信息"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:21
+msgid "Tel:"
+msgstr "电话："
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:28
+msgid "Payment Method"
+msgstr "支付方式"
+
+#. Theme Name of the theme
+msgid "Humanity Theme"
 msgstr ""
 
-#. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
-#. translators: [front] Donate Label for post sorting options
-#: partials/archive/header.php:44
-#: partials/search/header.php:36
-#: woocommerce/loop/orderby.php:29
-msgid "Sort by"
+#. Theme URI of the theme
+msgid "https://github.com/amnestywebsite/humanity-theme"
 msgstr ""
+
+#. Description of the theme
+msgid "The Amnesty International WordPress Humanity Theme"
+msgstr ""
+
+#. Author of the theme
+msgid "Amnesty International"
+msgstr "大赦国际"
+
+#. Author URI of the theme
+msgid "https://www.amnesty.org"
+msgstr ""
+
+#. translators: [front] %s: the title of the article
+#: includes/blocks/post-list/views/grid-item.php:10
+#: includes/blocks/post-list/views/list-item.php:4
+#: partials/post/post-full.php:16
+#: partials/post/post-none.php:10
+#: partials/post/post-search.php:31
+msgid "Article: %s"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title.
+#: includes/features/search/class-search-filters.php:149
+msgctxt "search results title"
+msgid "Search results"
+msgstr "搜索结果"
+
+#: includes/rest-api/users.php:82
+msgid "Sorry, you are not allowed to do that."
+msgstr "很抱歉, 您没有足够的权限编辑。"
+
+#. Template Name of the theme
+msgid "Petition Index"
+msgstr "请愿指数"
 
 #. translators: [front]
 #: partials/archive/subcategories.php:33
@@ -2104,232 +2388,20 @@ msgid "Second level category"
 msgstr ""
 
 #. translators: [front]
-#: partials/archive/subcategories.php:55
-msgid "List of subcategories"
-msgstr ""
-
-#. translators: [front]
 #: partials/archive/subsubcategories.php:31
 #: partials/archive/subsubcategories.php:54
 msgid "Third level category"
-msgstr ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
-#: partials/article-share.php:14
-msgid "Share on Facebook"
-msgstr ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
-#: partials/article-share.php:15
-msgid "Facebook Logo"
-msgstr ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
-#: partials/article-share.php:19
-msgid "Share on Twitter"
-msgstr ""
-
-#. translators: [front] ARIA
-#: partials/forms/taxonomy-filters.php:14
-msgid "Filter results by topic"
-msgstr ""
-
-#. translators: [front] search results left hand side of page button
-#: partials/forms/taxonomy-filters.php:32
-msgid "Apply"
-msgstr ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
-#: partials/language-selector.php:17
-msgid "Language Selection"
-msgstr ""
-
-#. translators: [front]
-#: partials/language-selector.php:19
-msgid "Which language would you like to use this site in?"
-msgstr ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
-#: partials/language-selector.php:20
-msgid "Choose a language"
-msgstr ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
-#: partials/language-selector.php:26
-msgid "Close"
-msgstr ""
-
-#. translators: [front] ARIA
-#: partials/navigation/desktop.php:17
-msgid "Page Header"
-msgstr ""
-
-#. translators: [front] ARIA
-#: partials/navigation/desktop.php:25
-msgid "Amnesty Group Websites"
-msgstr ""
-
-#. translators: [front] ARIA
-#: partials/navigation/desktop.php:33
-msgid "Primary navigation"
-msgstr ""
-
-#. translators: [front]
-#: partials/navigation/desktop.php:42
-msgid "Open navigation"
-msgstr ""
-
-#. translators: [front] Donate
-#: partials/orders/customer-details-with-shipping.php:13
-msgid "Customer Details"
-msgstr ""
-
-#. translators: [front] Donate forms
-#: partials/orders/customer-details-with-shipping.php:17
-msgid "Email:"
-msgstr ""
-
-#. translators: [front] Donate forms
-#: partials/orders/customer-details-with-shipping.php:21
-msgid "Tel:"
-msgstr ""
-
-#. translators: [front] Donate forms
-#: partials/orders/customer-details-with-shipping.php:28
-msgid "Payment Method"
-msgstr ""
-
-#: partials/pagination.php:28
-#: partials/search/pagination.php:38
-msgid "Pagination"
-msgstr ""
-
-#. translators: [front] AIRA https://isaidotorgstg.wpengine.com/en/latest
-#: partials/pagination.php:39
-#: partials/search/pagination.php:49
-msgid "Page numbers"
-msgstr ""
-
-#: partials/post/post-content.php:16
-#: partials/post/post-search.php:27
-msgctxt "updated date label"
-msgid "Updated"
-msgstr ""
-
-#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/news/2021/05/china-three-child-policy-still-a-violation/ placeholder is category name
-#: partials/post/post-content.php:22
-msgid "Article category %s"
-msgstr ""
-
-#. translators: [front] ARIA
-#: partials/post/post-content.php:25
-#: partials/post/post-search.php:47
-msgid "Post published date"
-msgstr ""
-
-#. translators: [front] ARIA
-#: partials/post/post-content.php:27
-#: partials/post/post-search.php:49
-msgid "Post updated date"
-msgstr ""
-
-#. translators: [front] ARIA Donate %s: the product category name
-#: partials/product/category.php:24
-msgid "Product Category: %s"
-msgstr ""
-
-#. translators: [front] screen reader text for search field
-#: partials/search/forminput.php:13
-msgid "Search input"
-msgstr ""
-
-#. translators: [front]
-#: partials/search/forminput.php:14
-msgid "What are you looking for?"
-msgstr ""
-
-#: partials/search/horizontal-search.php:12
-#: partials/search/horizontal-search.php:52
-msgid "Year"
-msgstr ""
-
-#: partials/search/horizontal-search.php:13
-#: partials/search/horizontal-search.php:62
-msgid "Month"
-msgstr ""
-
-#. translators: [front]
-#: partials/search/horizontal-search.php:39
-msgid "Search"
-msgstr ""
-
-#. translators: [front]
-#: partials/search/horizontal-search.php:77
-msgid "Filters"
-msgstr ""
-
-#. translators: [front] Label for category archive navigation
-#: partials/shop/catalogue-header.php:13
-msgid "Product information"
-msgstr ""
-
-#. translators: [front]
-#. translators: [front] Donate
-#: partials/shop/catalogue-header.php:17
-#: woocommerce/archive-product.php:42
-msgid "All products"
-msgstr ""
-
-#. translators: [front] Label for shop index
-#. translators: [front] Donate Label for shop index
-#: partials/shop/catalogue-header.php:25
-#: woocommerce/single-product/related.php:39
-msgid "Catalogue"
-msgstr ""
-
-#. translators: [front]
-#: partials/single/byline.php:33
-msgctxt "author attribution (as in \"written by\")"
-msgid "By"
-msgstr ""
-
-#. translators: [front] %s: prefix for a post's author attribution
-#: partials/single/byline.php:72
-msgctxt "prefix for a post's author attribution"
-msgid "By %s"
-msgstr ""
-
-#. translators: [front] Link to return to all posts of category %s
-#: partials/single/meta-area.php:34
-#: partials/single/term-area.php:38
-msgid "Back to %s"
-msgstr ""
-
-#. translators: [front]
-#: partials/single/publish-date.php:19
-msgid "Post published timestamp"
-msgstr ""
-
-#. translators: [front]
-#: partials/single/updated-date.php:25
-msgid "Post updated timestamp"
 msgstr ""
 
 #. translators: [front]
 #: partials/single/updated-date.php:26
 msgctxt "prefix for post updated date"
 msgid "Updated:"
-msgstr ""
-
-#. translators: [front] ARIA
-#: search.php:16
-#: searchpage.php:30
-msgid "Search results"
-msgstr ""
+msgstr "更新："
 
 #. Template Name of the theme
 msgid "Search Page"
-msgstr ""
+msgstr "搜索页面"
 
 #. Template Name of the theme
 msgid "Checkout Flow"
@@ -2337,65 +2409,11 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Account Management"
-msgstr ""
+msgstr "账户管理"
 
 #. Template Name of the theme
 msgid "Shop Index"
-msgstr ""
-
-#. translators: [front] ARIA List of product categories
-#: templates/shop-index.php:40
-msgid "Product Catalogue"
-msgstr ""
-
-#. translators: [front] Donate %s: product category
-#: woocommerce/archive-product_cat.php:41
-msgid "Products in the %s category"
-msgstr ""
-
-#. translators: [front] Donate
-#: woocommerce/global/quantity-input.php:39
-#: woocommerce/global/quantity-input.php:51
-msgid "Qty"
-msgstr ""
-
-#. translators: [front] Donate
-#: woocommerce/loop/result-count.php:27
-msgid "Showing one result"
-msgstr ""
-
-#. translators: [front] Donate %d: total results
-#: woocommerce/loop/result-count.php:33
-msgid "Showing all %d result"
-msgid_plural "Showing all %d results"
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: [front] Donate 1: first result 2: last result 3: total results
-#: woocommerce/loop/result-count.php:43
-msgctxt "shown with first and last result on product pages"
-msgid "Showing %1$d&ndash;%2$d of %3$d result"
-msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: [front] Donate
-#. translators: [admin]
-#: woocommerce/order/order-details.php:52
-#: assets/scripts/blocks.js:27271
-#: assets/scripts/blocks.js:32520
-msgid "Quantity"
-msgstr ""
-
-#. translators: [front] Donate
-#: woocommerce/order/order-details.php:53
-msgid "Price"
-msgstr ""
-
-#. translators: [front] Donate related products
-#: woocommerce/single-product/related.php:36
-msgid "Related Items"
-msgstr ""
+msgstr "商店索引页面"
 
 #. translators: [admin]
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
@@ -2404,22 +2422,21 @@ msgstr ""
 #: assets/scripts/bundle.js:1995
 msgid "%d day"
 msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d 天"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
 #: assets/scripts/bundle.js:1
 #: assets/scripts/bundle.js:2008
 msgctxt "time format(prefix translated separately) i.e. \"x, H:i:s\""
 msgid "%1$s, %2$s:%3$s:%4$s"
-msgstr ""
+msgstr "%1$s, %2$s:%3$s:%4$s"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
 #: assets/scripts/bundle.js:1
 #: assets/scripts/bundle.js:2022
 msgctxt "time format, H:i:s"
 msgid "%1$s:%2$s:%3$s"
-msgstr ""
+msgstr "%1$s:%2$s:%3$s"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:424
@@ -2427,94 +2444,95 @@ msgstr ""
 #: assets/scripts/blocks.js:12089
 #: assets/scripts/blocks.js:12636
 msgid "Hide Image Caption"
-msgstr ""
+msgstr "隐藏图像描述"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:430
 #: assets/scripts/blocks.js:11200
 #: assets/scripts/blocks.js:12095
 #: assets/scripts/blocks.js:12642
+#, fuzzy
 msgid "Hide Image Credit"
-msgstr ""
+msgstr "隐藏图像信用显示"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:461
 #: assets/scripts/blocks.js:476
 msgctxt "block style"
 msgid "Dark"
-msgstr ""
+msgstr "黑暗"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:467
 msgctxt "block style"
 msgid "Back Link"
-msgstr ""
+msgstr "后链接"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:482
 msgctxt "block style"
 msgid "Dark Circle"
-msgstr ""
+msgstr "暗环"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:488
 #: assets/scripts/blocks.js:550
 msgctxt "block style"
 msgid "Light"
-msgstr ""
+msgstr "浅色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:494
 msgctxt "block style"
 msgid "Light Circle"
-msgstr ""
+msgstr "光圈"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:500
 msgctxt "block style"
 msgid "Yellow"
-msgstr ""
+msgstr "黄色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:506
 msgctxt "block style"
 msgid "Yellow Circle"
-msgstr ""
+msgstr "黄色圆圈"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:512
 msgctxt "block style"
 msgid "Logos Only Dark"
-msgstr ""
+msgstr "徽标仅深色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:518
 msgctxt "block style"
 msgid "Logos Only Light"
-msgstr ""
+msgstr "徽标仅照明"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:524
 msgctxt "block style"
 msgid "Logos Only Yellow"
-msgstr ""
+msgstr "徽标仅黄色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:557
 msgctxt "block style"
 msgid "Grey"
-msgstr ""
+msgstr "灰色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:566
 msgctxt "block style"
 msgid "Responsive"
-msgstr ""
+msgstr "响应"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:578
 msgid "Row Column"
-msgstr ""
+msgstr "行列"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:670
@@ -2524,22 +2542,22 @@ msgstr ""
 #: assets/scripts/blocks.js:27655
 #: assets/scripts/blocks.js:32545
 msgid "(Insert Title)"
-msgstr ""
+msgstr "（插入标题）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:680
 #: assets/scripts/blocks.js:13806
 msgid "(Insert Content)"
-msgstr ""
+msgstr "（插入内容）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1133
 msgid "Document Reference:"
-msgstr ""
+msgstr "文档参考："
 
 #: assets/scripts/blocks.js:1158
 msgid "Hide featured image"
-msgstr ""
+msgstr "隐藏特色图片"
 
 #: assets/scripts/blocks.js:1159
 msgid "Hide the featured image."
@@ -2555,7 +2573,7 @@ msgstr ""
 
 #: assets/scripts/blocks.js:1211
 msgid "Use transparent header"
-msgstr ""
+msgstr "使用透明页眉"
 
 #: assets/scripts/blocks.js:1212
 msgid "Enable transparent mode on the main header. Requires the use of a header block with a featured image"
@@ -2564,52 +2582,52 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:1305
 msgid "Enable public byline"
-msgstr ""
+msgstr "启用公共旁线"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1306
 msgid "Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated"
-msgstr ""
+msgstr "内容将不归因，除非启用并填充旁划线，否则作者信息将保持私密性"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1318
 msgid "Use author profile for byline"
-msgstr ""
+msgstr "将作者简介用于旁划线"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1329
 msgid "Byline Name"
-msgstr ""
+msgstr "旁名"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1331
 msgid "The individual, group, or entity to be named as the author"
-msgstr ""
+msgstr "个人、团体或实体将命名为作者"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1339
 msgid "Byline Context"
-msgstr ""
+msgstr "旁语下文"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1341
 msgid "Additional context for the byline; e.g. job title, short summary, location, etc"
-msgstr ""
+msgstr "旁划线的其他上下文;例如职称、简要摘要、位置等"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1374
 msgid "Disable Sharing"
-msgstr ""
+msgstr "禁用共享"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1376
 msgid "Disable Share Buttons for this post"
-msgstr ""
+msgstr "禁用此页面的共享按钮"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1410
 msgid "Show published date"
-msgstr ""
+msgstr "显示发布日期"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1411
@@ -2629,7 +2647,7 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:1457
 msgid "Metadata"
-msgstr ""
+msgstr "元数据"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1484
@@ -2648,12 +2666,12 @@ msgstr ""
 #: assets/scripts/blocks.js:26140
 #: assets/scripts/blocks.js:26507
 msgid "Loading"
-msgstr ""
+msgstr "载入中"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9683
 msgid "Select a sidebar"
-msgstr ""
+msgstr "选择边栏"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9717
@@ -2668,7 +2686,7 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:9732
 msgid "Disable Sidebar"
-msgstr ""
+msgstr "禁用边栏"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9734
@@ -2679,42 +2697,42 @@ msgstr ""
 #: assets/scripts/blocks.js:9784
 #: assets/scripts/blocks.js:25032
 msgid "Select Term"
-msgstr ""
+msgstr "选择分类"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9804
 msgid "Feature on content type:"
-msgstr ""
+msgstr "内容类型的功能："
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9841
 msgid "Page Options"
-msgstr ""
+msgstr "页面选项"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9863
 msgid "Post Options"
-msgstr ""
+msgstr "文章选项"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9880
 msgid "Appearance"
-msgstr ""
+msgstr "外观"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10149
 msgid "Pop-in Settings"
-msgstr ""
+msgstr "弹出式设置"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10153
 msgid "Render Title"
-msgstr ""
+msgstr "渲染标题"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10155
 msgid "Should the title be rendered when showing this pop-in to the user?"
-msgstr ""
+msgstr "向用户显示此弹出窗口时，应呈现标题吗？"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10229
@@ -2724,30 +2742,30 @@ msgstr ""
 #: assets/scripts/blocks.js:29219
 #: assets/scripts/blocks.js:29517
 msgid "Size"
-msgstr ""
+msgstr "大小"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10234
 #: assets/scripts/blocks.js:29522
 msgid "Standard"
-msgstr ""
+msgstr "标准"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10236
 #: assets/scripts/blocks.js:29524
 msgid "Wide"
-msgstr ""
+msgstr "宽"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10241
 msgid "Scroll To Link"
-msgstr ""
+msgstr "Logo链接"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10252
 #: assets/scripts/blocks.js:29560
 msgid "(Label)"
-msgstr ""
+msgstr "（标签）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10262
@@ -2758,30 +2776,30 @@ msgstr ""
 #: assets/scripts/blocks.js:30519
 #: assets/scripts/blocks.js:33790
 msgid "Remove Image"
-msgstr ""
+msgstr "删除图像"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10291
 #: assets/scripts/blocks.js:11714
 #: assets/scripts/blocks.js:29568
 msgid "Content"
-msgstr ""
+msgstr "内容"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10299
 #: assets/scripts/blocks.js:29576
 msgid "Button Text"
-msgstr ""
+msgstr "按钮文字"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10460
 msgid "Custom Card"
-msgstr ""
+msgstr "自定义"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10462
 msgid "Custom Card block"
-msgstr ""
+msgstr "添加操作块"
 
 #. translators: [admin] text alignment. for RTL languages, localise as 'Right'
 #. translators: [admin]
@@ -2792,7 +2810,7 @@ msgstr ""
 #: assets/scripts/blocks.js:28516
 #: assets/scripts/blocks.js:30687
 msgid "Left"
-msgstr ""
+msgstr "左"
 
 #. translators: [admin] text alignment
 #. translators: [admin] text alignment/.
@@ -2802,7 +2820,7 @@ msgstr ""
 #: assets/scripts/blocks.js:29224
 #: assets/scripts/blocks.js:29336
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #. translators: [admin] text alignment. for RTL languages, localise as 'Left'
 #. translators: [admin]
@@ -2813,7 +2831,7 @@ msgstr ""
 #: assets/scripts/blocks.js:28520
 #: assets/scripts/blocks.js:30691
 msgid "Right"
-msgstr ""
+msgstr "右"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10565
@@ -2821,33 +2839,33 @@ msgstr ""
 #: assets/scripts/blocks.js:12571
 #: assets/scripts/blocks.js:28507
 msgid "Alignment"
-msgstr ""
+msgstr "对齐"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10577
 #: assets/scripts/blocks.js:12615
 #: assets/scripts/blocks.js:27510
 msgid "Small"
-msgstr ""
+msgstr "小"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10579
 #: assets/scripts/blocks.js:27512
 msgid "Medium"
-msgstr ""
+msgstr "中"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10581
 #: assets/scripts/blocks.js:12058
 #: assets/scripts/blocks.js:27514
 msgid "Large"
-msgstr ""
+msgstr "大"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10586
 #: assets/scripts/blocks.js:11124
 msgid "Text Colour"
-msgstr ""
+msgstr "文字颜色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10591
@@ -2855,7 +2873,7 @@ msgstr ""
 #: assets/scripts/blocks.js:12040
 #: assets/scripts/blocks.js:12603
 msgid "Black"
-msgstr ""
+msgstr "黑色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10593
@@ -2867,7 +2885,7 @@ msgstr ""
 #: assets/scripts/blocks.js:33751
 #: assets/scripts/blocks.js:34574
 msgid "Grey"
-msgstr ""
+msgstr "灰色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10595
@@ -2879,47 +2897,47 @@ msgstr ""
 #: assets/scripts/blocks.js:33746
 #: assets/scripts/blocks.js:34572
 msgid "White"
-msgstr ""
+msgstr "白色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10601
 msgid "Capitalise"
-msgstr ""
+msgstr "资本化"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10603
 msgid "Capitalise the content."
-msgstr ""
+msgstr "充分利用内容。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10610
 msgid "Line"
-msgstr ""
+msgstr "线"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10612
 msgid "Toggle display of line embellishment."
-msgstr ""
+msgstr "切换线条修饰的显示。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10624
 msgid "(Insert Quote Text)"
-msgstr ""
+msgstr "（插入报价文本）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10635
 msgid "(Insert Citation)"
-msgstr ""
+msgstr "（插入引文）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10931
 msgid "Blockquote"
-msgstr ""
+msgstr "引用"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10933
 msgid "Add a blockquote block"
-msgstr ""
+msgstr "添加块引号块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11115
@@ -2934,37 +2952,37 @@ msgstr ""
 #: assets/scripts/blocks.js:30875
 #: assets/scripts/blocks.js:32819
 msgid "Options"
-msgstr ""
+msgstr "选项"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11118
 msgid "Section Name"
-msgstr ""
+msgstr "部分名称"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11141
 msgid "Background Options"
-msgstr ""
+msgstr "背景选项"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11153
 msgid "Edit image"
-msgstr ""
+msgstr "编辑图像"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11163
 msgid "Remove image"
-msgstr ""
+msgstr "删除图像"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11168
 msgid "Select background image"
-msgstr ""
+msgstr "选择背景图片"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11178
 msgid "Min image height as viewport percentage"
-msgstr ""
+msgstr "最小图像高度作为视口百分比"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11188
@@ -2974,18 +2992,18 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:11206
 msgid "Background Image Origin"
-msgstr ""
+msgstr "背景图像"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11210
 #: assets/scripts/blocks.js:27528
 msgid "Top"
-msgstr ""
+msgstr "顶部"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11220
 msgid "Bottom"
-msgstr ""
+msgstr "底部"
 
 #. translators: [admin]
 #. translators: [admin] text alignment.
@@ -2995,12 +3013,12 @@ msgstr ""
 #: assets/scripts/blocks.js:28518
 #: assets/scripts/blocks.js:30689
 msgid "Centre"
-msgstr ""
+msgstr "居中"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11235
 msgid "Initial"
-msgstr ""
+msgstr "初始"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11244
@@ -3012,81 +3030,81 @@ msgstr ""
 #: assets/scripts/blocks.js:33737
 #: assets/scripts/blocks.js:34569
 msgid "Background Colour"
-msgstr ""
+msgstr "背景色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11521
 #: assets/scripts/blocks.js:11525
 msgid "Section"
-msgstr ""
+msgstr "部分"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11585
 msgid "50% | 50%"
-msgstr ""
+msgstr "50% |50%"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11592
 msgid "66.6% | 33.3%"
-msgstr ""
+msgstr "66.6% |33.3%"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11599
 msgid "33.3% | 66.6%"
-msgstr ""
+msgstr "33.3% |66.6%"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11606
 msgid "33.3% | 33.3% | 33.3%"
-msgstr ""
+msgstr "33.3% |33.3% |33.3%"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11613
 msgid "50% | 25% | 25%"
-msgstr ""
+msgstr "50% |25% |25%"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11620
 msgid "25% | 50% | 25%"
-msgstr ""
+msgstr "25% |50% |25%"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11627
 msgid "25% | 25% | 50%"
-msgstr ""
+msgstr "25% |25% |50%"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11634
 msgid "25% | 25% | 25% | 25%"
-msgstr ""
+msgstr "25% |25% |25% |25%"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11671
 msgid "Layout Style"
-msgstr ""
+msgstr "布局样式"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11708
 #: assets/scripts/blocks.js:11718
 msgid "Columns"
-msgstr ""
+msgstr "列"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11716
 msgid "Row"
-msgstr ""
+msgstr "行"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11784
 #: assets/scripts/blocks.js:12343
 msgid "Set featured video"
-msgstr ""
+msgstr "设置特色视频"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11786
 #: assets/scripts/blocks.js:12345
 msgid "Remove featured video"
-msgstr ""
+msgstr "删除特色视频"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11856
@@ -3094,50 +3112,50 @@ msgstr ""
 #: assets/scripts/blocks.js:28639
 #: assets/scripts/blocks.js:28649
 msgid "Replace Video"
-msgstr ""
+msgstr "替换视频"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12053
 #: assets/scripts/blocks.js:12613
 msgid "Normal"
-msgstr ""
+msgstr "正常"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12068
 #: assets/scripts/blocks.js:12622
 #: assets/scripts/blocks.js:28707
 msgid "Background Type"
-msgstr ""
+msgstr "背景类型"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12072
 #: assets/scripts/blocks.js:12625
 #: assets/scripts/blocks.js:28711
 msgid "Image"
-msgstr ""
+msgstr "图片"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12077
 #: assets/scripts/blocks.js:12627
 #: assets/scripts/blocks.js:28716
 msgid "Video"
-msgstr ""
+msgstr "视频"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12108
 msgid "Background Image"
-msgstr ""
+msgstr "背景图像"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12116
 #: assets/scripts/blocks.js:12661
 msgid "Featured Video"
-msgstr ""
+msgstr "精选视频"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12140
 msgid "(Header Title)"
-msgstr ""
+msgstr "（标题标题）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12151
@@ -3148,12 +3166,12 @@ msgstr ""
 #: assets/scripts/blocks.js:12163
 #: assets/scripts/blocks.js:12731
 msgid "(Call to action)"
-msgstr ""
+msgstr "（行动号召）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12597
 msgid "Translucent black"
-msgstr ""
+msgstr "半透明黑色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12599
@@ -3161,39 +3179,39 @@ msgstr ""
 #: assets/scripts/blocks.js:27298
 #: assets/scripts/blocks.js:32533
 msgid "None"
-msgstr ""
+msgstr "无"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12650
 msgid "Embed URL"
-msgstr ""
+msgstr "嵌入网址"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12652
 msgid "Setting this will override the call to action link and will now open a modal with the embed."
-msgstr ""
+msgstr "设置此设置将覆盖对操作链接的调用，并且现在将打开具有嵌入的模式。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12709
 msgid "(Banner Title)"
-msgstr ""
+msgstr "（横幅标题）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12719
 msgid "(Banner Content)"
-msgstr ""
+msgstr "（横幅内容）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12773
 #: assets/scripts/blocks.js:12777
 msgid "Banner"
-msgstr ""
+msgstr "横幅"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12917
 #: assets/scripts/blocks.js:30970
 msgid "Background Style"
-msgstr ""
+msgstr "背景样式"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12921
@@ -3203,37 +3221,37 @@ msgstr ""
 #: assets/scripts/blocks.js:32294
 #: assets/scripts/blocks.js:32836
 msgid "Light"
-msgstr ""
+msgstr "浅色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12944
 msgid "(Pre-heading)"
-msgstr ""
+msgstr "（标题前）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12954
 #: assets/scripts/blocks.js:31083
 msgid "(Heading)"
-msgstr ""
+msgstr "（标题）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12964
 #: assets/scripts/blocks.js:28589
 #: assets/scripts/blocks.js:31107
 msgid "(Content)"
-msgstr ""
+msgstr "（内容）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:13204
 #: assets/scripts/blocks.js:13208
 msgid "Call To Action"
-msgstr ""
+msgstr "行动呼吁"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:13355
 #: assets/scripts/blocks.js:26092
 msgid "Select a category"
-msgstr ""
+msgstr "选择一个类别"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:13625
@@ -3245,12 +3263,12 @@ msgstr ""
 #: assets/scripts/blocks.js:26348
 #: assets/scripts/blocks.js:26647
 msgid "Loading…"
-msgstr ""
+msgstr "载入中..."
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:13634
 msgid "Select a category."
-msgstr ""
+msgstr "选择一个类别。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:13644
@@ -3258,317 +3276,319 @@ msgstr ""
 #: assets/scripts/blocks.js:26367
 #: assets/scripts/blocks.js:26656
 msgid "No Items found"
-msgstr ""
+msgstr "未找到任何项目"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:13736
 msgid "(Tag Name)"
-msgstr ""
+msgstr "（标签名称）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:13778
 msgid "(Insert Tag)"
-msgstr ""
+msgstr "（插入标签）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:13996
 msgid "Add another item"
-msgstr ""
+msgstr "添加另一个项目"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:14020
 #: assets/scripts/blocks.js:24904
 msgid "No Posts."
-msgstr ""
+msgstr "无帖子。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:24885
+#, fuzzy
 msgid "Loading Posts…"
-msgstr ""
+msgstr "管理文章..."
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:24893
 msgid "Your query yielded no results, please try again."
-msgstr ""
+msgstr "您的查询没有结果，请重试。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:24931
 msgid "Load More"
-msgstr ""
+msgstr "加载更多"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:24970
+#, fuzzy
 msgid "Please enter your search query…"
-msgstr ""
+msgstr "请输入您的搜索查询..."
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:24978
 msgid "Post Type:"
-msgstr ""
+msgstr "文章类型："
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:24993
 #: assets/scripts/blocks.js:26967
 msgid "Taxonomy:"
-msgstr ""
+msgstr "分类法："
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:25005
 msgid "Select Taxonomy"
-msgstr ""
+msgstr "选择分类"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:25021
 #: assets/scripts/blocks.js:26974
 msgid "Terms:"
-msgstr ""
+msgstr "条款："
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:25025
 msgid "No taxonomy selected"
-msgstr ""
+msgstr "未选择分类"
 
 #: assets/scripts/blocks.js:25135
 msgid "No terms selected"
-msgstr ""
+msgstr "未选择分类"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:25951
 msgid "Select a taxonomy."
-msgstr ""
+msgstr "选择分类法。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26142
 msgid "Select terms"
-msgstr ""
+msgstr "选择条款"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26357
 msgid "Select an author."
-msgstr ""
+msgstr "选择一个作者。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26509
 msgid "Select author"
-msgstr ""
+msgstr "选择作者"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26829
 msgid "Link List"
-msgstr ""
+msgstr "链接列表"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26834
 msgid "Grid"
-msgstr ""
+msgstr "网格"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26842
 msgid "Category"
-msgstr ""
+msgstr "类别"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26847
 #: assets/scripts/blocks.js:34782
 msgid "Object Selection"
-msgstr ""
+msgstr "对象选择"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26852
 msgid "Custom"
-msgstr ""
+msgstr "自定义"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26857
 msgid "Taxonomy"
-msgstr ""
+msgstr "分类法"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26893
 #: assets/scripts/blocks.js:27488
 msgid "Style"
-msgstr ""
+msgstr "样式"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26901
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26908
 msgid "Category:"
-msgstr ""
+msgstr "分类："
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26920
 #: assets/scripts/blocks.js:26930
 #: assets/scripts/blocks.js:26940
 msgid "Number of posts to show:"
-msgstr ""
+msgstr "显示的帖子数量："
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26950
 msgid "Use related categories where supported"
-msgstr ""
+msgstr "使用受支持的相关类别"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26959
 msgid "Hide Preview"
-msgstr ""
+msgstr "隐藏预览"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26961
 msgid "Show Preview"
-msgstr ""
+msgstr "显示预览"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26987
 msgid "Author:"
-msgstr ""
+msgstr "作者："
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:26998
 msgid "Display Post Author"
-msgstr ""
+msgstr "显示文章作者"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27004
 msgid "Display Post Date"
-msgstr ""
+msgstr "显示发布日期"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27154
 msgid "Post List"
-msgstr ""
+msgstr "文章列表"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27159
 msgid "List"
-msgstr ""
+msgstr "列表"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27161
 msgid "post-list"
-msgstr ""
+msgstr "列表后"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27163
 msgid "Posts"
-msgstr ""
+msgstr "文章"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27228
 msgid "Arrow"
-msgstr ""
+msgstr "箭头"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27233
 msgid "Ampersand"
-msgstr ""
+msgstr "符号"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27280
 msgid "Orientation"
-msgstr ""
+msgstr "方向"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27285
 msgid "Horizontal"
-msgstr ""
+msgstr "水平"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27287
 msgid "Vertical"
-msgstr ""
+msgstr "垂直"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27306
 msgid "Hide Lines"
-msgstr ""
+msgstr "隐藏线"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27314
 msgid "Divider Style"
-msgstr ""
+msgstr "分隔条风格"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27405
 msgid "Pick an image"
-msgstr ""
+msgstr "选择图像"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27424
 msgid "(Insert Fact)"
-msgstr ""
+msgstr "（插入事实）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27493
 msgid "Use Image"
-msgstr ""
+msgstr "使用图片"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27495
 msgid "Use Text"
-msgstr ""
+msgstr "使用文本"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27497
 msgid "Plain"
-msgstr ""
+msgstr "纯文本"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27503
 msgid "Icon Size"
-msgstr ""
+msgstr "图标大小"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27508
 msgid "Extra Small"
-msgstr ""
+msgstr "超小"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27521
 msgid "Icon Position"
-msgstr ""
+msgstr "图标位置"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27526
 msgid "Middle"
-msgstr ""
+msgstr "中间"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27535
 msgid "Hide Image Credit Display"
-msgstr ""
+msgstr "隐藏图像信用显示"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27544
 msgid "Has Underline"
-msgstr ""
+msgstr "具有下划线"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27550
 msgid "Font Size"
-msgstr ""
+msgstr "字體大小"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27562
 msgid "Display Action"
-msgstr ""
+msgstr "显示操作"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27569
 #: assets/scripts/blocks.js:32285
 #: assets/scripts/blocks.js:32822
 msgid "Button Style"
-msgstr ""
+msgstr "按钮样式"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27572
 #: assets/scripts/blocks.js:30488
 #: assets/scripts/blocks.js:32826
 msgid "Primary (Yellow)"
-msgstr ""
+msgstr "主（黄色）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27574
@@ -3577,193 +3597,196 @@ msgstr ""
 #: assets/scripts/blocks.js:32289
 #: assets/scripts/blocks.js:32831
 msgid "Dark"
-msgstr ""
+msgstr "黑暗"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27666
 msgid "(Insert Body Text)"
-msgstr ""
+msgstr "（插入正文文本）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27679
 msgid "(Insert Link Text)"
-msgstr ""
+msgstr "（插入链接文本）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27982
 msgid "Links with Icons"
-msgstr ""
+msgstr "链接与图标"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:27984
 msgid "Add a links-with-icons block"
-msgstr ""
+msgstr "添加带有图标的链接块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28214
 msgid "Links with Icons Group"
-msgstr ""
+msgstr "图标组的链接"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28216
 msgid "Add a repeatable links-with-icons block"
-msgstr ""
+msgstr "添加可重复的链接，带图标块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28320
 msgid "Square"
-msgstr ""
+msgstr "方形"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28448
 msgid "(Link Text)"
-msgstr ""
+msgstr "（链接文本）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28458
 msgid "Remove Button"
-msgstr ""
+msgstr "删除按钮"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28495
 msgid "Image Style"
-msgstr ""
+msgstr "图像样式"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28500
 msgid "Fixed Height (600px)"
-msgstr ""
+msgstr "固定高度 （600px）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28502
 msgid "Actual Height"
-msgstr ""
+msgstr "实际高度"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28509
 msgid "Only has an effect on images smaller than their container"
-msgstr ""
+msgstr "只对小于其容器的图像有影响"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28582
 msgid "(Title)"
-msgstr ""
+msgstr "（标题）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28601
 msgid "Add Button"
-msgstr ""
+msgstr "添加按钮"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28621
 #: assets/scripts/blocks.js:28627
 msgid "Choose Video"
-msgstr ""
+msgstr "选择视频"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28655
 msgid "Remove Video"
-msgstr ""
+msgstr "移除视频"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28730
 msgid "Display Overlay"
-msgstr ""
+msgstr "显示叠加"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28736
 msgid "Enable Parallax"
-msgstr ""
+msgstr "启用视差"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28759
 msgid "(Insert Caption, if required)"
-msgstr ""
+msgstr "（如果需要，插入标题）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29150
 msgid "Image Block"
-msgstr ""
+msgstr "添加带有可选叠加的灵活图像块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29152
 msgid "Add a flexible image block with optional overlay"
-msgstr ""
+msgstr "添加带有可选叠加的灵活图像块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29226
 msgid "Narrow"
-msgstr ""
+msgstr "狭窄"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29231
 msgid "Embed Link"
-msgstr ""
+msgstr "嵌入链接"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29233
 msgid "Includes a link to current post/page in tweet"
-msgstr ""
+msgstr "包括推文中当前帖子/页面的链接"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29252
 msgid "(Action Title)"
-msgstr ""
+msgstr "（操作标题）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29262
 msgid "(Place Tweet text proforma here)"
-msgstr ""
+msgstr "（此处放置推文文本形式）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29269
 msgid "A link to the current page/post will now appear below the Tweet content when published/updated."
-msgstr ""
+msgstr "發佈/更新時，推文內容下方將顯示當前頁面/帖子的連結。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29316
 msgid "Tweet Action"
-msgstr ""
+msgstr "推文操作"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29318
 msgid "Add a Tweet Action block"
-msgstr ""
+msgstr "添加推文操作块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29338
 msgid "Alternative"
-msgstr ""
+msgstr "替代"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29849
 msgid "Action"
-msgstr ""
+msgstr "动作"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29851
 msgid "Add an Action block"
-msgstr ""
+msgstr "添加操作块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29895
+#, fuzzy
 msgid "Select a menu…"
-msgstr ""
+msgstr "选择菜单..."
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29973
 msgid "Select a menu in the sidebar"
-msgstr ""
+msgstr "在侧边栏中选择菜单"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29976
+#, fuzzy
 msgid "Loading Menu…"
-msgstr ""
+msgstr "正在加载菜单..."
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30023
+#, fuzzy
 msgid "Loading Menus…"
-msgstr ""
+msgstr "正在加载菜单..."
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30027
@@ -3771,39 +3794,39 @@ msgstr ""
 #: assets/scripts/blocks.js:30086
 #: assets/scripts/blocks.js:30091
 msgid "Menu"
-msgstr ""
+msgstr "菜单"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30029
 msgid "Which type of menu you would like to add to the page"
-msgstr ""
+msgstr "要添加到页面的菜单类型"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30033
 msgid "Standard Menu"
-msgstr ""
+msgstr "标准"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30035
 msgid "In-page Menu"
-msgstr ""
+msgstr "页面菜单"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30093
 msgid "Navigation"
-msgstr ""
+msgstr "导航"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30148
 #: assets/scripts/blocks.js:30422
 msgid "Iframe URL"
-msgstr ""
+msgstr "内联框架URL"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30159
 #: assets/scripts/blocks.js:30424
 msgid "Enter URL to embed here…"
-msgstr ""
+msgstr "输入URL嵌入在这里…"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30162
@@ -3812,42 +3835,42 @@ msgstr ""
 #: assets/scripts/blocks.js:35330
 #: assets/scripts/blocks.js:35412
 msgid "Embed"
-msgstr ""
+msgstr "嵌入"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30207
 msgid "Write caption…"
-msgstr ""
+msgstr "写标题…"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30230
 msgid "Width"
-msgstr ""
+msgstr "宽度"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30237
 msgid "Required when specifying a height"
-msgstr ""
+msgstr "指定高度时需要"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30244
 msgid "Height"
-msgstr ""
+msgstr "高度"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30251
 msgid "Required when specifying a width"
-msgstr ""
+msgstr "指定宽度时需要"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30258
 msgid "Minimum Height"
-msgstr ""
+msgstr "最小高度"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30267
 msgid "Required if not using width/height, optional otherwise"
-msgstr ""
+msgstr "如果不使用宽度/高度，则是必需的，否则可选"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30275
@@ -3864,509 +3887,510 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:30284
 msgid "Reset Embed Url"
-msgstr ""
+msgstr "重置嵌入 Url"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30317
 msgid "Responsive Iframe"
-msgstr ""
+msgstr "响应式 Iframe"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30322
 #: assets/scripts/blocks.js:30457
 msgid "Iframe"
-msgstr ""
+msgstr "框架"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30324
 msgid "Responsive"
-msgstr ""
+msgstr "响应"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30326
 msgid "Fluid"
-msgstr ""
+msgstr "流体"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30381
 msgid "Iframe Height"
-msgstr ""
+msgstr "Iframe 高度"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30429
 #: assets/scripts/blocks.js:33363
 #: assets/scripts/blocks.js:34869
 msgid "Preview"
-msgstr ""
+msgstr "预览"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30450
 msgid "Iframe Button"
-msgstr ""
+msgstr "删除按钮"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30452
 msgid "A button which, when clicked, will toggle visibility of an iframe"
-msgstr ""
+msgstr "一个按钮，当点击时，将切换一个iframe的可见性"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30459
 #: assets/scripts/blocks.js:32887
 #: assets/scripts/blocks.js:32891
 msgid "Button"
-msgstr ""
+msgstr "按钮"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30515
 msgid "Set Image"
-msgstr ""
+msgstr "设置图像"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30517
 #: assets/scripts/blocks.js:33781
 msgid "Replace Image"
-msgstr ""
+msgstr "替换图片"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30703
 msgid "Opaque"
-msgstr ""
+msgstr "不透明的"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30705
 msgid "Translucent"
-msgstr ""
+msgstr "半透明"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30707
 msgid "Transparent"
-msgstr ""
+msgstr "透明"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30840
 msgid "Do you wish to delete this slide? This action is irreversible"
-msgstr ""
+msgstr "是否要删除此幻灯片？此操作不可逆"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30878
 msgid "Show Arrows"
-msgstr ""
+msgstr "显示箭头"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30885
 msgid "Has Content"
-msgstr ""
+msgstr "包含内容"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30891
 msgid "By disabling this you will hide the content in *ALL* slides. To disable this on only one slide, select the desired slide and toggle the \"Hide Content\" field in the \"Slide Options\" panel."
-msgstr ""
+msgstr "通过禁用此功能，您将隐藏 [ALL] 幻灯片中的内容。要仅在一张幻灯片上禁用此功能，请选择所需的幻灯片，并在\"幻灯片选项\"面板中切换\"隐藏内容\"字段。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30902
 msgid "Show Tabs"
-msgstr ""
+msgstr "显示标签"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30908
 msgid "Hide the tabs on the front end, these will still show in the panel to allow you to navigate through each slide."
-msgstr ""
+msgstr "隐藏前端的选项卡，这些选项卡仍显示在面板中，以允许您浏览每张幻灯片。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30918
 msgid "Timeline Options"
-msgstr ""
+msgstr "时间线选项"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30921
 msgid "Slider Title"
-msgstr ""
+msgstr "滑块标题"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30927
 msgid "Timeline Style"
-msgstr ""
+msgstr "时间线样式"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30935
 msgid "Slide Options"
-msgstr ""
+msgstr "幻灯片选项"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30938
 msgid "Slide Title"
-msgstr ""
+msgstr "幻灯片标题"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30944
 msgid "Slide Timeline Text"
-msgstr ""
+msgstr "幻灯片标题"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30954
 msgid "Slide Background"
-msgstr ""
+msgstr "幻灯片背景"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30963
 msgid "Content Alignment"
-msgstr ""
+msgstr "内容对齐"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30977
 msgid "Hide Content"
-msgstr ""
+msgstr "隐藏内容"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30983
 msgid "By enabling this you will hide the content on *THIS* slide. To disable content on all slides go to the \"Options\" and toggle the \"Has Content\" field."
-msgstr ""
+msgstr "通过启用此功能，您将隐藏 [THIS] 幻灯片上的内容。要禁用所有幻灯片上的内容，请转到\"选项\"并切换\"有内容\"字段。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30994
 msgid "Remove Slide"
-msgstr ""
+msgstr "删除幻灯片"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:30998
 msgid "This is irreversible."
-msgstr ""
+msgstr "这是不可逆转的。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31016
 msgid "(Slider Title)"
-msgstr ""
+msgstr "幻灯片标题"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31041
 msgid "Add a slide below."
-msgstr ""
+msgstr "在下面添加一张幻灯片。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31044
 #: assets/scripts/blocks.js:31169
 msgid "Add Slide"
-msgstr ""
+msgstr "添加幻灯片"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31067
 msgid "(TimeLine Content)"
-msgstr ""
+msgstr "（横幅内容）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31095
 msgid "(Sub-Heading)"
-msgstr ""
+msgstr "（小标题）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31119
 #: assets/scripts/blocks.js:32850
 msgid "(Button Text)"
-msgstr ""
+msgstr "（按钮文本）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31149
 #: assets/scripts/blocks.js:31163
 msgid "(No Title)"
-msgstr ""
+msgstr "（没有标题）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32142
 #: assets/scripts/blocks.js:32147
 msgid "Slider"
-msgstr ""
+msgstr "滑块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32149
 msgid "Carousel"
-msgstr ""
+msgstr "旋转木马"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32151
 msgid "Scroller"
-msgstr ""
+msgstr "页面滚动条"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32177
 msgid "Uploading…"
-msgstr ""
+msgstr "上传中…"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32179
 msgid "Uploading failed"
-msgstr ""
+msgstr "上传失败"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32181
 msgid "Uploading complete"
-msgstr ""
+msgstr "上传完成"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32263
 msgid "Select File(s)"
-msgstr ""
+msgstr "选择文件(s)"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32265
 msgid "Upload media files or pick from your media library."
-msgstr ""
+msgstr "上传媒体文件或从媒体库中选取。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32343
 msgid "Select a file to download"
-msgstr ""
+msgstr "选择要下载的文件"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32363
 msgid "Clear File(s)"
-msgstr ""
+msgstr "清除文件）"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32384
 msgid "Resource Download"
-msgstr ""
+msgstr "资源下载"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32386
 msgid "Add a button to download resource(s)"
-msgstr ""
+msgstr "添加用于下载资源的按钮"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32486
 msgid "Key Facts"
-msgstr ""
+msgstr "关键事实"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32488
 msgid "Add a key facts block"
-msgstr ""
+msgstr "添加关键事实块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32704
 #: assets/scripts/blocks.js:32720
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32707
 #: assets/scripts/blocks.js:32729
 msgid "Role"
-msgstr ""
+msgstr "角色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32741
 msgid "Add Row"
-msgstr ""
+msgstr "添加行"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32758
 msgid "Recipients"
-msgstr ""
+msgstr "收件人"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32760
 msgid "Add a list of recipients"
-msgstr ""
+msgstr "添加收件人列表"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33063
 #: assets/scripts/blocks.js:33203
 msgid "Further Reading"
-msgstr ""
+msgstr "延伸阅读"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33077
 msgid "Type link"
-msgstr ""
+msgstr "类型链接"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33093
 msgid "Open in new tab"
-msgstr ""
+msgstr "在新标签页中打开"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33101
 #: assets/scripts/blocks.js:33104
 msgid "Add a link"
-msgstr ""
+msgstr "添加链接"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33191
 msgid "Link Block"
-msgstr ""
+msgstr "链接块"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33193
 msgid "A collection of links, used for things such as further reading suggestions."
-msgstr ""
+msgstr "链接的集合，用于进一步阅读建议等。"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33201
 msgid "Links"
-msgstr ""
+msgstr "链接"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33335
 msgid "Edit Counter"
-msgstr ""
+msgstr "编辑计数器"
 
 #: assets/scripts/blocks.js:33335
 msgid "Preview Counter"
-msgstr ""
+msgstr "预览计数器"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33343
 msgid "Duration"
-msgstr ""
+msgstr "持续时间"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33345
 msgid "How long it should take the counter to count up"
-msgstr ""
+msgstr "计数器应该花多长时间才能数数"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33362
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33371
 msgid "Enter the value to which this field should count"
-msgstr ""
+msgstr "输入此字段应计数的值"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33397
 #: assets/scripts/blocks.js:33407
 #: assets/scripts/blocks.js:35414
 msgid "Counter"
-msgstr ""
+msgstr "计数器"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33399
 msgid "Add a numeric field which, when scrolled into view, will count up from zero"
-msgstr ""
+msgstr "添加一个数字字段，当滚动到视图中时，该字段将从零开始计数"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33405
 msgid "Stat"
-msgstr ""
+msgstr "状态"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33715
 msgid "Image Settings"
-msgstr ""
+msgstr "图像设置"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33718
 msgid "Focal Point"
-msgstr ""
+msgstr "焦点"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33726
 msgid "Opacity"
-msgstr ""
+msgstr "不透明度"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33740
 msgid "Colour"
-msgstr ""
+msgstr "颜色"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33783
 msgid "Add Image"
-msgstr ""
+msgstr "添加图片"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34081
 msgid "Background Media Column"
-msgstr ""
+msgstr "背景媒体列"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34083
 msgid "Column layout for Background Media block"
-msgstr ""
+msgstr "背景媒体块的列布局"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34146
 msgid "Background Media"
-msgstr ""
+msgstr "背景媒体"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34148
 msgid "Two-column layout with background images"
-msgstr ""
+msgstr "带背景图像的两列布局"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34152
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34154
 msgid "Media"
-msgstr ""
+msgstr "媒体"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34156
 msgid "Text"
-msgstr ""
+msgstr "文本"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34289
 #: assets/scripts/blocks.js:34566
 msgid "Display Options"
-msgstr ""
+msgstr "显示选项"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34292
 #: assets/scripts/blocks.js:34581
 msgid "Choose taxonomy to display"
-msgstr ""
+msgstr "选择要显示的分类"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34371
 msgid "Term A-Z"
-msgstr ""
+msgstr "术语 A-Z"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34373
 msgid "List all visible terms in a taxonomy, grouped by first letter"
-msgstr ""
+msgstr "按第一个字母分组的分类中列出所有可见术语"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34376
 msgid "Term List"
-msgstr ""
+msgstr "术语列表"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34378
 msgid "A-Z Terms"
-msgstr ""
+msgstr "A-Z 条款"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34380
+#, fuzzy
 msgid "Countries"
-msgstr ""
+msgstr "国家"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34589
 msgid "Max depth"
-msgstr ""
+msgstr "最大深度"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34598
 msgid "Show only Regions/Subregions"
-msgstr ""
+msgstr "仅显示区域/区域"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34657
 msgid "Terms List"
-msgstr ""
+msgstr "条款列表"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34659
 msgid "Terms"
-msgstr ""
+msgstr "条款"
 
 #: assets/scripts/blocks.js:34708
 msgid "Petition Settings"
@@ -4376,166 +4400,166 @@ msgstr ""
 #: assets/scripts/blocks.js:34762
 #: assets/scripts/blocks.js:34772
 msgid "Petitions"
-msgstr ""
+msgstr "所有请愿书"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34787
 msgid "Feed"
-msgstr ""
+msgstr "反馈"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34796
 msgid "Petition List"
-msgstr ""
+msgstr "所有请愿书"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34798
 msgid "Petition list"
-msgstr ""
+msgstr "所有请愿书"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34800
 msgid "Petition"
-msgstr ""
+msgstr "所有请愿书"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34893
 msgid "Write HTML…"
-msgstr ""
+msgstr "写HTML…"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34895
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34919
 msgid "Raw Code"
-msgstr ""
+msgstr "原始代码"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34992
 msgctxt "format for timer, i.e. \"x days, H:m:s\""
 msgid "%1$s, %2$s:%3$s:%4$s"
-msgstr ""
+msgstr "%1$s, %2$s:%3$s:%4$s"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35006
 msgctxt "time format, i.e. \"H:m:s\""
 msgid "%1$s:%2$s:%3$s"
-msgstr ""
+msgstr "%1$s:%2$s:%3$s"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35053
 msgid "Time Expired Text"
-msgstr ""
+msgstr "过期时间文本"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35058
 msgid "enter text here"
-msgstr ""
+msgstr "在此处输入文本"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35080
 msgid "Countdown Timer"
-msgstr ""
+msgstr "倒计时器"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35084
 msgid "Countdown"
-msgstr ""
+msgstr "倒计时"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35086
 msgid "Timer"
-msgstr ""
+msgstr "计时器"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35163
 msgid "The Flourish embed source (not the full URL)."
-msgstr ""
+msgstr "浮华嵌入源"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35167
 #: assets/scripts/blocks.js:35243
 msgid "Preview Embed"
-msgstr ""
+msgstr "预览嵌入"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35182
 msgid "Flourish Embed"
-msgstr ""
+msgstr "繁荣嵌入"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35187
 msgid "Flourish"
-msgstr ""
+msgstr "蓬勃发展"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35240
 msgid "The Sutori embed code"
-msgstr ""
+msgstr "苏托里嵌入代码"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35258
 msgid "Sutori Embed"
-msgstr ""
+msgstr "苏托里嵌入"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35263
 msgid "Sutori"
-msgstr ""
+msgstr "苏托里"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35290
 msgid "The embed code"
-msgstr ""
+msgstr "嵌入代码"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35297
 msgid "The embed type"
-msgstr ""
+msgstr "嵌入类型"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35304
 msgid "The embed title"
-msgstr ""
+msgstr "嵌入标题"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35308
 msgid "Ending the Death Penalty"
-msgstr ""
+msgstr "结束死刑"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35323
 msgid "Infogram Embed"
-msgstr ""
+msgstr "信息格拉姆嵌入"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35328
 msgid "Infogram"
-msgstr ""
+msgstr "信息图"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35375
 #: assets/scripts/blocks.js:35405
 msgid "Tickcounter Embed"
-msgstr ""
+msgstr "滴答声计数器嵌入"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35378
 msgid "This embed cannot be previewed in the editor. Preview the %s itself to see the embed in action"
-msgstr ""
+msgstr "此嵌入无法在编辑器中预览。预览%s本身，查看嵌入在操作中"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35389
 msgid "The Tickcounter embed code"
-msgstr ""
+msgstr "滴答声计数器嵌入代码"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35410
 msgid "Tickcounter"
-msgstr ""
+msgstr "滴答声计数器"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35683
@@ -4544,12 +4568,12 @@ msgstr ""
 
 #: assets/scripts/blocks.js:35733
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35737
 msgid "Collapsed by default"
-msgstr ""
+msgstr "当过滤器很少应用但占用小部件中的一些空间时，非常有用。默认情况下崩溃"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35739
@@ -4564,7 +4588,7 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:35760
 msgid "Find out more"
-msgstr ""
+msgstr "了解更多"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35789
@@ -4579,19 +4603,19 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:35796
 msgid "accordion"
-msgstr ""
+msgstr "手风琴"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35798
 msgid "drawer"
-msgstr ""
+msgstr "抽屉"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35800
 msgid "open"
-msgstr ""
+msgstr "打开"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:35802
 msgid "closed"
-msgstr ""
+msgstr "关闭"
