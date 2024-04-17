@@ -20,7 +20,7 @@ if ( ! function_exists( 'render_collapsable_block' ) ) {
 				'anchor'    => '',
 				'collapsed' => false,
 				'title'     => '',
-			] 
+			]
 		);
 
 		if ( ! $content ) {
@@ -33,8 +33,8 @@ if ( ! function_exists( 'render_collapsable_block' ) ) {
 			$wrapper_attrs['class'] = 'is-collapsed';
 		}
 
-		spaceless();
+		ob_start();
 		require realpath( __DIR__ . '/views/block.php' );
-		return endspaceless( false );
+		return ob_get_clean();
 	}
 }
