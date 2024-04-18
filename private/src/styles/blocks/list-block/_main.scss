@@ -6,7 +6,6 @@ ul.aligncenter {
 
 ul.alignleft {
   display: table;
-  margin-left: 0;
   margin-right: auto;
   float: none !important;
 }
@@ -25,7 +24,6 @@ ul.alignright {
 
 .rtl ul.alignleft {
   margin-left: auto;
-  margin-right: 0;
 }
 
 .rtl ul.alignright {
