@@ -12,9 +12,17 @@
     }
   },
   "scripts": {
-    "lint": "./vendor/bin/phpcs wp-content/themes/humanity-theme"
+    "lint": "./vendor/bin/phpcs wp-content/themes/humanity-theme",
+    "makePot": "wp i18n make-pot wp-content/themes/humanity-theme wp-content/themes/humanity-theme/languages/amnesty.pot --domain=amnesty --exclude=private",
+    "updatePoMo": [
+      "wp i18n update-po wp-content/themes/humanity-theme/languages/amnesty.pot",
+      "wp i18n make-mo wp-content/themes/humanity-theme/languages",
+      "wp i18n make-json wp-content/themes/humanity-theme/languages --no-purge"
+    ]
   },
   "scripts-descriptions": {
-    "lint": "Runs PHP coding standard checks"
+    "lint": "Runs PHP coding standard checks",
+    "makePot": "Re-generates the POT language file",
+    "UpdatePoMo": "Updates PO, MO, and JSON translation files"
   }
 }
