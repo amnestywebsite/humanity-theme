@@ -1,3 +1,9 @@
+### v1.0.2
+Fixes:
+- Potential collision in language handling when languages share an ISO 639-1 code
+- Translations packs not loading correctly in some circumstances
+- Missing whitespace after formatted text in Collapsable block
+
 ### v1.0.1
 Fixes:
 - Prevent featured image output if post has a header block
