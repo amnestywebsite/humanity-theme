@@ -17,7 +17,7 @@ if ( ! function_exists( 'register_links_with_icons_block' ) ) {
 				'render_callback' => 'render_links_with_icons_block',
 				'editor_script'   => 'amnesty-core-blocks-js',
 				'attributes'      => [
-					'quantity'     => [
+					'quantity' => [
 						'type'    => 'number',
 						'default' => 2,
 					],

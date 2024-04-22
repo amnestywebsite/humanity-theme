@@ -6,7 +6,7 @@ if ( ! $title ) {
 
 $output = esc_html( $title );
 
-if ( isset( $data['link'] ) && ! ! $data['link'] ) {
+if ( isset( $data['link'] ) && (bool) $data['link'] ) {
 	$output = sprintf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['link'] ), esc_html( $title ) );
 }
 
