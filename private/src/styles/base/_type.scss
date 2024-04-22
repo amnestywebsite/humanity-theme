@@ -5,7 +5,7 @@
 @include headings(1,  6) {
   color: $heading-color;
   line-height: 1.12;
-  font-family: var(--wp-preset--wp-preset--font-family---secondary);
+  font-family: var(--wp--preset--font-family--secondary);
 }
 
 @for $i from 1 through 6 {
