@@ -1,5 +1,7 @@
 import classnames from 'classnames';
 
+const { InnerBlocks } = wp.blockEditor;
+
 const blockAttributes = {
   backgroundColor: {
     type: 'string',
