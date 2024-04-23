@@ -153,87 +153,81 @@
     "typography": {
       "fontFamilies": [
         {
-          "fontFamily": "\"Amnesty Trade Gothic\", sans-serif",
-          "name": "Amnesty Trade Gothic",
+          "fontFamily": "Lato, sans-serif",
+          "name": "Lato",
           "slug": "primary",
           "fontFace": [
             {
-              "fontFamily": "Amnesty Trade Gothic",
+              "fontFamily": "Lato",
               "fontStyle": "normal",
               "fontWeight": 300,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/TradeGothicLTW05-Light.eot",
-                "file:./assets/fonts/TradeGothicLTW05-Light.woff2",
-                "file:./assets/fonts/TradeGothicLTW05-Light.woff",
-                "file:./assets/fonts/TradeGothicLTW05-Light.ttf"
+                "file:./assets/fonts/Lato-Light.woff2",
+                "file:./assets/fonts/Lato-Light.woff",
+                "file:./assets/fonts/Lato-Light.ttf"
               ]
             },
             {
-              "fontFamily": "Amnesty Trade Gothic",
+              "fontFamily": "Lato",
               "fontStyle": "oblique",
               "fontWeight": 300,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/TradeGothicLTW05-LightObl.eot",
-                "file:./assets/fonts/TradeGothicLTW05-LightObl.woff2",
-                "file:./assets/fonts/TradeGothicLTW05-LightObl.woff",
-                "file:./assets/fonts/TradeGothicLTW05-LightObl.ttf"
+                "file:./assets/fonts/Lato-LightItalic.woff2",
+                "file:./assets/fonts/Lato-LightItalic.woff",
+                "file:./assets/fonts/Lato-LightItalic.ttf"
               ]
             },
             {
-              "fontFamily": "Amnesty Trade Gothic",
+              "fontFamily": "Lato",
               "fontStyle": "normal",
-              "fontWeight": "normal",
+              "fontWeight": 400,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/TradeGothicLTW05-Roman.eot",
-                "file:./assets/fonts/TradeGothicLTW05-Roman.woff2",
-                "file:./assets/fonts/TradeGothicLTW05-Roman.woff",
-                "file:./assets/fonts/TradeGothicLTW05-Roman.ttf"
+                "file:./assets/fonts/Lato-Regular.woff2",
+                "file:./assets/fonts/Lato-Regular.woff",
+                "file:./assets/fonts/Lato-Regular.ttf"
               ]
             },
             {
-              "fontFamily": "Amnesty Trade Gothic",
+              "fontFamily": "Lato",
               "fontStyle": "oblique",
-              "fontWeight": "normal",
+              "fontWeight": 400,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/TradeGothicLTW05-Oblique.eot",
-                "file:./assets/fonts/TradeGothicLTW05-Oblique.woff2",
-                "file:./assets/fonts/TradeGothicLTW05-Oblique.woff",
-                "file:./assets/fonts/TradeGothicLTW05-Oblique.ttf"
+                "file:./assets/fonts/Lato-Italic.woff2",
+                "file:./assets/fonts/Lato-Italic.woff",
+                "file:./assets/fonts/Lato-Italic.ttf"
               ]
             }
           ]
         },
         {
-          "fontFamily": "\"Amnesty Trade Gothic Condensed\", sans-serif",
-          "name": "Amnesty Trade Gothic",
+          "fontFamily": "PlayfairDisplay, serif",
+          "name": "PlayfairDisplay",
           "slug": "secondary",
           "fontFace": [
             {
-              "fontFamily": "Amnesty Trade Gothic Condensed",
+              "fontFamily": "PlayfairDisplay",
               "fontStyle": "oblique",
               "fontWeight": "normal",
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/TradeGothicLTW05-CnNo.18Obl.eot",
-                "file:./assets/fonts/TradeGothicLTW05-CnNo.18Obl.woff2",
-                "file:./assets/fonts/TradeGothicLTW05-CnNo.18Obl.woff",
-                "file:./assets/fonts/TradeGothicLTW05-CnNo.18Obl.ttf"
+                "file:./assets/fonts/PlayfairDisplay-Italic.woff2",
+                "file:./assets/fonts/PlayfairDisplay-Italic.woff",
+                "file:./assets/fonts/PlayfairDisplay-Italic.ttf"
               ]
             },
             {
-              "fontFamily": "Amnesty Trade Gothic Condensed",
+              "fontFamily": "PlayfairDisplay",
               "fontStyle": "normal",
               "fontWeight": "bold",
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/TradeGothicLTW05-BdCnNo.20.eot",
-                "file:./assets/fonts/TradeGothicLTW05-BdCnNo.20.woff2",
-                "file:./assets/fonts/TradeGothicLTW05-BdCnNo.20.woff",
-                "file:./assets/fonts/TradeGothicLTW05-BdCnNo.20.ttf"
+                "file:./assets/fonts/PlayfairDisplay-Bold.woff2",
+                "file:./assets/fonts/PlayfairDisplay-Bold.woff",
+                "file:./assets/fonts/PlayfairDisplay-Bold.ttf"
               ]
             }
           ]
