@@ -36,7 +36,14 @@ const v4 = {
     className: false,
     multiple: true,
   },
-  attributes: blockAttributes,
+  attributes: assign({}, blockAttributes, {
+    preheading: {
+      type: 'string',
+    },
+    content: {
+      type: 'string',
+    },
+  }),
   save: ({ attributes }) => {
     const { background = false, preheading, title, content } = attributes;
     const divClasses = classnames('callToAction', { [`callToAction--${background}`]: background });
