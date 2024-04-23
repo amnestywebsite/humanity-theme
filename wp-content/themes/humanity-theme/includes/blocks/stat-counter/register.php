@@ -10,7 +10,7 @@ if ( ! function_exists( 'register_stat_counter_block' ) ) {
 	 *
 	 * @return void
 	 */
-	function register_stat_counter_block() {
+	function register_stat_counter_block(): void {
 		register_block_type(
 			'amnesty-core/counter',
 			[
