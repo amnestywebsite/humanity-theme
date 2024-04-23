@@ -26,6 +26,38 @@ const blockAttributes = {
   style: {
     type: 'string',
   },
+  actionType: {
+    type: 'string',
+  },
+};
+
+const v4 = {
+  supports: {
+    className: false,
+    multiple: true,
+  },
+  attributes: blockAttributes,
+  save: ({ attributes }) => {
+    const { background = false, preheading, title, content } = attributes;
+    const divClasses = classnames('callToAction', { [`callToAction--${background}`]: background });
+
+    return (
+      <div className={divClasses} role="note" aria-label={title}>
+        {!isEmpty(preheading) && (
+          <RichText.Content tagName="h2" className="callToAction-preHeading" value={preheading} />
+        )}
+        {!isEmpty(title) && (
+          <RichText.Content tagName="h1" className="callToAction-heading" value={title} />
+        )}
+        {!isEmpty(content) && (
+          <RichText.Content tagName="p" className="callToAction-content" value={content} />
+        )}
+        <div className="innerBlocksContainer">
+          <InnerBlocks.Content />
+        </div>
+      </div>
+    );
+  },
 };
 
 const v3 = {
@@ -176,6 +208,6 @@ const v1 = {
   },
 };
 
-const deprecated = [v3, v2, v1];
+const deprecated = [v4, v3, v2, v1];
 
 export default deprecated;
