@@ -1,4 +1,5 @@
 import DisplayComponent from './DisplayComponent.jsx';
+import deprecated from './deprecated.jsx';
 
 const { registerBlockType } = wp.blocks;
 const { __ } = wp.i18n;
@@ -35,6 +36,7 @@ registerBlockType('amnesty-core/countdown-timer', {
     },
   },
 
+  deprecated,
   edit: DisplayComponent,
 
   save: () => null,
