@@ -6,7 +6,7 @@ if ( ! function_exists( 'register_stat_counter_block' ) ) {
 	/**
 	 * Register Stat Counter block
 	 *
-	 * @package Amnesty/Blocks
+	 * @package Amnesty\Blocks
 	 *
 	 * @return void
 	 */
@@ -14,7 +14,7 @@ if ( ! function_exists( 'register_stat_counter_block' ) ) {
 		register_block_type(
 			'amnesty-core/counter',
 			[
-				'editor_script' => 'amnesty-stat-counter-block-editor',
+				'editor_script'   => 'amnesty-stat-counter-block-editor',
 				'render_callback' => 'render_stat_counter_block',
 			]
 		);

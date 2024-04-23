@@ -13,7 +13,7 @@ $has_active_taxonomy_filters = false;
 if ( $taxonomies ) {
 	$has_active_taxonomy_filters = map_array_to_boolean(
 		$taxonomies,
-		fn ( WP_Taxonomy $tax ): bool => ! ! amnesty_get_query_var( "q{$tax->name}" )
+		fn ( WP_Taxonomy $tax ): bool => (bool) amnesty_get_query_var( "q{$tax->name}" )
 	);
 }
 

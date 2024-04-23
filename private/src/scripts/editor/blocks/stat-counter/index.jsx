@@ -1,4 +1,3 @@
-import classnames from 'classnames';
 import blockIcon from './icon.jsx';
 import DisplayComponent from './DisplayComponent.jsx';
 import deprecated from './deprecated.jsx';

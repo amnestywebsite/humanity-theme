@@ -1,7 +1,6 @@
 import classnames from 'classnames';
 
 const blockAttributes = {
-  attributes: {
     alignment: {
       type: 'string',
     },
@@ -12,6 +11,22 @@ const blockAttributes = {
     value: {
       type: 'string',
     },
+};
+
+const v2 = {
+  attributes: blockAttributes,
+  save: ({ attributes, className }) => {
+    const { alignment, duration, value } = attributes;
+
+    const blockClasses = classnames(className, {
+      [`align${alignment}`]: !!alignment,
+    });
+
+    return (
+      <div className={blockClasses} data-duration={duration} data-value={value}>
+        {value}
+      </div>
+    );
   },
 };
 
@@ -30,24 +45,7 @@ const v1 = {
       </div>
     );
   },
-}
-
-const v2 = {
-  attributes: blockAttributes,
-  save: ({ attributes, className }) => {
-    const { alignment, duration, value } = attributes;
-
-    const blockClasses = classnames(className, {
-      [`align${alignment}`]: !!alignment,
-    });
-
-    return (
-      <div className={blockClasses} data-duration={duration} data-value={value}>
-        {value}
-      </div>
-    );
-  },
-}
+};
 
 const deprecated = [v2, v1];
 
