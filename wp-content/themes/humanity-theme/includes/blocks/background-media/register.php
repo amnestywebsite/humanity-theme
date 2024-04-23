@@ -12,43 +12,11 @@ if ( ! function_exists( 'register_background_media_block' ) ) {
 	 */
 	function register_background_media_block(): void {
 		register_block_type(
-			'amnesty-core/background-media-column',
+			'amnesty-core/background-media',
 			[
-				'render_callback' => 'render_background_media_column',
-				'attributes'      => [
-					'uniqId'              => [
-						'type'    => 'string',
-						'default' => '',
-					],
-					'horizontalAlignment' => [
-						'type'    => 'string',
-						'default' => '',
-					],
-					'verticalAlignment'   => [
-						'type'    => 'string',
-						'default' => '',
-					],
-					'image'               => [
-						'type'    => 'number',
-						'default' => 0,
-					],
-					'background'          => [
-						'type'    => 'string',
-						'default' => '',
-					],
-					'opacity'             => [
-						'type'    => 'number',
-						'default' => 1,
-					],
-					'focalPoint'          => [
-						'type'    => 'array',
-						'default' => [
-							'x' => 0.5,
-							'y' => 0.5,
-						],
-					],
-				],
-			] 
+				'render_callback' => 'render_background_media_block',
+				'editor_script'   => 'amnesty-core-blocks-js',
+			]
 		);
 	}
 }

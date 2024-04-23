@@ -31,7 +31,7 @@ html.lang-open {
  */
 body {
   font-size: $base-font-size;
-  font-family: var(--wp-preset--wp-preset--font-family---primary);
+  font-family: var(--wp--preset--font-family--primary);
   line-height: $line-height-ratio;
   color: $body-color;
   // font-feature-settings: "kern", "liga", "pnum"; /* 1 */
