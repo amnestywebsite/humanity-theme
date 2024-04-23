@@ -1,5 +1,7 @@
 import classnames from 'classnames';
 
+const { InnerBlocks } = wp.blockEditor;
+
 const v1 = {
   save({ className, innerBlocks }) {
     const leftImage = innerBlocks[0]?.attributes?.image?.id;
