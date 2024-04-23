@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 
 const { InnerBlocks } = wp.blockEditor;
+const { omit } = lodash;
 
 const blockAttributes = {
   backgroundColor: {
@@ -25,7 +26,7 @@ const blockAttributes = {
 }
 
 const v1 = {
-  attributes: blockAttributes,
+  attributes: omit(blockAttributes, ['dividerIcon']),
   save({ attributes, className }) {
     const { quantity, orientation = 'horizontal', backgroundColor, hideLines } = attributes;
     const classes = classnames(

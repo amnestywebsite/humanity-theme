@@ -11,17 +11,28 @@ if ( ! function_exists( 'render_links_with_icons_block' ) ) {
 	 * @param array  $attrs the block attributes
 	 * @param string $content the block content
 	 *
-	 * @return string|null
+	 * @return string
 	 */
-	function render_links_with_icons_block( $attrs = [], $content ) {
-		$attrs = apply_filters( 'links_with_icons_block_attributes', $attrs );
+	function render_links_with_icons_block( array $attrs = [], string $content = '' ): string {
+		$attrs = wp_parse_args(
+			$attrs,
+			[
+				'quantity'        => 0,
+				'orientation'     => 'horizontal',
+				'backgroundColor' => '',
+				'hideLines'       => false,
+				'dividerIcon'     => 'none',
+				'className'       => '',
+			]
+		);
 
-		$quantity         = $attrs['quantity'] ?? 0;
-		$orientation      = $attrs['orientation'] ?? 'horizontal';
-		$background_color = $attrs['backgroundColor'] ?? '';
-		$hide_lines       = $attrs['hideLines'] ?? false;
-		$divider_icon     = $attrs['dividerIcon'] ?? 'none';
-		$is_style_square  = $attrs['className'] ?? '';
+		$quantity         = $attrs['quantity'];
+		$orientation      = $attrs['orientation'];
+		$background_color = $attrs['backgroundColor'];
+		$hide_lines       = $attrs['hideLines'];
+		$divider_icon     = $attrs['dividerIcon'];
+		$is_style_square  = $attrs['className'];
+
 
 		$classes = classnames(
 			'linksWithIcons-group',

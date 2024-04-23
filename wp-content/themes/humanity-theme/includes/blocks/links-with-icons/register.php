@@ -10,7 +10,7 @@ if ( ! function_exists( 'register_links_with_icons_block' ) ) {
 	 *
 	 * @return void
 	 */
-	function register_links_with_icons_block() {
+	function register_links_with_icons_block(): void {
 		register_block_type(
 			'amnesty-core/repeatable-block',
 			[
