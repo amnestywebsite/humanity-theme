@@ -8,6 +8,9 @@ if ( ! function_exists( 'register_block_type' ) ) {
 	return;
 }
 
+require_once __DIR__ . '/_deprecated/header/class-header-block-renderer.php';
+require_once __DIR__ . '/_deprecated/header/register.php';
+
 require_once __DIR__ . '/action/register.php';
 require_once __DIR__ . '/action/render.php';
 require_once __DIR__ . '/background-media/register.php';
@@ -28,8 +31,6 @@ require_once __DIR__ . '/embed-sutori/register.php';
 require_once __DIR__ . '/embed-sutori/render.php';
 require_once __DIR__ . '/embed-tickcounter/register.php';
 require_once __DIR__ . '/embed-tickcounter/render.php';
-require_once __DIR__ . '/header/class-header-block-renderer.php';
-require_once __DIR__ . '/header/register.php';
 require_once __DIR__ . '/hero/register.php';
 require_once __DIR__ . '/hero/render.php';
 require_once __DIR__ . '/iframe-button/register.php';
