@@ -269,6 +269,7 @@ require_once realpath( __DIR__ . '/includes/mlp/helpers.php' );
 require_once realpath( __DIR__ . '/includes/mlp/language-selector.php' );
 if ( is_multilingualpress_enabled() ) {
 	require_once realpath( __DIR__ . '/includes/mlp/polyfills.php' );
+	require_once realpath( __DIR__ . '/includes/mlp/caching.php' );
 	require_once realpath( __DIR__ . '/includes/mlp/metadata.php' );
 	require_once realpath( __DIR__ . '/includes/mlp/rest-api.php' );
 	require_once realpath( __DIR__ . '/includes/mlp/scheduled-posts.php' );
