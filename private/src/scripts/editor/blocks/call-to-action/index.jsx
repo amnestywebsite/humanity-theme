@@ -1,10 +1,8 @@
-import classnames from 'classnames';
 import DisplayComponent from './DisplayComponent.jsx';
 import transforms from './transforms.jsx';
 import deprecated from './deprecated.jsx';
 
-const { isEmpty } = lodash;
-const { InnerBlocks, RichText } = wp.blockEditor;
+const { InnerBlocks } = wp.blockEditor;
 const { registerBlockType } = wp.blocks;
 const { __ } = wp.i18n;
 

@@ -4,12 +4,12 @@ declare( strict_types = 1 );
 
 if ( ! function_exists( 'amnesty_render_cta_block' ) ) {
 	/**
-	 * Render a download block
+	 * Render the call to action block
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array  $attrs      the block attributes
-	 * @param string $content    the block content
+	 * @param array  $attrs	  the block attributes
+	 * @param string $content the block content
 	 *
 	 * @return string
 	 */

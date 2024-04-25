@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 
-const { assign, isEmpty } = lodash;
+const { assign, isEmpty, omit } = lodash;
 const { InnerBlocks, RichText } = wp.blockEditor;
 const { createBlock } = wp.blocks;
 
@@ -72,7 +72,7 @@ const v3 = {
     className: false,
     multiple: true,
   },
-  attributes: assign({}, blockAttributes, {
+  attributes: assign({}, omit(blockAttributes, 'actionType'), {
     preheading: {
       type: 'string',
     },
@@ -111,7 +111,7 @@ const v2 = {
     className: false,
     multiple: true,
   },
-  attributes: assign({}, blockAttributes, {
+  attributes: assign({}, omit(blockAttributes, 'actionType'), {
     preheading: {
       type: 'string',
     },
@@ -175,7 +175,7 @@ const v1 = {
     className: false,
     multiple: true,
   },
-  attributes: blockAttributes,
+  attributes: omit(blockAttributes, 'actionType'),
   save: ({ attributes }) => {
     const {
       background = false,
