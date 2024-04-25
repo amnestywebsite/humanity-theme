@@ -10,10 +10,17 @@ if ( ! function_exists( 'amnesty_render_countdown_block' ) ) {
 	 *
 	 * @param array $attrs the block attributes
 	 *
-	 * @return string|null
+	 * @return string
 	 */
-	function amnesty_render_countdown_block( $attrs = [] ) {
-		$attrs = apply_filters( 'amnesty_countdown_block_attributes', $attrs );
+	function amnesty_render_countdown_block( array $attrs = [] ): string {
+		$attrs = wp_parse_args(
+			$attrs,
+			[
+				'alignment'   => '',
+				'date'        => '',
+				'expiredText' => '',
+			]
+		);
 
 		return sprintf(
 			'<div class="clockdiv" style= text-align:%s;>
