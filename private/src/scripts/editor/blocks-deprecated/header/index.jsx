@@ -20,43 +20,67 @@ registerBlockType('amnesty-core/block-hero', {
   attributes: {
     title: {
       type: 'string',
+      source: 'meta',
+      meta: '_hero_title',
     },
     content: {
       type: 'string',
+      source: 'meta',
+      meta: '_hero_content',
     },
     ctaLink: {
       type: 'string',
+      source: 'meta',
+      meta: '_hero_cta_link',
     },
     ctaText: {
       type: 'string',
+      source: 'meta',
+      meta: '_hero_cta_text',
     },
     alignment: {
       type: 'string',
+      source: 'meta',
+      meta: '_hero_alignment',
     },
     background: {
       type: 'string',
+      source: 'meta',
+      meta: '_hero_background',
       default: 'dark',
     },
     hideImageCaption: {
       type: 'boolean',
+      source: 'meta',
+      meta: '_hero_hide_image_caption',
       default: true,
     },
     hideImageCopyright: {
       type: 'boolean',
+      source: 'meta',
+      meta: '_hero_hide_image_copyright',
       default: false,
     },
     size: {
       type: 'string',
+      source: 'meta',
+      meta: '_hero_size',
       default: 'small',
     },
     type: {
       type: 'string',
+      source: 'meta',
+      meta: '_hero_type',
     },
     embed: {
       type: 'string',
+      source: 'meta',
+      meta: '_hero_embed',
     },
     featuredVideoId: {
-      type: 'number',
+      type: 'string',
+      source: 'meta',
+      meta: '_hero_video_id',
     },
   },
 

@@ -10,78 +10,60 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 	 *
 	 * @param array  $attributes the block attributes
 	 * @param string $content    the block inner content
-	 * @param string $name       the block name
 	 *
 	 * @package Amnesty\Blocks
 	 *
 	 * @return string
-	 *
-	 * phpcs:disable Generic.CodeAnalysis.UnusedFunctionParameter
-	 * $name is used in the hero.php view
 	 */
-	function render_hero_block( array $attributes = [], string $content = '', $name = '' ): string {
+	function render_hero_block( array $attributes = [], string $content = '' ): string {
 		$attrs = wp_parse_args(
 			$attributes,
 			[
-				'hideImageCaption' => true,
-				'hideImageCredit'  => false,
-				'title'            => '',
-				'content'          => '',
-				'ctaText'          => '',
-				'ctaLink'          => '',
 				'align'            => '',
 				'background'       => '',
-				'type'             => '',
-				'imageID'          => 0,
-				'imageURL'         => '',
+				'className'        => 'wp-block-amnesty-core-hero',
+				'content'          => '',
+				'ctaLink'          => '',
+				'ctaText'          => '',
 				'featuredVideoId'  => 0,
+				'hideImageCaption' => true,
+				'hideImageCredit'  => false,
+				'imageID'          => 0,
+				'title'            => '',
+				'type'             => 'image',
 			]
 		);
 
+		// image attribute takes precedence over the featured image
 		$image_id = $attrs['imageID'];
 		if ( ! $image_id ) {
-			// Fall back to the featured image ID
 			$image_id = get_post_thumbnail_id();
 		}
-		$image_url = $attrs['imageURL'];
-		if ( ! $image_url ) {
-			// Fall back to the featured image URL
-			// $image_url used in hero.php view
-			$image_url = get_the_post_thumbnail_url();
-		}
 
-		$image = new Get_Image_Data( $image_id );
-		$video = new Get_Image_Data( $attrs['featuredVideoId'] );
+		$image = new Get_Image_Data( (int) $image_id );
+		$video = new Get_Image_Data( (int) $attrs['featuredVideoId'] );
 
-		// Define $video_output before it is used to prevent warnings
 		$video_output = '';
-
-		// Define $image_meta_output before it is used to prevent warnings
-		$image_meta_output = '';
-
 		// If the block has a featured video, get the video URL
 		if ( $attrs['featuredVideoId'] && 'video' === $attrs['type'] ) {
 			// $video_output used in hero.php view
 			$video_output .= sprintf(
-				'<div class="headerBackgroundVideo">
-					<video class="headerVideo video" autoplay loop muted>
-						<source src="%s" />
+				'<div class="hero-videoContainer">
+					<video class="hero-video" autoplay loop muted>
+						<source src="%s">
 					</video>
-				</div>
-				%s',
+				</div>',
 				esc_url( wp_get_attachment_url( $attrs['featuredVideoId'] ) ),
-				$video->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'] )
 			);
 		}
 
 		// Build output for the image/video caption and credit
-		// $image_meta_output used in hero.php view
+		// $media_meta_output used in hero.php view
 		// Reverse the boolean value of the arguments to match the value of the arguments in the function
-		$image_meta_output .= $image->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'] );
+		$media_meta_output  = $image->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'], 'image' );
+		$media_meta_output .= $video->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'], 'video' );
 
-		// Define $inner_blocks before it is used to prevent warnings
 		$inner_blocks = '';
-
 		// If inner blocks are present, build the inner blocks
 		if ( $content ) {
 			// $inner_blocks used in hero.php view

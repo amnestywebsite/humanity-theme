@@ -11,6 +11,7 @@ registerBlockType('amnesty-core/hero', {
   category: 'amnesty-core',
   supports: {
     align: true,
+    className: true,
   },
   keywords: [
     // translators: [admin]
@@ -21,8 +22,9 @@ registerBlockType('amnesty-core/hero', {
     __('Banner', 'amnesty'),
   ],
   attributes: {
-    title: {
+    background: {
       type: 'string',
+      default: 'dark',
     },
     content: {
       type: 'string',
@@ -33,40 +35,33 @@ registerBlockType('amnesty-core/hero', {
     ctaText: {
       type: 'string',
     },
-    background: {
-      type: 'string',
-      default: 'dark',
+    featuredVideoId: {
+      type: 'number',
     },
     hideImageCaption: {
       type: 'boolean',
       default: true,
     },
-    hideImageCredit: {
+    hideImageCopyright: {
       type: 'boolean',
       default: false,
+    },
+    imageID: {
+      type: 'number',
+      default: 0,
+    },
+    title: {
+      type: 'string',
     },
     type: {
       type: 'string',
       default: 'image',
     },
-    featuredVideoId: {
-      type: 'number',
-    },
-    featuredImageId: {
-      type: 'string',
-    },
-    imageID: {
-      type: 'number',
-      default: 0
-    },
-    imageURL: {
-      type: 'string'
-    }
   },
 
   edit: DisplayComponent,
 
   save() {
     return <InnerBlocks.Content />;
-  }
+  },
 });

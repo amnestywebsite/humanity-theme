@@ -14,6 +14,30 @@ if ( ! function_exists( 'register_hero_block' ) ) {
 			[
 				'render_callback' => 'render_hero_block',
 				'attributes'      => [
+					'align'            => [
+						'type'    => 'string',
+						'default' => '',
+					],
+					'background'       => [
+						'type'    => 'string',
+						'default' => '',
+					],
+					'content'          => [
+						'type'    => 'string',
+						'default' => '',
+					],
+					'ctaLink'          => [
+						'type'    => 'string',
+						'default' => '',
+					],
+					'ctaText'          => [
+						'type'    => 'string',
+						'default' => '',
+					],
+					'featuredVideoId'  => [
+						'type'    => 'integer',
+						'default' => 0,
+					],
 					'hideImageCaption' => [
 						'type'    => 'boolean',
 						'default' => true,
@@ -22,33 +46,17 @@ if ( ! function_exists( 'register_hero_block' ) ) {
 						'type'    => 'boolean',
 						'default' => false,
 					],
+					'imageID'          => [
+						'type'    => 'integer',
+						'default' => 0,
+					],
 					'title'            => [
-						'type'    => 'string',
-						'default' => '',
-					],
-					'content'          => [
-						'type'    => 'string',
-						'default' => '',
-					],
-					'ctaText'          => [
-						'type'    => 'string',
-						'default' => '',
-					],
-					'ctaLink'          => [
-						'type'    => 'string',
-						'default' => '',
-					],
-					'alignment'        => [
-						'type'    => 'string',
-						'default' => '',
-					],
-					'background'       => [
 						'type'    => 'string',
 						'default' => '',
 					],
 					'type'             => [
 						'type'    => 'string',
-						'default' => '',
+						'default' => 'image',
 					],
 				],
 			]

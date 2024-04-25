@@ -28,11 +28,11 @@ export default function buildSlideDeprecated(slide, hasContent, sliderId) {
     cssBlock = `
       ${selector}{background-image: url("${getUrl('hero-sm')}")}
       @media screen and (min-width:770px){${selector}{background-image: url("${getUrl(
-      'hero-md',
-    )}")}}
+        'hero-md',
+      )}")}}
       @media screen and (min-width:1444px){${selector}{background-image: url("${getUrl(
-      'hero-lg',
-    )}")}}
+        'hero-lg',
+      )}")}}
     `;
   }
 

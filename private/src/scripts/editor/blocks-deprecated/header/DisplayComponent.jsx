@@ -85,130 +85,126 @@ class DisplayComponent extends Component {
    * @param attributes - the block attributes
    * @returns {JSX.Element}
    */
-  renderInspectorControls = (attributes) => {
-    return (
-      <InspectorControls>
-          <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
-            <SelectControl
+  renderInspectorControls = (attributes, setAttributes) => (
+    <InspectorControls>
+      <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
+        <SelectControl
+          // translators: [admin]
+          label={__('Alignment', 'amnesty')}
+          options={[
+            {
+              /* translators: [admin/front] text alignment */
+              label: __('Left', 'amnesty'),
+              value: 'left',
+            },
+            {
+              /* translators: [admin/front] text alignment */
+              label: __('Centre', 'amnesty'),
+              value: 'center',
+            },
+            {
+              /* translators: [admin/front] text alignment */
+              label: __('Right', 'amnesty'),
+              value: 'right',
+            },
+          ]}
+          value={attributes.alignment}
+          onChange={this.createUpdateAttribute('alignment')}
+        />
+        <SelectControl
+          // translators: [admin]
+          label={__('Background Colour', 'amnesty')}
+          options={[
+            {
               // translators: [admin]
-              label={__('Alignment', 'amnesty')}
-              options={[
-                {
-                  /* translators: [admin/front] text alignment */
-                  label: __('Left', 'amnesty'),
-                  value: 'left',
-                },
-                {
-                  /* translators: [admin/front] text alignment */
-                  label: __('Centre', 'amnesty'),
-                  value: 'center',
-                },
-                {
-                  /* translators: [admin/front] text alignment */
-                  label: __('Right', 'amnesty'),
-                  value: 'right',
-                },
-              ]}
-              value={attributes.alignment}
-              onChange={this.createUpdateAttribute('alignment')}
-            />
-            <SelectControl
+              label: __('White', 'amnesty'),
+              value: 'light',
+            },
+            {
               // translators: [admin]
-              label={__('Background Colour', 'amnesty')}
-              options={[
-                {
-                  // translators: [admin]
-                  label: __('White', 'amnesty'),
-                  value: 'light',
-                },
-                {
-                  // translators: [admin]
-                  label: __('Black', 'amnesty'),
-                  value: 'dark',
-                },
-              ]}
-              value={attributes.background || 'dark'}
-              onChange={this.createUpdateAttribute('background')}
-            />
-            <SelectControl
+              label: __('Black', 'amnesty'),
+              value: 'dark',
+            },
+          ]}
+          value={attributes.background || 'dark'}
+          onChange={this.createUpdateAttribute('background')}
+        />
+        <SelectControl
+          // translators: [admin]
+          label={__('Size', 'amnesty')}
+          options={[
+            {
               // translators: [admin]
-              label={__('Size', 'amnesty')}
-              options={[
-                {
-                  // translators: [admin]
-                  label: __('Normal', 'amnesty'),
-                  value: 'small',
-                },
-                {
-                  // translators: [admin]
-                  label: __('Large', 'amnesty'),
-                  value: 'large',
-                },
-              ]}
-              value={attributes.size}
-              onChange={this.createUpdateAttribute('size')}
-            />
+              label: __('Normal', 'amnesty'),
+              value: 'small',
+            },
+            {
+              // translators: [admin]
+              label: __('Large', 'amnesty'),
+              value: 'large',
+            },
+          ]}
+          value={attributes.size}
+          onChange={this.createUpdateAttribute('size')}
+        />
 
-            <SelectControl
+        <SelectControl
+          // translators: [admin]
+          label={__('Background Type', 'amnesty')}
+          options={[
+            {
               // translators: [admin]
-              label={__('Background Type', 'amnesty')}
-              options={[
-                {
-                  // translators: [admin]
-                  label: __('Image', 'amnesty'),
-                  value: '',
-                },
-                {
-                  // translators: [admin]
-                  label: __('Video', 'amnesty'),
-                  value: 'video',
-                },
-              ]}
-              value={attributes.type}
-              onChange={this.createUpdateAttribute('type')}
-            />
+              label: __('Image', 'amnesty'),
+              value: '',
+            },
+            {
+              // translators: [admin]
+              label: __('Video', 'amnesty'),
+              value: 'video',
+            },
+          ]}
+          value={attributes.type}
+          onChange={this.createUpdateAttribute('type')}
+        />
 
-            {attributes.type !== 'video' && (
-              <>
-                <ToggleControl
-                  // translators: [admin]
-                  label={__('Hide Image Caption', 'amnesty')}
-                  checked={attributes.hideImageCaption}
-                  onChange={() => setAttributes({ hideImageCaption: !attributes.hideImageCaption })}
-                />
-                <ToggleControl
-                  // translators: [admin]
-                  label={__('Hide Image Credit', 'amnesty')}
-                  checked={attributes.hideImageCopyright}
-                  onChange={() =>
-                    setAttributes({ hideImageCopyright: !attributes.hideImageCopyright })
-                  }
-                />
-              </>
-            )}
-          </PanelBody>
-          <PanelBody
-            title={
-              attributes.type === 'video'
-                ? // translators: [admin]
-                  __('Background Image', 'amnesty')
-                : // translators: [admin]
-                  __('Featured Image', 'amnesty')
-            }
-          >
-            <PostFeaturedImage />
-          </PanelBody>
-          {attributes.type === 'video' && (
-            <PanelBody title={/* translators: [admin] */ __('Featured Video', 'amnesty')}>
-              <PostFeaturedVideo
-                featuredVideoId={attributes.featuredVideoId}
-                onUpdate={this.createUpdateAttribute('featuredVideoId')}
-              />
-            </PanelBody>
-          )}
-        </InspectorControls>
-    );
-  };
+        {attributes.type !== 'video' && (
+          <>
+            <ToggleControl
+              // translators: [admin]
+              label={__('Hide Image Caption', 'amnesty')}
+              checked={attributes.hideImageCaption}
+              onChange={() => setAttributes({ hideImageCaption: !attributes.hideImageCaption })}
+            />
+            <ToggleControl
+              // translators: [admin]
+              label={__('Hide Image Credit', 'amnesty')}
+              checked={attributes.hideImageCopyright}
+              onChange={() => setAttributes({ hideImageCopyright: !attributes.hideImageCopyright })}
+            />
+          </>
+        )}
+      </PanelBody>
+      <PanelBody
+        title={
+          attributes.type === 'video'
+            ? // translators: [admin]
+              __('Background Image', 'amnesty')
+            : // translators: [admin]
+              __('Featured Image', 'amnesty')
+        }
+      >
+        <PostFeaturedImage />
+      </PanelBody>
+      {attributes.type === 'video' && (
+        <PanelBody title={/* translators: [admin] */ __('Featured Video', 'amnesty')}>
+          <PostFeaturedVideo
+            featuredVideoId={attributes.featuredVideoId}
+            onUpdate={this.createUpdateAttribute('featuredVideoId')}
+          />
+        </PanelBody>
+      )}
+    </InspectorControls>
+  );
 
   render() {
     const { attributes = {}, setAttributes } = this.props;
@@ -243,7 +239,7 @@ class DisplayComponent extends Component {
 
     return (
       <Fragment>
-        {this.renderInspectorControls(attributes)};
+        {this.renderInspectorControls(attributes, setAttributes)};
         <section className={classes} style={sectionStyles}>
           {this.state.videoUrl && (
             <div className="page-heroVideoContainer">

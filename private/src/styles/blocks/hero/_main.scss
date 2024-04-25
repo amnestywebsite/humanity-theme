@@ -1,33 +1,47 @@
-.header {
-  display: flex;
-  min-height: 710px;
-  background-size: cover;
-  background-position: center center;
-  padding-top: 111px;
-  padding-bottom: 110px;
+@import "./styles";
+
+.wp-block-amnesty-core-hero {
   position: relative;
+  display: flex;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
   width: 100%;
   max-width: $flexy-container;
-  margin: auto;
+  min-height: 540px;
+  background-size: cover;
+  background-position: center center;
 
   @include mq(small) {
+    padding-top: 111px;
     padding-bottom: 80px;
     height: auto;
   }
 }
 
-.header > *:not(.image-meta) {
+.wp-block-amnesty-core-hero .container {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px !important;
+}
+
+.hero-contentWrapper > * {
   margin-bottom: 12px;
 }
 
-.header .container {
-  z-index: 1;
-  padding: 0 24px !important;
-  display: flex;
-  justify-content: space-between;
+.hero-content {
+  display: table;
+  padding: 10px 16px;
+  max-width: 460px;
+  font-size: 1.5rem;
+
+  @include mq(xx-small) {
+    padding: 10px 20px;
+  }
 }
 
-.header .headerTitle {
+.hero-title {
   margin: 0;
   padding: 0 16px;
   font-size: 4.5rem;
@@ -48,103 +62,26 @@
   }
 }
 
-.header p.headerContent {
-  display: table;
-  padding: 10px 16px;
-  max-width: 460px;
-  font-size: 1.5rem;
-  background-color: rgba($color-black, .45);
-
-  @include mq(xx-small) {
-    padding: 10px 20px;
-  }
-}
-
-.header .headerCta {
+.hero-cta {
   display: inline-block;
-  background-color: rgba($color-black, .45);
   padding: 16px;
+  background-color: rgba($color-black, .45);
 
   @include mq(xx-small) {
     padding: 20px;
   }
 }
 
-.header.headerBackground--dark .headerTitle,
-.header.headerBackground--dark p.headerContent,
-.header.headerBackground--dark .headerCta {
-  color: $color-white;
-  background-color: $color-black;
+.hero-videoContainer,
+.hero-video {
+  display: none;
+
+  @include mq(small) {
+    display: block;
+  }
 }
 
-.header.headerBackground--light .headerTitle,
-.header.headerBackground--light p.headerContent,
-.header.headerBackground--light .headerCta {
-  color: $color-black;
-  background-color: $color-white;
-}
-
-.header.headerBackground--light .headerCta .btn {
-  background-color: $color-black;
-  color: $color-white;
-  border: none;
-}
-
-.header.headerAlignment--center .container {
-  justify-content: center;
-}
-
-.header.headerAlignment--center .header-content {
-  text-align: center;
-}
-
-.header.headerAlignment--center .header-content .headerContent {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header.headerAlignment--right .container {
-  flex-direction: row-reverse;
-}
-
-.header.headerAlignment--right .header-content {
-  text-align: right;
-}
-
-.header.headerAlignment--right .header-content .headerContent {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.header .image-meta {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  width: 100%;
-  font-size: 16px;
-  background-color: rgba($color-black, .55);
-  color: $color-white;
-  word-break: keep-all;
-}
-
-.header .image-meta .image-metaItem {
-  display: block;
-  padding: 4px;
-}
-
-.header .container .image-meta .headerimage_caption {
-  margin-right: auto;
-  margin-left: 0;
-}
-
-.header .container .image-meta .headerimage_credit {
-  margin-right: 0;
-  margin-left: auto;
-}
-
-.headerBackgroundVideo {
+.hero-videoContainer {
   position: absolute;
   top: 0;
   left: 0;
@@ -153,26 +90,24 @@
   overflow: hidden;
 }
 
-.headerBackgroundVideo .headerVideo {
+.hero-video {
   position: absolute;
-  min-height: 100% !important;
-  object-fit: cover;
+  top: 50%;
+  left: 50%;
   min-width: 100%;
-
-  @include mq(small) {
-    display: block;
-  }
+  min-height: 100%;
+  transform: translate(-50%, -50%);
 }
 
-.header.has-video .headerBackgroundVideo {
+.wp-block-amnesty-core-hero .image-metadata.is-image {
+  display: flex;
+}
+
+.wp-block-amnesty-core-hero .image-metadata.is-video {
   display: none;
-
-  @include mq(small) {
-    display: block;
-  }
 }
 
-.header.has-video .container .image-metadata {
+.wp-block-amnesty-core-hero.has-video .image-metadata.is-image {
   display: flex;
 
   @include mq(small) {
@@ -180,23 +115,10 @@
   }
 }
 
-.header.has-video .image-metadata {
+.wp-block-amnesty-core-hero.has-video .image-metadata.is-video {
   display: none;
-  margin-bottom: 0;
 
   @include mq(small) {
     display: flex;
   }
-}
-
-.header .image-metadata:first-of-type {
-  display: none;
-}
-
-.rtl .header .header-content {
-  text-align: right;
-}
-
-.rtl .header.headerAlignment--center .header-content {
-  text-align: center;
 }

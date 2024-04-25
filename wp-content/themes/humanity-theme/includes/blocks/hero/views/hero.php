@@ -1,15 +1,15 @@
 <?php
 
-$alignment = 'headerAlignment--left';
+$alignment = '';
 
 if ( $attrs['align'] ) {
-	$alignment = 'headerAlignment--' . $attrs['align'];
+	$alignment = 'is-aligned-' . $attrs['align'];
 }
 
-$background = 'headerBackground--dark';
+$background = 'has-dark-background';
 
 if ( $attrs['background'] ) {
-	$background = 'headerBackground--' . $attrs['background'];
+	$background = 'has-' . $attrs['background'] . '-background';
 }
 
 $has_video = '';
@@ -18,19 +18,21 @@ if ( 'video' === $attrs['type'] ) {
 	$has_video = 'has-video';
 }
 
-$classname = classnames( $name, 'header', $alignment, $background, $has_video );
+$classname = classnames( $attrs['className'], $alignment, $background, $has_video );
+
+$background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 
 ?>
 
-<section class="<?php echo esc_attr( $classname ); ?>" style="aiic:ignore; background-image:url('<?php echo esc_url( $image_url ); ?>')">
+<section class="<?php echo esc_attr( $classname ); ?>" style="aiic:ignore;background-image:url('<?php echo esc_url( $background_image ); ?>')">
 	<?php echo wp_kses_post( $video_output ); ?>
 	<div class="container">
-		<div class="header-content">
+		<div class="hero-contentWrapper">
 			<h1>
-				<span class="headerTitle"><?php echo esc_html( $attrs['title'] ); ?></span>
+				<span class="hero-title"><?php echo esc_html( $attrs['title'] ); ?></span>
 			</h1>
-			<p class="headerContent"><?php echo esc_html( $attrs['content'] ); ?></p>
-			<div class="headerCta">
+			<p class="hero-content"><?php echo esc_html( $attrs['content'] ); ?></p>
+			<div class="hero-cta">
 				<div class="btn btn--large">
 					<span><?php echo esc_html( $attrs['ctaText'] ); ?></span>
 					<a href="<?php echo esc_url( $attrs['ctaLink'] ); ?>"></a>
@@ -38,6 +40,6 @@ $classname = classnames( $name, 'header', $alignment, $background, $has_video );
 			</div>
 		</div>
 		<?php echo wp_kses_post( $inner_blocks ); ?>
-		<?php echo wp_kses_post( $image_meta_output ); ?>
 	</div>
+	<?php echo wp_kses_post( $media_meta_output ); ?>
 </section>
