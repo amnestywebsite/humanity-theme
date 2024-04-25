@@ -1,5 +1,7 @@
 import classnames from 'classnames';
 import PostFeaturedVideo from './PostFeaturedVideo.jsx';
+import DisplayVideoData from './components/DisplayVideoData.jsx';
+import DisplayImageData from './components/DisplayImageData.jsx';
 
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl, ToggleControl, withFilters } = wp.components;
@@ -72,14 +74,20 @@ class DisplayComponent extends Component {
 
   fetchVideoUrl = () => {
     const { featuredVideoId } = this.props.attributes;
+    const { addQueryArgs } = wp.url;
+
+    const path = addQueryArgs(`/wp/v2/media/${featuredVideoId}`, {
+      context: 'edit',
+      _fields: 'id,source_url,caption,description',
+    });
 
     wp.apiRequest({
-      path: `/wp/v2/media/${featuredVideoId}`,
+      path,
     }).then((resp) => {
       this.setState({
         videoUrl: resp.source_url,
-        videoCaption: resp.caption.rendered.replace(/<[^>]+>/g, ''),
-        videoDescription: resp.description.rendered.replace(/<[^>]+>/g, ''),
+        videoCaption: resp.caption.raw,
+        videoDescription: resp.description.raw,
       });
     });
   };
@@ -101,14 +109,6 @@ class DisplayComponent extends Component {
     const contentClasses = classnames('hero-content', {
       'has-donation-block': this.props.hasInnerBlock.length > 0,
     });
-
-    const shouldShowImageCaption =
-      this.state.imageData?.caption &&
-      !attributes.hideImageCaption &&
-      this.state.imageData?.caption !== this.state.imageData?.description;
-
-    const shouldShowImageCredit =
-      this.state.imageData?.description && !attributes.hideImageCopyright;
 
     const sectionStyles = {};
     if (media?.source_url) {
@@ -299,33 +299,15 @@ class DisplayComponent extends Component {
             </div>
             <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
           </div>
-          {this.state.imageData && attributes.type === '' && (
-            <div className="image-metadata">
-              {shouldShowImageCaption && (
-                <span className="image-metadataItem image-caption">
-                  {this.state.imageData.caption}
-                </span>
-              )}
-              {shouldShowImageCredit && (
-                <span className="image-metadataItem image-copyright">
-                  {this.state.imageData.description}
-                </span>
-              )}
-            </div>
+          {attributes.type === 'video' && (
+            <DisplayVideoData
+              videoCaption={this.state.videoCaption}
+              videoDescription={this.state.videoDescription}
+              attributes={attributes}
+            />
           )}
-          {this.state.videoUrl && attributes.type === 'video' && (
-            <div className="image-metadata">
-              {shouldShowImageCaption && (
-                <span className="image-metadataItem image-caption">
-                  {this.state.videoCaption}
-                </span>
-              )}
-              {shouldShowImageCredit && (
-                <span className="image-metadataItem image-copyright">
-                  {this.state.videoDescription}
-                </span>
-              )}
-            </div>
+          {attributes.type !== 'video' && (
+            <DisplayImageData imageData={this.state.imageData} attributes={attributes} />
           )}
         </section>
       </Fragment>
