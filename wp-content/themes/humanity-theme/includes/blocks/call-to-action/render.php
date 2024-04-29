@@ -14,12 +14,17 @@ if ( ! function_exists( 'amnesty_render_cta_block' ) ) {
 	 * @return string
 	 */
 	function amnesty_render_cta_block( array $attrs, string $content = '' ): string {
+		if (false !== strpos($content, 'class="callToAction"')) {
+			return $content;
+		}
+
 		$attrs = wp_parse_args(
 			$attrs,
 			[
 				'preheading' => '',
 				'title'      => '',
 				'content'    => '',
+				'background' => '',
 			]
 		);
 
