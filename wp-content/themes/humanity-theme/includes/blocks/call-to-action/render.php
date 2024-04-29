@@ -8,29 +8,26 @@ if ( ! function_exists( 'amnesty_render_cta_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array  $attrs	  the block attributes
+	 * @param array  $attrs   the block attributes
 	 * @param string $content the block content
 	 *
 	 * @return string
 	 */
 	function amnesty_render_cta_block( array $attrs, string $content = '' ): string {
 		$attrs = wp_parse_args(
-			$attrs, [
+			$attrs,
+			[
 				'preheading' => '',
-				'title'    => '',
+				'title'      => '',
 				'content'    => '',
-				]
-			);
+			]
+		);
 
 		$pre_heading = $attrs['preheading'];
 		$heading     = $attrs['title'];
 		$cta_content = $attrs['content'];
 
-		echo '<pre>';
-		var_dump( $attrs );
-		echo '</pre>';
-
-			// Set the classes
+		// Set the classes
 		$classes = classnames(
 			'callToAction',
 			[
@@ -54,7 +51,5 @@ if ( ! function_exists( 'amnesty_render_cta_block' ) ) {
 			wp_kses_post( $cta_content ),
 			wp_kses_post( $content )
 		);
-
-		// return wp_kses_post( $content );
 	}
 }
