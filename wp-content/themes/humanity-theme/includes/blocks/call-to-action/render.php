@@ -14,6 +14,47 @@ if ( ! function_exists( 'amnesty_render_cta_block' ) ) {
 	 * @return string
 	 */
 	function amnesty_render_cta_block( array $attrs, string $content = '' ): string {
-		return wp_kses_post( $content );
+		$attrs = wp_parse_args(
+			$attrs, [
+				'preheading' => '',
+				'title'    => '',
+				'content'    => '',
+				]
+			);
+
+		$pre_heading = $attrs['preheading'];
+		$heading     = $attrs['title'];
+		$cta_content = $attrs['content'];
+
+		echo '<pre>';
+		var_dump( $attrs );
+		echo '</pre>';
+
+			// Set the classes
+		$classes = classnames(
+			'callToAction',
+			[
+				"callToAction--{$attrs['background']}" => (bool) $attrs['background'],
+			]
+		);
+
+		return sprintf(
+			'<div class="%1$s" role="note" aria-label="%2$s">
+				<h2 class="callToAction-preHeading">%3$s</h2>
+				<h1 class="callToAction-heading">%4$s</h1>
+				<p class="callToAction-content">%5$s</p>
+        		<div className="innerBlocksContainer">
+					%6$s
+        		</div>
+      		</div>',
+			esc_attr( $classes ),
+			esc_attr( $heading ),
+			wp_kses_post( $pre_heading ),
+			wp_kses_post( $heading ),
+			wp_kses_post( $cta_content ),
+			wp_kses_post( $content )
+		);
+
+		// return wp_kses_post( $content );
 	}
 }
