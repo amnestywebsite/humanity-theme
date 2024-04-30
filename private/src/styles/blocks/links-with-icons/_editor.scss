@@ -23,6 +23,7 @@
 
 .linksWithIcons-group.is-style-square {
   display: block;
+  grid-template-columns: repeat(1, 1fr) !important;
 }
 
 .linksWithIcons-group.is-style-square .linksWithIcons > * {
@@ -84,7 +85,6 @@
 }
 
 .linksWithIcons-group.is-style-square .block-editor-block-list__block {
-  border: 1px solid;
   margin-bottom: 24px;
 }
 
