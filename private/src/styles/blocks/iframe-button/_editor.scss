@@ -1,6 +1,6 @@
 .wp-block[data-type="amnesty-core/iframe-button"] {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -17,11 +17,16 @@
 .wp-block[data-type="amnesty-core/iframe-button"] .iframeButton-inputWrapper {
   border: 1px dotted;
   display: flex;
+  align-items: center;
   flex-grow: 1;
   padding: 4px;
 }
 
 .wp-block[data-type="amnesty-core/iframe-button"] .iframeButton ~ .iframeButton-iframeWrapper {
   margin-top: 12px;
+  width: 100%;
+}
+
+.wp-block[data-type="amnesty-core/iframe-button"] .iframeButton-iframeWrapper iframe {
   width: 100%;
 }

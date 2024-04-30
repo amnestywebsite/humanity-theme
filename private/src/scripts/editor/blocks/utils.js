@@ -1,3 +1,5 @@
+import { sanitizeUrl } from '@braintree/sanitize-url';
+
 const { isUndefined } = lodash;
 
 /**
@@ -160,13 +162,14 @@ export const randId = () =>
  * @returns {String}
  */
 export const httpsOnly = (string) => {
-  let url;
-
   try {
-    url = new URL(string.replace(/^http:/, 'https:'));
-  } catch (e) {
-    return '';
-  }
+    const url = new URL(string.replace(/^http:/, 'https:'));
 
-  return url.protocol === 'https:' ? url.toString() : '';
+    url.protocol = 'https:';
+
+    return sanitizeUrl(url.toString());
+  } catch (e) {
+    // not a proper url yet
+    return string;
+  }
 };
