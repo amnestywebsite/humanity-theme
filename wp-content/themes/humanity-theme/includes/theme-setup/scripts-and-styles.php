@@ -57,9 +57,6 @@ if ( ! function_exists( 'amnesty_styles' ) ) {
 			return;
 		}
 
-		// we don't currently support woocommerce blocks
-		wp_dequeue_style( 'wc-blocks-integration' );
-
 		$theme = wp_get_theme();
 
 		$style_deps = [];
@@ -309,6 +306,7 @@ if ( ! function_exists( 'amnesty_enqueue_block_assets' ) ) {
 	 */
 	function amnesty_enqueue_block_assets(): void {
 		$theme = wp_get_theme();
+
 		wp_enqueue_style( 'amnesty-core-editor', amnesty_asset_uri( 'styles' ) . '/editor.css', [], $theme->get( 'Version' ), 'all' );
 	}
 }
@@ -339,22 +337,3 @@ if ( ! function_exists( 'amnesty_disable_cart_fragments' ) ) {
 }
 
 add_action( 'wp_enqueue_scripts', 'amnesty_disable_cart_fragments', 200 );
-
-if ( ! function_exists( 'amnesty_remove_woocommerce_assets' ) ) {
-	/**
-	 * Dequeue assets for unused WooCommerce blocks
-	 *
-	 * @package Amnesty\ThemeSetup
-	 *
-	 * @return void
-	 */
-	function amnesty_remove_woocommerce_assets(): void {
-		foreach ( wp_styles()->registered as $key => $object ) {
-			if ( str_starts_with( $key, 'wc-blocks' ) ) {
-				wp_styles()->remove( $key );
-			}
-		}
-	}
-}
-
-add_action( 'enqueue_block_assets', 'amnesty_remove_woocommerce_assets', 999 );

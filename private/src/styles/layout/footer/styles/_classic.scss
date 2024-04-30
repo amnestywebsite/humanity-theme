@@ -27,7 +27,7 @@
   font-size: 21px;
   text-transform: uppercase;
   color: $color-grey-md-light;
-  font-family: var(--wp-preset--font-family--secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   border-bottom: 1px solid $color-black-mid-dark;
   font-weight: bold;
 
@@ -145,7 +145,7 @@
   display: inline-block;
   padding: 4px 8px;
   color: $color-white;
-  font-family: var(--wp-preset--font-family--secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;

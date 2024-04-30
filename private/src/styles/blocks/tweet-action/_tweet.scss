@@ -55,7 +55,7 @@
   max-height: 278px;
   overflow-y: auto;
   background-color: $color-white;
-  font-family: var(--wp-preset--font-family--primary);
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 21px;
 
   @include mq(small) {
@@ -99,7 +99,7 @@
   padding: 0 60px;
   min-height: unset;
   max-height: unset;
-  font-family: var(--wp-preset--font-family--secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-size: 24px;
   text-align: center;
 }
@@ -112,7 +112,7 @@
   max-width: 230px;
   line-height: normal;
   color: $color-black;
-  font-family: var(--wp-preset--font-family--secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-size: 16px;
 }
 

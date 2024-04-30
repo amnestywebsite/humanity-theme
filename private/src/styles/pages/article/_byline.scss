@@ -10,7 +10,7 @@
 
 .authorTwitter {
   padding-left: 6px;
-  font-family: var(--wp-preset--font-family--primary);
+  font-family: var(--wp--preset--font-family--primary);
   white-space: nowrap;
 
   &:hover,
@@ -30,7 +30,7 @@
 }
 
 .authorName {
-  font-family: var(--wp-preset--font-family--primary);
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 300;
   text-decoration: underline;
 

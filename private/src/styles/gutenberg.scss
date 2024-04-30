@@ -32,7 +32,6 @@
 // Layout
 @import "layout/page-hero";
 @import "layout/page-hero-editor";
-@import "layout/page-section";
 @import "layout/footer/editor";
 
 // Components
@@ -85,6 +84,8 @@
 @import "blocks/postlist/categories-editor";
 @import "blocks/regions/main";
 @import "blocks/regions/editor";
+@import "blocks/section/main";
+@import "blocks/section/editor";
 @import "blocks/slider/main";
 @import "blocks/slider/editor";
 @import "blocks/stat-counter/main";
@@ -103,10 +104,6 @@
 :root {
   --ms-base: 16;
   --ms-ratio: 1.2;
-}
-
-.block-editor .wp-block {
-  max-width: 960px;
 }
 
 .amnesty-byline {

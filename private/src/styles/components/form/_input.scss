@@ -3,7 +3,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: var(--wp-preset--font-family--secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-size: 16px;
 }
 
@@ -53,7 +53,7 @@ input[type="radio"] {
 input,
 textarea {
   @include placeholder {
-    font-family: var(--wp-preset--font-family--secondary);
+    font-family: var(--wp--preset--font-family--secondary);
     font-size: 16px;
     font-weight: normal;
     text-transform: uppercase;
@@ -68,7 +68,7 @@ textarea,
   padding: 12px;
   width: 100%;
   font-size: 16px;
-  font-family: var(--wp-preset--font-family--secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   appearance: none;
   text-transform: uppercase;
   font-weight: bold;

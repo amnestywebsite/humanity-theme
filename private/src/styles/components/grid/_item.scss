@@ -41,7 +41,7 @@
 .grid-itemContent a {
   color: $color-black;
   font-weight: bold;
-  font-family: var(--wp-preset--font-family--secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   text-transform: uppercase;
 }
 
@@ -49,7 +49,7 @@
   display: block;
   text-transform: uppercase;
   font-size: 18px;
-  font-family: var(--wp-preset--font-family--secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   max-width: 100%;
   overflow: hidden;

@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 2,
+  "version": 3,
   "settings": {
     "appearanceTools": false,
     "color": {
@@ -244,9 +244,25 @@
     },
     "layout": {
       "contentSize": "1486px"
+    },
+    "useRootPaddingAwareAlignments": false
+  },
+  "styles": {
+    "spacing": {
+      "padding": {
+        "top": "0px",
+        "right": "2rem",
+        "bottom": "0px",
+        "left": "2rem"
+      }
     }
   },
   "templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
 		{
 			"name": "footer",
 			"title": "Footer",

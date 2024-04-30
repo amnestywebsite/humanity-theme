@@ -34,7 +34,7 @@
 .linkList-itemMeta {
   display: inline-flex;
   align-items: center;
-  font-family: var(--wp-preset--font-family--secondary);
+  font-family: var(--wp--preset--font-family--secondary);
 }
 
 .grid-item {
@@ -43,7 +43,7 @@
 
 .grid-itemContent {
   width: 100%;
-  font-family: var(--wp-preset--font-family--primary);
+  font-family: var(--wp--preset--font-family--primary);
 }
 
 .linkList-options {
