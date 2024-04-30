@@ -59,7 +59,9 @@ if ( ! function_exists( 'amnesty_styles' ) ) {
 
 		$theme = wp_get_theme();
 
-		$style_deps = [];
+		$style_deps = [
+			'wp-block-latest-posts',
+		];
 
 		if ( wp_style_is( 'woocommerce-general' ) ) {
 			$style_deps[] = 'woocommerce-general';
