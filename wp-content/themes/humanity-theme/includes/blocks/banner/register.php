@@ -2,19 +2,20 @@
 
 declare( strict_types = 1 );
 
-if ( ! function_exists( 'register_header_block' ) ) {
+if ( ! function_exists( 'register_banner_block' ) ) {
 	/**
-	 * Register the Header block
+	 * Register the banner block
 	 *
 	 * @package Amnesty\Blocks
 	 *
 	 * @return void
 	 */
-	function register_header_block(): void {
+	function register_banner_block(): void {
 		register_block_type(
-			'amnesty-core/block-hero',
+			'amnesty-core/header',
 			[
 				'render_callback' => '\Amnesty\Blocks\amnesty_render_header_block',
+				'editor_script'   => 'amnesty-core-blocks-js',
 			]
 		);
 	}
