@@ -14,7 +14,7 @@ if ( ! function_exists( 'amnesty_render_cta_block' ) ) {
 	 * @return string
 	 */
 	function amnesty_render_cta_block( array $attrs, string $content = '' ): string {
-		if (false !== strpos($content, 'class="callToAction"')) {
+		if ( false !== strpos( $content, 'class="callToAction' ) ) {
 			return $content;
 		}
 
@@ -54,7 +54,7 @@ if ( ! function_exists( 'amnesty_render_cta_block' ) ) {
 			wp_kses_post( $pre_heading ),
 			wp_kses_post( $heading ),
 			wp_kses_post( $cta_content ),
-			wp_kses_post( $content )
+			wp_kses_post( $content ),
 		);
 	}
 }
