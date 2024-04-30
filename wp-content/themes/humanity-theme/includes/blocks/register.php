@@ -18,6 +18,8 @@ require_once __DIR__ . '/blockquote/register.php';
 require_once __DIR__ . '/blockquote/render.php';
 require_once __DIR__ . '/collapsable/register.php';
 require_once __DIR__ . '/collapsable/render.php';
+require_once __DIR__ . '/countdown-timer/register.php';
+require_once __DIR__ . '/countdown-timer/render.php';
 require_once __DIR__ . '/custom-card/register.php';
 require_once __DIR__ . '/custom-card/render.php';
 require_once __DIR__ . '/download/register.php';
@@ -76,6 +78,7 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 		register_background_media_column_block();
 		register_blockquote_block();
 		register_collapsable_block();
+		register_countdown_block();
 		register_custom_card_block();
 		register_download_block();
 		register_flourish_embed_block();
