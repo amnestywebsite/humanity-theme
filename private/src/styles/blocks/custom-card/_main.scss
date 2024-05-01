@@ -2,7 +2,7 @@
   position: relative;
   margin: 0;
   max-width: 350px;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   background-color: $color-grey-x-light;
   display: flex;
@@ -15,6 +15,7 @@
   margin-left: auto;
 }
 
+.customCard.customCard--wide,
 .customCard.actionBlock--wide {
   width: 480px;
   max-width: 100%;
@@ -53,7 +54,7 @@
 .customCard-content {
   text-align: center;
   font-weight: normal;
-  font-family: var(--font-family-primary);
+  font-family: var(--wp--preset--font-family--primary);
   padding: 10px;
   font-size: 16px;
   background-color: $color-grey-x-light;

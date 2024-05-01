@@ -19,6 +19,7 @@ const getEntries = (env) => {
   const entries = {
     bundle: path.resolve(__dirname, `${SRC_PATH}/scripts/App.js`),
     blocks: path.resolve(__dirname, `${SRC_PATH}/scripts/blocks.js`),
+    editor: path.resolve(__dirname, `${SRC_PATH}/scripts/editor.js`),
     admin: path.resolve(__dirname, `${SRC_PATH}/scripts/admin.js`),
   };
 
@@ -111,7 +112,7 @@ const config = (env, argv) => ({
   cache: getCacheConf(argv.mode),
   target: 'web',
   profile: false,
-  devtool: argv.mode === 'production' ? 'source-map' : 'eval',
+  devtool: 'source-map',
   entry: getEntries(env),
   output: {
     filename: '[name].js',

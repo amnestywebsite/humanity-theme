@@ -27,13 +27,12 @@
 @import "utils/mixins/states";
 
 // Base
-@import "base/fonts";
 @import "base/images-editor";
 
 // Layout
 @import "layout/page-hero";
 @import "layout/page-hero-editor";
-@import "layout/page-section";
+@import "layout/footer/editor";
 
 // Components
 @import "components/grid/all";
@@ -42,6 +41,7 @@
 @import "components/fluid";
 @import "components/icon";
 @import "components/pop-in/editor";
+@import "components/social";
 
 // Blocks
 @import "blocks/action-block/main";
@@ -84,6 +84,8 @@
 @import "blocks/postlist/categories-editor";
 @import "blocks/regions/main";
 @import "blocks/regions/editor";
+@import "blocks/section/main";
+@import "blocks/section/editor";
 @import "blocks/slider/main";
 @import "blocks/slider/editor";
 @import "blocks/stat-counter/main";
@@ -105,10 +107,6 @@
   --ms-ratio: 1.2;
 }
 
-.wp-block {
-  max-width: 960px;
-}
-
 .amnesty-byline {
   margin-top: 24px;
 
@@ -122,7 +120,7 @@
 .editor-post-title__block .editor-post-title__input,
 .block-editor-block-list__layout,
 .editor-styles-wrapper {
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
 }
 
 .block-editor-block-list__layout,
@@ -130,11 +128,11 @@
   li,
   p,
   a {
-    font-family: var(--font-family-primary);
+    font-family: var(--wp--preset--font-family--primary);
   }
 
   strong {
-    font-family: var(--font-family-secondary);
+    font-family: var(--wp--preset--font-family--secondary);
   }
 }
 

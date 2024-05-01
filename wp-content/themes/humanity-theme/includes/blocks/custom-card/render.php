@@ -38,9 +38,9 @@ if ( ! function_exists( 'render_custom_card_block' ) ) {
 			'customCard',
 			$attributes['className'],
 			[
-				sprintf( 'align%s', $attributes['align'] ) => ! ! $attributes['align'],
+				sprintf( 'align%s', $attributes['align'] ) => (bool) $attributes['align'],
 				'actionBlock--wide' => 'wide' === $attributes['style'],
-				'is-centred'        => ! ! $attributes['centred'],
+				'is-centred'        => (bool) $attributes['centred'],
 			] 
 		);
 		// phpcs:enable WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned

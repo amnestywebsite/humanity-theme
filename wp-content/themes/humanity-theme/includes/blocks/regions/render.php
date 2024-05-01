@@ -51,11 +51,11 @@ if ( ! function_exists( 'amnesty_render_regions_block' ) ) {
 		}
 
 		$title_id      = sanitize_title_with_dashes( $args['title'] );
-		$title_classes = classnames( [ "is-{$args['alignment']}-aligned" => ! ! $args['alignment'] ] );
+		$title_classes = classnames( [ "is-{$args['alignment']}-aligned" => (bool) $args['alignment'] ] );
 		$wrap_classes  = classnames(
 			'wp-block-amnesty-core-regions',
 			[
-				"has-{$args['background']}-background-color" => ! ! $args['background'],
+				"has-{$args['background']}-background-color" => (bool) $args['background'],
 			]
 		);
 

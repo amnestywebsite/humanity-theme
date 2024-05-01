@@ -148,7 +148,7 @@
   display: inline-block;
   padding: 4px 8px;
   color: $color-white;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
@@ -158,7 +158,7 @@
 .post-meta {
   display: block;
   padding: 8px 8px 0;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   font-size: 14px;
   color: $color-grey-mid-dark;
