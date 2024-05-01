@@ -30,6 +30,7 @@ web.config
 /wp-content/themes/humanity-theme/assets/images/*
 /wp-content/themes/humanity-theme/assets/scripts/*
 /wp-content/themes/humanity-theme/assets/styles/*
+/wp-content/themes/humanity-theme/build/*
 /wp-content/themes/index.php
 /wp-content/themes/twenty*
 /wp-content/upgrade/*

@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@wordpress/eslint-plugin/i18n"
+  ],
+  "plugins": ["prettier"],
+  "globals": {
+    "lodash": true,
+    "React": true,
+    "ReactDOM": true,
+    "wp": true
+  },
+  "env": {
+    "browser": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "react/prop-types": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "@wordpress/i18n-text-domain": ["error", { "allowedTextDomain": ["amnesty", "default"]}]
+  },
+  "settings": {
+    "react": {
+      "version": "18.2.0"
+    }
+  }
+}
