@@ -1,0 +1,33 @@
+{
+  "name": "humanity-theme",
+  "version": "1.0.0",
+  "description": "Dependencies for the Humanity WP Theme",
+  "author": "Amnesty International",
+  "license": "GPL-2.0-or-later",
+  "packageManager": "yarn@4.0.2",
+  "scripts": {
+    "build": "wp-scripts build --webpack-src-dir=. --output-path=../wp-content/themes/humanity-theme/build && yarn copy",
+    "watch": "wp-scripts start --webpack-src-dir=. --output-path=../wp-content/themes/humanity-theme/build",
+    "copy": "wp-scripts build --webpack-copy-php --webpack-src-dir=. --output-path=../wp-content/themes/humanity-theme/build",
+    "lint": "eslint .; stylelint ."
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^27.7.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "stylelint": "^15.11.0",
+    "stylelint-config-recommended-scss": "^13.1.0",
+    "stylelint-scss": "^5.3.1",
+    "stylelint-webpack-plugin": "^4.1.1"
+  },
+  "dependencies": {
+    "@braintree/sanitize-url": "^7.0.1",
+    "core-js": "^3.19.1"
+  }
+}
