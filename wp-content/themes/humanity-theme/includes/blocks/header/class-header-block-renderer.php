@@ -82,11 +82,12 @@ class Header_Block_Renderer {
 				'type'               => '',
 				'hideImageCaption'   => true,
 				'hideImageCopyright' => false,
+				'featuredVideoId'    => 0,
 			]
 		);
 
 		$this->image = new Get_Image_Data( $this->attributes['imageID'] );
-		$this->video = new Get_Image_Data( $this->attributes['featuredVideoId'] );
+		$this->video = new Get_Image_Data( (int) $this->attributes['featuredVideoId'] );
 	}
 
 	/**
@@ -184,7 +185,7 @@ class Header_Block_Renderer {
 	 * @return void
 	 */
 	protected function metadata() {
-		if ( ! $this->image->id() || ! $this->video->id() ) {
+		if ( ! $this->image->id() && ! $this->video->id() ) {
 			return;
 		}
 

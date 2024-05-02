@@ -1,7 +1,6 @@
 import classnames from 'classnames';
 import PostFeaturedVideo from './PostFeaturedVideo.jsx';
-import DisplayVideoData from './components/DisplayVideoData.jsx';
-import DisplayImageData from './components/DisplayImageData.jsx';
+import DisplayCreditData from './components/DisplayCreditData.jsx';
 
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl, ToggleControl, withFilters } = wp.components;
@@ -94,7 +93,7 @@ class DisplayComponent extends Component {
 
   render() {
     const { attributes = {}, setAttributes } = this.props;
-    const { media } = this.props;
+    const { media, video } = this.props;
 
     const classes = classnames('page-hero', {
       'page-heroSize--full': attributes.size === 'large',
@@ -299,16 +298,14 @@ class DisplayComponent extends Component {
             </div>
             <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
           </div>
-          {attributes.type === 'video' && (
-            <DisplayVideoData
+            <DisplayCreditData
+              type={attributes.type}
+              media={media}
               videoCaption={this.state.videoCaption}
               videoDescription={this.state.videoDescription}
-              attributes={attributes}
+              hideImageCaption={attributes.hideImageCaption}
+              hideImageCopyright={attributes.hideImageCopyright}
             />
-          )}
-          {attributes.type !== 'video' && (
-            <DisplayImageData imageData={this.state.imageData} attributes={attributes} />
-          )}
         </section>
       </Fragment>
     );
