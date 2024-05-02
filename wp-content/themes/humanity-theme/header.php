@@ -17,9 +17,7 @@ if ( ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) {
 		$hero_data['attrs']['content'] = $object->labels->archives ?? $object->description;
 	}
 
-	$hero_show = ! empty( $hero_data['attrs']['title'] ) ||
-		! empty( $hero_data['attrs']['imageID'] ) ||
-		has_post_thumbnail();
+	$hero_show = (bool) $hero_data['name'] && ( isset( $hero_data['attrs']['imageID'] ) || has_post_thumbnail() );
 }
 
 $body_class = [];
