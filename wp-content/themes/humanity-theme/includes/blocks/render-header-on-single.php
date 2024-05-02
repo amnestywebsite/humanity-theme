@@ -61,20 +61,29 @@ if ( ! function_exists( 'amnesty_get_header_data' ) ) {
 	 */
 	function amnesty_get_header_data( $post = null ) {
 		if ( is_404() || is_search() ) {
-			return [];
+			return [
+				'name'  => '',
+				'attrs' => [],
+			];
 		}
 
 		$post = get_post( $post );
 
 		if ( ! isset( $post->ID ) || ! $post->ID ) {
-			return [];
+			return [
+				'name'  => '',
+				'attrs' => [],
+			];
 		}
 
 		$blocks = parse_blocks( $post->post_content );
 		$header = amnesty_find_header_block( $blocks );
 
 		if ( empty( $header ) ) {
-			return [];
+			return [
+				'name'  => '',
+				'attrs' => [],
+			];
 		}
 
 		if ( 'amnesty-core/hero' === $header['blockName'] ) {
