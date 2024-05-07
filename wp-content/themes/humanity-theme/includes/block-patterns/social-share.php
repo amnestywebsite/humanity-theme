@@ -27,6 +27,18 @@ if ( ! function_exists( 'amnesty_register_block_patterns' ) ) {
 				'content'     => file_get_contents( __DIR__ . '/views/social-share.html' ),
 			]
 		);
+
+		register_block_pattern(
+			'amnesty/chunky-heading-with-links',
+			[
+				/* translators: [admin] */
+				'title'       => __( 'Chunky Heading with Links', 'amnesty' ),
+				/* translators: [admin] */
+				'description' => __( 'A chunky heading with links to page points', 'amnesty' ),
+				'categories'  => [ 'amnesty-core' ],
+				'content'     => file_get_contents( __DIR__ . '/views/chunky-heading-with-links.html' ),
+			]
+		);
 	}
 }
 
