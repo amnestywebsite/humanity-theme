@@ -1,3 +1,13 @@
+<?php
+/**
+ * Title: Social Share
+ * Description: Three column layout with headings, tweet action, social icons, video embed and buttons
+ * Slug: amnesty/social-share
+ * Keywords: social, share, call-to-action
+ * Categories: humanity
+ */
+?>
+
 <!-- wp:amnesty-core/block-section {"className":"social-sharePattern"} -->
 <section class="wp-block-amnesty-core-block-section section social-sharePattern"><div class="container"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="has-text-align-center" id="h-pressed-for-time">Pressed for Time?</h2>
@@ -55,9 +65,9 @@
 <p class="has-text-align-center">This is why we do what we do</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=wfKSFY6nqKQ","type":"video","providerNameSlug":"youtube","responsive":true,"align":"center","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=bCs2tq2aVzE","type":"video","providerNameSlug":"youtube","responsive":true,"align":"center","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed aligncenter is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=wfKSFY6nqKQ
+https://www.youtube.com/watch?v=bCs2tq2aVzE
 </div></figure>
 <!-- /wp:embed -->
 
