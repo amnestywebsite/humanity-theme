@@ -1,6 +1,6 @@
 const { InnerBlocks } = wp.blockEditor;
 
-export default () => (
+const PopIn = () => (
   <aside id="pop-in" className="u-textCenter pop-in">
     <div className="section section--small">
       <div className="container container--small">
@@ -9,3 +9,5 @@ export default () => (
     </div>
   </aside>
 );
+
+export default PopIn;

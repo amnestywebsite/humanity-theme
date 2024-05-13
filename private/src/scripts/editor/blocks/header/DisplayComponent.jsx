@@ -71,7 +71,11 @@ class DisplayComponent extends Component {
       this.fetchMediaMetadata(featuredVideoId, 'video');
     }
 
-    if (type !== 'video' && (featuredImageId !== prevProps.featuredImageId || this.state.imageData?.id !== featuredImageId)) {
+    if (
+      type !== 'video' &&
+      (featuredImageId !== prevProps.featuredImageId ||
+        this.state.imageData?.id !== featuredImageId)
+    ) {
       this.fetchMediaMetadata(featuredImageId, 'image');
     }
   }

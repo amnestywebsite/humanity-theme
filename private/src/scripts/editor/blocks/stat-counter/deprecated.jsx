@@ -1,16 +1,16 @@
 import classnames from 'classnames';
 
 const blockAttributes = {
-    alignment: {
-      type: 'string',
-    },
-    duration: {
-      type: 'number',
-      default: 2,
-    },
-    value: {
-      type: 'string',
-    },
+  alignment: {
+    type: 'string',
+  },
+  duration: {
+    type: 'number',
+    default: 2,
+  },
+  value: {
+    type: 'string',
+  },
 };
 
 const v2 = {
