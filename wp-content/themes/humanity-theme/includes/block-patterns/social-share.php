@@ -27,6 +27,18 @@ if ( ! function_exists( 'amnesty_register_block_patterns' ) ) {
 				'content'     => file_get_contents( __DIR__ . '/views/social-share.html' ),
 			]
 		);
+
+		register_block_pattern(
+			'amnesty/full-image-with-buttons',
+			[
+				/* translators: [admin] */
+				'title'       => __( 'Full Width Image with Buttons', 'amnesty' ),
+				/* translators: [admin] */
+				'description' => __( 'Full width image with buttons', 'amnesty' ),
+				'categories'  => [ 'amnesty-core' ],
+				'content'     => file_get_contents( __DIR__ . '/views/full-image-with-buttons.html' ),
+			]
+		);
 	}
 }
 
