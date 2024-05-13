@@ -1,3 +1,13 @@
+<?php
+/**
+ * Title: 50/50 Text with Image
+ * Description: A 50/50 layout with text on one side and an image on the other.
+ * Slug: amnesty/50-50-text-with-image
+ * Keywords: 50/50, text, image
+ * Categories: humanity
+ */
+?>
+
 <!-- wp:amnesty-core/block-section {"background":"","sectionId":"section3","sectionName":"Section 3","backgroundImageOrigin":"bottom"} -->
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
