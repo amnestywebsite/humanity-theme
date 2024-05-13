@@ -1,31 +1,65 @@
 import classnames from 'classnames';
 import PostFeaturedVideo from './PostFeaturedVideo.jsx';
-import DisplayCreditData from './components/DisplayCreditData.jsx';
+import MediaMetadata from '../../components/MediaMetadata.jsx';
+import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls.jsx';
 
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
-const { PanelBody, SelectControl, ToggleControl, withFilters } = wp.components;
+const { PanelBody, SelectControl, withFilters } = wp.components;
 const { compose } = wp.compose;
 const { withSelect } = wp.data;
 const { PostFeaturedImage } = wp.editor;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
+const { addQueryArgs } = wp.url;
 
 class DisplayComponent extends Component {
   state = {
     imageData: null,
-    videoUrl: false,
+    videoData: null,
+  };
+
+  fetchMediaMetadata = (id, type) => {
+    const key = `${type}Data`;
+    const cached = this.state[key]?.id;
+
+    if (id === 0) {
+      this.setState({
+        [key]: null,
+      });
+      return;
+    }
+
+    if (cached && cached === id) {
+      return;
+    }
+
+    const path = addQueryArgs(`/wp/v2/media/${id}`, {
+      context: 'edit',
+      _fields: 'id,source_url,caption,description',
+    });
+
+    wp.apiRequest({ path }).then((resp) => {
+      this.setState({
+        [key]: {
+          id: resp.id,
+          url: resp.source_url,
+          caption: resp.caption.raw,
+          description: resp.description.raw,
+        },
+      });
+    });
   };
 
   componentDidMount() {
     const { featuredImageId } = this.props;
     const { type, featuredVideoId } = this.props.attributes;
 
-    if (type === 'video' && !this.state.videoUrl && featuredVideoId) {
-      this.fetchVideoUrl();
+    if (type === 'video' && !this.state.videoData?.url && featuredVideoId) {
+      this.fetchMediaMetadata(featuredVideoId, 'video');
     }
 
-    if (type !== 'video' && !this.state.imageData && featuredImageId) {
-      this.fetchImageData();
+    if (type !== 'video' && featuredImageId && this.state.imageData?.id !== featuredImageId) {
+      this.fetchMediaMetadata(featuredImageId, 'image');
     }
   }
 
@@ -33,12 +67,12 @@ class DisplayComponent extends Component {
     const { featuredImageId } = this.props;
     const { type, featuredVideoId } = this.props.attributes;
 
-    if (type === 'video' && !this.state.videoUrl && featuredVideoId) {
-      this.fetchVideoUrl();
+    if (type === 'video' && !this.state.videoData?.url && featuredVideoId) {
+      this.fetchMediaMetadata(featuredVideoId, 'video');
     }
 
-    if (type !== 'video' && featuredImageId !== prevProps.featuredImageId) {
-      this.fetchImageData();
+    if (type !== 'video' && (featuredImageId !== prevProps.featuredImageId || this.state.imageData?.id !== featuredImageId)) {
+      this.fetchMediaMetadata(featuredImageId, 'image');
     }
   }
 
@@ -51,49 +85,13 @@ class DisplayComponent extends Component {
    */
   createUpdateAttribute = (key) => (value) => this.props.setAttributes({ [key]: value });
 
-  fetchImageData = () => {
-    const { featuredImageId } = this.props;
-    const cached = this.state?.imageData?.id;
-
-    if (cached && cached === featuredImageId) {
-      return;
-    }
-
-    wp.apiRequest({
-      path: `/wp/v2/media/${featuredImageId}?_fields=id,description,caption&context=edit`,
-    }).then((resp) => {
-      this.setState({
-        imageData: {
-          caption: resp.caption.raw,
-          description: resp.description.raw,
-        },
-      });
-    });
-  };
-
-  fetchVideoUrl = () => {
-    const { featuredVideoId } = this.props.attributes;
-    const { addQueryArgs } = wp.url;
-
-    const path = addQueryArgs(`/wp/v2/media/${featuredVideoId}`, {
-      context: 'edit',
-      _fields: 'id,source_url,caption,description',
-    });
-
-    wp.apiRequest({
-      path,
-    }).then((resp) => {
-      this.setState({
-        videoUrl: resp.source_url,
-        videoCaption: resp.caption.raw,
-        videoDescription: resp.description.raw,
-      });
-    });
-  };
-
   render() {
     const { attributes = {}, setAttributes } = this.props;
-    const { media, video } = this.props;
+
+    let { type } = attributes;
+    if (!type) {
+      type = 'image';
+    }
 
     const classes = classnames('page-hero', {
       'page-heroSize--full': attributes.size === 'large',
@@ -102,7 +100,7 @@ class DisplayComponent extends Component {
       [`page-heroSize--${attributes.size}`]: attributes.size,
       [`page-heroBackground--${attributes.background || 'dark'}`]: attributes.background || true,
       [`page-heroAlignment--${attributes.alignment}`]: attributes.alignment || false,
-      'page-hero--video': attributes.type === 'video',
+      'page-hero--video': type === 'video',
     });
 
     const contentClasses = classnames('hero-content', {
@@ -110,9 +108,12 @@ class DisplayComponent extends Component {
     });
 
     const sectionStyles = {};
-    if (media?.source_url) {
-      sectionStyles.backgroundImage = `url("${media.source_url}")`;
+    if (type === 'image' && this.state.imageData?.url) {
+      sectionStyles.backgroundImage = `url("${this.state.imageData.url}")`;
     }
+
+    const caption = this.state[`${type}Data`]?.caption;
+    const copyright = this.state[`${type}Data`]?.description;
 
     return (
       <Fragment>
@@ -196,34 +197,12 @@ class DisplayComponent extends Component {
               value={attributes.type}
               onChange={this.createUpdateAttribute('type')}
             />
-            <>
-              <ToggleControl
-                // translators: [admin]
-                label={
-                  attributes.type === 'video'
-                    ? // translators: [admin]
-                      __('Hide Video Caption', 'amnesty')
-                    : // translators: [admin]
-                      __('Hide Image Caption', 'amnesty')
-                }
-                checked={attributes.hideImageCaption}
-                onChange={() => setAttributes({ hideImageCaption: !attributes.hideImageCaption })}
-              />
-              <ToggleControl
-                // translators: [admin]
-                label={
-                  attributes.type === 'video'
-                    ? // translators: [admin]
-                      __('Hide Video Credit', 'amnesty')
-                    : // translators: [admin]
-                      __('Hide Image Credit', 'amnesty')
-                }
-                checked={attributes.hideImageCopyright}
-                onChange={() =>
-                  setAttributes({ hideImageCopyright: !attributes.hideImageCopyright })
-                }
-              />
-            </>
+            <MediaMetadataVisibilityControls
+              type={attributes.type}
+              hideCaption={attributes.hideImageCaption}
+              hideCopyright={attributes.hideImageCopyright}
+              setAttributes={setAttributes}
+            />
           </PanelBody>
           <PanelBody
             title={
@@ -246,10 +225,10 @@ class DisplayComponent extends Component {
           )}
         </InspectorControls>
         <section className={classes} style={sectionStyles}>
-          {this.state.videoUrl && (
+          {this.state.videoData?.url && (
             <div className="page-heroVideoContainer">
               <video className="page-heroVideo">
-                <source src={this.state.videoUrl} />
+                <source src={this.state.videoData.url} />
               </video>
             </div>
           )}
@@ -298,14 +277,12 @@ class DisplayComponent extends Component {
             </div>
             <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
           </div>
-            <DisplayCreditData
-              type={attributes.type}
-              media={media}
-              videoCaption={this.state.videoCaption}
-              videoDescription={this.state.videoDescription}
-              hideImageCaption={attributes.hideImageCaption}
-              hideImageCopyright={attributes.hideImageCopyright}
-            />
+          <MediaMetadata
+            caption={caption}
+            copyright={copyright}
+            showCaption={!attributes.hideImageCaption}
+            showCopyright={!attributes.hideImageCopyright}
+          />
         </section>
       </Fragment>
     );
@@ -314,22 +291,12 @@ class DisplayComponent extends Component {
 
 const applyWithSelect = () =>
   withSelect((select, blockData) => {
-    const { getMedia, getPostType } = select('core');
+    const { getPostType } = select('core');
     const { getEditedPostAttribute } = select('core/editor');
     const featuredImageId = getEditedPostAttribute('featured_media');
     const hasInnerBlock = select('core/block-editor').getBlocks(blockData.clientId);
 
-    /**
-     * getMedia && getPostType are initially undefined.
-     * This is causing an API request to /wp-admin/undefined/ on load.
-     * Unfortunately, there doesn't appear to be an easy way around this,
-     * but we should investigate potential solutions.
-     * - @jonmcp
-     * FAO: @jrmd
-     *
-     */
     return {
-      media: featuredImageId ? getMedia(featuredImageId) : null,
       postType: getPostType(getEditedPostAttribute('type')),
       featuredImageId,
       hasInnerBlock,

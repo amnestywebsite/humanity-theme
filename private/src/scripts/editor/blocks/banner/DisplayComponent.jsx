@@ -1,55 +1,45 @@
 import classnames from 'classnames';
 import PostFeaturedVideo from './PostFeaturedVideo.jsx';
+import MediaMetadata from '../../components/MediaMetadata.jsx';
+import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls.jsx';
 
 const { InspectorControls, MediaUpload, RichText, URLInputButton } = wp.blockEditor;
 const { IconButton, PanelBody, SelectControl, TextControl, ToggleControl } = wp.components;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
+const { addQueryArgs } = wp.url;
 
 export default class DisplayComponent extends Component {
   state = {
     imageData: null,
-    videoUrl: false,
+    videoData: null,
   };
 
-  componentDidMount() {
-    const { imageID, type, featuredVideoId } = this.props.attributes;
+  fetchMediaMetadata = (id, type) => {
+    const key = `${type}Data`;
+    const cached = this.state[key]?.id;
 
-    if (type === 'video' && !this.state.videoUrl && featuredVideoId) {
-      this.fetchVideoUrl();
-    }
-
-    if (type !== 'video' && !this.state.imageData && imageID) {
-      this.fetchImageData();
-    }
-  }
-
-  componentDidUpdate(prevProps) {
-    const { imageID, type, featuredVideoId } = this.props.attributes;
-
-    if (type === 'video' && !this.state.videoUrl && featuredVideoId) {
-      this.fetchVideoUrl();
-    }
-
-    if (type !== 'video' && imageID !== prevProps.imageID) {
-      this.fetchImageData();
-    }
-  }
-
-  fetchImageData = () => {
-    const { imageID } = this.props.attributes;
-    const cached = this.state?.imageData?.id;
-
-    if (cached && cached === imageID) {
+    if (id === 0) {
+      this.setState({
+        [key]: null,
+      });
       return;
     }
 
-    wp.apiRequest({
-      path: `/wp/v2/media/${imageID}?_fields=id,description,caption&context=edit`,
-    }).then((resp) => {
+    if (cached && cached === id) {
+      return;
+    }
+
+    const path = addQueryArgs(`/wp/v2/media/${id}`, {
+      context: 'edit',
+      _fields: 'id,source_url,caption,description',
+    });
+
+    wp.apiRequest({ path }).then((resp) => {
       this.setState({
-        imageData: {
+        [key]: {
           id: resp.id,
+          url: resp.source_url,
           caption: resp.caption.raw,
           description: resp.description.raw,
         },
@@ -57,31 +47,33 @@ export default class DisplayComponent extends Component {
     });
   };
 
-  fetchVideoUrl = () => {
-    const { featuredVideoId } = this.props.attributes;
+  componentDidMount() {
+    const { imageID, type, featuredVideoId } = this.props.attributes;
 
-    wp.apiRequest({
-      path: `/wp/v2/media/${featuredVideoId}`,
-    }).then((resp) => {
-      this.setState({
-        videoUrl: resp.source_url,
-      });
-    });
-  };
-
-  static setImageUrl = (image) => {
-    if (!image.sizes || !Object.hasOwnProperty.call(image.sizes, 'large')) {
-      return image.url;
+    if (type === 'video' && !this.state.videoData?.url && featuredVideoId) {
+      this.fetchMediaMetadata(featuredVideoId, 'video');
     }
 
-    return image.sizes.large.url;
-  };
+    if (type !== 'video' && !this.state.imageData && imageID) {
+      this.fetchMediaMetadata(imageID, 'image');
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    const { imageID, type, featuredVideoId } = this.props.attributes;
+
+    if (type === 'video' && !this.state.videoData?.url && featuredVideoId) {
+      this.fetchMediaMetadata(featuredVideoId, 'video');
+    }
+
+    if (type !== 'video' && (imageID !== prevProps.imageID || this.state.imageData?.id !== imageID)) {
+      this.fetchMediaMetadata(imageID, 'image');
+    }
+  }
 
   render() {
     const { attributes = {}, setAttributes } = this.props;
-    const { videoUrl } = this.state;
     const {
-      type = 'image',
       size = false,
       background = false,
       alignment = false,
@@ -92,9 +84,13 @@ export default class DisplayComponent extends Component {
       embed,
       featuredVideoId,
       imageID,
-      imageURL,
       title,
     } = attributes;
+
+    let { type } = attributes;
+    if (!type) {
+      type = 'image';
+    }
 
     const classes = classnames('page-hero', 'headerBlock', {
       'page-heroSize--full': !size,
@@ -106,13 +102,13 @@ export default class DisplayComponent extends Component {
       [`page-heroAlignment--${alignment}`]: alignment,
     });
 
-    const shouldShowImageCaption =
-      this.state.imageData?.caption &&
-      !attributes.hideImageCaption &&
-      this.state.imageData?.caption !== this.state.imageData?.description;
+    const sectionStyles = {};
+    if (type === 'image' && this.state.imageData?.url) {
+      sectionStyles.backgroundImage = `url("${this.state.imageData.url}")`;
+    }
 
-    const shouldShowImageCredit =
-      this.state.imageData?.description && !attributes.hideImageCopyright;
+    const caption = this.state[`${type}Data`]?.caption;
+    const copyright = this.state[`${type}Data`]?.description;
 
     return (
       <Fragment>
@@ -181,22 +177,12 @@ export default class DisplayComponent extends Component {
               value={type}
               onChange={(newType) => setAttributes({ type: newType })}
             />
-            {type !== 'video' && (
-              <>
-                <ToggleControl
-                  // translators: [admin]
-                  label={__('Hide Image Caption', 'amnesty')}
-                  checked={attributes.hideImageCaption}
-                  onChange={(hideImageCaption) => setAttributes({ hideImageCaption })}
-                />
-                <ToggleControl
-                  // translators: [admin]
-                  label={__('Hide Image Credit', 'amnesty')}
-                  checked={attributes.hideImageCopyright}
-                  onChange={(hideImageCopyright) => setAttributes({ hideImageCopyright })}
-                />
-              </>
-            )}
+            <MediaMetadataVisibilityControls
+              type={attributes.type}
+              hideCaption={attributes.hideImageCaption}
+              hideCopyright={attributes.hideImageCopyright}
+              setAttributes={setAttributes}
+            />
             <TextControl
               // translators: [admin]
               label={__('Embed URL', 'amnesty')}
@@ -218,7 +204,7 @@ export default class DisplayComponent extends Component {
             </PanelBody>
           )}
         </InspectorControls>
-        <section className={classes} style={{ backgroundImage: `url(${imageURL})` }}>
+        <section className={classes} style={sectionStyles}>
           {type !== 'video' && (
             <div className="linkList-options">
               {imageID ? (
@@ -226,28 +212,23 @@ export default class DisplayComponent extends Component {
                   icon="no-alt"
                   // translators: [admin]
                   label={__('Remove Image', 'amnesty')}
-                  onClick={() => setAttributes({ imageID: 0, imageURL: '' })}
+                  onClick={() => setAttributes({ imageID: 0 })}
                 />
               ) : (
                 <MediaUpload
                   allowedTypes={['image']}
                   value={imageID}
-                  onSelect={(media) =>
-                    setAttributes({
-                      imageID: media.id,
-                      imageURL: DisplayComponent.setImageUrl(media),
-                    })
-                  }
+                  onSelect={(media) => setAttributes({ imageID: media.id })}
                   render={({ open }) => <IconButton icon="format-image" onClick={open} />}
                 />
               )}
             </div>
           )}
 
-          {videoUrl && (
+          {this.state.videoData?.url && (
             <div className="page-heroVideoContainer">
               <video className="page-heroVideo">
-                <source src={videoUrl} />
+                <source src={this.state.videoData.url} />
               </video>
             </div>
           )}
@@ -258,7 +239,7 @@ export default class DisplayComponent extends Component {
                 className="page-heroTitle"
                 value={title}
                 // translators: [admin]
-                placeholder={__('(Banner Title)', 'amnesty')}
+                placeholder={__('Banner Title', 'amnesty')}
                 keepPlaceholderOnFocus={true}
                 format="string"
                 onChange={(newTitle) => setAttributes({ title: newTitle })}
@@ -268,7 +249,7 @@ export default class DisplayComponent extends Component {
                 className="page-heroContent"
                 value={content}
                 // translators: [admin]
-                placeholder={__('(Banner Content)', 'amnesty')}
+                placeholder={__('Banner Content', 'amnesty')}
                 keepPlaceholderOnFocus={true}
                 format="string"
                 onChange={(newContent) => setAttributes({ content: newContent })}
@@ -280,7 +261,7 @@ export default class DisplayComponent extends Component {
                     tagName="span"
                     value={ctaText}
                     // translators: [admin]
-                    placeholder={__('(Call to action)', 'amnesty')}
+                    placeholder={__('Call to action', 'amnesty')}
                     keepPlaceholderOnFocus={true}
                     format="string"
                     onChange={(newCtaText) => setAttributes({ ctaText: newCtaText })}
@@ -295,20 +276,12 @@ export default class DisplayComponent extends Component {
               </div>
             </div>
           </div>
-          {this.state.imageData && (
-            <div className="image-metadata">
-              {shouldShowImageCaption && (
-                <span className="image-metadataItem image-caption">
-                  {this.state.imageData.caption}
-                </span>
-              )}
-              {shouldShowImageCredit && (
-                <span className="image-metadataItem image-copyright">
-                  {this.state.imageData.description}
-                </span>
-              )}
-            </div>
-          )}
+          <MediaMetadata
+            caption={caption}
+            copyright={copyright}
+            showCaption={!attributes.hideImageCaption}
+            showCopyright={!attributes.hideImageCopyright}
+          />
         </section>
       </Fragment>
     );
