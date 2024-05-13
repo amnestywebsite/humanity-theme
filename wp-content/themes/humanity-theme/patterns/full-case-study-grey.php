@@ -1,4 +1,13 @@
-<!-- wp:amnesty-core/block-section {"background":"","sectionId":"casestudy","sectionName":"Case Study"} -->
+<?php
+/**
+ * Title: Full Case Study Grey
+ * Description: A full-width case study with a grey background.
+ * Slug: amnesty/full-case-study-grey
+ * Keywords: full, case study, grey
+ * Categories: humanity
+ */
+?>
+<!-- wp:amnesty-core/block-section {"background":"grey","sectionId":"casestudy","sectionName":"Case Study"} -->
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
     <div class="wp-block-column"><!-- wp:image -->
