@@ -27,18 +27,6 @@ if ( ! function_exists( 'amnesty_register_block_patterns' ) ) {
 				'content'     => file_get_contents( __DIR__ . '/views/social-share.html' ),
 			]
 		);
-
-		register_block_pattern(
-			'amnesty/50-50-text-with-image',
-			[
-				/* translators: [admin] */
-				'title'       => __( '50/50 Text with Image', 'amnesty' ),
-				/* translators: [admin] */
-				'description' => __( 'Two column layout with text and image', 'amnesty' ),
-				'categories'  => [ 'amnesty-core' ],
-				'content'     => file_get_contents( __DIR__ . '/views/50-50-text-with-image.html' ),
-			]
-		);
 	}
 }
 
