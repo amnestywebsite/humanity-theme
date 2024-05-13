@@ -1,3 +1,13 @@
+<?php
+/**
+ * Title: Full Image with Buttons
+ * Description: A full-width image with buttons below.
+ * Slug: amnesty/full-image-with-buttons
+ * Keywords: full, image, buttons
+ * Categories: humanity
+ */
+?>
+
 <!-- wp:amnesty-core/block-section {"background":"","enableBackgroundGradient":true} -->
 <!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center">Heading or description</h2>
