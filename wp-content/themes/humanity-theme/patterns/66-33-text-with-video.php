@@ -1,3 +1,13 @@
+<?php
+/**
+ * Title: 66/33 Text with Video
+ * Description: Two columns with text on the left and a video on the right
+ * Slug: amnesty/66-33-text-with-video
+ * Keywords: text, video
+ * Categories: humanity
+ */
+?>
+
 <!-- wp:amnesty-core/block-section {"sectionId":"section1","sectionName":"Section 1"} -->
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
