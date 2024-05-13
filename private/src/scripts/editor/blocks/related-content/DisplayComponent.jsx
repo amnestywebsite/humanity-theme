@@ -2,7 +2,7 @@ import { getFeaturedImage } from './utils';
 import pin from './icon.jsx';
 
 const { Placeholder, Spinner } = wp.components;
-const { compose, ifCondition, withInstanceId } = wp.compose;
+const { compose, withInstanceId } = wp.compose;
 const { withDispatch, withSelect } = wp.data;
 const { __ } = wp.i18n;
 const { addQueryArgs } = wp.url;
@@ -168,5 +168,5 @@ export default compose([
     });
 
     return { post, taxonomies };
-  })
+  }),
 ])(withInstanceId(DisplayComponent));

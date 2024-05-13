@@ -72,10 +72,13 @@ const Byline = () => {
         <ToggleControl
           // translators: [admin]
           label={__('Enable public byline', 'amnesty')}
-          help={/* translators: [admin] */ __(
-            'Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated',
-            'amnesty',
-          )}
+          help={
+            /* translators: [admin] */
+            __(
+              'Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated',
+              'amnesty',
+            )
+          }
           checked={bylineEnabled}
           onChange={setBylineEnabled}
         />

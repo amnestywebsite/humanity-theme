@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 const { PanelBody, ToggleControl } = wp.components;
 const { __ } = wp.i18n;
 
