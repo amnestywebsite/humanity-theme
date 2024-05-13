@@ -1,3 +1,13 @@
+<?php
+/**
+ * Title: 66-33 Chapter
+ * Description: A two column layout with a heading and body text in the left column and an image in the right column.
+ * Slug: amnesty/66-33-chapter
+ * Keywords: chapter, 66, 33
+ * Categories: humanity
+ */
+?>
+
 <!-- wp:amnesty-core/block-section -->
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
