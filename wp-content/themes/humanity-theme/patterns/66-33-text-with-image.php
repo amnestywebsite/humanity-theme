@@ -1,3 +1,13 @@
+<?php
+/**
+ * Title: 66-33 Text with Image
+ * Description: Two columns with a heading, body text including quote, and an image.
+ * Slug: amnesty/66-33-text-with-image
+ * Keywords: text, image, 66, 33
+ * Categories: humanity
+ */
+?>
+
 <!-- wp:amnesty-core/block-section {"sectionId":"section1","sectionName":"Section 1"} -->
 <!-- wp:heading {"textAlign":"left"} -->
 <h2 class="wp-block-heading has-text-align-left" id="h-scelerisque-fermentum-dui-faucibus-in">scelerisque fermentum dui faucibus in</h2>
