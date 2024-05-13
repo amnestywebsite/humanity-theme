@@ -1,3 +1,13 @@
+<?php
+/**
+ * Title: 66/33 Text Key Facts
+ * Description: Two columns with a heading, body text, and key facts.
+ * Slug: amnesty/66-33-text-key-facts
+ * Keywords: text, key facts, 66/33
+ * Categories: humanity
+ */
+?>
+
 <!-- wp:amnesty-core/block-section -->
 <!-- wp:heading -->
 <h2 class="wp-block-heading" id="h-scelerisque-fermentum-dui-faucibus-in">scelerisque fermentum dui faucibus in</h2>

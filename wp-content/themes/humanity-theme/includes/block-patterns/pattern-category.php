@@ -17,10 +17,10 @@ if ( ! function_exists( 'amnesty_core_register_pattern_category' ) ) {
 		}
 
 		register_block_pattern_category(
-			'amnesty-core',
+			'humanity',
 			[
 				/* translators: [admin] */
-				'label' => __( 'Amnesty Core', 'amnesty' ),
+				'label' => __( 'Humanity Theme', 'amnesty' ),
 			]
 		);
 	}
