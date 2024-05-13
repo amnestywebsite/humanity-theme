@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import PostSelect from '../../../components/PostSelect.jsx';
 
 const { PanelBody, ToggleControl } = wp.components;
@@ -20,8 +21,13 @@ const Sidebar = ({ createMetaUpdate, props }) => {
       <ToggleControl
         // translators: [admin]
         label={__('Maximize Content', 'amnesty')}
-        // translators: [admin]
-        help={__('Remove the sidebar and the sidebar area on posts and pages. Generally used to create pages with a full-width page design.', 'amnesty')}
+        help={
+          // translators: [admin]
+          __(
+            'Remove the sidebar and the sidebar area on posts and pages. Generally used to create pages with a full-width page design.',
+            'amnesty',
+          )
+        }
         checked={props.meta._maximize_post_content}
         onChange={() =>
           createMetaUpdate(
@@ -35,8 +41,13 @@ const Sidebar = ({ createMetaUpdate, props }) => {
       <ToggleControl
         // translators: [admin]
         label={__('Disable Sidebar', 'amnesty')}
-        // translators: [admin]
-        help={__('Remove the sidebar, but not the sidebar area; this keeps an empty space to the side of the content. Generally used for text heavy pages.', 'amnesty')}
+        help={
+          // translators: [admin]
+          __(
+            'Remove the sidebar, but not the sidebar area; this keeps an empty space to the side of the content. Generally used for text heavy pages.',
+            'amnesty',
+          )
+        }
         checked={props.meta._disable_sidebar}
         onChange={() =>
           createMetaUpdate(

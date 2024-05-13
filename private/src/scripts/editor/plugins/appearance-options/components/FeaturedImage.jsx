@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 const { ToggleControl } = wp.components;
 const { __ } = wp.i18n;
 
@@ -9,37 +10,35 @@ const { __ } = wp.i18n;
  *
  * @returns {wp.element.Component}
  */
-const FeaturedImage = ({ createMetaUpdate, props }) => {
-  return (
-    <>
-      <ToggleControl
-        label={__('Hide featured image', 'amnesty')}
-        help={__('Hide the featured image.', 'amnesty')}
-        checked={props.meta._hide_featured_image}
-        onChange={() =>
-          createMetaUpdate(
-            '_hide_featured_image',
-            !props.meta._hide_featured_image,
-            props.meta,
-            props.oldMeta,
-          )
-        }
-      />
-      <ToggleControl
-        label={__('Hide featured image caption', 'amnesty')}
-        help={__('Hide the image caption for the featured image', 'amnesty')}
-        checked={props.meta._hide_featured_image_caption}
-        onChange={() =>
-          createMetaUpdate(
-            '_hide_featured_image_caption',
-            !props.meta._hide_featured_image_caption,
-            props.meta,
-            props.oldMeta,
-          )
-        }
-      />
-    </>
-  );
-};
+const FeaturedImage = ({ createMetaUpdate, props }) => (
+  <>
+    <ToggleControl
+      label={__('Hide featured image', 'amnesty')}
+      help={__('Hide the featured image.', 'amnesty')}
+      checked={props.meta._hide_featured_image}
+      onChange={() =>
+        createMetaUpdate(
+          '_hide_featured_image',
+          !props.meta._hide_featured_image,
+          props.meta,
+          props.oldMeta,
+        )
+      }
+    />
+    <ToggleControl
+      label={__('Hide featured image caption', 'amnesty')}
+      help={__('Hide the image caption for the featured image', 'amnesty')}
+      checked={props.meta._hide_featured_image_caption}
+      onChange={() =>
+        createMetaUpdate(
+          '_hide_featured_image_caption',
+          !props.meta._hide_featured_image_caption,
+          props.meta,
+          props.oldMeta,
+        )
+      }
+    />
+  </>
+);
 
 export default FeaturedImage;
