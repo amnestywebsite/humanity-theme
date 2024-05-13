@@ -196,8 +196,8 @@ class Header_Block_Renderer {
 			return;
 		}
 
-		echo wp_kses_post( $this->image->metadata( ! $hide_caption, ! $hide_credit ) );
-		echo wp_kses_post( $this->video->metadata( ! $hide_caption, ! $hide_credit ) );
+		echo wp_kses_post( $this->image->metadata( ! $hide_caption, ! $hide_credit, 'image' ) );
+		echo wp_kses_post( $this->video->metadata( ! $hide_caption, ! $hide_credit, 'video' ) );
 	}
 
 	/**
