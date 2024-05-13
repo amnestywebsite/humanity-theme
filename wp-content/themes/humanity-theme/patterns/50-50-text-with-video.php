@@ -1,3 +1,12 @@
+<?php
+/**
+ * Title: 50/50 Text with Video
+ * Description: A 50/50 layout with text on one side and a video on the other.
+ * Slug: amnesty/50-50-text-with-video
+ * Keywords: 50/50, text, video
+ * Categories: humanity
+ */
+?>
 <!-- wp:amnesty-core/block-section -->
 <!-- wp:heading -->
 <h2 class="wp-block-heading" id="h-overview">Heading H2</h2>
