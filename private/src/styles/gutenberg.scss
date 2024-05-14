@@ -27,6 +27,8 @@
 @import "utils/mixins/states";
 
 // Base
+@import "base/container";
+@import "base/container-editor";
 @import "base/images-editor";
 
 // Layout
@@ -79,6 +81,7 @@
 @import "blocks/linklist/editor";
 @import "blocks/links-with-icons/main";
 @import "blocks/links-with-icons/editor";
+@import "blocks/list-block/editor";
 @import "blocks/petition-list/main";
 @import "blocks/postlist/categories";
 @import "blocks/postlist/categories-editor";
@@ -97,7 +100,8 @@
 @import "blocks/tweet-action/tweet";
 @import "blocks/tweet-action/editor";
 @import "blocks/tabbed-content/editor";
-@import "blocks/list-block/editor";
+@import "blocks/hero/main";
+@import "blocks/hero/editor";
 
 // Block Patterns
 @import "block-patterns/social-share";
