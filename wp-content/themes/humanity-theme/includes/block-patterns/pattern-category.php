@@ -11,11 +11,6 @@ if ( ! function_exists( 'amnesty_core_register_pattern_category' ) ) {
 	 * @return void
 	 */
 	function amnesty_core_register_pattern_category() {
-		// Block patterns were not introduced until WP v5.5.0
-		if ( ! function_exists( 'register_block_pattern_category' ) ) {
-			return;
-		}
-
 		register_block_pattern_category(
 			'humanity',
 			[
