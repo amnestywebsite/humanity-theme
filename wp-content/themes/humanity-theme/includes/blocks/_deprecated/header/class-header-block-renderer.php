@@ -12,15 +12,15 @@ if ( ! function_exists( '\Amnesty\Blocks\amnesty_render_header_block' ) ) {
 	/**
 	 * Render a header block
 	 *
-	 * @param array<string,mixed>            $attributes   the block attributes
-	 * @param array<int,array<string,mixed>> $inner_blocks inner blocks, if any
+	 * @param array<string,mixed> $attributes the block attributes
+	 * @param string              $content    inner content
 	 *
 	 * @package Amnesty\Blocks
 	 *
 	 * @return string
 	 */
-	function amnesty_render_header_block( array $attributes = [], array $inner_blocks = [] ): string {
-		$renderer = new Header_Block_Renderer( $attributes, $inner_blocks );
+	function amnesty_render_header_block( array $attributes = [], string $content = '' ): string {
+		$renderer = new Header_Block_Renderer( $attributes, $content );
 		return $renderer->render();
 	}
 }
@@ -47,11 +47,11 @@ class Header_Block_Renderer {
 	protected array $attributes = [];
 
 	/**
-	 * The block's inner blocks
+	 * Child content
 	 *
-	 * @var array<int,array<string,mixed>>
+	 * @var string
 	 */
-	protected array $inner_blocks = [];
+	protected string $content = '';
 
 	/**
 	 * The image data object
@@ -70,14 +70,14 @@ class Header_Block_Renderer {
 	/**
 	 * Constructor
 	 *
-	 * @param array<string,mixed>            $attributes   the block attributes
-	 * @param array<int,array<string,mixed>> $inner_blocks inner blocks, if any
+	 * @param array<string,mixed> $attributes the block attributes
+	 * @param string              $content    inner content
 	 */
-	public function __construct( array $attributes = [], array $inner_blocks = [] ) {
+	public function __construct( array $attributes = [], string $content = '' ) {
 		$this->id = substr( md5( uniqid( (string) wp_rand(), true ) ), 0, 8 );
 
-		$this->inner_blocks = $inner_blocks;
-		$this->attributes   = wp_parse_args(
+		$this->content    = trim( $content );
+		$this->attributes = wp_parse_args(
 			$attributes,
 			[
 				'alignment'          => 'none',
@@ -116,7 +116,7 @@ class Header_Block_Renderer {
 		$this->content();
 		$this->cta();
 		$this->inner_close();
-		$this->inner_blocks();
+		echo wp_kses( $this->content, 'donations' );
 		$this->metadata();
 		$this->close();
 
@@ -220,7 +220,7 @@ class Header_Block_Renderer {
 	protected function inner_open() {
 		$classes = 'hero-content';
 
-		if ( ! empty( $this->inner_blocks ) ) {
+		if ( $this->content ) {
 			$classes .= ' has-donation-block';
 		}
 
@@ -283,18 +283,6 @@ class Header_Block_Renderer {
 	 */
 	protected function inner_close() {
 		print '</div>';
-	}
-
-	/**
-	 * Render inner blocks
-	 *
-	 * @return void
-	 */
-	protected function inner_blocks() {
-		foreach ( $this->inner_blocks as $block ) {
-			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			echo render_block( $block );
-		}
 	}
 
 	/**

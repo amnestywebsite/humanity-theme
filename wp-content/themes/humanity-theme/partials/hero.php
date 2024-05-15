@@ -32,6 +32,6 @@ $hero_show = 0 !== $hero_data['attrs']['imageID'];
 
 if ( $hero_show ) {
 	// phpcs:ignore
-	echo \Amnesty\Blocks\amnesty_render_header_block( $hero_data['attrs'], $hero_data['innerBlocks'] );
+	echo \Amnesty\Blocks\amnesty_render_header_block( $hero_data['attrs'], $hero_data['content'] );
 	amnesty_remove_header_from_content();
 }
