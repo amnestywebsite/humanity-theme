@@ -34,9 +34,7 @@ const plugin = compose([
     },
   })),
   ifCondition(() =>
-    ['post', 'page'].includes(
-      wp.data.select('core/editor').getEditedPostAttribute('type'),
-    ),
+    ['post', 'page'].includes(wp.data.select('core/editor').getEditedPostAttribute('type')),
   ),
 ])(AppearanceOptions);
 

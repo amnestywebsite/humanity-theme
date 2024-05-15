@@ -1,5 +1,4 @@
 /* eslint-disable no-underscore-dangle */
-import DocumentReference from './components/DocumentReference.jsx';
 import FeaturedImage from './components/FeaturedImage.jsx';
 import Header from './components/Header.jsx';
 import Metadata from './components/Metadata.jsx';
@@ -64,7 +63,10 @@ const PostOptions = ({ createMetaUpdate, props }) => {
  */
 const AppearanceOptions = ({ createMetaUpdate, ...props }) => (
   <>
-    <PluginSidebar name="amnesty-appearance" title={/* translators: [admin] */ __('Appearance', 'amnesty')}>
+    <PluginSidebar
+      name="amnesty-appearance"
+      title={/* translators: [admin] */ __('Appearance', 'amnesty')}
+    >
       <PageOptions createMetaUpdate={createMetaUpdate} props={props} />
       <PostOptions createMetaUpdate={createMetaUpdate} props={props} />
       <Sidebar createMetaUpdate={createMetaUpdate} props={props} />
