@@ -15,8 +15,8 @@ if ( ! function_exists( 'amnesty_post_has_header' ) ) {
 	function amnesty_post_has_header( $post = null ) {
 		$content = get_the_content( null, false, $post );
 
-		return false !== strpos( $content, '<!-- wp:amnesty-core/block-hero' ) ||
-			false !== strpos( $content, '<!-- wp:amnesty-core/hero' );
+		return false !== strpos( $content, '<!-- wp:amnesty-core/block-hero' ) &&
+			false === strpos( $content, '<!-- wp:amnesty-core/hero' );
 	}
 }
 
@@ -31,7 +31,7 @@ if ( ! function_exists( 'amnesty_find_header_block' ) ) {
 	 * @return array
 	 */
 	function amnesty_find_header_block( $blocks = [] ) {
-		$header_blocks = [ 'amnesty-core/block-hero', 'amnesty-core/hero' ];
+		$header_blocks = [ 'amnesty-core/block-hero' ];
 
 		foreach ( $blocks as $block ) {
 			if ( in_array( $block['blockName'], $header_blocks, true ) ) {
@@ -86,14 +86,6 @@ if ( ! function_exists( 'amnesty_get_header_data' ) ) {
 				'name'    => '',
 				'attrs'   => [],
 				'content' => '',
-			];
-		}
-
-		if ( 'amnesty-core/hero' === $header['blockName'] ) {
-			return [
-				'name'    => $header['blockName'],
-				'attrs'   => $header['attrs'],
-				'content' => amnesty_render_blocks( $header['innerBlocks'] ),
 			];
 		}
 
@@ -187,7 +179,7 @@ if ( ! function_exists( 'amnesty_remove_header_from_content' ) ) {
 		}
 
 		$post->post_content = preg_replace(
-			'/<!--\s(wp:amnesty-core\/(?:block-hero|hero))\s.*?(?:(?:\/-->)|(?:-->.*?<!--\s\/\1\s-->))/sm',
+			'/<!--\s(wp:amnesty-core\/(?:block-hero))\s.*?(?:(?:\/-->)|(?:-->.*?<!--\s\/\1\s-->))/sm',
 			'',
 			$post->post_content,
 			1

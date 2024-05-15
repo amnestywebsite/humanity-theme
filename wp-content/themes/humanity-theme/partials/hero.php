@@ -11,14 +11,20 @@ if ( is_tax() ) {
 
 
 $object_id = amnesty_get_header_object_id();
+
+if ( ! amnesty_post_has_header( $object_id ) ) {
+	return;
+}
+
 $hero_show = false;
-$hero_data = wp_parse_args(
-	amnesty_get_header_data( $object_id ),
+$hero_data = amnesty_get_header_data( $object_id );
+
+$hero_data['attrs'] = wp_parse_args(
+	$hero_data['attrs'],
 	[
 		'imageID' => absint( get_post_meta( $object_id, '_thumbnail_id', true ) ),
-	]
+	],
 );
-
 
 $object = get_queried_object();
 if ( ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) {
