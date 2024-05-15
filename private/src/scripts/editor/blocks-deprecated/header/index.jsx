@@ -15,6 +15,7 @@ registerBlockType('amnesty-core/block-hero', {
   ],
   supports: {
     multiple: false,
+    inserter: false,
   },
   attributes: {
     title: {
@@ -98,6 +99,12 @@ registerBlockType('amnesty-core/block-hero', {
         isMultiBlock: false,
         blocks: ['amnesty-core/header'],
         transform: (attributes) => createBlock('amnesty-core/header', attributes),
+      },
+      {
+        type: 'block',
+        isMultiBlock: true,
+        blocks: ['amnesty-core/hero'],
+        transform: (attributes) => createBlock('amnesty-core/hero', attributes),
       },
     ],
   },

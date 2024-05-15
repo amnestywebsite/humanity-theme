@@ -63,10 +63,8 @@ const PostOptions = ({ createMetaUpdate, props }) => {
  */
 const AppearanceOptions = ({ createMetaUpdate, ...props }) => (
   <>
-    <PluginSidebar
-      name="amnesty-appearance"
-      title={/* translators: [admin] */ __('Appearance', 'amnesty')}
-    >
+    {/* translators: [admin] */}
+    <PluginSidebar name="amnesty-appearance" title={__('Appearance', 'amnesty')}>
       <PageOptions createMetaUpdate={createMetaUpdate} props={props} />
       <PostOptions createMetaUpdate={createMetaUpdate} props={props} />
       <Sidebar createMetaUpdate={createMetaUpdate} props={props} />

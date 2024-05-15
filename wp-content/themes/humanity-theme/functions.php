@@ -112,6 +112,7 @@ require_once realpath( __DIR__ . '/includes/theme-setup/analytics/meta-tags.php'
  */
 #region kses
 require_once realpath( __DIR__ . '/includes/kses/checkbox-filter.php' );
+require_once realpath( __DIR__ . '/includes/kses/wp-kses-post.php' );
 require_once realpath( __DIR__ . '/includes/blocks/slider/kses.php' );
 #endregion kses
 
@@ -152,7 +153,6 @@ require_once realpath( __DIR__ . '/includes/core-blocks/social-icons/styles.php'
  */
 #region patterns
 require_once realpath( __DIR__ . '/includes/block-patterns/pattern-category.php' );
-require_once realpath( __DIR__ . '/includes/block-patterns/social-share.php' );
 #endregion patterns
 
 /**

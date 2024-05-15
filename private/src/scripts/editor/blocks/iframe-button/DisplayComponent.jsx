@@ -86,13 +86,9 @@ const DisplayComponent = (props) => {
           {/* translators: [admin] */ __('Embed', 'amnesty')}
         </Button>
         <Button isLarge onClick={() => setIsPreviewing(!previewing)}>
-          {
-            previewing ?
-              /* translators: [admin] */
-              __('Hide Preview', 'amnesty') :
-              /* translators: [admin] */
-              __('Preview', 'amnesty')
-          }
+          {previewing
+            ? /* translators: [admin] */ __('Hide Preview', 'amnesty')
+            : /* translators: [admin] */ __('Preview', 'amnesty')}
         </Button>
       </div>
       {previewing && httpsOnly(attributes.iframeUrl) && (

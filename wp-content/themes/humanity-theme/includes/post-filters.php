@@ -130,5 +130,5 @@ add_filter(
 
 		return $filtered;
 	},
-	20 
+	20
 );

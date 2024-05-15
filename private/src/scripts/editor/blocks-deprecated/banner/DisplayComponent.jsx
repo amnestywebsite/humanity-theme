@@ -1,10 +1,10 @@
 import classnames from 'classnames';
-import PostFeaturedVideo from './PostFeaturedVideo.jsx';
 import MediaMetadata from '../../components/MediaMetadata.jsx';
 import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls.jsx';
+import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
 
 const { InspectorControls, MediaUpload, RichText, URLInputButton } = wp.blockEditor;
-const { IconButton, PanelBody, SelectControl, TextControl, ToggleControl } = wp.components;
+const { IconButton, PanelBody, SelectControl, TextControl } = wp.components;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
 const { addQueryArgs } = wp.url;
@@ -66,7 +66,10 @@ export default class DisplayComponent extends Component {
       this.fetchMediaMetadata(featuredVideoId, 'video');
     }
 
-    if (type !== 'video' && (imageID !== prevProps.imageID || this.state.imageData?.id !== imageID)) {
+    if (
+      type !== 'video' &&
+      (imageID !== prevProps.imageID || this.state.imageData?.id !== imageID)
+    ) {
       this.fetchMediaMetadata(imageID, 'image');
     }
   }

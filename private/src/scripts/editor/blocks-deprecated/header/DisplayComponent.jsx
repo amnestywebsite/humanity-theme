@@ -1,7 +1,7 @@
 import classnames from 'classnames';
-import PostFeaturedVideo from './PostFeaturedVideo.jsx';
 import MediaMetadata from '../../components/MediaMetadata.jsx';
 import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls.jsx';
+import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
 
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl, withFilters } = wp.components;
@@ -71,7 +71,11 @@ class DisplayComponent extends Component {
       this.fetchMediaMetadata(featuredVideoId, 'video');
     }
 
-    if (type !== 'video' && (featuredImageId !== prevProps.featuredImageId || this.state.imageData?.id !== featuredImageId)) {
+    if (
+      type !== 'video' &&
+      (featuredImageId !== prevProps.featuredImageId ||
+        this.state.imageData?.id !== featuredImageId)
+    ) {
       this.fetchMediaMetadata(featuredImageId, 'image');
     }
   }

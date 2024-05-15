@@ -23,7 +23,7 @@ const blockAttributes = {
     type: 'text',
     default: 'none',
   },
-}
+};
 
 const v1 = {
   attributes: omit(blockAttributes, ['dividerIcon']),

@@ -30,7 +30,7 @@ const v1 = {
       </div>
     );
   },
-}
+};
 
 const deprecated = [v1];
 
