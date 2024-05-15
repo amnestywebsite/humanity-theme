@@ -1,6 +1,6 @@
-import classnames from 'classnames';
 import DisplayComponent from './DisplayComponent.jsx';
 import './components/Column.jsx';
+import deprecated from './deprecated.jsx';
 
 const { InnerBlocks } = wp.blockEditor;
 const { registerBlockType } = wp.blocks;
@@ -21,21 +21,8 @@ registerBlockType('amnesty-core/background-media', {
     __('Text', 'amnesty'),
   ],
 
+  deprecated,
   edit: DisplayComponent,
 
-  save({ className, innerBlocks }) {
-    const leftImage = innerBlocks[0]?.attributes?.image?.id;
-    const rightImage = innerBlocks[1]?.attributes?.image?.id;
-
-    const blockClasses = classnames(className, {
-      'has-imageLeft': !!leftImage,
-      'has-imageRight': !!rightImage,
-    });
-
-    return (
-      <div className={blockClasses}>
-        <InnerBlocks.Content />
-      </div>
-    );
-  },
+  save: () => <InnerBlocks.Content />,
 });

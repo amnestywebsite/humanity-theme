@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 
-const { assign, isEmpty } = lodash;
+const { assign, isEmpty, omit } = lodash;
 const { InnerBlocks, RichText } = wp.blockEditor;
 const { createBlock } = wp.blocks;
 
@@ -26,6 +26,45 @@ const blockAttributes = {
   style: {
     type: 'string',
   },
+  actionType: {
+    type: 'string',
+  },
+};
+
+const v4 = {
+  supports: {
+    className: false,
+    multiple: true,
+  },
+  attributes: assign({}, blockAttributes, {
+    preheading: {
+      type: 'string',
+    },
+    content: {
+      type: 'string',
+    },
+  }),
+  save: ({ attributes }) => {
+    const { background = false, preheading, title, content } = attributes;
+    const divClasses = classnames('callToAction', { [`callToAction--${background}`]: background });
+
+    return (
+      <div className={divClasses} role="note" aria-label={title}>
+        {!isEmpty(preheading) && (
+          <RichText.Content tagName="h2" className="callToAction-preHeading" value={preheading} />
+        )}
+        {!isEmpty(title) && (
+          <RichText.Content tagName="h1" className="callToAction-heading" value={title} />
+        )}
+        {!isEmpty(content) && (
+          <RichText.Content tagName="p" className="callToAction-content" value={content} />
+        )}
+        <div className="innerBlocksContainer">
+          <InnerBlocks.Content />
+        </div>
+      </div>
+    );
+  },
 };
 
 const v3 = {
@@ -33,7 +72,7 @@ const v3 = {
     className: false,
     multiple: true,
   },
-  attributes: assign({}, blockAttributes, {
+  attributes: assign({}, omit(blockAttributes, 'actionType'), {
     preheading: {
       type: 'string',
     },
@@ -72,7 +111,7 @@ const v2 = {
     className: false,
     multiple: true,
   },
-  attributes: assign({}, blockAttributes, {
+  attributes: assign({}, omit(blockAttributes, 'actionType'), {
     preheading: {
       type: 'string',
     },
@@ -136,7 +175,7 @@ const v1 = {
     className: false,
     multiple: true,
   },
-  attributes: blockAttributes,
+  attributes: omit(blockAttributes, 'actionType'),
   save: ({ attributes }) => {
     const {
       background = false,
@@ -176,6 +215,6 @@ const v1 = {
   },
 };
 
-const deprecated = [v3, v2, v1];
+const deprecated = [v4, v3, v2, v1];
 
 export default deprecated;

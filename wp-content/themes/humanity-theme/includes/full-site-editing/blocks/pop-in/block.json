@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+	"apiVersion": 2,
+	"name": "amnesty-core/pop-in",
+	"title": "Pop-in",
+	"description": "For presenting dismissible content at the top of the site",
+  "textdomain": "amnesty",
+	"category": "amnesty-core",
+	"icon": "editor-table",
+	"keywords": ["Pop-in"],
+	"supports": {
+		"multiple": false,
+		"align": false
+	}
+}

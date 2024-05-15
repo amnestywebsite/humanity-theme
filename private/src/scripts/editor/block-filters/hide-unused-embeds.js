@@ -35,7 +35,7 @@ const unused = [
  * Remove unused embeds.
  */
 wp.domReady(() => {
-  getBlockVariations('core/embed').forEach((variant) => {
+  (getBlockVariations('core/embed') || []).forEach((variant) => {
     if (unused.includes(variant.name)) {
       unregisterBlockVariation('core/embed', variant.name);
     }
