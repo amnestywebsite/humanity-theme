@@ -237,6 +237,30 @@
   }
 }
 
+.page-hero .image-metadata.is-image {
+  display: flex;
+}
+
+.page-hero .image-metadata.is-video {
+  display: none;
+}
+
+.page-hero.page-hero--video .image-metadata.is-image {
+  display: flex;
+
+  @include mq("small") {
+    display: none;
+  }
+}
+
+.page-hero.page-hero--video .image-metadata.is-video {
+  display: none;
+
+  @include mq("small") {
+    display: flex;
+  }
+}
+
 :lang(fa-IR) .headerBlock .page-heroTitle span {
   line-height: 1.73;
 

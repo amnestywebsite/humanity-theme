@@ -56,7 +56,7 @@ registerBlockType('amnesty-core/header', {
       type: 'string',
     },
     featuredVideoId: {
-      type: 'string',
+      type: 'integer',
     },
   },
 

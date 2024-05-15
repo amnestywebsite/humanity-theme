@@ -53,6 +53,13 @@ class Header_Block_Renderer {
 	protected Get_Image_Data $image;
 
 	/**
+	 * The video data object
+	 *
+	 * @var \Amnesty\Get_Image_Data
+	 */
+	protected Get_Image_Data $video;
+
+	/**
 	 * Constructor
 	 *
 	 * @param array<string,mixed> $attributes the block attributes
@@ -75,10 +82,12 @@ class Header_Block_Renderer {
 				'type'               => '',
 				'hideImageCaption'   => true,
 				'hideImageCopyright' => false,
+				'featuredVideoId'    => 0,
 			]
 		);
 
 		$this->image = new Get_Image_Data( $this->attributes['imageID'] );
+		$this->video = new Get_Image_Data( (int) $this->attributes['featuredVideoId'] );
 	}
 
 	/**
@@ -114,7 +123,7 @@ class Header_Block_Renderer {
 		$alignment  = $this->attributes['alignment'];
 		$background = $this->attributes['background'] ?: 'dark';
 
-		$has_credit = ! ! $this->image->credit();
+		$has_credit = (bool) $this->image->credit();
 
 		$classlist = classnames(
 			'page-hero',
@@ -176,7 +185,7 @@ class Header_Block_Renderer {
 	 * @return void
 	 */
 	protected function metadata() {
-		if ( ! $this->image->id() ) {
+		if ( ! $this->image->id() && ! $this->video->id() ) {
 			return;
 		}
 
@@ -187,7 +196,8 @@ class Header_Block_Renderer {
 			return;
 		}
 
-		echo wp_kses_post( $this->image->metadata( ! $hide_caption, ! $hide_credit ) );
+		echo wp_kses_post( $this->image->metadata( ! $hide_caption, ! $hide_credit, 'image' ) );
+		echo wp_kses_post( $this->video->metadata( ! $hide_caption, ! $hide_credit, 'video' ) );
 	}
 
 	/**

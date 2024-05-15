@@ -191,6 +191,7 @@ p.page-heroContent {
   min-width: 100%;
   min-height: 100%;
   transform: translate(-50%, -50%);
+  object-fit: cover;
 
   @include mq(small) {
     display: block;
