@@ -62,8 +62,9 @@ if ( ! function_exists( 'amnesty_get_header_data' ) ) {
 	function amnesty_get_header_data( $post = null ) {
 		if ( is_404() || is_search() ) {
 			return [
-				'name'  => '',
-				'attrs' => [],
+				'name'    => '',
+				'attrs'   => [],
+				'content' => '',
 			];
 		}
 
@@ -71,8 +72,9 @@ if ( ! function_exists( 'amnesty_get_header_data' ) ) {
 
 		if ( ! isset( $post->ID ) || ! $post->ID ) {
 			return [
-				'name'  => '',
-				'attrs' => [],
+				'name'    => '',
+				'attrs'   => [],
+				'content' => '',
 			];
 		}
 
@@ -81,22 +83,24 @@ if ( ! function_exists( 'amnesty_get_header_data' ) ) {
 
 		if ( empty( $header ) ) {
 			return [
-				'name'  => '',
-				'attrs' => [],
+				'name'    => '',
+				'attrs'   => [],
+				'content' => '',
 			];
 		}
 
 		if ( 'amnesty-core/hero' === $header['blockName'] ) {
 			return [
-				'name'        => $header['blockName'],
-				'attrs'       => $header['attrs'],
-				'innerBlocks' => $header['innerBlocks'],
+				'name'    => $header['blockName'],
+				'attrs'   => $header['attrs'],
+				'content' => amnesty_render_blocks( $header['innerBlocks'] ),
 			];
 		}
 
 		return [
-			'name'  => $header['blockName'],
-			'attrs' => amnesty_get_header_data_from_meta( $post ),
+			'name'    => $header['blockName'],
+			'attrs'   => amnesty_get_header_data_from_meta( $post ),
+			'content' => amnesty_render_blocks( $header['innerBlocks'] ),
 		];
 	}
 }

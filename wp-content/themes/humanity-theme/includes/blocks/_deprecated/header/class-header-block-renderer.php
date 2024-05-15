@@ -12,14 +12,15 @@ if ( ! function_exists( '\Amnesty\Blocks\amnesty_render_header_block' ) ) {
 	/**
 	 * Render a header block
 	 *
-	 * @param array $attributes the block attributes
+	 * @param array<string,mixed> $attributes the block attributes
+	 * @param string              $content    inner content
 	 *
 	 * @package Amnesty\Blocks
 	 *
 	 * @return string
 	 */
-	function amnesty_render_header_block( array $attributes = [] ): string {
-		$renderer = new Header_Block_Renderer( $attributes );
+	function amnesty_render_header_block( array $attributes = [], string $content = '' ): string {
+		$renderer = new Header_Block_Renderer( $attributes, $content );
 		return $renderer->render();
 	}
 }
@@ -46,6 +47,13 @@ class Header_Block_Renderer {
 	protected array $attributes = [];
 
 	/**
+	 * Child content
+	 *
+	 * @var string
+	 */
+	protected string $content = '';
+
+	/**
 	 * The image data object
 	 *
 	 * @var \Amnesty\Get_Image_Data
@@ -63,10 +71,12 @@ class Header_Block_Renderer {
 	 * Constructor
 	 *
 	 * @param array<string,mixed> $attributes the block attributes
+	 * @param string              $content    inner content
 	 */
-	public function __construct( array $attributes = [] ) {
+	public function __construct( array $attributes = [], string $content = '' ) {
 		$this->id = substr( md5( uniqid( (string) wp_rand(), true ) ), 0, 8 );
 
+		$this->content    = trim( $content );
 		$this->attributes = wp_parse_args(
 			$attributes,
 			[
@@ -106,6 +116,7 @@ class Header_Block_Renderer {
 		$this->content();
 		$this->cta();
 		$this->inner_close();
+		echo wp_kses( $this->content, 'donations' );
 		$this->metadata();
 		$this->close();
 
@@ -180,27 +191,6 @@ class Header_Block_Renderer {
 	}
 
 	/**
-	 * Render the image caption
-	 *
-	 * @return void
-	 */
-	protected function metadata() {
-		if ( ! $this->image->id() && ! $this->video->id() ) {
-			return;
-		}
-
-		$hide_caption = true === amnesty_validate_boolish( $this->attributes['hideImageCaption'] );
-		$hide_credit  = true === amnesty_validate_boolish( $this->attributes['hideImageCopyright'] );
-
-		if ( $hide_caption && $hide_credit ) {
-			return;
-		}
-
-		echo wp_kses_post( $this->image->metadata( ! $hide_caption, ! $hide_credit, 'image' ) );
-		echo wp_kses_post( $this->video->metadata( ! $hide_caption, ! $hide_credit, 'video' ) );
-	}
-
-	/**
 	 * Render the video
 	 *
 	 * @return void
@@ -230,7 +220,7 @@ class Header_Block_Renderer {
 	protected function inner_open() {
 		$classes = 'hero-content';
 
-		if ( ! empty( $this->attributes['innerBlocks'] ) ) {
+		if ( $this->content ) {
 			$classes .= ' has-donation-block';
 		}
 
@@ -293,6 +283,27 @@ class Header_Block_Renderer {
 	 */
 	protected function inner_close() {
 		print '</div>';
+	}
+
+	/**
+	 * Render the image caption
+	 *
+	 * @return void
+	 */
+	protected function metadata() {
+		if ( ! $this->image->id() && ! $this->video->id() ) {
+			return;
+		}
+
+		$hide_caption = true === amnesty_validate_boolish( $this->attributes['hideImageCaption'] );
+		$hide_credit  = true === amnesty_validate_boolish( $this->attributes['hideImageCopyright'] );
+
+		if ( $hide_caption && $hide_credit ) {
+			return;
+		}
+
+		echo wp_kses_post( $this->image->metadata( ! $hide_caption, ! $hide_credit, 'image' ) );
+		echo wp_kses_post( $this->video->metadata( ! $hide_caption, ! $hide_credit, 'video' ) );
 	}
 
 	/**
