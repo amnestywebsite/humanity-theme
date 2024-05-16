@@ -8,7 +8,7 @@
  */
 ?>
 
-<!-- wp:amnesty-core/block-section {"background":"","enableBackgroundGradient":true} -->
+<!-- wp:amnesty-core/block-section {"background":"","enableBackgroundGradient":true,"textColour":"white"} -->
 <!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center">Heading or description</h2>
 <!-- /wp:heading -->
