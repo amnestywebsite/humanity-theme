@@ -45,6 +45,16 @@
   position: absolute;
 }
 
+[data-type="amnesty-core/hero"] .has-donation-block .hero-contentWrapper,
+.wp-block[data-align="left"] .has-donation-block .hero-contentWrapper {
+  max-width: 840px;
+}
+
+[data-type="amnesty-core/hero"] .has-donation-block .hero-content,
+.wp-block[data-align="left"] .has-donation-block .hero-content {
+  max-width: 460px;
+}
+
 [data-type="amnesty-core/hero"] .wp-block[data-align],
 .wp-block[data-align] .wp-block-amnesty-core-hero {
   height: auto;
