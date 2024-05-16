@@ -12,7 +12,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading -->
-<h2 class="wp-block-heading" id="h-discrimination-and-the-ability-to-protest-safely">Heading H2</h2>
+<h2 class="wp-block-heading" id="h-heading-h2">Heading H2</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
