@@ -17,8 +17,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="h-case-study-muslim-women-footballers-banned-from-protesting-in-france">Heading H2</h3>
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading -->
+<h2 class="wp-block-heading" id="h-heading-h2">Heading H2</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

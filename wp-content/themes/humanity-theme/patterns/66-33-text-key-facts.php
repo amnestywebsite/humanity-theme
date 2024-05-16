@@ -65,8 +65,8 @@
 <h2 class="wp-block-heading has-text-align-center has-large-font-size">FACT 2</h2>
 <!-- /wp:heading -->
 
-<!-- wp:image {"align":"center","id":198076,"width":"99px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://humanity.bigbite.site/en/wp-content/uploads/2023/08/Amnesty-Icons-19.png" alt="" class="wp-image-198076" style="width:99px;height:auto"/></figure>
+<!-- wp:image {"align":"center","width":"99px","height":"auto","sizeSlug":"lwi-block-sm","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-lwi-block-sm is-resized"><img alt="" style="width:99px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center"} -->
