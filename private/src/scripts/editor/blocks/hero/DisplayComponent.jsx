@@ -29,10 +29,16 @@ const mediaPanelTitle = (type) => {
   return __('Featured Image', 'amnesty');
 };
 
-const DisplayComponent = ({ attributes, className, setAttributes }) => {
+const useHasDonationBlock = (parentClientId) =>
+  useSelect((select) => {
+    const { innerBlocks } = select('core/block-editor').getBlock(parentClientId);
+    return innerBlocks.filter((block) => block.name === 'amnesty-wc/donation').length;
+  });
+
+const DisplayComponent = ({ attributes, className, clientId, setAttributes }) => {
   const [mediaData, setMediaData] = useState({});
   const videoRef = useRef();
-
+  const hasDonationBlock = useHasDonationBlock(clientId);
   const featuredImage = useSelect((select) => {
     const { getEditedPostAttribute } = select('core/editor');
     return getEditedPostAttribute('featured_media');
@@ -130,7 +136,7 @@ const DisplayComponent = ({ attributes, className, setAttributes }) => {
             </video>
           </div>
         )}
-        <div className="container">
+        <div className={`container ${hasDonationBlock ? 'has-donation-block' : ''}`}>
           <div className="hero-contentWrapper">
             <h1>
               <RichText
