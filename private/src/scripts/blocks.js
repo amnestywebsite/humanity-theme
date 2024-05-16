@@ -46,7 +46,6 @@ import './editor/blocks/menu/index.jsx';
 import './editor/blocks/petition-list/index.jsx';
 import './editor/blocks/post-list/index.jsx';
 import './editor/blocks/raw-code/index.jsx';
-import './editor/blocks/recepients/index.jsx';
 import './editor/blocks/regions/index.jsx';
 import './editor/blocks/related-content/index.jsx';
 import './editor/blocks/section/index.jsx';
