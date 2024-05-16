@@ -56,6 +56,11 @@
   justify-content: start;
 }
 
+[data-type="amnesty-core/hero"] .wp-block[data-align="left"] .container.has-donation-block,
+.wp-block[data-align="left"] .wp-block-amnesty-core-hero .container.has-donation-block {
+  justify-content: space-between;
+}
+
 [data-type="amnesty-core/hero"] .wp-block[data-align="left"] .hero-contentWrapper,
 .wp-block[data-align="left"] .wp-block-amnesty-core-hero .hero-contentWrapper {
   align-items: start;
