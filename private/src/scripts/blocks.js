@@ -35,7 +35,6 @@ import './editor/blocks/iframe-button/index.jsx';
 import './editor/blocks/slider/index.jsx';
 import './editor/blocks/download/index.jsx';
 import './editor/blocks/key-facts/index.jsx';
-import './editor/blocks/recepients/index.jsx';
 import './editor/blocks/button/index.jsx';
 import './editor/blocks/link-group/index.jsx';
 import './editor/blocks/stat-counter/index.jsx';
