@@ -8,7 +8,7 @@
  */
 ?>
 
-<!-- wp:amnesty-core/block-hero /-->
+<!-- wp:amnesty-core/hero {"content":"","title":"Web report","align":"left"} /-->
 
 <!-- wp:amnesty-core/block-menu {"color":"dark","type":"inpage-menu"} /-->
 
