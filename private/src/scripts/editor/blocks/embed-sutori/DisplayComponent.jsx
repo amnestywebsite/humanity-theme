@@ -1,4 +1,4 @@
-import { httpsOnly } from '../utils';
+import { httpsOnly } from '../../utils';
 
 const { Button, TextControl } = wp.components;
 const { Fragment, useState } = wp.element;

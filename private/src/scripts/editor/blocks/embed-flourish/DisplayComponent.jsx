@@ -1,4 +1,4 @@
-import { httpsOnly } from '../utils';
+import { httpsOnly } from '../../utils';
 
 const { delay } = lodash;
 const { Button, TextControl } = wp.components;

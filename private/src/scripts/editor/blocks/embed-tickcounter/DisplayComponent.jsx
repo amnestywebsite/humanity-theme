@@ -1,4 +1,4 @@
-import { httpsOnly } from '../utils';
+import { httpsOnly } from '../../utils';
 
 const { BlockAlignmentToolbar, BlockControls } = wp.blockEditor;
 const { Placeholder, TextControl } = wp.components;

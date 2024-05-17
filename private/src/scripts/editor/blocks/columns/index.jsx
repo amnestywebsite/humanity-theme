@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 
+import { findBlockType } from '../../utils';
 import './row-column.jsx';
 import DisplayComponent from './DisplayComponent.jsx';
 
@@ -45,23 +46,6 @@ registerBlockType('amnesty-core/block-row', {
     { displayName: 'ColumnsBlockSave' },
   ),
 });
-
-const findBlockType = (blocks, type) => {
-  let found = [];
-
-  // eslint-disable-next-line no-restricted-syntax
-  for (const block of blocks) {
-    if (block.name === type) {
-      found.push(block.clientId);
-    }
-
-    if (block.innerBlocks.length) {
-      found = [...found, ...findBlockType(block.innerBlocks, type)];
-    }
-  }
-
-  return found;
-};
 
 wp.domReady(() => {
   const select = wp.data.select('core/block-editor');
