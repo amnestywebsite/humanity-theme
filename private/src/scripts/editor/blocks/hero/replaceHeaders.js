@@ -1,29 +1,7 @@
+import { findBlockType } from '../../utils';
+
 const { omit } = lodash;
 const { createBlock } = wp.blocks;
-
-/**
- * Recursively search blocks on page for a specific block type
- *
- * @param {Array} blocks the list of blocks to search
- * @param {String} type the block type to find
- *
- * @returns {Array}
- */
-const findBlockType = (blocks, type) => {
-  let found = [];
-
-  Array.from(blocks).forEach((block) => {
-    if (block.name === type) {
-      found.push(block.clientId);
-    }
-
-    if (block.innerBlocks.length) {
-      found = [...found, ...findBlockType(block.innerBlocks, type)];
-    }
-  });
-
-  return found;
-};
 
 const metaKeyToAttributeMap = {
   _hero_alignment: 'align',

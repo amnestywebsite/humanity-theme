@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import { brToP, trimBr } from '../utils';
+import { brToP, trimBr } from '../../utils';
 
 const { __ } = wp.i18n;
 

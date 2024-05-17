@@ -1,6 +1,6 @@
 import './block-restrictions';
 
-import { validateBool } from '../../blocks/utils';
+import { validateBool } from '../../utils';
 
 const { ToggleControl } = wp.components;
 const { compose, ifCondition } = wp.compose;

@@ -3,7 +3,7 @@ import BlockImageSelector from './components/BlockImageSelector.jsx';
 import MediaMetadata from '../../components/MediaMetadata.jsx';
 import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls.jsx';
 import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
-import { fetchMediaData } from '../utils';
+import { fetchMediaData } from '../../utils';
 
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl } = wp.components;

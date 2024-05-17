@@ -1,4 +1,4 @@
-import { versionCompare } from '../utils';
+import { versionCompare } from '../../utils';
 
 const { createBlock } = wp.blocks;
 

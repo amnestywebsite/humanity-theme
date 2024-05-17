@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import { httpsOnly } from '../utils';
+import { httpsOnly } from '../../utils';
 
 const { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } = wp.blockEditor;
 const { Button, PanelBody, TextControl } = wp.components;
