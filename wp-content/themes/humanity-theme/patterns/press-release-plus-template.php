@@ -8,7 +8,7 @@
  */
 ?>
 
-<!-- wp:amnesty-core/hero {"content":"","ctaLink":"","ctaText":"","featuredVideoId":0,"title":"Press RElease Plus","align":""} /-->
+<!-- wp:amnesty-core/hero {"content":"","ctaLink":"","ctaText":"","featuredVideoId":0,"title":"Press Release Plus","align":""} /-->
 
 <!-- wp:amnesty-core/block-section {"sectionId":"","sectionName":""} -->
 <!-- wp:columns -->
