@@ -52,10 +52,12 @@
 <!-- wp:amnesty-core/block-menu {"color":"dark","type":"inpage-menu"} /-->
 <!-- /wp:amnesty-core/block-section -->
 
-<!-- wp:amnesty-core/block-call-to-action {"preheading":"ACT NOW","title":"Main call to action","actionType":""} -->
-<div class="callToAction" role="note" aria-label="Main call to action"><h2 class="callToAction-preHeading">ACT NOW</h2><h1 class="callToAction-heading">Main call to action</h1><div class="innerBlocksContainer"><!-- wp:amnesty-core/block-button {"ctaLink":"google.com","ctaText":"SIGN THE PETITION"} -->
-<a href="google.com" class="btn"><span>SIGN THE PETITION</span></a>
-<!-- /wp:amnesty-core/block-button --></div></div>
+<!-- wp:amnesty-core/block-call-to-action {"preheading":"ACT NOW","title":"MAIN CALL TO ACTION","actionType":""} -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-default"} -->
+<div class="wp-block-button is-style-default"><a class="wp-block-button__link wp-element-button" href="#">SIGN THE PETITION</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
 <!-- /wp:amnesty-core/block-call-to-action -->
 
 <!-- wp:amnesty-core/block-section {"background":"","sectionId":"section1","sectionName":"Section 1","backgroundImageOrigin":"bottom"} -->
@@ -114,10 +116,12 @@
 <!-- /wp:columns -->
 <!-- /wp:amnesty-core/block-section -->
 
-<!-- wp:amnesty-core/block-call-to-action {"preheading":"ACT NOW","title":"Main call to action","actionType":""} -->
-<div class="callToAction" role="note" aria-label="Main call to action"><h2 class="callToAction-preHeading">ACT NOW</h2><h1 class="callToAction-heading">Main call to action</h1><div class="innerBlocksContainer"><!-- wp:amnesty-core/block-button {"ctaLink":"google.com","ctaText":"SIGN THE PETITION"} -->
-<a href="google.com" class="btn"><span>SIGN THE PETITION</span></a>
-<!-- /wp:amnesty-core/block-button --></div></div>
+<!-- wp:amnesty-core/block-call-to-action {"preheading":"ACT NOW","title":"MAIN CALL TO ACTION","actionType":""} -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-default"} -->
+<div class="wp-block-button is-style-default"><a class="wp-block-button__link wp-element-button" href="#">SIGN THE PETITION</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
 <!-- /wp:amnesty-core/block-call-to-action -->
 
 <!-- wp:amnesty-core/block-section {"background":"","sectionId":"section3","sectionName":"Section 3","backgroundImageOrigin":"bottom"} -->
@@ -232,10 +236,12 @@
 <!-- /wp:columns -->
 <!-- /wp:amnesty-core/block-section -->
 
-<!-- wp:amnesty-core/block-call-to-action {"preheading":"ACT NOW","title":"Main call to action","actionType":""} -->
-<div class="callToAction" role="note" aria-label="Main call to action"><h2 class="callToAction-preHeading">ACT NOW</h2><h1 class="callToAction-heading">Main call to action</h1><div class="innerBlocksContainer"><!-- wp:amnesty-core/block-button {"ctaLink":"google.com","ctaText":"SIGN THE PETITION"} -->
-<a href="google.com" class="btn"><span>SIGN THE PETITION</span></a>
-<!-- /wp:amnesty-core/block-button --></div></div>
+<!-- wp:amnesty-core/block-call-to-action {"preheading":"ACT NOW","title":"MAIN CALL TO ACTION","actionType":""} -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-default"} -->
+<div class="wp-block-button is-style-default"><a class="wp-block-button__link wp-element-button" href="#">SIGN THE PETITION</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
 <!-- /wp:amnesty-core/block-call-to-action -->
 
 <!-- wp:amnesty-core/block-section -->
@@ -247,5 +253,5 @@
 <h2 class="wp-block-heading has-text-align-center">RELATED CONTENT</h2>
 <!-- /wp:heading -->
 
-<!-- wp:amnesty-core/block-list {"type":"taxonomy","style":"grid","category":"[{\u0022label\u0022:\u0022Campaigns\u0022,\u0022value\u0022:2133},{\u0022label\u0022:\u0022Education\u0022,\u0022value\u0022:2132},{\u0022label\u0022:\u0022Impact\u0022,\u0022value\u0022:2060},{\u0022label\u0022:\u0022News\u0022,\u0022value\u0022:1148},{\u0022label\u0022:\u0022Press Release\u0022,\u0022value\u0022:2181},{\u0022label\u0022:\u0022Research\u0022,\u0022value\u0022:1149}]","amount":5,"taxonomy":{"label":"Topics","value":"topic"}} /-->
+<!-- wp:amnesty-core/block-list {"type":"taxonomy","style":"grid","taxonomy":{"label":"Topics","value":"topic"}} /-->
 <!-- /wp:amnesty-core/block-section -->
