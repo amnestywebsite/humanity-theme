@@ -1,0 +1,127 @@
+.callToAction {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  border-top: 7px solid $color-black;
+  border-bottom: 7px solid $color-black;
+
+  @include mq(small) {
+    padding: 36px 32px;
+  }
+}
+
+.callToAction * {
+  font-family: var(--wp--preset--font-family--secondary);
+}
+
+.callToAction > *:empty {
+  display: none;
+}
+
+.callToAction:first-child {
+  margin-top: 0;
+}
+
+.callToAction-preHeading {
+  font-size: 21px;
+  text-align: center;
+
+  @include mq(small) {
+    font-size: 31px;
+    margin-bottom: 20px;
+  }
+}
+
+.callToAction-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include mq(small) {
+    font-size: 41px;
+  }
+}
+
+.callToAction-content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.callToAction .innerBlocksContainer {
+  display: flex;
+  justify-content: center;
+
+  @include mq($from: xx-small, $until: medium) {
+    flex-direction: column;
+    align-items: inherit;
+  }
+}
+
+.callToAction .innerBlocksContainer .btn {
+  margin-top: 0;
+  margin-left: 30px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  @include mq($from: xx-small, $until: medium) {
+    margin-top: 30px;
+    margin-left: 0 !important;
+  }
+}
+
+.callToAction .innerBlocksContainer .wp-block-button__link {
+  margin-left: 14px;
+
+  @include mq($from: xx-small, $until: medium) {
+    margin-top: 30px;
+    margin-left: 0 !important;
+  }
+}
+
+.callToAction .innerBlocksContainer .wp-block-buttons .wp-block-button {
+  height: 100%;
+
+  @include mq($from: xx-small, $until: medium) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.callToAction .innerBlocksContainer .wp-block-buttons .wp-block-button .wp-block-button__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.rtl .callToAction .innerBlocksContainer .wp-block-buttons {
+  margin-right: 24px;
+}
+
+.callToAction--shade {
+  background-color: $color-grey-light;
+  border-color: $color-grey-light;
+}
+
+.callToAction--small {
+  padding: 20px;
+}
+
+.callToAction--small .callToAction-preHeading {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.callToAction--small .callToAction-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.callToAction--small .callToAction-content {
+  font-size: 16px;
+  margin-bottom: 20px;
+}

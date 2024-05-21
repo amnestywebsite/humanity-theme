@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/embed-tickcounter",
+  "title": "Tickcounter Embed",
+  "category": "amnesty-core",
+  "description": "Embed a resource from Tickcounter",
+  "keywords": ["Tickcounter", "Embed", "Counter", "Timer"],
+  "icon": "embed-photo",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "viewScript": "tickcounter-sdk",
+  "render": "file:./render.php",
+  "attributes": {
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "source": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.wp-block-amnesty-core-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.wp-block-amnesty-core-counter.alignleft {
+  float: unset;
+}
+
+.wp-block-amnesty-core-counter.aligncenter {
+  align-items: center;
+}
+
+.wp-block-amnesty-core-counter.alignright {
+  align-items: flex-end;
+  float: unset;
+}
+
+.rtl .wp-block-amnesty-core-counter {
+  align-items: flex-end;
+}
+
+.rtl .wp-block-amnesty-core-counter.alignright {
+  align-items: flex-start;
+}

@@ -1,0 +1,100 @@
+[data-type="amnesty-core/hero"] {
+  margin-inline: auto !important;
+  max-width: $flexy-container !important;
+  width: 100% !important;
+  float: none !important;
+}
+
+[data-type="amnesty-core/hero"] .wp-block {
+  max-width: 100%;
+}
+
+.wp-block-amnesty-core-hero,
+.wp-block-amnesty-core-hero * {
+  box-sizing: border-box;
+}
+
+.wp-block-amnesty-core-hero .hero-contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wp-block-amnesty-core-hero .hero-contentWrapper > * {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.wp-block-amnesty-core-hero .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wp-block-amnesty-core-hero .btn .block-editor-url-input__button {
+  position: relative;
+  margin-left: 16px;
+}
+
+.rtl .wp-block-amnesty-core-hero .btn .block-editor-url-input__button {
+  margin-left: 0;
+  margin-right: 16px;
+}
+
+.wp-block-amnesty-core-hero .block-editor-url-input__button-modal {
+  position: absolute;
+}
+
+[data-type="amnesty-core/hero"] .has-donation-block .hero-contentWrapper,
+.wp-block-amnesty-core-hero .has-donation-block .hero-contentWrapper {
+  max-width: 840px;
+}
+
+[data-type="amnesty-core/hero"] .has-donation-block .hero-content,
+.wp-block-amnesty-core-hero .has-donation-block .hero-content {
+  max-width: 460px;
+}
+
+[data-type="amnesty-core/hero"] .wp-block[data-align],
+.wp-block[data-align] .wp-block-amnesty-core-hero {
+  height: auto;
+  min-height: 540px;
+}
+
+[data-type="amnesty-core/hero"] .wp-block[data-align="left"] .container,
+.wp-block[data-align="left"] .wp-block-amnesty-core-hero .container {
+  justify-content: start;
+}
+
+[data-type="amnesty-core/hero"] .wp-block[data-align="left"] .container.has-donation-block,
+.wp-block[data-align="left"] .wp-block-amnesty-core-hero .container.has-donation-block {
+  justify-content: space-between;
+}
+
+[data-type="amnesty-core/hero"] .wp-block[data-align="left"] .hero-contentWrapper,
+.wp-block[data-align="left"] .wp-block-amnesty-core-hero .hero-contentWrapper {
+  align-items: start;
+  text-align: start;
+}
+
+[data-type="amnesty-core/hero"] .wp-block[data-align="center"] .container,
+.wp-block[data-align="center"] .wp-block-amnesty-core-hero .container {
+  justify-content: center;
+}
+
+[data-type="amnesty-core/hero"] .wp-block[data-align="center"] .hero-contentWrapper,
+.wp-block[data-align="center"] .wp-block-amnesty-core-hero .hero-contentWrapper {
+  align-items: center;
+  text-align: center;
+}
+
+[data-type="amnesty-core/hero"] .wp-block[data-align="right"] .container,
+.wp-block[data-align="right"] .wp-block-amnesty-core-hero .container {
+  justify-content: end;
+}
+
+[data-type="amnesty-core/hero"] .wp-block[data-align="right"] .hero-contentWrapper,
+.wp-block[data-align="right"] .wp-block-amnesty-core-hero .hero-contentWrapper {
+  align-items: end;
+  text-align: end;
+}

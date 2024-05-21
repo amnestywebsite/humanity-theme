@@ -1,0 +1,18 @@
+.slide .editor-url-input__button {
+  position: relative;
+  margin-left: 16px;
+}
+
+.slide .editor-url-input__button-modal {
+  position: absolute;
+  left: 0;
+  width: 340px;
+}
+
+.slide-callToAction  .block-editor-url-input__button .components-toolbar__control {
+  background-color: $color-grey-base;
+}
+
+.slide-callToAction .btn span {
+  color: $color-black;
+}

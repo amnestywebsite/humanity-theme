@@ -1,0 +1,275 @@
+.slide {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  background-color: $color-grey-base;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include mq(small) {
+    min-height: 670px;
+    padding: 40px 65px;
+  }
+}
+
+.rtl .slide {
+  justify-content: flex-end;
+}
+
+@include mq(small) {
+  .slide.is-center-aligned {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slide.is-center-aligned .slide-contentContainer {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .slide.is-center-aligned h1.slide-title,
+  .slide.is-center-aligned h2.slide-subtitle,
+  .slide.is-center-aligned .slide-content {
+    text-align: center;
+  }
+
+  .slide.is-center-aligned .slide-callToAction {
+    justify-content: center;
+  }
+
+  .slide.is-right-aligned {
+    justify-content: flex-end;
+  }
+
+  .rtl .slide.is-right-aligned {
+    justify-content: flex-start;
+  }
+
+  .slide.is-right-aligned .slide-contentContainer {
+    margin-left: auto;
+  }
+
+  .rtl .slide.is-right-aligned .slide-contentContainer {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .slide.is-right-aligned .slide-callToAction {
+    justify-content: flex-end;
+  }
+
+  .rtl .slide.is-right-aligned .slide-callToAction {
+    justify-content: flex-start;
+  }
+}
+
+.slide-contentContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  min-width: 100%;
+  background-color: $color-black;
+  color: $color-white;
+  padding: 16px;
+
+  @include mq(small) {
+    max-width: 500px;
+    min-width: 250px;
+  }
+}
+
+.slide-contentContainer > * {
+  margin-bottom: 0;
+}
+
+.slide-contentContainer > * + * {
+  margin-top: 12px;
+}
+
+.slide-contentContainer h1,
+.slide-contentContainer h2 {
+  font-family: var(--wp--preset--font-family--secondary);
+}
+
+.slide-contentContainer p,
+.slide-contentContainer .slide-content {
+  font-family: var(--wp--preset--font-family--primary);
+}
+
+.slide-contentContainer h1,
+.slide-contentContainer h2,
+.slide-contentContainer p,
+.slide-contentContainer span,
+.slide-contentContainer .slide-content {
+  color: $color-white;
+}
+
+.slide.has-opaque-background .slide-contentContainer {
+  background: linear-gradient(to bottom, rgba($color-black, .5) 90%, rgba($color-black, 0) 100%);
+}
+
+.slide.has-transparent-background .slide-contentContainer {
+  background: transparent;
+}
+
+.slide-callToAction {
+  display: flex;
+  align-items: center;
+}
+
+
+.slider .slide {
+  flex: 1 0 100%;
+  flex-direction: row;
+  left: auto !important;
+  position: relative !important;
+  transform: none !important;
+}
+
+.rtl .slider .slide {
+  flex-direction: row-reverse;
+  right: auto !important;
+}
+
+.slide-contentWrapper {
+  width: 100%;
+  max-height: 500px;
+
+  @include mq(small) {
+    max-height: 670px;
+  }
+}
+
+.slide-contentWrapper.is-open {
+  background-color: rgba($color-black, .4);
+  overflow-y: scroll;
+
+  @include mq(small) {
+    background-color: transparent;
+  }
+}
+
+.slide-contentWrapper.is-open::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-bottom: 20px;
+  color: $color-white;
+  text-align: center;
+
+  @include mq(small) {
+    display: none;
+  }
+}
+
+.slide-contentWrapper.is-open .slide-contentContainer {
+  z-index: 2;
+  background: $color-black;
+}
+
+.slide-contentWrapper.is-open .slide-content {
+  height: auto;
+}
+
+.slide-contentWrapper.is-open .slider-toggleContent::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.slide-content {
+  position: relative;
+  height: 45px;
+  overflow: hidden;
+  padding-right: 50px;
+
+  @include mq(small) {
+    height: auto;
+    padding-right: 0;
+  }
+}
+
+.rtl .slide-content {
+  padding-right: 0;
+  padding-left: 50px;
+
+  @include mq(small) {
+    padding-left: 0;
+  }
+}
+
+h1.slide-title {
+  font-size: 43px;
+  text-transform: uppercase;
+  color: $color-white !important;
+
+  @include mq(small) {
+    font-size: 48px;
+  }
+}
+
+.rtl h1.slide-title {
+  text-align: right;
+}
+
+h2.slide-subtitle {
+  font-size: 30px;
+  color: $color-white !important;
+
+  @include mq(small) {
+    font-size: 36px;
+  }
+}
+
+.rtl h2.slide-subtitle {
+  text-align: right;
+}
+
+.slide-content .btn {
+  margin-top: 6px;
+
+  @include mq(small) {
+    margin-top: 24px;
+  }
+}
+
+.slide-content p {
+  font-size: 16px;
+
+  @include mq(small) {
+    font-size: 18px;
+  }
+}
+
+.slide-content p:last-child {
+  margin-bottom: 0;
+}
+
+.slide-timelineContent {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, .7);
+  color: $color-black;
+  padding: 20px;
+  text-align: center;
+}
+
+.timeline-dark .slide-timelineContent {
+  background: rgba(0, 0, 0, .3);
+  color: $color-white;
+}
+
+.timeline-light .slide-timelineContent {
+  background: rgba(255, 255, 255, .7);
+  color: $color-black;
+}
+
+.slide-timelineContent .slide-timelineContent-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}

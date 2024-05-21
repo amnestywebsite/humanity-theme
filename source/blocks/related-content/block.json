@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/related-content",
+  "title": "Related Content",
+  "category": "amnesty-core",
+  "description": "Add a grid of posts that are related to the current post",
+  "icon": "",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

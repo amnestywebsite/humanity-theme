@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/countdown-timer",
+  "title": "Countdown timer",
+  "category": "amnesty-core",
+  "description": "Counts down to a specified date and time",
+  "keywords": ["Countdown", "Timer"],
+  "icon": "clock",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-view.css",
+  "render": "file:./render.php",
+  "supports": {
+  },
+  "attributes": {
+    "date": {
+      "type": "string",
+      "default": ""
+    },
+    "timeRemaining": {
+      "type": "string",
+      "default": ""
+    },
+    "expiredText": {
+      "type": "string",
+      "default": ""
+    },
+    "isTimeSet": {
+      "type": "boolean",
+      "default": false
+    },
+    "alignment": {
+      "type": "string",
+      "default": "none"
+    }
+  }
+}

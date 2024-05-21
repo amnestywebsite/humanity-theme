@@ -1,0 +1,150 @@
+.tweetAction {
+  padding: 21px;
+  max-width: 350px;
+  background-color: $color-grey-x-light;
+  flex: 1;
+
+  @include mq(small) {
+    max-width: 480px;
+  }
+}
+
+.tweetAction--narrow {
+  max-width: 350px;
+}
+
+.tweetBlock.align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.tweetBlock.align-left {
+  display: flex;
+  justify-content: left;
+}
+
+.tweetBlock.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tweetAction-header {
+  display: flex;
+  align-items: center;
+}
+
+.tweetAction .dashicons-twitter {
+  margin-right: 14px;
+  width: auto;
+  height: auto;
+  font-size: 40px;
+  color: $color-blue-mid-light;
+}
+
+.tweetAction-title {
+  display: inline-block;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.tweetAction-content {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 10px;
+  min-height: 150px;
+  max-height: 278px;
+  overflow-y: auto;
+  background-color: $color-white;
+  font-family: var(--wp--preset--font-family--primary);
+  font-size: 21px;
+
+  @include mq(small) {
+    max-height: none;
+    overflow-y: unset;
+  }
+}
+
+.is-style-alternative-style.tweetAction .dashicons-twitter {
+  order: 2;
+  transform: scale(1.4);
+  color: $color-blue-md-light;
+  margin-top: 33px;
+  margin-bottom: 15px;
+  margin-right: 0;
+}
+
+.is-style-alternative-style.tweetAction {
+  background-color: $color-white;
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.is-style-alternative-style.tweetAction .tweetAction-content {
+  min-height: 20px;
+}
+
+.is-style-alternative-style.tweetAction .tweetButton {
+  align-self: center;
+}
+
+.is-style-alternative-style .tweetAction-header {
+  flex-direction: column;
+}
+
+.is-style-alternative-style .tweetAction-content {
+  padding: 0 60px;
+  min-height: unset;
+  max-height: unset;
+  font-family: var(--wp--preset--font-family--secondary);
+  font-size: 24px;
+  text-align: center;
+}
+
+.is-style-alternative-style.tweetAction .btn {
+  background-color: $color-blue-md-light;
+  border: none;
+  margin: 0 auto;
+  padding: 13px 24px;
+  max-width: 230px;
+  line-height: normal;
+  color: $color-black;
+  font-family: var(--wp--preset--font-family--secondary);
+  font-size: 16px;
+}
+
+.is-style-alternative-style .tweetButton {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.is-style-alternative-style.tweetBlock {
+  height: 100%;
+}
+
+.tweetAction-embed {
+  margin-top: 24px;
+}
+
+.is-style-alternative-style.tweetAction .tweetAction-title {
+  text-align: center;
+}
+
+.tweetAction .tweetAction-textBox {
+  margin-bottom: 24px;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+}
+
+.is-style-alternative-style.tweetAction .tweetAction-textBox {
+  text-align: center;
+}
+
+.tweetAction .embedLink-placeholder {
+  padding: 10px;
+}

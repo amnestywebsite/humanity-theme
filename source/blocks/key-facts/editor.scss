@@ -1,0 +1,9 @@
+.factBlock {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.edit-post-visual-editor .editor-block-list__block[data-type="amnesty-core/key-fact"]:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 50px;
+}

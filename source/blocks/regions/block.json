@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/regions",
+  "title": "Terms List",
+  "category": "amnesty-core",
+  "description": "",
+  "keywords": ["Terms"],
+  "icon": "",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-view.css",
+  "render": "file:./render.php",
+  "supports": {
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "taxonomy": {
+      "type": "string",
+      "default": ""
+    },
+    "background": {
+      "type": "string",
+      "default": ""
+    },
+    "alignment": {
+      "type": "string",
+      "default": ""
+    },
+    "depth": {
+      "type": "number",
+      "default": 1
+    },
+    "regionsOnly": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.wp-block-amnesty-core-counter {
+  font-family: var(--wp--preset--font-family--secondary);
+  font-size: 85px;
+  font-weight: bold;
+}
+
+.wp-block-amnesty-core-counter.aligncenter {
+  text-align: center;
+}
+
+.wp-block-amnesty-core-counter.alignright {
+  text-align: right;
+  float: none !important;
+}
+
+.wp-block-amnesty-core-counter.alignleft {
+  text-align: left;
+  float: none !important;
+}

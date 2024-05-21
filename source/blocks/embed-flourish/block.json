@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/embed-flourish",
+  "title": "Flourish Embed",
+  "category": "amnesty-core",
+  "description": "Embed a Flourish visualisation",
+  "keywords": ["Flourish", "Embed"],
+  "icon": "embed-photo",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "viewScript": "flourish-embed",
+  "render": "file:./render.php",
+  "attributes": {
+    "source": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

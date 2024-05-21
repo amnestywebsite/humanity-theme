@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/background-media-column",
+  "parent": ["amnesty-core/background-media"],
+  "title": "Background Media Column",
+  "category": "amnesty-core",
+  "description": "Column layout for Background Media block",
+  "icon": "",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "supports": {
+    "alignWide": false,
+    "className": false,
+    "customClassName": false,
+    "defaultStylePicker": false,
+    "inserter": false,
+    "reusable": false
+  },
+  "attributes": {
+    "uniqId": {
+      "type": "string",
+      "default": "",
+      "source": "attribute",
+      "selector": "div",
+      "attribute": "id"
+    },
+    "horizontalAlignment": {
+      "type": "string",
+      "default": ""
+    },
+    "verticalAlignment": {
+      "type": "string",
+      "default": ""
+    },
+    "image": {
+      "type": "number",
+      "default": 0
+    },
+    "background": {
+      "type": "string",
+      "default": ""
+    },
+    "opacity": {
+      "type": "number",
+      "default": 1
+    },
+    "focalPoint": {
+      "type": "object",
+      "default": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  }
+}

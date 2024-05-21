@@ -1,0 +1,98 @@
+.download-block {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: stretch;
+  gap: spacing(half);
+
+  @include mq(x-small) {
+    flex-direction: row;
+  }
+}
+
+.download-block .checkboxGroup {
+  min-width: 200px;
+}
+
+.download-block .checkboxGroup-button,
+.download-block .checkboxGroup-list {
+  width: 100%;
+}
+
+.download-block.alignleft {
+  float: none !important;
+
+  @include mq(x-small) {
+    justify-content: flex-start;
+  }
+}
+
+.download-block.aligncenter {
+  float: none !important;
+
+  @include mq(x-small) {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.download-block.alignright {
+  float: none !important;
+
+  @include mq(x-small) {
+    justify-content: flex-end;
+  }
+}
+
+.btn--download {
+  display: inline-flex;
+  align-items: baseline;
+  margin-top: 24px;
+
+  .article-content & {
+    margin-top: 24px;
+  }
+}
+
+.download-block .btn--download {
+  display: inline-flex;
+
+  [dir="rtl"] & {
+    flex-direction: row-reverse;
+  }
+
+  [dir="ltr"] & {
+    flex-direction: row;
+  }
+
+  @include mq(x-small) {
+    margin-top: 0;
+  }
+}
+
+.btn--download::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  background-image: url("../images/icon-download-arrow.svg");
+  background-size: contain;
+  transform: translateY(2px);
+
+  .rtl & {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+.btn--primary.btn--download::before,
+.btn--white.btn--download::before {
+  background-image: url("../images/icon-download-arrow-dark.svg");
+}
+
+.btn--primary.btn--download:hover::before,
+.btn--primary.btn--download:active::before,
+.btn--primary.btn--download:focus::before {
+  background-image: url("../images/icon-download-arrow.svg");
+}
