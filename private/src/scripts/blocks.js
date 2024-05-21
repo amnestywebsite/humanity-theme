@@ -10,7 +10,6 @@
  */
 import '../styles/gutenberg.scss';
 
-import './editor/block-filters';
 import './editor/block-styles';
 
 import './editor/plugins/appearance-options/index.jsx';
