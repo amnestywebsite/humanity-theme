@@ -1,0 +1,10 @@
+.wp-block-amnesty-core-regions ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.wp-block-amnesty-core-regions .listItems > li > span {
+  font-family: var(--wp--preset--font-family--secondary);
+  font-weight: bold;
+}

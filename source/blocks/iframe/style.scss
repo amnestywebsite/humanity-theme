@@ -1,0 +1,70 @@
+.fluid-videoContainer,
+.fluid-iframe {
+  position: relative;
+}
+
+.fluid-videoContainer {
+  padding-top: 56.25%;
+}
+
+.fluid-videoContainer iframe,
+.fluid-iframe iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fluid-iframe.left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fluid-iframe.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fluid-iframe.center {
+  display: flex;
+  justify-content: center;
+}
+
+.iframe-caption.left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iframe-caption.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iframe-caption.center {
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-iframe.center {
+  margin: auto;
+}
+
+.responsive-iframe.left {
+  margin-right: auto;
+}
+
+.responsive-iframe.right {
+  margin-left: auto;
+}
+
+.wp-block-embed.isRightAligned figcaption {
+  text-align: right;
+}
+
+.wp-block-embed.isLeftAligned figcaption {
+  text-align: left;
+}
+
+.wp-block-embed.isCenterAligned figcaption {
+  text-align: center;
+}

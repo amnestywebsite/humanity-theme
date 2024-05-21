@@ -1,0 +1,201 @@
+@import "./styles";
+
+.wp-block-amnesty-core-hero {
+  position: relative;
+  display: flex;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  max-width: $flexy-container;
+  min-height: 540px;
+  background-size: cover;
+  background-position: center center;
+
+  @include mq(small) {
+    padding-top: 111px;
+    padding-bottom: 80px;
+    height: auto;
+  }
+}
+
+.wp-block-amnesty-core-hero .container {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px !important;
+}
+
+.hero-contentWrapper > * {
+  margin-bottom: 12px;
+}
+
+.hero-content {
+  display: table;
+  padding: 10px 16px;
+  max-width: 460px;
+  font-size: 1.5rem;
+
+  @include mq(xx-small) {
+    padding: 10px 20px;
+    max-width: 840px;
+  }
+}
+
+.hero-title {
+  margin: 0;
+  padding: 0 16px;
+  font-size: 4.5rem;
+  line-height: 1.3 !important;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  max-width: 840px;
+  text-transform: uppercase;
+  box-decoration-break: clone;
+
+  @include mq(xx-small) {
+    font-size: 48px;
+    padding: 0 20px;
+  }
+
+  @include mq(small) {
+    font-size: 72px;
+  }
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 16px;
+  background-color: rgba($color-black, .45);
+
+  @include mq(xx-small) {
+    padding: 20px;
+  }
+}
+
+.hero-videoContainer,
+.hero-video {
+  display: none;
+
+  @include mq(small) {
+    display: block;
+  }
+}
+
+.hero-videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.wp-block-amnesty-core-hero .image-metadata.is-image {
+  display: flex;
+}
+
+.wp-block-amnesty-core-hero .image-metadata.is-video {
+  display: none;
+}
+
+.wp-block-amnesty-core-hero.has-video .image-metadata.is-image {
+  display: flex;
+
+  @include mq(small) {
+    display: none;
+  }
+}
+
+.wp-block-amnesty-core-hero.has-video .image-metadata.is-video {
+  display: none;
+
+  @include mq(small) {
+    display: flex;
+  }
+}
+
+.wp-block-amnesty-core-hero.has-dark-background .hero-title,
+.wp-block-amnesty-core-hero.has-dark-background .hero-content,
+.wp-block-amnesty-core-hero.has-dark-background .hero-cta {
+  color: $color-white;
+  background-color: $color-black;
+}
+
+.wp-block-amnesty-core-hero.has-light-background .hero-title,
+.wp-block-amnesty-core-hero.has-light-background .hero-content,
+.wp-block-amnesty-core-hero.has-light-background .hero-cta {
+  color: $color-black;
+  background-color: $color-white;
+}
+
+.wp-block-amnesty-core-hero.has-light-background .btn {
+  border: none;
+  color: $color-white;
+  background-color: $color-black;
+}
+
+.wp-block-amnesty-core-hero.is-aligned-left .container {
+  justify-content: start;
+}
+
+.wp-block-amnesty-core-hero.is-aligned-left .hero-contentWrapper {
+  text-align: start;
+}
+
+.rtl .wp-block-amnesty-core-hero.is-aligned-left .container {
+  justify-content: end;
+}
+
+.rtl .wp-block-amnesty-core-hero.is-aligned-left .hero-contentWrapper {
+  text-align: end;
+}
+
+.rtl .wp-block-amnesty-core-hero.is-aligned-left .hero-content {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.wp-block-amnesty-core-hero.is-aligned-center .container {
+  justify-content: center;
+}
+
+.wp-block-amnesty-core-hero.is-aligned-center .hero-contentWrapper {
+  align-items: center;
+  text-align: center;
+}
+
+.wp-block-amnesty-core-hero.is-aligned-center .hero-content {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wp-block-amnesty-core-hero.is-aligned-right .container {
+  justify-content: end;
+}
+
+.wp-block-amnesty-core-hero.is-aligned-right .hero-contentWrapper {
+  align-items: end;
+  text-align: end;
+}
+
+.wp-block-amnesty-core-hero.is-aligned-right .hero-content {
+  margin-left: auto;
+}
+
+.rtl .wp-block-amnesty-core-hero.is-aligned-right .container {
+  justify-content: start;
+}
+
+.rtl .wp-block-amnesty-core-hero.is-aligned-right .hero-contentWrapper {
+  text-align: start;
+}

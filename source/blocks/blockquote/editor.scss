@@ -1,0 +1,37 @@
+.blockquote {
+  width: 100%;
+}
+
+.blockquote p {
+  white-space: normal !important;
+}
+
+.blockquote.align-start p {
+  line-height: 1.2 !important;
+}
+
+.blockquote.is-medium p {
+  line-height: 1.2 !important;
+}
+
+.blockquote cite.editor-rich-text__tinymce.mce-content-body[data-is-placeholder-visible="true"] {
+  border-bottom: none;
+}
+
+.blockquote div p {
+  font-family: var(--wp--preset--font-family--secondary);
+  line-height: 2 !important;
+}
+
+.blockquote div cite {
+  line-height: 40px !important;
+  padding-bottom: 24px;
+}
+
+.blockquote.is-white.is-lined cite::after {
+  background-color: $color-white;
+}
+
+.blockquote.is-grey.is-lined cite::after {
+  background-color: $color-grey-brand;
+}

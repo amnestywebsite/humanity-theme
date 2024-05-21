@@ -1,0 +1,16 @@
+.sutori-toggle {
+  margin-top: 24px;
+  text-align: center;
+  font-family: var(--wp--preset--font-family--secondary);
+  font-size: 36px;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+.sutori-embed iframe {
+  display: none;
+}
+
+.sutori-embed iframe.is-open {
+  display: block;
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/term-list",
+  "title": "Term A–Z",
+  "category": "amnesty-core",
+  "description": "List all visible terms in a taxonomy, grouped by first letter",
+  "keywords": ["Term List", "A-Z Terms", "Countries"],
+  "icon": "editor-textcolor",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-view.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "A-Z of Countries and Regions"
+    },
+    "taxonomy": {
+      "type": "string",
+      "default": ""
+    },
+    "alignment": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/embed-sutori",
+  "title": "Sutori Embed",
+  "category": "amnesty-core",
+  "description": "Embed a resource from Sutori",
+  "keywords": ["Sutori", "Embed"],
+  "icon": "embed-photo",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-view.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "source": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

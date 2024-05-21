@@ -1,0 +1,9 @@
+blocks to convert:
+- post list
+
+then:
+- remove block styles from src
+- remove block registration from src
+- remove block script modules from src
+- remove block renders and registration from includes
+- hook up build system somehow

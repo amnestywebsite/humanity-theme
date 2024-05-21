@@ -1,0 +1,244 @@
+.slider-nav {
+  display: flex;
+}
+
+.slider-navButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 56px;
+  background-color: $color-grey-light;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: var(--wp--preset--font-family--secondary);
+  flex: 1 1 auto;
+  font-weight: bold;
+  border: none;
+  color: $color-black;
+}
+
+.slider-navButton.is-nav-selected {
+  background-color: $color-white;
+  transform: translateY(-4px);
+}
+
+.slider-navButton.is-nav-selected::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 4px);
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $color-black;
+}
+
+.slides-container {
+  position: relative;
+}
+
+.slides-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: none;
+  background-color: $color-white;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  text-indent: -1000vw;
+  border: none;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.slides-arrow::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slides-arrow--next {
+  right: 0;
+  left: initial;
+}
+
+.rtl .slides-arrow--next {
+  right: initial;
+  left: 0;
+}
+
+.rtl .slides-arrow--previous {
+  right: 0;
+  left: initial;
+}
+
+.slides-arrow--next::after {
+  @include icon_scale(110px, 265px, 16px, 16px, 2);
+  content: "";
+  display: block;
+}
+
+.rtl .slides-arrow--next::after {
+  @include icon_scale(234px, 240px, 16px, 16px, 2);
+}
+
+.slides-arrow--previous::after {
+  @include icon_scale(234px, 240px, 16px, 16px, 2);
+  content: "";
+  display: block;
+}
+
+.rtl .slides-arrow--previous::after {
+  @include icon_scale(110px, 265px, 16px, 16px, 2);
+}
+
+.slider {
+  position: relative;
+  max-width: 1468px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slider .flickity-enabled {
+  display: flex;
+}
+
+.slider .flickity-viewport {
+  order: 2;
+  width: 100%;
+  height: auto !important;
+}
+
+.slider .flickity-slider {
+  position: relative !important;
+  display: flex;
+  left: auto !important;
+}
+
+.rtl .slider .flickity-slider {
+  right: auto !important;
+}
+
+.slider .slider-nav {
+  width: 100%;
+}
+
+.slider .has-arrows .slider-nav {
+  max-width: calc(100% - 88px);
+}
+
+.slider .slider-navButton {
+  width: 100%;
+  flex: 1 0 auto;
+  flex-direction: row;
+  left: auto !important;
+  position: relative !important;
+  transform: none !important;
+
+  @include mq(small) {
+    width: auto;
+  }
+}
+
+.rtl .slider .slider-navButton {
+  flex-direction: row-reverse;
+  right: auto !important;
+}
+
+.slider-navContainer {
+  display: flex;
+}
+
+.slider-navContainer .slider-nav {
+  order: 2;
+}
+
+.slider-navContainer [data-slider-next],
+.slider-navContainer [data-slider-prev] {
+  display: none;
+  height: auto;
+}
+
+.slider-navContainer [data-slider-next] {
+  order: 3;
+}
+
+.rtl .slider-navContainer [data-slider-next] {
+  order: 1;
+}
+
+.slider-navContainer [data-slider-prev] {
+  order: 1;
+}
+
+.rtl .slider-navContainer [data-slider-prev] {
+  order: 3;
+}
+
+.slider-navContainer.has-arrows > [data-slider-next],
+.slider-navContainer.has-arrows > [data-slider-prev] {
+  display: flex;
+}
+
+.slider-toggleContent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 34px;
+  width: 34px;
+  border: 1px solid $color-white;
+  background-color: transparent;
+  text-indent: -1000vw;
+
+  @include mq(small) {
+    display: none;
+  }
+}
+
+.slider-toggleContent::before {
+  @include icon_scale(271px, 131px, 16px, 16px, 1.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+.rtl .slider-toggleContent {
+  right: auto;
+  left: 0;
+}
+
+.slider-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $color-white;
+  padding: 20px;
+  z-index: 1;
+  font-family: var(--wp--preset--font-family--secondary);
+  text-transform: uppercase;
+  font-size: 18px;
+
+  @include mq(small) {
+    font-size: 34px;
+  }
+}
+
+.slider.timeline-light .image-metadata {
+  background-color: transparent;
+  color: $color-black;
+}
+
+.slider.timeline-dark .image-metadata {
+  background-color: transparent;
+  color: $color-white;
+}

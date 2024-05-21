@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/action-block",
+  "title": "Action",
+  "category": "amnesty-core",
+  "description": "Add an Action block",
+  "icon": "megaphone",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-view.css",
+  "render": "file:./render.php",
+  "supports": {
+    "align": true,
+    "className": false
+  },
+  "attributes": {
+    "style": {
+      "type": "string",
+      "default": ""
+    },
+    "centred": {
+      "type": "boolean",
+      "default": false
+    },
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "imageID": {
+      "type": "integer",
+      "default": 0
+    },
+    "imageURL": {
+      "type": "string",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "link": {
+      "type": "string",
+      "default": ""
+    },
+    "linkText": {
+      "type": "string",
+      "default": ""
+    },
+    "largeImageURL": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

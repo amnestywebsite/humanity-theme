@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/block-download",
+  "title": "Resource Download",
+  "category": "amnesty-core",
+  "description": "Add a button (+ dropdown selector) to download resource(s)",
+  "icon": "download",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-view.css",
+  "render": "file:./render.php",
+  "supports": {
+    "className": false,
+    "multiple": true
+  },
+  "attributes": {
+    "files": {
+      "type": "array",
+      "default": []
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Download"
+    },
+    "style": {
+      "type": "string",
+      "default": "dark"
+    },
+    "alignment": {
+      "type": "string",
+      "default": "none"
+    }
+  }
+}
