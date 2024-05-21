@@ -78,11 +78,15 @@
 
   &:hover,
   &:focus-within {
-    background: $color-primary;
+    background: $color-grey-light;
   }
 
   &:active {
     background: $color-primary-state;
+  }
+
+  &:active label {
+    color: $color-primary;
   }
 
   &:has(label[data-value=""]),
@@ -92,17 +96,21 @@
   }
 
   &:has(input:checked) {
-    background: $color-primary;
+    background: $color-primary-state;
   }
 
   &:has(input:checked):hover,
   &:has(input:checked):focus-within {
-    background: $color-primary-state;
+    background: $color-grey-mid-dark;
   }
 
   &:has(input:checked):focus,
   &:has(input:checked):active {
-    background: $color-primary;
+    background: $color-primary-state;
+  }
+
+  &:has(input:checked) label {
+    color: $color-primary;
   }
 }
 
