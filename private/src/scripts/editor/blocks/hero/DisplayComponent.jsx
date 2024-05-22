@@ -126,7 +126,7 @@ const DisplayComponent = ({ attributes, className, clientId, setAttributes }) =>
       <section className={classes} style={blockInlineStyle}>
         {attributes.type === 'image' && (
           <div className="linkList-options">
-            <BlockImageSelector imageId={attributes.imageID} />
+            <BlockImageSelector imageId={attributes.imageID} setAttributes={setAttributes} />
           </div>
         )}
         {attributes.type === 'video' && (
