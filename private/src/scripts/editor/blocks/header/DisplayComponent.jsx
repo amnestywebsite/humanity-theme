@@ -282,10 +282,9 @@ class DisplayComponent extends Component {
             <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
           </div>
           <MediaMetadata
-            caption={caption}
-            copyright={copyright}
-            showCaption={!attributes.hideImageCaption}
-            showCopyright={!attributes.hideImageCopyright}
+            media={{ caption, copyright }}
+            showMediaCaption={!attributes.hideImageCaption}
+            showMediaCopyright={!attributes.hideImageCopyright}
           />
         </section>
       </Fragment>
