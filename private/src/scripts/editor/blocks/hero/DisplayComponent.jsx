@@ -3,13 +3,13 @@ import BlockImageSelector from './components/BlockImageSelector.jsx';
 import MediaMetadata from '../../components/MediaMetadata.jsx';
 import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls.jsx';
 import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
-import { fetchMediaData } from '../utils';
+import { fetchMediaData, validateBool } from '../utils';
 
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl } = wp.components;
-const { useSelect } = wp.data;
+const { useDispatch, useSelect } = wp.data;
 const { PostFeaturedImage } = wp.editor;
-const { Fragment, useEffect, useRef, useState } = wp.element;
+const { Fragment, useCallback, useEffect, useRef, useState } = wp.element;
 const { __ } = wp.i18n;
 
 /**
@@ -35,14 +35,40 @@ const useHasDonationBlock = (parentClientId) =>
     return innerBlocks.filter((block) => block.name === 'amnesty-wc/donation').length;
   });
 
+const useFeaturedImage = () => {
+  const { featuredImage, meta } = useSelect((select) => {
+    const { getEditedPostAttribute } = select('core/editor');
+    return {
+      featuredImage: getEditedPostAttribute('featured_media'),
+      meta: getEditedPostAttribute('meta'),
+    };
+  });
+
+  const { editPost } = useDispatch('core/editor');
+  const hideFeaturedImage = useCallback(() => {
+    // eslint-disable-next-line no-underscore-dangle
+    if (!validateBool(meta._hide_featured_image)) {
+      editPost({ meta: { _hide_featured_image: true } });
+    }
+  });
+
+  return { featuredImage, hideFeaturedImage };
+};
+
 const DisplayComponent = ({ attributes, className, clientId, setAttributes }) => {
   const [mediaData, setMediaData] = useState({});
+  const mounted = useRef();
   const videoRef = useRef();
   const hasDonationBlock = useHasDonationBlock(clientId);
-  const featuredImage = useSelect((select) => {
-    const { getEditedPostAttribute } = select('core/editor');
-    return getEditedPostAttribute('featured_media');
-  });
+  const { featuredImage, hideFeaturedImage } = useFeaturedImage();
+
+  useEffect(() => {
+    if (!mounted?.current) {
+      mounted.current = true;
+      // if the hero is inserted, hide the featured image
+      hideFeaturedImage();
+    }
+  }, []);
 
   useEffect(() => {
     if (attributes.type !== 'image') {
