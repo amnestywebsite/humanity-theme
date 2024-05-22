@@ -31,21 +31,7 @@ if ( ! function_exists( 'amnesty_find_header_block' ) ) {
 	 * @return array
 	 */
 	function amnesty_find_header_block( $blocks = [] ) {
-		$header_blocks = [ 'amnesty-core/block-hero' ];
-
-		foreach ( $blocks as $block ) {
-			if ( in_array( $block['blockName'], $header_blocks, true ) ) {
-				return $block;
-			}
-
-			if ( empty( $block['innerBlocks'] ) ) {
-				continue;
-			}
-
-			return amnesty_find_header_block( $block['innerBlocks'] );
-		}
-
-		return [];
+		return amnesty_find_first_block_of_type( $blocks, 'amnesty-core/block-hero' );
 	}
 }
 
