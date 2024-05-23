@@ -58,10 +58,10 @@
 <p>Quisque eget nibh quis sapien rutrum aliquet. Vestibulum imperdiet a nisl sodales fringilla. Aliquam sed vulputate justo, in ullamcorper leo. Ut nec augue non nunc accumsan pharetra. Nam volutpat feugiat ultrices. Quisque lacus diam, feugiat non maximus in, elementum quis tellus. Vivamus sed felis sit amet neque vulputate elementum vitae a mauris. Nulla suscipit, orci in lobortis hendrerit, dolor ipsum fermentum leo, et porttitor sem leo sit amet ex. In pellentesque tortor quis velit semper sodales. Nulla porttitor urna vel mauris rutrum, in feugiat est dapibus. In sed lorem mauris. Vestibulum sit amet porttitor nunc.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:amnesty-core/block-call-to-action {"preheading":"Give your readers an action at the end","title":"Add a call to action  ","content":"This can be a petition, a request for a donation, a call to join as an amnesty member or register for an online course. ","actionType":""} -->
-<!-- wp:buttons -->
+<!-- wp:amnesty-core/block-call-to-action {"preheading":"Give your readers an action at the end","title":"Add a call to action","content":"This can be a petition, a request for a donation, a call to join as an amnesty member or register for an online course.","actionType":""} -->
+<div class="callToAction" role="note" aria-label="Add a call to action"><h2 class="callToAction-preHeading">Give your readers an action at the end</h2><h1 class="callToAction-heading">Add a call to action</h1><p class="callToAction-content">This can be a petition, a request for a donation, a call to join as an amnesty member or register for an online course.</p><div class="innerBlocksContainer"><!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-default"} -->
-<div class="wp-block-button is-style-default"><a class="wp-block-button__link wp-element-button">link here</a></div>
+<div class="wp-block-button is-style-default"><a class="wp-block-button__link wp-element-button" href="#">Link here</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons -->
+<!-- /wp:buttons --></div></div>
 <!-- /wp:amnesty-core/block-call-to-action -->
