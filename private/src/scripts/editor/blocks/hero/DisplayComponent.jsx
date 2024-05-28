@@ -168,7 +168,7 @@ const DisplayComponent = ({ attributes, className, clientId, setAttributes }) =>
               <RichText
                 tagName="span"
                 className="hero-title"
-                placeholder={/* translators: [admin] */ __('Header Title', 'amnesty')}
+                placeholder={/* translators: [admin] */ __('Hero Title', 'amnesty')}
                 value={attributes.title}
                 onChange={(title) => setAttributes({ title })}
                 format="string"
@@ -178,7 +178,7 @@ const DisplayComponent = ({ attributes, className, clientId, setAttributes }) =>
             <RichText
               tagName="p"
               className="hero-content"
-              placeholder={/* translators: [admin] */ __('Header Content', 'amnesty')}
+              placeholder={/* translators: [admin] */ __('Hero Content', 'amnesty')}
               value={attributes.content}
               onChange={(content) => setAttributes({ content })}
               format="string"
