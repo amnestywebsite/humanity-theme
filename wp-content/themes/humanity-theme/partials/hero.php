@@ -1,6 +1,6 @@
 <?php
 
-if ( is_shop() ) {
+if ( function_exists( 'is_shop' ) && is_shop() ) {
 	return;
 }
 
