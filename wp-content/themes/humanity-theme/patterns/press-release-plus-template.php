@@ -4,7 +4,7 @@
  * Description: A template for a press release plus.
  * Slug: amnesty/press-release-plus-template
  * Keywords: press release, template
- * Categories: humanity
+ * Categories: humanity-templates
  */
 ?>
 

@@ -4,7 +4,7 @@
  * Description: A full-width image with buttons below.
  * Slug: amnesty/full-image-with-buttons
  * Keywords: full, image, buttons
- * Categories: humanity
+ * Categories: humanity-actions, humanity-media
  */
 ?>
 

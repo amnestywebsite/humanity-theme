@@ -4,7 +4,7 @@
  * Description: A full post pattern for a Web Report
  * Slug: amnesty/web-report
  * Keywords: full, web report
- * Categories: humanity
+ * Categories: humanity-templates
  */
 ?>
 

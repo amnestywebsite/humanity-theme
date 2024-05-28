@@ -4,7 +4,7 @@
  * Description: A chunky heading with links to page points
  * Slug: amnesty/chunky-heading-with-links
  * Keywords: heading, links
- * Categories: humanity
+ * Categories: humanity-actions
  */
 ?>
 

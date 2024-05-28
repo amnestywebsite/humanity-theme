@@ -4,7 +4,7 @@
  * Description: Three columns with a heading, image, body text, and a button.
  * Slug: amnesty/33-33-33-links-with-icons
  * Keywords: links, icons
- * Categories: humanity
+ * Categories: humanity-actions, humanity-thirds, humanity-three-column
  */
 ?>
 

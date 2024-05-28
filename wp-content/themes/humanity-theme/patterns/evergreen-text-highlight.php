@@ -4,7 +4,7 @@
  * Description: A section with a grey background to highlight text.
  * Slug: amnesty/evergreen-text-highlight
  * Keywords: text, highlight, evergreen
- * Categories: humanity
+ * Categories: humanity-actions
  */
 ?>
 
