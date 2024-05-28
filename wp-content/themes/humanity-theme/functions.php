@@ -153,7 +153,6 @@ require_once realpath( __DIR__ . '/includes/core-blocks/social-icons/styles.php'
  */
 #region patterns
 require_once realpath( __DIR__ . '/includes/block-patterns/pattern-category.php' );
-require_once realpath( __DIR__ . '/includes/block-patterns/social-share.php' );
 #endregion patterns
 
 /**
