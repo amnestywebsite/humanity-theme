@@ -25,20 +25,18 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 				'content'          => '',
 				'ctaLink'          => '',
 				'ctaText'          => '',
+				'featuredImageId'  => 0,
 				'featuredVideoId'  => 0,
 				'hideImageCaption' => true,
 				'hideImageCredit'  => false,
-				'imageID'          => 0,
+				'imageID'          => 0, // this overrides the featured image
 				'title'            => '',
 				'type'             => 'image',
 			]
 		);
 
-		// image attribute takes precedence over the featured image
-		$image_id = $attrs['imageID'];
-		if ( ! $image_id ) {
-			$image_id = get_post_thumbnail_id();
-		}
+		// precedence: override -> featured image attribute -> featured image meta
+		$image_id = $attrs['imageID'] ?: $attrs['featuredImageId'] ?: get_post_thumbnail_id();
 
 		$image = new Get_Image_Data( (int) $image_id );
 		$video = new Get_Image_Data( (int) $attrs['featuredVideoId'] );

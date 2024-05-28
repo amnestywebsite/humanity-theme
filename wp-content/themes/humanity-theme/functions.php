@@ -31,6 +31,7 @@ require_once realpath( __DIR__ . '/includes/helpers/variable-types.php' );
 require_once realpath( __DIR__ . '/includes/helpers/array-manipulation.php' );
 require_once realpath( __DIR__ . '/includes/helpers/actions-and-filters.php' );
 require_once realpath( __DIR__ . '/includes/helpers/taxonomies.php' );
+require_once realpath( __DIR__ . '/includes/helpers/blocks.php' );
 require_once realpath( __DIR__ . '/includes/helpers/header.php' );
 require_once realpath( __DIR__ . '/includes/helpers/frontend.php' );
 require_once realpath( __DIR__ . '/includes/helpers/localisation.php' );

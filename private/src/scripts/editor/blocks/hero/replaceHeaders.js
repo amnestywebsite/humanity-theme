@@ -1,5 +1,6 @@
 const { omit } = lodash;
 const { createBlock } = wp.blocks;
+const { __, sprintf } = wp.i18n;
 
 /**
  * Recursively search blocks on page for a specific block type
@@ -76,6 +77,8 @@ const getOldHeroBlockAttributes = (isHeaderBlock) => {
 window.addEventListener('load', () => {
   const { getBlocks, getBlocksByClientId } = wp.data.select('core/block-editor');
   const { replaceBlocks } = wp.data.dispatch('core/block-editor');
+  const { createInfoNotice, removeNotice } = wp.data.dispatch('core/notices');
+  const postType = wp.data.select('core/editor').getCurrentPostType();
 
   // Get all blocks on a post
   const allBlocks = getBlocks();
@@ -107,4 +110,17 @@ window.addEventListener('load', () => {
       [createBlock('amnesty-core/hero', newAttributes, block.innerBlocks)],
     );
   });
+
+  createInfoNotice(
+    sprintf(
+      // translators: [admin] %s: the post type
+      __('Blocks in this %s have been upgraded. Please preview the post before saving.', 'amnesty'),
+      postType,
+    ),
+    {
+      id: 'amnesty-core/hero/upgraded-notice',
+    },
+  );
+
+  setTimeout(() => removeNotice('amnesty-core/hero/upgraded-notice'), 15000);
 });
