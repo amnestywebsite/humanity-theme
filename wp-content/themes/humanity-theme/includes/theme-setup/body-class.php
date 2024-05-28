@@ -11,11 +11,11 @@ if ( ! function_exists( 'amnesty_body_class' ) ) {
 	 * @return array<int,string>
 	 */
 	function amnesty_body_class( array $classes ): array {
-		if ( wp_is_block_theme() ) {
+		if ( function_exists( 'wp_is_block_theme' ) && wp_is_block_theme() ) {
 			$classes[] = 'fse';
 		}
 
-		if ( is_shop() ) {
+		if ( function_exists( 'is_shop' ) && is_shop() ) {
 			$classes[] = 'shop';
 			return $classes;
 		}
