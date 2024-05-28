@@ -11,13 +11,16 @@ if ( ! function_exists( 'amnesty_core_register_pattern_category' ) ) {
 	 * @return void
 	 */
 	function amnesty_core_register_pattern_category() {
-		register_block_pattern_category(
-			'humanity',
-			[
-				/* translators: [admin] */
-				'label' => __( 'Humanity Theme', 'amnesty' ),
-			]
-		);
+		// types
+		register_block_pattern_category( 'humanity-actions', [ 'label' => __( 'Actions', 'amnesty' ) ] );
+		register_block_pattern_category( 'humanity-media', [ 'label' => __( 'Media', 'amnesty' ) ] );
+		register_block_pattern_category( 'humanity-templates', [ 'label' => __( 'Templates', 'amnesty' ) ] );
+
+		// layouts
+		register_block_pattern_category( 'humanity-two-column', [ 'label' => __( 'Two Column', 'amnesty' ) ] );
+		register_block_pattern_category( 'humanity-three-column', [ 'label' => __( 'Three Column', 'amnesty' ) ] );
+		register_block_pattern_category( 'humanity-halves', [ 'label' => __( '1/2, 1/2', 'amnesty' ) ] );
+		register_block_pattern_category( 'humanity-thirds', [ 'label' => __( '1/3, 1/3, 1/3', 'amnesty' ) ] );
 	}
 }
 

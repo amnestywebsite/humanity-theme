@@ -4,7 +4,7 @@
  * Description: Single column with a heading, image, body text, and a button.
  * Slug: amnesty/links-with-icons-single
  * Keywords: links, icons
- * Categories: humanity
+ * Categories: humanity-actions
  */
 ?>
 

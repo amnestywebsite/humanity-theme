@@ -4,7 +4,7 @@
  * Description: Single column with a heading, image, body text, and a button. with a square border
  * Slug: amnesty/links-with-icons-single-square
  * Keywords: links, icons, square border
- * Categories: humanity
+ * Categories: humanity-actions
  */
 ?>
 

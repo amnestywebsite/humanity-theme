@@ -4,7 +4,7 @@
  * Description: A template for a perspective post.
  * Slug: amnesty/perspective-post-template
  * Keywords: perspective, post, template
- * Categories: humanity
+ * Categories: humanity-templates
  */
 ?>
 
