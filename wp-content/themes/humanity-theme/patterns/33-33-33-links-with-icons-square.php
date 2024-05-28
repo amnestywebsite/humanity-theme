@@ -4,7 +4,7 @@
  * Description: A 33/33/33 layout with links and icons with a square border.
  * Slug: amnesty/33-33-33-links-with-icons-square
  * Keywords: 33/33/33, links, icons, square border
- * Categories: humanity
+ * Categories: humanity-actions, humanity-thirds, humanity-three-column
  */
 ?>
 

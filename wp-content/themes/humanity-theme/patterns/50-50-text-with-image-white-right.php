@@ -4,7 +4,7 @@
  * Description: A 50/50 layout with text on one side and an image on the other.
  * Slug: amnesty/50-50-text-with-image-white-right
  * Keywords: 50/50, text, image
- * Categories: humanity
+ * Categories: humanity-media, humanity-halves, humanity-two-column
  */
 ?>
 

@@ -4,7 +4,7 @@
  * Description: Two columns with a heading, body text including quote, and an image.
  * Slug: amnesty/66-33-text-with-image
  * Keywords: text, image, 66, 33
- * Categories: humanity
+ * Categories: humanity-media, humanity-two-column
  */
 ?>
 

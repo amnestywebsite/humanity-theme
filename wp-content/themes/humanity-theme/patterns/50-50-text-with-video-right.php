@@ -4,7 +4,7 @@
  * Description: A 50/50 layout with text on one side and a video on the other.
  * Slug: amnesty/50-50-text-with-video-right
  * Keywords: 50/50, text, video
- * Categories: humanity
+ * Categories: humanity-media, humanity-halves, humanity-two-column
  */
 ?>
 
