@@ -20,9 +20,9 @@ export default class DisplayComponent extends Component {
     const cached = this.state[key]?.id;
 
     if (id === 0) {
-      this.setState({
-        [key]: null,
-      });
+      if (cached) {
+        this.setState({ [key]: null });
+      }
       return;
     }
 
