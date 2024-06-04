@@ -36,7 +36,7 @@ const DisplayComponent = (props) => {
     <Fragment>
       <TextControl
         value={httpsOnly(attributes.source)}
-        onChange={(source) => setAttributes({ source: source })}
+        onChange={(source) => setAttributes({ source })}
         // translators: [admin]
         label={__('The Flourish embed source (not the full URL).', 'amnesty')}
         placeholder="e.g. visualisation/123456"
