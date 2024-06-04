@@ -55,9 +55,9 @@ const LinkItem = (props) => {
             <div className="linkList-itemDate">
               {/* translators: [admin/front] */}
               <span className="dateTerm">{__('Date:', 'amnesty')}</span>
-              {props.date && <span className="dateDescription">
-                  {(new Date(props.date)).toLocaleDateString()}
-                </span>}
+              {props.date && (
+                <span className="dateDescription">{new Date(props.date).toLocaleDateString()}</span>
+              )}
               <Button
                 icon="calendar-alt"
                 isPressed={false}
@@ -105,6 +105,6 @@ const LinkItem = (props) => {
       </article>
     </li>
   );
-}
+};
 
 export default LinkItem;
