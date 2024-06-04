@@ -3,9 +3,7 @@ import LinkList from './editable/LinkList.jsx';
 import GridItem from './editable/GridItem.jsx';
 import Appender from './Appender.jsx';
 
-const { BlockIcon } = wp.blockEditor;
 const { Component } = wp.element;
-const { __ } = wp.i18n;
 
 class DisplayCustom extends Component {
   static defaultObject = {
@@ -115,7 +113,7 @@ class DisplayCustom extends Component {
 
     let appender = null;
     if (custom.length < 8) {
-      appender = <Appender onClick={this.addItem} />
+      appender = <Appender onClick={this.addItem} />;
     }
 
     if (style !== 'grid') {
