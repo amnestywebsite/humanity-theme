@@ -10,7 +10,7 @@ if ( ! $data['tag'] ) {
 
 $output = esc_html( $data['tag'] );
 
-if ( $data['tag_link'] ) {
+if ( isset( $data['tag_link'] ) && (bool) $data['tag_link'] ) {
 	$output = sprintf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['tag_link'] ), esc_html( $data['tag'] ) );
 }
 
