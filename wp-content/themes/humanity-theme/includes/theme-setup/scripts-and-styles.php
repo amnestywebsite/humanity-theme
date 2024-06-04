@@ -163,6 +163,7 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 				'wp-element',
 				'wp-edit-post',
 				'wp-data',
+				'wp-url',
 			],
 			$theme->get( 'Version' ),
 			false
