@@ -3,6 +3,7 @@ const { assign } = lodash;
 const { createHigherOrderComponent } = wp.compose;
 const { InspectorControls } = wp.blockEditor;
 const { PanelBody, ToggleControl } = wp.components;
+const { useSelect } = wp.data;
 const { useEffect, useRef, useState } = wp.element;
 const { addFilter } = wp.hooks;
 const { __ } = wp.i18n;
@@ -42,6 +43,14 @@ const fetchImageData = (id, setState) => {
 
 const ImageBlockWrapper = createHigherOrderComponent((DisplayComponent) => (props) => {
   if (props.name !== 'core/image') {
+    return <DisplayComponent {...props} />;
+  }
+
+  const isNestedBlock = useSelect((select) => {
+    return select('core/block-editor').getBlockParents(props.clientId).length > 0;
+  });
+
+  if (isNestedBlock) {
     return <DisplayComponent {...props} />;
   }
 
