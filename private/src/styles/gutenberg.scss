@@ -64,6 +64,7 @@
 @import "blocks/core-blocks/rss-editor";
 @import "blocks/core-blocks/social-links";
 @import "blocks/core-blocks/social-links-editor";
+@import "blocks/core-blocks/gallery-editor";
 @import "blocks/core-blocks/group";
 @import "blocks/countdown-timer/editor";
 @import "blocks/custom-card/main";
@@ -73,6 +74,8 @@
 @import "blocks/fact-block/main";
 @import "blocks/fact-block/editor";
 @import "blocks/header/editor";
+@import "blocks/hero/main";
+@import "blocks/hero/editor";
 @import "blocks/iframe-button/editor";
 @import "blocks/image-block/main";
 @import "blocks/image-block/editor";
@@ -101,8 +104,6 @@
 @import "blocks/tweet-action/tweet";
 @import "blocks/tweet-action/editor";
 @import "blocks/tabbed-content/editor";
-@import "blocks/hero/main";
-@import "blocks/hero/editor";
 
 // Block Patterns
 @import "block-patterns/social-share";
