@@ -3,17 +3,31 @@ import { httpsOnly } from '../utils';
 
 const { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } = wp.blockEditor;
 const { Button, PanelBody, TextControl } = wp.components;
-const { createRef, Fragment, useState } = wp.element;
+const { createRef, Fragment, useEffect, useState } = wp.element;
 const { __ } = wp.i18n;
 
 const DisplayComponent = (props) => {
   const { attributes, className, setAttributes } = props;
-  const [visible, setVisibility] = useState(false);
+  const [previewing, setIsPreviewing] = useState(false);
+  const [embedUrl, setEmbedUrl] = useState('');
+  const mounted = createRef();
   const inputRef = createRef();
 
   const classes = classnames('iframeButton wp-block-button', className, {
     [`is-${attributes.alignment}-aligned`]: attributes.alignment !== 'none',
   });
+
+  useEffect(() => {
+    if (!mounted.current) {
+      mounted.current = true;
+      setEmbedUrl(attributes.iframeUrl);
+    }
+  }, [attributes.iframeUrl]);
+
+  const embed = () => {
+    setAttributes({ iframeUrl: httpsOnly(embedUrl) });
+    setIsPreviewing(true);
+  };
 
   return (
     <Fragment>
@@ -65,14 +79,19 @@ const DisplayComponent = (props) => {
           aria-label={__('Iframe URL', 'amnesty')}
           // translators: [admin]
           placeholder={__('Enter URL to embed here…', 'amnesty')}
-          value={httpsOnly(attributes.iframeUrl)}
-          onChange={() => setAttributes({ iframeUrl: httpsOnly(inputRef.current.value) })}
+          value={embedUrl}
+          onChange={() => setEmbedUrl(inputRef.current.value)}
         />
-        <Button isLarge onClick={() => setVisibility(!visible)}>
-          {/* translators: [admin] */ __('Preview', 'amnesty')}
+        <Button isLarge isPrimary onClick={embed}>
+          {/* translators: [admin] */ __('Embed', 'amnesty')}
+        </Button>
+        <Button isLarge onClick={() => setIsPreviewing(!previewing)}>
+          {previewing
+            ? /* translators: [admin] */ __('Hide Preview', 'amnesty')
+            : /* translators: [admin] */ __('Preview', 'amnesty')}
         </Button>
       </div>
-      {visible && httpsOnly(attributes.iframeUrl) && (
+      {previewing && httpsOnly(attributes.iframeUrl) && (
         <div className="iframeButton-iframeWrapper">
           <iframe src={httpsOnly(attributes.iframeUrl)} height={attributes.iframeHeight}></iframe>
         </div>
