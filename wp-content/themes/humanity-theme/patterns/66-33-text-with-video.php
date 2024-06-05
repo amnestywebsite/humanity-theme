@@ -4,7 +4,7 @@
  * Description: Two columns with text on the left and a video on the right
  * Slug: amnesty/66-33-text-with-video
  * Keywords: text, video
- * Categories: humanity-media, humanity-two-column
+ * Categories: humanity-media, humanity-two-column, humanity-sixtysix-thirtythree
  */
 ?>
 

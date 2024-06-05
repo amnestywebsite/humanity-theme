@@ -21,6 +21,8 @@ if ( ! function_exists( 'amnesty_core_register_pattern_category' ) ) {
 		register_block_pattern_category( 'humanity-three-column', [ 'label' => __( 'Three Column', 'amnesty' ) ] );
 		register_block_pattern_category( 'humanity-halves', [ 'label' => __( '1/2, 1/2', 'amnesty' ) ] );
 		register_block_pattern_category( 'humanity-thirds', [ 'label' => __( '1/3, 1/3, 1/3', 'amnesty' ) ] );
+		register_block_pattern_category( 'humanity-sixtysix-thirtythree', [ 'label' => __( '2/3, 1/3', 'amnesty' ) ] );
+		register_block_pattern_category( 'humanity-thirtythree-sixtysix', [ 'label' => __( '1/3, 2/3', 'amnesty' ) ] );
 	}
 }
 
