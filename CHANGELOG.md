@@ -1,3 +1,12 @@
+### v1.0.3
+Fixes:
+- Missing theme screenshot
+- Flourish Embed HTTPS enforcement
+- Iframe Button URI embedding
+- Linting of JSX files
+- ESLint violations
+- Missing URI path in taxonomy redirect
+
 ### v1.0.2
 Fixes:
 - Potential collision in language handling when languages share an ISO 639-1 code
