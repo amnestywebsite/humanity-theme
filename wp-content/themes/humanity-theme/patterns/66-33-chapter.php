@@ -4,7 +4,7 @@
  * Description: A two column layout with a heading and body text in the left column and an image in the right column.
  * Slug: amnesty/66-33-chapter
  * Keywords: chapter, 66, 33
- * Categories: humanity-two-column
+ * Categories: humanity-two-column, humanity-sixtysix-thirtythree
  */
 ?>
 

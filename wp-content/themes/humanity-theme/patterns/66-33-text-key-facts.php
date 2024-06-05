@@ -4,7 +4,7 @@
  * Description: Two columns with a heading, body text, and key facts.
  * Slug: amnesty/66-33-text-key-facts
  * Keywords: text, key facts, 66/33
- * Categories: humanity-two-column
+ * Categories: humanity-two-column, humanity-sixtysix-thirtythree
  */
 ?>
 
