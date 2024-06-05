@@ -27,7 +27,7 @@ const DisplayComponent = (props) => {
     delay(loadScript, 1000);
     return (
       <div style={{ minHeight: '20px', border: '1px dashed' }}>
-        <div className="flourish-embed" data-src={httpsOnly(attributes.source)}></div>
+        <div className="flourish-embed" data-src={attributes.source}></div>
       </div>
     );
   }
@@ -36,7 +36,7 @@ const DisplayComponent = (props) => {
     <Fragment>
       <TextControl
         value={httpsOnly(attributes.source)}
-        onChange={(source) => setAttributes({ source: httpsOnly(source) })}
+        onChange={(source) => setAttributes({ source })}
         // translators: [admin]
         label={__('The Flourish embed source (not the full URL).', 'amnesty')}
         placeholder="e.g. visualisation/123456"

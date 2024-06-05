@@ -1,5 +1,5 @@
 const { TextControl } = wp.components;
-const {  PluginPostStatusInfo } = wp.editPost;
+const { PluginPostStatusInfo } = wp.editPost;
 const { __ } = wp.i18n;
 
 /**
