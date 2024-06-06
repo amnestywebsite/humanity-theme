@@ -8,3 +8,11 @@
 .wp-block-gallery figcaption {
   display: none;
 }
+
+.wp-block-gallery .wp-block-image .image-metadataItem.image-caption {
+  display: none;
+}
+
+.wp-block-gallery .wp-block-image.enlarged-image .image-metadataItem.image-caption {
+  display: block;
+}

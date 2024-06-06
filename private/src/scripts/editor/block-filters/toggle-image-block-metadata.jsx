@@ -41,6 +41,25 @@ const fetchImageData = (id, setState) => {
   });
 };
 
+const Controls = ({ attributes, setAttributes }) => (
+  <InspectorControls>
+    <PanelBody>
+      <ToggleControl
+        // translators: [admin]
+        label={__('Hide Image Caption', 'amnesty')}
+        checked={attributes.hideImageCaption}
+        onChange={(hideImageCaption) => setAttributes({ hideImageCaption })}
+      />
+      <ToggleControl
+        // translators: [admin]
+        label={__('Hide Image Credit', 'amnesty')}
+        checked={attributes.hideImageCopyright}
+        onChange={(hideImageCopyright) => setAttributes({ hideImageCopyright })}
+      />
+    </PanelBody>
+  </InspectorControls>
+);
+
 const ImageBlockWrapper = createHigherOrderComponent((DisplayComponent) => (props) => {
   if (props.name !== 'core/image') {
     return <DisplayComponent {...props} />;
@@ -50,13 +69,18 @@ const ImageBlockWrapper = createHigherOrderComponent((DisplayComponent) => (prop
     return select('core/block-editor').getBlockParents(props.clientId).length > 0;
   });
 
-  if (isNestedBlock) {
-    return <DisplayComponent {...props} />;
-  }
-
   const { attributes, setAttributes } = props;
   const [imageData, setImageData] = useState(null);
   const blockRef = useRef(null);
+
+  if (isNestedBlock) {
+    return (
+      <>
+        <DisplayComponent {...props} />
+        <Controls attributes={attributes} setAttributes={setAttributes} />
+      </>
+    );
+  }
 
   const shouldShowImageCaption =
     imageData?.caption &&
@@ -99,22 +123,7 @@ const ImageBlockWrapper = createHigherOrderComponent((DisplayComponent) => (prop
           </div>
         )}
       </div>
-      <InspectorControls>
-        <PanelBody>
-          <ToggleControl
-            // translators: [admin]
-            label={__('Hide Image Caption', 'amnesty')}
-            checked={attributes.hideImageCaption}
-            onChange={(hideImageCaption) => setAttributes({ hideImageCaption })}
-          />
-          <ToggleControl
-            // translators: [admin]
-            label={__('Hide Image Credit', 'amnesty')}
-            checked={attributes.hideImageCopyright}
-            onChange={(hideImageCopyright) => setAttributes({ hideImageCopyright })}
-          />
-        </PanelBody>
-      </InspectorControls>
+      <Controls attributes={attributes} setAttributes={setAttributes} />
     </>
   );
 });
