@@ -136,6 +136,7 @@ require_once realpath( __DIR__ . '/includes/blocks/render-header-on-single.php' 
  */
 #region coreblocks
 require_once realpath( __DIR__ . '/includes/core-blocks/image/filters.php' );
+require_once realpath( __DIR__ . '/includes/core-blocks/gallery/filters.php' );
 #endregion coreblocks
 
 /**
