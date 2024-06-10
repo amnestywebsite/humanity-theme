@@ -16,7 +16,6 @@ const unusedBlocks = [
   'core/comment-reply-link',
   'core/comment-template',
   'core/cover',
-  'core/details',
   'core/file',
   'core/footnotes',
   'core/freeform',
@@ -55,6 +54,7 @@ const unusedBlocks = [
   'core/term-description',
   'core/verse',
   'amnesty-core/image-block',
+  'amnesty-core/collapsable',
 ];
 
 /**
