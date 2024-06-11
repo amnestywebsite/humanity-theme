@@ -20,7 +20,7 @@ download_phpdoc() {
 
 # generate the documentation using phpDocumentor
 generate_docs() {
-  php phpDocumentor.phar run \
+  php phpDocumentor.phar \
     --cache-folder="$HOME/phpdoc-cache" \
     --extensions=php \
     --defaultpackagename=Humanity \
