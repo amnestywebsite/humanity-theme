@@ -13,15 +13,10 @@
 .article-container {
   @include flexy-wrapper;
   margin-top: spacing();
-  padding: 0 40px;
 
   @include mq(large) {
     flex-wrap: nowrap;
   }
-}
-
-.article-container--report {
-  margin-top: 80px;
 }
 
 .article-container--report .article-content {
