@@ -2,7 +2,7 @@ import DisplayComponent from './DisplayComponent.jsx';
 
 const { assign } = lodash;
 const { InnerBlocks } = wp.blockEditor;
-const { registerBlockType } = wp.blocks;
+const { registerBlockType, createBlock } = wp.blocks;
 const { __ } = wp.i18n;
 
 registerBlockType('amnesty-core/collapsable', {
@@ -38,6 +38,23 @@ registerBlockType('amnesty-core/collapsable', {
       type: 'string',
       default: '',
     },
+  },
+  transforms: {
+    to: [
+      {
+        type: 'block',
+        blocks: ['core/details'],
+        transform: ({ collapsed, title }, innerBlocks) =>
+          createBlock(
+            'core/details',
+            {
+              showContent: !collapsed,
+              summary: title,
+            },
+            innerBlocks,
+          ),
+      },
+    ],
   },
   edit: DisplayComponent,
   save: assign(() => <InnerBlocks.Content />, { displayName: 'CollapsableBlockSave' }),
