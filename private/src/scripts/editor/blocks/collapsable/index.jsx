@@ -24,6 +24,7 @@ registerBlockType('amnesty-core/collapsable', {
   ],
   supports: {
     className: true,
+    inserter: false,
   },
   attributes: {
     anchor: {
