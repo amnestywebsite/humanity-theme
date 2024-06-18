@@ -18,7 +18,6 @@ const unusedBlocks = [
   'core/cover',
   'core/details',
   'core/file',
-  'core/footnotes',
   'core/freeform',
   'core/gallery',
   'core/latest-comments',
