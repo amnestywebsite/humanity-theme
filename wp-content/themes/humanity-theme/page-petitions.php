@@ -53,13 +53,19 @@ $opening_section = array_shift( $sections );
 
 ?>
 <main id="main">
-	<div class="container">
-		<?php $opening_section && print render_block( $opening_section ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-		<section class="news-section section section--small section--topSpacing" aria-label="<?php /* translators: [front] */ esc_attr_e( 'All Petitions', 'amnesty' ); ?>">
+<?php if ( $opening_section ) : ?>
+	<section class="section">
+		<div class="container has-gutter">
+			<?php echo wp_kses_post( amnesty_render_blocks( $opening_section['innerBlocks'] ?? [] ) ); ?>
+		</div>
+	</section>
+<?php endif; ?>
 
-		<?php if ( ! empty( $heading_blocks[0] ) ) : ?>
-			<?php print render_block( $heading_blocks[0] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-		<?php endif; ?>
+	<section class="section" aria-label="<?php /* translators: [front] */ esc_attr_e( 'All Petitions', 'amnesty' ); ?>">
+		<div class="container has-gutter">
+			<?php if ( isset( $heading_blocks[0] ) ) : ?>
+				<?php echo wp_kses_post( render_block( $heading_blocks[0] ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			<?php endif; ?>
 
 			<div class="postlist">
 			<?php
@@ -74,8 +80,18 @@ $opening_section = array_shift( $sections );
 
 			?>
 			</div>
-		</section>
-		<?php count( $sections ) > 0 && array_map( fn ( $section ) => print render_block( $section ), $sections ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-	</div>
+		</div>
+	</section>
+	<?php
+
+	foreach ( $sections as $section ) {
+		echo '<section class="section">';
+		echo '<div class="container has-gutter">';
+		echo amnesty_render_blocks( $section['innerBlocks'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo '</div>';
+		echo '</section>';
+	}
+
+	?>
 </main>
 <?php get_footer(); ?>

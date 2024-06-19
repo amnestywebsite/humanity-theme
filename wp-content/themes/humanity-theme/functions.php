@@ -31,6 +31,7 @@ require_once realpath( __DIR__ . '/includes/helpers/variable-types.php' );
 require_once realpath( __DIR__ . '/includes/helpers/array-manipulation.php' );
 require_once realpath( __DIR__ . '/includes/helpers/actions-and-filters.php' );
 require_once realpath( __DIR__ . '/includes/helpers/taxonomies.php' );
+require_once realpath( __DIR__ . '/includes/helpers/blocks.php' );
 require_once realpath( __DIR__ . '/includes/helpers/header.php' );
 require_once realpath( __DIR__ . '/includes/helpers/frontend.php' );
 require_once realpath( __DIR__ . '/includes/helpers/localisation.php' );
@@ -76,7 +77,6 @@ require_once realpath( __DIR__ . '/includes/admin/theme-options/analytics.php' )
 require_once realpath( __DIR__ . '/includes/admin/theme-options/localisation.php' );
 require_once realpath( __DIR__ . '/includes/admin/theme-options/localisation/class-taxonomy-labels.php' );
 require_once realpath( __DIR__ . '/includes/admin/class-accessibility.php' );
-require_once realpath( __DIR__ . '/includes/admin/class-fonts.php' );
 require_once realpath( __DIR__ . '/includes/admin/class-permalink-settings.php' );
 require_once realpath( __DIR__ . '/includes/admin/user-options.php' );
 require_once realpath( __DIR__ . '/includes/admin/settings-general.php' );
@@ -92,7 +92,10 @@ require_once realpath( __DIR__ . '/includes/theme-setup/no-js.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/rewrite-rules.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/disable-emoji-support.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/supports.php' );
+require_once realpath( __DIR__ . '/includes/theme-setup/wp-head.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/wp-head-cleanup.php' );
+require_once realpath( __DIR__ . '/includes/theme-setup/wp-body-open.php' );
+require_once realpath( __DIR__ . '/includes/theme-setup/body-class.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/media.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/class-desktop-nav-walker.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/class-mobile-nav-walker.php' );
@@ -110,6 +113,7 @@ require_once realpath( __DIR__ . '/includes/theme-setup/analytics/meta-tags.php'
  */
 #region kses
 require_once realpath( __DIR__ . '/includes/kses/checkbox-filter.php' );
+require_once realpath( __DIR__ . '/includes/kses/wp-kses-post.php' );
 require_once realpath( __DIR__ . '/includes/blocks/slider/kses.php' );
 #endregion kses
 
@@ -127,16 +131,21 @@ require_once realpath( __DIR__ . '/includes/post-filters.php' );
 require_once realpath( __DIR__ . '/includes/blocks/block-category.php' );
 require_once realpath( __DIR__ . '/includes/blocks/meta.php' );
 require_once realpath( __DIR__ . '/includes/blocks/register.php' );
-require_once realpath( __DIR__ . '/includes/blocks/templates.php' );
 require_once realpath( __DIR__ . '/includes/blocks/remove-stale-metadata.php' );
 require_once realpath( __DIR__ . '/includes/blocks/render-header-on-single.php' );
 #endregion blocks
+
+#region fse-blocks
+require_once realpath( __DIR__ . '/includes/full-site-editing/blocks/register.php' );
+#endregion fse-blocks
 
 /**
  * Theme core block modification includes
  */
 #region coreblocks
 require_once realpath( __DIR__ . '/includes/core-blocks/image/filters.php' );
+require_once realpath( __DIR__ . '/includes/core-blocks/button/styles.php' );
+require_once realpath( __DIR__ . '/includes/core-blocks/social-icons/styles.php' );
 #endregion coreblocks
 
 /**
@@ -144,7 +153,6 @@ require_once realpath( __DIR__ . '/includes/core-blocks/image/filters.php' );
  */
 #region patterns
 require_once realpath( __DIR__ . '/includes/block-patterns/pattern-category.php' );
-require_once realpath( __DIR__ . '/includes/block-patterns/social-share.php' );
 #endregion patterns
 
 /**

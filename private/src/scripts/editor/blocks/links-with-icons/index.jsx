@@ -1,13 +1,9 @@
 /**
- * Third-party
- */
-import classnames from 'classnames';
-
-/**
  * Module-specific
  */
 import DisplayComponent from './DisplayComponent.jsx';
 import './inner-block.jsx';
+import deprecated from './deprecated.jsx';
 
 /**
  * WordPress
@@ -26,6 +22,7 @@ registerBlockType('amnesty-core/repeatable-block', {
   supports: {
     className: true,
     defaultStylePicker: false,
+    inserter: false,
   },
 
   attributes: {
@@ -49,76 +46,10 @@ registerBlockType('amnesty-core/repeatable-block', {
       default: 'none',
     },
   },
-  deprecated: [
-    {
-      attributes: {
-        backgroundColor: {
-          type: 'string',
-        },
-        orientation: {
-          type: 'string',
-          default: 'horizontal',
-        },
-        quantity: {
-          type: 'number',
-          default: 2,
-        },
-        hideLines: {
-          type: 'boolean',
-          default: false,
-        },
-      },
-      save({ attributes, className }) {
-        const { quantity, orientation = 'horizontal', backgroundColor, hideLines } = attributes;
-        const classes = classnames(
-          'linksWithIcons-group',
-          `is-${orientation}`,
-          `has-${quantity}-items`,
-          {
-            'has-background': !!backgroundColor,
-            [`has-${backgroundColor}-background-color`]: !!backgroundColor,
-            'has-no-lines': !!hideLines,
-            className: !!className,
-          },
-        );
-
-        return (
-          <div className={classes}>
-            <InnerBlocks.Content />
-          </div>
-        );
-      },
-    },
-  ],
+  deprecated,
   edit: DisplayComponent,
 
-  save({ attributes, className }) {
-    const {
-      quantity,
-      orientation = 'horizontal',
-      backgroundColor,
-      hideLines,
-      dividerIcon = 'none',
-    } = attributes;
-    const classes = classnames(
-      'linksWithIcons-group',
-      `is-${orientation}`,
-      `has-${quantity}-items`,
-      {
-        className: !!className,
-        'has-background': !!backgroundColor,
-        'has-no-lines': !!hideLines,
-        [`has-${backgroundColor}-background-color`]: !!backgroundColor,
-        [`icon-${dividerIcon}`]: !!dividerIcon,
-      },
-    );
-
-    return (
-      <div className={classes}>
-        <InnerBlocks.Content />
-      </div>
-    );
-  },
+  save: () => <InnerBlocks.Content />,
 });
 
 registerBlockStyle('amnesty-core/repeatable-block', {

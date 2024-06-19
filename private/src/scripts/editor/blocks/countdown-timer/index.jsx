@@ -1,4 +1,5 @@
 import DisplayComponent from './DisplayComponent.jsx';
+import deprecated from './deprecated.jsx';
 
 const { registerBlockType } = wp.blocks;
 const { __ } = wp.i18n;
@@ -35,15 +36,8 @@ registerBlockType('amnesty-core/countdown-timer', {
     },
   },
 
+  deprecated,
   edit: DisplayComponent,
 
-  save({ attributes }) {
-    const { date, expiredText } = attributes;
-
-    return (
-      <div className="clockdiv" style={{ textAlign: attributes.alignment }}>
-        <div className="countdownClock" data-timestamp={date} data-expiredText={expiredText} />
-      </div>
-    );
-  },
+  save: () => null,
 });

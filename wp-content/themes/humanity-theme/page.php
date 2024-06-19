@@ -18,7 +18,7 @@ $sidebar_is_enabled    = amnesty_get_meta_field( '_disable_sidebar' ) !== '1';
 
 <main id="main">
 	<section class="section section--small">
-		<div class="container article-container">
+		<div class="container article-container has-gutter">
 			<article class="article <?php $sidebar_is_enabled && print 'has-sidebar'; ?>">
 			<?php if ( ! $hero_title ) : ?>
 				<header class="article-header">

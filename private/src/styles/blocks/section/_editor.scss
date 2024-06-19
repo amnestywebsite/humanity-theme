@@ -1,0 +1,8 @@
+.editor-styles-wrapper .section:not(.section--tinted) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.section--has-bg-overlay::before {
+  z-index: 0 !important;
+}
