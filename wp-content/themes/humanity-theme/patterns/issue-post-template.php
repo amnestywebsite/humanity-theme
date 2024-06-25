@@ -4,7 +4,7 @@
  * Description: A template for issue pages.
  * Slug: amnesty/issue-post-template
  * Keywords: issue, page, template
- * Categories: humanity
+ * Categories: humanity-templates
  */
 ?>
 
