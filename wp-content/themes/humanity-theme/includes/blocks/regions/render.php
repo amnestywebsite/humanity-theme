@@ -37,21 +37,6 @@ if ( ! function_exists( 'amnesty_render_regions_block' ) ) {
 			'title_li'           => false,
 			'show_option_none'   => false,
 			'use_desc_for_title' => false,
-			// phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
-			'exclude'            => get_terms(
-				[
-					'taxonomy'   => $args['taxonomy'],
-					'hide_empty' => false,
-					'fields'     => 'ids',
-					'meta_query' => [ // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
-						[
-							'key'     => 'hidden',
-							'value'   => 'on',
-							'compare' => '=',
-						],
-					],
-				]
-			),
 		];
 
 		if ( $args['regionsOnly'] ) {
