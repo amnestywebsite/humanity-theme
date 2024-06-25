@@ -2,9 +2,9 @@
   display: flex;
   padding: spacing(half) 0;
   border-bottom: 1px solid $color-black;
-  color: #262626;
+  color: $color-grey-dark;
   line-height: 1.12;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-size: map-get($desktop-header-sizes, "h3");
   margin-bottom: spacing(half);
   align-items: center;
