@@ -13,7 +13,6 @@ const GridItem = (props) => (
           value={props.tagText}
           // translators: [admin]
           placeholder={__('(Insert Tag)', 'amnesty')}
-          keepPlaceholderOnFocus={true}
           allowedFormats={[]}
           format="string"
         />
@@ -26,7 +25,6 @@ const GridItem = (props) => (
           value={props.title}
           // translators: [admin]
           placeholder={__('(Insert Title)', 'amnesty')}
-          keepPlaceholderOnFocus={true}
           allowedFormats={[]}
           format="string"
         />

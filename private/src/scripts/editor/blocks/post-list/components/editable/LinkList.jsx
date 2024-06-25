@@ -22,7 +22,6 @@ const LinkItem = (props) => {
             value={props.tagText}
             // translators: [admin]
             placeholder={__('Tag Name', 'amnesty')}
-            keepPlaceholderOnFocus={true}
             allowedFormats={[]}
             format="string"
           />
@@ -39,7 +38,6 @@ const LinkItem = (props) => {
             value={props.title}
             // translators: [admin]
             placeholder={__('Insert Title', 'amnesty')}
-            keepPlaceholderOnFocus={true}
             allowedFormats={[]}
             format="string"
           />
@@ -93,7 +91,6 @@ const LinkItem = (props) => {
                 format="string"
                 // translators: [admin]
                 placeholder={__('Author Name', 'amnesty')}
-                keepPlaceholderOnFocus={true}
               />
             </p>
           )}

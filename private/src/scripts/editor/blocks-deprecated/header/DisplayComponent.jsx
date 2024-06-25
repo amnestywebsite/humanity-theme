@@ -267,7 +267,6 @@ class DisplayComponent extends Component {
                   value={attributes.title}
                   // translators: [admin]
                   placeholder={__('(Header Title)', 'amnesty')}
-                  keepPlaceholderOnFocus={true}
                   format="string"
                   onChange={this.createUpdateAttribute('title')}
                 />
@@ -278,7 +277,6 @@ class DisplayComponent extends Component {
                 value={attributes.content}
                 // translators: [admin]
                 placeholder={__('(Header Content)', 'amnesty')}
-                keepPlaceholderOnFocus={true}
                 format="string"
                 onChange={this.createUpdateAttribute('content')}
               />
@@ -290,7 +288,6 @@ class DisplayComponent extends Component {
                     value={attributes.ctaText}
                     // translators: [admin]
                     placeholder={__('(Call to action)', 'amnesty')}
-                    keepPlaceholderOnFocus={true}
                     format="string"
                     onChange={this.createUpdateAttribute('ctaText')}
                   />
