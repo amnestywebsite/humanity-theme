@@ -67,7 +67,7 @@ if ( ! function_exists( 'amnesty_get_header_data' ) ) {
 		$blocks = parse_blocks( $post->post_content );
 		$header = amnesty_find_header_block( $blocks );
 
-		if ( empty( $header ) ) {
+		if ( ! count( $header ) ) {
 			return [
 				'name'    => '',
 				'attrs'   => [],

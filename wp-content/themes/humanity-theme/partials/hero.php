@@ -29,13 +29,12 @@ $hero_data['attrs'] = wp_parse_args(
 $object = get_queried_object();
 if ( ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) {
 	if ( is_archive() && is_object( $object ) ) {
-		$hero_data['title']   = $object->label;
-		$hero_data['content'] = $object->labels->archives ?? $object->description;
+		$hero_data['attrs']['title']   = $object->label;
+		$hero_data['attrs']['content'] = $object->labels->archives ?? $object->description;
 	}
 }
 
-$hero_show = 0 !== $hero_data['imageID'];
-
+$hero_show = 0 !== $hero_data['attrs']['imageID'];
 
 if ( $hero_show ) {
 	// phpcs:ignore

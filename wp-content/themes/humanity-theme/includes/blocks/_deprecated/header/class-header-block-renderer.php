@@ -124,6 +124,39 @@ class Header_Block_Renderer {
 	}
 
 	/**
+	 * Render the background image CSS
+	 *
+	 * @return void
+	 */
+	protected function image() {
+		$image_id = absint( $this->attributes['imageID'] ?? 0 );
+
+		if ( 0 === $image_id ) {
+			return;
+		}
+
+		$media_lg = wp_get_attachment_image_url( $image_id, 'hero-lg' );
+		$media_md = wp_get_attachment_image_url( $image_id, 'hero-md' );
+		$media_sm = wp_get_attachment_image_url( $image_id, 'hero-sm' );
+
+		printf(
+			( $this->image->credit() ? '<style class="aiic-ignore">' : '<style>' ) .
+			'#banner-%1$s{background-image:url("%2$s")}' .
+			'@media screen and (min-width:770px){' .
+			'#banner-%1$s{background-image:url("%3$s")}' .
+			'}' .
+			'@media screen and (min-width:1444px){' .
+			'#banner-%1$s{background-image:url("%4$s")}' .
+			'}' .
+			'</style>',
+			esc_html( $this->id ),
+			esc_html( $media_sm ),
+			esc_html( $media_md ),
+			esc_html( $media_lg )
+		);
+	}
+
+	/**
 	 * Render the opener
 	 *
 	 * @return void
@@ -154,39 +187,6 @@ class Header_Block_Renderer {
 			'<div id="banner-%s" class="%s" role="region">',
 			esc_attr( $this->id ),
 			esc_attr( $classlist )
-		);
-	}
-
-	/**
-	 * Render the background image CSS
-	 *
-	 * @return void
-	 */
-	protected function image() {
-		$image_id = absint( $this->attributes['imageID'] ?? 0 );
-
-		if ( 0 === $image_id ) {
-			return;
-		}
-
-		$media_lg = wp_get_attachment_image_url( $image_id, 'hero-lg' );
-		$media_md = wp_get_attachment_image_url( $image_id, 'hero-md' );
-		$media_sm = wp_get_attachment_image_url( $image_id, 'hero-sm' );
-
-		printf(
-			( $this->image->credit() ? '<style class="aiic-ignore">' : '<style>' ) .
-			'#banner-%1$s{background-image:url("%2$s")}' .
-			'@media screen and (min-width:770px){' .
-			'#banner-%1$s{background-image:url("%3$s")}' .
-			'}' .
-			'@media screen and (min-width:1444px){' .
-			'#banner-%1$s{background-image:url("%4$s")}' .
-			'}' .
-			'</style>',
-			esc_html( $this->id ),
-			esc_html( $media_sm ),
-			esc_html( $media_md ),
-			esc_html( $media_lg )
 		);
 	}
 
