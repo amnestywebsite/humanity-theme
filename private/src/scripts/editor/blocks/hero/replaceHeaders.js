@@ -78,7 +78,11 @@ window.addEventListener('load', () => {
   const { getBlocks, getBlocksByClientId } = wp.data.select('core/block-editor');
   const { replaceBlocks } = wp.data.dispatch('core/block-editor');
   const { createInfoNotice, removeNotice } = wp.data.dispatch('core/notices');
-  const postType = wp.data.select('core/editor').getCurrentPostType();
+  const postType = wp.data.select('core/editor')?.getCurrentPostType();
+
+  if (!postType) {
+    return;
+  }
 
   // Get all blocks on a post
   const allBlocks = getBlocks();
