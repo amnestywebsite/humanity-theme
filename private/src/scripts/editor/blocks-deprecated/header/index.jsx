@@ -84,6 +84,8 @@ registerBlockType('amnesty-core/block-hero', {
     },
   },
 
+  usesContext: ['postId', 'postType'],
+
   transforms: {
     from: [
       {
