@@ -93,7 +93,6 @@ class DisplayComponent extends Component {
             placeholder={__('(Pre-heading)', 'amnesty')}
             allowedFormats={[]}
             value={attributes.preheading}
-            keepPlaceholderOnFocus={true}
             onChange={this.createUpdateAttribute('preheading')}
           />
           <RichText
@@ -103,7 +102,6 @@ class DisplayComponent extends Component {
             placeholder={__('(Heading)', 'amnesty')}
             allowedFormats={[]}
             value={attributes.title}
-            keepPlaceholderOnFocus={true}
             onChange={this.createUpdateAttribute('title')}
           />
           <RichText
@@ -112,7 +110,6 @@ class DisplayComponent extends Component {
             // translators: [admin]
             placeholder={__('(Content)', 'amnesty')}
             value={attributes.content}
-            keepPlaceholderOnFocus={true}
             onChange={this.createUpdateAttribute('content')}
           />
           <div className="callToAction-buttonContainer">

@@ -267,7 +267,6 @@ export default class DisplayComponent extends Component {
           placeholder={__('(Content)', 'amnesty')}
           value={content}
           format="string"
-          keepPlaceholderOnFocus={true}
           onChange={(newContent) => setAttributes({ content: newContent })}
         />
         <div className="imageBlock-buttonsContainer">

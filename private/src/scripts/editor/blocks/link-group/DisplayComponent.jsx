@@ -142,7 +142,6 @@ class DisplayComponent extends Component {
             placeholder={__('Further Reading', 'amnesty')}
             value={attributes.title}
             onChange={(title) => setAttributes({ title })}
-            keepPlaceholderOnFocus={true}
             multiline={false}
             withoutInteractiveFormatting={true}
           />
@@ -157,7 +156,6 @@ class DisplayComponent extends Component {
                   value={item.text}
                   onChange={(text) => this.updateItemProp(index, 'text', text)}
                   onRemove={() => this.removeItem(index)}
-                  keepPlaceholderOnFocus={true}
                   multiline={false}
                   preserveWhiteSpace={true}
                   withoutInteractiveFormatting={true}

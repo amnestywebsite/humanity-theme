@@ -243,7 +243,6 @@ export default class DisplayComponent extends Component {
                 value={title}
                 // translators: [admin]
                 placeholder={__('Banner Title', 'amnesty')}
-                keepPlaceholderOnFocus={true}
                 format="string"
                 onChange={(newTitle) => setAttributes({ title: newTitle })}
               />
@@ -253,7 +252,6 @@ export default class DisplayComponent extends Component {
                 value={content}
                 // translators: [admin]
                 placeholder={__('Banner Content', 'amnesty')}
-                keepPlaceholderOnFocus={true}
                 format="string"
                 onChange={(newContent) => setAttributes({ content: newContent })}
               />
@@ -265,7 +263,6 @@ export default class DisplayComponent extends Component {
                     value={ctaText}
                     // translators: [admin]
                     placeholder={__('Call to action', 'amnesty')}
-                    keepPlaceholderOnFocus={true}
                     format="string"
                     onChange={(newCtaText) => setAttributes({ ctaText: newCtaText })}
                   />
