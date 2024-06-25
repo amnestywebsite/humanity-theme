@@ -149,10 +149,11 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 			[
 				'lodash',
 				'wp-blocks',
-				'wp-i18n',
-				'wp-element',
-				'wp-edit-post',
 				'wp-data',
+				'wp-edit-post',
+				'wp-element',
+				'wp-i18n',
+				'wp-url',
 			],
 			$theme->get( 'Version' ),
 			false
