@@ -131,7 +131,6 @@ require_once realpath( __DIR__ . '/includes/post-filters.php' );
 require_once realpath( __DIR__ . '/includes/blocks/block-category.php' );
 require_once realpath( __DIR__ . '/includes/blocks/meta.php' );
 require_once realpath( __DIR__ . '/includes/blocks/register.php' );
-require_once realpath( __DIR__ . '/includes/blocks/templates.php' );
 require_once realpath( __DIR__ . '/includes/blocks/remove-stale-metadata.php' );
 require_once realpath( __DIR__ . '/includes/blocks/render-header-on-single.php' );
 #endregion blocks
