@@ -44,6 +44,7 @@ rsync --delete -a "$source_dir/" "$temp_dir/${theme_dir}" --exclude='.git/'
 
 # stage all changes
 git add --all .
+git add --force "./{$theme_dir}/assets"
 
 # nothing has changed, don't bother committing
 if [ -z "$(git status --porcelain)" ]; then
