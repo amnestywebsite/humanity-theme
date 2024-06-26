@@ -28,9 +28,11 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 	<?php echo wp_kses_post( $video_output ); ?>
 	<div class="container">
 		<div class="hero-contentWrapper">
-			<h1>
-				<span class="hero-title"><?php echo esc_html( $attrs['title'] ); ?></span>
+		<?php if ( $attrs['title'] ) : ?>
+			<h1 class="hero-title">
+				<span><?php echo esc_html( $attrs['title'] ); ?></span>
 			</h1>
+		<?php endif; ?>
 			<p class="hero-content"><?php echo esc_html( $attrs['content'] ); ?></p>
 			<div class="hero-cta">
 				<div class="btn btn--large">
