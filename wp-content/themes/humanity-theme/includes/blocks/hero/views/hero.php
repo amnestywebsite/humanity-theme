@@ -31,13 +31,17 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 				<span><?php echo esc_html( $attrs['title'] ); ?></span>
 			</h1>
 		<?php endif; ?>
+		<?php if ( $attrs['content'] ) : ?>
 			<p class="hero-content"><?php echo esc_html( $attrs['content'] ); ?></p>
+		<?php endif; ?>
+		<?php if ( $attrs['ctaText'] || $attrs['ctaLink'] ) : ?>
 			<div class="hero-cta">
 				<div class="btn btn--large">
 					<span><?php echo esc_html( $attrs['ctaText'] ); ?></span>
 					<a href="<?php echo esc_url( $attrs['ctaLink'] ); ?>"></a>
 				</div>
 			</div>
+		<?php endif; ?>
 		</div>
 		<?php echo wp_kses_post( $content ); ?>
 	</div>
