@@ -1,24 +1,22 @@
 <?php
 
-$alignment = '';
+$classname = [];
 
 if ( $attrs['align'] ) {
-	$alignment = 'is-aligned-' . $attrs['align'];
+	$classname[] = 'is-aligned-' . $attrs['align'];
 }
 
-$background = 'has-dark-background';
-
-if ( $attrs['background'] ) {
-	$background = 'has-' . $attrs['background'] . '-background';
-}
-
-$has_video = '';
+$classname[] = 'has-' . ( $attrs['background'] ?: 'dark' ) . '-background';
 
 if ( 'video' === $attrs['type'] ) {
-	$has_video = 'has-video';
+	$classname[] = 'has-video';
 }
 
-$classname = classnames( $attrs['className'], $alignment, $background, $has_video );
+if ( $content ) {
+	$classname[] = 'has-inner-blocks';
+}
+
+$classname = classnames( $attrs['className'], $classname );
 
 $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 
@@ -41,7 +39,7 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 				</div>
 			</div>
 		</div>
-		<?php echo wp_kses_post( $inner_blocks ); ?>
+		<?php echo wp_kses_post( $content ); ?>
 	</div>
 	<?php echo wp_kses_post( $media_meta_output ); ?>
 </section>
