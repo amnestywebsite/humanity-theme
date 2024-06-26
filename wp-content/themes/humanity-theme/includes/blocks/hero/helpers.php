@@ -74,19 +74,15 @@ if ( ! function_exists( 'amnesty_remove_first_hero_from_content' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @return void
+	 * @param string $content the post content
+	 *
+	 * @return string
 	 */
-	function amnesty_remove_first_hero_from_content() {
-		global $post;
-
-		if ( ! is_a( $post, 'WP_Post' ) ) {
-			return;
-		}
-
-		$post->post_content = preg_replace(
-			'/<!--\s(wp:amnesty-core\/(?:hero))\s.*?(?:(?:\/-->)|(?:-->.*?<!--\s\/\1\s-->))/sm',
+	function amnesty_remove_first_hero_from_content( string $content ): string {
+		return preg_replace(
+			'/<!--\s(wp:amnesty-core\/(?:hero))\s.*?(?:(?:\/-->)|(?:-->.*?<!--\s\/\1\s-->))\s+/sm',
 			'',
-			$post->post_content,
+			$content,
 			1
 		);
 	}
