@@ -7,7 +7,8 @@ import { fetchMediaData, validateBool } from '../utils';
 
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl } = wp.components;
-const { useDispatch, useSelect } = wp.data;
+const { useEntityRecord } = wp.coreData;
+const { useSelect } = wp.data;
 const { PostFeaturedImage } = wp.editor;
 const { Fragment, useCallback, useEffect, useRef, useState } = wp.element;
 const { __ } = wp.i18n;
@@ -35,27 +36,6 @@ const useHasDonationBlock = (parentClientId) =>
     return innerBlocks.filter((block) => block.name === 'amnesty-wc/donation').length;
   });
 
-const useFeaturedImage = (postId, postType) => {
-  const { featuredImage, meta } = useSelect((select) => {
-    const post = select('core').getEntityRecord('postType', postType, postId);
-
-    return {
-      featuredImage: post.featured_media,
-      meta: post.meta,
-    };
-  });
-
-  const { editEntityRecord } = useDispatch('core');
-  const hideFeaturedImage = useCallback(() => {
-    // eslint-disable-next-line no-underscore-dangle
-    if (!validateBool(meta?._hide_featured_image)) {
-      editEntityRecord('postType', postType, postId, { meta: { _hide_featured_image: true } });
-    }
-  });
-
-  return { featuredImage, hideFeaturedImage };
-};
-
 const DisplayComponent = (props) => {
   const {
     attributes,
@@ -66,18 +46,22 @@ const DisplayComponent = (props) => {
   } = props;
 
   const [mediaData, setMediaData] = useState({});
-  const mounted = useRef();
   const videoRef = useRef();
   const hasDonationBlock = useHasDonationBlock(clientId);
-  const { featuredImage, hideFeaturedImage } = useFeaturedImage(postId, postType);
+  const object = useEntityRecord('postType', postType, postId);
+
+  const disableFeaturedImage = useCallback(() => {
+    // eslint-disable-next-line no-underscore-dangle
+    if (!validateBool(object?.editedRecord?.meta?._hide_featured_image)) {
+      object.edit({ meta: { _hide_featured_image: true } });
+    }
+  }, [object.edit]);
 
   useEffect(() => {
-    if (!mounted?.current) {
-      mounted.current = true;
-      // if the hero is inserted, hide the featured image
-      hideFeaturedImage();
+    if (!object.isResolving) {
+      disableFeaturedImage();
     }
-  }, []);
+  }, [object.editedRecord.featured_media]);
 
   useEffect(() => {
     if (attributes.type !== 'image') {
@@ -85,9 +69,9 @@ const DisplayComponent = (props) => {
     }
 
     // block attribute takes precedence over the featured image
-    const id = attributes?.imageID || featuredImage;
+    const id = attributes?.imageID || object.editedRecord.featured_media;
     fetchMediaData(id, setMediaData, mediaData);
-  }, [featuredImage, attributes.imageID, attributes.type]);
+  }, [object.editedRecord.featured_media, attributes.imageID, attributes.type]);
 
   useEffect(() => {
     if (attributes.type !== 'video') {
