@@ -14,8 +14,11 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 	 * @package Amnesty\Blocks
 	 *
 	 * @return string
+	 *
+	 * phpcs:disable Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed -- used in view
 	 */
 	function render_hero_block( array $attributes = [], string $content = '' ): string {
+		// phpcs:enable Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
 		$attrs = wp_parse_args(
 			$attributes,
 			[
@@ -60,16 +63,6 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 		// Reverse the boolean value of the arguments to match the value of the arguments in the function
 		$media_meta_output  = $image->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'], 'image' );
 		$media_meta_output .= $video->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'], 'video' );
-
-		$inner_blocks = '';
-		// If inner blocks are present, build the inner blocks
-		if ( $content ) {
-			// $inner_blocks used in hero.php view
-			$inner_blocks .= sprintf(
-				'<div class="donation">%s</div>',
-				wp_kses_post( $content )
-			);
-		}
 
 		spaceless();
 		require realpath( __DIR__ . '/views/hero.php' );
