@@ -80,7 +80,7 @@ if ( ! function_exists( 'amnesty_remove_first_hero_from_content' ) ) {
 	 */
 	function amnesty_remove_first_hero_from_content( string $content ): string {
 		return preg_replace(
-			'/<!--\s(wp:amnesty-core\/(?:hero))\s.*?(?:(?:\/-->)|(?:-->.*?<!--\s\/\1\s-->))\s+/sm',
+			'/<!--\s(wp:amnesty-core\/(?:hero))\s.*?(?:(?:\/-->)|(?:-->.*?<!--\s\/\1\s-->))\s*?/sm',
 			'',
 			$content,
 			1
