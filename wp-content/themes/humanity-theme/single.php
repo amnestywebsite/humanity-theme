@@ -14,7 +14,7 @@ if ( amnesty_post_has_hero() ) {
 
 	if ( $hero_data ) {
 		echo wp_kses_post( render_hero_block( $hero_data['attrs'], $hero_data['content'], $hero_data['name'] ) );
-		amnesty_remove_first_hero_from_content();
+		add_filter( 'the_content', 'amnesty_remove_first_hero_from_content', 0 );
 	}
 } elseif ( amnesty_post_has_header() ) {
 	$header_data = amnesty_get_header_data();
