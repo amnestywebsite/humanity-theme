@@ -32,11 +32,11 @@ class DisplayComponent extends Component {
     const blocks = select('core/block-editor').getBlocks(clientId);
 
     if (post?.featured_media) {
-      this.setState({ featuredImageId: post.featured_media });
+      this.state.featuredImageId = post.featured_media;
     }
 
     if (blocks?.length > 0) {
-      this.setState({ hasInnerBlock: true });
+      this.state.hasInnerBlock = true;
     }
   }
 
