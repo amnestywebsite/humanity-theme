@@ -28,16 +28,16 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 		<div class="hero-contentWrapper">
 		<?php if ( $attrs['title'] ) : ?>
 			<h1 class="hero-title">
-				<span><?php echo esc_html( $attrs['title'] ); ?></span>
+				<span><?php echo wp_kses_post( $attrs['title'] ); ?></span>
 			</h1>
 		<?php endif; ?>
 		<?php if ( $attrs['content'] ) : ?>
-			<p class="hero-content"><?php echo esc_html( $attrs['content'] ); ?></p>
+			<p class="hero-content"><?php echo wp_kses_post( $attrs['content'] ); ?></p>
 		<?php endif; ?>
 		<?php if ( $attrs['ctaText'] || $attrs['ctaLink'] ) : ?>
 			<div class="hero-cta">
 				<div class="btn btn--large">
-					<span><?php echo esc_html( $attrs['ctaText'] ); ?></span>
+					<span><?php echo wp_kses_post( $attrs['ctaText'] ); ?></span>
 					<a href="<?php echo esc_url( $attrs['ctaLink'] ); ?>"></a>
 				</div>
 			</div>
