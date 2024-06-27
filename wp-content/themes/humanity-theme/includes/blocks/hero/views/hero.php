@@ -1,24 +1,22 @@
 <?php
 
-$alignment = '';
+$classname = [];
 
 if ( $attrs['align'] ) {
-	$alignment = 'is-aligned-' . $attrs['align'];
+	$classname[] = 'is-aligned-' . $attrs['align'];
 }
 
-$background = 'has-dark-background';
-
-if ( $attrs['background'] ) {
-	$background = 'has-' . $attrs['background'] . '-background';
-}
-
-$has_video = '';
+$classname[] = 'has-' . ( $attrs['background'] ?: 'dark' ) . '-background';
 
 if ( 'video' === $attrs['type'] ) {
-	$has_video = 'has-video';
+	$classname[] = 'has-video';
 }
 
-$classname = classnames( $attrs['className'], $alignment, $background, $has_video );
+if ( $content ) {
+	$classname[] = 'has-inner-blocks';
+}
+
+$classname = classnames( $attrs['className'], $classname );
 
 $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 
@@ -28,18 +26,24 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 	<?php echo wp_kses_post( $video_output ); ?>
 	<div class="container">
 		<div class="hero-contentWrapper">
-			<h1>
-				<span class="hero-title"><?php echo esc_html( $attrs['title'] ); ?></span>
+		<?php if ( $attrs['title'] ) : ?>
+			<h1 class="hero-title">
+				<span><?php echo esc_html( $attrs['title'] ); ?></span>
 			</h1>
+		<?php endif; ?>
+		<?php if ( $attrs['content'] ) : ?>
 			<p class="hero-content"><?php echo esc_html( $attrs['content'] ); ?></p>
+		<?php endif; ?>
+		<?php if ( $attrs['ctaText'] || $attrs['ctaLink'] ) : ?>
 			<div class="hero-cta">
 				<div class="btn btn--large">
 					<span><?php echo esc_html( $attrs['ctaText'] ); ?></span>
 					<a href="<?php echo esc_url( $attrs['ctaLink'] ); ?>"></a>
 				</div>
 			</div>
+		<?php endif; ?>
 		</div>
-		<?php echo wp_kses_post( $inner_blocks ); ?>
+		<?php echo wp_kses_post( $content ); ?>
 	</div>
 	<?php echo wp_kses_post( $media_meta_output ); ?>
 </section>

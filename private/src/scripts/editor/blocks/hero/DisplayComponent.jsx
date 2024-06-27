@@ -173,10 +173,9 @@ const DisplayComponent = (props) => {
         )}
         <div className={`container ${hasDonationBlock ? 'has-donation-block' : ''}`}>
           <div className="hero-contentWrapper">
-            <h1>
+            <h1 className="hero-title">
               <RichText
                 tagName="span"
-                className="hero-title"
                 placeholder={/* translators: [admin] */ __('Hero Title', 'amnesty')}
                 value={attributes.title}
                 onChange={(title) => setAttributes({ title })}
