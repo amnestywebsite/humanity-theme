@@ -6,7 +6,7 @@ import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl, withFilters } = wp.components;
 const { compose } = wp.compose;
-const { withSelect } = wp.data;
+const { select } = wp.data;
 const { PostFeaturedImage } = wp.editor;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
@@ -16,7 +16,29 @@ class DisplayComponent extends Component {
   state = {
     imageData: null,
     videoData: null,
+    featuredImageId: 0,
+    hasInnerBlock: false,
   };
+
+  constructor(props) {
+    super(props);
+
+    const {
+      clientId,
+      context: { postId, postType },
+    } = this.props;
+
+    const post = select('core').getEntityRecord('postType', postType, postId);
+    const blocks = select('core/block-editor').getBlocks(clientId);
+
+    if (post?.featured_media) {
+      this.state.featuredImageId = post.featured_media;
+    }
+
+    if (blocks?.length > 0) {
+      this.state.hasInnerBlock = true;
+    }
+  }
 
   fetchMediaMetadata = (id, type) => {
     const key = `${type}Data`;
@@ -51,7 +73,7 @@ class DisplayComponent extends Component {
   };
 
   componentDidMount() {
-    const { featuredImageId } = this.props;
+    const { featuredImageId } = this.state;
     const { type, featuredVideoId } = this.props.attributes;
 
     if (type === 'video' && !this.state.videoData?.url && featuredVideoId) {
@@ -64,7 +86,7 @@ class DisplayComponent extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { featuredImageId } = this.props;
+    const { featuredImageId } = this.state;
     const { type, featuredVideoId } = this.props.attributes;
 
     if (type === 'video' && !this.state.videoData?.url && featuredVideoId) {
@@ -108,7 +130,7 @@ class DisplayComponent extends Component {
     });
 
     const contentClasses = classnames('hero-content', {
-      'has-donation-block': this.props.hasInnerBlock.length > 0,
+      'has-donation-block': this.state.hasInnerBlock,
     });
 
     const sectionStyles = {};
@@ -245,7 +267,6 @@ class DisplayComponent extends Component {
                   value={attributes.title}
                   // translators: [admin]
                   placeholder={__('(Header Title)', 'amnesty')}
-                  keepPlaceholderOnFocus={true}
                   format="string"
                   onChange={this.createUpdateAttribute('title')}
                 />
@@ -256,7 +277,6 @@ class DisplayComponent extends Component {
                 value={attributes.content}
                 // translators: [admin]
                 placeholder={__('(Header Content)', 'amnesty')}
-                keepPlaceholderOnFocus={true}
                 format="string"
                 onChange={this.createUpdateAttribute('content')}
               />
@@ -268,7 +288,6 @@ class DisplayComponent extends Component {
                     value={attributes.ctaText}
                     // translators: [admin]
                     placeholder={__('(Call to action)', 'amnesty')}
-                    keepPlaceholderOnFocus={true}
                     format="string"
                     onChange={this.createUpdateAttribute('ctaText')}
                   />
@@ -292,21 +311,4 @@ class DisplayComponent extends Component {
   }
 }
 
-const applyWithSelect = () =>
-  withSelect((select, blockData) => {
-    const { getPostType } = select('core');
-    const { getEditedPostAttribute } = select('core/editor');
-    const featuredImageId = getEditedPostAttribute('featured_media');
-    const hasInnerBlock = select('core/block-editor').getBlocks(blockData.clientId);
-
-    return {
-      postType: getPostType(getEditedPostAttribute('type')),
-      featuredImageId,
-      hasInnerBlock,
-    };
-  });
-
-export default compose(
-  applyWithSelect(),
-  withFilters('editor.PostFeaturedImage'),
-)(DisplayComponent);
+export default compose(withFilters('editor.PostFeaturedImage'))(DisplayComponent);

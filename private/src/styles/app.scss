@@ -72,8 +72,11 @@
 @import "blocks/collapsable/main";
 @import "blocks/core-blocks/blockquote";
 @import "blocks/core-blocks/columns";
+@import "blocks/core-blocks/details";
 @import "blocks/core-blocks/embed";
 @import "blocks/core-blocks/file";
+@import "blocks/core-blocks/gallery";
+@import "blocks/core-blocks/group";
 @import "blocks/core-blocks/image";
 @import "blocks/core-blocks/latest-posts";
 @import "blocks/core-blocks/menu";
@@ -82,8 +85,6 @@
 @import "blocks/core-blocks/social-links";
 @import "blocks/core-blocks/table";
 @import "blocks/core-blocks/video";
-@import "blocks/core-blocks/gallery";
-@import "blocks/core-blocks/group";
 @import "blocks/countdown-timer/main";
 @import "blocks/custom-card/main";
 @import "blocks/download-block/style";
@@ -103,11 +104,10 @@
 @import "blocks/slider/main";
 @import "blocks/stat-counter/main";
 @import "blocks/sutori-embed/main";
+@import "blocks/tabbed-content/main";
 @import "blocks/term-list/main";
 @import "blocks/text-media/main";
 @import "blocks/tweet-action/tweet";
-@import "blocks/tabbed-content/main";
-@import "blocks/core-blocks/details";
 
 // Block patterns
 @import "block-patterns/social-share";

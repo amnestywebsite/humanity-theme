@@ -35,32 +35,41 @@ const useHasDonationBlock = (parentClientId) =>
     return innerBlocks.filter((block) => block.name === 'amnesty-wc/donation').length;
   });
 
-const useFeaturedImage = () => {
+const useFeaturedImage = (postId, postType) => {
   const { featuredImage, meta } = useSelect((select) => {
-    const { getEditedPostAttribute } = select('core/editor');
+    const post = select('core').getEntityRecord('postType', postType, postId);
+
     return {
-      featuredImage: getEditedPostAttribute('featured_media'),
-      meta: getEditedPostAttribute('meta'),
+      featuredImage: post.featured_media,
+      meta: post.meta,
     };
   });
 
-  const { editPost } = useDispatch('core/editor');
+  const { editEntityRecord } = useDispatch('core');
   const hideFeaturedImage = useCallback(() => {
     // eslint-disable-next-line no-underscore-dangle
-    if (!validateBool(meta._hide_featured_image)) {
-      editPost({ meta: { _hide_featured_image: true } });
+    if (!validateBool(meta?._hide_featured_image)) {
+      editEntityRecord('postType', postType, postId, { meta: { _hide_featured_image: true } });
     }
   });
 
   return { featuredImage, hideFeaturedImage };
 };
 
-const DisplayComponent = ({ attributes, className, clientId, setAttributes }) => {
+const DisplayComponent = (props) => {
+  const {
+    attributes,
+    className,
+    clientId,
+    context: { postId, postType },
+    setAttributes,
+  } = props;
+
   const [mediaData, setMediaData] = useState({});
   const mounted = useRef();
   const videoRef = useRef();
   const hasDonationBlock = useHasDonationBlock(clientId);
-  const { featuredImage, hideFeaturedImage } = useFeaturedImage();
+  const { featuredImage, hideFeaturedImage } = useFeaturedImage(postId, postType);
 
   useEffect(() => {
     if (!mounted?.current) {
@@ -164,15 +173,13 @@ const DisplayComponent = ({ attributes, className, clientId, setAttributes }) =>
         )}
         <div className={`container ${hasDonationBlock ? 'has-donation-block' : ''}`}>
           <div className="hero-contentWrapper">
-            <h1>
+            <h1 className="hero-title">
               <RichText
                 tagName="span"
-                className="hero-title"
                 placeholder={/* translators: [admin] */ __('Hero Title', 'amnesty')}
                 value={attributes.title}
                 onChange={(title) => setAttributes({ title })}
                 format="string"
-                keepPlaceholderOnFocus={true}
               />
             </h1>
             <RichText
@@ -182,7 +189,6 @@ const DisplayComponent = ({ attributes, className, clientId, setAttributes }) =>
               value={attributes.content}
               onChange={(content) => setAttributes({ content })}
               format="string"
-              keepPlaceholderOnFocus={true}
             />
             <div className="hero-cta">
               <div className="btn btn--large">
@@ -192,7 +198,6 @@ const DisplayComponent = ({ attributes, className, clientId, setAttributes }) =>
                   value={attributes.ctaText}
                   onChange={(ctaText) => setAttributes({ ctaText })}
                   format="string"
-                  keepPlaceholderOnFocus={true}
                 />
                 <URLInputButton
                   url={attributes.ctaLink}

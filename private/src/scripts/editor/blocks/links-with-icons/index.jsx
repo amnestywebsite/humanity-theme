@@ -22,6 +22,7 @@ registerBlockType('amnesty-core/repeatable-block', {
   supports: {
     className: true,
     defaultStylePicker: false,
+    inserter: false,
   },
 
   attributes: {

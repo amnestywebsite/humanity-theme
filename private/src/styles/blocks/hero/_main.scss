@@ -42,7 +42,7 @@
   }
 }
 
-.hero-title {
+.hero-title span {
   margin: 0;
   padding: 0 16px;
   font-size: 4.5rem;
@@ -122,4 +122,17 @@
   @include mq(small) {
     display: flex;
   }
+}
+
+.wp-block-amnesty-core-hero.has-inner-blocks .container {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.wp-block-amnesty-core-hero.has-inner-blocks .hero-title {
+  max-width: 840px;
+}
+
+.wp-block-amnesty-core-hero.has-inner-blocks .hero-content {
+  max-width: 460px;
 }

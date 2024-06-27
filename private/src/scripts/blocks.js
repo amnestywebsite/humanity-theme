@@ -15,8 +15,8 @@ import './editor/block-styles';
 import './editor/plugins/appearance-options/index.jsx';
 import './editor/plugins/pop-in/index.jsx';
 
-import './editor/blocks-deprecated/header/index.jsx';
 import './editor/blocks-deprecated/banner/index.jsx';
+import './editor/blocks-deprecated/header/index.jsx';
 
 import './editor/blocks/action/index.jsx';
 import './editor/blocks/background-media/index.jsx';

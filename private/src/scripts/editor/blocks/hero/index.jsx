@@ -58,6 +58,7 @@ registerBlockType('amnesty-core/hero', {
       default: 'image',
     },
   },
+  usesContext: ['postId', 'postType'],
 
   edit: DisplayComponent,
 
