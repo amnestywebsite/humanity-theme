@@ -5,7 +5,6 @@ const unusedNamespaces = ['yoast', 'yoast-seo', 'woocommerce'];
 
 const unusedBlocks = [
   'core/archives',
-  'core/audio',
   'core/avatar',
   'core/calendar',
   'core/categories',
