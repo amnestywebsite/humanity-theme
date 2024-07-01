@@ -15,7 +15,6 @@ const unusedBlocks = [
   'core/comment-edit-link',
   'core/comment-reply-link',
   'core/comment-template',
-  'core/cover',
   'core/details',
   'core/file',
   'core/footnotes',
