@@ -1,5 +1,4 @@
 import './admin-only-blocks';
-import './disable-blocks';
 import './hide-unused-embeds';
 import './hide-unused-blocks';
 import './html-block-attributes';
