@@ -78,7 +78,7 @@ if ( ! function_exists( 'has_translations' ) ) {
 	 * @return boolean
 	 */
 	function has_translations() {
-		return ! ! get_object_translations();
+		return (bool) get_object_translations();
 	}
 }
 

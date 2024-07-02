@@ -10,6 +10,10 @@
   }
 }
 
+.callToAction * {
+  font-family: var(--wp--preset--font-family--secondary);
+}
+
 .callToAction > *:empty {
   display: none;
 }
@@ -20,6 +24,7 @@
 
 .callToAction-preHeading {
   font-size: 21px;
+  text-align: center;
 
   @include mq(small) {
     font-size: 31px;
@@ -31,6 +36,7 @@
   font-size: 30px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  text-align: center;
 
   @include mq(small) {
     font-size: 41px;
@@ -42,6 +48,7 @@
   margin-left: auto;
   max-width: 800px;
   line-height: 1.4;
+  text-align: center;
 }
 
 .callToAction .innerBlocksContainer {

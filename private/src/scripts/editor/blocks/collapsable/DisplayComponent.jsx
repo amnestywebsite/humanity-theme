@@ -69,7 +69,6 @@ const DisplayComponent = ({ attributes, className, setAttributes }) => {
             tagName="h2"
             // translators: [admin]
             placeholder={__('Find out more', 'amnesty')}
-            keepPlaceholderOnFocus={true}
             value={attributes.title}
             onChange={(title) => setAttributes({ title })}
           />

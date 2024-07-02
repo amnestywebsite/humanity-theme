@@ -9,16 +9,19 @@
 get_header();
 the_post();
 
-$featured_image        = amnesty_featured_image( get_the_ID(), 'post-featured' );
-$featured_image_retina = amnesty_featured_image( get_the_ID(), 'post-featured@2x' );
-$hero_title            = amnesty_get_meta_field( '_hero_title' );
-$sidebar_is_enabled    = amnesty_get_meta_field( '_disable_sidebar' ) !== '1';
+$sidebar_is_enabled = amnesty_get_meta_field( '_disable_sidebar' ) !== '1';
+$hero_title         = amnesty_get_meta_field( '_hero_title' );
+
+if ( amnesty_post_has_hero() ) {
+	$hero_data  = amnesty_get_hero_data();
+	$hero_title = $hero_data['attrs']['title'] ?? false;
+}
 
 ?>
 
 <main id="main">
 	<section class="section section--small">
-		<div class="container article-container">
+		<div class="container article-container has-gutter">
 			<article class="article <?php $sidebar_is_enabled && print 'has-sidebar'; ?>">
 			<?php if ( ! $hero_title ) : ?>
 				<header class="article-header">

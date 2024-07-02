@@ -19,7 +19,7 @@ const closePopIn = (event) => {
 
   hidePopIn(event.target);
 
-  Cookies.set('amnesty_pop_in_dismissed', globalData.active_pop_in[0], {
+  Cookies.set('amnesty_pop_in_dismissed', '1', {
     domain: globalData.domain,
     expires: parseInt(globalData.pop_in_timeout, 10) || 30,
     sameSite: 'strict',
@@ -35,7 +35,7 @@ export default function popIn() {
 
   globalData = window.amnesty_data;
 
-  if (Cookies.get('amnesty_pop_in_dismissed') === globalData.active_pop_in[0]) {
+  if (Cookies.get('amnesty_pop_in_dismissed') === '1') {
     hidePopIn(close);
     return;
   }

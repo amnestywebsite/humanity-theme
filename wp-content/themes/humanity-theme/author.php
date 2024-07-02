@@ -19,7 +19,7 @@ $author_banner_id   = get_the_author_meta( 'authorbanner_id' );
 $author_avatar      = get_the_author_meta( 'authoravatar' );
 $author_description = get_the_author_meta( 'authordescriptionsection' );
 
-$image = new Get_Image_Data( $author_banner_id );
+$image = new Get_Image_Data( absint( $author_banner_id ) );
 
 $args = [
 	'author'         => $author_id,

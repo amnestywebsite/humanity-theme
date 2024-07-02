@@ -74,7 +74,6 @@ registerBlockType('amnesty-core/key-facts', {
             tagName="h2"
             // translators: [admin]
             placeholder={__('(Insert Title)', 'amnesty')}
-            keepPlaceholderOnFocus={true}
             value={title}
             allowedFormats={[]}
             onChange={(newTitle) => setAttributes({ title: newTitle })}

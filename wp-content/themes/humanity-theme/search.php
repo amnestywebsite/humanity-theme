@@ -10,7 +10,7 @@ get_header();
 
 ?>
 <main id="main">
-	<div class="container search-container">
+	<div class="container search-container has-gutter">
 		<?php get_template_part( 'partials/search/horizontal-search' ); ?>
 
 		<section class="section search-results section--tinted" aria-label="<?php /* translators: [front] ARIA */ esc_attr_e( 'Search results', 'amnesty' ); ?>">
@@ -31,7 +31,7 @@ get_header();
 		</section>
 	</div>
 
-	<div class="container container--small">
+	<div class="container container--small has-gutter">
 		<?php get_template_part( 'partials/pagination' ); ?>
 	</div>
 

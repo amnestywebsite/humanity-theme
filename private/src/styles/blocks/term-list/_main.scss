@@ -18,7 +18,7 @@
   width: 75px;
   height: 75px;
   background-color: $color-grey-x-light;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-size: 28px;
   font-weight: bold;
   color: $color-black;
@@ -57,7 +57,7 @@
 
 .wp-block-amnesty-core-term-list .activeLetter {
   flex-basis: 10%;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-size: 80px;
   line-height: 1;
 }

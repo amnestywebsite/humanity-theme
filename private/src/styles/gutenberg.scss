@@ -27,13 +27,14 @@
 @import "utils/mixins/states";
 
 // Base
-@import "base/fonts";
+@import "base/container";
+@import "base/container-editor";
 @import "base/images-editor";
 
 // Layout
 @import "layout/page-hero";
 @import "layout/page-hero-editor";
-@import "layout/page-section";
+@import "layout/footer/editor";
 
 // Components
 @import "components/grid/all";
@@ -42,6 +43,7 @@
 @import "components/fluid";
 @import "components/icon";
 @import "components/pop-in/editor";
+@import "components/social";
 
 // Blocks
 @import "blocks/action-block/main";
@@ -54,6 +56,9 @@
 @import "blocks/collapsable/editor";
 @import "blocks/core-blocks/blockquote";
 @import "blocks/core-blocks/blockquote-editor";
+@import "blocks/core-blocks/details";
+@import "blocks/core-blocks/gallery-editor";
+@import "blocks/core-blocks/group";
 @import "blocks/core-blocks/image-editor";
 @import "blocks/core-blocks/latest-posts";
 @import "blocks/core-blocks/latest-posts-editor";
@@ -70,6 +75,8 @@
 @import "blocks/fact-block/main";
 @import "blocks/fact-block/editor";
 @import "blocks/header/editor";
+@import "blocks/hero/main";
+@import "blocks/hero/editor";
 @import "blocks/iframe-button/editor";
 @import "blocks/image-block/main";
 @import "blocks/image-block/editor";
@@ -79,22 +86,25 @@
 @import "blocks/linklist/editor";
 @import "blocks/links-with-icons/main";
 @import "blocks/links-with-icons/editor";
+@import "blocks/list-block/editor";
 @import "blocks/petition-list/main";
 @import "blocks/postlist/categories";
 @import "blocks/postlist/categories-editor";
 @import "blocks/regions/main";
 @import "blocks/regions/editor";
+@import "blocks/section/main";
+@import "blocks/section/editor";
 @import "blocks/slider/main";
 @import "blocks/slider/editor";
 @import "blocks/stat-counter/main";
 @import "blocks/stat-counter/editor";
+@import "blocks/tabbed-content/editor";
 @import "blocks/term-list/main";
 @import "blocks/text-media/main";
 @import "blocks/text-media/editor";
 @import "blocks/tickcounter-embed/editor";
 @import "blocks/tweet-action/tweet";
 @import "blocks/tweet-action/editor";
-@import "blocks/tabbed-content/editor";
 
 // Block Patterns
 @import "block-patterns/social-share";
@@ -102,10 +112,6 @@
 :root {
   --ms-base: 16;
   --ms-ratio: 1.2;
-}
-
-.wp-block {
-  max-width: 960px;
 }
 
 .amnesty-byline {
@@ -121,7 +127,7 @@
 .editor-post-title__block .editor-post-title__input,
 .block-editor-block-list__layout,
 .editor-styles-wrapper {
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
 }
 
 .block-editor-block-list__layout,
@@ -129,11 +135,11 @@
   li,
   p,
   a {
-    font-family: var(--font-family-primary);
+    font-family: var(--wp--preset--font-family--primary);
   }
 
   strong {
-    font-family: var(--font-family-secondary);
+    font-family: var(--wp--preset--font-family--secondary);
   }
 }
 

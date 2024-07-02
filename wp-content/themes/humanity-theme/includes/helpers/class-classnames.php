@@ -130,7 +130,7 @@ class Classnames {
 			case 'integer':
 			case 'double':
 			case 'unknown type':
-				if ( ! ! $item && is_scalar( (string) $item ) ) {
+				if ( (bool) $item && is_scalar( (string) $item ) ) {
 					$this->dirty[] = (string) $item;
 				}
 				break;
@@ -168,7 +168,7 @@ class Classnames {
 	 * @return bool
 	 */
 	protected function key_is( $key, $val ) {
-		return is_string( $key ) && ! ! $key && ! ! $val;
+		return is_string( $key ) && (bool) $key && (bool) $val;
 	}
 
 	/**
@@ -180,7 +180,7 @@ class Classnames {
 	 * @return bool
 	 */
 	protected function val_is( $key, $val ) {
-		return ! is_string( $key ) && is_string( $val ) && ! ! $val;
+		return ! is_string( $key ) && is_string( $val ) && (bool) $val;
 	}
 
 }

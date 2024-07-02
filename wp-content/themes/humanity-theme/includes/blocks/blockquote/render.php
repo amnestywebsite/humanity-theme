@@ -29,11 +29,11 @@ if ( ! function_exists( 'render_blockquote_block' ) ) {
 		$classes = classnames(
 			'blockquote',
 			[
-				"align-{$attrs['align']}" => ! ! $attrs['align'],
-				"is-{$attrs['size']}"     => ! ! $attrs['size'],
-				"is-{$attrs['colour']}"   => ! ! $attrs['colour'],
-				'is-capitalised'          => ! ! $attrs['capitalise'],
-				'is-lined'                => ! ! $attrs['lined'],
+				"align-{$attrs['align']}" => (bool) $attrs['align'],
+				"is-{$attrs['size']}"     => (bool) $attrs['size'],
+				"is-{$attrs['colour']}"   => (bool) $attrs['colour'],
+				'is-capitalised'          => (bool) $attrs['capitalise'],
+				'is-lined'                => (bool) $attrs['lined'],
 			] 
 		);
 

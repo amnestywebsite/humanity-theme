@@ -361,7 +361,6 @@ class DisplayComponent extends Component {
                   onChange={this.createUpdateAttribute('sliderTitle')}
                   value={attributes.sliderTitle}
                   allowedFormats={[]}
-                  keepPlaceholderOnFocus={true}
                   format="string"
                 />
               </div>
@@ -412,7 +411,6 @@ class DisplayComponent extends Component {
                             value={currentSlide.timelineContent}
                             onChange={updateSlide('timelineContent')}
                             allowedFormats={[]}
-                            keepPlaceholderOnFocus={true}
                             format="string"
                           />
                         </div>
@@ -428,7 +426,6 @@ class DisplayComponent extends Component {
                             value={currentSlide.heading}
                             onChange={updateSlide('heading')}
                             allowedFormats={[]}
-                            keepPlaceholderOnFocus={true}
                             format="string"
                           />
                         </h1>
@@ -440,7 +437,6 @@ class DisplayComponent extends Component {
                             value={currentSlide.subheading}
                             onChange={updateSlide('subheading')}
                             allowedFormats={[]}
-                            keepPlaceholderOnFocus={true}
                             format="string"
                           />
                         </h2>
@@ -452,7 +448,6 @@ class DisplayComponent extends Component {
                             value={currentSlide.content}
                             onChange={updateSlide('content')}
                             allowedFormats={[]}
-                            keepPlaceholderOnFocus={true}
                           />
                         </div>
                         <div className="slide-callToAction">
@@ -464,7 +459,6 @@ class DisplayComponent extends Component {
                               value={currentSlide.callToActionText}
                               onChange={updateSlide('callToActionText')}
                               allowedFormats={[]}
-                              keepPlaceholderOnFocus={true}
                               format="string"
                             />
                           </div>

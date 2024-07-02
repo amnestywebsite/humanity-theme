@@ -41,14 +41,15 @@
 .grid-itemContent a {
   color: $color-black;
   font-weight: bold;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
+  text-transform: uppercase;
 }
 
 .grid-itemMeta {
   display: block;
   text-transform: uppercase;
   font-size: 18px;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   max-width: 100%;
   overflow: hidden;
@@ -95,6 +96,22 @@ h3.grid-itemTitle > a {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.grid-itemContent {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.no-js .grid-item:hover .grid-itemContent,
+.no-js .grid-item:focus .grid-itemContent {
+  display: block;
+}
+
+.no-js .grid-item:focus-within .grid-itemContent {
+  display: block;
 }
 
 .grid {

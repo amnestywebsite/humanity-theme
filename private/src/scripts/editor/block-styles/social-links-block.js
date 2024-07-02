@@ -26,18 +26,6 @@ registerBlockStyle('core/social-links', {
 });
 
 registerBlockStyle('core/social-links', {
-  name: 'yellow',
-  // translators: [admin]
-  label: _x('Yellow', 'block style', 'amnesty'),
-});
-
-registerBlockStyle('core/social-links', {
-  name: 'yellow-circle',
-  // translators: [admin]
-  label: _x('Yellow Circle', 'block style', 'amnesty'),
-});
-
-registerBlockStyle('core/social-links', {
   name: 'logos-only-dark',
   // translators: [admin]
   label: _x('Logos Only Dark', 'block style', 'amnesty'),
@@ -47,10 +35,4 @@ registerBlockStyle('core/social-links', {
   name: 'logos-only-light',
   // translators: [admin]
   label: _x('Logos Only Light', 'block style', 'amnesty'),
-});
-
-registerBlockStyle('core/social-links', {
-  name: 'logos-only-yellow',
-  // translators: [admin]
-  label: _x('Logos Only Yellow', 'block style', 'amnesty'),
 });

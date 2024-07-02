@@ -37,10 +37,10 @@ if ( ! function_exists( 'render_image_block' ) ) {
 		$block_classes = classnames(
 			'imageBlock',
 			[
-				sprintf( 'imageBlock-%s', esc_attr( $attributes['identifier'] ) ) => ! ! $attributes['parallax'],
+				sprintf( 'imageBlock-%s', esc_attr( $attributes['identifier'] ) ) => (bool) $attributes['parallax'],
 				'imageBlock--fixed' => 'fixed' === $attributes['style'],
 				'has-video'         => 'video' === $attributes['type'],
-				'has-parallax'      => ! ! $attributes['parallax'],
+				'has-parallax'      => (bool) $attributes['parallax'],
 			] 
 		);
 

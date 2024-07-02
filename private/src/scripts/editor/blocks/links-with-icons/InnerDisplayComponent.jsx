@@ -90,7 +90,6 @@ export default class BlockEdit extends Component {
           placeholder={__('(Insert Fact)', 'amnesty')}
           value={bigtext}
           allowedFormats={[]}
-          keepPlaceholderOnFocus={true}
           onChange={(newBigtext) => setAttributes({ bigtext: newBigtext })}
           style={bigTextCss}
           ref={this.bigTextRef}
@@ -273,7 +272,6 @@ export default class BlockEdit extends Component {
             value={title}
             format="string"
             allowedFormats={[]}
-            keepPlaceholderOnFocus={true}
             onChange={(newTitle) => setAttributes({ title: newTitle })}
           />
           {imageLocation !== 'top' && this.getOptionalField()}
@@ -322,7 +320,6 @@ export default class BlockEdit extends Component {
             value={title}
             format="string"
             allowedFormats={[]}
-            keepPlaceholderOnFocus={true}
             onChange={(newTitle) => setAttributes({ title: newTitle })}
           />
           {imageLocation !== 'top' && this.getOptionalField()}
@@ -333,7 +330,6 @@ export default class BlockEdit extends Component {
             value={body}
             format="string"
             allowedFormats={[]}
-            keepPlaceholderOnFocus={true}
             onChange={(newBody) => setAttributes({ body: newBody })}
           />
           {hasButton && (
@@ -346,7 +342,6 @@ export default class BlockEdit extends Component {
                 value={buttonText}
                 format="string"
                 allowedFormats={[]}
-                keepPlaceholderOnFocus={true}
                 onChange={(newText) => setAttributes({ buttonText: newText })}
               />
               <URLInputButton

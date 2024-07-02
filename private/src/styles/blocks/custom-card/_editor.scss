@@ -35,3 +35,8 @@
   color: $color-white;
   background-color: $color-black-x-dark;
 }
+
+.customCard-content .btn:hover {
+  background-color: $color-primary-state;
+  color: $color-primary;
+}

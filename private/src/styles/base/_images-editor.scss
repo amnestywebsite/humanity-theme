@@ -1,3 +1,8 @@
+:root {
+  // used in icon mixin
+  --amnesty-icon-path: url("../images/sprite.svg"), none;
+}
+
 .image-metadata {
   position: absolute;
   right: 0;

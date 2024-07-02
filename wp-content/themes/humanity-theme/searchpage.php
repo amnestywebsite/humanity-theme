@@ -24,7 +24,7 @@ if ( absint( get_query_var( 'paged' ) ) < 2 ) {
 
 ?>
 <main id="main">
-	<div class="container search-container">
+	<div class="container search-container has-gutter">
 		<?php get_template_part( 'partials/search/horizontal-search' ); ?>
 
 		<section class="section search-results section--tinted" aria-label="<?php /* translators: [front] ARIA */ esc_attr_e( 'Search results', 'amnesty' ); ?>">
@@ -50,7 +50,7 @@ if ( absint( get_query_var( 'paged' ) ) < 2 ) {
 		</section>
 	</div>
 
-	<div class="container">
+	<div class="container has-gutter">
 		<?php require locate_template( 'partials/search/pagination.php' ); ?>
 	</div>
 

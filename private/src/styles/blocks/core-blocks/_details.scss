@@ -1,0 +1,23 @@
+.wp-block-details summary {
+  display: flex;
+  padding: spacing(half) 0;
+  border-bottom: 1px solid $color-black;
+  color: $color-grey-dark;
+  line-height: 1.12;
+  font-family: var(--wp--preset--font-family--secondary);
+  font-size: map-get($desktop-header-sizes, "h3");
+  margin-bottom: spacing(half);
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    @include icon-scaled(271px, 215px, 16px, 16px, 1.5);
+    position: relative;
+    content: "";
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+}
+
+.wp-block-details[open] summary::after {
+  transform: rotate(180deg);
+}

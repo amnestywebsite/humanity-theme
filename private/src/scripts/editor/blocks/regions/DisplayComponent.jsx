@@ -234,7 +234,6 @@ export default class DisplayComponent extends Component {
             onChange={(title) => setAttributes({ title })}
             // translators: [admin]
             placeholder={__('Explore by Region', 'amnesty')}
-            keepPlaceholderOnFocus={true}
             withoutInteractiveFormatting={true}
           />
           <List terms={terms} depth={0} maxDepth={attributes.depth} />

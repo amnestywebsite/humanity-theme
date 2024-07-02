@@ -189,7 +189,7 @@
 
 .headerBlock .content-type-container a {
   text-decoration: none;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   padding: 5px;
   font-size: 18px;
   color: $color-white;
@@ -234,6 +234,30 @@
 
   @include mq("md-small") {
     text-align: left;
+  }
+}
+
+.page-hero .image-metadata.is-image {
+  display: flex;
+}
+
+.page-hero .image-metadata.is-video {
+  display: none;
+}
+
+.page-hero.page-hero--video .image-metadata.is-image {
+  display: flex;
+
+  @include mq("small") {
+    display: none;
+  }
+}
+
+.page-hero.page-hero--video .image-metadata.is-video {
+  display: none;
+
+  @include mq("small") {
+    display: flex;
   }
 }
 

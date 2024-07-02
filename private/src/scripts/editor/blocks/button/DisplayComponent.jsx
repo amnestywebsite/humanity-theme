@@ -59,7 +59,6 @@ class DisplayComponent extends Component {
             placeholder={__('(Button Text)', 'amnesty')}
             allowedFormats={[]}
             value={ctaText}
-            keepPlaceholderOnFocus={true}
             onChange={this.createUpdateAttribute('ctaText')}
           />
         </div>

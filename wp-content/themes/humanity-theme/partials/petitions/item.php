@@ -7,7 +7,7 @@
  */
 
 $image_id    = get_post_thumbnail_id( get_the_ID() );
-$has_credit  = ! ! amnesty_get_image_credit( $image_id );
+$has_credit  = (bool) amnesty_get_image_credit( $image_id );
 $image_attrs = [
 	'alt' => '', // presentation only
 ];

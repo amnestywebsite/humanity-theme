@@ -29,7 +29,6 @@ registerBlockType('amnesty-core/key-fact', {
           tagName="h3"
           // translators: [admin]
           placeholder={__('(Insert Title)', 'amnesty')}
-          keepPlaceholderOnFocus={true}
           value={title}
           allowedFormats={[]}
           onChange={(newTitle) => setAttributes({ title: newTitle })}
@@ -39,7 +38,6 @@ registerBlockType('amnesty-core/key-fact', {
           tagName="p"
           // translators: [admin]
           placeholder={__('(Insert Content)', 'amnesty')}
-          keepPlaceholderOnFocus={true}
           value={content}
           allowedFormats={[]}
           onChange={(newContent) => setAttributes({ content: newContent })}
