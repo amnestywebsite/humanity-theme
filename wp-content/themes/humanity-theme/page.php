@@ -9,19 +9,12 @@
 get_header();
 the_post();
 
-$featured_image        = amnesty_featured_image( get_the_ID(), 'post-featured' );
-$featured_image_retina = amnesty_featured_image( get_the_ID(), 'post-featured@2x' );
-$sidebar_is_enabled    = amnesty_get_meta_field( '_disable_sidebar' ) !== '1';
-$hero_title            = amnesty_get_meta_field( '_hero_title' );
+$sidebar_is_enabled = amnesty_get_meta_field( '_disable_sidebar' ) !== '1';
+$hero_title         = amnesty_get_meta_field( '_hero_title' );
 
 if ( amnesty_post_has_hero() ) {
 	$hero_data  = amnesty_get_hero_data();
 	$hero_title = $hero_data['attrs']['title'] ?? false;
-
-	if ( $hero_data ) {
-		echo wp_kses_post( render_hero_block( $hero_data['attrs'], $hero_data['content'], $hero_data['name'] ) );
-		add_filter_once( 'the_content', 'amnesty_remove_first_hero_from_content', 0 );
-	}
 }
 
 ?>

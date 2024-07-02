@@ -9,20 +9,6 @@
 get_header();
 the_post();
 
-if ( amnesty_post_has_hero() ) {
-	$hero_data = amnesty_get_hero_data();
-
-	if ( $hero_data ) {
-		echo wp_kses_post( render_hero_block( $hero_data['attrs'], $hero_data['content'], $hero_data['name'] ) );
-		add_filter( 'the_content', 'amnesty_remove_first_hero_from_content', 0 );
-	}
-} elseif ( amnesty_post_has_header() ) {
-	$header_data = amnesty_get_header_data();
-	// phpcs:ignore
-	echo \Amnesty\Blocks\amnesty_render_header_block( $header_data['attrs'] );
-	amnesty_remove_header_from_content();
-}
-
 $max_post_content    = get_post_meta( get_the_ID(), '_maximize_post_content', true );
 $article_has_sidebar = empty( $max_post_content ) ? 'has-sidebar' : '';
 
