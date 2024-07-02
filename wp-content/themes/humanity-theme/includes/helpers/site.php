@@ -85,7 +85,9 @@ if ( ! function_exists( 'get_site_language_name' ) ) {
 		$lang = $lang ?: ( $GLOBALS['wp_local_package'] ?? false );
 		$lang = $lang ?: 'en_GB';
 
-		$lang = Locale::getDisplayName( $lang, $lang );
+		if ( class_exists( 'Locale' ) ) {
+			$lang = Locale::getDisplayName( $lang, $lang );
+		}
 
 		return strip_language_name_parentheticals( $lang );
 	}
