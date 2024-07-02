@@ -104,7 +104,7 @@ class Taxonomy_Resource_Types extends Taxonomy {
 			return;
 		}
 
-		$path  = wp_parse_url( current_url(), PHP_URL_PATH );
+		$path  = wp_parse_url( current_url(), PHP_URL_PATH ) ?: '/';
 		$regex = sprintf( '#^/[a-z]{2}/%s/([a-z-]+)/$#', preg_quote( $this->slug, '#' ) );
 
 		// not an old topic url
