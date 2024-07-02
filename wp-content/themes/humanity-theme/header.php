@@ -18,4 +18,5 @@
 
 get_template_part( 'partials/language-selector' );
 get_template_part( 'partials/navigation/desktop' );
-get_template_part( 'partials/hero' );
+get_template_part( 'partials/header' ); // old
+get_template_part( 'partials/hero' );   // new
