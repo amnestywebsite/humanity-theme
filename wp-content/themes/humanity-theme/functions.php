@@ -255,6 +255,9 @@ require_once realpath( __DIR__ . '/includes/users/meta.php' );
  */
 #region woocommerce
 if ( class_exists( '\WooCommerce', false ) ) {
+	// disable WooCommerce block templates -- it breaks lots of things in hybrid
+	add_filter( 'woocommerce_has_block_template', '__return_false', 999 );
+
 	require_once realpath( __DIR__ . '/includes/admin/woo/theme-options.php' );
 
 	require_once realpath( __DIR__ . '/includes/woo/helpers.php' );
