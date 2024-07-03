@@ -163,7 +163,6 @@ if ( ! function_exists( 'amnesty_filter_allowed_blocks' ) ) {
 			'core/post-comments-form',
 			'core/post-content',
 			'core/post-date',
-			'core/post-excerpt',
 			'core/post-featured-image',
 			'core/post-navigation-link',
 			'core/post-template',
