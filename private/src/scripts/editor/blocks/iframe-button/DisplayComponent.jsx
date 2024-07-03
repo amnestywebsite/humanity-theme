@@ -63,7 +63,6 @@ const DisplayComponent = (props) => {
           value={attributes.buttonText}
           // translators: [admin]
           placeholder={__('Act Now', 'amnesty')}
-          keepPlaceholderOnFocus={true}
           identifier="text"
           allowedFormats={[]}
           withoutInteractiveFormatting={true}

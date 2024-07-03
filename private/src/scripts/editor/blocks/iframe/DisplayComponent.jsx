@@ -93,7 +93,6 @@ class DisplayComponent extends Component {
               tagName="figcaption"
               // translators: [admin]
               placeholder={__('Write caption…', 'amnesty')}
-              keepPlaceholderOnFocus={true}
               value={attributes.caption}
               onChange={this.createUpdateAttribute('caption')}
               inlineToolbar

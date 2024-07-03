@@ -1,0 +1,18 @@
+.wp-block-gallery-is-layout-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.wp-block-gallery figcaption {
+  display: none;
+}
+
+.wp-block-gallery .wp-block-image .image-metadataItem.image-caption {
+  display: none;
+}
+
+.wp-block-gallery .wp-block-image.enlarged-image .image-metadataItem.image-caption {
+  display: block;
+}

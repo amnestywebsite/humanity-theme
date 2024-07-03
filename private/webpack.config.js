@@ -19,6 +19,7 @@ const getEntries = (env) => {
   const entries = {
     bundle: path.resolve(__dirname, `${SRC_PATH}/scripts/App.js`),
     blocks: path.resolve(__dirname, `${SRC_PATH}/scripts/blocks.js`),
+    editor: path.resolve(__dirname, `${SRC_PATH}/scripts/editor.js`),
     admin: path.resolve(__dirname, `${SRC_PATH}/scripts/admin.js`),
   };
 
@@ -61,7 +62,7 @@ const getPlugins = (argv, env) => {
   // if we're only building static assets, skip CSS extraction
   if (env?.entry === 'static') {
     return [
-      new ESLintPlugin({ extensions: ['js', 'jsx'] }),
+      new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
       // Sets mode so we can access it in `postcss.config.js`.
       new webpack.LoaderOptionsPlugin({ options: { mode: argv.mode } }),
       new StyleLintPlugin({ threads: true }),
@@ -70,7 +71,7 @@ const getPlugins = (argv, env) => {
   }
 
   const plugins = [
-    new ESLintPlugin({ extensions: ['js', 'jsx'] }),
+    new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
     // Sets mode so we can access it in `postcss.config.js`.
     new webpack.LoaderOptionsPlugin({ options: { mode: argv.mode } }),
     // Extract CSS to own bundle, filename relative to output.path.
@@ -111,7 +112,7 @@ const config = (env, argv) => ({
   cache: getCacheConf(argv.mode),
   target: 'web',
   profile: false,
-  devtool: argv.mode === 'production' ? 'source-map' : 'eval',
+  devtool: 'source-map',
   entry: getEntries(env),
   output: {
     filename: '[name].js',

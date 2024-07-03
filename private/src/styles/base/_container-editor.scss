@@ -1,0 +1,5 @@
+.container {
+  @include mq(1490px) {
+    padding: 0 flexy-gutter();
+  }
+}

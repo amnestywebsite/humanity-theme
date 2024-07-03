@@ -47,6 +47,11 @@ if ( is_a( $current_term, 'WP_Term' ) && 'category' === $current_term->taxonomy 
 		print '</div>';
 	}
 
+	?>
+	</div>
+	<div class="container has-gutter">
+	<?php
+
 	if ( '' != $term_name && '' != $term_description ) {
 		print '<div class="categoryTerm-title">';
 		printf( '<h1>%1$s</h1>', esc_html( $term_name ) );
@@ -62,9 +67,11 @@ if ( is_a( $current_term, 'WP_Term' ) && 'category' === $current_term->taxonomy 
 	}
 
 	?>
+	</div>
 
-		<section class="news-section section section--small section--dark section--topSpacing section--bottomSpacing" aria-label="<?php /* translators: [front] ARIA https://www.amnesty.eu/news/ a number followed by the string on the list of posts */ esc_attr_e( 'Results', 'amnesty' ); ?>">
-		<?php get_template_part( 'partials/archive/header' ); ?>
+	<div class="container has-gutter">
+		<section class="news-section section section--small section--dark" aria-label="<?php /* translators: [front] ARIA https://www.amnesty.eu/news/ a number followed by the string on the list of posts */ esc_attr_e( 'Results', 'amnesty' ); ?>">
+			<?php get_template_part( 'partials/archive/header' ); ?>
 			<div class="postlist">
 			<?php
 			while ( have_posts() ) {
@@ -76,7 +83,9 @@ if ( is_a( $current_term, 'WP_Term' ) && 'category' === $current_term->taxonomy 
 			?>
 			</div>
 		</section>
+	</div>
 
+	<div class="container has-gutter">
 	<?php get_template_part( 'partials/pagination' ); ?>
 	</div>
 </main>
