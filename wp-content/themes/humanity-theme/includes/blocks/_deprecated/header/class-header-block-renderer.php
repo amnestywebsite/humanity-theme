@@ -183,6 +183,11 @@ class Header_Block_Renderer {
 			]
 		);
 
+		// Only render header if there is an image
+		if ( $this->attributes['imageID'] === 0 ) {
+			return;
+		}
+
 		printf(
 			'<div id="banner-%s" class="%s" role="region">',
 			esc_attr( $this->id ),
