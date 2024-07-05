@@ -184,7 +184,7 @@ class Header_Block_Renderer {
 		);
 
 		// Only render header if there is an image
-		if ( $this->attributes['imageID'] === 0 ) {
+		if ( 0 === $this->attributes['imageID'] ) {
 			return;
 		}
 
