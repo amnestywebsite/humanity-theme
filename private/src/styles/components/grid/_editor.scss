@@ -46,6 +46,10 @@
   font-family: var(--wp--preset--font-family--primary);
 }
 
+.grid-itemContent .components-button svg {
+  fill: unset;
+}
+
 .linkList-options {
   position: absolute;
   z-index: 10;
