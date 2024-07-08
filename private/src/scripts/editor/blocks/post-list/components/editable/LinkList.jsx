@@ -1,7 +1,8 @@
-const { RichText, URLInputButton } = wp.blockEditor;
-const { Button, DatePicker } = wp.components;
+const { RichText, URLInputButton, MediaUpload } = wp.blockEditor;
+const { Button, DatePicker, IconButton } = wp.components;
 const { useState } = wp.element;
 const { __ } = wp.i18n;
+const { get } = lodash;
 
 const LinkItem = (props) => {
   const [datePickerIsVisible, showDatePicker] = useState(false);
@@ -14,7 +15,10 @@ const LinkItem = (props) => {
 
   return (
     <li>
-      <article className="linkList-item">
+      <article
+        className="linkList-item"
+        style={{ backgroundImage: `url(${props.featured_image})` }}
+      >
         <span className="linkList-itemMeta">
           <RichText
             tagName="a"
@@ -95,8 +99,31 @@ const LinkItem = (props) => {
             </p>
           )}
         </div>
-
         <div className="linkList-options">
+          {props.featured_image_id && props.featured_image_id !== -1 && (
+            <IconButton
+              icon="no-alt"
+              onClick={() =>
+                props.updateMedia({
+                  featured_image_id: '',
+                  featured_image: '',
+                })
+              }
+            >
+              {/* translators: [admin] */ __('Remove Image', 'amnesty')}
+            </IconButton>
+          )}
+          <MediaUpload
+            onSelect={({ id, sizes, url }) =>
+              props.updateMedia({
+                featured_image_id: id,
+                featured_image: get(sizes, "['post-half@2x'].url", url),
+              })
+            }
+            value={props.featured_image_id}
+            allowedTypes={['image']}
+            render={({ open }) => <IconButton icon="format-image" onClick={open} />}
+          />
           <Button onClick={props.createRemove} icon="trash" />
         </div>
       </article>
