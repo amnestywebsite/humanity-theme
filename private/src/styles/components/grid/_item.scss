@@ -98,22 +98,6 @@ h3.grid-itemTitle > a {
   left: 0;
 }
 
-.grid-itemContent {
-  position: relative;
-  display: none;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.no-js .grid-item:hover .grid-itemContent,
-.no-js .grid-item:focus .grid-itemContent {
-  display: block;
-}
-
-.no-js .grid-item:focus-within .grid-itemContent {
-  display: block;
-}
-
 .grid {
   display: grid;
   row-gap: 20px;
