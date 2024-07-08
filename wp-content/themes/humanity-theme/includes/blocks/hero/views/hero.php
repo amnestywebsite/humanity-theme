@@ -37,8 +37,7 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 		<?php if ( $attrs['ctaText'] || $attrs['ctaLink'] ) : ?>
 			<div class="hero-cta">
 				<div class="btn btn--large">
-					<span><?php echo wp_kses_post( $attrs['ctaText'] ); ?></span>
-					<a href="<?php echo esc_url( $attrs['ctaLink'] ); ?>"></a>
+					<a href="<?php echo esc_url( $attrs['ctaLink'] ); ?>"><?php echo wp_kses_post( $attrs['ctaText'] ); ?></a>
 				</div>
 			</div>
 		<?php endif; ?>
