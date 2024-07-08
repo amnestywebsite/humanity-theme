@@ -4,7 +4,7 @@
   "description": "Dependencies for the Humanity WP Theme",
   "author": "Amnesty International",
   "license": "GPL-2.0-or-later",
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "yarn@4.3.1",
   "scripts": {
     "build:dev": "webpack --mode development",
     "build:prod": "webpack --mode production",
