@@ -1,3 +1,9 @@
+### v1.1.1
+Fixes:
+- Remove Pop-in from FSE header template
+- Post List content fields rendering in custom Grid mode
+- Hero CTA button link functionality
+
 ### v1.1.0
 Features:
 - Introduce full site editing support
