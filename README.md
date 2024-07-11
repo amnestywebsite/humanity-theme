@@ -42,7 +42,7 @@ The [Media Copyright](https://github.com/amnestywebsite/media-copyright) plugin 
 The quickest way to get started using the theme is to download the zip of the [latest release](https://github.com/amnestywebsite/humanity-theme/releases/latest), and install it via upload directly within WP Admin -> Themes.  
 We recommend your site be configured as a [multisite](https://wordpress.org/support/article/create-a-network/), both for future-proofing, and for more granular user permissions control. Many of the theme's customisation options make more sense at the network-level, too.
 
-## ## Governance
+## Governance
 See [GOVERNANCE.md](GOVERNANCE.md) for project governance information.  
 
 ## Changelog  
