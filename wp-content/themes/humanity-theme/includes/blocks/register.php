@@ -130,7 +130,7 @@ if ( ! function_exists( 'amnesty_filter_allowed_blocks' ) ) {
 	function amnesty_filter_allowed_blocks(): array {
 		$all_blocks = WP_Block_Type_Registry::get_instance()->get_all_registered();
 		$namespaces = [ 'yoast', 'yoast-seo', 'woocommerce' ];
-		$denylist   = [ 'core/cover' ];
+		$denylist   = [];
 		$hidden     = [
 			'core/archives',
 			'core/audio',
@@ -143,7 +143,6 @@ if ( ! function_exists( 'amnesty_filter_allowed_blocks' ) ) {
 			'core/comment-edit-link',
 			'core/comment-reply-link',
 			'core/comment-template',
-			'core/cover',
 			'core/details',
 			'core/file',
 			'core/footnotes',
