@@ -4,7 +4,7 @@ Thank you for considering contributing to our project! We welcome all manner of 
 
 ## How can I contribute?
 
-We expect all contributors to abide by our [Code of Conduct](https://github.com/amnestywebsite/humanity-theme/CODE_OF_CONDUCT.md), so please familiarise yourself with that first.
+We expect all contributors to abide by our [Code of Conduct](https://github.com/amnestywebsite/humanity-theme/blob/main/CODE_OF_CONDUCT.md), so please familiarise yourself with that first.
 
 How would you like to contribute?
 - writing code? See our [developer guide](https://github.com/amnestywebsite/humanity-theme/blob/main/docs/contributors/code.md)
