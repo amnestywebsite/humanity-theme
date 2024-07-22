@@ -34,3 +34,18 @@
     color: var(--wp--preset--color--white);
   }
 }
+
+.wp-block-group.call-to-action {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+
+  @include mq(small) {
+    padding: 36px 32px;
+  }
+}
+
+.wp-block-group.is-style-top-and-bottom-border {
+  border-top: 7px solid var(--wp--preset--color--black);
+  border-bottom: 7px solid var(--wp--preset--color--black);
+}

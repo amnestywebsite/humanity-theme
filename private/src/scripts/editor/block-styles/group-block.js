@@ -18,3 +18,9 @@ registerBlockStyle('core/group', {
   // translators: [admin]
   label: _x('Dark Background', 'block style', 'amnesty'),
 });
+
+registerBlockStyle('core/group', {
+  name: 'top-and-bottom-border',
+  // translators: [admin]
+  label: _x('Top and Bottom Border', 'block style', 'amnesty'),
+});
