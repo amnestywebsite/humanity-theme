@@ -13,12 +13,13 @@ const LinkItem = (props) => {
     showDatePicker(false);
   };
 
+  const backgroundImage = props.featured_image
+    ? { backgroundImage: `url(${props.featured_image})` }
+    : '';
+
   return (
     <li>
-      <article
-        className="linkList-item"
-        style={{ backgroundImage: `url(${props.featured_image})` }}
-      >
+      <article className="linkList-item" style={{ ...backgroundImage }}>
         <span className="linkList-itemMeta">
           <RichText
             tagName="a"
