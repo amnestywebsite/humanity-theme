@@ -24,7 +24,7 @@
     "prettier/prettier": ["error"],
     "react/prop-types": "off",
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-    "@wordpress/i18n-text-domain": ["error", { "allowedTextDomain": ["amnesty", "default"]}]
+    "@wordpress/i18n-text-domain": ["error", { "allowedTextDomain": ["amnesty", "default"] }]
   },
   "settings": {
     "react": {

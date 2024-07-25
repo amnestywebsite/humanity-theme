@@ -57,27 +57,17 @@ if ( ! function_exists( 'amnesty_styles' ) ) {
 			return;
 		}
 
-		wp_dequeue_style( 'global-styles' );
-
 		$theme = wp_get_theme();
 
-		$style_deps = [];
+		$style_deps = [
+			// 'wp-block-latest-posts', -- causes issues on some sites
+		];
 
 		if ( wp_style_is( 'woocommerce-general' ) ) {
 			$style_deps[] = 'woocommerce-general';
 		}
 
 		wp_enqueue_style( 'amnesty-theme', amnesty_asset_uri( 'styles' ) . '/bundle.css', $style_deps, $theme->get( 'Version' ), 'all' );
-
-		$font_face = apply_filters(
-			'amnesty_font_face_css',
-			':root{
-				--font-family-primary:"PlayfairDisplay",sans-serif;
-				--font-family-secondary:"Lato",sans-serif;
-			}'
-		);
-
-		wp_add_inline_style( 'amnesty-theme', $font_face );
 
 		$ol_characters = amnesty_get_option( 'ol_locale_option', 'amnesty_localisation_options_page' );
 
@@ -159,10 +149,11 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 			[
 				'lodash',
 				'wp-blocks',
-				'wp-i18n',
-				'wp-element',
-				'wp-edit-post',
 				'wp-data',
+				'wp-edit-post',
+				'wp-element',
+				'wp-i18n',
+				'wp-url',
 			],
 			$theme->get( 'Version' ),
 			false
@@ -213,16 +204,6 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 		wp_set_script_translations( 'amnesty-core-blocks-js', 'amnesty', get_template_directory() . '/languages' );
 
 		wp_enqueue_style( 'amnesty-core-gutenberg', amnesty_asset_uri( 'styles' ) . '/blocks.css', [ 'wp-block-library-theme' ], $theme->get( 'Version' ), 'all' );
-
-		$inline_css = apply_filters(
-			'amnesty_font_face_css',
-			':root{
-				--font-family-primary:"PlayfairDisplay",sans-serif;
-				--font-family-secondary:"Lato",sans-serif;
-			}'
-		);
-
-		wp_add_inline_style( 'amnesty-core-gutenberg', $inline_css );
 	}
 }
 
@@ -284,6 +265,56 @@ if ( ! function_exists( 'amnesty_trigger_scripts' ) ) {
 }
 
 add_action( 'wp_loaded', 'amnesty_trigger_scripts', 1 );
+
+if ( ! function_exists( 'amnesty_localise_timeinfo' ) ) {
+	/**
+	 * Get server and setting timezones
+	 *
+	 * @package Amnesty\ThemeSetup
+	 *
+	 * @return void
+	 */
+	function amnesty_localise_timeinfo() {
+		$wordpress_tz   = wp_timezone();
+		$wordpress_time = wp_date( 'Y-m-d H:i:s', null, $wordpress_tz );
+		$server_tz      = new DateTimeZone( date_default_timezone_get() );
+		$server_time    = wp_date( 'Y-m-d H:i:s', null, $server_tz );
+
+		wp_localize_script(
+			'amnesty-core-blocks-js',
+			'datetimeInfo',
+			[
+				'wordpress' => [
+					'time' => $wordpress_time,
+					'zone' => $wordpress_tz->getName(),
+				],
+				'server'    => [
+					'time' => $server_time,
+					'zone' => $server_tz->getName(),
+				],
+			]
+		);
+	}
+}
+
+add_action( 'enqueue_block_editor_assets', 'amnesty_localise_timeinfo' );
+
+if ( ! function_exists( 'amnesty_enqueue_block_assets' ) ) {
+	/**
+	 * Enqueue block assets for the full site editor
+	 *
+	 * @package Amnesty\ThemeSetup
+	 *
+	 * @return void
+	 */
+	function amnesty_enqueue_block_assets(): void {
+		$theme = wp_get_theme();
+
+		wp_enqueue_style( 'amnesty-core-editor', amnesty_asset_uri( 'styles' ) . '/editor.css', [], $theme->get( 'Version' ), 'all' );
+	}
+}
+
+add_action( 'enqueue_block_assets', 'amnesty_enqueue_block_assets' );
 
 if ( ! function_exists( 'amnesty_disable_cart_fragments' ) ) {
 	/**

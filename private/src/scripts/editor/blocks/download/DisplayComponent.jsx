@@ -196,7 +196,6 @@ class DisplayComponent extends Component {
               allowedFormats={[]}
               // translators: [admin]
               placeholder={__('Download', 'amnesty')}
-              keepPlaceholderOnFocus={true}
               value={buttonText}
               onChange={(newText) => setAttributes({ buttonText: newText })}
             />

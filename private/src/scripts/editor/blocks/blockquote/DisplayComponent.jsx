@@ -130,7 +130,6 @@ class DisplayComponent extends Component {
               placeholder={__('(Insert Quote Text)', 'amnesty')}
               value={content}
               allowedFormats={[]}
-              keepPlaceholderOnFocus={true}
               onChange={(newContent) => setAttributes({ content: newContent })}
             />
           </div>
@@ -141,7 +140,6 @@ class DisplayComponent extends Component {
               placeholder={__('(Insert Citation)', 'amnesty')}
               value={citation}
               allowedFormats={[]}
-              keepPlaceholderOnFocus={true}
               onChange={(newCitation) => setAttributes({ citation: newCitation })}
             />
           </div>

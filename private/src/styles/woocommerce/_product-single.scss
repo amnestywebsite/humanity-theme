@@ -24,7 +24,7 @@
 }
 
 .product-description p {
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
 }
 
@@ -59,7 +59,7 @@
 
 .single-product .variations .label {
   padding-right: $spacing-unit;
-  font-family: var(--font-family-secondary);
+  font-family: var(--wp--preset--font-family--secondary);
   text-transform: uppercase;
 }
 
@@ -74,7 +74,7 @@
 .single-product .price {
   margin-top: 0;
   margin-bottom: $spacing-unit;
-  font-family: var(--font-family-primary);
+  font-family: var(--wp--preset--font-family--primary);
   color: $color-black;
 }
 

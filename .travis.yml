@@ -309,6 +309,7 @@ jobs:
   - script: ./private/bin/run-tests.sh 621372745f85360d3fd03197
     name: Custom Blocks
   - stage: Update Draft GitHub Release
+    install: ./private/bin/install.sh
     script: ./private/bin/build.sh
     deploy:
       provider: releases

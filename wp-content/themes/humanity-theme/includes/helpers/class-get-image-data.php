@@ -53,12 +53,13 @@ class Get_Image_Data {
 	/**
 	 * Get the image metadata HTML
 	 *
-	 * @param bool $include_caption whether to output caption in metadata
-	 * @param bool $include_credit  whether to output caption in metadata
+	 * @param bool   $include_caption whether to output caption in metadata
+	 * @param bool   $include_credit  whether to output caption in metadata
+	 * @param string $type            the metadata type (enum: image,video)
 	 *
 	 * @return string
 	 */
-	public function metadata( bool $include_caption = true, bool $include_credit = true ): string {
+	public function metadata( bool $include_caption = true, bool $include_credit = true, string $type = 'image' ): string {
 		$caption = $this->caption();
 		$credit  = $this->credit();
 
@@ -66,7 +67,12 @@ class Get_Image_Data {
 			return '';
 		}
 
-		$metadata = '<div class="image-metadata">';
+		// only support image/video; default to image
+		if ( ! in_array( $type, [ 'image', 'video' ], true ) ) {
+			$type = 'image';
+		}
+
+		$metadata = sprintf( '<div class="image-metadata is-%s">', esc_attr( $type ) );
 
 		if ( $caption && $include_caption && trim( $caption ) !== trim( $credit ) ) {
 			$metadata .= sprintf( '<span class="image-metadataItem image-caption" aria-hidden="true">%s</span>', $caption );

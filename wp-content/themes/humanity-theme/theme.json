@@ -1,0 +1,272 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": false,
+    "color": {
+      "background": false,
+      "text": false,
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "palette": [
+        {
+          "slug": "black",
+          "color": "#000",
+          "name": "Black"
+        },
+        {
+          "slug": "white",
+          "color": "#fff",
+          "name": "White"
+        },
+        {
+          "slug": "amnesty-primary",
+          "color": "#fdff28",
+          "name": "Primary"
+        },
+        {
+          "slug": "amnesty-primary-state",
+          "color": "#f8d72b",
+          "name": "Primary State"
+        },
+        {
+          "slug": "amnesty-secondary",
+          "color": "#2196f3",
+          "name": "Secondary"
+        },
+        {
+          "slug": "amnesty-accent",
+          "color": "#2196f3",
+          "name": "Accent"
+        },
+        {
+          "slug": "amnesty-grey-brand",
+          "color": "#b3b3b3",
+          "name": "Grey Brand"
+        },
+        {
+          "slug": "amnesty-grey-xx-light",
+          "color": "#f7f7f7",
+          "name": "Grey Extra Extra Light"
+        },
+        {
+          "slug": "amnesty-grey-x-light",
+          "color": "#eee",
+          "name": "Grey Extra Light"
+        },
+        {
+          "slug": "amnesty-grey-sm-light",
+          "color": "#e7e7e7",
+          "name": "Grey Small Light"
+        },
+        {
+          "slug": "amnesty-grey-light",
+          "color": "#e4e4e4",
+          "name": "Grey Light"
+        },
+        {
+          "slug": "amnesty-grey-md-light",
+          "color": "#b5b5b5",
+          "name": "Grey Medium Light"
+        },
+        {
+          "slug": "amnesty-grey-mid-light",
+          "color": "#717272",
+          "name": "Grey Mid Light"
+        },
+        {
+          "slug": "amnesty-grey-base",
+          "color": "#767676",
+          "name": "Grey Base"
+        },
+        {
+          "slug": "amnesty-grey-mid-dark",
+          "color": "#525252",
+          "name": "Grey Mid Dark"
+        },
+        {
+          "slug": "amnesty-grey-dark",
+          "color": "#262626",
+          "name": "Grey Dark"
+        },
+        {
+          "slug": "amnesty-grey-x-dark",
+          "color": "#111",
+          "name": "Grey Extra Dark"
+        },
+        {
+          "slug": "amnesty-blue-xx-light",
+          "color": "#0eb5d6",
+          "name": "Blue Extra Extra Light"
+        },
+        {
+          "slug": "amnesty-blue-sm-light",
+          "color": "#009cbd",
+          "name": "Blue Small Light"
+        },
+        {
+          "slug": "amnesty-blue-md-light",
+          "color": "#55acee",
+          "name": "Blue Medium Light"
+        },
+        {
+          "slug": "amnesty-blue-mid-light",
+          "color": "#1da1f2",
+          "name": "Blue Mid Light"
+        },
+        {
+          "slug": "amnesty-blue-dark",
+          "color": "#3a5795",
+          "name": "Blue Dark"
+        },
+        {
+          "slug": "amnesty-blue-mid-dark",
+          "color": "#0073aa",
+          "name": "Blue Mid Dark"
+        },
+        {
+          "slug": "amnesty-dark-light",
+          "color": "#32373c",
+          "name": "Dark Light"
+        },
+        {
+          "slug": "amnesty-mid-dark",
+          "color": "#363636",
+          "name": "Mid Dark"
+        },
+        {
+          "slug": "amnesty-x-dark",
+          "color": "#525252",
+          "name": "Extra Dark"
+        },
+        {
+          "slug": "amnesty-orange-base",
+          "color": "#ffa500",
+          "name": "Orange"
+        }
+      ]
+    },
+    "spacing": {
+      "margin": false,
+      "padding": true
+		},
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Lato, sans-serif",
+          "name": "Lato",
+          "slug": "primary",
+          "fontFace": [
+            {
+              "fontFamily": "Lato",
+              "fontStyle": "normal",
+              "fontWeight": 300,
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/Lato-Light.woff2",
+                "file:./assets/fonts/Lato-Light.woff",
+                "file:./assets/fonts/Lato-Light.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Lato",
+              "fontStyle": "oblique",
+              "fontWeight": 300,
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/Lato-LightItalic.woff2",
+                "file:./assets/fonts/Lato-LightItalic.woff",
+                "file:./assets/fonts/Lato-LightItalic.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Lato",
+              "fontStyle": "normal",
+              "fontWeight": 400,
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/Lato-Regular.woff2",
+                "file:./assets/fonts/Lato-Regular.woff",
+                "file:./assets/fonts/Lato-Regular.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Lato",
+              "fontStyle": "oblique",
+              "fontWeight": 400,
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/Lato-Italic.woff2",
+                "file:./assets/fonts/Lato-Italic.woff",
+                "file:./assets/fonts/Lato-Italic.ttf"
+              ]
+            }
+          ]
+        },
+        {
+          "fontFamily": "PlayfairDisplay, serif",
+          "name": "PlayfairDisplay",
+          "slug": "secondary",
+          "fontFace": [
+            {
+              "fontFamily": "PlayfairDisplay",
+              "fontStyle": "oblique",
+              "fontWeight": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/PlayfairDisplay-Italic.woff2",
+                "file:./assets/fonts/PlayfairDisplay-Italic.woff",
+                "file:./assets/fonts/PlayfairDisplay-Italic.ttf"
+              ]
+            },
+            {
+              "fontFamily": "PlayfairDisplay",
+              "fontStyle": "normal",
+              "fontWeight": "bold",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/PlayfairDisplay-Bold.woff2",
+                "file:./assets/fonts/PlayfairDisplay-Bold.woff",
+                "file:./assets/fonts/PlayfairDisplay-Bold.ttf"
+              ]
+            }
+          ]
+        }
+      ],
+      "fontSizes": [],
+      "fontStyle": false,
+			"fontWeight": false,
+			"letterSpacing": false,
+			"lineHeight": false,
+			"textDecoration": false,
+			"textTransform": false,
+			"dropCap": false
+    },
+    "layout": {
+      "contentSize": "1468px"
+    },
+    "useRootPaddingAwareAlignments": false
+  },
+  "styles": {
+    "spacing": {
+      "padding": {
+        "top": "0px",
+        "right": "2rem",
+        "bottom": "0px",
+        "left": "2rem"
+      }
+    }
+  },
+  "templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+	]
+}
