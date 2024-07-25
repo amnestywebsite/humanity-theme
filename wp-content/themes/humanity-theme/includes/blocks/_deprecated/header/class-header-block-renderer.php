@@ -229,6 +229,11 @@ class Header_Block_Renderer {
 			$classes .= ' has-donation-block';
 		}
 
+		// Only render header if there is an image
+		if ( 0 === $this->attributes['imageID'] ) {
+			return;
+		}
+
 		printf( '<div class="container"><div class="%s">', esc_attr( $classes ) );
 	}
 
