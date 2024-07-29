@@ -1,3 +1,5 @@
+// Grid layout styles
+
 .wp-block-query .wp-block-post-template.is-layout-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -8,20 +10,116 @@
     max-width: 100%;
   }
 
+  .wp-block-cover * {
+    text-decoration: none;
+    font-family: var(--wp--preset--font-family--secondary);
+  }
+
   .wp-block-cover {
     align-items: flex-end;
+    min-height: 360px;
+
+    .wp-block-post-title {
+      line-height: 0;
+      display: inline;
+    }
 
     .wp-block-post-title a {
-      background-color: #fff;
-      box-shadow: -12px 0 0 0 #fff, 12px 0 0 0 #fff;
       font-size: 24px;
+      color: var(--wp--preset--color--black);
+      box-decoration-break: clone;
+      display: inline;
+      background: var(--wp--preset--color--white);
+      padding: 0px 8px;
     }
 
     .wp-block-post-terms a {
-      background-color: black;
-      color: white;
+      background-color: var(--wp--preset--color--black);
+      color: var(--wp--preset--color--white);
       padding: 8px;
-      margin-bottom: 8px;
+      text-transform: uppercase;
+      display: inline-block;
     }
+  }
+}
+
+// List layout styles
+
+.wp-block-query .wp-block-post-template.is-layout-flow {
+  .wp-block-post {
+    min-width: 100%;
+    min-height: 171px;
+    margin-left: 0;
+  }
+
+  .wp-block-cover {
+    margin-bottom: 24px;
+    min-height: 171px;
+    padding: 40px 10px;
+  }
+
+  .wp-block-cover .wp-block-cover__inner-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .wp-block-post-title {
+      flex-basis: 100%;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .wp-block-post-title,
+    .wp-block-post-date,
+    .wp-block-post-author,
+    .wp-block-post-date,
+    .wp-block-post-author {
+      font-family: var(--wp--preset--font-family--secondary);
+      font-size: 1.1875rem;
+      font-weight: normal;
+    }
+
+    p {
+      margin-bottom: 0;
+      padding-right: 10px;
+    }
+
+    .wp-block-post-terms {
+      flex-basis: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: var(--wp--preset--font-family--secondary);
+      font-size: 1rem;
+
+      a {
+        background-color: black;
+        color: white;
+        padding: 8px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    .wp-block-group {
+      display: flex;
+
+      .wp-block-post-date {
+        display: flex;
+      }
+
+      .wp-block-post-date::after {
+        content: " ";
+        height: 10px;
+        width: 1px;
+        background: #000;
+        margin: 10px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .wp-block-cover .wp-block-cover__inner-container * {
+    margin-left: unset !important;
+    margin-right: unset !important;
   }
 }
