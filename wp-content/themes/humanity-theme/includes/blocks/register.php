@@ -130,7 +130,7 @@ if ( ! function_exists( 'amnesty_filter_allowed_blocks' ) ) {
 	function amnesty_filter_allowed_blocks(): array {
 		$all_blocks = WP_Block_Type_Registry::get_instance()->get_all_registered();
 		$namespaces = [ 'yoast', 'yoast-seo', 'woocommerce' ];
-		$denylist   = [ 'core/cover' ];
+		$denylist   = [];
 		$hidden     = [
 			'core/archives',
 			'core/audio',
@@ -143,7 +143,7 @@ if ( ! function_exists( 'amnesty_filter_allowed_blocks' ) ) {
 			'core/comment-edit-link',
 			'core/comment-reply-link',
 			'core/comment-template',
-			'core/cover',
+			// 'core/cover',
 			'core/details',
 			'core/file',
 			'core/footnotes',
@@ -164,14 +164,14 @@ if ( ! function_exists( 'amnesty_filter_allowed_blocks' ) ) {
 			'core/post-content',
 			'core/post-date',
 			'core/post-excerpt',
-			'core/post-featured-image',
+			// 'core/post-featured-image',
 			'core/post-navigation-link',
 			'core/post-template',
-			'core/post-terms',
+			// 'core/post-terms',
 			'core/post-title',
 			'core/preformatted',
-			'core/query',
-			'core/query-title',
+			// 'core/query',
+			// 'core/query-title',
 			'core/read-more',
 			'core/rss',
 			'core/search',

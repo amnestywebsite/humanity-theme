@@ -1,0 +1,27 @@
+.wp-block-query .wp-block-post-template.is-layout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+
+  .wp-block-post {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .wp-block-cover {
+    align-items: flex-end;
+
+    .wp-block-post-title a {
+      background-color: #fff;
+      box-shadow: -12px 0 0 0 #fff, 12px 0 0 0 #fff;
+      font-size: 24px;
+    }
+
+    .wp-block-post-terms a {
+      background-color: black;
+      color: white;
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+  }
+}
