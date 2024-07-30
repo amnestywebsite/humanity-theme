@@ -1,0 +1,64 @@
+.wp-block-quote.has-text-align-center cite::after {
+  content: "";
+  display: block;
+  margin: 8px auto 0;
+  max-width: 80px;
+  height: 8px;
+  background-color: var(--wp--preset--color--black);
+}
+
+.wp-block-quote p,
+.wp-block-quote cite {
+  font-family: var(--wp--preset--font-family--secondary);
+}
+
+.wp-block-quote.has-small-font-size p,
+.wp-block-quote.has-small-font-size cite {
+  font-size: 1.75rem !important;
+}
+
+.wp-block-quote.has-medium-font-size p,
+.wp-block-quote.has-medium-font-size cite {
+  font-size: 2rem !important;
+}
+
+.wp-block-quote.has-large-font-size p,
+.wp-block-quote.has-large-font-size cite {
+  font-size: 2.25rem !important;
+}
+
+.wp-block-quote cite {
+  text-transform: none !important;
+}
+
+.wp-block-quote.wp-block-quote.has-text-align-center {
+  quotes: '“' '”' "‘" "’";
+}
+
+.wp-block-quote.has-text-align-left {
+  border-left: 8px solid var(--wp--preset--color--black);
+}
+
+.wp-block-quote.has-text-align-right {
+  border-right: 8px solid var(--wp--preset--color--black);
+}
+
+.wp-block-quote.has-text-align-left p::before,
+.wp-block-quote.has-text-align-right p::before {
+  content: open-quote;
+  quotes: '“' '”';
+}
+
+.wp-block-quote.has-text-align-left p::after,
+.wp-block-quote.has-text-align-right p::after {
+  content: close-quote;
+  quotes: '“' '”';
+}
+
+.wp-block-quote.is-style-plain {
+  border: none;
+}
+
+.wp-block-quote.is-style-plain cite::after {
+  content: none;
+}
