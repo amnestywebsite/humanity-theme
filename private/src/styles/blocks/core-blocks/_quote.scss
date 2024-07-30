@@ -1,3 +1,10 @@
+.wp-block-quote::before,
+.wp-block-quote.wp-block-quote.has-text-align-center::before {
+  content: open-quote;
+  quotes: '“' '”' "‘" "’";
+}
+
+.wp-block-quote cite::after,
 .wp-block-quote.has-text-align-center cite::after {
   content: "";
   display: block;
@@ -31,16 +38,22 @@
   text-transform: none !important;
 }
 
-.wp-block-quote.wp-block-quote.has-text-align-center {
-  quotes: '“' '”' "‘" "’";
-}
-
 .wp-block-quote.has-text-align-left {
   border-left: 8px solid var(--wp--preset--color--black);
+  padding-left: 27px;
+
+  cite {
+    margin-left: 15px;
+  }
 }
 
 .wp-block-quote.has-text-align-right {
   border-right: 8px solid var(--wp--preset--color--black);
+  padding-right: 27px;
+
+  cite {
+    margin-right: 15px;
+  }
 }
 
 .wp-block-quote.has-text-align-left p::before,
@@ -55,10 +68,18 @@
   quotes: '“' '”';
 }
 
+.wp-block-quote,
 .wp-block-quote.is-style-plain {
   border: none;
 }
 
-.wp-block-quote.is-style-plain cite::after {
+.wp-block-quote.is-style-plain cite::after,
+.wp-block-quote.has-text-align-left cite::after,
+.wp-block-quote.has-text-align-right cite::after {
+  content: none;
+}
+
+.wp-block-quote.wp-block-quote.has-text-align-left::before,
+.wp-block-quote.wp-block-quote.has-text-align-right::before {
   content: none;
 }
