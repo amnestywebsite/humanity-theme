@@ -11,7 +11,6 @@
   margin: 8px auto 0;
   max-width: 80px;
   height: 8px;
-  background-color: var(--wp--preset--color--black);
 }
 
 .wp-block-quote p,
@@ -38,6 +37,22 @@
   text-transform: none !important;
 }
 
+.wp-block-quote cite::after,
+.wp-block-quote.has-black-color cite::after,
+.wp-block-quote.has-text-align-center.has-black-color cite::after {
+  background-color: var(--wp--preset--color--black);
+}
+
+.wp-block-quote.has-white-color cite::after,
+.wp-block-quote.has-text-align-center.has-white-color cite::after {
+  background-color: var(--wp--preset--color--white);
+}
+
+.wp-block-quote.has-amnesty-grey-brand-color cite::after,
+.wp-block-quote.has-text-align-center.has-amnesty-grey-brand-color cite::after {
+  background-color: var(--wp--preset--color--amnesty-grey-brand);
+}
+
 .wp-block-quote.has-text-align-left {
   border-left: 8px solid var(--wp--preset--color--black);
   padding-left: 27px;
@@ -47,6 +62,14 @@
   }
 }
 
+.wp-block-quote.has-text-align-left.has-white-color {
+  border-left-color: var(--wp--preset--color--white);
+}
+
+.wp-block-quote.has-text-align-left.has-amnesty-grey-brand-color {
+  border-left-color: var(--wp--preset--color--amnesty-grey-brand);
+}
+
 .wp-block-quote.has-text-align-right {
   border-right: 8px solid var(--wp--preset--color--black);
   padding-right: 27px;
@@ -54,6 +77,14 @@
   cite {
     margin-right: 15px;
   }
+}
+
+.wp-block-quote.has-text-align-right.has-white-color {
+  border-right-color: var(--wp--preset--color--white);
+}
+
+.wp-block-quote.has-text-align-right.has-amnesty-grey-brand-color {
+  border-right-color: var(--wp--preset--color--amnesty-grey-brand);
 }
 
 .wp-block-quote.has-text-align-left p::before,
