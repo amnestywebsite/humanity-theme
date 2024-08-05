@@ -1,5 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+  "title": "Blue Primary",
   "version": 2,
   "settings": {
     "color": {
