@@ -16,7 +16,7 @@
     "lint:scripts": "eslint ./src/",
     "lint:styles": "stylelint \"src/**/*.scss\"",
     "lint": "yarn lint:scripts; yarn lint:styles",
-    "env": "npx @wordpress/env"
+    "env": "yarn dlx @wordpress/env"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
