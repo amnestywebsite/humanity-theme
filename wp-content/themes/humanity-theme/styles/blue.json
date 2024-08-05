@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "amnesty-primary",
+          "color": "#2196f3",
+          "name": "Primary"
+        },
+        {
+          "slug": "amnesty-primary-state",
+          "color": "#5493be",
+          "name": "Primary State"
+        },
+        {
+          "slug": "amnesty-secondary",
+          "color": "#fdff28",
+          "name": "Secondary"
+        },
+        {
+          "slug": "amnesty-accent",
+          "color": "#f8d72b",
+          "name": "Accent"
+        }
+      ]
+    }
+  }
+}
