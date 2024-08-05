@@ -33,7 +33,7 @@ body {
   font-size: $base-font-size;
   font-family: var(--wp--preset--font-family--primary);
   line-height: $line-height-ratio;
-  color: $body-color;
+  color: var(--wp--preset--color--black);
   // font-feature-settings: "kern", "liga", "pnum"; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */

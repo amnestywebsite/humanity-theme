@@ -13,25 +13,25 @@
 .tabs-nav li a {
   display: block;
   padding: 20px 40px;
-  border-top: 1px solid $color-grey-light;
-  background: $color-grey-light;
+  border-top: 1px solid var(--wp--preset--color--grey-lighter);
+  background: var(--wp--preset--color--grey-lighter);
   text-transform: uppercase;
   font-family: var(--wp--preset--font-family--secondary);
   cursor: pointer;
 }
 
 .tabs-nav li a.is-selected {
-  background: $color-white;
+  background: var(--wp--preset--color--white);
 }
 
 .tabs-nav li {
   &:first-of-type a {
-    border-left: 1px solid $color-grey-light;
-    border-right: 1px solid $color-grey-light;
+    border-left: 1px solid var(--wp--preset--color--grey-lighter);
+    border-right: 1px solid var(--wp--preset--color--grey-lighter);
   }
 
   &:last-of-type a {
-    border-right: 1px solid $color-grey-light;
+    border-right: 1px solid var(--wp--preset--color--grey-lighter);
   }
 }
 
@@ -45,5 +45,5 @@
 
 .tabs-content {
   padding: 30px;
-  border: 1px solid $color-grey-light;
+  border: 1px solid var(--wp--preset--color--grey-lighter);
 }

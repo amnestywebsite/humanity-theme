@@ -25,17 +25,17 @@
 }
 
 .wp-block-social-links.is-style-logos-only-light li button {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .wp-block-social-links.is-style-logos-only-light li button:hover,
 .wp-block-social-links.is-style-logos-only-light li button:active,
 .wp-block-social-links.is-style-logos-only-light li button:focus {
-  color: $color-grey-light !important;
+  color: var(--wp--preset--color--grey-lighter) !important;
 }
 
 .wp-block-social-links.is-style-logos-only-dark li button:hover,
 .wp-block-social-links.is-style-logos-only-dark li button:active,
 .wp-block-social-links.is-style-logos-only-dark li button:focus {
-  color: $color-grey-dark !important;
+  color: var(--wp--preset--color--grey-darker) !important;
 }

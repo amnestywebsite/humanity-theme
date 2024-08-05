@@ -55,7 +55,7 @@
   z-index: 10;
   right: 0;
   top: 0;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
 
   .rtl & {
     right: unset;
@@ -64,7 +64,7 @@
 }
 
 .wp-block-bigbite-postlist {
-  border: 1px solid $color-grey-xx-light;
+  border: 1px solid var(--wp--preset--color--grey-lighterest);
 
   .filter select {
     margin-right: 10px;
@@ -79,7 +79,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: $color-grey-xx-light;
+    background-color: var(--wp--preset--color--grey-lighterest);
   }
 
   .post-selectorHeader .searchbox label,
@@ -92,7 +92,7 @@
   .post-selectorHeader .searchbox svg {
     width: 25px;
     height: 25px;
-    fill: $color-grey-base;
+    fill: var(--wp--preset--color--grey-base);
   }
 
   .post-selectorHeader input {
@@ -117,12 +117,12 @@
 
   .post-selectorHeader select {
     margin-left: 14px;
-    background-color: $color-white;
+    background-color: var(--wp--preset--color--white);
   }
 
   .post-selectorHeader input:focus {
     box-shadow: none;
-    border-bottom: 2px solid $color-blue-xx-light;
+    border-bottom: 2px solid var(--wp--preset--color--black);
   }
 
   .post {
@@ -141,7 +141,7 @@
     height: 50px;
     flex-basis: 50px;
     flex-shrink: 0;
-    background-color: $color-grey-x-light;
+    background-color: var(--wp--preset--color--grey-lighter);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -176,7 +176,7 @@
     overflow-y: auto;
 
     &:first-child {
-      border-right: 1px solid $color-grey-x-light;
+      border-right: 1px solid var(--wp--preset--color--grey-lighter);
     }
   }
 
@@ -191,10 +191,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $color-grey-x-light;
+    background-color: var(--wp--preset--color--grey-lighter);
     border: none;
     border-radius: 50%;
-    box-shadow: 1px 1px 5px 1px rgba($color-black-mid-dark, .23);
+    box-shadow: 1px 1px 5px 1px rgba(var(--wp--preset--color--grey-dark), .23);
     transform: translate(0, -50%);
   }
 
@@ -204,13 +204,13 @@
   }
 
   .post-list > button {
-    background-color: $color-blue-xx-light;
+    background-color: var(--wp--preset--color--black);
     width: 100%;
     padding: 12px 18px;
     font-size: 14px;
     font-weight: bold;
     border: none;
-    color: $color-white;
+    color: var(--wp--preset--color--white);
     margin-bottom: 8px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     transition: all .25s ease-in-out;
@@ -219,7 +219,7 @@
   .post-list > button:not([disabled]):hover,
   .post-list > button:not([disabled]):focus,
   .post-list > button:not([disabled]):active {
-    background-color: $color-blue-sm-light;
+    background-color: var(--wp--preset--color--black);
   }
 
   .post-list > button[disabled] {
@@ -234,7 +234,7 @@
 }
 
 .grid-item .components-button {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
 }
 
 .grid-itemMeta {
@@ -245,7 +245,7 @@
 
 .grid-itemMeta > span {
   padding: 2px 12px;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
   line-height: 1.8;
 }
 

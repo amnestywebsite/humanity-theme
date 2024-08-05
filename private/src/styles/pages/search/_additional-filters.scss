@@ -72,9 +72,9 @@
 }
 
 .horizontal-search .additional-filters.is-active .btn.is-active {
-  background-color: $color-primary;
-  color: $color-black;
-  border-color: $color-primary;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--black);
+  border-color: var(--wp--preset--color--primary);
 }
 
 // no-js styles

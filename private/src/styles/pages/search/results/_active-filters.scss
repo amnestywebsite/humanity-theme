@@ -27,7 +27,7 @@
 .clear-filter {
   margin-right: spacing(half);
   padding: spacing(quarter);
-  background-color: $color-grey-xx-light;
+  background-color: var(--wp--preset--color--grey-lighterest);
   font-size: 14px;
 
   &::after {
@@ -39,7 +39,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: $color-grey-sm-light;
+    background-color: var(--wp--preset--color--grey-lighter);
   }
 }
 
@@ -54,5 +54,5 @@
 }
 
 .clear-filter--all {
-  background-color: $color-grey-sm-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }

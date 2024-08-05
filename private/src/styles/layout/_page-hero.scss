@@ -6,7 +6,7 @@
   // max-height: 40vh; // these two break the home page
   background-size: cover;
   background-position: center center;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   max-width: 1468px;
   margin: 0 auto;
   width: 100%;
@@ -48,9 +48,9 @@
 }
 
 .page-heroTitle span {
-  background-color: rgba($color-black, .45);
-  color: $color-white;
-  box-shadow: 20px 0 0 rgba($color-black, .45), -20px 0 0 rgba($color-black, .45);
+  background-color: rgba(var(--wp--preset--color--black), .45);
+  color: var(--wp--preset--color--white);
+  box-shadow: 20px 0 0 rgba(var(--wp--preset--color--black), .45), -20px 0 0 rgba(var(--wp--preset--color--black), .45);
   box-decoration-break: clone;
 }
 
@@ -60,7 +60,7 @@ p.page-heroContent {
   padding: 10px 16px;
   max-width: 460px;
   font-size: 18px;
-  background-color: rgba($color-black, .45);
+  background-color: rgba(var(--wp--preset--color--black), .45);
 
   @include mq(xx-small) {
     padding: 10px 20px;
@@ -74,7 +74,7 @@ p.page-heroContent {
 
 .page-heroCta {
   display: inline-block;
-  background-color: rgba($color-black, .45);
+  background-color: rgba(var(--wp--preset--color--black), .45);
   padding: 16px;
 
   .btn {
@@ -106,41 +106,41 @@ p.page-heroContent {
 .page-heroBackground--dark .page-heroContent,
 .page-heroBackground--dark .page-heroCta,
 .page-heroBackground--dark .page-heroTitle span {
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .page-heroBackground--dark .page-heroTitle span {
-  box-shadow: 16px 0 0 $color-black, -16px 0 0 $color-black;
+  box-shadow: 16px 0 0 var(--wp--preset--color--black), -16px 0 0 var(--wp--preset--color--black);
 
   @include mq(xx-small) {
-    box-shadow: 20px 0 0 $color-black, -20px 0 0 $color-black;
+    box-shadow: 20px 0 0 var(--wp--preset--color--black), -20px 0 0 var(--wp--preset--color--black);
   }
 }
 
 .page-heroBackground--light .page-heroContent,
 .page-heroBackground--light .page-heroCta,
 .page-heroBackground--light .page-heroTitle span {
-  background-color: $color-white;
-  color: $color-black;
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
 }
 
 .page-heroBackground--light .page-heroTitle span {
-  box-shadow: 16px 0 0 $color-white, -16px 0 0 $color-white;
+  box-shadow: 16px 0 0 var(--wp--preset--color--white), -16px 0 0 var(--wp--preset--color--white);
 
   @include mq(xx-small) {
-    box-shadow: 20px 0 0 $color-white, -20px 0 0 $color-white;
+    box-shadow: 20px 0 0 var(--wp--preset--color--white), -20px 0 0 var(--wp--preset--color--white);
   }
 }
 
 .page-heroBackground--light .btn {
-  border-color: $color-black;
-  background-color: $color-black;
-  color: $color-white;
+  border-color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 
   &:hover,
   &:focus {
-    background-color: rgba($color-black, .8);
-    color: $color-white;
+    background-color: rgba(var(--wp--preset--color--black), .8);
+    color: var(--wp--preset--color--white);
   }
 }
 
@@ -150,7 +150,7 @@ p.page-heroContent {
 .page-heroBackground--none .page-heroTitle span {
   padding-left: 0;
   padding-right: 0;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   background-color: transparent;
 }
 
@@ -205,13 +205,13 @@ p.page-heroContent {
   margin-right: 12px;
   border-style: solid;
   border-width: 10px 0 10px 18px;
-  border-color: transparent transparent transparent $color-black;
+  border-color: transparent transparent transparent var(--wp--preset--color--black);
   text-indent: -1000vw;
   overflow: hidden;
 }
 
 .page-heroBackground--light .play-icon {
-  border-color: transparent transparent transparent $color-white;
+  border-color: transparent transparent transparent var(--wp--preset--color--white);
 }
 
 .page-hero + main .article-container {

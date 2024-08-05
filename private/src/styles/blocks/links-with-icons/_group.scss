@@ -109,7 +109,7 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .linksWithIcons-group.icon-arrow.is-horizontal .linksWithIcons-spacer::after {
@@ -149,7 +149,7 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .linksWithIcons-group.icon-arrow.is-vertical .linksWithIcons-spacer::after {
@@ -178,8 +178,8 @@
   content: "";
   position: absolute;
   display: block;
-  background: $color-black;
-  color: $color-white;
+  background: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .linksWithIcons-group.icon-ampersand .linksWithIcons-spacer::after {
@@ -194,7 +194,7 @@
   content: "\0026";
   position: absolute;
   display: block;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 
   .rtl & {
     transform: translateY(-50%) translateX(-50%) rotateY(180deg);
@@ -202,7 +202,7 @@
 }
 
 .linksWithIcons-group.has-very-light-gray-background-color {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .linksWithIcons-group.is-style-square {

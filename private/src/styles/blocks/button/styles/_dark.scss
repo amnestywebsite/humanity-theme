@@ -2,14 +2,14 @@
 .wp-block-button.is-style-dark .wp-block-button__link,
 .btn--dark,
 .btn.is-style-dark {
-  border: 1px solid $color-black;
-  background: $color-black;
-  color: $color-white;
+  border: 1px solid var(--wp--preset--color--black);
+  background: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 
   &:hover,
   &:focus {
-    background-color: $color-white;
-    border-color: $color-black;
-    color: $color-black;
+    background-color: var(--wp--preset--color--white);
+    border-color: var(--wp--preset--color--black);
+    color: var(--wp--preset--color--black);
   }
 }

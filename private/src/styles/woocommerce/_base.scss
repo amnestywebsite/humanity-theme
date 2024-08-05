@@ -11,15 +11,15 @@
 .woocommerce-error,
 .woocommerce-info,
 .woocommerce-message {
-  border-top-color: $color-black;
+  border-top-color: var(--wp--preset--color--black);
   font-weight: normal;
-  color: $color-black;
-  background-color: $color-grey-xx-light;
+  color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--grey-lighterest);
 
   &::before {
     top: unset;
     left: 2em;
-    color: $color-black;
+    color: var(--wp--preset--color--black);
   }
 }
 

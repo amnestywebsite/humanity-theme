@@ -15,7 +15,7 @@
 }
 
 .wp-block-image figcaption {
-  color: $color-grey-dark;
+  color: var(--wp--preset--color--grey-darker);
   font-size: 14px;
   text-align: left;
 

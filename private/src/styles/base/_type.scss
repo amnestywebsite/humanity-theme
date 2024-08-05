@@ -3,7 +3,7 @@
  */
 
 @include headings(1,  6) {
-  color: $heading-color;
+  color: var(--wp--preset--color--grey-darker);
   line-height: 1.12;
   font-family: var(--wp--preset--font-family--secondary);
 }

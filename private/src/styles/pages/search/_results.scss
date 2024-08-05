@@ -34,7 +34,7 @@ body.page-template-searchpage .section .page-search input {
 }
 
 .post--result {
-  @include state-background($color-grey-light);
+  @include state-background(var(--wp--preset--color--grey-lighter));
   position: relative;
 }
 

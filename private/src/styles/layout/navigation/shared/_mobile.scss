@@ -12,7 +12,7 @@
   backface-visibility: hidden;
   transition: transform .2s ease-in-out;
   transform: translate3d(100%, 0, 0);
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   font-size: 16px;
 
   @include mq(small) {
@@ -76,7 +76,7 @@
   border: none;
   display: block;
   width: 100%;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
 }
 
 .mobile-menu .menu-item a,
@@ -86,25 +86,25 @@
   align-items: center;
   padding: spacing();
   transition: background-color .2s ease-in-out;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 
   &:hover,
   &:active,
   &:focus {
-    background-color: $color-grey-light;
+    background-color: var(--wp--preset--color--grey-lighter);
   }
 }
 
 .mobile-menu .menu-item.is-open a,
 .mobile-menu .menu-item.is-open button {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 
   &:hover,
   &:active,
   &:focus {
-    background-color: $color-grey-mid-dark;
-    color: $color-white;
+    background-color: var(--wp--preset--color--grey-dark);
+    color: var(--wp--preset--color--white);
   }
 }
 
@@ -128,29 +128,29 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height .3s ease-in-out;
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .mobile-menu > ul > .menu-item {
-  border-top: 1px solid $color-grey-md-light;
+  border-top: 1px solid var(--wp--preset--color--grey-light);
 }
 
 .mobile-menu .menu-item.is-open .sub-menu {
-  border-top: 1px solid $color-grey-md-light;
+  border-top: 1px solid var(--wp--preset--color--grey-light);
   max-height: 600px;
 }
 
 .mobile-menu .sub-menu .menu-item a,
 .mobile-menu .sub-menu .menu-item button {
   display: none;
-  background-color: $color-grey-dark;
-  color: $color-white;
+  background-color: var(--wp--preset--color--grey-darker);
+  color: var(--wp--preset--color--white);
 
   &:hover,
   &:active,
   &:focus {
-    background-color: $color-black;
-    color: $color-white;
+    background-color: var(--wp--preset--color--black);
+    color: var(--wp--preset--color--white);
   }
 }
 

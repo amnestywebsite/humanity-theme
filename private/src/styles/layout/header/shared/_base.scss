@@ -4,7 +4,7 @@
   z-index: 11;
   height: 60px;
   font-size: 16px;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   transition: top .5s ease-in-out;
   font-family: var(--wp--preset--font-family--secondary);
   text-transform: uppercase;
@@ -56,7 +56,7 @@
 .page-header .btn {
   display: flex;
   align-items: center;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   font-size: map-get($mobile-header-sizes, "h4");
   transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }

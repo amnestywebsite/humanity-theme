@@ -5,7 +5,7 @@
 .woocommerce-table--order-details tfoot tr td:last-child,
 .woocommerce-table__product-quantity,
 .woocommerce-table__product-total {
-  border-left: 1px solid $color-grey-light;
+  border-left: 1px solid var(--wp--preset--color--grey-lighter);
 }
 
 .woocommerce table.shop_table tfoot td {

@@ -1,5 +1,5 @@
 .wp-block-latest-posts.wp-block-latest-posts__list {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
   margin-left: 0;
   padding: 24px;
   width: 100%;
@@ -15,7 +15,7 @@
   margin-bottom: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   transition: .25s ease-in-out, color .25s ease-in-out;
   display: flex;
 }
@@ -25,11 +25,11 @@
 }
 
 .wp-block-latest-posts li:hover {
-  background-color: $color-grey-md-light;
+  background-color: var(--wp--preset--color--grey-light);
 }
 
 .wp-block-latest-posts li a {
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   text-decoration: none;
   line-height: 1.1;
   font-size: 18px;

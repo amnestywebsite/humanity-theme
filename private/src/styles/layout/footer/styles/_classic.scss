@@ -1,17 +1,17 @@
 .page-footer {
   padding: 28px 20px;
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .page-footer a {
   display: inline-block;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   font-size: 12px;
   font-family: sans-serif;
 
   &.btn--white {
-    color: $color-black;
+    color: var(--wp--preset--color--black);
   }
 }
 
@@ -26,9 +26,9 @@
   padding-bottom: 12px;
   font-size: 21px;
   text-transform: uppercase;
-  color: $color-grey-md-light;
+  color: var(--wp--preset--color--grey-light);
   font-family: var(--wp--preset--font-family--secondary);
-  border-bottom: 1px solid $color-black-mid-dark;
+  border-bottom: 1px solid var(--wp--preset--color--grey-dark);
   font-weight: bold;
 
   &:hover,
@@ -144,7 +144,7 @@
 .page-footerSiteSelection a {
   display: inline-block;
   padding: 4px 8px;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   font-family: var(--wp--preset--font-family--secondary);
   font-size: 18px;
   font-weight: bold;
@@ -154,7 +154,7 @@
 .page-footerSiteSelection a:hover,
 .page-footerSiteSelection a:focus,
 .page-footerSiteSelection .is-selected a {
-  background-color: $color-black-x-dark;
+  background-color: var(--wp--preset--color--black); // @TODO: update
 }
 
 .page-footerSections:empty + .page-footerBottom {
@@ -167,7 +167,7 @@
   flex-wrap: wrap-reverse;
   margin-top: 24px;
   padding-top: 48px;
-  border-top: 1px solid $color-black-mid-dark;
+  border-top: 1px solid var(--wp--preset--color--grey-dark);
 }
 
 .page-footerBottomHalf {
@@ -224,13 +224,13 @@
 }
 
 .page-footerBottomNav a {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .page-footerCopyright {
   font-size: 12px;
   line-height: 1.5;
-  color: rgba($color-white, .7);
+  color: rgba(var(--wp--preset--color--white), .7);
   padding-top: 8px;
 }
 
@@ -251,7 +251,7 @@
 .page-footerBottomTitle {
   font-size: 18px;
   text-transform: uppercase;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   margin-bottom: 12px;
 
   @include mq(large) {
@@ -274,7 +274,7 @@
 }
 
 .page-footerSocial a {
-  @include state-background(lighten($color-black, 20%));
+  @include state-background(var(--wp--preset--color--grey-darkest));
   display: block;
 }
 

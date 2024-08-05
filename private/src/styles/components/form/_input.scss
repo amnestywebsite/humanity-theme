@@ -57,7 +57,7 @@ textarea {
     font-size: 16px;
     font-weight: normal;
     text-transform: uppercase;
-    color: $color-grey-base;
+    color: var(--wp--preset--color--grey-base);
     opacity: 1;
   }
 }
@@ -72,8 +72,8 @@ textarea,
   appearance: none;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: $color-white;
-  border: 1px solid $color-black;
+  background-color: var(--wp--preset--color--white);
+  border: 1px solid var(--wp--preset--color--black);
   border-radius: 0;
   cursor: text;
 }

@@ -27,7 +27,7 @@
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: $color-grey-xx-light;
+  background-color: var(--wp--preset--color--grey-lighterest);
   padding: 10px;
   transition: background-color .25s;
   font-family: var(--wp--preset--font-family--secondary);
@@ -37,5 +37,5 @@
 .topics-container li a:hover,
 .topics-container li a:focus,
 .topics-container li a:active {
-  background-color: $color-grey-sm-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
