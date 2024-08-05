@@ -106,7 +106,7 @@
 
 .is-style-alternative-style.tweetAction .btn {
   background-color: var(--wp--preset--color--blue-twitter);
-  border: none;
+  border: 1px solid transparent;
   margin: 0 auto;
   padding: 13px 24px;
   max-width: 230px;
@@ -114,6 +114,11 @@
   color: var(--wp--preset--color--black);
   font-family: var(--wp--preset--font-family--secondary);
   font-size: 16px;
+}
+
+.is-style-alternative-style.tweetAction .btn:hover,
+.is-style-alternative-style.tweetAction .btn:focus {
+  border-color: var(--wp--preset--color--black);
 }
 
 .is-style-alternative-style .tweetButton {
