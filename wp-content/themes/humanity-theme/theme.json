@@ -3,6 +3,26 @@
   "version": 3,
   "settings": {
     "appearanceTools": false,
+    "blocks" : {
+      "core/navigation": {
+        "color": {
+          "background": true,
+          "text": false,
+          "palette": [
+            {
+              "slug": "white",
+              "color": "#fff",
+              "name": "White"
+            },
+            {
+              "slug": "amnesty-grey-light",
+              "color": "#e4e4e4",
+              "name": "Grey Light"
+            }
+          ]
+        }
+      }
+    },
     "color": {
       "background": false,
       "text": false,

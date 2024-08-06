@@ -43,6 +43,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: var(--wp--preset--color--white);
     }
   }
 }
@@ -61,10 +62,6 @@
   pointer-events: auto;
 }
 
-.wp-block-navigation.is-style-grey-background {
+.wp-block-navigation.has-amnesty-grey-light-background-color .wp-block-navigation__container {
   background-color: var(--wp--preset--color--amnesty-grey-light);
-
-  .wp-block-navigation__container {
-    background-color: var(--wp--preset--color--amnesty-grey-light);
-  }
 }
