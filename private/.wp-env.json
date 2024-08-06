@@ -1,0 +1,4 @@
+{
+  "themes": ["../wp-content/themes/humanity-theme"],
+  "plugins": ["CMB2/CMB2"]
+}
