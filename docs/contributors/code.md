@@ -23,7 +23,7 @@ This guide assumes you have an available Virtual Host or Docker environment thro
 
 #### Local development environment with `@wordpress/env`
 If you choose to, you can use `@wordpress/env` which will provision a local development environment using Docker. 
-To get started run `yarn env start`.
+To get started run `yarn env start` from within the `./private` directory.
 
 The site will be available at http://localhost:8888
 You can login at http://localhost:8888/wp-admin with username `admin` and password `password`.
