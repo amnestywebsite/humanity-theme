@@ -1,12 +1,12 @@
 .page-header.is-transparent-light {
-  background: linear-gradient($color-black, transparent);
-  color: $color-white;
+  background: linear-gradient(var(--wp--preset--color--black), transparent);
+  color: var(--wp--preset--color--white);
 }
 
 .page-header.is-transparent-light.stick {
-  background: $color-white;
-  color: $color-black;
-  border-bottom: 1px solid $color-grey-light;
+  background: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
+  border-bottom: 1px solid var(--wp--preset--color--grey-lighter);
 }
 
 .page-header.is-transparent-light ~ .page-hero {
@@ -20,19 +20,19 @@
 .page-header.is-transparent-light .page-headerButton:hover,
 .page-header.is-transparent-light .page-headerButton:active,
 .page-header.is-transparent-light .page-headerButton:focus {
-  background-color: $color-white;
-  color: $color-black;
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
 }
 
 .page-header.is-transparent-light .mobile-menu .menu-item a:hover,
 .page-header.is-transparent-light .mobile-menu .menu-item a:active,
 .page-header.is-transparent-light .mobile-menu .menu-item a:focus {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .page-header.is-transparent-light .mobile-menu .menu-item-has-children.is-open > a {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .page-header.is-transparent-light .mobile-menu .menu-item-has-children.is-open > a:hover,
@@ -41,20 +41,20 @@
 .page-header.is-transparent-light .sub-menu .menu-item a:hover,
 .page-header.is-transparent-light .sub-menu .menu-item a:active,
 .page-header.is-transparent-light .sub-menu .menu-item a:focus {
-  background-color: $color-grey-mid-dark;
-  color: $color-white;
+  background-color: var(--wp--preset--color--grey-dark);
+  color: var(--wp--preset--color--white);
 }
 
 .page-header.is-transparent-light .page-nav--main .current-menu-item,
 .page-header.is-transparent-light .page-nav--main .current-menu-ancestor {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .page-header.is-transparent-light .page-nav--main .mobile-menu .current-menu-item,
 .page-header.is-transparent-light .page-nav--main .mobile-menu .current-menu-ancestor {
-  background-color: $color-white;
-  color: $color-black;
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
 }
 
 .page-header.is-transparent-light .icon-cart {

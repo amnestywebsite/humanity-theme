@@ -22,7 +22,7 @@
 }
 
 .wp-block-table tr > *:nth-of-type(even) {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .wp-block-table tr > *:nth-last-child(2):first-child + * {
@@ -44,7 +44,7 @@
   // copypasta
   padding: 16px;
   table-layout: fixed;
-  border: 1px solid $color-grey-base;
+  border: 1px solid var(--wp--preset--color--grey-base);
 
   @include mq(680px) {
     display: table-cell;

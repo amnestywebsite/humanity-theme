@@ -6,27 +6,27 @@
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
 
   &:first-child {
-    border-top: 1px solid $color-grey-light;
+    border-top: 1px solid var(--wp--preset--color--grey-lighter);
   }
 
   &.is-active,
   &:hover,
   &:active {
-    background-color: $color-black;
-    color: $color-white;
+    background-color: var(--wp--preset--color--black);
+    color: var(--wp--preset--color--white);
 
     a {
-      color: $color-white;
+      color: var(--wp--preset--color--white);
     }
   }
 }
 
 .page-template-my-account .linkList li:focus-within {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 
   a {
-    color: $color-white;
+    color: var(--wp--preset--color--white);
   }
 }
 
@@ -37,5 +37,5 @@
 
 .page-template-my-account .linkList li + li {
   margin: 0;
-  border-bottom: 1px solid $color-grey-light;
+  border-bottom: 1px solid var(--wp--preset--color--grey-lighter);
 }

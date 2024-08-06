@@ -1,7 +1,7 @@
 .post--result {
   width: 100%;
   max-width: 100%;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   min-height: 0;
   padding: 12px;
 }

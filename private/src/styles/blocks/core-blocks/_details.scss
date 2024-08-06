@@ -1,8 +1,8 @@
 .wp-block-details summary {
   display: flex;
   padding: spacing(half) 0;
-  border-bottom: 1px solid $color-black;
-  color: $color-grey-dark;
+  border-bottom: 1px solid var(--wp--preset--color--black);
+  color: var(--wp--preset--color--grey-darker);
   line-height: 1.12;
   font-family: var(--wp--preset--font-family--secondary);
   font-size: map-get($desktop-header-sizes, "h3");

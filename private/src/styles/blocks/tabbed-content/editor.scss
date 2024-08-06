@@ -1,25 +1,25 @@
 .wp-block-bigbite-tabs.is-style-default .tabsContainer,
 .wp-block-bigbite-tabs.is-style-grey .tabsContainer {
-  background-color: $color-grey-light !important;
+  background-color: var(--wp--preset--color--grey-lighter) !important;
 }
 
 .wp-block-bigbite-tabs .tabsContainer {
-  background-color: $color-grey-light !important;
+  background-color: var(--wp--preset--color--grey-lighter) !important;
   overflow: scroll !important;
 }
 
 .wp-block-bigbite-tabs.is-style-light .tabsContainer {
-  background-color: $color-white !important;
-  color: $color-black !important;
+  background-color: var(--wp--preset--color--white) !important;
+  color: var(--wp--preset--color--black) !important;
 }
 
 .wp-block-bigbite-tabs .tabsContainer button.tab {
-  color: $color-black !important;
+  color: var(--wp--preset--color--black) !important;
   border: none !important;
 }
 
 .wp-block-bigbite-tabs .tabsContainer button.addNewTabButton {
-  background-color: $color-white !important;
+  background-color: var(--wp--preset--color--white) !important;
 }
 
 .wp-block-bigbite-tabs.tabPanelContainer {
@@ -28,8 +28,8 @@
 
 .wp-block-bigbite-tabs .tabsContainer button.tab[class*="is-selected"] {
   background: none !important;
-  border-bottom: 6px solid $color-black !important;
-  color: $color-black !important;
+  border-bottom: 6px solid var(--wp--preset--color--black) !important;
+  color: var(--wp--preset--color--black) !important;
 }
 
 .wp-block-bigbite-tabs .tabPanelContainer {
@@ -37,14 +37,14 @@
 }
 
 .wp-block-bigbite-tabs .tabsContainer button.tab:hover {
-  background-color: $color-grey-brand !important;
+  background-color: var(--wp--preset--color--grey-light) !important;
 }
 
 .wp-block-bigbite-tabs.is-style-default .tabsContainer button.tab:hover,
 .wp-block-bigbite-tabs.is-style-grey .tabsContainer button.tab:hover {
-  background-color: $color-grey-brand !important;
+  background-color: var(--wp--preset--color--grey-light) !important;
 }
 
 .wp-block-bigbite-tabs.is-style-light .tabsContainer button.tab:hover {
-  background-color: $color-grey-brand !important;
+  background-color: var(--wp--preset--color--grey-light) !important;
 }

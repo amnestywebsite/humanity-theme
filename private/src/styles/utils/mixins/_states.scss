@@ -1,4 +1,4 @@
-@mixin state-background($colour: $color-black) {
+@mixin state-background($colour: var(--wp--preset--color--black)) {
   transition: background-color .3s ease-in-out;
 
   &:hover,
@@ -12,7 +12,7 @@
   }
 }
 
-@mixin state-foreground($colour: $color-black) {
+@mixin state-foreground($colour: var(--wp--preset--color--black)) {
   transition: color .3s ease-in-out;
 
   &:hover,

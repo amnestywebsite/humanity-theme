@@ -46,7 +46,7 @@
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   text-transform: uppercase;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   line-height: 1.25;
   background-color: transparent;
   border: none;
@@ -88,11 +88,11 @@
 }
 
 .post-paginationLink a {
-  @include state-background($color-grey-light);
+  @include state-background(var(--wp--preset--color--grey-lighter));
 }
 
 .post-paginationLink button[disabled] {
-  color: $color-grey-base;
+  color: var(--wp--preset--color--grey-base);
   cursor: not-allowed;
 }
 
@@ -124,7 +124,7 @@ ul.page-numbers {
   margin-bottom: 0;
   margin-left: 0;
   list-style: none;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 
   @include mq(small) {
     display: flex;
@@ -141,7 +141,7 @@ ul.page-numbers .page-numbers {
 }
 
 ul.page-numbers a.page-numbers {
-  @include state-background($color-grey-light);
+  @include state-background(var(--wp--preset--color--grey-lighter));
 }
 
 ul.page-numbers li + li {
@@ -154,6 +154,6 @@ ul.page-numbers li + li {
 }
 
 ul.page-numbers span.current {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }

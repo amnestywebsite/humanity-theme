@@ -14,14 +14,14 @@
   justify-content: center;
   width: 180px;
   height: 100%;
-  background-color: $color-primary;
-  border-right: 1px solid $color-grey-light;
+  background-color: var(--wp--preset--color--primary);
+  border-right: 1px solid var(--wp--preset--color--grey-lighter);
   content: attr(aria-label);
 }
 
 .rtl .logo:empty::after {
   border-right: none;
-  border-left: 1px solid $color-grey-light;
+  border-left: 1px solid var(--wp--preset--color--grey-lighter);
 }
 
 .logo-logoType,

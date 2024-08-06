@@ -1,21 +1,21 @@
 .wp-block-amnesty-core-hero.has-dark-background .hero-title span,
 .wp-block-amnesty-core-hero.has-dark-background .hero-content,
 .wp-block-amnesty-core-hero.has-dark-background .hero-cta {
-  color: $color-white;
-  background-color: $color-black;
+  color: var(--wp--preset--color--white);
+  background-color: var(--wp--preset--color--black);
 }
 
 .wp-block-amnesty-core-hero.has-light-background .hero-title span,
 .wp-block-amnesty-core-hero.has-light-background .hero-content,
 .wp-block-amnesty-core-hero.has-light-background .hero-cta {
-  color: $color-black;
-  background-color: $color-white;
+  color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--white);
 }
 
 .wp-block-amnesty-core-hero.has-light-background .btn {
   border: none;
-  color: $color-white;
-  background-color: $color-black;
+  color: var(--wp--preset--color--white);
+  background-color: var(--wp--preset--color--black);
 }
 
 .wp-block-amnesty-core-hero.is-aligned-left .container {

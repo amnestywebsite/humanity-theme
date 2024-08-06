@@ -1,7 +1,7 @@
 .page-header.is-light .burger:hover,
 .page-header.is-light .burger:active,
 .page-header.is-light .burger:focus {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .page-header.is-light .burger .icon-burger {
@@ -9,13 +9,13 @@
 }
 
 .mobile-menu-open .page-header.is-light .burger {
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .mobile-menu-open .page-header.is-light .burger:hover,
 .mobile-menu-open .page-header.is-light .burger:active,
 .mobile-menu-open .page-header.is-light .burger:focus {
-  background-color: $color-grey-mid-dark;
+  background-color: var(--wp--preset--color--grey-dark);
 }
 
 .mobile-menu-open .page-header.is-light .burger .icon-close {

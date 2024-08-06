@@ -1,7 +1,7 @@
 .section {
   @include clearfix;
   padding: 25px;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .section.is-fullWidth--mobile,
@@ -13,14 +13,14 @@
 }
 
 .section--tinted {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
   width: 100%;
   max-width: 1468px;
   margin: 0 auto;
 }
 
 .section--dark {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .section--has-bg-image {
@@ -56,15 +56,15 @@
 }
 
 .section--textWhite {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 
   @include headings {
-    color: $color-white;
+    color: var(--wp--preset--color--white);
   }
 }
 
 .section--textWhite .wp-block-button__link {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .section--topSpacing {
@@ -96,7 +96,7 @@
 }
 
 .section--textWhite a {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .section--has-bg-overlay > * {

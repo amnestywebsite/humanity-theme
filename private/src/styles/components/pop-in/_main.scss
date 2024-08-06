@@ -1,8 +1,8 @@
 .pop-in {
   position: relative;
   padding: 12px 0;
-  background-color: $color-grey-light;
-  box-shadow: inset 0 -5px 9px -7px $color-black;
+  background-color: var(--wp--preset--color--grey-lighter);
+  box-shadow: inset 0 -5px 9px -7px var(--wp--preset--color--black);
   max-height: 1000px;
   overflow-y: hidden;
   transition-property: all;
@@ -26,7 +26,7 @@
   background: none;
   border: none;
   border-radius: 0;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 1;
@@ -39,8 +39,8 @@
 }
 
 .pop-in[aria-hidden="false"] ~ .page-header--transparent-light {
-  background-color: $color-white;
-  color: $color-black;
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
 }
 
 // negishim

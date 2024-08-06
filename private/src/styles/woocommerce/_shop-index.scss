@@ -7,7 +7,7 @@
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
   font-weight: normal;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .shop .post {
@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   min-height: 335px;
-  border: 1px solid $color-grey-light;
+  border: 1px solid var(--wp--preset--color--grey-lighter);
   background-color: transparent;
 
   img {

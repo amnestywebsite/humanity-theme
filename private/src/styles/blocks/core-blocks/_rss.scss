@@ -15,7 +15,7 @@
   font-size: map-get($mobile-header-sizes, h4);
   font-weight: bold;
   line-height: 1.12;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 
   a {
     text-decoration: none !important;
@@ -31,7 +31,7 @@
   order: 1;
   font-family: var(--wp--preset--font-family--secondary);
   font-size: 14px;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .wp-block-rss__item-excerpt {
@@ -40,14 +40,14 @@
   font-size: 18px;
   line-height: 1;
   text-align: justify;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .wp-block-rss__item-author {
   order: 4;
   font-size: 14px;
   line-height: 17px;
-  color: $color-grey-md-light;
+  color: var(--wp--preset--color--grey-light);
   padding-top: 16px;
   padding-bottom: 40px;
   font-family: var(--wp--preset--font-family--secondary);

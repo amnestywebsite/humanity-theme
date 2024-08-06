@@ -5,29 +5,29 @@
 
 .editor-styles-wrapper .wp-block-button .wp-block-button__link,
 .editor-styles-wrapper .wp-block-button.is-style-default .wp-block-button__link {
-  color: $color-black;
-  background-color: $color-primary;
-  border: 1px solid $color-primary-state;
+  color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--primary);
+  border: 1px solid var(--wp--preset--color--primary-state);
 
   &:hover,
   &:active,
   &:focus {
-    border-color: $color-primary-state;
-    background-color: $color-primary-state;
-    color: $color-white;
+    border-color: var(--wp--preset--color--primary-state);
+    background-color: var(--wp--preset--color--primary-state);
+    color: var(--wp--preset--color--white);
   }
 }
 
 .wp-block-button.is-style-dark .wp-block-button__link {
-  border: 1px solid $color-black;
-  background: $color-black;
-  color: $color-white;
+  border: 1px solid var(--wp--preset--color--black);
+  background: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 
   &:hover,
   &:focus {
-    background-color: $color-white;
-    border-color: $color-black;
-    color: $color-black;
+    background-color: var(--wp--preset--color--white);
+    border-color: var(--wp--preset--color--black);
+    color: var(--wp--preset--color--black);
   }
 }
 
@@ -38,6 +38,6 @@
   &:hover,
   &:focus {
     background-color: transparent;
-    color: $color-black;
+    color: var(--wp--preset--color--black);
   }
 }

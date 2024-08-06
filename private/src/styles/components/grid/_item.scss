@@ -6,7 +6,7 @@
   max-width: none;
   min-height: 360px;
   padding: 24px;
-  background-color: $color-grey-md-light;
+  background-color: var(--wp--preset--color--grey-light);
   background-position: center;
   background-size: cover;
 
@@ -31,15 +31,15 @@
   margin-top: 20px;
   margin-bottom: 0;
   padding: 12px;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   line-height: 1.4;
   font-size: 16px;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   max-width: 100%;
 }
 
 .grid-itemContent a {
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   font-weight: bold;
   font-family: var(--wp--preset--font-family--secondary);
   text-transform: uppercase;
@@ -55,7 +55,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .grid-itemMeta a {
@@ -64,8 +64,8 @@
   display: block;
   padding: 2px 12px;
   width: max-content;
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
   text-decoration: none;
 }
 
@@ -81,9 +81,9 @@
 
 h3.grid-itemTitle > span,
 h3.grid-itemTitle > a {
-  color: $color-black;
-  background-color: $color-white;
-  box-shadow: -12px 0 0 0 $color-white, 12px 0 0 0 $color-white;
+  color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--white);
+  box-shadow: -12px 0 0 0 var(--wp--preset--color--white), 12px 0 0 0 var(--wp--preset--color--white);
   box-decoration-break: clone;
   text-decoration: none;
   max-width: 100%;

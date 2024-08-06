@@ -34,7 +34,7 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: $color-grey-dark;
+  background-color: var(--wp--preset--color--grey-darker);
 }
 
 .factBlock-item:not(:last-of-type)::before {

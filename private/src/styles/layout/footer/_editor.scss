@@ -20,9 +20,9 @@
   padding-bottom: 12px;
   font-size: 20px;
   text-transform: uppercase;
-  color: var(--wp--preset--color--amnesty-grey-md-light);
+  color: var(--wp--preset--color--grey-light);
   font-family: var(--font-family-secondary);
-  border-bottom: 1px solid var(--wp--preset--color--amnesty-mid-dark);
+  border-bottom: 1px solid var(--wp--preset--color-mid-dark);
   font-weight: bold;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .amnesty-footer-container .wp-block-group .wp-block-separator {
-  border-color: var(--wp--preset--color--amnesty-mid-dark);
+  border-color: var(--wp--preset--color-mid-dark);
 }
 
 .amnesty-footer-container .wp-block-columns:first-of-type .wp-block-column {

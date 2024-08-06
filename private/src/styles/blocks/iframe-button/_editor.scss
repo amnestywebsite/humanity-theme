@@ -6,7 +6,7 @@
 }
 
 .wp-block[data-type="amnesty-core/iframe-button"] .iframeButton.is-style-default [data-rich-text-placeholder]::after {
-  color: $color-black !important;
+  color: var(--wp--preset--color--black) !important;
 }
 
 .wp-block[data-type="amnesty-core/iframe-button"] .components-placeholder__input {

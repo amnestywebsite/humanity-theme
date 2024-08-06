@@ -90,11 +90,11 @@
   font-weight: bold;
   line-height: 1em;
   word-wrap: normal;
-  color: $color-grey-dark !important;
+  color: var(--wp--preset--color--grey-darker) !important;
 }
 
 .linksWithIcons-bigtext.has-underline {
-  border-bottom: 8px solid $color-grey-dark;
+  border-bottom: 8px solid var(--wp--preset--color--grey-darker);
 }
 
 .linksWithIcons-body a {
@@ -121,11 +121,11 @@
 
 .linksWithIcons-group.is-style-square a.linksWithIcons:hover,
 .linksWithIcons-group.is-style-square a.linksWithIcons:active {
-  background-color: $color-grey-x-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .linksWithIcons-group.is-style-square a.linksWithIcons:focus-within {
-  background-color: $color-grey-x-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .linksWithIcons-group.is-style-square .linksWithIcons > span {

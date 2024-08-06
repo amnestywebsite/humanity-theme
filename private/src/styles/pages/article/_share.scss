@@ -7,13 +7,13 @@ ul.article-share {
 }
 
 .article-share a {
-  @include state-background(lighten($color-black, 20%));
+  @include state-background(var(--wp--preset--color--grey-darker));
   display: block;
   padding: 8px;
   width: 47px;
   height: 47px;
   text-align: center;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .article-share img {

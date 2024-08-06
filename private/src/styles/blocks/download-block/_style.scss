@@ -99,7 +99,7 @@
 
 .article-sidebar .download-block {
   flex-direction: column;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .article-sidebar .download-block .btn {

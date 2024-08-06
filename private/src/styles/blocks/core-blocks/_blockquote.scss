@@ -57,13 +57,13 @@ blockquote::after,
 }
 
 .blockquote.is-grey {
-  color: $color-grey-brand;
-  border-color: $color-grey-brand;
+  color: var(--wp--preset--color--grey-light);
+  border-color: var(--wp--preset--color--grey-light);
 }
 
 .blockquote.is-white {
-  color: $color-white;
-  border-color: $color-white;
+  color: var(--wp--preset--color--white);
+  border-color: var(--wp--preset--color--white);
 }
 
 .blockquote[class*="align-"] {
@@ -213,7 +213,7 @@ blockquote cite,
   margin: 8px auto 0;
   max-width: 200px;
   height: 6px;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 
   @include mq(medium) {
     height: 8px;
@@ -299,9 +299,9 @@ blockquote cite,
 }
 
 .blockquote.is-white.is-lined cite::after {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
 }
 
 .blockquote.is-grey.is-lined cite::after {
-  background-color: $color-grey-brand;
+  background-color: var(--wp--preset--color--grey-light);
 }

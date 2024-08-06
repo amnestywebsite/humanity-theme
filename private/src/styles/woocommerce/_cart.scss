@@ -16,7 +16,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: $color-black;
+    background-color: var(--wp--preset--color--black);
   }
 }
 

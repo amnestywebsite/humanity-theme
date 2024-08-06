@@ -57,8 +57,8 @@ figure {
   align-items: flex-end;
   width: 100%;
   font-size: 16px;
-  background-color: rgba($color-black, .55);
-  color: $color-white;
+  background-color: rgba(var(--wp--preset--color--black), .55);
+  color: var(--wp--preset--color--white);
   word-break: keep-all;
 
   @include mq(small) {
@@ -77,14 +77,14 @@ figure {
   padding: 4px flexy-gutter();
   max-width: 800px;
   width: 100%;
-  background-color: $color-white;
-  color: $color-grey-mid-dark;
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--grey-dark);
   text-align: left;
 
   @include mq(small) {
     padding: 4px;
     background-color: transparent;
-    color: $color-white;
+    color: var(--wp--preset--color--white);
   }
 }
 

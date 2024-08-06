@@ -3,7 +3,7 @@
   display: flex;
   position: relative;
   z-index: 1;
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .horizontal-search .initial-filters .default-search-filters {
