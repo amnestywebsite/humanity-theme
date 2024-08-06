@@ -1,4 +1,7 @@
 {
   "themes": ["../wp-content/themes/humanity-theme"],
-  "plugins": ["CMB2/CMB2"]
+  "plugins": ["CMB2/CMB2"],
+  "lifecycleScripts": {
+    "afterStart": "yarn env run cli wp theme activate humanity-theme"
+  }
 }
