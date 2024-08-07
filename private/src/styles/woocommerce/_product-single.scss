@@ -16,7 +16,7 @@
 }
 
 .single-product .product_title {
-  font-size: map-get($desktop-header-sizes, "h2");
+  font-size: var(--wp--preset--font-size--heading-2);
 }
 
 .product-description h2 {
@@ -88,7 +88,7 @@
 }
 
 .single-product .related .postlist-headerTitle {
-  font-size: map-get($desktop-header-sizes, "h2");
+  font-size: var(--wp--preset--font-size--heading-2);
 }
 
 .single-product .related .post-title {

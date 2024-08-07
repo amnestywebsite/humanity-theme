@@ -5,7 +5,7 @@
   color: $color-grey-dark;
   line-height: 1.12;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: map-get($desktop-header-sizes, "h3");
+  font-size: var(--wp--preset--font-size--heading-3);
   margin-bottom: spacing(half);
   align-items: center;
   justify-content: space-between;

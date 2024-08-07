@@ -41,7 +41,7 @@
   }
 
   .is-style-square & {
-    font-size: map-get($desktop-header-sizes, "h6");
+    font-size: var(--wp--preset--font-size--heading-6);
     text-transform: uppercase;
   }
 }

@@ -30,7 +30,7 @@
 
 .wp-block-amnesty-core-collapsable figcaption h2 {
   margin: 0 !important;
-  font-size: map-get($desktop-header-sizes, "h3");
+  font-size: var(--wp--preset--font-size--heading-3);
 }
 
 .wp-block-amnesty-core-collapsable .btn--blank {
