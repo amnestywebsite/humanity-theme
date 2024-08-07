@@ -1,0 +1,59 @@
+{
+  "title": "Rubik",
+  "version": 3,
+  "$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Rubik",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": "file:./assets/fonts/rubik/rubik-400.woff2"
+            },
+            {
+              "fontFamily": "Rubik",
+              "fontStyle": "normal",
+              "fontWeight": "300",
+              "src": "file:./assets/fonts/rubik/rubik-300.woff2"
+            },
+            {
+              "fontFamily": "Rubik",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": "file:./assets/fonts/rubik/rubik-700.woff2"
+            },
+            {
+              "fontFamily": "Rubik",
+              "fontStyle": "italic",
+              "fontWeight": "300",
+              "src": "file:./assets/fonts/rubik/rubik-300-italic.woff2"
+            },
+            {
+              "fontFamily": "Rubik",
+              "fontStyle": "italic",
+              "fontWeight": "400",
+              "src": "file:./assets/fonts/rubik/rubik-400-italic.woff2"
+            },
+            {
+              "fontFamily": "Rubik",
+              "fontStyle": "italic",
+              "fontWeight": "700",
+              "src": "file:./assets/fonts/rubik/rubik-700-italic.woff2"
+            }
+          ],
+          "fontFamily": "Rubik, sans-serif",
+          "name": "Rubik",
+          "slug": "primary"
+        },
+        {
+			"fontFamily": "Rubik, sans-serif",
+			"name": "Rubik",
+			"slug": "secondary"
+		  }
+      ]
+    }
+  }
+}
