@@ -260,14 +260,52 @@
           ]
         }
       ],
-      "fontSizes": [],
+      "fontSizes": [
+        {
+					"fluid": false,
+					"name": "Small",
+					"size": ".9rem",
+					"slug": "small"
+				},
+				{
+					"fluid": false,
+					"name": "Regular",
+					"size": "1.125rem",
+					"slug": "regular"
+				},
+				{
+					"fluid": false,
+					"name": "Large",
+					"size": "1.5rem",
+					"slug": "large"
+				},
+        {
+          "fluid": false,
+          "name": "Larger",
+          "size": "2rem",
+          "slug": "larger"
+        },
+        {
+          "fluid": false,
+          "name": "Extra Large",
+          "size": "2.25em",
+          "slug": "x-large"
+        },
+        {
+          "fluid": false,
+          "name": "Huge",
+          "size": "2.5rem",
+          "slug": "huge"
+        }
+			],
       "fontStyle": false,
 			"fontWeight": false,
 			"letterSpacing": false,
 			"lineHeight": false,
 			"textDecoration": false,
 			"textTransform": false,
-			"dropCap": false
+			"dropCap": false,
+      "fluid": true
     },
     "layout": {
       "contentSize": "1468px"
@@ -275,6 +313,38 @@
     "useRootPaddingAwareAlignments": false
   },
   "styles": {
+    "elements": {
+      "h1": {
+				"typography": {
+					"fontSize": "clamp(32px, 2rem + ((1vw - 3.2px) * 1.563), 52px)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "clamp(28px, 1.75rem + ((1vw - 3.2px) * 1.016), 41px)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "clamp(26px, 1.625rem + ((1vw - 3.2px) * 0.391), 31px)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "clamp(22px, 1.375rem + ((1vw - 3.2px) * 0.469), 28px)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "clamp(20px, 1.25rem + ((1vw - 3.2px) * 0.313), 24px)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "clamp(18px, 1.125rem + ((1vw - 3.2px) * 0.234), 21px)"
+				}
+			}
+    },
     "spacing": {
       "padding": {
         "top": "0px",
