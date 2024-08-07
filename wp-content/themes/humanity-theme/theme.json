@@ -305,7 +305,7 @@
 			"textDecoration": false,
 			"textTransform": false,
 			"dropCap": false,
-      "fluid": true
+      "fluid": false
     },
     "layout": {
       "contentSize": "1468px"

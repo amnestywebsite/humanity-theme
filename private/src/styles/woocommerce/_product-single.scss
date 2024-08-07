@@ -92,7 +92,7 @@
 }
 
 .single-product .related .post-title {
-  font-size: $base-font-size;
+  font-size: var(--wp--preset--font-size--regular);
 }
 
 .single-product .related .post-content {

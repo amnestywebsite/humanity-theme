@@ -16,7 +16,7 @@ p.has-small-font-size {
 
 .has-normal-font-size,
 p.has-regular-font-size {
-  font-size: $base-font-size;
+  font-size: var(--wp--preset--font-size--regular);
 }
 
 p.has-large-font-size {
