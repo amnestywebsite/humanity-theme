@@ -287,6 +287,15 @@
   },
   "styles": {
     "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--secondary)",
+          "lineHeight": "1.12"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--amnesty-grey-dark)"
+        }
+      },
       "h1": {
 				"typography": {
 					"fontSize": "clamp(32px, 2rem + ((1vw - 3.2px) * 1.563), 52px)"
