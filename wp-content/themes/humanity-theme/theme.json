@@ -163,9 +163,9 @@
               "fontWeight": 300,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/Lato-Light.woff2",
-                "file:./assets/fonts/Lato-Light.woff",
-                "file:./assets/fonts/Lato-Light.ttf"
+                "file:./assets/fonts/lato/Lato-Light.woff2",
+                "file:./assets/fonts/lato/Lato-Light.woff",
+                "file:./assets/fonts/lato/Lato-Light.ttf"
               ]
             },
             {
@@ -174,9 +174,9 @@
               "fontWeight": 300,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/Lato-LightItalic.woff2",
-                "file:./assets/fonts/Lato-LightItalic.woff",
-                "file:./assets/fonts/Lato-LightItalic.ttf"
+                "file:./assets/fonts/lato/Lato-LightItalic.woff2",
+                "file:./assets/fonts/lato/Lato-LightItalic.woff",
+                "file:./assets/fonts/lato/Lato-LightItalic.ttf"
               ]
             },
             {
@@ -185,9 +185,9 @@
               "fontWeight": 400,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/Lato-Regular.woff2",
-                "file:./assets/fonts/Lato-Regular.woff",
-                "file:./assets/fonts/Lato-Regular.ttf"
+                "file:./assets/fonts/lato/Lato-Regular.woff2",
+                "file:./assets/fonts/lato/Lato-Regular.woff",
+                "file:./assets/fonts/lato/Lato-Regular.ttf"
               ]
             },
             {
@@ -196,9 +196,9 @@
               "fontWeight": 400,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/Lato-Italic.woff2",
-                "file:./assets/fonts/Lato-Italic.woff",
-                "file:./assets/fonts/Lato-Italic.ttf"
+                "file:./assets/fonts/lato/Lato-Italic.woff2",
+                "file:./assets/fonts/lato/Lato-Italic.woff",
+                "file:./assets/fonts/lato/Lato-Italic.ttf"
               ]
             }
           ]
@@ -214,9 +214,9 @@
               "fontWeight": "normal",
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/PlayfairDisplay-Italic.woff2",
-                "file:./assets/fonts/PlayfairDisplay-Italic.woff",
-                "file:./assets/fonts/PlayfairDisplay-Italic.ttf"
+                "file:./assets/fonts/playfair/PlayfairDisplay-Italic.woff2",
+                "file:./assets/fonts/playfair/PlayfairDisplay-Italic.woff",
+                "file:./assets/fonts/playfair/PlayfairDisplay-Italic.ttf"
               ]
             },
             {
@@ -225,9 +225,9 @@
               "fontWeight": "bold",
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/PlayfairDisplay-Bold.woff2",
-                "file:./assets/fonts/PlayfairDisplay-Bold.woff",
-                "file:./assets/fonts/PlayfairDisplay-Bold.ttf"
+                "file:./assets/fonts/playfair/PlayfairDisplay-Bold.woff2",
+                "file:./assets/fonts/playfair/PlayfairDisplay-Bold.woff",
+                "file:./assets/fonts/playfair/PlayfairDisplay-Bold.ttf"
               ]
             }
           ]
