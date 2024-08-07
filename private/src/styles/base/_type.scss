@@ -2,22 +2,6 @@
  * Headings.
  */
 
-@include headings(1,  6) {
-  color: $heading-color;
-  line-height: 1.12;
-  font-family: var(--wp--preset--font-family--secondary);
-}
-
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-size: map-get($mobile-header-sizes, h#{$i});
-
-    @include mq(small) {
-      font-size: map-get($desktop-header-sizes, h#{$i});
-    }
-  }
-}
-
 p {
   overflow-wrap: break-word;
 }
