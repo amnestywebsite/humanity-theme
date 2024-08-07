@@ -1,12 +1,12 @@
 body.search main,
 body.page-template-searchpage main {
-  margin-top: spacing();
-  margin-bottom: spacing();
+  margin-top: var(--wp--preset--spacing--single);
+  margin-bottom: var(--wp--preset--spacing--single);
 }
 
 body.search .section,
 body.page-template-searchpage .search-results {
-  padding: spacing();
+  padding: var(--wp--preset--spacing--single);
 }
 
 body.search .post-pagination,
@@ -41,7 +41,7 @@ body.page-template-searchpage .section .page-search input {
 .search-container {
   display: flex;
   flex-direction: column;
-  margin-top: spacing();
+  margin-top: var(--wp--preset--spacing--single);
 }
 
 .search-results {

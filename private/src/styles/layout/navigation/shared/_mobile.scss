@@ -84,7 +84,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: spacing();
+  padding: var(--wp--preset--spacing--single);
   transition: background-color .2s ease-in-out;
   color: $color-black;
 

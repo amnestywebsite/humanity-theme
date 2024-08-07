@@ -20,7 +20,7 @@
 }
 
 .wp-block-amnesty-core-regions .listItems > li {
-  margin-top: spacing();
+  margin-top: var(--wp--preset--spacing--single);
   flex: 1 1 100%;
 
   @include mq(x-small) {
@@ -65,7 +65,7 @@
 }
 
 .wp-block-amnesty-core-regions .children {
-  margin-top: spacing();
+  margin-top: var(--wp--preset--spacing--single);
 
   @include mq(medium) {
     max-width: 90%;

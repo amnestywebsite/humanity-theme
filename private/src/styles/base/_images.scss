@@ -89,7 +89,7 @@ figure {
 }
 
 .single .image-metadataItem.image-caption {
-  padding: 4px spacing();
+  padding: 4px var(--wp--preset--spacing--single);
 
   @include mq(small) {
     padding: 4px;

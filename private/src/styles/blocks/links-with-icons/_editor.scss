@@ -27,7 +27,7 @@
 }
 
 .linksWithIcons-group.is-style-square .linksWithIcons > * {
-  margin-top: spacing() !important;
+  margin-top: var(--wp--preset--spacing--single) !important;
 }
 
 .linksWithIcons-bigtext {
