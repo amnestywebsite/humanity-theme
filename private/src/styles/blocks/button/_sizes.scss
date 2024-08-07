@@ -1,6 +1,6 @@
 .wp-block-file__button,
 .btn--small {
-  font-size: $milli-size;
+  font-size: var(--wp--preset--font-size--small);
   padding: spacing(quarter) spacing(half);
 }
 

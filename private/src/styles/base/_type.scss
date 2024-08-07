@@ -36,5 +36,5 @@ p.has-larger-font-size {
 }
 
 small {
-  font-size: $milli-size;
+  font-size: var(--wp--preset--font-size--small);
 }
