@@ -18,25 +18,6 @@ $base-font-size: var(--wp--preset--font-size--regular) !default;
 /// Sets the base line height.
 $base-line-height: 27px !default;
 
-/// Heading sizes
-$mobile-header-sizes: (
-  h1: 32px,
-  h2: 28px,
-  h3: 26px,
-  h4: 22px,
-  h5: 20px,
-  h6: 18px,
-);
-
-$desktop-header-sizes: (
-  h1: 52px,
-  h2: 41px,
-  h3: 31px,
-  h4: 28px,
-  h5: 24px,
-  h6: 21px,
-);
-
 //
 // Misc. variables.
 //
