@@ -25,15 +25,15 @@
 }
 
 .clear-filter {
-  margin-right: spacing(half);
-  padding: spacing(quarter);
+  margin-right: var(--wp--preset--spacing--half);
+  padding: var(--wp--preset--spacing--quarter);
   background-color: $color-grey-xx-light;
   font-size: 14px;
 
   &::after {
     content: "x";
     display: inline-block;
-    margin-left: spacing(quarter);
+    margin-left: var(--wp--preset--spacing--quarter);
   }
 
   &:hover,
@@ -45,10 +45,10 @@
 
 .rtl .clear-filter {
   margin-right: 0;
-  margin-left: spacing(half);
+  margin-left: var(--wp--preset--spacing--half);
 
   &::after {
-    margin-right: spacing(quarter);
+    margin-right: var(--wp--preset--spacing--quarter);
     margin-left: 0;
   }
 }

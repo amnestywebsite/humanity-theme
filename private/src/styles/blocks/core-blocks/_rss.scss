@@ -6,7 +6,7 @@
 .wp-block-rss__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: spacing();
+  margin-bottom: var(--wp--preset--spacing--single);
 }
 
 .wp-block-rss__item-title {

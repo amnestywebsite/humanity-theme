@@ -103,13 +103,13 @@
 
 .linksWithIcons-group.is-style-square .linksWithIcons {
   border: 1px solid;
-  margin: 0 0 spacing(); // margin-bottom is for IE11
-  padding-top: spacing();
-  padding-bottom: spacing();
+  margin: 0 0 var(--wp--preset--spacing--single); // margin-bottom is for IE11
+  padding-top: var(--wp--preset--spacing--single);
+  padding-bottom: var(--wp--preset--spacing--single);
   height: 100%;
 
   & > * + * {
-    margin-top: spacing(half);
+    margin-top: var(--wp--preset--spacing--half);
   }
 }
 
