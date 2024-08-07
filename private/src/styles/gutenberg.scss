@@ -146,7 +146,7 @@ p.has-small-font-size {
 }
 
 p.has-regular-font-size {
-  font-size: $base-font-size !important;
+  font-size: var(--wp--preset--font-size--regular) !important;
 }
 
 p.has-large-font-size {

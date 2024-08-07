@@ -9,7 +9,7 @@
 
 .filter-wrapper .filter-label {
   margin-bottom: 0;
-  font-size: $base-font-size;
+  font-size: var(--wp--preset--font-size--regular);
 }
 
 .filter-wrapper .active-filters {

@@ -13,7 +13,7 @@
 $enable-flexbox: true !default;
 
 /// Sets the base font size.
-$base-font-size:   18px !default;
+$base-font-size: var(--wp--preset--font-size--regular) !default;
 
 /// Sets the base line height.
 $base-line-height: 27px !default;

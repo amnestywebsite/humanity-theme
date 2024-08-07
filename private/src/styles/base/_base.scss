@@ -30,7 +30,7 @@ html.lang-open {
  *    render text using sub-pixel anti-aliasing.
  */
 body {
-  font-size: $base-font-size;
+  font-size: var(--wp--preset--font-size--regular);
   font-family: var(--wp--preset--font-family--primary);
   line-height: $line-height-ratio;
   color: $body-color;
