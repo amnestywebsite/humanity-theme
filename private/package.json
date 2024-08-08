@@ -6,17 +6,13 @@
   "license": "GPL-2.0-or-later",
   "packageManager": "yarn@4.3.1",
   "scripts": {
-    "build:dev": "webpack --mode development",
-    "build:prod": "webpack --mode production",
-    "build:static": "webpack --mode production --env static",
-    "build": "webpack --mode production",
-    "watch:dev": "webpack --mode development --watch",
-    "watch:prod": "webpack --mode production --watch",
-    "watch": "webpack --mode development --watch",
-    "lint:scripts": "eslint ./src/",
-    "lint:styles": "stylelint \"src/**/*.scss\"",
-    "lint": "yarn lint:scripts; yarn lint:styles",
-    "env": "yarn dlx @wordpress/env"
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -29,6 +25,7 @@
     "@babel/preset-react": "^7.16.7",
     "@wordpress/eslint-plugin": "^17.4.0",
     "@wordpress/i18n": "^4.2.4",
+    "@wordpress/scripts": "^28.5.0",
     "autoprefixer": "^10.4.0",
     "babel-loader": "^9.1.0",
     "copy-webpack-plugin": "^11.0.0",
