@@ -20,10 +20,6 @@
   a {
     text-decoration: none !important;
   }
-
-  @include mq(small) {
-    font-size: var(--wp--preset--font-size--heading-4);
-  }
 }
 
 .wp-block-rss__item-publish-date {
