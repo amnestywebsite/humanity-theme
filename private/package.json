@@ -10,9 +10,10 @@
     "format": "wp-scripts format",
     "lint:css": "wp-scripts lint-style",
     "lint:js": "wp-scripts lint-js",
+    "lint": "yarn lint:css && yarn lint:js",
     "start": "wp-scripts start",
-    "test:e2e": "wp-scripts test-e2e",
-    "test:unit": "wp-scripts test-unit-js"
+    "watch": "yarn start",
+    "env": "yarn dlx @wordpress/env"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -53,7 +54,7 @@
     "react": "^18",
     "react-dom": "^18",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.62.1",
+    "sass": "1.77.6",
     "sass-loader": "^13.2.2",
     "sass-mq": "^6.0.0",
     "style-loader": "^3.3.1",
