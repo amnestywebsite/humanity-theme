@@ -1,4 +1,4 @@
-const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
+const defaultConfig = require('@wordpress/scripts/config/webpack.config');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
@@ -50,10 +50,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader'
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
