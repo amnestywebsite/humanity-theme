@@ -12,21 +12,12 @@
 /// @type Bool
 $enable-flexbox: true !default;
 
-/// Sets the base font size.
-$base-font-size: var(--wp--preset--font-size--regular) !default;
-
 /// Sets the base line height.
 $base-line-height: 27px !default;
 
 //
 // Misc. variables.
 //
-
-/// Unitless line-height ratio (e.g 16px/24px = 1.5)
-/// @require $base-line-height
-/// @require $base-font-size
-/// @access private
-$line-height-ratio: math.div($base-line-height, $base-font-size);
 
 /// Spacing for vertical rhythm based off the line-height.
 /// @group Defaults

@@ -367,6 +367,10 @@
     "useRootPaddingAwareAlignments": false
   },
   "styles": {
+    "typography": {
+      "fontSize": "var(--wp--preset--font-size--regular)",
+      "lineHeight": "calc( 27px / 1.125 )"
+    },
     "elements": {
       "heading": {
         "typography": {
