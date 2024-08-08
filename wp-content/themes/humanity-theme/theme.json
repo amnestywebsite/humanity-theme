@@ -1,6 +1,6 @@
 {
-  "$schema": "https://schemas.wp.org/6.4/theme.json",
-  "version": 3,
+  "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+  "version": 2,
   "settings": {
     "appearanceTools": false,
     "color": {
