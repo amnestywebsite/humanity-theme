@@ -4,7 +4,7 @@
   @include icon-size(18px, 18px);
   @extend %icon-search-dark;
   display: inline-block;
-  margin-left: spacing(half);
+  margin-left: var(--wp--preset--spacing--half);
   content: "";
 
   @include mq(mobile-nav) {

@@ -207,8 +207,8 @@
 
 .linksWithIcons-group.is-style-square {
   display: grid;
-  column-gap: spacing();
-  row-gap: spacing();
+  column-gap: var(--wp--preset--spacing--single);
+  row-gap: var(--wp--preset--spacing--single);
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: 1fr;
 

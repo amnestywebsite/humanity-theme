@@ -27,7 +27,7 @@
   /// Media spacing amount.
   /// @group Defaults
   /// @type Number (Unit)
-  $media-spacing: spacing() !default;
+  $media-spacing: var(--wp--preset--spacing--single) !default;
 
   /// Media stack breakpoint.
   /// @group Defaults
