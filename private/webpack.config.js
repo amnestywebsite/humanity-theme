@@ -43,6 +43,13 @@ module.exports = {
     rules: [
       ...defaultConfig.module.rules,
       {
+        test: /App\.js$/,
+        loader: 'expose-loader',
+        options: {
+          exposes: 'App',
+        },
+      },
+      {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
