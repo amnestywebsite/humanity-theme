@@ -20,8 +20,8 @@
   top: 10px;
   right: 0;
   display: inline-block;
-  margin-top: spacing();
-  margin-right: spacing();
+  margin-top: var(--wp--preset--spacing--single);
+  margin-right: var(--wp--preset--spacing--single);
   appearance: none;
   background: none;
   border: none;
@@ -34,7 +34,7 @@
 
   .rtl & {
     margin-right: 0;
-    margin-left: spacing();
+    margin-left: var(--wp--preset--spacing--single);
   }
 }
 

@@ -1,14 +1,14 @@
 .article-meta {
   display: flex;
   flex-direction: column;
-  margin-bottom: spacing(half);
+  margin-bottom: var(--wp--preset--spacing--half);
 }
 
 .article-metaActions {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: spacing(half);
+  margin-bottom: var(--wp--preset--spacing--half);
 }
 
 .article-metaData {

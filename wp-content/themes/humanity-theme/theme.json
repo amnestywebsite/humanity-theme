@@ -1,5 +1,5 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "$schema": "https://schemas.wp.org/6.4/theme.json",
   "version": 3,
   "settings": {
     "appearanceTools": false,
@@ -148,7 +148,34 @@
     },
     "spacing": {
       "margin": false,
-      "padding": true
+      "padding": true,
+      "spacingSizes": [
+        {
+          "slug": "quarter",
+          "size": "0.375rem",
+          "name": "Quarter"
+        },
+        {
+          "slug": "half",
+          "size": "0.75rem",
+          "name": "Half"
+        },
+        {
+          "slug": "single",
+          "size": "1.5rem",
+          "name": "Single"
+        },
+        {
+          "slug": "double",
+          "size": "3rem",
+          "name": "Double"
+        },
+        {
+          "slug": "quad",
+          "size": "6rem",
+          "name": "Quad"
+        }
+      ]
 		},
     "typography": {
       "fontFamilies": [

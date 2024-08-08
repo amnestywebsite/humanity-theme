@@ -16,12 +16,12 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: spacing(half) 0;
+  padding: var(--wp--preset--spacing--half) 0;
   border-bottom: 1px solid $color-black;
 }
 
 .wp-block-amnesty-core-collapsable + .wp-block-amnesty-core-collapsable {
-  margin-top: spacing(half);
+  margin-top: var(--wp--preset--spacing--half);
 }
 
 .wp-block-amnesty-core-collapsable + .wp-block-amnesty-core-collapsable figcaption {
@@ -65,7 +65,7 @@
 }
 
 .wp-block-amnesty-core-collapsable-inner {
-  padding-top: spacing(half);
+  padding-top: var(--wp--preset--spacing--half);
   max-height: 2000px;
 }
 

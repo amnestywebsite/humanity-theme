@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: spacing();
+  gap: var(--wp--preset--spacing--single);
   width: 100%;
   padding: 0 !important;
 
@@ -31,15 +31,15 @@
 }
 
 .taxonomyArchive-filters + * {
-  margin-top: spacing();
+  margin-top: var(--wp--preset--spacing--single);
 
   @include mq(medium) {
     margin-top: 0;
-    margin-left: spacing();
+    margin-left: var(--wp--preset--spacing--single);
 
     .rtl & {
       margin-left: 0;
-      margin-right: spacing();
+      margin-right: var(--wp--preset--spacing--single);
     }
   }
 }

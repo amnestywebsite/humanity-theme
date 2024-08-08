@@ -1,24 +1,24 @@
 .article-container {
-  margin-bottom: spacing();
+  margin-bottom: var(--wp--preset--spacing--single);
 }
 
 .article-content {
-  margin: spacing() 0;
+  margin: var(--wp--preset--spacing--single) 0;
 }
 
 .article-footer .article-meta {
-  margin-bottom: spacing();
+  margin-bottom: var(--wp--preset--spacing--single);
 }
 
 .article-footer .article-metaActions {
-  margin-top: spacing(half);
+  margin-top: var(--wp--preset--spacing--half);
   margin-bottom: 0;
 }
 
 .topics-container ul {
   display: flex;
   flex-wrap: wrap;
-  gap: spacing(half);
+  gap: var(--wp--preset--spacing--half);
   margin: 0;
   list-style: none;
 }

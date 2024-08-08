@@ -3,7 +3,7 @@
   flex-direction: column;
   align-content: flex-start;
   align-items: stretch;
-  gap: spacing(half);
+  gap: var(--wp--preset--spacing--half);
 
   @include mq(x-small) {
     flex-direction: row;

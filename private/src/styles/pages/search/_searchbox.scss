@@ -2,7 +2,7 @@
 @import "./additional-filters";
 
 .horizontal-search {
-  margin-bottom: spacing();
+  margin-bottom: var(--wp--preset--spacing--single);
   display: flex;
   flex-direction: column;
 }
@@ -12,11 +12,11 @@
 }
 
 .horizontal-search .search-button {
-  padding: spacing(half);
+  padding: var(--wp--preset--spacing--half);
   line-height: 1.15;
 
   @include mq(medium) {
-    padding: spacing(half) spacing();
+    padding: var(--wp--preset--spacing--half) var(--wp--preset--spacing--single);
   }
 }
 
@@ -90,7 +90,7 @@
 
 .horizontal-search .section.postlist-categoriesContainer {
   width: 100%;
-  padding: 0 spacing();
+  padding: 0 var(--wp--preset--spacing--single);
   margin: 0;
 }
 

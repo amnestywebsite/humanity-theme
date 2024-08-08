@@ -12,7 +12,7 @@
 
 .article-container {
   @include flexy-wrapper;
-  margin-top: spacing();
+  margin-top: var(--wp--preset--spacing--single);
 
   @include mq(large) {
     flex-wrap: nowrap;
