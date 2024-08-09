@@ -18,7 +18,6 @@
 
 // Mixins
 @import "utils/mixins/clearfix";
-@import "utils/mixins/font-size";
 @import "utils/mixins/headings";
 @import "utils/mixins/cols";
 @import "utils/mixins/icon";
@@ -138,22 +137,6 @@
   strong {
     font-family: var(--wp--preset--font-family--secondary);
   }
-}
-
-p.has-small-font-size {
-  font-size: .9rem !important;
-}
-
-p.has-regular-font-size {
-  font-size: $base-font-size !important;
-}
-
-p.has-large-font-size {
-  font-size: 1.5rem !important;
-}
-
-p.has-larger-font-size {
-  font-size: 2rem !important;
 }
 
 .form-row {

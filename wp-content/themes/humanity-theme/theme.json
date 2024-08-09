@@ -1,6 +1,6 @@
 {
-  "$schema": "https://schemas.wp.org/6.4/theme.json",
-  "version": 3,
+  "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+  "version": 2,
   "settings": {
     "appearanceTools": false,
     "color": {
@@ -260,14 +260,106 @@
           ]
         }
       ],
-      "fontSizes": [],
+      "fontSizes": [
+        {
+          "fluid": false,
+          "name": "Small",
+          "size": ".9rem",
+          "slug": "small"
+        },
+        {
+          "fluid": false,
+          "name": "Regular",
+          "size": "1.125rem",
+          "slug": "regular"
+        },
+        {
+          "fluid": false,
+          "name": "Large",
+          "size": "1.5rem",
+          "slug": "large"
+        },
+        {
+          "fluid": false,
+          "name": "Larger",
+          "size": "2rem",
+          "slug": "larger"
+        },
+        {
+          "fluid": false,
+          "name": "Extra Large",
+          "size": "2.25em",
+          "slug": "x-large"
+        },
+        {
+          "fluid": false,
+          "name": "Huge",
+          "size": "2.5rem",
+          "slug": "huge"
+        },
+        {
+          "fluid": {
+            "min": "32px",
+            "max": "52px"
+          },
+          "name": "Heading 1",
+          "size": "52px",
+          "slug": "heading-1"
+        },
+        {
+          "fluid": {
+            "min": "28px",
+            "max": "41px"
+          },
+          "name": "Heading 2",
+          "size": "41px",
+          "slug": "heading-2"
+        },
+        {
+          "fluid": {
+            "min": "26px",
+            "max": "31px"
+          },
+          "name": "Heading 3",
+          "size": "31px",
+          "slug": "heading-3"
+        },
+        {
+          "fluid": {
+            "min": "22px",
+            "max": "28px"
+          },
+          "name": "Heading 4",
+          "size": "28px",
+          "slug": "heading-4"
+        },
+        {
+          "fluid": {
+            "min": "20px",
+            "max": "24px"
+          },
+          "name": "Heading 5",
+          "size": "24px",
+          "slug": "heading-5"
+        },
+        {
+          "fluid": {
+            "min": "18px",
+            "max": "21px"
+          },
+          "name": "Heading 6",
+          "size": "21px",
+          "slug": "heading-6"
+        }
+      ],
       "fontStyle": false,
-			"fontWeight": false,
-			"letterSpacing": false,
-			"lineHeight": false,
-			"textDecoration": false,
-			"textTransform": false,
-			"dropCap": false
+      "fontWeight": false,
+      "letterSpacing": false,
+      "lineHeight": false,
+      "textDecoration": false,
+      "textTransform": false,
+      "dropCap": false,
+      "fluid": false
     },
     "layout": {
       "contentSize": "1468px"
@@ -275,6 +367,51 @@
     "useRootPaddingAwareAlignments": false
   },
   "styles": {
+    "typography": {
+      "fontSize": "var(--wp--preset--font-size--regular)",
+      "lineHeight": "calc( 27px / 1.125 )"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--secondary)",
+          "lineHeight": "1.12"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--amnesty-grey-dark)"
+        }
+      },
+      "h1": {
+        "typography": {
+        "fontSize": "var(--wp--preset--font-size--heading-1)"
+        }
+      },
+      "h2": {
+        "typography": {
+        "fontSize": "var(--wp--preset--font-size--heading-2)"
+        }
+      },
+      "h3": {
+        "typography": {
+        "fontSize": "var(--wp--preset--font-size--heading-3)"
+        }
+      },
+      "h4": {
+        "typography": {
+        "fontSize": "var(--wp--preset--font-size--heading-4)"
+        }
+      },
+      "h5": {
+        "typography": {
+        "fontSize": "var(--wp--preset--font-size--heading-5)"
+        }
+      },
+      "h6": {
+        "typography": {
+        "fontSize": "var(--wp--preset--font-size--heading-6)"
+        }
+      }
+    },
     "spacing": {
       "padding": {
         "top": "0px",

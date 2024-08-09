@@ -1,5 +1,5 @@
 .page-template-my-account .woocommerce-Address-title a {
-  line-height: map-get($desktop-header-sizes, "h3");
+  line-height: var(--wp--preset--font-size--heading-3);
 }
 
 .page-template-my-account .linkList li {

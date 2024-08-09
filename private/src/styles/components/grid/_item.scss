@@ -75,7 +75,7 @@
   margin-bottom: 0;
   padding: 2px 12px;
   max-width: 100%;
-  font-size: map-get($desktop-header-sizes, "h5");
+  font-size: var(--wp--preset--font-size--heading-5);
   text-decoration: none;
 }
 

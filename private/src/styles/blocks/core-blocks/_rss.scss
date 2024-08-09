@@ -12,17 +12,13 @@
 .wp-block-rss__item-title {
   margin-bottom: 12px;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: map-get($mobile-header-sizes, h4);
+  font-size: var(--wp--preset--font-size--heading-4);
   font-weight: bold;
   line-height: 1.12;
   color: $color-black;
 
   a {
     text-decoration: none !important;
-  }
-
-  @include mq(small) {
-    font-size: map-get($desktop-header-sizes, h4);
   }
 }
 
