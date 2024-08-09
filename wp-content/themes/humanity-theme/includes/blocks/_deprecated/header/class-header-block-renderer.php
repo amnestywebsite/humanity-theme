@@ -20,6 +20,11 @@ if ( ! function_exists( '\Amnesty\Blocks\amnesty_render_header_block' ) ) {
 	 * @return string
 	 */
 	function amnesty_render_header_block( array $attributes = [], string $content = '' ): string {
+		// if imageID is not set, return an empty string
+		if ( ! isset( $attributes['imageID'] ) ) {
+			return '';
+		}
+
 		$renderer = new Header_Block_Renderer( $attributes, $content );
 		return $renderer->render();
 	}
@@ -183,11 +188,6 @@ class Header_Block_Renderer {
 			]
 		);
 
-		// Only render header if there is an image
-		if ( 0 === $this->attributes['imageID'] ) {
-			return;
-		}
-
 		printf(
 			'<div id="banner-%s" class="%s" role="region">',
 			esc_attr( $this->id ),
@@ -227,11 +227,6 @@ class Header_Block_Renderer {
 
 		if ( $this->content ) {
 			$classes .= ' has-donation-block';
-		}
-
-		// Only render header if there is an image
-		if ( 0 === $this->attributes['imageID'] ) {
-			return;
 		}
 
 		printf( '<div class="container"><div class="%s">', esc_attr( $classes ) );
