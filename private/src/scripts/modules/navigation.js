@@ -6,7 +6,7 @@ let subMenus = [];
 // if menu has lost focus inadvertently, restore it
 const setupFocusTrap = () => {
   const lastMenuItem = pageHeader.querySelector('.mobile-menu > ul > li:last-of-type');
-  if ( lastMenuItem ) {
+  if (lastMenuItem) {
     const menuItemClassList = `.${Array.from(lastMenuItem.classList).join('.')}`;
     let previousFocus;
 

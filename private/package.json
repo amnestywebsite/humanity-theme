@@ -16,16 +16,24 @@
     "env": "yarn dlx @wordpress/env"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.3",
     "@babel/plugin-proposal-pipeline-operator": "^7.16.0",
+    "@wordpress/i18n": "^5.5.0",
     "@wordpress/scripts": "^28.5.0",
-    "copy-webpack-plugin": "^12.0.2",
+    "autoprefixer": "^10.4.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "expose-loader": "^5.0.0",
     "mini-css-extract-plugin": "^2.9.0",
     "postcss-pxtorem": "^6.1.0",
     "postcss-reporter": "^7.1.0",
-    "rtlcss-webpack-plugin": "^4.0.7",
-    "sass": "1.77.6",
-    "sass-loader": "^16.0.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
     "sass-mq": "^6.0.0"
   },
   "dependencies": {
