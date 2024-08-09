@@ -1,12 +1,34 @@
 const defaultConfig = require('@wordpress/scripts/config/webpack.config');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const RTLCssPlugin = require('rtlcss-webpack-plugin');
 const path = require('path');
 
 // Project paths.
 const SRC_PATH = path.resolve(__dirname, './src/');
 const OUT_PATH = path.resolve(__dirname, '../wp-content/themes/humanity-theme/assets/');
+
+// Extend the baseConfig module rules to disable url handling in css-loader
+defaultConfig.module.rules = defaultConfig.module.rules.map((rule) => {
+  if (Array.isArray(rule.use)) {
+    rule.use = rule.use.map((loaderConfig) => {
+      if (
+        typeof loaderConfig === 'object' &&
+        loaderConfig.loader &&
+        loaderConfig.loader.includes('node_modules/css-loader')
+      ) {
+        return {
+          ...loaderConfig,
+          options: {
+            ...loaderConfig.options,
+            url: false, // Disable URL handling in css-loader
+          },
+        };
+      }
+      return loaderConfig;
+    });
+  }
+  return rule;
+});
 
 module.exports = {
   ...defaultConfig,
@@ -23,10 +45,10 @@ module.exports = {
   plugins: [
     ...defaultConfig.plugins
       .map((plugin) => {
-        if (plugin instanceof CopyWebpackPlugin) {
+        if (plugin.constructor.name === 'CopyPlugin') {
           return new CopyWebpackPlugin({
             patterns: [
-              ...plugin.options.patterns,
+              ...plugin.patterns,
               {
                 from: 'static/**/*',
                 context: SRC_PATH,
@@ -37,15 +59,15 @@ module.exports = {
             ],
           });
         }
-        if (plugin instanceof MiniCssExtractPlugin) {
-          // Change the CSS output path.
+        if (plugin.constructor.name === 'MiniCssExtractPlugin') {
+          // Output the CSS into humanity-theme/assets/styles/
           return new MiniCssExtractPlugin({
             filename: '../styles/[name].css',
             chunkFilename: '[id].css',
           });
         }
-        // Remove RTL stylesheet generation.
-        if (plugin instanceof RTLCssPlugin) {
+        // Disable RTL stylesheet generation.
+        if (plugin.constructor.name === 'RtlCssPlugin') {
           return false;
         }
         return plugin;
