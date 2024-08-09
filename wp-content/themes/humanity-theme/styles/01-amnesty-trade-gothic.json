@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "title": "Amnesty Trade Gothic",
+    "settings": {
+      "typography": {
+        "fontFamilies": [
+          {
+            "fontFamily": "\"Amnesty Trade Gothic\", sans-serif",
+            "name": "Amnesty Trade Gothic",
+            "slug": "primary",
+            "fontFace": [
+              {
+                "fontFamily": "Amnesty Trade Gothic",
+                "fontStyle": "normal",
+                "fontWeight": 300,
+                "fontDisplay": "swap",
+                "src": [
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Light.eot",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Light.woff2",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Light.woff",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Light.ttf"
+                ]
+              },
+              {
+                "fontFamily": "Amnesty Trade Gothic",
+                "fontStyle": "oblique",
+                "fontWeight": 300,
+                "fontDisplay": "swap",
+                "src": [
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-LightObl.eot",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-LightObl.woff2",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-LightObl.woff",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-LightObl.ttf"
+                ]
+              },
+              {
+                "fontFamily": "Amnesty Trade Gothic",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "fontDisplay": "swap",
+                "src": [
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Roman.eot",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Roman.woff2",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Roman.woff",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Roman.ttf"
+                ]
+              },
+              {
+                "fontFamily": "Amnesty Trade Gothic",
+                "fontStyle": "oblique",
+                "fontWeight": "normal",
+                "fontDisplay": "swap",
+                "src": [
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Oblique.eot",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Oblique.woff2",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Oblique.woff",
+                  "file:./assets/fonts/trade-gothic/TradeGothicLTW05-Oblique.ttf"
+                ]
+              }
+            ]
+          },
+          {
+            "fontFamily": "\"Amnesty Trade Gothic Condensed\", sans-serif",
+            "name": "Amnesty Trade Gothic Condensed",
+            "slug": "secondary",
+            "fontFace": [
+              {
+                "fontFamily": "Amnesty Trade Gothic Condensed",
+                "fontStyle": "oblique",
+                "fontWeight": "normal",
+                "fontDisplay": "swap",
+                "src": [
+                  "file:./assets/fonts/trade-gothic-condensed/TradeGothicLTW05-CnNo.18Obl.eot",
+                  "file:./assets/fonts/trade-gothic-condensed/TradeGothicLTW05-CnNo.18Obl.woff2",
+                  "file:./assets/fonts/trade-gothic-condensed/TradeGothicLTW05-CnNo.18Obl.woff",
+                  "file:./assets/fonts/trade-gothic-condensed/TradeGothicLTW05-CnNo.18Obl.ttf"
+                ]
+              },
+              {
+                "fontFamily": "Amnesty Trade Gothic Condensed",
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "fontDisplay": "swap",
+                "src": [
+                  "file:./assets/fonts/trade-gothic-condensed/TradeGothicLTW05-BdCnNo.20.eot",
+                  "file:./assets/fonts/trade-gothic-condensed/TradeGothicLTW05-BdCnNo.20.woff2",
+                  "file:./assets/fonts/trade-gothic-condensed/TradeGothicLTW05-BdCnNo.20.woff",
+                  "file:./assets/fonts/trade-gothic-condensed/TradeGothicLTW05-BdCnNo.20.ttf"
+                ]
+              }
+            ]
+          }
+        ]
+    }
+  }
+}
+  
