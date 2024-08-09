@@ -20,21 +20,28 @@ module.exports = {
     path: path.resolve(__dirname, `${OUT_PATH}/scripts`),
   },
   plugins: [
-    ...defaultConfig.plugins,
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          context: path.resolve(__dirname, 'src'),
-          from: 'static/**/*',
-          to({ absoluteFilename }) {
-            return absoluteFilename.replace(`${SRC_PATH}/static`, OUT_PATH);
-          },
-        },
-      ],
-    }),
-    new MiniCssExtractPlugin({
-      filename: '../styles/[name].css',
-      chunkFilename: '[id].css',
+    ...defaultConfig.plugins.map((plugin) => {
+      if (plugin instanceof CopyWebpackPlugin) {
+        return new CopyWebpackPlugin({
+          patterns: [
+            ...plugin.options.patterns,
+            {
+              from: 'static/**/*',
+              context: path.resolve(__dirname, 'src'),
+              to({ absoluteFilename }) {
+                return absoluteFilename.replace(`${SRC_PATH}/static`, OUT_PATH);
+              },
+            },
+          ],
+        });
+      }
+      if (plugin instanceof MiniCssExtractPlugin) {
+        return new MiniCssExtractPlugin({
+          filename: '../styles/[name].css',
+          chunkFilename: '[id].css',
+        });
+      }
+      return plugin;
     }),
   ],
   module: {
@@ -47,10 +54,6 @@ module.exports = {
         options: {
           exposes: 'App',
         },
-      },
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
