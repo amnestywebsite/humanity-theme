@@ -1,0 +1,116 @@
+.wp-block-quote::before,
+.wp-block-quote.wp-block-quote.has-text-align-center::before {
+  content: open-quote;
+  quotes: '“' '”' "‘" "’";
+}
+
+.wp-block-quote cite::after,
+.wp-block-quote.has-text-align-center cite::after {
+  content: "";
+  display: block;
+  margin: 8px auto 0;
+  max-width: 80px;
+  height: 8px;
+}
+
+.wp-block-quote p,
+.wp-block-quote cite {
+  font-family: var(--wp--preset--font-family--secondary);
+}
+
+.wp-block-quote.has-small-font-size p,
+.wp-block-quote.has-small-font-size cite {
+  font-size: 1.75rem !important;
+}
+
+.wp-block-quote.has-medium-font-size p,
+.wp-block-quote.has-medium-font-size cite {
+  font-size: 2rem !important;
+}
+
+.wp-block-quote.has-large-font-size p,
+.wp-block-quote.has-large-font-size cite {
+  font-size: 2.25rem !important;
+}
+
+.wp-block-quote cite {
+  text-transform: none !important;
+}
+
+.wp-block-quote cite::after,
+.wp-block-quote.has-black-color cite::after,
+.wp-block-quote.has-text-align-center.has-black-color cite::after {
+  background-color: var(--wp--preset--color--black);
+}
+
+.wp-block-quote.has-white-color cite::after,
+.wp-block-quote.has-text-align-center.has-white-color cite::after {
+  background-color: var(--wp--preset--color--white);
+}
+
+.wp-block-quote.has-amnesty-grey-brand-color cite::after,
+.wp-block-quote.has-text-align-center.has-amnesty-grey-brand-color cite::after {
+  background-color: var(--wp--preset--color--amnesty-grey-brand);
+}
+
+.wp-block-quote.has-text-align-left {
+  border-left: 8px solid var(--wp--preset--color--black);
+  padding-left: 27px;
+
+  cite {
+    margin-left: 15px;
+  }
+}
+
+.wp-block-quote.has-text-align-left.has-white-color {
+  border-left-color: var(--wp--preset--color--white);
+}
+
+.wp-block-quote.has-text-align-left.has-amnesty-grey-brand-color {
+  border-left-color: var(--wp--preset--color--amnesty-grey-brand);
+}
+
+.wp-block-quote.has-text-align-right {
+  border-right: 8px solid var(--wp--preset--color--black);
+  padding-right: 27px;
+
+  cite {
+    margin-right: 15px;
+  }
+}
+
+.wp-block-quote.has-text-align-right.has-white-color {
+  border-right-color: var(--wp--preset--color--white);
+}
+
+.wp-block-quote.has-text-align-right.has-amnesty-grey-brand-color {
+  border-right-color: var(--wp--preset--color--amnesty-grey-brand);
+}
+
+.wp-block-quote.has-text-align-left p::before,
+.wp-block-quote.has-text-align-right p::before {
+  content: open-quote;
+  quotes: '“' '”';
+}
+
+.wp-block-quote.has-text-align-left p::after,
+.wp-block-quote.has-text-align-right p::after {
+  content: close-quote;
+  quotes: '“' '”';
+}
+
+.wp-block-quote,
+.wp-block-quote.is-style-plain {
+  border: none;
+}
+
+.wp-block-quote.is-style-plain cite::after,
+.wp-block-quote.has-text-align-left cite::after,
+.wp-block-quote.has-text-align-right cite::after {
+  content: none;
+}
+
+.wp-block-quote.wp-block-quote.has-text-align-left::before,
+.wp-block-quote.wp-block-quote.has-text-align-right::before {
+  content: none;
+}
