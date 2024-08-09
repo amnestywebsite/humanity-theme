@@ -7,7 +7,7 @@
 .page-footer a {
   display: inline-block;
   color: $color-white;
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
   font-family: sans-serif;
 
   &.btn--white {
@@ -24,7 +24,7 @@
 .page-footerSections > li > a:first-of-type {
   margin-bottom: 24px;
   padding-bottom: 12px;
-  font-size: 21px;
+  font-size: var(--wp--preset--font-size--heading-6);
   text-transform: uppercase;
   color: $color-grey-md-light;
   font-family: var(--wp--preset--font-family--secondary);
@@ -104,7 +104,7 @@
 }
 
 .page-footerSection p {
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
   line-height: 1.5;
 
   &:not(:last-child) {
@@ -146,7 +146,7 @@
   padding: 4px 8px;
   color: $color-white;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -196,7 +196,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
   line-height: 1.5;
   font-family: sans-serif;
 }
@@ -228,7 +228,7 @@
 }
 
 .page-footerCopyright {
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
   line-height: 1.5;
   color: rgba($color-white, .7);
   padding-top: 8px;
@@ -249,7 +249,7 @@
 }
 
 .page-footerBottomTitle {
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   text-transform: uppercase;
   color: $color-white;
   margin-bottom: 12px;

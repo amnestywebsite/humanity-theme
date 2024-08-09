@@ -47,7 +47,7 @@
   padding: 8px;
   background-color: $color-grey-x-light;
   color: $color-black-mid-dark;
-  font-size: 24px;
+  font-size: var(--wp--preset--font-size--large);
   text-transform: uppercase;
 }
 
@@ -56,7 +56,7 @@
   font-weight: normal;
   font-family: var(--wp--preset--font-family--primary);
   padding: 10px;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   background-color: $color-grey-x-light;
   color: $color-black-mid-dark;
   margin-top: auto;

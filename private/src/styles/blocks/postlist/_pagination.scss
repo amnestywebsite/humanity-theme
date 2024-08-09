@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
-  font-size: 24px;
+  font-size: var(--wp--preset--font-size--heading-5);
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   line-height: 1.25;

@@ -22,7 +22,7 @@
   content: "\00b7 \00b7 \00b7";
   padding-left: 2em;
   color: $color-black-light;
-  font-size: 20px;
+  font-size: var(--wp--preset--font-size--regular);
   font-family: serif;
   letter-spacing: 2em;
 }

@@ -53,13 +53,13 @@
   padding: 8px;
   background-color: $color-black;
   color: $color-white;
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   text-transform: uppercase;
 }
 
 .actionBlock-content {
   padding: 16px;
-  font-size: 24px;
+  font-size: var(--wp--preset--font-size--heading-5);
 }
 
 .actionBlock-content p {

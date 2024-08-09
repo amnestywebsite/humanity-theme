@@ -48,7 +48,7 @@
   padding: 8px 20px;
   color: $color-white;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -68,7 +68,7 @@ button.language-selectorClose {
   align-items: center;
   margin-left: 24px;
   padding: 11px;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   order: 0;
 
   @include mq(xx-small) {

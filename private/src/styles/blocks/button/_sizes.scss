@@ -5,7 +5,7 @@
 }
 
 .btn--large {
-  font-size: 30px;
+  font-size: var(--wp--preset--font-size--heading-6) !important;
   padding: 11px 20px;
   line-height: 1;
 }

@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   background-color: rgba($color-black, .55);
   color: $color-white;
   word-break: keep-all;
