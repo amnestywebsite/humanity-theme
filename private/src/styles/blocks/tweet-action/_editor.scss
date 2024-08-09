@@ -8,7 +8,7 @@
   max-width: calc(100% - 54px);
   background: transparent;
   font-family: var(--wp--preset--font-family--secondary) !important;
-  font-size: 28px !important;
+  font-size: var(--wp--preset--font-size--heading-4) !important;
   font-weight: bold;
   line-height: 1.4 !important;
   text-transform: uppercase;
@@ -19,7 +19,7 @@
   margin-bottom: 16px !important;
   padding: 10px !important;
   font-family: var(--wp--preset--font-family--primary) !important;
-  font-size: 21px !important;
+  font-size: var(--wp--preset--font-size--heading-6) !important;
 }
 
 .tweetAction-button {

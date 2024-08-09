@@ -33,17 +33,12 @@
   max-width: 840px;
   margin: 0;
   padding: 0 16px;
-  font-size: 36px;
+  font-size: var(--wp--preset--font-size--heading-1);
   line-height: 1.2;
   text-transform: uppercase;
 
   @include mq(xx-small) {
-    font-size: 48px;
     padding: 0 20px;
-  }
-
-  @include mq(small) {
-    font-size: 72px;
   }
 }
 
@@ -59,7 +54,7 @@ p.page-heroContent {
   margin-bottom: 0;
   padding: 10px 16px;
   max-width: 460px;
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   background-color: rgba($color-black, .45);
 
   @include mq(xx-small) {
@@ -78,7 +73,7 @@ p.page-heroContent {
   padding: 16px;
 
   .btn {
-    font-size: 24px;
+    font-size: var(--wp--preset--font-size--heading-5);
     padding: 10px 14px;
 
     @include mq(xx-small) {

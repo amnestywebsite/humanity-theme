@@ -10,7 +10,7 @@
   margin-bottom: 0;
   width: 100%;
   float: none;
-  font-size: 28px;
+  font-size: var(--wp--preset--font-size--heading-4);
   line-height: 1.2;
 
   @include mq(xm-small) {
@@ -23,7 +23,7 @@
   margin-top: 12px;
   margin-bottom: 8px;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 14px;
+  font-size: var(--wp--preset--font-size--x-small);
   font-weight: bold;
   text-align: left;
   letter-spacing: .3px;

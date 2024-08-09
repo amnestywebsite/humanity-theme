@@ -28,7 +28,7 @@
   margin-right: var(--wp--preset--spacing--half);
   padding: var(--wp--preset--spacing--quarter);
   background-color: $color-grey-xx-light;
-  font-size: 14px;
+  font-size: var(--wp--preset--font-size--x-small);
 
   &::after {
     content: "x";

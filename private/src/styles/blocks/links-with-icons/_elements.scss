@@ -32,13 +32,9 @@
 }
 
 .linksWithIcons-title {
-  font-size: 26px;
+  font-size: var(--wp--preset--font-size--heading-3);
   font-weight: bold;
   line-height: 1;
-
-  @include mq(x-small) {
-    font-size: 31px;
-  }
 
   .is-style-square & {
     font-size: var(--wp--preset--font-size--heading-6);

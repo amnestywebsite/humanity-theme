@@ -26,14 +26,14 @@
   margin-bottom: 10px;
   order: 1;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 14px;
+  font-size: var(--wp--preset--font-size--small);
   color: $color-black;
 }
 
 .wp-block-rss__item-excerpt {
   order: 3;
   margin-top: 6px;
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   line-height: 1;
   text-align: justify;
   color: $color-black;
@@ -41,7 +41,7 @@
 
 .wp-block-rss__item-author {
   order: 4;
-  font-size: 14px;
+  font-size: var(--wp--preset--font-size--small);
   line-height: 17px;
   color: $color-grey-md-light;
   padding-top: 16px;

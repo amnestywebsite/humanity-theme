@@ -4,7 +4,7 @@
   padding: 12px;
   height: auto !important;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   font-weight: normal;
   line-height: normal;
   text-transform: uppercase;
@@ -31,7 +31,7 @@
 
 .element-select .select2-results__option {
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 14px;
+  font-size: var(--wp--preset--font-size--x-small);
   font-weight: normal;
   text-transform: uppercase;
   color: $color-grey-base;

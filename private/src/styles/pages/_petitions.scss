@@ -1,10 +1,10 @@
 .page-template-page-petitions .petition-index-title {
-  font-size: 28px;
+  font-size: var(--wp--preset--font-size--heading-4);
   margin-bottom: 24px;
 }
 
 .page-template-page-petitions .petition-index-btn {
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   position: absolute;
   bottom: 12px;
   width: calc(100% - 30px);
@@ -12,7 +12,7 @@
 
 .page-template-page-petitions .petition-index-excerpt p {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
 }
 
 .page-template-page-petitions .petition-index-excerpt {
