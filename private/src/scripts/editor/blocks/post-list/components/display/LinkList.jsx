@@ -1,11 +1,13 @@
 const LinkItem = (props) => {
-  const backgroundImage = props.featured_image
-    ? { backgroundImage: `url(${props.featured_image})` }
-    : '';
+  const itemStyles = {};
+
+  if (props.featured_image) {
+    itemStyles.backgroundImage = `url('${props.featured_image}')`;
+  }
 
   return (
     <li>
-      <article className="linkList-item" style={{ ...backgroundImage }}>
+      <article className="linkList-item" style={{ itemStyles }}>
         {props.tag && (
           <span className="linkList-itemMeta">
             <a href="#">{props.tag.title}</a>

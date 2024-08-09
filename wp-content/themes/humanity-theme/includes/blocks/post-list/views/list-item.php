@@ -12,7 +12,7 @@ $aria_label = sprintf( __( 'Article: %s', 'amnesty' ), format_for_aria_label( ge
 $background_image = '';
 
 if ( $data['featured_image'] ) {
-	$background_image = sprintf( 'background-image: url(%s);', $data['featured_image'] );
+	$background_image = sprintf( 'background-image: url("%s");', esc_url( $data['featured_image'] ) );
 }
 
 ?>
