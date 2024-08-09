@@ -80,21 +80,6 @@
           "name": "Twitter Blue"
         },
         {
-          "slug": "x-dark",
-          "color": "#525252",
-          "name": "Dark"
-        },
-        {
-          "slug": "mid-dark",
-          "color": "#363636",
-          "name": "Darker"
-        },
-        {
-          "slug": "dark-light",
-          "color": "#32373c",
-          "name": "Darkest"
-        },
-        {
           "slug": "orange-base",
           "color": "#ffa500",
           "name": "Orange"
