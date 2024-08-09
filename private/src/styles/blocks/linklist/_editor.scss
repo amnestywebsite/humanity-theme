@@ -26,6 +26,10 @@
 .linkList-itemTitle .components-button,
 .linkList-itemDate .components-button {
   background: $color-white;
+
+  svg {
+    fill: unset;
+  }
 }
 
 .linkList-itemDate {
