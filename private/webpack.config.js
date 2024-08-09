@@ -1,6 +1,7 @@
 const defaultConfig = require('@wordpress/scripts/config/webpack.config');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const RTLCssPlugin = require('rtlcss-webpack-plugin');
 const path = require('path');
 
 // Project paths.
@@ -20,29 +21,36 @@ module.exports = {
     path: path.resolve(__dirname, `${OUT_PATH}/scripts`),
   },
   plugins: [
-    ...defaultConfig.plugins.map((plugin) => {
-      if (plugin instanceof CopyWebpackPlugin) {
-        return new CopyWebpackPlugin({
-          patterns: [
-            ...plugin.options.patterns,
-            {
-              from: 'static/**/*',
-              context: path.resolve(__dirname, 'src'),
-              to({ absoluteFilename }) {
-                return absoluteFilename.replace(`${SRC_PATH}/static`, OUT_PATH);
+    ...defaultConfig.plugins
+      .map((plugin) => {
+        if (plugin instanceof CopyWebpackPlugin) {
+          return new CopyWebpackPlugin({
+            patterns: [
+              ...plugin.options.patterns,
+              {
+                from: 'static/**/*',
+                context: path.resolve(__dirname, 'src'),
+                to({ absoluteFilename }) {
+                  return absoluteFilename.replace(`${SRC_PATH}/static`, OUT_PATH);
+                },
               },
-            },
-          ],
-        });
-      }
-      if (plugin instanceof MiniCssExtractPlugin) {
-        return new MiniCssExtractPlugin({
-          filename: '../styles/[name].css',
-          chunkFilename: '[id].css',
-        });
-      }
-      return plugin;
-    }),
+            ],
+          });
+        }
+        if (plugin instanceof MiniCssExtractPlugin) {
+          // Change the CSS output path.
+          return new MiniCssExtractPlugin({
+            filename: '../styles/[name].css',
+            chunkFilename: '[id].css',
+          });
+        }
+        // Remove RTL stylesheet generation.
+        if (plugin instanceof RTLCssPlugin) {
+          return false;
+        }
+        return plugin;
+      })
+      .filter(Boolean),
   ],
   module: {
     ...defaultConfig.module,
