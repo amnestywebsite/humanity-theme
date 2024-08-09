@@ -12,7 +12,7 @@
   border-radius: $base-border-radius;
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   text-transform: uppercase;
 
   &:hover,

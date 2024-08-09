@@ -34,7 +34,7 @@
   display: table;
   padding: 10px 16px;
   max-width: 460px;
-  font-size: 1.5rem;
+  font-size: var(--wp--preset--font-size--large);
 
   @include mq(xx-small) {
     padding: 10px 20px;
@@ -45,7 +45,7 @@
 .hero-title span {
   margin: 0;
   padding: 0 16px;
-  font-size: 4.5rem;
+  font-size: var(--wp--preset--font-size--heading-1);
   line-height: 1.3 !important;
   background-color: rgba(0, 0, 0, 0.45);
   color: #fff;
@@ -54,12 +54,7 @@
   box-decoration-break: clone;
 
   @include mq(xx-small) {
-    font-size: 48px;
     padding: 0 20px;
-  }
-
-  @include mq(small) {
-    font-size: 72px;
   }
 }
 

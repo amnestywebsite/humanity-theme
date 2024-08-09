@@ -56,7 +56,7 @@
   overflow-y: auto;
   background-color: $color-white;
   font-family: var(--wp--preset--font-family--primary);
-  font-size: 21px;
+  font-size: var(--wp--preset--font-size--heading-6);
 
   @include mq(small) {
     max-height: none;
@@ -100,7 +100,7 @@
   min-height: unset;
   max-height: unset;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 24px;
+  font-size: var(--wp--preset--font-size--heading-5);
   text-align: center;
 }
 
@@ -113,7 +113,7 @@
   line-height: normal;
   color: $color-black;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
 }
 
 .is-style-alternative-style .tweetButton {

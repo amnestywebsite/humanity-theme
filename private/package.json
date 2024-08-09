@@ -46,7 +46,6 @@
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.4.5",
     "node-normalize-scss": "^8.1.2",
-    "normalize.css": "^8.0.1",
     "postcss": "^8.4.32",
     "postcss-banner": "^4.0.1",
     "postcss-loader": "^7.0.1",

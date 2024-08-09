@@ -4,7 +4,7 @@ optgroup,
 select,
 textarea {
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
 }
 
 textarea {
@@ -54,7 +54,7 @@ input,
 textarea {
   @include placeholder {
     font-family: var(--wp--preset--font-family--secondary);
-    font-size: 16px;
+    font-size: var(--wp--preset--font-size--small);
     font-weight: normal;
     text-transform: uppercase;
     color: $color-grey-base;
@@ -67,7 +67,7 @@ textarea,
 .woocommerce-cart table.cart td.actions .coupon .input-text {
   padding: 12px;
   width: 100%;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   font-family: var(--wp--preset--font-family--secondary);
   appearance: none;
   text-transform: uppercase;

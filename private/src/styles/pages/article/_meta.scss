@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  font-size: 1rem;
+  font-size: var(--wp--preset--font-size--regular);
 }
 
 .article-metaDataRow > *:not(:last-child)::after {

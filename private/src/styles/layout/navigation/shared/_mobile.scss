@@ -13,7 +13,7 @@
   transition: transform .2s ease-in-out;
   transform: translate3d(100%, 0, 0);
   background-color: $color-white;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
 
   @include mq(small) {
     top: 72px; // header height on larger screens

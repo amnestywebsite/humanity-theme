@@ -5377,7 +5377,6 @@ __metadata:
     memize: "npm:^1.1.0"
     mini-css-extract-plugin: "npm:^2.4.5"
     node-normalize-scss: "npm:^8.1.2"
-    normalize.css: "npm:^8.0.1"
     object-fit-images: "npm:^3.2.4"
     postcss: "npm:^8.4.32"
     postcss-banner: "npm:^4.0.1"

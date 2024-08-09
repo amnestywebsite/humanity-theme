@@ -6,13 +6,13 @@
 }
 
 .amnesty-footer-template-part p {
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
 }
 
 .amnesty-footer-template-part h4 {
   margin-bottom: 24px;
   padding-bottom: 12px;
-  font-size: 20px;
+  font-size: var(--wp--preset--font-size--heading-6);
   text-transform: uppercase;
   color: var(--wp--preset--color--amnesty-grey-md-light);
   font-family: var(--font-family-secondary);
@@ -21,7 +21,7 @@
 }
 
 .amnesty-footer-template-part h2 {
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   color: var(--wp--preset--color--white);
   text-transform: uppercase;
   margin-bottom: 0;
@@ -36,13 +36,13 @@
 
 .amnesty-footer-template-part a {
   color: var(--wp--preset--color--white);
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
   font-family: sans-serif;
 }
 
 .amnesty-footer-template-part .amnesty-policy-links {
   display: flex;
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
 }
 
 .amnesty-footer-template-part .amnesty-policy-links li {

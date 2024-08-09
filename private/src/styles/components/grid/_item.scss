@@ -33,7 +33,7 @@
   padding: 12px;
   color: $color-black;
   line-height: 1.4;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   background-color: $color-white;
   max-width: 100%;
 }
@@ -48,7 +48,7 @@
 .grid-itemMeta {
   display: block;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   max-width: 100%;
@@ -66,6 +66,11 @@
   width: max-content;
   background-color: $color-black;
   color: $color-white;
+  text-decoration: none;
+}
+
+// increased specificity to override global link decoration
+.single main .grid-itemMeta a {
   text-decoration: none;
 }
 
