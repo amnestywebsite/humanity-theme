@@ -1,15 +1,20 @@
 {
   "extends": "stylelint-config-recommended-scss",
-  "plugins": [
-    "stylelint-scss"
-  ],
+  "plugins": ["stylelint-scss"],
   "rules": {
     "at-rule-no-vendor-prefix": true,
-    "at-rule-empty-line-before": [ "always", {
-      "except": ["blockless-after-blockless", "blockless-after-same-name-blockless", "first-nested"],
-      "ignore": ["after-comment"],
-      "ignoreAtRules": ["else", "else if"]
-    } ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "blockless-after-blockless",
+          "blockless-after-same-name-blockless",
+          "first-nested"
+        ],
+        "ignore": ["after-comment"],
+        "ignoreAtRules": ["else", "else if"]
+      }
+    ],
     "block-no-empty": true,
     "color-hex-length": "short",
     "color-named": "never",
@@ -26,13 +31,19 @@
     "length-zero-no-unit": true,
     "no-descending-specificity": null,
     "no-duplicate-selectors": true,
-    "property-no-vendor-prefix": [true, {
-      "ignoreProperties": ["appearance", "text-size-adjust"]
-    }],
-    "rule-empty-line-before": ["always", {
-      "except": ["after-single-line-comment", "first-nested"],
-      "ignore": ["after-comment"]
-    }],
+    "property-no-vendor-prefix": [
+      true,
+      {
+        "ignoreProperties": ["appearance", "text-size-adjust"]
+      }
+    ],
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["after-single-line-comment", "first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
     "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
     "scss/at-else-closing-brace-space-after": "always-intermediate",
     "scss/at-else-empty-line-before": "never",
@@ -41,12 +52,18 @@
     "scss/no-global-function-names": null,
     "selector-attribute-quotes": "always",
     "selector-max-id": 0,
-    "selector-no-qualifying-type": [true, {
-      "ignore": ["attribute", "class"]
-    }],
-    "selector-pseudo-class-no-unknown": [true, {
-      "ignorePseudoClasses": ["enter"]
-    }],
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["attribute", "class"]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["enter"]
+      }
+    ],
     "selector-pseudo-element-colon-notation": "double",
     "value-no-vendor-prefix": true
   }

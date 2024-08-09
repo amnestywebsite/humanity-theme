@@ -114,7 +114,8 @@ class DisplayAuthor extends Component {
 
     api
       .getPostsFromAuthors(requestArguments, value)
-      .then((data = [], i, xhr) => { // eslint-disable-line
+      .then((data = [], i, xhr) => {
+        // eslint-disable-line
         const posts = data.map((p) => {
           if (!p.featured_media || p.featured_media < 1) {
             return {
