@@ -17,3 +17,6 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 You can view the full license text in [LICENSE.txt](https://github.com/amnestywebsite/humanity-theme/blob/main/LICENSE.txt).
+
+This program contains fonts licensed under the Open Font License.
+You can view the full Open Font Licence text in [OFL.txt](https://github.com/amnestywebsite/humanity-theme/blob/main/OFL.txt).
