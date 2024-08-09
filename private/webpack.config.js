@@ -29,7 +29,7 @@ module.exports = {
               ...plugin.options.patterns,
               {
                 from: 'static/**/*',
-                context: path.resolve(__dirname, 'src'),
+                context: SRC_PATH,
                 to({ absoluteFilename }) {
                   return absoluteFilename.replace(`${SRC_PATH}/static`, OUT_PATH);
                 },
