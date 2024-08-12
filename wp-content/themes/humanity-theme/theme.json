@@ -382,6 +382,14 @@
       "lineHeight": "calc( 27px / 1.125 )"
     },
     "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--black)"
+        },
+        "typography": {
+          "textDecoration": "none"
+        }
+      },
       "heading": {
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--secondary)",
