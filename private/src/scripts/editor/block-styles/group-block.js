@@ -6,3 +6,15 @@ registerBlockStyle('core/group', {
   // translators: [admin]
   label: _x('Square Border', 'block style', 'amnesty'),
 });
+
+registerBlockStyle('core/group', {
+  name: 'light',
+  // translators: [admin]
+  label: _x('Light Background', 'block style', 'amnesty'),
+});
+
+registerBlockStyle('core/group', {
+  name: 'dark',
+  // translators: [admin]
+  label: _x('Dark Background', 'block style', 'amnesty'),
+});
