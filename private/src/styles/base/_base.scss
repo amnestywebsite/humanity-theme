@@ -30,8 +30,6 @@ html.lang-open {
  *    render text using sub-pixel anti-aliasing.
  */
 body {
-  font-family: var(--wp--preset--font-family--primary);
-  color: $body-color;
   // font-feature-settings: "kern", "liga", "pnum"; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
