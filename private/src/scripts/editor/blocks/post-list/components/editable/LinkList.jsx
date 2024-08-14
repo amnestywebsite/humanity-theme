@@ -21,7 +21,7 @@ const LinkItem = (props) => {
 
   return (
     <li>
-      <article className="linkList-item" style={{ itemStyles }}>
+      <article className="linkList-item" style={itemStyles}>
         <span className="linkList-itemMeta">
           <RichText
             tagName="a"

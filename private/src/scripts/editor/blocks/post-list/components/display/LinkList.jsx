@@ -7,7 +7,7 @@ const LinkItem = (props) => {
 
   return (
     <li>
-      <article className="linkList-item" style={{ itemStyles }}>
+      <article className="linkList-item" style={itemStyles}>
         {props.tag && (
           <span className="linkList-itemMeta">
             <a href="#">{props.tag.title}</a>
