@@ -6,33 +6,35 @@ let subMenus = [];
 // if menu has lost focus inadvertently, restore it
 const setupFocusTrap = () => {
   const lastMenuItem = pageHeader.querySelector('.mobile-menu > ul > li:last-of-type');
-  const menuItemClassList = `.${Array.from(lastMenuItem.classList).join('.')}`;
-  let previousFocus;
+  if (lastMenuItem) {
+    const menuItemClassList = `.${Array.from(lastMenuItem.classList).join('.')}`;
+    let previousFocus;
 
-  mobileMenu.addEventListener('focusout', (event) => {
-    previousFocus = event.target;
-  });
+    mobileMenu.addEventListener('focusout', (event) => {
+      previousFocus = event.target;
+    });
 
-  document.addEventListener('focusin', (event) => {
-    const closestMenuItemToPrevious = previousFocus?.closest(menuItemClassList);
-    const originWasLastItem = previousFocus === lastMenuItem.firstElementChild;
-    const originWasChildOfLastItem = closestMenuItemToPrevious === lastMenuItem;
+    document.addEventListener('focusin', (event) => {
+      const closestMenuItemToPrevious = previousFocus?.closest(menuItemClassList);
+      const originWasLastItem = previousFocus === lastMenuItem.firstElementChild;
+      const originWasChildOfLastItem = closestMenuItemToPrevious === lastMenuItem;
 
-    // previous element wasn't in the mobile nav, or wasn't the last item in it
-    if (!originWasLastItem && !originWasChildOfLastItem) {
-      return;
-    }
+      // previous element wasn't in the mobile nav, or wasn't the last item in it
+      if (!originWasLastItem && !originWasChildOfLastItem) {
+        return;
+      }
 
-    // focus is still within the mobile nav
-    if (event.target.closest('.mobile-menu')) {
-      return;
-    }
+      // focus is still within the mobile nav
+      if (event.target.closest('.mobile-menu')) {
+        return;
+      }
 
-    event.preventDefault();
+      event.preventDefault();
 
-    previousFocus = undefined;
-    menuToggle.focus();
-  });
+      previousFocus = undefined;
+      menuToggle.focus();
+    });
+  }
 };
 
 // close all sub menus
