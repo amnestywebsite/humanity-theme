@@ -19,7 +19,6 @@ import './editor/blocks-deprecated/banner/index.jsx';
 import './editor/blocks-deprecated/header/index.jsx';
 
 import './editor/blocks/action/index.jsx';
-import './editor/blocks/background-media/index.jsx';
 import './editor/blocks/blockquote/index.jsx';
 import './editor/blocks/button/index.jsx';
 import './editor/blocks/call-to-action/index.jsx';

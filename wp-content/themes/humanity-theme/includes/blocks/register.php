@@ -13,10 +13,6 @@ require_once __DIR__ . '/_deprecated/header/register.php';
 
 require_once __DIR__ . '/action/register.php';
 require_once __DIR__ . '/action/render.php';
-require_once __DIR__ . '/background-media/components/register.php';
-require_once __DIR__ . '/background-media/components/render.php';
-require_once __DIR__ . '/background-media/register.php';
-require_once __DIR__ . '/background-media/render.php';
 require_once __DIR__ . '/banner/register.php';
 require_once __DIR__ . '/blockquote/register.php';
 require_once __DIR__ . '/blockquote/render.php';
@@ -83,8 +79,6 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 	 */
 	function amnesty_register_php_rendered_blocks() {
 		register_action_block();
-		register_background_media_block();
-		register_background_media_column_block();
 		register_banner_block();
 		register_blockquote_block();
 		register_collapsable_block();
