@@ -1,5 +1,5 @@
 .wp-block-quote::before,
-.wp-block-quote.wp-block-quote.has-text-align-center::before {
+.wp-block-quote.has-text-align-center::before {
   content: open-quote;
   quotes: '“' '”' "‘" "’";
 }
@@ -18,24 +18,65 @@
   font-family: var(--wp--preset--font-family--secondary);
 }
 
-.wp-block-quote.has-small-font-size p,
-.wp-block-quote.has-small-font-size cite {
+.wp-block-quote.has-small-font-size p {
   font-size: 1.75rem !important;
 }
 
-.wp-block-quote.has-medium-font-size p,
-.wp-block-quote.has-medium-font-size cite {
+.wp-block-quote.has-medium-font-size p {
   font-size: 2rem !important;
 }
 
-.wp-block-quote.has-large-font-size p,
-.wp-block-quote.has-large-font-size cite {
+.wp-block-quote.has-large-font-size p {
   font-size: 2.25rem !important;
 }
 
 .wp-block-quote cite {
   text-transform: none !important;
+
+  @include mq(x-small) {
+    font-size: 1.25rem !important;
+  }
+
+  @include mq(medium) {
+    font-size: 1.5rem !important;
+  }
 }
+
+.wp-block-quote.has-large-font-size cite {
+  @include mq(x-small) {
+    font-size: 1.25rem !important;
+  }
+
+  @include mq(medium) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.wp-block-quote.has-medium-font-size cite {
+  font-size: 1rem !important;
+
+  @include mq(x-small) {
+    font-size: 1.25rem !important;
+  }
+
+  @include mq(medium) {
+    font-size: 1.375rem !important;
+  }
+}
+
+.wp-block-quote.has-small-font-size cite {
+  font-size: 0.875rem !important;
+
+  @include mq(x-small) {
+    font-size: 1.125rem !important;
+  }
+
+  @include mq(medium) {
+    font-size: 1.25rem !important;
+  }
+}
+
+
 
 .wp-block-quote cite::after,
 .wp-block-quote.has-black-color cite::after,
@@ -55,11 +96,7 @@
 
 .wp-block-quote.has-text-align-left {
   border-left: 8px solid var(--wp--preset--color--black);
-  padding-left: 27px;
-
-  cite {
-    margin-left: 15px;
-  }
+  padding-left: 35px;
 }
 
 .wp-block-quote.has-text-align-left.has-white-color {
@@ -72,11 +109,7 @@
 
 .wp-block-quote.has-text-align-right {
   border-right: 8px solid var(--wp--preset--color--black);
-  padding-right: 27px;
-
-  cite {
-    margin-right: 15px;
-  }
+  padding-right: 35px;
 }
 
 .wp-block-quote.has-text-align-right.has-white-color {
@@ -91,12 +124,26 @@
 .wp-block-quote.has-text-align-right p::before {
   content: open-quote;
   quotes: '“' '”';
+  display: inline-block;
+}
+
+.wp-block-quote.has-text-align-left p::before {
+  text-indent: -7px;
+
+  @include mq(medium) {
+    text-indent: -15px;
+  }
+}
+
+.wp-block-quote.has-text-align-right p::after {
+  position: absolute;
 }
 
 .wp-block-quote.has-text-align-left p::after,
 .wp-block-quote.has-text-align-right p::after {
   content: close-quote;
   quotes: '“' '”';
+  display: inline-block;
 }
 
 .wp-block-quote,
@@ -110,7 +157,24 @@
   content: none;
 }
 
-.wp-block-quote.wp-block-quote.has-text-align-left::before,
-.wp-block-quote.wp-block-quote.has-text-align-right::before {
+.wp-block-quote.has-text-align-left::before,
+.wp-block-quote.has-text-align-right::before {
   content: none;
+}
+
+// RTL styles
+.rtl .wp-block-quote.has-text-align-left {
+  text-align: right;
+  border-right: 8px solid var(--wp--preset--color--black);
+  border-left: none;
+  padding-right: 35px;
+  padding-left: 0;
+}
+
+.rtl .wp-block-quote.has-text-align-right {
+  text-align: left;
+  border-left: 8px solid var(--wp--preset--color--black);
+  border-right: none;
+  padding-left: 35px;
+  padding-right: 0;
 }
