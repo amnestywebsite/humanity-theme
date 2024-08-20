@@ -26,21 +26,34 @@
         ]
       },
       "typography": {
+        "fluid": true,
         "fontSizes": [
           {
             "slug": "small",
-            "size": "1.75rem",
-            "name": "Small"
+            "size": "1.5rem",
+            "name": "Small",
+            "fluid": {
+              "min": "1rem",
+              "max": "1.75rem"
+            }
           },
           {
             "slug": "medium",
-            "size": "2rem",
-            "name": "Medium"
+            "size": "1.75rem",
+            "name": "Medium",
+            "fluid": {
+              "min": "1.25rem",
+              "max": "2rem"
+            }
           },
           {
             "slug": "large",
-            "size": "2.25rem",
-            "name": "Large"
+            "size": "2rem",
+            "name": "Large",
+            "fluid": {
+              "min": "1.5rem",
+              "max": "2.25rem"
+            }
           }
         ],
         "textTransform": true
