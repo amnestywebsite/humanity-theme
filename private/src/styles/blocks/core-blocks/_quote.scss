@@ -1,7 +1,6 @@
 .wp-block-quote::before,
 .wp-block-quote.has-text-align-center::before {
   content: open-quote;
-  quotes: '“' '”' "‘" "’";
 }
 
 .wp-block-quote cite::after,
@@ -151,7 +150,6 @@
 .wp-block-quote.has-text-align-left p::before,
 .wp-block-quote.has-text-align-right p::before {
   content: open-quote;
-  quotes: '“' '”';
   display: inline-block;
 }
 
@@ -170,7 +168,6 @@
 .wp-block-quote.has-text-align-left p::after,
 .wp-block-quote.has-text-align-right p::after {
   content: close-quote;
-  quotes: '“' '”';
   display: inline-block;
 }
 
