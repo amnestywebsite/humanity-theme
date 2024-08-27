@@ -43,8 +43,8 @@ if ( ! $query->have_posts() ) {
 <!-- wp:group {"tagName":"aside","className":"article-sidebar"} -->
 <aside class="wp-block-group article-sidebar">
 <?php while ( $query->have_posts() ) : ?>
-<?php $query->the_post(); ?>
-<?php echo get_the_content(); ?>
+	<?php $query->the_post(); ?>
+	<?php echo wp_kses( get_the_content(), 'post' ); ?>
 <?php endwhile; ?>
 </aside>
 <!-- /wp:group -->
