@@ -168,7 +168,6 @@ if ( ! function_exists( 'amnesty_filter_allowed_blocks' ) ) {
 			'core/post-navigation-link',
 			'core/post-template',
 			'core/post-terms',
-			'core/post-title',
 			'core/preformatted',
 			'core/query',
 			'core/query-title',
