@@ -28,13 +28,12 @@ $image = new Get_Image_Data( $image_id );
 $include_caption = ! amnesty_validate_boolish( get_post_meta( get_the_ID(), '_hide_featured_image_caption', true ) );
 
 ?>
-<!-- wp:group {"tagName":"div","className":"container container--feature","layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"div","className":"container container--feature"} -->
 <div class="wp-block-group container container--feature">
-	<!-- wp:group {"tagName":"figure","className":"article-figure is-stretched <?php $image->credit() && print 'has-caption'; ?>","layout":{"type":"constrained"}} -->
+	<!-- wp:group {"tagName":"figure","className":"article-figure is-stretched <?php $image->credit() && print 'has-caption'; ?>"} -->
 	<figure class="article-figure is-stretched <?php $image->credit() && print 'has-caption'; ?>">
-	<!-- wp:image {"id":<?php echo absint( $image_id ); ?>,"sizeSlug":"hero-md","linkDestination":"none","align":"full"} -->
-	<figure class="wp-block-image alignfull size-hero-md"><?php echo wp_kses_post( wp_get_attachment_image( $image_id, 'hero-md' ) ); ?><?php echo wp_kses_post( $image->metadata( include_caption: $include_caption ) ); ?></figure>
-	<!-- /wp:image -->
+	<?php echo wp_kses_post( wp_get_attachment_image( $image_id, 'hero-md' ) ); ?>
+	<?php echo wp_kses_post( $image->metadata( include_caption: $include_caption ) ); ?>
 	</figure>
 	<!-- /wp:group -->
 </div>
