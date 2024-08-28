@@ -26,9 +26,8 @@ $results = apply_filters( 'amnesty_search_results_title', $results, $found_posts
 
 ?>
 
-<!-- wp:group {"tagName":"header","className":"wp-block-group postlist-header"} -->
-<header class="postlist-header" aria-label="<?php /* translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options */ esc_attr_e( 'Results information', 'amnesty' ); ?>">
-	<!-- wp:heading {"level":2,"className":"wp-block-group postlist-headerTitle"} -->
+<header class="wp-block-group postlist-header" aria-label="<?php /* translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options */ esc_attr_e( 'Results information', 'amnesty' ); ?>">
+	<!-- wp:heading {"level":2,"className":"postlist-headerTitle"} -->
 	<h2 class="wp-block-group postlist-headerTitle">
 		<?php echo esc_html( $results ); ?>
 	</h2>
@@ -57,4 +56,3 @@ $results = apply_filters( 'amnesty_search_results_title', $results, $found_posts
 
 	?>
 </header>
-<!-- /wp:group -->

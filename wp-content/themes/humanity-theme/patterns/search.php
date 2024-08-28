@@ -9,13 +9,13 @@
 
 ?>
 
-<!-- wp:group {"tagName":"div","className":"wp-block-group container search-container has-gutter"} -->
+<!-- wp:group {"tagName":"div","className":"container search-container has-gutter"} -->
 <div class="wp-block-group container search-container has-gutter">
-<!-- wp:pattern {"slug":"amnesty/horizontal-search"} -->
+<!-- wp:pattern {"slug":"amnesty/horizontal-search"} /-->
 
 <!-- wp:amnesty-core/block-section {"className":"section search-results section--tinted" "aria-label":"<?php /* translators: [front] ARIA */ esc_attr_e( 'Search results', 'amnesty' ); ?>"} -->
 
-<!-- wp:pattern {"slug":"amnesty/archive-header"} -->
+<!-- wp:pattern {"slug":"amnesty/archive-header"} /-->
 
 <?php
 do_action( 'amnesty_before_search_results' );
@@ -23,7 +23,7 @@ do_action( 'amnesty_before_search_results' );
 while ( have_posts() ) {
 	the_post();
 	?>
-	<!-- wp:pattern {"slug":"amnesty/post-search"} -->
+	<!-- wp:pattern {"slug":"amnesty/post-search"} /-->
 	<?php
 }
 

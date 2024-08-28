@@ -25,19 +25,19 @@ if ( empty( $page_numbers ) ) {
 
 ?>
 
-<!-- wp:group {"tagName":"div","className":"wp-block-group container container--small has-gutter"} -->
+<!-- wp:group {"tagName":"div","className":"container container--small has-gutter"} -->
 <div class="wp-block-group container container--small has-gutter">
-	<!-- wp:group {"tagName":"section","className":"wp-block-group section section--small post-pagination"} -->
+	<!-- wp:group {"tagName":"section","className":"section section--small post-pagination"} -->
 <section class="wp-block-group section section--small post-pagination">
 	<!-- wp:group {"tagName":"nav","className":"post-paginationContainer","role":"navigation","aria-label":"<?php echo esc_attr( __( 'Pagination', 'amnesty' ) ); ?>"} -->
 	<nav class="wp-block-group post-paginationContainer" role="navigation" aria-label="<?php echo esc_attr( __( 'Pagination', 'amnesty' ) ); ?>">
-		<!-- wp:group {"tagName":"div","className":"wp-block-group post-paginationLink post-paginationPrevious"} -->
+		<!-- wp:group {"tagName":"div","className":"post-paginationLink post-paginationPrevious"} -->
 		<div class="wp-block-group post-paginationLink post-paginationPrevious">
 		<?php if ( $previous_link ) : ?>
 			<?php echo wp_kses_post( $previous_link ); ?>
 		<?php else : ?>
 			<!-- wp:button {"disabled":true} -->
-				<!-- wp:group {"tagName":"span", "className":"wp-block-group icon"} -->
+				<!-- wp:group {"tagName":"span", "className":"icon"} -->
 				<span class="icon"></span>
 				<!-- /wp:group -->
 				<!-- wp:group {"tagName":"span"} -->
@@ -56,13 +56,13 @@ if ( empty( $page_numbers ) ) {
 		<?php endforeach; ?>
 		</ul>
 		<!-- /wp:group -->
-		<!-- wp:group {"tagName":"div","className":"wp-block-group post-paginationLink post-paginationNext"} -->
+		<!-- wp:group {"tagName":"div","className":"post-paginationLink post-paginationNext"} -->
 		<div class="wp-block-group post-paginationLink post-paginationNext">
 		<?php if ( $next_link ) : ?>
 			<?php echo wp_kses_post( $next_link ); ?>
 		<?php else : ?>
 			<!-- wp:button {"disabled":true} -->
-				<!-- wp:group {"tagName":"span", "className":"wp-block-group icon"} -->
+				<!-- wp:group {"tagName":"span", "className":"icon"} -->
 				<span class="wp-block-group icon"></span>
 				<!-- /wp:group -->
 				<!-- wp:group {"tagName":"span"} -->

@@ -19,8 +19,8 @@ if ( ! $taxonomies ) {
 
 ?>
 
-<!-- wp:group {"tagName":"div","className":"wp-block-group section section--small section--dark postlist-categoriesContainer"} -->
+<!-- wp:group {"tagName":"div","className":"section section--small section--dark postlist-categoriesContainer"} -->
 <div class="wp-block-group section section--small section--dark postlist-categoriesContainer">
-<!-- wp:pattern {"slug":"amnesty/taxonomy-filter"} -->
+<!-- wp:pattern {"slug":"amnesty/taxonomy-filter"} /-->
 </div>
 <!-- /wp:group -->

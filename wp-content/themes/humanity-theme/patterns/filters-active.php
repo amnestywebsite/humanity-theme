@@ -42,13 +42,12 @@ if ( ! $has_active_taxonomy_filters && ! count( $active_filter_query_vars ) ) {
 
 ?>
 
-<!-- wp:group {"tagName":"section","className":"wp-block-group section section--small filter-wrapper"} -->
-<section class="wp-block-group section section--small filter-wrapper">
-	<!-- wp:heading {"level":4,"className":"wp-block-group filter-label"} -->
+<!-- wp:amnesty-core/block-section {"className":"section section--small filter-wrapper"} -->
+	<!-- wp:heading {"level":4,"className":"filter-label"} -->
 	<h4 class="wp-block-group filter-label"><?php /* translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713 */ esc_html_e( 'Filters applied', 'amnesty' ); ?></h4>
 	<!-- /wp:heading -->
 
-	<!-- wp:group {"tagName":"ul","className":"wp-block-group active-filters"} -->
+	<!-- wp:list {"className":"active-filters"} -->
 	<ul class="wp-block-group active-filters">
 	<?php
 
@@ -80,16 +79,16 @@ if ( ! $has_active_taxonomy_filters && ! count( $active_filter_query_vars ) ) {
 
 	?>
 
-		<!-- wp:group {"tagName":"li","className":"wp-block-group"} -->
+		<!-- wp:list-item -->
 		<li class="wp-block-group">
-			<!-- wp:group {"tagName":"a","className":"wp-block-group clear-filter clear-filter--all"} -->
+			<!-- wp:group {"tagName":"a","className":"clear-filter clear-filter--all"} -->
 			<a class="wp-block-group clear-filter clear-filter--all" href="<?php echo esc_url( strip_query_string( current_url() ) ); ?>">
 				<?php /* translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713 */ esc_html_e( 'Clear all', 'amnesty' ); ?>
 			</a>
 			<!-- /wp:group -->
 		</li>
-		<!-- /wp:group -->
+		<!-- /wp:list-item -->
 	</ul>
-	<!-- /wp:group -->
-</section>
+	<!-- /wp:list -->
+<!-- /wp:amnesty-core/block-section -->
 <!-- /wp:group -->
