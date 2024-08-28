@@ -17,6 +17,7 @@ const { Fragment } = wp.element;
 const { InspectorControls } = wp.blockEditor;
 const { PanelBody, RangeControl, SelectControl, ToggleControl } = wp.components;
 const { Component } = wp.element;
+const { applyFilters } = wp.hooks;
 const { __ } = wp.i18n;
 
 const { has } = lodash;
@@ -159,6 +160,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
         postTypeOveride = attributes.postTypes;
       }
 
+      const maxQuantity = parseInt(applyFilters('amnesty-post-list-quantity', 8, attributes), 10);
+
       return (
         <Fragment>
           <InspectorControls>
@@ -195,7 +198,7 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                   // translators: [admin]
                   label={__('Number of posts to show:', 'amnesty')}
                   min={1}
-                  max={8}
+                  max={maxQuantity}
                   value={attributes.amount || 3}
                   onChange={this.createUpdateAttributeWithFilter('amount', this.range)}
                 />
@@ -205,7 +208,7 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                   // translators: [admin]
                   label={__('Number of posts to show:', 'amnesty')}
                   min={1}
-                  max={8}
+                  max={maxQuantity}
                   value={attributes.amount || 3}
                   onChange={this.createUpdateAttributeWithFilter('amount', this.range)}
                 />
@@ -215,7 +218,7 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                   // translators: [admin]
                   label={__('Number of posts to show:', 'amnesty')}
                   min={1}
-                  max={8}
+                  max={maxQuantity}
                   value={attributes.amount || 3}
                   onChange={(value) => setAttributes({ amount: value })}
                 />
