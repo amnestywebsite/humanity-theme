@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+	"apiVersion": 2,
+	"name": "amnesty-core/post-search",
+	"title": "Post Search",
+	"description": "For presenting the post search",
+  "textdomain": "amnesty",
+	"category": "amnesty-core",
+	"icon": "editor-table",
+	"keywords": ["Post Search"],
+	"supports": {
+		"multiple": false,
+		"align": false
+	}
+}

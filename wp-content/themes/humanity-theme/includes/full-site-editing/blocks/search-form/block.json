@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+	"apiVersion": 2,
+	"name": "amnesty-core/search-form",
+	"title": "Search Form",
+	"description": "For presenting the search form",
+  "textdomain": "amnesty",
+	"category": "amnesty-core",
+	"icon": "editor-table",
+	"keywords": ["Search Form"],
+	"supports": {
+		"multiple": false,
+		"align": false
+	}
+}
