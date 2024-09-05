@@ -16,14 +16,11 @@
 <!-- wp:group {"tagName":"div","className":"section search-results section--tinted"} -->
 <div class="wp-block-group section search-results section--tinted">
 
-<!-- wp:pattern {"slug":"amnesty/archive-header"} /-->
+<?php do_action( 'amnesty_searchpage_before_header' ); ?>
 
+ <!-- wp:amnesty-core/archive-header /-->
 
-
-<?php
-do_action( 'amnesty_before_search_results' );
-
-?>
+<?php do_action( 'amnesty_before_search_results' ); ?>
 
 <!-- wp:query {"inherit":true} -->
 <!-- wp:post-template -->
@@ -33,11 +30,8 @@ do_action( 'amnesty_before_search_results' );
 <!-- /wp:post-template -->
 <!-- /wp:query -->
 
-<?php
+<?php do_action( 'amnesty_after_search_results' ); ?>
 
-do_action( 'amnesty_after_search_results' );
-
-?>
 </div>
 <!-- /wp:group -->
 </div>

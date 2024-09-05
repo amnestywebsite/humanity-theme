@@ -10,9 +10,9 @@
 }
 
 @include mq(x-small) {
-  .post {
-    min-height: 460px;
-  }
+  // .post {
+  //   min-height: 460px;
+  // }
 
   .post + .post {
     margin-left: flexy-gutter();

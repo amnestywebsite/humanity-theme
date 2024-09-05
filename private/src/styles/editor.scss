@@ -74,6 +74,10 @@
 // Block Patterns
 @import "block-patterns/social-share";
 
+// Pages
+@import "./pages/archive/";
+@import "./pages/search/";
+
 html {
   box-sizing: border-box;
 }

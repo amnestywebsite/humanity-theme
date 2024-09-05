@@ -47,3 +47,12 @@ body.page-template-searchpage .section .page-search input {
 .search-results {
   flex-basis: 75%;
 }
+
+.search-results .wp-block-post-template {
+  margin-left: 0;
+}
+
+.search-results .wp-block-post-template .wp-block-post {
+  min-width: 100%;
+  // display: block;
+}

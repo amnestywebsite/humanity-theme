@@ -10,6 +10,10 @@ require_once realpath( __DIR__ ) . '/post-search/register.php';
 require_once realpath( __DIR__ ) . '/post-search/render.php';
 require_once realpath( __DIR__ ) . '/search-form/register.php';
 require_once realpath( __DIR__ ) . '/search-form/render.php';
+require_once realpath( __DIR__ ) . '/archive-header/render.php';
+require_once realpath( __DIR__ ) . '/archive-header/register.php';
+require_once realpath( __DIR__ ) . '/pagination/render.php';
+require_once realpath( __DIR__ ) . '/pagination/register.php';
 
 if ( ! function_exists( 'amnesty_register_full_site_editing_blocks' ) ) {
 	/**
@@ -24,6 +28,8 @@ if ( ! function_exists( 'amnesty_register_full_site_editing_blocks' ) ) {
 		register_site_header_block();
 		register_post_search_block();
 		register_search_form_block();
+		register_archive_header_block();
+		register_pagination_block();
 	}
 }
 

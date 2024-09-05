@@ -6,7 +6,7 @@
   padding: 12px;
 }
 
-.post--result + .post--result {
+.search-results .wp-block-post-template .wp-block-post + .wp-block-post {
   margin-top: 8px;
   margin-left: 0;
 }
