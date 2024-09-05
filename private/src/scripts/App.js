@@ -23,7 +23,6 @@ import termList from './modules/term-list';
 import countdownTimer from './modules/countdownTimer';
 import tabbedNav from './modules/tabbed-nav';
 import browserDetector from './modules/browser-detector';
-import authorBioToggle from './modules/author-bio-toggle';
 import iframeButton from './modules/iframe-button';
 import collapsableBlock from './modules/collapsable-block';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
@@ -51,7 +50,6 @@ const App = () => {
   countdownTimer();
   tabbedNav();
   loadVideos();
-  authorBioToggle();
   iframeButton();
   collapsableBlock();
   addFlickityToTabs();
