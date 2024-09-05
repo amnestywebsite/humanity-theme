@@ -56,6 +56,4 @@ import './editor/blocks/tweet/index.jsx';
 import './editor/fse-blocks/pop-in/index.jsx';
 import './editor/fse-blocks/site-header/index.jsx';
 import './editor/fse-blocks/search-form/index.jsx';
-import './editor/fse-blocks/post-search/index.jsx';
 import './editor/fse-blocks/archive-header/index.jsx';
-import './editor/fse-blocks/pagination/index.jsx';
