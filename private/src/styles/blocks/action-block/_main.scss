@@ -3,7 +3,7 @@
   max-width: 350px;
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
-  background-color: $color-grey-x-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .actionBlock.is-centred {
@@ -37,7 +37,7 @@
   height: 100%;
   justify-content: center;
   overflow: hidden;
-  background-color: rgba($color-black, .25);
+  background-color: rgba(var(--wp--preset--color--black), .25);
 }
 
 .actionBlock-image img {
@@ -51,9 +51,9 @@
   bottom: 0;
   left: 16px;
   padding: 8px;
-  background-color: $color-black;
-  color: $color-white;
   font-size: var(--wp--preset--font-size--regular);
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
   text-transform: uppercase;
 }
 

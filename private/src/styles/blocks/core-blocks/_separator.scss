@@ -2,7 +2,7 @@
   margin: 1.65em auto;
   max-width: 100px;
   border: none;
-  border-bottom: 2px solid $color-grey-mid-light;
+  border-bottom: 2px solid var(--wp--preset--color--grey-base);
 }
 
 .wp-block-separator.is-style-wide {
@@ -21,8 +21,8 @@
 .wp-block-separator.is-style-dots::before {
   content: "\00b7 \00b7 \00b7";
   padding-left: 2em;
-  color: $color-black-light;
   font-size: var(--wp--preset--font-size--regular);
+  color: var(--wp--preset--color--black)-light;
   font-family: serif;
   letter-spacing: 2em;
 }

@@ -1,6 +1,5 @@
 // Global variables first
 @import "utils/variables/defaults";
-@import "utils/variables/colors";
 
 // Grid settings
 @import "utils/variables/grid-settings";
@@ -105,7 +104,6 @@
 @import "blocks/tweet-action/tweet";
 
 // Block patterns
-@import "block-patterns/social-share";
 @import "block-patterns/group";
 
 // Pages

@@ -20,127 +20,67 @@
           "name": "White"
         },
         {
-          "slug": "amnesty-primary",
-          "color": "#fdff28",
+          "slug": "primary",
+          "color": "#fff",
           "name": "Primary"
         },
         {
-          "slug": "amnesty-primary-state",
-          "color": "#f8d72b",
+          "slug": "primary-state",
+          "color": "#000",
           "name": "Primary State"
         },
         {
-          "slug": "amnesty-secondary",
+          "slug": "secondary",
           "color": "#2196f3",
           "name": "Secondary"
         },
         {
-          "slug": "amnesty-accent",
+          "slug": "accent",
           "color": "#2196f3",
           "name": "Accent"
         },
         {
-          "slug": "amnesty-grey-brand",
-          "color": "#b3b3b3",
-          "name": "Grey Brand"
-        },
-        {
-          "slug": "amnesty-grey-xx-light",
+          "slug": "grey-lightest",
           "color": "#f7f7f7",
-          "name": "Grey Extra Extra Light"
+          "name": "Lightest Grey"
         },
         {
-          "slug": "amnesty-grey-x-light",
-          "color": "#eee",
-          "name": "Grey Extra Light"
-        },
-        {
-          "slug": "amnesty-grey-sm-light",
-          "color": "#e7e7e7",
-          "name": "Grey Small Light"
-        },
-        {
-          "slug": "amnesty-grey-light",
+          "slug": "grey-lighter",
           "color": "#e4e4e4",
-          "name": "Grey Light"
+          "name": "Lighter Grey"
         },
         {
-          "slug": "amnesty-grey-md-light",
-          "color": "#b5b5b5",
-          "name": "Grey Medium Light"
+          "slug": "grey-light",
+          "color": "#b3b3b3",
+          "name": "light Grey"
         },
         {
-          "slug": "amnesty-grey-mid-light",
-          "color": "#717272",
-          "name": "Grey Mid Light"
-        },
-        {
-          "slug": "amnesty-grey-base",
+          "slug": "grey-base",
           "color": "#767676",
-          "name": "Grey Base"
+          "name": "Default Grey"
         },
         {
-          "slug": "amnesty-grey-mid-dark",
+          "slug": "grey-dark",
           "color": "#525252",
-          "name": "Grey Mid Dark"
+          "name": "Dark Grey"
         },
         {
-          "slug": "amnesty-grey-dark",
+          "slug": "grey-darker",
           "color": "#262626",
-          "name": "Grey Dark"
+          "name": "Darker Grey"
         },
         {
-          "slug": "amnesty-grey-x-dark",
-          "color": "#111",
-          "name": "Grey Extra Dark"
+          "slug": "grey-darkest",
+          "color": "#111111",
+          "name": "Darkest Grey"
         },
         {
-          "slug": "amnesty-blue-xx-light",
-          "color": "#0eb5d6",
-          "name": "Blue Extra Extra Light"
-        },
-        {
-          "slug": "amnesty-blue-sm-light",
-          "color": "#009cbd",
-          "name": "Blue Small Light"
-        },
-        {
-          "slug": "amnesty-blue-md-light",
-          "color": "#55acee",
-          "name": "Blue Medium Light"
-        },
-        {
-          "slug": "amnesty-blue-mid-light",
+          "slug": "blue-twitter",
           "color": "#1da1f2",
-          "name": "Blue Mid Light"
+          "name": "Twitter Blue"
         },
         {
-          "slug": "amnesty-blue-dark",
-          "color": "#3a5795",
-          "name": "Blue Dark"
-        },
-        {
-          "slug": "amnesty-blue-mid-dark",
-          "color": "#0073aa",
-          "name": "Blue Mid Dark"
-        },
-        {
-          "slug": "amnesty-dark-light",
-          "color": "#32373c",
-          "name": "Dark Light"
-        },
-        {
-          "slug": "amnesty-mid-dark",
-          "color": "#363636",
-          "name": "Mid Dark"
-        },
-        {
-          "slug": "amnesty-x-dark",
-          "color": "#525252",
-          "name": "Extra Dark"
-        },
-        {
-          "slug": "amnesty-orange-base",
+          "slug": "orange-base",
           "color": "#ffa500",
           "name": "Orange"
         }

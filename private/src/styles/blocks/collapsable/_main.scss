@@ -17,7 +17,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: var(--wp--preset--spacing--half) 0;
-  border-bottom: 1px solid $color-black;
+  border-bottom: 1px solid var(--wp--preset--color--black);
 }
 
 .wp-block-amnesty-core-collapsable + .wp-block-amnesty-core-collapsable {
@@ -45,7 +45,7 @@
 }
 
 .wp-block-amnesty-core-collapsable .btn--blank:focus-visible {
-  border: 1px solid $color-black;
+  border: 1px solid var(--wp--preset--color--black);
 }
 
 .wp-block-amnesty-core-collapsable .icon {

@@ -6,15 +6,15 @@
 .checkboxGroup-button {
   appearance: none;
   position: relative;
-  border: 1px solid $color-black;
+  border: 1px solid var(--wp--preset--color--black);
   padding: 12px 32px 12px 10px;
   height: 100%;
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   text-align: start;
   text-transform: uppercase;
-  background: $color-white;
-  color: $color-black;
+  background: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
   cursor: pointer;
 
   &::after {
@@ -37,7 +37,7 @@
 }
 
 .checkboxGroup-button[disabled] {
-  color: $color-grey-base;
+  color: var(--wp--preset--color--grey-base);
 }
 
 .checkboxGroup-button.is-active::after {
@@ -60,8 +60,8 @@
   padding: 0;
   max-height: 300px;
   overflow-y: scroll;
-  background: $color-white;
-  border: 1px solid $color-grey-light;
+  background: var(--wp--preset--color--white);
+  border: 1px solid var(--wp--preset--color--grey-lighter);
 }
 
 .checkboxGroup-button.is-active + .checkboxGroup-list {
@@ -73,20 +73,20 @@
   align-items: center;
 
   &:not(:last-child) {
-    border-bottom: 1px solid $color-grey-light;
+    border-bottom: 1px solid var(--wp--preset--color--grey-lighter);
   }
 
   &:hover,
   &:focus-within {
-    background: $color-grey-light;
+    background: var(--wp--preset--color--grey-lighter);
   }
 
   &:active {
-    background: $color-primary-state;
+    background: var(--wp--preset--color--primary-state);
   }
 
   &:active label {
-    color: $color-primary;
+    color: var(--wp--preset--color--primary);
   }
 
   &:has(label[data-value=""]),
@@ -96,21 +96,21 @@
   }
 
   &:has(input:checked) {
-    background: $color-primary-state;
+    background: var(--wp--preset--color--primary-state);
   }
 
   &:has(input:checked):hover,
   &:has(input:checked):focus-within {
-    background: $color-grey-mid-dark;
+    background: var(--wp--preset--color--grey-dark);
   }
 
   &:has(input:checked):focus,
   &:has(input:checked):active {
-    background: $color-primary-state;
+    background: var(--wp--preset--color--primary-state);
   }
 
   &:has(input:checked) label {
-    color: $color-primary;
+    color: var(--wp--preset--color--primary);
   }
 }
 

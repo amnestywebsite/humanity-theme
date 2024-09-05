@@ -144,15 +144,15 @@
 }
 
 .post-category {
-  @include state-background(lighten($color-black, 20%));
+  @include state-background(var(--wp--preset--color--grey-darker));
   display: inline-block;
   padding: 4px 8px;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   font-size: var(--wp--preset--font-size--regular);
   text-transform: uppercase;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .post-meta {
@@ -161,8 +161,8 @@
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   font-size: var(--wp--preset--font-size--x-small);
-  color: $color-grey-mid-dark;
-  background-color: $color-white;
+  color: var(--wp--preset--color--grey-dark);
+  background-color: var(--wp--preset--color--white);
 }
 
 .post-title {
@@ -172,12 +172,12 @@
 }
 
 .post-title a {
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .post-title span {
-  background-color: $color-white;
-  box-shadow: -8px 0 0 0 $color-white, 8px 0 0 0 $color-white;
+  background-color: var(--wp--preset--color--white);
+  box-shadow: -8px 0 0 0 var(--wp--preset--color--white), 8px 0 0 0 var(--wp--preset--color--white);
   box-decoration-break: clone;
   line-height: 1.2;
 }
@@ -205,7 +205,7 @@
 .postImage--none .post-content,
 .postImage--small .post-content {
   position: relative;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   flex: 1 1 auto;
 }
 
@@ -247,7 +247,7 @@
   height: 8px;
   width: 75%;
   margin-top: 12px;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 
   @include mq(x-small) {
     margin-top: auto;
@@ -273,7 +273,7 @@
 
 .post-figure {
   position: relative;
-  background-color: $color-grey-x-dark;
+  background-color: var(--wp--preset--color--grey-darkest);
   overflow: hidden;
   max-height: 200px;
   height: 100%;

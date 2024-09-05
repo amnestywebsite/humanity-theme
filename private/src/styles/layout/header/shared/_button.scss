@@ -30,8 +30,8 @@
 
 .page-headerButton:active,
 .page-headerButton:focus {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .page-headerButtonText {

@@ -3,7 +3,7 @@
   margin-bottom: 40px;
   width: 35%;
   height: 2px;
-  background-color: rgba($color-black, .3);
+  background-color: rgba(var(--wp--preset--color--black), .3);
 
   @include mq(x-small) {
     margin-top: 30px;
@@ -16,7 +16,7 @@
   margin-bottom: auto;
   width: 2px;
   height: 200px;
-  background-color: rgba($color-black, .3);
+  background-color: rgba(var(--wp--preset--color--black), .3);
 }
 
 .linksWithIcons-group .linksWithIcons-spacer:last-child {

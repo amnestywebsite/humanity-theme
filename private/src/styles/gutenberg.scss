@@ -1,6 +1,5 @@
 // Global variables first
 @import "utils/variables/defaults";
-@import "utils/variables/colors";
 
 // Grid settings
 @import "utils/variables/grid-settings";
@@ -103,7 +102,6 @@
 @import "blocks/tweet-action/editor";
 
 // Block Patterns
-@import "block-patterns/social-share";
 @import "block-patterns/group";
 
 :root {
@@ -165,7 +163,7 @@
   justify-content: flex-end;
   padding-top: 10px;
   margin-top: 20px;
-  border-top: 1px solid $color-grey-light;
+  border-top: 1px solid var(--wp--preset--color--grey-lighter);
 }
 
 // Gutenberg fixes
@@ -185,11 +183,11 @@
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
-  border-top: 1px solid $color-grey-sm-light;
-  border-bottom: 1px solid $color-grey-sm-light;
+  border-top: 1px solid var(--wp--preset--color--grey-lighter);
+  border-bottom: 1px solid var(--wp--preset--color--grey-lighter);
 
   .components-text-control__input {
-    background-color: $color-grey-light;
+    background-color: var(--wp--preset--color--grey-lighter);
   }
 }
 

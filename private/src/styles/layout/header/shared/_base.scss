@@ -4,7 +4,7 @@
   z-index: 11;
   height: 60px;
   font-size: var(--wp--preset--font-size--small);
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   transition: top .5s ease-in-out;
   font-family: var(--wp--preset--font-family--secondary);
   text-transform: uppercase;
@@ -56,8 +56,8 @@
 .page-header .btn {
   display: flex;
   align-items: center;
-  color: $color-black;
   font-size: var(--wp--preset--font-size--heading-4);
+  color: var(--wp--preset--color--black);
   transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 

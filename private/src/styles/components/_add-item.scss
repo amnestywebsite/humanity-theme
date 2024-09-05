@@ -8,8 +8,8 @@
   padding: 24px;
   width: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: $color-white;
-  border: 1px solid $color-blue-mid-dark;
+  background-color: var(--wp--preset--color--white);
+  border: 1px solid var(--wp--preset--color--black);
 
   .dashicon {
     width: 32px;
