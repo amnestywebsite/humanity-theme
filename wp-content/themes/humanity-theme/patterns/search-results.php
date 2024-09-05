@@ -10,8 +10,8 @@
 $location_slug = get_option( 'amnesty_location_slug' ) ?: 'location';
 
 ?>
-<!-- wp:query {"inherit":true,"className":"section section--tinted"} -->
-<div class="wp-block-query section section--tinted">
+<!-- wp:query {"inherit":true,"className":"section--tinted"} -->
+<div class="wp-block-query section--tinted">
 	<!-- wp:post-template {"layout":{"type":"constrained","justifyContent":"left"}} -->
 
 	<!-- wp:group {"tagName":"article","className":"post post--result"} -->
@@ -27,9 +27,9 @@ $location_slug = get_option( 'amnesty_location_slug' ) ?: 'location';
 
 	<!-- /wp:post-template -->
 </div>
-<!-- /wp:query -->
 <!-- wp:query-pagination {"align":"center","className":"section section--small","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} -->
 	<!-- wp:query-pagination-previous /-->
 	<!-- wp:query-pagination-numbers /-->
 	<!-- wp:query-pagination-next /-->
 <!-- /wp:query-pagination -->
+<!-- /wp:query -->

@@ -1,4 +1,4 @@
-.post-paginationContainer {
+.wp-block-query-pagination {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,8 +20,8 @@
   }
 }
 
-.author .post-paginationContainer,
-.search .post-paginationContainer {
+.author .wp-block-query-pagination,
+.search .wp-block-query-pagination {
   @include mq(x-large) {
     width: 75%;
   }
