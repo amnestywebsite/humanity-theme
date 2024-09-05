@@ -25,7 +25,7 @@ $results = apply_filters( 'amnesty_search_results_title', $results, $found_posts
 
 ?>
 
-<header class="postlist-header" aria-label="<?php /* translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options */ esc_attr_e( 'Results information', 'amnesty' ); ?>">
+<header class="postlist-header section section--tinted" aria-label="<?php /* translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options */ esc_attr_e( 'Results information', 'amnesty' ); ?>">
 	<h2 class="postlist-headerTitle">
 		<?php echo esc_html( $results ); ?>
 	</h2>
