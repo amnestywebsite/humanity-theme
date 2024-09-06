@@ -1,4 +1,4 @@
-.wp-block-query-pagination {
+.post-paginationContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,8 +20,8 @@
   }
 }
 
-.author .wp-block-query-pagination,
-.search .wp-block-query-pagination {
+.author .post-paginationContainer,
+.search .post-paginationContainer {
   @include mq(x-large) {
     width: 75%;
   }
@@ -87,7 +87,7 @@
   }
 }
 
-.post-paginationLink a {
+.post-paginationLink {
   @include state-background($color-grey-light);
 }
 
@@ -117,7 +117,7 @@
   }
 }
 
-ul.page-numbers {
+div.page-numbers {
   display: none;
   flex-basis: 100%;
   justify-content: center;
@@ -132,7 +132,7 @@ ul.page-numbers {
   }
 }
 
-ul.page-numbers .page-numbers {
+div.page-numbers .page-numbers {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -140,11 +140,11 @@ ul.page-numbers .page-numbers {
   min-height: 44px;
 }
 
-ul.page-numbers a.page-numbers {
+div.page-numbers a.page-numbers {
   @include state-background($color-grey-light);
 }
 
-ul.page-numbers li + li {
+div.page-numbers li + li {
   margin-left: 10px;
 
   .rtl & {
@@ -153,7 +153,7 @@ ul.page-numbers li + li {
   }
 }
 
-ul.page-numbers span.current {
+div.page-numbers span.current {
   background-color: $color-black;
   color: $color-white;
 }

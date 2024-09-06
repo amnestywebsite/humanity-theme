@@ -45,6 +45,7 @@
 @import "components/icon";
 @import "components/pop-in/editor";
 @import "components/social";
+@import "components/form/input";
 
 // Blocks
 @import "blocks/action-block/main";
@@ -110,6 +111,9 @@
 
 // Block Patterns
 @import "block-patterns/social-share";
+
+// Pages
+@import "pages/search";
 
 :root {
   --ms-base: 16;
@@ -246,4 +250,8 @@ p.has-larger-font-size {
 
 .timezone-container h2 {
   text-decoration: underline;
+}
+
+.horizontal-search {
+  margin-bottom: 0;
 }

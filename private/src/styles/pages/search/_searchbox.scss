@@ -43,6 +43,7 @@
 // search button
 .horizontal-search .default-search-filters p {
   margin-bottom: 0;
+  margin-top: 0;
   width: 100%;
 }
 
@@ -64,9 +65,9 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 0 !important;
-  border-color: $color-black;
-  background-color: $color-black;
-  color: $color-white;
+  border-color: $color-black !important;
+  background-color: $color-black !important;
+  color: $color-white !important;
   grid-column: 10 / span 2;
   word-break: keep-all;
 
