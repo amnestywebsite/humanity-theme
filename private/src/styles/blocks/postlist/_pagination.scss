@@ -28,6 +28,7 @@
 }
 
 .post-paginationLink {
+  @include state-background($color-grey-light);
   order: 2;
   margin-top: 24px;
 
@@ -85,10 +86,6 @@
     padding-right: 5px;
     padding-left: 0;
   }
-}
-
-.post-paginationLink {
-  @include state-background($color-grey-light);
 }
 
 .post-paginationLink button[disabled] {
