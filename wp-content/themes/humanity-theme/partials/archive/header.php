@@ -8,13 +8,27 @@
 
 global $wp_query;
 
-$found_posts     = absint( $wp_query->found_posts );
-$found_posts_fmt = number_format_i18n( $found_posts );
+
+
+$found_posts     = '';
+$found_posts_fmt = '';
 $current_sort    = get_query_var( 'sort' ) ?: ( $GLOBALS['wp']->query_vars['sort'] ?? '' );
 $available_sorts = amnesty_valid_sort_parameters();
+$no_searched_posts = wp_count_posts( 'post' )->publish;
+$no_searched_posts_fmt = number_format_i18n( $no_searched_posts );
+
+if ( is_search() && get_search_query() ) {
+	$found_posts     = $wp_query->found_posts;
+	$found_posts_fmt = number_format_i18n( $found_posts );
+} else {
+	$found_posts = $no_searched_posts;
+	$found_posts_fmt = $no_searched_posts_fmt;
+}
 
 /* translators: Singular/Plural number of posts. */
-$results = sprintf( _n( '%s result', '%s results', $found_posts, 'amnesty' ), $found_posts_fmt );
+if ( !is_search() && !get_search_query() ) {
+	$results = sprintf( _n( '%s result', '%s results', $found_posts, 'amnesty' ), $found_posts_fmt );
+}
 
 if ( is_search() && get_search_query() ) {
 	/* translators: 1: number of results for search query, 2: don't translate (dynamic search term) */

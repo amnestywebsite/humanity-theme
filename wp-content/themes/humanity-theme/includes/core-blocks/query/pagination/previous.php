@@ -100,22 +100,22 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_previous' ) 
 
 		// Check if the pagination is for Query that inherits the global context
 		// and handle appropriately.
-		if ( isset( $block->context['query']['inherit'] ) && $block->context['query']['inherit'] ) {
-			$filter_link_attributes = static function () use ( $wrapper_attributes ) {
-				return $wrapper_attributes;
-			};
+		$filter_link_attributes = static function () use ( $wrapper_attributes ) {
+		    return $wrapper_attributes;
+		};
 
-			add_filter( 'previous_posts_link_attributes', $filter_link_attributes );
-			$content = amnesty_get_previous_posts_link( $label );
-			remove_filter( 'previous_posts_link_attributes', $filter_link_attributes );
-		} elseif ( 1 !== $page ) {
-			$content = sprintf(
-				'<a href="%1$s" %2$s>%3$s</a>',
-				esc_url( add_query_arg( $page_key, $page - 1 ) ),
-				$wrapper_attributes,
-				$label
-			);
-		}
+		add_filter( 'previous_posts_link_attributes', $filter_link_attributes );
+		$content = amnesty_get_previous_posts_link( $label );
+		remove_filter( 'previous_posts_link_attributes', $filter_link_attributes );
+
+		if ( 1 !== $page ) {
+		    $content = sprintf(
+			    '<a href="%1$s" %2$s>%3$s</a>',
+			    esc_url( add_query_arg( $page_key, $page - 1 ) ),
+			    $wrapper_attributes,
+			    $label
+		    );
+	    }
 
 		if ( $enhanced_pagination && isset( $content ) ) {
 			$p = new WP_HTML_Tag_Processor( $content );
