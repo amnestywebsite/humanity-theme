@@ -110,7 +110,8 @@ class Search_Page {
 			'post_type' => $post_types,
 			'orderby'   => $order_vars['orderby'],
 			'order'     => $order_vars['order'],
-			'tax_query' => $this->build_tax_args(), // eslint-disable-line
+			// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query
+			'tax_query' => $this->build_tax_args(),
 			'year'      => absint( amnesty_get_query_var( 'qyear' ) ),
 			'monthnum'  => absint( amnesty_get_query_var( 'qmonth' ) ),
 			's'         => get_query_var( 's' ),
