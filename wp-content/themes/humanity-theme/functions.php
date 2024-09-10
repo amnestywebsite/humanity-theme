@@ -148,6 +148,7 @@ require_once realpath( __DIR__ . '/includes/core-blocks/button/styles.php' );
 require_once realpath( __DIR__ . '/includes/core-blocks/social-icons/styles.php' );
 require_once realpath( __DIR__ . '/includes/core-blocks/query/pagination/next.php' );
 require_once realpath( __DIR__ . '/includes/core-blocks/query/pagination/previous.php' );
+require_once realpath( __DIR__ . '/includes/core-blocks/post-terms/filters.php' );
 #endregion coreblocks
 
 /**

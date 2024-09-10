@@ -114,7 +114,8 @@
   }
 }
 
-div.page-numbers {
+div.page-numbers,
+ul.page-numbers {
   display: none;
   flex-basis: 100%;
   justify-content: center;
@@ -129,7 +130,8 @@ div.page-numbers {
   }
 }
 
-div.page-numbers .page-numbers {
+div.page-numbers .page-numbers,
+ul.page-numbers .page-numbers {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -137,11 +139,13 @@ div.page-numbers .page-numbers {
   min-height: 44px;
 }
 
-div.page-numbers a.page-numbers {
+div.page-numbers a.page-numbers,
+ul.page-numbers a.page-numbers {
   @include state-background($color-grey-light);
 }
 
-div.page-numbers li + li {
+div.page-numbers li + li,
+ul.page-numbers li + li {
   margin-left: 10px;
 
   .rtl & {
@@ -150,7 +154,12 @@ div.page-numbers li + li {
   }
 }
 
-div.page-numbers span.current {
+div.page-numbers span.current,
+ul.page-numbers span.current {
   background-color: $color-black;
   color: $color-white;
+}
+
+.wp-block-query-pagination .wp-block-query-pagination-numbers .page-numbers {
+  margin-left: 10px;
 }

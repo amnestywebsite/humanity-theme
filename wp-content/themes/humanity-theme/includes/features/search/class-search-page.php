@@ -97,6 +97,29 @@ class Search_Page {
 	}
 
 	/**
+	 * Retrieve WP_Query arguments for the searchpage
+	 * 
+	 * @return array<string,mixed>
+	 */
+	public function get_query_vars(): array {
+		$post_types = apply_filters( 'amnesty_list_query_post_types', [ 'page', 'post' ] );
+		$post_types = array_values( array_filter( array_unique( (array) $post_types ) ) );
+		$order_vars = $this->get_order_vars();
+
+		$vars = [
+			'post_type' => $post_types,
+			'orderby'   => $order_vars['orderby'],
+			'order'     => $order_vars['order'],
+			'tax_query' => $this->build_tax_args(),
+			'year'      => absint( amnesty_get_query_var( 'qyear' ) ),
+			'monthnum'  => absint( amnesty_get_query_var( 'qmonth' ) ),
+			's'         => get_query_var( 's' ),
+		];
+
+		return array_filter( $vars );
+	}
+
+	/**
 	 * Build the SQL query for the searchpage
 	 *
 	 * @return string

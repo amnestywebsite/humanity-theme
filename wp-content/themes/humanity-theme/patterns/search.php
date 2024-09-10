@@ -9,9 +9,17 @@
 
 $location_slug = get_option( 'amnesty_location_slug' ) ?: 'location';
 
+// Add the search page query vars to the query loop block
+add_filter(
+	'query_loop_block_query_vars',
+	function (): array {
+		return amnesty_get_searchpage_query_object()->get_query_vars();
+	}
+);
+
 ?>
 
-<!-- wp:query {"queryId":0,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"className":"section--tinted"} -->
+<!-- wp:query {"queryId":0,"query":{"perPage":12,"postType":"post","inherit":false},"className":"section--tinted"} -->
 <div class="wp-block-query section--tinted">
 	<!-- wp:post-template {"layout":{"type":"constrained","justifyContent":"left"}} -->
 

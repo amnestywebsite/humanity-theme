@@ -73,9 +73,9 @@
 
   &:hover,
   &:focus {
-    background-color: $color-grey-mid-dark;
-    border-color: $color-grey-mid-dark;
-    color: $color-white;
+    background-color: $color-grey-mid-dark !important;
+    border-color: $color-grey-mid-dark !important;
+    color: $color-white !important;
   }
 }
 

@@ -1,7 +1,7 @@
 a {
   color: $color-black;
   transition: color .3s ease-in-out;
-  text-decoration: none;
+  text-decoration: none !important;
   text-decoration-skip-ink: auto;
 }
 

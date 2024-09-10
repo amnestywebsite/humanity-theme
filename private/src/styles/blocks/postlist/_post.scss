@@ -12,6 +12,133 @@
   padding: 12px;
 }
 
+@include mq($until: x-small) {
+  .post + .post {
+    margin-top: flexy-gutter();
+  }
+}
+
+@include mq(x-small) {
+  .post {
+    min-height: 460px;
+  }
+
+  .post + .post {
+    margin-left: flexy-gutter();
+
+    .rtl & {
+      margin-right: flexy-gutter();
+      margin-left: 0;
+    }
+  }
+
+  .post:nth-child(3n) {
+    margin-left: flexy-gutter();
+  }
+}
+
+@include mq(x-small, medium) {
+  .post {
+    @include flexy-grid(2, flexy-gutter());
+  }
+
+  .post:nth-child(2n + 3) {
+    margin-left: 0;
+
+    .rtl & {
+      margin-right: 0;
+    }
+  }
+
+  .post:nth-child(n + 3) {
+    margin-top: flexy-gutter();
+  }
+}
+
+@include mq(medium, large) {
+  .post {
+    @include flexy-grid(3, flexy-gutter());
+  }
+
+  .post:nth-child(3n + 4) {
+    margin-left: 0;
+
+    .rtl & {
+      margin-right: 0;
+    }
+  }
+
+  .post:nth-child(n + 4) {
+    margin-top: flexy-gutter();
+  }
+
+  .has-subcategories .post {
+    @include flexy-grid(2, flexy-gutter());
+  }
+
+  .has-subcategories .post:nth-child(n + 3) {
+    margin-top: flexy-gutter();
+  }
+
+  .has-subcategories .post:nth-child(3n + 4) {
+    margin-left: flexy-gutter();
+
+    .rtl & {
+      margin-right: flexy-gutter();
+    }
+  }
+
+  .has-subcategories .post:nth-child(2n + 3) {
+    margin-left: 0;
+
+    .rtl & {
+      margin-right: 0;
+    }
+  }
+}
+
+@include mq(large) {
+  .post {
+    @include flexy-grid(4, flexy-gutter());
+  }
+
+  .has-subcategories .post {
+    @include flexy-grid(3, flexy-gutter());
+  }
+
+  .has-subcategories .post:nth-child(n + 4) {
+    margin-top: flexy-gutter();
+  }
+
+  .has-subcategories .post:nth-child(4n + 5) {
+    margin-left: flexy-gutter();
+
+    .rtl & {
+      margin-right: flexy-gutter();
+    }
+  }
+
+  .has-subcategories .post:nth-child(3n + 4) {
+    margin-left: 0;
+
+    .rtl & {
+      margin-right: 0;
+    }
+  }
+
+  .post:nth-child(4n + 5) {
+    margin-left: 0;
+
+    .rtl & {
+      margin-right: 0;
+    }
+  }
+
+  .post:nth-child(n + 5) {
+    margin-top: flexy-gutter();
+  }
+}
+
 .post-content .post-content {
   padding: 0;
 }
@@ -167,4 +294,12 @@
 
 :lang(fa-IR) .post-category a {
   display: none;
+}
+
+.page-template-searchpage .post {
+  min-height: auto;
+}
+
+.search-results .post {
+  min-height: auto;
 }

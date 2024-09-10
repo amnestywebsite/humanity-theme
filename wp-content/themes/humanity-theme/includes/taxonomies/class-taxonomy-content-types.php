@@ -33,7 +33,14 @@ class Taxonomy_Content_Types {
 		add_filter( 'rest_prepare_taxonomy', [ $this, 'api_response' ], 10, 2 );
 		add_filter( 'template_include', [ $this, 'template' ] );
 
-		add_filter( 'query_vars', fn ( array $vars ): array => array_merge( $vars, [ "q{$this->slug}" ] ) );
+		add_filter( 'query_vars', fn ( array $vars ): array => array_merge( $vars, [ "q{$this->slug}" ] ), 100 );
+		// *something* in FSE is removing the above, so the below exists to rectify that
+		add_action(
+			'init',
+			function () {
+				$GLOBALS['wp']->add_query_var( "q{$this->slug}" );
+			} 
+		);
 
 		// Term Add
 		add_action( "{$this->slug}_pre_add_form", [ $this, 'form_open' ] );
