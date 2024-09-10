@@ -144,6 +144,10 @@
   --ms-ratio: 1.2;
 }
 
+:root :where(body) {
+  padding: 0;
+}
+
 .skipLink {
   @extend .btn; /* stylelint-disable-line scss/at-extend-no-missing-placeholder */
   @extend .u-hiddenVisually; /* stylelint-disable-line scss/at-extend-no-missing-placeholder */
