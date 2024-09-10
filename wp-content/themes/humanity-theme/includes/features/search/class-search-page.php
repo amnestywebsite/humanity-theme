@@ -98,7 +98,7 @@ class Search_Page {
 
 	/**
 	 * Retrieve WP_Query arguments for the searchpage
-	 * 
+	 *
 	 * @return array<string,mixed>
 	 */
 	public function get_query_vars(): array {
@@ -110,7 +110,7 @@ class Search_Page {
 			'post_type' => $post_types,
 			'orderby'   => $order_vars['orderby'],
 			'order'     => $order_vars['order'],
-			'tax_query' => $this->build_tax_args(),
+			'tax_query' => $this->build_tax_args(), // eslint-disable-line possible-slow-query
 			'year'      => absint( amnesty_get_query_var( 'qyear' ) ),
 			'monthnum'  => absint( amnesty_get_query_var( 'qmonth' ) ),
 			's'         => get_query_var( 's' ),
@@ -141,7 +141,7 @@ class Search_Page {
 				$this->get_group_by_sql(),
 				$this->get_order_by_sql( $search_query, $search_args ),
 				$this->get_limit_sql(),
-			] 
+			]
 		);
 
 		return (string) apply_filters( 'amnesty_searchpage_query', $sql, $search_query, $search_args, $this );

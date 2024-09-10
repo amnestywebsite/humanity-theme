@@ -120,7 +120,7 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_next' ) ) {
 		$content = '';
 
 		// Check if the pagination is for Query that inherits the global context.
-		if ( isset( $block->context['query']['inherit'] ) && $block->context['query']['inherit'] || is_main_query() ) {
+		if ( ( isset( $block->context['query']['inherit'] ) && $block->context['query']['inherit'] ) || is_main_query() ) {
 			$filter_link_attributes = static function () use ( $wrapper_attributes ) {
 				return $wrapper_attributes;
 			};
