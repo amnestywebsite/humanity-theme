@@ -57,6 +57,8 @@ require_once __DIR__ . '/petition-list/register.php';
 require_once __DIR__ . '/petition-list/render.php';
 require_once __DIR__ . '/post-list/register.php';
 require_once __DIR__ . '/post-list/render.php';
+require_once __DIR__ . '/post-meta/register.php';
+require_once __DIR__ . '/post-meta/render.php';
 require_once __DIR__ . '/raw-code/register.php';
 require_once __DIR__ . '/regions/register.php';
 require_once __DIR__ . '/regions/render.php';
@@ -128,6 +130,11 @@ if ( ! function_exists( 'amnesty_filter_allowed_blocks' ) ) {
 	 * @return array
 	 */
 	function amnesty_filter_allowed_blocks(): array {
+		/**
+		 * Core type hint is incorrect
+		 *
+		 * @var array<string,\WP_Block_Type> $all_blocks list of registered blocks
+		 */
 		$all_blocks = WP_Block_Type_Registry::get_instance()->get_all_registered();
 		$namespaces = [ 'yoast', 'yoast-seo', 'woocommerce' ];
 		$denylist   = [ 'core/cover' ];

@@ -145,6 +145,8 @@ require_once realpath( __DIR__ . '/includes/full-site-editing/blocks/register.ph
 #region coreblocks
 require_once realpath( __DIR__ . '/includes/core-blocks/image/filters.php' );
 require_once realpath( __DIR__ . '/includes/core-blocks/button/styles.php' );
+require_once realpath( __DIR__ . '/includes/core-blocks/query/pagination/previous.php' );
+require_once realpath( __DIR__ . '/includes/core-blocks/query/pagination/next.php' );
 require_once realpath( __DIR__ . '/includes/core-blocks/social-icons/styles.php' );
 #endregion coreblocks
 

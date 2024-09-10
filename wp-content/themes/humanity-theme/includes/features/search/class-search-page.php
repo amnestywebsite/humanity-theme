@@ -118,7 +118,7 @@ class Search_Page {
 				$this->get_group_by_sql(),
 				$this->get_order_by_sql( $search_query, $search_args ),
 				$this->get_limit_sql(),
-			] 
+			]
 		);
 
 		return (string) apply_filters( 'amnesty_searchpage_query', $sql, $search_query, $search_args, $this );
