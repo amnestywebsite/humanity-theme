@@ -138,25 +138,6 @@
   --ms-ratio: 1.2;
 }
 
-.skipLink {
-  @extend .btn; /* stylelint-disable-line scss/at-extend-no-missing-placeholder */
-  @extend .u-hiddenVisually; /* stylelint-disable-line scss/at-extend-no-missing-placeholder */
-
-  &:active,
-  &:focus {
-    // 2^31 (1 higher than CC8, which uses 2^31 - 1)
-    z-index: 2147483648;
-    top: 3px;
-    left: 3px;
-    display: block;
-    padding: 10px 20px !important;
-    width: auto !important;
-    height: 50px !important;
-    clip: initial !important;
-    line-height: 30px;
-  }
-}
-
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
