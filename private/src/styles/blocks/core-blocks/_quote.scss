@@ -171,9 +171,8 @@
   display: inline-block;
 }
 
-.wp-block-quote,
 .wp-block-quote.is-style-plain {
-  border: none;
+  border: none !important;
 }
 
 .wp-block-quote.is-style-plain cite::after,
