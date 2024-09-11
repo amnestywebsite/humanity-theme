@@ -223,7 +223,7 @@ if ( ! function_exists( 'amnesty_localise_javascript' ) ) {
 
 		$data = [
 			/* translators: [front] */
-			'listSeparator'    => _x( ', ', 'list item separator', 'amnesty' ),
+			'listSeparator'    => _x( ',', 'list item separator', 'amnesty' ),
 			/* translators: [front] */
 			'openDoubleQuote'  => _x( '“', 'open double quote', 'amnesty' ),
 			/* translators: [front] */
