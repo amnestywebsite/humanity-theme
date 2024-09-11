@@ -1,3 +1,7 @@
+### v1.1.2
+Fixes:
+- Add missing viewport meta tags
+
 ### v1.1.1
 Fixes:
 - Remove Pop-in from FSE header template
