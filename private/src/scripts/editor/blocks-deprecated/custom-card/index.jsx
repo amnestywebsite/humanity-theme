@@ -48,8 +48,9 @@ registerBlockType('amnesty-core/custom-card', {
   icon: 'megaphone',
   category: 'amnesty-core',
   supports: {
-    className: false,
     align: true,
+    className: false,
+    inserter: false,
   },
   attributes: blockAttributes,
   styles: [
