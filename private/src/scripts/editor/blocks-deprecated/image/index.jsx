@@ -65,6 +65,7 @@ registerBlockType('amnesty-core/image-block', {
   category: 'amnesty-core',
   supports: {
     className: false,
+    inserter: false,
   },
   attributes: blockAttributes,
 

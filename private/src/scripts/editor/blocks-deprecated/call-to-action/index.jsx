@@ -15,6 +15,7 @@ registerBlockType('amnesty-core/block-call-to-action', {
   keywords: [__('Call To Action', 'amnesty')],
   supports: {
     className: false,
+    inserter: false,
     multiple: true,
   },
   attributes: {
