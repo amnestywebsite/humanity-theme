@@ -1,3 +1,10 @@
+### v1.1.3
+Fixes:
+- Rendering issue in README.md
+- Missing spacing above Blockquote block
+- Layout of Latest Posts block in Sidebars
+- Erroneous whitespace below Hero block
+
 ### v1.1.2
 Fixes:
 - Add missing viewport meta tags
