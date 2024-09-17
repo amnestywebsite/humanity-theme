@@ -23,9 +23,7 @@ if ( ! function_exists( 'amnesty_override_post_terms_render' ) ) {
 
 if ( ! function_exists( 'amnesty_render_block_core_post_terms' ) ) {
 	/**
-	 * Renders the `core/query-pagination-next` block on the server.
-	 *
-	 * @since 5.8.0
+	 * Renders the `core/post-terms` block on the server.
 	 *
 	 * @global WP_Query $wp_query WordPress Query object.
 	 *
@@ -33,7 +31,7 @@ if ( ! function_exists( 'amnesty_render_block_core_post_terms' ) ) {
 	 * @param string   $content    Block default content.
 	 * @param WP_Block $block      Block instance.
 	 *
-	 * @return string Returns the next posts link for the query pagination.
+	 * @return string Rendered block markup.
 	 *
 	 * phpcs:disable Generic.Metrics.CyclomaticComplexity.TooHigh
 	 */
@@ -41,11 +39,11 @@ if ( ! function_exists( 'amnesty_render_block_core_post_terms' ) ) {
 		if ( ! isset( $block->context['postId'] ) || ! isset( $attributes['term'] ) ) {
 			return '';
 		}
-	
+
 		if ( ! is_taxonomy_viewable( $attributes['term'] ) ) {
 			return '';
 		}
-	
+
 		$post_terms = get_the_terms( $block->context['postId'], $attributes['term'] );
 		if ( is_wp_error( $post_terms ) || empty( $post_terms ) ) {
 			return '';
@@ -53,7 +51,7 @@ if ( ! function_exists( 'amnesty_render_block_core_post_terms' ) ) {
 
 		// Limit array to 1 entry for each term
 		$post_terms = array_slice( $post_terms, 0, 1, true );
-	
+
 		$classes = array( 'taxonomy-' . $attributes['term'] );
 		if ( isset( $attributes['textAlign'] ) ) {
 			$classes[] = 'has-text-align-' . $attributes['textAlign'];
@@ -61,24 +59,24 @@ if ( ! function_exists( 'amnesty_render_block_core_post_terms' ) ) {
 		if ( isset( $attributes['style']['elements']['link']['color']['text'] ) ) {
 			$classes[] = 'has-link-color';
 		}
-	
+
 		$separator = '';
-	
+
 		$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => implode( ' ', $classes ) ) );
-	
-		$prefix = "<div $wrapper_attributes>";
+
+		$prefix = "<div " .  wp_kses_data( $wrapper_attributes ) . ">";
 		if ( isset( $attributes['prefix'] ) && $attributes['prefix'] ) {
 			$prefix .= '<span class="wp-block-post-terms__prefix">' . $attributes['prefix'] . '</span>';
 		}
-	
+
 		$suffix = '</div>';
 		if ( isset( $attributes['suffix'] ) && $attributes['suffix'] ) {
 			$suffix = '<span class="wp-block-post-terms__suffix">' . $attributes['suffix'] . '</span>' . $suffix;
 		}
-		
+
 		return (
 			'<div ' . $wrapper_attributes . '>' .
-				'<a href="' . get_term_link( $post_terms[0] ) . '" rel="tag">' . esc_html( $post_terms[0]->name ) . '</a>' .
+				'<a href="' . esc_attr( get_term_link( $post_terms[0] ) ) . '" rel="tag">' . esc_html( $post_terms[0]->name ) . '</a>' .
 			'</div>'
 		);
 	}

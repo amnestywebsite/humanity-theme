@@ -1,7 +1,7 @@
 .post-paginationContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between !important;
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
@@ -88,12 +88,15 @@
   }
 }
 
-.post-paginationLink button[disabled] {
+.post-paginationContainer button[disabled] {
   color: $color-grey-base;
   cursor: not-allowed;
+  background: none;
+  border: none;
+  text-transform: uppercase;
 }
 
-.post-paginationLink button[disabled] .icon {
+.post-paginationContainer button[disabled] .icon {
   opacity: .4;
 }
 
@@ -162,4 +165,12 @@ ul.page-numbers span.current {
 
 .wp-block-query-pagination .wp-block-query-pagination-numbers .page-numbers {
   margin-left: 10px;
+}
+
+.wp-block-query-pagination.is-content-justification-space-between>.wp-block-query-pagination-previous:first-child {
+  margin-inline-end: 0;
+}
+
+.wp-block-query-pagination.is-content-justification-space-between>.wp-block-query-pagination-next:last-of-type {
+  margin-inline-start: 0;
 }

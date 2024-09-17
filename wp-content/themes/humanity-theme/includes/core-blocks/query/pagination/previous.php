@@ -57,7 +57,7 @@ if ( ! function_exists( 'amnesty_get_previous_posts_link' ) ) {
 		}
 
 		return sprintf(
-			'<span %1$s><span class="icon"></span>%2$s</span>',
+			'<button disabled><span %1$s><span class="icon"></span>%2$s</span></button>',
 			$attr,
 			preg_replace( '/&([^#])(?![a-z]{1,8};)/i', '&#038;$1', $label )
 		);
