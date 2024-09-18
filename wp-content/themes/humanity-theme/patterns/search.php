@@ -17,6 +17,9 @@ add_filter(
 	}
 );
 
+// add filter to limit the post terms results for search
+add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
+
 ?>
 
 <!-- wp:query {"queryId":0,"query":{"perPage":12,"postType":"post","inherit":false},"className":"section--tinted"} -->

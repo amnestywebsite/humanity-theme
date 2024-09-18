@@ -9,6 +9,9 @@
 
 $location_slug = get_option( 'amnesty_location_slug' ) ?: 'location';
 
+// add filter to limit the post terms results for search
+add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
+
 ?>
 <!-- wp:query {"inherit":true, "className":"section--tinted"} -->
 <div class="wp-block-query section--tinted">

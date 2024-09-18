@@ -859,3 +859,19 @@ if ( ! function_exists( 'group_terms_by_initial_ascii_letter' ) ) {
 		return $groups;
 	}
 }
+
+if ( ! function_exists( 'amnesty_limit_post_terms_results_for_search' ) ) {
+	/**
+	 * Limit the number of terms returned for a post
+	 *
+	 * @param array<int,WP_Term> $terms the terms to limit
+	 *
+	 * @return array<int,WP_Term>
+	 */
+	function amnesty_limit_post_terms_results_for_search( array $terms ): array {
+		// Limit array to 1 entry for each term
+		$terms = array_slice( $terms, 0, 1, true );
+
+		return $terms;
+	}
+}
