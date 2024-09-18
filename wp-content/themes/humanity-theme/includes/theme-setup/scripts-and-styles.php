@@ -306,6 +306,10 @@ if ( ! function_exists( 'amnesty_enqueue_block_assets' ) ) {
 	 * @return void
 	 */
 	function amnesty_enqueue_block_assets(): void {
+		if ( ! is_admin() ) {
+			return;
+		}
+
 		$theme = wp_get_theme();
 
 		wp_enqueue_style( 'amnesty-core-editor', amnesty_asset_uri( 'styles' ) . '/editor.css', [], $theme->get( 'Version' ), 'all' );

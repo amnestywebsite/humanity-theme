@@ -40,7 +40,7 @@ if ( ! function_exists( 'get_archive_slider_posts' ) ) {
 						'compare' => 'EXISTS',
 					],
 				],
-			] 
+			]
 		);
 
 		if ( ! $raw_slider_items->have_posts() ) {
@@ -68,7 +68,7 @@ if ( ! function_exists( 'get_archive_slider_posts' ) ) {
 				'imageUrl'         => get_the_post_thumbnail_url( get_the_ID(), 'hero-lg' ),
 				'sizes'            => $image_meta['sizes'],
 				'background'       => '',
-				'title'            => '',
+				'title'            => get_the_title(),
 				'subheading'       => '',
 				'alignment'        => '',
 				'topics'           => wp_get_post_terms( get_the_ID(), 'topic' ),

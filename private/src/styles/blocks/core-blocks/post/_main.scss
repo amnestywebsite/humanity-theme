@@ -1,0 +1,108 @@
+.wp-block-post {
+  min-height: 460px;
+  background: var(--wp--preset--color--white);
+}
+
+.wp-block-post > .wp-block-group {
+  display: flex;
+  flex-direction: column;
+  min-height: 460px;
+  background: var(--wp--preset--color--white);
+}
+
+.wp-block-post .post-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: flex-start;
+}
+
+.wp-block-post .post-header > * {
+  margin-top: spacing(half);
+}
+
+.wp-block-post.has-post-thumbnail .post-content {
+  position: relative;
+}
+
+.wp-block-post:not(.has-post-thumbnail) .post-content::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 75%;
+  margin-top: 12px;
+  background-color: var(--wp--preset--color--black);
+
+  @include mq(x-small) {
+    margin-top: auto;
+  }
+}
+
+.wp-block-post.has-post-thumbnail .wp-block-post-terms.post-category {
+  position: absolute;
+  bottom: 100%;
+  left: 12px;
+
+  .rtl & {
+    right: 12px;
+    left: unset;
+  }
+}
+
+.post-header {
+  max-width: 100%;
+}
+
+.post-content {
+  width: 100%;
+  padding: 12px;
+}
+
+.wp-block-post-terms.post-category {
+  @include state-background(var(--wp--preset--color--grey-darkest));
+  display: inline-block;
+  padding: 4px 8px;
+  font-family: var(--wp--preset--font-family--secondary);
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: var(--wp--preset--color--black);
+}
+
+.wp-block-post-terms.post-category a {
+  color: var(--wp--preset--color--white);
+  text-decoration: none;
+}
+
+.post-meta {
+  display: block;
+  font-family: var(--wp--preset--font-family--secondary);
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--wp--preset--color--grey-dark);
+  background-color: var(--wp--preset--color--white);
+}
+
+.post-figure {
+  position: relative;
+  background-color: var(--wp--preset--color--grey-darkest);
+  overflow: hidden;
+  max-height: 200px;
+  height: 100%;
+}
+
+.post-figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-content a {
+  position: relative;
+  z-index: 1;
+}
+
+:lang(fa-IR) .wp-block-post-terms.post-category {
+  display: none;
+}

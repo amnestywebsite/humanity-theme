@@ -1,0 +1,47 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main"} -->
+<main class="wp-block-group">
+    <!-- wp:pattern {"slug":"amnesty/blog-home-content"} /-->
+
+    <!-- wp:group {"tagName":"div","className":"container"} -->
+    <div class="wp-block-group container">
+        <!-- wp:pattern {"slug":"amnesty/archive-slider"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"tagName":"div","className":"section"} -->
+    <div class="wp-block-group section">
+        <!-- wp:group {"tagName":"div","className":"container has-gutter"} -->
+        <div class="wp-block-group container has-gutter">
+            <!-- wp:pattern {"slug":"amnesty/archive-heading"} /-->
+            <!-- wp:group {"tagName":"div"} -->
+            <div class="wp-block-group">
+                <!-- wp:amnesty-core/archive-filters /-->
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"tagName":"div","className":"container has-gutter"} -->
+    <div class="wp-block-group container has-gutter">
+        <!-- wp:group {"tagName":"section"} -->
+        <section class="wp-block-group">
+            <!-- wp:pattern {"slug":"amnesty/archive-hero"} /-->
+            <!-- wp:pattern {"slug":"amnesty/taxonomy-hero"} /-->
+
+            <!-- wp:group {"tagName":"div"} -->
+            <div class="wp-block-group">
+                <!-- wp:pattern {"slug":"amnesty/archive-loop"} /-->
+            </div>
+            <!-- /wp:group -->
+        </section>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"humanity-theme","area":"footer","className":"amnesty-footer-template-part"} /-->

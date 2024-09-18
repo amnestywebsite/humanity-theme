@@ -1,12 +1,6 @@
 .postlist-categoriesContainer {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
-  padding: 20px;
-
-  @include mq(xm-small) {
-    margin-top: 24px;
-  }
 }
 
 .postlist-categoriesContainer nav {

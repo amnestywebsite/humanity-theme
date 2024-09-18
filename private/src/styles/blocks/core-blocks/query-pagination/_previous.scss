@@ -1,0 +1,30 @@
+.wp-block-query-pagination-previous {
+  padding-right: 5px;
+
+  .rtl & {
+    padding-right: 0;
+    padding-left: 5px;
+  }
+}
+
+span.wp-block-query-pagination-previous {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.wp-block-query-pagination-previous .icon {
+  display: inline-block;
+  margin-right: 16px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/sprite.svg"), none;
+  background-repeat: no-repeat;
+  background-size: 313px 300px;
+  background-position: -234px -240px;
+
+  .rtl & {
+    margin-left: 16px;
+    margin-right: 0;
+    background-position: -110px -265px;
+  }
+}

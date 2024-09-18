@@ -1,0 +1,20 @@
+.wp-block-post-title.post-title a {
+  margin-bottom: 0;
+  font-size: 28px;
+  text-decoration: none;
+  color: var(--wp--preset--color--black);
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+  }
+}
+
+.wp-block-post-title.post-title span {
+  background-color: var(--wp--preset--color--white);
+  box-shadow: -8px 0 0 0 var(--wp--preset--color--white), 8px 0 0 0 var(--wp--preset--color--white);
+  box-decoration-break: clone;
+  line-height: 1.2;
+}
