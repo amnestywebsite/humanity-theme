@@ -83,7 +83,7 @@ export default function DisplayComponent({ attributes, context, setAttributes })
           <SelectControl
             label={__('Choose a meta key', 'amnesty')}
             value={attributes.metaKey}
-            options={[{ label: __('None', ''), value: '' }, ...metaKeys]}
+            options={[{ label: __('None', 'default'), value: '' }, ...metaKeys]}
             onChange={(metaKey) => setAttributes({ metaKey })}
           />
           <ToggleControl
