@@ -879,6 +879,8 @@ if ( ! function_exists( 'amnesty_limit_post_terms_results_for_archive' ) ) {
 				return [ $term ];
 			}
 		}
+
+		return $terms;
 	}
 }
 
