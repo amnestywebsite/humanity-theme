@@ -59,9 +59,7 @@ if ( ! function_exists( 'amnesty_styles' ) ) {
 
 		$theme = wp_get_theme();
 
-		$style_deps = [
-			// 'wp-block-latest-posts', -- causes issues on some sites
-		];
+		$style_deps = [];
 
 		if ( wp_style_is( 'woocommerce-general' ) ) {
 			$style_deps[] = 'woocommerce-general';
@@ -225,7 +223,7 @@ if ( ! function_exists( 'amnesty_localise_javascript' ) ) {
 
 		$data = [
 			/* translators: [front] */
-			'listSeparator'    => _x( ', ', 'list item separator', 'amnesty' ),
+			'listSeparator'    => _x( ',', 'list item separator', 'amnesty' ),
 			/* translators: [front] */
 			'openDoubleQuote'  => _x( '“', 'open double quote', 'amnesty' ),
 			/* translators: [front] */
@@ -308,6 +306,10 @@ if ( ! function_exists( 'amnesty_enqueue_block_assets' ) ) {
 	 * @return void
 	 */
 	function amnesty_enqueue_block_assets(): void {
+		if ( ! is_admin() ) {
+			return;
+		}
+
 		$theme = wp_get_theme();
 
 		wp_enqueue_style( 'amnesty-core-editor', amnesty_asset_uri( 'styles' ) . '/editor.css', [], $theme->get( 'Version' ), 'all' );

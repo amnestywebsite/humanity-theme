@@ -1,0 +1,12 @@
+{
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+	"apiVersion": 2,
+	"name": "amnesty-core/query-count",
+	"title": "Query Count",
+	"description": "Display the query results count",
+  "ancestor": ["core/query"],
+  "textdomain": "amnesty",
+	"category": "theme",
+	"icon": "info",
+  "usesContext": ["queryId", "query"]
+}

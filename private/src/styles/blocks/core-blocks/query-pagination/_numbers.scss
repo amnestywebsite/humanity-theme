@@ -1,0 +1,40 @@
+.wp-block-query-pagination-numbers {
+  display: none;
+  flex-basis: 100%;
+  justify-content: center;
+  list-style: none;
+  color: $color-black;
+
+  @include mq(small) {
+    display: flex;
+    flex-basis: auto;
+  }
+}
+
+.wp-block-query-pagination-numbers .page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.wp-block-query-pagination-numbers a.page-numbers {
+  @include state-background($color-grey-light);
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+.wp-block-query-pagination-numbers li + li {
+  margin-left: 10px;
+
+  .rtl & {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+.wp-block-query-pagination-numbers span.current {
+  background-color: $color-black;
+  color: $color-white;
+}
