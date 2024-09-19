@@ -25,3 +25,9 @@ registerBlockStyle('core/button', {
   // translators: [admin]
   label: _x('Back Link', 'block style', 'amnesty'),
 });
+
+registerBlockStyle('core/button', {
+  name: 'search',
+  // translators: [admin]
+  label: _x('Search', 'block style', 'amnesty'),
+});

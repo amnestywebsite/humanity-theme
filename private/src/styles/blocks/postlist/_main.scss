@@ -1,6 +1,7 @@
-@import "./header";
-@import "./post-search";
 @import "./categories";
+@import "./header";
+@import "./pagination";
+@import "./post-search";
 
 .postlist {
   display: flex;
