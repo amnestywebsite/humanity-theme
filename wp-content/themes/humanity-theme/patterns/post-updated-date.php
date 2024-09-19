@@ -1,9 +1,10 @@
 <?php
 
 /**
- * Post single partial, "updated" date
- *
- * @package Amnesty\Partials
+ * Title: Post Updated Date
+ * Description: Output the "updated date" for a post
+ * Slug: amnesty/post-updated-date
+ * Inserter: no
  */
 
 if ( ! amnesty_validate_boolish( get_post_meta( get_the_ID(), 'show_updated_date', true ) ) ) {
