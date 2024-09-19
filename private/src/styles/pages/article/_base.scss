@@ -1,18 +1,13 @@
 .article {
-  flex: 1 1 100%;
-  width: 100px;
-  max-width: 100%;
   order: 1;
 
   @include mq(medium-sm) {
-    flex: 1 1 calc(100% - 88px);
     order: 2;
   }
 }
 
 .article-container {
   @include flexy-wrapper;
-  margin-top: spacing();
 
   @include mq(large) {
     flex-wrap: nowrap;
@@ -25,13 +20,9 @@
 }
 
 .article.has-sidebar {
-  flex: 1 1 100%;
-  width: 100%;
-  max-width: 100%;
   margin-right: auto;
 
   @include mq(medium-sm) {
-    flex: 1 1 calc(100% - 88px);
     order: 2;
   }
 
