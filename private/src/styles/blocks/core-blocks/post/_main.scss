@@ -10,6 +10,11 @@
   background: var(--wp--preset--color--white);
 }
 
+.search-results .wp-block-post,
+.search-results .wp-block-post > .wp-block-group {
+  min-height: unset;
+}
+
 .wp-block-post .post-content {
   display: flex;
   flex-direction: column;
@@ -38,7 +43,7 @@
   }
 }
 
-.wp-block-post.has-post-thumbnail .wp-block-post-terms.post-category {
+.wp-block-post.has-post-thumbnail > *:not(.post--result) .wp-block-post-terms.post-category {
   position: absolute;
   bottom: 100%;
   left: 12px;

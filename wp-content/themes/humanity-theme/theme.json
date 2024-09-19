@@ -393,7 +393,7 @@
           "lineHeight": "1.12"
         },
         "color": {
-          "text": "var(--wp--preset--color--grey-dark)"
+          "text": "var(--wp--preset--color--black)"
         }
       },
       "h1": {
