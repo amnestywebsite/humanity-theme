@@ -17,6 +17,13 @@ use WP_Tax_Query;
 class Search_Page {
 
 	/**
+	 * The query object
+	 *
+	 * @var \WP_Query|null
+	 */
+	protected ?WP_Query $query = null;
+
+	/**
 	 * Count of found search results
 	 *
 	 * @var int
@@ -42,48 +49,29 @@ class Search_Page {
 	}
 
 	/**
+	 * Retrieve the query object for the search page
+	 *
+	 * @return WP_Query|null
+	 */
+	public function get_wp_query(): ?WP_Query {
+		if ( is_null( $this->query ) ) {
+			$this->query = new WP_Query( $this->get_query_vars() );
+		}
+
+		return $this->query;
+	}
+
+	/**
 	 * Query the database for the search results
 	 *
 	 * @return array<int,\WP_Post>
 	 */
 	public function get_results(): array {
-		global $wpdb;
+		$query = $this->get_wp_query();
 
-		if ( isset( $this->found_posts ) ) {
-			return $this->found_posts;
-		}
+		$this->found_posts = $query->posts;
+		$this->found_rows  = $query->found_posts;
 
-		$query_sql      = $this->get_sql();
-		$cache_key_base = md5( $query_sql );
-		$cached_posts   = wp_cache_get( $cache_key_base . '_posts', __METHOD__ );
-		$cached_count   = wp_cache_get( $cache_key_base . '_count', __METHOD__ );
-
-		if ( is_array( $cached_posts ) && absint( $cached_count ) ) {
-			$this->found_posts = $cached_posts;
-			$this->found_rows  = absint( $cached_count );
-
-			return $this->found_posts;
-		}
-
-		// reset just in case
-		$this->found_rows = 0;
-
-		// phpcs:ignore WordPress.DB
-		$results = (array) $wpdb->get_results( $query_sql );
-
-		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery
-		$this->found_rows  = absint( $wpdb->get_var( 'SELECT found_rows()' ) );
-		$this->found_posts = array_map( fn ( $row ): WP_Post => new WP_Post( $row ), $results );
-
-		// no results
-		if ( is_null( $this->found_posts ) ) {
-			wp_cache_set( $cache_key_base . '_count', $this->found_rows, __METHOD__, 60 );
-			wp_cache_set( $cache_key_base . '_posts', $this->found_posts, __METHOD__, 60 );
-			return [];
-		}
-
-		wp_cache_set( $cache_key_base . '_count', $this->found_rows, __METHOD__, HOUR_IN_SECONDS );
-		wp_cache_set( $cache_key_base . '_posts', $this->found_posts, __METHOD__, HOUR_IN_SECONDS );
 		return $this->found_posts;
 	}
 
