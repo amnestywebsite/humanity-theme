@@ -1,3 +1,8 @@
+.wp-block-quote,
+.wp-block-quote.is-style-default {
+  border-left: none;
+}
+
 .wp-block-quote::before,
 .wp-block-quote.has-text-align-center::before {
   content: open-quote;
