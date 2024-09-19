@@ -194,7 +194,7 @@
     background-color: var(--wp--preset--color--grey-lighter);
     border: none;
     border-radius: 50%;
-    box-shadow: 1px 1px 5px 1px rgba(var(--wp--preset--color--grey-dark), .23);
+    box-shadow: 1px 1px 5px 1px color-mix(in srgb, var(--wp--preset--color--grey-dark) 23%, transparent);
     transform: translate(0, -50%);
   }
 

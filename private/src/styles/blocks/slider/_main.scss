@@ -207,7 +207,7 @@
 }
 
 .slide.has-opaque-background .slide-contentContainer {
-  background: linear-gradient(to bottom, rgba(var(--wp--preset--color--black), .5) 90%, rgba(var(--wp--preset--color--black), 0) 100%);
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--wp--preset--color--black) 50%, transparent) 90%, transparent 100%);
 }
 
 .slide.has-transparent-background .slide-contentContainer {
@@ -330,7 +330,7 @@
 }
 
 .slide-contentWrapper.is-open {
-  background-color: rgba(var(--wp--preset--color--black), .4);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 40%, transparent);
   overflow-y: scroll;
 
   @include mq(small) {

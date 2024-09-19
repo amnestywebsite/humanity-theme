@@ -14,7 +14,7 @@
   align-items: flex-end;
   width: 100%;
   font-size: var(--wp--preset--font-size--small);
-  background-color: rgba(var(--wp--preset--color--black), .55);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 55%, transparent);
   color: var(--wp--preset--color--white);
   word-break: keep-all;
 

@@ -230,7 +230,7 @@
 .page-footerCopyright {
   font-size: var(--wp--preset--font-size--x-small);
   line-height: 1.5;
-  color: rgba(var(--wp--preset--color--white), .7);
+  color: color-mix(in srgb, var(--wp--preset--color--white) 70%, transparent);
   padding-top: 8px;
 }
 

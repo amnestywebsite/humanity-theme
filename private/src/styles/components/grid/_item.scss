@@ -23,6 +23,11 @@
   }
 }
 
+// should be moved to plugin
+.grid-item.aimc-ignore {
+  padding-bottom: 32px;
+}
+
 .grid-item .grid-content {
   max-width: 100%;
 }
@@ -46,31 +51,26 @@
 }
 
 .grid-itemMeta {
-  display: block;
-  text-transform: uppercase;
-  font-size: var(--wp--preset--font-size--regular);
-  font-family: var(--wp--preset--font-family--secondary);
-  font-weight: bold;
-  max-width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color: var(--wp--preset--color--white);
-}
-
-.grid-itemMeta a {
   position: relative;
   z-index: 2;
   display: block;
   padding: 2px 12px;
   width: max-content;
+  max-width: 100%;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: var(--wp--preset--font-size--regular);
+  font-family: var(--wp--preset--font-family--secondary);
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   background-color: var(--wp--preset--color--black);
   color: var(--wp--preset--color--white);
-  text-decoration: none;
 }
 
 // increased specificity to override global link decoration
-.single main .grid-itemMeta a {
+.single main .grid-itemMeta {
   text-decoration: none;
 }
 
