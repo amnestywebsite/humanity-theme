@@ -34,10 +34,6 @@ if ( ! function_exists( 'amnesty_get_next_posts_link' ) ) {
 	 * @return string HTML-formatted next posts page link.
 	 */
 	function amnesty_get_next_posts_link( $label = null, $max_page = 0 ): string {
-		if ( is_single() ) {
-			return '';
-		}
-
 		global $paged, $wp_query;
 
 		if ( ! $max_page ) {

@@ -30,10 +30,6 @@ if ( ! function_exists( 'amnesty_get_previous_posts_link' ) ) {
 	 * @return string HTML-formatted previous page link.
 	 */
 	function amnesty_get_previous_posts_link( $label = null ): string {
-		if ( is_single() ) {
-			return '';
-		}
-
 		global $paged;
 
 		if ( null === $label ) {

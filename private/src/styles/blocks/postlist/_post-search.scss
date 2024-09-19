@@ -1,3 +1,18 @@
+ul.wp-block-post-template {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.post:has(> .post--result) {
+  width: 100%;
+  max-width: 100%;
+  min-height: 0;
+}
+
+.wp-block-post-terms.post-category a {
+  color: var(--wp--preset--color--white);
+}
+
 .post--result {
   width: 100%;
   max-width: 100%;
@@ -7,7 +22,7 @@
 }
 
 .post--result + .post--result {
-  margin-top: 8px;
+  margin-top: var(--wp--preset--spacing--single);
   margin-left: 0;
 }
 

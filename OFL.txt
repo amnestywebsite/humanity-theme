@@ -1,5 +1,7 @@
-Copyright (c) 2010-2014 by tyPoland Lukasz Dziedzic (team@latofonts.com) with Reserved Font Name "Lato"
+Copyright (c) 2010-2014 by tyPoland Lukasz Dziedzic (team@latofonts.com), with Reserved Font Name "Lato"
 Copyright (c) 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name "Playfair Display"
+Copyright (c) 2015 The Rubik Project Authors (https://github.com/googlefonts/rubik) with Reserved Font Name "Rubik"
+Copyright (c) 2015, Saber Rastikerdar (saber.rastikerdar@gmail.com), with Reserved Font Name "Parastoo"
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:

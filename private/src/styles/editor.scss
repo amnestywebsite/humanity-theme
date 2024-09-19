@@ -26,6 +26,9 @@
 // Helpers
 @import "utils/helpers/display";
 
+// Base
+@import "base/type";
+
 // Layout
 @import "layout/page-hero";
 
@@ -54,6 +57,7 @@
 @import "blocks/core-blocks/query-pagination/editor";
 @import "blocks/core-blocks/rss";
 @import "blocks/core-blocks/social-links";
+@import "blocks/core-blocks/quote";
 @import "blocks/custom-card/main";
 @import "blocks/download-block/style";
 @import "blocks/fact-block/main";
@@ -80,6 +84,7 @@
 
 // Page level
 @import "pages/archive";
+@import "pages/article";
 
 html {
   box-sizing: border-box;

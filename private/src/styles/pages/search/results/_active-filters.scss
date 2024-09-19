@@ -27,8 +27,8 @@
 .clear-filter {
   margin-right: var(--wp--preset--spacing--half);
   padding: var(--wp--preset--spacing--quarter);
+  background-color: var(--wp--preset--color--grey-lightest);
   font-size: var(--wp--preset--font-size--x-small);
-  background-color: var(--wp--preset--color--grey-lighterest);
 
   &::after {
     content: "x";
