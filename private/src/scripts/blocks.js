@@ -47,3 +47,15 @@ import './editor/fse-blocks/archive-filters/index.jsx';
 import './editor/fse-blocks/pop-in/index.jsx';
 import './editor/fse-blocks/query-count/index.jsx';
 import './editor/fse-blocks/site-header/index.jsx';
+
+// To remove in v2.0.0
+import './editor/blocks-deprecated/background-media/index.jsx';
+import './editor/blocks-deprecated/banner/index.jsx';
+import './editor/blocks-deprecated/button/index.jsx';
+import './editor/blocks-deprecated/call-to-action/index.jsx';
+import './editor/blocks-deprecated/collapsable/index.jsx';
+import './editor/blocks-deprecated/columns/index.jsx';
+import './editor/blocks-deprecated/custom-card/index.jsx';
+import './editor/blocks-deprecated/header/index.jsx';
+import './editor/blocks-deprecated/image/index.jsx';
+import './editor/blocks-deprecated/links-with-icons/index.jsx';
