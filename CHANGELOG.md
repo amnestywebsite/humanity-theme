@@ -1,3 +1,19 @@
+### v1.2.0
+Features:
+- Add Call to Action block patterns
+- Add Audio/Quote block patterns
+
+Fixes:
+- Rendering issue in README.md
+- Missing spacing above Blockquote block
+- Layout of Latest Posts block in Sidebars
+- Erroneous whitespace below Hero block
+
+Chores:
+- Move deprecated blocks to correct directory
+- Bump Webpack version
+- Bump Micromatch version
+
 ### v1.1.2
 Fixes:
 - Add missing viewport meta tags

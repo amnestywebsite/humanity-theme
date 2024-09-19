@@ -66,6 +66,9 @@ class Taxonomy_Locations extends Taxonomy {
 		add_filter( 'body_class', [ $this, 'body_classes' ] );
 		add_action( 'admin_head', [ $this, 'output_css' ] );
 		add_filter( 'term_link', [ $this, 'rewrite_links' ], 10, 3 );
+
+		add_action( 'cmb2_admin_init', [ $this, 'custom_fields' ] );
+		add_action( 'rest_api_init', [ $this, 'register_fields' ] );
 	}
 
 	/**
@@ -197,6 +200,97 @@ class Taxonomy_Locations extends Taxonomy {
 		}
 
 		return esc_url( sprintf( '%s?q%s=%s', amnesty_search_url(), $this->slug, $term->term_id ) );
+	}
+
+	/**
+	 * Register custom fields for this taxonomy
+	 *
+	 * @return void
+	 */
+	public function custom_fields() {
+		if ( ! function_exists( 'new_cmb2_box' ) ) {
+			return;
+		}
+
+		$settings = new_cmb2_box(
+			[
+				'id'           => sprintf( 'amnesty_%s', $this->name ),
+				/* translators: [admin] */
+				'title'        => __( 'Term settings', 'amnesty' ),
+				'object_types' => [ 'term' ],
+				'taxonomies'   => [ $this->name ],
+				'context'      => 'normal',
+				'priority'     => 'low',
+				'show_on_cb'   => function () {
+					// v nonce check not required
+					// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+					return is_admin() && sanitize_text_field( $_GET['taxonomy'] ?? '' ) === $this->name;
+				},
+			]
+		);
+
+		amnesty_cmb2_wrap_open( $settings, /* translators: [admin] */ __( 'Basic Settings', 'amnesty' ) );
+
+		$settings->add_field(
+			[
+				'id'           => 'image',
+				/* translators: [admin] */
+				'name'         => __( 'Featured Image', 'amnesty' ),
+				'type'         => 'file',
+				'options'      => [ 'url' => false ],
+				'text'         => [ 'add_upload_file_text' => /* translators: [admin] */ __( 'Choose or upload an image', 'amnesty' ) ],
+				'preview_size' => 'thumbnail',
+				'query_args'   => [
+					'type' => [
+						'image/jpeg',
+						'image/png',
+						'image/gif',
+						'image/bmp',
+						'image/tiff',
+					],
+				],
+			]
+		);
+
+		do_action( 'amnesty_taxonomy_location_custom_fields', $settings, 'basic' );
+
+		amnesty_cmb2_wrap_close( $settings );
+
+		do_action( "taxonomy_{$this->name}_custom_fields", $settings );
+	}
+
+	/**
+	 * Register REST API fields for this taxonomy
+	 *
+	 * @return void
+	 */
+	public function register_fields() {
+		register_rest_field(
+			$this->name,
+			'featuredImage',
+			[
+				'get_callback' => [ static::class, 'featured_image_get_callback' ],
+			]
+		);
+	}
+
+	/**
+	 * Getter for the featuredImage rest field
+	 *
+	 * @param array<string,mixed> $term the term to retrieve the featured image for
+	 *
+	 * @return array|null
+	 */
+	public static function featured_image_get_callback( array $term ): ?array {
+		$image_id = absint( get_term_meta( $term['id'], 'image_id', true ) );
+
+		if ( ! $image_id ) {
+			return null;
+		}
+
+		$image = wp_prepare_attachment_for_js( $image_id );
+
+		return $image ?: null;
 	}
 
 }
