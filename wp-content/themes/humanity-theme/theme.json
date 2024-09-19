@@ -376,7 +376,7 @@
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--primary)",
       "fontSize": "var(--wp--preset--font-size--regular)",
-      "lineHeight": "calc( 27px / 1.125 )"
+      "lineHeight": "calc(27px / 1.125)"
     },
     "elements": {
       "link": {
@@ -393,7 +393,7 @@
           "lineHeight": "1.12"
         },
         "color": {
-          "text": "var(--wp--preset--color--amnesty-grey-dark)"
+          "text": "var(--wp--preset--color--grey-dark)"
         }
       },
       "h1": {

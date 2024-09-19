@@ -123,7 +123,7 @@
 
 .wp-block-quote.has-amnesty-grey-brand-color cite::after,
 .wp-block-quote.has-text-align-center.has-amnesty-grey-brand-color cite::after {
-  background-color: var(--wp--preset--color--amnesty-grey-brand);
+  background-color: var(--wp--preset--color--grey-light);
 }
 
 .wp-block-quote.has-text-align-left {
@@ -136,7 +136,7 @@
 }
 
 .wp-block-quote.has-text-align-left.has-amnesty-grey-brand-color {
-  border-left-color: var(--wp--preset--color--amnesty-grey-brand);
+  border-left-color: var(--wp--preset--color--grey-light);
 }
 
 .wp-block-quote.has-text-align-right {
@@ -149,7 +149,7 @@
 }
 
 .wp-block-quote.has-text-align-right.has-amnesty-grey-brand-color {
-  border-right-color: var(--wp--preset--color--amnesty-grey-brand);
+  border-right-color: var(--wp--preset--color--grey-light);
 }
 
 .wp-block-quote.has-text-align-left p::before,
