@@ -2,13 +2,14 @@
 
 <!-- wp:group {"tagName":"main"} -->
 <main class="wp-block-group">
-    <!-- wp:pattern {"slug":"amnesty/featured-image"} /-->
     <!-- wp:group {"tagName":"div","className":"container has-gutter"} -->
     <div class="wp-block-group container has-gutter">
-        <!-- wp:group {"tagName":"div","className":"article-container"} -->
-        <div class="wp-block-group article-container">
-            <!-- wp:pattern {"slug":"amnesty/post-content"} /-->
-            <!-- wp:pattern {"slug":"amnesty/sidebar"} /-->
+        <!-- wp:amnesty-core/search-form /-->
+
+        <!-- wp:group {"tagName":"div","className":"section search-results section--tinted"} -->
+        <div class="wp-block-group section search-results section--tinted">
+            <!-- wp:amnesty-core/archive-header /-->
+            <!-- wp:pattern {"slug":"amnesty/search-results"} /-->
         </div>
         <!-- /wp:group -->
     </div>

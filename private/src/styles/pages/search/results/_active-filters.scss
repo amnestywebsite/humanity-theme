@@ -1,7 +1,7 @@
 .filter-wrapper {
   display: flex;
   align-items: center;
-  padding-top: 0;
+  padding-top: 0 !important;
   text-transform: uppercase;
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;

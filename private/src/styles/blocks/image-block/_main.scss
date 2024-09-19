@@ -92,7 +92,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(var(--wp--preset--color--black), .25);
+  background: color-mix(in srgb, var(--wp--preset--color--black) 25%, transparent);
 }
 
 .imageBlock-title,

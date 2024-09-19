@@ -141,7 +141,7 @@
 }
 
 .author-banner-caption {
-  background-color: rgba(var(--wp--preset--color--black), .1);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 10%, transparent);
   padding: 5px;
   font-size: var(--wp--preset--font-size--small);
   font-style: italic;

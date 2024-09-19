@@ -22,20 +22,20 @@
   padding: 0 20px;
   font-size: var(--wp--preset--font-size--heading-1);
   line-height: 1.3 !important;
-  background-color: rgba(var(--wp--preset--color--black), .45);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 45%, transparent);
   color: var(--wp--preset--color--white);
   box-decoration-break: clone;
 }
 
 p.page-heroContent {
+  margin-top: 0;
   margin-bottom: 0;
   padding: 10px 20px;
   max-width: 460px;
   font-family: var(--wp--preset--font-family--secondary);
   font-size: var(--wp--preset--font-size--heading-5);
-  background-color: rgba(var(--wp--preset--color--black), .45);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 45%, transparent);
   color: var(--wp--preset--color--white);
-  margin-top: 0;
 }
 
 .page-heroCta {
@@ -43,7 +43,7 @@ p.page-heroContent {
   display: inline-flex;
   align-items: center;
   padding: 20px;
-  background-color: rgba(var(--wp--preset--color--black), .45);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 45%, transparent);
 
   .editor-url-input__button {
     position: relative;

@@ -23,11 +23,6 @@ ul.wp-block-post-template {
 
 .post--result + .post--result {
   margin-top: var(--wp--preset--spacing--single);
-  margin-left: 0;
-}
-
-.rtl .post--result + .post--result {
-  margin-right: 0;
 }
 
 .post--result .post-title {
@@ -90,4 +85,8 @@ ul.wp-block-post-template {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.post--result .wp-block-post-terms {
+  display: inline-block;
 }

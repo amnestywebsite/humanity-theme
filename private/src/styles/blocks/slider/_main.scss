@@ -14,14 +14,13 @@
   justify-content: center;
   text-align: center;
   min-height: 56px;
-  font-size: var(--wp--preset--font-size--small);
   background-color: var(--wp--preset--color--grey-lighter);
-  text-transform: uppercase;
   font-family: var(--wp--preset--font-family--secondary);
+  font-size: var(--wp--preset--font-size--small);
+  text-transform: uppercase;
   flex: 1 1 auto;
   font-weight: bold;
   border: none;
-  color: var(--wp--preset--color--black);
 }
 
 .slider-navButton.is-nav-selected {
@@ -207,7 +206,7 @@
 }
 
 .slide.has-opaque-background .slide-contentContainer {
-  background: linear-gradient(to bottom, rgba(var(--wp--preset--color--black), .5) 90%, rgba(var(--wp--preset--color--black), 0) 100%);
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--wp--preset--color--black) 50%, transparent) 90%, transparent 100%);
 }
 
 .slide.has-transparent-background .slide-contentContainer {
@@ -330,7 +329,7 @@
 }
 
 .slide-contentWrapper.is-open {
-  background-color: rgba(var(--wp--preset--color--black), .4);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 40%, transparent);
   overflow-y: scroll;
 
   @include mq(small) {

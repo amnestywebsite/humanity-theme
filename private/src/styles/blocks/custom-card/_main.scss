@@ -32,7 +32,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: rgba(var(--wp--preset--color--black), .25);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 25%, transparent);
 }
 
 .customCard-image img {

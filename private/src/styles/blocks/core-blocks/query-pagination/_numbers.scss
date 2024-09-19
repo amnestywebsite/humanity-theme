@@ -3,7 +3,7 @@
   flex-basis: 100%;
   justify-content: center;
   list-style: none;
-  color: var(--wp-preset--color--black);
+  color: var(--wp--preset--color--black);
 
   @include mq(small) {
     display: flex;
@@ -20,7 +20,7 @@
 }
 
 .wp-block-query-pagination-numbers a.page-numbers {
-  @include state-background(var(--wp-preset--color--grey-light));
+  @include state-background(var(--wp--preset--color--grey--lighter));
   text-decoration: underline;
   text-decoration-skip-ink: auto;
 }
@@ -35,6 +35,6 @@
 }
 
 .wp-block-query-pagination-numbers span.current {
-  background-color: var(--wp-preset--color--black);
-  color: var(--wp-preset--color--white);
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }

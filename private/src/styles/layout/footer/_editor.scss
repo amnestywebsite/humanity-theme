@@ -59,7 +59,7 @@
 
 .amnesty-footer-container .amnesty-copyright {
   line-height: 1.5;
-  color: rgba(var(--wp--preset--color--white), 0.7);
+  color: color-mix(in srgb, var(--wp--preset--color--white) 70%, transparent);
   padding-top: 8px;
 }
 
