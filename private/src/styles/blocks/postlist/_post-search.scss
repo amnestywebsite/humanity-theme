@@ -3,10 +3,6 @@ ul.wp-block-post-template {
   margin-left: 0;
 }
 
-.wp-block-post + .wp-block-post {
-  margin-top: 20px;
-}
-
 .post:has(> .post--result) {
   width: 100%;
   max-width: 100%;
@@ -26,7 +22,7 @@ ul.wp-block-post-template {
 }
 
 .post--result + .post--result {
-  margin-top: 8px;
+  margin-top: var(--wp--preset--spacing--single);
   margin-left: 0;
 }
 
