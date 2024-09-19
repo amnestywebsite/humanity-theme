@@ -7,11 +7,9 @@
  * Inserter: no
  */
 
-$current_term     = get_queried_object();
-$term_name        = $current_term->name ?? '';
-$term_description = $current_term->description ?? '';
+$current_term = get_queried_object();
 
-if ( ! $term_name && ! $term_description ) {
+if ( ! is_a( $current_term, WP_Term::class ) ) {
 	return;
 }
 
@@ -20,10 +18,10 @@ if ( ! $term_name && ! $term_description ) {
 <!-- wp:group {"tagName":"div","className":"categoryTerm-title"} -->
 <div class="wp-block-group categoryTerm-title">
 	<!-- wp:heading {"level":1} -->
-	<h1 class="wp-block-heading"><?php echo esc_html( $term_name ); ?></h1>
+	<h1 class="wp-block-heading"><?php echo esc_html( $current_term->name ); ?></h1>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
-	<p><?php echo wp_kses_post( $term_description ); ?></p>
+	<p><?php echo wp_kses_post( $current_term->description ); ?></p>
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
