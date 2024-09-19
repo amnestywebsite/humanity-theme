@@ -13,7 +13,7 @@ if ( ! function_exists( 'amnesty_override_core_query_pagination_previous_render'
 	 * @return array<string,mixed>
 	 */
 	function amnesty_override_core_query_pagination_previous_render( array $settings ): array {
-		if ( 'core/query-pagination-previous' === $settings['name'] ) {
+		if ( isset( $settings['name'] ) && 'core/query-pagination-previous' === $settings['name'] ) {
 			$settings['render_callback'] = 'amnesty_render_block_core_query_pagination_previous';
 		}
 
@@ -30,10 +30,6 @@ if ( ! function_exists( 'amnesty_get_previous_posts_link' ) ) {
 	 * @return string HTML-formatted previous page link.
 	 */
 	function amnesty_get_previous_posts_link( $label = null ): string {
-		if ( is_single() ) {
-			return '';
-		}
-
 		global $paged;
 
 		if ( null === $label ) {

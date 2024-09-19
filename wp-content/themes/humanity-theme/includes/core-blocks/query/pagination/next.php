@@ -13,7 +13,7 @@ if ( ! function_exists( 'amnesty_override_core_query_pagination_next_render' ) )
 	 * @return array<string,mixed>
 	 */
 	function amnesty_override_core_query_pagination_next_render( array $settings ): array {
-		if ( 'core/query-pagination-next' === $settings['name'] ) {
+		if ( isset( $settings['name'] ) && 'core/query-pagination-next' === $settings['name'] ) {
 			$settings['render_callback'] = 'amnesty_render_block_core_query_pagination_next';
 		}
 
@@ -34,10 +34,6 @@ if ( ! function_exists( 'amnesty_get_next_posts_link' ) ) {
 	 * @return string HTML-formatted next posts page link.
 	 */
 	function amnesty_get_next_posts_link( $label = null, $max_page = 0 ): string {
-		if ( is_single() ) {
-			return '';
-		}
-
 		global $paged, $wp_query;
 
 		if ( ! $max_page ) {

@@ -54,6 +54,7 @@ import './editor/blocks/stat-counter/index.jsx';
 import './editor/blocks/term-list/index.jsx';
 import './editor/blocks/tweet/index.jsx';
 
-import './editor/fse-blocks/pop-in/index.jsx';
-import './editor/fse-blocks/site-header/index.jsx';
 import './editor/fse-blocks/archive-filters/index.jsx';
+import './editor/fse-blocks/pop-in/index.jsx';
+import './editor/fse-blocks/query-count/index.jsx';
+import './editor/fse-blocks/site-header/index.jsx';
