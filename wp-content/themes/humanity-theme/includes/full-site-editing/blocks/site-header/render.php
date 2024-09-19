@@ -12,7 +12,6 @@ if ( ! function_exists( 'render_site_header_block' ) ) {
 		spaceless();
 
 		amnesty_overlay();
-		amnesty_skip_link();
 		get_template_part( 'partials/language-selector' );
 		get_template_part( 'partials/navigation/desktop' );
 
