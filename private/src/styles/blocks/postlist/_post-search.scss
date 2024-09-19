@@ -1,18 +1,13 @@
 .post--result {
   width: 100%;
   max-width: 100%;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   min-height: 0;
   padding: 12px;
 }
 
-.search-results .wp-block-post-template .wp-block-post + .wp-block-post {
-  margin-top: 20px;
-  margin-left: 0;
-}
-
-.rtl .post--result + .post--result {
-  margin-right: 0;
+.post--result + .post--result {
+  margin-top: var(--wp--preset--spacing--single);
 }
 
 .post--result .post-title {
