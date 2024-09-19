@@ -27,8 +27,8 @@
 .clear-filter {
   margin-right: var(--wp--preset--spacing--half);
   padding: var(--wp--preset--spacing--quarter);
-  background-color: $color-grey-xx-light;
   font-size: var(--wp--preset--font-size--x-small);
+  background-color: var(--wp--preset--color--grey-lighterest);
 
   &::after {
     content: "x";
@@ -39,7 +39,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: $color-grey-sm-light;
+    background-color: var(--wp--preset--color--grey-lighter);
   }
 }
 
@@ -54,5 +54,5 @@
 }
 
 .clear-filter--all {
-  background-color: $color-grey-sm-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }

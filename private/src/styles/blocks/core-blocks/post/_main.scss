@@ -59,7 +59,7 @@
 }
 
 .wp-block-post-terms.post-category {
-  @include state-background(lighten($color-black, 20%));
+  @include state-background(var(--wp--preset--color--grey-dark));
   display: inline-block;
   padding: 4px 8px;
   font-family: var(--wp--preset--font-family--secondary);
@@ -79,13 +79,13 @@
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   font-size: 14px;
-  color: $color-grey-mid-dark;
-  background-color: $color-white;
+  color: var(--wp--preset--color--grey-dark);
+  background-color: var(--wp--preset--color--white);
 }
 
 .post-figure {
   position: relative;
-  background-color: $color-grey-x-dark;
+  background-color: var(--wp--preset--color--grey-darkest);
   overflow: hidden;
   max-height: 200px;
   height: 100%;

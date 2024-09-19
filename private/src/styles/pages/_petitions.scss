@@ -20,8 +20,8 @@
 }
 
 .page-template-page-petitions .petition-index-category a {
-  color: $color-white;
-  background-color: $color-black;
+  color: var(--wp--preset--color--white);
+  background-color: var(--wp--preset--color--black);
   position: relative;
   left: 5px;
   padding: 4px 8px;

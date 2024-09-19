@@ -1,6 +1,5 @@
 // Global variables first
 @import "utils/variables/defaults";
-@import "utils/variables/colors";
 
 // Grid settings
 @import "utils/variables/grid-settings";
@@ -83,9 +82,6 @@
 @import "layout/header/main";
 @import "layout/header/editor";
 @import "layout/navigation/main";
-
-// Block Patterns
-@import "block-patterns/social-share";
 
 // Page level
 @import "pages/archive";

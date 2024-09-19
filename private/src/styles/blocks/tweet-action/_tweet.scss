@@ -1,7 +1,7 @@
 .tweetAction {
   padding: 21px;
   max-width: 350px;
-  background-color: $color-grey-x-light;
+  background-color: var(--wp--preset--color--grey-lighter);
   flex: 1;
 
   @include mq(small) {
@@ -38,7 +38,7 @@
   width: auto;
   height: auto;
   font-size: 40px;
-  color: $color-blue-mid-light;
+  color: var(--wp--preset--color--blue-twitter);
 }
 
 .tweetAction-title {
@@ -54,7 +54,7 @@
   min-height: 150px;
   max-height: 278px;
   overflow-y: auto;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   font-family: var(--wp--preset--font-family--primary);
   font-size: var(--wp--preset--font-size--heading-6);
 
@@ -67,14 +67,14 @@
 .is-style-alternative-style.tweetAction .dashicons-twitter {
   order: 2;
   transform: scale(1.4);
-  color: $color-blue-md-light;
+  color: var(--wp--preset--color--blue-twitter);
   margin-top: 33px;
   margin-bottom: 15px;
   margin-right: 0;
 }
 
 .is-style-alternative-style.tweetAction {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   padding: 0;
   flex-wrap: wrap;
   display: flex;
@@ -105,15 +105,20 @@
 }
 
 .is-style-alternative-style.tweetAction .btn {
-  background-color: $color-blue-md-light;
-  border: none;
+  background-color: var(--wp--preset--color--blue-twitter);
+  border: 1px solid transparent;
   margin: 0 auto;
   padding: 13px 24px;
   max-width: 230px;
   line-height: normal;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   font-family: var(--wp--preset--font-family--secondary);
   font-size: var(--wp--preset--font-size--small);
+}
+
+.is-style-alternative-style.tweetAction .btn:hover,
+.is-style-alternative-style.tweetAction .btn:focus {
+  border-color: var(--wp--preset--color--black);
 }
 
 .is-style-alternative-style .tweetButton {
@@ -136,7 +141,7 @@
 
 .tweetAction .tweetAction-textBox {
   margin-bottom: 24px;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   display: flex;
   flex-direction: column;
 }

@@ -192,8 +192,8 @@
   font-family: var(--wp--preset--font-family--secondary);
   padding: 5px;
   font-size: var(--wp--preset--font-size--regular);
-  color: $color-white;
-  background-color: $color-black;
+  color: var(--wp--preset--color--white);
+  background-color: var(--wp--preset--color--black);
 }
 
 .rtl .headerBlock .page-heroTitle span {

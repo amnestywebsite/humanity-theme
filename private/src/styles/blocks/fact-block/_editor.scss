@@ -13,7 +13,7 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: $color-grey-dark;
+  background-color: var(--wp--preset--color--grey-darker);
 }
 
 .edit-post-visual-editor .editor-block-list__block[data-type="amnesty-core/key-fact"]:not(:last-of-type)::before {

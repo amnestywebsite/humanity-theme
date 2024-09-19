@@ -17,34 +17,34 @@
   margin: 1px;
   width: 75px;
   height: 75px;
-  background-color: $color-grey-x-light;
+  background-color: var(--wp--preset--color--grey-lighter);
   font-family: var(--wp--preset--font-family--secondary);
   font-size: var(--wp--preset--font-size--heading-4);
   font-weight: bold;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 
   &[disabled] {
-    color: $color-grey-mid-light;
+    color: var(--wp--preset--color--grey-base);
 
     &:hover,
     &:active,
     &:focus {
-      background-color: $color-grey-x-light;
-      color: $color-grey-mid-light;
+      background-color: var(--wp--preset--color--grey-lighter);
+      color: var(--wp--preset--color--grey-base);
       cursor: auto;
     }
   }
 
   &.is-active {
-    background-color: $color-black;
-    color: $color-white;
+    background-color: var(--wp--preset--color--black);
+    color: var(--wp--preset--color--white);
   }
 
   &:hover,
   &:active,
   &:focus {
-    background-color: $color-black;
-    color: $color-white;
+    background-color: var(--wp--preset--color--black);
+    color: var(--wp--preset--color--white);
     transition: background-color .25s, color .25s;
     cursor: pointer;
   }
