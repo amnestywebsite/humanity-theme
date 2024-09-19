@@ -3,6 +3,63 @@
   "version": 2,
   "settings": {
     "appearanceTools": false,
+    "blocks": {
+    "core/quote": {
+      "color": {
+        "text": true,
+        "palette": [
+          {
+            "slug": "black",
+            "color": "#000",
+            "name": "Black"
+          },
+          {
+            "slug": "white",
+            "color": "#fff",
+            "name": "White"
+          },
+          {
+            "slug": "amnesty-grey_brand",
+            "color": "#b3b3b3",
+            "name": "Grey Brand"
+          }
+        ]
+      },
+      "typography": {
+        "fluid": true,
+        "fontSizes": [
+          {
+            "fluid": {
+              "min": "1rem",
+              "max": "1.75rem"
+            },
+            "slug": "small",
+            "size": "1.75rem",
+            "name": "Small"
+          },
+          {
+            "fluid": {
+              "min": "1.25rem",
+              "max": "2rem"
+            },
+            "slug": "medium",
+            "size": "2rem",
+            "name": "Medium"
+          },
+          {
+            "fluid": {
+              "min": "1.5rem",
+              "max": "2.25rem"
+            },
+            "slug": "large",
+            "size": "2.25rem",
+            "name": "Large"
+          }
+        ],
+        "textTransform": true
+      }
+    }
+  },
     "color": {
       "background": false,
       "text": false,

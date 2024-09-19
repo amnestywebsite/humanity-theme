@@ -2,24 +2,8 @@ import DisplayComponent from './DisplayComponent.jsx';
 import deprecated from './deprecated.jsx';
 import transforms from './transforms.jsx';
 
-const { assign } = lodash;
 const { registerBlockType } = wp.blocks;
 const { __ } = wp.i18n;
-
-/**
- * Hide the core blockquote from the list, as we have our own version.
- */
-wp.hooks.addFilter('blocks.registerBlockType', 'amnesty-core', (settings, name) => {
-  if (name === 'core/quote') {
-    return assign({}, settings, {
-      supports: assign({}, settings.supports, {
-        inserter: false,
-      }),
-    });
-  }
-
-  return settings;
-});
 
 registerBlockType('amnesty-core/quote', {
   // translators: [admin]
