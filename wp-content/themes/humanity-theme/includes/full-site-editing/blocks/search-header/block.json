@@ -8,7 +8,7 @@
 	"category": "amnesty-core",
 	"icon": "editor-table",
 	"keywords": ["Search Header"],
-  "usesContext": [],
+  "usesContext": ["query"],
 	"supports": {
 		"multiple": false,
 		"align": false

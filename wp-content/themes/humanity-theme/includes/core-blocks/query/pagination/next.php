@@ -96,7 +96,7 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_next' ) ) {
 	function amnesty_render_block_core_query_pagination_next( $attributes, $content, $block ) {
 		$page_key            = isset( $block->context['queryId'] ) ? 'query-' . $block->context['queryId'] . '-page' : 'query-page';
 		$enhanced_pagination = isset( $block->context['enhancedPagination'] ) && $block->context['enhancedPagination'];
-		$page                = absint( $_GET[ $page_key ] ?? 1 ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- taken from core
+		$page                = absint( $_GET[ $page_key ] ?? $attributes['paged'] ?? 1 ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- taken from core
 		$max_page            = isset( $block->context['query']['pages'] ) ? (int) $block->context['query']['pages'] : 0;
 		$wrapper_attributes  = get_block_wrapper_attributes();
 		$show_label          = isset( $block->context['showLabel'] ) ? (bool) $block->context['showLabel'] : true;
@@ -115,34 +115,28 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_next' ) ) {
 
 		$content = '';
 
-		// Check if the pagination is for Query that inherits the global context.
-		if ( isset( $block->context['query']['inherit'] ) && $block->context['query']['inherit'] ) {
-			$filter_link_attributes = static function () use ( $wrapper_attributes ) {
-				return $wrapper_attributes;
-			};
+		$filter_link_attributes = static function () use ( $wrapper_attributes ) {
+			return $wrapper_attributes;
+		};
 
-			add_filter( 'next_posts_link_attributes', $filter_link_attributes );
-			// Take into account if we have set a bigger `max page`
-			// than what the query has.
-			global $wp_query;
-			if ( $max_page > $wp_query->max_num_pages ) {
-				$max_page = $wp_query->max_num_pages;
-			}
-			$content = amnesty_get_next_posts_link( $label, $max_page );
-			remove_filter( 'next_posts_link_attributes', $filter_link_attributes );
-		} elseif ( ! $max_page || $max_page > $page ) {
-			$custom_query           = new WP_Query( build_query_vars_from_query_block( $block, $page ) );
-			$custom_query_max_pages = (int) $custom_query->max_num_pages;
-			if ( $custom_query_max_pages && $custom_query_max_pages !== $page ) {
-				$content = sprintf(
-					'<a href="%1$s" %2$s>%3$s</a>',
-					esc_url( add_query_arg( $page_key, $page + 1 ) ),
-					$wrapper_attributes,
-					$label
-				);
-			}
+		add_filter( 'next_posts_link_attributes', $filter_link_attributes );
+
+		// Take into account if we have set a bigger `max page`
+		// than what the query has.
+		global $wp_query;
+		if ( $max_page > $wp_query->max_num_pages ) {
+			$max_page = $wp_query->max_num_pages;
+		}
+
+		// Check if the pagination is not for Query that inherits the global context.
+		if ( ! isset( $block->context['query']['inherit'] ) || ! $block->context['query']['inherit'] ) {
+			$custom_query = new WP_Query( build_query_vars_from_query_block( $block, $page ) );
+			$max_page     = (int) $custom_query->max_num_pages;
 			wp_reset_postdata(); // Restore original Post Data.
 		}
+
+		$content = amnesty_get_next_posts_link( $label, $max_page );
+		remove_filter( 'next_posts_link_attributes', $filter_link_attributes );
 
 		if ( $enhanced_pagination && isset( $content ) ) {
 			$p = new WP_HTML_Tag_Processor( $content );
