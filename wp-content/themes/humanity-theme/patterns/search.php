@@ -32,13 +32,12 @@ $args = [
 add_filter( 'query_loop_block_query_vars', fn () => $args['query'] );
 
 if ( amnesty_get_query_var( 'qyear' ) ) {
-	add_filter( 'query_loop_block_query_vars', fn ( array $vars ): array => $vars + [ 'year' => amnesty_get_query_var( 'qyear' ) ] );
+	add_filter( 'query_loop_block_query_vars', fn ( array $vars ): array => $vars + [ 'year' => absint( amnesty_get_query_var( 'qyear' ) ) ] );
 }
 
 if ( amnesty_get_query_var( 'qmonth' ) ) {
-	add_filter( 'query_loop_block_query_vars', fn ( array $vars ): array => $vars + [ 'monthnum' => amnesty_get_query_var( 'qmonth' ) ] );
+	add_filter( 'query_loop_block_query_vars', fn ( array $vars ): array => $vars + [ 'monthnum' => absint( amnesty_get_query_var( 'qmonth' ) ) ] );
 }
-
 
 // add filter to limit the post terms results for search
 add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
@@ -72,9 +71,9 @@ add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
 	<!-- /wp:group -->
 
 	<!-- wp:query-pagination {"align":"center","className":"section section--small","paginationArrow":"none","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} -->
-		<!-- wp:query-pagination-previous {"label":"Previous"} /-->
-		<!-- wp:query-pagination-numbers {"midSize":1,"className":"page-numbers"} /-->
-		<!-- wp:query-pagination-next {"label":"Next"} /-->
+		<!-- wp:query-pagination-previous {"label":"Previous","paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>} /-->
+		<!-- wp:query-pagination-numbers {"midSize":1,"paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>,"pretty":true,"className":"page-numbers"} /-->
+		<!-- wp:query-pagination-next {"label":"Next","paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>} /-->
 	<!-- /wp:query-pagination -->
 </div>
 <!-- /wp:query -->
