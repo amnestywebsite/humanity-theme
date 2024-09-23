@@ -28,3 +28,7 @@
   max-width: 100%;
   height: auto;
 }
+
+.wp-block-image > div {
+  width: fit-content;
+}
