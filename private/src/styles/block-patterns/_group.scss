@@ -14,6 +14,16 @@
 
   .wp-block-heading {
     text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 10px 10px 0 10px;
+  }
+
+  .wp-element-caption {
+    padding: 0 10px;
   }
 }
 
@@ -30,7 +40,8 @@
   background-color: var(--wp--preset--color--amnesty-grey-mid-dark);
   color: var(--wp--preset--color--white);
 
-  .wp-block-heading {
+  .wp-block-heading,
+  .wp-element-caption {
     color: var(--wp--preset--color--white);
   }
 }
