@@ -21,7 +21,9 @@ if ( ! $main_category ) {
 
 ?>
 
-<a class="btn btn--white has-icon" aria-label="<?php echo esc_attr( sprintf( /* translators: [front] Link to return to all posts of category %s */ __( 'Back to %s', 'amnesty' ), $main_category->name ) ); ?>" href="<?php echo esc_url( amnesty_term_link( $main_category ) ); ?>">
-	<span class="icon-arrow-left"></span>
-	<span><?php echo esc_html( $main_category->name ); ?></span>
-</a>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-light"} -->
+<div class="wp-block-button is-style-light"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( amnesty_term_link( $main_category ) ); ?>"><span class="icon-arrow-left"></span>
+<span>Campaigns</span></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->

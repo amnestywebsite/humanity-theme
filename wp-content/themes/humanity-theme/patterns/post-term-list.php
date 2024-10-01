@@ -13,29 +13,23 @@ if ( empty( $post_terms ) ) {
 	return;
 }
 
-// v gutenberg blocks are whitespace-aware (i.e. they break if the whitespace is incorrect)
-// phpcs:disable Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace,PEAR.WhiteSpace.ScopeClosingBrace.Indent
-
 ?>
 <!-- wp:group {"tagName":"div","className":"article-metaData"} -->
 <div class="wp-block-group article-metaData">
-	<!-- wp:group {"tagName":"div","className":"topics-container"} -->
-	<div class="topics-container">
-		<!-- wp:list -->
-		<ul class="wp-block-list">
-		<?php foreach ( $post_terms as $post_term ) : ?>
-			<!-- wp:list-item -->
-			<li class="wp-block-list-item">
-				<a href="<?php echo esc_url( amnesty_term_link( $post_term ) ); ?>">
-					<?php echo esc_html( $post_term->name ); ?>
-				</a>
-			</li>
-			<!-- /wp:list-item -->
-		<?php endforeach; ?>
-		</ul>
-		<!-- /wp:list -->
-	</div>
-	<!-- /wp:group -->
+<!-- wp:group {"tagName":"div","className":"topics-container"} -->
+<div class="wp-block-group topics-container">
+<!-- wp:list -->
+<ul class="wp-block-list">
+<?php foreach ( $post_terms as $post_term ) : ?>
+<!-- wp:list-item -->
+<li class="wp-block-list-item">
+<a href="<?php echo esc_url( amnesty_term_link( $post_term ) ); ?>"><?php echo esc_html( $post_term->name ); ?></a>
+</li>
+<!-- /wp:list-item -->
+<?php endforeach; ?>
+</ul>
+<!-- /wp:list -->
 </div>
 <!-- /wp:group -->
-<?php // phpcs:enable Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace,PEAR.WhiteSpace.ScopeClosingBrace.Indent ?>
+</div>
+<!-- /wp:group -->
