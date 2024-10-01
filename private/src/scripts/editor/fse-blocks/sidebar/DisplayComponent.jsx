@@ -3,7 +3,7 @@ const { useBlockProps } = wp.blockEditor;
 const { useEntityRecord } = wp.coreData;
 const { useSelect } = wp.data;
 const { store: editorStore } = wp.editor;
-const { RawHTML, useEffect, useState } = wp.element;
+const { RawHTML } = wp.element;
 
 const DisplayComponent = () => {
   const postMeta = useSelect((select) => {
@@ -20,14 +20,10 @@ const DisplayComponent = () => {
       /* eslint-enable no-underscore-dangle */
       sidebarId,
     };
-  });
-
-  // blanks out the content if the record is resolving
-  const doSetSidebarContent = (s) => (s.isResolving ? '' : s?.record?.content?.raw);
+  }, []);
 
   const currentSidebar = useEntityRecord('postType', 'sidebar', postMeta.sidebarId);
-  const [sidebarContent, setSidebarContent] = useState(() => doSetSidebarContent(currentSidebar));
-  useEffect(() => setSidebarContent(doSetSidebarContent(currentSidebar)), [currentSidebar]);
+  const sidebarContent = currentSidebar?.isResolving ? '' : currentSidebar?.record?.content?.raw;
 
   const blockProps = useBlockProps();
 
