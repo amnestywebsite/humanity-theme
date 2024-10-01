@@ -8,9 +8,9 @@
 }
 
 .section--textWhite {
-  color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--white) !important;
 
   @include headings {
-    color: var(--wp--preset--color--white);
+    color: var(--wp--preset--color--white) !important;
   }
 }

@@ -4,10 +4,6 @@
   color: var(--wp--preset--color--black);
 }
 
-.section:first-of-type {
-  padding-top: 0;
-}
-
 .section.is-fullWidth--mobile,
 .section.is-fullWidth--mobile .container {
   @include mq($until: small) {
