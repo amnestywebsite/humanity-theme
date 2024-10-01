@@ -162,7 +162,11 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 		wp_localize_script( 'amnesty-core-blocks-js', 'postTypes', amnesty_get_post_types() );
 
 		$settings = [
-			'petitionForm' => amnesty_feature_is_enabled( 'petitions_form' ),
+			'petitionForm'    => amnesty_feature_is_enabled( 'petitions_form' ),
+			'defaultSidebars' => [
+				'post' => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar' ) ),
+				'page' => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar_page' ) ),
+			],
 		];
 
 		$taxonomies = get_taxonomies(
