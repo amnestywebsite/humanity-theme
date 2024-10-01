@@ -27,7 +27,11 @@
 <p class="has-text-align-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue nisi vitae suscipit tellus mauris a. Scelerisque fermentum dui faucibus in ornare quam viverra. Imperdiet proin fermentum leo vel orci porta non. </p>
 <!-- /wp:paragraph -->
 
-<!-- wp:amnesty-core/quote {"align":"start","size":"medium","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","citation":"orci sagittis eu volutpat odio"} /-->
+<!-- wp:quote {"textAlign":"left","fontSize":"small"} -->
+<blockquote class="wp-block-quote has-text-align-left has-small-font-size"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<!-- /wp:paragraph --><cite>orci sagittis eu volutpat odio</cite></blockquote>
+<!-- /wp:quote -->
 
 <!-- wp:paragraph {"align":"left"} -->
 <p class="has-text-align-left">A arcu cursus vitae congue mauris rhoncus aenean vel elit. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Habitant morbi tristique senectus et netus et malesuada fames ac. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Volutpat diam ut venenatis tellus in metus vulputate. </p>
