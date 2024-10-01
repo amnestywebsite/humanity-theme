@@ -6,5 +6,8 @@
 
 .postlist {
   display: flex;
-  flex-wrap: wrap;
+
+  @include mq($until: medium-sm) {
+    flex-wrap: wrap;
+  }
 }
