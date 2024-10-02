@@ -12,7 +12,6 @@
 
 .article-container {
   @include flexy-wrapper;
-  margin-top: var(--wp--preset--spacing--single);
 
   @include mq(large) {
     flex-wrap: nowrap;
@@ -86,10 +85,6 @@
 
 .article-content a:focus-within {
   text-decoration: none;
-}
-
-.article-content .section:not(.section--tinted):not(.section--has-bg-image) {
-  padding: 0;
 }
 
 .article-content .btn {
