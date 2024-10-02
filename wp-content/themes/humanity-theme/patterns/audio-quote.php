@@ -10,6 +10,13 @@
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:audio /-->
-
-<!-- wp:amnesty-core/quote {"align":"","content":"","citation":""} /--></div>
+	<!-- wp:quote -->
+	<blockquote class="wp-block-quote">
+		<!-- wp:paragraph -->
+		<p></p>
+		<!-- /wp:paragraph -->
+		<cite>- (Add Citation)</cite>
+	</blockquote>
+	<!-- /wp:quote -->
+</div>
 <!-- /wp:group -->
