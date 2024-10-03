@@ -28,8 +28,8 @@ $avatar = get_the_author_meta( 'authoravatar_id' );
 	<!-- /wp:image -->
 	<?php endif; ?>
 	<!-- wp:group {"tagName":"div","className":"author-biography"} -->
-	<div class="author-biography">
-		<?php echo wp_kses_post( wpautop( $author_bio ) ); ?>
+	<div class="wp-block-group author-biography">
+		<?php echo wp_kses_post( apply_filters( 'the_content', $author_bio ) ); ?>
 	</div>
 	<!-- /wp:group -->
 </div>
