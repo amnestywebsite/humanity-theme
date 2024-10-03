@@ -11,12 +11,12 @@ const DisplayComponent = () => {
     const type = select(editorStore).getEditedPostAttribute('type');
 
     /* eslint-disable-next-line no-underscore-dangle */
-    const sidebarId = parseInt(meta._sidebar_id, 10) || (defaultSidebars?.[type]?.[0] ?? 0);
+    const sidebarId = parseInt(meta?._sidebar_id, 10) || (defaultSidebars?.[type]?.[0] ?? 0);
 
     return {
       /* eslint-disable no-underscore-dangle */
-      contentMaximised: meta._maximise_post_content,
-      sidebarDisabled: meta._disable_sidebar,
+      contentMaximised: meta?._maximise_post_content,
+      sidebarDisabled: meta?._disable_sidebar,
       /* eslint-enable no-underscore-dangle */
       sidebarId,
     };
