@@ -2,11 +2,9 @@
   flex: 1 1 100%;
   width: 100%;
   max-width: 100%;
-  order: 1;
 
   @include mq(medium-sm) {
     flex: 1 1 calc(100% - 88px);
-    order: 2;
   }
 }
 
@@ -31,7 +29,6 @@
 
   @include mq(medium-sm) {
     flex: 1 1 calc(100% - 88px);
-    order: 2;
   }
 
   @include mq(large) {

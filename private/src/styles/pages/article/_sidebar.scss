@@ -5,7 +5,6 @@
   flex: 0 0 100%;
   width: 100%;
   max-width: 100%;
-  order: 3;
 
   @include mq(large) {
     align-items: flex-start;
