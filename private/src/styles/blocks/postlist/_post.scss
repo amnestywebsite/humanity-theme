@@ -1,6 +1,22 @@
 .post {
   position: relative;
   width: 100%;
+
+  @include mq(medium-sm) {
+    min-height: 460px;
+  }
+}
+
+@include mq(medium-sm) {
+  .tax-location .post+.post {
+    margin-left: flexy-gutter();
+  }
+}
+
+@include mq($until: medium-sm) {
+  .tax-location .post+.post {
+    margin-top: flexy-gutter();
+  }
 }
 
 .post-header {
