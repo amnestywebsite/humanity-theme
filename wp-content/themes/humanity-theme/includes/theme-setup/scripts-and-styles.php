@@ -164,8 +164,9 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 		$settings = [
 			'petitionForm'    => amnesty_feature_is_enabled( 'petitions_form' ),
 			'defaultSidebars' => [
-				'post' => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar' ) ),
-				'page' => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar_page' ) ),
+				'post'        => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar' ) ),
+				'page'        => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar_page' ) ),
+				'wp_template' => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar' ) ), // for the site editor
 			],
 		];
 
