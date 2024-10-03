@@ -6,3 +6,11 @@
 .section--has-bg-overlay::before {
   z-index: 0 !important;
 }
+
+.section--textWhite {
+  color: var(--wp--preset--color--white) !important;
+
+  @include headings {
+    color: var(--wp--preset--color--white) !important;
+  }
+}

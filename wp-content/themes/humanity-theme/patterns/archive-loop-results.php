@@ -24,20 +24,21 @@ if ( $current_sort_option ) {
 <!-- wp:group {"tagName":"header","className":"postlist-header"} -->
 <header class="wp-block-group postlist-header">
 	<!-- wp:amnesty-core/query-count /-->
-
 	<?php
 
-	amnesty_render_custom_select(
-		[
-			'label'      => __( 'Sort by', 'amnesty' ),
-			'show_label' => true,
-			'name'       => 'sort',
-			'is_form'    => true,
-			'multiple'   => false,
-			'options'    => $available_sorts,
-		]
-	);
-
+	// site editor expects blocks or nothing
+	if ( ! is_admin() ) {
+		amnesty_render_custom_select(
+			[
+				'label'      => __( 'Sort by', 'amnesty' ),
+				'show_label' => true,
+				'name'       => 'sort',
+				'is_form'    => true,
+				'multiple'   => false,
+				'options'    => $available_sorts,
+			]
+		);
+	}
 	?>
 </header>
 <!-- /wp:group -->
