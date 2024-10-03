@@ -26,25 +26,26 @@ $results = apply_filters( 'amnesty_search_results_title', $results, $found_posts
 	<!-- /wp:heading -->
 	<?php
 
-	$current_sort_option = $available_sorts[ $current_sort ] ?? null;
+	if ( ! is_admin() ) {
+		$current_sort_option = $available_sorts[ $current_sort ] ?? null;
 
-	// move current sort to the top of the list
-	if ( $current_sort_option ) {
-		unset( $available_sorts[ $current_sort ] );
-		$available_sorts = [ $current_sort => $current_sort_option ] + $available_sorts;
+		// move current sort to the top of the list
+		if ( $current_sort_option ) {
+			unset( $available_sorts[ $current_sort ] );
+			$available_sorts = [ $current_sort => $current_sort_option ] + $available_sorts;
+		}
+
+		amnesty_render_custom_select(
+			[
+				'label'      => __( 'Sort by', 'amnesty' ),
+				'show_label' => true,
+				'name'       => 'sort',
+				'is_form'    => true,
+				'multiple'   => false,
+				'options'    => $available_sorts,
+			]
+		);
 	}
-
-	amnesty_render_custom_select(
-		[
-			'label'      => __( 'Sort by', 'amnesty' ),
-			'show_label' => true,
-			'name'       => 'sort',
-			'is_form'    => true,
-			'multiple'   => false,
-			'options'    => $available_sorts,
-		]
-	);
-
 
 	?>
 </header>

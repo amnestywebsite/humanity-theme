@@ -28,8 +28,8 @@ $show_bottom_row = $show_byline || $show_publish_date || $show_updated_date;
 <?php if ( $show_top_row ) : ?>
 	<!-- wp:group {"tagName":"div","className":"article-metaActions"} -->
 	<div class="wp-block-group article-metaActions">
-	<!-- wp:pattern {"slug":"amnesty/post-back-link"} /-->
-	<!-- wp:pattern {"slug":"amnesty/post-share"} /-->
+		<!-- wp:pattern {"slug":"amnesty/post-back-link"} /-->
+		<!-- wp:pattern {"slug":"amnesty/post-share"} /-->
 	</div>
 	<!-- /wp:group -->
 <?php endif; ?>
@@ -39,12 +39,12 @@ $show_bottom_row = $show_byline || $show_publish_date || $show_updated_date;
 	<div class="wp-block-group article-metaData">
 		<!-- wp:group {"tagName":"div"} -->
 		<div class="wp-block-group">
-		<!-- wp:pattern {"slug":"amnesty/post-byline"} /-->
-		<!-- wp:pattern {"slug":"amnesty/post-published-date"} /-->
+			<!-- wp:pattern {"slug":"amnesty/post-byline"} /-->
+			<!-- wp:pattern {"slug":"amnesty/post-published-date"} /-->
 		</div>
 		<!-- /wp:group -->
 
-	<!-- wp:pattern {"slug":"amnesty/post-updated-date"} /-->
+		<!-- wp:pattern {"slug":"amnesty/post-updated-date"} /-->
 	</div>
 	<!-- /wp:group -->
 <?php endif; ?>
