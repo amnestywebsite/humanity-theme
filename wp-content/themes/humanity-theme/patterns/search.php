@@ -29,6 +29,11 @@ $args = [
 	],
 ];
 
+// custom queries sometimes break retrieval in the site editor
+if ( is_admin() ) {
+	$args['query'] = [];
+}
+
 add_filter( 'query_loop_block_query_vars', fn () => $args['query'] );
 
 if ( amnesty_get_query_var( 'qyear' ) ) {
