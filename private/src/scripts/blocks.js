@@ -48,6 +48,7 @@ import './editor/fse-blocks/archive-header/index.jsx';
 import './editor/fse-blocks/pop-in/index.jsx';
 import './editor/fse-blocks/query-count/index.jsx';
 import './editor/fse-blocks/search-form/index.jsx';
+import './editor/fse-blocks/search-header/index.jsx';
 import './editor/fse-blocks/sidebar/index.jsx';
 import './editor/fse-blocks/site-header/index.jsx';
 
