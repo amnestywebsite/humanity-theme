@@ -27,7 +27,7 @@ if ( $current_sort_option ) {
 	<?php
 
 	// site editor expects blocks or nothing
-	if ( ! is_admin() ) {
+	if ( ! is_admin() && ! ( defined( 'REST_REQUEST' ) || ! REST_REQUEST ) ) {
 		amnesty_render_custom_select(
 			[
 				'label'      => __( 'Sort by', 'amnesty' ),
