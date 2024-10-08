@@ -38,6 +38,12 @@
   color: var(--wp--preset--color--white);
   font-size: var(--wp--preset--font-size--x-small);
   font-family: sans-serif;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .amnesty-footer-template-part .amnesty-policy-links {
