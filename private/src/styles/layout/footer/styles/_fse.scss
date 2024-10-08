@@ -115,3 +115,10 @@
   background: none;
   color: var(--wp--preset--color--black);
 }
+
+.amnesty-footer-template-part .wp-block-button.is-style-light .wp-block-button__link:hover,
+.amnesty-footer-template-part .wp-block-button.is-style-light .wp-block-button__link:active,
+.amnesty-footer-template-part .wp-block-button.is-style-light .wp-block-button__link:focus {
+  background-color: var(--wp--preset--color--grey-light);
+  color: var(--wp--preset--color--black);
+}
