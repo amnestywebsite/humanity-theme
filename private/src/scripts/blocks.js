@@ -50,7 +50,6 @@ import './editor/fse-blocks/query-count/index.jsx';
 import './editor/fse-blocks/search-form/index.jsx';
 import './editor/fse-blocks/search-header/index.jsx';
 import './editor/fse-blocks/sidebar/index.jsx';
-import './editor/fse-blocks/site-header/index.jsx';
 
 // To remove in v2.0.0
 import './editor/blocks-deprecated/background-media/index.jsx';
