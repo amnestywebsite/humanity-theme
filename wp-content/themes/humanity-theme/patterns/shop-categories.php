@@ -31,12 +31,14 @@ foreach ( $categories as $product_cat ) :
 	<!-- wp:group {"tagName":"article","className":"post postImage--small"} -->
 	<article class="wp-block-group post postImage--small">
 		<?php if ( $image_id ) : ?>
-		<!-- wp:image {"id":<?php echo absint( $image_id ); ?>,"sizeSlug":"wc-thumb","className":"post-figure"} /-->
+		<!-- wp:image {"id":<?php echo absint( $image_id ); ?>,"sizeSlug":"wc-thumb","className":"post-figure"} -->
+		<figure class="wp-block-image size-wc-thumb"><img alt="" class="wp-image-<?php echo absint( $image_id ); ?>"/></figure>
+		<!-- /wp:image -->
 		<?php endif; ?>
 		<!-- wp:group {"tagName":"div","className":"post-content"} -->
-		<div class="post-content">
+		<div class="wp-block-group post-content">
 			<!-- wp:group {"tagName":"header","className":"post-header"} -->
-			<header class="post-header">
+			<header class="wp-block-group post-header">
 				<!-- wp:heading {"className":"post-title"} -->
 				<h2 class="wp-block-heading post-title">
 					<span>
