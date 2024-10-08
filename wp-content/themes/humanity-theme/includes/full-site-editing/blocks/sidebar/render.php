@@ -18,9 +18,8 @@ if ( ! function_exists( 'amnesty_get_sidebar_id' ) ) {
 
 		// global default
 		return match ( get_post_type() ) {
-			'post'  => absint( amnesty_get_option( '_default_sidebar' )[0] ?? 0 ),
 			'page'  => absint( amnesty_get_option( '_default_sidebar_page' )[0] ?? 0 ),
-			default => 0,
+			default => absint( amnesty_get_option( '_default_sidebar' )[0] ?? 0 ),
 		};
 	}
 }
