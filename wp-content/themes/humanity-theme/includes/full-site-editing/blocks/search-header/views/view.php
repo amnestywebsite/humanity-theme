@@ -26,7 +26,7 @@ $results = apply_filters( 'amnesty_search_results_title', $results, $found_posts
 	<!-- /wp:heading -->
 	<?php
 
-	if ( ! is_admin() && ! ( defined( 'REST_REQUEST' ) || ! REST_REQUEST ) ) {
+	if ( ! is_admin() && ! ( defined( 'REST_REQUEST' ) && ! REST_REQUEST ) ) {
 		$current_sort_option = $available_sorts[ $current_sort ] ?? null;
 
 		// move current sort to the top of the list
