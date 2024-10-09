@@ -52,6 +52,11 @@
   background-color: var(--wp--preset--color--grey-lighter);
   text-align: center;
 
+  // aiic-added wrapper for metadata
+  > div[style="position:relative"] {
+    width: 100%;
+  }
+
   &.is-stretched img {
     min-width: 100%;
   }
