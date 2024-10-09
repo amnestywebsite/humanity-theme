@@ -14,10 +14,6 @@ if ( amnesty_post_has_hero() ) {
 }
 
 if ( get_post_meta( get_the_ID(), '_hide_featured_image', true ) ) {
-	if ( is_admin() ) {
-		echo '<!-- wp:pattern {"slug":"amnesty/featured-image-hidden"} /-->';
-	}
-
 	return;
 }
 
