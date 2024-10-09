@@ -1,21 +1,26 @@
 <?php
 
 /**
- * Title: Post Back Link
+ * Title: Attachment Back Link
  * Description: Output back link to return to item's category archive
- * Slug: amnesty/post-back-link
+ * Slug: amnesty/attachment-back-link
  * Inserter: no
  */
 
-$show_back_link = ! amnesty_validate_boolish( amnesty_get_option( '_display_category_label' ) );
+$should_switch_blog = ! empty( $post->blog_id ) && absint( $post->blog_id ) !== absint( get_current_blog_id() );
 
-if ( ! $show_back_link ) {
-	return;
+if ( $should_switch_blog ) {
+	switch_to_blog( $post->blog_id );
 }
 
-$main_category = amnesty_get_a_post_term( get_the_ID() );
+$show_back_link = ! amnesty_validate_boolish( amnesty_get_option( '_display_category_label' ) );
+$main_category  = amnesty_get_a_post_term( get_the_ID() );
 
-if ( ! $main_category ) {
+if ( $should_switch_blog ) {
+	restore_current_blog();
+}
+
+if ( ! $show_back_link || ! $main_category ) {
 	return;
 }
 

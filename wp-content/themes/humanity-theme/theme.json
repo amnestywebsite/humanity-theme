@@ -1,65 +1,65 @@
 {
-  "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
-  "version": 2,
+  "$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+  "version": 3,
   "settings": {
     "appearanceTools": false,
     "blocks": {
-    "core/quote": {
-      "color": {
-        "text": true,
-        "palette": [
-          {
-            "slug": "black",
-            "color": "#000",
-            "name": "Black"
-          },
-          {
-            "slug": "white",
-            "color": "#fff",
-            "name": "White"
-          },
-          {
-            "slug": "amnesty-grey_brand",
-            "color": "#b3b3b3",
-            "name": "Grey Brand"
-          }
-        ]
-      },
-      "typography": {
-        "fluid": true,
-        "fontSizes": [
-          {
-            "fluid": {
-              "min": "1rem",
-              "max": "1.75rem"
+      "core/quote": {
+        "color": {
+          "text": true,
+          "palette": [
+            {
+              "slug": "black",
+              "color": "#000",
+              "name": "Black"
             },
-            "slug": "small",
-            "size": "1.75rem",
-            "name": "Small"
-          },
-          {
-            "fluid": {
-              "min": "1.25rem",
-              "max": "2rem"
+            {
+              "slug": "white",
+              "color": "#fff",
+              "name": "White"
             },
-            "slug": "medium",
-            "size": "2rem",
-            "name": "Medium"
-          },
-          {
-            "fluid": {
-              "min": "1.5rem",
-              "max": "2.25rem"
+            {
+              "slug": "amnesty-grey_brand",
+              "color": "#b3b3b3",
+              "name": "Grey Brand"
+            }
+          ]
+        },
+        "typography": {
+          "fluid": true,
+          "fontSizes": [
+            {
+              "fluid": {
+                "min": "1rem",
+                "max": "1.75rem"
+              },
+              "slug": "small",
+              "size": "1.75rem",
+              "name": "Small"
             },
-            "slug": "large",
-            "size": "2.25rem",
-            "name": "Large"
-          }
-        ],
-        "textTransform": true
+            {
+              "fluid": {
+                "min": "1.25rem",
+                "max": "2rem"
+              },
+              "slug": "medium",
+              "size": "2rem",
+              "name": "Medium"
+            },
+            {
+              "fluid": {
+                "min": "1.5rem",
+                "max": "2.25rem"
+              },
+              "slug": "large",
+              "size": "2.25rem",
+              "name": "Large"
+            }
+          ],
+          "textTransform": true
+        }
       }
-    }
-  },
+    },
     "color": {
       "background": false,
       "text": false,
@@ -273,7 +273,7 @@
         {
           "fluid": false,
           "name": "Regular",
-          "size": "1.125rem",
+          "size": "1rem",
           "slug": "regular"
         },
         {
@@ -303,10 +303,10 @@
         {
           "fluid": {
             "min": "32px",
-            "max": "52px"
+            "max": "72px"
           },
           "name": "Heading 1",
-          "size": "52px",
+          "size": "72px",
           "slug": "heading-1"
         },
         {
@@ -355,14 +355,14 @@
           "slug": "heading-6"
         }
       ],
+      "dropCap": false,
+      "fluid": true,
       "fontStyle": false,
       "fontWeight": false,
       "letterSpacing": false,
       "lineHeight": false,
       "textDecoration": false,
-      "textTransform": false,
-      "dropCap": false,
-      "fluid": false
+      "textTransform": false
     },
     "layout": {
       "contentSize": "1468px"
