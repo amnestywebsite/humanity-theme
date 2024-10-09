@@ -16,9 +16,3 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<?php
-
-get_template_part( 'partials/language-selector' );
-get_template_part( 'partials/navigation/desktop' );
-get_template_part( 'partials/header' ); // old
-get_template_part( 'partials/hero' );   // new
