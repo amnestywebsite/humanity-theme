@@ -6,35 +6,35 @@
 .btn {
   @extend %btn-base;
   padding: 12px 24px;
-  color: $color-black;
-  background-color: $color-primary;
-  border: 1px solid $color-primary-state;
+  color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--primary);
+  border: 1px solid var(--wp--preset--color--primary-state);
   border-radius: $base-border-radius;
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   text-transform: uppercase;
 
   &:hover,
   &:active,
   &:focus {
-    border-color: $color-primary-state;
-    background-color: $color-primary-state;
-    color: $color-white;
+    border-color: var(--wp--preset--color--primary-state);
+    background-color: var(--wp--preset--color--primary-state);
+    color: var(--wp--preset--color--white);
   }
 }
 
 .woocommerce a.button,
 .btn--white,
 .btn.is-style-light {
-  border: 1px solid $color-black;
-  background-color: $color-white;
-  color: $color-black;
+  border: 1px solid var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
 
   &:hover,
   &:focus {
-    background-color: $color-grey-brand;
-    border-color: $color-grey-brand;
-    color: $color-black
+    background-color: var(--wp--preset--color--grey-light);
+    border-color: var(--wp--preset--color--grey-light);
+    color: var(--wp--preset--color--black)
   }
 }

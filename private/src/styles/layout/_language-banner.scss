@@ -1,7 +1,7 @@
 .language-selector {
   display: none;
   padding: 14px 0;
-  background-color: $color-grey-mid-light;
+  background-color: var(--wp--preset--color--grey-base);
 }
 
 .language-selector.is-visible {
@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 
   @include mq(medium) {
     justify-content: flex-end;
@@ -46,9 +46,9 @@
 .language-selector .language-list a {
   display: inline-block;
   padding: 8px 20px;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -60,7 +60,7 @@
 .language-selector .language-list a:hover,
 .language-selector .language-list a:focus,
 .language-selector .language-list .is-selected a {
-  background-color: $color-grey-x-dark;
+  background-color: var(--wp--preset--color--grey-darkest);
 }
 
 button.language-selectorClose {
@@ -68,7 +68,7 @@ button.language-selectorClose {
   align-items: center;
   margin-left: 24px;
   padding: 11px;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   order: 0;
 
   @include mq(xx-small) {

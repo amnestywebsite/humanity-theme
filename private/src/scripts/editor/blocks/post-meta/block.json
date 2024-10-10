@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/post-meta",
+  "title": "Meta",
+  "category": "theme",
+  "description": "Display post meta for an entry such as a post or page.",
+  "textdomain": "amnesty",
+  "ancestor": ["core/query"],
+  "attributes": {
+    "textAlign": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "isLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "displayType": {
+      "type": "string"
+    },
+    "metaKey": {
+      "type": "string"
+    },
+    "isSingle": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "usesContext": ["postId", "postType"],
+  "example": {
+    "viewportWidth": 350
+  },
+  "supports": {
+    "inserter": true,
+    "html": false,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true,
+        "link": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    },
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "width": true,
+      "style": true,
+      "__experimentalDefaultControls": {
+        "radius": true,
+        "color": true,
+        "width": true,
+        "style": true
+      }
+    }
+  }
+}

@@ -1,12 +1,6 @@
 .postlist-categoriesContainer {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
-  padding: 20px;
-
-  @include mq(xm-small) {
-    margin-top: 24px;
-  }
 }
 
 .postlist-categoriesContainer nav {
@@ -97,14 +91,14 @@
   padding: 11px 16px;
   width: 100%;
   height: 100%;
-  color: $color-black;
-  border: 1px solid $color-grey-md-light;
+  color: var(--wp--preset--color--black);
+  border: 1px solid var(--wp--preset--color--grey-light);
   text-decoration: none !important;
 
   &:hover,
   &:active,
   &:focus {
-    border-color: $color-grey-md-light;
+    border-color: var(--wp--preset--color--grey-light);
   }
 }
 
@@ -117,9 +111,9 @@ _:-ms-fullscreen,
 }
 
 .postlist-categories .is-current a {
-  color: $color-white;
-  background-color: $color-black;
-  border-color: $color-black;
+  color: var(--wp--preset--color--white);
+  background-color: var(--wp--preset--color--black);
+  border-color: var(--wp--preset--color--black);
 }
 
 [data-slider-next],
@@ -131,18 +125,18 @@ _:-ms-fullscreen,
   cursor: pointer;
 
   &:hover {
-    background-color: $color-grey-sm-light;
+    background-color: var(--wp--preset--color--grey-lighter);
   }
 
   &:focus,
   &:active {
-    border: 2px solid $color-orange-base;
+    border: 2px solid var(--wp--preset--color--orange-base);
   }
 }
 
 [data-slider-next]:focus-within,
 [data-slider-prev]:focus-within {
-  border: 2px solid $color-orange-base;
+  border: 2px solid var(--wp--preset--color--orange-base);
 }
 
 [data-slider-next][disabled],

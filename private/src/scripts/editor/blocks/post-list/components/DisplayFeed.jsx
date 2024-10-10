@@ -42,7 +42,7 @@ class DisplayFeed extends Component {
   }
 
   fetchPostsByPostType() {
-    const { overrideTypes } = this.props;
+    const { amount, overrideTypes } = this.props;
 
     const postTypes = [];
 
@@ -66,7 +66,7 @@ class DisplayFeed extends Component {
     const postString = postTypes.join(', ');
 
     wp.apiRequest({
-      path: `/wp/v2/${postString}?_embed`,
+      path: `/wp/v2/${postString}?_embed&per_page=${amount}`,
     }).then((results) => {
       this.setState({
         results: DisplayFeed.alterResults(results),

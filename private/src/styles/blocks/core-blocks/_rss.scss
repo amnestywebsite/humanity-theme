@@ -6,23 +6,19 @@
 .wp-block-rss__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: spacing();
+  margin-bottom: var(--wp--preset--spacing--single);
 }
 
 .wp-block-rss__item-title {
   margin-bottom: 12px;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: map-get($mobile-header-sizes, h4);
+  font-size: var(--wp--preset--font-size--heading-4);
   font-weight: bold;
   line-height: 1.12;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 
   a {
     text-decoration: none !important;
-  }
-
-  @include mq(small) {
-    font-size: map-get($desktop-header-sizes, h4);
   }
 }
 
@@ -30,24 +26,24 @@
   margin-bottom: 10px;
   order: 1;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 14px;
-  color: $color-black;
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--black);
 }
 
 .wp-block-rss__item-excerpt {
   order: 3;
   margin-top: 6px;
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   line-height: 1;
   text-align: justify;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .wp-block-rss__item-author {
   order: 4;
-  font-size: 14px;
+  font-size: var(--wp--preset--font-size--small);
   line-height: 17px;
-  color: $color-grey-md-light;
+  color: var(--wp--preset--color--grey-light);
   padding-top: 16px;
   padding-bottom: 40px;
   font-family: var(--wp--preset--font-family--secondary);

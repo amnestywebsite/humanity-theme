@@ -1,3 +1,3 @@
 .wp-block-columns {
-  gap: spacing();
+  gap: var(--wp--preset--spacing--single);
 }

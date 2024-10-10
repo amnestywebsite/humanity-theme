@@ -1,0 +1,15 @@
+.postbox label,
+label.components-checkbox-control__label,
+textarea.editor-post-text-editor {
+  text-transform: none;
+  font-weight: normal;
+}
+
+.postbox label,
+label.components-checkbox-control__label {
+  font-family: inherit;
+}
+
+.postbox input[type="radio"]:checked::before {
+  display: none;
+}

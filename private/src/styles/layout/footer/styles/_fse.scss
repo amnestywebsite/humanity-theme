@@ -6,22 +6,22 @@
 }
 
 .amnesty-footer-template-part p {
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
 }
 
 .amnesty-footer-template-part h4 {
   margin-bottom: 24px;
   padding-bottom: 12px;
-  font-size: 20px;
+  font-size: var(--wp--preset--font-size--heading-6);
   text-transform: uppercase;
-  color: var(--wp--preset--color--amnesty-grey-md-light);
-  font-family: var(--font-family-secondary);
-  border-bottom: 1px solid var(--wp--preset--color--amnesty-mid-dark);
+  color: var(--wp--preset--color--grey-light);
+  font-family: var(--wp--preset--font-family--secondary);
+  border-bottom: 1px solid var(--wp--preset--color--grey-dark);
   font-weight: bold;
 }
 
 .amnesty-footer-template-part h2 {
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   color: var(--wp--preset--color--white);
   text-transform: uppercase;
   margin-bottom: 0;
@@ -36,13 +36,19 @@
 
 .amnesty-footer-template-part a {
   color: var(--wp--preset--color--white);
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
   font-family: sans-serif;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .amnesty-footer-template-part .amnesty-policy-links {
   display: flex;
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
 }
 
 .amnesty-footer-template-part .amnesty-policy-links li {
@@ -53,7 +59,7 @@
 
 .amnesty-footer-template-part .amnesty-copyright {
   line-height: 1.5;
-  color: rgba(var(--wp--preset--color--white), 0.7);
+  color: color-mix(in srgb, var(--wp--preset--color--white) 70%, transparent);
   padding-top: 8px;
 }
 
@@ -94,7 +100,7 @@
 }
 
 .amnesty-footer-template-part .wp-block-group .wp-block-separator {
-  border-color: var(--wp--preset--color--amnesty-mid-dark);
+  border-color: var(--wp--preset--color--grey-dark);
 }
 
 .amnesty-footer-template-part .wp-block-columns:first-of-type .wp-block-column {
@@ -107,5 +113,12 @@
 
 .amnesty-footer-template-part .amnesty-social-group .wp-social-link {
   background: none;
+  color: var(--wp--preset--color--black);
+}
+
+.amnesty-footer-template-part .wp-block-button.is-style-light .wp-block-button__link:hover,
+.amnesty-footer-template-part .wp-block-button.is-style-light .wp-block-button__link:active,
+.amnesty-footer-template-part .wp-block-button.is-style-light .wp-block-button__link:focus {
+  background-color: var(--wp--preset--color--grey-light);
   color: var(--wp--preset--color--black);
 }

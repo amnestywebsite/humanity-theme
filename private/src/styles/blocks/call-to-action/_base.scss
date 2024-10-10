@@ -2,8 +2,8 @@
   margin-top: 40px;
   padding: 20px;
   text-align: center;
-  border-top: 7px solid $color-black;
-  border-bottom: 7px solid $color-black;
+  border-top: 7px solid var(--wp--preset--color--black);
+  border-bottom: 7px solid var(--wp--preset--color--black);
 
   @include mq(small) {
     padding: 36px 32px;
@@ -23,24 +23,19 @@
 }
 
 .callToAction-preHeading {
-  font-size: 21px;
+  font-size: var(--wp--preset--font-size--heading-4);
   text-align: center;
 
   @include mq(small) {
-    font-size: 31px;
     margin-bottom: 20px;
   }
 }
 
 .callToAction-heading {
-  font-size: 30px;
+  font-size: var(--wp--preset--font-size--heading-2);
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
-
-  @include mq(small) {
-    font-size: 41px;
-  }
 }
 
 .callToAction-content {

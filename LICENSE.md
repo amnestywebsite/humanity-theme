@@ -16,4 +16,10 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-You can view the full license text in [LICENSE.txt](https://github.com/amnestywebsite/humanity-theme/blob/main/LICENSE.text).
+You can view the full license text in [LICENSE.txt](https://github.com/amnestywebsite/humanity-theme/blob/main/LICENSE.txt).
+
+This program contains fonts licensed under the Open Font License.
+You can view the full Open Font Licence text in [OFL.txt](https://github.com/amnestywebsite/humanity-theme/blob/main/OFL.txt).
+
+This program contains fonts licensed under the Apache License version 2.0.
+You can view the full Apache 2.0 license text in [APACHE-LICENSE-V2.0.txt](https://github.com/amnestywebsite/humanity-theme/blob/main/APACHE-LICENSE-V2.0.txt).

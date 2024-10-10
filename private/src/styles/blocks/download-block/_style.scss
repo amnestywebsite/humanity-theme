@@ -3,7 +3,7 @@
   flex-direction: column;
   align-content: flex-start;
   align-items: stretch;
-  gap: spacing(half);
+  gap: var(--wp--preset--spacing--half);
 
   @include mq(x-small) {
     flex-direction: row;
@@ -99,7 +99,7 @@
 
 .article-sidebar .download-block {
   flex-direction: column;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .article-sidebar .download-block .btn {

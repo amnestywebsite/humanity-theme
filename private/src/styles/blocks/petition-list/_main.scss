@@ -3,7 +3,7 @@
 }
 
 .petition-item {
-  background: $color-grey-light;
+  background: var(--wp--preset--color--grey-lighter);
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -32,14 +32,14 @@
   position: absolute;
   bottom: 0;
   left: 5px;
-  background: $color-black;
-  color: $color-white;
+  background: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
   padding: 4px 8px;
   text-transform: uppercase;
   font-family: var(--wp--preset--font-family--secondary);
 
   a {
-    color: $color-white;
+    color: var(--wp--preset--color--white);
     text-transform: uppercase;
     font-family: var(--wp--preset--font-family--secondary);
   }
@@ -56,15 +56,15 @@
 .petition-item .petition-itemTitle {
   margin-top: 0;
   font-family: var(--wp--preset--font-family--secondary);
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   flex-grow: 1;
 }
 
 .petition-item .petition-itemTitle a {
   font-family: var(--wp--preset--font-family--secondary);
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   font-weight: bold;
-  font-size: 28px;
+  font-size: var(--wp--preset--font-size--heading-4);
 }
 
 .petition-item .petition-itemExcerpt {

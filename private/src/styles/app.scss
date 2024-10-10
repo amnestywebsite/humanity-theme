@@ -1,6 +1,5 @@
 // Global variables first
 @import "utils/variables/defaults";
-@import "utils/variables/colors";
 
 // Grid settings
 @import "utils/variables/grid-settings";
@@ -8,9 +7,6 @@
 // Sass Mq
 // @see https://github.com/sass-mq/sass-mq
 @import "sass-mq";
-
-// Normalize, from npm
-@import "~normalize.css/normalize";
 
 // Flickity slider, from npm
 @import "~flickity/dist/flickity.css";
@@ -22,12 +18,10 @@
 @import "utils/functions/maths";
 @import "utils/functions/palette";
 @import "utils/functions/strip-units";
-@import "utils/functions/spacing";
 @import "utils/functions/flexy";
 
 // Mixins
 @import "utils/mixins/clearfix";
-@import "utils/mixins/font-size";
 @import "utils/mixins/headings";
 @import "utils/mixins/cols";
 @import "utils/mixins/icon";
@@ -80,11 +74,16 @@
 @import "blocks/core-blocks/image";
 @import "blocks/core-blocks/latest-posts";
 @import "blocks/core-blocks/menu";
+@import "blocks/core-blocks/post/main";
+@import "blocks/core-blocks/post-template/main";
+@import "blocks/core-blocks/post-title/main";
+@import "blocks/core-blocks/query-pagination/main";
 @import "blocks/core-blocks/rss";
 @import "blocks/core-blocks/separator";
 @import "blocks/core-blocks/social-links";
 @import "blocks/core-blocks/table";
 @import "blocks/core-blocks/video";
+@import "blocks/core-blocks/quote";
 @import "blocks/countdown-timer/main";
 @import "blocks/custom-card/main";
 @import "blocks/download-block/style";
@@ -109,7 +108,6 @@
 @import "blocks/tweet-action/tweet";
 
 // Block patterns
-@import "block-patterns/social-share";
 @import "block-patterns/group";
 
 // Pages
@@ -142,25 +140,6 @@
 :root {
   --ms-base: 16;
   --ms-ratio: 1.2;
-}
-
-.skipLink {
-  @extend .btn; /* stylelint-disable-line scss/at-extend-no-missing-placeholder */
-  @extend .u-hiddenVisually; /* stylelint-disable-line scss/at-extend-no-missing-placeholder */
-
-  &:active,
-  &:focus {
-    // 2^31 (1 higher than CC8, which uses 2^31 - 1)
-    z-index: 2147483648;
-    top: 3px;
-    left: 3px;
-    display: block;
-    padding: 10px 20px !important;
-    width: auto !important;
-    height: 50px !important;
-    clip: initial !important;
-    line-height: 30px;
-  }
 }
 
 .screen-reader-text {

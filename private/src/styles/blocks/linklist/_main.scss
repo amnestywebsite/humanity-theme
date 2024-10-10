@@ -13,27 +13,25 @@
 }
 
 .linkList-item {
-  @include state-background(darken($color-grey-light, 10%));
+  @include state-background(var(--wp--preset--color--grey-base));
   position: relative;
   padding: 40px 10px;
   width: 100%;
   min-height: 171px;
-  background-color: $color-grey-light;
-  background-size: cover;
-  background-position: center;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .linkList-itemTitle {
   margin-bottom: 12px;
   margin-top: 12px;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 19px;
+  font-size: var(--wp--preset--font-size--regular);
   font-weight: normal;
   line-height: 1.2;
 }
 
 .linkList-itemTitle > a {
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   text-decoration: none;
 
   &::after {
@@ -53,17 +51,17 @@
   display: inline-block;
   padding: 4px 8px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--regular);
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .linkList-item .linkList-itemMeta > a {
   position: relative;
   z-index: 2;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   text-decoration: none;
 }
 
@@ -107,6 +105,6 @@
   content: " ";
   height: 12px;
   width: 1px;
-  background: $color-black;
+  background: var(--wp--preset--color--black);
   margin: 10px;
 }

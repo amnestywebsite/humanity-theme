@@ -1,0 +1,21 @@
+.wp-block-query-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 24px;
+  font-family: var(--wp--preset--font-family--secondary);
+  font-weight: bold;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  @include mq(large) {
+    width: 75%;
+  }
+
+  @include mq(x-large) {
+    width: 50%;
+  }
+}

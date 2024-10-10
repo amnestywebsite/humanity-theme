@@ -1,15 +1,15 @@
 .search-filters {
   flex-basis: 100%;
-  margin-bottom: spacing();
+  margin-bottom: var(--wp--preset--spacing--single);
 
   @include mq(medium) {
     flex-basis: 25%;
-    margin-right: spacing();
+    margin-right: var(--wp--preset--spacing--single);
     margin-bottom: 0;
 
     .rtl & {
       margin-right: 0;
-      margin-left: spacing();
+      margin-left: var(--wp--preset--spacing--single);
     }
   }
 }

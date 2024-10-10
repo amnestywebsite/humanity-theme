@@ -9,7 +9,7 @@
   min-height: 450px;
   background-size: cover;
   background-position: center center;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 
 }
 
@@ -20,22 +20,22 @@
 .page-heroTitle {
   margin: 0;
   padding: 0 20px;
-  font-size: 72px;
+  font-size: var(--wp--preset--font-size--heading-1);
   line-height: 1.3 !important;
-  background-color: rgba($color-black, .45);
-  color: $color-white;
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 45%, transparent);
+  color: var(--wp--preset--color--white);
   box-decoration-break: clone;
 }
 
 p.page-heroContent {
+  margin-top: 0;
   margin-bottom: 0;
   padding: 10px 20px;
   max-width: 460px;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 24px;
-  background-color: rgba($color-black, .45);
-  color: $color-white;
-  margin-top: 0;
+  font-size: var(--wp--preset--font-size--heading-5);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 45%, transparent);
+  color: var(--wp--preset--color--white);
 }
 
 .page-heroCta {
@@ -43,7 +43,7 @@ p.page-heroContent {
   display: inline-flex;
   align-items: center;
   padding: 20px;
-  background-color: rgba($color-black, .45);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 45%, transparent);
 
   .editor-url-input__button {
     position: relative;
@@ -82,21 +82,21 @@ p.page-heroContent {
 .page-heroBackground--dark .page-heroContent,
 .page-heroBackground--dark .page-heroCta,
 .page-heroBackground--dark .page-heroTitle {
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .page-heroBackground--light .page-heroContent,
 .page-heroBackground--light .page-heroCta,
 .page-heroBackground--light .page-heroTitle {
-  background-color: $color-white;
-  color: $color-black;
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
 }
 
 .page-heroBackground--none .page-heroContent,
 .page-heroBackground--none .page-heroCta,
 .page-heroBackground--none .page-heroTitle {
   background-color: transparent;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .page-hero .container {

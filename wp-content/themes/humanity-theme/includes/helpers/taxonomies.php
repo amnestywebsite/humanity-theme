@@ -859,3 +859,43 @@ if ( ! function_exists( 'group_terms_by_initial_ascii_letter' ) ) {
 		return $groups;
 	}
 }
+
+if ( ! function_exists( 'amnesty_limit_post_terms_results_for_archive' ) ) {
+	/**
+	 * Limit the output of {get_the_terms()} to the current category,
+	 * where applicable.
+	 *
+	 * @param array<int,WP_Term>|WP_Error $terms the found terms
+	 *
+	 * @return array<int,WP_Term>|WP_Error
+	 */
+	function amnesty_limit_post_terms_results_for_archive( array|WP_Error $terms ): array|WP_Error {
+		if ( is_wp_error( $terms ) || ! is_category() || 1 === count( $terms ) ) {
+			return $terms;
+		}
+
+		foreach ( $terms as $term ) {
+			if ( get_queried_object_id() === $term->term_id ) {
+				return [ $term ];
+			}
+		}
+
+		return $terms;
+	}
+}
+
+if ( ! function_exists( 'amnesty_limit_post_terms_results_for_search' ) ) {
+	/**
+	 * Limit the number of terms returned for a post
+	 *
+	 * @param array<int,WP_Term> $terms the terms to limit
+	 *
+	 * @return array<int,WP_Term>
+	 */
+	function amnesty_limit_post_terms_results_for_search( array $terms ): array {
+		// Limit array to 1 entry for each term
+		$terms = array_slice( $terms, 0, 1, true );
+
+		return $terms;
+	}
+}

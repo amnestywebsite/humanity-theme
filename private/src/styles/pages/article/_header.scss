@@ -10,17 +10,17 @@
   display: inline-block;
   padding: 16px;
   margin-bottom: 32px;
-  background: $color-black;
-  color: $color-white;
+  background: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .article-header .article-header-block h1 {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   text-transform: uppercase;
 }
 
 .article-header .article-term {
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   text-transform: uppercase;
   font-family: var(--wp--preset--font-family--secondary);
 }

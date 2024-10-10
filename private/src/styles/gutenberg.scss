@@ -1,6 +1,5 @@
 // Global variables first
 @import "utils/variables/defaults";
-@import "utils/variables/colors";
 
 // Grid settings
 @import "utils/variables/grid-settings";
@@ -14,12 +13,10 @@
 @import "utils/functions/maths";
 @import "utils/functions/palette";
 @import "utils/functions/strip-units";
-@import "utils/functions/spacing";
 @import "utils/functions/flexy";
 
 // Mixins
 @import "utils/mixins/clearfix";
-@import "utils/mixins/font-size";
 @import "utils/mixins/headings";
 @import "utils/mixins/cols";
 @import "utils/mixins/icon";
@@ -30,6 +27,7 @@
 @import "base/container";
 @import "base/container-editor";
 @import "base/images-editor";
+@import "base/links";
 
 // Layout
 @import "layout/page-hero";
@@ -44,6 +42,7 @@
 @import "components/icon";
 @import "components/pop-in/editor";
 @import "components/social";
+@import "components/form/input";
 
 // Blocks
 @import "blocks/action-block/main";
@@ -103,10 +102,13 @@
 @import "blocks/tickcounter-embed/editor";
 @import "blocks/tweet-action/tweet";
 @import "blocks/tweet-action/editor";
+@import "blocks/postlist/main";
 
 // Block Patterns
-@import "block-patterns/social-share";
 @import "block-patterns/group";
+
+// Pages
+@import "pages/search";
 
 :root {
   --ms-base: 16;
@@ -142,22 +144,6 @@
   }
 }
 
-p.has-small-font-size {
-  font-size: .9rem !important;
-}
-
-p.has-regular-font-size {
-  font-size: $base-font-size !important;
-}
-
-p.has-large-font-size {
-  font-size: 1.5rem !important;
-}
-
-p.has-larger-font-size {
-  font-size: 2rem !important;
-}
-
 .form-row {
   display: flex;
 }
@@ -183,7 +169,7 @@ p.has-larger-font-size {
   justify-content: flex-end;
   padding-top: 10px;
   margin-top: 20px;
-  border-top: 1px solid $color-grey-light;
+  border-top: 1px solid var(--wp--preset--color--grey-lighter);
 }
 
 // Gutenberg fixes
@@ -203,11 +189,11 @@ p.has-larger-font-size {
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
-  border-top: 1px solid $color-grey-sm-light;
-  border-bottom: 1px solid $color-grey-sm-light;
+  border-top: 1px solid var(--wp--preset--color--grey-lighter);
+  border-bottom: 1px solid var(--wp--preset--color--grey-lighter);
 
   .components-text-control__input {
-    background-color: $color-grey-light;
+    background-color: var(--wp--preset--color--grey-lighter);
   }
 }
 
@@ -243,4 +229,8 @@ p.has-larger-font-size {
 
 .timezone-container h2 {
   text-decoration: underline;
+}
+
+.horizontal-search {
+  margin-bottom: 0;
 }

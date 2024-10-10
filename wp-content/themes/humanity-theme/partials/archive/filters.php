@@ -21,7 +21,7 @@ if ( ! $taxonomies ) {
 }
 
 ?>
-<section class="section section--small section--dark postlist-categoriesContainer" style="display: flex;" data-slider>
+<section class="postlist-categoriesContainer" style="display: flex;" data-slider>
 	<form id="filter-form" class="news-filters" action="<?php echo esc_url( $form_url ); ?>">
 		<?php require locate_template( 'partials/forms/taxonomy-filters.php' ); ?>
 	</form>

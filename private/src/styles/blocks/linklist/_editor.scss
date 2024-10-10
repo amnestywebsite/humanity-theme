@@ -25,11 +25,7 @@
 .linkList-itemMeta .components-button,
 .linkList-itemTitle .components-button,
 .linkList-itemDate .components-button {
-  background: $color-white;
-
-  svg {
-    fill: unset;
-  }
+  background: var(--wp--preset--color--white);
 }
 
 .linkList-itemDate {
@@ -51,5 +47,5 @@
   z-index: 100;
   border: 1px solid #949292;
   padding: 6px;
-  background: $color-white;
+  background: var(--wp--preset--color--white);
 }

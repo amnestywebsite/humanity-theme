@@ -15,19 +15,28 @@ if ( ! function_exists( 'amnesty_overlay' ) ) {
 
 add_action( 'wp_body_open', 'amnesty_overlay', 1 );
 
-if ( ! function_exists( 'amnesty_skip_link' ) ) {
+if ( ! function_exists( 'amnesty_language_selector' ) ) {
 	/**
-	 * Render skip to content link
+	 * Render the standalone language selector
 	 *
 	 * @return void
 	 */
-	function amnesty_skip_link(): void {
-		printf(
-			'<a class="skipLink" href="#main" tabindex="1">%s</a>',
-			/* translators: [front] Accessibility label for screen reader/keyboard users */
-			esc_html__( 'Skip to main content', 'amnesty' )
-		);
+	function amnesty_language_selector(): void {
+		get_template_part( 'partials/language-selector' );
 	}
 }
 
-add_action( 'wp_body_open', 'amnesty_skip_link', 1 );
+add_action( 'wp_body_open', 'amnesty_language_selector', 2 );
+
+if ( ! function_exists( 'amnesty_site_header' ) ) {
+	/**
+	 * Render the site header (navigation) bar
+	 *
+	 * @return void
+	 */
+	function amnesty_site_header(): void {
+		get_template_part( 'partials/navigation/desktop' );
+	}
+}
+
+add_action( 'wp_body_open', 'amnesty_site_header', 3 );

@@ -9,7 +9,14 @@
 ?>
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:amnesty-core/quote {"align":"","content":"","citation":""} /-->
-
-<!-- wp:audio /--></div>
+<div class="wp-block-group">
+	<!-- wp:quote -->
+	<blockquote class="wp-block-quote">
+		<!-- wp:paragraph -->
+		<p></p>
+		<!-- /wp:paragraph -->
+		<cite>- (Add Citation)</cite>
+	</blockquote>
+	<!-- /wp:quote -->
+	<!-- wp:audio /--></div>
 <!-- /wp:group -->

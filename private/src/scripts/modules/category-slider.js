@@ -89,7 +89,7 @@ const setUpSliders = (container) => {
 };
 
 const init = () => {
-  const postCategories = Array.from(document.querySelectorAll('[data-slider]'));
+  const postCategories = Array.from(document.querySelectorAll('[data-slider],.has-slider'));
 
   if (postCategories.length < 1) {
     return;

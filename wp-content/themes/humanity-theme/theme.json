@@ -1,8 +1,65 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "$schema": "https://schemas.wp.org/wp/6.6/theme.json",
   "version": 3,
   "settings": {
     "appearanceTools": false,
+    "blocks": {
+      "core/quote": {
+        "color": {
+          "text": true,
+          "palette": [
+            {
+              "slug": "black",
+              "color": "#000",
+              "name": "Black"
+            },
+            {
+              "slug": "white",
+              "color": "#fff",
+              "name": "White"
+            },
+            {
+              "slug": "amnesty-grey_brand",
+              "color": "#b3b3b3",
+              "name": "Grey Brand"
+            }
+          ]
+        },
+        "typography": {
+          "fluid": true,
+          "fontSizes": [
+            {
+              "fluid": {
+                "min": "1rem",
+                "max": "1.75rem"
+              },
+              "slug": "small",
+              "size": "1.75rem",
+              "name": "Small"
+            },
+            {
+              "fluid": {
+                "min": "1.25rem",
+                "max": "2rem"
+              },
+              "slug": "medium",
+              "size": "2rem",
+              "name": "Medium"
+            },
+            {
+              "fluid": {
+                "min": "1.5rem",
+                "max": "2.25rem"
+              },
+              "slug": "large",
+              "size": "2.25rem",
+              "name": "Large"
+            }
+          ],
+          "textTransform": true
+        }
+      }
+    },
     "color": {
       "background": false,
       "text": false,
@@ -20,127 +77,67 @@
           "name": "White"
         },
         {
-          "slug": "amnesty-primary",
-          "color": "#fdff28",
+          "slug": "primary",
+          "color": "#fff",
           "name": "Primary"
         },
         {
-          "slug": "amnesty-primary-state",
-          "color": "#f8d72b",
+          "slug": "primary-state",
+          "color": "#000",
           "name": "Primary State"
         },
         {
-          "slug": "amnesty-secondary",
+          "slug": "secondary",
           "color": "#2196f3",
           "name": "Secondary"
         },
         {
-          "slug": "amnesty-accent",
+          "slug": "accent",
           "color": "#2196f3",
           "name": "Accent"
         },
         {
-          "slug": "amnesty-grey-brand",
-          "color": "#b3b3b3",
-          "name": "Grey Brand"
-        },
-        {
-          "slug": "amnesty-grey-xx-light",
+          "slug": "grey-lightest",
           "color": "#f7f7f7",
-          "name": "Grey Extra Extra Light"
+          "name": "Lightest Grey"
         },
         {
-          "slug": "amnesty-grey-x-light",
-          "color": "#eee",
-          "name": "Grey Extra Light"
-        },
-        {
-          "slug": "amnesty-grey-sm-light",
-          "color": "#e7e7e7",
-          "name": "Grey Small Light"
-        },
-        {
-          "slug": "amnesty-grey-light",
+          "slug": "grey-lighter",
           "color": "#e4e4e4",
-          "name": "Grey Light"
+          "name": "Lighter Grey"
         },
         {
-          "slug": "amnesty-grey-md-light",
-          "color": "#b5b5b5",
-          "name": "Grey Medium Light"
+          "slug": "grey-light",
+          "color": "#b3b3b3",
+          "name": "light Grey"
         },
         {
-          "slug": "amnesty-grey-mid-light",
-          "color": "#717272",
-          "name": "Grey Mid Light"
-        },
-        {
-          "slug": "amnesty-grey-base",
+          "slug": "grey-base",
           "color": "#767676",
-          "name": "Grey Base"
+          "name": "Default Grey"
         },
         {
-          "slug": "amnesty-grey-mid-dark",
+          "slug": "grey-dark",
           "color": "#525252",
-          "name": "Grey Mid Dark"
+          "name": "Dark Grey"
         },
         {
-          "slug": "amnesty-grey-dark",
+          "slug": "grey-darker",
           "color": "#262626",
-          "name": "Grey Dark"
+          "name": "Darker Grey"
         },
         {
-          "slug": "amnesty-grey-x-dark",
-          "color": "#111",
-          "name": "Grey Extra Dark"
+          "slug": "grey-darkest",
+          "color": "#111111",
+          "name": "Darkest Grey"
         },
         {
-          "slug": "amnesty-blue-xx-light",
-          "color": "#0eb5d6",
-          "name": "Blue Extra Extra Light"
-        },
-        {
-          "slug": "amnesty-blue-sm-light",
-          "color": "#009cbd",
-          "name": "Blue Small Light"
-        },
-        {
-          "slug": "amnesty-blue-md-light",
-          "color": "#55acee",
-          "name": "Blue Medium Light"
-        },
-        {
-          "slug": "amnesty-blue-mid-light",
+          "slug": "blue-twitter",
           "color": "#1da1f2",
-          "name": "Blue Mid Light"
+          "name": "Twitter Blue"
         },
         {
-          "slug": "amnesty-blue-dark",
-          "color": "#3a5795",
-          "name": "Blue Dark"
-        },
-        {
-          "slug": "amnesty-blue-mid-dark",
-          "color": "#0073aa",
-          "name": "Blue Mid Dark"
-        },
-        {
-          "slug": "amnesty-dark-light",
-          "color": "#32373c",
-          "name": "Dark Light"
-        },
-        {
-          "slug": "amnesty-mid-dark",
-          "color": "#363636",
-          "name": "Mid Dark"
-        },
-        {
-          "slug": "amnesty-x-dark",
-          "color": "#525252",
-          "name": "Extra Dark"
-        },
-        {
-          "slug": "amnesty-orange-base",
+          "slug": "orange-base",
           "color": "#ffa500",
           "name": "Orange"
         }
@@ -148,8 +145,35 @@
     },
     "spacing": {
       "margin": false,
-      "padding": true
-		},
+      "padding": true,
+      "spacingSizes": [
+        {
+          "slug": "quarter",
+          "size": "0.375rem",
+          "name": "Quarter"
+        },
+        {
+          "slug": "half",
+          "size": "0.75rem",
+          "name": "Half"
+        },
+        {
+          "slug": "single",
+          "size": "1.5rem",
+          "name": "Single"
+        },
+        {
+          "slug": "double",
+          "size": "3rem",
+          "name": "Double"
+        },
+        {
+          "slug": "quad",
+          "size": "6rem",
+          "name": "Quad"
+        }
+      ]
+    },
     "typography": {
       "fontFamilies": [
         {
@@ -163,9 +187,9 @@
               "fontWeight": 300,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/Lato-Light.woff2",
-                "file:./assets/fonts/Lato-Light.woff",
-                "file:./assets/fonts/Lato-Light.ttf"
+                "file:./assets/fonts/lato/Lato-Light.woff2",
+                "file:./assets/fonts/lato/Lato-Light.woff",
+                "file:./assets/fonts/lato/Lato-Light.ttf"
               ]
             },
             {
@@ -174,9 +198,9 @@
               "fontWeight": 300,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/Lato-LightItalic.woff2",
-                "file:./assets/fonts/Lato-LightItalic.woff",
-                "file:./assets/fonts/Lato-LightItalic.ttf"
+                "file:./assets/fonts/lato/Lato-LightItalic.woff2",
+                "file:./assets/fonts/lato/Lato-LightItalic.woff",
+                "file:./assets/fonts/lato/Lato-LightItalic.ttf"
               ]
             },
             {
@@ -185,9 +209,9 @@
               "fontWeight": 400,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/Lato-Regular.woff2",
-                "file:./assets/fonts/Lato-Regular.woff",
-                "file:./assets/fonts/Lato-Regular.ttf"
+                "file:./assets/fonts/lato/Lato-Regular.woff2",
+                "file:./assets/fonts/lato/Lato-Regular.woff",
+                "file:./assets/fonts/lato/Lato-Regular.ttf"
               ]
             },
             {
@@ -196,9 +220,9 @@
               "fontWeight": 400,
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/Lato-Italic.woff2",
-                "file:./assets/fonts/Lato-Italic.woff",
-                "file:./assets/fonts/Lato-Italic.ttf"
+                "file:./assets/fonts/lato/Lato-Italic.woff2",
+                "file:./assets/fonts/lato/Lato-Italic.woff",
+                "file:./assets/fonts/lato/Lato-Italic.ttf"
               ]
             }
           ]
@@ -214,9 +238,9 @@
               "fontWeight": "normal",
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/PlayfairDisplay-Italic.woff2",
-                "file:./assets/fonts/PlayfairDisplay-Italic.woff",
-                "file:./assets/fonts/PlayfairDisplay-Italic.ttf"
+                "file:./assets/fonts/playfair/PlayfairDisplay-Italic.woff2",
+                "file:./assets/fonts/playfair/PlayfairDisplay-Italic.woff",
+                "file:./assets/fonts/playfair/PlayfairDisplay-Italic.ttf"
               ]
             },
             {
@@ -225,22 +249,120 @@
               "fontWeight": "bold",
               "fontDisplay": "swap",
               "src": [
-                "file:./assets/fonts/PlayfairDisplay-Bold.woff2",
-                "file:./assets/fonts/PlayfairDisplay-Bold.woff",
-                "file:./assets/fonts/PlayfairDisplay-Bold.ttf"
+                "file:./assets/fonts/playfair/PlayfairDisplay-Bold.woff2",
+                "file:./assets/fonts/playfair/PlayfairDisplay-Bold.woff",
+                "file:./assets/fonts/playfair/PlayfairDisplay-Bold.ttf"
               ]
             }
           ]
         }
       ],
-      "fontSizes": [],
+      "fontSizes": [
+        {
+          "fluid": false,
+          "name": "X Small",
+          "size": ".8rem",
+          "slug": "x-small"
+        },
+        {
+          "fluid": false,
+          "name": "Small",
+          "size": ".9rem",
+          "slug": "small"
+        },
+        {
+          "fluid": false,
+          "name": "Regular",
+          "size": "1rem",
+          "slug": "regular"
+        },
+        {
+          "fluid": false,
+          "name": "Large",
+          "size": "1.5rem",
+          "slug": "large"
+        },
+        {
+          "fluid": false,
+          "name": "Larger",
+          "size": "2rem",
+          "slug": "larger"
+        },
+        {
+          "fluid": false,
+          "name": "Extra Large",
+          "size": "2.25em",
+          "slug": "x-large"
+        },
+        {
+          "fluid": false,
+          "name": "Huge",
+          "size": "2.5rem",
+          "slug": "huge"
+        },
+        {
+          "fluid": {
+            "min": "32px",
+            "max": "72px"
+          },
+          "name": "Heading 1",
+          "size": "72px",
+          "slug": "heading-1"
+        },
+        {
+          "fluid": {
+            "min": "28px",
+            "max": "41px"
+          },
+          "name": "Heading 2",
+          "size": "41px",
+          "slug": "heading-2"
+        },
+        {
+          "fluid": {
+            "min": "26px",
+            "max": "31px"
+          },
+          "name": "Heading 3",
+          "size": "31px",
+          "slug": "heading-3"
+        },
+        {
+          "fluid": {
+            "min": "22px",
+            "max": "28px"
+          },
+          "name": "Heading 4",
+          "size": "28px",
+          "slug": "heading-4"
+        },
+        {
+          "fluid": {
+            "min": "20px",
+            "max": "24px"
+          },
+          "name": "Heading 5",
+          "size": "24px",
+          "slug": "heading-5"
+        },
+        {
+          "fluid": {
+            "min": "18px",
+            "max": "21px"
+          },
+          "name": "Heading 6",
+          "size": "21px",
+          "slug": "heading-6"
+        }
+      ],
+      "dropCap": false,
+      "fluid": true,
       "fontStyle": false,
-			"fontWeight": false,
-			"letterSpacing": false,
-			"lineHeight": false,
-			"textDecoration": false,
-			"textTransform": false,
-			"dropCap": false
+      "fontWeight": false,
+      "letterSpacing": false,
+      "lineHeight": false,
+      "textDecoration": false,
+      "textTransform": false
     },
     "layout": {
       "contentSize": "1468px"
@@ -248,6 +370,63 @@
     "useRootPaddingAwareAlignments": false
   },
   "styles": {
+    "color": {
+      "text": "var(--wp--preset--color--black)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--primary)",
+      "fontSize": "var(--wp--preset--font-size--regular)",
+      "lineHeight": "calc(27px / 1.125)"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--black)"
+        },
+        "typography": {
+          "textDecoration": "none"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--secondary)",
+          "lineHeight": "1.12"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--black)"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--heading-1)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--heading-2)"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--heading-3)"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--heading-4)"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--heading-5)"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--heading-6)"
+        }
+      }
+    },
     "spacing": {
       "padding": {
         "top": "0px",
@@ -258,15 +437,15 @@
     }
   },
   "templateParts": [
-		{
-			"name": "header",
-			"title": "Header",
-			"area": "header"
-		},
-		{
-			"name": "footer",
-			"title": "Footer",
-			"area": "footer"
-		}
-	]
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ]
 }

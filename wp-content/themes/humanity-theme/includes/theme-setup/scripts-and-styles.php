@@ -162,7 +162,12 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 		wp_localize_script( 'amnesty-core-blocks-js', 'postTypes', amnesty_get_post_types() );
 
 		$settings = [
-			'petitionForm' => amnesty_feature_is_enabled( 'petitions_form' ),
+			'petitionForm'    => amnesty_feature_is_enabled( 'petitions_form' ),
+			'defaultSidebars' => [
+				'post'        => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar' ) ),
+				'page'        => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar_page' ) ),
+				'wp_template' => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar' ) ), // for the site editor
+			],
 		];
 
 		$taxonomies = get_taxonomies(
@@ -306,6 +311,10 @@ if ( ! function_exists( 'amnesty_enqueue_block_assets' ) ) {
 	 * @return void
 	 */
 	function amnesty_enqueue_block_assets(): void {
+		if ( ! is_admin() ) {
+			return;
+		}
+
 		$theme = wp_get_theme();
 
 		wp_enqueue_style( 'amnesty-core-editor', amnesty_asset_uri( 'styles' ) . '/editor.css', [], $theme->get( 'Version' ), 'all' );

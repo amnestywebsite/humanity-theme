@@ -7,7 +7,7 @@
   display: block;
   max-width: 100% !important;
   min-height: 400px;
-  background-color: $color-grey-md-light;
+  background-color: var(--wp--preset--color--grey-light);
 }
 
 .imageBlock.imageBlock.has-parallax {
@@ -40,7 +40,7 @@
   max-width: none;
   background-color: transparent !important;
   text-align: center;
-  color: $color-white !important;
+  color: var(--wp--preset--color--white) !important;
 }
 
 .imageBlock-buttonsContainer {
@@ -68,40 +68,40 @@
 
 .imageBlock-buttonWrapper .btn.btn--white {
   padding: 10px !important;
-  color: $color-black !important;
-  border: 1px solid $color-black !important;
-  background-color: $color-white !important;
+  color: var(--wp--preset--color--black) !important;
+  border: 1px solid var(--wp--preset--color--black) !important;
+  background-color: var(--wp--preset--color--white) !important;
   border-radius: 0 !important;
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   text-transform: uppercase;
 
   @include placeholder {
-    color: $color-black !important;
+    color: var(--wp--preset--color--black) !important;
   }
 }
 
 .imageBlock-overlay .editor-url-input__button button,
 .imageBlock-overlay .components-icon-button {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   border-radius: 0;
-  color: $color-black-light;
+  color: var(--wp--preset--color--black)-light;
 }
 
 .imageBlock-copyright {
   padding: 5px 10px 5px 5px !important;
   width: auto !important;
-  color: $color-white !important;
-  font-size: 14px !important;
+  font-size: var(--wp--preset--font-size--x-small) !important;
+  color: var(--wp--preset--color--white) !important;
 }
 
 .imageBlock-title,
 .imageBlock-content p,
 .imageBlock-copyright {
-  color: $color-white !important;
+  color: var(--wp--preset--color--white) !important;
 
   @include placeholder {
-    color: $color-white !important;
+    color: var(--wp--preset--color--white) !important;
   }
 }

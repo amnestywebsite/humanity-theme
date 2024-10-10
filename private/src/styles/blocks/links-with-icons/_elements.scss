@@ -32,16 +32,12 @@
 }
 
 .linksWithIcons-title {
-  font-size: 26px;
+  font-size: var(--wp--preset--font-size--heading-3);
   font-weight: bold;
   line-height: 1;
 
-  @include mq(x-small) {
-    font-size: 31px;
-  }
-
   .is-style-square & {
-    font-size: map-get($desktop-header-sizes, "h6");
+    font-size: var(--wp--preset--font-size--heading-6);
     text-transform: uppercase;
   }
 }
@@ -90,11 +86,11 @@
   font-weight: bold;
   line-height: 1em;
   word-wrap: normal;
-  color: $color-grey-dark !important;
+  color: var(--wp--preset--color--grey-darker) !important;
 }
 
 .linksWithIcons-bigtext.has-underline {
-  border-bottom: 8px solid $color-grey-dark;
+  border-bottom: 8px solid var(--wp--preset--color--grey-darker);
 }
 
 .linksWithIcons-body a {
@@ -103,13 +99,13 @@
 
 .linksWithIcons-group.is-style-square .linksWithIcons {
   border: 1px solid;
-  margin: 0 0 spacing(); // margin-bottom is for IE11
-  padding-top: spacing();
-  padding-bottom: spacing();
+  margin: 0 0 var(--wp--preset--spacing--single); // margin-bottom is for IE11
+  padding-top: var(--wp--preset--spacing--single);
+  padding-bottom: var(--wp--preset--spacing--single);
   height: 100%;
 
   & > * + * {
-    margin-top: spacing(half);
+    margin-top: var(--wp--preset--spacing--half);
   }
 }
 
@@ -121,11 +117,11 @@
 
 .linksWithIcons-group.is-style-square a.linksWithIcons:hover,
 .linksWithIcons-group.is-style-square a.linksWithIcons:active {
-  background-color: $color-grey-x-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .linksWithIcons-group.is-style-square a.linksWithIcons:focus-within {
-  background-color: $color-grey-x-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .linksWithIcons-group.is-style-square .linksWithIcons > span {

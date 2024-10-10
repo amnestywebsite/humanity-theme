@@ -1,25 +1,28 @@
 .article-container {
-  margin-bottom: spacing();
-}
-
-.article-content {
-  margin: spacing() 0;
+  margin-bottom: var(--wp--preset--spacing--single);
 }
 
 .article-footer .article-meta {
-  margin-bottom: spacing();
+  margin-bottom: var(--wp--preset--spacing--single);
+}
+
+.article-footer .article-metaActions .article-share {
+  margin: 0;
 }
 
 .article-footer .article-metaActions {
-  margin-top: spacing(half);
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--wp--preset--spacing--half);
   margin-bottom: 0;
 }
 
 .topics-container ul {
   display: flex;
   flex-wrap: wrap;
-  gap: spacing(half);
+  gap: var(--wp--preset--spacing--half);
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -27,15 +30,15 @@
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: $color-grey-xx-light;
+  background-color: var(--wp--preset--color--grey-lightest);
   padding: 10px;
   transition: background-color .25s;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 14px;
+  font-size: var(--wp--preset--font-size--small);
 }
 
 .topics-container li a:hover,
 .topics-container li a:focus,
 .topics-container li a:active {
-  background-color: $color-grey-sm-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
