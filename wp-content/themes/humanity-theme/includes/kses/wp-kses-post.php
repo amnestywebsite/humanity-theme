@@ -35,3 +35,21 @@ if ( ! function_exists( 'amnesty_wp_kses_post_allowed_html' ) ) {
 }
 
 add_filter( 'wp_kses_allowed_html', 'amnesty_wp_kses_post_allowed_html', 100, 2 );
+
+if ( ! function_exists( 'amnesty_wp_kses_post_allow_style_tag' ) ) {
+	/**
+	 * Allow the <style> tag to be output
+	 *
+	 * @param array<string,mixed> $tags    allowed tags
+	 * @param string              $context the kses context
+	 *
+	 * @return array<string,mixed>
+	 */
+	function amnesty_wp_kses_post_allow_style_tag( array $tags, string $context ): array {
+		if ( 'post' === $context ) {
+			$tags['style'] = [];
+		}
+
+		return $tags;
+	}
+}
