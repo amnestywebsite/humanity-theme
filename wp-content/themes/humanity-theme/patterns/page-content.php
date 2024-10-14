@@ -8,7 +8,8 @@
  */
 
 $sidebar_is_enabled = amnesty_get_meta_field( '_disable_sidebar' ) !== '1';
-$class_name         = $sidebar_is_enabled ? 'has-sidebar' : '';
+$sidebar_is_present = amnesty_is_sidebar_available();
+$class_name         = $sidebar_is_enabled && $sidebar_is_present ? 'has-sidebar' : '';
 
 ?><!-- wp:group {"tagName":"article","className":"article <?php print esc_attr( $class_name ); ?>"} -->
 <article class="wp-block-group article <?php print esc_attr( $class_name ); ?>">

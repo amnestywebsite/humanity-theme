@@ -24,6 +24,21 @@ if ( ! function_exists( 'amnesty_get_sidebar_id' ) ) {
 	}
 }
 
+if ( ! function_exists( 'amnesty_is_sidebar_available' ) ) {
+	/**
+	 * Check whether a sidebar is available to render for the current object
+	 *
+	 * @return bool
+	 */
+	function amnesty_is_sidebar_available(): bool {
+		$sidebar = get_post( amnesty_get_sidebar_id() );
+
+		return is_a( $sidebar, WP_Post::class ) &&
+			'publish' === $sidebar->post_status &&
+			'sidebar' === $sidebar->post_type;
+	}
+}
+
 if ( ! function_exists( 'render_sidebar_block' ) ) {
 	/**
 	 * Render the sidebar block
@@ -45,20 +60,24 @@ if ( ! function_exists( 'render_sidebar_block' ) ) {
 			false,
 		);
 
-		if ( ! $sidebar_disabled ) {
-			$sidebar = get_post( amnesty_get_sidebar_id() );
+		if ( $sidebar_disabled ) {
+			if ( is_page() ) {
+				return '';
+			}
 
-			return sprintf(
-				'<aside class="wp-block-group article-sidebar">%s</aside>',
-				apply_filters( 'the_content', $sidebar->post_content ?? '' ),
-			);
-		}
-
-		if ( ! is_page() ) {
 			// empty element is intentional
 			return '<aside class="wp-block-group article-sidebar"></aside>';
 		}
 
-		return '';
+		if ( ! amnesty_is_sidebar_available() ) {
+			return '';
+		}
+
+		$sidebar = get_post( amnesty_get_sidebar_id() );
+
+		return sprintf(
+			'<aside class="wp-block-group article-sidebar">%s</aside>',
+			apply_filters( 'the_content', $sidebar->post_content ?? '' ),
+		);
 	}
 }
