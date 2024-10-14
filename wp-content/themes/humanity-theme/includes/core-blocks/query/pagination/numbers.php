@@ -70,12 +70,16 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_numbers' ) )
 			$wp_query      = $block_query; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited -- taken from core
 			$total         = ! $max_page || $max_page > $wp_query->max_num_pages ? $wp_query->max_num_pages : $max_page;
 			$paginate_args = [
-				'base'      => '%_%',
-				'format'    => $pretty_pagination ? '/page/%#%/' : "?$page_key=%#%", // this was changed from core - @jaymcp
 				'current'   => max( 1, $page ),
 				'total'     => $total,
 				'prev_next' => false,
 			];
+
+			// this was changed from core - @jaymcp
+			if ( ! $pretty_pagination ) {
+				$paginate_args['base']   = '%_%';
+				$paginate_args['format'] = "?{$page_key}=%#%";
+			}
 
 			if ( null !== $mid_size ) {
 				$paginate_args['mid_size'] = $mid_size;
