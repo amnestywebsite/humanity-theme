@@ -106,14 +106,14 @@ const v2 = {
 
         if (h > 0) {
           return {
-            'background-image': `url(${backgroundImage})`,
+            backgroundImage: `url(${backgroundImage})`,
             minHeight: `${minHeight}vw`,
             maxHeight: `${backgroundImageHeight}px`,
           };
         }
 
         return {
-          'background-image': `url(${backgroundImage})`,
+          backgroundImage: `url(${backgroundImage})`,
           height: 'auto',
         };
       };
