@@ -23,7 +23,7 @@ if ( ! function_exists( 'amnesty_find_first_block_of_type' ) ) {
 				continue;
 			}
 
-			return amnesty_find_first_block_of_type( $block['innerBlocks'] );
+			return amnesty_find_first_block_of_type( $block['innerBlocks'], $block_name );
 		}
 
 		return [];
