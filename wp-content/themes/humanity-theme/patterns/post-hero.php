@@ -8,6 +8,11 @@
  */
 
 if ( ! amnesty_post_has_hero() ) {
+	// deprecated
+	if ( amnesty_post_has_header() ) {
+		echo '<!-- wp:pattern {"slug":"amnesty/post-header"} /-->';
+	}
+
 	return;
 }
 

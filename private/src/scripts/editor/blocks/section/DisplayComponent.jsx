@@ -296,13 +296,13 @@ class DisplayComponent extends Component {
 
       if (h > 0) {
         return {
-          'background-image': `url(${attributes.backgroundImage})`,
+          backgroundImage: `url(${attributes.backgroundImage})`,
           minHeight: `${attributes.minHeight}vw`,
           maxHeight: `${attributes.backgroundImageHeight}px`,
         };
       }
       return {
-        'background-image': `url(${attributes.backgroundImage})`,
+        backgroundImage: `url(${attributes.backgroundImage})`,
         height: 'auto',
       };
     };

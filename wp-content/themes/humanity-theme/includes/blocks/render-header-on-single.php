@@ -135,12 +135,6 @@ if ( ! function_exists( 'amnesty_get_header_data_from_meta' ) ) {
 
 		$data['imageID'] = intval( get_post_thumbnail_id( $post ), 10 );
 
-		$data += $header['attrs'] ?? [];
-
-		if ( ! empty( $header['innerBlocks'] ) ) {
-			$data['innerBlocks'] = $header['innerBlocks'];
-		}
-
 		wp_cache_set( $cache_key, $data );
 
 		return $data;
@@ -155,20 +149,23 @@ if ( ! function_exists( 'amnesty_remove_header_from_content' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
+	 * @param string|null $content the content string, if applicable
+	 *
 	 * @return void
 	 */
-	function amnesty_remove_header_from_content() {
+	function amnesty_remove_header_from_content( ?string $content = null ) {
 		global $post;
 
-		if ( ! is_a( $post, 'WP_Post' ) ) {
+		if ( ! is_a( $post, WP_Post::class ) ) {
 			return;
 		}
 
-		$post->post_content = preg_replace(
-			'/<!--\s(wp:amnesty-core\/(?:block-hero))\s.*?(?:(?:\/-->)|(?:-->.*?<!--\s\/\1\s-->))/sm',
-			'',
-			$post->post_content,
-			1
-		);
+		$regex = '/<!--\s(wp:amnesty-core\/(?:block-hero))\s.*?(?:(?:\/-->)|(?:-->.*?<!--\s\/\1\s-->))/sm';
+
+		if ( is_string( $content ) ) {
+			return preg_replace( $regex, '', $content, 1 );
+		}
+
+		$post->post_content = preg_replace( $regex, '', $post->post_content, 1 );
 	}
 }

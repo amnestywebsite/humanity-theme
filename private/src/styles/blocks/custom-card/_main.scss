@@ -44,7 +44,7 @@
 .customCard-label {
   display: block;
   text-align: center;
-  padding: 8px;
+  padding: var(--wp--preset--spacing--half);
   font-size: var(--wp--preset--font-size--large);
   background-color: var(--wp--preset--color--grey-lighter);
   color: var(--wp--preset--color--grey-dark);
@@ -69,7 +69,7 @@
 }
 
 .customCard.is-style-style-2 {
-  background-color: var(--wp--preset--color--black)-x-dark;
+  background-color: var(--wp--preset--color--grey-dark);
 }
 
 .customCard.is-style-style-3 {
@@ -79,7 +79,7 @@
 .is-style-style-2 .customCard-label,
 .is-style-style-2 .customCard-content,
 .is-style-style-2 .customCard {
-  background-color: var(--wp--preset--color--black)-x-dark;
+  background-color: var(--wp--preset--color--grey-dark);
   color: var(--wp--preset--color--white);
 }
 
@@ -92,7 +92,7 @@
 
 .is-style-style-3 .btn,
 .is-style-style-3 .customCard {
-  background-color: var(--wp--preset--color--black)-x-dark;
+  background-color: var(--wp--preset--color--grey-dark);
   color: var(--wp--preset--color--white);
 }
 
