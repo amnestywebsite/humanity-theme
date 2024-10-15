@@ -8,5 +8,8 @@
   "textdomain": "amnesty",
 	"category": "theme",
 	"icon": "info",
-  "usesContext": ["queryId", "query"]
+  "usesContext": ["queryId", "query"],
+  "supports": {
+    "inserter": false
+  }
 }

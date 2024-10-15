@@ -131,3 +131,7 @@
 .wp-block-amnesty-core-hero.has-inner-blocks .hero-content {
   max-width: 460px;
 }
+
+.wp-block-amnesty-core-hero:has(+ main) {
+  margin-bottom: var(--wp--preset--spacing--single);
+}
