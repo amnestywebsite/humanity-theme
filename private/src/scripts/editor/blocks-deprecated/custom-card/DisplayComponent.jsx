@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 
-const { InspectorControls, MediaUpload, PlainText, URLInputButton } = wp.blockEditor;
+const { InspectorControls, MediaUpload, RichText, URLInputButton } = wp.blockEditor;
 const { IconButton, PanelBody, SelectControl, TextControl } = wp.components;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
@@ -76,9 +76,10 @@ export default class BlockEdit extends Component {
           </PanelBody>
         </InspectorControls>
         <figure className={classes}>
-          <PlainText
+          <RichText
             className="customCard-label"
-            rows="1"
+            allowedFormats={[]}
+            withoutInteractiveFormatting={true}
             // translators: [admin]
             placeholder={__('(Label)', 'amnesty')}
             value={label}
@@ -117,22 +118,26 @@ export default class BlockEdit extends Component {
             )}
           </div>
           <figcaption className="customCard-content">
-            <PlainText
+            <RichText
               // translators: [admin]
               placeholder={__('Content', 'amnesty')}
-              rows="3"
+              allowedFormats={[]}
+              withoutInteractiveFormatting={true}
               value={content}
               onChange={(newContent) => setAttributes({ content: newContent })}
             />
-            <PlainText
-              className={buttonClasses}
-              // translators: [admin]
-              placeholder={__('Button Text', 'amnesty')}
-              rows="1"
-              value={linkText}
-              onChange={(newLinkText) => setAttributes({ linkText: newLinkText })}
-            />
-            <URLInputButton url={link} onChange={(newLink) => setAttributes({ link: newLink })} />
+            <div className="customCard-editorButtonWrapper">
+              <RichText
+                className={buttonClasses}
+                // translators: [admin]
+                placeholder={__('Button Text', 'amnesty')}
+                allowedFormats={[]}
+                withoutInteractiveFormatting={true}
+                value={linkText}
+                onChange={(newLinkText) => setAttributes({ linkText: newLinkText })}
+              />
+              <URLInputButton url={link} onChange={(newLink) => setAttributes({ link: newLink })} />
+            </div>
           </figcaption>
         </figure>
       </Fragment>

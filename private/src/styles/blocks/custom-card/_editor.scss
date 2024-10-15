@@ -1,3 +1,8 @@
+.customCard-editorButtonWrapper {
+  display: flex;
+  align-items: center;
+}
+
 .customCard textarea.customCard-label {
   background-color: var(--wp--preset--color--grey-lighter);
   color: var(--wp--preset--color--grey-dark);
@@ -16,10 +21,11 @@
 
 .is-style-style-2 textarea.customCard-label,
 .is-style-style-2 .customCard-content textarea {
-  background-color: var(--wp--preset--color--black)-x-dark;
+  background-color: var(--wp--preset--color--black);
   color: var(--wp--preset--color--white);
 }
 
+.is-style-style-2 .customCard-editorButtonWrapper,
 .is-style-style-2 .customCard-content .btn {
   color: var(--wp--preset--color--grey-dark);
   background-color: var(--wp--preset--color--primary);
@@ -31,9 +37,14 @@
   color: var(--wp--preset--color--grey-dark);
 }
 
+.is-style-style-3 .customCard-editorButtonWrapper,
 .is-style-style-3 .customCard-content .btn {
   color: var(--wp--preset--color--white);
-  background-color: var(--wp--preset--color--black)-x-dark;
+  background-color: var(--wp--preset--color--grey-darkest);
+}
+
+.is-style-style-3 .customCard-editorButtonWrapper svg {
+  fill: var(--wp--preset--color--white);
 }
 
 .customCard-content .btn:hover {

@@ -19,6 +19,10 @@
   }
 }
 
+.page-hero:has(+ main) {
+  margin-bottom: var(--wp--preset--spacing--double);
+}
+
 .page-header--light ~ .page-hero,
 .page-header--shaded ~ .page-hero {
   padding-top: 80px;

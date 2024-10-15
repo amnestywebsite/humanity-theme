@@ -1,15 +1,24 @@
 .postbox label,
 label.components-checkbox-control__label,
+textarea.components-textarea-control__input,
 textarea.editor-post-text-editor {
   text-transform: none;
   font-weight: normal;
 }
 
 .postbox label,
-label.components-checkbox-control__label {
+label.components-base-control__label,
+label.components-checkbox-control__label,
+label.components-toggle-control__label {
+  text-transform: none;
   font-family: inherit;
+  font-weight: normal;
 }
 
 .postbox input[type="radio"]:checked::before {
   display: none;
+}
+
+.components-base-control.wp-block-post-title textarea.components-textarea-control__input {
+  font-family: var(--wp--preset--font-family--secondary);
 }

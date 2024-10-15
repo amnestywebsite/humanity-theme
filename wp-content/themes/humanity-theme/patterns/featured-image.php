@@ -9,7 +9,7 @@
 
 use Amnesty\Get_Image_Data;
 
-if ( amnesty_post_has_hero() ) {
+if ( amnesty_post_has_hero() || amnesty_post_has_header() ) {
 	return;
 }
 
