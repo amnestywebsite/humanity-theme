@@ -10,7 +10,8 @@
 	"keywords": ["Search Header"],
   "usesContext": ["query"],
 	"supports": {
-		"multiple": false,
-		"align": false
+		"align": false,
+    "inserter": false,
+		"multiple": false
 	}
 }

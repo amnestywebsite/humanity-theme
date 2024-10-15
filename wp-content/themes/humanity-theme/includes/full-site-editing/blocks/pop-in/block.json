@@ -9,7 +9,7 @@
 	"icon": "editor-table",
 	"keywords": ["Pop-in"],
 	"supports": {
-		"multiple": false,
-		"align": false
+		"align": false,
+		"multiple": false
 	}
 }
