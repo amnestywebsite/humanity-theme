@@ -8,7 +8,7 @@
 	"category": "amnesty-core",
 	"icon": "editor-table",
 	"supports": {
-		"multiple": false,
-		"align": false
+		"align": false,
+		"multiple": false
 	}
 }

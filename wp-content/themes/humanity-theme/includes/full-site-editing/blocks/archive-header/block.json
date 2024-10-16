@@ -9,7 +9,8 @@
 	"icon": "editor-table",
 	"keywords": ["Archive Header"],
 	"supports": {
-		"multiple": false,
-		"align": false
+		"align": false,
+    "inserter": false,
+		"multiple": false
 	}
 }

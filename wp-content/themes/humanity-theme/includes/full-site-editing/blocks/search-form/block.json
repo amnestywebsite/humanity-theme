@@ -9,7 +9,8 @@
 	"icon": "editor-table",
 	"keywords": ["Search Form"],
 	"supports": {
-		"multiple": false,
-		"align": false
+		"align": false,
+    "inserter": false,
+		"multiple": false
 	}
 }

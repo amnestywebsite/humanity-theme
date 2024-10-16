@@ -22,3 +22,19 @@ label.components-toggle-control__label {
 .components-base-control.wp-block-post-title textarea.components-textarea-control__input {
   font-family: var(--wp--preset--font-family--secondary);
 }
+
+.media-modal label,
+.media-modal input,
+.media-modal optgroup,
+.media-modal select,
+.media-modal textarea {
+  font-family: inherit;
+  text-transform: none;
+}
+
+.media-modal input,
+.media-modal optgroup,
+.media-modal select,
+.media-modal textarea {
+  font-weight: normal;
+}
