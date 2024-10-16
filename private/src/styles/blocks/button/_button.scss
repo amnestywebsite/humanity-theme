@@ -10,6 +10,10 @@
   max-width: 850px;
 }
 
+.wp-block-button__link:has([class*="icon-"]) {
+  display: flex;
+}
+
 .btn.has-icon {
   display: inline-flex;
   align-items: center;
