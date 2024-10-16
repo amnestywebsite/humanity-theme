@@ -10,6 +10,7 @@ This guide assumes you have an available Virtual Host or Docker environment thro
 - [`Composer`](https://getcomposer.org/) v2+  
 - [`Node`](https://nodejs.org/en/) v20+  
 - [`Yarn`](https://yarnpkg.com/) v4+  
+- [`Docker`](https://docs.docker.com/engine/install/) Optional, in case you would like to use `@wordpress/env` to run a local environment.
 
 #### Setting Up
 - Clone the repo into your chosen directory.  
@@ -18,7 +19,17 @@ This guide assumes you have an available Virtual Host or Docker environment thro
   This step installs our [PHPCS](https://github.com/PHPCSStandards/PHP_CodeSniffer) toolchain, and will allow you to scan your code changes for any stylistic incompatibilities. It's important to run PHPCS (`composer lint`) prior to creating any Pull Requests, as PRs are auto-rejected if any issues are found.  
 - Install and build the theme assets: `cd ./private && yarn && yarn build`  
   This project requires node v20+; you may need to enable corepack first: `corepack enable`.  
-- Download any Required or Recommended Plugins into the `./wp-content/plugins` directory. Follow plugin instructions for installation steps.  
+- Download any Required or Recommended Plugins into the `./wp-content/plugins` directory, or add them to `.wp-env.json` if using `@wordpress/env` as a development environment. Follow plugin instructions for installation steps.
+
+#### Local development environment with `@wordpress/env`
+If you choose to, you can use `@wordpress/env` which will provision a local development environment using Docker. 
+To get started run `yarn env start` from within the `./private` directory.
+
+The site will be available at http://localhost:8888
+You can login at http://localhost:8888/wp-admin with username `admin` and password `password`.
+
+> Note: `yarn env` is an alias for commands available with `@wordpress/env`.
+> For more information, [read here](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/).
 
 ### Submitting Issues or Feature Requests
 When submitting tickets, please give a detailed description of the issue in question along with where the issue was found; steps to replicate; and, where possible, a screenshot of the issue.  

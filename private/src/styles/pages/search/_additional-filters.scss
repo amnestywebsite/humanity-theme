@@ -10,7 +10,7 @@
 
 .horizontal-search .additional-filters.is-active {
   max-height: 1000px;
-  padding-bottom: spacing(half);
+  padding-bottom: var(--wp--preset--spacing--half);
   overflow-y: visible;
 
   @include mq(medium) {
@@ -31,7 +31,7 @@
 .horizontal-search .taxonomyArchive-filters {
   width: 100%;
   margin-top: 0;
-  gap: 0 spacing();
+  gap: 0 var(--wp--preset--spacing--single);
 }
 
 .horizontal-search .additional-filters .taxonomyArchive-filters {
@@ -59,7 +59,7 @@
   position: relative;
   display: flex;
   flex: 1 1 auto;
-  margin-bottom: spacing(half);
+  margin-bottom: var(--wp--preset--spacing--half);
   width: 100%;
 
   @include mq(medium) {
@@ -72,15 +72,15 @@
 }
 
 .horizontal-search .additional-filters.is-active .btn.is-active {
-  background-color: $color-primary;
-  color: $color-black;
-  border-color: $color-primary;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--black);
+  border-color: var(--wp--preset--color--primary);
 }
 
 // no-js styles
 .no-js .horizontal-search .additional-filters {
   max-height: 1000px;
   transition: max-height .3s;
-  padding: 0 0 spacing(half) 0;
+  padding: 0 0 var(--wp--preset--spacing--half) 0;
   overflow: visible;
 }

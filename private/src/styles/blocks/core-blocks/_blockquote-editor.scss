@@ -35,9 +35,9 @@ blockquote p,
 }
 
 .blockquote.is-white.is-lined cite::after {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
 }
 
 .blockquote.is-grey.is-lined cite::after {
-  background-color: $color-grey-brand;
+  background-color: var(--wp--preset--color--grey-light);
 }

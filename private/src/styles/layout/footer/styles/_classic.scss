@@ -1,17 +1,17 @@
 .page-footer {
   padding: 28px 20px;
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .page-footer a {
   display: inline-block;
-  color: $color-white;
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
+  color: var(--wp--preset--color--white);
   font-family: sans-serif;
 
   &.btn--white {
-    color: $color-black;
+    color: var(--wp--preset--color--black);
   }
 }
 
@@ -24,11 +24,11 @@
 .page-footerSections > li > a:first-of-type {
   margin-bottom: 24px;
   padding-bottom: 12px;
-  font-size: 21px;
+  font-size: var(--wp--preset--font-size--heading-6);
   text-transform: uppercase;
-  color: $color-grey-md-light;
+  color: var(--wp--preset--color--grey-light);
   font-family: var(--wp--preset--font-family--secondary);
-  border-bottom: 1px solid $color-black-mid-dark;
+  border-bottom: 1px solid var(--wp--preset--color--grey-dark);
   font-weight: bold;
 
   &:hover,
@@ -104,7 +104,7 @@
 }
 
 .page-footerSection p {
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
   line-height: 1.5;
 
   &:not(:last-child) {
@@ -144,9 +144,9 @@
 .page-footerSiteSelection a {
   display: inline-block;
   padding: 4px 8px;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -154,7 +154,7 @@
 .page-footerSiteSelection a:hover,
 .page-footerSiteSelection a:focus,
 .page-footerSiteSelection .is-selected a {
-  background-color: $color-black-x-dark;
+  background-color: var(--wp--preset--color--black); // @TODO: update
 }
 
 .page-footerSections:empty + .page-footerBottom {
@@ -167,7 +167,7 @@
   flex-wrap: wrap-reverse;
   margin-top: 24px;
   padding-top: 48px;
-  border-top: 1px solid $color-black-mid-dark;
+  border-top: 1px solid var(--wp--preset--color--grey-dark);
 }
 
 .page-footerBottomHalf {
@@ -196,7 +196,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
   line-height: 1.5;
   font-family: sans-serif;
 }
@@ -224,13 +224,13 @@
 }
 
 .page-footerBottomNav a {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .page-footerCopyright {
-  font-size: 12px;
+  font-size: var(--wp--preset--font-size--x-small);
   line-height: 1.5;
-  color: rgba($color-white, .7);
+  color: color-mix(in srgb, var(--wp--preset--color--white) 70%, transparent);
   padding-top: 8px;
 }
 
@@ -249,9 +249,9 @@
 }
 
 .page-footerBottomTitle {
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
   text-transform: uppercase;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   margin-bottom: 12px;
 
   @include mq(large) {
@@ -274,7 +274,7 @@
 }
 
 .page-footerSocial a {
-  @include state-background(lighten($color-black, 20%));
+  @include state-background(var(--wp--preset--color--grey-darkest));
   display: block;
 }
 

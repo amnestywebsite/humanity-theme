@@ -1,131 +1,20 @@
 .post {
   position: relative;
   width: 100%;
-}
 
-@include mq($until: x-small) {
-  .post + .post {
-    margin-top: flexy-gutter();
-  }
-}
-
-@include mq(x-small) {
-  .post {
+  @include mq(medium-sm) {
     min-height: 460px;
   }
+}
 
-  .post + .post {
-    margin-left: flexy-gutter();
-
-    .rtl & {
-      margin-right: flexy-gutter();
-      margin-left: 0;
-    }
-  }
-
-  .post:nth-child(3n) {
+@include mq(medium-sm) {
+  .tax-location .post+.post {
     margin-left: flexy-gutter();
   }
 }
 
-@include mq(x-small, medium) {
-  .post {
-    @include flexy-grid(2, flexy-gutter());
-  }
-
-  .post:nth-child(2n + 3) {
-    margin-left: 0;
-
-    .rtl & {
-      margin-right: 0;
-    }
-  }
-
-  .post:nth-child(n + 3) {
-    margin-top: flexy-gutter();
-  }
-}
-
-@include mq(medium, large) {
-  .post {
-    @include flexy-grid(3, flexy-gutter());
-  }
-
-  .post:nth-child(3n + 4) {
-    margin-left: 0;
-
-    .rtl & {
-      margin-right: 0;
-    }
-  }
-
-  .post:nth-child(n + 4) {
-    margin-top: flexy-gutter();
-  }
-
-  .has-subcategories .post {
-    @include flexy-grid(2, flexy-gutter());
-  }
-
-  .has-subcategories .post:nth-child(n + 3) {
-    margin-top: flexy-gutter();
-  }
-
-  .has-subcategories .post:nth-child(3n + 4) {
-    margin-left: flexy-gutter();
-
-    .rtl & {
-      margin-right: flexy-gutter();
-    }
-  }
-
-  .has-subcategories .post:nth-child(2n + 3) {
-    margin-left: 0;
-
-    .rtl & {
-      margin-right: 0;
-    }
-  }
-}
-
-@include mq(large) {
-  .post {
-    @include flexy-grid(4, flexy-gutter());
-  }
-
-  .has-subcategories .post {
-    @include flexy-grid(3, flexy-gutter());
-  }
-
-  .has-subcategories .post:nth-child(n + 4) {
-    margin-top: flexy-gutter();
-  }
-
-  .has-subcategories .post:nth-child(4n + 5) {
-    margin-left: flexy-gutter();
-
-    .rtl & {
-      margin-right: flexy-gutter();
-    }
-  }
-
-  .has-subcategories .post:nth-child(3n + 4) {
-    margin-left: 0;
-
-    .rtl & {
-      margin-right: 0;
-    }
-  }
-
-  .post:nth-child(4n + 5) {
-    margin-left: 0;
-
-    .rtl & {
-      margin-right: 0;
-    }
-  }
-
-  .post:nth-child(n + 5) {
+@include mq($until: medium-sm) {
+  .tax-location .post+.post {
     margin-top: flexy-gutter();
   }
 }
@@ -144,15 +33,15 @@
 }
 
 .post-category {
-  @include state-background(lighten($color-black, 20%));
+  @include state-background(var(--wp--preset--color--grey-darker));
   display: inline-block;
   padding: 4px 8px;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .post-meta {
@@ -161,8 +50,8 @@
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   font-size: 14px;
-  color: $color-grey-mid-dark;
-  background-color: $color-white;
+  color: var(--wp--preset--color--grey-dark);
+  background-color: var(--wp--preset--color--white);
 }
 
 .post-title {
@@ -172,12 +61,12 @@
 }
 
 .post-title a {
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .post-title span {
-  background-color: $color-white;
-  box-shadow: -8px 0 0 0 $color-white, 8px 0 0 0 $color-white;
+  background-color: var(--wp--preset--color--white);
+  box-shadow: -8px 0 0 0 var(--wp--preset--color--white), 8px 0 0 0 var(--wp--preset--color--white);
   box-decoration-break: clone;
   line-height: 1.2;
 }
@@ -205,11 +94,11 @@
 .postImage--none .post-content,
 .postImage--small .post-content {
   position: relative;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   flex: 1 1 auto;
 }
 
-.postImage--small .post-category {
+.postImage--small .post-category a {
   position: absolute;
   bottom: 100%;
   left: 12px;
@@ -247,7 +136,7 @@
   height: 8px;
   width: 75%;
   margin-top: 12px;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 
   @include mq(x-small) {
     margin-top: auto;
@@ -273,7 +162,7 @@
 
 .post-figure {
   position: relative;
-  background-color: $color-grey-x-dark;
+  background-color: var(--wp--preset--color--grey-darkest);
   overflow: hidden;
   max-height: 200px;
   height: 100%;
@@ -292,6 +181,14 @@
   }
 }
 
-:lang(fa-IR) .post-category {
+:lang(fa-IR) .post-category a {
   display: none;
+}
+
+.page-template-searchpage .post {
+  min-height: auto;
+}
+
+.search-results .post {
+  min-height: auto;
 }

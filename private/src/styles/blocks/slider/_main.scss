@@ -14,18 +14,18 @@
   justify-content: center;
   text-align: center;
   min-height: 56px;
-  background-color: $color-grey-light;
-  font-size: 16px;
-  text-transform: uppercase;
+  background-color: var(--wp--preset--color--grey-lighter);
+  color: var(--wp--preset--color--black);
   font-family: var(--wp--preset--font-family--secondary);
+  font-size: var(--wp--preset--font-size--small);
+  text-transform: uppercase;
   flex: 1 1 auto;
   font-weight: bold;
   border: none;
-  color: $color-black;
 }
 
 .slider-navButton.is-nav-selected {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   transform: translateY(-4px);
 }
 
@@ -37,14 +37,14 @@
   display: block;
   width: 100%;
   height: 4px;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .slide {
   display: flex;
   width: 100%;
   min-height: 500px;
-  background-color: $color-grey-base;
+  background-color: var(--wp--preset--color--grey-base);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -117,7 +117,7 @@
   top: 50%;
   left: 0;
   display: none;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   width: 50px;
   height: 50px;
   overflow: hidden;
@@ -176,8 +176,8 @@
   flex-direction: column;
   align-self: flex-start;
   min-width: 100%;
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
   padding: 16px;
 
   @include mq(small) {
@@ -202,12 +202,12 @@
   }
 
   h1, h2, p, span, .slide-content {
-    color: $color-white;
+    color: var(--wp--preset--color--white);
   }
 }
 
 .slide.has-opaque-background .slide-contentContainer {
-  background: linear-gradient(to bottom, rgba($color-black, .5) 90%, rgba($color-black, 0) 100%);
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--wp--preset--color--black) 50%, transparent) 90%, transparent 100%);
 }
 
 .slide.has-transparent-background .slide-contentContainer {
@@ -330,7 +330,7 @@
 }
 
 .slide-contentWrapper.is-open {
-  background-color: rgba($color-black, .4);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 40%, transparent);
   overflow-y: scroll;
 
   @include mq(small) {
@@ -345,7 +345,7 @@
     left: 0;
     display: block;
     padding-bottom: 20px;
-    color: $color-white;
+    color: var(--wp--preset--color--white);
     text-align: center;
 
     @include mq(small) {
@@ -356,7 +356,7 @@
 
 .slide-contentWrapper.is-open .slide-contentContainer {
   z-index: 2;
-  background: $color-black;
+  background: var(--wp--preset--color--black);
 }
 
 .slide-contentWrapper.is-open .slide-content {
@@ -395,7 +395,7 @@
   display: block;
   height: 34px;
   width: 34px;
-  border: 1px solid $color-white;
+  border: 1px solid var(--wp--preset--color--white);
   background-color: transparent;
   text-indent: -1000vw;
 
@@ -420,29 +420,21 @@
 }
 
 h1.slide-title {
-  font-size: 43px;
+  font-size: var(--wp--preset--font-size--heading-2);
   text-transform: uppercase;
-  color: $color-white !important;
+  color: var(--wp--preset--color--white) !important;
 
   .rtl & {
     text-align: right;
-  }
-
-  @include mq(small) {
-    font-size: 48px;
   }
 }
 
 h2.slide-subtitle {
-  font-size: 30px;
-  color: $color-white !important;
+  font-size: var(--wp--preset--font-size--heading-3);
+  color: var(--wp--preset--color--white) !important;
 
   .rtl & {
     text-align: right;
-  }
-
-  @include mq(small) {
-    font-size: 36px;
   }
 }
 
@@ -455,14 +447,10 @@ h2.slide-subtitle {
 }
 
 .slide-content p {
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--regular);
 
   &:last-child {
     margin-bottom: 0;
-  }
-
-  @include mq(small) {
-    font-size: 18px;
   }
 }
 
@@ -472,19 +460,19 @@ h2.slide-subtitle {
   bottom: 0;
   width: 100%;
   background: rgba(255, 255, 255, .7);
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   padding: 20px;
   text-align: center;
 }
 
 .timeline-dark .slide-timelineContent {
   background: rgba(0, 0, 0, .3);
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .timeline-light .slide-timelineContent {
   background: rgba(255, 255, 255, .7);
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .slide-timelineContent .slide-timelineContent-inner {
@@ -497,24 +485,24 @@ h2.slide-subtitle {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: $color-white;
+  background: var(--wp--preset--color--white);
   padding: 20px;
   z-index: 1;
   font-family: var(--wp--preset--font-family--secondary);
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: var(--wp--preset--font-size--regular);
 
   @include mq(small) {
-    font-size: 34px;
+    font-size: var(--wp--preset--font-size--large);
   }
 }
 
 .slider.timeline-light .image-metadata {
   background-color: transparent;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .slider.timeline-dark .image-metadata {
   background-color: transparent;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }

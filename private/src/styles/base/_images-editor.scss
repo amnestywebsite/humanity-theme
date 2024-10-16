@@ -13,9 +13,9 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  font-size: 16px;
-  background-color: rgba($color-black, .55);
-  color: $color-white;
+  font-size: var(--wp--preset--font-size--small);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 55%, transparent);
+  color: var(--wp--preset--color--white);
   word-break: keep-all;
 
   @include mq(small) {
@@ -34,19 +34,19 @@
   padding: 4px flexy-gutter();
   max-width: 800px;
   width: 100%;
-  background-color: $color-white;
-  color: $color-grey-mid-dark;
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--grey-dark);
   text-align: left;
 
   @include mq(small) {
     padding: 4px;
     background-color: transparent;
-    color: $color-white;
+    color: var(--wp--preset--color--white);
   }
 }
 
 .single .image-metadataItem.image-caption {
-  padding: 4px spacing();
+  padding: 4px var(--wp--preset--spacing--single);
 
   @include mq(small) {
     padding: 4px;

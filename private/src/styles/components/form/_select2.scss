@@ -1,14 +1,14 @@
 .element-select .select2-container .select2-selection--single {
   border-radius: 0;
-  border: 1px solid $color-black;
+  border: 1px solid var(--wp--preset--color--black);
   padding: 12px;
   height: auto !important;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--small);
   font-weight: normal;
   line-height: normal;
   text-transform: uppercase;
-  color: $color-grey-base;
+  color: var(--wp--preset--color--grey-base);
   opacity: 1;
 }
 
@@ -16,7 +16,7 @@
   padding: 0;
   font-weight: bold;
   line-height: normal;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .element-select .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -25,14 +25,14 @@
 
 .element-select .select2-container--default .select2-results__option--highlighted[aria-selected],
 .element-select .select2-container--default .select2-results__option--highlighted[data-selected] {
-  background-color: $color-primary;
-  color: $color-black;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--black);
 }
 
 .element-select .select2-results__option {
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 14px;
+  font-size: var(--wp--preset--font-size--x-small);
   font-weight: normal;
   text-transform: uppercase;
-  color: $color-grey-base;
+  color: var(--wp--preset--color--grey-base);
 }

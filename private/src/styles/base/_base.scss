@@ -30,10 +30,6 @@ html.lang-open {
  *    render text using sub-pixel anti-aliasing.
  */
 body {
-  font-size: $base-font-size;
-  font-family: var(--wp--preset--font-family--primary);
-  line-height: $line-height-ratio;
-  color: $body-color;
   // font-feature-settings: "kern", "liga", "pnum"; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -41,6 +37,7 @@ body {
   -webkit-font-smoothing: antialiased; /* 3 */
   overflow-x: hidden;
   min-height: 100vh;
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
@@ -60,6 +57,7 @@ body.rtl {
 main {
   position: relative;
   flex: 1 0 auto;
+  display: block;
 }
 
 .ie .main {

@@ -100,6 +100,36 @@ class Related_Content {
 	}
 
 	/**
+	 * Retrieve the raw block markup
+	 *
+	 * @return string
+	 */
+	public function get_raw(): string {
+		$block_data = $this->get_block_data();
+		$markup     = '';
+
+		// don't render if there's nothing to render
+		if ( ! $block_data['custom'] ) {
+			return $markup;
+		}
+
+		$markup .= sprintf(
+			'<!-- wp:heading {"level":2,"className":"wp-block-heading has-text-align-center"} -->' . "\n" .
+			'<h2 id="h-related-content" class="wp-block-heading has-text-align-center">%s</h2>' . "\n" .
+			'<!-- /wp:heading -->',
+			/* translators: [front] shown on post single */
+			esc_html__( 'Related Content', 'amnesty' )
+		);
+
+		$markup .= sprintf(
+			'<!-- wp:amnesty-core/block-list %s /-->',
+			wp_json_encode( $block_data, JSON_UNESCAPED_UNICODE )
+		);
+
+		return $markup;
+	}
+
+	/**
 	 * Retrieve the rendered block markup
 	 *
 	 * @return string

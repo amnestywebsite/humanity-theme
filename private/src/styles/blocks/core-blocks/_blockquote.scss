@@ -57,13 +57,13 @@ blockquote::after,
 }
 
 .blockquote.is-grey {
-  color: $color-grey-brand;
-  border-color: $color-grey-brand;
+  color: var(--wp--preset--color--grey-light);
+  border-color: var(--wp--preset--color--grey-light);
 }
 
 .blockquote.is-white {
-  color: $color-white;
-  border-color: $color-white;
+  color: var(--wp--preset--color--white);
+  border-color: var(--wp--preset--color--white);
 }
 
 .blockquote[class*="align-"] {
@@ -106,55 +106,27 @@ blockquote p,
   position: relative;
   margin-bottom: 20px;
   font-weight: bold;
-  font-size: 24px !important;
+  font-size: var(--wp--preset--font-size--heading-3) !important;
   line-height: 1.2 !important;
 
   &:last-of-type {
     margin-bottom: 0;
   }
-
-  @include mq(x-small) {
-    font-size: 32px !important;
-  }
-
-  @include mq(medium) {
-    font-size: 36px !important;
-  }
 }
 
 .blockquote.is-medium p {
-  font-size: 20px !important;
-
-  @include mq(x-small) {
-    font-size: 28px !important;
-  }
-
-  @include mq(medium) {
-    font-size: 32px !important;
-  }
+  font-size: var(--wp--preset--font-size--heading-4) !important;
 }
 
 .blockquote.is-small p {
-  font-size: 16px !important;
+  font-size: var(--wp--preset--font-size--heading-5) !important;
   line-height: 1.2 !important;
-
-  @include mq(x-small) {
-    font-size: 24px !important;
-  }
-
-  @include mq(medium) {
-    font-size: 28px !important;
-  }
 }
 
 .blockquote[class*="align-"] p:first-of-type::before,
 .blockquote[class*="align-"] p:last-of-type::after {
   display: inline-block;
-  font-size: 24px;
-
-  @include mq(small) {
-    font-size: 32px;
-  }
+  font-size: var(--wp--preset--font-size--heading-3);
 }
 
 .blockquote[class*="align-"] p:first-of-type::before {
@@ -193,18 +165,10 @@ blockquote cite,
 .blockquote cite {
   display: inline-block;
   font-style: normal;
-  font-size: 18px !important;
+  font-size: var(--wp--preset--font-size--heading-5) !important;
   font-weight: bold !important;
   line-height: 40px !important;
   padding-bottom: 24px;
-
-  @include mq(x-small) {
-    font-size: 20px !important;
-  }
-
-  @include mq(medium) {
-    font-size: 24px !important;
-  }
 }
 
 .blockquote.is-lined:not([class*="align"]) cite::after {
@@ -213,7 +177,7 @@ blockquote cite,
   margin: 8px auto 0;
   max-width: 200px;
   height: 6px;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 
   @include mq(medium) {
     height: 8px;
@@ -221,28 +185,14 @@ blockquote cite,
 }
 
 .blockquote.is-medium cite {
-  font-size: 16px !important;
-
-  @include mq(x-small) {
-    font-size: 20px !important;
-  }
-
-  @include mq(medium) {
-    font-size: 22px !important;
-  }
+  font-size: var(--wp--preset--font-size--heading-6) !important;
 }
 
 .blockquote.is-small cite {
-  font-size: 14px !important;
+  font-size: var(--wp--preset--font-size--small) !important;
   line-height: 40px !important;
 
-  @include mq(x-small) {
-    font-size: 18px !important;
-  }
-
   @include mq(medium) {
-    font-size: 20px !important;
-
     &::after {
       height: 6px;
     }
@@ -286,11 +236,7 @@ blockquote cite,
 .blockquote[class*="align-"].is-small p:first-of-type::before,
 .blockquote[class*="align-"].is-small p:last-of-type::after {
   display: inline-block;
-  font-size: 16px;
-
-  @include mq(small) {
-    font-size: 28px;
-  }
+  font-size: var(--wp--preset--font-size--heading-5);
 }
 
 .section > .container .blockquote,
@@ -299,9 +245,9 @@ blockquote cite,
 }
 
 .blockquote.is-white.is-lined cite::after {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
 }
 
 .blockquote.is-grey.is-lined cite::after {
-  background-color: $color-grey-brand;
+  background-color: var(--wp--preset--color--grey-light);
 }

@@ -48,7 +48,7 @@
 }
 
 .author-page-twitter {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: 300;
   text-align: center;
@@ -73,14 +73,14 @@
 }
 
 .author-display-name {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .author-description {
   display: none;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   font-family: var(--wp--preset--font-family--primary);
   margin-bottom: 10px;
   padding: 5%;
@@ -88,7 +88,7 @@
 
   @include mq(large) {
     display: block;
-    color: $color-white;
+    color: var(--wp--preset--color--white);
     padding: unset;
     text-align: left;
   }
@@ -104,7 +104,7 @@
 }
 
 .author-biography {
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   margin-bottom: 24px;
 }
 
@@ -141,15 +141,14 @@
 }
 
 .author-banner-caption {
-  background-color: rgba($color-black, .1);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 10%, transparent);
   padding: 5px;
-  font-size: 15px;
+  font-size: var(--wp--preset--font-size--small);
   font-style: italic;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   text-align: center;
 
   @include mq(large) {
-    font-size: 10px;
     font-style: unset;
     text-align: unset;
   }

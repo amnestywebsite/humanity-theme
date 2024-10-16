@@ -52,7 +52,7 @@
 }
 
 .imageBlock-wrapper.aligncentre .imageBlock--fixed {
-  background-color: $color-grey-sm-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .imageBlock-wrapper.aligncentre .imageBlock-image img {
@@ -92,7 +92,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba($color-black, .25);
+  background: color-mix(in srgb, var(--wp--preset--color--black) 25%, transparent);
 }
 
 .imageBlock-title,
@@ -101,7 +101,7 @@
   margin-left: auto;
   max-width: 50%;
   text-align: center;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .imageBlock-overlay > * + * {
@@ -114,13 +114,13 @@
 
 .imageBlock-title {
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 41px;
+  font-size: var(--wp--preset--font-size--huge);
   font-weight: bold;
 }
 
 .imageBlock-content {
   font-family: var(--wp--preset--font-family--primary);
-  font-size: 21px;
+  font-size: var(--wp--preset--font-size--regular);
 
   > p:last-child {
     margin-bottom: 0;
@@ -133,10 +133,10 @@
 
 .imageBlock-caption {
   margin-top: 7px !important;
-  font-size: 14px;
+  font-size: var(--wp--preset--font-size--x-small);
   font-family: var(--wp--preset--font-family--primary);
   line-height: 1.4;
-  color: $color-grey-base;
+  color: var(--wp--preset--color--grey-base);
 }
 
 .imageBlock.has-parallax {

@@ -27,7 +27,7 @@
 }
 
 .linksWithIcons-group.is-style-square .linksWithIcons > * {
-  margin-top: spacing() !important;
+  margin-top: var(--wp--preset--spacing--single) !important;
 }
 
 .linksWithIcons-bigtext {
@@ -123,7 +123,7 @@
 }
 
 .linksWithIcons-group .linksWithIcons-bigtext [data-rich-text-placeholder] {
-  font-size: 48px;
+  font-size: var(--wp--preset--font-size--huge);
 }
 
 .linksWithIcons-group.is-style-square .linksWithIcons {

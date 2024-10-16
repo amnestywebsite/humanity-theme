@@ -9,7 +9,7 @@ table,
 fieldset, figure,
 pre,
 %margin-bottom {
-  margin-bottom: spacing();
+  margin-bottom: var(--wp--preset--spacing--single);
 }
 
 /**
@@ -18,5 +18,5 @@ pre,
  */
 ul, ol, dd,
 %margin-left {
-  margin-left: spacing(double);
+  margin-left: var(--wp--preset--spacing--double);
 }

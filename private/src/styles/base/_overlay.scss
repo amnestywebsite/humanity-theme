@@ -6,7 +6,7 @@
   left: 0;
   z-index: 2;
   display: none;
-  background-color: rgba($color-black, .25);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 25%, transparent);
 }
 
 .admin-bar .overlay {

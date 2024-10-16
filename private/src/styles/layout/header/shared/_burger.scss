@@ -20,7 +20,7 @@
 
 .burger:active,
 .burger:focus {
-  border: 2px solid $color-orange-base;
+  border: 2px solid var(--wp--preset--color--orange-base);
 }
 
 .burger .icon-burger {

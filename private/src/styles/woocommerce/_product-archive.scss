@@ -4,7 +4,7 @@
 
 .post-type-archive-product .post-title,
 .post-type-archive-product .price {
-  font-size: $base-font-size;
+  font-size: var(--wp--preset--font-size--regular);
 }
 
 .post-type-archive-product .post-content {

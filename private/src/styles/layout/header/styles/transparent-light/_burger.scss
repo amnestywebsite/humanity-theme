@@ -1,7 +1,7 @@
 .page-header.is-transparent-light .burger:hover,
 .page-header.is-transparent-light .burger:active,
 .page-header.is-transparent-light .burger:focus {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
 }
 
 .page-header.is-transparent-light .burger .icon-burger {
@@ -15,12 +15,12 @@
 }
 
 .mobile-menu-open .page-header.is-transparent-light .burger {
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .mobile-menu-open .page-header.is-transparent-light .burger:hover,
 .mobile-menu-open .page-header.is-transparent-light .burger:active {
-  background-color: $color-grey-mid-dark;
+  background-color: var(--wp--preset--color--grey-dark);
 }
 
 .mobile-menu-open .page-header.is-transparent-light .burger .icon-close {

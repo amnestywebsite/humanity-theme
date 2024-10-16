@@ -2,7 +2,7 @@
 @import "./additional-filters";
 
 .horizontal-search {
-  margin-bottom: spacing();
+  margin-bottom: var(--wp--preset--spacing--single);
   display: flex;
   flex-direction: column;
 }
@@ -12,11 +12,11 @@
 }
 
 .horizontal-search .search-button {
-  padding: spacing(half);
+  padding: var(--wp--preset--spacing--half);
   line-height: 1.15;
 
   @include mq(medium) {
-    padding: spacing(half) spacing();
+    padding: var(--wp--preset--spacing--half) var(--wp--preset--spacing--single);
   }
 }
 
@@ -43,20 +43,21 @@
 // search button
 .horizontal-search .default-search-filters p {
   margin-bottom: 0;
+  margin-top: 0;
   width: 100%;
 }
 
 .horizontal-search .default-search-filters .search-input .btn,
 .horizontal-search .default-search-filters > .btn.is-expanded {
-  background-color: $color-grey-mid-light;
-  color: $color-white;
-  border-color: $color-grey-mid-light;
+  background-color: var(--wp--preset--color--grey-base);
+  color: var(--wp--preset--color--white);
+  border-color: var(--wp--preset--color--grey-base);
 }
 
 .horizontal-search .default-search-filters .search-input .btn.is-active {
-  background-color: $color-primary;
-  border-color: $color-primary;
-  color: $color-black;
+  background-color: var(--wp--preset--color--primary);
+  border-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--black);
 }
 
 .btn.toggle-search-filters {
@@ -64,17 +65,17 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 0 !important;
-  border-color: $color-black;
-  background-color: $color-black;
-  color: $color-white;
+  border-color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
   grid-column: 10 / span 2;
   word-break: keep-all;
 
   &:hover,
   &:focus {
-    background-color: $color-grey-mid-dark;
-    border-color: $color-grey-mid-dark;
-    color: $color-white;
+    background-color: var(--wp--preset--color--grey-dark);
+    border-color: var(--wp--preset--color--grey-dark);
+    color: var(--wp--preset--color--white);
   }
 }
 
@@ -90,7 +91,7 @@
 
 .horizontal-search .section.postlist-categoriesContainer {
   width: 100%;
-  padding: 0 spacing();
+  padding: 0 var(--wp--preset--spacing--single);
   margin: 0;
 }
 

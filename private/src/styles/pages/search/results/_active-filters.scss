@@ -1,7 +1,7 @@
 .filter-wrapper {
   display: flex;
   align-items: center;
-  padding-top: 0;
+  padding-top: 0 !important;
   text-transform: uppercase;
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
@@ -9,7 +9,7 @@
 
 .filter-wrapper .filter-label {
   margin-bottom: 0;
-  font-size: $base-font-size;
+  font-size: var(--wp--preset--font-size--regular);
 }
 
 .filter-wrapper .active-filters {
@@ -25,34 +25,34 @@
 }
 
 .clear-filter {
-  margin-right: spacing(half);
-  padding: spacing(quarter);
-  background-color: $color-grey-xx-light;
-  font-size: 14px;
+  margin-right: var(--wp--preset--spacing--half);
+  padding: var(--wp--preset--spacing--quarter);
+  font-size: var(--wp--preset--font-size--x-small);
+  background-color: var(--wp--preset--color--grey-lighterest);
 
   &::after {
     content: "x";
     display: inline-block;
-    margin-left: spacing(quarter);
+    margin-left: var(--wp--preset--spacing--quarter);
   }
 
   &:hover,
   &:active,
   &:focus {
-    background-color: $color-grey-sm-light;
+    background-color: var(--wp--preset--color--grey-lighter);
   }
 }
 
 .rtl .clear-filter {
   margin-right: 0;
-  margin-left: spacing(half);
+  margin-left: var(--wp--preset--spacing--half);
 
   &::after {
-    margin-right: spacing(quarter);
+    margin-right: var(--wp--preset--spacing--quarter);
     margin-left: 0;
   }
 }
 
 .clear-filter--all {
-  background-color: $color-grey-sm-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }

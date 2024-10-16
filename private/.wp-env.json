@@ -1,0 +1,13 @@
+{
+  "themes": ["../wp-content/themes/humanity-theme"],
+  "plugins": [
+    "CMB2/CMB2",
+    "CMB2/cmb2-attached-posts",
+    "amnestywebsite/cmb2-message-field",
+    "amnestywebsite/cmb2-password-field",
+    "jaymcp/cmb2-field-order"
+  ],
+  "lifecycleScripts": {
+    "afterStart": "yarn env run cli wp theme activate humanity-theme"
+  }
+}

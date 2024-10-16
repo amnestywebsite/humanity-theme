@@ -4,7 +4,7 @@
   max-width: 350px;
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
-  background-color: $color-grey-x-light;
+  background-color: var(--wp--preset--color--grey-lighter);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -32,7 +32,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: rgba($color-black, .25);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 25%, transparent);
 }
 
 .customCard-image img {
@@ -44,10 +44,10 @@
 .customCard-label {
   display: block;
   text-align: center;
-  padding: 8px;
-  background-color: $color-grey-x-light;
-  color: $color-black-mid-dark;
-  font-size: 24px;
+  padding: var(--wp--preset--spacing--half);
+  font-size: var(--wp--preset--font-size--large);
+  background-color: var(--wp--preset--color--grey-lighter);
+  color: var(--wp--preset--color--grey-dark);
   text-transform: uppercase;
 }
 
@@ -56,9 +56,9 @@
   font-weight: normal;
   font-family: var(--wp--preset--font-family--primary);
   padding: 10px;
-  font-size: 16px;
-  background-color: $color-grey-x-light;
-  color: $color-black-mid-dark;
+  font-size: var(--wp--preset--font-size--small);
+  background-color: var(--wp--preset--color--grey-lighter);
+  color: var(--wp--preset--color--grey-dark);
   margin-top: auto;
 }
 
@@ -69,33 +69,33 @@
 }
 
 .customCard.is-style-style-2 {
-  background-color: $color-black-x-dark;
+  background-color: var(--wp--preset--color--grey-dark);
 }
 
 .customCard.is-style-style-3 {
-  background-color: $color-primary;
+  background-color: var(--wp--preset--color--primary);
 }
 
 .is-style-style-2 .customCard-label,
 .is-style-style-2 .customCard-content,
 .is-style-style-2 .customCard {
-  background-color: $color-black-x-dark;
-  color: $color-white;
+  background-color: var(--wp--preset--color--grey-dark);
+  color: var(--wp--preset--color--white);
 }
 
 .is-style-style-3 .customCard-label,
 .is-style-style-3 .customCard-content,
 .is-style-style-3 .customCard {
-  background-color: $color-primary;
-  color: $color-black-mid-dark;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--grey-dark);
 }
 
 .is-style-style-3 .btn,
 .is-style-style-3 .customCard {
-  background-color: $color-black-x-dark;
-  color: $color-white;
+  background-color: var(--wp--preset--color--grey-dark);
+  color: var(--wp--preset--color--white);
 }
 
 .is-style-style-3 .btn:hover {
-  background-color: $color-primary-state;
+  background-color: var(--wp--preset--color--primary-state);
 }

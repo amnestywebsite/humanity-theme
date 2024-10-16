@@ -33,6 +33,7 @@ import './editor/blocks/link-group/index.jsx';
 import './editor/blocks/menu/index.jsx';
 import './editor/blocks/petition-list/index.jsx';
 import './editor/blocks/post-list/index.jsx';
+import './editor/blocks/post-meta/index.jsx';
 import './editor/blocks/raw-code/index.jsx';
 import './editor/blocks/regions/index.jsx';
 import './editor/blocks/related-content/index.jsx';
@@ -42,8 +43,13 @@ import './editor/blocks/stat-counter/index.jsx';
 import './editor/blocks/term-list/index.jsx';
 import './editor/blocks/tweet/index.jsx';
 
+import './editor/fse-blocks/archive-filters/index.jsx';
+import './editor/fse-blocks/archive-header/index.jsx';
 import './editor/fse-blocks/pop-in/index.jsx';
-import './editor/fse-blocks/site-header/index.jsx';
+import './editor/fse-blocks/query-count/index.jsx';
+import './editor/fse-blocks/search-form/index.jsx';
+import './editor/fse-blocks/search-header/index.jsx';
+import './editor/fse-blocks/sidebar/index.jsx';
 
 // To remove in v2.0.0
 import './editor/blocks-deprecated/background-media/index.jsx';
