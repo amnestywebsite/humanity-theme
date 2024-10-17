@@ -23,7 +23,7 @@ if ( ! function_exists( 'amnesty_register_localisation_options' ) ) {
 				'tab_title'    => __( 'Localisation', 'amnesty' ),
 				'parent_slug'  => 'amnesty_theme_options_page',
 				'display_cb'   => 'amnesty_options_display_with_tabs',
-			] 
+			]
 		);
 
 		$localisation->add_field(
@@ -117,7 +117,18 @@ if ( ! function_exists( 'amnesty_register_localisation_options' ) ) {
 					/* translators: [admin] */
 					'upper-roman'           => __( 'Uppercase Roman numerals.', 'amnesty' ),
 				],
-			] 
+			]
+		);
+
+		// Add a checkbox for forcing thousands separator
+		$localisation->add_field(
+			[
+				/* translators: [admin] */
+				'name'    => __( 'Force Thousands Separator', 'amnesty' ),
+				'id'      => 'force_thousands_separator',
+				'type'    => 'checkbox',
+				'default' => 0,
+			]
 		);
 
 		do_action( 'amnesty_register_localisation_options', $localisation );

@@ -13,6 +13,8 @@ if ( ! function_exists( 'render_stat_counter_block' ) ) {
 	 * @return string
 	 */
 	function render_stat_counter_block( array $attributes ): string {
+		$options = get_option( 'amnesty_localisation_options_page' );
+
 		$attributes = wp_parse_args(
 			$attributes,
 			[
@@ -26,6 +28,14 @@ if ( ! function_exists( 'render_stat_counter_block' ) ) {
 		$duration  = $attributes['duration'];
 		$value     = $attributes['value'];
 
+		if ( $options['force_thousands_separator'] === 'on') {
+			$value = number_format( intval($value) );
+
+			echo '<pre>';
+			var_dump($value);
+			echo '</pre>';
+		}
+
 		$wrapper_attributes = get_block_wrapper_attributes(
 			[
 				'class' => $alignment,
@@ -37,7 +47,7 @@ if ( ! function_exists( 'render_stat_counter_block' ) ) {
 			wp_kses_data( $wrapper_attributes ),
 			esc_attr( $duration ),
 			esc_attr( $value ),
-			wp_kses_post( $value )
+			$value
 		);
 	}
 }
