@@ -1,3 +1,43 @@
+### v2.0.2
+Fixes:
+- Site footer content now pulls from legacy Theme Options by default
+
+### v2.0.1
+Fixes:
+- Filters on search results not being correctly applied
+
+### v2.0.0
+Features:
+- **Breaking change**: All PHP templates have been replaced with FSE templates
+- **Breaking change**: Typography moved to theme.json
+- **Breaking change**: Colour scheme moved to theme.json
+- Add wp-env support for development
+- Many block patterns have been created
+- Archive Filters SSR block
+- Archive Header SSR block
+- Query Count block
+- Search Form SSR block
+- Search Header SSR block
+- Sidebar block
+
+Fixes:
+- Line height in Counter block
+- Rendering of posts on author template
+
+Improvements:
+- Block restrictions have been removed
+- Introduce fluid typography
+- **Breaking change**: Custom skip link has been removed in favour of WP core's
+- Add support for core/cover block
+- Add support for core/quote block
+
+Deprecations:
+- Background Media block
+- Call To Action block
+- Collapsable block
+- Custom Card block
+- Links With Icons block
+
 ### v1.2.0
 Features:
 - Add Call to Action block patterns
