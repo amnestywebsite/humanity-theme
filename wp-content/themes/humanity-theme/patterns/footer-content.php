@@ -67,7 +67,7 @@ if ( $copyright ) {
 		<h4 class="wp-block-heading"><?php echo wp_kses_post( $cta['title'] ); ?></h4>
 		<!-- /wp:heading -->
 
-		<?php echo wp_kses_post( wpautop( $cta['content'] ) ); ?>
+		<?php echo wp_kses_post( amnesty_string_to_paragraphs( $cta['content'] ) ); ?>
 
 		<!-- wp:buttons -->
 		<div class="wp-block-buttons">
