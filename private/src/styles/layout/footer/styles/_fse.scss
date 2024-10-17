@@ -9,17 +9,7 @@
   font-size: var(--wp--preset--font-size--x-small);
 }
 
-.amnesty-footer-template-part h4 {
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  font-size: var(--wp--preset--font-size--heading-4);
-  text-transform: uppercase;
-  color: var(--wp--preset--color--grey-light);
-  font-family: var(--wp--preset--font-family--secondary);
-  border-bottom: 1px solid var(--wp--preset--color--grey-dark);
-  font-weight: bold;
-}
-
+.amnesty-footer-template-part h4,
 .amnesty-footer-template-part .linkGroup-title {
   margin-bottom: 24px;
   padding-bottom: 12px;
