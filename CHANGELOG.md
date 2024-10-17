@@ -1,3 +1,7 @@
+### v2.0.2
+Fixes:
+- Site footer content now pulls from legacy Theme Options by default
+
 ### v2.0.1
 Fixes:
 - Filters on search results not being correctly applied

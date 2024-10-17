@@ -127,6 +127,47 @@ if ( ! function_exists( 'amnesty_nav' ) ) {
 	}
 }
 
+if ( ! function_exists( 'amnesty_get_nav_menu_items' ) ) {
+	/**
+	 * Retrieve menu items for a menu
+	 *
+	 * @param string $name the menu / theme location name
+	 *
+	 * @return array{top_level:array<int,object>,children:array<string,array<int,object>>}
+	 */
+	function amnesty_get_nav_menu_items( string $name ): array {
+		$menu = wp_get_nav_menu_object( $name );
+
+		// Get the nav menu based on the theme_location.
+		$locations = get_nav_menu_locations();
+		if ( ! $menu && $locations && isset( $locations[ $name ] ) ) {
+			$menu = wp_get_nav_menu_object( $locations[ $name ] );
+		}
+
+		$menu_items = wp_get_nav_menu_items( $menu->term_id, [ 'update_post_term_cache' => false ] );
+		$top_level  = [];
+		$children   = [];
+
+		foreach ( $menu_items as $item ) {
+			$parent_id = absint( $item->menu_item_parent );
+
+			if ( 0 === $parent_id ) {
+				$top_level[ $item->db_id ] = $item;
+				$children[ $item->title ]  = [];
+				continue;
+			}
+
+			if ( array_key_exists( $parent_id, $top_level ) ) {
+				$children[ $top_level[ $parent_id ]->title ][] = $item;
+			}
+		}
+
+		$children = array_filter( $children );
+
+		return compact( 'top_level', 'children' );
+	}
+}
+
 if ( ! function_exists( 'amnesty_register_menu' ) ) {
 	/**
 	 * Register the theme menus.
