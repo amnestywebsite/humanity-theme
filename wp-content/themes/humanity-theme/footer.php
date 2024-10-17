@@ -28,8 +28,6 @@ if ( $copyright ) {
 	add_filter( 'amnesty_footer_copyright', fn (): string => $copyright );
 }
 
-$sites = amnesty_get_sites();
-
 ?>
 	<footer class="page-footer" aria-label="<?php /* translators: [front] ARIA */ esc_attr_e( 'Footer', 'amnesty' ); ?>">
 		<div class="container">
