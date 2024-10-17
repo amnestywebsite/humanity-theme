@@ -1,3 +1,7 @@
+### v2.0.1
+Fixes:
+- Filters on search results not being correctly applied
+
 ### v2.0.0
 Features:
 - **Breaking change**: All PHP templates have been replaced with FSE templates
