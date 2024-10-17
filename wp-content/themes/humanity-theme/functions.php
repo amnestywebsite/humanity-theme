@@ -212,6 +212,7 @@ require_once realpath( __DIR__ . '/includes/features/search/post-excerpt.php' );
 require_once realpath( __DIR__ . '/includes/features/search/query-vars.php' );
 require_once realpath( __DIR__ . '/includes/features/search/class-search-page.php' );
 require_once realpath( __DIR__ . '/includes/features/search/class-search-filters.php' );
+require_once realpath( __DIR__ . '/includes/features/search/class-search-results.php' );
 #endregion search
 
 /**
