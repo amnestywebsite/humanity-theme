@@ -357,7 +357,6 @@ if ( ! function_exists( 'amnesty_force_thousands_separator_localisation' ) ) {
 	 * @return void
 	 */
 	function amnesty_force_thousands_separator_localisation() {
-
 		$force_thousands_separator = get_option( 'amnesty_localisation_options_page' )['force_thousands_separator'] ?? 'off';
 
 		$data = [
