@@ -128,6 +128,7 @@ if ( ! function_exists( 'amnesty_register_localisation_options' ) ) {
 				'id'      => 'force_thousands_separator',
 				'type'    => 'checkbox',
 				'default' => 0,
+				'desc'    => __( 'Force the use of thousand separators for the Stat Counter block, for example for Spanish speaking countries "3.345"', 'amnesty' ),
 			]
 		);
 

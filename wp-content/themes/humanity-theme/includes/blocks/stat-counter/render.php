@@ -28,12 +28,8 @@ if ( ! function_exists( 'render_stat_counter_block' ) ) {
 		$duration  = $attributes['duration'];
 		$value     = $attributes['value'];
 
-		if ( $options['force_thousands_separator'] === 'on') {
-			$value = number_format( intval($value) );
-
-			echo '<pre>';
-			var_dump($value);
-			echo '</pre>';
+		if ( $options['force_thousands_separator'] === 'on' ) {
+			$value = number_format_i18n( $value );
 		}
 
 		$wrapper_attributes = get_block_wrapper_attributes(
@@ -47,7 +43,7 @@ if ( ! function_exists( 'render_stat_counter_block' ) ) {
 			wp_kses_data( $wrapper_attributes ),
 			esc_attr( $duration ),
 			esc_attr( $value ),
-			$value
+			wp_kses_post( $value )
 		);
 	}
 }

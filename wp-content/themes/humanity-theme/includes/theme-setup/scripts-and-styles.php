@@ -347,3 +347,27 @@ if ( ! function_exists( 'amnesty_disable_cart_fragments' ) ) {
 }
 
 add_action( 'wp_enqueue_scripts', 'amnesty_disable_cart_fragments', 200 );
+
+if ( ! function_exists( 'amnesty_force_thousands_separator_localisation' ) ) {
+	/**
+	 * Localise the thousands separator option
+	 *
+	 * @package Amnesty\ThemeSetup
+	 *
+	 * @return void
+	 */
+	function amnesty_force_thousands_separator_localisation() {
+
+		$force_thousands_separator = get_option( 'amnesty_localisation_options_page' )['force_thousands_separator'] ?? 'off';
+
+		$data = [
+			'forceTS' => $force_thousands_separator,
+		];
+
+		wp_localize_script( 'amnesty-theme', 'amnestyForceTS', $data );
+		wp_localize_script( 'amnesty-core-blocks-js', 'amnestyForceTS', $data );
+	}
+}
+
+add_action( 'enqueue_block_editor_assets', 'amnesty_force_thousands_separator_localisation' );
+add_action( 'wp_loaded', 'amnesty_force_thousands_separator_localisation' );
