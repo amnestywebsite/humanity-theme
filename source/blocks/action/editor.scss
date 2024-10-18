@@ -26,10 +26,22 @@
 .actionBlock-label {
   width: auto !important;
   padding: 2px 8px !important;
-  color: $color-white !important;
+  color: var(--wp--preset--color--white) !important;
 
-  @include placeholder {
-    color: $color-white !important;
+  &::-webkit-input-placeholder {
+    color: var(--wp--preset--color--white) !important;
+  }
+
+  &::-moz-placeholder {
+    color: var(--wp--preset--color--white) !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: var(--wp--preset--color--white) !important;
+  }
+
+  &:-moz-placeholder {
+    color: var(--wp--preset--color--white) !important;
   }
 }
 
@@ -42,10 +54,22 @@
   border: 1px dotted #000;
   line-height: 1.4 !important;
   background-color: transparent !important;
-  color: $color-black !important;
+  color: var(--wp--preset--color--black) !important;
 
-  @include placeholder {
-    color: $color-black !important;
+  &::-webkit-input-placeholder {
+    color: var(--wp--preset--color--black) !important;
+  }
+
+  &::-moz-placeholder {
+    color: var(--wp--preset--color--black) !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: var(--wp--preset--color--black) !important;
+  }
+
+  &:-moz-placeholder {
+    color: var(--wp--preset--color--black) !important;
   }
 }
 

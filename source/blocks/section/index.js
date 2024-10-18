@@ -5,8 +5,8 @@ import edit from './edit';
 import metadata from './block.json';
 import deprecated from './deprecated';
 
-const { assign } = lodash;
-const { registerBlockType } = wp.blocks;
+import { assign } from 'lodash';
+import { registerBlockType } from '@wordpress/blocks';
 
 registerBlockType(metadata, {
   ...metadata,

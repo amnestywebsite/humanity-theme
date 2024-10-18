@@ -1,9 +1,9 @@
 import { fetchMediaUrl } from '../utils';
 
-const { MediaUpload } = wp.blockEditor;
-const { Button, Spinner } = wp.components;
-const { useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
+import { MediaUpload } from '@wordpress/block-editor';
+import { Button, Spinner } from '@wordpress/components';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 // translators: [admin]
 const DEFAULT_SET_MEDIA_LABEL = __('Set Image', 'amnesty');

@@ -2,9 +2,9 @@ import LinkList from './display/LinkList.jsx';
 import GridItem from './display/GridItem.jsx';
 import PetitionItem from './display/PetitionItem.jsx';
 
-const { difference, isString } = lodash;
-const { Component } = wp.element;
-const { __ } = wp.i18n;
+import { difference, isString } from 'lodash';
+import { Component } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 class DisplayCategories extends Component {
   constructor(...args) {

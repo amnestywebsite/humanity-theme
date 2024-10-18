@@ -2,10 +2,10 @@
   margin-top: 40px;
   padding: 20px;
   text-align: center;
-  border-top: 7px solid $color-black;
-  border-bottom: 7px solid $color-black;
+  border-top: 7px solid var(--wp--preset--color--black);
+  border-bottom: 7px solid var(--wp--preset--color--black);
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     padding: 36px 32px;
   }
 }
@@ -26,7 +26,7 @@
   font-size: 21px;
   text-align: center;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     font-size: 31px;
     margin-bottom: 20px;
   }
@@ -38,7 +38,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     font-size: 41px;
   }
 }
@@ -55,7 +55,7 @@
   display: flex;
   justify-content: center;
 
-  @include mq($from: xx-small, $until: medium) {
+  @media all and (min-width: 465px) and (max-width: 940px) {
     flex-direction: column;
     align-items: inherit;
   }
@@ -69,7 +69,7 @@
     margin-left: 0;
   }
 
-  @include mq($from: xx-small, $until: medium) {
+  @media all and (min-width: 465px) and (max-width: 940px) {
     margin-top: 30px;
     margin-left: 0 !important;
   }
@@ -78,7 +78,7 @@
 .callToAction .innerBlocksContainer .wp-block-button__link {
   margin-left: 14px;
 
-  @include mq($from: xx-small, $until: medium) {
+  @media all and (min-width: 465px) and (max-width: 940px) {
     margin-top: 30px;
     margin-left: 0 !important;
   }
@@ -87,7 +87,7 @@
 .callToAction .innerBlocksContainer .wp-block-buttons .wp-block-button {
   height: 100%;
 
-  @include mq($from: xx-small, $until: medium) {
+  @media all and (min-width: 465px) and (max-width: 940px) {
     margin-bottom: 0 !important;
   }
 }
@@ -103,8 +103,8 @@
 }
 
 .callToAction--shade {
-  background-color: $color-grey-light;
-  border-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
+  border-color: var(--wp--preset--color--grey-lighter);
 }
 
 .callToAction--small {

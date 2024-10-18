@@ -1,37 +1,37 @@
 .customCard textarea.customCard-label {
-  background-color: $color-grey-x-light;
-  color: $color-black-mid-dark;
+  background-color: var(--wp--preset--color--grey-lighter);
+  color: var(--wp--preset--color--black)-mid-dark;
 }
 
 .customCard-content textarea {
   text-align: center;
-  background-color: $color-grey-x-light;
-  color: $color-black-mid-dark;
+  background-color: var(--wp--preset--color--grey-lighter);
+  color: var(--wp--preset--color--black)-mid-dark;
 }
 
 .customCard-content .btn {
-  color: $color-black-mid-dark;
-  background-color: $color-primary;
+  color: var(--wp--preset--color--black)-mid-dark;
+  background-color: var(--wp--preset--color--primary);
 }
 
 .is-style-style-2 textarea.customCard-label,
 .is-style-style-2 .customCard-content textarea {
-  background-color: $color-black-x-dark;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black)-x-dark;
+  color: var(--wp--preset--color--white);
 }
 
 .is-style-style-2 .customCard-content .btn {
-  color: $color-black-mid-dark;
-  background-color: $color-primary;
+  color: var(--wp--preset--color--black)-mid-dark;
+  background-color: var(--wp--preset--color--primary);
 }
 
 .is-style-style-3 textarea.customCard-label,
 .is-style-style-3 .customCard-content textarea {
-  background-color: $color-primary;
-  color: $color-black-mid-dark;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--black)-mid-dark;
 }
 
 .is-style-style-3 .customCard-content .btn {
-  color: $color-white;
-  background-color: $color-black-x-dark;
+  color: var(--wp--preset--color--white);
+  background-color: var(--wp--preset--color--black)-x-dark;
 }

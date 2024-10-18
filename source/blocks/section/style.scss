@@ -1,26 +1,32 @@
 .section {
-  @include clearfix;
   padding: 25px;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
+
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .section.is-fullWidth--mobile,
 .section.is-fullWidth--mobile .container {
-  @include mq($until: small) {
+  @media all and (max-width: 760px) {
     padding: 0;
     width: 100%;
   }
 }
 
 .section--tinted {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
   width: 100%;
   max-width: 1468px;
   margin: 0 auto;
 }
 
 .section--dark {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .section--has-bg-image {
@@ -56,15 +62,20 @@
 }
 
 .section--textWhite {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 
-  @include headings {
-    color: $color-white;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--wp--preset--color--white);
   }
 }
 
 .section--textWhite .wp-block-button__link {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .section--topSpacing {
@@ -96,7 +107,7 @@
 }
 
 .section--textWhite a {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .section--has-bg-overlay > * {

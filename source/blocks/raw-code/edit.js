@@ -1,8 +1,8 @@
-const { PlainText, BlockControls, transformStyles } = wp.blockEditor;
-const { ToolbarButton, Disabled, SandBox, ToolbarGroup } = wp.components;
-const { useSelect, withSelect } = wp.data;
-const { useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
+import { PlainText, BlockControls, transformStyles } from '@wordpress/block-editor';
+import { ToolbarButton, Disabled, SandBox, ToolbarGroup } from '@wordpress/components';
+import { useSelect } from '@wordpress/data';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 // Default styles used to unset some of the styles
 // that might be inherited from the editor style.
@@ -82,3 +82,5 @@ const edit = ({ attributes, isSelected, setAttributes }) => {
     </div>
   );
 };
+
+export default edit;

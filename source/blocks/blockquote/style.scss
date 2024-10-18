@@ -6,8 +6,8 @@
   font-family: var(--wp--preset--font-family--secondary);
   text-align: center;
 
-  @include mq(small) {
-    max-width: math.div($flexy-container, 2);
+  @media all and (min-width: 760px) {
+    max-width: math.div(var(--wp--preset--layout--contentSize), 2);
   }
 }
 
@@ -20,11 +20,11 @@
   font-size: 60px !important;
   line-height: 1px;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 70px !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 80px !important;
   }
 
@@ -51,13 +51,13 @@
 }
 
 .blockquote.is-grey {
-  color: $color-grey-brand;
-  border-color: $color-grey-brand;
+  color: var(--wp--preset--color--grey-light);
+  border-color: var(--wp--preset--color--grey-light);
 }
 
 .blockquote.is-white {
-  color: $color-white;
-  border-color: $color-white;
+  color: var(--wp--preset--color--white);
+  border-color: var(--wp--preset--color--white);
 }
 
 .blockquote[class*="align-"] {
@@ -106,11 +106,11 @@
     margin-bottom: 0;
   }
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 32px !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 36px !important;
   }
 }
@@ -118,11 +118,11 @@
 .blockquote.is-medium p {
   font-size: 20px !important;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 28px !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 32px !important;
   }
 }
@@ -131,11 +131,11 @@
   font-size: 16px !important;
   line-height: 1.2 !important;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 24px !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 28px !important;
   }
 }
@@ -145,7 +145,7 @@
   display: inline-block;
   font-size: 24px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     font-size: 32px;
   }
 }
@@ -169,7 +169,7 @@
 .blockquote.align-start p:first-of-type::before {
   text-indent: -7px;
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     text-indent: -15px;
   }
 }
@@ -190,11 +190,11 @@
   line-height: 40px !important;
   padding-bottom: 24px;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 20px !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 24px !important;
   }
 }
@@ -205,9 +205,9 @@
   margin: 8px auto 0;
   max-width: 200px;
   height: 6px;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     height: 8px;
   }
 }
@@ -215,11 +215,11 @@
 .blockquote.is-medium cite {
   font-size: 16px !important;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 20px !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 22px !important;
   }
 }
@@ -228,11 +228,11 @@
   font-size: 14px !important;
   line-height: 40px !important;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 18px !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 20px !important;
 
     &::after {
@@ -280,7 +280,7 @@
   display: inline-block;
   font-size: 16px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     font-size: 28px;
   }
 }
@@ -290,9 +290,9 @@
 }
 
 .blockquote.is-white.is-lined cite::after {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
 }
 
 .blockquote.is-grey.is-lined cite::after {
-  background-color: $color-grey-brand;
+  background-color: var(--wp--preset--color--grey-light);
 }

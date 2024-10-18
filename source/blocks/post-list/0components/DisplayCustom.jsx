@@ -3,7 +3,7 @@ import LinkList from './editable/LinkList.jsx';
 import GridItem from './editable/GridItem.jsx';
 import Appender from './Appender.jsx';
 
-const { Component } = wp.element;
+import { Component } from '@wordpress/element';
 
 class DisplayCustom extends Component {
   static defaultObject = {

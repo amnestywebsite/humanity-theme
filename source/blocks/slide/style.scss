@@ -2,12 +2,12 @@
   display: flex;
   width: 100%;
   min-height: 500px;
-  background-color: $color-grey-base;
+  background-color: var(--wp--preset--color--grey-base);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     min-height: 670px;
     padding: 40px 65px;
   }
@@ -17,7 +17,7 @@
   justify-content: flex-end;
 }
 
-@include mq(small) {
+@media all and (min-width: 760px) {
   .slide.is-center-aligned {
     justify-content: center;
     text-align: center;
@@ -70,11 +70,11 @@
   flex-direction: column;
   align-self: flex-start;
   min-width: 100%;
-  background-color: $color-black;
-  color: $color-white;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
   padding: 16px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     max-width: 500px;
     min-width: 250px;
   }
@@ -103,11 +103,11 @@
 .slide-contentContainer p,
 .slide-contentContainer span,
 .slide-contentContainer .slide-content {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .slide.has-opaque-background .slide-contentContainer {
-  background: linear-gradient(to bottom, rgba($color-black, .5) 90%, rgba($color-black, 0) 100%);
+  background: linear-gradient(to bottom, rgba(var(--wp--preset--color--black), .5) 90%, rgba(var(--wp--preset--color--black), 0) 100%);
 }
 
 .slide.has-transparent-background .slide-contentContainer {
@@ -137,16 +137,16 @@
   width: 100%;
   max-height: 500px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     max-height: 670px;
   }
 }
 
 .slide-contentWrapper.is-open {
-  background-color: rgba($color-black, .4);
+  background-color: rgba(var(--wp--preset--color--black), .4);
   overflow-y: scroll;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     background-color: transparent;
   }
 }
@@ -159,17 +159,17 @@
   left: 0;
   display: block;
   padding-bottom: 20px;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
   text-align: center;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     display: none;
   }
 }
 
 .slide-contentWrapper.is-open .slide-contentContainer {
   z-index: 2;
-  background: $color-black;
+  background: var(--wp--preset--color--black);
 }
 
 .slide-contentWrapper.is-open .slide-content {
@@ -186,7 +186,7 @@
   overflow: hidden;
   padding-right: 50px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     height: auto;
     padding-right: 0;
   }
@@ -196,7 +196,7 @@
   padding-right: 0;
   padding-left: 50px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     padding-left: 0;
   }
 }
@@ -204,9 +204,9 @@
 h1.slide-title {
   font-size: 43px;
   text-transform: uppercase;
-  color: $color-white !important;
+  color: var(--wp--preset--color--white) !important;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     font-size: 48px;
   }
 }
@@ -217,9 +217,9 @@ h1.slide-title {
 
 h2.slide-subtitle {
   font-size: 30px;
-  color: $color-white !important;
+  color: var(--wp--preset--color--white) !important;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     font-size: 36px;
   }
 }
@@ -231,7 +231,7 @@ h2.slide-subtitle {
 .slide-content .btn {
   margin-top: 6px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     margin-top: 24px;
   }
 }
@@ -239,7 +239,7 @@ h2.slide-subtitle {
 .slide-content p {
   font-size: 16px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     font-size: 18px;
   }
 }
@@ -254,19 +254,19 @@ h2.slide-subtitle {
   bottom: 0;
   width: 100%;
   background: rgba(255, 255, 255, .7);
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   padding: 20px;
   text-align: center;
 }
 
 .timeline-dark .slide-timelineContent {
   background: rgba(0, 0, 0, .3);
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }
 
 .timeline-light .slide-timelineContent {
   background: rgba(255, 255, 255, .7);
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .slide-timelineContent .slide-timelineContent-inner {

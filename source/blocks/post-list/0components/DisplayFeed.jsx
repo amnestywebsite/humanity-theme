@@ -2,9 +2,9 @@ import LinkList from './display/LinkList.jsx';
 import GridItem from './display/GridItem.jsx';
 import PetitionItem from './display/PetitionItem.jsx';
 
-const { get, isString } = lodash;
-const { Component } = wp.element;
-const { __ } = wp.i18n;
+import { get, isString } from 'lodash';
+import { Component } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 class DisplayFeed extends Component {
   constructor(...args) {

@@ -5,7 +5,7 @@
   margin-right: 10px;
   width: 300px;
   height: 56px;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
 
   select {
     padding: 10px;
@@ -21,8 +21,8 @@
 }
 
 .section--textWhite .element-select select {
-  color: $color-white;
-  border-color: $color-white;
+  color: var(--wp--preset--color--white);
+  border-color: var(--wp--preset--color--white);
 }
 
 .download-block {

@@ -1,10 +1,7 @@
-import './style.scss';
-import './editor.scss';
-
 import edit from './edit';
 import metadata from './block.json';
 
-const { registerBlockType } = wp.blocks;
+import { registerBlockType } from '@wordpress/blocks';
 
 registerBlockType(metadata, {
   ...metadata,

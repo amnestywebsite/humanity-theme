@@ -1,9 +1,9 @@
-import { httpsOnly } from '../utils';
+import { httpsOnly } from '../../utils';
 
-const { InspectorControls, RichText, BlockControls, AlignmentToolbar } = wp.blockEditor;
-const { Button, PanelBody, Placeholder, TextControl } = wp.components;
-const { Fragment, useRef } = wp.element;
-const { __ } = wp.i18n;
+import { InspectorControls, RichText, BlockControls, AlignmentToolbar } from '@wordpress/block-editor';
+import { Button, PanelBody, Placeholder, TextControl } from '@wordpress/components';
+import { useRef } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const edit = ({ attributes, isSelected, setAttributes }) => {
   const inputRef = useRef();
@@ -152,7 +152,7 @@ const edit = ({ attributes, isSelected, setAttributes }) => {
   );
 
   return (
-    <Fragment>
+    <>
       {controls}
       <BlockControls>
         <AlignmentToolbar
@@ -163,7 +163,7 @@ const edit = ({ attributes, isSelected, setAttributes }) => {
       <div style={{ padding: '1px' }}>
         {attributes.embedUrl ? embedContainer() : placeholder()}
       </div>
-    </Fragment>
+    </>
   );
 };
 

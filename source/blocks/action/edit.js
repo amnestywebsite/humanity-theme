@@ -1,9 +1,9 @@
 import classnames from 'classnames';
 
-const { InspectorControls, MediaUpload, PlainText, URLInputButton } = wp.blockEditor;
-const { IconButton, PanelBody, SelectControl } = wp.components;
-const { useEffect, useRef } = wp.element;
-const { __ } = wp.i18n;
+import { InspectorControls, MediaUpload, PlainText, URLInputButton } from '@wordpress/block-editor';
+import { IconButton, PanelBody, SelectControl } from '@wordpress/components';
+import { useEffect, useRef } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const getImageUri = (attributes, setAttributes) => {
   if (!imageID) {
@@ -146,3 +146,5 @@ const edit = ({ attributes, setAttributes }) => {
     </>
   );
 };
+
+export default edit;

@@ -6,9 +6,9 @@ import metadata from './block.json';
 import deprecated from './deprecated';
 import transforms from './transforms';
 
-const { assign } = lodash;
-const { registerBlockType } = wp.blocks;
-const { addFilter } = wp.hooks;
+import { assign } from 'lodash';
+import { registerBlockType } from '@wordpress/blocks';
+import { addFilter } from '@wordpress/hooks';
 
 registerBlockType(metadata, {
   ...metadata,

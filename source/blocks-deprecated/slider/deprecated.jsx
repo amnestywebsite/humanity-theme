@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import blockAttributes from './attributes';
-import { trimBr } from '../utils';
+import { trimBr } from '../../utils';
 import SlideBuilder from './build-slide.jsx';
 import buildSlideDeprecated from './build-slide-deprecated.jsx';
 

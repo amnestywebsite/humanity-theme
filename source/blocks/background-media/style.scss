@@ -3,13 +3,13 @@
   width: 100%;
   flex-direction: column;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     width: 100%;
     flex-direction: row;
   }
 
   .mobile-hide-panel .text-media--backgroundImage {
-    @include mq($until: small) {
+    @media all and (max-width: 760px) {
       display: none !important;
     }
   }
@@ -69,7 +69,7 @@
 
 .wp-block-amnesty-core-background-media.has-imageRight {
   div:nth-child(1) {
-    @include mq($from: small, $until: medium) {
+    @media all and (min-width: 760px) and (max-width: 940px) {
       width: 66%;
     }
   }
@@ -77,7 +77,7 @@
 
 .wp-block-amnesty-core-background-media.has-imageLeft {
   div:first-child {
-    @include mq($from: small, $until: medium) {
+    @media all and (min-width: 760px) and (max-width: 940px) {
       width: 66%;
     }
   }

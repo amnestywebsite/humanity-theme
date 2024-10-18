@@ -2,9 +2,9 @@ import LinkList from './display/LinkList.jsx';
 import GridItem from './display/GridItem.jsx';
 import * as api from './post-selector/api';
 
-const { difference, isString, isEqual } = lodash;
-const { Component } = wp.element;
-const { __ } = wp.i18n;
+import { difference, isString, isEqual } from 'lodash';
+import { Component } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 class DisplayTaxonomies extends Component {
   constructor(...args) {

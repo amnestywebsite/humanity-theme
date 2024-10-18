@@ -1,9 +1,9 @@
-import { httpsOnly } from '../utils';
+import { httpsOnly } from '../../utils';
 
-const { BlockAlignmentToolbar, BlockControls } = wp.blockEditor;
-const { Placeholder, TextControl } = wp.components;
-const { select } = wp.data;
-const { __, sprintf } = wp.i18n;
+import { BlockAlignmentToolbar, BlockControls } from '@wordpress/block-editor';
+import { Placeholder, TextControl } from '@wordpress/components';
+import { select } from '@wordpress/data';
+import { __, sprintf } from '@wordpress/i18n';
 
 const stripScript = (html) => html.replace(/<script>.+<\/script>/, '');
 

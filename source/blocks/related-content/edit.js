@@ -1,12 +1,12 @@
 import { getFeaturedImage } from './utils';
 import pin from './icon.jsx';
 
-const { Placeholder, Spinner } = wp.components;
-const { useInstanceId } = wp.compose;
-const { useDispatch, useSelect } = wp.data;
-const { useEffect, useRef } = wp.element;
-const { __ } = wp.i18n;
-const { addQueryArgs } = wp.url;
+import { Placeholder, Spinner } from '@wordpress/components';
+import { useInstanceId } from '@wordpress/compose';
+import { useDispatch, useSelect } from '@wordpress/data';
+import { useEffect, useRef } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
+import { addQueryArgs } from '@wordpress/url';
 
 /**
  * Render a loading area

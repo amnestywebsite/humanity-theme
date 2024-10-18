@@ -1,6 +1,6 @@
 import './style.scss';
 
-const { isInteger } = lodash;
+import { isInteger } from 'lodash';
 
 // ensure value is an int
 const toRawNumber = (value = '0') => {

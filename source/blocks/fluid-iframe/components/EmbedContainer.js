@@ -1,7 +1,7 @@
 import { httpsOnly } from '../../../utils';
 
-const { RichText } = wp.blockEditor;
-const { __ } = wp.i18n;
+import { RichText } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 
 const EmbedContainer = ({ attributes, setAttributes }) => {
   const { isSelected, className, embedUrl, height, width } = attributes;

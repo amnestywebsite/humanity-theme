@@ -4,9 +4,9 @@ import './editor.scss';
 import edit from './edit';
 import metadata from './block.json';
 
-const { assign } = lodash;
-const { InnerBlocks } = wp.blockEditor;
-const { registerBlockType } = wp.blocks;
+import { assign } from 'lodash';
+import { InnerBlocks } from '@wordpress/block-editor';
+import { registerBlockType } from '@wordpress/blocks';
 
 registerBlockType(metadata, {
   ...metadata,

@@ -1,9 +1,9 @@
 import classnames from 'classnames';
 import { getEditorCssV2, getDimensionsV2, getUrlV2, randId } from '../background-media/utils';
 
-const { isObject } = lodash;
-const { apiFetch } = wp;
-const {
+import { isObject } from 'lodash';
+import { apiFetch } from '@wordpress/api-fetch';
+import {
   BlockAlignmentToolbar,
   BlockControls,
   BlockVerticalAlignmentToolbar,
@@ -11,10 +11,10 @@ const {
   InspectorControls,
   MediaUpload,
   MediaUploadCheck,
-} = wp.blockEditor;
-const { Button, FocalPointPicker, PanelBody, RangeControl, SelectControl } = wp.components;
-const { Fragment, useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
+} from '@wordpress/block-editor';
+import { Button, FocalPointPicker, PanelBody, RangeControl, SelectControl } from '@wordpress/components';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const ALLOWED_BLOCKS = [
   'core/heading',
@@ -84,7 +84,7 @@ const edit = (props) => {
   const css = getEditorCssV2(imageObject, uniqId, focalPoint, opacity);
 
   return (
-    <Fragment>
+    <>
       <InspectorControls>
         {imageObject && (
           <PanelBody title={/* translators: [admin] */ __('Image Settings', 'amnesty')}>
@@ -170,7 +170,7 @@ const edit = (props) => {
           <InnerBlocks templateLock={false} allowedBlocks={ALLOWED_BLOCKS} />
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

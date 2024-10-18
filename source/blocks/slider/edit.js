@@ -1,9 +1,9 @@
 import classnames from 'classnames';
 
-const { InnerBlocks, InspectorControls, RichText } = wp.blockEditor;
-const { PanelBody, TextControl, ToggleControl } = wp.components;
-const { useEffect, useRef, useSelect, useState } = wp.element;
-const { __ } = wp.i18n;
+import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
+import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';
+import { useEffect, useRef, useSelect, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const ALLOWED_BLOCKS = ['amnesty-core/slide'];
 const getLayoutTemplate = memoize((blocks) => times(blocks, () => ALLOWED_BLOCKS));

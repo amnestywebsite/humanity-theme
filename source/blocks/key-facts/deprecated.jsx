@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 
-const { InnerBlocks } = wp.blockEditor;
+import { InnerBlocks } from '@wordpress/block-editor';
 
 const v1 = {
   supports: {
@@ -42,3 +42,5 @@ const v1 = {
 };
 
 const deprecated = [v1];
+
+export default deprecated;

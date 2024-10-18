@@ -1,11 +1,11 @@
 .wp-block-amnesty-core-link-group {
   padding: 24px;
-  background-color: $color-grey-x-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .wp-block-amnesty-core-link-group h2 {
   margin-bottom: spacing();
-  font-size: map-get($desktop-header-sizes, "h4");
+  font-size: var(--wp--preset--font-size--heading-4);
 }
 
 .wp-block-amnesty-core-link-group ul {
@@ -16,7 +16,7 @@
 
 .wp-block-amnesty-core-link-group li {
   display: flex;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   word-break: break-word;
 }
 
@@ -36,7 +36,7 @@
 .wp-block-amnesty-core-link-group li a:hover,
 .wp-block-amnesty-core-link-group li a:active,
 .wp-block-amnesty-core-link-group li a:focus {
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
 }
 
 .wp-block-amnesty-core-link-group li a > svg {

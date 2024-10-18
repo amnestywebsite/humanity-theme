@@ -1,5 +1,5 @@
-const { RichText } = wp.blockEditor;
-const { __ } = wp.i18n;
+import { RichText } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 
 const edit = ({ attributes, setAttributes }) => (
   <div className="factBlock-item">

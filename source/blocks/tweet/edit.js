@@ -1,9 +1,8 @@
 import classnames from 'classnames';
 
-const { InspectorControls, PlainText, BlockAlignmentToolbar, BlockControls } = wp.blockEditor;
-const { PanelBody, SelectControl, ToggleControl } = wp.components;
-const { Component, Fragment } = wp.element;
-const { __ } = wp.i18n;
+import { InspectorControls, PlainText, BlockAlignmentToolbar, BlockControls } from '@wordpress/block-editor';
+import { PanelBody, SelectControl, ToggleControl } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 // https://developer.twitter.com/en/docs/twitter-api/v1/developer-utilities/configuration/api-reference/get-help-configuration
 const TCO_LENGTH = 23;
@@ -116,3 +115,5 @@ const edit = ({ attributes, className, setAttributes }) => {
     </>
   );
 };
+
+export default edit;

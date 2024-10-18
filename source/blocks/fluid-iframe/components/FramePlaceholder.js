@@ -1,7 +1,5 @@
-import { httpsOnly } from "../../../utils";
-
-const { Button, Placeholder } = wp.components;
-const { __ } = wp.i18n;
+import { Button, Placeholder } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Placeholder component

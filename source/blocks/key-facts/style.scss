@@ -1,7 +1,7 @@
 @use "sass:math";
 
 .factBlock {
-  max-width: math.div($flexy-container, 3);
+  max-width: math.div(var(--wp--preset--layout--contentSize), 3);
   padding: 24px;
   text-align: center;
 }

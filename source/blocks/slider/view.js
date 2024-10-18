@@ -1,7 +1,7 @@
 import Flickity from 'flickity';
 import 'flickity-as-nav-for';
 
-const { debounce } = lodash;
+import { debounce } from 'lodash';
 
 const createArrowButton = (modifier) => {
   const button = document.createElement('button');

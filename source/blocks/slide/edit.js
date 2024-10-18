@@ -2,11 +2,10 @@ import classnames from 'classnames';
 import PostMediaSelector from '../../components/PostMediaSelector';
 import { fetchMediaUrl, randId } from '../../utils';
 
-const { InspectorControls, RichText, URLInputButton } = wp.blockEditor;
-const { PanelBody, SelectControl, TextControl, ToggleControl, TextareaControl } =
-  wp.components;
-const { useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
+import { InspectorControls, RichText, URLInputButton } from '@wordpress/block-editor';
+import { PanelBody, SelectControl, TextControl, ToggleControl, TextareaControl } from '@wordpress/components';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const backgroundOptions = [
   // translators: [admin]

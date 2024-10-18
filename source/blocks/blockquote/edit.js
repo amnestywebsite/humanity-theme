@@ -1,8 +1,8 @@
 import classnames from 'classnames';
 
-const { InspectorControls, RichText } = wp.blockEditor;
-const { PanelBody, SelectControl, ToggleControl } = wp.components;
-const { __ } = wp.i18n;
+import { InspectorControls, RichText } from '@wordpress/block-editor';
+import { PanelBody, SelectControl, ToggleControl } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 const isRightToLeft = document.documentElement.getAttribute('dir') === 'rtl';
 const hasI18n = Object.prototype.hasOwnProperty.call(window, 'amnestyCoreI18n');

@@ -1,4 +1,4 @@
-const { createBlock } = wp.blocks;
+const { createBlock } = '@wordpress/blocks';
 
 const transforms = {
   from: [

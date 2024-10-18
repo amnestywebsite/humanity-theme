@@ -1,7 +1,7 @@
-const { RichText, URLInputButton } = wp.blockEditor;
-const { Button, DatePicker } = wp.components;
-const { useState } = wp.element;
-const { __ } = wp.i18n;
+import { RichText, URLInputButton } from '@wordpress/block-editor';
+import { Button, DatePicker } from '@wordpress/components';
+import { useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const LinkItem = (props) => {
   const [datePickerIsVisible, showDatePicker] = useState(false);

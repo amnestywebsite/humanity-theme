@@ -16,11 +16,17 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: $color-grey-dark;
+  background-color: var(--wp--preset--color--grey-darker);
 }
 
 .factBlock-item:not(:last-of-type)::before {
-  @include icon(10px, 162px, 40px, 40px);
+  pointer-events: none;
+  background-image: var(--amnesty-icon-path);
+  background-repeat: no-repeat;
+  background-size: 313px 300px;
+  width: 40px;
+  height: 40px;
+  background-position: -10px -162px;
   left: calc(50% - 20px);
   top: calc(100% + 10px);
   z-index: 1;

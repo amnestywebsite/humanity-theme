@@ -1,11 +1,11 @@
 import classnames from 'classnames';
 
-const { isUndefined } = lodash;
-const { InnerBlocks, InspectorControls, RichText } = wp.blockEditor;
-const { PanelBody, SelectControl } = wp.components;
-const { useEffect, useRef } = wp.element;
-const { __ } = wp.i18n;
-const { applyFilters } = wp.hooks;
+import { isUndefined } from 'lodash';
+import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
+import { PanelBody, SelectControl } from '@wordpress/components';
+import { useEffect, useRef } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
+import { applyFilters } from '@wordpress/hooks';
 
 const ALLOWED_BLOCKS = [
   'core/buttons',

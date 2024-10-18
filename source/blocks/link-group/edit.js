@@ -1,10 +1,10 @@
 import classnames from 'classnames';
 
-const { isEqual, isObject } = lodash;
-const { BlockAlignmentToolbar, BlockControls, RichText, URLInputButton } = wp.blockEditor;
-const { Button, CheckboxControl } = wp.components;
-const { Component, Fragment, useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
+import { isObject } from 'lodash';
+import { BlockAlignmentToolbar, BlockControls, RichText, URLInputButton } from '@wordpress/block-editor';
+import { Button, CheckboxControl } from '@wordpress/components';
+import { useEffect, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Generate random string key for iterators

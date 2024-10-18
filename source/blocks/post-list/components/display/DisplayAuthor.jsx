@@ -2,11 +2,11 @@ import classnames from 'classnames';
 import LinkList from '../../0components/display/LinkList.jsx';
 import GridItem from '../../0components/display/GridItem.jsx';
 
-const { isString, keyBy } = lodash;
-const { useEntityRecords } = wp.coreData;
-const { useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
-const { addQueryArgs } = wp.url;
+import { isString, keyBy } from 'lodash';
+import { useEntityRecords } from '@wordpress/core-data';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
+import { addQueryArgs } from '@wordpress/url';
 
 const normaliseAuthor = (author = '[]') => {
   let normal = author;

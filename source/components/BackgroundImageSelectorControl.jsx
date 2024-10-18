@@ -1,6 +1,6 @@
-const { MediaUpload, MediaUploadCheck } = wp.blockEditor;
-const { Button } = wp.components;
-const { __ } = wp.i18n;
+import { MediaUpload, MediaUploadCheck } from '@wordpress/block-editor';
+import { Button } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 const render = (imageId, onRemove) => ({ open }) => {
   if (!imageId) {

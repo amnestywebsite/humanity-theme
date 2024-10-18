@@ -5,7 +5,7 @@
   align-items: stretch;
   gap: spacing(half);
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     flex-direction: row;
   }
 }
@@ -22,7 +22,7 @@
 .download-block.alignleft {
   float: none !important;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     justify-content: flex-start;
   }
 }
@@ -30,7 +30,7 @@
 .download-block.aligncenter {
   float: none !important;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     justify-content: center;
     display: flex;
   }
@@ -39,7 +39,7 @@
 .download-block.alignright {
   float: none !important;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     justify-content: flex-end;
   }
 }
@@ -65,7 +65,7 @@
     flex-direction: row;
   }
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     margin-top: 0;
   }
 }
@@ -76,7 +76,7 @@
   width: 20px;
   height: 20px;
   margin-right: 20px;
-  background-image: url("../images/icon-download-arrow.svg");
+  background-image: url("./icon-download-arrow.svg");
   background-size: contain;
   transform: translateY(2px);
 
@@ -88,11 +88,11 @@
 
 .btn--primary.btn--download::before,
 .btn--white.btn--download::before {
-  background-image: url("../images/icon-download-arrow-dark.svg");
+  background-image: url("./icon-download-arrow-dark.svg");
 }
 
 .btn--primary.btn--download:hover::before,
 .btn--primary.btn--download:active::before,
 .btn--primary.btn--download:focus::before {
-  background-image: url("../images/icon-download-arrow.svg");
+  background-image: url("./icon-download-arrow.svg");
 }
