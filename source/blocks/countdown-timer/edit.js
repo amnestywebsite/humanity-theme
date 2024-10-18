@@ -1,7 +1,7 @@
-const { Fragment, useEffect, useState } = wp.element;
-const { DateTimePicker, TextControl, PanelBody } = wp.components;
-const { AlignmentToolbar, BlockControls, InspectorControls } = wp.blockEditor;
-const { __, _n, _x, sprintf } = wp.i18n;
+import { useEffect, useState } from '@wordpress/element';
+import { DateTimePicker, TextControl, PanelBody } from '@wordpress/components';
+import { AlignmentToolbar, BlockControls, InspectorControls } from '@wordpress/block-editor';
+import { __, _n, _x, sprintf } from '@wordpress/i18n';
 
 const MINUTE = 60;
 const HOUR = 60 * MINUTE;
@@ -96,7 +96,7 @@ const DisplayComponent = ({ attributes, setAttributes }) => {
   }, [attributes.date]);
 
   return (
-    <Fragment>
+    <>
       <BlockControls>
         <AlignmentToolbar
           value={attributes.alignment}
@@ -126,7 +126,7 @@ const DisplayComponent = ({ attributes, setAttributes }) => {
           {clockTemplate(state, attributes)}
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

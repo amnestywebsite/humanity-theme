@@ -1,11 +1,10 @@
-const { filter, has, head, map } = lodash;
-const { apiFetch } = wp;
-const { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } = wp.blockEditor;
-const { PanelBody, SelectControl } = wp.components;
-const { useEntityRecord, useEntityRecords } = wp.data;
-const { Component, useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
-const { addQueryArgs } = wp.url;
+import { filter, has, head, map } from 'lodash';
+import { apiFetch } from '@wordpress/api-fetch';
+import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } from '@wordpress/block-editor';
+import { PanelBody, SelectControl } from '@wordpress/components';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
+import { addQueryArgs } from '@wordpress/url';
 
 const groupTerms = (terms) => {
   const grouped = {};
@@ -149,3 +148,5 @@ const edit = ({ attributes, setAttributes }) => {
     </>
   );
 };
+
+export default edit;

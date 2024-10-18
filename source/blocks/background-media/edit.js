@@ -1,4 +1,4 @@
-const { InnerBlocks } = wp.blockEditor;
+import { InnerBlocks } from '@wordpress/block-editor';
 
 const TEMPLATE = [
   ['amnesty-core/background-media-column', { deletable: false }],

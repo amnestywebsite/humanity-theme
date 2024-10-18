@@ -1,9 +1,9 @@
+import { assign } from 'lodash';
+import { registerBlockType } from '@wordpress/blocks';
+import { __ } from '@wordpress/i18n';
+
 import PostListEdit from './PostListEdit.jsx';
 import PostsWrapper from './PostsWrapper.jsx';
-
-const { assign } = lodash;
-const { registerBlockType } = wp.blocks;
-const { __ } = wp.i18n;
 
 const postListConfig = {};
 

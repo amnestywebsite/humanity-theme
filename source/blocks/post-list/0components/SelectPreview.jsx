@@ -2,7 +2,7 @@ import LinkList from './display/LinkList.jsx';
 import GridItem from './display/GridItem.jsx';
 import PetitionItem from './display/PetitionItem.jsx';
 
-const { __ } = wp.i18n;
+import { __ } from '@wordpress/i18n';
 
 const SelectPreview = ({ loading, posts = [], ...props }) => {
   if (loading) {

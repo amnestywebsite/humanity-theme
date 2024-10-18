@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 
-const { assign } = lodash;
-const { InnerBlocks } = wp.blockEditor;
+import { assign } from 'lodash';
+import { InnerBlocks } from '@wordpress/block-editor';
 
 const v3 = {
   attributes: {

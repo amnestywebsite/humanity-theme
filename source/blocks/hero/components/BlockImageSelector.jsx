@@ -1,6 +1,6 @@
-const { MediaUpload } = wp.blockEditor;
-const { IconButton } = wp.components;
-const { __ } = wp.i18n;
+import { MediaUpload } from '@wordpress/block-editor';
+import { IconButton } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Render the override image component

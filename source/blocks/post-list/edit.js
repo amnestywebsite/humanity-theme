@@ -5,7 +5,7 @@ import DisplayCustom from './0components/DisplayCustom.js';
 import DisplaySelect from './0components/DisplaySelect.js';
 import DisplayTaxonomies from './0components/DisplayTaxonomies.js';
 import * as api from './0components/post-selector/api.js';
-import DisplayAuthor from './0components/DisplayAuthor.js';
+import DisplayAuthor from './components/DisplayAuthor.js';
 import DisplayFeed from './0components/DisplayFeed.js';
 
 import AuthorSelector from './components/selectors/AuthorSelector.jsx';
@@ -15,11 +15,11 @@ import TermSelector from './components/selectors/TermSelector.jsx';
 
 import { createRange, randId } from '../../utils';
 
-const { has } = lodash;
-const { InspectorControls } = wp.blockEditor;
-const { PanelBody, RangeControl, SelectControl, ToggleControl } = wp.components;
-const { useState } = wp.element;
-const { __ } = wp.i18n;
+import { has } from 'lodash';
+import { InspectorControls } from '@wordpress/block-editor';
+import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
+import { useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const getTaxonomyTerms = (value, callback) => {
   if (!value) {

@@ -1,8 +1,8 @@
 import classnames from 'classnames';
 
-const { assign, isEmpty, omit } = lodash;
-const { InnerBlocks, RichText } = wp.blockEditor;
-const { createBlock } = wp.blocks;
+import { assign, isEmpty, omit } from 'lodash';
+import { InnerBlocks, RichText } from '@wordpress/block-editor';
+import { createBlock } from '@wordpress/blocks';
 
 const blockAttributes = {
   preheading: {

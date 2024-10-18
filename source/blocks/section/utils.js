@@ -1,5 +1,5 @@
-const { apiFetch } = wp;
-const { sprintf } = wp.i18n;
+import { apiFetch } from '@wordpress/api-fetch';
+import { sprintf } from '@wordpress/i18n';
 
 export const findImage = async (basename, year, month) => {
   let found = false;

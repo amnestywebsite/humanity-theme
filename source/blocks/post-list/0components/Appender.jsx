@@ -1,5 +1,5 @@
-const { BlockIcon } = wp.blockEditor;
-const { __ } = wp.i18n;
+import { BlockIcon } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 
 const Appender = ({ onClick }) => (
   <button className="add-more-button" onClick={onClick}>

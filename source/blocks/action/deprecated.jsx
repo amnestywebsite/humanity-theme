@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 
-const { assign, omit } = lodash;
-const { __ } = wp.i18n;
+import { assign, omit } from 'lodash';
+import { __ } from '@wordpress/i18n';
 
 const blockAttributes = {
   style: {

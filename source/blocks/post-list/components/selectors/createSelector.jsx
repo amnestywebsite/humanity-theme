@@ -1,7 +1,7 @@
 import Select from 'react-select';
 
-const { useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const defaultSearchFilterCallback = (results) => results.map((result) => ({
   label: result.parent ? `- ${result.name}` : result.name,

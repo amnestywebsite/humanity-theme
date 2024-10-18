@@ -9,18 +9,18 @@
   justify-content: center;
   text-align: center;
   min-height: 56px;
-  background-color: $color-grey-light;
+  background-color: var(--wp--preset--color--grey-lighter);
   font-size: 16px;
   text-transform: uppercase;
   font-family: var(--wp--preset--font-family--secondary);
   flex: 1 1 auto;
   font-weight: bold;
   border: none;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .slider-navButton.is-nav-selected {
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   transform: translateY(-4px);
 }
 
@@ -32,7 +32,7 @@
   display: block;
   width: 100%;
   height: 4px;
-  background-color: $color-black;
+  background-color: var(--wp--preset--color--black);
 }
 
 .slides-container {
@@ -44,7 +44,7 @@
   top: 50%;
   left: 0;
   display: none;
-  background-color: $color-white;
+  background-color: var(--wp--preset--color--white);
   width: 50px;
   height: 50px;
   overflow: hidden;
@@ -78,23 +78,47 @@
 }
 
 .slides-arrow--next::after {
-  @include icon_scale(110px, 265px, 16px, 16px, 2);
+  pointer-events: none;
+  background-image: var(--amnesty-icon-path);
+  background-repeat: no-repeat;
+  background-size: 616px 600px;
+  width: 32px;
+  height: 32px;
+  background-position: -220px -530px;
   content: "";
   display: block;
 }
 
 .rtl .slides-arrow--next::after {
-  @include icon_scale(234px, 240px, 16px, 16px, 2);
+  pointer-events: none;
+  background-image: var(--amnesty-icon-path);
+  background-repeat: no-repeat;
+  background-size: 616px 600px;
+  width: 32px;
+  height: 32px;
+  background-position: -468px -480px;
 }
 
 .slides-arrow--previous::after {
-  @include icon_scale(234px, 240px, 16px, 16px, 2);
+  pointer-events: none;
+  background-image: var(--amnesty-icon-path);
+  background-repeat: no-repeat;
+  background-size: 616px 600px;
+  width: 32px;
+  height: 32px;
+  background-position: -468px -480px;
   content: "";
   display: block;
 }
 
 .rtl .slides-arrow--previous::after {
-  @include icon_scale(110px, 265px, 16px, 16px, 2);
+  pointer-events: none;
+  background-image: var(--amnesty-icon-path);
+  background-repeat: no-repeat;
+  background-size: 616px 600px;
+  width: 32px;
+  height: 32px;
+  background-position: -220px -530px;
 }
 
 .slider {
@@ -140,7 +164,7 @@
   position: relative !important;
   transform: none !important;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     width: auto;
   }
 }
@@ -192,17 +216,23 @@
   display: block;
   height: 34px;
   width: 34px;
-  border: 1px solid $color-white;
+  border: 1px solid var(--wp--preset--color--white);
   background-color: transparent;
   text-indent: -1000vw;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     display: none;
   }
 }
 
 .slider-toggleContent::before {
-  @include icon_scale(271px, 131px, 16px, 16px, 1.7);
+  pointer-events: none;
+  background-image: var(--amnesty-icon-path);
+  background-repeat: no-repeat;
+  background-size: 532.1px 510px;
+  width: 27.2px;
+  height: 27.2px;
+  background-position: -460.7px -222.7px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -221,24 +251,24 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: $color-white;
+  background: var(--wp--preset--color--white);
   padding: 20px;
   z-index: 1;
   font-family: var(--wp--preset--font-family--secondary);
   text-transform: uppercase;
   font-size: 18px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     font-size: 34px;
   }
 }
 
 .slider.timeline-light .image-metadata {
   background-color: transparent;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
 }
 
 .slider.timeline-dark .image-metadata {
   background-color: transparent;
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }

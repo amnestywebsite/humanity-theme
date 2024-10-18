@@ -1,10 +1,10 @@
 import classnames from 'classnames';
 
-const { times } = lodash;
-const { InnerBlocks, InspectorControls, RichText } = wp.blockEditor;
-const { PanelBody, RangeControl, SelectControl } = wp.components;
-const { memoize } = wp.data;
-const { __ } = wp.i18n;
+import { times } from 'lodash';
+import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
+import { PanelBody, RangeControl, SelectControl } from '@wordpress/components';
+import { memoize } from '@wordpress/data';
+import { __ } from '@wordpress/i18n';
 
 const ALLOWED_BLOCKS = ['amnesty-core/key-fact'];
 const getLayoutTemplate = memoize((blocks) => times(blocks, () => ALLOWED_BLOCKS));

@@ -1,6 +1,6 @@
 [data-type="amnesty-core/hero"] {
   margin-inline: auto !important;
-  max-width: $flexy-container !important;
+  max-width: var(--wp--preset--layout--contentSize) !important;
   width: 100% !important;
   float: none !important;
 }

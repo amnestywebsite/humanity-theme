@@ -1,8 +1,8 @@
 import classnames from 'classnames';
 
-const { InspectorControls, MediaUpload, PlainText, URLInputButton } = wp.blockEditor;
-const { IconButton, PanelBody, SelectControl, TextControl } = wp.components;
-const { __ } = wp.i18n;
+import { InspectorControls, MediaUpload, PlainText, URLInputButton } from '@wordpress/block-editor';
+import { IconButton, PanelBody, SelectControl, TextControl } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 const setURL = (image) => {
   if (!image.sizes || !Object.prototype.hasOwnProperty.call(image.sizes, 'large')) {

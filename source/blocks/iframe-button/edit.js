@@ -1,10 +1,10 @@
 import classnames from 'classnames';
-import { httpsOnly } from '../utils';
+import { httpsOnly } from '../../utils';
 
-const { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } = wp.blockEditor;
-const { Button, PanelBody, TextControl } = wp.components;
-const { createRef, useEffect, useState } = wp.element;
-const { __ } = wp.i18n;
+import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } from '@wordpress/block-editor';
+import { Button, PanelBody, TextControl } from '@wordpress/components';
+import { createRef, useEffect, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const edit = (props) => {
   const { attributes, className, setAttributes } = props;

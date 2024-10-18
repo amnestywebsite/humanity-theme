@@ -1,5 +1,5 @@
-const { TextControl } = wp.components;
-const { __ } = wp.i18n;
+import { TextControl } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 const edit = ({ attributes, setAttributes }) => (
   <>

@@ -1,18 +1,17 @@
 import classNames from 'classnames';
 
 import { fetchImageData, findImage } from './utils';
-import { BackgroundImageOriginControl } from '../../components/BackgroundImageOriginControl';
-import { BackgroundImageSelectorControl } from '../../components/BackgroundImageSelectorControl';
-import { MediaMetadata } from '../../components/MediaMetadata';
-import { MediaMetadataVisibilityControls } from '../../components/MediaMetadataVisibilityControls';
+import BackgroundImageOriginControl from '../../components/BackgroundImageOriginControl';
+import BackgroundImageSelectorControl from '../../components/BackgroundImageSelectorControl';
+import MediaMetadata from '../../components/MediaMetadata';
+import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls';
 
-const { InspectorControls, InnerBlocks } = wp.blockEditor;
-const { PanelBody, RangeControl, SelectControl, TextControl, ToggleControl } =
-  wp.components;
-const { compose } = wp.compose;
-const { withDispatch } = wp.data;
-const { useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
+import { InspectorControls, InnerBlocks } from '@wordpress/block-editor';
+import { PanelBody, RangeControl, SelectControl, TextControl, ToggleControl } from '@wordpress/components';
+import { compose } from '@wordpress/compose';
+import { withDispatch } from '@wordpress/data';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const edit = ({ attributes, setAttributes }) => {
   const [imageData, setImageData] = useState(null);

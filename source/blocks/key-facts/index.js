@@ -1,11 +1,11 @@
 import './style.scss';
 import './editor.scss';
 
+import { registerBlockType } from '@wordpress/blocks';
+
 import edit from './edit';
 import metadata from './block.json';
 import deprecated from './deprecated';
-
-const { registerBlockType } = wp.blocks;
 
 registerBlockType(metadata, {
   ...metadata,

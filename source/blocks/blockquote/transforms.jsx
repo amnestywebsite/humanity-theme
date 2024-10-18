@@ -1,6 +1,6 @@
-import { versionCompare } from '../utils';
+import { versionCompare } from '../../utils';
 
-const { createBlock } = wp.blocks;
+const { createBlock } = '@wordpress/blocks';
 
 /**
  * backwards-compatible getPhrasingContentSchema

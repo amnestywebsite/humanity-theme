@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import PostMediaSelector from '../../components/PostMediaSelector';
-import { randId } from '../utils';
+import { randId } from '../../utils';
 
 const { map, omit } = lodash;
 const { InspectorControls, RichText, URLInputButton } = wp.blockEditor;

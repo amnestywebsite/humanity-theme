@@ -2,7 +2,7 @@ import SelectPreview from './SelectPreview.jsx';
 import PostSelect from './post-selector/PostSelector.jsx';
 import * as api from './post-selector/api';
 
-const { Component } = wp.element;
+import { Component } from '@wordpress/element';
 
 /**
  * Returns a unique array of objects based on a desired key.

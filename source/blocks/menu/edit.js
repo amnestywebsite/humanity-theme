@@ -1,12 +1,10 @@
 import classnames from 'classnames';
 
-const { InspectorControls } = wp.blockEditor;
-const { PanelBody, SelectControl } = wp.components;
-const { useSelect } = wp.data;
-const { useEffect, useRef, useState } = wp.element;
-const { compose } = wp.compose;
-const { withSelect } = wp.data;
-const { __ } = wp.i18n;
+import { InspectorControls } from '@wordpress/block-editor';
+import { PanelBody, SelectControl } from '@wordpress/components';
+import { useSelect } from '@wordpress/data';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const colours = [
   // translators: [admin]

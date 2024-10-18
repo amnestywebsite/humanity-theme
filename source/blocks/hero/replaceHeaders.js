@@ -1,5 +1,5 @@
-const { omit } = lodash;
-const { createBlock } = wp.blocks;
+import { omit } from 'lodash';
+import { createBlock } from '@wordpress/blocks';
 
 /**
  * Recursively search blocks on page for a specific block type

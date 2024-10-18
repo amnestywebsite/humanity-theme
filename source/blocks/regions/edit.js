@@ -2,13 +2,13 @@ import classnames from 'classnames';
 
 import List from './components/List';
 
-const { each, filter, head, isEmpty, map } = lodash;
-const { apiFetch, apiRequest } = wp;
-const { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } = wp.blockEditor;
-const { PanelBody, RangeControl, SelectControl, ToggleControl } = wp.components;
-const { Component, Fragment, useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
-const { addQueryArgs } = wp.url;
+import { each, filter, head, isEmpty, map } from 'lodash';
+import { apiFetch, apiRequest } from '@wordpress/api-fetch';
+import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } from '@wordpress/block-editor';
+import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
+import {  useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
+import { addQueryArgs } from '@wordpress/url';
 
 const unflatten = (list, parent = { id: 0 }, tree = []) => {
   const children = filter(list, (item) => item.parent === parent.id);
@@ -209,3 +209,5 @@ const edit = ({ attributes, setAttributes }) => {
     </>
   );
 };
+
+export default edit;

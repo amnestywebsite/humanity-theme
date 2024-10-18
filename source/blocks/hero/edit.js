@@ -3,14 +3,14 @@ import BlockImageSelector from './components/BlockImageSelector.jsx';
 import MediaMetadata from '../../components/MediaMetadata.jsx';
 import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls.jsx';
 import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
-import { fetchMediaData } from '../utils';
+import { fetchMediaData } from '../../utils';
 
-const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
-const { PanelBody, SelectControl } = wp.components;
-const { useSelect } = wp.data;
-const { PostFeaturedImage } = wp.editor;
-const { Fragment, useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
+import { InnerBlocks, InspectorControls, RichText, URLInputButton } from '@wordpress/block-editor';
+import { PanelBody, SelectControl } from '@wordpress/components';
+import { useSelect } from '@wordpress/data';
+import { PostFeaturedImage } from '@wordpress/editor';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Retrieve the correct title for the media panel
@@ -121,7 +121,7 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
   );
 
   return (
-    <Fragment>
+    <>
       {BlockInspectorControls}
       <section className={classes} style={blockInlineStyle}>
         {attributes.type === 'image' && (
@@ -183,7 +183,7 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
           showMediaCopyright={showMediaCopyright}
         />
       </section>
-    </Fragment>
+    </>
   );
 };
 

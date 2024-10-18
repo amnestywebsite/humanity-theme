@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 
-const { RichText } = wp.blockEditor;
+import { RichText } from '@wordpress/block-editor';
 
 const v2 = {
   supports: {

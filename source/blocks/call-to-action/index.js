@@ -6,7 +6,7 @@ import metadata from './block.json';
 import deprecated from './deprecated';
 import transforms from './transforms';
 
-const { registerBlockType } = wp.blocks;
+import { registerBlockType } from '@wordpress/blocks';
 
 registerBlockType(metadata, {
   ...metadata,

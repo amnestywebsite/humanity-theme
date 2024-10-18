@@ -12,14 +12,12 @@ import DisplayAuthor from './components/DisplayAuthor.jsx';
 import AuthorSelect from './components/author-select.jsx';
 import DisplayFeed from './components/DisplayFeed.jsx';
 
-const { createHigherOrderComponent } = wp.compose;
-const { Fragment } = wp.element;
-const { InspectorControls } = wp.blockEditor;
-const { PanelBody, RangeControl, SelectControl, ToggleControl } = wp.components;
-const { Component } = wp.element;
-const { __ } = wp.i18n;
-
-const { has } = lodash;
+import { has } from 'lodash';
+import { InspectorControls } from '@wordpress/block-editor';
+import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
+import { createHigherOrderComponent } from '@wordpress/compose';
+import { Component } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
   const createRange = (min, max) => (num) => Math.max(min, Math.min(max, num));
@@ -160,7 +158,7 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
       }
 
       return (
-        <Fragment>
+        <>
           <InspectorControls>
             <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
               {defaultStyleOptions.length > 0 && (
@@ -352,16 +350,16 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
               />
             )}
           </div>
-        </Fragment>
+        </>
       );
     }
   };
 
   return (props) => (
-    <Fragment>
+    <>
       <BlockEdit {...props} />
       <PostList {...props} />
-    </Fragment>
+    </>
   );
 }, 'withInspectorControl');
 

@@ -1,9 +1,8 @@
 import classnames from 'classnames';
 import { getSaveCss } from '../background-media/utils';
 
-const { assign, isObject, isString } = lodash;
-const { InnerBlocks } = wp.editor;
-const { Fragment } = wp.element;
+import { assign, isObject, isString } from 'lodash';
+import { InnerBlocks } from '@wordpress/editor';
 
 const v4 = {
   supports: {
@@ -70,12 +69,12 @@ const v4 = {
     const css = getSaveCss(attributes);
 
     return (
-      <Fragment>
+      <>
         {css && <style>{css}</style>}
         <div id={uniqId} className={containerClasses}>
           <InnerBlocks.Content />
         </div>
-      </Fragment>
+      </>
     );
   },
 };
@@ -134,13 +133,13 @@ const v3 = {
     const css = getSaveCss(attributes);
 
     return (
-      <Fragment>
+      <>
         {css && <style>{css}</style>}
         <div id={uniqId} className={containerClasses}>
           <InnerBlocks.Content />
           {image && <div className="imageBlock-image"></div>}
         </div>
-      </Fragment>
+      </>
     );
   },
 };
@@ -191,7 +190,7 @@ const v2 = {
     const css = getSaveCss(attributes);
 
     return (
-      <Fragment>
+      <>
         {css && <style>{css}</style>}
         <div id={uniqId} className={containerClasses}>
           <InnerBlocks.Content />
@@ -201,7 +200,7 @@ const v2 = {
             </div>
           )}
         </div>
-      </Fragment>
+      </>
     );
   },
 };
@@ -252,12 +251,12 @@ const v1 = {
     const css = getSaveCss(attributes);
 
     return (
-      <Fragment>
+      <>
         {css && <style>{css}</style>}
         <div id={uniqId} className={containerClasses}>
           <InnerBlocks.Content />
         </div>
-      </Fragment>
+      </>
     );
   },
 };

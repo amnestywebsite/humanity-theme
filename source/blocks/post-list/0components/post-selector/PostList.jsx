@@ -1,7 +1,7 @@
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import { Post } from './Post.jsx';
 
-const { __ } = wp.i18n;
+import { __ } from '@wordpress/i18n';
 
 /**
  * PostList Component

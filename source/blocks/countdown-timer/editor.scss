@@ -4,13 +4,13 @@
 
 .countdownClock {
   font-size: 5.2em;
-  color: $color-black;
+  color: var(--wp--preset--color--black);
   font-family: var(--wp--preset--font-family--secondary);
   text-transform: uppercase;
 }
 
 .countdownContainer {
-  border: 1px solid $color-black;
+  border: 1px solid var(--wp--preset--color--black);
   padding: 20px;
 }
 
@@ -19,5 +19,5 @@
 }
 
 .section--textWhite .countdownClock {
-  color: $color-white;
+  color: var(--wp--preset--color--white);
 }

@@ -23,22 +23,22 @@
   margin-top: spacing();
   flex: 1 1 100%;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     flex-basis: 50%;
     max-width: 50%;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     flex-basis: 33%;
     max-width: 33%;
   }
 
-  @include mq(x-large) {
+  @media all and (min-width: 1200px) {
     flex-basis: 25%;
     max-width: 25%;
   }
 
-  @include mq(xx-large) {
+  @media all and (min-width: 1400px) {
     flex-basis: auto;
   }
 }
@@ -67,11 +67,11 @@
 .wp-block-amnesty-core-regions .children {
   margin-top: spacing();
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     max-width: 90%;
   }
 
-  @include mq(x-large) {
+  @media all and (min-width: 1200px) {
     max-width: 85%;
   }
 }

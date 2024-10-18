@@ -1,6 +1,6 @@
 import './style.scss';
 
-const { _n, _x, sprintf } = wp.i18n;
+const { _n, _x, sprintf } = '@wordpress/i18n';
 
 const MINUTE = 60;
 const HOUR = 60 * MINUTE;

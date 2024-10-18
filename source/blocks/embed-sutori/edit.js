@@ -1,8 +1,8 @@
-import { httpsOnly } from '../utils';
+import { httpsOnly } from '../../utils';
 
-const { Button, TextControl } = wp.components;
-const { useState } = wp.element;
-const { __ } = wp.i18n;
+import { Button, TextControl } from '@wordpress/components';
+import { useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const getIframeSrc = (rawValue, props) => {
   const { setAttributes } = props;

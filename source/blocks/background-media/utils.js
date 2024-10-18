@@ -1,4 +1,4 @@
-const { pick } = lodash;
+import { pick } from 'lodash';
 
 export const getUrlV2 = (image, size) => {
   // eslint-disable-next-line camelcase

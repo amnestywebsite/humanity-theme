@@ -1,10 +1,10 @@
 import classnames from 'classnames';
 
-const { isInteger } = lodash;
-const { BlockAlignmentToolbar, BlockControls, InspectorControls } = wp.blockEditor;
-const { Button, RangeControl, TextControl, ToolbarGroup, PanelBody } = wp.components;
-const { useEffect, useRef, useState } = wp.element;
-const { __ } = wp.i18n;
+import { isInteger } from 'lodash';
+import { BlockAlignmentToolbar, BlockControls, InspectorControls } from '@wordpress/block-editor';
+import { Button, RangeControl, TextControl, ToolbarGroup, PanelBody } from '@wordpress/components';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const toRawNumber = (value = '0') => {
   if (isInteger(value)) {

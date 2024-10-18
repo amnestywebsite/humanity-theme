@@ -4,10 +4,10 @@ import { httpsOnly } from '../../utils';
 import EmbedContainer from './components/EmbedContainer';
 import FramePlaceholder from './components/FramePlaceholder';
 
-const { InspectorControls, useBlockProps } = wp.blockEditor;
-const { Button, PanelBody, TextControl } = wp.components;
-const { createRef } = wp.element;
-const { __ } = wp.i18n;
+import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+import { Button, PanelBody, TextControl } from '@wordpress/components';
+import { createRef } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const BlockInspectorControls = ({ attributes, setAttributes, resetEmbed }) => {
   let widthHelpText = '';

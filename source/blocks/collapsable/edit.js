@@ -1,9 +1,9 @@
 import classnames from 'classnames';
 
-const { InnerBlocks, InspectorControls, RichText, useBlockProps } = wp.blockEditor;
-const { PanelBody, PanelRow, TextControl, ToggleControl } = wp.components;
-const { applyFilters } = wp.hooks;
-const { __ } = wp.i18n;
+import { InnerBlocks, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
+import { PanelBody, PanelRow, TextControl, ToggleControl } from '@wordpress/components';
+import { applyFilters } from '@wordpress/hooks';
+import { __ } from '@wordpress/i18n';
 
 const ALLOWED_BLOCKS = applyFilters('amnesty.blocks.collapsable.allowedBlocks', [
   'amnesty-core/block-call-to-action',

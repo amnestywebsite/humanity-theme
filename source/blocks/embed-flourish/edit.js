@@ -1,9 +1,9 @@
-import { httpsOnly } from '../utils';
+import { httpsOnly } from '../../utils';
 
-const { delay } = lodash;
-const { Button, TextControl } = wp.components;
-const { Fragment, useState } = wp.element;
-const { __ } = wp.i18n;
+import { delay } from 'lodash';
+import { Button, TextControl } from '@wordpress/components';
+import { Fragment, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 // load flourish embed script
 const loadScript = () => {

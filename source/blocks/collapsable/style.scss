@@ -17,7 +17,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: spacing(half) 0;
-  border-bottom: 1px solid $color-black;
+  border-bottom: 1px solid var(--wp--preset--color--black);
 }
 
 .wp-block-amnesty-core-collapsable + .wp-block-amnesty-core-collapsable {
@@ -30,7 +30,7 @@
 
 .wp-block-amnesty-core-collapsable figcaption h2 {
   margin: 0 !important;
-  font-size: map-get($desktop-header-sizes, "h3");
+  font-size: var(--wp--preset--font-size--heading-3);
 }
 
 .wp-block-amnesty-core-collapsable .btn--blank {
@@ -45,7 +45,7 @@
 }
 
 .wp-block-amnesty-core-collapsable .btn--blank:focus-visible {
-  border: 1px solid $color-black;
+  border: 1px solid var(--wp--preset--color--black);
 }
 
 .wp-block-amnesty-core-collapsable .icon {
@@ -56,8 +56,11 @@
 }
 
 .wp-block-amnesty-core-collapsable .icon-arrow-down {
-  @extend %icon-arrow-down-dark;
+  background-size: 469.5px 450px;
+  background-position: -406.5px -322.5px;
   transform: rotate(180deg);
+  width: 24px;
+  height: 24px;
 }
 
 .wp-block-amnesty-core-collapsable.is-collapsed .icon-arrow-down {

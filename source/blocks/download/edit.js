@@ -1,18 +1,18 @@
 import classnames from 'classnames';
 
-const { every, pick } = lodash;
-const {
+import { every, pick } from 'lodash';
+import {
   BlockAlignmentToolbar,
   BlockControls,
   InspectorControls,
   MediaPlaceholder,
   MediaUploadCheck,
   RichText,
-} = wp.blockEditor;
-const { Button, PanelBody, SelectControl } = wp.components;
-const { dispatch } = wp.data;
-const { useState } = wp.element;
-const { __ } = wp.i18n;
+} from '@wordpress/block-editor';
+import { Button, PanelBody, SelectControl } from '@wordpress/components';
+import { dispatch } from '@wordpress/data';
+import { useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const MESSAGES = {
   // translators: [admin]
