@@ -19,7 +19,18 @@ const toFormattedString = (value) => {
   }
 
   const { currentLocale = 'en-GB' } = window.amnestyCoreI18n;
-  const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'));
+
+  const { forceTS } = window.amnestyForceTS;
+
+  let formatted = '';
+
+  if (forceTS === 'on') {
+    formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'), {
+      useGrouping: true,
+    });
+  } else {
+    formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'));
+  }
 
   return formatted;
 };
