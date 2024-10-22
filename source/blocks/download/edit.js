@@ -140,12 +140,12 @@ const edit = ({ attributes, setAttributes }) => {
   }
 
   const blockClasses = classnames('download-block', {
-    [alignment]: alignment !== 'none',
-    'has-multiple': files.length > 1,
+    [attributes.alignment]: attributes.alignment !== 'none',
+    'has-multiple': attributes.files.length > 1,
   });
 
   const btnClasses = classnames('btn', 'btn--download', {
-    [`btn--${style}`]: !!style,
+    [`btn--${attributes.style}`]: !!attributes.style,
   });
 
   return (

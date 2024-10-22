@@ -28,7 +28,7 @@ const groupTerms = (terms) => {
     }, {});
 };
 
-const edit = ({ attributes, setAttributes }) => {
+const edit = ({ attributes, className, setAttributes }) => {
   const [taxonomies, setTaxonomies] = useState([]);
   const [options, setOptions] = useState([]);
   const [current, setCurrent] = useState({});
@@ -61,6 +61,7 @@ const edit = ({ attributes, setAttributes }) => {
       mounted.current = true;
 
       const { taxonomy } = attributes;
+
       apiFetch({ path: '/wp/v2/taxonomies' })
         .then((response) => {
           const taxes = filter(response, (t) => t.amnesty);

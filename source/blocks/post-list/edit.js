@@ -1,12 +1,12 @@
 /* eslint-disable react/display-name */
 // This configures the post list for use by other blocks
-import DisplayCategories from './0components/DisplayCategories.js';
-import DisplayCustom from './0components/DisplayCustom.js';
-import DisplaySelect from './0components/DisplaySelect.js';
-import DisplayTaxonomies from './0components/DisplayTaxonomies.js';
-import * as api from './0components/post-selector/api.js';
+import DisplayCategories from './components/DisplayCategories.js';
+import DisplayCustom from './components/DisplayCustom.jsx';
+import DisplaySelect from './components/DisplaySelect.jsx';
+import DisplayTaxonomies from './components/DisplayTaxonomies.jsx';
+import * as api from './components/post-selector/api.js';
 import DisplayAuthor from './components/DisplayAuthor.js';
-import DisplayFeed from './0components/DisplayFeed.js';
+import DisplayFeed from './components/DisplayFeed.jsx';
 
 import AuthorSelector from './components/selectors/AuthorSelector.jsx';
 import CategorySelector from './components/selectors/CategorySelector.jsx';

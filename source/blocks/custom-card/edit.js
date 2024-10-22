@@ -63,7 +63,7 @@ const edit = ({ attributes, className, setAttributes }) => {
         />
         <div className="customCard-figure">
           <div className="linkList-options">
-            {imageID ? (
+            {attributes.imageID ? (
               <IconButton
                 icon="no-alt"
                 // translators: [admin]

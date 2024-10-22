@@ -93,7 +93,7 @@ const edit = ({ attributes, setAttributes }) => {
     setLinks({ ...links, [`link-${index}`]: value });
   };
 
-  const classes = classnames(className, {
+  const classes = classnames(classnames, {
     [`align${attributes.align}`]: attributes.align,
   });
 

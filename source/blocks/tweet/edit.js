@@ -32,8 +32,8 @@ const getContent = (content) => {
 };
 
 const edit = ({ attributes, className, setAttributes }) => {
-  const blockClasses = classnames('tweetAction', this.props.className, {
-    'tweetAction--narrow': size === 'narrow',
+  const blockClasses = classnames('tweetAction', className, {
+    'tweetAction--narrow': attributes.size === 'narrow',
   });
 
   const buttonClasses = classnames(['btn', 'btn--fill', 'btn--large']);

@@ -56,7 +56,7 @@ const StandardMenu = ({ attributes, className, loadingMenu, menus }) => {
     return <p>{__('Loading Menu…', 'amnesty')}</p>;
   }
 
-  if (!menus[menuId]) {
+  if (!menus[attributes.menuId]) {
     return null;
   }
 
@@ -64,7 +64,7 @@ const StandardMenu = ({ attributes, className, loadingMenu, menus }) => {
     <div className={className}>
       <ul
         className="postlist-categories"
-        dangerouslySetInnerHTML={{ __html: menus[menuId].rendered }}
+        dangerouslySetInnerHTML={{ __html: menus[attributes.menuId].rendered }}
       />
     </div>
   );

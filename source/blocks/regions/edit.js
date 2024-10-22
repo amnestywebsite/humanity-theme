@@ -141,7 +141,7 @@ const edit = ({ attributes, setAttributes }) => {
   }, [attributes.depth, attributes.taxonomy]);
 
   const hierarchical = current && current.hierarchical;
-  const classes = classnames(className, {
+  const classes = classnames(classnames, {
     [`has-${attributes.background}-background-color`]: !!attributes.background,
   });
 
