@@ -1,8 +1,8 @@
 /* eslint-disable camelcase */
 import React from 'react';
-import LinkList from '../0components/editable/LinkList.jsx';
-import GridItem from '../0components/editable/GridItem.jsx';
-import Appender from '../0components/Appender.jsx';
+import LinkList from './editable/LinkList.jsx';
+import GridItem from './editable/GridItem.jsx';
+import Appender from '../components/Appender.jsx';
 
 const DisplayCustom = ({ custom = [], setAttributes, style, prefix, showAuthor, showPostDate }) => {
   // Default object structure for each custom item
