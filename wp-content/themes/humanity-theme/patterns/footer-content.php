@@ -41,7 +41,7 @@ if ( $copyright ) {
 	<!-- wp:column -->
 	<div class="wp-block-column">
 		<!-- wp:heading {"level":4,"className":"linkGroup-title"} -->
-		<h4 class="wp-block-heading linkGroup-title"><a href="<?php echo esc_url( $item->link ); ?>"><?php echo esc_html( $item->title ); ?></a></h4>
+		<h4 class="wp-block-heading linkGroup-title"><a href="<?php echo esc_url( $item->url ?: get_permalink( $item->db_id ) ); ?>"><?php echo esc_html( $item->title ); ?></a></h4>
 		<!-- /wp:heading -->
 
 		<?php if ( isset( $footer_menu_items['children'][ $item->title ] ) ) : ?>
@@ -49,7 +49,7 @@ if ( $copyright ) {
 		<ul>
 			<?php foreach ( $footer_menu_items['children'][ $item->title ] as $child ) : ?>
 			<!-- wp:list-item -->
-			<li><a href="<?php echo esc_url( $child->link ); ?>" data-type="<?php echo esc_attr( $child->type ); ?>" data-id="<?php echo absint( $child->db_id ); ?>"><?php echo esc_html( $child->title ); ?></a></li>
+			<li><a href="<?php echo esc_url( $child->url ?: get_permalink( $item->db_id ) ); ?>" data-type="<?php echo esc_attr( $child->type ); ?>" data-id="<?php echo absint( $child->db_id ); ?>"><?php echo esc_html( $child->title ); ?></a></li>
 			<!-- /wp:list-item -->
 			<?php endforeach; ?>
 		</ul>
@@ -101,7 +101,7 @@ if ( $copyright ) {
 		<ul class="amnesty-policy-links">
 		<?php foreach ( $footer_policy_items['top_level'] as $_id => $item ) : ?>
 			<!-- wp:list-item -->
-			<li><a href="<?php echo esc_url( $item->link ); ?>"><?php echo esc_html( $item->title ); ?></a></li>
+			<li><a href="<?php echo esc_url( $item->url ?: get_permalink( $item->db_id ) ); ?>"><?php echo esc_html( $item->title ); ?></a></li>
 			<!-- /wp:list-item -->
 		<?php endforeach; ?>
 		</ul>

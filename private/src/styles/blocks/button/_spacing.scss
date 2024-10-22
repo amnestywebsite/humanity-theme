@@ -9,3 +9,8 @@
 .rtl .wp-block-buttons .wp-block-button:last-child {
   margin-right: 8px;
 }
+
+.wp-block-post-content > .wp-block-buttons {
+  margin-top: var(--wp--preset--spacing--single);
+  margin-bottom: var(--wp--preset--spacing--single);
+}

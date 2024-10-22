@@ -1,3 +1,9 @@
+### v2.0.3
+Fixes:
+- Links in site footer not rendering correctly
+- Inability to click Social Icons links
+- Buttons block spacing in post content
+
 ### v2.0.2
 Fixes:
 - Site footer content now pulls from legacy Theme Options by default
