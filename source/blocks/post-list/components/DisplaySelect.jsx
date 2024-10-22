@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import SelectPreview from '../0components/SelectPreview.jsx';
+import SelectPreview from '../components/SelectPreview.jsx';
 import PostSelect from './post-selector/PostSelector.jsx';
 import * as api from './post-selector/api.js';
 import lodash from 'lodash';

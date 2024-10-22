@@ -1,4 +1,4 @@
-import createSelector from '../components/createSelector';
+import createSelector from './createSelector';
 
 import { createHigherOrderComponent } from '@wordpress/compose';
 import { __ } from '@wordpress/i18n';
