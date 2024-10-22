@@ -210,7 +210,7 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 	}
 }
 
-add_action( 'enqueue_block_editor_assets', 'amnesty_gutenberg_assets' );
+// add_action( 'enqueue_block_editor_assets', 'amnesty_gutenberg_assets' );
 
 
 if ( ! function_exists( 'amnesty_localise_javascript' ) ) {
@@ -347,3 +347,10 @@ if ( ! function_exists( 'amnesty_disable_cart_fragments' ) ) {
 }
 
 add_action( 'wp_enqueue_scripts', 'amnesty_disable_cart_fragments', 200 );
+
+function enqueue_scripts_new_way() {
+	// Add the scripts for the collapsable block
+	wp_register_script( 'amnesty-collapsable-edit-script', get_template_directory() . '/build/blocks/collapsable/view.js');
+}
+
+add_action( 'enqueue_block_assets', 'enqueue_scripts_new_way' );

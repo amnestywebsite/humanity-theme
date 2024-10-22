@@ -1,6 +1,6 @@
 import classnames from 'classnames';
-import LinkList from '../../0components/display/LinkList.jsx';
-import GridItem from '../../0components/display/GridItem.jsx';
+import LinkList from './display/LinkList.jsx';
+import GridItem from './display/GridItem.jsx';
 
 import { isString, keyBy } from 'lodash';
 import { useEntityRecords } from '@wordpress/core-data';

@@ -1,6 +1,6 @@
-import LinkList from './display/LinkList.jsx';
-import GridItem from './display/GridItem.jsx';
-import PetitionItem from './display/PetitionItem.jsx';
+import LinkList from '../components/display/LinkList.jsx';
+import GridItem from '../components/display/GridItem.jsx';
+import PetitionItem from '../components/display/PetitionItem.jsx';
 
 import { __ } from '@wordpress/i18n';
 

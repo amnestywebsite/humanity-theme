@@ -25,6 +25,9 @@ const toFormattedString = (value) => {
   const { currentLocale = 'en-GB' } = window.amnestyCoreI18n;
   const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'));
 
+  console.log('formatted', formatted);
+
+
   return formatted;
 };
 
@@ -83,7 +86,7 @@ const edit = ({ attributes, setAttributes }) => {
     }
   };
 
-  const blockClasses = classnames(className, {
+  const blockClasses = classnames(classnames, {
     [`align${attributes.alignment}`]: !!attributes.alignment,
   });
 
@@ -113,7 +116,7 @@ const edit = ({ attributes, setAttributes }) => {
           onChange={(alignment) => setAttributes({ alignment })}
         />
         <ToolbarGroup>
-          <Button label={attributes.buttonLabel} onClick={togglePreview}>
+          <Button label={buttonLabel} onClick={togglePreview}>
             {preview
               ? /* translators: [admin] */ __('Edit', 'amnesty')
               : /* translators: [admin] */ __('Preview', 'amnesty')}

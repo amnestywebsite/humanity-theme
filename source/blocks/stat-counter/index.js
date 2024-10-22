@@ -7,7 +7,7 @@ import deprecated from './deprecated';
 
 import { registerBlockType } from '@wordpress/blocks';
 
-registerBlockType(metadata, {
+registerBlockType(metadata.name, {
   ...metadata,
   deprecated,
   edit,
