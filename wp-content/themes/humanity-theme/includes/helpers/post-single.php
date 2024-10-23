@@ -220,3 +220,47 @@ if ( ! function_exists( 'amnesty_get_attachment_url' ) ) {
 		return $url;
 	}
 }
+
+if ( ! function_exists( 'amnesty_get_attachment_image_src' ) ) {
+	/**
+	 * Retrieve the URL for an image
+	 *
+	 * @package Amnesty
+	 *
+	 * @param int|null $post_id the image ID
+	 * @param string   $size    the image size to retrieve
+	 *
+	 * @return string|false
+	 */
+	function amnesty_get_attachment_image_src( ?int $post_id = 0, string $size = '' ) {
+		if ( ! $post_id ) {
+			return false;
+		}
+
+		if ( ! class_exists( '\MultisiteGlobalMedia\Plugin', false ) ) {
+			return wp_get_attachment_image_src( $post_id, $size )[0] ?? false;
+		}
+
+		if ( ! amnesty_image_has_mgm_prefix( $post_id ) ) {
+			return wp_get_attachment_image_src( $post_id, $size )[0] ?? false;
+		}
+
+		$site_object = new Site();
+		$switcher    = new SingleSwitcher();
+		$attachment  = new Attachment( $site_object, $switcher );
+		$reflected   = new ReflectionClass( $attachment );
+
+		$strip = $reflected->getMethod( 'stripSiteIdPrefixFromAttachmentId' );
+		$strip->setAccessible( true );
+
+		// get the non-prefixed attachment ID
+		$source_post_id = $strip->invoke( $attachment, $site_object->idSitePrefix(), $post_id );
+
+		// get its URL
+		$switcher->switchToBlog( $site_object->id() );
+		$url = wp_get_attachment_image_src( $source_post_id, $size )[0] ?? false;
+		$switcher->restoreBlog();
+
+		return $url;
+	}
+}
