@@ -1,3 +1,7 @@
+### v2.0.4
+Fixes:
+- Regression on featured images attached via global media library when Multisite Global Media is active
+
 ### v2.0.3
 Fixes:
 - Links in site footer not rendering correctly
