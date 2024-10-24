@@ -1,3 +1,8 @@
+### v2.0.5
+Fixes:
+- Typo in content maximisation conditionals
+- Search page taxonomy filters
+
 ### v2.0.4
 Fixes:
 - Regression on featured images attached via global media library when Multisite Global Media is active
