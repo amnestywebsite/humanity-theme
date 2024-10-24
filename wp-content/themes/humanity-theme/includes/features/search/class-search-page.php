@@ -109,6 +109,32 @@ class Search_Page {
 	}
 
 	/**
+	 * Retrieve core/query block args for the searchpage
+	 *
+	 * @return array<string,mixed>
+	 */
+	public function get_block_vars(): array {
+		$post_types = apply_filters( 'amnesty_list_query_post_types', [ 'page', 'post' ] );
+		$post_types = array_values( array_filter( array_unique( (array) $post_types ) ) );
+		$order_vars = $this->get_order_vars();
+
+		return [
+			'inherit'  => false,
+			'perPage'  => absint( get_option( 'posts_per_page' ) ),
+			'pages'    => 0,
+			'offset'   => 0,
+			'postType' => $post_types,
+			'order'    => $order_vars['order'],
+			'orderby'  => $order_vars['orderby'],
+			'author'   => '',
+			'search'   => '', // if there's a term, we'll be on a different template
+			'exclude'  => [], // phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
+			'sticky'   => false,
+			'taxQuery' => $this->build_tax_args_for_query_block(),
+		];
+	}
+
+	/**
 	 * Build the SQL query for the searchpage
 	 *
 	 * @return string
@@ -417,6 +443,28 @@ class Search_Page {
 			'relation' => 'AND',
 			...$tax_query,
 		];
+	}
+
+	/**
+	 * Check whether the searchpage has active taxonomy filters
+	 * Build taxQuery argument list for them, if so
+	 *
+	 * @return array
+	 */
+	public function build_tax_args_for_query_block(): array {
+		$tax_query = [];
+
+		foreach ( get_taxonomies( [ 'public' => true ] ) as $tax_name ) {
+			$tax_qvar = query_var_to_array( "q{$tax_name}" );
+
+			if ( ! $tax_qvar ) {
+				continue;
+			}
+
+			$tax_query[ $tax_name ] = $tax_qvar;
+		}
+
+		return array_filter( $tax_query );
 	}
 
 }
