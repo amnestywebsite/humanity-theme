@@ -15,7 +15,7 @@ const DisplayComponent = () => {
 
     return {
       /* eslint-disable no-underscore-dangle */
-      contentMaximised: meta?._maximise_post_content,
+      contentMaximised: meta?._maximize_post_content,
       sidebarDisabled: meta?._disable_sidebar,
       /* eslint-enable no-underscore-dangle */
       sidebarId,

@@ -47,7 +47,7 @@ if ( ! function_exists( 'render_sidebar_block' ) ) {
 	 */
 	function render_sidebar_block(): string {
 		$content_maximised = amnesty_validate_boolish(
-			get_post_meta( get_the_ID(), '_maximise_post_content', true ),
+			get_post_meta( get_the_ID(), '_maximize_post_content', true ),
 			false,
 		);
 
