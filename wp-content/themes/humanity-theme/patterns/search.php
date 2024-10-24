@@ -9,32 +9,18 @@
 
 $location_slug = get_option( 'amnesty_location_slug' ) ?: 'location';
 $search_object = amnesty_get_searchpage_query_object( false );
-$order_vars    = $search_object->get_order_vars();
 
-$args = [
-	'inherit' => false,
-	'query'   => [
-		'perPage'  => null,
-		'pages'    => 0,
-		'offset'   => 0,
-		'postType' => apply_filters( 'amnesty_list_query_post_types', [ 'page', 'post' ] ),
-		'order'    => $order_vars['order'],
-		'orderby'  => $order_vars['orderby'],
-		'author'   => '',
-		'search'   => '', // if there's a term, we'll be on a different template
-		'exclude'  => [], // phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
-		'sticky'   => false,
-		'taxQuery' => $search_object->build_tax_args(),
-		'parents'  => [],
-	],
+$block_args = [
+	'queryId' => 0,
+	'query'   => $search_object->get_block_vars(),
 ];
 
 // custom queries sometimes break retrieval in the site editor
 if ( is_admin() ) {
-	$args['query'] = [];
+	$block_args['query'] = [];
 }
 
-add_filter( 'query_loop_block_query_vars', fn () => $args['query'] );
+add_filter( 'query_loop_block_query_vars', fn () => $search_object->get_query_vars() );
 
 if ( amnesty_get_query_var( 'qyear' ) ) {
 	add_filter( 'query_loop_block_query_vars', fn ( array $vars ): array => $vars + [ 'year' => absint( amnesty_get_query_var( 'qyear' ) ) ] );
@@ -49,7 +35,7 @@ add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
 
 ?>
 
-<!-- wp:query <?php echo wp_kses_data( wp_json_encode( $args ) ); ?> -->
+<!-- wp:query <?php echo wp_kses_data( wp_json_encode( $block_args ) ); ?> -->
 <div class="wp-block-query">
 	<!-- wp:group {"tagName":"div","className":"section section--tinted search-results"} -->
 	<div class="wp-block-group section section--tinted search-results">
