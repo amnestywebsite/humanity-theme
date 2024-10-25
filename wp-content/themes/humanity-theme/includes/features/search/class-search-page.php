@@ -105,6 +105,10 @@ class Search_Page {
 			's'         => get_query_var( 's' ),
 		];
 
+		if ( defined( 'SP_FILE' ) ) {
+			$vars['SHAREPOINT_SEARCH_FILTERS'] = true;
+		}
+
 		return array_filter( $vars );
 	}
 
