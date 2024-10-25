@@ -2,6 +2,7 @@
 Fixes:
 - Typo in content maximisation conditionals
 - Search page taxonomy filters
+- Missing page title when page has no Hero
 
 ### v2.0.4
 Fixes:
