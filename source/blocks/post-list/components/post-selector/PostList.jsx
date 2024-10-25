@@ -1,4 +1,4 @@
-import { DragDropContext, Droppable } from 'react-beautiful-dnd';
+// import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import { Post } from './Post.jsx';
 
 import { __ } from '@wordpress/i18n';

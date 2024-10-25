@@ -13,7 +13,8 @@
   "render": "file:./render.php",
   "supports": {
     "className": false,
-    "multiple": true
+    "multiple": true,
+    "inserter": false
   },
   "attributes": {
     "preheading": {

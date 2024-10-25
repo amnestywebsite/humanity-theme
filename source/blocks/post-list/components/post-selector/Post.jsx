@@ -1,4 +1,4 @@
-import { Draggable } from 'react-beautiful-dnd';
+// import { Draggable } from 'react-beautiful-dnd';
 /**
  * Post Component.
  *
