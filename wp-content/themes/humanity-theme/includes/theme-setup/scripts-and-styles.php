@@ -350,7 +350,7 @@ add_action( 'wp_enqueue_scripts', 'amnesty_disable_cart_fragments', 200 );
 
 function enqueue_scripts_new_way() {
 	// Add the scripts for the collapsable block
-	wp_register_script( 'amnesty-collapsable-edit-script', get_template_directory() . '/build/blocks/collapsable/view.js');
+	wp_register_script( 'amnesty-collapsable-edit-script', get_template_directory() . '/build/blocks/collapsable/view.js' );
 }
 
 add_action( 'enqueue_block_assets', 'enqueue_scripts_new_way' );
