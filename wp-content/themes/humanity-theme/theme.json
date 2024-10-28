@@ -353,6 +353,15 @@
           "name": "Heading 6",
           "size": "21px",
           "slug": "heading-6"
+        },
+        {
+          "fluid": {
+            "min": "32px",
+            "max": "52px"
+          },
+          "name": "Article Title",
+          "size": "52px",
+          "slug": "article-title"
         }
       ],
       "dropCap": false,
