@@ -1,3 +1,7 @@
+### v2.0.6
+Fixes:
+- Better support internal SP plugin on search page
+
 ### v2.0.5
 Fixes:
 - Typo in content maximisation conditionals
