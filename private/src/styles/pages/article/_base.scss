@@ -64,6 +64,12 @@
 
 .article-title {
   margin-bottom: 0;
+
+  font-size: 32px;
+
+  @include mq(small) {
+    font-size: 52px;
+  }
 }
 
 .article-termWrapper {
