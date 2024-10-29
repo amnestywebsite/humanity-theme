@@ -20,11 +20,9 @@ import categorySlider from './modules/category-slider';
 import sliderBlock from './modules/slider-block';
 import counters from './modules/counter';
 import termList from './modules/term-list';
-import countdownTimer from './modules/countdownTimer';
 import tabbedNav from './modules/tabbed-nav';
 import browserDetector from './modules/browser-detector';
 import iframeButton from './modules/iframe-button';
-import collapsableBlock from './modules/collapsable-block';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
 import downloadBlock from './modules/download-block';
 
@@ -47,11 +45,9 @@ const App = () => {
   sliderBlock();
   counters();
   termList();
-  countdownTimer();
   tabbedNav();
   loadVideos();
   iframeButton();
-  collapsableBlock();
   addFlickityToTabs();
 
   fluidText(document.getElementsByClassName('article-shareTitle'), 0.9);

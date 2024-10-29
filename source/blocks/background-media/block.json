@@ -10,8 +10,8 @@
   "icon": "",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-background-media-editor-style"],
+  "style": ["amnesty-background-media-style"],
   "render": "file:./render.php",
   "attributes": {}
 }

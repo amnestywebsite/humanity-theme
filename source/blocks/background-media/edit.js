@@ -1,12 +1,12 @@
-import { InnerBlocks } from '@wordpress/block-editor';
+const { useBlockProps, InnerBlocks } = wp.blockEditor;
 
 const TEMPLATE = [
   ['amnesty-core/background-media-column', { deletable: false }],
   ['amnesty-core/background-media-column', { deletable: false }],
 ];
 
-const edit = ({ className }) => (
-  <div className={className}>
+const edit = () => (
+  <div {...useBlockProps()}>
     <InnerBlocks template={TEMPLATE} templateLock="all" renderAppender={false} />
   </div>
 );

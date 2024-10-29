@@ -9,7 +9,7 @@
   "icon": "arrow-down-alt2",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "viewScript": ["amnesty-collapsable-edit-script"],
+  "viewScript": "file:./view.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-view.css",
   "render": "file:./render.php",

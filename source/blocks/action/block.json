@@ -8,8 +8,8 @@
   "icon": "megaphone",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-action-editor-style"],
+  "style": ["amnesty-action-style"],
   "render": "file:./render.php",
   "supports": {
     "align": true,

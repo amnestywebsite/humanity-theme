@@ -11,8 +11,6 @@ if ( ! function_exists( 'register_block_type' ) ) {
 require_once __DIR__ . '/_deprecated/header/class-header-block-renderer.php';
 require_once __DIR__ . '/_deprecated/header/register.php';
 
-// require_once __DIR__ . '/action/register.php';
-// require_once __DIR__ . '/action/render.php';
 // require_once __DIR__ . '/background-media/components/register.php';
 // require_once __DIR__ . '/background-media/components/render.php';
 // require_once __DIR__ . '/background-media/register.php';
@@ -84,7 +82,6 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 	 * @return void
 	 */
 	function amnesty_register_php_rendered_blocks() {
-		// register_action_block();
 		// register_background_media_block();
 		// register_background_media_column_block();
 		// register_banner_block();

@@ -2,19 +2,12 @@ import classnames from 'classnames';
 import { getEditorCssV2, getDimensionsV2, getUrlV2, randId } from '../background-media/utils';
 
 import { isObject } from 'lodash';
-import { apiFetch } from '@wordpress/api-fetch';
-import {
-  BlockAlignmentToolbar,
-  BlockControls,
-  BlockVerticalAlignmentToolbar,
-  InnerBlocks,
-  InspectorControls,
-  MediaUpload,
-  MediaUploadCheck,
-} from '@wordpress/block-editor';
 import { Button, FocalPointPicker, PanelBody, RangeControl, SelectControl } from '@wordpress/components';
 import { useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
+
+const { apiFetch } = wp;
+const { BlockAlignmentToolbar, BlockControls, BlockVerticalAlignmentToolbar, InnerBlocks, InspectorControls, MediaUpload, MediaUploadCheck } = wp.blockEditor;
 
 const ALLOWED_BLOCKS = [
   'core/heading',

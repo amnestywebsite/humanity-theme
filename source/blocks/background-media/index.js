@@ -7,9 +7,12 @@ import deprecated from './deprecated';
 
 import { registerBlockType } from '@wordpress/blocks';
 
+const { assign } = lodash;
+const { InnerBlocks } = wp.blockEditor;
+
 registerBlockType(metadata, {
   ...metadata,
   deprecated,
   edit,
-  save: () => null,
+  save: assign(() => <InnerBlocks.Content />, { displayName: 'BackgroundMediaBlockSave' }),
 });
