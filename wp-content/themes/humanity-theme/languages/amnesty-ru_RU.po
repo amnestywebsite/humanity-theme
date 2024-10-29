@@ -2361,16 +2361,6 @@ msgstr ""
 msgid "https://www.amnesty.org"
 msgstr ""
 
-#: patterns/25-25-25-25-links-with-icons.php
-msgctxt "Pattern title"
-msgid "25/25/25/25 Links with Icons"
-msgstr ""
-
-#: patterns/25-25-25-25-links-with-icons.php
-msgctxt "Pattern description"
-msgid "A 25/25/25/25 layout with links and icons."
-msgstr ""
-
 #: patterns/33-33-33-links-with-icons-square.php
 msgctxt "Pattern title"
 msgid "33/33/33 Links with Icons (square border)"
@@ -4705,6 +4695,16 @@ msgstr ""
 #: patterns/25-25-25-25-links-with-icons-square.php
 msgctxt "Pattern description"
 msgid "A 25/25/25/25 layout with links and icons with a square border."
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons.php
+msgctxt "Pattern title"
+msgid "25/25/25/25 Links with Icons"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons.php
+msgctxt "Pattern description"
+msgid "A 25/25/25/25 layout with links and icons."
 msgstr ""
 
 #: patterns/audio-quote.php
