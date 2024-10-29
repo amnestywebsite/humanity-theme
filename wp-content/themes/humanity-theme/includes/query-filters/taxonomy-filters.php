@@ -42,7 +42,7 @@ if ( ! function_exists( 'amnesty_add_taxonomy_filter_support_to_query' ) ) {
 				'taxonomy'         => $taxonomy,
 				'field'            => 'id',
 				'terms'            => $qvar,
-				'include_children' => true,
+				'include_children' => false,
 			];
 		}
 

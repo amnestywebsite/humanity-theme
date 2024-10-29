@@ -433,9 +433,10 @@ class Search_Page {
 			}
 
 			$tax_query[] = [
-				'taxonomy' => $tax_name,
-				'field'    => 'id',
-				'terms'    => $tax_qvar,
+				'taxonomy'         => $tax_name,
+				'field'            => 'id',
+				'terms'            => $tax_qvar,
+				'include_children' => false,
 			];
 		}
 
