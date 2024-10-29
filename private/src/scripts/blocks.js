@@ -15,7 +15,6 @@ import './editor/block-styles';
 // import './editor/plugins/appearance-options/index.jsx';
 // import './editor/plugins/pop-in/index.jsx';
 
-// import './editor/blocks/action/index.jsx';
 // import './editor/blocks/blockquote/index.jsx';
 // import './editor/blocks/core-mods';
 // import './editor/blocks/countdown-timer/index.jsx';
@@ -55,7 +54,6 @@ import './editor/blocks/hero/replaceHeaders';
 // import './editor/blocks-deprecated/background-media/index.jsx';
 // import './editor/blocks-deprecated/banner/index.jsx';
 // import './editor/blocks-deprecated/button/index.jsx';
-// import './editor/blocks-deprecated/call-to-action/index.jsx';
 // import './editor/blocks-deprecated/collapsable/index.jsx';
 // import './editor/blocks-deprecated/columns/index.jsx';
 // import './editor/blocks-deprecated/custom-card/index.jsx';
