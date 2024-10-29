@@ -789,7 +789,11 @@ if ( ! function_exists( 'amnesty_taxonomy_to_option_list' ) ) {
 	 * @return array<int,string>
 	 */
 	function amnesty_taxonomy_to_option_list( WP_Taxonomy $taxonomy ): array {
-		$args = [ 'taxonomy' => $taxonomy->name ];
+		$args = [
+			'taxonomy'     => $taxonomy->name,
+			'hide_reports' => true,
+		];
+
 		$opts = [];
 
 		$terms = get_terms( $args );
