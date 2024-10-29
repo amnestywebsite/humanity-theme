@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Amnesty Core\n"
-"Report-Msgid-Bugs-To: @github:amnestywebsite/humanity-theme/issues\n"
+"Report-Msgid-Bugs-To: @github:amnestywebsite/amnesty-wp-theme/issues\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-09 16:32+0100\n"
-"PO-Revision-Date: 2024-04-17 11:39+0100\n"
+"POT-Creation-Date: 2023-03-06 19:20+0000\n"
+"PO-Revision-Date: 2024-10-15 13:41+0100\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -482,10 +482,6 @@ msgstr "لشهر %s"
 msgctxt "search results title suffix for year published"
 msgid "in the year %s"
 msgstr "في العام %s"
-
-#: includes/block-patterns/pattern-category.php:15
-msgid "Actions"
-msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options.php:18
@@ -2056,7 +2052,7 @@ msgstr "قوائم التذييلات"
 #: footer.php:67
 #: patterns/footer-content.php:123
 msgid "Follow us on:"
-msgstr "اتبعونا على:"
+msgstr "تابعونا على:"
 
 #. translators: [front] ARIA
 #: footer.php:70
@@ -2375,16 +2371,6 @@ msgstr ""
 #. Author URI of the theme
 #: style.css
 msgid "https://www.amnesty.org"
-msgstr ""
-
-#: patterns/25-25-25-25-links-with-icons-square.php
-msgctxt "Pattern title"
-msgid "25/25/25/25 Links with Icons (square border)"
-msgstr ""
-
-#: patterns/25-25-25-25-links-with-icons-square.php
-msgctxt "Pattern description"
-msgid "A 25/25/25/25 layout with links and icons with a square border."
 msgstr ""
 
 #: patterns/25-25-25-25-links-with-icons.php
@@ -2902,15 +2888,15 @@ msgstr "أضافه كتله اجراء"
 msgid "Left"
 msgstr ""
 
+#. translators: [admin] text alignment
 #. translators: [admin]
-#. translators: [admin] text alignment.
-#: assets/scripts/blocks.js:28663
-#: assets/scripts/blocks.js:29192
-#: assets/scripts/blocks.js:32429
-#: assets/scripts/blocks.js:34072
-#: assets/scripts/blocks.js:34544
-msgid "Centre"
-msgstr "مركز"
+#. translators: [admin] text alignment/.
+#: assets/scripts/blocks.js:10525
+#: assets/scripts/blocks.js:31195
+#: assets/scripts/blocks.js:31307
+#: assets/scripts/blocks.js:34540
+msgid "Default"
+msgstr "افتراضي"
 
 #. translators: [admin] text alignment. for RTL languages, localise as 'Left'
 #. translators: [admin]
@@ -2924,30 +2910,59 @@ msgid "Right"
 msgstr "يمين"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12227
-#: assets/scripts/blocks.js:12865
-#: assets/scripts/blocks.js:13404
-#: assets/scripts/blocks.js:28028
-#: assets/scripts/blocks.js:28677
-#: assets/scripts/blocks.js:31845
-#: assets/scripts/blocks.js:32443
-#: assets/scripts/blocks.js:34086
-#: assets/scripts/blocks.js:35291
-msgid "Background Colour"
-msgstr "لون الخلفية"
+#: assets/scripts/blocks.js:10575
+#: assets/scripts/blocks.js:32420
+#: assets/scripts/blocks.js:34063
+#: assets/scripts/blocks.js:34533
+msgid "Alignment"
+msgstr "انحياز"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32446
-msgid "Translucent black"
-msgstr "اسود شفاف"
+#: assets/scripts/blocks.js:10587
+#: assets/scripts/blocks.js:32464
+#: assets/scripts/blocks.js:35507
+msgid "Small"
+msgstr "صغير"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12870
-#: assets/scripts/blocks.js:32448
-#: assets/scripts/blocks.js:35221
-#: assets/scripts/blocks.js:35296
-msgid "None"
-msgstr "لا شيء"
+#: assets/scripts/blocks.js:10589
+#: assets/scripts/blocks.js:35509
+msgid "Medium"
+msgstr "متوسط"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10591
+#: assets/scripts/blocks.js:34113
+#: assets/scripts/blocks.js:35511
+msgid "Large"
+msgstr "كبير"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10596
+#: assets/scripts/blocks.js:28557
+msgid "Text Colour"
+msgstr "لون النص"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10601
+#: assets/scripts/blocks.js:12229
+#: assets/scripts/blocks.js:28561
+#: assets/scripts/blocks.js:32452
+#: assets/scripts/blocks.js:34095
+msgid "Black"
+msgstr "أسود"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10603
+#: assets/scripts/blocks.js:12872
+#: assets/scripts/blocks.js:13239
+#: assets/scripts/blocks.js:28033
+#: assets/scripts/blocks.js:28686
+#: assets/scripts/blocks.js:31859
+#: assets/scripts/blocks.js:32884
+#: assets/scripts/blocks.js:35298
+msgid "Grey"
+msgstr "رمادي"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10605
@@ -2963,266 +2978,39 @@ msgid "White"
 msgstr "أبيض"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10601
-#: assets/scripts/blocks.js:12229
-#: assets/scripts/blocks.js:28561
-#: assets/scripts/blocks.js:32452
-#: assets/scripts/blocks.js:34095
-msgid "Black"
-msgstr "أسود"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32462
-#: assets/scripts/blocks.js:34108
-msgid "Normal"
-msgstr "عادي"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:10587
-#: assets/scripts/blocks.js:32464
-#: assets/scripts/blocks.js:35507
-msgid "Small"
-msgstr "صغير"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:12236
-#: assets/scripts/blocks.js:32471
-#: assets/scripts/blocks.js:34123
-#: assets/scripts/blocks.js:34732
-msgid "Background Type"
-msgstr "نوع الخلفية"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:12238
-#: assets/scripts/blocks.js:32474
-#: assets/scripts/blocks.js:34127
-#: assets/scripts/blocks.js:34736
-msgid "Image"
-msgstr "حدد الصورة البارزة"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:12239
-#: assets/scripts/blocks.js:32476
-#: assets/scripts/blocks.js:34132
-#: assets/scripts/blocks.js:34741
-msgid "Video"
-msgstr "فيديو"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32489
-msgid "Embed URL"
-msgstr "تضمين رابط"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32491
-msgid "Setting this will override the call to action link and will now open a modal with the embed."
-msgstr "سيؤدي اعداد هذا إلى تجاوز الارتباط الخاص باستدعاء الاجراء سيتم الآن فتح مشروط باستخدام التضمين."
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:12255
-#: assets/scripts/blocks.js:32500
-#: assets/scripts/blocks.js:34158
-msgid "Featured Video"
-msgstr "فيديو مميز"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32543
-msgid "Banner Title"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32552
-msgid "Banner Content"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:12304
-#: assets/scripts/blocks.js:32563
-msgid "Call to action"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:12351
-#: assets/scripts/blocks.js:32595
-#: assets/scripts/blocks.js:32599
-msgid "Banner"
-msgstr "بانر"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:10591
-#: assets/scripts/blocks.js:34113
-#: assets/scripts/blocks.js:35511
-msgid "Large"
-msgstr "كبير"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:12149
-#: assets/scripts/blocks.js:34150
-msgid "Background Image"
-msgstr "صورة الخلفية"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:34182
-msgid "(Header Title)"
-msgstr "(عنوان الراس)"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:34192
-msgid "(Header Content)"
-msgstr "(محتوى الرأس)"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:34203
-msgid "(Call to action)"
-msgstr "(اتخاذ إجراء)"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:10482
-msgid "Action"
-msgstr "قسم"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:10484
-msgid "Add an Action block"
-msgstr "أضافه كتله اجراء"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31823
-msgid "Image Settings"
-msgstr "إعدادات الصورة"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31826
-msgid "Focal Point"
-msgstr "ضابط الاتصال"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31834
-msgid "Opacity"
-msgstr "الشفافية "
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31848
-msgid "Colour"
-msgstr "لون"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:10603
-#: assets/scripts/blocks.js:12872
-#: assets/scripts/blocks.js:13239
-#: assets/scripts/blocks.js:28033
-#: assets/scripts/blocks.js:28686
-#: assets/scripts/blocks.js:31859
-#: assets/scripts/blocks.js:32884
-#: assets/scripts/blocks.js:35298
-msgid "Grey"
-msgstr "رمادي"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:29020
-#: assets/scripts/blocks.js:31889
-msgid "Replace Image"
-msgstr "استبدل مسار الصورة"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31891
-msgid "Add Image"
-msgstr "إضافة صورة"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32189
-msgid "Background Media Column"
-msgstr "عمود وسائط الخلفية"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32191
-msgid "Column layout for Background Media block"
-msgstr "تخطيط العمود لمنع وسائط الخلفية"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32280
-msgid "Background Media"
-msgstr "خلفية الوسائط"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32282
-msgid "Two-column layout with background images"
-msgstr "تخطيط عمودين مع صور خلفية"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32286
-msgid "Background"
-msgstr "الخلفية"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32290
-msgid "Text"
-msgstr "نص"
-
-#. translators: [admin] text alignment
-#. translators: [admin]
-#. translators: [admin] text alignment/.
-#: assets/scripts/blocks.js:10525
-#: assets/scripts/blocks.js:31195
-#: assets/scripts/blocks.js:31307
-#: assets/scripts/blocks.js:34540
-msgid "Default"
-msgstr "افتراضي"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:10575
-#: assets/scripts/blocks.js:32420
-#: assets/scripts/blocks.js:34063
-#: assets/scripts/blocks.js:34533
-msgid "Alignment"
-msgstr "انحياز"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:10589
-#: assets/scripts/blocks.js:35509
-msgid "Medium"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:10596
-#: assets/scripts/blocks.js:28557
-msgid "Text Colour"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:10611
 msgid "Capitalise"
-msgstr ""
+msgstr "الاستفاده"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10613
 msgid "Capitalise the content."
-msgstr ""
+msgstr "استفد من المحتوي."
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10620
 msgid "Line"
-msgstr ""
+msgstr "خط"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10622
 msgid "Toggle display of line embellishment."
-msgstr ""
+msgstr "تبديل عرض زخرفه الخط."
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10634
 msgid "(Insert Quote Text)"
-msgstr ""
+msgstr "(ادراج نص الاقتباس)"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10644
 msgid "(Insert Citation)"
-msgstr ""
+msgstr "(ادراج استشهاد)"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10923
 msgid "Blockquote"
-msgstr ""
+msgstr "اقتباس"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10925
@@ -3297,9 +3085,32 @@ msgid "Bottom"
 msgstr "اسفل"
 
 #. translators: [admin]
+#. translators: [admin] text alignment.
+#: assets/scripts/blocks.js:28663
+#: assets/scripts/blocks.js:29192
+#: assets/scripts/blocks.js:32429
+#: assets/scripts/blocks.js:34072
+#: assets/scripts/blocks.js:34544
+msgid "Centre"
+msgstr "مركز"
+
+#. translators: [admin]
 #: assets/scripts/blocks.js:28668
 msgid "Initial"
 msgstr "مبدئي"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12227
+#: assets/scripts/blocks.js:12865
+#: assets/scripts/blocks.js:13404
+#: assets/scripts/blocks.js:28028
+#: assets/scripts/blocks.js:28677
+#: assets/scripts/blocks.js:31845
+#: assets/scripts/blocks.js:32443
+#: assets/scripts/blocks.js:34086
+#: assets/scripts/blocks.js:35291
+msgid "Background Colour"
+msgstr "لون الخلفية"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28953
@@ -3379,6 +3190,94 @@ msgstr "أزاله الفيديو المميز"
 #: assets/scripts/blocks.js:34674
 msgid "Replace Video"
 msgstr "استبدال الفيديو"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32462
+#: assets/scripts/blocks.js:34108
+msgid "Normal"
+msgstr "عادي"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12236
+#: assets/scripts/blocks.js:32471
+#: assets/scripts/blocks.js:34123
+#: assets/scripts/blocks.js:34732
+msgid "Background Type"
+msgstr "نوع الخلفية"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12238
+#: assets/scripts/blocks.js:32474
+#: assets/scripts/blocks.js:34127
+#: assets/scripts/blocks.js:34736
+msgid "Image"
+msgstr "حدد الصورة البارزة"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12239
+#: assets/scripts/blocks.js:32476
+#: assets/scripts/blocks.js:34132
+#: assets/scripts/blocks.js:34741
+msgid "Video"
+msgstr "فيديو"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12149
+#: assets/scripts/blocks.js:34150
+msgid "Background Image"
+msgstr "صورة الخلفية"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12255
+#: assets/scripts/blocks.js:32500
+#: assets/scripts/blocks.js:34158
+msgid "Featured Video"
+msgstr "فيديو مميز"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34182
+msgid "(Header Title)"
+msgstr "(عنوان الراس)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34192
+msgid "(Header Content)"
+msgstr "(محتوى الرأس)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34203
+msgid "(Call to action)"
+msgstr "(اتخاذ إجراء)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32446
+msgid "Translucent black"
+msgstr "اسود شفاف"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12870
+#: assets/scripts/blocks.js:32448
+#: assets/scripts/blocks.js:35221
+#: assets/scripts/blocks.js:35296
+msgid "None"
+msgstr "لا شيء"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32489
+msgid "Embed URL"
+msgstr "تضمين رابط"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32491
+msgid "Setting this will override the call to action link and will now open a modal with the embed."
+msgstr "سيؤدي اعداد هذا إلى تجاوز الارتباط الخاص باستدعاء الاجراء سيتم الآن فتح مشروط باستخدام التضمين."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12351
+#: assets/scripts/blocks.js:32595
+#: assets/scripts/blocks.js:32599
+msgid "Banner"
+msgstr "بانر"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29473
@@ -3925,6 +3824,16 @@ msgid "Alternative"
 msgstr "بديل"
 
 #. translators: [admin]
+#: assets/scripts/blocks.js:10482
+msgid "Action"
+msgstr "قسم"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10484
+msgid "Add an Action block"
+msgstr "أضافه كتله اجراء"
+
+#. translators: [admin]
 #: assets/scripts/blocks.js:13248
 #, fuzzy
 msgid "Select a menu…"
@@ -4103,6 +4012,12 @@ msgstr "زر"
 #: assets/scripts/blocks.js:29018
 msgid "Set Image"
 msgstr "تعيين صورة"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29020
+#: assets/scripts/blocks.js:31889
+msgid "Replace Image"
+msgstr "استبدل مسار الصورة"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:29206
@@ -4403,10 +4318,65 @@ msgid "Stat"
 msgstr ".بسرعة"
 
 #. translators: [admin]
+#: assets/scripts/blocks.js:31823
+msgid "Image Settings"
+msgstr "إعدادات الصورة"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31826
+msgid "Focal Point"
+msgstr "ضابط الاتصال"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31834
+msgid "Opacity"
+msgstr "الشفافية "
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31848
+msgid "Colour"
+msgstr "لون"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31891
+msgid "Add Image"
+msgstr "إضافة صورة"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32189
+msgid "Background Media Column"
+msgstr "عمود وسائط الخلفية"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32191
+msgid "Column layout for Background Media block"
+msgstr "تخطيط العمود لمنع وسائط الخلفية"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32280
+msgid "Background Media"
+msgstr "خلفية الوسائط"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32282
+msgid "Two-column layout with background images"
+msgstr "تخطيط عمودين مع صور خلفية"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32286
+msgid "Background"
+msgstr "الخلفية"
+
+#. translators: [admin]
 #: includes/block-patterns/pattern-category.php:16
 #: assets/scripts/blocks.js:32288
 msgid "Media"
 msgstr "الوسائط"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32290
+msgid "Text"
+msgstr "نص"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28025
@@ -4704,6 +4674,10 @@ msgstr ""
 msgid "Override the site language display name on the site frontend"
 msgstr ""
 
+#: includes/block-patterns/pattern-category.php:15
+msgid "Actions"
+msgstr ""
+
 #: includes/block-patterns/pattern-category.php:17
 msgid "Templates"
 msgstr ""
@@ -4738,6 +4712,16 @@ msgstr ""
 
 #: includes/block-patterns/pattern-category.php:27
 msgid "1/3, 2/3"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons-square.php
+msgctxt "Pattern title"
+msgid "25/25/25/25 Links with Icons (square border)"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons-square.php
+msgctxt "Pattern description"
+msgid "A 25/25/25/25 layout with links and icons with a square border."
 msgstr ""
 
 #: patterns/audio-quote.php
@@ -4811,12 +4795,6 @@ msgid "A quote block with an audio block below it."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:153
-msgctxt "block style"
-msgid "Search"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:168
 msgctxt "block style"
 msgid "Light Background"
@@ -4835,13 +4813,19 @@ msgid "Top and Bottom Border"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11989
-msgid "Hide Video Caption"
+#: assets/scripts/blocks.js:32543
+msgid "Banner Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11991
-msgid "Hide Video Credit"
+#: assets/scripts/blocks.js:32552
+msgid "Banner Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12304
+#: assets/scripts/blocks.js:32563
+msgid "Call to action"
 msgstr ""
 
 #. translators: [admin]
@@ -4884,28 +4868,14 @@ msgstr ""
 msgid "Author Name"
 msgstr ""
 
-#: assets/scripts/blocks.js:27664
-msgid "Select a meta key"
+#. translators: [admin]
+#: assets/scripts/blocks.js:11989
+msgid "Hide Video Caption"
 msgstr ""
 
-#: assets/scripts/blocks.js:27691
-msgid "Choose a meta key"
-msgstr ""
-
-#: assets/scripts/blocks.js:27697
-msgid "Does this meta key have a single value?"
-msgstr ""
-
-#: assets/scripts/blocks.js:31414
-msgid "Archive Filters"
-msgstr ""
-
-#: assets/scripts/blocks.js:31469
-msgid "Query Count"
-msgstr ""
-
-#: assets/scripts/blocks.js:31470
-msgid "Display the query results count"
+#. translators: [admin]
+#: assets/scripts/blocks.js:11991
+msgid "Hide Video Credit"
 msgstr ""
 
 #: includes/full-site-editing/blocks/pop-in/block.json
@@ -5439,6 +5409,36 @@ msgstr ""
 #: patterns/taxonomy-hero.php
 msgctxt "Pattern description"
 msgid "Outputs hero block for taxonomy archive pages"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:153
+msgctxt "block style"
+msgid "Search"
+msgstr ""
+
+#: assets/scripts/blocks.js:27664
+msgid "Select a meta key"
+msgstr ""
+
+#: assets/scripts/blocks.js:27691
+msgid "Choose a meta key"
+msgstr ""
+
+#: assets/scripts/blocks.js:27697
+msgid "Does this meta key have a single value?"
+msgstr ""
+
+#: assets/scripts/blocks.js:31414
+msgid "Archive Filters"
+msgstr ""
+
+#: assets/scripts/blocks.js:31469
+msgid "Query Count"
+msgstr ""
+
+#: assets/scripts/blocks.js:31470
+msgid "Display the query results count"
 msgstr ""
 
 #: includes/full-site-editing/blocks/archive-filters/block.json

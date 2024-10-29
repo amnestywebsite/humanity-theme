@@ -4769,12 +4769,6 @@ msgid "A quote block with an audio block below it."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:153
-msgctxt "block style"
-msgid "Search"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:168
 msgctxt "block style"
 msgid "Light Background"
@@ -4793,13 +4787,19 @@ msgid "Top and Bottom Border"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11989
-msgid "Hide Video Caption"
+#: assets/scripts/blocks.js:32543
+msgid "Banner Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11991
-msgid "Hide Video Credit"
+#: assets/scripts/blocks.js:32552
+msgid "Banner Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12304
+#: assets/scripts/blocks.js:32563
+msgid "Call to action"
 msgstr ""
 
 #. translators: [admin]
@@ -4810,12 +4810,6 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:12295
 msgid "Hero Content"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:12304
-#: assets/scripts/blocks.js:32563
-msgid "Call to action"
 msgstr ""
 
 #. translators: [admin]
@@ -4848,38 +4842,14 @@ msgstr ""
 msgid "Author Name"
 msgstr ""
 
-#: assets/scripts/blocks.js:27664
-msgid "Select a meta key"
-msgstr ""
-
-#: assets/scripts/blocks.js:27691
-msgid "Choose a meta key"
-msgstr ""
-
-#: assets/scripts/blocks.js:27697
-msgid "Does this meta key have a single value?"
-msgstr ""
-
-#: assets/scripts/blocks.js:31414
-msgid "Archive Filters"
-msgstr ""
-
-#: assets/scripts/blocks.js:31469
-msgid "Query Count"
-msgstr ""
-
-#: assets/scripts/blocks.js:31470
-msgid "Display the query results count"
+#. translators: [admin]
+#: assets/scripts/blocks.js:11989
+msgid "Hide Video Caption"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32543
-msgid "Banner Title"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32552
-msgid "Banner Content"
+#: assets/scripts/blocks.js:11991
+msgid "Hide Video Credit"
 msgstr ""
 
 #: includes/full-site-editing/blocks/pop-in/block.json
@@ -5413,6 +5383,36 @@ msgstr ""
 #: patterns/taxonomy-hero.php
 msgctxt "Pattern description"
 msgid "Outputs hero block for taxonomy archive pages"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:153
+msgctxt "block style"
+msgid "Search"
+msgstr ""
+
+#: assets/scripts/blocks.js:27664
+msgid "Select a meta key"
+msgstr ""
+
+#: assets/scripts/blocks.js:27691
+msgid "Choose a meta key"
+msgstr ""
+
+#: assets/scripts/blocks.js:27697
+msgid "Does this meta key have a single value?"
+msgstr ""
+
+#: assets/scripts/blocks.js:31414
+msgid "Archive Filters"
+msgstr ""
+
+#: assets/scripts/blocks.js:31469
+msgid "Query Count"
+msgstr ""
+
+#: assets/scripts/blocks.js:31470
+msgid "Display the query results count"
 msgstr ""
 
 #: includes/full-site-editing/blocks/archive-filters/block.json
