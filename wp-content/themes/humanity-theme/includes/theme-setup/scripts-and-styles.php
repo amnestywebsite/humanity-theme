@@ -349,38 +349,176 @@ if ( ! function_exists( 'amnesty_disable_cart_fragments' ) ) {
 add_action( 'wp_enqueue_scripts', 'amnesty_disable_cart_fragments', 200 );
 
 
-function action_block_enqueue_frontend_assets() {
-	wp_register_style(
-		'amnesty-action-style',
-		get_template_directory_uri() . '/build/blocks/action/style-index.css',
-		[],
-		filemtime( get_template_directory() . '/build/blocks/action/style-index.css' )
-	);
+// Enqueue shared assets for blocks.
+
+if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
+	/**
+	 * Enqueue shared assets for blocks.
+	 *
+	 * @package Amnesty\ThemeSetup
+	 *
+	 * @return void
+	 */
+	function amnesty_block_enqueue_shared_assets() {
+		// Action block
+		wp_register_style(
+			'amnesty-action-style',
+			get_template_directory_uri() . '/build/blocks/action/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/action/style-index.css' )
+		);
+
+		// Background Media block
+		wp_register_style(
+			'amnesty-background-media-style',
+			get_template_directory_uri() . '/build/blocks/background-media/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/background-media/style-index.css' )
+		);
+
+		// Blockquote block
+		wp_register_style(
+			'amnesty-blockquote-style',
+			get_template_directory_uri() . '/build/blocks/blockquote/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/blockquote/style-index.css' )
+		);
+
+		// Call to Action block
+		wp_register_style(
+			'amnesty-call-to-action-style',
+			get_template_directory_uri() . '/build/blocks/call-to-action/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/call-to-action/style-index.css' )
+		);
+
+		// Collapsable block
+		wp_register_style(
+			'amnesty-collapsable-style',
+			get_template_directory_uri() . '/build/blocks/collapsable/style-view.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/collapsable/style-view.css' )
+		);
+
+		// Custom Card block
+		wp_register_style(
+			'amnesty-custom-card-style',
+			get_template_directory_uri() . '/build/blocks/custom-card/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/custom-card/style-index.css' )
+		);
+	}
 }
 
-add_action( 'wp_enqueue_scripts', 'action_block_enqueue_frontend_assets' );
 
+add_action( 'wp_enqueue_scripts', 'amnesty_block_enqueue_shared_assets' );
+add_action( 'enqueue_block_assets', 'amnesty_block_enqueue_shared_assets' );
 
-function action_block_enqueue_editor_assets() {
-	wp_register_style(
-		'amnesty-action-editor-style',
-		get_template_directory_uri() . '/build/blocks/action/index.css',
-		[ 'amnesty-action-style' ],
-		filemtime( get_template_directory() . '/build/blocks/action/index.css' )
-	);
+// Enqueue front end assets for blocks.
+if ( ! function_exists( 'amnesty_block_enqueue_assets' ) ) {
+	/**
+	 * Enqueue front end assets for blocks.
+	 *
+	 * @package Amnesty\ThemeSetup
+	 *
+	 * @return void
+	 */
+	function amnesty_block_enqueue_assets() {
+		// Countdown Timer block
+		wp_register_style(
+			'amnesty-countdown-timer-style',
+			get_template_directory_uri() . '/build/blocks/countdown-timer/style-view.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/countdown-timer/style-view.css' )
+		);
+
+		// Download block
+		wp_register_style(
+			'amnesty-download-style',
+			get_template_directory_uri() . '/build/blocks/download/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/download/style-index.css' )
+		);
+	}
 }
 
-add_action( 'enqueue_block_assets', 'action_block_enqueue_editor_assets' );
+add_action( 'wp_enqueue_scripts', 'amnesty_block_enqueue_assets' );
 
+// Enqueue editor assets for blocks.
 
-// function action_block_enqueue_shared_assets() {
-// 	wp_register_style(
-// 		'amnesty-action-shared-style',
-// 		get_template_directory_uri() . '/build/blocks/shared/index.css',
-// 		[],
-// 		filemtime( get_template_directory() . '/build/blocks/shared/index.css' )
-// 	);
-// }
+if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
+	/**
+	 * Enqueue editor assets for blocks.
+	 *
+	 * @package Amnesty\ThemeSetup
+	 *
+	 * @return void
+	 */
+function amnesty_block_enqueue_editor_assets() {
+		// Action block
+		wp_register_style(
+			'amnesty-action-editor-style',
+			get_template_directory_uri() . '/build/blocks/action/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/action/index.css' )
+		);
 
-// add_action( 'enqueue_block_assets', 'action_block_enqueue_shared_assets' );
-// add_action( 'wp_enqueue_scripts', 'action_block_enqueue_shared_assets' );
+		// Background Media block
+		wp_register_style(
+			'amnesty-background-media-editor-style',
+			get_template_directory_uri() . '/build/blocks/background-media/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/background-media/index.css' )
+		);
+
+		// Blockquote
+		wp_register_style(
+			'amnesty-blockquote-editor-style',
+			get_template_directory_uri() . '/build/blocks/blockquote/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/blockquote/index.css' )
+		);
+
+		// Call to Action
+		wp_register_style(
+			'amnesty-call-to-action-editor-style',
+			get_template_directory_uri() . '/build/blocks/call-to-action/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/call-to-action/index.css' )
+		);
+
+		// Collapsable block
+		wp_register_style(
+			'amnesty-collapsable-editor-style',
+			get_template_directory_uri() . '/build/blocks/collapsable/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/collapsable/index.css' )
+		);
+
+		// Countdown Timer block
+		wp_register_style(
+			'amnesty-countdown-timer-editor-style',
+			get_template_directory_uri() . '/build/blocks/countdown-timer/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/countdown-timer/index.css' )
+		);
+
+		// Custom Card block
+		wp_register_style(
+			'amnesty-custom-card-editor-style',
+			get_template_directory_uri() . '/build/blocks/custom-card/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/custom-card/index.css' )
+		);
+
+		// Download block
+		wp_register_style(
+			'amnesty-download-editor-style',
+			get_template_directory_uri() . '/build/blocks/download/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/download/index.css' )
+		);
+	}
+}
+
+add_action( 'enqueue_block_assets', 'amnesty_block_enqueue_editor_assets' );

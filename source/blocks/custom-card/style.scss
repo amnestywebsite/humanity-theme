@@ -1,7 +1,7 @@
 .customCard {
   position: relative;
   margin: 0;
-  max-width: 350px;
+  width: 350px !important;
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
   background-color: var(--wp--preset--color--grey-lighter);
@@ -17,7 +17,7 @@
 
 .customCard.customCard--wide,
 .customCard.actionBlock--wide {
-  width: 480px;
+  width: 480px !important;
   max-width: 100%;
 }
 

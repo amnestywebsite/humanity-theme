@@ -9,8 +9,8 @@
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
   "viewScript": "file:./view.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-download-editor-style"],
+  "style": ["amnesty-download-style"],
   "render": "file:./render.php",
   "supports": {
     "className": false,

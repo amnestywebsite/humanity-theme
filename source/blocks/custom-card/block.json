@@ -8,12 +8,13 @@
   "icon": "megaphone",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-custom-card-editor-style"],
+  "style": ["amnesty-custom-card-style"],
   "render": "file:./render.php",
   "supports": {
     "className": false,
-    "align": true
+    "align": true,
+    "inserter": false
   },
   "attributes": {
     "style": {
