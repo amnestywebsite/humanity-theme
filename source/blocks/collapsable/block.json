@@ -10,11 +10,12 @@
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
   "viewScript": "file:./view.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-collapsable-editor-style"],
+  "style": ["amnesty-collapsable-style"],
   "render": "file:./render.php",
   "supports": {
-    "className": true
+    "className": true,
+    "inserter": false
   },
   "attributes": {
     "anchor": {

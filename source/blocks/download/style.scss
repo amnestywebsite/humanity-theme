@@ -3,7 +3,7 @@
   flex-direction: column;
   align-content: flex-start;
   align-items: stretch;
-  gap: spacing(half);
+  gap: var(--wp--preset--spacing--half);
 
   @media all and (min-width: 540px) {
     flex-direction: row;
