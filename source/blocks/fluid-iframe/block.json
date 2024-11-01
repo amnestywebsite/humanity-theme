@@ -10,8 +10,8 @@
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
   "viewScript": "file:./view.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-fluid-iframe-editor-style"],
+  "style": ["amnesty-fluid-iframe-style"],
   "render": "file:./render.php",
   "supports": {
     "align": true
