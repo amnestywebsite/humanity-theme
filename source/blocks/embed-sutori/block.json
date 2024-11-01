@@ -10,7 +10,7 @@
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "style": ["amnesty-embed-sutori-style"],
   "render": "file:./render.php",
   "attributes": {
     "source": {
