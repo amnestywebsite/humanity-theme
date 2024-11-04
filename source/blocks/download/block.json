@@ -14,8 +14,20 @@
   "render": "file:./render.php",
   "supports": {
     "className": false,
-    "multiple": true
+    "multiple": true,
+    "align": ["left", "center", "right"]
   },
+  "styles": [
+    {
+      "name": "dark",
+      "label": "Dark",
+      "isDefault": true
+    },
+    {
+      "name": "light",
+      "label": "Light"
+    }
+  ],
   "attributes": {
     "files": {
       "type": "array",
@@ -24,10 +36,6 @@
     "buttonText": {
       "type": "string",
       "default": "Download"
-    },
-    "style": {
-      "type": "string",
-      "default": "dark"
     },
     "alignment": {
       "type": "string",

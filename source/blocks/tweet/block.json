@@ -9,11 +9,12 @@
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
   "viewScript": "file:./view.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-tweet-action-editor-style"],
+  "style": ["amnesty-tweet-action-style"],
   "render": "file:./render.php",
   "supports": {
-    "className": true
+    "className": true,
+    "align": ["left", "center", "right"]
   },
   "attributes": {
     "title": {

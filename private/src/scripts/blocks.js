@@ -18,7 +18,6 @@ import './editor/block-styles';
 // import './editor/blocks/blockquote/index.jsx';
 // import './editor/blocks/core-mods';
 // import './editor/blocks/countdown-timer/index.jsx';
-// import './editor/blocks/download/index.jsx';
 // import './editor/blocks/embed-flourish/index.jsx';
 // import './editor/blocks/embed-infogram/index.jsx';
 // import './editor/blocks/embed-sutori/index.jsx';
@@ -37,10 +36,7 @@ import './editor/blocks/hero/replaceHeaders';
 // import './editor/blocks/regions/index.jsx';
 // import './editor/blocks/related-content/index.jsx';
 // import './editor/blocks/section/index.jsx';
-// import './editor/blocks/slider/index.jsx';
-// import './editor/blocks/stat-counter/index.jsx';
 // import './editor/blocks/term-list/index.jsx';
-// import './editor/blocks/tweet/index.jsx';
 
 // import './editor/fse-blocks/archive-filters/index.jsx';
 // import './editor/fse-blocks/archive-header/index.jsx';

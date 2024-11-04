@@ -13,19 +13,21 @@
   max-width: 350px;
 }
 
-.tweetBlock.align-center {
+.wp-block-amnesty-core-tweet-block.aligncenter {
   display: flex;
   justify-content: center;
 }
 
-.tweetBlock.align-left {
+.wp-block-amnesty-core-tweet-block.alignleft {
   display: flex;
   justify-content: left;
+  float: unset !important;
 }
 
-.tweetBlock.align-right {
+.wp-block-amnesty-core-tweet-block.alignright {
   display: flex;
   justify-content: flex-end;
+  float: unset !important;
 }
 
 .tweetAction-header {
@@ -147,4 +149,8 @@
 
 .tweetAction .embedLink-placeholder {
   padding: 10px;
+}
+
+.tweetAction .tweetAction-content iframe {
+  width: 100% !important;
 }

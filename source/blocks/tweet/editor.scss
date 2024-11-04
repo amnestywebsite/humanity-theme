@@ -1,4 +1,4 @@
-.tweetAction .editor-plain-text {
+.wp-block-amnesty-core-tweet-block .editor-plain-text {
   border-radius: 0 !important;
 }
 
@@ -32,14 +32,14 @@
   min-width: 400px;
 }
 
-.block-editor-block-list__layout .tweetBlock .align-left {
+.block-editor-block-list__layout .tweetBlock.alignleft {
   justify-content: flex-start;
 }
 
-.block-editor-block-list__layout .tweetBlock .align-center {
+.block-editor-block-list__layout .tweetBlock.aligncenter {
   justify-content: center;
 }
 
-.block-editor-block-list__layout .tweetBlock .align-right {
+.block-editor-block-list__layout .tweetBlock.alignright {
   justify-content: flex-end;
 }

@@ -1,18 +1,21 @@
 import classnames from 'classnames';
 
 import { every, pick } from 'lodash';
-import {
-  BlockAlignmentToolbar,
-  BlockControls,
-  InspectorControls,
-  MediaPlaceholder,
-  MediaUploadCheck,
-  RichText,
-} from '@wordpress/block-editor';
+// import {
+//   BlockAlignmentToolbar,
+//   BlockControls,
+//   InspectorControls,
+//   MediaPlaceholder,
+//   MediaUploadCheck,
+//   RichText,
+//   useBlockProps,
+// } from '@wordpress/block-editor';
 import { Button, PanelBody, SelectControl } from '@wordpress/components';
 import { dispatch } from '@wordpress/data';
 import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
+
+const { MediaPlaceholder, MediaUploadCheck, RichText, useBlockProps } = wp.blockEditor;
 
 const MESSAGES = {
   // translators: [admin]
@@ -105,61 +108,26 @@ const edit = ({ attributes, setAttributes }) => {
     </div>
   );
 
-  const controls = () => (
-    <InspectorControls>
-      <PanelBody>
-        <SelectControl
-          // translators: [admin]
-          label={__('Button Style', 'amnesty')}
-          options={[
-            {
-              // translators: [admin]
-              label: __('Dark', 'amnesty'),
-              value: 'dark',
-            },
-            {
-              // translators: [admin]
-              label: __('Light', 'amnesty'),
-              value: 'white',
-            },
-          ]}
-          value={attributes.style}
-          onChange={(style) => setAttributes({ style })}
-        />
-      </PanelBody>
-    </InspectorControls>
-  );
-
   if (!attributes.files.length) {
     return (
       <>
-        {controls()}
         <div className="download-block">{uploader()}</div>
       </>
     );
   }
 
-  const blockClasses = classnames('download-block', {
-    [attributes.alignment]: attributes.alignment !== 'none',
-    'has-multiple': attributes.files.length > 1,
-  });
+  // const blockClasses = classnames('download-block', {
+  //   [attributes.alignment]: attributes.alignment !== 'none',
+  //   'has-multiple': attributes.files.length > 1,
+  // });
 
-  const btnClasses = classnames('btn', 'btn--download', {
-    [`btn--${attributes.style}`]: !!attributes.style,
+  const blockProps = useBlockProps({
+    className: attributes.files.length > 1 ? 'has-multiple' : '',
   });
 
   return (
     <>
-      {controls()}
-
-      <BlockControls>
-        <BlockAlignmentToolbar
-          value={attributes.alignment}
-          onChange={(alignment) => setAttributes({ alignment })}
-        />
-      </BlockControls>
-
-      <div className={blockClasses}>
+      <div {...blockProps}>
         {attributes.files.length > 1 && (
           <select>
             <option key="label">
@@ -170,7 +138,7 @@ const edit = ({ attributes, setAttributes }) => {
             ))}
           </select>
         )}
-        <span className={btnClasses}>
+        <span>
           <RichText
             format="string"
             tagName="span"
