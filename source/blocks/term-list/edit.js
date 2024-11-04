@@ -1,10 +1,11 @@
 import { filter, has, head, map } from 'lodash';
-import { apiFetch } from '@wordpress/api-fetch';
-import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } from '@wordpress/block-editor';
 import { PanelBody, SelectControl } from '@wordpress/components';
 import { useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 import { addQueryArgs } from '@wordpress/url';
+
+const { apiFetch } = wp;
+const { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } = wp.blockEditor;
 
 const groupTerms = (terms) => {
   const grouped = {};

@@ -210,7 +210,7 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 	}
 }
 
-// add_action( 'enqueue_block_editor_assets', 'amnesty_gutenberg_assets' );
+add_action( 'enqueue_block_editor_assets', 'amnesty_gutenberg_assets' );
 
 
 if ( ! function_exists( 'amnesty_localise_javascript' ) ) {
@@ -415,6 +415,22 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			[],
 			filemtime( get_template_directory() . '/build/blocks/fluid-iframe/style-index.css' )
 		);
+
+		// Stat Counter block
+		wp_register_style(
+			'amnesty-stat-counter-style',
+			get_template_directory_uri() . '/build/blocks/stat-counter/style-view.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/stat-counter/style-view.css' )
+		);
+
+		// Tweet Action block
+		wp_register_style(
+			'amnesty-tweet-action-style',
+			get_template_directory_uri() . '/build/blocks/tweet/style-view.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/tweet/style-view.css' )
+		);
 	}
 }
 
@@ -542,7 +558,34 @@ function amnesty_block_enqueue_editor_assets() {
 			[],
 			filemtime( get_template_directory() . '/build/blocks/fluid-iframe/index.css' )
 		);
+
+		// Stat Counter block
+		wp_register_style(
+			'amnesty-stat-counter-editor-style',
+			get_template_directory_uri() . '/build/blocks/stat-counter/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/stat-counter/index.css' )
+		);
+
+		// Tweet Action block
+		wp_register_style(
+			'amnesty-tweet-action-editor-style',
+			get_template_directory_uri() . '/build/blocks/tweet/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/tweet/index.css' )
+		);
 	}
 }
 
 add_action( 'enqueue_block_assets', 'amnesty_block_enqueue_editor_assets' );
+
+
+// function amnesty_enqueue_editor_scripts() {
+// 	wp_enqueue_script(
+// 		'amnesty-editor',
+// 		get_template_directory_uri() . '/build/editor.js',
+// 		[ 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-components', 'wp-data', 'wp-compose', 'wp-api-fetch' ]
+// 	);
+// }
+
+// add_action( 'enqueue_block_editor_assets', 'amnesty_enqueue_editor_scripts' );

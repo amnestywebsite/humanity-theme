@@ -1,10 +1,12 @@
 import classnames from 'classnames';
 
 import { isInteger } from 'lodash';
-import { BlockAlignmentToolbar, BlockControls, InspectorControls } from '@wordpress/block-editor';
 import { Button, RangeControl, TextControl, ToolbarGroup, PanelBody } from '@wordpress/components';
 import { useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
+import { use } from '@wordpress/data';
+
+const { BlockAlignmentToolbar, BlockControls, InspectorControls, useBlockProps } = wp.blockEditor;
 
 const toRawNumber = (value = '0') => {
   if (isInteger(value)) {
@@ -25,13 +27,12 @@ const toFormattedString = (value) => {
   const { currentLocale = 'en-GB' } = window.amnestyCoreI18n;
   const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'));
 
-  console.log('formatted', formatted);
-
-
   return formatted;
 };
 
 const edit = ({ attributes, setAttributes }) => {
+  const blockProps = useBlockProps();
+
   const [preview, setPreviewing] = useState(false);
   const [current, setCurrent] = useState(0);
   const [progress, setProgress] = useState(0);
@@ -86,10 +87,6 @@ const edit = ({ attributes, setAttributes }) => {
     }
   };
 
-  const blockClasses = classnames(classnames, {
-    [`align${attributes.alignment}`]: !!attributes.alignment,
-  });
-
   // translators: [admin]
   const buttonLabel = preview ? __('Edit Counter', 'amnesty') : __('Preview Counter', 'amnesty');
 
@@ -111,10 +108,6 @@ const edit = ({ attributes, setAttributes }) => {
         </PanelBody>
       </InspectorControls>
       <BlockControls>
-        <BlockAlignmentToolbar
-          value={attributes.alignment}
-          onChange={(alignment) => setAttributes({ alignment })}
-        />
         <ToolbarGroup>
           <Button label={buttonLabel} onClick={togglePreview}>
             {preview
@@ -123,7 +116,7 @@ const edit = ({ attributes, setAttributes }) => {
           </Button>
         </ToolbarGroup>
       </BlockControls>
-      <div className={blockClasses}>
+      <div {...blockProps}>
         {!preview && (
           <TextControl
             // translators: [admin]
@@ -135,7 +128,7 @@ const edit = ({ attributes, setAttributes }) => {
         )}
         {preview && (
           <div className="preview" style={{ opacity: progress }}>
-            {toFormattedString(current)}
+            {toFormattedString(attributes.value)}
           </div>
         )}
       </div>

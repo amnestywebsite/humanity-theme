@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 
-import { InspectorControls, PlainText, BlockAlignmentToolbar, BlockControls } from '@wordpress/block-editor';
+import { InspectorControls, PlainText, BlockAlignmentToolbar, BlockControls, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, SelectControl, ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
@@ -31,10 +31,12 @@ const getContent = (content) => {
   return content;
 };
 
-const edit = ({ attributes, className, setAttributes }) => {
-  const blockClasses = classnames('tweetAction', className, {
-    'tweetAction--narrow': attributes.size === 'narrow',
-  });
+const edit = ({ attributes, setAttributes }) => {
+  const blockProps = useBlockProps(
+    {
+      className: 'tweetBlock',
+    }
+  );
 
   const buttonClasses = classnames(['btn', 'btn--fill', 'btn--large']);
 
@@ -64,14 +66,8 @@ const edit = ({ attributes, className, setAttributes }) => {
           />
         </PanelBody>
       </InspectorControls>
-      <BlockControls>
-        <BlockAlignmentToolbar
-          value={attributes.alignment}
-          onChange={(alignment) => setAttributes({ alignment })}
-        />
-      </BlockControls>
-      <div className={`tweetBlock align-${attributes.alignment}`}>
-        <div className={blockClasses}>
+      <div {...blockProps}>
+        <div className='tweetAction'>
           <div className="tweetAction-header">
             <span className="dashicons dashicons-twitter" aria-label="Twitter Logo"></span>
             <PlainText

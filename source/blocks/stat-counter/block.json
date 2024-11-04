@@ -10,9 +10,12 @@
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
   "viewScript": "file:./view.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-stat-counter-editor-style"],
+  "style": ["amnesty-stat-counter-style"],
   "render": "file:./render.php",
+  "supports": {
+    "align": ["left", "center", "right"]
+  },
   "attributes": {
     "alignment": {
       "type": "string",

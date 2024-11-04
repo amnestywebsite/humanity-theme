@@ -25,16 +25,16 @@
   border-color: var(--wp--preset--color--white);
 }
 
-.download-block {
+.wp-block-amnesty-core-block-download {
   padding: 2px;
   border: 1px dashed;
 }
 
-.download-block > div:first-of-type {
+.wp-block-amnesty-core-block-download > div:first-of-type {
   max-height: none !important;
 }
 
-.wp-core-ui .download-block select {
+.wp-core-ui .wp-block-amnesty-core-block-download select {
   background: none;
 }
 
@@ -42,26 +42,26 @@
   outline: none;
 }
 
-.download-block.center {
+.wp-block-amnesty-core-block-download.aligncenter {
   display: flex;
   justify-content: center;
 }
 
-.download-block.left {
+.wp-block-amnesty-core-block-download.alignleft {
   display: flex;
   justify-content: flex-start;
 }
 
-.download-block.right {
+.wp-block-amnesty-core-block-download.alignright {
   display: flex;
   justify-content: flex-end;
 }
 
-.download-block.has-multiple {
+.wp-block-amnesty-core-block-download.has-multiple {
   align-items: stretch;
 }
 
-.download-block.has-multiple select {
+.wp-block-amnesty-core-block-download.has-multiple select {
   appearance: revert;
   margin-right: 12px;
 

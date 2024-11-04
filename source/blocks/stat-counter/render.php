@@ -2,7 +2,6 @@
 
 $wrapper_attributes = get_block_wrapper_attributes(
 	[
-		'class'         => 'align' . $attributes['alignment'],
 		'data-duration' => $attributes['duration'],
 		'data-value'    => $attributes['value'],
 	]

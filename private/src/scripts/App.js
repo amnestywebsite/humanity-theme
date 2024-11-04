@@ -15,16 +15,15 @@ import searchFilters from './modules/search-filters';
 import filterPosts from './modules/filter-posts';
 import loadVideos from './modules/video-loaded';
 import fluidIframe from './modules/fluid-iframe';
-import tweetAction from './modules/tweet-action';
 import categorySlider from './modules/category-slider';
-import sliderBlock from './modules/slider-block';
+// import sliderBlock from './modules/slider-block';
 import counters from './modules/counter';
 import termList from './modules/term-list';
 import tabbedNav from './modules/tabbed-nav';
 import browserDetector from './modules/browser-detector';
 import iframeButton from './modules/iframe-button';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
-import downloadBlock from './modules/download-block';
+// import downloadBlock from './modules/download-block';
 
 const App = () => {
   browserDetector();
@@ -34,15 +33,14 @@ const App = () => {
   mobileMenu();
   Overlays();
   subcatDrops();
-  downloadBlock();
+  // downloadBlock();
   checkboxGroup();
   latestFilters();
   searchFilters();
   filterPosts();
   fluidIframe();
-  tweetAction();
   categorySlider();
-  sliderBlock();
+  // sliderBlock();
   counters();
   termList();
   tabbedNav();
