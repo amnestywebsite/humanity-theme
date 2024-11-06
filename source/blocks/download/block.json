@@ -13,7 +13,7 @@
   "style": ["amnesty-download-style"],
   "render": "file:./render.php",
   "supports": {
-    "className": false,
+    "className": true,
     "multiple": true,
     "align": ["left", "center", "right"]
   },
@@ -25,7 +25,8 @@
     },
     {
       "name": "light",
-      "label": "Light"
+      "label": "Light",
+      "isDefault": false
     }
   ],
   "attributes": {

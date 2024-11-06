@@ -10,7 +10,7 @@
 .postlist-categories {
   display: flex;
   flex: 1 1 100%;
-  padding: 20px !important;
+  padding: var(--wp--preset--spacing--single) !important;
   margin-bottom: 0;
   margin-left: 0;
   max-width: 100%;

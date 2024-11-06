@@ -44,7 +44,7 @@ const v1 =     {
     return {
       files: [fileId],
       buttonText: downloadButtonText,
-      style: 'dark',
+      // style: 'dark',
     };
   },
   save: () => null,

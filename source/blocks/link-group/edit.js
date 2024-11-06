@@ -1,10 +1,12 @@
 import classnames from 'classnames';
 
 import { isObject } from 'lodash';
-import { BlockAlignmentToolbar, BlockControls, RichText, URLInputButton } from '@wordpress/block-editor';
+// import { BlockAlignmentToolbar, BlockControls, RichText, URLInputButton } from '@wordpress/block-editor';
 import { Button, CheckboxControl } from '@wordpress/components';
 import { useEffect, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
+
+const { BlockAlignmentToolbar, BlockControls, RichText, URLInputButton, useBlockProps } = wp.blockEditor;
 
 /**
  * Generate random string key for iterators
@@ -27,6 +29,7 @@ const newItem = (data = {}) => ({
 
 const edit = ({ attributes, setAttributes }) => {
   const [links, setLinks] = useState({});
+  const { items } = attributes;
 
   useEffect(() => {
     Object.keys(links).forEach((key) => {
@@ -93,19 +96,11 @@ const edit = ({ attributes, setAttributes }) => {
     setLinks({ ...links, [`link-${index}`]: value });
   };
 
-  const classes = classnames(classnames, {
-    [`align${attributes.align}`]: attributes.align,
-  });
+  const blockProps = useBlockProps();
 
   return (
     <>
-      <BlockControls>
-        <BlockAlignmentToolbar
-          value={attributes.align}
-          onChange={(align) => setAttributes({ align })}
-        />
-      </BlockControls>
-      <aside className={classes}>
+      <aside {...blockProps}>
         <RichText
           tagName="h2"
           format="string"

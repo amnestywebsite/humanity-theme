@@ -2,21 +2,15 @@
 
 $wrapper_attributes = get_block_wrapper_attributes();
 
-echo '<pre>';
-var_dump($wrapper_attributes);
-echo '</pre>';
-
-if ( ! count( $attributes['files'] ) ) {
-	require './render-deprecated.php';
-	return;
-}
+// if ( ! count( $attributes['files'] ) ) {
+// 	require './render-deprecated.php';
+// 	return;
+// }
 
 $attributes = apply_filters( 'amnesty_download_block_attributes', $attributes );
 
 $files  = $attributes['files'];
 $text   = $attributes['buttonText'];
-$colour = sprintf( 'btn--%s', $attributes['style'] );
-$align  = sprintf( 'align%s', $attributes['alignment'] );
 
 if ( count( $files ) < 2 ) :
 	if ( empty( $files[0]['id'] ) ) {
@@ -36,7 +30,7 @@ if ( count( $files ) < 2 ) :
 
 	<div <?php echo wp_kses_data($wrapper_attributes) ?>>
 		<a
-			class="<?php echo esc_attr( $colour ); ?>"
+			class="btn btn--download"
 			href="<?php echo esc_url( $url ); ?>"
 			download="<?php echo esc_attr( $name ); ?>"
 			target="_blank"
@@ -74,7 +68,7 @@ foreach ( $files as $file ) {
 
 	?>
 	<a
-		class="btn btn--download <?php echo esc_attr( $colour ); ?>"
+		class="btn btn--download"
 		href="<?php echo esc_url( $first_url ); ?>"
 		download="<?php echo esc_attr( $first_name ); ?>"
 		role="button"

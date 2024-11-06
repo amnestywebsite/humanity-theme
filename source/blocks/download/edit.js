@@ -1,16 +1,5 @@
-import classnames from 'classnames';
-
 import { every, pick } from 'lodash';
-// import {
-//   BlockAlignmentToolbar,
-//   BlockControls,
-//   InspectorControls,
-//   MediaPlaceholder,
-//   MediaUploadCheck,
-//   RichText,
-//   useBlockProps,
-// } from '@wordpress/block-editor';
-import { Button, PanelBody, SelectControl } from '@wordpress/components';
+import { Button } from '@wordpress/components';
 import { dispatch } from '@wordpress/data';
 import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
@@ -86,8 +75,15 @@ const edit = ({ attributes, setAttributes }) => {
     }
   };
 
-  const uploader = () => (
-    <div style={{ maxHeight: '135px', width: '100%' }}>
+  const blockProps = useBlockProps({
+    className: attributes.files.length > 1 ? 'has-multiple' : '',
+  });
+
+
+  return (
+    <>
+    {!attributes.files.length && (
+      <div {...blockProps} style={{ maxHeight: '135px', width: '100%' }}>
       <MediaUploadCheck>
         <MediaPlaceholder
           icon="media-default"
@@ -106,27 +102,8 @@ const edit = ({ attributes, setAttributes }) => {
         />
       </MediaUploadCheck>
     </div>
-  );
-
-  if (!attributes.files.length) {
-    return (
-      <>
-        <div className="download-block">{uploader()}</div>
-      </>
-    );
-  }
-
-  // const blockClasses = classnames('download-block', {
-  //   [attributes.alignment]: attributes.alignment !== 'none',
-  //   'has-multiple': attributes.files.length > 1,
-  // });
-
-  const blockProps = useBlockProps({
-    className: attributes.files.length > 1 ? 'has-multiple' : '',
-  });
-
-  return (
-    <>
+    )}
+    {attributes.files.length > 0 && (
       <div {...blockProps}>
         {attributes.files.length > 1 && (
           <select>
@@ -138,7 +115,7 @@ const edit = ({ attributes, setAttributes }) => {
             ))}
           </select>
         )}
-        <span>
+        <span className='btn btn--download'>
           <RichText
             format="string"
             tagName="span"
@@ -154,6 +131,7 @@ const edit = ({ attributes, setAttributes }) => {
           {/* translators: [admin] */ __('Clear File(s)', 'amnesty')}
         </Button>
       </div>
+      )}
     </>
   );
 };
