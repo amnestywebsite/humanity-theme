@@ -70,3 +70,27 @@
     margin-left: 12px;
   }
 }
+
+.wp-block-amnesty-core-block-download.is-style-light .btn--download {
+  background-color: var(--wp--preset--color--white);
+  border: 1px solid var(--wp--preset--color--black);
+}
+
+.wp-block-amnesty-core-block-download.is-style-dark .btn--download {
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
+  border: 1px solid var(--wp--preset--color--black);
+}
+
+.wp-block-amnesty-core-block-download.is-style-light .btn--download:hover,
+.wp-block-amnesty-core-block-download.is-style-light .btn--download:active,
+.wp-block-amnesty-core-block-download.is-style-light .btn--download:focus {
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
+}
+.wp-block-amnesty-core-block-download.is-style-dark .btn--download:hover,
+.wp-block-amnesty-core-block-download.is-style-dark .btn--download:active,
+.wp-block-amnesty-core-block-download.is-style-dark .btn--download:focus {
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
+}

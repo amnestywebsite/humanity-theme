@@ -416,6 +416,22 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			filemtime( get_template_directory() . '/build/blocks/fluid-iframe/style-index.css' )
 		);
 
+		// Link Group block
+		wp_register_style(
+			'amnesty-link-group-style',
+			get_template_directory_uri() . '/build/blocks/link-group/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/link-group/style-index.css' )
+		);
+
+		// Menu block
+		wp_register_style(
+			'amnesty-menu-style',
+			get_template_directory_uri() . '/build/blocks/menu/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/menu/style-index.css' )
+		);
+
 		// Stat Counter block
 		wp_register_style(
 			'amnesty-stat-counter-style',
@@ -557,6 +573,22 @@ function amnesty_block_enqueue_editor_assets() {
 			get_template_directory_uri() . '/build/blocks/fluid-iframe/index.css',
 			[],
 			filemtime( get_template_directory() . '/build/blocks/fluid-iframe/index.css' )
+		);
+
+		// Link Group block
+		wp_register_style(
+			'amnesty-link-group-editor-style',
+			get_template_directory_uri() . '/build/blocks/link-group/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/link-group/index.css' )
+		);
+
+		// Menu block
+		wp_register_style(
+			'amnesty-menu-editor-style',
+			get_template_directory_uri() . '/build/blocks/menu/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/menu/index.css' )
 		);
 
 		// Stat Counter block

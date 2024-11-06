@@ -27,8 +27,6 @@ import './editor/blocks/hero/replaceHeaders';
 // import './editor/blocks/iframe-button/index.jsx';
 // import './editor/blocks/iframe/index.jsx';
 // import './editor/blocks/key-facts/index.jsx';
-// import './editor/blocks/link-group/index.jsx';
-// import './editor/blocks/menu/index.jsx';
 // import './editor/blocks/petition-list/index.jsx';
 // import './editor/blocks/post-list/index.jsx';
 // import './editor/blocks/post-meta/index.jsx';
@@ -36,7 +34,6 @@ import './editor/blocks/hero/replaceHeaders';
 // import './editor/blocks/regions/index.jsx';
 // import './editor/blocks/related-content/index.jsx';
 // import './editor/blocks/section/index.jsx';
-// import './editor/blocks/term-list/index.jsx';
 
 // import './editor/fse-blocks/archive-filters/index.jsx';
 // import './editor/fse-blocks/archive-header/index.jsx';

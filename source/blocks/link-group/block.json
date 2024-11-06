@@ -9,14 +9,14 @@
   "icon": "list-view",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-link-group-editor-style"],
+  "style": ["amnesty-link-group-style"],
   "render": "file:./render.php",
+  "supports": {
+    "className": true,
+    "align": ["left", "center", "right"]
+  },
   "attributes": {
-    "align": {
-      "type": "string",
-      "default": ""
-    },
     "title": {
       "type": "string",
       "default": ""

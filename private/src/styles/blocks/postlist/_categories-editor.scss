@@ -7,7 +7,7 @@
   align-items: flex-start;
   box-sizing: border-box !important;
   margin: 0 !important;
-  padding: 0 20px !important;
+  padding: var(--wp--preset--spacing--single) !important;
   list-style: none !important;
 
   a {

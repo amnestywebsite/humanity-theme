@@ -24,8 +24,6 @@ require_once __DIR__ . '/_deprecated/header/register.php';
 // require_once __DIR__ . '/collapsable/render.php';
 // require_once __DIR__ . '/countdown-timer/register.php';
 // require_once __DIR__ . '/countdown-timer/render.php';
-// require_once __DIR__ . '/custom-card/register.php';
-// require_once __DIR__ . '/custom-card/render.php';
 // require_once __DIR__ . '/embed-flourish/register.php';
 // require_once __DIR__ . '/embed-flourish/render.php';
 // require_once __DIR__ . '/embed-infogram/register.php';
@@ -43,12 +41,8 @@ require_once __DIR__ . '/hero/render.php';
 // require_once __DIR__ . '/iframe/render.php';
 // require_once __DIR__ . '/image/register.php';
 // require_once __DIR__ . '/image/render.php';
-// require_once __DIR__ . '/link-group/register.php';
-// require_once __DIR__ . '/link-group/render.php';
 // require_once __DIR__ . '/links-with-icons/register.php';
 // require_once __DIR__ . '/links-with-icons/render.php';
-// require_once __DIR__ . '/menu/register.php';
-// require_once __DIR__ . '/menu/render.php';
 // require_once __DIR__ . '/petition-list/register.php';
 // require_once __DIR__ . '/petition-list/render.php';
 // require_once __DIR__ . '/post-list/register.php';
@@ -64,8 +58,6 @@ require_once __DIR__ . '/hero/render.php';
 // require_once __DIR__ . '/section/register.php';
 // require_once __DIR__ . '/slider/register.php';
 // require_once __DIR__ . '/slider/render.php';
-// require_once __DIR__ . '/term-list/register.php';
-// require_once __DIR__ . '/term-list/render.php';
 
 if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 	/**
@@ -83,7 +75,6 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 		// register_collapsable_block();
 		// register_countdown_block();
 		// register_cta_block();
-		// register_custom_card_block();
 		// register_flourish_embed_block();
 		// register_header_block();
 		register_hero_block();
@@ -91,10 +82,8 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 		// register_iframe_button_block();
 		// register_image_block();
 		// register_infogram_embed_block();
-		// register_link_group_block();
 		// register_links_with_icons_block();
 		// register_list_block();
-		// register_menu_block();
 		// register_petition_list_block();
 		// register_raw_code_block();
 		// register_regions_block();
@@ -102,7 +91,6 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 		// register_section_block();
 		// register_slider_block();
 		// register_sutori_embed_block();
-		// register_term_list_block();
 		// register_tickcounter_embed_block();
 	}
 }

@@ -23,7 +23,6 @@ import tabbedNav from './modules/tabbed-nav';
 import browserDetector from './modules/browser-detector';
 import iframeButton from './modules/iframe-button';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
-// import downloadBlock from './modules/download-block';
 
 const App = () => {
   browserDetector();
@@ -33,7 +32,6 @@ const App = () => {
   mobileMenu();
   Overlays();
   subcatDrops();
-  // downloadBlock();
   checkboxGroup();
   latestFilters();
   searchFilters();
