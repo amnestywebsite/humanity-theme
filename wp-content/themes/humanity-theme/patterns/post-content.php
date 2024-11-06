@@ -16,9 +16,7 @@ $article_has_sidebar = $max_post_content ? '' : 'has-sidebar';
 	<!-- wp:group {"tagName":"header","className":"article-header"} -->
 	<header class="wp-block-group article-header">
 		<!-- wp:pattern {"slug":"amnesty/post-metadata"} /-->
-	<?php if ( ! amnesty_post_has_hero() ) : ?>
 		<!-- wp:post-title {"level":1,"className":"article-title"} /-->
-	<?php endif; ?>
 	</header>
 	<!-- /wp:group -->
 	<!-- wp:group {"tagName":"article","className":"article-content"} -->
