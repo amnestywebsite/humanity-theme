@@ -1,3 +1,11 @@
+### v2.0.7
+Fixes:
+- Conditions under which the sidebar renders
+- Filtering of "report" style taxonomy terms
+- Article title font sizes
+- Post list block appearance in the block editor
+- Image copyright appearance on frontend
+
 ### v2.0.6
 Fixes:
 - Better support internal SP plugin on search page
