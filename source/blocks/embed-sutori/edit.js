@@ -4,6 +4,8 @@ import { Button, TextControl } from '@wordpress/components';
 import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
+const { useBlockProps } = wp.blockEditor;
+
 const getIframeSrc = (rawValue, props) => {
   const { setAttributes } = props;
 
@@ -15,13 +17,14 @@ const getIframeSrc = (rawValue, props) => {
 };
 
 const edit = (props) => {
+  const blockProps = useBlockProps();
   const { attributes } = props;
 
   const [isPreviewing, preview] = useState(false);
 
   if (isPreviewing && httpsOnly(attributes.source)) {
     return (
-      <div style={{ minHeight: '20px', border: '1px dashed' }}>
+      <div {...blockProps} style={{ minHeight: '20px', border: '1px dashed' }}>
         <div className="sutori-embed">
           <iframe src={httpsOnly(attributes.source)} height="600px" width="100%"></iframe>
         </div>
@@ -31,6 +34,7 @@ const edit = (props) => {
 
   return (
     <>
+    <div {...blockProps}>
       <TextControl
         value={httpsOnly(attributes.source)}
         onChange={(source) => getIframeSrc(source, props)}
@@ -40,6 +44,7 @@ const edit = (props) => {
       <Button isPrimary={true} onClick={() => preview(!isPreviewing)}>
         {/* translators: [admin] */ __('Preview Embed', 'amnesty')}
       </Button>
+    </div>
     </>
   );
 };

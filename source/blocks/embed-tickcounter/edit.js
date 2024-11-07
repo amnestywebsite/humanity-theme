@@ -5,16 +5,12 @@ import { Placeholder, TextControl } from '@wordpress/components';
 import { select } from '@wordpress/data';
 import { __, sprintf } from '@wordpress/i18n';
 
+const { useBlockProps } = wp.blockEditor;
 const stripScript = (html) => html.replace(/<script>.+<\/script>/, '');
 
 const edit = ({ attributes, setAttributes }) =>  (
   <>
-    <BlockControls>
-      <BlockAlignmentToolbar
-        value={attributes.alignment}
-        onChange={(alignment) => setAttributes({ alignment })}
-      />
-    </BlockControls>
+    <div {...useBlockProps()}>
     <Placeholder
       // translators: [admin]
       label={__('Tickcounter Embed', 'amnesty')}
@@ -34,6 +30,7 @@ const edit = ({ attributes, setAttributes }) =>  (
         placeholder={__('The Tickcounter embed code', 'amnesty')}
       />
     </Placeholder>
+    </div>
   </>
 );
 

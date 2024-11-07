@@ -24,16 +24,8 @@ require_once __DIR__ . '/_deprecated/header/register.php';
 // require_once __DIR__ . '/collapsable/render.php';
 // require_once __DIR__ . '/countdown-timer/register.php';
 // require_once __DIR__ . '/countdown-timer/render.php';
-// require_once __DIR__ . '/embed-flourish/register.php';
-// require_once __DIR__ . '/embed-flourish/render.php';
-// require_once __DIR__ . '/embed-infogram/register.php';
-// require_once __DIR__ . '/embed-infogram/render.php';
-// require_once __DIR__ . '/embed-sutori/register.php';
-// require_once __DIR__ . '/embed-sutori/render.php';
-// require_once __DIR__ . '/embed-tickcounter/register.php';
-// require_once __DIR__ . '/embed-tickcounter/render.php';
 require_once __DIR__ . '/hero/helpers.php';
-require_once __DIR__ . '/hero/register.php';
+// require_once __DIR__ . '/hero/register.php';
 require_once __DIR__ . '/hero/render.php';
 // require_once __DIR__ . '/iframe-button/register.php';
 // require_once __DIR__ . '/iframe-button/render.php';
@@ -75,13 +67,11 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 		// register_collapsable_block();
 		// register_countdown_block();
 		// register_cta_block();
-		// register_flourish_embed_block();
 		// register_header_block();
-		register_hero_block();
+		// register_hero_block();
 		// register_iframe_block();
 		// register_iframe_button_block();
 		// register_image_block();
-		// register_infogram_embed_block();
 		// register_links_with_icons_block();
 		// register_list_block();
 		// register_petition_list_block();
@@ -90,8 +80,6 @@ if ( ! function_exists( 'amnesty_register_php_rendered_blocks' ) ) {
 		// register_related_content_block();
 		// register_section_block();
 		// register_slider_block();
-		// register_sutori_embed_block();
-		// register_tickcounter_embed_block();
 	}
 }
 

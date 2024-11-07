@@ -1,8 +1,11 @@
 import { TextControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
+const { useBlockProps } = wp.blockEditor;
+
 const edit = ({ attributes, setAttributes }) => (
   <>
+    <div {...useBlockProps()}>
     <TextControl
       // translators: [admin]
       label={__('The embed code', 'amnesty')}
@@ -25,6 +28,7 @@ const edit = ({ attributes, setAttributes }) => (
       // translators: [admin]
       placeholder={__('Ending the Death Penalty', 'amnesty')}
     />
+    </div>
   </>
 );
 

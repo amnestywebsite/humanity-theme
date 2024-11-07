@@ -5,6 +5,8 @@ import { Button, TextControl } from '@wordpress/components';
 import { Fragment, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
+const { useBlockProps } = wp.blockEditor;
+
 // load flourish embed script
 const loadScript = () => {
   if (document.getElementById('flourish-script')) {
@@ -19,6 +21,7 @@ const loadScript = () => {
 };
 
 const edit = (props) => {
+  const blockProps = useBlockProps();
   const { attributes, setAttributes } = props;
 
   const [isPreviewing, preview] = useState(false);
@@ -26,13 +29,16 @@ const edit = (props) => {
   if (isPreviewing && attributes.source) {
     delay(loadScript, 1000);
     return (
-      <div style={{ minHeight: '20px', border: '1px dashed' }}>
-        <div className="flourish-embed" data-src={attributes.source}></div>
+      <div {...blockProps}>
+        <div style={{ minHeight: '20px', border: '1px dashed' }}>
+          <div className="flourish-embed" data-src={attributes.source}></div>
+        </div>
       </div>
     );
   }
 
   return (
+    <div {...blockProps}>
     <Fragment>
       <TextControl
         value={httpsOnly(attributes.source)}
@@ -45,6 +51,7 @@ const edit = (props) => {
         {/* translators: [admin] */ __('Preview Embed', 'amnesty')}
       </Button>
     </Fragment>
+    </div>
   );
 };
 

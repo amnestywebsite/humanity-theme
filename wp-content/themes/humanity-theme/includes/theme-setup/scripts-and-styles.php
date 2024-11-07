@@ -107,7 +107,6 @@ if ( ! function_exists( 'amnesty_scripts' ) ) {
 
 		wp_register_script( 'flourish-embed', 'https://public.flourish.studio/resources/embed.js', [], $theme->get( 'Version' ), true );
 		wp_register_script( 'tickcounter-sdk', 'https://www.tickcounter.com/static/js/loader.js', [], $theme->get( 'Version' ), true );
-		wp_enqueue_script( 'infogram-embed', amnesty_asset_uri( 'scripts' ) . '/infogram-loader.js', [], $theme->get( 'Version' ), false );
 
 		wp_enqueue_script( 'amnesty-theme', amnesty_asset_uri( 'scripts' ) . '/bundle.js', [ 'lodash', 'wp-i18n' ], $theme->get( 'Version' ), true );
 
@@ -485,12 +484,12 @@ if ( ! function_exists( 'amnesty_block_enqueue_assets' ) ) {
 			filemtime( get_template_directory() . '/build/blocks/download/style-index.css' )
 		);
 
-		// Embed Stori block
+		// Sutori Embed block
 		wp_register_style(
-			'amnesty-embed-stori-style',
-			get_template_directory_uri() . '/build/blocks/embed-stori/style-index.css',
+			'amnesty-sutori-embed-style',
+			get_template_directory_uri() . '/build/blocks/embed-sutori/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/embed-stori/style-index.css' )
+			filemtime( get_template_directory() . '/build/blocks/embed-sutori/style-index.css' )
 		);
 	}
 }
@@ -615,14 +614,3 @@ function amnesty_block_enqueue_editor_assets() {
 }
 
 add_action( 'enqueue_block_assets', 'amnesty_block_enqueue_editor_assets' );
-
-
-// function amnesty_enqueue_editor_scripts() {
-// 	wp_enqueue_script(
-// 		'amnesty-editor',
-// 		get_template_directory_uri() . '/build/editor.js',
-// 		[ 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-components', 'wp-data', 'wp-compose', 'wp-api-fetch' ]
-// 	);
-// }
-
-// add_action( 'enqueue_block_editor_assets', 'amnesty_enqueue_editor_scripts' );

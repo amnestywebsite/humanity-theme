@@ -9,8 +9,12 @@
   "icon": "embed-photo",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "viewScript": "tickcounter-sdk",
   "render": "file:./render.php",
+  "supports": {
+    "inserter": true,
+    "align": ["left", "center", "right"],
+    "className": true
+  },
   "attributes": {
     "alignment": {
       "type": "string",
