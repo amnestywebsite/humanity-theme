@@ -9,7 +9,7 @@
   "icon": "embed-photo",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "viewScript": ["infogram-embed", "file:./view.js"],
+  "viewScript": ["file:./view.js"],
   "render": "file:./render.php",
   "supports": {
   },

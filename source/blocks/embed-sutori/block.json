@@ -9,8 +9,7 @@
   "icon": "embed-photo",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": ["amnesty-embed-sutori-style"],
+  "style": ["amnesty-sutori-embed-style"],
   "render": "file:./render.php",
   "attributes": {
     "source": {

@@ -1,6 +1,6 @@
 <?php
 
-if ( ! $atttributes['identifier'] ) {
+if ( ! isset( $attributes['identifier'] ) ) {
 	return;
 }
 

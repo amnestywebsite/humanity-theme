@@ -1,8 +1,8 @@
 <?php
 
-if ( ! function_exists( 'amnesty_allow_position_inline_style' ) ) {
+if ( ! function_exists( 'amnesty_allow_display_inline_style' ) ) {
 	/**
-	 * Add "position" to the list of allowed CSS properties for inline styles
+	 * Add "display" to the list of allowed CSS properties for inline styles
 	 *
 	 * @package Amnesty\Blocks
 	 *
@@ -10,8 +10,8 @@ if ( ! function_exists( 'amnesty_allow_position_inline_style' ) ) {
 	 *
 	 * @return array<int,string>
 	 */
-	function amnesty_allow_position_inline_style( array $safe ): array {
-		return array_merge( $safe, [ 'position' ] );
+	function amnesty_allow_display_inline_style( array $safe ): array {
+		return array_merge( $safe, [ 'display' ] );
 	}
 }
 
@@ -19,14 +19,16 @@ if ( ! $attributes['source'] ) {
 	return;
 }
 
-add_filter( 'safe_style_css', 'amnesty_allow_position_inline_style' );
+add_filter( 'safe_style_css', 'amnesty_allow_display_inline_style' );
+
+$wrapper_attributes = get_block_wrapper_attributes();
 
 ?>
 
-<div class="align<?php echo esc_attr( $attributes['alignment'] ); ?>">
+<div <?php echo esc_attr( $wrapper_attributes ); ?>>
 	<?php echo wp_kses_post( $attributes['source'] ); ?>
 </div>
 
 <?php
 
-remove_filter( 'safe_style_css', 'amnesty_allow_position_inline_style' );
+remove_filter( 'safe_style_css', 'amnesty_allow_display_inline_style' );
