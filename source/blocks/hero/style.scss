@@ -8,7 +8,7 @@
   padding-bottom: 60px;
   width: 100%;
   max-width: var(--wp--preset--layout--contentSize);
-  min-height: 540px;
+  min-height: 23px;
   background-size: cover;
   background-position: center center;
 
@@ -20,10 +20,11 @@
 }
 
 .wp-block-amnesty-core-hero .container {
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   padding: 0 24px !important;
+  position: relative;
 }
 
 .hero-contentWrapper > * {

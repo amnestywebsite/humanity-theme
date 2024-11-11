@@ -9,8 +9,8 @@
   "icon": "admin-post",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-post-list-editor-style"],
+  "style": ["amnesty-post-list-style"],
   "render": "file:./render.php",
   "supports": {
     "multiple": true

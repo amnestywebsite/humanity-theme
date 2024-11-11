@@ -359,12 +359,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 	 * @return void
 	 */
 	function amnesty_block_enqueue_shared_assets() {
+		$theme = wp_get_theme();
+
 		// Action block
 		wp_register_style(
 			'amnesty-action-style',
 			get_template_directory_uri() . '/build/blocks/action/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/action/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Background Media block
@@ -415,6 +417,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			filemtime( get_template_directory() . '/build/blocks/fluid-iframe/style-index.css' )
 		);
 
+		// Hero block
+		wp_register_style(
+			'amnesty-hero-style',
+			get_template_directory_uri() . '/build/blocks/hero/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/hero/style-index.css' )
+		);
+
 		// Link Group block
 		wp_register_style(
 			'amnesty-link-group-style',
@@ -429,6 +439,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			get_template_directory_uri() . '/build/blocks/menu/style-index.css',
 			[],
 			filemtime( get_template_directory() . '/build/blocks/menu/style-index.css' )
+		);
+
+		// Post List block
+		wp_register_style(
+			'amnesty-post-list-style',
+			get_template_directory_uri() . '/build/blocks/post-list/style-index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/post-list/style-index.css' )
 		);
 
 		// Stat Counter block
@@ -449,8 +467,6 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 	}
 }
 
-
-add_action( 'wp_enqueue_scripts', 'amnesty_block_enqueue_shared_assets' );
 add_action( 'enqueue_block_assets', 'amnesty_block_enqueue_shared_assets' );
 
 // Enqueue front end assets for blocks.
@@ -574,6 +590,14 @@ function amnesty_block_enqueue_editor_assets() {
 			filemtime( get_template_directory() . '/build/blocks/fluid-iframe/index.css' )
 		);
 
+		// Hero block
+		wp_register_style(
+			'amnesty-hero-editor-style',
+			get_template_directory_uri() . '/build/blocks/hero/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/hero/index.css' )
+		);
+
 		// Link Group block
 		wp_register_style(
 			'amnesty-link-group-editor-style',
@@ -588,6 +612,14 @@ function amnesty_block_enqueue_editor_assets() {
 			get_template_directory_uri() . '/build/blocks/menu/index.css',
 			[],
 			filemtime( get_template_directory() . '/build/blocks/menu/index.css' )
+		);
+
+		// Post List block
+		wp_register_style(
+			'amnesty-post-list-editor-style',
+			get_template_directory_uri() . '/build/blocks/post-list/index.css',
+			[],
+			filemtime( get_template_directory() . '/build/blocks/post-list/index.css' )
 		);
 
 		// Stat Counter block
@@ -608,4 +640,4 @@ function amnesty_block_enqueue_editor_assets() {
 	}
 }
 
-add_action( 'enqueue_block_assets', 'amnesty_block_enqueue_editor_assets' );
+add_action( 'enqueue_block_editor_assets', 'amnesty_block_enqueue_editor_assets' );

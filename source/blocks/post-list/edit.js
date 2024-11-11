@@ -81,6 +81,7 @@ const Categories = ({ attributes, setAttributes }) => {
       <CategorySelector
         value={attributes.category}
         onChange={(category) => setAttributes({ category })}
+        attributes={attributes}
       />
       <div>
         <DisplayCategories

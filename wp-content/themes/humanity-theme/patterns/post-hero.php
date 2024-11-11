@@ -25,5 +25,6 @@ if ( ! array_filter( $hero_data ) ) {
 echo wp_kses_post( render_hero_block( $hero_data['attrs'], $hero_data['content'], $hero_data['name'] ) );
 
 if ( ! is_admin() ) {
+	wp_enqueue_style( 'amnesty-hero-style' );
 	add_filter( 'the_content', 'amnesty_remove_first_hero_from_content', 0 );
 }

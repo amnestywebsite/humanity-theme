@@ -43,6 +43,8 @@
     "classnames": "^2.5.1",
     "core-js": "^3.19.1",
     "flickity": "^3.0.0",
-    "flickity-as-nav-for": "^3.0.0"
+    "flickity-as-nav-for": "^3.0.0",
+    "memize": "^2.1.0",
+    "react-select": "^5.8.2"
   }
 }

@@ -5,7 +5,7 @@ import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisib
 import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
 import { fetchMediaData } from '../../utils';
 
-import { InnerBlocks, InspectorControls, RichText, URLInputButton } from '@wordpress/block-editor';
+import { InnerBlocks, InspectorControls, RichText, URLInputButton, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, SelectControl } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import { PostFeaturedImage } from '@wordpress/editor';
@@ -51,6 +51,7 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
 
     // block attribute takes precedence over the featured image
     const id = attributes?.imageID || featuredImage;
+
     fetchMediaData(id, setMediaData, mediaData);
   }, [featuredImage, attributes.imageID, attributes.type]);
 
@@ -70,7 +71,12 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
     'has-video': !!attributes.featuredVideoId,
   });
 
+  const blockProps = useBlockProps({
+    className: classes,
+  });
+
   const blockInlineStyle = {};
+
   if (attributes.type === 'image' && mediaData?.url) {
     blockInlineStyle.backgroundImage = `url("${mediaData.url}")`;
   }
@@ -123,10 +129,10 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
   return (
     <>
       {BlockInspectorControls}
-      <section className={classes} style={blockInlineStyle}>
+      <section {...blockProps} style={blockInlineStyle}>
         {attributes.type === 'image' && (
           <div className="linkList-options">
-            <BlockImageSelector imageId={attributes.imageID} />
+            <BlockImageSelector imageId={attributes.imageID} setAttributes={setAttributes} />
           </div>
         )}
         {attributes.type === 'video' && (
@@ -138,10 +144,9 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
         )}
         <div className={`container ${hasDonationBlock ? 'has-donation-block' : ''}`}>
           <div className="hero-contentWrapper">
-            <h1>
+            <h1 className="hero-title">
               <RichText
                 tagName="span"
-                className="hero-title"
                 placeholder={/* translators: [admin] */ __('Header Title', 'amnesty')}
                 value={attributes.title}
                 onChange={(title) => setAttributes({ title })}

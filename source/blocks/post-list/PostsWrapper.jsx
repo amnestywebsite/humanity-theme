@@ -1,23 +1,24 @@
 /* eslint-disable react/display-name */
 // This configures the post list for use by other blocks
-import CategorySelect from './components/category-select.jsx';
 import DisplayCategories from './components/DisplayCategories.jsx';
 import DisplayCustom from './components/DisplayCustom.jsx';
 import DisplaySelect from './components/DisplaySelect.jsx';
 import DisplayTaxonomies from './components/DisplayTaxonomies.jsx';
-import TaxonomySelect from './components/taxonomy-select.jsx';
 import * as api from './components/post-selector/api';
-import TermSelect from './components/term-select.jsx';
 import DisplayAuthor from './components/DisplayAuthor.jsx';
-import AuthorSelect from './components/author-select.jsx';
 import DisplayFeed from './components/DisplayFeed.jsx';
+import AuthorSelector from './components/selectors/AuthorSelector.jsx';
+import CategorySelector from './components/selectors/CategorySelector.jsx';
+import TaxonomySelector from './components/selectors/TaxonomySelector.jsx';
+import TermSelector from './components/selectors/TermSelector.jsx';
 
 import { has } from 'lodash';
-import { InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
 import { createHigherOrderComponent } from '@wordpress/compose';
 import { Component } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
+
+const { InspectorControls } = wp.blockEditor;
 
 const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
   const createRange = (min, max) => (num) => Math.max(min, Math.min(max, num));
@@ -181,7 +182,7 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                 <label>
                   {/* translators: [admin] */ __('Category:', 'amnesty')}
                   <br />
-                  <CategorySelect
+                  <CategorySelector
                     value={attributes.category}
                     onChange={this.createUpdateAttribute('category')}
                   />
@@ -240,14 +241,14 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                   <label>
                     {/* translators: [admin] */ __('Taxonomy:', 'amnesty')}
                     <br />
-                    <TaxonomySelect value={attributes.taxonomy} onChange={this.addTaxonomyFilter} />
+                    <TaxonomySelector value={attributes.taxonomy} onChange={this.addTaxonomyFilter} />
                     <br />
                   </label>
                   <label>
                     <div className="term-selector">
                       {/* translators: [admin] */ __('Terms:', 'amnesty')}
                       <br />
-                      <TermSelect
+                      <TermSelector
                         allTerms={this.state.allTerms}
                         value={attributes.terms}
                         onChange={this.addTerms}
@@ -260,7 +261,7 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                 <label>
                   {/* translators: [admin] */ __('Author:', 'amnesty')}
                   <br />
-                  <AuthorSelect
+                  <AuthorSelector
                     value={attributes.authors}
                     onChange={this.createUpdateAttribute('authors')}
                   />

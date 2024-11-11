@@ -12,7 +12,12 @@ const normaliseAuthor = (author = '[]') => {
   let normal = author;
 
   if (isString(normal)) {
-    normal = JSON.parse(normal);
+    try {
+      normal = JSON.parse(normal);
+    } catch (error) {
+      console.debug(error);
+      console.debug(normal);
+    }
   }
 
   if (!Array.isArray(normal)) {
@@ -21,7 +26,11 @@ const normaliseAuthor = (author = '[]') => {
 
   normal = normal.map((val) => {
     if (isString(val)) {
-      return JSON.parse(val);
+      try {
+        return JSON.parse(normal);
+      } catch (error) {
+        return false;
+      }
     }
 
     return val;

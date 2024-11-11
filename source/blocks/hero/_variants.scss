@@ -14,8 +14,15 @@
 
 .wp-block-amnesty-core-hero.has-light-background .btn {
   border: none;
-  color: var(--wp--preset--color--white);
   background-color: var(--wp--preset--color--black);
+}
+
+.wp-block-amnesty-core-hero.has-light-background .hero-cta .btn:hover {
+  background-color: var(--wp--preset--color--grey-darker);
+}
+
+.wp-block-amnesty-core-hero.has-light-background .hero-cta .btn a {
+  color: var(--wp--preset--color--white);
 }
 
 .wp-block-amnesty-core-hero.is-aligned-left .container {
