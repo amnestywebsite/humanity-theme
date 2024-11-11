@@ -1,8 +1,9 @@
 import createSelector from './createSelector';
 
+import { InspectorControls } from '@wordpress/block-editor';
+import { RangeControl, ToggleControl } from '@wordpress/components';
 import { createHigherOrderComponent } from '@wordpress/compose';
 import { __ } from '@wordpress/i18n';
-import { InspectorControls, RangeControl, ToggleControl } from '@wordpress/block-editor';
 
 const CategorySelectorComponent = createSelector({
   // translators: [admin]

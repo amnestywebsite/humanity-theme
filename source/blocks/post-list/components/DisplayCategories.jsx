@@ -15,14 +15,29 @@ const DisplayCategories = ({ category, overrideTypes, amount, style, prefix, sho
     let normal = category;
 
     if (isString(normal)) {
-      normal = JSON.parse(normal);
+      try {
+        normal = JSON.parse(normal);
+      } catch (error) {
+        console.debug(error);
+        console.debug(normal);
+      }
     }
 
     if (!Array.isArray(normal)) {
       normal = [normal];
     }
 
-    normal = normal.map((val) => (isString(val) ? JSON.parse(val) : val));
+    normal = normal.map((val) => {
+      if (isString(val)) {
+        try {
+          return JSON.parse(normal);
+        } catch (error) {
+          return false;
+        }
+      }
+
+      return val;
+    });
 
     return normal.filter(Boolean);
   };

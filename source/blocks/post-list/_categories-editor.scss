@@ -1,0 +1,22 @@
+[data-type="amnesty-core/block-menu"] {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+[data-type="amnesty-core/block-menu"] .postlist-categories {
+  align-items: flex-start;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: var(--wp--preset--spacing--single) !important;
+  list-style: none !important;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--wp--preset--font-family--secondary);
+  }
+
+  ul {
+    display: none;
+  }
+}

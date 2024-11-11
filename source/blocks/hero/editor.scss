@@ -61,40 +61,40 @@
   min-height: 540px;
 }
 
-[data-type="amnesty-core/hero"] .wp-block[data-align="left"] .container,
-.wp-block[data-align="left"] .wp-block-amnesty-core-hero .container {
+[data-type="amnesty-core/hero"].alignleft .container,
+.alignleft.wp-block-amnesty-core-hero .container {
   justify-content: start;
 }
 
-[data-type="amnesty-core/hero"] .wp-block[data-align="left"] .container.has-donation-block,
-.wp-block[data-align="left"] .wp-block-amnesty-core-hero .container.has-donation-block {
+[data-type="amnesty-core/hero"].alignleft .container.has-donation-block,
+.alignleft.wp-block-amnesty-core-hero .container.has-donation-block {
   justify-content: space-between;
 }
 
-[data-type="amnesty-core/hero"] .wp-block[data-align="left"] .hero-contentWrapper,
-.wp-block[data-align="left"] .wp-block-amnesty-core-hero .hero-contentWrapper {
+[data-type="amnesty-core/hero"].alignleft .hero-contentWrapper,
+.alignleft.wp-block-amnesty-core-hero .hero-contentWrapper {
   align-items: start;
   text-align: start;
 }
 
-[data-type="amnesty-core/hero"] .wp-block[data-align="center"] .container,
-.wp-block[data-align="center"] .wp-block-amnesty-core-hero .container {
+[data-type="amnesty-core/hero"].aligncenter .container,
+.aligncenter.wp-block-amnesty-core-hero .container {
   justify-content: center;
 }
 
-[data-type="amnesty-core/hero"] .wp-block[data-align="center"] .hero-contentWrapper,
-.wp-block[data-align="center"] .wp-block-amnesty-core-hero .hero-contentWrapper {
+[data-type="amnesty-core/hero"].aligncenter .hero-contentWrapper,
+.aligncenter .wp-block-amnesty-core-hero .hero-contentWrapper {
   align-items: center;
   text-align: center;
 }
 
-[data-type="amnesty-core/hero"] .wp-block[data-align="right"] .container,
-.wp-block[data-align="right"] .wp-block-amnesty-core-hero .container {
+[data-type="amnesty-core/hero"].alignright .container,
+.alignright.wp-block-amnesty-core-hero .container {
   justify-content: end;
 }
 
-[data-type="amnesty-core/hero"] .wp-block[data-align="right"] .hero-contentWrapper,
-.wp-block[data-align="right"] .wp-block-amnesty-core-hero .hero-contentWrapper {
+[data-type="amnesty-core/hero"].alignright .hero-contentWrapper,
+.alignright.wp-block-amnesty-core-hero .hero-contentWrapper {
   align-items: end;
   text-align: end;
 }

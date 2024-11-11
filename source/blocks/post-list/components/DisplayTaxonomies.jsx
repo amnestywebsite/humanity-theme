@@ -14,19 +14,6 @@ const DisplayTaxonomies = ({ taxonomy, terms, style, prefix, showAuthor, showPos
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // Normalizes category input
-  const normaliseCategory = (category = '[]') => {
-    let normal = isString(category) ? JSON.parse(category) : category;
-
-    if (!Array.isArray(normal)) {
-      normal = [normal];
-    }
-
-    return normal
-      .map(val => (isString(val) ? JSON.parse(val) : val))
-      .filter(Boolean);
-  };
-
   // Fetch posts when component mounts or when taxonomy/terms change
   useEffect(() => {
     if (taxonomy) {

@@ -37,8 +37,6 @@ require_once __DIR__ . '/hero/render.php';
 // require_once __DIR__ . '/links-with-icons/render.php';
 // require_once __DIR__ . '/petition-list/register.php';
 // require_once __DIR__ . '/petition-list/render.php';
-// require_once __DIR__ . '/post-list/register.php';
-// require_once __DIR__ . '/post-list/render.php';
 // require_once __DIR__ . '/post-meta/register.php';
 // require_once __DIR__ . '/post-meta/render.php';
 // require_once __DIR__ . '/raw-code/register.php';
