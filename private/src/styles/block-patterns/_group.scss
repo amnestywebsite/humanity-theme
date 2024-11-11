@@ -1,5 +1,5 @@
 .wp-block-group.custom-card {
-  max-width: 350px !important;
+  width:100%;
 
   .wp-block-buttons {
     padding-left: 8px;
@@ -22,13 +22,13 @@
     padding: 10px 10px 0 10px;
   }
 
+  h2 {
+    padding: 10px 10px 0 10px;
+  }
+
   .wp-element-caption {
     padding: 0 10px;
   }
-}
-
-.wp-block-group.custom-card.alignfull {
-  max-width: 480px !important;
 }
 
 .wp-block-group.is-style-light {
@@ -59,4 +59,23 @@
 .wp-block-group.is-style-top-and-bottom-border {
   border-top: 7px solid var(--wp--preset--color--black);
   border-bottom: 7px solid var(--wp--preset--color--black);
+}
+
+.wp-block-group.custom-card .wp-block-image,
+.wp-block-group.custom-card .wp-block-buttons,
+.wp-block-group.custom-card p,
+.wp-block-group.custom-card h2 {
+  max-width: 100%;
+}
+
+.wp-block-group.custom-card img {
+  width: 100%;
+}
+
+.wp-block-group.custom-card .wp-block-button {
+  min-width: 100%;
+}
+
+.wp-block-group.custom-card .wp-block-image > div {
+  width: 100%;
 }
