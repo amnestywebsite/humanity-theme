@@ -233,14 +233,9 @@ const Author = ({ attributes, setAttributes }) => {
 };
 
 const Feed = ({ attributes, setAttributes }) => {
-  console.log(attributes.type);
-
   if (attributes.type !== 'feed') {
     return null;
   }
-
-  console.log(range(attributes.amount));
-
 
   return (
     <>
