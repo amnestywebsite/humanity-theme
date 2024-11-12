@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 
-import { InspectorControls, RichText } from '@wordpress/block-editor';
+import { InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, SelectControl, ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
@@ -53,6 +53,10 @@ const edit = ({ attributes, setAttributes }) => {
     [`is-${colour}`]: !!colour,
     'is-capitalised': capitalise,
     'is-lined': lined,
+  });
+
+  const blockProps = useBlockProps({
+    className: classes,
   });
 
   return (
@@ -115,7 +119,7 @@ const edit = ({ attributes, setAttributes }) => {
         </PanelBody>
       </InspectorControls>
       <style>{getQuoteStyles()}</style>
-      <div className={classes}>
+      <div {...blockProps}>
         <div>
           <RichText
             tagName="p"
