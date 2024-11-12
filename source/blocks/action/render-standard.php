@@ -4,7 +4,7 @@ $block_classes = classnames(
 	'actionBlock',
 	[
 		'is-centred' => $attributes['centred'],
-	] 
+	]
 );
 
 ?>

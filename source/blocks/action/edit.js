@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 
-import { InspectorControls, MediaUpload, PlainText, URLInputButton } from '@wordpress/block-editor';
+import { InspectorControls, MediaUpload, PlainText, URLInputButton, useBlockProps } from '@wordpress/block-editor';
 import { IconButton, PanelBody, SelectControl } from '@wordpress/components';
 import { useEffect, useRef } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
@@ -70,6 +70,10 @@ const edit = ({ attributes, setAttributes }) => {
 
   const buttonClasses = classnames('btn', 'btn--fill', 'btn--large');
 
+  const blockProps = useBlockProps({
+    className: classes,
+  });
+
   return (
     <>
       <InspectorControls>
@@ -88,7 +92,7 @@ const edit = ({ attributes, setAttributes }) => {
           />
         </PanelBody>
       </InspectorControls>
-      <figure className={classes}>
+      <figure {...blockProps}>
         <div className="actionBlock-figure">
           <div className="linkList-options">
             {imageID ? (
