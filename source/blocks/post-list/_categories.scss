@@ -1,3 +1,6 @@
+@import "../../utils/functions/flexy";
+@import "../../utils/mixins/icon";
+
 .postlist-categoriesContainer {
   display: flex;
   align-items: center;
@@ -22,7 +25,7 @@
   content: "flickity";
   display: none;
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     content: "";
   }
 }
@@ -45,15 +48,15 @@
   flex: 1 0 auto;
   list-style: none;
 
-  @include mq(xx-small) {
+  @media all and (min-width: 465px) {
     @include flexy-grid(2, flexy-gutter());
   }
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     @include flexy-grid(3, flexy-gutter());
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     @include flexy-grid(4, flexy-gutter());
     flex-grow: 1;
     max-width: none;
@@ -64,11 +67,11 @@
   flex: 1 0 100%;
   width: 100%;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     @include flexy-grid(2, flexy-gutter());
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     @include flexy-grid(3, flexy-gutter());
     flex-grow: 1;
     max-width: none;
