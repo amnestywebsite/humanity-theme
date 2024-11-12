@@ -55,9 +55,6 @@ const StandardMenu = ({ attributes, className, loadingMenu, menus }) => {
     className
   });
 
-  console.log(className, 'standard-menu');
-
-
   if (loadingMenu) {
     // translators: [admin]
     return <p>{__('Loading Menu…', 'amnesty')}</p>;
