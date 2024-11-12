@@ -7,7 +7,7 @@
 .postlist {
   display: flex;
 
-  @include mq($until: medium-sm) {
+  @media all and (max-width: 840px) {
     flex-wrap: wrap;
   }
 }

@@ -1,3 +1,5 @@
+@import "../../utils/mixins/states";
+
 .post-paginationContainer {
   display: flex;
   align-items: center;
@@ -11,18 +13,18 @@
   line-height: 1.25;
   text-transform: uppercase;
 
-  @include mq(large) {
+  @media all and (min-width: 1110px) {
     width: 75%;
   }
 
-  @include mq(x-large) {
+  @media all and (min-width: 1200px) {
     width: 50%;
   }
 }
 
 .author .post-paginationContainer,
 .search .post-paginationContainer {
-  @include mq(x-large) {
+  @media all and (min-width: 1200px) {
     width: 75%;
   }
 }
@@ -31,7 +33,7 @@
   order: 2;
   margin-top: 24px;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     order: 0;
     margin-top: 0;
   }
@@ -57,7 +59,7 @@
   margin-right: 16px;
   width: 16px;
   height: 16px;
-  background-image: url("../images/sprite.svg"), none;
+  background-image: url("../../static/images/sprite.svg"), none;
   background-repeat: no-repeat;
   background-size: 313px 300px;
   background-position: -234px -240px;
@@ -126,7 +128,7 @@ ul.page-numbers {
   list-style: none;
   color: var(--wp--preset--color--black);
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     display: flex;
     flex-basis: auto;
   }

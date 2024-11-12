@@ -2,18 +2,18 @@
   position: relative;
   width: 100%;
 
-  @include mq(medium-sm) {
+  @media all and (min-width: 840px) {
     min-height: 460px;
   }
 }
 
-@include mq(medium-sm) {
+@media all and (min-width: 840px) {
   .tax-location .post+.post {
     margin-left: flexy-gutter();
   }
 }
 
-@include mq($until: medium-sm) {
+@media all and (max-width: 840px) {
   .tax-location .post+.post {
     margin-top: flexy-gutter();
   }
@@ -138,7 +138,7 @@
   margin-top: 12px;
   background-color: var(--wp--preset--color--black);
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     margin-top: auto;
   }
 }

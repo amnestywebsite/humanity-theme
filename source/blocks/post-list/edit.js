@@ -53,6 +53,7 @@ let defaultDisplayTypes = [
 ];
 
 const range = createRange(1, 100);
+
 const keyPrefix = randId();
 const setupOptions = ({ attributes, setAttributes }) => {
   if (has(attributes, 'extraStyleOptions')) {
@@ -82,6 +83,7 @@ const Categories = ({ attributes, setAttributes }) => {
         value={attributes.category}
         onChange={(category) => setAttributes({ category })}
         attributes={attributes}
+        setAttributes={setAttributes}
       />
       <div>
         <DisplayCategories
@@ -231,9 +233,14 @@ const Author = ({ attributes, setAttributes }) => {
 };
 
 const Feed = ({ attributes, setAttributes }) => {
+  console.log(attributes.type);
+
   if (attributes.type !== 'feed') {
     return null;
   }
+
+  console.log(range(attributes.amount));
+
 
   return (
     <>

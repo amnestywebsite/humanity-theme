@@ -45,6 +45,9 @@
     "flickity": "^3.0.0",
     "flickity-as-nav-for": "^3.0.0",
     "memize": "^2.1.0",
-    "react-select": "^5.8.2"
+    "react-select": "^5.8.2",
+    "sass": "^1.80.6",
+    "sass-loader": "^16.0.3",
+    "sass-mq": "^6.0.0"
   }
 }

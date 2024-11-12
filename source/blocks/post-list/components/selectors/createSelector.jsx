@@ -20,7 +20,7 @@ const setupSearch = (callback, filterCallback = null, route) => (search = null) 
   return wp.apiRequest({ path }).then(filter).then(callback);
 };
 
-const createSelector = ({ filterCallback = null, label, route }) => ({ onChange, options = [], value: data }) => {
+const createSelector = ({ filterCallback = null, label, route }) => ({ onChange, value: data }) => {
   const [loading, setLoading] = useState(true);
   const [options, setOptions] = useState(options);
   const performSearch = setupSearch(setOptions, filterCallback, route);
@@ -54,7 +54,15 @@ const createSelector = ({ filterCallback = null, label, route }) => ({ onChange,
 
   /* translators: [admin] */
   const placeholder = loading ? __('Loading', 'amnesty') : label;
-  const value = JSON.parse(data);
+
+  let value = data;
+
+  try {
+    value = JSON.parse(data);
+  } catch (error) {
+    console.debug(error);
+    console.debug(data);
+  }
 
   return (
     <Select
