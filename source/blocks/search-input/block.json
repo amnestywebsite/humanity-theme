@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "amnesty-core/search-input",
+	"title": "Search Input",
+	"description": "For presenting the search input without a form",
+  "textdomain": "amnesty",
+	"supports": {
+		"align": false,
+    "inserter": false,
+		"multiple": false
+	},
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

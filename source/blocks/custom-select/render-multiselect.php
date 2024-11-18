@@ -1,6 +1,6 @@
 <?php $active = is_array( $attributes['active'] ?? [] ) ? $attributes['active'] : [ $attributes['active'] ]; ?>
 <div class="checkboxGroup" <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
-	<button class="checkboxGroup-button" type="button" aria-haspopup="listbox" aria-expanded="false" <?php disabled( $attributes['disabled'] ); ?>>
+	<button class="checkboxGroup-button" type="button" aria-haspopup="listbox" aria-expanded="false" <?php disabled( $attributes['isDisabled'] ); ?>>
 		<?php echo esc_html( $attributes['label'] ); ?>
 	</button>
 	<fieldset class="checkboxGroup-list">

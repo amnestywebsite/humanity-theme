@@ -12,7 +12,7 @@ if ( 'narrow' === $attributes['size'] ) {
 }
 ?>
 
-<div <?php echo wp_kses_data($wrapper_attributes) ?>>
+<div <?php echo wp_kses_data( $wrapper_attributes ); ?>>
 	<div class="<?php echo esc_attr( $block_classes ); ?>">
 		<div class="tweetAction-header">
 			<span class="dashicons dashicons-twitter" aria-label="<?php /* translators: [front] ARIA */ esc_attr_e( 'Twitter Logo', 'amnesty' ); ?>"></span>
@@ -25,7 +25,7 @@ if ( 'narrow' === $attributes['size'] ) {
 
 		<?php if ( $attributes['embedLink'] && $tweet_url ) : ?>
 			<p class="tweetAction-embed">
-				<?php echo $tweet_url ?>
+				<?php echo esc_url( $tweet_url ); ?>
 			</p>
 		<?php endif; ?>
 		</div>

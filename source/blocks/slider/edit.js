@@ -1,11 +1,14 @@
 import classnames from 'classnames';
 import memoize from 'memize';
-
+import { times } from 'lodash';
+import { createBlock } from '@wordpress/blocks';
 import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
 import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';
-import { useEffect, useRef, useState } from '@wordpress/element';
 import { useSelect } from '@wordpress/data';
+import { useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
+
+import { randId } from '../../utils';
 
 const ALLOWED_BLOCKS = ['amnesty-core/slide'];
 const getLayoutTemplate = memoize((blocks) => times(blocks, () => ALLOWED_BLOCKS));
@@ -88,6 +91,11 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
   const prevSlide = () => setSelectedSlide(selectedSlide - 1);
   const classes = classnames(className, 'slider', `timeline-${attributes.style}`);
 
+  const addSlide = () => {
+    slides.push(createBlock('amnesty-core/slide'));
+    nextSlide();
+  };
+
   return (
     <>
       {controls}
@@ -101,7 +109,6 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
               onChange={(title) => setAttributes({ title })}
               value={attributes.title}
               allowedFormats={[]}
-              keepPlaceholderOnFocus={true}
               format="string"
             />
           </div>

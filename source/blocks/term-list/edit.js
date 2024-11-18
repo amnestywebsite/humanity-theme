@@ -121,7 +121,6 @@ const edit = ({ attributes, className, setAttributes }) => {
           onChange={(title) => setAttributes({ title })}
           // translators: [admin]
           placeholder={__('A-Z of Countries and Regions', 'amnesty')}
-          keepPlaceholderOnFocus={true}
           withoutInteractiveFormatting={true}
         />
         <div className="navigation">

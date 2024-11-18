@@ -16,18 +16,18 @@ if ( ! empty( $attributes['type'] ) && ! in_array( $attributes['type'], [ 'nav',
 $make_id = fn ( string $value ): string => amnesty_hash_id( $attributes['name'] . '-' . $value );
 
 if ( true === $attributes['multiple'] ) {
-	require __DIR__ . 'render-multiselect.php';
+	require __DIR__ . '/render-multiselect.php';
 	return;
 }
 
 if ( true === $attributes['isForm'] ) {
-	require __DIR__ . 'render-form.php';
+	require __DIR__ . '/render-form.php';
 	return;
 }
 
 if ( true === $attributes['isNav'] ) {
-	require __DIR__ . 'render-nav.php';
+	require __DIR__ . '/render-nav.php';
 	return;
 }
 
-require __DIR__ . 'render-control.php';
+require __DIR__ . '/render-control.php';

@@ -3,7 +3,7 @@ import metadata from './block.json';
 
 import { registerBlockType } from '@wordpress/blocks';
 
-registerBlockType(metadata, {
+registerBlockType(metadata.name, {
   ...metadata,
   edit,
   save: () => null,

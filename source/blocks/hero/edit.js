@@ -151,7 +151,6 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
                 value={attributes.title}
                 onChange={(title) => setAttributes({ title })}
                 format="string"
-                keepPlaceholderOnFocus={true}
               />
             </h1>
             <RichText
@@ -161,7 +160,6 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
               value={attributes.content}
               onChange={(content) => setAttributes({ content })}
               format="string"
-              keepPlaceholderOnFocus={true}
             />
             <div className="hero-cta">
               <div className="btn btn--large">
@@ -171,7 +169,6 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
                   value={attributes.ctaText}
                   onChange={(ctaText) => setAttributes({ ctaText })}
                   format="string"
-                  keepPlaceholderOnFocus={true}
                 />
                 <URLInputButton
                   url={attributes.ctaLink}
