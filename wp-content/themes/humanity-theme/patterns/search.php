@@ -47,13 +47,31 @@ if ( amnesty_get_query_var( 'qmonth' ) ) {
 // add filter to limit the post terms results for search
 add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
 
+$current_sort     = amnesty_get_query_var( 'sort' );
+$available_sorts  = amnesty_valid_sort_parameters();
+$sort_select_args = [
+	'label'     => __( 'Sort by', 'amnesty' ),
+	'showLabel' => true,
+	'name'      => 'sort',
+	'isForm'    => true,
+	'multiple'  => false,
+	'options'   => $available_sorts,
+	'active'    => $current_sort,
+];
+
 ?>
 
 <!-- wp:query <?php echo wp_kses_data( wp_json_encode( $args ) ); ?> -->
 <div class="wp-block-query">
 	<!-- wp:group {"tagName":"div","className":"section section--tinted search-results"} -->
 	<div class="wp-block-group section section--tinted search-results">
-		<!-- wp:amnesty-core/search-header /-->
+		<!-- wp:group {"tagName":"header","className":"postlist-header"} -->
+		<header class="wp-block-group postlist-header">
+			<!-- wp:amnesty-core/search-title /-->
+			<!-- wp:amnesty-core/custom-select <?php echo wp_kses_data( wp_json_encode( $sort_select_args ) ); ?> /-->
+		</header>
+		<!-- /wp:group -->
+
 		<!-- wp:post-template {"layout":{"type":"constrained","justifyContent":"left"}} -->
 
 		<!-- wp:group {"tagName":"article","className":"post post--result"} -->

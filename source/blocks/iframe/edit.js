@@ -73,7 +73,6 @@ const edit = ({ attributes, isSelected, setAttributes }) => {
               tagName="figcaption"
               // translators: [admin]
               placeholder={__('Write caption…', 'amnesty')}
-              keepPlaceholderOnFocus={true}
               value={attributes.caption}
               onChange={(caption) => setAttributes({ caption })}
               inlineToolbar

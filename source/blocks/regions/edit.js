@@ -201,7 +201,6 @@ const edit = ({ attributes, setAttributes }) => {
           onChange={(title) => setAttributes({ title })}
           // translators: [admin]
           placeholder={__('Explore by Region', 'amnesty')}
-          keepPlaceholderOnFocus={true}
           withoutInteractiveFormatting={true}
         />
         <List terms={terms} depth={0} maxDepth={attributes.depth} />

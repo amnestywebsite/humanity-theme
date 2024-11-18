@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Title: Archive filters
- * Description: Outputs filters for post type archive pages
- * Slug: amnesty/archive-filters
+ * Title: Archive heading
+ * Description: Outputs the title & description for post type archive pages
+ * Slug: amnesty/archive-heading
  * Inserter: no
  */
 

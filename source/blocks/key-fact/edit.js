@@ -8,7 +8,6 @@ const edit = ({ attributes, setAttributes }) => (
       tagName="h3"
       // translators: [admin]
       placeholder={__('(Insert Title)', 'amnesty')}
-      keepPlaceholderOnFocus={true}
       value={attributes.title}
       allowedFormats={[]}
       onChange={(title) => setAttributes({ title })}
@@ -18,7 +17,6 @@ const edit = ({ attributes, setAttributes }) => (
       tagName="p"
       // translators: [admin]
       placeholder={__('(Insert Content)', 'amnesty')}
-      keepPlaceholderOnFocus={true}
       value={attributes.content}
       allowedFormats={[]}
       onChange={(content) => setAttributes({ content })}

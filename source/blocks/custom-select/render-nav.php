@@ -1,9 +1,9 @@
-<div class="checkboxGroup is-nav <?php echo esc_attr( $attributes['class'] ); ?>" action="<?php echo esc_url( current_url() ); ?>" <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
+<div class="checkboxGroup is-nav <?php echo esc_attr( $attributes['className'] ?? '' ); ?>" action="<?php echo esc_url( current_url() ); ?>" <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
 <?php if ( $attributes['showLabel'] ) : ?>
 	<span class="checkboxGroup-label"><?php echo esc_html( $attributes['label'] ); ?></span>
 <?php endif; ?>
 
-	<button class="checkboxGroup-button" type="button" aria-haspopup="listbox" aria-expanded="false" <?php disabled( $attributes['disabled'] ); ?>>
+	<button class="checkboxGroup-button" type="button" aria-haspopup="listbox" aria-expanded="false" <?php disabled( $attributes['isDisabled'] ); ?>>
 	<?php
 
 	if ( $attributes['showLabel'] ) {

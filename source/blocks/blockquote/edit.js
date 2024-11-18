@@ -127,7 +127,6 @@ const edit = ({ attributes, setAttributes }) => {
             placeholder={__('(Insert Quote Text)', 'amnesty')}
             value={content}
             allowedFormats={[]}
-            keepPlaceholderOnFocus={true}
             onChange={(newContent) => setAttributes({ content: newContent })}
           />
         </div>
@@ -138,7 +137,6 @@ const edit = ({ attributes, setAttributes }) => {
             placeholder={__('(Insert Citation)', 'amnesty')}
             value={citation}
             allowedFormats={[]}
-            keepPlaceholderOnFocus={true}
             onChange={(newCitation) => setAttributes({ citation: newCitation })}
           />
         </div>

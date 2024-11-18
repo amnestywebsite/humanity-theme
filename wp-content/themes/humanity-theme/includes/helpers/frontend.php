@@ -23,7 +23,7 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 		$params_to_attributes = [
 			'active'     => 'active',
 			'class'      => 'className',
-			'disabled'   => 'disabled',
+			'disabled'   => 'isDisabled',
 			'is_control' => 'isControl',
 			'is_form'    => 'isForm',
 			'is_nav'     => 'isNav',

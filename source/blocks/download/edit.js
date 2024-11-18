@@ -122,7 +122,6 @@ const edit = ({ attributes, setAttributes }) => {
             allowedFormats={[]}
             // translators: [admin]
             placeholder={__('Download', 'amnesty')}
-            keepPlaceholderOnFocus={true}
             value={attributes.buttonText}
             onChange={(buttonText) => setAttributes({ buttonText })}
           />

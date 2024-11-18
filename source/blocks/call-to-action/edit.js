@@ -80,7 +80,6 @@ const edit = ({ attributes, setAttributes }) => {
           placeholder={__('(Pre-heading)', 'amnesty')}
           allowedFormats={[]}
           value={attributes.preheading}
-          keepPlaceholderOnFocus={true}
           onChange={(preheading) => setAttributes({ preheading })}
         />
         <RichText
@@ -90,7 +89,6 @@ const edit = ({ attributes, setAttributes }) => {
           placeholder={__('(Heading)', 'amnesty')}
           allowedFormats={[]}
           value={attributes.title}
-          keepPlaceholderOnFocus={true}
           onChange={(title) => setAttributes({ title })}
         />
         <RichText
@@ -99,7 +97,6 @@ const edit = ({ attributes, setAttributes }) => {
           // translators: [admin]
           placeholder={__('(Content)', 'amnesty')}
           value={attributes.content}
-          keepPlaceholderOnFocus={true}
           onChange={(content) => setAttributes({ content })}
         />
         <div className="callToAction-buttonContainer">
