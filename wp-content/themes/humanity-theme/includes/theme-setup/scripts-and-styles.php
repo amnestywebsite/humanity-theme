@@ -372,7 +372,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 		// Background Media block
 		wp_register_style(
 			'amnesty-background-media-style',
-			get_template_directory_uri() . '/build/blocks/background-media/style-index.css',
+			get_template_directory_uri() . '/build/blocks-deprecated/background-media/style-index.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -396,7 +396,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 		// Collapsable block
 		wp_register_style(
 			'amnesty-collapsable-style',
-			get_template_directory_uri() . '/build/blocks/collapsable/style-view.css',
+			get_template_directory_uri() . '/build/blocks-deprecated/collapsable/style-view.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -404,7 +404,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 		// Custom Card block
 		wp_register_style(
 			'amnesty-custom-card-style',
-			get_template_directory_uri() . '/build/blocks/custom-card/style-index.css',
+			get_template_directory_uri() . '/build/blocks-deprecated/custom-card/style-index.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -412,7 +412,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 		// Fluid iFrame block
 		wp_register_style(
 			'amnesty-fluid-iframe-style',
-			get_template_directory_uri() . '/build/blocks/fluid-iframe/style-index.css',
+			get_template_directory_uri() . '/build/blocks/fluid-iframe/style-view.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -429,14 +429,6 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 		wp_register_style(
 			'amnesty-link-group-style',
 			get_template_directory_uri() . '/build/blocks/link-group/style-index.css',
-			[],
-			$theme->get( 'Version' )
-		);
-
-		// Menu block
-		wp_register_style(
-			'amnesty-menu-style',
-			get_template_directory_uri() . '/build/blocks/menu/style-index.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -533,7 +525,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 		// Background Media block
 		wp_register_style(
 			'amnesty-background-media-editor-style',
-			get_template_directory_uri() . '/build/blocks/background-media/index.css',
+			get_template_directory_uri() . '/build/blocks-deprecated/background-media/index.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -557,7 +549,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 		// Collapsable block
 		wp_register_style(
 			'amnesty-collapsable-editor-style',
-			get_template_directory_uri() . '/build/blocks/collapsable/index.css',
+			get_template_directory_uri() . '/build/blocks-deprecated/collapsable/index.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -573,7 +565,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 		// Custom Card block
 		wp_register_style(
 			'amnesty-custom-card-editor-style',
-			get_template_directory_uri() . '/build/blocks/custom-card/index.css',
+			get_template_directory_uri() . '/build/blocks-deprecated/custom-card/index.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -606,14 +598,6 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 		wp_register_style(
 			'amnesty-link-group-editor-style',
 			get_template_directory_uri() . '/build/blocks/link-group/index.css',
-			[],
-			$theme->get( 'Version' )
-		);
-
-		// Menu block
-		wp_register_style(
-			'amnesty-menu-editor-style',
-			get_template_directory_uri() . '/build/blocks/menu/index.css',
 			[],
 			$theme->get( 'Version' )
 		);

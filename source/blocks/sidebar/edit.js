@@ -1,4 +1,4 @@
-const { defaultSidebars } = window.aiSettings;
+const { defaultSidebars } = window.aiSidebar;
 import { useBlockProps } from '@wordpress/block-editor';
 import { useEntityRecord } from '@wordpress/core-data';
 import { useSelect } from '@wordpress/data';
