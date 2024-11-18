@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
 const { apiFetch } = wp;
-const { BlockAlignmentToolbar, BlockControls, BlockVerticalAlignmentToolbar, InnerBlocks, InspectorControls, MediaUpload, MediaUploadCheck } = wp.blockEditor;
+const { BlockAlignmentToolbar, BlockControls, BlockVerticalAlignmentToolbar, InnerBlocks, InspectorControls, MediaUpload, MediaUploadCheck, useBlockProps } = wp.blockEditor;
 
 const ALLOWED_BLOCKS = [
   'core/heading',
@@ -74,6 +74,10 @@ const edit = (props) => {
     [`has-${background}-background-color`]: !!background,
   });
 
+  const blockProps = useBlockProps({
+    className: containerClasses,
+  });
+
   const css = getEditorCssV2(imageObject, uniqId, focalPoint, opacity);
 
   return (
@@ -135,7 +139,7 @@ const edit = (props) => {
         />
       </BlockControls>
       {css && <style>{css}</style>}
-      <div id={uniqId} className={containerClasses}>
+      <div id={uniqId} {...blockProps}>
         <div>
           <MediaUploadCheck>
             <MediaUpload

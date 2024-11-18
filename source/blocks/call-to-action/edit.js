@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 
 import { isUndefined } from 'lodash';
-import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
+import { InnerBlocks, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, SelectControl } from '@wordpress/components';
 import { useEffect, useRef } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
@@ -40,6 +40,14 @@ const edit = ({ attributes, setAttributes }) => {
     }
   }, []);
 
+  const blockProps = useBlockProps(
+    {
+      className: classnames('callToAction', {
+        [`callToAction--${attributes.background}`]: attributes.background,
+      }),
+    },
+  );
+
   return (
     <>
       <InspectorControls>
@@ -64,11 +72,7 @@ const edit = ({ attributes, setAttributes }) => {
           />
         </PanelBody>
       </InspectorControls>
-      <div
-        className={classnames('callToAction', {
-          [`callToAction--${attributes.background}`]: attributes.background,
-        })}
-      >
+      <div {...blockProps} >
         <RichText
           tagName="h2"
           className="callToAction-preHeading"

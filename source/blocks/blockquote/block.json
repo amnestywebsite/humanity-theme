@@ -12,7 +12,8 @@
   "style": ["amnesty-blockquote-style"],
   "render": "file:./render.php",
   "supports": {
-    "className": false
+    "className": false,
+    "inserter": false
   },
   "attributes": {
     "align": {

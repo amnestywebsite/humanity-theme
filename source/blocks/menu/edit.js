@@ -1,10 +1,10 @@
 import classnames from 'classnames';
-
-import { InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, SelectControl } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import { useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
+
+const { InspectorControls, useBlockProps } = wp.blockEditor;
 
 const colours = [
   // translators: [admin]
@@ -51,6 +51,10 @@ const StandardMenu = ({ attributes, className, loadingMenu, menus }) => {
     return <p>{__('Select a menu in the sidebar', 'amnesty')}</p>;
   }
 
+  const blockProps = useBlockProps({
+    className
+  });
+
   if (loadingMenu) {
     // translators: [admin]
     return <p>{__('Loading Menu…', 'amnesty')}</p>;
@@ -61,7 +65,7 @@ const StandardMenu = ({ attributes, className, loadingMenu, menus }) => {
   }
 
   return (
-    <div className={className}>
+    <div {...blockProps}>
       <ul
         className="postlist-categories"
         dangerouslySetInnerHTML={{ __html: menus[attributes.menuId].rendered }}
