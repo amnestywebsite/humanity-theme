@@ -24,21 +24,6 @@ if ( $current_sort_option ) {
 <!-- wp:group {"tagName":"header","className":"postlist-header"} -->
 <header class="wp-block-group postlist-header">
 	<!-- wp:amnesty-core/query-count /-->
-	<?php
-
-	// site editor expects blocks or nothing
-	if ( ! is_admin() && ! ( defined( 'REST_REQUEST' ) && ! REST_REQUEST ) ) {
-		amnesty_render_custom_select(
-			[
-				'label'      => __( 'Sort by', 'amnesty' ),
-				'show_label' => true,
-				'name'       => 'sort',
-				'is_form'    => true,
-				'multiple'   => false,
-				'options'    => $available_sorts,
-			]
-		);
-	}
-	?>
+	<!-- wp:amnesty-core/custom-select {"label":"<?php esc_html_e( 'Sort by', 'amnesty' ); ?>","showLabel":true,"name":"sort","isForm":true,"multiple":false,"options":<?php echo wp_kses_data( wp_json_encode( $available_sorts ) ); ?>} /-->
 </header>
 <!-- /wp:group -->

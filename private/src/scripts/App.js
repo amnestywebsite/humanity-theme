@@ -9,7 +9,6 @@ import languageSelector from './modules/language-selector';
 import header from './modules/header';
 import mobileMenu from './modules/navigation';
 import subcatDrops from './modules/subcategory-dropdown';
-import checkboxGroup from './modules/checkbox-group';
 import latestFilters from './modules/latest-filters';
 import searchFilters from './modules/search-filters';
 import filterPosts from './modules/filter-posts';
@@ -32,7 +31,6 @@ const App = () => {
   mobileMenu();
   Overlays();
   subcatDrops();
-  checkboxGroup();
   latestFilters();
   searchFilters();
   filterPosts();

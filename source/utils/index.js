@@ -234,3 +234,19 @@ export const fetchMediaData = (id, callback, state = {}) => {
       }),
     );
 };
+
+/**
+ * Create a hash usable in a HTML tag's id attribute
+ *
+ * @param {String} string the string to use as the seed
+ *
+ * @returns {String}
+ */
+export async function makeHtmlId(string) {
+  return Array.from(
+    new Uint8Array(
+      await crypto.subtle.digest('SHA-1', new TextEncoder().encode(string))
+    ),
+    (byte) => byte.toString(16).padStart(2, 'a')
+  ).join('');
+}

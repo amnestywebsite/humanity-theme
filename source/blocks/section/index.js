@@ -7,6 +7,7 @@ import deprecated from './deprecated';
 
 import { assign } from 'lodash';
 import { registerBlockType } from '@wordpress/blocks';
+import { InnerBlocks } from '@wordpress/block-editor';
 
 registerBlockType(metadata, {
   ...metadata,

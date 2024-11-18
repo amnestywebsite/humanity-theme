@@ -9,7 +9,7 @@ if ( ! function_exists( 'amnesty_register_fse_blocks' ) ) {
 	 * @return void
 	 */
 	function amnesty_register_fse_blocks(): void {
-		$basedir  = get_template_directory() . DIRECTORY_SEPARATOR . 'build' . DIRECTORY_SEPARATOR . 'blocks';
+		$basedir  = get_template_directory() . DIRECTORY_SEPARATOR . 'build' . DIRECTORY_SEPARATOR;
 		$iterator = new RecursiveIteratorIterator( new RecursiveDirectoryIterator( $basedir ) );
 
 		foreach ( $iterator as $entry ) {

@@ -14,12 +14,6 @@
 
   @include mq(x-small) {
     @include flexy-grid(2, flexy-gutter());
-
-    .article-sidebar & {
-      flex: 1 1 100%;
-      max-width: none;
-      min-width: 49%;
-    }
   }
 }
 
