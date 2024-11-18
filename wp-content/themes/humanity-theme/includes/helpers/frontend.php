@@ -66,7 +66,6 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 
 		$block = '<!-- wp:amnesty-core/custom-select ' . wp_json_encode( $attributes ) . ' /-->';
 
-		dd( $block, parse_blocks( $block ) );
 		echo wp_kses( do_blocks( $block ), 'filter' );
 	}
 }
