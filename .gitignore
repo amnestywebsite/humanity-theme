@@ -22,6 +22,7 @@ web.config
 /wp-content/backup-db/*
 /wp-content/blogs.dir/*
 /wp-content/cache/*
+/wp-content/debug.log
 /wp-content/index.php
 /wp-content/languages/*
 /wp-content/mu-plugins/*
