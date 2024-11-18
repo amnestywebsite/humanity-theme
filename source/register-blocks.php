@@ -17,6 +17,10 @@ if ( ! function_exists( 'amnesty_register_fse_blocks' ) ) {
 			if ( $entry->isFile() && 'block' === $entry->getBasename( '.json' ) ) {
 				register_block_type( $entry->getRealPath() );
 			}
+
+			if ( $entry->isFile() && 'localisation.php' === $entry->getBasename() ) {
+				require_once $entry->getRealPath();
+			}
 		}
 	}
 }
