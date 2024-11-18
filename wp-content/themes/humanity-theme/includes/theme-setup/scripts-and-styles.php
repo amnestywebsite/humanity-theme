@@ -379,7 +379,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-background-media-style',
 			get_template_directory_uri() . '/build/blocks/background-media/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/background-media/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Blockquote block
@@ -387,7 +387,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-blockquote-style',
 			get_template_directory_uri() . '/build/blocks/blockquote/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/blockquote/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Call to Action block
@@ -395,7 +395,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-call-to-action-style',
 			get_template_directory_uri() . '/build/blocks/call-to-action/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/call-to-action/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Collapsable block
@@ -403,7 +403,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-collapsable-style',
 			get_template_directory_uri() . '/build/blocks/collapsable/style-view.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/collapsable/style-view.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Custom Card block
@@ -411,7 +411,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-custom-card-style',
 			get_template_directory_uri() . '/build/blocks/custom-card/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/custom-card/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Fluid iFrame block
@@ -419,7 +419,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-fluid-iframe-style',
 			get_template_directory_uri() . '/build/blocks/fluid-iframe/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/fluid-iframe/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Hero block
@@ -427,7 +427,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-hero-style',
 			get_template_directory_uri() . '/build/blocks/hero/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/hero/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Link Group block
@@ -435,7 +435,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-link-group-style',
 			get_template_directory_uri() . '/build/blocks/link-group/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/link-group/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Menu block
@@ -443,7 +443,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-menu-style',
 			get_template_directory_uri() . '/build/blocks/menu/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/menu/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Post List block
@@ -451,7 +451,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-post-list-style',
 			get_template_directory_uri() . '/build/blocks/post-list/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/post-list/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Stat Counter block
@@ -459,7 +459,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-stat-counter-style',
 			get_template_directory_uri() . '/build/blocks/stat-counter/style-view.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/stat-counter/style-view.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Tweet Action block
@@ -467,7 +467,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			'amnesty-tweet-action-style',
 			get_template_directory_uri() . '/build/blocks/tweet/style-view.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/tweet/style-view.css' )
+			$theme->get( 'Version' )
 		);
 	}
 }
@@ -484,12 +484,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_assets' ) ) {
 	 * @return void
 	 */
 	function amnesty_block_enqueue_assets() {
+		$theme = wp_get_theme();
+
 		// Countdown Timer block
 		wp_register_style(
 			'amnesty-countdown-timer-style',
 			get_template_directory_uri() . '/build/blocks/countdown-timer/style-view.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/countdown-timer/style-view.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Download block
@@ -497,7 +499,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_assets' ) ) {
 			'amnesty-download-style',
 			get_template_directory_uri() . '/build/blocks/download/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/download/style-index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Sutori Embed block
@@ -505,7 +507,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_assets' ) ) {
 			'amnesty-sutori-embed-style',
 			get_template_directory_uri() . '/build/blocks/embed-sutori/style-index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/embed-sutori/style-index.css' )
+			$theme->get( 'Version' )
 		);
 	}
 }
@@ -522,13 +524,15 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 	 *
 	 * @return void
 	 */
-function amnesty_block_enqueue_editor_assets() {
+	function amnesty_block_enqueue_editor_assets() {
+		$theme = wp_get_theme();
+
 		// Action block
 		wp_register_style(
 			'amnesty-action-editor-style',
 			get_template_directory_uri() . '/build/blocks/action/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/action/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Background Media block
@@ -536,7 +540,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-background-media-editor-style',
 			get_template_directory_uri() . '/build/blocks/background-media/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/background-media/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Blockquote
@@ -544,7 +548,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-blockquote-editor-style',
 			get_template_directory_uri() . '/build/blocks/blockquote/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/blockquote/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Call to Action
@@ -552,7 +556,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-call-to-action-editor-style',
 			get_template_directory_uri() . '/build/blocks/call-to-action/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/call-to-action/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Collapsable block
@@ -560,7 +564,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-collapsable-editor-style',
 			get_template_directory_uri() . '/build/blocks/collapsable/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/collapsable/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Countdown Timer block
@@ -568,7 +572,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-countdown-timer-editor-style',
 			get_template_directory_uri() . '/build/blocks/countdown-timer/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/countdown-timer/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Custom Card block
@@ -576,7 +580,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-custom-card-editor-style',
 			get_template_directory_uri() . '/build/blocks/custom-card/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/custom-card/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Download block
@@ -584,7 +588,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-download-editor-style',
 			get_template_directory_uri() . '/build/blocks/download/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/download/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Fluid iFrame block
@@ -592,7 +596,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-fluid-iframe-editor-style',
 			get_template_directory_uri() . '/build/blocks/fluid-iframe/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/fluid-iframe/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Hero block
@@ -600,7 +604,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-hero-editor-style',
 			get_template_directory_uri() . '/build/blocks/hero/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/hero/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Link Group block
@@ -608,7 +612,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-link-group-editor-style',
 			get_template_directory_uri() . '/build/blocks/link-group/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/link-group/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Menu block
@@ -616,7 +620,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-menu-editor-style',
 			get_template_directory_uri() . '/build/blocks/menu/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/menu/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Post List block
@@ -624,7 +628,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-post-list-editor-style',
 			get_template_directory_uri() . '/build/blocks/post-list/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/post-list/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Stat Counter block
@@ -632,7 +636,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-stat-counter-editor-style',
 			get_template_directory_uri() . '/build/blocks/stat-counter/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/stat-counter/index.css' )
+			$theme->get( 'Version' )
 		);
 
 		// Tweet Action block
@@ -640,7 +644,7 @@ function amnesty_block_enqueue_editor_assets() {
 			'amnesty-tweet-action-editor-style',
 			get_template_directory_uri() . '/build/blocks/tweet/index.css',
 			[],
-			filemtime( get_template_directory() . '/build/blocks/tweet/index.css' )
+			$theme->get( 'Version' )
 		);
 	}
 }

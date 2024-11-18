@@ -1,4 +1,5 @@
 import classnames from 'classnames';
+import memoize from 'memize';
 
 import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
 import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';

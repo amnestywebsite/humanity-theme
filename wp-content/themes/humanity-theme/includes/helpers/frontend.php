@@ -20,6 +20,21 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 	 * @return void
 	 */
 	function amnesty_render_custom_select( array $params = [] ): void {
+		$params_to_attributes = [
+			'active'     => 'active',
+			'class'      => 'className',
+			'disabled'   => 'disabled',
+			'is_control' => 'isControl',
+			'is_form'    => 'isForm',
+			'is_nav'     => 'isNav',
+			'label'      => 'label',
+			'multiple'   => 'multiple',
+			'name'       => 'name',
+			'options'    => 'options',
+			'show_label' => 'showLabel',
+			'type'       => 'type',
+		];
+
 		$params = wp_parse_args(
 			$params,
 			[
@@ -28,52 +43,31 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 				'show_label' => false,
 				'name'       => amnesty_rand_str( 8 ),
 				'is_form'    => false,
-				'is_control' => false,
+				'is_control' => true,
 				'is_nav'     => false,
 				'multiple'   => false,
 				'disabled'   => false,
 				'active'     => '',
 				'class'      => '',
+				'type'       => 'filter',
 				'options'    => [
 					/* translators: [front] AM not sure yet */
-					'label'   => __( 'Choose an option', 'amnesty' ),
-					'is_form' => false,
-					'active'  => '',
-					'class'   => '',
-					'options' => [
-						/* translators: [front] AM not sure yet */
-						'' => __( 'Choose an option', 'amnesty' ),
-					],
+					'' => __( 'Choose an option', 'amnesty' ),
 				],
 			]
 		);
 
-		$is_form = amnesty_validate_boolish( $params['is_form'] );
-
-		if ( ! $is_form ) {
-			unset( $params['type'] );
+		$attributes = [];
+		foreach ( $params as $key => $value ) {
+			if ( isset( $params_to_attributes[ $key ] ) ) {
+				$attributes[ $params_to_attributes[ $key ] ] = $value;
+			}
 		}
 
-		if ( ! empty( $params['type'] ) && ! in_array( $params['type'], [ 'nav', 'filter' ], true ) ) {
-			$params['type'] = 'filter';
-		}
+		$block = '<!-- wp:amnesty-core/custom-select ' . wp_json_encode( $attributes ) . ' /-->';
 
-		if ( true === $params['multiple'] ) {
-			require locate_template( 'partials/forms/multiselect.php' );
-			return;
-		}
-
-		if ( true === $params['is_form'] ) {
-			require locate_template( 'partials/forms/select-form.php' );
-			return;
-		}
-
-		if ( true === $params['is_nav'] ) {
-			require locate_template( 'partials/forms/select-nav.php' );
-			return;
-		}
-
-		require locate_template( 'partials/forms/select-control.php' );
+		dd( $block, parse_blocks( $block ) );
+		echo wp_kses( do_blocks( $block ), 'filter' );
 	}
 }
 

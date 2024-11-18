@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/pop-in",
+  "title": "Pop-in",
+  "category": "amnesty-core",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./view.js",
+  "style": "file:./style.css"
+}

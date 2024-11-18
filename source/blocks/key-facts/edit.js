@@ -1,9 +1,9 @@
 import classnames from 'classnames';
+import memoize from 'memize';
 
 import { times } from 'lodash';
 import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl } from '@wordpress/components';
-import { memoize } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
 
 const ALLOWED_BLOCKS = ['amnesty-core/key-fact'];

@@ -12,6 +12,7 @@
     "lint": "eslint .; stylelint ."
   },
   "devDependencies": {
+    "@playwright/test": "^1.48.2",
     "@wordpress/api-fetch": "^7.10.0",
     "@wordpress/block-editor": "^14.5.0",
     "@wordpress/blocks": "^13.10.0",
@@ -24,6 +25,7 @@
     "@wordpress/hooks": "^4.10.0",
     "@wordpress/i18n": "^5.10.0",
     "@wordpress/scripts": "^27.7.0",
+    "@wordpress/server-side-render": "^5.11.0",
     "@wordpress/url": "^4.10.0",
     "eslint": "^8.3.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -33,10 +35,14 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-webpack-plugin": "^4.0.1",
+    "prettier": "^3.3.3",
+    "react": "18",
+    "react-dom": "18",
     "stylelint": "^15.11.0",
     "stylelint-config-recommended-scss": "^13.1.0",
     "stylelint-scss": "^5.3.1",
-    "stylelint-webpack-plugin": "^4.1.1"
+    "stylelint-webpack-plugin": "^4.1.1",
+    "webpack": "^5.96.1"
   },
   "dependencies": {
     "@braintree/sanitize-url": "^7.0.1",
@@ -44,6 +50,7 @@
     "core-js": "^3.19.1",
     "flickity": "^3.0.0",
     "flickity-as-nav-for": "^3.0.0",
+    "js-cookie": "^3.0.5",
     "memize": "^2.1.0",
     "react-select": "^5.8.2",
     "sass": "^1.80.6",
