@@ -13,6 +13,9 @@
     "className": true,
     "inserter": false
 	},
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php",
   "attributes": {
     "type": {
       "type": "string",
@@ -47,7 +50,7 @@
       "type": "boolean",
       "default": false
     },
-    "disabled": {
+    "isDisabled": {
       "type": "boolean",
       "default": false
     },
@@ -61,6 +64,5 @@
         "": "Choose an option"
       }
     }
-  },
-  "editorScript": "file:./index.js"
+  }
 }

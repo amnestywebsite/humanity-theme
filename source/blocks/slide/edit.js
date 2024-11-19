@@ -109,7 +109,6 @@ const edit = ({ attributes, className, context, setAttributes }) => {
                 value={attributes.timelineContent}
                 onChange={(timelineContent) => setAttributes({ timelineContent })}
                 allowedFormats={[]}
-                keepPlaceholderOnFocus={true}
                 format="string"
               />
             </div>
@@ -125,7 +124,6 @@ const edit = ({ attributes, className, context, setAttributes }) => {
                 value={attributes.heading}
                 onChange={(heading) => setAttributes({ heading })}
                 allowedFormats={[]}
-                keepPlaceholderOnFocus={true}
                 format="string"
               />
             </h1>
@@ -137,7 +135,6 @@ const edit = ({ attributes, className, context, setAttributes }) => {
                 value={attributes.subheading}
                 onChange={(subheading) => setAttributes({ subheading })}
                 allowedFormats={[]}
-                keepPlaceholderOnFocus={true}
                 format="string"
               />
             </h2>
@@ -149,7 +146,6 @@ const edit = ({ attributes, className, context, setAttributes }) => {
                 value={attributes.content}
                 onChange={(content) => setAttributes({ content })}
                 allowedFormats={[]}
-                keepPlaceholderOnFocus={true}
               />
             </div>
             <div className="slide-callToAction">
@@ -161,7 +157,6 @@ const edit = ({ attributes, className, context, setAttributes }) => {
                   value={attributes.callToActionText}
                   onChange={(callToActionText) => setAttributes({ callToActionText })}
                   allowedFormats={[]}
-                  keepPlaceholderOnFocus={true}
                   format="string"
                 />
               </div>

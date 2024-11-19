@@ -47,7 +47,6 @@ const edit = ({ attributes, setAttributes }) => {
           tagName="h2"
           // translators: [admin]
           placeholder={__('(Insert Title)', 'amnesty')}
-          keepPlaceholderOnFocus={true}
           value={attributes.title}
           allowedFormats={[]}
           onChange={(title) => setAttributes({ title })}

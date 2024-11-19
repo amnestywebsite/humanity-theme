@@ -108,7 +108,6 @@ const edit = ({ attributes, setAttributes }) => {
           placeholder={__('Further Reading', 'amnesty')}
           value={attributes.title}
           onChange={(title) => setAttributes({ title })}
-          keepPlaceholderOnFocus={true}
           multiline={false}
           withoutInteractiveFormatting={true}
         />
@@ -123,7 +122,6 @@ const edit = ({ attributes, setAttributes }) => {
                 value={item.text}
                 onChange={(text) => updateItemProp(index, 'text', text)}
                 onRemove={() => removeItem(index)}
-                keepPlaceholderOnFocus={true}
                 multiline={false}
                 preserveWhiteSpace={true}
                 withoutInteractiveFormatting={true}

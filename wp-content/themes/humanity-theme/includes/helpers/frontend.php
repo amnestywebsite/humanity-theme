@@ -23,7 +23,7 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 		$params_to_attributes = [
 			'active'     => 'active',
 			'class'      => 'className',
-			'disabled'   => 'disabled',
+			'disabled'   => 'isDisabled',
 			'is_control' => 'isControl',
 			'is_form'    => 'isForm',
 			'is_nav'     => 'isNav',
@@ -102,5 +102,42 @@ if ( ! function_exists( 'amnesty_render_blocks' ) ) {
 	 */
 	function amnesty_render_blocks( array $blocks ): string {
 		return implode( '', array_map( 'render_block', $blocks ) );
+	}
+}
+
+if ( ! function_exists( 'amnesty_get_sidebar_id' ) ) {
+	/**
+	 * Get the correct sidbar ID for the current object
+	 *
+	 * @return int
+	 */
+	function amnesty_get_sidebar_id(): int {
+		// post-level override
+		$sidebar_id = absint( get_post_meta( get_the_ID(), '_sidebar_id', true ) );
+
+		if ( $sidebar_id ) {
+			return $sidebar_id;
+		}
+
+		// global default
+		return match ( get_post_type() ) {
+			'page'  => absint( amnesty_get_option( '_default_sidebar_page' )[0] ?? 0 ),
+			default => absint( amnesty_get_option( '_default_sidebar' )[0] ?? 0 ),
+		};
+	}
+}
+
+if ( ! function_exists( 'amnesty_is_sidebar_available' ) ) {
+	/**
+	 * Check whether a sidebar is available to render for the current object
+	 *
+	 * @return bool
+	 */
+	function amnesty_is_sidebar_available(): bool {
+		$sidebar = get_post( amnesty_get_sidebar_id() );
+
+		return is_a( $sidebar, WP_Post::class ) &&
+			'publish' === $sidebar->post_status &&
+			'sidebar' === $sidebar->post_type;
 	}
 }
