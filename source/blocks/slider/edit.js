@@ -3,7 +3,8 @@ import memoize from 'memize';
 
 import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
 import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';
-import { useEffect, useRef, useSelect, useState } from '@wordpress/element';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { useSelect } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
 
 const ALLOWED_BLOCKS = ['amnesty-core/slide'];

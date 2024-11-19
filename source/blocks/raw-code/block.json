@@ -8,6 +8,7 @@
   "icon": "",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
+  "editorStyle": ["amnesty-raw-code-editor-style"],
   "supports": {
     "className": false,
     "html": false

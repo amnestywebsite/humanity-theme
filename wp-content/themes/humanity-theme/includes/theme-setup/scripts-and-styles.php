@@ -631,6 +631,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// Raw Code block
+		wp_register_style(
+			'amnesty-raw-code-editor-style',
+			get_template_directory_uri() . '/build/blocks/raw-code/index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Stat Counter block
 		wp_register_style(
 			'amnesty-stat-counter-editor-style',

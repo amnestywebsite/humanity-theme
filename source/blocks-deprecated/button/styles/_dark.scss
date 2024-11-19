@@ -1,0 +1,15 @@
+.wp-block-file__button,
+.wp-block-button.is-style-dark .wp-block-button__link,
+.btn--dark,
+.btn.is-style-dark {
+  border: 1px solid var(--wp--preset--color--black);
+  background: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
+
+  &:hover,
+  &:focus {
+    background-color: var(--wp--preset--color--white);
+    border-color: var(--wp--preset--color--black);
+    color: var(--wp--preset--color--black);
+  }
+}
