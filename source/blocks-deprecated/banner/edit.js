@@ -1,7 +1,7 @@
 import classnames from 'classnames';
-import MediaMetadata from '../../components/MediaMetadata.jsx';
-import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls.jsx';
-import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
+import MediaMetadata from './components/MediaMetadata.jsx';
+import MediaMetadataVisibilityControls from './components/MediaMetadataVisibilityControls.jsx';
+import PostFeaturedVideo from './components/PostFeaturedVideo.jsx';
 
 const { InspectorControls, MediaUpload, RichText, URLInputButton } = wp.blockEditor;
 const { IconButton, PanelBody, SelectControl, TextControl } = wp.components;

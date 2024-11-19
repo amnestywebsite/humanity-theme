@@ -1,0 +1,34 @@
+@import "../../../utils/mixins/icon";
+
+.wp-block-button.is-style-link .wp-block-button__link {
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  font-family: var(--wp--preset--font-family--primary);
+  font-weight: normal;
+  text-transform: capitalize;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.wp-block-button.is-style-link .wp-block-button__link::before {
+  @include icon(290px, 200px, 17px, 11px);
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rtl .wp-block-button.is-style-link .wp-block-button__link::before {
+  transform: scaleX(-1);
+}
+
+.section--textWhite .wp-block-button.is-style-link .wp-block-button__link::before {
+  @include icon(250px, 238px, 17px, 11px);
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/header",
+  "title": "Banner",
+  "category": "amnesty-core",
+  "keywords": ["Banner", "Amnesty"],
+  "description": "Banner block",
+  "icon": "format-image",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php",
+  "supports": {
+    "className": false,
+    "inserter": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "alignment": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string"
+    },
+    "hideImageCaption": {
+      "type": "boolean",
+      "default": true
+    },
+    "hideImageCopyright": {
+      "type": "boolean",
+      "default": false
+    },
+    "size": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "embed": {
+      "type": "string"
+    },
+    "imageID": {
+      "type": "integer"
+    },
+    "imageURL": {
+      "type": "string"
+    },
+    "featuredVideoId": {
+      "type": "integer"
+    }
+  }
+}

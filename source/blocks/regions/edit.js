@@ -3,12 +3,13 @@ import classnames from 'classnames';
 import List from './components/List';
 
 import { each, filter, head, isEmpty, map } from 'lodash';
-import { apiFetch, apiRequest } from '@wordpress/api-fetch';
+import apiFetch from '@wordpress/api-fetch';
 import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
 import {  useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 import { addQueryArgs } from '@wordpress/url';
+import { useSelect } from '@wordpress/data';
 
 const unflatten = (list, parent = { id: 0 }, tree = []) => {
   const children = filter(list, (item) => item.parent === parent.id);
@@ -28,8 +29,8 @@ const unflatten = (list, parent = { id: 0 }, tree = []) => {
   return tree;
 };
 
-const fetchTerms = (attributes, state) => {
-  const { regionsOnly, depth } = attributes;
+const fetchTerms = ({ attributes, state }) => {
+  const { depth, regionsOnly } = attributes;
   const { cache, current, setTerms } = state;
 
   if (cache[current.rest_base]) {
@@ -50,7 +51,7 @@ const fetchTerms = (attributes, state) => {
 
   const allTerms = [];
 
-  apiRequest({ path })
+  apiFetch({ path })
     .then((data, status, response) => response.getResponseHeader('X-WP-TotalPages'))
     .then((termCount) => {
       const pages = Math.ceil(termCount / 100);
@@ -94,6 +95,17 @@ const fetchTerms = (attributes, state) => {
     });
 };
 
+let taxList = '';
+
+const isLoading = useSelect((select) => {
+  return select('core').isResolving('core', 'getTaxonomies');
+});
+
+if (!isLoading) {
+  taxList = wp.data.select('core')?.getTaxonomies();
+}
+
+
 const edit = ({ attributes, setAttributes }) => {
   const [taxonomies, setTaxonomies] = useState([]);
   const [options, setOptions] = useState([]);
@@ -102,19 +114,29 @@ const edit = ({ attributes, setAttributes }) => {
   const [cache, setCache] = useState({});
 
   const mounted = useRef();
+
   useEffect(() => {
     if (!mounted?.current) {
       mounted.current = true;
 
-      apiFetch({ path: '/wp/v2/taxonomies/' })
-        .then((response) => {
-          const taxes = filter(response, (t) => t.amnesty);
-          const newTax = head(filter(taxes, (t) => t.slug === taxonomy));
-          const choices = map(taxes, (tax) => ({ label: tax.name, value: tax.slug }));
-          setTaxonomies(taxes);
-          setCurrent(newTax);
-          setOptions(choices);
-        });
+      // Set the taxonomies using taxList
+      const taxes = filter(taxList, (t) => t.amnesty);
+      const newTax = head(filter(taxes, (t) => t.slug === attributes.taxonomy));
+      const choices = map(taxes, (tax) => ({ label: tax.name, value: tax.slug }));
+      setTaxonomies(taxes);
+      setCurrent(newTax);
+      setOptions(choices);
+
+      // apiFetch({ path: '/wp/v2/taxonomies/' })
+      //   .then((response) => {
+      //     console.log(response);
+      //     const taxes = filter(response, (t) => t.amnesty);
+      //     const newTax = head(filter(taxes, (t) => t.slug === attributes.taxonomy));
+      //     const choices = map(taxes, (tax) => ({ label: tax.name, value: tax.slug }));
+      //     setTaxonomies(taxes);
+      //     setCurrent(newTax);
+      //     setOptions(choices);
+      //   });
     }
   }, []);
 
@@ -136,9 +158,9 @@ const edit = ({ attributes, setAttributes }) => {
     }
   }, [attributes.depth, attributes.regionsOnly, attributes.taxonomy]);
 
-  useEffect(() => {
-    fetchTerms({ state: { cache, current, setCache, setTerms }, attributes });
-  }, [attributes.depth, attributes.taxonomy]);
+  // useEffect(() => {
+  //   fetchTerms({ state: { cache, current, setCache, setTerms }, attributes });
+  // }, [attributes.depth, attributes.taxonomy]);
 
   const hierarchical = current && current.hierarchical;
   const classes = classnames(classnames, {

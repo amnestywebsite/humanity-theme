@@ -1,4 +1,4 @@
-import { PlainText, BlockControls, transformStyles } from '@wordpress/block-editor';
+import { PlainText, BlockControls, transformStyles, useBlockProps } from '@wordpress/block-editor';
 import { ToolbarButton, Disabled, SandBox, ToolbarGroup } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import { useEffect, useRef, useState } from '@wordpress/element';
@@ -32,8 +32,14 @@ const edit = ({ attributes, isSelected, setAttributes }) => {
     }
   }, []);
 
+  const blockProps = useBlockProps(
+    {
+      className: 'wp-block-html',
+    },
+  );
+
   return (
-    <div className="wp-block-html">
+    <div {...blockProps}>
       <BlockControls>
         <ToolbarGroup>
           <ToolbarButton

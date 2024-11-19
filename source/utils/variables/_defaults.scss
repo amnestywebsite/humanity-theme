@@ -1,0 +1,50 @@
+// This file uses spacing to align, disable disalowing more than 1 space after colon.
+@use "sass:math";
+
+/* stylelint-disable scss/comment-no-empty */
+
+////
+/// @group Defaults
+/// @type Number (Unit)
+////
+
+/// Enable flexbox components.
+/// @type Bool
+$enable-flexbox: true !default;
+
+/// Sets the base line height.
+$base-line-height: 27px !default;
+
+//
+// Misc. variables.
+//
+
+/// Spacing for vertical rhythm based off the line-height.
+/// @group Defaults
+/// @require $base-line-height
+/// @see {function} spacing
+/// @example scss - Use modifiers for easy sizing adjustments.
+/// .foo {
+///   margin-top:    $spacing-unit;
+///   margin-bottom: $spacing-unit--double;
+///   margin-left:   $spacing-unit--half;
+/// }
+$spacing-unit: $base-line-height !default;
+
+/// Double `$spacing-unit`.
+$spacing-unit--double:  round($spacing-unit * 2);
+
+/// Half `$spacing-unit`.
+$spacing-unit--half:    round(math.div($spacing-unit, 2));
+
+/// Half `$spacing-unit`.
+$spacing-unit--quad:    round($spacing-unit * 4);
+
+/// Half `$spacing-unit`.
+$spacing-unit--quarter: round(math.div($spacing-unit, 4));
+
+/// Global border radius.
+$base-border-radius: 0 !default;
+
+/// Global border size.
+$base-border-size: 2px !default;
