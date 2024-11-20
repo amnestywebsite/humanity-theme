@@ -2319,7 +2319,7 @@ msgstr "Selección de idioma"
 #. translators: [front]
 #: partials/language-selector.php:19
 msgid "Which language would you like to use this site in?"
-msgstr "¿en qué idioma desea utilizar este sitio?"
+msgstr "¿En qué idioma desea utilizar este sitio?"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:20

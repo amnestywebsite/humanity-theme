@@ -2067,14 +2067,14 @@ msgstr "Síguenos en Instagram"
 msgid "Follow us on Telegram"
 msgstr "Síguenos en Telegrama"
 
-#: patterns/author-loop.php:17
-msgid "More from this author"
-msgstr "Mas de este autor"
-
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ Accessibility text
 #: partials/article-share.php:12
 msgid "Social sharing options"
 msgstr "Botones para compartir"
+
+#: patterns/author-loop.php:17
+msgid "More from this author"
+msgstr "Mas de este autor"
 
 #: partials/post/post-content.php:16
 #: partials/post/post-search.php:27
@@ -2357,182 +2357,6 @@ msgstr ""
 msgid "https://www.amnesty.org"
 msgstr ""
 
-#: patterns/25-25-25-25-links-with-icons.php
-msgctxt "Pattern title"
-msgid "25/25/25/25 Links with Icons"
-msgstr ""
-
-#: patterns/25-25-25-25-links-with-icons.php
-msgctxt "Pattern description"
-msgid "A 25/25/25/25 layout with links and icons."
-msgstr ""
-
-#: patterns/33-33-33-links-with-icons-square.php
-msgctxt "Pattern title"
-msgid "33/33/33 Links with Icons (square border)"
-msgstr ""
-
-#: patterns/33-33-33-links-with-icons-square.php
-msgctxt "Pattern description"
-msgid "A 33/33/33 layout with links and icons with a square border."
-msgstr ""
-
-#: patterns/33-33-33-links-with-icons.php
-msgctxt "Pattern title"
-msgid "33-33-33 Links with Icons"
-msgstr ""
-
-#: patterns/33-33-33-links-with-icons.php
-msgctxt "Pattern description"
-msgid "Three columns with a heading, image, body text, and a button."
-msgstr ""
-
-#: patterns/50-50-text-with-image-grey-left.php
-msgctxt "Pattern title"
-msgid "50/50 Text with Image (grey background, text on left, image on right)"
-msgstr ""
-
-#: patterns/50-50-text-with-image-grey-left.php
-#: patterns/50-50-text-with-image-grey-right.php
-#: patterns/50-50-text-with-image-white-left.php
-#: patterns/50-50-text-with-image-white-right.php
-msgctxt "Pattern description"
-msgid "A 50/50 layout with text on one side and an image on the other."
-msgstr ""
-
-#: patterns/50-50-text-with-image-grey-right.php
-msgctxt "Pattern title"
-msgid "50/50 Text with Image (grey background, text on right, image on left)"
-msgstr ""
-
-#: patterns/50-50-text-with-image-white-left.php
-msgctxt "Pattern title"
-msgid "50/50 Text with Image (white background, text on left, image on right)"
-msgstr ""
-
-#: patterns/50-50-text-with-image-white-right.php
-msgctxt "Pattern title"
-msgid "50/50 Text with Image (white background, text on right, image on left)"
-msgstr ""
-
-#: patterns/50-50-text-with-video-left-grey.php
-msgctxt "Pattern title"
-msgid "50/50 Text with Video (text on left, video on right and grey background)"
-msgstr ""
-
-#: patterns/50-50-text-with-video-left-grey.php
-#: patterns/50-50-text-with-video-left.php
-#: patterns/50-50-text-with-video-right-grey.php
-#: patterns/50-50-text-with-video-right.php
-msgctxt "Pattern description"
-msgid "A 50/50 layout with text on one side and a video on the other."
-msgstr ""
-
-#: patterns/50-50-text-with-video-left.php
-msgctxt "Pattern title"
-msgid "50/50 Text with Video (text on left, video on right)"
-msgstr ""
-
-#: patterns/50-50-text-with-video-right-grey.php
-msgctxt "Pattern title"
-msgid "50/50 Text with Video (text on right, video on left and grey background)"
-msgstr ""
-
-#: patterns/50-50-text-with-video-right.php
-msgctxt "Pattern title"
-msgid "50/50 Text with Video (text on right, video on left)"
-msgstr ""
-
-#: patterns/66-33-chapter.php
-msgctxt "Pattern title"
-msgid "66-33 Chapter"
-msgstr ""
-
-#: patterns/66-33-chapter.php
-msgctxt "Pattern description"
-msgid "A two column layout with a heading and body text in the left column and an image in the right column."
-msgstr ""
-
-#: patterns/66-33-text-key-facts.php
-msgctxt "Pattern title"
-msgid "66/33 Text Key Facts"
-msgstr ""
-
-#: patterns/66-33-text-key-facts.php
-msgctxt "Pattern description"
-msgid "Two columns with a heading, body text, and key facts."
-msgstr ""
-
-#: patterns/66-33-text-with-image.php
-msgctxt "Pattern title"
-msgid "66-33 Text with Image"
-msgstr ""
-
-#: patterns/66-33-text-with-image.php
-msgctxt "Pattern description"
-msgid "Two columns with a heading, body text including quote, and an image."
-msgstr ""
-
-#: patterns/66-33-text-with-video.php
-msgctxt "Pattern title"
-msgid "66/33 Text with Video"
-msgstr ""
-
-#: patterns/66-33-text-with-video.php
-msgctxt "Pattern description"
-msgid "Two columns with text on the left and a video on the right"
-msgstr ""
-
-#: patterns/chunky-heading-with-links.php
-msgctxt "Pattern title"
-msgid "Chunky Heading with Links"
-msgstr ""
-
-#: patterns/chunky-heading-with-links.php
-msgctxt "Pattern description"
-msgid "A chunky heading with links to page points"
-msgstr ""
-
-#: patterns/evergreen-text-highlight.php
-msgctxt "Pattern title"
-msgid "Evergreen Text Highlight"
-msgstr ""
-
-#: patterns/evergreen-text-highlight.php
-msgctxt "Pattern description"
-msgid "A section with a grey background to highlight text."
-msgstr ""
-
-#: patterns/full-image-with-buttons.php
-msgctxt "Pattern title"
-msgid "Full Image with Buttons"
-msgstr ""
-
-#: patterns/full-image-with-buttons.php
-msgctxt "Pattern description"
-msgid "A full-width image with buttons below."
-msgstr ""
-
-#: patterns/links-with-icons-single-square.php
-msgctxt "Pattern title"
-msgid "Links with Icons Single (square border)"
-msgstr ""
-
-#: patterns/links-with-icons-single-square.php
-msgctxt "Pattern description"
-msgid "Single column with a heading, image, body text, and a button. with a square border"
-msgstr ""
-
-#: patterns/links-with-icons-single.php
-msgctxt "Pattern title"
-msgid "Links with Icons Single"
-msgstr ""
-
-#: patterns/links-with-icons-single.php
-msgctxt "Pattern description"
-msgid "Single column with a heading, image, body text, and a button."
-msgstr ""
-
 #. translators: [admin]
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
 #: assets/scripts/bundle.js:1
@@ -2540,15 +2364,15 @@ msgstr ""
 #: assets/scripts/bundle.js:1995
 msgid "%d day"
 msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d día"
+msgstr[1] "%d dias"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
 #: assets/scripts/bundle.js:1
 #: assets/scripts/bundle.js:2008
 msgctxt "time format(prefix translated separately) i.e. \"x, H:i:s\""
 msgid "%1$s, %2$s:%3$s:%4$s"
-msgstr ""
+msgstr "%1$s, %2$s:%3$s:%4$s"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
 #: assets/scripts/bundle.js:1
@@ -2571,32 +2395,21 @@ msgid "Hide Image Credit"
 msgstr "Ocultar visualización de crédito de imagen"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:162
-msgctxt "block style"
-msgid "Square Border"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:252
 msgctxt "block style"
 msgid "Grey"
-msgstr ""
+msgstr "Gris"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:261
 msgctxt "block style"
 msgid "Responsive"
-msgstr ""
+msgstr "Responsivo"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:273
 msgid "Row Column"
-msgstr ""
-
-#. translators: [admin] %s: the post type
-#: assets/scripts/blocks.js:493
-msgid "Blocks in this %s have been upgraded. Please preview the post before saving."
-msgstr ""
+msgstr "Fila Columna"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:534
@@ -2605,16 +2418,16 @@ msgstr ""
 #: assets/scripts/blocks.js:35603
 #: assets/scripts/blocks.js:35651
 msgid "(Insert Title)"
-msgstr ""
+msgstr "(Insertar título)"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:543
 msgid "(Insert Content)"
-msgstr ""
+msgstr "(insertar contenido)"
 
 #: assets/scripts/blocks.js:989
 msgid "Hide featured image"
-msgstr ""
+msgstr "Ocultar Foto principal"
 
 #: assets/scripts/blocks.js:990
 msgid "Hide the featured image."
@@ -2630,7 +2443,7 @@ msgstr ""
 
 #: assets/scripts/blocks.js:1042
 msgid "Use transparent header"
-msgstr ""
+msgstr "Usar encabezado transparente"
 
 #: assets/scripts/blocks.js:1043
 msgid "Enable transparent mode on the main header. Requires the use of a header block with a featured image"
@@ -2639,52 +2452,52 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:1136
 msgid "Enable public byline"
-msgstr ""
+msgstr "Habilitar byline público"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1139
 msgid "Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated"
-msgstr ""
+msgstr "El contenido no tendrá atributos y la información del autor seguirá siendo privada, a menos que la línea de acceso esté habilitada y rellenada"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1152
 msgid "Use author profile for byline"
-msgstr ""
+msgstr "Usar el perfil de autor para byline"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1163
 msgid "Byline Name"
-msgstr ""
+msgstr "Nombre de byline"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1165
 msgid "The individual, group, or entity to be named as the author"
-msgstr ""
+msgstr "Individuo, grupo o entidad que se va a nombrar como autor"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1173
 msgid "Byline Context"
-msgstr ""
+msgstr "Contexto byline"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1175
 msgid "Additional context for the byline; e.g. job title, short summary, location, etc"
-msgstr ""
+msgstr "Contexto adicional para la línea de byline; por ejemplo, título del trabajo, resumen corto, ubicación, etc"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1210
 msgid "Disable Sharing"
-msgstr ""
+msgstr "Desactivar Compartir"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1212
 msgid "Disable Share Buttons for this post"
-msgstr ""
+msgstr "DesHabilitar compartir botones para esta página"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1249
 msgid "Show published date"
-msgstr ""
+msgstr "Mostrar fecha Publicada"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1250
@@ -2704,7 +2517,7 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:1301
 msgid "Metadata"
-msgstr ""
+msgstr "Metadata"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:1327
@@ -2723,12 +2536,12 @@ msgstr ""
 #: assets/scripts/blocks.js:26435
 #: assets/scripts/blocks.js:26802
 msgid "Loading"
-msgstr ""
+msgstr "Cargando"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9526
 msgid "Select a sidebar"
-msgstr ""
+msgstr "Seleccione una barra lateral"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9561
@@ -2744,7 +2557,7 @@ msgstr ""
 #: assets/scripts/blocks.js:9581
 #, fuzzy
 msgid "Disable Sidebar"
-msgstr ""
+msgstr "Deshabilitar Barra lateral"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9584
@@ -3159,25 +2972,25 @@ msgstr "Fila"
 #. translators: [admin]
 #: assets/scripts/blocks.js:12018
 msgid "Set featured video"
-msgstr ""
+msgstr "Establecer vídeo destacado"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12020
 msgid "Remove featured video"
-msgstr ""
+msgstr "Quitar vídeo destacado"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12091
 #: assets/scripts/blocks.js:34664
 #: assets/scripts/blocks.js:34674
 msgid "Replace Video"
-msgstr ""
+msgstr "Reemplazar vídeo"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32462
 #: assets/scripts/blocks.js:34108
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12236
@@ -3185,7 +2998,7 @@ msgstr ""
 #: assets/scripts/blocks.js:34123
 #: assets/scripts/blocks.js:34732
 msgid "Background Type"
-msgstr ""
+msgstr "Tipo de fondo"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12238
@@ -3193,7 +3006,7 @@ msgstr ""
 #: assets/scripts/blocks.js:34127
 #: assets/scripts/blocks.js:34736
 msgid "Image"
-msgstr ""
+msgstr "Establecer imagen destacada"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12239
@@ -3201,7 +3014,7 @@ msgstr ""
 #: assets/scripts/blocks.js:34132
 #: assets/scripts/blocks.js:34741
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12149
@@ -3214,12 +3027,12 @@ msgstr "Imagen de fondo"
 #: assets/scripts/blocks.js:32500
 #: assets/scripts/blocks.js:34158
 msgid "Featured Video"
-msgstr ""
+msgstr "Video Destacado"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34182
 msgid "(Header Title)"
-msgstr ""
+msgstr "(título de encabezado)"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:34192
@@ -3229,7 +3042,7 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:34203
 msgid "(Call to action)"
-msgstr ""
+msgstr "Llamada a acción"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32446
@@ -3809,7 +3622,7 @@ msgstr "Alternativo"
 #. translators: [admin]
 #: assets/scripts/blocks.js:10482
 msgid "Action"
-msgstr ""
+msgstr "Acción"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10484
@@ -4303,52 +4116,52 @@ msgstr "Estad"
 #. translators: [admin]
 #: assets/scripts/blocks.js:31823
 msgid "Image Settings"
-msgstr ""
+msgstr "Ajustes de imagen"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31826
 msgid "Focal Point"
-msgstr ""
+msgstr "Punto focal"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31834
 msgid "Opacity"
-msgstr ""
+msgstr "Opacidad"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31848
 msgid "Colour"
-msgstr ""
+msgstr "Color"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:31891
 msgid "Add Image"
-msgstr ""
+msgstr "Añadir Imagen"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32189
 msgid "Background Media Column"
-msgstr ""
+msgstr "Columna de medios de fondo"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32191
 msgid "Column layout for Background Media block"
-msgstr ""
+msgstr "Diseño de columna para el bloque Medios de fondo"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32280
 msgid "Background Media"
-msgstr ""
+msgstr "Medios de fondo"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32282
 msgid "Two-column layout with background images"
-msgstr ""
+msgstr "Diseño de dos columnas con imágenes de fondo"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:32286
 msgid "Background"
-msgstr ""
+msgstr "Fondo"
 
 #. translators: [admin]
 #: includes/block-patterns/pattern-category.php:16
@@ -4359,7 +4172,7 @@ msgstr "Media"
 #. translators: [admin]
 #: assets/scripts/blocks.js:32290
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28025
@@ -4596,12 +4409,12 @@ msgstr ""
 
 #: assets/scripts/blocks.js:33276
 msgid "Settings"
-msgstr ""
+msgstr "Ajustes"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33280
 msgid "Collapsed by default"
-msgstr ""
+msgstr "Contraído por defecto"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33282
@@ -4616,7 +4429,7 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:33303
 msgid "Find out more"
-msgstr ""
+msgstr "Más información"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33331
@@ -4631,7 +4444,7 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:33338
 msgid "accordion"
-msgstr ""
+msgstr "acordeón"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33340
@@ -4641,7 +4454,7 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:33342
 msgid "open"
-msgstr ""
+msgstr "abierto"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:33344
@@ -4706,6 +4519,193 @@ msgstr ""
 #: patterns/25-25-25-25-links-with-icons-square.php
 msgctxt "Pattern description"
 msgid "A 25/25/25/25 layout with links and icons with a square border."
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons.php
+msgctxt "Pattern title"
+msgid "25/25/25/25 Links with Icons"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons.php
+msgctxt "Pattern description"
+msgid "A 25/25/25/25 layout with links and icons."
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons-square.php
+msgctxt "Pattern title"
+msgid "33/33/33 Links with Icons (square border)"
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons-square.php
+msgctxt "Pattern description"
+msgid "A 33/33/33 layout with links and icons with a square border."
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons.php
+msgctxt "Pattern title"
+msgid "33-33-33 Links with Icons"
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons.php
+msgctxt "Pattern description"
+msgid "Three columns with a heading, image, body text, and a button."
+msgstr ""
+
+#: patterns/50-50-text-with-image-grey-left.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (grey background, text on left, image on right)"
+msgstr ""
+
+#: patterns/50-50-text-with-image-grey-left.php
+#: patterns/50-50-text-with-image-grey-right.php
+#: patterns/50-50-text-with-image-white-left.php
+#: patterns/50-50-text-with-image-white-right.php
+msgctxt "Pattern description"
+msgid "A 50/50 layout with text on one side and an image on the other."
+msgstr ""
+
+#: patterns/50-50-text-with-image-grey-right.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (grey background, text on right, image on left)"
+msgstr ""
+
+#: patterns/50-50-text-with-image-white-left.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (white background, text on left, image on right)"
+msgstr ""
+
+#: patterns/50-50-text-with-image-white-right.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (white background, text on right, image on left)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-left-grey.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on left, video on right and grey background)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-left-grey.php
+#: patterns/50-50-text-with-video-left.php
+#: patterns/50-50-text-with-video-right-grey.php
+#: patterns/50-50-text-with-video-right.php
+msgctxt "Pattern description"
+msgid "A 50/50 layout with text on one side and a video on the other."
+msgstr ""
+
+#: patterns/50-50-text-with-video-left.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on left, video on right)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-right-grey.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on right, video on left and grey background)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-right.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on right, video on left)"
+msgstr ""
+
+#: patterns/66-33-chapter.php
+msgctxt "Pattern title"
+msgid "66-33 Chapter"
+msgstr ""
+
+#: patterns/66-33-chapter.php
+msgctxt "Pattern description"
+msgid "A two column layout with a heading and body text in the left column and an image in the right column."
+msgstr ""
+
+#: patterns/66-33-text-key-facts.php
+msgctxt "Pattern title"
+msgid "66/33 Text Key Facts"
+msgstr ""
+
+#: patterns/66-33-text-key-facts.php
+msgctxt "Pattern description"
+msgid "Two columns with a heading, body text, and key facts."
+msgstr ""
+
+#: patterns/66-33-text-with-image.php
+msgctxt "Pattern title"
+msgid "66-33 Text with Image"
+msgstr ""
+
+#: patterns/66-33-text-with-image.php
+msgctxt "Pattern description"
+msgid "Two columns with a heading, body text including quote, and an image."
+msgstr ""
+
+#: patterns/66-33-text-with-video.php
+msgctxt "Pattern title"
+msgid "66/33 Text with Video"
+msgstr ""
+
+#: patterns/66-33-text-with-video.php
+msgctxt "Pattern description"
+msgid "Two columns with text on the left and a video on the right"
+msgstr ""
+
+#: patterns/chunky-heading-with-links.php
+msgctxt "Pattern title"
+msgid "Chunky Heading with Links"
+msgstr ""
+
+#: patterns/chunky-heading-with-links.php
+msgctxt "Pattern description"
+msgid "A chunky heading with links to page points"
+msgstr ""
+
+#: patterns/evergreen-text-highlight.php
+msgctxt "Pattern title"
+msgid "Evergreen Text Highlight"
+msgstr ""
+
+#: patterns/evergreen-text-highlight.php
+msgctxt "Pattern description"
+msgid "A section with a grey background to highlight text."
+msgstr ""
+
+#: patterns/full-image-with-buttons.php
+msgctxt "Pattern title"
+msgid "Full Image with Buttons"
+msgstr ""
+
+#: patterns/full-image-with-buttons.php
+msgctxt "Pattern description"
+msgid "A full-width image with buttons below."
+msgstr ""
+
+#: patterns/links-with-icons-single-square.php
+msgctxt "Pattern title"
+msgid "Links with Icons Single (square border)"
+msgstr ""
+
+#: patterns/links-with-icons-single-square.php
+msgctxt "Pattern description"
+msgid "Single column with a heading, image, body text, and a button. with a square border"
+msgstr ""
+
+#: patterns/links-with-icons-single.php
+msgctxt "Pattern title"
+msgid "Links with Icons Single"
+msgstr ""
+
+#: patterns/links-with-icons-single.php
+msgctxt "Pattern description"
+msgid "Single column with a heading, image, body text, and a button."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:162
+msgctxt "block style"
+msgid "Square Border"
+msgstr ""
+
+#. translators: [admin] %s: the post type
+#: assets/scripts/blocks.js:493
+msgid "Blocks in this %s have been upgraded. Please preview the post before saving."
 msgstr ""
 
 #: patterns/audio-quote.php
