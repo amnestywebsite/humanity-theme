@@ -1,19 +1,26 @@
 <?php
 
+
 $classes = classnames(
 	'factBlock',
 	[
-		'has-background' => (bool) $attrs['background'],
+		'has-background' => (bool) $attributes['background'],
 	],
 	[
-		"has-{$attrs['background']}-background-color" => (bool) $attrs['background'],
+		"has-{$attributes['background']}-background-color" => (bool) $attributes['background'],
 	],
 );
 
-$label = sanitize_title_with_dashes( $attrs['title'] );
+$wrapper_attibutes = get_block_wrapper_attributes(
+	[
+		'class' => $classes,
+	],
+);
+
+$label = sanitize_title_with_dashes( $attributes['title'] );
 
 ?>
 <aside class="<?php echo esc_attr( $classes ); ?>" aria-labelledby="<?php echo esc_attr( $label ); ?>">
-	<h2 id="<?php echo esc_attr( $label ); ?>" class="factBlock-title" aria-hidden="true"><?php echo wp_kses_post( $attrs['title'] ); ?></h2>
-	<ol><?php echo wp_kses_post( $content ); ?></ol>
+	<h2 id="<?php echo esc_attr( $label ); ?>" class="factBlock-title" aria-hidden="true"><?php echo wp_kses_post( $attributes['title'] ); ?></h2>
+	<ol><?php echo $content ?></ol>
 </aside>

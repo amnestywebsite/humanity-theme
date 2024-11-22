@@ -9,7 +9,6 @@
   "keywords": ["iframe", "responsive", "fluid"],
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "viewScript": "file:./view.js",
   "editorStyle": ["amnesty-fluid-iframe-editor-style"],
   "style": ["amnesty-fluid-iframe-style"],
   "render": "file:./render.php",

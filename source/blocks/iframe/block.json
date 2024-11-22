@@ -10,9 +10,12 @@
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
   "viewScript": "file:./view.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-responsive-iframe-editor-style"],
+  "style": ["amnesty-responsive-iframe-style"],
   "render": "file:./render.php",
+  "supports": {
+    "align": ["left", "center", "right"]
+  },
   "attributes": {
     "embedUrl": {
       "type": "string",
@@ -31,10 +34,6 @@
       "default": ""
     },
     "caption": {
-      "type": "string",
-      "default": ""
-    },
-    "alignment": {
       "type": "string",
       "default": ""
     },

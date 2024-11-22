@@ -1,18 +1,27 @@
 .iframeButton-wrapper {
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
 }
 
-.iframeButton-wrapper.is-left-aligned {
+.iframeButton-wrapper.alignleft {
   justify-content: flex-start;
+  float: unset !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 
-.iframeButton-wrapper.is-center-aligned {
+.iframeButton-wrapper.aligncenter {
   justify-content: center;
+  float: unset !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-.iframeButton-wrapper.is-right-aligned {
+.iframeButton-wrapper.alignright {
   justify-content: flex-end;
+  float: unset !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
 }
 
 .iframeButton-wrapper iframe {

@@ -1,6 +1,6 @@
 import { httpsOnly } from '../../utils';
 
-import { InspectorControls, RichText, BlockControls, AlignmentToolbar } from '@wordpress/block-editor';
+import { InspectorControls, RichText, BlockControls, AlignmentToolbar, useBlockProps } from '@wordpress/block-editor';
 import { Button, PanelBody, Placeholder, TextControl } from '@wordpress/components';
 import { useRef } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
@@ -33,7 +33,7 @@ const edit = ({ attributes, isSelected, setAttributes }) => {
             // translators: [admin]
             placeholder={__('Enter URL to embed here…', 'amnesty')}
           />
-          <Button isLarge type="submit">
+          <Button isLarge type="submit" className='button button-primary'>
             {/* translators: [admin] */ __('Embed', 'amnesty')}
           </Button>
         </form>
@@ -60,14 +60,14 @@ const edit = ({ attributes, isSelected, setAttributes }) => {
     return (
       <figure className="wp-block-embed">
         <div
-          className={`fluid-iframe ${attributes.alignment}`}
+          className={"fluid-iframe"}
           style={{ minHeight }}>
           <iframe
             src={httpsOnly(attributes.embedUrl)}
             style={{ height: `${minHeight}px`, width: minWidth }}
           />
         </div>
-        <div className={`iframe-caption ${attributes.alignment}`}>
+        <div className={"iframe-caption"}>
           {(attributes.caption || isSelected) && (
             <RichText
               tagName="figcaption"
@@ -142,7 +142,7 @@ const edit = ({ attributes, isSelected, setAttributes }) => {
         />
         <hr />
         {attributes.embedUrl && (
-          <Button onClick={doReset} isPrimary>
+          <Button onClick={doReset} primary className='button button-primary'>
             {/* translators: [admin] */ __('Reset Embed Url', 'amnesty')}
           </Button>
         )}
@@ -153,13 +153,7 @@ const edit = ({ attributes, isSelected, setAttributes }) => {
   return (
     <>
       {controls}
-      <BlockControls>
-        <AlignmentToolbar
-          value={attributes.alignment}
-          onChange={(alignment) => setAttributes({ alignment })}
-        />
-      </BlockControls>
-      <div style={{ padding: '1px' }}>
+      <div {...useBlockProps()} style={{ padding: '1px' }}>
         {attributes.embedUrl ? embedContainer() : placeholder()}
       </div>
     </>

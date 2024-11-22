@@ -417,7 +417,7 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 		// Fluid iFrame block
 		wp_register_style(
 			'amnesty-fluid-iframe-style',
-			get_template_directory_uri() . '/build/blocks/fluid-iframe/style-view.css',
+			get_template_directory_uri() . '/build/blocks/fluid-iframe/style-index.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -426,6 +426,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 		wp_register_style(
 			'amnesty-hero-style',
 			get_template_directory_uri() . '/build/blocks/hero/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// iFrame Button block
+		wp_register_style(
+			'amnesty-iframe-button-style',
+			get_template_directory_uri() . '/build/blocks/iframe-button/style-index.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -442,6 +450,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 		wp_register_style(
 			'amnesty-post-list-style',
 			get_template_directory_uri() . '/build/blocks/post-list/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// Responsive iFrame block
+		wp_register_style(
+			'amnesty-responsive-iframe-style',
+			get_template_directory_uri() . '/build/blocks/iframe/style-view.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -599,6 +615,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// iFrame Button block
+		wp_register_style(
+			'amnesty-iframe-button-editor-style',
+			get_template_directory_uri() . '/build/blocks/iframe-button/index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Link Group block
 		wp_register_style(
 			'amnesty-link-group-editor-style',
@@ -619,6 +643,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 		wp_register_style(
 			'amnesty-raw-code-editor-style',
 			get_template_directory_uri() . '/build/blocks/raw-code/index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// Responsive iFrame block
+		wp_register_style(
+			'amnesty-responsive-iframe-editor-style',
+			get_template_directory_uri() . '/build/blocks/iframe/index.css',
 			[],
 			$theme->get( 'Version' )
 		);
