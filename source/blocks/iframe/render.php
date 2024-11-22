@@ -24,8 +24,10 @@ if ( $min_height ) {
 	$style .= sprintf( 'min-height: %dpx;', $min_height );
 }
 
+$wrapper_attributes = get_block_wrapper_attributes();
+
 ?>
-<figure class="responsive-iframe wp-block-embed <?php echo esc_attr( $attributes['alignment'] ); ?>" style="<?php $width && esc_attr( sprintf( 'max-width:%spx', $width ) ); ?>">
+<figure <?php echo wp_kses_data($wrapper_attributes); ?> style="<?php $width && esc_attr( sprintf( 'max-width:%spx', $width ) ); ?>">
 	<div class="fluid-iframe" style="<?php echo esc_attr( $style ); ?>">
 		<iframe src="<?php echo esc_url( $attributes['embedUrl'] ); ?>" title="<?php echo esc_attr( $attributes['title'] ); ?>" frameborder="0"></iframe>
 	</div>

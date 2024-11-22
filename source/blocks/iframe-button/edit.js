@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { httpsOnly } from '../../utils';
 
-import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } from '@wordpress/block-editor';
+import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { Button, PanelBody, TextControl } from '@wordpress/components';
 import { createRef, useEffect, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
@@ -13,9 +13,7 @@ const edit = (props) => {
   const mounted = createRef();
   const inputRef = createRef();
 
-  const classes = classnames('iframeButton wp-block-button', className, {
-    [`is-${attributes.alignment}-aligned`]: attributes.alignment !== 'none',
-  });
+  const classes = classnames('iframeButton wp-block-button');
 
   useEffect(() => {
     if (!mounted.current) {
@@ -28,6 +26,10 @@ const edit = (props) => {
     setAttributes({ iframeUrl: httpsOnly(embedUrl) });
     setIsPreviewing(true);
   };
+
+  const blockProps = useBlockProps({
+    className: classes,
+  });
 
   return (
     <>
@@ -51,12 +53,7 @@ const edit = (props) => {
           />
         </PanelBody>
       </InspectorControls>
-      <BlockControls>
-        <BlockAlignmentToolbar
-          value={attributes.alignment}
-          onChange={(alignment) => setAttributes({ alignment })}
-        />
-      </BlockControls>
+      <div {...blockProps}>
       <div className={classes}>
         <RichText
           className="wp-block-button__link"
@@ -81,10 +78,10 @@ const edit = (props) => {
           value={embedUrl}
           onChange={() => setEmbedUrl(inputRef.current.value)}
         />
-        <Button isLarge isPrimary onClick={embed}>
+        <Button isLarge primary onClick={embed} className='button button-primary'>
           {/* translators: [admin] */ __('Embed', 'amnesty')}
         </Button>
-        <Button isLarge onClick={() => setIsPreviewing(!previewing)}>
+        <Button isLarge onClick={() => setIsPreviewing(!previewing)} className='button button-primary'>
           {previewing
             ? /* translators: [admin] */ __('Hide Preview', 'amnesty')
             : /* translators: [admin] */ __('Preview', 'amnesty')}
@@ -95,6 +92,7 @@ const edit = (props) => {
           <iframe src={httpsOnly(attributes.iframeUrl)} height={attributes.iframeHeight}></iframe>
         </div>
       )}
+    </div>
     </>
   );
 };

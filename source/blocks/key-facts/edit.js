@@ -2,7 +2,7 @@ import classnames from 'classnames';
 import memoize from 'memize';
 
 import { times } from 'lodash';
-import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
+import { InnerBlocks, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
@@ -13,6 +13,10 @@ const edit = ({ attributes, setAttributes }) => {
   const classes = classnames('factBlock', {
     'has-background': !!attributes.background,
     [`has-${attributes.background}-background-color`]: !!attributes.background,
+  });
+
+  const blockProps = useBlockProps({
+    className: classes,
   });
 
   return (
@@ -41,7 +45,7 @@ const edit = ({ attributes, setAttributes }) => {
           />
         </PanelBody>
       </InspectorControls>
-      <div className={classes}>
+      <div {...blockProps}>
         <RichText
           className="factBlock-title"
           tagName="h2"

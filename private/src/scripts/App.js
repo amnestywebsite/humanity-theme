@@ -20,7 +20,6 @@ import counters from './modules/counter';
 import termList from './modules/term-list';
 import tabbedNav from './modules/tabbed-nav';
 import browserDetector from './modules/browser-detector';
-import iframeButton from './modules/iframe-button';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
 
 const App = () => {
@@ -41,7 +40,6 @@ const App = () => {
   termList();
   tabbedNav();
   loadVideos();
-  iframeButton();
   addFlickityToTabs();
 
   fluidText(document.getElementsByClassName('article-shareTitle'), 0.9);
