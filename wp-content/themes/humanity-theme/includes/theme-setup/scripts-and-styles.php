@@ -382,10 +382,26 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// Banner block
+		wp_register_style(
+			'amnesty-banner-style',
+			get_template_directory_uri() . '/build/blocks-deprecated/banner/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Blockquote block
 		wp_register_style(
 			'amnesty-blockquote-style',
 			get_template_directory_uri() . '/build/blocks/blockquote/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// Button block
+		wp_register_style(
+			'amnesty-button-style',
+			get_template_directory_uri() . '/build/blocks-deprecated/button/style-index.css',
 			[],
 			$theme->get( 'Version' )
 		);
@@ -551,10 +567,26 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// Banner block
+		wp_register_style(
+			'amnesty-banner-editor-style',
+			get_template_directory_uri() . '/build/blocks-deprecated/banner/index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Blockquote
 		wp_register_style(
 			'amnesty-blockquote-editor-style',
 			get_template_directory_uri() . '/build/blocks/blockquote/index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// Button block
+		wp_register_style(
+			'amnesty-button-editor-style',
+			get_template_directory_uri() . '/build/blocks-deprecated/button/index.css',
 			[],
 			$theme->get( 'Version' )
 		);

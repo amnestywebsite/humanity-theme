@@ -10,6 +10,8 @@
 
 .headerBlock .page-heroTitle span {
   line-height: 1.3;
+  box-shadow: none !important;
+  background: none !important;
 }
 
 .headerBlock .hero-content {
@@ -280,4 +282,30 @@
 
 :lang(fa-IR) .headerBlock .tag-li {
   display: none;
+}
+
+.headerBlock .page-heroContent,
+.headerBlock .page-heroCta,
+.headerBlock .page-heroTitle {
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 45%, transparent) !important;
+}
+
+.headerBlock.page-heroBackground--dark .page-heroContent,
+.headerBlock.page-heroBackground--dark .page-heroCta,
+.headerBlock.page-heroBackground--dark .page-heroTitle {
+  background-color: var(--wp--preset--color--black);
+}
+
+.headerBlock.page-heroBackground--light .page-heroContent,
+.headerBlock.page-heroBackground--light .page-heroCta,
+.headerBlock.page-heroBackground--light .page-heroTitle {
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
+}
+
+.headerBlock.page-heroBackground--none .page-heroContent,
+.headerBlock.page-heroBackground--none .page-heroCta,
+.headerBlock.page-heroBackground--none .page-heroTitle {
+  background-color: transparent;
+  color: var(--wp--preset--color--white);
 }
