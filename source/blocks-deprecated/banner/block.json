@@ -9,12 +9,12 @@
   "icon": "format-image",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./editor.css",
-  "style": "file:./style.css",
+  "editorStyle": ["amnesty-banner-editor-style"],
+  "style": ["amnesty-banner-style"],
   "render": "file:./render.php",
   "supports": {
     "className": false,
-    "inserter": true
+    "inserter": false
   },
   "attributes": {
     "title": {
