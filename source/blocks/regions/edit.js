@@ -3,13 +3,13 @@ import classnames from 'classnames';
 import List from './components/List';
 
 import { each, filter, head, isEmpty, map } from 'lodash';
-import apiFetch from '@wordpress/api-fetch';
 import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
-import {  useEffect, useRef, useState } from '@wordpress/element';
+import { useEntityRecords } from '@wordpress/core-data';
+import { useEffect } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-import { addQueryArgs } from '@wordpress/url';
-import { useSelect } from '@wordpress/data';
+
+const clone = (thing) => JSON.parse(JSON.stringify(thing));
 
 const unflatten = (list, parent = { id: 0 }, tree = []) => {
   const children = filter(list, (item) => item.parent === parent.id);
@@ -29,151 +29,48 @@ const unflatten = (list, parent = { id: 0 }, tree = []) => {
   return tree;
 };
 
-const fetchTerms = ({ state, attributes }) => {
-  const { depth, regionsOnly } = attributes;
-  const { cache, current, setTerms } = state;
-
-  if (cache[current.rest_base]) {
-    setTerms(cache[current.rest_base]);
-    return;
+const filterTermsForRegionsOnly = (termsLoading, terms, regionsOnly) => {
+  if (termsLoading || !Array.isArray(terms)) {
+    return null;
   }
 
-  let path = addQueryArgs(`/wp/v2/${current.rest_base}`, {
-    hide_empty: 'false',
-    per_page: '1',
-  });
+  const cloned = clone(terms);
 
-  console.log(path, 'path');
-
-
-  if (depth < 1) {
-    path = addQueryArgs(path, {
-      parent: '0',
-    });
+  if (!regionsOnly) {
+    return unflatten(cloned);
   }
 
-  const allTerms = [];
+  let filtered = cloned.filter(
+    (term) => ['region', 'subregion'].indexOf(term.type) !== -1,
+  );
 
-  apiFetch({ path })
-    .then((data, status, response) => response.getResponseHeader('X-WP-TotalPages'))
-    .then((termCount) => {
-      const pages = Math.ceil(termCount / 100);
-      const requests = [];
-
-      for (let i = 1; i <= pages; i += 1) {
-        const pagePath = addQueryArgs(path, {
-          page: i,
-          per_page: 100,
-        });
-        requests.push(apiFetch({ path: pagePath, parse: true }));
-      }
-
-      return Promise.all(requests);
-    })
-    .then((termPages) => {
-      termPages.forEach((items) => {
-        // items is [ {termx}, {termy} ]
-        allTerms.push(...items);
-      });
-      return allTerms;
-    })
-    .then((terms) => {
-      let filteredTerms = terms;
-
-      if (regionsOnly) {
-        filteredTerms = filteredTerms.filter(
-          (term) => ['region', 'subregion'].indexOf(term.type) !== -1,
-        );
-      }
-
-      if (depth > 0) {
-        filteredTerms = unflatten(filteredTerms);
-      }
-
-      return filteredTerms;
-    })
-    .then((terms) => {
-      setCache({ ...cache, [current.rest_base]: terms });
-      setTerms(terms);
-    });
+  return unflatten(filtered);
 };
 
-const edit = ({ attributes, setAttributes }) => {
-  const [taxonomies, setTaxonomies] = useState([]);
-  const [options, setOptions] = useState([]);
-  const [current, setCurrent] = useState({});
-  const [terms, setTerms] = useState([]);
-  const [cache, setCache] = useState({});
+const edit = ({ attributes, className, setAttributes }) => {
+  let { records: taxonomies, isResolving: taxonomiesLoading } = useEntityRecords('root', 'taxonomy');
+  let { records: terms, isResolving: termsLoading } = useEntityRecords('taxonomy', attributes.taxonomy, { per_page: -1 });
 
-  const mounted = useRef();
+  let filteredTerms = filterTermsForRegionsOnly(termsLoading, terms, attributes.regionsOnly);
+  let current, options;
 
-  console.log(attributes, 'attributes');
+  if (!taxonomiesLoading) {
+    taxonomies = filter(taxonomies, (t) => t.amnesty);
 
+    current = head(filter(taxonomies, (t) => t.slug === attributes.taxonomy));
+    options = map(taxonomies, (tax) => ({ label: tax.name, value: tax.slug }));
+  }
 
-  useEffect(() => {
-    if (!mounted?.current) {
-      mounted.current = true;
-
-      console.log(attributes, 'inside useEffect');
-
-
-      const taxList = wp.data.select('core')?.getTaxonomies();
-
-      // Set the taxonomies using taxList
-      const taxes = filter(taxList, (t) => t.amnesty);
-      console.log(taxes, 'taxes');
-      const newTax = head(filter(taxes, (t) => t.slug === attributes.taxonomy));
-      console.log(newTax, 'newTax');
-      const choices = map(taxes, (tax) => ({ label: tax.name, value: tax.slug }));
-      console.log(choices, 'choices');
-      setTaxonomies(taxes);
-      setCurrent(newTax);
-      setOptions(choices);
-
-
-
-      // apiFetch({ path: '/wp/v2/taxonomies/' })
-      //   .then((response) => {
-      //     console.log(response);
-      //     const taxes = filter(response, (t) => t.amnesty);
-      //     const newTax = head(filter(taxes, (t) => t.slug === attributes.taxonomy));
-      //     const choices = map(taxes, (tax) => ({ label: tax.name, value: tax.slug }));
-      //     setTaxonomies(taxes);
-      //     setCurrent(newTax);
-      //     setOptions(choices);
-      //   });
-    }
-  }, []);
+  if (current && !current?.hierarchical && attributes.depth !== 0) {
+    setAttributes({ depth: 0 });
+  }
 
   useEffect(() => {
-    if (!attributes.taxonomy) {
-      return;
-    }
+    filteredTerms = filterTermsForRegionsOnly(termsLoading, terms, attributes.regionsOnly);
+  }, [attributes.regionsOnly]);
 
-    const newCurrent = head(filter(taxonomies, (t) => t.slug === attributes.taxonomy));
-
-    if (newCurrent.slug === current.slug) {
-      return;
-    }
-
-    setCurrent(newCurrent);
-
-    if (!newCurrent.hierarchical) {
-      setAttributes({ depth: 0 });
-    }
-  }, [attributes.depth, attributes.regionsOnly, attributes.taxonomy]);
-
-  useEffect(() => {
-    fetchTerms({ state: { cache, current, setCache, setTerms }, attributes });
-  }, [attributes.depth, attributes.taxonomy]);
-
-  const hierarchical = current && current.hierarchical;
-  const classes = classnames(classnames, {
+  const classes = classnames(className, {
     [`has-${attributes.background}-background-color`]: !!attributes.background,
-  });
-
-  const blockProps = useBlockProps({
-    className: classes,
   });
 
   return (
@@ -199,7 +96,7 @@ const edit = ({ attributes, setAttributes }) => {
             value={attributes.taxonomy}
             onChange={(taxonomy) => setAttributes({ taxonomy })}
           />
-          {hierarchical && (
+          {current?.hierarchical && (
             <RangeControl
               // translators: [admin]
               label={__('Max depth', 'amnesty')}
@@ -223,7 +120,7 @@ const edit = ({ attributes, setAttributes }) => {
           onChange={(alignment) => setAttributes({ alignment })}
         />
       </BlockControls>
-      <aside {...blockProps}>
+      <aside {...useBlockProps({ className: classes })}>
         <RichText
           tagName="h2"
           format="string"
@@ -234,7 +131,7 @@ const edit = ({ attributes, setAttributes }) => {
           placeholder={__('Explore by Region', 'amnesty')}
           withoutInteractiveFormatting={true}
         />
-        <List terms={terms} depth={0} maxDepth={attributes.depth} />
+        <List terms={filteredTerms} depth={0} maxDepth={attributes.depth} />
       </aside>
     </>
   );

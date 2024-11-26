@@ -10383,6 +10383,7 @@ __metadata:
     stylelint-scss: "npm:^5.3.1"
     stylelint-webpack-plugin: "npm:^4.1.1"
     webpack: "npm:^5.96.1"
+    webpack-cli: "npm:^5.1.4"
   languageName: unknown
   linkType: soft
 
