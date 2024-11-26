@@ -21,7 +21,7 @@
     },
     "taxonomy": {
       "type": "string",
-      "default": ""
+      "default": "category"
     },
     "background": {
       "type": "string",
