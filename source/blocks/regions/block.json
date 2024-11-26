@@ -9,10 +9,12 @@
   "icon": "",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-regions-editor-style"],
+  "style": ["amnesty-regions-style"],
   "render": "file:./render.php",
   "supports": {
+    "className": true,
+    "align": ["left", "center", "right"]
   },
   "attributes": {
     "title": {

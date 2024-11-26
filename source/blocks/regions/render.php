@@ -45,14 +45,19 @@ if ( $attributes['regionsOnly'] ) {
 $title_id      = sanitize_title_with_dashes( $attributes['title'] );
 $title_classes = classnames( [ "is-{$attributes['alignment']}-aligned" => (bool) $attributes['alignment'] ] );
 $wrap_classes  = classnames(
-	'wp-block-amnesty-core-regions',
 	[
 		"has-{$attributes['background']}-background-color" => (bool) $attributes['background'],
 	]
 );
 
+$wrapper_attributes = get_block_wrapper_attributes(
+	[
+		'class' => $wrap_classes,
+	]
+);
+
 ?>
-<aside class="<?php echo esc_attr( $wrap_classes ); ?>" aria-labelledby="<?php echo esc_attr( $title_id ); ?>">
+<aside <?php echo wp_kses_data($wrapper_attributes)  ?> aria-labelledby="<?php echo esc_attr( $title_id ); ?>">
 	<h2 id="<?php echo esc_attr( $title_id ); ?>" class="<?php echo esc_attr( $title_classes ); ?>"><?php echo esc_html( $attributes['title'] ); ?></h2>
 	<ul class="listItems" aria-label="<?php /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block/ */ esc_attr_e( 'Hierarchical list of terms', 'amnesty' ); ?>">
 	<?php
