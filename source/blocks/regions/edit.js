@@ -114,12 +114,6 @@ const edit = ({ attributes, className, setAttributes }) => {
           />
         </PanelBody>
       </InspectorControls>
-      <BlockControls>
-        <BlockAlignmentToolbar
-          value={attributes.alignment}
-          onChange={(alignment) => setAttributes({ alignment })}
-        />
-      </BlockControls>
       <aside {...useBlockProps({ className: classes })}>
         <RichText
           tagName="h2"
