@@ -4,7 +4,7 @@ import List from './components/List';
 
 import { each, filter, head, isEmpty, map } from 'lodash';
 import apiFetch from '@wordpress/api-fetch';
-import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText } from '@wordpress/block-editor';
+import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
 import {  useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
@@ -29,7 +29,7 @@ const unflatten = (list, parent = { id: 0 }, tree = []) => {
   return tree;
 };
 
-const fetchTerms = ({ attributes, state }) => {
+const fetchTerms = ({ state, attributes }) => {
   const { depth, regionsOnly } = attributes;
   const { cache, current, setTerms } = state;
 
@@ -42,6 +42,9 @@ const fetchTerms = ({ attributes, state }) => {
     hide_empty: 'false',
     per_page: '1',
   });
+
+  console.log(path, 'path');
+
 
   if (depth < 1) {
     path = addQueryArgs(path, {
@@ -95,17 +98,6 @@ const fetchTerms = ({ attributes, state }) => {
     });
 };
 
-let taxList = '';
-
-const isLoading = useSelect((select) => {
-  return select('core').isResolving('core', 'getTaxonomies');
-});
-
-if (!isLoading) {
-  taxList = wp.data.select('core')?.getTaxonomies();
-}
-
-
 const edit = ({ attributes, setAttributes }) => {
   const [taxonomies, setTaxonomies] = useState([]);
   const [options, setOptions] = useState([]);
@@ -115,17 +107,30 @@ const edit = ({ attributes, setAttributes }) => {
 
   const mounted = useRef();
 
+  console.log(attributes, 'attributes');
+
+
   useEffect(() => {
     if (!mounted?.current) {
       mounted.current = true;
 
+      console.log(attributes, 'inside useEffect');
+
+
+      const taxList = wp.data.select('core')?.getTaxonomies();
+
       // Set the taxonomies using taxList
       const taxes = filter(taxList, (t) => t.amnesty);
+      console.log(taxes, 'taxes');
       const newTax = head(filter(taxes, (t) => t.slug === attributes.taxonomy));
+      console.log(newTax, 'newTax');
       const choices = map(taxes, (tax) => ({ label: tax.name, value: tax.slug }));
+      console.log(choices, 'choices');
       setTaxonomies(taxes);
       setCurrent(newTax);
       setOptions(choices);
+
+
 
       // apiFetch({ path: '/wp/v2/taxonomies/' })
       //   .then((response) => {
@@ -158,13 +163,17 @@ const edit = ({ attributes, setAttributes }) => {
     }
   }, [attributes.depth, attributes.regionsOnly, attributes.taxonomy]);
 
-  // useEffect(() => {
-  //   fetchTerms({ state: { cache, current, setCache, setTerms }, attributes });
-  // }, [attributes.depth, attributes.taxonomy]);
+  useEffect(() => {
+    fetchTerms({ state: { cache, current, setCache, setTerms }, attributes });
+  }, [attributes.depth, attributes.taxonomy]);
 
   const hierarchical = current && current.hierarchical;
   const classes = classnames(classnames, {
     [`has-${attributes.background}-background-color`]: !!attributes.background,
+  });
+
+  const blockProps = useBlockProps({
+    className: classes,
   });
 
   return (
@@ -214,7 +223,7 @@ const edit = ({ attributes, setAttributes }) => {
           onChange={(alignment) => setAttributes({ alignment })}
         />
       </BlockControls>
-      <aside className={classes}>
+      <aside {...blockProps}>
         <RichText
           tagName="h2"
           format="string"
