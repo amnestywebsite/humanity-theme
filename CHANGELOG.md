@@ -1,3 +1,7 @@
+### v2.0.8
+Fixes:
+- Always output the post title in the single template
+
 ### v2.0.7
 Fixes:
 - Conditions under which the sidebar renders
