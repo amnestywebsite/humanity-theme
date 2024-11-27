@@ -144,6 +144,10 @@ if ( ! function_exists( 'amnesty_get_nav_menu_items' ) ) {
 			$menu = wp_get_nav_menu_object( $locations[ $name ] );
 		}
 
+		if ( ! $menu ) {
+			return [];
+		}
+
 		$menu_items = wp_get_nav_menu_items( $menu->term_id, [ 'update_post_term_cache' => false ] );
 		$top_level  = [];
 		$children   = [];
