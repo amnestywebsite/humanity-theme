@@ -26,7 +26,8 @@ registerBlockType('amnesty-core/block-download', {
     },
     buttonText: {
       type: 'string',
-      default: 'Download',
+      /* translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource/ */
+      default: __('Download', 'amnesty'),
     },
     style: {
       type: 'string',

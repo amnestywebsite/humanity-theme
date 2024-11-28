@@ -17,13 +17,13 @@ if ( ! function_exists( 'render_iframe_button_block' ) ) {
 			$attributes,
 			[
 				'alignment'    => 'none',
-				/* translators: [front] AM I think this is used on the petition index or petition block */
+				/* translators: [front] Action button label text */
 				'buttonText'   => __( 'Act Now', 'amnesty' ),
 				'className'    => '',
 				'iframeHeight' => 760,
 				'iframeUrl'    => '',
 				'title'        => '',
-			] 
+			]
 		);
 
 		if ( ! esc_url( $attributes['iframeUrl'] ) ) {

@@ -194,7 +194,7 @@ class DisplayComponent extends Component {
               format="string"
               tagName="span"
               allowedFormats={[]}
-              // translators: [admin]
+              /* translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource/ */
               placeholder={__('Download', 'amnesty')}
               value={buttonText}
               onChange={(newText) => setAttributes({ buttonText: newText })}

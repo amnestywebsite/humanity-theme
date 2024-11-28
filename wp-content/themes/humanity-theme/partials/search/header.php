@@ -11,7 +11,7 @@ $found_posts_fmt = number_format_i18n( $found_posts );
 $current_sort    = amnesty_get_query_var( 'sort' );
 $available_sorts = amnesty_valid_sort_parameters();
 
-/* translators: Singular/Plural number of posts. */
+/* translators: [front] Singular/Plural number of posts. */
 $results = sprintf( _n( '%s result', '%s results', $found_posts, 'amnesty' ), $found_posts_fmt );
 
 if ( is_search() && get_search_query() ) {
@@ -23,7 +23,7 @@ $results = apply_filters( 'amnesty_search_results_title', $results, $found_posts
 
 ?>
 
-<header class="postlist-header" aria-label="<?php /* translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options */ esc_attr_e( 'Results information', 'amnesty' ); ?>">
+<header class="postlist-header" aria-label="<?php /* translators: [front] https://www.amnesty.org/en/search/hey/?qtopic=2063 Label for post results count & sort options */ esc_attr_e( 'Results information', 'amnesty' ); ?>">
 	<h2 class="postlist-headerTitle">
 		<?php echo esc_html( $results ); ?>
 	</h2>
@@ -32,7 +32,7 @@ $results = apply_filters( 'amnesty_search_results_title', $results, $found_posts
 
 	amnesty_render_custom_select(
 		[
-			/* translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options */
+			/* translators: [front] Label for post sorting options */
 			'label'      => __( 'Sort by', 'amnesty' ),
 			'show_label' => true,
 			'name'       => 'sort',

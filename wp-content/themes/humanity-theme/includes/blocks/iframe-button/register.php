@@ -25,7 +25,7 @@ if ( ! function_exists( 'register_iframe_button_block' ) ) {
 					],
 					'buttonText'   => [
 						'type'    => 'string',
-						/* translators: [front] */
+						/* translators: [front] Action button label text */
 						'default' => __( 'Act Now', 'amnesty' ),
 					],
 					'alignment'    => [
@@ -37,7 +37,7 @@ if ( ! function_exists( 'register_iframe_button_block' ) ) {
 						'default' => '',
 					],
 				],
-			] 
+			]
 		);
 	}
 }

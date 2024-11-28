@@ -14,7 +14,10 @@ const { addQueryArgs } = wp.url;
  */
 const Loading = () => (
   <div>
-    <Placeholder icon={pin} label={__('Related Content', 'amnesty')}>
+    <Placeholder
+      icon={pin}
+      label={/* translators: [front] shown on post single */ __('Related Content', 'amnesty')}
+    >
       <Spinner />
     </Placeholder>
   </div>
@@ -27,7 +30,10 @@ const Loading = () => (
  */
 const NoPosts = () => (
   <div>
-    <Placeholder icon={pin} label={__('Related Content', 'amnesty')}>
+    <Placeholder
+      icon={pin}
+      label={/* translators: [front] shown on post single */ __('Related Content', 'amnesty')}
+    >
       {__('No posts found.')}
     </Placeholder>
   </div>

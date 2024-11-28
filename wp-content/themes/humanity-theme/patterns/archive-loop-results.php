@@ -30,6 +30,7 @@ if ( $current_sort_option ) {
 	if ( ! is_admin() && ! ( defined( 'REST_REQUEST' ) && ! REST_REQUEST ) ) {
 		amnesty_render_custom_select(
 			[
+				/* translators: [front] Label for post sorting options */
 				'label'      => __( 'Sort by', 'amnesty' ),
 				'show_label' => true,
 				'name'       => 'sort',

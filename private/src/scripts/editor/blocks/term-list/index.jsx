@@ -22,7 +22,7 @@ registerBlockType('amnesty-core/term-list', {
   attributes: {
     title: {
       type: 'string',
-      // translators: [admin]
+      /* translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS */
       default: __('A-Z of Countries and Regions', 'amnesty'),
     },
     taxonomy: {

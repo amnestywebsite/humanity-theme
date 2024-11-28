@@ -12,8 +12,8 @@ if ( ! function_exists( 'amnesty_render_slider_buttons' ) ) {
 	 */
 	function amnesty_render_slider_buttons() {
 		?>
-		<button class="slides-arrow slides-arrow--next" aria-hidden="true"><?php /* translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ */ esc_html_e( 'Next', 'amnesty' ); ?></button>
-		<button class="slides-arrow slides-arrow--previous" aria-hidden="true"><?php /* translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ */ esc_html_e( 'Previous', 'amnesty' ); ?></button>
+		<button class="slides-arrow slides-arrow--next" aria-hidden="true"><?php /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */ esc_html_e( 'Next', 'amnesty' ); ?></button>
+		<button class="slides-arrow slides-arrow--previous" aria-hidden="true"><?php /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */ esc_html_e( 'Previous', 'amnesty' ); ?></button>
 		<?php
 	}
 }
@@ -80,7 +80,7 @@ if ( ! function_exists( 'amnesty_render_slider_item' ) ) {
 				'imageId'          => 0,
 				'subheading'       => '',
 				'timelineContent'  => '',
-			] 
+			]
 		);
 
 		$id               = $data['id'];
@@ -177,7 +177,7 @@ if ( ! function_exists( 'amnesty_render_block_slider' ) ) {
 				'sliderTitle'          => '',
 				'slides'               => [],
 				'timelineCaptionStyle' => '',
-			] 
+			]
 		);
 
 		$slider_id     = $attributes['sliderId'];

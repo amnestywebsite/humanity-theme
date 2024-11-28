@@ -35,7 +35,7 @@ const clockTemplate = (state, attributes) => {
   }
 
   const { days = 0, hours = 0, minutes = 0, seconds = 0 } = state.date;
-  // translators: [admin]
+  // translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
   const dayPlural = _n('%d day', '%d days', days, 'amnesty');
 
   if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {

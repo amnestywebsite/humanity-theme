@@ -151,7 +151,7 @@ export default class DisplayComponent extends Component {
             className={attributes.alignment ? `is-${attributes.alignment}-aligned` : null}
             value={attributes.title}
             onChange={(title) => setAttributes({ title })}
-            // translators: [admin]
+            /* translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS */
             placeholder={__('A-Z of Countries and Regions', 'amnesty')}
             withoutInteractiveFormatting={true}
           />

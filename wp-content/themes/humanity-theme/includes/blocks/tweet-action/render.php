@@ -19,7 +19,7 @@ if ( ! function_exists( 'amnesty_render_tweet_action' ) ) {
 				'className' => '',
 				'size'      => '',
 				'alignment' => 'center',
-			] 
+			]
 		);
 
 		$tweet_url     = get_permalink();
@@ -38,7 +38,7 @@ if ( ! function_exists( 'amnesty_render_tweet_action' ) ) {
 		<div class="tweetBlock align-<?php echo esc_attr( $attributes['alignment'] ); ?>">
 			<div class="<?php echo esc_attr( $block_classes ); ?>">
 				<div class="tweetAction-header">
-					<span class="dashicons dashicons-twitter" aria-label="<?php /* translators: [front] ARIA */ esc_attr_e( 'Twitter Logo', 'amnesty' ); ?>"></span>
+					<span class="dashicons dashicons-twitter" aria-label="<?php /* translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ */ esc_attr_e( 'Twitter Logo', 'amnesty' ); ?>"></span>
 				<?php if ( isset( $attributes['title'] ) ) : ?>
 					<h3 class="tweetAction-title"><?php echo esc_html( $attributes['title'] ); ?></h3>
 				<?php endif; ?>

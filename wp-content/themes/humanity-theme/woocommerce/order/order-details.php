@@ -43,14 +43,14 @@ if ( $show_downloads ) {
 <section class="woocommerce-order-details">
 	<?php do_action( 'woocommerce_order_details_before_order_table', $order ); ?>
 
-	<h2 class="woocommerce-order-details__title"><?php /* translators: [front] Donate */ esc_html_e( 'Order details', 'woocommerce' ); ?></h2>
+	<h2 class="woocommerce-order-details__title"><?php esc_html_e( 'Order details', 'woocommerce' ); ?></h2>
 
 	<table class="woocommerce-table woocommerce-table--order-details shop_table order_details">
 		<thead>
 			<tr>
-				<th class="woocommerce-table__product-name product-name"><?php /* translators: [front] Donate */ esc_html_e( 'Product', 'woocommerce' ); ?></th>
-				<th class="woocommerce-table__product-quantity product-quantity"><?php /* translators: [front] Donate */ esc_html_e( 'Quantity', 'amnesty' ); ?></th>
-				<th class="woocommerce-table__product-total product-total"><?php /* translators: [front] Donate */ esc_html_e( 'Price', 'amnesty' ); ?></th>
+				<th class="woocommerce-table__product-name product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
+				<th class="woocommerce-table__product-quantity product-quantity"><?php esc_html_e( 'Quantity', 'amnesty' ); ?></th>
+				<th class="woocommerce-table__product-total product-total"><?php esc_html_e( 'Price', 'amnesty' ); ?></th>
 			</tr>
 		</thead>
 
@@ -126,7 +126,7 @@ $shop_index = isset( $shop_index['shop_index_page'][0] ) ? $shop_index['shop_ind
 <section class="woocommerce-order-details">
 	<p class="return-to-shop u-textRight">
 		<a class="btn" href="<?php echo esc_url( get_permalink( $shop_index ) ); ?>">
-			<?php /* translators: [front] Donate */ esc_html_e( 'Return to shop', 'woocommerce' ); ?>
+			<?php esc_html_e( 'Return to shop', 'woocommerce' ); ?>
 		</a>
 	</p>
 </section>

@@ -167,7 +167,7 @@ const v2 = {
             })}
             href={link}
           >
-            {/* translators: [admin] */ __('Act Now', 'amnesty')}
+            {/* translators: [front] Action button label text */ __('Act Now', 'amnesty')}
           </a>
         </figcaption>
       </figure>
@@ -207,7 +207,7 @@ const v1 = {
         <figcaption className="actionBlock-content">
           <p>{content}</p>
           <a className={buttonClasses} href={link}>
-            {/* translators: [admin] */ __('Act Now', 'amnesty')}
+            {/* translators: [front] Action button label text */ __('Act Now', 'amnesty')}
           </a>
         </figcaption>
       </figure>

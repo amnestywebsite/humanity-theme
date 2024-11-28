@@ -18,7 +18,7 @@ const PetitionItem = (props) => (
         <a>{props.title}</a>
       </h3>
       <button className="btn petition-itemCta">
-        {/* translators: [admin] */ __('Act Now', 'amnesty')}
+        {/* translators: [front] Action button label text */ __('Act Now', 'amnesty')}
       </button>
     </div>
   </article>

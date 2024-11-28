@@ -369,10 +369,16 @@ class DisplayComponent extends Component {
               {attributes.hasArrows && (
                 <Fragment>
                   <button onClick={this.nextSlide} className="slides-arrow slides-arrow--next">
-                    {/* translators: [admin] */ __('Next', 'amnesty')}
+                    {
+                      /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */
+                      __('Next', 'amnesty')
+                    }
                   </button>
                   <button onClick={this.prevSlide} className="slides-arrow slides-arrow--previous">
-                    {/* translators: [admin] */ __('Previous', 'amnesty')}
+                    {
+                      /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
+                      __('Previous', 'amnesty')
+                    }
                   </button>
                 </Fragment>
               )}

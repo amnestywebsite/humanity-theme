@@ -102,7 +102,7 @@ export default class SlideBuilder {
         {this.shouldShowContent() && (
           <div
             className="slide-contentWrapper"
-            // translators: [admin]
+            /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ */
             data-tooltip={__('Tap here to return to gallery', 'amnesty')}
           >
             <div className="slide-contentContainer">
@@ -119,7 +119,7 @@ export default class SlideBuilder {
                   )}
                   {this.shouldShowToggle() && (
                     <button className="slider-toggleContent">
-                      {/* translators: [admin] */ __('Toggle Content', 'amnesty')}
+                      {/* translators: [front] */ __('Toggle Content', 'amnesty')}
                     </button>
                   )}
                 </div>
@@ -172,7 +172,7 @@ export default class SlideBuilder {
         {this.shouldShowContent() && (
           <div
             className="slide-contentWrapper"
-            // translators: [admin]
+            /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ */
             data-tooltip={__('Tap here to return to gallery', 'amnesty')}
           >
             <div className="slide-contentContainer">
@@ -189,7 +189,7 @@ export default class SlideBuilder {
                   )}
                   {this.shouldShowToggle() && (
                     <button className="slider-toggleContent">
-                      {/* translators: [admin] */ __('Toggle Content', 'amnesty')}
+                      {/* translators: [front] */ __('Toggle Content', 'amnesty')}
                     </button>
                   )}
                 </div>
@@ -212,7 +212,7 @@ export default class SlideBuilder {
         {this.shouldShowContent() && (
           <div
             className="slide-contentWrapper"
-            // translators: [admin]
+            /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ */
             data-tooltip={__('Tap here to return to gallery', 'amnesty')}
           >
             <div className="slide-contentContainer">
@@ -229,7 +229,7 @@ export default class SlideBuilder {
                   )}
                   {this.shouldShowToggle() && (
                     <button className="slider-toggleContent">
-                      {/* translators: [admin] */ __('Toggle Content', 'amnesty')}
+                      {/* translators: [front] */ __('Toggle Content', 'amnesty')}
                     </button>
                   )}
                 </div>

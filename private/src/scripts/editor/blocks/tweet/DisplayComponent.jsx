@@ -110,11 +110,11 @@ export default class DisplayComponent extends Component {
               )}
             </div>
             <div>
-              <button
-                className={buttonClasses}
-                aria-label={/* translators: [admin] */ __('Send this Tweet', 'amnesty')}
-              >
-                {/* translators: [admin] */ __('Send this Tweet', 'amnesty')}
+              <button className={buttonClasses}>
+                {
+                  /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action/ */
+                  __('Send this Tweet', 'amnesty')
+                }
               </button>
             </div>
           </div>

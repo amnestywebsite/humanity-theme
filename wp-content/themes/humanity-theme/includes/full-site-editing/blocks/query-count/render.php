@@ -14,7 +14,7 @@ if ( ! function_exists( 'render_query_count_block' ) ) {
 		$found_posts = absint( $wp_query->found_posts );
 		$formatted   = number_format_i18n( $found_posts );
 
-		/* translators: Singular/Plural number of posts. */
+		/* translators: [front] Singular/Plural number of posts. */
 		$results = sprintf( _n( '%s result', '%s results', $found_posts, 'amnesty' ), $formatted );
 
 		if ( is_search() && get_search_query() ) {

@@ -50,10 +50,10 @@ if ( ! function_exists( 'amnesty_render_petition_item' ) ) {
 	function amnesty_render_petition_item( $data ) {
 		$title = isset( $data['title'] ) ? $data['title'] : '';
 
-		/* translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/ */
+		/* translators: [front] Action button label text */
 		$button_text = __( 'Act Now', 'amnesty' );
 		if ( ! empty( $data['has_signed'] ) ) {
-			/* translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/  used by sections, when a form rather than an Iframe is used */
+			/* translators: [front] Petition button label text when a petition has been signed by a user */
 			$button_text = _x( 'Signed!', 'User has signed this petition.', 'amnesty' );
 		}
 

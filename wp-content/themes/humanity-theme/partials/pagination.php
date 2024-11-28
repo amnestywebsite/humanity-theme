@@ -6,16 +6,16 @@
  * @package Amnesty\Partials
  */
 
-/* translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Previous post navigation label */
+/* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
 $previous_link = get_previous_posts_link( '<span class="icon"></span><span>' . __( 'Previous', 'amnesty' ) . '</span>' );
-/* translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Next post navigation label */
+/* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */
 $next_link    = get_next_posts_link( '<span class="icon"></span><span>' . __( 'Next', 'amnesty' ) . '</span>' );
 $page_numbers = amnesty_paginate_links(
 	[
 		'mid_size'  => 1,
 		'prev_next' => false,
 		'type'      => 'array',
-	] 
+	]
 );
 
 if ( empty( $page_numbers ) ) {
@@ -32,11 +32,11 @@ if ( empty( $page_numbers ) ) {
 		<?php else : ?>
 			<button disabled>
 				<span class="icon"></span>
-				<span><?php /* translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ */ esc_html_e( 'Previous', 'amnesty' ); ?></span>
+				<span><?php /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */ esc_html_e( 'Previous', 'amnesty' ); ?></span>
 			</button>
 		<?php endif; ?>
 		</div>
-		<ul class="page-numbers" aria-label="<?php /* translators: [front] AIRA https://isaidotorgstg.wpengine.com/en/latest/ */ esc_attr_e( 'Page numbers', 'amnesty' ); ?>">
+		<ul class="page-numbers" aria-label="<?php /* translators: [front] https://www.amnesty.org/en/latest/ */ esc_attr_e( 'Page numbers', 'amnesty' ); ?>">
 		<?php foreach ( $page_numbers as $number ) : ?>
 			<li><?php echo wp_kses_post( $number ); ?></li>
 		<?php endforeach; ?>
@@ -47,7 +47,7 @@ if ( empty( $page_numbers ) ) {
 		<?php else : ?>
 			<button disabled>
 				<span class="icon"></span>
-				<span><?php /* translators: [front]  https://isaidotorgstg.wpengine.com/en/latest/ */ esc_html_e( 'Next', 'amnesty' ); ?></span>
+				<span><?php /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */ esc_html_e( 'Next', 'amnesty' ); ?></span>
 			</button>
 		<?php endif; ?>
 		</div>

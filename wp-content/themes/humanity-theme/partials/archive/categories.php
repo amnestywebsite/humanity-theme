@@ -46,8 +46,8 @@ if ( is_category() ) {
 		</li>
 	<?php endforeach; ?>
 	</ul>
-	<button data-slider-prev disabled><?php /* translators: [front] */ esc_html_e( 'Previous', 'amnesty' ); ?></button>
-	<button data-slider-next><?php /* translators: [front] */ esc_html_e( 'Next', 'amnesty' ); ?></button>
+	<button data-slider-prev disabled><?php /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */ esc_html_e( 'Previous', 'amnesty' ); ?></button>
+	<button data-slider-next><?php /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */ esc_html_e( 'Next', 'amnesty' ); ?></button>
 </section>
 <?php endif; ?>
 

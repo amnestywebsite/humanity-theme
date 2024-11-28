@@ -5,7 +5,7 @@ $slide_classes = classnames(
 	[
 		"is-{$alignment}-aligned"      => $alignment,
 		"has-{$background}-background" => $background,
-	] 
+	]
 );
 
 ?>
@@ -17,7 +17,7 @@ $slide_classes = classnames(
 <?php endif; ?>
 
 <?php if ( ! $hide_content && $has_content ) : ?>
-	<div class="slide-contentWrapper" data-tooltip="<?php /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery */ esc_attr_e( 'Tap here to return to gallery', 'amnesty' ); ?>">
+	<div class="slide-contentWrapper" data-tooltip="<?php /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ */ esc_attr_e( 'Tap here to return to gallery', 'amnesty' ); ?>">
 		<div class="slide-contentContainer">
 		<?php if ( $title ) : ?>
 			<h1 class="slide-title"><?php echo wp_kses_post( $title ); ?></h1>

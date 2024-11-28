@@ -13,7 +13,7 @@ $shop_index = isset( $shop_index['shop_index_page'][0] ) ? $shop_index['shop_ind
 $aria_label = __( 'Product information', 'amnesty' );
 $main_title = apply_filters( 'the_title', get_queried_object()->name );
 if ( is_post_type_archive() ) {
-	/* translators: [front] */
+	/* translators: [front] Donate */
 	$aria_label = __( 'All products', 'amnesty' );
 	$main_title = $aria_label;
 }
@@ -22,7 +22,7 @@ if ( is_post_type_archive() ) {
 <header class="section section--small section--topSpacing postlist-header" aria-label="<?php echo esc_attr( $aria_label ); ?>">
 	<a class="btn btn--white has-icon" href="<?php echo esc_url( get_permalink( $shop_index ) ); ?>">
 		<span class="icon-arrow-left"></span>
-		<span><?php /* translators: [front] Label for shop index */ esc_html_e( 'Catalogue', 'amnesty' ); ?></span>
+		<span><?php /* translators: [front] Donate Label for shop index */ esc_html_e( 'Catalogue', 'amnesty' ); ?></span>
 	</a>
 	<h2 class="postlist-headerTitle"><?php echo esc_html( $main_title ); ?></h2>
 

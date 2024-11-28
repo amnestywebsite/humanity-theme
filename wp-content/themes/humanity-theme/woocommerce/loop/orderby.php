@@ -25,7 +25,7 @@ $name = 'woo-orderby';
 $orderby = sanitize_text_field( $_GET['orderby'] ?? 'menu_order' );
 $options = $catalog_orderby_options;
 
-/* translators: [front] Donate Label for post sorting options */
+/* translators: [front] Label for post sorting options */
 $field_label = __( 'Sort by', 'amnesty' );
 
 amnesty_render_custom_select(

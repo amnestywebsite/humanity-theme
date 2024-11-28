@@ -50,10 +50,16 @@ const v7 = {
             {attributes.hasArrows && (
               <Fragment>
                 <button className="slides-arrow slides-arrow--next" aria-hidden="true">
-                  {/* translators: [admin] */ __('Next', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */
+                    __('Next', 'amnesty')
+                  }
                 </button>
                 <button className="slides-arrow slides-arrow--previous" aria-hidden="true">
-                  {/* translators: [admin] */ __('Previous', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
+                    __('Previous', 'amnesty')
+                  }
                 </button>
               </Fragment>
             )}
@@ -129,7 +135,7 @@ const v6 = {
                           </a>
                         )}
                         <button className="slider-toggleContent">
-                          {/* translators: [admin] */ __('Toggle Content', 'amnesty')}
+                          {/* translators: [front] */ __('Toggle Content', 'amnesty')}
                         </button>
                       </div>
                     </div>
@@ -140,10 +146,16 @@ const v6 = {
             {attributes.hasArrows && (
               <Fragment>
                 <button className="slides-arrow slides-arrow--next" aria-hidden="true">
-                  {/* translators: [admin] */ __('Next', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */
+                    __('Next', 'amnesty')
+                  }
                 </button>
                 <button className="slides-arrow slides-arrow--previous" aria-hidden="true">
-                  {/* translators: [admin] */ __('Previous', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
+                    __('Previous', 'amnesty')
+                  }
                 </button>
               </Fragment>
             )}
@@ -242,7 +254,7 @@ const v5 = {
                             </a>
                           )}
                           <button className="slider-toggleContent">
-                            {/* translators: [admin] */ __('Toggle Content', 'amnesty')}
+                            {/* translators: [front] */ __('Toggle Content', 'amnesty')}
                           </button>
                         </div>
                       </div>
@@ -254,10 +266,16 @@ const v5 = {
             {attributes.hasArrows && (
               <Fragment>
                 <button className="slides-arrow slides-arrow--next" aria-hidden="true">
-                  {/* translators: [admin] */ __('Next', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */
+                    __('Next', 'amnesty')
+                  }
                 </button>
                 <button className="slides-arrow slides-arrow--previous" aria-hidden="true">
-                  {/* translators: [admin] */ __('Previous', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
+                    __('Previous', 'amnesty')
+                  }
                 </button>
               </Fragment>
             )}
@@ -353,7 +371,7 @@ const v4 = {
                             </a>
                           )}
                           <button className="slider-toggleContent">
-                            {/* translators: [admin] */ __('Toggle Content', 'amnesty')}
+                            {/* translators: [front] */ __('Toggle Content', 'amnesty')}
                           </button>
                         </div>
                       </div>
@@ -365,10 +383,16 @@ const v4 = {
             {attributes.hasArrows && (
               <Fragment>
                 <button className="slides-arrow slides-arrow--next" aria-hidden="true">
-                  {/* translators: [admin] */ __('Next', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */
+                    __('Next', 'amnesty')
+                  }
                 </button>
                 <button className="slides-arrow slides-arrow--previous" aria-hidden="true">
-                  {/* translators: [admin] */ __('Previous', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
+                    __('Previous', 'amnesty')
+                  }
                 </button>
               </Fragment>
             )}
@@ -465,7 +489,7 @@ const v3 = {
                           )}
                           {slide.content && (
                             <button className="slider-toggleContent">
-                              {/* translators: [admin] */ __('Toggle Content', 'amnesty')}
+                              {/* translators: [front] */ __('Toggle Content', 'amnesty')}
                             </button>
                           )}
                         </div>
@@ -478,10 +502,16 @@ const v3 = {
             {attributes.hasArrows && (
               <Fragment>
                 <button className="slides-arrow slides-arrow--next" aria-hidden="true">
-                  {/* translators: [admin] */ __('Next', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */
+                    __('Next', 'amnesty')
+                  }
                 </button>
                 <button className="slides-arrow slides-arrow--previous" aria-hidden="true">
-                  {/* translators: [admin] */ __('Previous', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
+                    __('Previous', 'amnesty')
+                  }
                 </button>
               </Fragment>
             )}
@@ -523,10 +553,16 @@ const v2 = {
             {attributes.hasArrows && (
               <Fragment>
                 <button className="slides-arrow slides-arrow--next" aria-hidden="true">
-                  {/* translators: [admin] */ __('Next', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */
+                    __('Next', 'amnesty')
+                  }
                 </button>
                 <button className="slides-arrow slides-arrow--previous" aria-hidden="true">
-                  {/* translators: [admin] */ __('Previous', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
+                    __('Previous', 'amnesty')
+                  }
                 </button>
               </Fragment>
             )}
@@ -568,10 +604,16 @@ const v1 = {
             {attributes.hasArrows && (
               <Fragment>
                 <button className="slides-arrow slides-arrow--next" aria-hidden="true">
-                  {/* translators: [admin] */ __('Next', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label */
+                    __('Next', 'amnesty')
+                  }
                 </button>
                 <button className="slides-arrow slides-arrow--previous" aria-hidden="true">
-                  {/* translators: [admin] */ __('Previous', 'amnesty')}
+                  {
+                    /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
+                    __('Previous', 'amnesty')
+                  }
                 </button>
               </Fragment>
             )}

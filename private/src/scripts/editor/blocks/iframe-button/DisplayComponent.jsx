@@ -61,7 +61,7 @@ const DisplayComponent = (props) => {
         <RichText
           className="wp-block-button__link"
           value={attributes.buttonText}
-          // translators: [admin]
+          /* translators: [front] Action button label text */
           placeholder={__('Act Now', 'amnesty')}
           identifier="text"
           allowedFormats={[]}

@@ -18,9 +18,10 @@ if ( ! function_exists( 'amnesty_render_download_block' ) ) {
 		}
 
 		$attrs = apply_filters( 'amnesty_download_block_attributes', $attrs );
+		$files = $attrs['files'];
 
-		$files  = $attrs['files'];
-		$text   = isset( $attrs['buttonText'] ) ? $attrs['buttonText'] : /* translators: [front] */ __( 'Download', 'amnesty' );
+		/* translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource/ */
+		$text   = $attrs['buttonText'] ?? __( 'Download', 'amnesty' );
 		$colour = sprintf( 'btn--%s', isset( $attrs['style'] ) ? $attrs['style'] : 'dark' );
 		$align  = isset( $attrs['alignment'] ) ? sprintf( 'align%s', $attrs['alignment'] ) : '';
 
@@ -65,7 +66,8 @@ if ( ! function_exists( 'amnesty_render_download_block__deprecated' ) ) {
 			return '';
 		}
 
-		$button_text = amnesty_get_meta_field( 'download_text' ) ?: /* translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource/ */ __( 'Download', 'amnesty' );
+		/* translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource/ */
+		$button_text = amnesty_get_meta_field( 'download_text' ) ?: __( 'Download', 'amnesty' );
 		$file_url    = wp_get_attachment_url( $file_id );
 		$file_name   = explode( '/', $file_url );
 		$file_name   = array_pop( $file_name );

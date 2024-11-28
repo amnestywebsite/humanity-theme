@@ -29,7 +29,7 @@ if ( $copyright ) {
 }
 
 ?>
-	<footer class="page-footer" aria-label="<?php /* translators: [front] ARIA */ esc_attr_e( 'Footer', 'amnesty' ); ?>">
+	<footer class="page-footer">
 		<div class="container">
 		<?php spaceless(); ?>
 			<ul class="page-footerSections" aria-label="<?php /* translators: [front] ARIA */esc_attr_e( 'Footer Menus', 'amnesty' ); ?>">
@@ -64,7 +64,7 @@ if ( $copyright ) {
 				</section>
 			<?php if ( $has_social ) : ?>
 				<section class="page-footerBottomHalf page-footerSocialContainer">
-					<h2 class="page-footerBottomTitle" aria-label="<?php /* translators: [front] ARIA Social Media sharing options */ esc_attr_e( 'Follow us on:', 'amnesty' ); ?>"><?php /* translators: [front] Social Media sharing options */ esc_html_e( 'Follow us on:', 'amnesty' ); ?> </h2>
+					<h2 class="page-footerBottomTitle" aria-label="<?php /* translators: [front] Social Media sharing options */ esc_attr_e( 'Follow us on:', 'amnesty' ); ?>"><?php /* translators: [front] Social Media sharing options */ esc_html_e( 'Follow us on:', 'amnesty' ); ?> </h2>
 					<ul class="page-footerSocial">
 					<?php if ( $facebook ) : ?>
 						<li><a target="_blank" rel="noreferrer noopener" href="<?php echo esc_url( $facebook ); ?>" aria-label="<?php /* translators: [front] ARIA */ esc_attr_e( 'Follow us on Facebook', 'amnesty' ); ?>"><span class="social-facebook">Facebook</span></a></li>

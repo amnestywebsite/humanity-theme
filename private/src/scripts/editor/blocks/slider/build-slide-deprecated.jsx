@@ -49,7 +49,7 @@ export default function buildSlideDeprecated(slide, hasContent, sliderId) {
       {shouldShowContent() && (
         <div
           className="slide-contentWrapper"
-          // translators: [admin]
+          /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ */
           data-tooltip={__('Tap here to return to gallery', 'amnesty')}
         >
           <div className="slide-contentContainer">
@@ -63,7 +63,7 @@ export default function buildSlideDeprecated(slide, hasContent, sliderId) {
                 </a>
               )}
               {shouldShowToggle() && (
-                // translators: [admin]
+                // translators: [front]
                 <button className="slider-toggleContent">{__('Toggle Content', 'amnesty')}</button>
               )}
             </div>

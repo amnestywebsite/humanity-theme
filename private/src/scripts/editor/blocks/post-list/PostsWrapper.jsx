@@ -135,7 +135,7 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
           value: 'taxonomy',
         },
         {
-          // translators: [admin]
+          // translators: [front]
           label: __('Author', 'amnesty'),
           value: 'author',
         },

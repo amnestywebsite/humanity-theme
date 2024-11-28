@@ -78,10 +78,11 @@ registerBlockType('amnesty-core/tweet-block', {
                   href={fullUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  // translators: [admin]
-                  aria-label={__('Send this Tweet', 'amnesty')}
                 >
-                  {/* translators: [admin] */ __('Send this Tweet', 'amnesty')}
+                  {
+                    /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action/ */
+                    __('Send this Tweet', 'amnesty')
+                  }
                 </a>
               </div>
             </div>
@@ -115,15 +116,11 @@ registerBlockType('amnesty-core/tweet-block', {
             </div>
             <div className="tweetAction-content">{content}</div>
             <div>
-              <a
-                className={buttonClasses}
-                href={fullUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                // translators: [admin]
-                aria-label={__('Send this Tweet', 'amnesty')}
-              >
-                {/* translators: [admin] */ __('Send this Tweet', 'amnesty')}
+              <a className={buttonClasses} href={fullUrl} target="_blank" rel="noopener noreferrer">
+                {
+                  /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action/ */
+                  __('Send this Tweet', 'amnesty')
+                }
               </a>
             </div>
           </div>

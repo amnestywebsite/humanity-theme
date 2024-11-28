@@ -16,7 +16,7 @@ if ( ! function_exists( 'amnesty_render_regions_block' ) ) {
 		$args = wp_parse_args(
 			$attributes,
 			[
-				/* translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block/ */
+				/* translators: [front] Deafult text can be changed in CMS for https://www.amnesty.org/en/countries/ https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block/ */
 				'title'       => __( 'Explore by Region', 'amnesty' ),
 				'taxonomy'    => '',
 				'background'  => '',

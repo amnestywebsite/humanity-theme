@@ -12,7 +12,7 @@ add_action(
 	function (): void {
 		$controller = new WP_REST_Related_Content_Controller();
 		$controller->register_routes();
-	} 
+	}
 );
 
 /**
@@ -66,7 +66,7 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 					'permission_callback' => [ $this, 'get_items_permissions_check' ],
 					'args'                => $this->get_args_for_request(),
 				],
-			] 
+			]
 		);
 	}
 
@@ -147,6 +147,7 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 
 		$this->schema = [
 			'$schema'    => 'http://json-schema.org/draft-04/schema#',
+			/* translators: [front] shown on post single */
 			'title'      => __( 'Related Content', 'amnesty' ),
 			'type'       => 'object',
 			'properties' => [
@@ -226,7 +227,7 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 				'amnesty' => true,
 				'public'  => true,
 			],
-			'objects' 
+			'objects'
 		);
 
 		$taxonomies = apply_filters( 'amnesty_related_content_taxonomies', $taxonomies );

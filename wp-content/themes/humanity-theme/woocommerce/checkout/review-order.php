@@ -20,9 +20,9 @@ defined( 'ABSPATH' ) || exit;
 <table class="shop_table woocommerce-checkout-review-order-table">
 	<thead>
 		<tr>
-			<th class="product-name"><?php /* translators: [front] Donate */ esc_html_e( 'Product', 'woocommerce' ); ?></th>
-			<th class="product-quantity"><?php /* translators: [front] Donate */ esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="product-total"><?php /* translators: [front] Donate */ esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+			<th class="product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
+			<th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
+			<th class="product-total"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -55,7 +55,7 @@ defined( 'ABSPATH' ) || exit;
 	</tbody>
 	<tfoot>
 		<tr class="cart-subtotal">
-			<th><?php /* translators: [front] Donate */ esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+			<th><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
 			<td>&nbsp;</td>
 			<td><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
@@ -107,7 +107,7 @@ defined( 'ABSPATH' ) || exit;
 	<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
 		<tr class="order-total">
-			<th><?php /* translators: [front] Donate */ esc_html_e( 'Total', 'woocommerce' ); ?></th>
+			<th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
 			<td>&nbsp;</td>
 			<td><?php wc_cart_totals_order_total_html(); ?></td>
 		</tr>

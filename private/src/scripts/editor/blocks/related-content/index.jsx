@@ -4,7 +4,7 @@ const { registerBlockType } = wp.blocks;
 const { __ } = wp.i18n;
 
 registerBlockType('amnesty-core/related-content', {
-  // translators: [admin]
+  /* translators: [front] shown on post single */
   title: __('Related Content', 'amnesty'),
   // translators: [admin]
   description: __('Add a grid of posts that are related to the current post', 'amnesty'),

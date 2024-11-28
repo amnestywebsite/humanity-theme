@@ -185,7 +185,7 @@ class Search_Filters {
 			return $title;
 		}
 
-		/* translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found */
+		/* translators: [front] Singular/Plural number of posts. */
 		$title = sprintf( _n( '%s result', '%s results', $count, 'amnesty' ), number_format_i18n( $count ) );
 		$title = [ $title ];
 
@@ -277,7 +277,7 @@ class Search_Filters {
 			/* translators: [front] appended to search results title (n results for...); %s: the month searched for */
 				_x( 'for the month of %s', 'search results title suffix for month published', 'amnesty' ),
 				esc_html( $months[ $month ] )
-			) 
+			)
 		);
 	}
 
@@ -294,7 +294,7 @@ class Search_Filters {
 			/* translators: [front] appended to search results title (n results for...); %s: the year searched for */
 				_x( 'in the year %s', 'search results title suffix for year published', 'amnesty' ),
 				absint( $year )
-			) 
+			)
 		);
 	}
 
