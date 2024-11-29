@@ -8,10 +8,10 @@
   "keywords": ["Term List", "A-Z Terms", "Countries"],
   "icon": "editor-textcolor",
   "textdomain": "amnesty",
-  "editorScript": ["file:./index.js", "amnesty-editor"],
+  "editorScript": ["file:./index.js"],
   "viewScript": "file:./view.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-terms-list-style"],
+  "style": ["amnesty-terms-list-style"],
   "render": "file:./render.php",
   "attributes": {
     "title": {
@@ -20,7 +20,7 @@
     },
     "taxonomy": {
       "type": "string",
-      "default": ""
+      "default": "location"
     },
     "alignment": {
       "type": "string",

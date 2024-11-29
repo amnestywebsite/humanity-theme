@@ -17,7 +17,6 @@ import fluidIframe from './modules/fluid-iframe';
 import categorySlider from './modules/category-slider';
 // import sliderBlock from './modules/slider-block';
 import counters from './modules/counter';
-import termList from './modules/term-list';
 import tabbedNav from './modules/tabbed-nav';
 import browserDetector from './modules/browser-detector';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
@@ -37,7 +36,6 @@ const App = () => {
   categorySlider();
   // sliderBlock();
   counters();
-  termList();
   tabbedNav();
   loadVideos();
   addFlickityToTabs();
