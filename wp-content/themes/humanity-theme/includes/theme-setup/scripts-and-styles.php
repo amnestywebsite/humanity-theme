@@ -422,6 +422,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// Columns block
+		wp_register_style(
+			'amnesty-columns-style',
+			get_template_directory_uri() . '/build/blocks-deprecated/columns/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Custom Card block
 		wp_register_style(
 			'amnesty-custom-card-style',
