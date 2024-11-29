@@ -36,7 +36,6 @@ import './editor/block-styles';
 // import './editor/blocks-deprecated/background-media/index.jsx';
 // import './editor/blocks-deprecated/banner/index.jsx';
 // import './editor/blocks-deprecated/collapsable/index.jsx';
-// import './editor/blocks-deprecated/columns/index.jsx';
 // import './editor/blocks-deprecated/custom-card/index.jsx';
 // import './editor/blocks-deprecated/header/index.jsx';
 // import './editor/blocks-deprecated/image/index.jsx';
