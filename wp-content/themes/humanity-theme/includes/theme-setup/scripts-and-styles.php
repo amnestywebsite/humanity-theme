@@ -494,6 +494,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// Terms List block
+		wp_register_style(
+			'amnesty-terms-list-style',
+			get_template_directory_uri() . '/build/blocks/term-list/style-view.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Tweet Action block
 		wp_register_style(
 			'amnesty-tweet-action-style',

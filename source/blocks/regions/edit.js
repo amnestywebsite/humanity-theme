@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import List from './components/List';
 
 import { each, filter, head, isEmpty, map } from 'lodash';
-import { BlockAlignmentToolbar, BlockControls, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
+import { InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
 import { useEntityRecords } from '@wordpress/core-data';
 import { useEffect } from '@wordpress/element';
