@@ -58,7 +58,7 @@ We'd like to say a special thank you to these lovely folks:
 | --- | --- |
 | ![Cure53](./docs/static/cure_53_logo.svg) | ![WP Engine](./docs/static/wpengine_logo.svg) |
 
-### Want to know more about the work in other Amnesty GitHub accounts?
+### Want to know more about the work in other Amnesty GitHub accounts?  
 
 You can find repositories from other teams such as [Amnesty Web Ops](https://github.com/amnestywebsite), [Amnesty Crisis](https://github.com/amnesty-crisis-evidence-lab), [Amnesty Tech](https://github.com/AmnestyTech), and [Amnesty Research](https://github.com/amnestyresearch/) in their GitHub accounts
 
