@@ -147,7 +147,7 @@
   margin-left: 30px;
 }
 
-@include mq(600px) {
+@media all and (min-width: 600px) {
   .linksWithIcons-group .block-editor-block-list__block .block-editor-block-contextual-toolbar {
     top: 100%;
   }

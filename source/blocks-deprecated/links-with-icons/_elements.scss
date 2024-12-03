@@ -15,7 +15,7 @@
   & + * {
     margin-top: 20px;
 
-    @include mq(980px) {
+    @media all and (min-width: 980px) {
       margin-top: 24px;
     }
   }
@@ -47,7 +47,7 @@
   margin-left: auto;
   max-width: 40%;
 
-  @include mq(medium-sm) {
+  @media all and (min-width: 840px) {
     max-width: 60%;
   }
 }
@@ -59,7 +59,7 @@
 .linksWithIcons-imageWrapper.is-large {
   max-width: 55%;
 
-  @include mq(medium-sm) {
+  @media all and (min-width: 840px) {
     max-width: 75%;
   }
 }
@@ -67,7 +67,7 @@
 .linksWithIcons-imageWrapper.is-small {
   max-width: 25%;
 
-  @include mq(medium-sm) {
+  @media all and (min-width: 840px) {
     max-width: 45%;
   }
 }

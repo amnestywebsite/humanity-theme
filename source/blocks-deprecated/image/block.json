@@ -8,8 +8,8 @@
   "icon": "format-image",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": ["amnesty-image-editor-style"],
-  "style": ["amnesty-image-style"],
+  "editorStyle": ["amnesty-image-editor-style", "amnesty-button-editor-style"],
+  "style": ["amnesty-image-style", "amnesty-button-style"],
   "render": "file:./render.php",
   "supports": {
     "inserter": true
