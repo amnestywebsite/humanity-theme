@@ -7,6 +7,7 @@
   "description": "Add a grid of posts that are related to the current post",
   "icon": "",
   "textdomain": "amnesty",
+  "usesContext": ["postId", "postType"],
   "editorScript": "file:./index.js",
   "render": "file:./render.php"
 }

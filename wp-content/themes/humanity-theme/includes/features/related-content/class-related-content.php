@@ -214,9 +214,13 @@ class Related_Content {
 				continue;
 			}
 
-			$terms = $taxonomy_data[ $taxonomy->name ];
-			$terms = array_map( fn ( int $id ) => get_term( $id, $taxonomy->name ), $terms );
-			$terms = array_filter( $terms, fn ( $term ): bool => is_a( $term, WP_Term::class ) );
+			$terms = array_map( 'absint', $taxonomy_data[ $taxonomy->name ] );
+			$terms = get_terms(
+				[
+					'taxonomy' => $taxonomy->name,
+					'terms'    => $terms,
+				]
+			);
 
 			$this->terms[ $taxonomy->name ] = $terms;
 		}
@@ -228,18 +232,21 @@ class Related_Content {
 			return;
 		}
 
-		foreach ( $this->terms[ $location_slug ] as $index => $location ) {
-			$term = get_term( $location, $location_slug );
+		$locations = get_terms(
+			[
+				'taxonomy' => $location_slug,
+				'terms'    => $this->terms[ $location_slug ],
+			],
+		);
 
-			if ( 'default' !== amnesty_get_location_type( $term ) || ! is_a( $term, WP_Term::class ) ) {
-				unset( $this->terms[ $location_slug ][ $index ] );
+		foreach ( $locations as $index => $location ) {
+			if ( 'default' !== amnesty_get_location_type( $location ) ) {
+				unset( $locations[ $index ] );
 				continue;
 			}
-
-			$this->terms[ $location_slug ][ $index ] = $term;
 		}
 
-		$this->terms[ $location_slug ] = array_values( $this->terms[ $location_slug ] );
+		$this->terms[ $location_slug ] = array_values( $locations );
 	}
 
 	/**

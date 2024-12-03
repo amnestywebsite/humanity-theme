@@ -15,6 +15,10 @@ if ( ! function_exists( 'amnesty_render_related_content_block' ) ) {
 			return '';
 		}
 
+		if ( ! get_the_ID() ) {
+			return '';
+		}
+
 		$related_content = new \Amnesty\Related_Content( false );
 
 		return $related_content->get_rendered();
