@@ -1,0 +1,77 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/links-with-icons",
+  "title": "Links with Icons",
+  "category": "amnesty-core",
+  "parent": ["amnesty-core/repeatable-block"],
+  "description": "Add a links-with-icons block",
+  "icon": "plus",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "supports": {
+    "inserter": true
+  },
+  "attributes": {
+    "style": {
+      "type": "string"
+    },
+    "hasButton": {
+      "type": "boolean"
+    },
+    "bigTextCss": {
+      "type": "object",
+      "default": {
+        "fontSize": 20
+      }
+    },
+    "iconSize": {
+      "type": "string",
+      "default": "medium"
+    },
+    "underlined": {
+      "type": "boolean",
+      "default": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "imageID": {
+      "type": "number"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "imageURL": {
+      "type": "string"
+    },
+    "bigtext": {
+      "type": "string"
+    },
+    "uncredited": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageData": {
+      "type": "object",
+      "default": {}
+    },
+    "imageLocation": {
+      "type": "string",
+      "default": "middle"
+    },
+    "buttonStyle": {
+      "type": "string",
+      "default": "white"
+    }
+  }
+}

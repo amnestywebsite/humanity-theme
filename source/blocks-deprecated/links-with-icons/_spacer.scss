@@ -5,7 +5,7 @@
   height: 2px;
   background-color: color-mix(in srgb, var(--wp--preset--color--black) 30%, transparent);
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -30,7 +30,7 @@
 .linksWithIcons-group.is-horizontal .linksWithIcons-spacer {
   @include spacer-horizontal;
 
-  @include mq(medium-sm) {
+  @media all and (min-width: 840px) {
     @include spacer-vertical;
 
     &:nth-child(4) {

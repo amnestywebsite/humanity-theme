@@ -486,6 +486,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// Links with Icons block
+		wp_register_style(
+			'amnesty-links-with-icons-style',
+			get_template_directory_uri() . '/build/blocks-deprecated/links-with-icons/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Post List block
 		wp_register_style(
 			'amnesty-post-list-style',
@@ -715,6 +723,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 		wp_register_style(
 			'amnesty-link-group-editor-style',
 			get_template_directory_uri() . '/build/blocks/link-group/index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// Links with Icons block
+		wp_register_style(
+			'amnesty-links-with-icons-editor-style',
+			get_template_directory_uri() . '/build/blocks-deprecated/links-with-icons/index.css',
 			[],
 			$theme->get( 'Version' )
 		);
