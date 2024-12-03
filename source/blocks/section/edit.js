@@ -6,50 +6,12 @@ import BackgroundImageSelectorControl from '../../components/BackgroundImageSele
 import MediaMetadata from '../../components/MediaMetadata';
 import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls';
 
-import { InspectorControls, InnerBlocks } from '@wordpress/block-editor';
+import { InspectorControls, InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl, TextControl, ToggleControl } from '@wordpress/components';
-import { compose } from '@wordpress/compose';
-import { withDispatch } from '@wordpress/data';
-import { useEffect, useRef, useState } from '@wordpress/element';
+import { useEffect, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
-const edit = ({ attributes, setAttributes }) => {
-  const [imageData, setImageData] = useState(null);
-
-  const mounted = useRef();
-  useEffect(() => {
-    if (mounted?.current) {
-      return;
-    }
-
-    mounted.current = true;
-
-    const { backgroundImageId = 0, backgroundImage } = attributes;
-    if (backgroundImageId) {
-      fetchImageData(backgroundImageId, setImageData);
-      return;
-    }
-
-    if (!backgroundImage) {
-      return;
-    }
-
-    // if no image id, but image uri, get the image id
-    const parts = backgroundImage.split(/[\\/]/);
-    const basename = parts.pop().replace(/\.[a-z]{3,4}/, '');
-    const month = parts.pop();
-    const year = parts.pop();
-
-    const image = findImage(basename, year, month);
-    if (image) {
-      setAttributes({ backgroundImageId: image });
-    }
-  }, []);
-
-  useEffect(() => {
-    fetchImageData(attributes.backgroundImageId, setImageData);
-  }, [attributes.backgroundImageId]);
-
+const Controls = ({ attributes, setAttributes }) => {
   const handleSave = (sectionName) => {
     const sectionId = sectionName.replace(/\s/g, '').toLowerCase();
     setAttributes({ sectionId, sectionName });
@@ -72,7 +34,7 @@ const edit = ({ attributes, setAttributes }) => {
     });
   };
 
-  const controls = () => (
+  return (
     <InspectorControls>
       <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
         <TextControl
@@ -139,50 +101,84 @@ const edit = ({ attributes, setAttributes }) => {
         />
       </PanelBody>
     </InspectorControls>
-  );
+  )
+};
 
-  const styles = (h) => {
-    if (!attributes.backgroundImage) {
-      return {};
-    }
+const getClassName = (attributes) => classNames(
+  'section',
+  {
+    'section--tinted': attributes.background === 'grey',
+    [`section--${attributes.padding}`]: !!attributes.padding,
+    'section--textWhite': attributes.textColour === 'white',
+    'section--has-bg-image': attributes.backgroundImage,
+    'section--has-bg-overlay': !!attributes.enableBackgroundGradient,
+  },
+  `section--bgOrigin-${attributes.backgroundImageOrigin}`,
+);
 
-    if (h > 0) {
-      return {
-        'background-image': `url(${attributes.backgroundImage})`,
-        minHeight: `${attributes.minHeight}vw`,
-        maxHeight: `${attributes.backgroundImageHeight}px`,
-      };
-    }
+const makeBlockStylesBuilder = (attributes) => (h) => {
+  if (!attributes.backgroundImage) {
+    return {};
+  }
 
+  if (h > 0) {
     return {
-      'background-image': `url(${attributes.backgroundImage})`,
-      height: 'auto',
+      backgroundImage: `url(${attributes.backgroundImage})`,
+      minHeight: `${attributes.minHeight}vw`,
+      maxHeight: `${attributes.backgroundImageHeight}px`,
     };
+  }
+
+  return {
+    backgroundImage: `url(${attributes.backgroundImage})`,
+    height: 'auto',
   };
+};
+
+const edit = ({ attributes, setAttributes }) => {
+  const [imageData, setImageData] = useState(null);
+
+  useEffect(() => {
+    const { backgroundImageId = 0, backgroundImage } = attributes;
+    if (backgroundImageId) {
+      fetchImageData(backgroundImageId, setImageData);
+      return;
+    }
+
+    if (!backgroundImage) {
+      return;
+    }
+
+    // if no image id, but image uri, get the image id
+    const parts = backgroundImage.split(/[\\/]/);
+    const basename = parts.pop().replace(/\.[a-z]{3,4}/, '');
+    const month = parts.pop();
+    const year = parts.pop();
+
+    const image = findImage(basename, year, month);
+    if (image) {
+      setAttributes({ backgroundImageId: image });
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchImageData(attributes.backgroundImageId, setImageData);
+  }, [attributes.backgroundImageId]);
 
   const shouldShowImageCaption =
     imageData?.caption &&
     !attributes.hideImageCaption &&
-    imageData?.caption !== imageData?.description;
+    imageData?.caption !== imageData?.copyright;
 
-  const shouldShowImageCredit = imageData?.description && !attributes.hideImageCopyright;
+  const shouldShowImageCredit = imageData?.copyright && !attributes.hideImageCopyright;
 
-  const sectionClasses = classNames(
-    'section',
-    {
-      'section--tinted': attributes.background === 'grey',
-      [`section--${attributes.padding}`]: !!attributes.padding,
-      'section--textWhite': attributes.textColour === 'white',
-      'section--has-bg-image': attributes.backgroundImage,
-      'section--has-bg-overlay': !!attributes.enableBackgroundGradient,
-    },
-    `section--bgOrigin-${attributes.backgroundImageOrigin}`,
-  );
+  const sectionClasses = getClassName(attributes);
+  const buildStyles = makeBlockStylesBuilder(attributes);
 
   return (
-    <>
-      {controls()}
-      <section className={sectionClasses} style={styles(attributes.minHeight)}>
+    <div {...useBlockProps()}>
+      <Controls attributes={attributes} setAttributes={setAttributes} />
+      <section className={sectionClasses} style={buildStyles(attributes.minHeight)}>
         <div id={attributes.sectionId} className="container">
           <InnerBlocks templateLock={false} />
         </div>
@@ -192,10 +188,8 @@ const edit = ({ attributes, setAttributes }) => {
           showMediaCopyright={shouldShowImageCredit}
         />
       </section>
-    </>
+    </div>
   );
 };
 
-export default compose(
-  withDispatch((dispatch) => dispatch('core/block-editor').setTemplateValidity(true)),
-)(edit);
+export default edit;
