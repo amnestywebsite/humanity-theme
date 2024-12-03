@@ -1,3 +1,5 @@
+@import '../../utils/mixins/placeholder';
+
 .edit-post-visual-editor .editor-block-list__block[data-type="amnesty-core/image-block"] {
   max-width: 100%;
   width: 100%;
@@ -49,6 +51,7 @@
   justify-content: center;
   align-content: flex-start;
   min-width: 600px;
+  position: relative;
 
   > * {
     margin: 0 10px;
@@ -56,10 +59,13 @@
 }
 
 .imageBlock-buttonsContainer .linkList-options {
-  position: static;
+  position: absolute;
   display: flex;
   margin-top: 5px;
   background: none;
+  bottom: 0;
+  right: 0;
+  top: auto;
 }
 
 .imageBlock-buttonWrapper {

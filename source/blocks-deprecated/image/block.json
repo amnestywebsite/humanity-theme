@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/image-block",
+  "title": "Image Block",
+  "category": "amnesty-core",
+  "description": "Add a flexible image block with optional overlay",
+  "icon": "format-image",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": ["amnesty-image-editor-style"],
+  "style": ["amnesty-image-style"],
+  "render": "file:./render.php",
+  "supports": {
+    "inserter": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "style": {
+      "type": "string"
+    },
+    "align": {
+      "type": "string"
+    },
+    "hasOverlay": {
+      "type": "boolean"
+    },
+    "parallax": {
+      "type": "boolean"
+    },
+    "identifier": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".imageBlock",
+      "attribute": "class"
+    },
+    "imageID": {
+      "type": "integer"
+    },
+    "imageURL": {
+      "type": "string"
+    },
+    "videoID": {
+      "type": "integer"
+    },
+    "videoURL": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "buttons": {
+      "type": "array",
+      "default": []
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}

@@ -38,5 +38,4 @@ import './editor/block-styles';
 // import './editor/blocks-deprecated/collapsable/index.jsx';
 // import './editor/blocks-deprecated/custom-card/index.jsx';
 // import './editor/blocks-deprecated/header/index.jsx';
-// import './editor/blocks-deprecated/image/index.jsx';
 // import './editor/blocks-deprecated/links-with-icons/index.jsx';

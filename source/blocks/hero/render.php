@@ -8,16 +8,8 @@ if ( ! $image_id ) {
 	$image_id = get_post_thumbnail_id();
 }
 
-echo '<pre>';
-var_dump($attributes);
-echo '</pre>';
-
 $image = new Get_Image_Data( (int) $image_id );
 $video = new Get_Image_Data( (int) $attributes['featuredVideoId'] );
-
-echo '<pre>';
-var_dump($image->metadata());
-echo '</pre>';
 
 $video_output = '';
 // If the block has a featured video, get the video URL

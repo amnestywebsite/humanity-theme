@@ -1,3 +1,37 @@
+<?php
+
+// used in views
+$block_classes = classnames(
+    'imageBlock',
+    [
+        // Conditional class for identifier and parallax
+        sprintf( 'imageBlock-%s', esc_attr( $attributes['identifier'] ) ) => (bool) $attributes['parallax'],
+
+        // Fixed style class
+        'imageBlock--fixed' => 'fixed' === $attributes['style'],
+
+        // Video type class
+        'has-video' => 'video' === $attributes['type'],
+
+        // Parallax class
+        'has-parallax' => (bool) $attributes['parallax'],
+
+        // Alignment class, e.g., alignleft, alignright, aligncenter
+        isset( $attributes['align'] ) ? sprintf( 'align%s', esc_attr( $attributes['align'] ) ) : ''
+    ]
+);
+
+
+// used in views
+$caption_classes = classnames(
+	'imageBlock-caption',
+	[
+		sprintf( 'align%s', $attributes['align'] ) => 'default' !== $attributes['align'],
+	]
+);
+
+?>
+
 <div class="<?php echo esc_attr( $block_classes ); ?>">
 <?php if ( ! $attributes['type'] ) : ?>
 	<?php echo wp_get_attachment_image( absint( $attributes['imageID'] ), 'fixed' === $attributes['style'] ? 'image-block' : 'full' ); ?>

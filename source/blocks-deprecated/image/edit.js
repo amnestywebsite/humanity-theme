@@ -427,6 +427,7 @@ export default class DisplayComponent extends Component {
         <div className={classes}>
           {this.backgroundMediaFields()}
           {this.overlayInputFields()}
+          {this.imageInlineControls()}
         </div>
 
         <RichText
@@ -437,8 +438,6 @@ export default class DisplayComponent extends Component {
           value={caption}
           onChange={(newCaption) => setAttributes({ caption: newCaption })}
         />
-
-        {this.imageInlineControls()}
         <div className="clear"></div>
       </Fragment>
     );
