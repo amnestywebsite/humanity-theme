@@ -42,5 +42,5 @@ export const fetchImageData = (imageId, callback) => {
 
   wp.apiRequest({
     path: `/wp/v2/media/${imageId}?_fields=description,caption&context=edit`,
-  }).then((r) => callback({ caption: r.caption.raw, description: r.description.raw }));
+  }).then((r) => callback({ caption: r.caption.raw, copyright: r.description.raw }));
 };

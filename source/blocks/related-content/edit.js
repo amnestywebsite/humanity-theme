@@ -1,4 +1,4 @@
-import pin from './components/Icon.js';
+import PinIcon from './components/Icon.js';
 
 import GridItem from './components/GridItem';
 import Loading from './components/Loading';
@@ -6,10 +6,11 @@ import NoPosts from './components/NoPosts';
 
 import { fetchRelated } from './utils.js';
 
+import { useBlockProps } from '@wordpress/block-editor';
 import { useInstanceId } from '@wordpress/compose';
 import { useEntityRecord } from '@wordpress/core-data';
 import { useDispatch } from '@wordpress/data';
-import { useCallback, useEffect, useRef, useState } from '@wordpress/element';
+import { useEffect, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
 const useRedirectionPreventionNotices = (instanceId) => {
@@ -36,7 +37,6 @@ const edit = ({ context }) => {
   const instanceId = useInstanceId(edit);
   const showRedirectionPreventedNotice = useRedirectionPreventionNotices(instanceId);
   const [related, setRelated] = useState(null);
-  const mounted = useRef();
 
   const { postId, postType } = context;
   const { editedRecord: post } = useEntityRecord('postType', postType, postId);
@@ -49,22 +49,29 @@ const edit = ({ context }) => {
   }
 
   useEffect(() => {
-    if (!mounted?.current) {
-      mounted.current = true;
-      fetchRelated(postId, taxonomies, setRelated);
-    }
+    fetchRelated(postId, taxonomies, setRelated);
   }, []);
 
+  const blockProps = useBlockProps();
+
   if (!Array.isArray(related)) {
-    return <Loading icon={pin} />;
+    return (
+      <div {...blockProps}>
+        <Loading icon={PinIcon} />
+      </div>
+    );
   }
 
   if (!related.length) {
-    return <NoPosts icon={pin} />;
+    return (
+      <div {...blockProps}>
+        <NoPosts icon={PinIcon} />
+      </div>
+    );
   }
 
   return (
-    <div>
+    <div {...blockProps}>
       <div className="grid grid-5">
         {related.map((item) => (
           <GridItem key={item.id} item={item} onClick={showRedirectionPreventedNotice} />
