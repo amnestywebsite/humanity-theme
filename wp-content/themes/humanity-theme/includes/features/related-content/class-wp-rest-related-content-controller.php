@@ -12,7 +12,7 @@ add_action(
 	function (): void {
 		$controller = new WP_REST_Related_Content_Controller();
 		$controller->register_routes();
-	} 
+	}
 );
 
 /**
@@ -66,7 +66,7 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 					'permission_callback' => [ $this, 'get_items_permissions_check' ],
 					'args'                => $this->get_args_for_request(),
 				],
-			] 
+			]
 		);
 	}
 
@@ -112,9 +112,10 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 	 * @return \WP_REST_Response|\WP_Error Response object on success, or WP_Error object on failure.
 	 */
 	public function get_items( $request ) {
-		$post = get_post( absint( $request['id'] ) );
+		$pid  = absint( $request['id'] );
+		$post = get_post( $pid );
 
-		if ( is_wp_error( $post ) ) {
+		if ( ! $pid || is_wp_error( $post ) ) {
 			return $post;
 		}
 
@@ -226,7 +227,7 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 				'amnesty' => true,
 				'public'  => true,
 			],
-			'objects' 
+			'objects'
 		);
 
 		$taxonomies = apply_filters( 'amnesty_related_content_taxonomies', $taxonomies );

@@ -1,4 +1,5 @@
 import { __ } from '@wordpress/i18n';
+import { addQueryArgs } from '@wordpress/url';
 
 /**
  * Retrieve featured image info from a post object
@@ -54,4 +55,9 @@ export const getCountryTerm = (terms) => {
       ],
     },
   };
+};
+
+export const fetchRelated = (post, taxonomies, callback) => {
+  const path = addQueryArgs(`amnesty/v1/related/${post}`, taxonomies);
+  wp.apiFetch({ path }).then(callback);
 };
