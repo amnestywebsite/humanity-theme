@@ -20,6 +20,12 @@ if ( ! function_exists( '\Amnesty\Blocks\amnesty_render_header_block' ) ) {
 	 * @return string
 	 */
 	function amnesty_render_header_block( array $attributes = [], string $content = '' ): string {
+		if ( ! isset( $attributes['imageID'] ) ) {
+			return '';
+		}
+
+		wp_enqueue_style( 'amnesty-header-style' );
+
 		$renderer = new Header_Block_Renderer( $attributes, $content );
 		return $renderer->render();
 	}

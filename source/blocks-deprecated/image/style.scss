@@ -3,11 +3,27 @@
   display: inline-block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .imageBlock img {
   max-width: 100%;
   height: auto;
+}
+
+.imageBlock.alignleft {
+  text-align: left;
+  float: unset !important;
+}
+
+.imageBlock.alignright {
+  text-align: right;
+  float: unset !important;
+}
+
+.imageBlock.aligncentre {
+  text-align: center;
+  float: unset !important;
 }
 
 .imageBlock-wrapper.alignright .imageBlock,
@@ -25,8 +41,7 @@
 
 .imageBlock-caption.aligncentre {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
 }
 
 .imageBlock-wrapper.alignleft .imageBlock,
@@ -69,6 +84,7 @@
   display: block;
   min-width: 100%;
   min-height: 100%;
+  width: 100%;
 }
 
 .imageBlock--fixed .imageBlock-image.has-caption {
@@ -131,6 +147,10 @@
   margin-left: 24px;
 }
 
+.imageBlock-buttonWrapper .btn {
+  padding: 12px;
+}
+
 .imageBlock-caption {
   margin-top: 7px !important;
   font-size: var(--wp--preset--font-size--x-small);
@@ -154,7 +174,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include mq(medium-sm) {
+  @media all and (min-width: 840px) {
     background-attachment: fixed;
   }
 }

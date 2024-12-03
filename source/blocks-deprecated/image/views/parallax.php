@@ -1,3 +1,26 @@
+<?php
+
+// used in views
+$block_classes = classnames(
+	'imageBlock',
+	[
+		sprintf( 'imageBlock-%s', esc_attr( $attributes['identifier'] ) ) => (bool) $attributes['parallax'],
+		'imageBlock--fixed' => 'fixed' === $attributes['style'],
+		'has-video'         => 'video' === $attributes['type'],
+		'has-parallax'      => (bool) $attributes['parallax'],
+	]
+);
+
+// used in views
+$caption_classes = classnames(
+	'imageBlock-caption',
+	[
+		sprintf( 'align%s', $attributes['align'] ) => 'default' !== $attributes['align'],
+	]
+);
+
+?>
+
 <?php $image_url = wp_get_attachment_image_url( absint( $attributes['imageID'] ), 'hero-lg' ); ?>
 <div class="<?php echo esc_attr( $block_classes ); ?>">
 <style>.imageBlock-<?php echo esc_attr( $attributes['identifier'] ); ?> .imageBlock-overlay{background-image:url('<?php echo esc_url( $image_url ); ?>')}</style>

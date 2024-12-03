@@ -35,7 +35,7 @@ if ( ! function_exists( 'amnesty_core_register_meta' ) ) {
 		register_meta( 'post', '_hero_show', $args );
 		register_meta( 'post', '_hero_type', $args );
 		register_meta( 'post', '_hero_embed', $args );
-		register_meta( 'post', '_hero_video_id', $integer );
+		register_meta( 'post', '_hero_video_id', $string );
 		register_meta( 'post', '_hero_hide_image_caption', $bool_true );
 		register_meta( 'post', '_hero_hide_image_copyright', $bool_false );
 
