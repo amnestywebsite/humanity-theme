@@ -8,7 +8,7 @@
  */
 ?>
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"8px","bottom":"8px"}}},"className":"custom-card is-style-dark","layout":{"type":"constrained","contentSize":"350px","wideSize":"480px"}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"8px","bottom":"8px"}}},"className":"custom-card is-style-dark"} -->
 <div class="wp-block-group custom-card is-style-dark" style="padding-top:8px;padding-bottom:8px"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center">(Label)</h2>
 <!-- /wp:heading -->
