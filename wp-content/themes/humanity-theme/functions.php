@@ -100,6 +100,7 @@ require_once realpath( __DIR__ . '/includes/theme-setup/media.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/class-desktop-nav-walker.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/class-mobile-nav-walker.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/navigation.php' );
+require_once realpath( __DIR__ . '/includes/theme-setup/class-scripts-and-styles.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/scripts-and-styles.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/analytics/google-tag-manager.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/analytics/google-analytics.php' );

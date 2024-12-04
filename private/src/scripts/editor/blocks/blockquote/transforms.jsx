@@ -1,17 +1,4 @@
-import { versionCompare } from '../utils';
-
 const { createBlock } = wp.blocks;
-
-/**
- * backwards-compatible getPhrasingContentSchema
- */
-const getPhrasingContentSchema = () => {
-  if (versionCompare(window.WPVersion, '5.6') < 0) {
-    return wp.blocks.getPhrasingContentSchema();
-  }
-
-  return wp.dom.getPhrasingContentSchema();
-};
 
 const transforms = {
   from: [
@@ -53,7 +40,7 @@ const transforms = {
         blockquote: {
           children: {
             p: {
-              children: getPhrasingContentSchema(),
+              children: wp.dom.getPhrasingContentSchema(),
             },
           },
         },
