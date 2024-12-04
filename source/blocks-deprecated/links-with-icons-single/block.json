@@ -10,7 +10,7 @@
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
   "supports": {
-    "inserter": true
+    "inserter": false
   },
   "attributes": {
     "style": {
