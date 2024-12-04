@@ -12,7 +12,7 @@
   "style": ["amnesty-links-with-icons-style", "amnesty-button-style"],
   "render": "file:./render.php",
   "supports": {
-    "inserter": true
+    "inserter": false
   },
   "attributes": {
     "backgroundColor": {
