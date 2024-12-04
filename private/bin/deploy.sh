@@ -55,6 +55,6 @@ fi
 # commit && deploy
 commit_message="$(printf "Travis CI build number %s\n\nCommit range: %s" "$TRAVIS_BUILD_NUMBER" "$TRAVIS_COMMIT_RANGE")"
 git commit --author="$GITHUB_USERNAME <$GITHUB_EMAIL>" -m "$commit_message"
-git push origin master > /dev/null 2>&1 || exit 1
+git push origin master > /dev/null || exit 1
 
 echo "Deployment complete."
