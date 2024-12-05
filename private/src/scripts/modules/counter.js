@@ -20,17 +20,15 @@ const toFormattedString = (value) => {
 
   const { currentLocale = 'en-GB' } = window.amnestyCoreI18n;
 
-  const { forceTS } = window.amnestyForceTS;
+  const { forceThousandSeparator } = window.amnestyForceThousandSeparator;
 
-  let formatted = '';
+  let options = '';
 
-  if (forceTS === 'on') {
-    formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'), {
-      useGrouping: true,
-    });
-  } else {
-    formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'));
+  if (forceThousandSeparator) {
+    options = { useGrouping: true };
   }
+
+  const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'), options);
 
   return formatted;
 };

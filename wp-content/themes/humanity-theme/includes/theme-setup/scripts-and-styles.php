@@ -360,11 +360,11 @@ if ( ! function_exists( 'amnesty_force_thousands_separator_localisation' ) ) {
 		$force_thousands_separator = get_option( 'amnesty_localisation_options_page' )['force_thousands_separator'] ?? 'off';
 
 		$data = [
-			'forceTS' => $force_thousands_separator,
+			'forceThousandSeparator' => amnesty_validate_boolish( $force_thousands_separator ),
 		];
 
-		wp_localize_script( 'amnesty-theme', 'amnestyForceTS', $data );
-		wp_localize_script( 'amnesty-core-blocks-js', 'amnestyForceTS', $data );
+		wp_localize_script( 'amnesty-theme', 'amnestyForceThousandSeparator', $data );
+		wp_localize_script( 'amnesty-core-blocks-js', 'amnestyForceThousandSeparator', $data );
 	}
 }
 
