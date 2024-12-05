@@ -3,14 +3,14 @@ import BlockImageSelector from './components/BlockImageSelector.jsx';
 import MediaMetadata from '../../components/MediaMetadata.jsx';
 import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisibilityControls.jsx';
 import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
-import { fetchMediaData, validateBool } from '../utils';
+import { fetchMediaData } from '../utils';
 
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl } = wp.components;
 const { useEntityRecord } = wp.coreData;
 const { useSelect } = wp.data;
 const { PostFeaturedImage } = wp.editor;
-const { Fragment, useCallback, useEffect, useRef, useState } = wp.element;
+const { Fragment, useEffect, useRef, useState } = wp.element;
 const { __ } = wp.i18n;
 
 /**
@@ -49,19 +49,6 @@ const DisplayComponent = (props) => {
   const videoRef = useRef();
   const hasDonationBlock = useHasDonationBlock(clientId);
   const object = useEntityRecord('postType', postType, postId);
-
-  const disableFeaturedImage = useCallback(() => {
-    // eslint-disable-next-line no-underscore-dangle
-    if (!validateBool(object?.editedRecord?.meta?._hide_featured_image)) {
-      object.edit({ meta: { _hide_featured_image: true } });
-    }
-  }, [object.edit]);
-
-  useEffect(() => {
-    if (!object.isResolving) {
-      disableFeaturedImage();
-    }
-  }, [object.editedRecord.featured_media]);
 
   useEffect(() => {
     if (attributes.type !== 'image') {
