@@ -4,12 +4,12 @@
   "name": "amnesty-core/block-section",
   "title": "Section",
   "category": "amnesty-core",
-  "description": "",
+  "description": "A custom block for creating sections with background options and styling.",
   "icon": "editor-table",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "style": "file:./style-index.css",
   "render": "file:./render.php",
   "attributes": {
     "background": {

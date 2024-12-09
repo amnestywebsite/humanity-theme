@@ -1,5 +1,4 @@
 import { fetchMediaUrl } from '../utils';
-
 import { MediaUpload } from '@wordpress/block-editor';
 import { Button, Spinner } from '@wordpress/components';
 import { useEffect, useRef, useState } from '@wordpress/element';
@@ -14,37 +13,38 @@ const DEFAULT_REMOVE_MEDIA_LABEL = __('Remove Image', 'amnesty');
 
 const edit = (props) => {
   const { onUpdate } = props;
-  const [media, setMedia] = useState(false);
+  const [media, setMedia] = useState(null);
   const [loading, setLoading] = useState(false);
-  const mounted = useRef();
+  const mounted = useRef(false);
 
+  // UseEffect to fetch media on mount or when mediaId changes
   useEffect(() => {
-    if (mounted?.current) {
-      return;
+    if (!mounted.current) {
+      mounted.current = true;
+      if (props.mediaId) {
+        setLoading(true);
+        fetchMediaUrl(props.mediaId, setMedia).then(() => setLoading(false));
+      }
     }
-
-    mounted.current = true;
-
-    if (mediaId) {
-      fetchMediaUrl(mediaId, setMedia);
-    }
-  }, []);
-
-  useEffect(() => {
-    setLoading(true);
-    fetchMediaUrl(props.mediaId, setMedia).then(() => setLoading(false));
   }, [props.mediaId]);
 
-  const doUpdate = async (media) => {
-    if (!media) {
-      setMedia(false);
+  // Update media
+  const doUpdate = (newMedia) => {
+    if (!newMedia) {
+      setMedia(null);
       onUpdate();
       return;
     }
 
-    fetchMediaUrl(media.id, setMedia).then((r) => onUpdate(r));
+    setLoading(true);
+    fetchMediaUrl(newMedia.id, setMedia).then(() => {
+      setLoading(false);
+      onUpdate(newMedia.id);
+      console.log(newMedia, 'pms');
+    });
   };
 
+  // Remove media
   const doRemove = () => doUpdate(false);
 
   const {
@@ -59,42 +59,8 @@ const edit = (props) => {
 
   return (
     <div className="editor-post-featured-image">
-      {!!mediaId && (
-        <MediaUpload
-          title={setMediaLabel}
-          onSelect={doUpdate}
-          allowedTypes={[mediaType]}
-          modalClass="editor-post-featured-image__media-modal"
-          render={({ open }) => (
-            <Button className="editor-post-featured-image__preview" onClick={open} />
-          )}
-        />
-      )}
-      {!!mediaId && media && !media.isLoading && (
-        <MediaUpload
-          title={setMediaLabel}
-          onSelect={doUpdate}
-          allowedTypes={[mediaType]}
-          modalClass="editor-post-featured-image__media-modal"
-          render={({ open }) => (
-            <div>
-              {!loading && mediaType === 'video' && (
-                <video>
-                  <source src={media.source_url || media.url} />
-                </video>
-              )}
-              {!loading && mediaType === 'image' && <img src={media.source_url || media.url} />}
-
-              {loading && <Spinner />}
-              <Button onClick={open} isSecondary isLarge>
-                {replaceMediaLabel}
-              </Button>
-            </div>
-          )}
-        />
-      )}
-      {!mediaId && (
-        <div>
+      <div>
+        {!mediaId && (
           <MediaUpload
             title={setMediaLabel}
             onSelect={doUpdate}
@@ -106,13 +72,41 @@ const edit = (props) => {
               </Button>
             )}
           />
-        </div>
-      )}
-      {!!mediaId && (
-        <Button onClick={doRemove} isLink isDestructive>
-          {removeMediaLabel}
-        </Button>
-      )}
+        )}
+
+        {!!mediaId && (
+          <MediaUpload
+            title={mediaId ? replaceMediaLabel : setMediaLabel}
+            onSelect={doUpdate}
+            allowedTypes={[mediaType]}
+            modalClass="editor-post-featured-image__media-modal"
+            render={({ open }) => (
+              <div>
+                {!loading && media && (
+                  <>
+                    {mediaType === 'video' && (
+                      <video>
+                        <source src={media.source_url || media.url} />
+                      </video>
+                    )}
+                    {mediaType === 'image' && <img src={media.source_url || media.url} />}
+                    <Button onClick={open}>
+                      {replaceMediaLabel}
+                    </Button>
+                  </>
+                )}
+                {loading && <Spinner />}
+              </div>
+            )}
+          />
+        )}
+
+        {!!mediaId && (
+          <Button onClick={doRemove}>
+            {removeMediaLabel}
+          </Button>
+        )}
+      </div>
     </div>
   );
 };

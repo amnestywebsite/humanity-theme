@@ -1,3 +1,10 @@
+@import "../../utils/mixins/icon";
+
+[data-type="amnesty-core/block-slider"] {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
 .slider-nav {
   display: flex;
 }
@@ -10,13 +17,13 @@
   text-align: center;
   min-height: 56px;
   background-color: var(--wp--preset--color--grey-lighter);
-  font-size: 16px;
-  text-transform: uppercase;
+  color: var(--wp--preset--color--black);
   font-family: var(--wp--preset--font-family--secondary);
+  font-size: var(--wp--preset--font-size--small);
+  text-transform: uppercase;
   flex: 1 1 auto;
   font-weight: bold;
   border: none;
-  color: var(--wp--preset--color--black);
 }
 
 .slider-navButton.is-nav-selected {
@@ -35,15 +42,170 @@
   background-color: var(--wp--preset--color--black);
 }
 
-.slides-container {
+
+.slider {
   position: relative;
+  max-width: 1468px;
+  margin: 0 auto;
+  width: 100%;
+
+  .flickity-enabled {
+    display: flex;
+  }
+
+  .flickity-viewport {
+    order: 2;
+    width: 100%;
+    height: auto !important;
+  }
+
+  .flickity-slider {
+    position: relative !important;
+    display: flex;
+    left: auto !important;
+
+    .rtl & {
+      right: auto !important;
+    }
+  }
+
+  .slide {
+    flex: 1 0 100%;
+    flex-direction: row;
+    left: auto !important;
+    position: relative !important;
+    transform: none !important;
+
+    .rtl & {
+      flex-direction: row-reverse;
+      right: auto !important;
+    }
+  }
+
+  .slider-nav {
+    width: 100%;
+  }
+
+  .has-arrows .slider-nav {
+    max-width: calc(100% - 88px);
+  }
+
+  .slider-navButton {
+    width: 100%;
+    flex: 1 0 auto;
+    flex-direction: row;
+    left: auto !important;
+    position: relative !important;
+    transform: none !important;
+
+    .rtl & {
+      flex-direction: row-reverse;
+      right: auto !important;
+    }
+
+    @media all and (min-width: 760px) {
+      width: auto;
+    }
+  }
+}
+
+.slider-navContainer {
+  display: flex;
+
+  [data-slider-next] {
+    order: 3;
+
+    .rtl & {
+      order: 1;
+    }
+  }
+
+  [data-slider-prev] {
+    order: 1;
+
+    .rtl & {
+      order: 3;
+    }
+  }
+
+  .slider-nav {
+    order: 2;
+  }
+
+  [data-slider-next],
+  [data-slider-prev] {
+    display: none;
+    height: auto;
+  }
+
+  &.has-arrows > [data-slider-next],
+  &.has-arrows > [data-slider-prev] {
+    display: flex;
+  }
+}
+
+.slider-toggleContent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 34px;
+  width: 34px;
+  border: 1px solid var(--wp--preset--color--white);
+  background-color: transparent;
+  text-indent: -1000vw;
+
+  .rtl & {
+    left: 0;
+    right: auto;
+  }
+
+  &::before {
+    @include icon_scale(271px, 131px, 16px, 16px, 1.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    display: block;
+    transform: translate(-50%, -50%);
+  }
+
+  @media all and (min-width: 760px) {
+    display: none;
+  }
+}
+
+.slider-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--wp--preset--color--white);
+  padding: 20px;
+  z-index: 1;
+  font-family: var(--wp--preset--font-family--secondary);
+  text-transform: uppercase;
+  font-size: var(--wp--preset--font-size--regular);
+
+  @media all and (min-width: 760px) {
+    font-size: var(--wp--preset--font-size--large);
+  }
+}
+
+.slider.timeline-light .image-metadata {
+  background-color: transparent;
+  color: var(--wp--preset--color--black);
+}
+
+.slider.timeline-dark .image-metadata {
+  background-color: transparent;
+  color: var(--wp--preset--color--white);
 }
 
 .slides-arrow {
   position: absolute;
   top: 50%;
   left: 0;
-  display: none;
   background-color: var(--wp--preset--color--white);
   width: 50px;
   height: 50px;
@@ -65,11 +227,11 @@
 .slides-arrow--next {
   right: 0;
   left: initial;
-}
 
-.rtl .slides-arrow--next {
-  right: initial;
-  left: 0;
+  .rtl & {
+    right: initial;
+    left: 0;
+  }
 }
 
 .rtl .slides-arrow--previous {
@@ -78,197 +240,21 @@
 }
 
 .slides-arrow--next::after {
-  pointer-events: none;
-  background-image: var(--amnesty-icon-path);
-  background-repeat: no-repeat;
-  background-size: 616px 600px;
-  width: 32px;
-  height: 32px;
-  background-position: -220px -530px;
+  @include icon_scale(110px, 265px, 16px, 16px, 2);
   content: "";
   display: block;
-}
 
-.rtl .slides-arrow--next::after {
-  pointer-events: none;
-  background-image: var(--amnesty-icon-path);
-  background-repeat: no-repeat;
-  background-size: 616px 600px;
-  width: 32px;
-  height: 32px;
-  background-position: -468px -480px;
+  .rtl & {
+    @include icon_scale(234px, 240px, 16px, 16px, 2);
+  }
 }
 
 .slides-arrow--previous::after {
-  pointer-events: none;
-  background-image: var(--amnesty-icon-path);
-  background-repeat: no-repeat;
-  background-size: 616px 600px;
-  width: 32px;
-  height: 32px;
-  background-position: -468px -480px;
+  @include icon_scale(234px, 240px, 16px, 16px, 2);
   content: "";
   display: block;
-}
 
-.rtl .slides-arrow--previous::after {
-  pointer-events: none;
-  background-image: var(--amnesty-icon-path);
-  background-repeat: no-repeat;
-  background-size: 616px 600px;
-  width: 32px;
-  height: 32px;
-  background-position: -220px -530px;
-}
-
-.slider {
-  position: relative;
-  max-width: 1468px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.slider .flickity-enabled {
-  display: flex;
-}
-
-.slider .flickity-viewport {
-  order: 2;
-  width: 100%;
-  height: auto !important;
-}
-
-.slider .flickity-slider {
-  position: relative !important;
-  display: flex;
-  left: auto !important;
-}
-
-.rtl .slider .flickity-slider {
-  right: auto !important;
-}
-
-.slider .slider-nav {
-  width: 100%;
-}
-
-.slider .has-arrows .slider-nav {
-  max-width: calc(100% - 88px);
-}
-
-.slider .slider-navButton {
-  width: 100%;
-  flex: 1 0 auto;
-  flex-direction: row;
-  left: auto !important;
-  position: relative !important;
-  transform: none !important;
-
-  @media all and (min-width: 760px) {
-    width: auto;
+  .rtl & {
+    @include icon_scale(110px, 265px, 16px, 16px, 2);
   }
-}
-
-.rtl .slider .slider-navButton {
-  flex-direction: row-reverse;
-  right: auto !important;
-}
-
-.slider-navContainer {
-  display: flex;
-}
-
-.slider-navContainer .slider-nav {
-  order: 2;
-}
-
-.slider-navContainer [data-slider-next],
-.slider-navContainer [data-slider-prev] {
-  display: none;
-  height: auto;
-}
-
-.slider-navContainer [data-slider-next] {
-  order: 3;
-}
-
-.rtl .slider-navContainer [data-slider-next] {
-  order: 1;
-}
-
-.slider-navContainer [data-slider-prev] {
-  order: 1;
-}
-
-.rtl .slider-navContainer [data-slider-prev] {
-  order: 3;
-}
-
-.slider-navContainer.has-arrows > [data-slider-next],
-.slider-navContainer.has-arrows > [data-slider-prev] {
-  display: flex;
-}
-
-.slider-toggleContent {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  height: 34px;
-  width: 34px;
-  border: 1px solid var(--wp--preset--color--white);
-  background-color: transparent;
-  text-indent: -1000vw;
-
-  @media all and (min-width: 760px) {
-    display: none;
-  }
-}
-
-.slider-toggleContent::before {
-  pointer-events: none;
-  background-image: var(--amnesty-icon-path);
-  background-repeat: no-repeat;
-  background-size: 532.1px 510px;
-  width: 27.2px;
-  height: 27.2px;
-  background-position: -460.7px -222.7px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: "";
-  display: block;
-  transform: translate(-50%, -50%);
-}
-
-.rtl .slider-toggleContent {
-  right: auto;
-  left: 0;
-}
-
-.slider-title {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--wp--preset--color--white);
-  padding: 20px;
-  z-index: 1;
-  font-family: var(--wp--preset--font-family--secondary);
-  text-transform: uppercase;
-  font-size: 18px;
-
-  @media all and (min-width: 760px) {
-    font-size: 34px;
-  }
-}
-
-.slider.timeline-light .image-metadata {
-  background-color: transparent;
-  color: var(--wp--preset--color--black);
-}
-
-.slider.timeline-dark .image-metadata {
-  background-color: transparent;
-  color: var(--wp--preset--color--white);
 }

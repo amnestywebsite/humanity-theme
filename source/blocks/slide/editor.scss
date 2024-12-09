@@ -1,12 +1,20 @@
-.slide .editor-url-input__button {
-  position: relative;
-  margin-left: 16px;
+.slide {
+  display: none !important;
+
+  .editor-url-input__button {
+    position: relative;
+    margin-left: 16px;
+  }
+
+  .editor-url-input__button-modal {
+    position: absolute;
+    left: 0;
+    width: 340px;
+  }
 }
 
-.slide .editor-url-input__button-modal {
-  position: absolute;
-  left: 0;
-  width: 340px;
+.slide.is-selected {
+  display: flex !important;
 }
 
 .slide-callToAction  .block-editor-url-input__button .components-toolbar__control {
