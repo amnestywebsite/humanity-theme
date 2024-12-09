@@ -1,68 +1,58 @@
 <?php
 
-$data = wp_parse_args(
-	$data,
-	[
-		'alignment'        => '',
-		'background'       => '',
-		'callToActionLink' => '',
-		'callToActionText' => '',
-		'content'          => '',
-		'heading'          => '',
-		'hideContent'      => '',
-		'id'               => '',
-		'imageId'          => 0,
-		'subheading'       => '',
-		'timelineContent'  => '',
-	]
-);
-
-$show_cta_btn = (bool) $attrs['callToActionText'] && (bool) $attrs['callToActionLink'];
-$show_toggle  = $show_cta_btn || (bool) $attrs['content'];
-$has_inner    = $show_cta_btn || $show_toggle;
+$alignment = $attributes['alignment'] ?? 'left';
+$background = $attributes['imageId'] ?? '';
+$cta_link = $attributes['callToActionLink'] ?? '';
+$cta_text = $attributes['callToActionText'] ?? '';
+$content = $attributes['content'] ?? '';
+$hide_content = $attributes['hideContent'] ?? false;
+$id = $attributes['id'] ?? '';
+$subtitle = $attributes['subheading'] ?? '';
+$timeline_content = $attributes['timelineContent'] ?? '';
+$title = $attributes['title'] ?? '';
 
 $slide_classes = classnames(
 	'slide',
-	$attrs['className'],
 	[
-		"has-{$attrs['background']}-background" => $attrs['background'],
+		"is-{$alignment}-aligned"      => $alignment,
 	]
 );
 
+$background_url = wp_get_attachment_image_url( $background, 'full' );
+
+$slide_style = '';
+
+// Build style background image if background image is set
+if ( $background_url ) {
+	$slide_style = "background-image: url({$background_url});";
+}
+
 ?>
-<div id="slide-<?php echo esc_attr( $attrs['id'] ); ?>" class="<?php echo esc_attr( $slide_classes ); ?>" tabindex="0">
-<?php if ( (bool) $attrs['timelineContent'] ) : ?>
+<div id="slide-<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $slide_classes ); ?>" style="<?php echo esc_attr($slide_style) ?>" tabindex="0">
+<?php if ( $timeline_content ) : ?>
 	<div class="slide-timelineContent">
-		<div class="slide-timelineContent-inner"><?php echo wp_kses_post( $attrs['timelineContent'] ); ?></div>
+		<div class="slide-timelineContent-inner"><?php echo wp_kses_post( $timeline_content ); ?></div>
 	</div>
 <?php endif; ?>
 
-<?php if ( ! $attrs['hideContent'] && $block->context['amnesty-core/slider/hasContent'] ) : ?>
+<?php if ( ! $hide_content ) : ?>
 	<div class="slide-contentWrapper" data-tooltip="<?php /* translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery */ esc_attr_e( 'Tap here to return to gallery', 'amnesty' ); ?>">
 		<div class="slide-contentContainer">
-		<?php if ( $attrs['heading'] ) : ?>
-			<h1 class="slide-title"><?php echo wp_kses_post( $attrs['heading'] ); ?></h1>
+		<?php if ( $title ) : ?>
+			<h1 class="slide-title"><?php echo wp_kses_post( $title ); ?></h1>
 		<?php endif; ?>
 
-		<?php if ( $attrs['subheading'] ) : ?>
-			<h2 class="slide-subtitle"><?php echo wp_kses_post( $attrs['subheading'] ); ?></h2>
+		<?php if ( $subtitle ) : ?>
+			<h2 class="slide-subtitle"><?php echo wp_kses_post( $subtitle ); ?></h2>
 		<?php endif; ?>
 
-		<?php if ( $has_inner ) : ?>
 			<div class="slide-content">
-			<?php if ( $attrs['content'] ) : ?>
-				<div><?php echo wp_kses_post( $attrs['content'] ); ?></div>
+			<?php if ( $content ) : ?>
+				<div><?php echo wp_kses_post( $content ); ?></div>
 			<?php endif; ?>
 
-			<?php if ( $show_cta_btn ) : ?>
-				<a class="btn" href="<?php echo esc_url( $attrs['callToActionLink'] ); ?>"><?php echo wp_kses_post( $attrs['callToActionText'] ); ?></a>
-			<?php endif; ?>
-
-			<?php if ( $show_toggle ) : ?>
-				<button class="slider-toggleContent"><?php /* translators: [front] */ esc_html_e( 'Toggle Content', 'amnesty' ); ?></button>
-			<?php endif; ?>
+			<a class="btn" href="<?php echo esc_url( $cta_link ); ?>"><?php echo wp_kses_post( $cta_text ); ?></a>
 			</div>
-		<?php endif; ?>
 		</div>
 	</div>
 <?php endif; ?>

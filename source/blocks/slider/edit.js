@@ -3,8 +3,8 @@ import memoize from 'memize';
 
 import { randId } from '../../utils';
 
-import { times } from 'lodash';
-import { InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
+import { get, times } from 'lodash';
+import { InnerBlocks, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import { useEffect, useRef, useState } from '@wordpress/element';
@@ -16,10 +16,10 @@ const getLayoutTemplate = memoize((blocks) => times(blocks, () => ALLOWED_BLOCKS
 
 const edit = ({ attributes, className, clientId, setAttributes }) => {
   const [selectedSlide, setSelectedSlide] = useState(0);
-  const mounted = useRef();
+  const mounted = useRef(false);
 
   useEffect(() => {
-    if (mounted?.current) {
+    if (mounted.current) {
       return;
     }
 
@@ -28,13 +28,14 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
     if (!attributes.sliderId) {
       setAttributes({ sliderId: randId() });
     }
-  }, []);
+  }, [attributes.sliderId, setAttributes]);
 
   const slides = useSelect(
     (select) => select('core/block-editor').getBlock(clientId).innerBlocks,
+    [clientId] // Make sure to update when the block's innerBlocks change
   );
 
-  const controls = (
+  const controls = () => (
     <InspectorControls>
       <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
         <ToggleControl
@@ -90,17 +91,35 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
 
   const nextSlide = () => setSelectedSlide(selectedSlide + 1);
   const prevSlide = () => setSelectedSlide(selectedSlide - 1);
-  const classes = classnames(className, 'slider', `timeline-${attributes.style}`);
 
   const addSlide = () => {
-    slides.push(createBlock('amnesty-core/slide'));
+    // Use setAttributes to modify the innerBlocks
+    const updatedSlides = [...slides, createBlock('amnesty-core/slide')];
+    setAttributes( { innerBlocks: updatedSlides} );
+    setAttributes({ quantity: updatedSlides.length });
+
     nextSlide();
   };
 
+  const allSlides = document.querySelectorAll('.slide')
+
+  allSlides.forEach((slide, index) => {
+    if (selectedSlide === index) {
+      slide.classList.add('is-selected');
+    } else {
+      slide.classList.remove('is-selected');
+    }
+  });
+
+  console.log(selectedSlide, 'selectedSlide');
+
+
   return (
     <>
-      {controls}
-      <div className={classes}>
+      {controls()}
+      <div {...useBlockProps({
+        className: classnames(className, 'slider', `timeline-${attributes.style}`),
+      })}>
         {!!attributes.title && (
           <div className="slider-title">
             <RichText
@@ -126,24 +145,27 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
             </>
           )}
           <div className="slides">
-            <InnerBlocks template={getLayoutTemplate(attributes.quantity)} templateLock="all" />
+            <InnerBlocks
+              template={getLayoutTemplate(attributes.quantity || 5)} // Fallback to 5 if quantity is undefined
+              templateLock="all"
+            />
           </div>
         </div>
         <nav className="slider-nav">
           {slides.map((slide, index) => {
-            if (selectedSlide === index) {
-              return (
-                <div key={slide.title} className="slider-navButton is-active">
-                  {/* translators: [admin] */}
-                  <span>{slide.title || __('No Title', 'amnesty')}</span>
-                </div>
-              );
-            }
+            // Use clientId or slide.title for unique keys
+            const key = slide.attributes.title || slide.attributes.clientId || index;
 
             return (
-              <button key={slide.title} className="slider-navButton" onClick={nextSlide}>
+              <button
+                key={key}
+                className={classnames('slider-navButton', {
+                  'is-active': selectedSlide === index,
+                })}
+                onClick={() => setSelectedSlide(index)} // Corrected to set selected slide
+              >
                 {/* translators: [admin] */}
-                {slide.title || __('No Title', 'amnesty')}
+                {slide.attributes.title || __('No Title', 'amnesty')}
               </button>
             );
           })}

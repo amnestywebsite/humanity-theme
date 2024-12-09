@@ -10,8 +10,8 @@
   "icon": "",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-slide-editor-style"],
+  "style": ["amnesty-slide-style", "amnesty-button-style"],
   "render": "file:./render.php",
   "supports": {
     "align": true,
@@ -47,8 +47,7 @@
       "default": ""
     },
     "imageId": {
-      "type": "string",
-      "default": ""
+      "type": "integer"
     },
     "subheading": {
       "type": "string",
