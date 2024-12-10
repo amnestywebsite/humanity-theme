@@ -9,7 +9,7 @@ const MediaMetadata = ({ media, showMediaCaption, showMediaCopyright }) => {
         <span className="image-metadataItem image-caption">{media.caption}</span>
       )}
       {showMediaCopyright && (
-        <span className="image-metadataItem image-copyright">{media.copyright}</span>
+        <span className="image-metadataItem image-copyright">{media.description}</span>
       )}
     </div>
   );
