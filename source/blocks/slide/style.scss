@@ -235,12 +235,12 @@ h2.slide-subtitle {
   text-align: center;
 }
 
-.timeline-dark .slide-timelineContent {
+.is-style-dark .slide-timelineContent {
   background: rgba(0, 0, 0, .3);
   color: var(--wp--preset--color--white);
 }
 
-.timeline-light .slide-timelineContent {
+.is-style-light .slide-timelineContent {
   background: rgba(255, 255, 255, .7);
   color: var(--wp--preset--color--black);
 }

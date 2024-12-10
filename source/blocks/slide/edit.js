@@ -30,9 +30,6 @@ const edit = ({ attributes, className, context, setAttributes }) => {
     fetchMediaUrl(attributes.imageId, setMediaUrl);
   }, [attributes.imageId]);
 
-  console.log(attributes, 'slide');
-
-
   const controls = () => (
     <InspectorControls>
       <PanelBody title={__('Options', 'amnesty')}>

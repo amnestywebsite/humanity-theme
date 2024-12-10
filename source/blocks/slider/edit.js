@@ -100,8 +100,14 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
     nextSlide();
   };
 
+  const classes = classnames(className, 'slider', {
+    [`timeline-${attributes.style}`]: !!attributes.style,
+  });
+
+  // Get all slides
   const allSlides = document.querySelectorAll('.slide')
 
+  // Loop through all slides and add/remove the is-selected class
   allSlides.forEach((slide, index) => {
     if (selectedSlide === index) {
       slide.classList.add('is-selected');
@@ -110,14 +116,14 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
     }
   });
 
-  console.log(selectedSlide, 'selectedSlide');
+  console.log(selectedSlide);
 
 
   return (
     <>
       {controls()}
       <div {...useBlockProps({
-        className: classnames(className, 'slider', `timeline-${attributes.style}`),
+        className: classes,
       })}>
         {!!attributes.title && (
           <div className="slider-title">
