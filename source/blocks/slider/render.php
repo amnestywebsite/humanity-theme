@@ -1,9 +1,5 @@
 <?php
 
-echo '<pre>';
-var_dump($attributes);
-echo '</pre>';
-
 $slider_id = $attributes['sliderId'] ?? '';
 $quantity = $attributes['quantity'] ?? 1;
 $has_arrows = $attributes['hasArrows'] ?? true;
@@ -22,9 +18,43 @@ $slider_classes = classnames(
 	]
 );
 
+$wrapper_attributes = get_block_wrapper_attributes( [
+	'class' => $slider_classes,
+] );
+
+$blocks   = parse_blocks( get_post_field( 'post_content' ) );
+
+$slide_blocks = '';
+
+foreach($blocks as $block) {
+	if ($block['blockName'] === 'amnesty-core/block-slider') {
+		$slide_blocks = $block['innerBlocks'];
+	}
+}
+
+$slide_titles = [];
+
+foreach($slide_blocks as $slide) {
+	array_push($slide_titles, $slide['attrs']['title']);
+}
+
+$buttons = '';  // Initialize the $buttons variable
+
+// Loop through the $slide_titles array
+foreach ($slide_titles as $index => $slide_title) {
+    // Create a button with the current slide title
+    $buttons .= '<button class="slider-navButton" aria-label="Go to slide: ' . htmlspecialchars($slide_title) . '">' . htmlspecialchars($slide_title) . '</button>';
+}
+
+// If there are fewer buttons than the $quantity, create additional buttons (blank or default)
+for ($i = count($slide_titles); $i < $quantity; $i++) {
+    // Optionally, you could make this button blank or set a default aria-label if needed
+    $buttons .= '<button class="slider-navButton" aria-label="Go to slide"></button>';
+}
+
 ?>
 
-<div id="slider-<?php echo esc_attr( $slider_id ); ?>" class="<?php echo esc_attr( $slider_classes ); ?>">
+<div id="slider-<?php echo esc_attr( $slider_id ); ?>" <?php echo wp_kses_data($wrapper_attributes) ?>>
 	<?php if ( $title ) : ?>
 		<h2 class="slider-title"><?php echo wp_kses_post( $title ); ?></h2>
 	<?php endif; ?>
@@ -33,18 +63,19 @@ $slider_classes = classnames(
 		<div class="slides">
 			<?php echo $content; ?>
 		</div>
-		<button class="slides-arrow slides-arrow--previous" aria-label="<?php esc_attr_e( 'Previous slide', 'amnesty' ); ?>">
-			<?php echo file_get_contents( get_template_directory() . '/assets/svg/arrow-left.svg' ); ?>
-		</button>
-		<button class="slides-arrow slides-arrow--next" aria-label="<?php esc_attr_e( 'Next slide', 'amnesty' ); ?>">
-			<?php echo file_get_contents( get_template_directory() . '/assets/svg/arrow-right.svg' ); ?>
-		</button>
-		<div class="slider-navContainer">
-			<div class="slider-nav">
-				<?php for ( $i = 0; $i < $quantity; $i++ ) : ?>
-					<button class="slider-navButton" aria-label="<?php esc_attr_e( 'Go to slide', 'amnesty' ); ?>">
-
-					</button>
-				<?php endfor; ?>
+		<?php if ( $has_arrows ) : ?>
+			<button class="slides-arrow slides-arrow--previous" aria-label="<?php esc_attr_e( 'Previous slide', 'amnesty' ); ?>">
+				<?php echo file_get_contents( get_template_directory() . '/assets/svg/arrow-left.svg' ); ?>
+			</button>
+			<button class="slides-arrow slides-arrow--next" aria-label="<?php esc_attr_e( 'Next slide', 'amnesty' ); ?>">
+				<?php echo file_get_contents( get_template_directory() . '/assets/svg/arrow-right.svg' ); ?>
+			</button>
+		<?php endif; ?>
+		<?php if ( $show_tabs ) : ?>
+			<div class="slider-navContainer">
+				<div class="slider-nav">
+					<?php echo wp_kses_post( $buttons ); ?>
+				</div>
 			</div>
+		<?php endif; ?>
 	</div>

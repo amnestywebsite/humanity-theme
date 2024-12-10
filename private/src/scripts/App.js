@@ -15,7 +15,6 @@ import filterPosts from './modules/filter-posts';
 import loadVideos from './modules/video-loaded';
 import fluidIframe from './modules/fluid-iframe';
 import categorySlider from './modules/category-slider';
-// import sliderBlock from './modules/slider-block';
 import counters from './modules/counter';
 import tabbedNav from './modules/tabbed-nav';
 import browserDetector from './modules/browser-detector';
@@ -34,7 +33,6 @@ const App = () => {
   filterPosts();
   fluidIframe();
   categorySlider();
-  // sliderBlock();
   counters();
   tabbedNav();
   loadVideos();
