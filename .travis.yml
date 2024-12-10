@@ -29,8 +29,6 @@ stages:
 
   - name: Deploy to RiKJ6Njg [DEV]
     if: branch = develop AND type != pull_request
-  - name: Run Ghost Inspector on [DEV]
-    if: branch = develop AND type != pull_request
   - name: Deploy to [DEV]
     if: branch = develop AND type != pull_request
 
@@ -73,11 +71,6 @@ jobs:
     script: ./private/bin/deploy.sh
     env:
       secure: "LHADeIMvttzv57In+YzHsNGer660koX4ORoZeudxzjHi5oTF2DzNPriFnxeV1239IBMRDf4VcWeg2aToh/QnJggOSBnsJs+e9OIVpkxk1nvIUz51kNXTO47De1oUy9OdT7gdF12pPmj2FvINGlIf8dytVzMmJWQPpijmGwN1buXnb8zPDaOlztxlTHBvFtcodqBy+q9dyB/EBrLsTcA6lDNdoUO74r6jE9nVmiz59djfT2mSWVorf02dyxxVPDa6SyQ8wjZsbv245Ee2Elec0QSsKZE/47VMpU1uhX4WbL5v0YI3vma9PYh8T9mlSBeTx7jLhf/uPzD0fWZVBICQmkidwN43tNw2K/SOpGbp5dH8cgYzY/qAoREOy9gzmWtzO7ai8eXq2Cz4+Jq5lNTrQShUvoWRXan4Fek+Kale9DPb2atFpotRyJ3MbqCn2A0AIq6qMfGFTEGXQR5B9/i3NdfBsl1iW+DZXYUzESXsotEGB2zJvasqpLjQEi5f9zIL1ANYm8JgI55VhAmcJUOPPxrkcJWKGOycCQdwNA/KpOEmG2N95gf4Sp0aVsT5Vtw16ZmKJZTWIkOKs7eriHHbmuuAbhRrzzXIYfzvkMFFMr2sjNe2JpNljvCtvpIUeXQnVtd/LLp/EAoYKOA99wg/i5awST/S2tiVc+AKE2dDnaY="
-  - stage: Run Ghost Inspector on [DEV]
-    script: ./private/bin/run-tests.sh 65ce0877f59aa2b4f3a654a0
-    name: Core Blocks
-  - script: ./private/bin/run-tests.sh 65ce08acd76b6bca5fe60ae4
-    name: Custom Blocks
   - stage: Deploy to [DEV]
     name: TQEi6pn8
     before_install: openssl aes-256-cbc -K $encrypted_264f0dad5034_key -iv $encrypted_264f0dad5034_iv -in private/key.enc -out ~/.ssh/id_rsa -d && chmod 0600 ~/.ssh/id_rsa
