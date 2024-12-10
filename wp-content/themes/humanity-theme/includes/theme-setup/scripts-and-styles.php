@@ -518,6 +518,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// Section block
+		wp_register_style(
+			'amnesty-section-style',
+			get_template_directory_uri() . '/build/blocks/section/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Slide block
 		wp_register_style(
 			'amnesty-slide-style',
@@ -779,6 +787,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 		wp_register_style(
 			'amnesty-responsive-iframe-editor-style',
 			get_template_directory_uri() . '/build/blocks/iframe/index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// Section block
+		wp_register_style(
+			'amnesty-section-editor-style',
+			get_template_directory_uri() . '/build/blocks/section/index.css',
 			[],
 			$theme->get( 'Version' )
 		);

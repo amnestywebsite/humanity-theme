@@ -1,28 +1,26 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "$schema": "http://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "amnesty-core/block-section",
   "title": "Section",
   "category": "amnesty-core",
-  "description": "A custom block for creating sections with background options and styling.",
-  "icon": "editor-table",
+  "keywords": ["section"],
+  "description": "A section of content",
+  "icon": "",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css",
+  "editorStyle": ["amnesty-section-editor-style"],
+  "style": ["amnesty-section-style"],
   "render": "file:./render.php",
   "attributes": {
     "background": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "sectionId": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "sectionName": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "backgroundImage": {
       "type": "string",
@@ -34,7 +32,7 @@
     },
     "backgroundImageOrigin": {
       "type": "string",
-      "default": "initial"
+      "default": ""
     },
     "enableBackgroundGradient": {
       "type": "boolean",

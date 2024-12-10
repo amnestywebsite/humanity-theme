@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-import { fetchImageData, findImage } from './utils';
+// import { fetchImageData, findImage } from './utils';
 import BackgroundImageOriginControl from '../../components/BackgroundImageOriginControl';
 import BackgroundImageSelectorControl from '../../components/BackgroundImageSelectorControl';
 import MediaMetadata from '../../components/MediaMetadata';
@@ -10,6 +10,17 @@ import { InspectorControls, InnerBlocks, useBlockProps } from '@wordpress/block-
 import { PanelBody, RangeControl, SelectControl, TextControl, ToggleControl } from '@wordpress/components';
 import { useEffect, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
+
+const fetchImageData = (imageId, setImageData) => {
+  wp.apiRequest({
+    path: `/wp/v2/media/${imageId}?_fields=description,caption&context=edit`,
+  }).then((resp) => {
+    setImageData({
+      caption: resp.caption.raw,
+      description: resp.description.raw,
+    });
+  });
+};
 
 const Controls = ({ attributes, setAttributes }) => {
   const handleSave = (sectionName) => {
@@ -38,18 +49,14 @@ const Controls = ({ attributes, setAttributes }) => {
     <InspectorControls>
       <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
         <TextControl
-          // translators: [admin]
           label={__('Section Name', 'amnesty')}
           value={attributes.sectionName}
-          onChange={handleSave}
+          onChange={(value) => handleSave(value)} // Corrected onChange handler
         />
         <SelectControl
-          // translators: [admin]
           label={__('Text Colour', 'amnesty')}
           options={[
-            // translators: [admin]
             { label: __('Black', 'amnesty'), value: 'black' },
-            // translators: [admin]
             { label: __('White', 'amnesty'), value: 'white' },
           ]}
           value={attributes.textColour}
@@ -63,17 +70,14 @@ const Controls = ({ attributes, setAttributes }) => {
           onSelect={selectImage}
         />
         <RangeControl
-          // translators: [admin]
           label={__('Min image height as viewport percentage', 'amnesty')}
           onChange={(value) => setAttributes({ minHeight: !value ? 0 : value })}
           value={attributes.minHeight}
-          intialPostition={attributes.minHeight}
           min={0}
           max={100}
           allowReset
         />
         <ToggleControl
-          // translators: [admin]
           label={__('Toggle Background Overlay', 'amnesty')}
           checked={attributes.enableBackgroundGradient}
           onChange={(enableBackgroundGradient) => setAttributes({ enableBackgroundGradient })}
@@ -88,12 +92,9 @@ const Controls = ({ attributes, setAttributes }) => {
           setOrigin={(backgroundImageOrigin) => setAttributes({ backgroundImageOrigin })}
         />
         <SelectControl
-          // translators: [admin]
           label={__('Background Colour', 'amnesty')}
           options={[
-            // translators: [admin]
             { label: __('White', 'amnesty'), value: '' },
-            // translators: [admin]
             { label: __('Grey', 'amnesty'), value: 'grey' },
           ]}
           value={attributes.background}
@@ -101,7 +102,7 @@ const Controls = ({ attributes, setAttributes }) => {
         />
       </PanelBody>
     </InspectorControls>
-  )
+  );
 };
 
 const getClassName = (attributes) => classNames(
@@ -136,47 +137,29 @@ const makeBlockStylesBuilder = (attributes) => (h) => {
 };
 
 const edit = ({ attributes, setAttributes }) => {
+  console.log(attributes);
+
   const [imageData, setImageData] = useState(null);
 
-  useEffect(() => {
-    const { backgroundImageId = 0, backgroundImage } = attributes;
-    if (backgroundImageId) {
-      fetchImageData(backgroundImageId, setImageData);
-      return;
-    }
+  console.log(imageData);
 
-    if (!backgroundImage) {
-      return;
-    }
-
-    // if no image id, but image uri, get the image id
-    const parts = backgroundImage.split(/[\\/]/);
-    const basename = parts.pop().replace(/\.[a-z]{3,4}/, '');
-    const month = parts.pop();
-    const year = parts.pop();
-
-    const image = findImage(basename, year, month);
-    if (image) {
-      setAttributes({ backgroundImageId: image });
-    }
-  }, []);
 
   useEffect(() => {
-    fetchImageData(attributes.backgroundImageId, setImageData);
+    if (attributes.backgroundImageId) {
+      fetchImageData(attributes.backgroundImageId, setImageData);
+    }
   }, [attributes.backgroundImageId]);
 
   const shouldShowImageCaption =
-    imageData?.caption &&
-    !attributes.hideImageCaption &&
-    imageData?.caption !== imageData?.copyright;
+    imageData?.caption && !attributes.hideImageCaption && imageData?.caption !== imageData?.description;
 
-  const shouldShowImageCredit = imageData?.copyright && !attributes.hideImageCopyright;
+  const shouldShowImageCredit = imageData?.description && !attributes.hideImageCopyright;
 
   const sectionClasses = getClassName(attributes);
   const buildStyles = makeBlockStylesBuilder(attributes);
 
   return (
-    <div {...useBlockProps()}>
+    <div {...useBlockProps({ className: sectionClasses })}>
       <Controls attributes={attributes} setAttributes={setAttributes} />
       <section className={sectionClasses} style={buildStyles(attributes.minHeight)}>
         <div id={attributes.sectionId} className="container">
