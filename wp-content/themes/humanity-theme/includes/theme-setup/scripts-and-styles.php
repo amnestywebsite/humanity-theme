@@ -473,6 +473,22 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// Key Facts block
+		wp_register_style(
+			'amnesty-key-facts-style',
+			get_template_directory_uri() . '/build/blocks/key-facts/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// Key Fact block
+		wp_register_style(
+			'amnesty-key-fact-style',
+			get_template_directory_uri() . '/build/blocks/key-fact/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Link Group block
 		wp_register_style(
 			'amnesty-link-group-style',
@@ -734,6 +750,22 @@ if ( ! function_exists( 'amnesty_block_enqueue_editor_assets' ) ) {
 		wp_register_style(
 			'amnesty-image-editor-style',
 			get_template_directory_uri() . '/build/blocks-deprecated/image/index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// Key Facts block
+		wp_register_style(
+			'amnesty-key-facts-editor-style',
+			get_template_directory_uri() . '/build/blocks/key-facts/index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
+		// Key Fact block
+		wp_register_style(
+			'amnesty-key-fact-editor-style',
+			get_template_directory_uri() . '/build/blocks/key-fact/index.css',
 			[],
 			$theme->get( 'Version' )
 		);

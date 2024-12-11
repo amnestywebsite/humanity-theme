@@ -9,8 +9,8 @@
   "icon": "lightbulb",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-view.css",
+  "editorStyle": ["amnesty-key-facts-editor-style"],
+  "style": ["amnesty-key-facts-style"],
   "render": "file:./render.php",
   "supports": {
     "className": false

@@ -22,7 +22,6 @@ import './editor/block-styles';
 // import './editor/blocks/petition-list/index.jsx';
 // import './editor/blocks/post-meta/index.jsx';
 // import './editor/blocks/regions/index.jsx';
-// import './editor/blocks/related-content/index.jsx';
 
 // import './editor/fse-blocks/archive-filters/index.jsx';
 // import './editor/fse-blocks/archive-header/index.jsx';

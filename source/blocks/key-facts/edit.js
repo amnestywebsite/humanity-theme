@@ -1,6 +1,5 @@
 import classnames from 'classnames';
 import memoize from 'memize';
-
 import { times } from 'lodash';
 import { InnerBlocks, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl } from '@wordpress/components';
@@ -10,6 +9,9 @@ const ALLOWED_BLOCKS = ['amnesty-core/key-fact'];
 const getLayoutTemplate = memoize((blocks) => times(blocks, () => ALLOWED_BLOCKS));
 
 const edit = ({ attributes, setAttributes }) => {
+  // Ensure quantity has a fallback default
+  const quantity = attributes.quantity || 1;
+
   const classes = classnames('factBlock', {
     'has-background': !!attributes.background,
     [`has-${attributes.background}-background-color`]: !!attributes.background,
@@ -19,6 +21,11 @@ const edit = ({ attributes, setAttributes }) => {
     className: classes,
   });
 
+  console.log('attributes', attributes);
+
+  console.log(getLayoutTemplate(attributes.quantity));
+
+
   return (
     <>
       <InspectorControls>
@@ -26,8 +33,8 @@ const edit = ({ attributes, setAttributes }) => {
           <RangeControl
             // translators: [admin]
             label={__('Quantity', 'amnesty')}
-            value={attributes.quantity}
-            onChange={(quantity) => setAttributes({ quantity })}
+            value={quantity}
+            onChange={(newQuantity) => setAttributes({ quantity: newQuantity })}
             min={1}
             max={4}
           />
@@ -35,7 +42,7 @@ const edit = ({ attributes, setAttributes }) => {
             // translators: [admin]
             label={__('Background Colour', 'amnesty')}
             value={attributes.background}
-            onChange={(background) => setAttributes({ background })}
+            onChange={(newBackground) => setAttributes({ background: newBackground })}
             options={[
               // translators: [admin]
               { value: '', label: __('None', 'amnesty') },
@@ -53,13 +60,11 @@ const edit = ({ attributes, setAttributes }) => {
           placeholder={__('(Insert Title)', 'amnesty')}
           value={attributes.title}
           allowedFormats={[]}
-          onChange={(title) => setAttributes({ title })}
-          format="string"
+          onChange={(newTitle) => setAttributes({ title: newTitle })}
         />
         <InnerBlocks
           template={getLayoutTemplate(attributes.quantity)}
-          templateLock="insert"
-          allowedBlocks={ALLOWED_BLOCKS}
+          templateLock="all"
         />
       </div>
     </>

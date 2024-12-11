@@ -118,9 +118,6 @@ const edit = ({ attributes, className, clientId, setAttributes }) => {
     }
   });
 
-  console.log(selectedSlide);
-
-
   return (
     <>
       {controls()}
