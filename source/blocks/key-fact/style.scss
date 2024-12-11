@@ -21,7 +21,7 @@
 
 .factBlock-item:not(:last-of-type)::before {
   pointer-events: none;
-  background-image: var(--amnesty-icon-path);
+  background-image: url("../../static/images/sprite.svg");
   background-repeat: no-repeat;
   background-size: 313px 300px;
   width: 40px;

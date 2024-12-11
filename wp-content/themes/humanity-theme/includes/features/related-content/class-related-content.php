@@ -122,7 +122,7 @@ class Related_Content {
 		);
 
 		$markup .= sprintf(
-			'<!-- wp:amnesty-core/block-list %s /-->',
+			'<!-- wp:amnesty-core/post-list %s /-->',
 			wp_json_encode( $block_data, JSON_UNESCAPED_UNICODE )
 		);
 
@@ -150,13 +150,20 @@ class Related_Content {
 		);
 
 		$block_comment = sprintf(
-			'<!-- wp:amnesty-core/block-list %s /-->',
+			'<!-- wp:amnesty-core/post-list %s /-->',
 			wp_json_encode( $block_data, JSON_UNESCAPED_UNICODE )
 		);
 
 		foreach ( parse_blocks( $block_comment ) as $parsed_block ) {
+			echo '<pre>';
+			var_dump( $parsed_block );
+			echo '</pre>';
 			$markup .= render_block( $parsed_block );
 		}
+
+		echo '<pre>';
+		var_dump( $markup );
+		echo '</pre>';
 
 		return $markup;
 	}

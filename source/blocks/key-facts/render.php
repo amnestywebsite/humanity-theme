@@ -1,6 +1,5 @@
 <?php
 
-
 $classes = classnames(
 	'factBlock',
 	[
