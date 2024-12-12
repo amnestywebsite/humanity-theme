@@ -159,9 +159,9 @@ const edit = ({ attributes, setAttributes }) => {
   const buildStyles = makeBlockStylesBuilder(attributes);
 
   return (
-    <div {...useBlockProps({ className: sectionClasses })}>
+    <>
       <Controls attributes={attributes} setAttributes={setAttributes} />
-      <section className={sectionClasses} style={buildStyles(attributes.minHeight)}>
+      <section {...useBlockProps({ className: sectionClasses })} style={buildStyles(attributes.minHeight)}>
         <div id={attributes.sectionId} className="container">
           <InnerBlocks templateLock={false} />
         </div>
@@ -171,7 +171,7 @@ const edit = ({ attributes, setAttributes }) => {
           showMediaCopyright={shouldShowImageCredit}
         />
       </section>
-    </div>
+    </>
   );
 };
 

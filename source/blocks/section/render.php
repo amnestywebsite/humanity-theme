@@ -83,6 +83,7 @@ $wrapper_attributes = get_block_wrapper_attributes([
     'class' => $classes,
 ]);
 ?>
+
 <section id="<?php echo esc_attr($section_id); ?>" <?php echo wp_kses_data($wrapper_attributes) ?> style="<?php echo esc_attr($css_attr . $bg_style); ?>">
     <div id="<?php echo esc_attr($id); ?>" class="container">
         <?php echo $content; ?>

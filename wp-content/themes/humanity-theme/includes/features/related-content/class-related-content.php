@@ -155,15 +155,8 @@ class Related_Content {
 		);
 
 		foreach ( parse_blocks( $block_comment ) as $parsed_block ) {
-			echo '<pre>';
-			var_dump( $parsed_block );
-			echo '</pre>';
 			$markup .= render_block( $parsed_block );
 		}
-
-		echo '<pre>';
-		var_dump( $markup );
-		echo '</pre>';
 
 		return $markup;
 	}
