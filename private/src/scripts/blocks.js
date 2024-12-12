@@ -18,12 +18,3 @@ import './editor/plugins/pop-in/index.jsx';
 import './editor/blocks/core-mods';
 // import './editor/blocks/petition-list/index.jsx';
 // import './editor/blocks/post-meta/index.jsx';
-
-// import './editor/fse-blocks/archive-filters/index.jsx';
-// import './editor/fse-blocks/archive-header/index.jsx';
-// import './editor/fse-blocks/pop-in/index.jsx';
-// import './editor/fse-blocks/query-count/index.jsx';
-// import './editor/fse-blocks/search-form/index.jsx';
-// import './editor/fse-blocks/search-header/index.jsx';
-// import './editor/fse-blocks/sidebar/index.jsx';
-
