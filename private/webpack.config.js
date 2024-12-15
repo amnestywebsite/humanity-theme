@@ -50,9 +50,9 @@ const getPlugins = (argv, env) => {
       patterns: [
         {
           context: SRC_PATH,
-          from: 'static/**/*',
+          from: path.resolve(SRC_PATH, 'static'),
           to({ absoluteFilename }) {
-            return absoluteFilename.replace(`${SRC_PATH}/static`, OUT_PATH);
+            return absoluteFilename.replace(path.resolve(SRC_PATH, 'static'), OUT_PATH);
           },
         },
       ],
