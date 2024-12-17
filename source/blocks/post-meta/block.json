@@ -7,6 +7,8 @@
   "description": "Display post meta for an entry such as a post or page.",
   "textdomain": "amnesty",
   "ancestor": ["core/query"],
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
   "attributes": {
     "textAlign": {
       "type": "string"

@@ -230,62 +230,36 @@ if ( ! function_exists( 'amnesty_petition_list_process_select' ) ) {
 	}
 }
 
-if ( ! function_exists( 'amnesty_render_petition_list_block' ) ) {
-	/**
-	 * Render the list item block.
-	 *
-	 * @package Amnesty\Blocks
-	 *
-	 * @param array $attributes - Current block attributes.
-	 *
-	 * @return string
-	 */
-	function amnesty_render_petition_list_block( $attributes ) {
-		// Prevent a bug in the admin panel where the editor
-		// shows a different post if the list item is selected
-		// using one of the selection methods.
-		if ( is_admin() ) {
-			return '';
-		}
-
-		if ( doing_filter( 'get_the_excerpt' ) ) {
-			return false;
-		}
-
-		$data = amnesty_petition_list_process_content( $attributes );
-
-		if ( ! $data ) {
-			return '';
-		}
-
-		ob_start();
-
-		if ( isset( $attributes['style'] ) && 'grid' === $attributes['style'] ) {
-			printf( '<div class="grid grid-%s">', esc_attr( count( $data ) ) );
-			array_map( 'amnesty_render_grid_item', $data );
-			print '</div>';
-
-			return ob_get_clean();
-		}
-
-		if ( isset( $attributes['style'] ) && 'petition' === $attributes['style'] ) {
-			// Checks how many items in the array and outputs a different class based on value
-				$grid_classes = sprintf( 'grid grid-many' );
-			if ( ! empty( $attributes['grid_class'] ) ) {
-				$grid_classes = $attributes['grid_class'];
-			}
-
-			printf( '<div class="%s">', esc_attr( $grid_classes ) );
-			array_map( 'amnesty_render_petition_item', $data );
-			print '</div>';
-
-			return ob_get_clean();
-		}
-
-		print '<ul class="linkList">';
-		array_map( 'amnesty_render_list_item', $data );
-		print '</ul>';
-
-		return ob_get_clean();
-	}
+if ( is_admin() ) {
+	return '';
 }
+
+if ( doing_filter( 'get_the_excerpt' ) ) {
+	return false;
+}
+
+$data = amnesty_petition_list_process_content( $attributes );
+
+if ( ! $data ) {
+	return '';
+}
+
+$grid_classes = $attributes['grid_class'] ? $attributes['grid_class'] : 'grid grid-many';
+
+?>
+
+<?php if ( isset( $attributes['style'] )  && 'grid' === $attributes['style'] ) : ?>
+	<div class="grid grid-<?php echo esc_attr( count( $data ) ); ?>">
+		<?php array_map( 'amnesty_render_grid_item', $data ); ?>
+	</div>
+<?php endif; ?>
+
+<?php if ( isset( $attributes['style'] )  && 'petition' === $attributes['style'] ) : ?>
+	<div class="<?php echo esc_attr($grid_classes) ?>">
+		<?php array_map( 'amnesty_render_petition_item', $data ); ?>
+	</div>
+<?php endif; ?>
+
+<ul class="linkList">
+	<?php array_map( 'amnesty_render_list_item', $data ); ?>
+</ul>

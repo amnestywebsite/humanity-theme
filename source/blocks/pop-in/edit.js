@@ -1,7 +1,9 @@
-import { InnerBlocks } from '@wordpress/block-editor';
+const { useBlockProps, InnerBlocks } = wp.blockEditor;
 
 const edit = () => (
-  <aside id="pop-in" className="u-textCenter pop-in">
+  <aside {...useBlockProps({
+    className: 'pop-in u-textCenter',
+  })} id="pop-in">
     <div className="section section--small">
       <div className="container container--small">
         <InnerBlocks />

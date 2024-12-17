@@ -3,7 +3,6 @@ import './polyfills';
 
 import Expose from './modules/Expose';
 import Overlays from './modules/overlays';
-import popIn from './modules/pop-in';
 import fluidText from './modules/fluid-text';
 import languageSelector from './modules/language-selector';
 import header from './modules/header';
@@ -13,16 +12,13 @@ import latestFilters from './modules/latest-filters';
 import searchFilters from './modules/search-filters';
 import filterPosts from './modules/filter-posts';
 import loadVideos from './modules/video-loaded';
-import fluidIframe from './modules/fluid-iframe';
 import categorySlider from './modules/category-slider';
-import counters from './modules/counter';
 import tabbedNav from './modules/tabbed-nav';
 import browserDetector from './modules/browser-detector';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
 
 const App = () => {
   browserDetector();
-  popIn();
   languageSelector();
   header();
   mobileMenu();
@@ -31,9 +27,7 @@ const App = () => {
   latestFilters();
   searchFilters();
   filterPosts();
-  fluidIframe();
   categorySlider();
-  counters();
   tabbedNav();
   loadVideos();
   addFlickityToTabs();

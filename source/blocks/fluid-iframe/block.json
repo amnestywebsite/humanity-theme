@@ -11,6 +11,7 @@
   "editorScript": "file:./index.js",
   "editorStyle": ["amnesty-fluid-iframe-editor-style"],
   "style": ["amnesty-fluid-iframe-style"],
+  "viewScript": "file:./view.js",
   "render": "file:./render.php",
   "supports": {
     "align": true
