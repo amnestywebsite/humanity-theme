@@ -39,7 +39,7 @@ function formatMetaKeys(rawMeta) {
   return formatted.sort((a, b) => a.label.charCodeAt(0) - b.label.charCodeAt(0));
 }
 
-export default function DisplayComponent({ attributes, context, setAttributes }) {
+export default function edit({ attributes, context, setAttributes }) {
   const { isLink, isSingle } = attributes;
   const { postId, postType: postTypeSlug } = context;
 

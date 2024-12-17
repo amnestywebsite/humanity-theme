@@ -10,5 +10,3 @@ if ( ! function_exists( 'register_block_type' ) ) {
 
 require_once __DIR__ . '/_deprecated/header/class-header-block-renderer.php';
 require_once __DIR__ . '/_deprecated/header/register.php';
-require_once __DIR__ . '/hero/helpers.php';
-require_once __DIR__ . '/hero/render.php';

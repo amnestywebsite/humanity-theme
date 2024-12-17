@@ -1,6 +1,7 @@
 import './style.scss';
 
 import { isInteger } from 'lodash';
+const { currentLocale = 'en-GB', enforceGroupingSeparators } = window.amnestyCoreI18n;
 
 // ensure value is an int
 const toRawNumber = (value = '0') => {
@@ -20,8 +21,13 @@ const toFormattedString = (value) => {
     return '';
   }
 
-  const { currentLocale = 'en-GB' } = window.amnestyCoreI18n;
-  const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'));
+  const options = {};
+
+  if (enforceGroupingSeparators) {
+    options.useGrouping = true;
+  }
+
+  const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'), options);
 
   return formatted;
 };

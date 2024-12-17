@@ -16,5 +16,4 @@ import './editor/plugins/appearance-options/index.jsx';
 import './editor/plugins/pop-in/index.jsx';
 
 import './editor/blocks/core-mods';
-// import './editor/blocks/petition-list/index.jsx';
 // import './editor/blocks/post-meta/index.jsx';

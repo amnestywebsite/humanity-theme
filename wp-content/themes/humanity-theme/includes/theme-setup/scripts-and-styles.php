@@ -510,6 +510,14 @@ if ( ! function_exists( 'amnesty_block_enqueue_shared_assets' ) ) {
 			$theme->get( 'Version' )
 		);
 
+		// Petition List block
+		wp_register_style(
+			'amnesty-petition-list-style',
+			get_template_directory_uri() . '/build/blocks/petition-list/style-index.css',
+			[],
+			$theme->get( 'Version' )
+		);
+
 		// Post List block
 		wp_register_style(
 			'amnesty-post-list-style',

@@ -1,5 +1,9 @@
-/* eslint-disable react/display-name */
-// This configures the post list for use by other blocks
+import { useState, useEffect, useCallback } from 'react';
+import { has } from 'lodash';
+import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
+import { createHigherOrderComponent } from '@wordpress/compose';
+import { __ } from '@wordpress/i18n';
+
 import DisplayCategories from './components/DisplayCategories.jsx';
 import DisplayCustom from './components/DisplayCustom.jsx';
 import DisplaySelect from './components/DisplaySelect.jsx';
@@ -11,134 +15,99 @@ import AuthorSelector from './components/selectors/AuthorSelector.jsx';
 import CategorySelector from './components/selectors/CategorySelector.jsx';
 import TaxonomySelector from './components/selectors/TaxonomySelector.jsx';
 import TermSelector from './components/selectors/TermSelector.jsx';
-
-import { has } from 'lodash';
-import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { Component } from '@wordpress/element';
-import { __ } from '@wordpress/i18n';
+import { use } from '@wordpress/data';
 
 const { InspectorControls } = wp.blockEditor;
 
 const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
   const createRange = (min, max) => (num) => Math.max(min, Math.min(max, num));
 
-  const PostList = class DisplayComponent extends Component {
-    constructor(...args) {
-      super(...args);
+  const PostList = ({ attributes, setAttributes }) => {
+    const [preview, setPreview] = useState((attributes.selectedPosts || []).length > 0);
+    const [keyPrefix] = useState(Math.random().toString(36).substring(7));
+    const [allTerms, setAllTerms] = useState([]);
 
-      this.state = {
-        results: [],
-        loading: false,
-        preview: (this.props.attributes.selectedPosts || []).length > 0,
-        // Generate a key prefix as post id may not be unique.
-        keyPrefix: Math.random().toString(36).substring(7),
-        allTerms: [],
-      };
-      this.range = createRange(1, 100);
-    }
+    const range = createRange(1, 100);
 
-    /**
-     * Higher order component that takes the attribute key,
-     * this then returns a function which takes a value,
-     * when called it updates the attribute with the key.
-     * @param key
-     * @returns {function(*): *}
-     */
-    createUpdateAttribute = (key) => (value) => this.props.setAttributes({ [key]: value });
+    const createUpdateAttribute = useCallback(
+      (key) => (value) => setAttributes({ [key]: value }),
+      [setAttributes]
+    );
 
-    createUpdateAttributeWithFilter = (key, filter) => (value) =>
-      this.props.setAttributes({
-        [key]: filter(value),
-      });
+    const createUpdateAttributeWithFilter = useCallback(
+      (key, filter) => (value) => setAttributes({ [key]: filter(value) }),
+      [setAttributes]
+    );
 
-    /**
-     * Toggle the preview state for the 'selection' style.
-     * @returns {*}
-     */
-    togglePreview = () => {
-      this.setState({
-        preview: !this.state.preview,
-      });
+    const togglePreview = () => setPreview((prev) => !prev);
+
+    const getTaxonomyTerms = useCallback(
+      (value) => {
+        if (value) {
+          api.getTerms(value).then((data) => {
+            const termData = data.map((termItem) => ({
+              label: termItem.name,
+              value: termItem.id,
+            }));
+            setAllTerms(termData);
+          });
+        } else {
+          setAllTerms([]);
+          setAttributes({ terms: [] });
+        }
+      },
+      [setAttributes]
+    );
+
+    const addTaxonomyFilter = (value) => {
+      setAttributes({ taxonomy: value });
+      getTaxonomyTerms(value.value);
     };
 
-    getTaxonomyTerms = (value) => {
-      if (value) {
-        const allTerms = api.getTerms(value);
+    const addTerms = (value) => setAttributes({ terms: value });
 
-        allTerms
-          .then((data) => {
-            const termData = data.map((termItem) => ({ label: termItem.name, value: termItem.id }));
+    let postTypeOveride;
+    let defaultStyleOptions = [
+      {
+        label: __('Link List', 'amnesty'),
+        value: 'list',
+      },
+      {
+        label: __('Grid', 'amnesty'),
+        value: 'grid',
+      },
+    ];
 
-            this.setState({ allTerms: termData });
-          })
-          .then(() => {});
-      } else {
-        this.setState({ allTerms: [] });
-        this.props.setAttributes({
-          terms: [],
-        });
+    let defaultDisplayTypes = [
+      {
+        label: __('Category', 'amnesty'),
+        value: 'category',
+      },
+      {
+        label: __('Object Selection', 'amnesty'),
+        value: 'select',
+      },
+      {
+        label: __('Custom', 'amnesty'),
+        value: 'custom',
+      },
+      {
+        label: __('Taxonomy', 'amnesty'),
+        value: 'taxonomy',
+      },
+      {
+        label: __('Author', 'amnesty'),
+        value: 'author',
+      },
+    ];
+
+    useEffect(() => {
+      if (has(attributes, 'postTypes')) {
+        postTypeOveride = attributes?.postTypes;
       }
-    };
+    }, []);
 
-    addTaxonomyFilter = (value) => {
-      this.props.setAttributes({
-        taxonomy: value,
-      });
-      this.getTaxonomyTerms(value.value);
-    };
-
-    addTerms = (value) => {
-      this.props.setAttributes({
-        terms: value,
-      });
-    };
-
-    render() {
-      const { attributes, setAttributes } = this.props;
-      let postTypeOveride;
-
-      let defaultStyleOptions = [
-        {
-          // translators: [admin]
-          label: __('Link List', 'amnesty'),
-          value: 'list',
-        },
-        {
-          // translators: [admin]
-          label: __('Grid', 'amnesty'),
-          value: 'grid',
-        },
-      ];
-
-      let defaultDisplayTypes = [
-        {
-          // translators: [admin]
-          label: __('Category', 'amnesty'),
-          value: 'category',
-        },
-        {
-          // translators: [admin]
-          label: __('Object Selection', 'amnesty'),
-          value: 'select',
-        },
-        {
-          // translators: [admin]
-          label: __('Custom', 'amnesty'),
-          value: 'custom',
-        },
-        {
-          // translators: [admin]
-          label: __('Taxonomy', 'amnesty'),
-          value: 'taxonomy',
-        },
-        {
-          // translators: [admin]
-          label: __('Author', 'amnesty'),
-          value: 'author',
-        },
-      ];
-
+    useEffect(() => {
       if (has(attributes, 'extraStyleOptions')) {
         defaultStyleOptions = attributes.extraStyleOptions;
         setAttributes({ style: defaultStyleOptions[0].value });
@@ -146,7 +115,6 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
 
       if (has(attributes, 'displayTypes')) {
         defaultDisplayTypes = attributes.displayTypes;
-
         if (defaultDisplayTypes[0].value === attributes.type) {
           setAttributes({ type: defaultDisplayTypes[0].value });
         } else {
@@ -155,205 +123,197 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
       }
 
       if (has(attributes, 'postTypes')) {
-        postTypeOveride = attributes.postTypes;
+        postTypeOveride = attributes?.postTypes;
       }
+    }, [attributes, setAttributes]);
 
-      return (
-        <>
-          <InspectorControls>
-            <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
-              {defaultStyleOptions.length > 0 && (
-                <SelectControl
-                  // translators: [admin]
-                  label={__('Style', 'amnesty')}
-                  options={defaultStyleOptions}
-                  value={attributes.style}
-                  onChange={this.createUpdateAttribute('style')}
-                />
-              )}
-              <SelectControl
-                // translators: [admin]
-                label={__('Type', 'amnesty')}
-                options={defaultDisplayTypes}
-                value={attributes.type}
-                onChange={this.createUpdateAttribute('type')}
-              />
-              {attributes.type === 'category' && (
-                <label>
-                  {/* translators: [admin] */ __('Category:', 'amnesty')}
-                  <br />
-                  <CategorySelector
-                    value={attributes.category}
-                    onChange={this.createUpdateAttribute('category')}
-                  />
-                  <br />
-                </label>
-              )}
-              {attributes.type === 'category' && (
-                <RangeControl
-                  // translators: [admin]
-                  label={__('Number of posts to show:', 'amnesty')}
-                  min={1}
-                  max={8}
-                  value={attributes.amount || 3}
-                  onChange={this.createUpdateAttributeWithFilter('amount', this.range)}
-                />
-              )}
-              {attributes.type === 'feed' && (
-                <RangeControl
-                  // translators: [admin]
-                  label={__('Number of posts to show:', 'amnesty')}
-                  min={1}
-                  max={8}
-                  value={attributes.amount || 3}
-                  onChange={this.createUpdateAttributeWithFilter('amount', this.range)}
-                />
-              )}
-              {attributes.type === 'taxonomy' && (
-                <RangeControl
-                  // translators: [admin]
-                  label={__('Number of posts to show:', 'amnesty')}
-                  min={1}
-                  max={8}
-                  value={attributes.amount || 3}
-                  onChange={(value) => setAttributes({ amount: value })}
-                />
-              )}
-              {attributes.type === 'category' && (
-                <ToggleControl
-                  // translators: [admin]
-                  label={__('Use related categories where supported', 'amnesty')}
-                  checked={attributes.categoryRelated}
-                  onChange={this.createUpdateAttribute('categoryRelated')}
-                />
-              )}
-              {attributes.type === 'select' && (
-                <button onClick={this.togglePreview}>
-                  {this.state.preview
-                    ? // translators: [admin]
-                      __('Hide Preview', 'amnesty')
-                    : // translators: [admin]
-                      __('Show Preview', 'amnesty')}
-                </button>
-              )}
-              {attributes.type === 'taxonomy' && (
-                <div>
-                  <label>
-                    {/* translators: [admin] */ __('Taxonomy:', 'amnesty')}
-                    <br />
-                    <TaxonomySelector value={attributes.taxonomy} onChange={this.addTaxonomyFilter} />
-                    <br />
-                  </label>
-                  <label>
-                    <div className="term-selector">
-                      {/* translators: [admin] */ __('Terms:', 'amnesty')}
-                      <br />
-                      <TermSelector
-                        allTerms={this.state.allTerms}
-                        value={attributes.terms}
-                        onChange={this.addTerms}
-                      />
-                    </div>
-                  </label>
-                </div>
-              )}
-              {attributes.type === 'author' && (
-                <label>
-                  {/* translators: [admin] */ __('Author:', 'amnesty')}
-                  <br />
-                  <AuthorSelector
-                    value={attributes.authors}
-                    onChange={this.createUpdateAttribute('authors')}
-                  />
-                  <br />
-                </label>
-              )}
-              <ToggleControl
-                // translators: [admin]
-                label={__('Display Post Author', 'amnesty')}
-                checked={attributes.displayAuthor}
-                onChange={this.createUpdateAttribute('displayAuthor')}
-              />
-              <ToggleControl
-                // translators: [admin]
-                label={__('Display Post Date', 'amnesty')}
-                checked={attributes.displayPostDate}
-                onChange={this.createUpdateAttribute('displayPostDate')}
-              />
-            </PanelBody>
-          </InspectorControls>
-          <div>
-            {attributes.type === 'category' && (
-              <DisplayCategories
-                amount={attributes.amount || 3}
-                category={attributes.category}
-                style={attributes.style}
-                prefix={this.state.keyPrefix}
-                showAuthor={attributes.displayAuthor}
-                showPostDate={attributes.displayPostDate}
-                overrideTypes={postTypeOveride}
-              />
-            )}
-            {attributes.type === 'custom' && (
-              <DisplayCustom
-                setAttributes={this.props.setAttributes}
-                custom={attributes.custom || []}
-                style={attributes.style}
-                prefix={this.state.keyPrefix}
-                showAuthor={attributes.displayAuthor}
-                showPostDate={attributes.displayPostDate}
-              />
-            )}
-            {attributes.type === 'select' && (
-              <DisplaySelect
-                setAttributes={this.props.setAttributes}
-                selectedPosts={attributes.selectedPosts || []}
-                preview={this.state.preview}
-                style={attributes.style}
-                prefix={this.state.keyPrefix}
-                overrideTypes={postTypeOveride}
-                showAuthor={attributes.displayAuthor}
-                showPostDate={attributes.displayPostDate}
-              />
-            )}
-            {attributes.type === 'taxonomy' && (
-              <DisplayTaxonomies
-                setAttributes={this.props.setAttributes}
-                style={attributes.style}
-                prefix={this.state.keyPrefix}
-                taxonomy={attributes.taxonomy}
-                showAuthor={attributes.displayAuthor}
-                showPostDate={attributes.displayPostDate}
-                terms={attributes.terms}
-                amount={attributes.amount || 3}
-              />
-            )}
-            {attributes.type === 'author' && (
-              <DisplayAuthor
-                setAttributes={this.props.setAttributes}
-                style={attributes.style}
-                prefix={this.state.keyPrefix}
-                authors={attributes.authors}
-                amount={10}
-                showAuthor={attributes.displayAuthor}
-                showPostDate={attributes.displayPostDate}
-              />
-            )}
-            {attributes.type === 'feed' && (
-              <DisplayFeed
-                amount={attributes.amount || 3}
-                category={attributes.category}
-                overrideTypes={postTypeOveride}
-                style={attributes.style}
-                prefix={this.state.keyPrefix}
-                showAuthor={attributes.displayAuthor}
-                showPostDate={attributes.displayPostDate}
-              />
-            )}
-          </div>
-        </>
-      );
-    }
+    console.log(postTypeOveride);
+
+
+    // return (
+    //   <>
+    //     <InspectorControls>
+    //       <PanelBody title={__('Options', 'amnesty')}>
+    //         {defaultStyleOptions.length > 0 && (
+    //           <SelectControl
+    //             label={__('Style', 'amnesty')}
+    //             options={defaultStyleOptions}
+    //             value={attributes.style}
+    //             onChange={createUpdateAttribute('style')}
+    //           />
+    //         )}
+    //         <SelectControl
+    //           label={__('Type', 'amnesty')}
+    //           options={defaultDisplayTypes}
+    //           value={attributes.type}
+    //           onChange={createUpdateAttribute('type')}
+    //         />
+    //         {attributes.type === 'category' && (
+    //           <label>
+    //             {__('Category:', 'amnesty')}
+    //             <br />
+    //             <CategorySelector
+    //               value={attributes.category}
+    //               onChange={createUpdateAttribute('category')}
+    //             />
+    //             <br />
+    //           </label>
+    //         )}
+    //         {attributes.type === 'category' && (
+    //           <RangeControl
+    //             label={__('Number of posts to show:', 'amnesty')}
+    //             min={1}
+    //             max={8}
+    //             value={attributes.amount || 3}
+    //             onChange={createUpdateAttributeWithFilter('amount', range)}
+    //           />
+    //         )}
+    //         {attributes.type === 'feed' && (
+    //           <RangeControl
+    //             label={__('Number of posts to show:', 'amnesty')}
+    //             min={1}
+    //             max={8}
+    //             value={attributes.amount || 3}
+    //             onChange={createUpdateAttributeWithFilter('amount', range)}
+    //           />
+    //         )}
+    //         {attributes.type === 'taxonomy' && (
+    //           <RangeControl
+    //             label={__('Number of posts to show:', 'amnesty')}
+    //             min={1}
+    //             max={8}
+    //             value={attributes.amount || 3}
+    //             onChange={(value) => setAttributes({ amount: value })}
+    //           />
+    //         )}
+    //         {attributes.type === 'category' && (
+    //           <ToggleControl
+    //             label={__('Use related categories where supported', 'amnesty')}
+    //             checked={attributes.categoryRelated}
+    //             onChange={createUpdateAttribute('categoryRelated')}
+    //           />
+    //         )}
+    //         {attributes.type === 'select' && (
+    //           <button onClick={togglePreview}>
+    //             {preview ? __('Hide Preview', 'amnesty') : __('Show Preview', 'amnesty')}
+    //           </button>
+    //         )}
+    //         {attributes.type === 'taxonomy' && (
+    //           <div>
+    //             <label>
+    //               {__('Taxonomy:', 'amnesty')}
+    //               <br />
+    //               <TaxonomySelector value={attributes.taxonomy} onChange={addTaxonomyFilter} />
+    //               <br />
+    //             </label>
+    //             <label>
+    //               <div className="term-selector">
+    //                 {__('Terms:', 'amnesty')}
+    //                 <br />
+    //                 <TermSelector
+    //                   allTerms={allTerms}
+    //                   value={attributes.terms}
+    //                   onChange={addTerms}
+    //                 />
+    //               </div>
+    //             </label>
+    //           </div>
+    //         )}
+    //         {attributes.type === 'author' && (
+    //           <label>
+    //             {__('Author:', 'amnesty')}
+    //             <br />
+    //             <AuthorSelector
+    //               value={attributes.authors}
+    //               onChange={createUpdateAttribute('authors')}
+    //             />
+    //             <br />
+    //           </label>
+    //         )}
+    //         <ToggleControl
+    //           label={__('Display Post Author', 'amnesty')}
+    //           checked={attributes.displayAuthor}
+    //           onChange={createUpdateAttribute('displayAuthor')}
+    //         />
+    //         <ToggleControl
+    //           label={__('Display Post Date', 'amnesty')}
+    //           checked={attributes.displayPostDate}
+    //           onChange={createUpdateAttribute('displayPostDate')}
+    //         />
+    //       </PanelBody>
+    //     </InspectorControls>
+
+    //     <div>
+    //       {attributes.type === 'category' && (
+    //         <DisplayCategories
+    //           amount={attributes.amount || 3}
+    //           category={attributes.category}
+    //           style={attributes.style}
+    //           prefix={keyPrefix}
+    //           showAuthor={attributes.displayAuthor}
+    //           showPostDate={attributes.displayPostDate}
+    //           overrideTypes={postTypeOveride}
+    //         />
+    //       )}
+    //       {attributes.type === 'custom' && (
+    //         <DisplayCustom
+    //           setAttributes={setAttributes}
+    //           custom={attributes.custom || []}
+    //           style={attributes.style}
+    //           prefix={keyPrefix}
+    //           showAuthor={attributes.displayAuthor}
+    //           showPostDate={attributes.displayPostDate}
+    //         />
+    //       )}
+    //       {attributes.type === 'select' && (
+    //         <DisplaySelect
+    //           setAttributes={setAttributes}
+    //           selectedPosts={attributes.selectedPosts || []}
+    //           preview={preview}
+    //           style={attributes.style}
+    //           prefix={keyPrefix}
+    //           overrideTypes={postTypeOveride}
+    //           showAuthor={attributes.displayAuthor}
+    //           showPostDate={attributes.displayPostDate}
+    //         />
+    //       )}
+    //       {attributes.type === 'taxonomy' && (
+    //         <DisplayTaxonomies
+    //           setAttributes={setAttributes}
+    //           style={attributes.style}
+    //           prefix={keyPrefix}
+    //           taxonomy={attributes.taxonomy}
+    //           showAuthor={attributes.displayAuthor}
+    //           showPostDate={attributes.displayPostDate}
+    //           terms={attributes.terms}
+    //           amount={attributes.amount || 3}
+    //         />
+    //       )}
+    //       {attributes.type === 'author' && (
+    //         <DisplayAuthor
+    //           setAttributes={setAttributes}
+    //           style={attributes.style}
+    //           prefix={keyPrefix}
+    //           authors={attributes.authors}
+    //           amount={10}
+    //           showAuthor={attributes.displayAuthor}
+    //           showPostDate={attributes.displayPostDate}
+    //         />
+    //       )}
+    //       {attributes.type === 'feed' && (
+    //         <DisplayFeed
+    //           amount={attributes.amount || 3}
+    //           category={attributes.category}
+    //           overrideTypes={postTypeOveride}
+    //           style={attributes.style}
+    //           prefix={keyPrefix}
+    //           showAuthor={attributes.displayAuthor}
+    //           showPostDate={attributes.displayPostDate}
+    //         />
+    //       )}
+    //     </div>
+    //   </>
+    // );
   };
 
   return (props) => (
