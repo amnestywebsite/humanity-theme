@@ -17,13 +17,6 @@ cache:
 before_install:
 - phpenv config-rm xdebug.ini
 
-before_deploy:
-- yes | gem update --system --force
-- gem install bundler
-- gem install uri
-- gem install logger
-- gem install faraday-net_http -v '3.3.0'
-
 stages:
   - name: Lint
     if: branch IS present
@@ -46,9 +39,7 @@ stages:
     if: branch = main AND type != pull_request
   - name: Run Ghost Inspector on MTIQTppT [PRD]
     if: branch = main AND type != pull_request
-  - name: Update Draft GitHub Release
-    if: branch = main AND type != pull_request
-  - name: Generate Docs for Release Archive
+  - name: Attach build assets to GitHub Release
     if: branch = main AND type != pull_request
 
   - name: Deploy to [PRD]
@@ -347,29 +338,19 @@ jobs:
     name: Core Blocks
   - script: ./private/bin/run-tests.sh 621372745f85360d3fd03197
     name: Custom Blocks
-  - stage: Update Draft GitHub Release
+  - stage: Attach build assets to GitHub Release
     install: ./private/bin/install.sh
-    script: ./private/bin/build.sh
+    script:
+      - ./private/bin/build.sh
+      - ./private/bin/docgen.sh
     deploy:
       provider: releases
       token:
         secure: "ntGrTcHs5CEG/sND+mpRKFNpx7z+bAY3aKF6Hfb1WoFrR2Xd7dX5NByaHBiegfT2kJ5h5XIJyG99lahbm+jVRHF0S+G2/vd324OFM1ksEzbElEOv9BWhwfw5EZtxawq6oleiWBvvTvRNoq5HhbmtySF9K164NUQ+/ntSvTJ5WXWXmskgcqQfwqKOoKQuGgCfHi3CczBsbMA3BgGQfvbCwL3Q6i4VRft3LnxCFVCHSs7lZQ5wTQIogEOI44hL9ahExwI7DORjwNdx6mDe46pKtEkBd7QRHrOEleF47Xg7Lz7EF1nVxY5BkmaQ0S21z/7WRQR5WCEWCXjykmBVd4jhwN+YVin0krDeO1nfaj3w3t/r67eIFZUX3hClaJ8O4p00Pd9PJ2TuMCP4cttTNBZkTtUvWlLTbEv4V2v0yTVX3Be2xACHlodwREL+JGYwOfAh2o8ZWoD8N0EbIoWfjiWaulCD2oXQSJnbG6hqM0vHEwLKzFd08elr0SYg5T7utGbTsrpBxoXxSjtc06Le3mnZZRjcVtRRA9WM86OUWzr3y6siSMO7vUm5dSA/QD52WFHKgvmByfbOmW5R9jdtjW44MbOH5UeiJkb6mtVuSpMEjWb7129Li4OnrmwcTP4QYt0CFMJGMz3HFujYH0PYhKhwnyTDAIQfELizoMBaHP3uonI="
-      file: ./humanity-theme.zip
-      skip_cleanup: true
-      draft: true
-      overwrite: true
-      on:
-        repo: amnestywebsite/humanity-theme
-        branch: main
-  - stage: Generate Docs for Release Archive
-    install: ./private/bin/install.sh
-    script: ./private/bin/docgen.sh
-    deploy:
-      provider: releases
-      token:
-        secure: "ntGrTcHs5CEG/sND+mpRKFNpx7z+bAY3aKF6Hfb1WoFrR2Xd7dX5NByaHBiegfT2kJ5h5XIJyG99lahbm+jVRHF0S+G2/vd324OFM1ksEzbElEOv9BWhwfw5EZtxawq6oleiWBvvTvRNoq5HhbmtySF9K164NUQ+/ntSvTJ5WXWXmskgcqQfwqKOoKQuGgCfHi3CczBsbMA3BgGQfvbCwL3Q6i4VRft3LnxCFVCHSs7lZQ5wTQIogEOI44hL9ahExwI7DORjwNdx6mDe46pKtEkBd7QRHrOEleF47Xg7Lz7EF1nVxY5BkmaQ0S21z/7WRQR5WCEWCXjykmBVd4jhwN+YVin0krDeO1nfaj3w3t/r67eIFZUX3hClaJ8O4p00Pd9PJ2TuMCP4cttTNBZkTtUvWlLTbEv4V2v0yTVX3Be2xACHlodwREL+JGYwOfAh2o8ZWoD8N0EbIoWfjiWaulCD2oXQSJnbG6hqM0vHEwLKzFd08elr0SYg5T7utGbTsrpBxoXxSjtc06Le3mnZZRjcVtRRA9WM86OUWzr3y6siSMO7vUm5dSA/QD52WFHKgvmByfbOmW5R9jdtjW44MbOH5UeiJkb6mtVuSpMEjWb7129Li4OnrmwcTP4QYt0CFMJGMz3HFujYH0PYhKhwnyTDAIQfELizoMBaHP3uonI="
-      file: ./php-api-developer-documentation.zip
-      skip_cleanup: true
+      file:
+        - ./humanity-theme.zip
+        - ./php-api-developer-documentation.zip
+      edge: true
       draft: true
       overwrite: true
       on:
