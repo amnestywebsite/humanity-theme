@@ -1,0 +1,13 @@
+@use './categories';
+@use './header';
+@use './pagination';
+@use './post';
+@use './post-search';
+
+.postlist {
+  display: flex;
+
+  @media all and (max-width: 840px) {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/custom-card",
+  "title": "Custom Card",
+  "category": "amnesty-core",
+  "description": "Customisable card block",
+  "icon": "megaphone",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "className": false,
+    "align": true,
+    "inserter": false
+  },
+  "attributes": {
+    "style": {
+      "type": "string",
+      "default": "standard"
+    },
+    "centred": {
+      "type": "boolean",
+      "default": false
+    },
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "imageID": {
+      "type": "integer",
+      "default": 0
+    },
+    "imageURL": {
+      "type": "string",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "link": {
+      "type": "string",
+      "default": ""
+    },
+    "scrollLink": {
+      "type": "string",
+      "default": ""
+    },
+    "linkText": {
+      "type": "string",
+      "default": ""
+    },
+    "largeImageURL": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "styles": [
+    {
+      "name": "style-1",
+      "label": "Style 1",
+      "isDefault": true
+    },
+    {
+      "name": "style-1",
+      "label": "Style 1",
+      "isDefault": false
+    },
+    {
+      "name": "style-1",
+      "label": "Style 1",
+      "isDefault": false
+    }
+  ]
+}

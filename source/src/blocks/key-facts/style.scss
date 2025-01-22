@@ -1,0 +1,15 @@
+.factBlock {
+  max-width: calc(var(--wp--preset--layout--contentSize) / 3);
+  padding: 24px;
+  text-align: center;
+}
+
+.factBlock ol {
+  margin: 0;
+  list-style: none;
+}
+
+.factBlock-title {
+  font-family: var(--wp--preset--font-family--secondary);
+  text-transform: uppercase;
+}

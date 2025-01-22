@@ -1,0 +1,62 @@
+{
+  "$schema": "http://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/block-section",
+  "title": "Section",
+  "category": "amnesty-core",
+  "keywords": ["section"],
+  "description": "A section of content",
+  "icon": "",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "background": {
+      "type": "string"
+    },
+    "sectionId": {
+      "type": "string"
+    },
+    "sectionName": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundImageHeight": {
+      "type": "number",
+      "default": 0
+    },
+    "backgroundImageOrigin": {
+      "type": "string",
+      "default": ""
+    },
+    "enableBackgroundGradient": {
+      "type": "boolean",
+      "default": false
+    },
+    "minHeight": {
+      "type": "number",
+      "default": 0
+    },
+    "textColour": {
+      "type": "string",
+      "default": "black"
+    },
+    "backgroundImageId": {
+      "type": "number",
+      "default": 0
+    },
+    "hideImageCaption": {
+      "type": "boolean",
+      "default": true
+    },
+    "hideImageCopyright": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

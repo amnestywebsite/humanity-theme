@@ -15,7 +15,14 @@ if ( ! amnesty_post_has_hero() ) {
 
 $hero_data = amnesty_get_hero_data();
 
-if ( array_filter( $hero_data ) ) {
-	echo wp_kses_post( render_hero_block( $hero_data['attrs'], $hero_data['content'], $hero_data['name'] ) );
-	add_filter( 'the_content', 'amnesty_remove_first_hero_from_content', 0 );
+if ( ! array_filter( $hero_data ) ) {
+	return;
 }
+
+add_filter( 'the_content', 'amnesty_remove_first_hero_from_content', 0 );
+
+?>
+
+<!-- wp:amnesty-core/hero <?php echo wp_kses_data( wp_json_encode( $hero_data['attrs'] ) ); ?> -->
+<?php echo wp_kses_post( $hero_data['content'] ); ?>
+<!-- /wp:amnesty-core/hero -->

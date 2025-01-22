@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/block-button",
+  "title": "Button",
+  "category": "amnesty-core",
+  "keywords": ["Button"],
+  "icon": "megaphone",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "className": true,
+    "inserter": false,
+    "multiple": true
+  },
+  "attributes": {
+   "ctaLink": {
+      "type":"string"
+   },
+   "ctaText": {
+      "type":"string"
+   },
+   "style": {
+      "type": "string"
+   }
+  }
+}

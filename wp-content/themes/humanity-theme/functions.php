@@ -138,9 +138,6 @@ require_once realpath( __DIR__ . '/includes/blocks/render-header-on-single.php' 
 if ( file_exists( realpath( __DIR__ . '/build/register-blocks.php' ) ) ) {
 	require_once realpath( __DIR__ . '/build/register-blocks.php' );
 }
-if ( file_exists( realpath( __DIR__ . '/build/register.php' ) ) ) {
-	require_once realpath( __DIR__ . '/build/register.php' );
-}
 #endregion fse-blocks
 
 /**

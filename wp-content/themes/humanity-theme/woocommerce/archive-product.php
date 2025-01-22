@@ -25,7 +25,9 @@ if ( amnesty_post_has_header( $archive_page ) ) {
 	$header_data = amnesty_get_header_data( $archive_page );
 
 	if ( 'amnesty-core/hero' === $header_data['name'] ) {
-		echo wp_kses_post( render_hero_block( $header_data['attrs'] ) );
+		printf( '<!-- wp:amnesty-core/hero %s -->', wp_kses_data( wp_json_encode( $header_data['attrs'] ) ) );
+		echo wp_kses_post( $header_data['content'] );
+		echo '<!-- /wp:amnesty-core/hero -->';
 	} else {
 		// phpcs:ignore
 		echo \Amnesty\Blocks\amnesty_render_header_block( $header_data['attrs'] );
