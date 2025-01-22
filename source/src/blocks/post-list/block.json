@@ -1,0 +1,72 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/post-list",
+  "title": "Post List",
+  "category": "amnesty-core",
+  "keywords": ["List", "Posts"],
+  "description": "Insert a list of posts by taxonomy term, manual selection, or custom content",
+  "icon": "admin-post",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "multiple": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string",
+      "default": "category"
+    },
+    "style": {
+      "type": "string",
+      "default": "list"
+    },
+    "category": {
+      "type": "string",
+      "default": ""
+    },
+    "categoryRelated": {
+      "type": "boolean",
+      "default": false
+    },
+    "amount": {
+      "type": "number",
+      "default": 3
+    },
+    "custom": {
+      "type": "array",
+      "default": []
+    },
+    "selectedPosts": {
+      "type": "array",
+      "default": []
+    },
+    "taxonomyFilters": {
+      "type": "array",
+      "default": []
+    },
+    "taxonomy": {
+      "type": "object",
+      "default": {}
+    },
+    "terms": {
+      "type": "array",
+      "default": []
+    },
+    "authors": {
+      "type": "string",
+      "default": ""
+    },
+    "displayAuthor": {
+      "type": "boolean",
+      "default": false
+    },
+    "displayPostDate": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -22,9 +22,12 @@ if ( ! array_filter( $hero_data ) ) {
 	return;
 }
 
-echo wp_kses_post( render_hero_block( $hero_data['attrs'], $hero_data['content'], $hero_data['name'] ) );
-
 if ( ! is_admin() ) {
-	wp_enqueue_style( 'amnesty-hero-style' );
 	add_filter( 'the_content', 'amnesty_remove_first_hero_from_content', 0 );
 }
+
+?>
+
+<!-- wp:amnesty-core/hero <?php echo wp_kses_data( wp_json_encode( $hero_data['attrs'] ) ); ?> -->
+<?php echo wp_kses_post( $hero_data['content'] ); ?>
+<!-- /wp:amnesty-core/hero -->

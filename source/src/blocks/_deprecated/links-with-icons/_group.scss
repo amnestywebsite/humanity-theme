@@ -1,0 +1,189 @@
+@use '../../../utils/mixins/icon' as i;
+
+.linksWithIcons-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media all and (min-width: 840px) {
+    justify-content: space-around;
+    align-items: stretch;
+  }
+}
+
+.linksWithIcons-group.has-background {
+  padding: 12px 0;
+}
+
+.linksWithIcons-group.has-1-items {
+  padding: 0;
+}
+
+.linksWithIcons-group.has-1-items.has-background {
+  padding: 60px 0;
+}
+
+.linksWithIcons-group .linksWithIcons {
+  flex-basis: 100%;
+}
+
+.linksWithIcons-group.is-vertical {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 456px;
+}
+
+.linksWithIcons-group.is-vertical .linksWithIcons,
+.linksWithIcons-group.is-vertical .linksWithIcons-spacer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: auto;
+  align-self: center;
+}
+
+.linksWithIcons-group.is-horizontal:not(.is-style-square) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.linksWithIcons-group.is-horizontal .linksWithIcons {
+  @media all and (min-width: 840px) {
+    flex-basis: 33%;
+  }
+}
+
+.linksWithIcons-group.has-2-items .linksWithIcons {
+  @media all and (min-width: 840px) {
+    flex-basis: 49%;
+  }
+}
+
+.linksWithIcons-group.has-3-items .linksWithIcons {
+  @media all and (min-width: 840px) {
+    flex-basis: 33%;
+  }
+}
+
+.linksWithIcons-group.is-horizontal.has-4-items .linksWithIcons {
+  @media all and (min-width: 540px) {
+    padding: 0 5px;
+
+    &:nth-child(7) {
+      margin-top: 60px;
+    }
+  }
+
+  @media all and (min-width: 840px) {
+    flex-basis: 24%;
+  }
+}
+
+.rowColumn .linksWithIcons-spacer {
+  @media all and (min-width: 840px) {
+    display: none !important;
+  }
+}
+
+.linksWithIcons-group.icon-none .linksWithIcons-spacer::before
+.linksWithIcons-group.icon-none .linksWithIcons-spacer::after {
+  display: none !important;
+}
+
+.linksWithIcons-group.icon-arrow .linksWithIcons-spacer,
+.linksWithIcons-group.icon-ampersand .linksWithIcons-spacer {
+  position: relative;
+}
+
+.linksWithIcons-group.icon-arrow .linksWithIcons-spacer::before,
+.linksWithIcons-group.icon-arrow .linksWithIcons-spacer::after {
+  @include i.icon(10px, 162px, 40px, 40px);
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  z-index: 1;
+  display: block;
+  content: "";
+}
+
+.linksWithIcons-group.icon-arrow .linksWithIcons-spacer::before {
+  background-color: var(--wp--preset--color--black);
+}
+
+.linksWithIcons-group.icon-arrow.is-horizontal .linksWithIcons-spacer::after {
+  @media all and (min-width: 840px) {
+    transform: rotate(-90deg);
+
+    .rtl & {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.linksWithIcons-group.icon-ampersand .linksWithIcons-spacer::before {
+  pointer-events: none;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  z-index: 1;
+  display: block;
+  width: 40px;
+  height: 40px;
+  content: "";
+  background: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
+}
+
+.linksWithIcons-group.icon-ampersand .linksWithIcons-spacer::after {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  display: block;
+  content: "\0026";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: var(--wp--preset--color--white);
+  transform: translateY(-50%) translateX(-50%);
+
+  .rtl & {
+    transform: translateY(-50%) translateX(-50%) rotateY(180deg);
+  }
+}
+
+.linksWithIcons-group.has-very-light-gray-background-color {
+  background-color: var(--wp--preset--color--grey-lighter);
+}
+
+.linksWithIcons-group.is-style-square {
+  display: grid;
+  column-gap: var(--wp--preset--spacing--single);
+  row-gap: var(--wp--preset--spacing--single);
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 1fr;
+
+  @media all and (min-width: 540px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media all and (min-width: 760px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media all and (min-width: 1110px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.linksWithIcons-group.is-style-square.linksWithIcons-group.has-1-items,
+.linksWithIcons-group.is-style-square.linksWithIcons-group.has-2-items,
+.linksWithIcons-group.is-style-square.linksWithIcons-group.has-3-items {
+  @media all and (min-width: 1110px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

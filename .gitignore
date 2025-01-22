@@ -10,6 +10,7 @@ web.config
 /db-config.php
 /index.php
 /private/node_modules
+/source/.yarn
 /readme.html
 /wp-activate.php
 /wp-admin

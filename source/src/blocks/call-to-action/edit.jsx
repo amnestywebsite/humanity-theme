@@ -1,0 +1,94 @@
+import classnames from 'classnames';
+
+import { InnerBlocks, InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
+import { PanelBody, SelectControl } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
+import { applyFilters } from '@wordpress/hooks';
+
+const ALLOWED_BLOCKS = [
+  'core/buttons',
+  'amnesty-core/block-button',
+  'amnesty-core/block-download',
+  'amnesty-core/iframe-button',
+];
+
+const getTemplate = (type) => {
+  if (type === 'download') {
+    return [['amnesty-core/block-download']];
+  }
+
+  return [['core/buttons']];
+};
+
+export default function Edit({ attributes, setAttributes }) {
+  const allowedInnerBlocks = applyFilters('add-modal-to-allowed-blocks', ALLOWED_BLOCKS);
+
+  const blockProps = useBlockProps({
+    className: classnames('callToAction', {
+      [`callToAction--${attributes.background}`]: attributes.background,
+    }),
+  });
+
+  return (
+    <>
+      <InspectorControls>
+        <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
+          <SelectControl
+            /* translators: [admin] */
+            label={__('Background Style', 'amnesty')}
+            options={[
+              {
+                /* translators: [admin] */
+                label: __('Light', 'amnesty'),
+                value: '',
+              },
+              {
+                /* translators: [admin] */
+                label: __('Grey', 'amnesty'),
+                value: 'shade',
+              },
+            ]}
+            value={attributes.background}
+            onChange={(background) => setAttributes({ background })}
+          />
+        </PanelBody>
+      </InspectorControls>
+      <div {...blockProps}>
+        <RichText
+          tagName="h2"
+          className="callToAction-preHeading"
+          /* translators: [admin] */
+          placeholder={__('(Pre-heading)', 'amnesty')}
+          allowedFormats={[]}
+          value={attributes.preheading}
+          onChange={(preheading) => setAttributes({ preheading })}
+        />
+        <RichText
+          tagName="h1"
+          className="callToAction-heading"
+          /* translators: [admin] */
+          placeholder={__('(Heading)', 'amnesty')}
+          allowedFormats={[]}
+          value={attributes.title}
+          onChange={(title) => setAttributes({ title })}
+        />
+        <RichText
+          tagName="p"
+          className="callToAction-content"
+          /* translators: [admin] */
+          placeholder={__('(Content)', 'amnesty')}
+          value={attributes.content}
+          onChange={(content) => setAttributes({ content })}
+        />
+        <div className="callToAction-buttonContainer">
+          <InnerBlocks
+            templateInsertUpdatesSelection={false}
+            template={getTemplate(attributes.actionType)}
+            templateLock={false}
+            allowedBlocks={allowedInnerBlocks}
+          />
+        </div>
+      </div>
+    </>
+  );
+}

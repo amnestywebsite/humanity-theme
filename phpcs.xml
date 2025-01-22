@@ -3,4 +3,5 @@
   <description>PHPCS linting rules for the Humanity Theme</description>
   <config name="minimum_supported_wp_version" value="5.8" />
   <rule ref="./vendor/bigbite/phpcs-config/BigBite" />
+  <exclude-pattern>./build/blocks-manifest.php</exclude-pattern>
 </ruleset>

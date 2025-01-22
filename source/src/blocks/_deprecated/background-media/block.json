@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/background-media",
+  "allowedBlocks": ["amnesty-core/background-media-column"],
+  "title": "Background Media",
+  "category": "amnesty-core",
+  "keywords": ["Background", "Media", "Text"],
+  "description": "Two-column layout with background images",
+  "icon": "",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "attributes": {}
+}

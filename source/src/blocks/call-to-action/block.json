@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/block-call-to-action",
+  "title": "Call to Action",
+  "category": "amnesty-core",
+  "description": "",
+  "icon": "megaphone",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "className": false,
+    "multiple": true,
+    "inserter": false
+  },
+  "attributes": {
+    "preheading": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "background": {
+      "type": "string",
+      "default": ""
+    },
+    "actionType": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

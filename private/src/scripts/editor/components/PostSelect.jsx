@@ -14,7 +14,7 @@ class PostSelect extends Component {
       maxPages: 1,
       options: [
         {
-          label: 'Global Default',
+          label: __('Global Default', 'amnesty'),
           value: '0',
         },
       ],

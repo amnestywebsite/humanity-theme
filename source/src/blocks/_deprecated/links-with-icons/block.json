@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/repeatable-block",
+  "title": "Links with Icons Group",
+  "category": "amnesty-core",
+  "description": "Add a repeatable links-with-icons block",
+  "icon": "images-alt",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "inserter": false
+  },
+  "attributes": {
+    "backgroundColor": {
+      "type": "string"
+    },
+    "orientation": {
+      "type": "string",
+      "default": "horizontal"
+    },
+    "quantity": {
+      "type": "number",
+      "default": 2
+    },
+    "hideLines": {
+      "type": "boolean",
+      "default": false
+    },
+    "dividerIcon": {
+      "type": "string",
+      "default": "none"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/quote",
+  "title": "Blockquote",
+  "category": "amnesty-core",
+  "description": "Add a blockquote block",
+  "icon": "<svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\" /><path d=\"M19 18h-6l2-4h-2V6h8v7l-2 5zm-2-2l2-3V8h-4v4h4l-2 4zm-8 2H3l2-4H3V6h8v7l-2 5zm-2-2l2-3V8H5v4h4l-2 4z\" /></svg>",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "className": false,
+    "inserter": false
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "size": {
+      "type": "string",
+      "default": ""
+    },
+    "colour": {
+      "type": "string",
+      "default": ""
+    },
+    "capitalise": {
+      "type": "boolean",
+      "default": false
+    },
+    "lined": {
+      "type": "boolean",
+      "default": false
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "citation": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

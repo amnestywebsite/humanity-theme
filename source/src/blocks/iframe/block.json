@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/block-responsive-iframe",
+  "title": "Responsive Iframe",
+  "category": "amnesty-core",
+  "description": "",
+  "keywords": ["Iframe", "Responsive", "Fluid"],
+  "icon": "welcome-widgets-menus",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-view.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php",
+  "supports": {
+    "align": ["left", "center", "right"]
+  },
+  "attributes": {
+    "embedUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "height": {
+      "type": "string",
+      "default": ""
+    },
+    "minHeight": {
+      "type": "string",
+      "default": ""
+    },
+    "width": {
+      "type": "string",
+      "default": ""
+    },
+    "caption": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

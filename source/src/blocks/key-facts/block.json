@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/key-facts",
+  "allowedBlocks": ["amnesty-core/key-fact"],
+  "title": "Key Facts",
+  "category": "amnesty-core",
+  "description": "Repeatable block for displaying statistics",
+  "icon": "lightbulb",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "className": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "quantity": {
+      "type": "number",
+      "default": 2
+    },
+    "background": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

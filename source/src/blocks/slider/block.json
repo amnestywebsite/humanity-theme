@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/block-slider",
+  "title": "Slider",
+  "category": "amnesty-core",
+  "keywords": ["Slider", "Carousel", "Scroller"],
+  "description": "",
+  "icon": "welcome-widgets-menus",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-view.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "sliderId": {
+      "type": "string",
+      "default": ""
+    },
+    "hasArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "showTabs": {
+      "type": "boolean",
+      "default": true
+    },
+    "hasContent": {
+      "type": "boolean",
+      "default": true
+    },
+    "quantity": {
+      "type": "number",
+      "default": 1
+    },
+    "style": {
+      "type": "string",
+      "default": "dark"
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "providesContext": {
+    "amnesty-core/slider/hasContent": "hasContent"
+  },
+  "styles": [
+    {
+      "name": "dark",
+      "label": "dark",
+      "isDefault": true
+    },
+    {
+      "name": "light",
+      "label": "Light",
+      "isDefault": false
+    }
+  ]
+}

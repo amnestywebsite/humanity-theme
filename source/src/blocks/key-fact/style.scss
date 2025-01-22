@@ -1,0 +1,37 @@
+@use '../../utils/mixins/icon' as i;
+
+.factBlock-itemTitle {
+  font-family: var(--wp--preset--font-family--secondary);
+  margin-bottom: 16px;
+}
+
+.factBlock-item:last-of-type .factBlock-itemContent {
+  margin-bottom: 0;
+}
+
+.factBlock-item:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.factBlock-item:not(:last-of-type)::before,
+.factBlock-item:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--wp--preset--color--grey-darker);
+}
+
+.factBlock-item:not(:last-of-type)::before {
+  @include i.icon(10px, 162px, 40px, 40px);
+  top: calc(100% + 10px);
+  left: calc(50% - 20px);
+  z-index: 1;
+}
+
+.factBlock-item:not(:last-of-type)::after {
+  bottom: -31px; // margin/2 + height/2
+  left: 5%;
+  height: 2px;
+  width: 90%;
+}

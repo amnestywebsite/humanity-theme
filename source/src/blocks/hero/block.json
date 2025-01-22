@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/hero",
+  "title": "Hero",
+  "category": "amnesty-core",
+  "description": "",
+  "keywords": ["Hero", "Header", "Banner"],
+  "icon": "format-image",
+  "textdomain": "amnesty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "align": true,
+    "className": true
+  },
+  "attributes": {
+    "background": {
+      "type": "string",
+      "default": "dark"
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "ctaLink": {
+      "type": "string",
+      "default": ""
+    },
+    "ctaText": {
+      "type": "string",
+      "default": ""
+    },
+    "featuredVideoId": {
+      "type": "number",
+      "default": 0
+    },
+    "hideImageCaption": {
+      "type": "boolean",
+      "default": true
+    },
+    "hideImageCopyright": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageID": {
+      "type": "number",
+      "default": 0
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "type": {
+      "type": "string",
+      "default": "image"
+    }
+  }
+}
