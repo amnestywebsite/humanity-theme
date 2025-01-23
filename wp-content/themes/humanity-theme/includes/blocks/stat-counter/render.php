@@ -28,7 +28,7 @@ if ( ! function_exists( 'render_stat_counter_block' ) ) {
 		$duration  = $attributes['duration'];
 		$value     = $attributes['value'];
 
-		if ( 'on' === $options['enforce_grouping_separators'] ) {
+		if ( 'on' === ( $options['enforce_grouping_separators'] ?? false ) ) {
 			$value = number_format_i18n( $value );
 		}
 
