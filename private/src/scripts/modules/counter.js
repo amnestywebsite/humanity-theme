@@ -1,4 +1,5 @@
 const { isInteger } = lodash;
+const { currentLocale = 'en-GB', enforceGroupingSeparators } = window.amnestyCoreI18n;
 
 // ensure value is an int
 const toRawNumber = (value = '0') => {
@@ -18,14 +19,10 @@ const toFormattedString = (value) => {
     return '';
   }
 
-  const { currentLocale = 'en-GB' } = window.amnestyCoreI18n;
+  const options = {};
 
-  const { forceThousandSeparator } = window.amnestyForceThousandSeparator;
-
-  let options = '';
-
-  if (forceThousandSeparator) {
-    options = { useGrouping: true };
+  if (enforceGroupingSeparators) {
+    options.useGrouping = true;
   }
 
   const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'), options);

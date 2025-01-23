@@ -120,15 +120,15 @@ if ( ! function_exists( 'amnesty_register_localisation_options' ) ) {
 			]
 		);
 
-		// Add a checkbox for forcing thousands separator
 		$localisation->add_field(
 			[
 				/* translators: [admin] */
-				'name'    => __( 'Force Thousands Separator', 'amnesty' ),
-				'id'      => 'force_thousands_separator',
+				'name'    => __( 'Always display numeric grouping separators', 'amnesty' ),
+				'id'      => 'enforce_grouping_separators',
 				'type'    => 'checkbox',
 				'default' => 0,
-				'desc'    => __( 'Force the use of thousand separators for the Stat Counter block, for example for Spanish speaking countries "3.345"', 'amnesty' ),
+				/* translators: [admin] */
+				'desc'    => __( 'Whether to use numeric grouping separators, such as thousands separators, even if the locale prefers otherwise.', 'amnesty' ),
 			]
 		);
 

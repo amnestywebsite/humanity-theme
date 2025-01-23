@@ -5,6 +5,7 @@ const { BlockAlignmentToolbar, BlockControls, InspectorControls } = wp.blockEdit
 const { Button, RangeControl, TextControl, ToolbarGroup, PanelBody } = wp.components;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
+const { currentLocale = 'en-GB', enforceGroupingSeparators } = window.amnestyCoreI18n;
 
 const toRawNumber = (value = '0') => {
   if (isInteger(value)) {
@@ -17,13 +18,19 @@ const toRawNumber = (value = '0') => {
   return inted;
 };
 
+// format a value as a locale-aware number
 const toFormattedString = (value) => {
   if (!value) {
     return '';
   }
 
-  const { currentLocale = 'en-GB' } = window.amnestyCoreI18n;
-  const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'));
+  const options = {};
+
+  if (enforceGroupingSeparators) {
+    options.useGrouping = true;
+  }
+
+  const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'), options);
 
   return formatted;
 };
