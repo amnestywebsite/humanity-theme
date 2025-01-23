@@ -13,6 +13,8 @@ if ( ! function_exists( 'render_stat_counter_block' ) ) {
 	 * @return string
 	 */
 	function render_stat_counter_block( array $attributes ): string {
+		$options = get_option( 'amnesty_localisation_options_page' );
+
 		$attributes = wp_parse_args(
 			$attributes,
 			[
@@ -25,6 +27,10 @@ if ( ! function_exists( 'render_stat_counter_block' ) ) {
 		$alignment = 'align' . $attributes['alignment'];
 		$duration  = $attributes['duration'];
 		$value     = $attributes['value'];
+
+		if ( 'on' === $options['enforce_grouping_separators'] ) {
+			$value = number_format_i18n( $value );
+		}
 
 		$wrapper_attributes = get_block_wrapper_attributes(
 			[
