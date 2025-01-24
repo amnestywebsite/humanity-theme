@@ -14,8 +14,7 @@ if ( ! function_exists( 'amnesty_wp_title' ) ) {
 		$title = wp_title( '|', false, 'right' );
 
 		if ( ! $title ) {
-			/* translators: [front] */
-			$title = __( 'Amnesty International', 'amnesty' );
+			$title = get_bloginfo( 'name' );
 		}
 
 		printf(
