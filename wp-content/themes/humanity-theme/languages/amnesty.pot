@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Humanity Theme 2.0.6\n"
+"Project-Id-Version: Humanity Theme 2.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/humanity-theme\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-29T10:04:18+00:00\n"
+"POT-Creation-Date: 2024-12-11T17:57:13+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: amnesty\n"
@@ -430,9 +430,9 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/theme-options/header.php:19
 #: assets/scripts/blocks.js:1040
-#: assets/scripts/blocks.js:12349
-#: assets/scripts/blocks.js:34237
-#: assets/scripts/blocks.js:34242
+#: assets/scripts/blocks.js:12336
+#: assets/scripts/blocks.js:34263
+#: assets/scripts/blocks.js:34268
 msgid "Header"
 msgstr ""
 
@@ -764,7 +764,7 @@ msgstr ""
 
 #. translators: [admin]
 #: includes/block-patterns/pattern-category.php:16
-#: assets/scripts/blocks.js:32288
+#: assets/scripts/blocks.js:32314
 msgid "Media"
 msgstr ""
 
@@ -833,8 +833,8 @@ msgstr ""
 #: includes/blocks/petition-list/render.php:54
 #: assets/scripts/blocks.js:10391
 #: assets/scripts/blocks.js:10431
-#: assets/scripts/blocks.js:12463
-#: assets/scripts/blocks.js:13650
+#: assets/scripts/blocks.js:12450
+#: assets/scripts/blocks.js:13645
 msgid "Act Now"
 msgstr ""
 
@@ -867,7 +867,7 @@ msgstr ""
 #. translators: [front]
 #. translators: [admin]
 #: includes/blocks/post-list/views/list-item-author.php:9
-#: assets/scripts/blocks.js:27158
+#: assets/scripts/blocks.js:27184
 msgid "Author"
 msgstr ""
 
@@ -884,7 +884,7 @@ msgstr ""
 #. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
 #. translators: [admin]
 #: includes/blocks/regions/render.php:20
-#: assets/scripts/blocks.js:28098
+#: assets/scripts/blocks.js:28124
 msgid "Explore by Region"
 msgstr ""
 
@@ -905,14 +905,14 @@ msgstr ""
 #: partials/pagination.php:50
 #: partials/search/pagination.php:20
 #: partials/search/pagination.php:60
-#: assets/scripts/blocks.js:29531
-#: assets/scripts/blocks.js:30082
-#: assets/scripts/blocks.js:30172
-#: assets/scripts/blocks.js:30286
-#: assets/scripts/blocks.js:30397
-#: assets/scripts/blocks.js:30510
-#: assets/scripts/blocks.js:30555
-#: assets/scripts/blocks.js:30600
+#: assets/scripts/blocks.js:29557
+#: assets/scripts/blocks.js:30108
+#: assets/scripts/blocks.js:30198
+#: assets/scripts/blocks.js:30312
+#: assets/scripts/blocks.js:30423
+#: assets/scripts/blocks.js:30536
+#: assets/scripts/blocks.js:30581
+#: assets/scripts/blocks.js:30626
 msgid "Next"
 msgstr ""
 
@@ -928,46 +928,46 @@ msgstr ""
 #: partials/pagination.php:35
 #: partials/search/pagination.php:18
 #: partials/search/pagination.php:45
-#: assets/scripts/blocks.js:29534
-#: assets/scripts/blocks.js:30085
-#: assets/scripts/blocks.js:30175
-#: assets/scripts/blocks.js:30289
-#: assets/scripts/blocks.js:30400
-#: assets/scripts/blocks.js:30513
-#: assets/scripts/blocks.js:30558
-#: assets/scripts/blocks.js:30603
+#: assets/scripts/blocks.js:29560
+#: assets/scripts/blocks.js:30111
+#: assets/scripts/blocks.js:30201
+#: assets/scripts/blocks.js:30315
+#: assets/scripts/blocks.js:30426
+#: assets/scripts/blocks.js:30539
+#: assets/scripts/blocks.js:30584
+#: assets/scripts/blocks.js:30629
 msgid "Previous"
 msgstr ""
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery
 #. translators: [admin]
 #: includes/blocks/slider/views/slide.php:20
-#: assets/scripts/blocks.js:29815
-#: assets/scripts/blocks.js:29885
-#: assets/scripts/blocks.js:29925
-#: assets/scripts/blocks.js:30006
+#: assets/scripts/blocks.js:29841
+#: assets/scripts/blocks.js:29911
+#: assets/scripts/blocks.js:29951
+#: assets/scripts/blocks.js:30032
 msgid "Tap here to return to gallery"
 msgstr ""
 
 #. translators: [front]
 #. translators: [admin]
 #: includes/blocks/slider/views/slide.php:41
-#: assets/scripts/blocks.js:29831
-#: assets/scripts/blocks.js:29901
-#: assets/scripts/blocks.js:29941
-#: assets/scripts/blocks.js:30020
-#: assets/scripts/blocks.js:30161
-#: assets/scripts/blocks.js:30274
-#: assets/scripts/blocks.js:30385
-#: assets/scripts/blocks.js:30497
+#: assets/scripts/blocks.js:29857
+#: assets/scripts/blocks.js:29927
+#: assets/scripts/blocks.js:29967
+#: assets/scripts/blocks.js:30046
+#: assets/scripts/blocks.js:30187
+#: assets/scripts/blocks.js:30300
+#: assets/scripts/blocks.js:30411
+#: assets/scripts/blocks.js:30523
 msgid "Toggle Content"
 msgstr ""
 
 #. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
 #. translators: [admin]
 #: includes/blocks/term-list/render.php:56
-#: assets/scripts/blocks.js:31066
-#: assets/scripts/blocks.js:31122
+#: assets/scripts/blocks.js:31092
+#: assets/scripts/blocks.js:31148
 msgid "A-Z of Countries and Regions"
 msgstr ""
 
@@ -984,12 +984,12 @@ msgstr ""
 #. translators: [admin]
 #: includes/blocks/tweet-action/render.php:56
 #: includes/blocks/tweet-action/render.php:57
-#: assets/scripts/blocks.js:31251
-#: assets/scripts/blocks.js:31253
-#: assets/scripts/blocks.js:31344
-#: assets/scripts/blocks.js:31346
-#: assets/scripts/blocks.js:31386
-#: assets/scripts/blocks.js:31388
+#: assets/scripts/blocks.js:31277
+#: assets/scripts/blocks.js:31279
+#: assets/scripts/blocks.js:31370
+#: assets/scripts/blocks.js:31372
+#: assets/scripts/blocks.js:31412
+#: assets/scripts/blocks.js:31414
 msgid "Send this Tweet"
 msgstr ""
 
@@ -1069,15 +1069,15 @@ msgstr ""
 #: includes/features/related-content/class-related-content.php:121
 #: includes/features/related-content/class-related-content.php:149
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:150
-#: assets/scripts/blocks.js:28237
-#: assets/scripts/blocks.js:28250
-#: assets/scripts/blocks.js:28401
+#: assets/scripts/blocks.js:28263
+#: assets/scripts/blocks.js:28276
+#: assets/scripts/blocks.js:28427
 msgid "Related Content"
 msgstr ""
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:431
-#: assets/scripts/blocks.js:28201
+#: assets/scripts/blocks.js:28227
 msgid "Country"
 msgstr ""
 
@@ -1334,7 +1334,7 @@ msgstr ""
 #: includes/post-types/sidebar.php:52
 #: includes/taxonomies/class-taxonomy-locations.php:238
 #: assets/scripts/blocks.js:12153
-#: assets/scripts/blocks.js:34152
+#: assets/scripts/blocks.js:34178
 msgid "Featured Image"
 msgstr ""
 
@@ -1959,22 +1959,22 @@ msgid "Expand %s list"
 msgstr ""
 
 #. translators: [admin]
-#: includes/theme-setup/navigation.php:183
+#: includes/theme-setup/navigation.php:187
 msgid "Main Menu"
 msgstr ""
 
 #. translators: [admin]
-#: includes/theme-setup/navigation.php:185
+#: includes/theme-setup/navigation.php:189
 msgid "Site Selector"
 msgstr ""
 
 #. translators: [admin]
-#: includes/theme-setup/navigation.php:187
+#: includes/theme-setup/navigation.php:191
 msgid "Footer Main"
 msgstr ""
 
 #. translators: [admin]
-#: includes/theme-setup/navigation.php:189
+#: includes/theme-setup/navigation.php:193
 msgid "Footer Legal"
 msgstr ""
 
@@ -2682,46 +2682,6 @@ msgstr ""
 msgid "Tweets by %s"
 msgstr ""
 
-#: patterns/background-media-left-grey.php
-msgctxt "Pattern title"
-msgid "Background Media Left Grey"
-msgstr ""
-
-#: patterns/background-media-left-grey.php
-msgctxt "Pattern description"
-msgid "Group block with a grey background containing 2 columns with a cover block on the left and paragraph on the right."
-msgstr ""
-
-#: patterns/background-media-left-white.php
-msgctxt "Pattern title"
-msgid "Background Media Left White"
-msgstr ""
-
-#: patterns/background-media-left-white.php
-msgctxt "Pattern description"
-msgid "Group block with a white background containing 2 columns with a cover block on the left and paragraph on the right."
-msgstr ""
-
-#: patterns/background-media-right-grey.php
-msgctxt "Pattern title"
-msgid "Background Media Right Grey"
-msgstr ""
-
-#: patterns/background-media-right-grey.php
-msgctxt "Pattern description"
-msgid "Group block with a grey background containing 2 columns with a cover block on the right and paragraph on the left."
-msgstr ""
-
-#: patterns/background-media-right-white.php
-msgctxt "Pattern title"
-msgid "Background Media Right White"
-msgstr ""
-
-#: patterns/background-media-right-white.php
-msgctxt "Pattern description"
-msgid "Group block with a white background containing 2 columns with a cover block on the right and paragraph on the left."
-msgstr ""
-
 #: patterns/blog-home-content.php
 msgctxt "Pattern title"
 msgid "Blog home content"
@@ -3086,8 +3046,8 @@ msgstr[1] ""
 #. translators: [front] Donate
 #. translators: [admin]
 #: woocommerce/order/order-details.php:52
-#: assets/scripts/blocks.js:12857
-#: assets/scripts/blocks.js:35269
+#: assets/scripts/blocks.js:12844
+#: assets/scripts/blocks.js:35295
 msgid "Quantity"
 msgstr ""
 
@@ -3179,10 +3139,10 @@ msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:534
-#: assets/scripts/blocks.js:12882
-#: assets/scripts/blocks.js:14071
-#: assets/scripts/blocks.js:35603
-#: assets/scripts/blocks.js:35651
+#: assets/scripts/blocks.js:12869
+#: assets/scripts/blocks.js:14096
+#: assets/scripts/blocks.js:35629
+#: assets/scripts/blocks.js:35677
 msgid "(Insert Title)"
 msgstr ""
 
@@ -3297,10 +3257,10 @@ msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9524
-#: assets/scripts/blocks.js:13568
-#: assets/scripts/blocks.js:26385
-#: assets/scripts/blocks.js:26435
-#: assets/scripts/blocks.js:26802
+#: assets/scripts/blocks.js:13555
+#: assets/scripts/blocks.js:26411
+#: assets/scripts/blocks.js:26461
+#: assets/scripts/blocks.js:26828
 msgid "Loading"
 msgstr ""
 
@@ -3331,7 +3291,7 @@ msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:9638
-#: assets/scripts/blocks.js:25327
+#: assets/scripts/blocks.js:25353
 msgid "Select Term"
 msgstr ""
 
@@ -3372,53 +3332,54 @@ msgstr ""
 #. translators: [admin]
 #: assets/scripts/blocks.js:10150
 #: assets/scripts/blocks.js:10582
-#: assets/scripts/blocks.js:31190
-#: assets/scripts/blocks.js:32459
-#: assets/scripts/blocks.js:33642
-#: assets/scripts/blocks.js:34104
+#: assets/scripts/blocks.js:31216
+#: assets/scripts/blocks.js:32485
+#: assets/scripts/blocks.js:33668
+#: assets/scripts/blocks.js:34130
 msgid "Size"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10155
-#: assets/scripts/blocks.js:33647
+#: assets/scripts/blocks.js:33673
 msgid "Standard"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10157
-#: assets/scripts/blocks.js:33649
+#: assets/scripts/blocks.js:33675
 msgid "Wide"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10169
 #: assets/scripts/blocks.js:11941
-#: assets/scripts/blocks.js:14089
-#: assets/scripts/blocks.js:29022
-#: assets/scripts/blocks.js:31898
-#: assets/scripts/blocks.js:32515
-#: assets/scripts/blocks.js:33676
-#: assets/scripts/blocks.js:34566
+#: assets/scripts/blocks.js:14047
+#: assets/scripts/blocks.js:14114
+#: assets/scripts/blocks.js:29048
+#: assets/scripts/blocks.js:31924
+#: assets/scripts/blocks.js:32541
+#: assets/scripts/blocks.js:33702
+#: assets/scripts/blocks.js:34592
 msgid "Remove Image"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10193
-#: assets/scripts/blocks.js:33666
+#: assets/scripts/blocks.js:33692
 msgid "(Label)"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10201
-#: assets/scripts/blocks.js:33519
-#: assets/scripts/blocks.js:33705
+#: assets/scripts/blocks.js:33545
+#: assets/scripts/blocks.js:33731
 msgid "Content"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10209
-#: assets/scripts/blocks.js:33715
+#: assets/scripts/blocks.js:33741
 msgid "Button Text"
 msgstr ""
 
@@ -3435,11 +3396,11 @@ msgstr ""
 #. translators: [admin] text alignment. for RTL languages, localise as 'Right'
 #. translators: [admin]
 #: assets/scripts/blocks.js:10523
-#: assets/scripts/blocks.js:28658
-#: assets/scripts/blocks.js:29190
-#: assets/scripts/blocks.js:32424
-#: assets/scripts/blocks.js:34067
-#: assets/scripts/blocks.js:34542
+#: assets/scripts/blocks.js:28684
+#: assets/scripts/blocks.js:29216
+#: assets/scripts/blocks.js:32450
+#: assets/scripts/blocks.js:34093
+#: assets/scripts/blocks.js:34568
 msgid "Left"
 msgstr ""
 
@@ -3447,88 +3408,88 @@ msgstr ""
 #. translators: [admin]
 #. translators: [admin] text alignment/.
 #: assets/scripts/blocks.js:10525
-#: assets/scripts/blocks.js:31195
-#: assets/scripts/blocks.js:31307
-#: assets/scripts/blocks.js:34540
+#: assets/scripts/blocks.js:31221
+#: assets/scripts/blocks.js:31333
+#: assets/scripts/blocks.js:34566
 msgid "Default"
 msgstr ""
 
 #. translators: [admin] text alignment. for RTL languages, localise as 'Left'
 #. translators: [admin]
 #: assets/scripts/blocks.js:10530
-#: assets/scripts/blocks.js:28648
-#: assets/scripts/blocks.js:29194
-#: assets/scripts/blocks.js:32434
-#: assets/scripts/blocks.js:34077
-#: assets/scripts/blocks.js:34546
+#: assets/scripts/blocks.js:28674
+#: assets/scripts/blocks.js:29220
+#: assets/scripts/blocks.js:32460
+#: assets/scripts/blocks.js:34103
+#: assets/scripts/blocks.js:34572
 msgid "Right"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10575
-#: assets/scripts/blocks.js:32420
-#: assets/scripts/blocks.js:34063
-#: assets/scripts/blocks.js:34533
+#: assets/scripts/blocks.js:32446
+#: assets/scripts/blocks.js:34089
+#: assets/scripts/blocks.js:34559
 msgid "Alignment"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10587
-#: assets/scripts/blocks.js:32464
-#: assets/scripts/blocks.js:35507
+#: assets/scripts/blocks.js:32490
+#: assets/scripts/blocks.js:35533
 msgid "Small"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10589
-#: assets/scripts/blocks.js:35509
+#: assets/scripts/blocks.js:35535
 msgid "Medium"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10591
-#: assets/scripts/blocks.js:34113
-#: assets/scripts/blocks.js:35511
+#: assets/scripts/blocks.js:34139
+#: assets/scripts/blocks.js:35537
 msgid "Large"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10596
-#: assets/scripts/blocks.js:28557
+#: assets/scripts/blocks.js:28583
 msgid "Text Colour"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10601
-#: assets/scripts/blocks.js:12229
-#: assets/scripts/blocks.js:28561
-#: assets/scripts/blocks.js:32452
-#: assets/scripts/blocks.js:34095
+#: assets/scripts/blocks.js:12216
+#: assets/scripts/blocks.js:28587
+#: assets/scripts/blocks.js:32478
+#: assets/scripts/blocks.js:34121
 msgid "Black"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10603
-#: assets/scripts/blocks.js:12872
-#: assets/scripts/blocks.js:13239
-#: assets/scripts/blocks.js:28033
-#: assets/scripts/blocks.js:28686
-#: assets/scripts/blocks.js:31859
-#: assets/scripts/blocks.js:32884
-#: assets/scripts/blocks.js:35298
+#: assets/scripts/blocks.js:12859
+#: assets/scripts/blocks.js:13226
+#: assets/scripts/blocks.js:28059
+#: assets/scripts/blocks.js:28712
+#: assets/scripts/blocks.js:31885
+#: assets/scripts/blocks.js:32910
+#: assets/scripts/blocks.js:35324
 msgid "Grey"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:10605
-#: assets/scripts/blocks.js:12230
-#: assets/scripts/blocks.js:13237
-#: assets/scripts/blocks.js:28031
-#: assets/scripts/blocks.js:28566
-#: assets/scripts/blocks.js:28681
-#: assets/scripts/blocks.js:31854
-#: assets/scripts/blocks.js:32450
-#: assets/scripts/blocks.js:34090
+#: assets/scripts/blocks.js:12217
+#: assets/scripts/blocks.js:13224
+#: assets/scripts/blocks.js:28057
+#: assets/scripts/blocks.js:28592
+#: assets/scripts/blocks.js:28707
+#: assets/scripts/blocks.js:31880
+#: assets/scripts/blocks.js:32476
+#: assets/scripts/blocks.js:34116
 msgid "White"
 msgstr ""
 
@@ -3636,26 +3597,26 @@ msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11431
-#: assets/scripts/blocks.js:32711
-#: assets/scripts/blocks.js:35566
+#: assets/scripts/blocks.js:32737
+#: assets/scripts/blocks.js:35592
 msgid "Button Style"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11435
-#: assets/scripts/blocks.js:12553
-#: assets/scripts/blocks.js:29199
-#: assets/scripts/blocks.js:32720
-#: assets/scripts/blocks.js:35571
+#: assets/scripts/blocks.js:12540
+#: assets/scripts/blocks.js:29225
+#: assets/scripts/blocks.js:32746
+#: assets/scripts/blocks.js:35597
 msgid "Dark"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11440
-#: assets/scripts/blocks.js:29201
-#: assets/scripts/blocks.js:32725
-#: assets/scripts/blocks.js:32879
-#: assets/scripts/blocks.js:35573
+#: assets/scripts/blocks.js:29227
+#: assets/scripts/blocks.js:32751
+#: assets/scripts/blocks.js:32905
+#: assets/scripts/blocks.js:35599
 msgid "Light"
 msgstr ""
 
@@ -3705,8 +3666,8 @@ msgstr ""
 #: assets/scripts/blocks.js:11746
 #: assets/scripts/blocks.js:11830
 #: assets/scripts/blocks.js:11904
-#: assets/scripts/blocks.js:12483
-#: assets/scripts/blocks.js:12612
+#: assets/scripts/blocks.js:12470
+#: assets/scripts/blocks.js:12599
 msgid "Embed"
 msgstr ""
 
@@ -3778,20 +3739,20 @@ msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11906
-#: assets/scripts/blocks.js:30878
-#: assets/scripts/blocks.js:30888
+#: assets/scripts/blocks.js:30904
+#: assets/scripts/blocks.js:30914
 msgid "Counter"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11983
-#: assets/scripts/blocks.js:28627
+#: assets/scripts/blocks.js:28653
 msgid "Hide Image Caption"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:11985
-#: assets/scripts/blocks.js:28633
+#: assets/scripts/blocks.js:28659
 msgid "Hide Image Credit"
 msgstr ""
 
@@ -3817,1502 +3778,1502 @@ msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12091
-#: assets/scripts/blocks.js:34664
-#: assets/scripts/blocks.js:34674
+#: assets/scripts/blocks.js:34690
+#: assets/scripts/blocks.js:34700
 msgid "Replace Video"
 msgstr ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:12149
-#: assets/scripts/blocks.js:34150
+#: assets/scripts/blocks.js:34176
 msgid "Background Image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12225
-#: assets/scripts/blocks.js:12433
-#: assets/scripts/blocks.js:12676
-#: assets/scripts/blocks.js:13374
-#: assets/scripts/blocks.js:27187
-#: assets/scripts/blocks.js:28548
-#: assets/scripts/blocks.js:29378
-#: assets/scripts/blocks.js:32417
-#: assets/scripts/blocks.js:32708
-#: assets/scripts/blocks.js:32872
-#: assets/scripts/blocks.js:33473
-#: assets/scripts/blocks.js:34060
+#: assets/scripts/blocks.js:12212
+#: assets/scripts/blocks.js:12420
+#: assets/scripts/blocks.js:12663
+#: assets/scripts/blocks.js:13361
+#: assets/scripts/blocks.js:27213
+#: assets/scripts/blocks.js:28574
+#: assets/scripts/blocks.js:29404
+#: assets/scripts/blocks.js:32443
+#: assets/scripts/blocks.js:32734
+#: assets/scripts/blocks.js:32898
+#: assets/scripts/blocks.js:33499
+#: assets/scripts/blocks.js:34086
 msgid "Options"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12227
-#: assets/scripts/blocks.js:12865
-#: assets/scripts/blocks.js:13404
-#: assets/scripts/blocks.js:28028
-#: assets/scripts/blocks.js:28677
-#: assets/scripts/blocks.js:31845
-#: assets/scripts/blocks.js:32443
-#: assets/scripts/blocks.js:34086
-#: assets/scripts/blocks.js:35291
+#: assets/scripts/blocks.js:12214
+#: assets/scripts/blocks.js:12852
+#: assets/scripts/blocks.js:13391
+#: assets/scripts/blocks.js:28054
+#: assets/scripts/blocks.js:28703
+#: assets/scripts/blocks.js:31871
+#: assets/scripts/blocks.js:32469
+#: assets/scripts/blocks.js:34112
+#: assets/scripts/blocks.js:35317
 msgid "Background Colour"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12236
-#: assets/scripts/blocks.js:32471
-#: assets/scripts/blocks.js:34123
-#: assets/scripts/blocks.js:34732
+#: assets/scripts/blocks.js:12223
+#: assets/scripts/blocks.js:32497
+#: assets/scripts/blocks.js:34149
+#: assets/scripts/blocks.js:34758
 msgid "Background Type"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12238
-#: assets/scripts/blocks.js:32474
-#: assets/scripts/blocks.js:34127
-#: assets/scripts/blocks.js:34736
+#: assets/scripts/blocks.js:12225
+#: assets/scripts/blocks.js:32500
+#: assets/scripts/blocks.js:34153
+#: assets/scripts/blocks.js:34762
 msgid "Image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12239
-#: assets/scripts/blocks.js:32476
-#: assets/scripts/blocks.js:34132
-#: assets/scripts/blocks.js:34741
+#: assets/scripts/blocks.js:12226
+#: assets/scripts/blocks.js:32502
+#: assets/scripts/blocks.js:34158
+#: assets/scripts/blocks.js:34767
 msgid "Video"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12255
-#: assets/scripts/blocks.js:32500
-#: assets/scripts/blocks.js:34158
+#: assets/scripts/blocks.js:12242
+#: assets/scripts/blocks.js:32526
+#: assets/scripts/blocks.js:34184
 msgid "Featured Video"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12286
+#: assets/scripts/blocks.js:12273
 msgid "Hero Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12295
+#: assets/scripts/blocks.js:12282
 msgid "Hero Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12304
-#: assets/scripts/blocks.js:32563
+#: assets/scripts/blocks.js:12291
+#: assets/scripts/blocks.js:32589
 msgid "Call to action"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12338
-#: assets/scripts/blocks.js:12347
+#: assets/scripts/blocks.js:12325
+#: assets/scripts/blocks.js:12334
 msgid "Hero"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12351
-#: assets/scripts/blocks.js:32595
-#: assets/scripts/blocks.js:32599
+#: assets/scripts/blocks.js:12338
+#: assets/scripts/blocks.js:32621
+#: assets/scripts/blocks.js:32625
 msgid "Banner"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12436
+#: assets/scripts/blocks.js:12423
 msgid "Iframe Height"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12444
-#: assets/scripts/blocks.js:12724
+#: assets/scripts/blocks.js:12431
+#: assets/scripts/blocks.js:12711
 msgid "Iframe Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12446
-#: assets/scripts/blocks.js:12726
+#: assets/scripts/blocks.js:12433
+#: assets/scripts/blocks.js:12713
 msgid "Set the text alternative for the iframe"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12476
-#: assets/scripts/blocks.js:12598
+#: assets/scripts/blocks.js:12463
+#: assets/scripts/blocks.js:12585
 msgid "Iframe URL"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12478
-#: assets/scripts/blocks.js:12609
+#: assets/scripts/blocks.js:12465
+#: assets/scripts/blocks.js:12596
 msgid "Enter URL to embed here…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12487
-#: assets/scripts/blocks.js:27257
+#: assets/scripts/blocks.js:12474
+#: assets/scripts/blocks.js:27283
 msgid "Hide Preview"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12488
-#: assets/scripts/blocks.js:27793
-#: assets/scripts/blocks.js:30791
+#: assets/scripts/blocks.js:12475
+#: assets/scripts/blocks.js:27819
+#: assets/scripts/blocks.js:30817
 msgid "Preview"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12509
+#: assets/scripts/blocks.js:12496
 msgid "Iframe Button"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12511
+#: assets/scripts/blocks.js:12498
 msgid "A button which, when clicked, will toggle visibility of an iframe"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12516
-#: assets/scripts/blocks.js:12771
+#: assets/scripts/blocks.js:12503
+#: assets/scripts/blocks.js:12758
 msgid "Iframe"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12518
-#: assets/scripts/blocks.js:32775
-#: assets/scripts/blocks.js:32779
+#: assets/scripts/blocks.js:12505
+#: assets/scripts/blocks.js:32801
+#: assets/scripts/blocks.js:32805
 msgid "Button"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12547
+#: assets/scripts/blocks.js:12534
 msgid "Primary"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12657
+#: assets/scripts/blocks.js:12644
 msgid "Write caption…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12679
+#: assets/scripts/blocks.js:12666
 msgid "Width"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12686
+#: assets/scripts/blocks.js:12673
 msgid "Required when specifying a height"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12693
+#: assets/scripts/blocks.js:12680
 msgid "Height"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12700
+#: assets/scripts/blocks.js:12687
 msgid "Required when specifying a width"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12707
+#: assets/scripts/blocks.js:12694
 msgid "Minimum Height"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12716
+#: assets/scripts/blocks.js:12703
 msgid "Required if not using width/height, optional otherwise"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12733
+#: assets/scripts/blocks.js:12720
 msgid "Reset Embed Url"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12766
+#: assets/scripts/blocks.js:12753
 msgid "Responsive Iframe"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12773
+#: assets/scripts/blocks.js:12760
 msgid "Responsive"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12775
+#: assets/scripts/blocks.js:12762
 msgid "Fluid"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12823
+#: assets/scripts/blocks.js:12810
 msgid "Key Facts"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12825
+#: assets/scripts/blocks.js:12812
 msgid "Add a key facts block"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12870
-#: assets/scripts/blocks.js:32448
-#: assets/scripts/blocks.js:35221
-#: assets/scripts/blocks.js:35296
+#: assets/scripts/blocks.js:12857
+#: assets/scripts/blocks.js:32474
+#: assets/scripts/blocks.js:35247
+#: assets/scripts/blocks.js:35322
 msgid "None"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13062
-#: assets/scripts/blocks.js:13200
+#: assets/scripts/blocks.js:13049
+#: assets/scripts/blocks.js:13187
 msgid "Further Reading"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13075
+#: assets/scripts/blocks.js:13062
 msgid "Type link"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13090
+#: assets/scripts/blocks.js:13077
 msgid "Open in new tab"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13098
-#: assets/scripts/blocks.js:13101
+#: assets/scripts/blocks.js:13085
+#: assets/scripts/blocks.js:13088
 msgid "Add a link"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13188
+#: assets/scripts/blocks.js:13175
 msgid "Link Block"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13190
+#: assets/scripts/blocks.js:13177
 msgid "A collection of links, used for things such as further reading suggestions."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13198
+#: assets/scripts/blocks.js:13185
 msgid "Links"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13248
+#: assets/scripts/blocks.js:13235
 msgid "Select a menu…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13326
+#: assets/scripts/blocks.js:13313
 msgid "Select a menu in the sidebar"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13329
+#: assets/scripts/blocks.js:13316
 msgid "Loading Menu…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13376
+#: assets/scripts/blocks.js:13363
 msgid "Loading Menus…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13380
-#: assets/scripts/blocks.js:13395
-#: assets/scripts/blocks.js:13439
-#: assets/scripts/blocks.js:13444
+#: assets/scripts/blocks.js:13367
+#: assets/scripts/blocks.js:13382
+#: assets/scripts/blocks.js:13426
+#: assets/scripts/blocks.js:13431
 msgid "Menu"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13382
+#: assets/scripts/blocks.js:13369
 msgid "Which type of menu you would like to add to the page"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13386
+#: assets/scripts/blocks.js:13373
 msgid "Standard Menu"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13388
+#: assets/scripts/blocks.js:13375
 msgid "In-page Menu"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13446
+#: assets/scripts/blocks.js:13433
 msgid "Navigation"
 msgstr ""
 
-#: assets/scripts/blocks.js:13489
+#: assets/scripts/blocks.js:13476
 msgid "Petition Settings"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13570
-#: assets/scripts/blocks.js:26387
+#: assets/scripts/blocks.js:13557
+#: assets/scripts/blocks.js:26413
 msgid "Select a category"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13839
-#: assets/scripts/blocks.js:14310
-#: assets/scripts/blocks.js:25224
-#: assets/scripts/blocks.js:25278
-#: assets/scripts/blocks.js:25293
-#: assets/scripts/blocks.js:26237
-#: assets/scripts/blocks.js:26643
-#: assets/scripts/blocks.js:26942
+#: assets/scripts/blocks.js:13834
+#: assets/scripts/blocks.js:14336
+#: assets/scripts/blocks.js:25250
+#: assets/scripts/blocks.js:25304
+#: assets/scripts/blocks.js:25319
+#: assets/scripts/blocks.js:26263
+#: assets/scripts/blocks.js:26669
+#: assets/scripts/blocks.js:26968
 msgid "Loading…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13848
+#: assets/scripts/blocks.js:13843
 msgid "Select a category."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13858
-#: assets/scripts/blocks.js:26256
-#: assets/scripts/blocks.js:26662
-#: assets/scripts/blocks.js:26951
+#: assets/scripts/blocks.js:13853
+#: assets/scripts/blocks.js:26282
+#: assets/scripts/blocks.js:26688
+#: assets/scripts/blocks.js:26977
 msgid "No Items found"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13960
+#: assets/scripts/blocks.js:13962
 msgid "Tag Name"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13976
+#: assets/scripts/blocks.js:13978
 msgid "Insert Title"
 msgstr ""
 
-#: assets/scripts/blocks.js:13991
+#: assets/scripts/blocks.js:13993
 msgid "Date:"
 msgstr ""
 
-#: assets/scripts/blocks.js:14003
+#: assets/scripts/blocks.js:14005
 msgid "Date may render differently on the site frontend"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14019
-#: assets/scripts/blocks.js:27285
+#: assets/scripts/blocks.js:14021
+#: assets/scripts/blocks.js:27311
 msgid "Author:"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14029
+#: assets/scripts/blocks.js:14031
 msgid "Author Name"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14059
+#: assets/scripts/blocks.js:14084
 msgid "(Insert Tag)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14116
+#: assets/scripts/blocks.js:14141
 msgid "Add another item"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14315
-#: assets/scripts/blocks.js:25199
+#: assets/scripts/blocks.js:14341
+#: assets/scripts/blocks.js:25225
 msgid "No Posts."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25180
+#: assets/scripts/blocks.js:25206
 msgid "Loading Posts…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25188
+#: assets/scripts/blocks.js:25214
 msgid "Your query yielded no results, please try again."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25226
+#: assets/scripts/blocks.js:25252
 msgid "Load More"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25265
+#: assets/scripts/blocks.js:25291
 msgid "Please enter your search query…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25273
+#: assets/scripts/blocks.js:25299
 msgid "Post Type:"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25288
-#: assets/scripts/blocks.js:27265
+#: assets/scripts/blocks.js:25314
+#: assets/scripts/blocks.js:27291
 msgid "Taxonomy:"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25300
+#: assets/scripts/blocks.js:25326
 msgid "Select Taxonomy"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25316
-#: assets/scripts/blocks.js:27272
+#: assets/scripts/blocks.js:25342
+#: assets/scripts/blocks.js:27298
 msgid "Terms:"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25320
+#: assets/scripts/blocks.js:25346
 msgid "No taxonomy selected"
 msgstr ""
 
-#: assets/scripts/blocks.js:25430
+#: assets/scripts/blocks.js:25456
 msgid "No terms selected"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26246
+#: assets/scripts/blocks.js:26272
 msgid "Select a taxonomy."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26437
+#: assets/scripts/blocks.js:26463
 msgid "Select terms"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26652
+#: assets/scripts/blocks.js:26678
 msgid "Select an author."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26804
+#: assets/scripts/blocks.js:26830
 msgid "Select author"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27125
+#: assets/scripts/blocks.js:27151
 msgid "Link List"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27130
+#: assets/scripts/blocks.js:27156
 msgid "Grid"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27138
+#: assets/scripts/blocks.js:27164
 msgid "Category"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27143
-#: assets/scripts/blocks.js:27457
+#: assets/scripts/blocks.js:27169
+#: assets/scripts/blocks.js:27483
 msgid "Object Selection"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27148
+#: assets/scripts/blocks.js:27174
 msgid "Custom"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27153
+#: assets/scripts/blocks.js:27179
 msgid "Taxonomy"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27191
-#: assets/scripts/blocks.js:35485
+#: assets/scripts/blocks.js:27217
+#: assets/scripts/blocks.js:35511
 msgid "Style"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27199
+#: assets/scripts/blocks.js:27225
 msgid "Type"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27206
+#: assets/scripts/blocks.js:27232
 msgid "Category:"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27218
-#: assets/scripts/blocks.js:27228
-#: assets/scripts/blocks.js:27238
+#: assets/scripts/blocks.js:27244
+#: assets/scripts/blocks.js:27254
+#: assets/scripts/blocks.js:27264
 msgid "Number of posts to show:"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27248
+#: assets/scripts/blocks.js:27274
 msgid "Use related categories where supported"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27259
+#: assets/scripts/blocks.js:27285
 msgid "Show Preview"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27296
+#: assets/scripts/blocks.js:27322
 msgid "Display Post Author"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27302
+#: assets/scripts/blocks.js:27328
 msgid "Display Post Date"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27437
-#: assets/scripts/blocks.js:27447
+#: assets/scripts/blocks.js:27463
+#: assets/scripts/blocks.js:27473
 msgid "Petitions"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27462
+#: assets/scripts/blocks.js:27488
 msgid "Feed"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27471
+#: assets/scripts/blocks.js:27497
 msgid "Petition List"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27473
+#: assets/scripts/blocks.js:27499
 msgid "Petition list"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27475
+#: assets/scripts/blocks.js:27501
 msgid "Petition"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27568
+#: assets/scripts/blocks.js:27594
 msgid "Post List"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27573
+#: assets/scripts/blocks.js:27599
 msgid "List"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27575
+#: assets/scripts/blocks.js:27601
 msgid "post-list"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27577
+#: assets/scripts/blocks.js:27603
 msgid "Posts"
 msgstr ""
 
-#: assets/scripts/blocks.js:27664
+#: assets/scripts/blocks.js:27690
 msgid "Select a meta key"
 msgstr ""
 
-#: assets/scripts/blocks.js:27691
+#: assets/scripts/blocks.js:27717
 msgid "Choose a meta key"
 msgstr ""
 
-#: assets/scripts/blocks.js:27697
+#: assets/scripts/blocks.js:27723
 msgid "Does this meta key have a single value?"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27817
+#: assets/scripts/blocks.js:27843
 msgid "Write HTML…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27819
+#: assets/scripts/blocks.js:27845
 msgid "HTML"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27843
+#: assets/scripts/blocks.js:27869
 msgid "Raw Code"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28025
-#: assets/scripts/blocks.js:31023
+#: assets/scripts/blocks.js:28051
+#: assets/scripts/blocks.js:31049
 msgid "Display Options"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28040
-#: assets/scripts/blocks.js:31026
+#: assets/scripts/blocks.js:28066
+#: assets/scripts/blocks.js:31052
 msgid "Choose taxonomy to display"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28048
+#: assets/scripts/blocks.js:28074
 msgid "Max depth"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28057
+#: assets/scripts/blocks.js:28083
 msgid "Show only Regions/Subregions"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28115
+#: assets/scripts/blocks.js:28141
 msgid "Terms List"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28117
+#: assets/scripts/blocks.js:28143
 msgid "Terms"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28403
+#: assets/scripts/blocks.js:28429
 msgid "Add a grid of posts that are related to the current post"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28551
+#: assets/scripts/blocks.js:28577
 msgid "Section Name"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28574
+#: assets/scripts/blocks.js:28600
 msgid "Background Options"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28586
+#: assets/scripts/blocks.js:28612
 msgid "Edit image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28596
+#: assets/scripts/blocks.js:28622
 msgid "Remove image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28601
+#: assets/scripts/blocks.js:28627
 msgid "Select background image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28611
+#: assets/scripts/blocks.js:28637
 msgid "Min image height as viewport percentage"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28621
+#: assets/scripts/blocks.js:28647
 msgid "Toggle Background Overlay"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28639
+#: assets/scripts/blocks.js:28665
 msgid "Background Image Origin"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28643
-#: assets/scripts/blocks.js:35525
+#: assets/scripts/blocks.js:28669
+#: assets/scripts/blocks.js:35551
 msgid "Top"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28653
+#: assets/scripts/blocks.js:28679
 msgid "Bottom"
 msgstr ""
 
 #. translators: [admin]
 #. translators: [admin] text alignment.
-#: assets/scripts/blocks.js:28663
-#: assets/scripts/blocks.js:29192
-#: assets/scripts/blocks.js:32429
-#: assets/scripts/blocks.js:34072
-#: assets/scripts/blocks.js:34544
+#: assets/scripts/blocks.js:28689
+#: assets/scripts/blocks.js:29218
+#: assets/scripts/blocks.js:32455
+#: assets/scripts/blocks.js:34098
+#: assets/scripts/blocks.js:34570
 msgid "Centre"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28668
+#: assets/scripts/blocks.js:28694
 msgid "Initial"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28953
-#: assets/scripts/blocks.js:28957
+#: assets/scripts/blocks.js:28979
+#: assets/scripts/blocks.js:28983
 msgid "Section"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29018
+#: assets/scripts/blocks.js:29044
 msgid "Set Image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29020
-#: assets/scripts/blocks.js:31889
+#: assets/scripts/blocks.js:29046
+#: assets/scripts/blocks.js:31915
 msgid "Replace Image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29206
+#: assets/scripts/blocks.js:29232
 msgid "Opaque"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29208
+#: assets/scripts/blocks.js:29234
 msgid "Translucent"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29210
+#: assets/scripts/blocks.js:29236
 msgid "Transparent"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29343
+#: assets/scripts/blocks.js:29369
 msgid "Do you wish to delete this slide? This action is irreversible"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29381
+#: assets/scripts/blocks.js:29407
 msgid "Show Arrows"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29388
+#: assets/scripts/blocks.js:29414
 msgid "Has Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29394
+#: assets/scripts/blocks.js:29420
 msgid "By disabling this you will hide the content in *ALL* slides. To disable this on only one slide, select the desired slide and toggle the \"Hide Content\" field in the \"Slide Options\" panel."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29405
+#: assets/scripts/blocks.js:29431
 msgid "Show Tabs"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29411
+#: assets/scripts/blocks.js:29437
 msgid "Hide the tabs on the front end, these will still show in the panel to allow you to navigate through each slide."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29421
+#: assets/scripts/blocks.js:29447
 msgid "Timeline Options"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29424
+#: assets/scripts/blocks.js:29450
 msgid "Slider Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29430
+#: assets/scripts/blocks.js:29456
 msgid "Timeline Style"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29438
+#: assets/scripts/blocks.js:29464
 msgid "Slide Options"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29441
+#: assets/scripts/blocks.js:29467
 msgid "Slide Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29447
+#: assets/scripts/blocks.js:29473
 msgid "Slide Timeline Text"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29457
+#: assets/scripts/blocks.js:29483
 msgid "Slide Background"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29466
+#: assets/scripts/blocks.js:29492
 msgid "Content Alignment"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29473
-#: assets/scripts/blocks.js:32875
+#: assets/scripts/blocks.js:29499
+#: assets/scripts/blocks.js:32901
 msgid "Background Style"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29480
+#: assets/scripts/blocks.js:29506
 msgid "Hide Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29486
+#: assets/scripts/blocks.js:29512
 msgid "By enabling this you will hide the content on *THIS* slide. To disable content on all slides go to the \"Options\" and toggle the \"Has Content\" field."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29497
+#: assets/scripts/blocks.js:29523
 msgid "Remove Slide"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29501
+#: assets/scripts/blocks.js:29527
 msgid "This is irreversible."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29519
+#: assets/scripts/blocks.js:29545
 msgid "(Slider Title)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29543
+#: assets/scripts/blocks.js:29569
 msgid "Add a slide below."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29546
-#: assets/scripts/blocks.js:29666
+#: assets/scripts/blocks.js:29572
+#: assets/scripts/blocks.js:29692
 msgid "Add Slide"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29569
+#: assets/scripts/blocks.js:29595
 msgid "(TimeLine Content)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29584
-#: assets/scripts/blocks.js:32911
+#: assets/scripts/blocks.js:29610
+#: assets/scripts/blocks.js:32937
 msgid "(Heading)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29595
+#: assets/scripts/blocks.js:29621
 msgid "(Sub-Heading)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29606
-#: assets/scripts/blocks.js:32920
-#: assets/scripts/blocks.js:34615
+#: assets/scripts/blocks.js:29632
+#: assets/scripts/blocks.js:32946
+#: assets/scripts/blocks.js:34641
 msgid "(Content)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29617
-#: assets/scripts/blocks.js:32739
+#: assets/scripts/blocks.js:29643
+#: assets/scripts/blocks.js:32765
 msgid "(Button Text)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29646
-#: assets/scripts/blocks.js:29660
+#: assets/scripts/blocks.js:29672
+#: assets/scripts/blocks.js:29686
 msgid "(No Title)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30639
-#: assets/scripts/blocks.js:30644
+#: assets/scripts/blocks.js:30665
+#: assets/scripts/blocks.js:30670
 msgid "Slider"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30646
+#: assets/scripts/blocks.js:30672
 msgid "Carousel"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30648
+#: assets/scripts/blocks.js:30674
 msgid "Scroller"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30763
+#: assets/scripts/blocks.js:30789
 msgid "Edit Counter"
 msgstr ""
 
-#: assets/scripts/blocks.js:30763
+#: assets/scripts/blocks.js:30789
 msgid "Preview Counter"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30771
+#: assets/scripts/blocks.js:30797
 msgid "Duration"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30773
+#: assets/scripts/blocks.js:30799
 msgid "How long it should take the counter to count up"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30790
+#: assets/scripts/blocks.js:30816
 msgid "Edit"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30799
+#: assets/scripts/blocks.js:30825
 msgid "Enter the value to which this field should count"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30880
+#: assets/scripts/blocks.js:30906
 msgid "Add a numeric field which, when scrolled into view, will count up from zero"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30886
+#: assets/scripts/blocks.js:30912
 msgid "Stat"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31104
+#: assets/scripts/blocks.js:31130
 msgid "Term A-Z"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31106
+#: assets/scripts/blocks.js:31132
 msgid "List all visible terms in a taxonomy, grouped by first letter"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31109
+#: assets/scripts/blocks.js:31135
 msgid "Term List"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31111
+#: assets/scripts/blocks.js:31137
 msgid "A-Z Terms"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31113
+#: assets/scripts/blocks.js:31139
 msgid "Countries"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31197
+#: assets/scripts/blocks.js:31223
 msgid "Narrow"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31202
+#: assets/scripts/blocks.js:31228
 msgid "Embed Link"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31204
+#: assets/scripts/blocks.js:31230
 msgid "Includes a link to current post/page in tweet"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31223
+#: assets/scripts/blocks.js:31249
 msgid "(Action Title)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31233
+#: assets/scripts/blocks.js:31259
 msgid "(Place Tweet text proforma here)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31240
+#: assets/scripts/blocks.js:31266
 msgid "A link to the current page/post will now appear below the Tweet content when published/updated."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31287
+#: assets/scripts/blocks.js:31313
 msgid "Tweet Action"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31289
+#: assets/scripts/blocks.js:31315
 msgid "Add a Tweet Action block"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31309
+#: assets/scripts/blocks.js:31335
 msgid "Alternative"
 msgstr ""
 
-#: assets/scripts/blocks.js:31414
+#: assets/scripts/blocks.js:31440
 msgid "Archive Filters"
 msgstr ""
 
-#: assets/scripts/blocks.js:31469
+#: assets/scripts/blocks.js:31495
 msgid "Query Count"
 msgstr ""
 
-#: assets/scripts/blocks.js:31470
+#: assets/scripts/blocks.js:31496
 msgid "Display the query results count"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31823
+#: assets/scripts/blocks.js:31849
 msgid "Image Settings"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31826
+#: assets/scripts/blocks.js:31852
 msgid "Focal Point"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31834
+#: assets/scripts/blocks.js:31860
 msgid "Opacity"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31848
+#: assets/scripts/blocks.js:31874
 msgid "Colour"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31891
+#: assets/scripts/blocks.js:31917
 msgid "Add Image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32189
+#: assets/scripts/blocks.js:32215
 msgid "Background Media Column"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32191
+#: assets/scripts/blocks.js:32217
 msgid "Column layout for Background Media block"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32280
+#: assets/scripts/blocks.js:32306
 msgid "Background Media"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32282
+#: assets/scripts/blocks.js:32308
 msgid "Two-column layout with background images"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32286
+#: assets/scripts/blocks.js:32312
 msgid "Background"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32290
+#: assets/scripts/blocks.js:32316
 msgid "Text"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32446
+#: assets/scripts/blocks.js:32472
 msgid "Translucent black"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32462
-#: assets/scripts/blocks.js:34108
+#: assets/scripts/blocks.js:32488
+#: assets/scripts/blocks.js:34134
 msgid "Normal"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32489
+#: assets/scripts/blocks.js:32515
 msgid "Embed URL"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32491
+#: assets/scripts/blocks.js:32517
 msgid "Setting this will override the call to action link and will now open a modal with the embed."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32543
+#: assets/scripts/blocks.js:32569
 msgid "Banner Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32552
+#: assets/scripts/blocks.js:32578
 msgid "Banner Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32715
-#: assets/scripts/blocks.js:35569
+#: assets/scripts/blocks.js:32741
+#: assets/scripts/blocks.js:35595
 msgid "Primary (Yellow)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32902
+#: assets/scripts/blocks.js:32928
 msgid "(Pre-heading)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33196
-#: assets/scripts/blocks.js:33200
+#: assets/scripts/blocks.js:33222
+#: assets/scripts/blocks.js:33226
 msgid "Call To Action"
 msgstr ""
 
-#: assets/scripts/blocks.js:33276
+#: assets/scripts/blocks.js:33302
 msgid "Settings"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33280
+#: assets/scripts/blocks.js:33306
 msgid "Collapsed by default"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33282
+#: assets/scripts/blocks.js:33308
 msgid "Whether the block contents should be hidden by default"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33291
+#: assets/scripts/blocks.js:33317
 msgid "Label this block with an HTML anchor (#example)."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33303
+#: assets/scripts/blocks.js:33329
 msgid "Find out more"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33331
+#: assets/scripts/blocks.js:33357
 msgid "Collapsable"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33336
+#: assets/scripts/blocks.js:33362
 msgid "collapsible"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33338
+#: assets/scripts/blocks.js:33364
 msgid "accordion"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33340
+#: assets/scripts/blocks.js:33366
 msgid "drawer"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33342
+#: assets/scripts/blocks.js:33368
 msgid "open"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33344
+#: assets/scripts/blocks.js:33370
 msgid "closed"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33390
+#: assets/scripts/blocks.js:33416
 msgid "50% | 50%"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33397
+#: assets/scripts/blocks.js:33423
 msgid "66.6% | 33.3%"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33404
+#: assets/scripts/blocks.js:33430
 msgid "33.3% | 66.6%"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33411
+#: assets/scripts/blocks.js:33437
 msgid "33.3% | 33.3% | 33.3%"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33418
+#: assets/scripts/blocks.js:33444
 msgid "50% | 25% | 25%"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33425
+#: assets/scripts/blocks.js:33451
 msgid "25% | 50% | 25%"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33432
+#: assets/scripts/blocks.js:33458
 msgid "25% | 25% | 50%"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33439
+#: assets/scripts/blocks.js:33465
 msgid "25% | 25% | 25% | 25%"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33476
+#: assets/scripts/blocks.js:33502
 msgid "Layout Style"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33513
-#: assets/scripts/blocks.js:33523
+#: assets/scripts/blocks.js:33539
+#: assets/scripts/blocks.js:33549
 msgid "Columns"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33521
+#: assets/scripts/blocks.js:33547
 msgid "Row"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33654
+#: assets/scripts/blocks.js:33680
 msgid "Scroll To Link"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33878
+#: assets/scripts/blocks.js:33904
 msgid "Custom Card"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33880
+#: assets/scripts/blocks.js:33906
 msgid "Custom Card block"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34182
+#: assets/scripts/blocks.js:34208
 msgid "(Header Title)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34192
+#: assets/scripts/blocks.js:34218
 msgid "(Header Content)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34203
+#: assets/scripts/blocks.js:34229
 msgid "(Call to action)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34474
+#: assets/scripts/blocks.js:34500
 msgid "(Link Text)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34484
+#: assets/scripts/blocks.js:34510
 msgid "Remove Button"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34521
+#: assets/scripts/blocks.js:34547
 msgid "Image Style"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34526
+#: assets/scripts/blocks.js:34552
 msgid "Fixed Height (600px)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34528
+#: assets/scripts/blocks.js:34554
 msgid "Actual Height"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34535
+#: assets/scripts/blocks.js:34561
 msgid "Only has an effect on images smaller than their container"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34608
+#: assets/scripts/blocks.js:34634
 msgid "(Title)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34626
+#: assets/scripts/blocks.js:34652
 msgid "Add Button"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34646
-#: assets/scripts/blocks.js:34652
+#: assets/scripts/blocks.js:34672
+#: assets/scripts/blocks.js:34678
 msgid "Choose Video"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34680
+#: assets/scripts/blocks.js:34706
 msgid "Remove Video"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34755
+#: assets/scripts/blocks.js:34781
 msgid "Display Overlay"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34761
+#: assets/scripts/blocks.js:34787
 msgid "Enable Parallax"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34784
+#: assets/scripts/blocks.js:34810
 msgid "(Insert Caption, if required)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35175
+#: assets/scripts/blocks.js:35201
 msgid "Image Block"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35177
+#: assets/scripts/blocks.js:35203
 msgid "Add a flexible image block with optional overlay"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35226
+#: assets/scripts/blocks.js:35252
 msgid "Arrow"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35231
+#: assets/scripts/blocks.js:35257
 msgid "Ampersand"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35278
+#: assets/scripts/blocks.js:35304
 msgid "Orientation"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35283
+#: assets/scripts/blocks.js:35309
 msgid "Horizontal"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35285
+#: assets/scripts/blocks.js:35311
 msgid "Vertical"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35304
+#: assets/scripts/blocks.js:35330
 msgid "Hide Lines"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35312
+#: assets/scripts/blocks.js:35338
 msgid "Divider Style"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35403
+#: assets/scripts/blocks.js:35429
 msgid "Pick an image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35422
+#: assets/scripts/blocks.js:35448
 msgid "(Insert Fact)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35490
+#: assets/scripts/blocks.js:35516
 msgid "Use Image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35492
+#: assets/scripts/blocks.js:35518
 msgid "Use Text"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35494
+#: assets/scripts/blocks.js:35520
 msgid "Plain"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35500
+#: assets/scripts/blocks.js:35526
 msgid "Icon Size"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35505
+#: assets/scripts/blocks.js:35531
 msgid "Extra Small"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35518
+#: assets/scripts/blocks.js:35544
 msgid "Icon Position"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35523
+#: assets/scripts/blocks.js:35549
 msgid "Middle"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35532
+#: assets/scripts/blocks.js:35558
 msgid "Hide Image Credit Display"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35541
+#: assets/scripts/blocks.js:35567
 msgid "Has Underline"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35547
+#: assets/scripts/blocks.js:35573
 msgid "Font Size"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35559
+#: assets/scripts/blocks.js:35585
 msgid "Display Action"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35661
+#: assets/scripts/blocks.js:35687
 msgid "(Insert Body Text)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35673
+#: assets/scripts/blocks.js:35699
 msgid "(Insert Link Text)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35975
+#: assets/scripts/blocks.js:36001
 msgid "Links with Icons"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35977
+#: assets/scripts/blocks.js:36003
 msgid "Add a links-with-icons block"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:36289
+#: assets/scripts/blocks.js:36315
 msgid "Links with Icons Group"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:36291
+#: assets/scripts/blocks.js:36317
 msgid "Add a repeatable links-with-icons block"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:36330
+#: assets/scripts/blocks.js:36356
 msgid "Square"
 msgstr ""
 

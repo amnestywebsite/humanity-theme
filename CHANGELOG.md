@@ -1,3 +1,20 @@
+### v2.0.9
+Fixes:
+- Avoid PHP Warnings when expected menus aren't defined
+
+Improvements:
+- Remove width constraint from Custom Card patterns
+- Specify image aspect ratio in Custom Card patterns
+
+Chores:
+- Bump cross-spawn from 7.0.3 to 7.0.6
+
+Localisation:
+- Update an AR translation string
+- Update some ES translation strings
+- Update some RU translation strings
+- Refresh POT, PO, and MO files
+
 ### v2.0.8
 Fixes:
 - Always output the post title in the single template

@@ -30,8 +30,8 @@ msgstr "סרגל צד"
 #. translators: [front] Donate
 #. translators: [admin]
 #: woocommerce/order/order-details.php:52
-#: assets/scripts/blocks.js:12857
-#: assets/scripts/blocks.js:35269
+#: assets/scripts/blocks.js:12844
+#: assets/scripts/blocks.js:35295
 msgid "Quantity"
 msgstr "כמות"
 
@@ -52,14 +52,14 @@ msgstr "מחיר"
 #: partials/pagination.php:35
 #: partials/search/pagination.php:18
 #: partials/search/pagination.php:45
-#: assets/scripts/blocks.js:29534
-#: assets/scripts/blocks.js:30085
-#: assets/scripts/blocks.js:30175
-#: assets/scripts/blocks.js:30289
-#: assets/scripts/blocks.js:30400
-#: assets/scripts/blocks.js:30513
-#: assets/scripts/blocks.js:30558
-#: assets/scripts/blocks.js:30603
+#: assets/scripts/blocks.js:29560
+#: assets/scripts/blocks.js:30111
+#: assets/scripts/blocks.js:30201
+#: assets/scripts/blocks.js:30315
+#: assets/scripts/blocks.js:30426
+#: assets/scripts/blocks.js:30539
+#: assets/scripts/blocks.js:30584
+#: assets/scripts/blocks.js:30629
 msgid "Previous"
 msgstr "הקודם"
 
@@ -75,14 +75,14 @@ msgstr "הקודם"
 #: partials/pagination.php:50
 #: partials/search/pagination.php:20
 #: partials/search/pagination.php:60
-#: assets/scripts/blocks.js:29531
-#: assets/scripts/blocks.js:30082
-#: assets/scripts/blocks.js:30172
-#: assets/scripts/blocks.js:30286
-#: assets/scripts/blocks.js:30397
-#: assets/scripts/blocks.js:30510
-#: assets/scripts/blocks.js:30555
-#: assets/scripts/blocks.js:30600
+#: assets/scripts/blocks.js:29557
+#: assets/scripts/blocks.js:30108
+#: assets/scripts/blocks.js:30198
+#: assets/scripts/blocks.js:30312
+#: assets/scripts/blocks.js:30423
+#: assets/scripts/blocks.js:30536
+#: assets/scripts/blocks.js:30581
+#: assets/scripts/blocks.js:30626
 msgid "Next"
 msgstr "הבא"
 
@@ -184,15 +184,15 @@ msgstr "עבור אל דף הבית"
 #. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
 #. translators: [admin]
 #: includes/blocks/term-list/render.php:56
-#: assets/scripts/blocks.js:31066
-#: assets/scripts/blocks.js:31122
+#: assets/scripts/blocks.js:31092
+#: assets/scripts/blocks.js:31148
 msgid "A-Z of Countries and Regions"
 msgstr "A-Z של מדינות ואזורים"
 
 #. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
 #. translators: [admin]
 #: includes/blocks/regions/render.php:20
-#: assets/scripts/blocks.js:28098
+#: assets/scripts/blocks.js:28124
 msgid "Explore by Region"
 msgstr "גלה לפי אזור"
 
@@ -215,8 +215,8 @@ msgstr "ליבת אמנסטי"
 #: includes/blocks/petition-list/render.php:54
 #: assets/scripts/blocks.js:10391
 #: assets/scripts/blocks.js:10431
-#: assets/scripts/blocks.js:12463
-#: assets/scripts/blocks.js:13650
+#: assets/scripts/blocks.js:12450
+#: assets/scripts/blocks.js:13645
 msgid "Act Now"
 msgstr "פעלו כעת"
 
@@ -239,36 +239,36 @@ msgstr "לוגו טוויטר"
 #. translators: [admin]
 #: includes/blocks/tweet-action/render.php:56
 #: includes/blocks/tweet-action/render.php:57
-#: assets/scripts/blocks.js:31251
-#: assets/scripts/blocks.js:31253
-#: assets/scripts/blocks.js:31344
-#: assets/scripts/blocks.js:31346
-#: assets/scripts/blocks.js:31386
-#: assets/scripts/blocks.js:31388
+#: assets/scripts/blocks.js:31277
+#: assets/scripts/blocks.js:31279
+#: assets/scripts/blocks.js:31370
+#: assets/scripts/blocks.js:31372
+#: assets/scripts/blocks.js:31412
+#: assets/scripts/blocks.js:31414
 msgid "Send this Tweet"
 msgstr "שלח ציוץ זה"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery
 #. translators: [admin]
 #: includes/blocks/slider/views/slide.php:20
-#: assets/scripts/blocks.js:29815
-#: assets/scripts/blocks.js:29885
-#: assets/scripts/blocks.js:29925
-#: assets/scripts/blocks.js:30006
+#: assets/scripts/blocks.js:29841
+#: assets/scripts/blocks.js:29911
+#: assets/scripts/blocks.js:29951
+#: assets/scripts/blocks.js:30032
 msgid "Tap here to return to gallery"
 msgstr "הקש כאן כדי לחזור לגלריה"
 
 #. translators: [front]
 #. translators: [admin]
 #: includes/blocks/slider/views/slide.php:41
-#: assets/scripts/blocks.js:29831
-#: assets/scripts/blocks.js:29901
-#: assets/scripts/blocks.js:29941
-#: assets/scripts/blocks.js:30020
-#: assets/scripts/blocks.js:30161
-#: assets/scripts/blocks.js:30274
-#: assets/scripts/blocks.js:30385
-#: assets/scripts/blocks.js:30497
+#: assets/scripts/blocks.js:29857
+#: assets/scripts/blocks.js:29927
+#: assets/scripts/blocks.js:29967
+#: assets/scripts/blocks.js:30046
+#: assets/scripts/blocks.js:30187
+#: assets/scripts/blocks.js:30300
+#: assets/scripts/blocks.js:30411
+#: assets/scripts/blocks.js:30523
 msgid "Toggle Content"
 msgstr "תוכן החלפה (toggle)"
 
@@ -315,7 +315,7 @@ msgstr ""
 #. translators: [front]
 #. translators: [admin]
 #: includes/blocks/post-list/views/list-item-author.php:9
-#: assets/scripts/blocks.js:27158
+#: assets/scripts/blocks.js:27184
 msgid "Author"
 msgstr "מחבר"
 
@@ -355,9 +355,9 @@ msgstr "הכי רלוונטי"
 #: includes/features/related-content/class-related-content.php:121
 #: includes/features/related-content/class-related-content.php:149
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:150
-#: assets/scripts/blocks.js:28237
-#: assets/scripts/blocks.js:28250
-#: assets/scripts/blocks.js:28401
+#: assets/scripts/blocks.js:28263
+#: assets/scripts/blocks.js:28276
+#: assets/scripts/blocks.js:28427
 msgid "Related Content"
 msgstr "פריטים קשורים"
 
@@ -368,7 +368,7 @@ msgstr "בחירת תמונה ראשית"
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:431
-#: assets/scripts/blocks.js:28201
+#: assets/scripts/blocks.js:28227
 msgid "Country"
 msgstr "מדינה"
 
@@ -477,8 +477,23 @@ msgctxt "search results title suffix for year published"
 msgid "in the year %s"
 msgstr "בשנה %s"
 
-#: includes/block-patterns/pattern-category.php:15
-msgid "Actions"
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
+#. translators: Singular/Plural number of posts.
+#: includes/features/search/class-search-filters.php:189
+#: includes/full-site-editing/blocks/query-count/render.php:18
+#: includes/full-site-editing/blocks/search-header/views/view.php:9
+#: partials/archive/header.php:17
+#: partials/search/header.php:15
+#, php-format
+msgid "%s result"
+msgid_plural "%s results"
+msgstr[0] "‫%s תוצאות"
+msgstr[1] "‫%s תוצאות"
+msgstr[2] "‫%s תוצאות"
+msgstr[3] "‫%s תוצאות"
+
+#: includes/features/search/permalink.php:39
+msgid "The ID of the page that should display the search interface"
 msgstr ""
 
 #. translators: [admin]
@@ -866,9 +881,9 @@ msgstr "ספרות רומיות רישיות."
 #. translators: [admin]
 #: includes/admin/theme-options/header.php:19
 #: assets/scripts/blocks.js:1040
-#: assets/scripts/blocks.js:12349
-#: assets/scripts/blocks.js:34237
-#: assets/scripts/blocks.js:34242
+#: assets/scripts/blocks.js:12336
+#: assets/scripts/blocks.js:34263
+#: assets/scripts/blocks.js:34268
 msgid "Header"
 msgstr "כותרת"
 
@@ -1329,7 +1344,7 @@ msgstr "לא נמצאו גרסאות מוקפצות באשפה"
 #: includes/post-types/sidebar.php:52
 #: includes/taxonomies/class-taxonomy-locations.php:238
 #: assets/scripts/blocks.js:12153
-#: assets/scripts/blocks.js:34152
+#: assets/scripts/blocks.js:34178
 msgid "Featured Image"
 msgstr "תמונה ראשית"
 
@@ -1575,22 +1590,22 @@ msgid "Expand %s list"
 msgstr ""
 
 #. translators: [admin]
-#: includes/theme-setup/navigation.php:183
+#: includes/theme-setup/navigation.php:187
 msgid "Main Menu"
 msgstr "תפריט ראשי"
 
 #. translators: [admin]
-#: includes/theme-setup/navigation.php:185
+#: includes/theme-setup/navigation.php:189
 msgid "Site Selector"
 msgstr "בורר אתרים"
 
 #. translators: [admin]
-#: includes/theme-setup/navigation.php:187
+#: includes/theme-setup/navigation.php:191
 msgid "Footer Main"
 msgstr "כותרת תחתונה ראשית"
 
 #. translators: [admin]
-#: includes/theme-setup/navigation.php:189
+#: includes/theme-setup/navigation.php:193
 msgid "Footer Legal"
 msgstr "כותרת תחתונה משפטית"
 
@@ -2077,14 +2092,14 @@ msgstr "עקבו אחרינו באינסטגרם"
 msgid "Follow us on Telegram"
 msgstr "עקבו אחרינו מִברָק"
 
-#: patterns/author-loop.php:17
-msgid "More from this author"
-msgstr "עוד ממחבר זה"
-
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ Accessibility text
 #: partials/article-share.php:12
 msgid "Social sharing options"
 msgstr "אפשרויות שיתוף חברתי"
+
+#: patterns/author-loop.php:17
+msgid "More from this author"
+msgstr "עוד ממחבר זה"
 
 #: partials/post/post-content.php:16
 #: partials/post/post-search.php:27
@@ -2264,13 +2279,6 @@ msgid "Post updated timestamp"
 msgstr "רשום חותמת זמן מעודכנת"
 
 #. translators: [front]
-#: patterns/attachment-updated-date.php:33
-#: patterns/post-updated-date.php:27
-msgctxt "prefix for post updated date"
-msgid "Updated:"
-msgstr "עודכן:"
-
-#. translators: [front]
 #: patterns/post-byline-custom.php:38
 msgctxt "author attribution (as in \"written by\")"
 msgid "By"
@@ -2367,6 +2375,2267 @@ msgstr ""
 #. Author URI of the theme
 #: style.css
 msgid "https://www.amnesty.org"
+msgstr ""
+
+#. translators: [front] %s: the title of the article
+#: includes/blocks/post-list/views/grid-item.php:10
+#: includes/blocks/post-list/views/list-item.php:4
+#: partials/post/post-full.php:16
+#: partials/post/post-none.php:10
+#: partials/post/post-search.php:31
+msgid "Article: %s"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title.
+#: includes/features/search/class-search-filters.php:149
+msgctxt "search results title"
+msgid "Search results"
+msgstr "תוצאות חיפוש"
+
+#: includes/rest-api/users.php:82
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subcategories.php:33
+#: partials/archive/subcategories.php:61
+msgid "Second level category"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subsubcategories.php:31
+#: partials/archive/subsubcategories.php:54
+msgid "Third level category"
+msgstr ""
+
+#. translators: [front]
+#: patterns/attachment-updated-date.php:33
+#: patterns/post-updated-date.php:27
+msgctxt "prefix for post updated date"
+msgid "Updated:"
+msgstr "עודכן:"
+
+#. translators: [admin]
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:1
+#: assets/scripts/blocks.js:11127
+#: assets/scripts/bundle.js:1995
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "יום %d"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:1
+#: assets/scripts/bundle.js:2008
+msgctxt "time format(prefix translated separately) i.e. \"x, H:i:s\""
+msgid "%1$s, %2$s:%3$s:%4$s"
+msgstr "%1$s, %2$s:%3$s:%4$s"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:1
+#: assets/scripts/bundle.js:2022
+msgctxt "time format, H:i:s"
+msgid "%1$s:%2$s:%3$s"
+msgstr "%1$s:%2$s:%3$s"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11983
+#: assets/scripts/blocks.js:28653
+msgid "Hide Image Caption"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11985
+#: assets/scripts/blocks.js:28659
+#, fuzzy
+msgid "Hide Image Credit"
+msgstr "הסתר תצוגת אשראי תמונה"
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:43
+#: includes/core-blocks/social-icons/styles.php:18
+#: assets/scripts/blocks.js:141
+#: assets/scripts/blocks.js:189
+msgctxt "block style"
+msgid "Dark"
+msgstr "כהה"
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:61
+#: assets/scripts/blocks.js:147
+msgctxt "block style"
+msgid "Back Link"
+msgstr "קישור אחורי"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:27
+#: assets/scripts/blocks.js:195
+msgctxt "block style"
+msgid "Dark Circle"
+msgstr "עיגול כהה"
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:52
+#: includes/core-blocks/social-icons/styles.php:36
+#: assets/scripts/blocks.js:201
+#: assets/scripts/blocks.js:245
+msgctxt "block style"
+msgid "Light"
+msgstr "בהיר"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:46
+#: assets/scripts/blocks.js:207
+msgctxt "block style"
+msgid "Light Circle"
+msgstr "מעגל אור"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:55
+msgctxt "block style"
+msgid "Yellow"
+msgstr "צהוב"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:63
+msgctxt "block style"
+msgid "Yellow Circle"
+msgstr "עיגול צהוב"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:72
+#: assets/scripts/blocks.js:213
+msgctxt "block style"
+msgid "Logos Only Dark"
+msgstr "סמלי לוגו כהים בלבד"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:81
+#: assets/scripts/blocks.js:219
+msgctxt "block style"
+msgid "Logos Only Light"
+msgstr "לוגו בלבד אור"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:90
+msgctxt "block style"
+msgid "Logos Only Yellow"
+msgstr "סמלים צהובים בלבד"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:252
+msgctxt "block style"
+msgid "Grey"
+msgstr "אפור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:261
+msgctxt "block style"
+msgid "Responsive"
+msgstr "רספונסיבי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:273
+msgid "Row Column"
+msgstr "עמודת שורה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:534
+#: assets/scripts/blocks.js:12869
+#: assets/scripts/blocks.js:14096
+#: assets/scripts/blocks.js:35629
+#: assets/scripts/blocks.js:35677
+msgid "(Insert Title)"
+msgstr "(הוסף כותרת)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:543
+msgid "(Insert Content)"
+msgstr "(הוספת תוכן)"
+
+#: assets/scripts/blocks.js:989
+msgid "Hide featured image"
+msgstr "הסתר תמונה מוצגת"
+
+#: assets/scripts/blocks.js:990
+msgid "Hide the featured image."
+msgstr ""
+
+#: assets/scripts/blocks.js:1002
+msgid "Hide featured image caption"
+msgstr ""
+
+#: assets/scripts/blocks.js:1003
+msgid "Hide the image caption for the featured image"
+msgstr ""
+
+#: assets/scripts/blocks.js:1042
+msgid "Use transparent header"
+msgstr ""
+
+#: assets/scripts/blocks.js:1043
+msgid "Enable transparent mode on the main header. Requires the use of a header block with a featured image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1136
+msgid "Enable public byline"
+msgstr "הפוך כותרת המשנה הציבורית לזמינה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1139
+msgid "Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated"
+msgstr "התוכן לא יתויחס, ופרטי המחבר יישארו פרטיים, אלא אם כותרת המשנה תהיה זמינה ומאוכלסת"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1152
+msgid "Use author profile for byline"
+msgstr "השתמש בפרופיל מחבר עבור כותרת המשנה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1163
+msgid "Byline Name"
+msgstr "שם כותרת המשנה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1165
+msgid "The individual, group, or entity to be named as the author"
+msgstr "האדם, הקבוצה או הישות שיש לנקוב בשמם כמחבר"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1173
+msgid "Byline Context"
+msgstr "הקשר כותרת המשנה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1175
+msgid "Additional context for the byline; e.g. job title, short summary, location, etc"
+msgstr "הקשר נוסף עבור כותרת המשנה; למשל תפקיד, סיכום קצר, מיקום וכו'"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1210
+msgid "Disable Sharing"
+msgstr "אל תאפשר שיתוף"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1212
+msgid "Disable Share Buttons for this post"
+msgstr "הפוך לחצני שיתוף ללא זמינים עבור פוסט זה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1249
+msgid "Show published date"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1250
+msgid "Show the post published date"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1276
+msgid "Show updated date"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1277
+msgid "Show the \"updated at\" date"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1301
+msgid "Metadata"
+msgstr "מטא-דאטה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1327
+msgid "Disable Related Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:1329
+msgid "Removes the Related Content section for this post"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9524
+#: assets/scripts/blocks.js:13555
+#: assets/scripts/blocks.js:26411
+#: assets/scripts/blocks.js:26461
+#: assets/scripts/blocks.js:26828
+msgid "Loading"
+msgstr "טוען"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9526
+msgid "Select a sidebar"
+msgstr "בחירת סרגל צידי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9561
+msgid "Maximize Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9564
+msgid "Remove the sidebar and the sidebar area on posts and pages. Generally used to create pages with a full-width page design."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9581
+msgid "Disable Sidebar"
+msgstr "הפוך את הסרגל הצידי ללא זמין"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9584
+msgid "Remove the sidebar, but not the sidebar area; this keeps an empty space to the side of the content. Generally used for text heavy pages."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9638
+#: assets/scripts/blocks.js:25353
+msgid "Select Term"
+msgstr "בחר מונח"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9658
+msgid "Feature on content type:"
+msgstr "תכונה בסוג תוכן:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9694
+msgid "Page Options"
+msgstr "אפשרויות דף"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9716
+msgid "Post Options"
+msgstr "אפשרויות פוסט"
+
+#: assets/scripts/blocks.js:9734
+msgid "Appearance"
+msgstr "מראה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10043
+msgid "Pop-in Settings"
+msgstr "הגדרות מוקפצות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10047
+msgid "Render Title"
+msgstr "רינדור כותרת"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10049
+msgid "Should the title be rendered when showing this pop-in to the user?"
+msgstr "האם יש לעבד את הכותרת בעת הצגת פופ-אין זה למשתמש?"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10150
+#: assets/scripts/blocks.js:10582
+#: assets/scripts/blocks.js:31216
+#: assets/scripts/blocks.js:32485
+#: assets/scripts/blocks.js:33668
+#: assets/scripts/blocks.js:34130
+msgid "Size"
+msgstr "גודל"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10155
+#: assets/scripts/blocks.js:33673
+msgid "Standard"
+msgstr "רגיל"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10157
+#: assets/scripts/blocks.js:33675
+msgid "Wide"
+msgstr "רחב"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33680
+msgid "Scroll To Link"
+msgstr "גלול לקישור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10193
+#: assets/scripts/blocks.js:33692
+msgid "(Label)"
+msgstr "(תווית)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10169
+#: assets/scripts/blocks.js:11941
+#: assets/scripts/blocks.js:14047
+#: assets/scripts/blocks.js:14114
+#: assets/scripts/blocks.js:29048
+#: assets/scripts/blocks.js:31924
+#: assets/scripts/blocks.js:32541
+#: assets/scripts/blocks.js:33702
+#: assets/scripts/blocks.js:34592
+msgid "Remove Image"
+msgstr "להסיר תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10201
+#: assets/scripts/blocks.js:33545
+#: assets/scripts/blocks.js:33731
+msgid "Content"
+msgstr "תוכן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10209
+#: assets/scripts/blocks.js:33741
+msgid "Button Text"
+msgstr "טקסט כפתור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33904
+msgid "Custom Card"
+msgstr "כרטיס מותאם אישית"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33906
+msgid "Custom Card block"
+msgstr "בלוק כרטיס מותאם אישית"
+
+#. translators: [admin] text alignment. for RTL languages, localise as 'Right'
+#. translators: [admin]
+#: assets/scripts/blocks.js:10523
+#: assets/scripts/blocks.js:28684
+#: assets/scripts/blocks.js:29216
+#: assets/scripts/blocks.js:32450
+#: assets/scripts/blocks.js:34093
+#: assets/scripts/blocks.js:34568
+msgid "Left"
+msgstr "שמאל"
+
+#. translators: [admin] text alignment
+#. translators: [admin]
+#. translators: [admin] text alignment/.
+#: assets/scripts/blocks.js:10525
+#: assets/scripts/blocks.js:31221
+#: assets/scripts/blocks.js:31333
+#: assets/scripts/blocks.js:34566
+msgid "Default"
+msgstr "ברירת מחדל"
+
+#. translators: [admin] text alignment. for RTL languages, localise as 'Left'
+#. translators: [admin]
+#: assets/scripts/blocks.js:10530
+#: assets/scripts/blocks.js:28674
+#: assets/scripts/blocks.js:29220
+#: assets/scripts/blocks.js:32460
+#: assets/scripts/blocks.js:34103
+#: assets/scripts/blocks.js:34572
+msgid "Right"
+msgstr "ימין"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10575
+#: assets/scripts/blocks.js:32446
+#: assets/scripts/blocks.js:34089
+#: assets/scripts/blocks.js:34559
+msgid "Alignment"
+msgstr "יישור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10587
+#: assets/scripts/blocks.js:32490
+#: assets/scripts/blocks.js:35533
+msgid "Small"
+msgstr "קטן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10589
+#: assets/scripts/blocks.js:35535
+msgid "Medium"
+msgstr "בינוני"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10591
+#: assets/scripts/blocks.js:34139
+#: assets/scripts/blocks.js:35537
+msgid "Large"
+msgstr "גדול"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10596
+#: assets/scripts/blocks.js:28583
+msgid "Text Colour"
+msgstr "צבע הטקסט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10601
+#: assets/scripts/blocks.js:12216
+#: assets/scripts/blocks.js:28587
+#: assets/scripts/blocks.js:32478
+#: assets/scripts/blocks.js:34121
+msgid "Black"
+msgstr "שָׁחוֹר"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10603
+#: assets/scripts/blocks.js:12859
+#: assets/scripts/blocks.js:13226
+#: assets/scripts/blocks.js:28059
+#: assets/scripts/blocks.js:28712
+#: assets/scripts/blocks.js:31885
+#: assets/scripts/blocks.js:32910
+#: assets/scripts/blocks.js:35324
+msgid "Grey"
+msgstr "אפור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10605
+#: assets/scripts/blocks.js:12217
+#: assets/scripts/blocks.js:13224
+#: assets/scripts/blocks.js:28057
+#: assets/scripts/blocks.js:28592
+#: assets/scripts/blocks.js:28707
+#: assets/scripts/blocks.js:31880
+#: assets/scripts/blocks.js:32476
+#: assets/scripts/blocks.js:34116
+msgid "White"
+msgstr "לבן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10611
+msgid "Capitalise"
+msgstr "רישיות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10613
+msgid "Capitalise the content."
+msgstr "רישי את התוכן."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10620
+msgid "Line"
+msgstr "שורה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10622
+msgid "Toggle display of line embellishment."
+msgstr "החלף מצב תצוגה של קישוט קו."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10634
+msgid "(Insert Quote Text)"
+msgstr "(הוספת טקסט הצעת מחיר)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10644
+msgid "(Insert Citation)"
+msgstr "(הוסף ציטוט)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10923
+msgid "Blockquote"
+msgstr "תיבת ציטוט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10925
+msgid "Add a blockquote block"
+msgstr "הוספת בלוק ציטוט בלוק"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12212
+#: assets/scripts/blocks.js:12420
+#: assets/scripts/blocks.js:12663
+#: assets/scripts/blocks.js:13361
+#: assets/scripts/blocks.js:27213
+#: assets/scripts/blocks.js:28574
+#: assets/scripts/blocks.js:29404
+#: assets/scripts/blocks.js:32443
+#: assets/scripts/blocks.js:32734
+#: assets/scripts/blocks.js:32898
+#: assets/scripts/blocks.js:33499
+#: assets/scripts/blocks.js:34086
+msgid "Options"
+msgstr "אפשרויות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28577
+msgid "Section Name"
+msgstr "שם מקטע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28600
+msgid "Background Options"
+msgstr "אפשרויות רקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28612
+msgid "Edit image"
+msgstr "ערוך תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28622
+msgid "Remove image"
+msgstr "הסר את התמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28627
+msgid "Select background image"
+msgstr "בחר תמונת רקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28637
+msgid "Min image height as viewport percentage"
+msgstr "דקה גובה תמונה כאחוז נמל תצוגה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28647
+msgid "Toggle Background Overlay"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28665
+msgid "Background Image Origin"
+msgstr "מקור תמונת רקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28669
+#: assets/scripts/blocks.js:35551
+msgid "Top"
+msgstr "עליון"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28679
+msgid "Bottom"
+msgstr "תחתון"
+
+#. translators: [admin]
+#. translators: [admin] text alignment.
+#: assets/scripts/blocks.js:28689
+#: assets/scripts/blocks.js:29218
+#: assets/scripts/blocks.js:32455
+#: assets/scripts/blocks.js:34098
+#: assets/scripts/blocks.js:34570
+msgid "Centre"
+msgstr "מרכז"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28694
+msgid "Initial"
+msgstr "התחלתי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12214
+#: assets/scripts/blocks.js:12852
+#: assets/scripts/blocks.js:13391
+#: assets/scripts/blocks.js:28054
+#: assets/scripts/blocks.js:28703
+#: assets/scripts/blocks.js:31871
+#: assets/scripts/blocks.js:32469
+#: assets/scripts/blocks.js:34112
+#: assets/scripts/blocks.js:35317
+msgid "Background Colour"
+msgstr "צבע רקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28979
+#: assets/scripts/blocks.js:28983
+msgid "Section"
+msgstr "פרק"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33416
+msgid "50% | 50%"
+msgstr "50% | 50%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33423
+msgid "66.6% | 33.3%"
+msgstr "66.6% | 33.3%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33430
+msgid "33.3% | 66.6%"
+msgstr "33.3% | 66.6%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33437
+msgid "33.3% | 33.3% | 33.3%"
+msgstr "33.3% | 33.3% | 33.3%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33444
+msgid "50% | 25% | 25%"
+msgstr "50% | 25% | 25%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33451
+msgid "25% | 50% | 25%"
+msgstr "25% | 50% | 25%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33458
+msgid "25% | 25% | 50%"
+msgstr "25% | 25% | 50%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33465
+msgid "25% | 25% | 25% | 25%"
+msgstr "25% | 25% | 25% | 25%"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33502
+msgid "Layout Style"
+msgstr "סגנון הפריסה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33539
+#: assets/scripts/blocks.js:33549
+msgid "Columns"
+msgstr "עמודות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33547
+msgid "Row"
+msgstr "שורה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12018
+msgid "Set featured video"
+msgstr "הגדרת וידאו מוצג"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12020
+msgid "Remove featured video"
+msgstr "הסר וידאו מוצג"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12091
+#: assets/scripts/blocks.js:34690
+#: assets/scripts/blocks.js:34700
+msgid "Replace Video"
+msgstr "החלף ווידאו"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32488
+#: assets/scripts/blocks.js:34134
+msgid "Normal"
+msgstr "רגיל"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12223
+#: assets/scripts/blocks.js:32497
+#: assets/scripts/blocks.js:34149
+#: assets/scripts/blocks.js:34758
+msgid "Background Type"
+msgstr "סוג רקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12225
+#: assets/scripts/blocks.js:32500
+#: assets/scripts/blocks.js:34153
+#: assets/scripts/blocks.js:34762
+msgid "Image"
+msgstr "תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12226
+#: assets/scripts/blocks.js:32502
+#: assets/scripts/blocks.js:34158
+#: assets/scripts/blocks.js:34767
+msgid "Video"
+msgstr "וידאו"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12149
+#: assets/scripts/blocks.js:34176
+msgid "Background Image"
+msgstr "תמונת רקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12242
+#: assets/scripts/blocks.js:32526
+#: assets/scripts/blocks.js:34184
+msgid "Featured Video"
+msgstr "סרטון מוצג"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34208
+msgid "(Header Title)"
+msgstr "(כותרת עליונה)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34218
+msgid "(Header Content)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34229
+msgid "(Call to action)"
+msgstr "(קריאה לפעולה)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32472
+msgid "Translucent black"
+msgstr "שחור שקוף"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12857
+#: assets/scripts/blocks.js:32474
+#: assets/scripts/blocks.js:35247
+#: assets/scripts/blocks.js:35322
+msgid "None"
+msgstr "ללא"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32515
+msgid "Embed URL"
+msgstr "הטמעת כתובת אתר URL"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32517
+msgid "Setting this will override the call to action link and will now open a modal with the embed."
+msgstr "הגדרת פעולה זו תעקוף את קישור הקריאה לפעולה וכעת תפתח מודאלי עם ההטבעה."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12338
+#: assets/scripts/blocks.js:32621
+#: assets/scripts/blocks.js:32625
+msgid "Banner"
+msgstr "באנר"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29499
+#: assets/scripts/blocks.js:32901
+msgid "Background Style"
+msgstr "סגנון רקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11440
+#: assets/scripts/blocks.js:29227
+#: assets/scripts/blocks.js:32751
+#: assets/scripts/blocks.js:32905
+#: assets/scripts/blocks.js:35599
+msgid "Light"
+msgstr "בהיר"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32928
+msgid "(Pre-heading)"
+msgstr "(כותרת מקדימה)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29610
+#: assets/scripts/blocks.js:32937
+msgid "(Heading)"
+msgstr "(כותרת)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29632
+#: assets/scripts/blocks.js:32946
+#: assets/scripts/blocks.js:34641
+msgid "(Content)"
+msgstr "(תוכן)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33222
+#: assets/scripts/blocks.js:33226
+msgid "Call To Action"
+msgstr "קריאה לפעולה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13557
+#: assets/scripts/blocks.js:26413
+msgid "Select a category"
+msgstr "בחר קטגוריה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13834
+#: assets/scripts/blocks.js:14336
+#: assets/scripts/blocks.js:25250
+#: assets/scripts/blocks.js:25304
+#: assets/scripts/blocks.js:25319
+#: assets/scripts/blocks.js:26263
+#: assets/scripts/blocks.js:26669
+#: assets/scripts/blocks.js:26968
+msgid "Loading…"
+msgstr "טוען...  "
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13843
+msgid "Select a category."
+msgstr "בחירת קטגוריה."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13853
+#: assets/scripts/blocks.js:26282
+#: assets/scripts/blocks.js:26688
+#: assets/scripts/blocks.js:26977
+msgid "No Items found"
+msgstr "לא נמצאו פריטים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14084
+msgid "(Insert Tag)"
+msgstr "(הוסף תג)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14141
+msgid "Add another item"
+msgstr "הוספת פריט נוסף"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14341
+#: assets/scripts/blocks.js:25225
+msgid "No Posts."
+msgstr "אין הודעות."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25206
+#, fuzzy
+msgid "Loading Posts…"
+msgstr "טוען עמדות..."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25214
+msgid "Your query yielded no results, please try again."
+msgstr "השאילתה שלך לא הניבה תוצאות, נא נסה שוב."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25252
+msgid "Load More"
+msgstr "טען עוד"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25291
+#, fuzzy
+msgid "Please enter your search query…"
+msgstr "נא הזן את שאילתת החיפוש שלך..."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25299
+msgid "Post Type:"
+msgstr "סוג הודעה:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25314
+#: assets/scripts/blocks.js:27291
+msgid "Taxonomy:"
+msgstr "טקסונומיה:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25326
+msgid "Select Taxonomy"
+msgstr "בחר טקסונומיה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25342
+#: assets/scripts/blocks.js:27298
+msgid "Terms:"
+msgstr "תנאים:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25346
+msgid "No taxonomy selected"
+msgstr "לא נבחר טקסונומיה"
+
+#: assets/scripts/blocks.js:25456
+msgid "No terms selected"
+msgstr "לא נבחר טקסונומיה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26272
+msgid "Select a taxonomy."
+msgstr "בחר טקסונומיה."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26463
+msgid "Select terms"
+msgstr "בחר תנאים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26678
+msgid "Select an author."
+msgstr "לבחור מחבר."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26830
+msgid "Select author"
+msgstr "בחר מחבר"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27151
+msgid "Link List"
+msgstr "רשימת קישורים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27156
+msgid "Grid"
+msgstr "רשת"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27164
+msgid "Category"
+msgstr "קטגוריה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27169
+#: assets/scripts/blocks.js:27483
+msgid "Object Selection"
+msgstr "בחירת אובייקט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27174
+msgid "Custom"
+msgstr "מותאם אישית"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27179
+msgid "Taxonomy"
+msgstr "טקסונומיה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27217
+#: assets/scripts/blocks.js:35511
+msgid "Style"
+msgstr "עיצוב"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27225
+msgid "Type"
+msgstr "סוג"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27232
+msgid "Category:"
+msgstr "קטגוריה:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27244
+#: assets/scripts/blocks.js:27254
+#: assets/scripts/blocks.js:27264
+msgid "Number of posts to show:"
+msgstr "מספר פרסומים להצגה:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27274
+msgid "Use related categories where supported"
+msgstr "שימוש בקטגוריות קשורות שבהן נתמך"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12474
+#: assets/scripts/blocks.js:27283
+msgid "Hide Preview"
+msgstr "הסתר תצוגה מקדימה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27285
+msgid "Show Preview"
+msgstr "להציג תצוגה מקדימה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14021
+#: assets/scripts/blocks.js:27311
+msgid "Author:"
+msgstr "מחבר:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27322
+msgid "Display Post Author"
+msgstr "הצג מחבר פוסט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27328
+msgid "Display Post Date"
+msgstr "הצג תאריך רישום"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27594
+msgid "Post List"
+msgstr "רשימת פוסטים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27599
+msgid "List"
+msgstr "רשימה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27601
+msgid "post-list"
+msgstr "לאחר רשימה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27603
+msgid "Posts"
+msgstr "פוסטים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35252
+msgid "Arrow"
+msgstr "חץ"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35257
+msgid "Ampersand"
+msgstr "אמפרסנד"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35304
+msgid "Orientation"
+msgstr "אוריינטציה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35309
+msgid "Horizontal"
+msgstr "אופקי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35311
+msgid "Vertical"
+msgstr "אנכי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35330
+msgid "Hide Lines"
+msgstr "הסתר קווים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35338
+msgid "Divider Style"
+msgstr "סגנון מפרידון"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35429
+msgid "Pick an image"
+msgstr "בחירת תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35448
+msgid "(Insert Fact)"
+msgstr "(הוסף עובדה)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35516
+msgid "Use Image"
+msgstr "שימוש בתמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35518
+msgid "Use Text"
+msgstr "שימוש בטקסט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35520
+msgid "Plain"
+msgstr "פשוט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35526
+msgid "Icon Size"
+msgstr "גודל אייקון"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35531
+msgid "Extra Small"
+msgstr "קטן מאוד"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35544
+msgid "Icon Position"
+msgstr "מיקום האייקון"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35549
+msgid "Middle"
+msgstr "אמצע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35558
+msgid "Hide Image Credit Display"
+msgstr "הסתר תצוגת אשראי תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35567
+msgid "Has Underline"
+msgstr "יש קו תחתון"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35573
+msgid "Font Size"
+msgstr "גודל פונט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35585
+msgid "Display Action"
+msgstr "פעולת תצוגה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11431
+#: assets/scripts/blocks.js:32737
+#: assets/scripts/blocks.js:35592
+msgid "Button Style"
+msgstr "עיצוב כפתור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32741
+#: assets/scripts/blocks.js:35595
+msgid "Primary (Yellow)"
+msgstr "ראשי (צהוב)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11435
+#: assets/scripts/blocks.js:12540
+#: assets/scripts/blocks.js:29225
+#: assets/scripts/blocks.js:32746
+#: assets/scripts/blocks.js:35597
+msgid "Dark"
+msgstr "כהה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35687
+msgid "(Insert Body Text)"
+msgstr "(הוספת גוף טקסט)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35699
+msgid "(Insert Link Text)"
+msgstr "(הוספת טקסט קישור)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:36001
+msgid "Links with Icons"
+msgstr "קישורים עם סמלים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:36003
+msgid "Add a links-with-icons block"
+msgstr "הוספת בלוק קישורים עם סמלים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:36315
+msgid "Links with Icons Group"
+msgstr "קישורים עם קבוצת סמלים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:36317
+msgid "Add a repeatable links-with-icons block"
+msgstr "הוספת בלוק קישורים עם סמלים שניתן לחזור עליו"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:36356
+msgid "Square"
+msgstr "מרובע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34500
+msgid "(Link Text)"
+msgstr "(קישור טקסט)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34510
+msgid "Remove Button"
+msgstr "לחצן 'הסר'"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34547
+msgid "Image Style"
+msgstr "תמונה בסגנון"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34552
+msgid "Fixed Height (600px)"
+msgstr "גובה קבוע (600px)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34554
+msgid "Actual Height"
+msgstr "גובה בפועל"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34561
+msgid "Only has an effect on images smaller than their container"
+msgstr "יש השפעה רק על תמונות קטנות יותר מהגורם המכיל שלהן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34634
+msgid "(Title)"
+msgstr "(כותרת)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34652
+msgid "Add Button"
+msgstr "להוסיף כפתור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34672
+#: assets/scripts/blocks.js:34678
+msgid "Choose Video"
+msgstr "בחר וידאו"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34706
+msgid "Remove Video"
+msgstr "הסר וידאו"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34781
+msgid "Display Overlay"
+msgstr "הצג שכבת-על"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34787
+msgid "Enable Parallax"
+msgstr "אפשרי היסט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34810
+msgid "(Insert Caption, if required)"
+msgstr "(הוסף כיתוב, במידת הצורך)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35201
+msgid "Image Block"
+msgstr "בלוק תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35203
+msgid "Add a flexible image block with optional overlay"
+msgstr "הוספת בלוק תמונה גמיש עם שכבת-על אופציונלית"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31223
+msgid "Narrow"
+msgstr "Narrow"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31228
+msgid "Embed Link"
+msgstr "הטבעת קישור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31230
+msgid "Includes a link to current post/page in tweet"
+msgstr "כולל קישור לפוסט/דף נוכחי בציוץ"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31249
+msgid "(Action Title)"
+msgstr "(כותרת פעולה)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31259
+msgid "(Place Tweet text proforma here)"
+msgstr "(מקם את טקסט ציוץ פרופורמה כאן)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31266
+msgid "A link to the current page/post will now appear below the Tweet content when published/updated."
+msgstr "קישור לדף/פוסט הנוכחי יופיע כעת מתחת לתוכן הציוץ בעת פרסום/עדכון."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31313
+msgid "Tweet Action"
+msgstr "פעולת ציוץ"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31315
+msgid "Add a Tweet Action block"
+msgstr "הוספת בלוק פעולת ציוץ"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31335
+msgid "Alternative"
+msgstr "אלטרנטיבי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10482
+msgid "Action"
+msgstr "פעולה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10484
+msgid "Add an Action block"
+msgstr "הוספת בלוק פעולה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13235
+#, fuzzy
+msgid "Select a menu…"
+msgstr "בחירת תפריט..."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13313
+msgid "Select a menu in the sidebar"
+msgstr "בחירת תפריט בסרגל הצד"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13316
+#, fuzzy
+msgid "Loading Menu…"
+msgstr "טוען תפריט..."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13363
+#, fuzzy
+msgid "Loading Menus…"
+msgstr "טוען תפריטים..."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13367
+#: assets/scripts/blocks.js:13382
+#: assets/scripts/blocks.js:13426
+#: assets/scripts/blocks.js:13431
+msgid "Menu"
+msgstr "תפריט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13369
+msgid "Which type of menu you would like to add to the page"
+msgstr "איזה סוג תפריט ברצונך להוסיף לדף"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13373
+msgid "Standard Menu"
+msgstr "תפריט רגיל"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13375
+msgid "In-page Menu"
+msgstr "תפריט בעמוד"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13433
+msgid "Navigation"
+msgstr "ניווט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12463
+#: assets/scripts/blocks.js:12585
+msgid "Iframe URL"
+msgstr "Iframe URL"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12465
+#: assets/scripts/blocks.js:12596
+msgid "Enter URL to embed here…"
+msgstr "יש להזין כתובת URL להטמעה כאן..."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11681
+#: assets/scripts/blocks.js:11746
+#: assets/scripts/blocks.js:11830
+#: assets/scripts/blocks.js:11904
+#: assets/scripts/blocks.js:12470
+#: assets/scripts/blocks.js:12599
+msgid "Embed"
+msgstr "הטמעה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12644
+msgid "Write caption…"
+msgstr "יש לכתוב כיתוב..."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12666
+msgid "Width"
+msgstr "רוחב"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12673
+msgid "Required when specifying a height"
+msgstr "נדרש בעת ציון גובה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12680
+msgid "Height"
+msgstr "גובה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12687
+msgid "Required when specifying a width"
+msgstr "נדרש בעת ציון רוחב"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12694
+msgid "Minimum Height"
+msgstr "גובה מינימלי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12703
+msgid "Required if not using width/height, optional otherwise"
+msgstr "נדרש אם אינך משתמש ברוחב/גובה, אופציונלי אחרת"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12431
+#: assets/scripts/blocks.js:12711
+msgid "Iframe Title"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12433
+#: assets/scripts/blocks.js:12713
+msgid "Set the text alternative for the iframe"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12720
+msgid "Reset Embed Url"
+msgstr "איפוס כתובת URL של הטבעה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12753
+msgid "Responsive Iframe"
+msgstr "Iframe רספונסיבי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12503
+#: assets/scripts/blocks.js:12758
+msgid "Iframe"
+msgstr "איי פריים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12760
+msgid "Responsive"
+msgstr "רספונסיבי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12762
+msgid "Fluid"
+msgstr "זורם"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12423
+msgid "Iframe Height"
+msgstr "גובה Iframe"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12475
+#: assets/scripts/blocks.js:27819
+#: assets/scripts/blocks.js:30817
+msgid "Preview"
+msgstr "תצוגה מקדימה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12496
+msgid "Iframe Button"
+msgstr "לחצן Iframe"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12498
+msgid "A button which, when clicked, will toggle visibility of an iframe"
+msgstr "לחצן אשר, בעת לחיצה, יחליף ניראות של iframe"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12505
+#: assets/scripts/blocks.js:32801
+#: assets/scripts/blocks.js:32805
+msgid "Button"
+msgstr "כפתור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29044
+msgid "Set Image"
+msgstr "בחירת תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29046
+#: assets/scripts/blocks.js:31915
+msgid "Replace Image"
+msgstr "החלף תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29232
+msgid "Opaque"
+msgstr "אטום"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29234
+msgid "Translucent"
+msgstr "שקוף"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29236
+msgid "Transparent"
+msgstr "שקוף"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29369
+msgid "Do you wish to delete this slide? This action is irreversible"
+msgstr "האם ברצונך למחוק שקופית זו? פעולה זו היא בלתי הפיכה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29407
+msgid "Show Arrows"
+msgstr "הצג חצים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29414
+msgid "Has Content"
+msgstr "כולל תוכן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29420
+msgid "By disabling this you will hide the content in *ALL* slides. To disable this on only one slide, select the desired slide and toggle the \"Hide Content\" field in the \"Slide Options\" panel."
+msgstr "על-ידי הפיכת תוכן זה ללא יהיה כובה, תסתיר את התוכן בשקופיות *ALL*. כדי להפוך אפשרות זו ללא זמינה בשקופית אחת בלבד, בחר את השקופית הרצויה והחלף את השדה \"הסתר תוכן\" בחלונית \"אפשרויות שקופית\"."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29431
+msgid "Show Tabs"
+msgstr "הצג כרטיסיות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29437
+msgid "Hide the tabs on the front end, these will still show in the panel to allow you to navigate through each slide."
+msgstr "הסתר את הכרטיסיות בקצה הקדמי, אלה עדיין ילוו בחלונית כדי לאפשר לך לנווט בכל שקופית."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29447
+msgid "Timeline Options"
+msgstr "אפשרויות ציר זמן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29450
+msgid "Slider Title"
+msgstr "כותרת מחוון"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29456
+msgid "Timeline Style"
+msgstr "סגנון ציר הזמן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29464
+msgid "Slide Options"
+msgstr "אפשרויות שקופית"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29467
+msgid "Slide Title"
+msgstr "כותרת הסליידר"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29473
+msgid "Slide Timeline Text"
+msgstr "טקסט ציר זמן של שקופית"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29483
+msgid "Slide Background"
+msgstr "רקע שקופית"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29492
+msgid "Content Alignment"
+msgstr "יישור תוכן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29506
+msgid "Hide Content"
+msgstr "הסתר תוכן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29512
+msgid "By enabling this you will hide the content on *THIS* slide. To disable content on all slides go to the \"Options\" and toggle the \"Has Content\" field."
+msgstr "על-ידי הפיכת אפשרות זו לזמינה, תסתיר את התוכן בשקופית *THIS*. כדי להפוך תוכן בכל השקופיות ללא זמין, עבור אל השדה \"אפשרויות\" וחלף את מצב השדה \"יש תוכן\"."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29523
+msgid "Remove Slide"
+msgstr "הסר שקופית"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29527
+msgid "This is irreversible."
+msgstr "זה בלתי הפיך."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29545
+msgid "(Slider Title)"
+msgstr "(כותרת המחוון)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29569
+msgid "Add a slide below."
+msgstr "הוסף שקופית למטה."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29572
+#: assets/scripts/blocks.js:29692
+msgid "Add Slide"
+msgstr "הוספת שקופית"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29595
+msgid "(TimeLine Content)"
+msgstr "(תוכן קו זמן)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29621
+msgid "(Sub-Heading)"
+msgstr "(כותרת משנה)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29643
+#: assets/scripts/blocks.js:32765
+msgid "(Button Text)"
+msgstr "(טקסט לחצן)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:29672
+#: assets/scripts/blocks.js:29686
+msgid "(No Title)"
+msgstr "(ללא כותרת)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30665
+#: assets/scripts/blocks.js:30670
+msgid "Slider"
+msgstr "סליידר"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30672
+msgid "Carousel"
+msgstr "קרוסלה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30674
+msgid "Scroller"
+msgstr "גלילה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11323
+#, fuzzy
+msgid "Uploading…"
+msgstr "מעלה..."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11325
+msgid "Uploading failed"
+msgstr "ההעלאה נכשלה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11327
+msgid "Uploading complete"
+msgstr "ההעלאה הושלמה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11409
+msgid "Select File(s)"
+msgstr "בחירת קבצים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11411
+msgid "Upload media files or pick from your media library."
+msgstr "העלה קבצי מדיה או בחר מספריית המדיה שלך."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11489
+msgid "Select a file to download"
+msgstr "בחר קובץ להורדה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11508
+msgid "Clear File(s)"
+msgstr "נקה קבצים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11529
+msgid "Resource Download"
+msgstr "הורדת משאבים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11531
+msgid "Add a button to download resource(s)"
+msgstr "הוספת לחצן להורדת משאבים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12810
+msgid "Key Facts"
+msgstr "עובדות מרכזיות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12812
+msgid "Add a key facts block"
+msgstr "הוספת בלוק עובדות מרכזי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13049
+#: assets/scripts/blocks.js:13187
+msgid "Further Reading"
+msgstr "לקריאה נוספת"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13062
+msgid "Type link"
+msgstr "קישור סוג"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13077
+msgid "Open in new tab"
+msgstr "פתח בכרטיסיה חדשה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13085
+#: assets/scripts/blocks.js:13088
+msgid "Add a link"
+msgstr "הוספת קישור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13175
+msgid "Link Block"
+msgstr "בלוק קישור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13177
+msgid "A collection of links, used for things such as further reading suggestions."
+msgstr "אוסף של קישורים, המשמשים לדברים כגון הצעות קריאה נוספות."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13185
+msgid "Links"
+msgstr "קישורים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30789
+msgid "Edit Counter"
+msgstr "ערוך מונה"
+
+#: assets/scripts/blocks.js:30789
+msgid "Preview Counter"
+msgstr "מונה תצוגה מקדימה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30797
+msgid "Duration"
+msgstr "משך"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30799
+msgid "How long it should take the counter to count up"
+msgstr "כמה זמן ייקח לדלפק לספור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30816
+msgid "Edit"
+msgstr "ערוך"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30825
+msgid "Enter the value to which this field should count"
+msgstr "הזן את הערך שאליו שדה זה אמור לספור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11906
+#: assets/scripts/blocks.js:30904
+#: assets/scripts/blocks.js:30914
+msgid "Counter"
+msgstr "מונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30906
+msgid "Add a numeric field which, when scrolled into view, will count up from zero"
+msgstr "הוספת שדה מספרי אשר, כאשר נגלל לתצוגה, יספור למעלה מאפס"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:30912
+msgid "Stat"
+msgstr "סטטיסטיקה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31849
+msgid "Image Settings"
+msgstr "הגדרות תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31852
+msgid "Focal Point"
+msgstr "נקודת מוקד"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31860
+msgid "Opacity"
+msgstr "שקיפות (Opacity)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31874
+msgid "Colour"
+msgstr "צבע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31917
+msgid "Add Image"
+msgstr "הוספת תמונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32215
+msgid "Background Media Column"
+msgstr "עמודת מדיה ברקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32217
+msgid "Column layout for Background Media block"
+msgstr "פריסת עמודה עבור בלוק מדיה ברקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32306
+msgid "Background Media"
+msgstr "מדיה ברקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32308
+msgid "Two-column layout with background images"
+msgstr "פריסה של שתי עמודות עם תמונות רקע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32312
+msgid "Background"
+msgstr "רקע"
+
+#. translators: [admin]
+#: includes/block-patterns/pattern-category.php:16
+#: assets/scripts/blocks.js:32314
+msgid "Media"
+msgstr "מדיה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:32316
+msgid "Text"
+msgstr "טקסט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28051
+#: assets/scripts/blocks.js:31049
+msgid "Display Options"
+msgstr "אפשרויות תצוגה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28066
+#: assets/scripts/blocks.js:31052
+msgid "Choose taxonomy to display"
+msgstr "בחר טקסונומיה להצגה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31130
+msgid "Term A-Z"
+msgstr "מונח A-Z"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31132
+msgid "List all visible terms in a taxonomy, grouped by first letter"
+msgstr "פרט את כל המונחים הגלויים ב טקסונומיה, מקובצים לפי אות ראשונה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31135
+msgid "Term List"
+msgstr "רשימת מונחים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31137
+msgid "A-Z Terms"
+msgstr "תנאי A-Z"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31139
+msgid "Countries"
+msgstr "ארצות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28074
+msgid "Max depth"
+msgstr "עומק מרבי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28083
+msgid "Show only Regions/Subregions"
+msgstr "הצג אזורים/חלוקות משנה בלבד"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28141
+msgid "Terms List"
+msgstr "רשימת תנאים"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28143
+msgid "Terms"
+msgstr "תנאים"
+
+#: assets/scripts/blocks.js:13476
+msgid "Petition Settings"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27463
+#: assets/scripts/blocks.js:27473
+msgid "Petitions"
+msgstr "עתירות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27488
+msgid "Feed"
+msgstr "פיד"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27497
+msgid "Petition List"
+msgstr "רשימת עתירות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27499
+msgid "Petition list"
+msgstr "רשימת עצומות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27501
+msgid "Petition"
+msgstr "עתירה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27843
+msgid "Write HTML…"
+msgstr "כתיבת HTML..."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27845
+msgid "HTML"
+msgstr "HTML"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27869
+msgid "Raw Code"
+msgstr "קוד גולמי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11142
+msgctxt "format for timer, i.e. \"x days, H:m:s\""
+msgid "%1$s, %2$s:%3$s:%4$s"
+msgstr "%1$s, %2$s:%3$s:%4$s"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11156
+msgctxt "time format, i.e. \"H:m:s\""
+msgid "%1$s:%2$s:%3$s"
+msgstr "%1$s:%2$s:%3$s"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11203
+msgid "Time Expired Text"
+msgstr "זמן שפג תוקפו של טקסט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11208
+msgid "enter text here"
+msgstr "הזן טקסט כאן"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11269
+msgid "Countdown Timer"
+msgstr "טיימר ספירה לאחור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11273
+msgid "Countdown"
+msgstr "ספירה לאחור"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11275
+msgid "Timer"
+msgstr "טיימר"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11655
+msgid "The Flourish embed source (not the full URL)."
+msgstr "מקור ההטבעה של פריחת (לא כתובת ה- URL המלאה)."
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11659
+#: assets/scripts/blocks.js:11808
+msgid "Preview Embed"
+msgstr "הטבעה מקדימה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11674
+msgid "Flourish Embed"
+msgstr "הטבעה פורחת"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11679
+msgid "Flourish"
+msgstr "לפרוח"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11805
+msgid "The Sutori embed code"
+msgstr "קוד ההטבעה של סאטורי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11823
+msgid "Sutori Embed"
+msgstr "סטורי הטבעה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11828
+msgid "Sutori"
+msgstr "סאטורי"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11706
+msgid "The embed code"
+msgstr "קוד ההטבעה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11713
+msgid "The embed type"
+msgstr "סוג ההטבעה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11720
+msgid "The embed title"
+msgstr "כותרת ההטבעה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11724
+msgid "Ending the Death Penalty"
+msgstr "סיום עונש המוות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11739
+msgid "Infogram Embed"
+msgstr "הטבעת אינפוגרם"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11744
+msgid "Infogram"
+msgstr "אינפוגרם"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11867
+#: assets/scripts/blocks.js:11897
+msgid "Tickcounter Embed"
+msgstr "הטבעת טיקונט"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11870
+msgid "This embed cannot be previewed in the editor. Preview the %s itself to see the embed in action"
+msgstr "אין אפשרות להציג הטמעה זו בתצוגה מקדימה בעורך. תצוגה מקדימה של %s עצמה כדי לראות את ההטבעה בפעולה"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11881
+msgid "The Tickcounter embed code"
+msgstr "קוד ההטבעה של ה-Tickcounter"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11902
+msgid "Tickcounter"
+msgstr "טיקטוזר"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28429
+msgid "Add a grid of posts that are related to the current post"
+msgstr ""
+
+#: assets/scripts/blocks.js:33302
+msgid "Settings"
+msgstr "הגדרות"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33306
+msgid "Collapsed by default"
+msgstr "מכווצת כברירת מחדל"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33308
+msgid "Whether the block contents should be hidden by default"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33317
+msgid "Label this block with an HTML anchor (#example)."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33329
+msgid "Find out more"
+msgstr "עוד על האירוע"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33357
+msgid "Collapsable"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33362
+msgid "collapsible"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33364
+msgid "accordion"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33366
+msgid "drawer"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33368
+msgid "open"
+msgstr "פתוח"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33370
+msgid "closed"
+msgstr "נסגרה"
+
+#. translators: [admin]
+#: includes/admin/settings-general.php:17
+msgid "Language Display Name"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/settings-general.php:44
+msgid "Override the site language display name on the site frontend"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:15
+msgid "Actions"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:17
+msgid "Templates"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:20
+msgid "Two Column"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:21
+msgid "Three Column"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:22
+msgid "Four Column"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:23
+msgid "1/2, 1/2"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:24
+msgid "1/3, 1/3, 1/3"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:25
+msgid "1/4, 1/4, 1/4, 1/4"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:26
+msgid "2/3, 1/3"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:27
+msgid "1/3, 2/3"
 msgstr ""
 
 #: patterns/25-25-25-25-links-with-icons-square.php
@@ -4784,6 +7053,12 @@ msgid "A quote block with an audio block below it."
 msgstr ""
 
 #. translators: [admin]
+#: assets/scripts/blocks.js:162
+msgctxt "block style"
+msgid "Square Border"
+msgstr ""
+
+#. translators: [admin]
 #: assets/scripts/blocks.js:168
 msgctxt "block style"
 msgid "Light Background"
@@ -4802,58 +7077,67 @@ msgid "Top and Bottom Border"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32543
+#: assets/scripts/blocks.js:32569
 msgid "Banner Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32552
+#: assets/scripts/blocks.js:32578
 msgid "Banner Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12304
-#: assets/scripts/blocks.js:32563
+#: assets/scripts/blocks.js:12291
+#: assets/scripts/blocks.js:32589
 msgid "Call to action"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12286
+#: assets/scripts/blocks.js:12273
 msgid "Hero Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12295
+#: assets/scripts/blocks.js:12282
 msgid "Hero Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12338
-#: assets/scripts/blocks.js:12347
+#: assets/scripts/blocks.js:12325
+#: assets/scripts/blocks.js:12334
 msgid "Hero"
 msgstr ""
 
+#. translators: [admin] %s: the post type
+#: assets/scripts/blocks.js:493
+msgid "Blocks in this %s have been upgraded. Please preview the post before saving."
+msgstr ""
+
 #. translators: [admin]
-#: assets/scripts/blocks.js:12547
+#: assets/scripts/blocks.js:12534
 msgid "Primary"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13960
+#: assets/scripts/blocks.js:13962
 msgid "Tag Name"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13976
+#: assets/scripts/blocks.js:13978
 msgid "Insert Title"
 msgstr ""
 
-#: assets/scripts/blocks.js:14003
+#: assets/scripts/blocks.js:13993
+msgid "Date:"
+msgstr ""
+
+#: assets/scripts/blocks.js:14005
 msgid "Date may render differently on the site frontend"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14029
+#: assets/scripts/blocks.js:14031
 msgid "Author Name"
 msgstr ""
 
@@ -5142,46 +7426,6 @@ msgstr ""
 msgid "Tweets by %s"
 msgstr ""
 
-#: patterns/background-media-left-grey.php
-msgctxt "Pattern title"
-msgid "Background Media Left Grey"
-msgstr ""
-
-#: patterns/background-media-left-grey.php
-msgctxt "Pattern description"
-msgid "Group block with a grey background containing 2 columns with a cover block on the left and paragraph on the right."
-msgstr ""
-
-#: patterns/background-media-left-white.php
-msgctxt "Pattern title"
-msgid "Background Media Left White"
-msgstr ""
-
-#: patterns/background-media-left-white.php
-msgctxt "Pattern description"
-msgid "Group block with a white background containing 2 columns with a cover block on the left and paragraph on the right."
-msgstr ""
-
-#: patterns/background-media-right-grey.php
-msgctxt "Pattern title"
-msgid "Background Media Right Grey"
-msgstr ""
-
-#: patterns/background-media-right-grey.php
-msgctxt "Pattern description"
-msgid "Group block with a grey background containing 2 columns with a cover block on the right and paragraph on the left."
-msgstr ""
-
-#: patterns/background-media-right-white.php
-msgctxt "Pattern title"
-msgid "Background Media Right White"
-msgstr ""
-
-#: patterns/background-media-right-white.php
-msgctxt "Pattern description"
-msgid "Group block with a white background containing 2 columns with a cover block on the right and paragraph on the left."
-msgstr ""
-
 #: patterns/blog-home-content.php
 msgctxt "Pattern title"
 msgid "Blog home content"
@@ -5406,27 +7650,27 @@ msgctxt "block style"
 msgid "Search"
 msgstr ""
 
-#: assets/scripts/blocks.js:27664
+#: assets/scripts/blocks.js:27690
 msgid "Select a meta key"
 msgstr ""
 
-#: assets/scripts/blocks.js:27691
+#: assets/scripts/blocks.js:27717
 msgid "Choose a meta key"
 msgstr ""
 
-#: assets/scripts/blocks.js:27697
+#: assets/scripts/blocks.js:27723
 msgid "Does this meta key have a single value?"
 msgstr ""
 
-#: assets/scripts/blocks.js:31414
+#: assets/scripts/blocks.js:31440
 msgid "Archive Filters"
 msgstr ""
 
-#: assets/scripts/blocks.js:31469
+#: assets/scripts/blocks.js:31495
 msgid "Query Count"
 msgstr ""
 
-#: assets/scripts/blocks.js:31470
+#: assets/scripts/blocks.js:31496
 msgid "Display the query results count"
 msgstr ""
 
