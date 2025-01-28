@@ -205,14 +205,6 @@ jobs:
     env:
       secure: "dQb9r6uYVwbBEam0Ao/DdFGyd068P4llvGHhenlea7rRTto44RzruGvhhJPa/QTjQSMbqidCKy1HSWDyyyc8ODD9GQFn8o0DPsIL/YODrDIQ8loAaFzLTyHNxX3oGZX0R2goel1kC8xGMtkJ0l4xVsTfLGQwGOwAKnSZ7Jp40u9DPoGQXGhYvlFNHWtJDViWIhSJ3BxSYwJHyJfZqTLDr3+lQH0cw6PyA63DTJnkN6k/nQ6KdFdWOlXOYBKxZZnpo9WgNFPzM0Wykvj1H5SVdfREkwA+vfDRVnzp2cRA9EoAWUPO112lAgMqLZtobbN81MIr4MPFBWcVr6xVWxOBPX7HwqaO4/GpUmT5D2vvQNt0BuQ6uGNQ5RRAOgHqanHoj4/7p6DnfzKyZ1W3E5UoUbdCJI9++FM3yFea8HAho/cytI5TlHBbzpx/Zg81JRtTtINJ+HWCvvYRIdWOvZ0w7kJ3NAq9FBxBtGNrAE4fZhmiIKt50tr+s/wQJ0NLsd0gFz5MhDxlaiOCkuDwWRh9NIcGy3vbTH8FjXLxMUlGBcpmc5ZcIBL12wdZfBZxC/AYYhNl1DrQoO+blwr90+F9cwGwSg5ILG482O9tBAq6KHnk+M6iIXOnWaoGFOgX0jkcCMnyMdv44yq7PXnin2HgLNOoGpYlYfHIBShPe/5aBWA="
   - stage: Deploy to [STG]
-    name: AfeUSTr7
-    before_install: openssl aes-256-cbc -K $encrypted_264f0dad5034_key -iv $encrypted_264f0dad5034_iv -in private/key.enc -out ~/.ssh/id_rsa -d && chmod 0600 ~/.ssh/id_rsa
-    install: ./private/bin/install.sh
-    before_script: ./private/bin/build.sh
-    script: ./private/bin/deploy.sh
-    env:
-      secure: "Ioy7ddxLQIBL+3onLx83MqGGH9DESQApmnwN5qSVeBmmjCZNyrpki8vZjNex6xrVdofekxOsmQYlh8wV/LRGYmZUhUmoG0i1n9H+Im9upQfoZJQtxGd/o7bciL62NBr0Qvg4z5v2U/PQei4kaH4LtEn6G5z3hjEz6FA43PjolvpAht59xtbuLAfBzriEl/3QFOb/JLw7fQwlaEQ10zspnc9LKaoL6KS91D7iLpq/o9MKpScnRLwIY9lf7cAvH6brxwnL8sfb5buo9TA5Xy82zwgZL1oRbumw3ncFL6mcePVCofno5C4CJQjYH2OMotdCORWZwsKCdKu7aRbDVA2gz3qrK7fB+9PO/wMPX5NMiQT2OYBVHnYisUxa3lDrE+2P7nfK3KPb7F1gzo65xWexOAlBUIXP1fdwFDL3qLCWLtUijqD06lkcIE9579Y4V5rQN1r0QeGgLsCUmArHhOfkY2Dk6k+umvYNVIHLCeqgfTFLGSi9WVSZi8jT3YdDAAvKiCSyAmbiQF7uUDcO+CMhyB4nYi+vbCiwIkdLn3Ij4M36cjToKNRoQIxKP6LONrKd5/h1MiqsK/dXWnN+kwXlpspMoKg9W9GXkXKnLsFRUEBZn4A30vIcMEhC8d16A8LNYR5rQsfh/pXxqoqwrPXxwAgTeSjfMMkeQoXTkv6XYl0="
-  - stage: Deploy to [STG]
     name: DuYwZXfr
     before_install: openssl aes-256-cbc -K $encrypted_264f0dad5034_key -iv $encrypted_264f0dad5034_iv -in private/key.enc -out ~/.ssh/id_rsa -d && chmod 0600 ~/.ssh/id_rsa
     install: ./private/bin/install.sh
