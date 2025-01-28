@@ -136,11 +136,12 @@ class DisplayCustom extends Component {
       );
     }
 
-    // style === 'grid'
-    if ([1, 2, 3, 5, 6, 7].indexOf(custom.length) > -1) {
+    const hasMany = custom.length % 4 === 0 || custom.length > 8;
+
+    if (hasMany) {
       return (
         <div>
-          <div className={`grid grid-${custom.length}`}>
+          <div className="grid grid-many">
             {custom.map((item, index) => (
               <GridItem
                 key={`${prefix}-${index}`}
@@ -158,7 +159,7 @@ class DisplayCustom extends Component {
 
     return (
       <div>
-        <div className={`grid grid-many`}>
+        <div className={`grid grid-${custom.length}`}>
           {custom.map((item, index) => (
             <GridItem
               key={`${prefix}-${index}`}
