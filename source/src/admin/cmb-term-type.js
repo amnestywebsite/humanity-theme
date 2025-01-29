@@ -1,4 +1,4 @@
-const { addFilter } = wp.hooks;
+import { addFilter } from '@wordpress/hooks';
 
 addFilter('amnesty.cmb2.change.type', 'amnesty/cmb2', () => (event, $form) => {
   const type = event.target.value;

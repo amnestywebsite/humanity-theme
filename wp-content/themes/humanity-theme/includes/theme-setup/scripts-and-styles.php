@@ -30,7 +30,7 @@ if ( ! function_exists( 'amnesty_admin_styles' ) ) {
 		$theme = wp_get_theme();
 
 		wp_enqueue_style( 'theme-admin', amnesty_asset_uri( 'styles' ) . '/admin.css', [], $theme->get( 'Version' ), 'all' );
-		wp_enqueue_script( 'theme-admin', amnesty_asset_uri( 'scripts' ) . '/admin.js', [ 'jquery-core', 'lodash' ], $theme->get( 'Version' ), true );
+		wp_enqueue_script( 'theme-admin', amnesty_asset_uri( 'scripts' ) . '/admin.js', [ 'jquery-core', 'lodash', 'wp-hooks' ], $theme->get( 'Version' ), true );
 		wp_add_inline_style( 'theme-admin', '.nopad th,.nopad td{padding:0}' );
 
 		$ol_characters = amnesty_get_option( 'ol_locale_option', 'amnesty_localisation_options_page' );

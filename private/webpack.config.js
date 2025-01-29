@@ -20,7 +20,6 @@ const getEntries = (env) => {
     bundle: path.resolve(__dirname, `${SRC_PATH}/scripts/App.js`),
     blocks: path.resolve(__dirname, `${SRC_PATH}/scripts/blocks.js`),
     editor: path.resolve(__dirname, `${SRC_PATH}/scripts/editor.js`),
-    admin: path.resolve(__dirname, `${SRC_PATH}/scripts/admin.js`),
   };
 
   if (!env?.entry) {
