@@ -1,5 +1,5 @@
-const { isFunction } = lodash;
-const { applyFilters } = wp.hooks;
+import { isFunction } from 'lodash';
+import { applyFilters } from '@wordpress/hooks';
 
 let globalChangeEvent;
 
