@@ -1,0 +1,27 @@
+@use "../../../../../utils/mixins/icon" as i;
+
+.search-menu-item a::after {
+  @include i.icon-wrapper();
+  @include i.icon-dimensions();
+  @include i.icon-size(18px, 18px);
+  @include i.icon-position(128px, 240px);;
+  display: inline-block;
+  margin-left: var(--wp--preset--spacing--half);
+  content: "";
+
+  @media all and (min-width: 1024px) {
+    margin-left: 0;
+  }
+}
+
+.search-menu-item span {
+  @media all and (min-width: 1024px) {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+  }
+}

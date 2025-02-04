@@ -1,0 +1,59 @@
+@use "../../../../utils/mixins/states" as s;
+
+body.search main,
+body.page-template-searchpage main {
+  margin-top: var(--wp--preset--spacing--single);
+  margin-bottom: var(--wp--preset--spacing--single);
+}
+
+body.search .section,
+body.page-template-searchpage .search-results {
+  padding: var(--wp--preset--spacing--single);
+}
+
+body.search .post-pagination,
+body.page-template-searchpage .post-pagination {
+  padding-bottom: 0;
+}
+
+body.search .section .page-search,
+body.page-template-searchpage .section .page-search {
+  flex-direction: column;
+  background-color: unset;
+
+  @media all and (min-width: 465px) {
+    flex-direction: row;
+  }
+}
+
+body.search .section .page-search input,
+body.page-template-searchpage .section .page-search input {
+  margin-bottom: 10px;
+
+  @media all and (min-width: 465px) {
+    margin-bottom: 0;
+  }
+}
+
+.post--result {
+  @include s.state-background(var(--wp--preset--color--grey-lighter));
+  position: relative;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--wp--preset--spacing--single);
+}
+
+.search-results {
+  flex-basis: 75%;
+}
+
+.search-results .wp-block-post-template {
+  margin-left: 0;
+}
+
+.search-results .wp-block-post-template .wp-block-post {
+  min-width: 100%;
+}

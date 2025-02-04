@@ -1,0 +1,22 @@
+@use "../../../../utils/mixins/icon" as i;
+
+.article-backLink {
+  display: inline-flex;
+  text-decoration: underline;
+  font-size: var(--wp--preset--font-size--x-small);
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.article-backLink .arrow-icon {
+  display: inline-flex;
+
+  &::before {
+    @include i.icon(290px, 200px, 17px, 11px);
+    content: " ";
+  }
+
+  .rtl & {
+    order: 1;
+  }
+}

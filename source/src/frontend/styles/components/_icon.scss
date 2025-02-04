@@ -1,0 +1,65 @@
+@use "../../../utils/mixins/icon" as i;
+
+.icon {
+  @include i.icon-wrapper();
+  @include i.icon-dimensions();
+  display: inline-block;
+}
+
+.icon-arrow-left {
+  @include i.icon(234px, 240px, 16px, 16px);
+  display: inline-block;
+
+  .rtl & {
+    @include i.icon(110px, 265px, 16px, 16px);
+  }
+}
+
+.icon-remove {
+  @include i.icon(0, 285px, 16px, 16px);
+  display: inline-block;
+
+  .remove-link:hover &,
+  .remove-link:active &,
+  .remove-link:focus & {
+    background-position: -20px -285px;
+  }
+}
+
+.icon-remove-alt {
+  @include i.icon(20px, 285px, 16px, 16px);
+  display: inline-block;
+}
+
+.icon-document {
+  @include i.icon(26px, 265px, 16px, 16px);
+  display: inline-block;
+}
+
+.icon-cart {
+  @include i.icon-size(22px, 22px);
+}
+
+.icon-search {
+  @include i.icon-size(18px, 18px);
+}
+
+.icon-close {
+  @include i.icon-dimensions(1.5);
+  @include i.icon-size(24px, 24px);
+
+  @media all and (min-width: 760px) {
+    @include i.icon-dimensions(2);
+    @include i.icon-size(32px, 32px);
+  }
+}
+
+.icon-arrow-down {
+  @include i.icon-dimensions(1.5);
+  @include i.icon-size(24px, 24px);
+}
+
+.icon-burger {
+  @include i.icon-dimensions(2);
+  @include i.icon-size(24px, 32px);
+}

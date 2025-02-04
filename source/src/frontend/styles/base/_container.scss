@@ -1,0 +1,25 @@
+@use "../../../utils/functions/flexy" as f;
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: var(--wp--preset--layout--contentSize);
+  margin: 0 auto;
+  padding: 0 f.flexy-gutter();
+
+  @media all and (min-width: 1490px) {
+    padding: 0;
+  }
+}
+
+.container .container {
+  padding: 0;
+}
+
+.container--small {
+  max-width: 1113px;
+}
+
+.has-gutter {
+  padding: 0 40px;
+}

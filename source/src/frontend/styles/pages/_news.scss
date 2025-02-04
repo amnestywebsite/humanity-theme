@@ -1,0 +1,61 @@
+@use "sass:math";
+@use "../../../utils/functions/flexy" as f;
+
+.blog main > .container:first-child {
+  padding: 0;
+
+  @media all and (min-width: 570px) {
+    padding: 0 f.flexy-gutter();
+  }
+}
+
+.blog .postlist .wp-block-post-template.columns-4 {
+  width: 100%;
+}
+
+.has-subcategories {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.has-subcategories .news-section {
+  @media all and (min-width: 940px) {
+    margin-right: f.flexy-gutter();
+    flex: 0 0 #{67% - math.div(f.flexy-gutter(), 2)};
+  }
+
+  @media all and (min-width: 1110px) {
+    flex: 0 0 #{75% - math.div(f.flexy-gutter(), 2)};
+  }
+}
+
+.news-sidebar {
+  flex: 0 0 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media all and (min-width: 940px) {
+    flex: 0 0 #{33% - math.div(f.flexy-gutter(), 2)};
+  }
+
+  @media all and (min-width: 1110px) {
+    flex: 0 0 #{25% - math.div(f.flexy-gutter(), 2)};
+  }
+}
+
+.news-sidebar .checkboxGroup {
+  display: inline-block;
+}
+
+.news-sidebar .checkboxGroup-list {
+  width: 100%;
+}
+
+.post-pagination {
+  padding-top: 0;
+
+  @media all and (min-width: 596px) {
+    padding-top: 20px;
+  }
+}

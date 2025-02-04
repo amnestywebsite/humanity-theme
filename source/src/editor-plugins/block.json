@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/editor-plugin-assets",
+  "title": "Editor plugin assets build",
+  "description": "This is a fake block to make wp-scripts build our block editor plugin assets",
+  "editorScript": "file:./index.js",
+  "supports": {
+    "inserter": false
+  }
+}

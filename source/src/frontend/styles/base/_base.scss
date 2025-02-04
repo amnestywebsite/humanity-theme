@@ -1,0 +1,81 @@
+/**
+ * Apply box-sizing here, then inherit.
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+html {
+  box-sizing: border-box;
+}
+
+html.menu-open,
+html.mobile-menu-open,
+html.search-active,
+html.modal-open,
+html.lang-open {
+  body {
+    overflow: hidden;
+  }
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/**
+ * Page level styles.
+ *
+ * 1. Use advanced typographic features included in some OpenType fonts. Only enable if
+ *    font supports it.
+ * 2. Prevent certain mobile browsers from automatically zooming fonts.
+ * 3. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
+body {
+  // font-feature-settings: "kern", "liga", "pnum"; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -moz-osx-font-smoothing: grayscale;   /* 3 */
+  -webkit-font-smoothing: antialiased; /* 3 */
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body.admin-bar {
+  min-height: calc(100vh - 46px);
+
+  @media all and (min-width: 781px) {
+    min-height: calc(100vh - 32px);
+  }
+}
+
+body.rtl {
+  direction: rtl;
+}
+
+main {
+  position: relative;
+  flex: 1 0 auto;
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+.only-mobile {
+  @media all and (min-width: 760px) {
+    display: none !important;
+  }
+}
+
+.only-desktop {
+  @media all and (max-width: 759px) {
+    display: none !important;
+  }
+}
+
+.is-layout-flex {
+  display: flex;
+}

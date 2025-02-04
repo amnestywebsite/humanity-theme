@@ -1,0 +1,23 @@
+@use "../../../../utils/mixins/states" as s;
+
+ul.article-share {
+  display: flex;
+  gap: .5rem;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.article-share a {
+  @include s.state-background(var(--wp--preset--color--grey-darker));
+  display: block;
+  padding: 8px;
+  width: 47px;
+  height: 47px;
+  text-align: center;
+  background-color: var(--wp--preset--color--black);
+}
+
+.article-share img {
+  max-height: 100%;
+}

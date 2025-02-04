@@ -54,7 +54,7 @@ if ( ! function_exists( 'humanity_register_block_styles' ) ) {
 		 */
 		foreach ( $iterator as $entry ) {
 			if ( $entry->isFile() && 'php' === $entry->getExtension() ) {
-				require_once $entry->getPath();
+				require_once $entry->getPathname();
 			}
 		}
 	}

@@ -1,0 +1,246 @@
+@use "../../../../utils/functions/flexy" as f;
+
+.grid-item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex: 1 1 100%;
+  max-width: none;
+  min-height: 360px;
+  padding: 24px;
+  background-color: var(--wp--preset--color--grey-light);
+  background-position: center;
+  background-size: cover;
+
+  @include f.flexy-grid(1, f.flexy-gutter());
+
+  @media all and (min-width: 540px) {
+    @include f.flexy-grid(2, f.flexy-gutter());
+  }
+}
+
+// should be moved to plugin
+.grid-item.aimc-ignore {
+  padding-bottom: 32px;
+}
+
+.grid-item .grid-content {
+  max-width: 100%;
+}
+
+.grid-itemContent p {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 12px;
+  background-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
+  font-size: var(--wp--preset--font-size--small);
+  line-height: 1.4;
+}
+
+.grid-itemContent a {
+  color: var(--wp--preset--color--black);
+  font-weight: bold;
+  font-family: var(--wp--preset--font-family--secondary);
+  text-transform: uppercase;
+}
+
+.grid-itemMeta {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 2px 12px;
+  width: max-content;
+  max-width: 100%;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: var(--wp--preset--font-size--regular);
+  font-family: var(--wp--preset--font-family--secondary);
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: var(--wp--preset--color--black);
+}
+
+.grid-itemMeta a {
+  color: var(--wp--preset--color--white);
+}
+
+// increased specificity to override global link decoration
+.single main .grid-itemMeta {
+  text-decoration: none;
+}
+
+.grid-itemTitle {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2px 12px;
+  max-width: 100%;
+  font-size: var(--wp--preset--font-size--heading-5);
+  text-decoration: none;
+}
+
+h3.grid-itemTitle > span,
+h3.grid-itemTitle > a {
+  color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--white);
+  box-shadow: -12px 0 0 0 var(--wp--preset--color--white), 12px 0 0 0 var(--wp--preset--color--white);
+  box-decoration-break: clone;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.grid-itemTitle a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grid {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.grid-many {
+  grid-template-columns: 1fr;
+
+  @media all and (min-width: 540px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media all and (min-width: 540px) and (max-width: 940px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid .grid-item {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+
+  @media all and (min-width: 540px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-5 {
+  grid-template-columns: 1fr;
+
+  @media all and (min-width: 540px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media all and (min-width: 540px) and (max-width: 940px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-5 :nth-child(n+3) {
+  grid-column: span 3;
+
+  @media all and (min-width: 540px) and (max-width: 940px) {
+    grid-column: span 1;
+  }
+
+  @media all and (min-width: 940px) {
+    grid-column: span 2;
+  }
+}
+
+.grid-5 :nth-child(-n+2) {
+  grid-column: span 3;
+
+  @media all and (min-width: 540px) and (max-width: 940px) {
+    grid-column: span 1;
+  }
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+
+  @media all and (min-width: 540px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-1 .grid-item {
+  width: 33%;
+}
+
+.grid-6 {
+  grid-template-columns: 1fr;
+
+  @media all and (min-width: 540px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media all and (min-width: 540px) and (max-width: 940px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-6 :nth-child(-n+2) {
+  grid-column: span 1;
+
+  @media all and (min-width: 540px) {
+    grid-column: span 2;
+  }
+
+  @media all and (min-width: 540px) and (max-width: 940px) {
+    grid-column: span 1;
+  }
+}
+
+.grid-7 {
+  grid-template-columns: 1fr;
+
+  @media all and (min-width: 540px) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @media all and (min-width: 540px) and (max-width: 940px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-7 :nth-child(-n+3) {
+  grid-column: span 1;
+
+  @media all and (min-width: 540px) {
+    grid-column: span 4;
+  }
+
+  @media all and (min-width: 540px) and (max-width: 940px) {
+    grid-column: span 1;
+  }
+}
+
+.grid-7 :nth-child(n+4) {
+  grid-column: span 1;
+
+  @media all and (min-width: 540px) {
+    grid-column: span 3;
+  }
+
+  @media all and (min-width: 540px) and (max-width: 940px) {
+    grid-column: span 1;
+  }
+}
+
+:lang(fa-IR) .grid .grid-content > * {
+  line-height: 1.75;
+}

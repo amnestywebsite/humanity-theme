@@ -1,0 +1,29 @@
+@use "../../../../../../utils/mixins/icon" as i;
+
+.page-header.is-light .burger:hover,
+.page-header.is-light .burger:active,
+.page-header.is-light .burger:focus {
+  background-color: var(--wp--preset--color--grey-lighter);
+}
+
+.page-header.is-light .burger .icon-burger {
+  @include i.icon-position(80px, 570px);
+}
+
+.mobile-menu-open .page-header.is-light .burger {
+  background-color: var(--wp--preset--color--black);
+}
+
+.mobile-menu-open .page-header.is-light .burger:hover,
+.mobile-menu-open .page-header.is-light .burger:active,
+.mobile-menu-open .page-header.is-light .burger:focus {
+  background-color: var(--wp--preset--color--grey-dark);
+}
+
+.mobile-menu-open .page-header.is-light .burger .icon-close {
+  @include i.icon-position(406.5px, 354px);
+
+  @media all and (min-width: 760px) {
+    @include i.icon-position(542px, 472px);
+  }
+}

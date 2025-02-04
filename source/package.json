@@ -10,7 +10,8 @@
     "watch": "wp-scripts start --webpack-copy-php --source-path=./src --output-path=../wp-content/themes/humanity-theme/build",
     "lint": "yarn lint:scss; yarn lint:js",
     "lint:scss": "stylelint ./src/**/*.scss",
-    "lint:js": "eslint ./src/**/*.(js|jsx)"
+    "lint:js": "eslint ./src/**/*.(js|jsx)",
+    "env": "npx @wordpress/env"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -57,10 +58,12 @@
   },
   "dependencies": {
     "@braintree/sanitize-url": "^7.1.1",
+    "@wordpress/plugins": "^7.17.0",
     "classnames": "^2.5.1",
     "core-js": "^3.40.0",
     "flickity": "^3.0.0",
     "flickity-as-nav-for": "^3.0.0",
+    "intersection-observer": "^0.12.2",
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "memize": "^2.1.0",

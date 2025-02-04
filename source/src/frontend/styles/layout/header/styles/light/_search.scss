@@ -1,0 +1,13 @@
+@use "../../../../../../utils/mixins/icon" as i;
+
+.page-header.is-light .search-menu-item span::after {
+  @include i.icon-position(128px, 240px);;
+}
+
+.page-header.is-light .search-menu-item.current-menu-item span::after {
+  @include i.icon-position(105px, 240px);
+}
+
+.page-header.is-light .search-menu-item.current-menu-item a::after {
+  @include i.icon-position(105px, 240px);
+}

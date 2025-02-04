@@ -1,0 +1,19 @@
+@use "../../../../../../utils/mixins/icon" as i;
+
+.page-header.is-transparent-light .search-menu-item a::after {
+  @include i.icon-position(105px, 240px);
+}
+
+.page-header.is-transparent-light .search-menu-item a:hover::after,
+.page-header.is-transparent-light .search-menu-item a:active::after,
+.page-header.is-transparent-light .search-menu-item a:focus::after {
+  @include i.icon-position(128px, 240px);;
+}
+
+.page-header.is-transparent-light.stick .search-menu-item a::after {
+  @include i.icon-position(128px, 240px);;
+}
+
+.page-header.is-transparent-light .mobile-menu .search-menu-item a::after {
+  @include i.icon-position(128px, 240px);;
+}

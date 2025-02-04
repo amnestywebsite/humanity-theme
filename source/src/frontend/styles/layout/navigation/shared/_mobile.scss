@@ -1,0 +1,192 @@
+@use "../../../../../utils/mixins/icon" as i;
+
+.mobile-menu {
+  position: fixed;
+  top: 60px; // header height on mobile
+  right: 0;
+  z-index: 12;
+  visibility: hidden;
+  width: calc(100% - 50px);
+  max-width: 250px;
+  max-height: calc(100vh - 60px); // header height on mobile
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  backface-visibility: hidden;
+  transition: transform .2s ease-in-out;
+  transform: translate3d(100%, 0, 0);
+  font-size: var(--wp--preset--font-size--small);
+  background-color: var(--wp--preset--color--white);
+
+  @media all and (min-width: 760px) {
+    top: 72px; // header height on larger screens
+    max-height: calc(100vh - 72px);
+  }
+}
+
+.rtl .mobile-menu {
+  right: unset;
+  left: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.mobile-menu-open .mobile-menu {
+  transform: translateZ(0);
+  visibility: visible;
+}
+
+.admin-bar .mobile-menu {
+  top: 106px; // admin bar + header height
+  max-height: calc(100vh - 118px);
+
+  @media all and (min-width: 760px) {
+    top: 118px; // admin bar + header height
+  }
+
+  @media all and (min-width: 781px) {
+    top: 104px; // admin bar + header height
+    max-height: calc(100vh - 104px);
+  }
+}
+
+.admin-bar .page-header.stick ~ .mobile-menu {
+  top: 0;
+  max-height: calc(100vh - 72px); // header height
+
+  @media all and (min-width: 601px) {
+    top: 118px;
+    max-height: calc(100vh - 118px);
+  }
+
+  @media all and (min-width: 781px) {
+    top: 104px;
+    max-height: calc(100vh - 104px);
+  }
+}
+
+.mobile-menu > ul {
+  overflow-y: visible;
+}
+
+.mobile-menu .menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.mobile-menu .menu-item button {
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  background-color: var(--wp--preset--color--white);
+}
+
+.mobile-menu .menu-item a,
+.mobile-menu .menu-item button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: var(--wp--preset--spacing--single);
+  transition: background-color .2s ease-in-out;
+  color: var(--wp--preset--color--black);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--wp--preset--color--grey-lighter);
+  }
+}
+
+.mobile-menu .menu-item.is-open a,
+.mobile-menu .menu-item.is-open button {
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--wp--preset--color--grey-dark);
+    color: var(--wp--preset--color--white);
+  }
+}
+
+.mobile-menu .menu-item-has-children > button > span,
+.mobile-menu .menu-item-has-children > a > span {
+  display: inline-flex;
+  margin-right: auto;
+  pointer-events: none;
+}
+
+.rtl .mobile-menu .menu-item-has-children > button > span,
+.rtl .mobile-menu .menu-item-has-children > a > span {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.mobile-menu .sub-menu {
+  position: static;
+  display: block;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease-in-out;
+  background-color: var(--wp--preset--color--grey-lighter);
+}
+
+.mobile-menu > ul > .menu-item {
+  border-top: 1px solid var(--wp--preset--color--grey-light);
+}
+
+.mobile-menu .menu-item.is-open .sub-menu {
+  border-top: 1px solid var(--wp--preset--color--grey-light);
+  max-height: 600px;
+}
+
+.mobile-menu .sub-menu .menu-item a,
+.mobile-menu .sub-menu .menu-item button {
+  display: none;
+  background-color: var(--wp--preset--color--grey-darker);
+  color: var(--wp--preset--color--white);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--wp--preset--color--black);
+    color: var(--wp--preset--color--white);
+  }
+}
+
+.mobile-menu .menu-item.is-open .sub-menu .menu-item a,
+.mobile-menu .menu-item.is-open .sub-menu .menu-item button {
+  display: flex;
+}
+
+.mobile-menu .icon-arrow-down {
+  @include i.icon-position(406.5px, 322.5px);
+  transition: transform .2s ease-in-out;
+  position: absolute;
+  right: 18px;
+
+  @media all and (min-width: 760px) {
+    right: 23px;
+  }
+}
+
+.rtl .mobile-menu .icon-arrow-down {
+  right: unset;
+  left: 18px;
+
+  @media all and (min-width: 760px) {
+    right: unset;
+    left: 23px;
+  }
+}
+
+.mobile-menu .menu-item.is-open .icon-arrow-down {
+  @include i.icon-position(406.5px, 196.5px);
+  transform: rotate(180deg);
+}
+
+.mobile-menu .icon-cart {
+  @include i.icon-position(284px, 230px);
+}

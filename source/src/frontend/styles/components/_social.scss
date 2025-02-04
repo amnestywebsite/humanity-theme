@@ -1,0 +1,57 @@
+.social-facebook,
+.social-google,
+.social-instagram,
+.social-twitter,
+.social-youtube,
+.social-telegram {
+  position: relative;
+  display: block;
+  text-indent: -1000vw;
+  width: 20px;
+  height: 20px;
+  color: transparent;
+}
+
+.social-facebook::after,
+.social-google::after,
+.social-instagram::after,
+.social-twitter::after,
+.social-youtube::after,
+.social-telegram::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: var(--amnesty-icon-path);
+  background-repeat: no-repeat;
+  background-size: 313px 300px;
+  visibility: visible;
+  pointer-events: none;
+}
+
+.social-facebook::after {
+  background-position: -246px -5px;
+}
+
+.social-google::after {
+  background-position: -246px -155px;
+}
+
+.social-instagram::after {
+  background-position: -246px -180px;
+}
+
+.social-twitter::after {
+  background-position: -246px -55px;
+}
+
+.social-youtube::after {
+  background-position: -246px -205px;
+}
+
+.social-telegram::after {
+  background-position: -54px -155px;
+}
