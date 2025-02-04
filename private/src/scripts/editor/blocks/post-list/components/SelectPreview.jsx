@@ -15,15 +15,21 @@ const SelectPreview = ({ loading, posts = [], ...props }) => {
     return <p>{__('No Posts.', 'amnesty')}</p>;
   }
 
+  const hasMany = posts.length % 4 === 0 || posts.length > 8;
+
   if (props.style === 'grid') {
-    return [1, 2, 3, 5, 6, 7].indexOf(posts.length) > -1 ? (
+    if (hasMany) {
+      return (
+        <div className="grid grid-many">
+          {posts.map((result) => (
+            <GridItem key={`${props.prefix}-${result.id}`} {...result} />
+          ))}
+        </div>
+      );
+    }
+
+    return (
       <div className={`grid grid-${posts.length}`}>
-        {posts.map((result) => (
-          <GridItem key={`${props.prefix}-${result.id}`} {...result} />
-        ))}
-      </div>
-    ) : (
-      <div className={`grid grid-many`}>
         {posts.map((result) => (
           <GridItem key={`${props.prefix}-${result.id}`} {...result} />
         ))}
@@ -32,8 +38,18 @@ const SelectPreview = ({ loading, posts = [], ...props }) => {
   }
 
   if (props.style === 'petition') {
+    if (hasMany) {
+      return (
+        <div className="grid grid-many petition-grid">
+          {posts.map((result) => (
+            <PetitionItem key={`${props.prefix}-${result.id}`} {...result} />
+          ))}
+        </div>
+      );
+    }
+
     return (
-      <div className={`grid grid-many petition-grid`}>
+      <div className={`grid grid-${posts.length} petition-grid`}>
         {posts.map((result) => (
           <PetitionItem key={`${props.prefix}-${result.id}`} {...result} />
         ))}

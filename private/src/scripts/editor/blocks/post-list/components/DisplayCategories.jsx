@@ -223,20 +223,26 @@ class DisplayCategories extends Component {
       );
     }
 
+    const hasMany = this.props.amount % 4 === 0 || this.props.amount > 8;
+
     if (isGrid) {
-      return [1, 2, 3, 5, 6, 7].indexOf(this.props.amount) > -1 ? (
+      if (hasMany) {
+        return (
+          <div>
+            <div className="grid grid-many">
+              {results
+                .filter((item, i) => i < this.props.amount)
+                .map((result) => (
+                  <GridItem key={`${prefix}-${result.id}`} {...result} />
+                ))}
+            </div>
+          </div>
+        );
+      }
+
+      return (
         <div>
           <div className={`grid grid-${this.props.amount}`}>
-            {results
-              .filter((item, i) => i < this.props.amount)
-              .map((result) => (
-                <GridItem key={`${prefix}-${result.id}`} {...result} />
-              ))}
-          </div>
-        </div>
-      ) : (
-        <div>
-          <div className={`grid grid-many`}>
             {results
               .filter((item, i) => i < this.props.amount)
               .map((result) => (
@@ -248,19 +254,23 @@ class DisplayCategories extends Component {
     }
 
     if (isPetition) {
-      return [1, 2, 3, 5, 6, 7].indexOf(this.props.amount) > -1 ? (
+      if (hasMany) {
+        return (
+          <div>
+            <div className="grid grid-many petition-grid">
+              {results
+                .filter((item, i) => i < this.props.amount)
+                .map((result) => (
+                  <PetitionItem key={`${this.props.prefix}-${result.id}`} {...result} />
+                ))}
+            </div>
+          </div>
+        );
+      }
+
+      return (
         <div>
           <div className={`grid grid-${this.props.amount} petition-grid`}>
-            {results
-              .filter((item, i) => i < this.props.amount)
-              .map((result) => (
-                <PetitionItem key={`${this.props.prefix}-${result.id}`} {...result} />
-              ))}
-          </div>
-        </div>
-      ) : (
-        <div>
-          <div className={`grid grid-many petition-grid`}>
             {results
               .filter((item, i) => i < this.props.amount)
               .map((result) => (
