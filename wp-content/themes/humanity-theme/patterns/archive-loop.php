@@ -42,9 +42,9 @@ add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_archive' );
 	<!-- /wp:group -->
 
 	<!-- wp:query-pagination {"align":"center","className":"section section--small","paginationArrow":"none","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} -->
-		<!-- wp:query-pagination-previous {"label":"Previous"} /-->
+		<!-- wp:query-pagination-previous {"label":"<?php echo esc_html( __( 'Previous', 'amnesty' ) ); ?>"} /-->
 		<!-- wp:query-pagination-numbers {"midSize":1,"className":"page-numbers"} /-->
-		<!-- wp:query-pagination-next {"label":"Next"} /-->
+		<!-- wp:query-pagination-next {"label":"<?php echo esc_html( __( 'Next', 'amnesty' ) ); ?>"} /-->
 	<!-- /wp:query-pagination -->
 </div>
 <!-- /wp:query -->
