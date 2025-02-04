@@ -62,9 +62,9 @@ add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
 	<!-- /wp:group -->
 
 	<!-- wp:query-pagination {"align":"center","className":"section section--small","paginationArrow":"none","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} -->
-		<!-- wp:query-pagination-previous {"label":"Previous","paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>} /-->
+		<!-- wp:query-pagination-previous {"label":"<?php echo esc_html( __( 'Previous', 'amnesty' ) ); ?>","paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>} /-->
 		<!-- wp:query-pagination-numbers {"midSize":1,"paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>,"pretty":true,"className":"page-numbers"} /-->
-		<!-- wp:query-pagination-next {"label":"Next","paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>} /-->
+		<!-- wp:query-pagination-next {"label":"<?php echo esc_html( __( 'Next', 'amnesty' ) ); ?>","paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>} /-->
 	<!-- /wp:query-pagination -->
 </div>
 <!-- /wp:query -->
