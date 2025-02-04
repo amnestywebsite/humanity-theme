@@ -1,0 +1,119 @@
+@use "../../../../utils/mixins/icon" as i;
+
+@use "./initial-filters";
+@use "./additional-filters";
+
+.horizontal-search {
+  margin-bottom: var(--wp--preset--spacing--single);
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-search .section {
+  flex-direction: column;
+}
+
+.horizontal-search .search-button {
+  padding: var(--wp--preset--spacing--half);
+  line-height: 1.15;
+
+  @media all and (min-width: 940px) {
+    padding: var(--wp--preset--spacing--half) var(--wp--preset--spacing--single);
+  }
+}
+
+.horizontal-search .search-input {
+  grid-column: 1 / span 8;
+  order: 1;
+  display: flex;
+  margin-bottom: 0;
+  height: 100%;
+
+  p * {
+    height: 100%;
+  }
+
+  @media all and (min-width: 465px) {
+    grid-column: 1 / span 9;
+  }
+
+  @media all and (min-width: 940px) {
+    grid-column: 1 / span 4;
+  }
+}
+
+// search button
+.horizontal-search .default-search-filters p {
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 100%;
+}
+
+.horizontal-search .default-search-filters .search-input .btn,
+.horizontal-search .default-search-filters > .btn.is-expanded {
+  background-color: var(--wp--preset--color--grey-base);
+  color: var(--wp--preset--color--white);
+  border-color: var(--wp--preset--color--grey-base);
+}
+
+.horizontal-search .default-search-filters .search-input .btn.is-active {
+  background-color: var(--wp--preset--color--primary);
+  border-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--black);
+}
+
+.btn.toggle-search-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0 !important;
+  border-color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
+  grid-column: 10 / span 2;
+  word-break: keep-all;
+
+  &:hover,
+  &:focus {
+    background-color: var(--wp--preset--color--grey-dark);
+    border-color: var(--wp--preset--color--grey-dark);
+    color: var(--wp--preset--color--white);
+  }
+}
+
+.btn.toggle-search-filters .icon-arrow-down {
+  @include i.icon-position(406.5px, 196.5px);
+  transform: scale(.75);
+  transition: transform .3s;
+}
+
+.btn.toggle-search-filters.is-expanded .icon-arrow-down {
+  transform: scale(.75) rotate(180deg);
+}
+
+.horizontal-search .section.postlist-categoriesContainer {
+  width: 100%;
+  padding: 0 var(--wp--preset--spacing--single);
+  margin: 0;
+}
+
+.horizontal-search .icon-search {
+  @include i.icon-position(105px, 240px);
+  display: block;
+
+  @media all and (min-width: 940px) {
+    display: none;
+  }
+}
+
+.horizontal-search .btn.is-active .icon-search {
+  @include i.icon-position(128px, 240px);;
+}
+
+.horizontal-search .search-button-text {
+  word-break: keep-all;
+
+  @media all and (max-width: 939px) {
+    display: none;
+  }
+}

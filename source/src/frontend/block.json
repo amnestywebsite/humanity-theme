@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "amnesty-core/admin-assets",
-  "title": "Admin assets build",
-  "description": "This is a fake block to make wp-scripts build our admin assets",
+  "name": "amnesty-core/frontend-assets",
+  "title": "Frontend assets build",
+  "description": "This is a fake block to make wp-scripts build our non-specific frontend assets",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "supports": {

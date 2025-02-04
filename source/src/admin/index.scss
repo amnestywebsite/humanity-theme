@@ -3,8 +3,7 @@
 @use "localisation-options";
 
 :root {
-  --ms-base: 16;
-  --ms-ratio: 1.2;
+  --amnesty-icon-path: url("../images/sprite.svg"), none;
 }
 
 .is-hidden {

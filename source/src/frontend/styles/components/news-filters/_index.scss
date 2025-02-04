@@ -1,0 +1,9 @@
+.news-filters {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  @media all and (min-width: 940px) {
+    flex-direction: row;
+  }
+}

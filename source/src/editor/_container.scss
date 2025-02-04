@@ -1,0 +1,7 @@
+@use '../utils/functions/flexy' as f;
+
+.container {
+  @media all and (min-width: 1490px) {
+    padding: 0 f.flexy-gutter();
+  }
+}

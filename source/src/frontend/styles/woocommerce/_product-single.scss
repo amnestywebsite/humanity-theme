@@ -1,0 +1,105 @@
+.single-product .post-figure {
+  min-height: 300px;
+}
+
+.single-product a.remove {
+  line-height: .85em;
+}
+
+.single-product .woocommerce-ordering {
+  margin: 0;
+}
+
+.single-product .site-main > .container {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.single-product .product_title {
+  font-size: var(--wp--preset--font-size--heading-2);
+}
+
+.product-description h2 {
+  margin-bottom: var(--wp--preset--spacing--half);
+}
+
+.product-description p {
+  font-family: var(--wp--preset--font-family--secondary);
+  font-weight: bold;
+}
+
+.variations_form {
+  @media all and (min-width: 540px) {
+    max-width: 250px;
+  }
+}
+
+.woocommerce-product-gallery .flex-viewport {
+  border: 1px solid var(--wp--preset--color--grey-lighter);
+  margin-bottom: var(--wp--preset--spacing--single);
+  max-width: 472px;
+}
+
+.flex-viewport .woocommerce-product-gallery__image img {
+  max-height: 375px;
+  width: auto !important;
+  max-width: 100%;
+  margin: 50px auto;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+  padding: 5px;
+  max-width: 100px;
+  border: 1px solid var(--wp--preset--color--grey-lighter);
+
+  & + li {
+    margin-left: var(--wp--preset--spacing--single);
+  }
+}
+
+.single-product .variations .label {
+  padding-right: var(--wp--preset--spacing--single);
+  font-family: var(--wp--preset--font-family--secondary);
+  text-transform: uppercase;
+}
+
+.single-product .variations .value {
+  padding-bottom: var(--wp--preset--spacing--single);
+}
+
+.single-product .reset_variations {
+  margin-bottom: var(--wp--preset--spacing--single);
+}
+
+.single-product .price {
+  margin-top: 0;
+  margin-bottom: var(--wp--preset--spacing--single);
+  font-family: var(--wp--preset--font-family--primary);
+  color: var(--wp--preset--color--black);
+}
+
+.single-product .related > .container {
+  border-top: 1px solid var(--wp--preset--color--grey-lighter);
+}
+
+.single-product .related .postlist-header {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.single-product .related .postlist-headerTitle {
+  font-size: var(--wp--preset--font-size--heading-2);
+}
+
+.single-product .related .post-title {
+  font-size: var(--wp--preset--font-size--regular);
+}
+
+.single-product .related .post-content {
+  text-align: left;
+}
+
+.product .nyp .nyp-input {
+  margin-bottom: 0;
+  text-align: left;
+}

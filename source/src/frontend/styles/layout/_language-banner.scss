@@ -1,0 +1,95 @@
+@use "../../../utils/mixins/icon" as i;
+
+.language-selector {
+  display: none;
+  padding: 14px 0;
+  background-color: var(--wp--preset--color--grey-base);
+}
+
+.language-selector.is-visible {
+  display: block;
+}
+
+.language-selector .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--wp--preset--color--white);
+
+  @media all and (min-width: 940px) {
+    justify-content: flex-end;
+  }
+}
+
+.language-selector p {
+  margin: 16px 0;
+  order: 1;
+  text-align: center;
+}
+
+.language-selector .language-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  order: 4;
+  flex-basis: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media all and (min-width: 940px) {
+    order: 2;
+    flex-basis: auto;
+    margin-left: 24px;
+  }
+}
+
+.language-selector .language-list a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: var(--wp--preset--color--white);
+  font-family: var(--wp--preset--font-family--secondary);
+  font-size: var(--wp--preset--font-size--regular);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.language-selector .language-list li + li {
+  margin-left: 4px;
+}
+
+.language-selector .language-list a:hover,
+.language-selector .language-list a:focus,
+.language-selector .language-list .is-selected a {
+  background-color: var(--wp--preset--color--grey-darkest);
+}
+
+button.language-selectorClose {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+  padding: 11px;
+  font-size: var(--wp--preset--font-size--small);
+  order: 0;
+
+  @media all and (min-width: 465px) {
+    order: 3;
+  }
+
+  .rtl & {
+    margin-left: 0;
+  }
+}
+
+.language-selectorClose::after {
+  @include i.icon(194px, 265px, 16px, 16px);
+  content: "";
+  display: inline-block;
+  margin-left: 11px;
+
+  .rtl & {
+    margin-right: 11px;
+    margin-left: 0;
+  }
+}

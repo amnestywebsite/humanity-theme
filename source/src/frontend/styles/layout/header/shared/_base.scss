@@ -1,0 +1,66 @@
+.page-header {
+  position: sticky;
+  top: -100%;
+  z-index: 11;
+  height: 60px;
+  font-size: var(--wp--preset--font-size--regular);
+  color: var(--wp--preset--color--black);
+  transition: top .5s ease-in-out;
+  font-family: var(--wp--preset--font-family--secondary);
+  text-transform: uppercase;
+
+  li button {
+    text-transform: uppercase;
+  }
+
+  @media all and (min-width: 760px) {
+    height: 72px;
+  }
+}
+
+.page-header .container {
+  padding: 0;
+}
+
+.page-header .container,
+.page-headerItems {
+  height: 100%;
+}
+
+.page-header.stick {
+  top: 0;
+}
+
+.admin-bar .page-header.stick {
+  top: 0;
+
+  @media all and (min-width: 600px) {
+    top: 46px;
+  }
+
+  @media all and (min-width: 782px) {
+    top: 32px;
+  }
+}
+
+.page-headerItems {
+  display: flex;
+  align-items: flex-start;
+}
+
+.page-header a {
+  color: inherit;
+  transition: unset;
+}
+
+.page-header .btn {
+  display: flex;
+  align-items: center;
+  font-size: var(--wp--preset--font-size--heading-4);
+  color: var(--wp--preset--color--black);
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.page-header .menu-item {
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}

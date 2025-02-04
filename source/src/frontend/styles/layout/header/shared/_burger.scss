@@ -1,0 +1,40 @@
+.burger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 100%;
+  border: 2px solid transparent;
+  font-family: var(--wp--preset--font-family--secondary);
+  background-color: transparent;
+  cursor: pointer;
+
+  @media all and (min-width: 760px) {
+    width: 70px;
+  }
+
+  @media all and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.burger:active,
+.burger:focus {
+  border: 2px solid var(--wp--preset--color--orange-base);
+}
+
+.burger .icon-burger {
+  display: block;
+}
+
+.burger .icon-close {
+  display: none;
+}
+
+.mobile-menu-open .burger .icon-close {
+  display: block;
+}
+
+.mobile-menu-open .burger .icon-burger {
+  display: none;
+}
