@@ -258,33 +258,23 @@ if ( ! function_exists( 'amnesty_render_petition_list_block' ) ) {
 			return '';
 		}
 
+		$grid_classes = [ 'grid' ];
+
+		if ( 0 === count( $data ) % 4 || count( $data ) > 8 ) {
+			$grid_classes[] = 'grid-many';
+		} else {
+			$grid_classes[] = 'grid-' . count( $data );
+		}
+
+		if ( ! empty( $attributes['grid_class'] ) ) {
+			$grid_classes[] = $attributes['grid_class'];
+		}
+
 		ob_start();
 
-		if ( isset( $attributes['style'] ) && 'grid' === $attributes['style'] ) {
-			printf( '<div class="grid grid-%s">', esc_attr( count( $data ) ) );
-			array_map( 'amnesty_render_grid_item', $data );
-			print '</div>';
-
-			return ob_get_clean();
-		}
-
-		if ( isset( $attributes['style'] ) && 'petition' === $attributes['style'] ) {
-			// Checks how many items in the array and outputs a different class based on value
-				$grid_classes = sprintf( 'grid grid-many' );
-			if ( ! empty( $attributes['grid_class'] ) ) {
-				$grid_classes = $attributes['grid_class'];
-			}
-
-			printf( '<div class="%s">', esc_attr( $grid_classes ) );
-			array_map( 'amnesty_render_petition_item', $data );
-			print '</div>';
-
-			return ob_get_clean();
-		}
-
-		print '<ul class="linkList">';
-		array_map( 'amnesty_render_list_item', $data );
-		print '</ul>';
+		printf( '<div class="%s">', esc_attr( implode( ' ', $grid_classes ) ) );
+		array_map( 'amnesty_render_petition_item', $data );
+		print '</div>';
 
 		return ob_get_clean();
 	}
