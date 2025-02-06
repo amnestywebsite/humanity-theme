@@ -240,6 +240,11 @@ if ( ! function_exists( 'amnesty_localise_javascript' ) ) {
 			'currentLocale'    => get_locale(),
 		];
 
+		$options = get_option( 'amnesty_localisation_options_page' );
+		if ( isset( $options['enforce_grouping_separators'] ) ) {
+			$data['enforceGroupingSeparators'] = 'on' === $options['enforce_grouping_separators'];
+		}
+
 		wp_localize_script( 'amnesty-theme', 'amnestyCoreI18n', $data );
 		wp_localize_script( 'amnesty-core-blocks-js', 'amnestyCoreI18n', $data );
 	}
