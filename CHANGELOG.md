@@ -1,3 +1,18 @@
+### v2.0.10
+Fixes:
+- Correctly localise pagination strings in some patterns
+- Adjust grid calculations in Post List and Petition List blocks
+- Remove hook from Hero that disables featured image output
+
+Improvements:
+- Add patterns to mimic the Background Media block
+
+Localisation:
+- Add support for Slovenian language
+
+CI:
+- Update deployment targets
+
 ### v2.0.9
 Fixes:
 - Avoid PHP Warnings when expected menus aren't defined
