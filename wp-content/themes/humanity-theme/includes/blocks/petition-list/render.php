@@ -88,9 +88,9 @@ if ( ! function_exists( 'amnesty_render_petition_item' ) ) {
 				<h3 class="petition-itemTitle">
 					<?php
 					if ( ! empty( $data['link'] ) ) {
-						printf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['link'] ), esc_html( wp_trim_words( $title, 10 ) ) );
+						printf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['link'] ), esc_html( $title ) );
 					} else {
-						printf( '<span>%s</span>', esc_html( wp_trim_words( $title, 10 ) ) );
+						printf( '<span>%s</span>', esc_html( $title ) );
 					}
 					?>
 				</h3>
