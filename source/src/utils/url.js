@@ -1,4 +1,4 @@
-const { isObject } = window.lodash;
+import { isObject } from 'lodash';
 
 /**
  * Convert a query string into an object

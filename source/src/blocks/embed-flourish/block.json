@@ -9,6 +9,7 @@
   "icon": "embed-photo",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
+  "viewScript": "flourish-embed",
   "render": "file:./render.php",
   "attributes": {
     "source": {

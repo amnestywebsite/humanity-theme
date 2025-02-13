@@ -1,7 +1,6 @@
 import './index.scss';
 import 'intersection-observer';
 
-import Expose from './modules/Expose';
 import Overlays from './modules/overlays';
 import fluidText from './modules/fluid-text';
 import languageSelector from './modules/language-selector';
@@ -16,7 +15,7 @@ import categorySlider from './modules/category-slider';
 import tabbedNav from './modules/tabbed-nav';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
 
-const App = () => {
+document.addEventListener('DOMContentLoaded', () => {
   languageSelector();
   header();
   mobileMenu();
@@ -31,13 +30,4 @@ const App = () => {
   addFlickityToTabs();
 
   fluidText(document.getElementsByClassName('article-shareTitle'), 0.9);
-
-  return {
-    using: Expose(),
-  };
-};
-
-/**
- * Export to `window.App.default()`.
- */
-export default App;
+});
