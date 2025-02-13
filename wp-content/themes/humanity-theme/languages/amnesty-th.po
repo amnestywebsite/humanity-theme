@@ -1,0 +1,3399 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Humanity Theme 2.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/humanity-theme\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-12-11T17:57:13+00:00\n"
+"PO-Revision-Date: 2025-02-12 11:34+0000\n"
+"Language: th\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Domain: amnesty\n"
+
+#. Theme Name of the theme
+#: style.css
+#: includes/theme-setup/text-domain.php:74
+msgid "Humanity Theme"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/amnestywebsite/humanity-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "The Amnesty International WordPress Humanity Theme"
+msgstr ""
+
+#. Author of the theme
+#. translators: [front]
+#: style.css
+#: includes/theme-setup/wp-head.php:18
+msgid "Amnesty International"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.amnesty.org"
+msgstr ""
+
+#. translators: [front] ARIA
+#. translators: [admin]
+#: footer.php:32
+#: includes/admin/theme-options/footer.php:15
+#: includes/admin/theme-options/footer.php:19
+msgid "Footer"
+msgstr "ส่วนล่าง"
+
+#. translators: [front] ARIA
+#: footer.php:35
+msgid "Footer Menus"
+msgstr ""
+
+#. translators: [front] ARIA Social Media sharing options
+#. translators: [front] Social Media sharing options
+#: footer.php:67
+#: patterns/footer-content.php:123
+msgid "Follow us on:"
+msgstr ""
+
+#. translators: [front] ARIA
+#: footer.php:70
+msgid "Follow us on Facebook"
+msgstr ""
+
+#. translators: [front] ARIA
+#: footer.php:73
+msgid "Follow us on Twitter"
+msgstr ""
+
+#. translators: [front] ARIA
+#: footer.php:76
+msgid "Subscribe to our YouTube channel"
+msgstr ""
+
+#. translators: [front]
+#: footer.php:79
+msgid "Follow us on Instagram"
+msgstr ""
+
+#. translators: [front]
+#: footer.php:82
+msgid "Follow us on Telegram"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:84
+#: includes/admin/class-accessibility.php:86
+msgid "Accessibility"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:100
+msgid "Negishim"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:102
+msgid "Load the Negishim Accessibility widget (Hebrew)."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:35
+msgid "Amnesty Permalinks"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:44
+msgid "If you like, you may enter custom URL slugs for post types and taxonomies here. This allows you to create URL structures in your language."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:45
+msgid "Please note that changing these from their defaults may require you to set rewrite rules if you have existing content. Only change them if you know what you are doing."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:42
+msgid "Network Options"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:72
+msgid "Features"
+msgstr "คุณสมบัติ"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:74
+msgid "Manage available features"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:101
+msgid "Dedicated language selector"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:112
+msgid "Language button menu"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:114
+msgid "Enables a button in the main navigation which triggers a language selection menu"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:135
+#: includes/admin/theme-options/pop-in.php:25
+#: includes/admin/theme-options/pop-in.php:29
+#: includes/post-types/pop-in.php:26
+#: includes/post-types/pop-in.php:77
+msgid "Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:155
+msgid "Index Page Filter Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:160
+msgid "Categories Only"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:162
+msgid "Taxonomies & Terms"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:181
+msgid "Related Content (Posts)"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:183
+msgid "Enable the Related Content area on the post single template"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:199
+msgid "Post Types"
+msgstr "ประเภทการโพสต์"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:201
+msgid "Manage available post types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:220
+msgid "Taxonomies"
+msgstr "อนุกรมวิธาน"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:222
+msgid "Manage available taxonomies"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/settings-general.php:17
+msgid "Language Display Name"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/settings-general.php:44
+msgid "Override the site language display name on the site frontend"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options.php:18
+#: includes/admin/theme-options.php:23
+msgid "Theme Options"
+msgstr "ตัวเลือกธีม"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:21
+#: includes/admin/theme-options/analytics.php:25
+msgid "Analytics"
+msgstr "การวิเคราะห์"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:37
+msgid "Google Tag Manager Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:39
+msgid "Paste your Google Tag Manager Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:48
+msgid "GTM Consent Mode"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:50
+msgid "The status, and default value of, Google's Consent Mode (see https://support.google.com/analytics/answer/9976101). Note that, when using Consent Mode, you will have to implement targeting via a cookie control plugin such as Civic"
+msgstr ""
+
+#: includes/admin/theme-options/analytics.php:54
+msgid "Not Enabled"
+msgstr ""
+
+#: includes/admin/theme-options/analytics.php:55
+msgid "Enabled, denied"
+msgstr ""
+
+#: includes/admin/theme-options/analytics.php:56
+msgid "Enabled, granted"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:65
+msgid "Google Analytics Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:67
+msgid "Paste your Google Analytics Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:76
+msgid "Google Analytics v4 Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:78
+msgid "Paste your Google Analytics v4 Code; you must also have entered your GA Code above"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:87
+msgid "Hotjar Site ID:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:89
+msgid "Paste your Hotjar Site ID (example: 552474)"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:98
+msgid "VWO Account ID"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:100
+msgid "Paste your VWO Account ID here"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:114
+msgid "Site Meta Tags"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:123
+msgid "Meta Tags"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:125
+msgid "Add your site meta tags (&lt;meta name=\"thing\" /&gt;) here; useful for things like site verification tags"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:125
+#: includes/admin/theme-options/analytics.php:167
+msgid "If using WordPress SEO (Yoast) or similar, you may wish to use their built-in alternatives"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:129
+msgid "Add Tag"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:131
+msgid "Remove Tag"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:143
+msgid "Meta Name"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:145
+msgid "e.g. google-site-verification"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:156
+#: includes/admin/theme-options/analytics.php:198
+msgid "Meta Value"
+msgstr ""
+
+#: includes/admin/theme-options/analytics.php:166
+msgid "RDF Tags"
+msgstr ""
+
+#: includes/admin/theme-options/analytics.php:167
+msgid "Add your site rdf tags (&lt;meta property=\"thing\" /&gt;) here; useful for things like Facebook pages"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:171
+msgid "Add Property"
+msgstr "เพิ่มอสังหาริมทรัพย์"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:173
+msgid "Remove Property"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:185
+msgid "Meta Property"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:187
+msgid "e.g. fb:pages"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:215
+msgid "Deprecated fields"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:224
+msgid "The below fields are deprecated. Avoid using them if they are not currently in use on this site"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:232
+msgid "Google Tag Manager Script"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:234
+#: includes/admin/theme-options/analytics.php:245
+msgid "Deprecated. Do not use unless already in use."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:243
+msgid "Google Tag Manager Noscript"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:28
+msgid "Section Title"
+msgstr "หัวข้อส่วน"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:37
+msgid "Section Content"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:46
+msgid "Section Call to Action text"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:55
+msgid "Section Call to Action url"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:62
+#: includes/admin/theme-options/footer.php:67
+msgid "Copyright info"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:69
+msgid "By default, the copyright info outputs the current year followed by the site name; add content to this field to override this."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:19
+#: assets/scripts/blocks.js:1040
+#: assets/scripts/blocks.js:12336
+#: assets/scripts/blocks.js:34263
+#: assets/scripts/blocks.js:34268
+msgid "Header"
+msgstr "ส่วนหัว"
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:28
+msgid "Site Logotype"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:47
+msgid "Site Logomark"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:66
+msgid "Logo Link"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:19
+#: includes/admin/theme-options/localisation.php:23
+msgid "Localisation"
+msgstr "แปลภาษา"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:32
+msgid "Ordered List Character Choice"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:36
+msgid "Please select"
+msgstr "โปรดเลือก"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:40
+msgid "Default; Western Arabic numerals"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:42
+msgid "Arabic-Indic numbers"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:44
+msgid "Bengali numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:46
+msgid "Cambodian/Khmer numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:48
+msgid "Devanagari numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:50
+msgid "Ethiopic numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:52
+msgid "Formal Korean Han numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:54
+msgid "Gujarati numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:56
+msgid "Gurmukhi numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:58
+msgid "Han \"Earthly Branch\" ordinals"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:60
+msgid "Han \"Heavenly Stem\" ordinals"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:62
+msgid "Japanese formal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:64
+msgid "Japanese informal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:66
+msgid "Kannada numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:68
+msgid "Korean hangul numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:70
+msgid "Korean hanja numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:72
+msgid "Laotian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:74
+msgid "Lowercase Armenian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:76
+msgid "Lowercase ASCII letters"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:78
+msgid "Lowercase classical Greek."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:80
+msgid "Lowercase Roman numerals."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:82
+msgid "Malayalam numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:84
+msgid "Mongolian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:86
+msgid "Myanmar (Burmese) numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:88
+msgid "Oriya numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:90
+msgid "Persian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:92
+msgid "Simplified Chinese formal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:94
+msgid "Simplified Chinese informal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:96
+msgid "Tamil numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:98
+msgid "Telugu numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:100
+msgid "Thai numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:102
+msgid "Tibetan numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:104
+msgid "Traditional Armenian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:106
+msgid "Traditional Chinese formal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:108
+msgid "Traditional Chinese informal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:110
+msgid "Traditional Georgian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:112
+msgid "Traditional Hebrew numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:114
+msgid "Traditional uppercase Armenian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:116
+msgid "Uppercase ASCII letters"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:118
+msgid "Uppercase Roman numerals."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:19
+msgid "News"
+msgstr "ข่าว"
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:28
+msgid "Default Post sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:30
+#: includes/admin/theme-options/news.php:50
+msgid "Drag posts from the left column to the right column to attach them to this page.<br />Only the first sidebar selected will be used."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:48
+msgid "Default Page sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:38
+msgid "Active Pop-in Call to Action"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:40
+msgid "Drag a pop-in from the left column to the right column to activate."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:58
+msgid "Timeout"
+msgstr "หมดเวลา"
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:60
+msgid "After how many days should a dismissed pop-in be re-shown to the user?"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:19
+msgid "Social Media"
+msgstr "สื่อสังคม"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:28
+msgid "Facebook URL"
+msgstr "Facebook URL"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:37
+msgid "Twitter Handle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:46
+msgid "Youtube URL"
+msgstr "Youtube URL"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:55
+msgid "Instagram Handle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:64
+msgid "Telegram Handle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:31
+msgid "Shop Index Page"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:33
+msgid "Select the page used for the Shop Index"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:50
+msgid "Category Archive Page"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:52
+msgid "Select the page used for the Product Category Archive"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:15
+msgid "Actions"
+msgstr "การกระทำ"
+
+#. translators: [admin]
+#: includes/block-patterns/pattern-category.php:16
+#: assets/scripts/blocks.js:32314
+msgid "Media"
+msgstr "สื่อ"
+
+#: includes/block-patterns/pattern-category.php:17
+msgid "Templates"
+msgstr "แม่แบบ"
+
+#: includes/block-patterns/pattern-category.php:20
+msgid "Two Column"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:21
+msgid "Three Column"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:22
+msgid "Four Column"
+msgstr "สี่คอลัมน์"
+
+#: includes/block-patterns/pattern-category.php:23
+msgid "1/2, 1/2"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:24
+msgid "1/3, 1/3, 1/3"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:25
+msgid "1/4, 1/4, 1/4, 1/4"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:26
+msgid "2/3, 1/3"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:27
+msgid "1/3, 2/3"
+msgstr ""
+
+#. translators: [admin]
+#: includes/blocks/block-category.php:24
+msgid "Amnesty Core"
+msgstr ""
+
+#. translators: [front]
+#. translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource
+#. translators: [admin]
+#: includes/blocks/download/render.php:23
+#: includes/blocks/download/render.php:68
+#: assets/scripts/blocks.js:11502
+msgid "Download"
+msgstr "ดาวน์โหลด"
+
+#. translators: [front] no context avalible
+#: includes/blocks/embed-sutori/render.php:27
+msgctxt "Toggle visibility of Sutori Timeline"
+msgid "Click to show/hide timeline"
+msgstr ""
+
+#. translators: [front]
+#. translators: [front] AM I think this is used on the petition index or petition block
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars
+#. translators: [admin]
+#: includes/blocks/iframe-button/register.php:29
+#: includes/blocks/iframe-button/render.php:21
+#: includes/blocks/petition-list/render.php:54
+#: assets/scripts/blocks.js:10391
+#: assets/scripts/blocks.js:10431
+#: assets/scripts/blocks.js:12450
+#: assets/scripts/blocks.js:13645
+msgid "Act Now"
+msgstr ""
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:24
+msgid "Category List"
+msgstr "รายการหมวดหมู่"
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:97
+#: includes/blocks/menu/render.php:135
+msgid "List of page sections"
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/  used by sections, when a form rather than an Iframe is used
+#: includes/blocks/petition-list/render.php:57
+msgctxt "User has signed this petition."
+msgid "Signed!"
+msgstr ""
+
+#. translators: [front] %s: the title of the article
+#: includes/blocks/post-list/views/grid-item.php:10
+#: includes/blocks/post-list/views/list-item.php:4
+#: partials/post/post-full.php:16
+#: partials/post/post-none.php:10
+#: partials/post/post-search.php:31
+msgid "Article: %s"
+msgstr ""
+
+#. translators: [front]
+#. translators: [admin]
+#: includes/blocks/post-list/views/list-item-author.php:9
+#: assets/scripts/blocks.js:27184
+msgid "Author"
+msgstr "ผู้เขียน"
+
+#. translators: [front]
+#: includes/blocks/post-list/views/list-item-date.php:10
+msgid "Date"
+msgstr "วันที่"
+
+#. translators: [front]
+#: includes/blocks/post-list/views/list-item-date.php:23
+msgid "Updated"
+msgstr "อัพเดท"
+
+#. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#. translators: [admin]
+#: includes/blocks/regions/render.php:20
+#: assets/scripts/blocks.js:28124
+msgid "Explore by Region"
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#: includes/blocks/regions/render.php:67
+msgid "Hierarchical list of terms"
+msgstr ""
+
+#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#. translators: [front]
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Next post navigation label
+#. translators: [front]  https://isaidotorgstg.wpengine.com/en/latest
+#. translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label
+#. translators: [admin]
+#: includes/blocks/slider/render.php:15
+#: partials/archive/categories.php:50
+#: partials/pagination.php:12
+#: partials/pagination.php:50
+#: partials/search/pagination.php:20
+#: partials/search/pagination.php:60
+#: assets/scripts/blocks.js:29557
+#: assets/scripts/blocks.js:30108
+#: assets/scripts/blocks.js:30198
+#: assets/scripts/blocks.js:30312
+#: assets/scripts/blocks.js:30423
+#: assets/scripts/blocks.js:30536
+#: assets/scripts/blocks.js:30581
+#: assets/scripts/blocks.js:30626
+msgid "Next"
+msgstr "ถัดไป"
+
+#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#. translators: [front]
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Previous post navigation label
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest
+#. translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label
+#. translators: [admin]
+#: includes/blocks/slider/render.php:16
+#: partials/archive/categories.php:49
+#: partials/pagination.php:10
+#: partials/pagination.php:35
+#: partials/search/pagination.php:18
+#: partials/search/pagination.php:45
+#: assets/scripts/blocks.js:29560
+#: assets/scripts/blocks.js:30111
+#: assets/scripts/blocks.js:30201
+#: assets/scripts/blocks.js:30315
+#: assets/scripts/blocks.js:30426
+#: assets/scripts/blocks.js:30539
+#: assets/scripts/blocks.js:30584
+#: assets/scripts/blocks.js:30629
+msgid "Previous"
+msgstr "ก่อนหน้า"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery
+#. translators: [admin]
+#: includes/blocks/slider/views/slide.php:20
+#: assets/scripts/blocks.js:29841
+#: assets/scripts/blocks.js:29911
+#: assets/scripts/blocks.js:29951
+#: assets/scripts/blocks.js:30032
+msgid "Tap here to return to gallery"
+msgstr ""
+
+#. translators: [front]
+#. translators: [admin]
+#: includes/blocks/slider/views/slide.php:41
+#: assets/scripts/blocks.js:29857
+#: assets/scripts/blocks.js:29927
+#: assets/scripts/blocks.js:29967
+#: assets/scripts/blocks.js:30046
+#: assets/scripts/blocks.js:30187
+#: assets/scripts/blocks.js:30300
+#: assets/scripts/blocks.js:30411
+#: assets/scripts/blocks.js:30523
+msgid "Toggle Content"
+msgstr ""
+
+#. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
+#. translators: [admin]
+#: includes/blocks/term-list/render.php:56
+#: assets/scripts/blocks.js:31092
+#: assets/scripts/blocks.js:31148
+msgid "A-Z of Countries and Regions"
+msgstr ""
+
+#. translators: [front] ARIA
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: includes/blocks/tweet-action/render.php:41
+#: partials/article-share.php:20
+#: patterns/attachment-share.php:41
+#: patterns/post-share.php:31
+msgid "Twitter Logo"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action
+#. translators: [admin]
+#: includes/blocks/tweet-action/render.php:56
+#: includes/blocks/tweet-action/render.php:57
+#: assets/scripts/blocks.js:31277
+#: assets/scripts/blocks.js:31279
+#: assets/scripts/blocks.js:31370
+#: assets/scripts/blocks.js:31372
+#: assets/scripts/blocks.js:31412
+#: assets/scripts/blocks.js:31414
+msgid "Send this Tweet"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:43
+#: includes/core-blocks/social-icons/styles.php:18
+#: assets/scripts/blocks.js:141
+#: assets/scripts/blocks.js:189
+msgctxt "block style"
+msgid "Dark"
+msgstr "เข้ม"
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:52
+#: includes/core-blocks/social-icons/styles.php:36
+#: assets/scripts/blocks.js:201
+#: assets/scripts/blocks.js:245
+msgctxt "block style"
+msgid "Light"
+msgstr "สว่าง"
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:61
+#: assets/scripts/blocks.js:147
+msgctxt "block style"
+msgid "Back Link"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:27
+#: assets/scripts/blocks.js:195
+msgctxt "block style"
+msgid "Dark Circle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:46
+#: assets/scripts/blocks.js:207
+msgctxt "block style"
+msgid "Light Circle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:55
+msgctxt "block style"
+msgid "Yellow"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:63
+msgctxt "block style"
+msgid "Yellow Circle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:72
+#: assets/scripts/blocks.js:213
+msgctxt "block style"
+msgid "Logos Only Dark"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:81
+#: assets/scripts/blocks.js:219
+msgctxt "block style"
+msgid "Logos Only Light"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:90
+msgctxt "block style"
+msgid "Logos Only Yellow"
+msgstr ""
+
+#. translators: [front] shown on post single
+#. translators: [admin]
+#: includes/features/related-content/class-related-content.php:121
+#: includes/features/related-content/class-related-content.php:149
+#: includes/features/related-content/class-wp-rest-related-content-controller.php:150
+#: assets/scripts/blocks.js:28263
+#: assets/scripts/blocks.js:28276
+#: assets/scripts/blocks.js:28427
+msgid "Related Content"
+msgstr ""
+
+#. translators: [admin]
+#: includes/features/related-content/class-related-content.php:431
+#: assets/scripts/blocks.js:28227
+msgid "Country"
+msgstr "ประเทศ"
+
+#. translators: [API/admin]
+#: includes/features/related-content/class-wp-rest-related-content-controller.php:186
+msgid "The featured image for the post."
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title.
+#: includes/features/search/class-search-filters.php:149
+msgctxt "search results title"
+msgid "Search results"
+msgstr "ผลการค้นหา"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
+#. translators: Singular/Plural number of posts.
+#: includes/features/search/class-search-filters.php:189
+#: includes/full-site-editing/blocks/query-count/render.php:18
+#: includes/full-site-editing/blocks/search-header/views/view.php:9
+#: partials/archive/header.php:17
+#: partials/search/header.php:15
+msgid "%s result"
+msgid_plural "%s results"
+msgstr[0] ""
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
+#: includes/features/search/class-search-filters.php:249
+msgctxt "search results title suffix for the search term"
+msgid "for “%s”"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
+#: includes/features/search/class-search-filters.php:255
+msgctxt "search results title suffix for term exclusions"
+msgid "excluding “%s”"
+msgstr ""
+
+#. translators: [front] appended to search results title (n results for...); %s: the month searched for
+#: includes/features/search/class-search-filters.php:278
+msgctxt "search results title suffix for month published"
+msgid "for the month of %s"
+msgstr ""
+
+#. translators: [front] appended to search results title (n results for...); %s: the year searched for
+#: includes/features/search/class-search-filters.php:295
+msgctxt "search results title suffix for year published"
+msgid "in the year %s"
+msgstr ""
+
+#: includes/features/search/helpers.php:135
+msgid "January"
+msgstr "มกราคม"
+
+#: includes/features/search/helpers.php:136
+msgid "Febuary"
+msgstr ""
+
+#: includes/features/search/helpers.php:137
+msgid "March"
+msgstr "มีนาคม"
+
+#: includes/features/search/helpers.php:138
+msgid "April"
+msgstr "เมษายน"
+
+#: includes/features/search/helpers.php:139
+msgid "May"
+msgstr "พฤษภาคม"
+
+#: includes/features/search/helpers.php:140
+msgid "June"
+msgstr "มิถุนายน"
+
+#: includes/features/search/helpers.php:141
+msgid "July"
+msgstr "กรกฎาคม"
+
+#: includes/features/search/helpers.php:142
+msgid "August"
+msgstr "สิงหาคม"
+
+#: includes/features/search/helpers.php:143
+msgid "September"
+msgstr "กันยายน"
+
+#: includes/features/search/helpers.php:144
+msgid "October"
+msgstr "ตุลาคม"
+
+#: includes/features/search/helpers.php:145
+msgid "November"
+msgstr "พฤศจิกายน"
+
+#: includes/features/search/helpers.php:146
+msgid "December"
+msgstr "ธันวาคม"
+
+#: includes/features/search/permalink.php:39
+msgid "The ID of the page that should display the search interface"
+msgstr ""
+
+#: includes/features/search/permalink.php:45
+msgid "Search page"
+msgstr "เพจการค้นหา"
+
+#. translators: 1: number of results for search query, 2: don't translate (dynamic search term)
+#: includes/full-site-editing/blocks/query-count/render.php:22
+#: includes/full-site-editing/blocks/search-header/views/view.php:13
+#: partials/archive/header.php:21
+#: partials/search/header.php:19
+msgid "%1$s result for '%2$s'"
+msgid_plural "%1$s results for '%2$s'"
+msgstr[0] ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
+#. translators: [front] Donate Label for post sorting options
+#: includes/full-site-editing/blocks/search-header/views/view.php:40
+#: partials/archive/header.php:44
+#: partials/search/header.php:36
+#: patterns/archive-loop-results.php:33
+#: woocommerce/loop/orderby.php:29
+msgid "Sort by"
+msgstr "เรียงตาม"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#: includes/helpers/archive.php:66
+msgid "View now"
+msgstr ""
+
+#. translators: [front] AM not sure yet
+#: includes/helpers/frontend.php:27
+#: includes/helpers/frontend.php:39
+#: includes/helpers/frontend.php:45
+msgid "Choose an option"
+msgstr "เลือก"
+
+#. translators: [front] ARIA page number pagination prefix, e.g. "[Page] 1" https://isaidotorgstg.wpengine.com/en/latest
+#: includes/helpers/pagination.php:33
+msgid "Page"
+msgstr "หน้า"
+
+#. translators: [front] shown as a label for a region in search results
+#: includes/helpers/taxonomies.php:771
+msgid "Location Profile"
+msgstr ""
+
+#. translators: [front] shown as a label for a country in search results
+#: includes/helpers/taxonomies.php:775
+msgid "Country Profile"
+msgstr ""
+
+#. translators: [front] %1$s: the object type, %2$s: the object type's language
+#: includes/mlp/helpers.php:109
+msgid "View this %1$s in %2$s"
+msgstr ""
+
+#. translators: [front]
+#: includes/mlp/language-selector.php:115
+msgid "Available languages"
+msgstr "ภาษาที่ใช้ได้"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:20
+msgctxt "Post Type General Name"
+msgid "Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:22
+msgctxt "Post Type Singular Name"
+msgid "Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:24
+msgid "Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:28
+msgid "Pop-in Archives"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:30
+msgid "Pop-in Attributes"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:32
+msgid "Parent Pop-in:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:34
+msgid "All Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:36
+msgid "Add New Pop-in variant"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:38
+#: includes/post-types/sidebar.php:34
+msgid "Add New"
+msgstr "เพิ่มใหม่"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:40
+msgid "New Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:42
+msgid "Edit Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:44
+msgid "Update Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:46
+msgid "View Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:48
+msgid "View Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:50
+msgid "Search Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:52
+msgid "No pop-in variants found"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:54
+msgid "No pop-in variants found in Trash"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:56
+#: includes/post-types/sidebar.php:52
+#: includes/taxonomies/class-taxonomy-locations.php:238
+#: assets/scripts/blocks.js:12153
+#: assets/scripts/blocks.js:34178
+msgid "Featured Image"
+msgstr "รูปภาพแนะนำ"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:58
+#: includes/post-types/sidebar.php:54
+msgid "Set featured image"
+msgstr "ตั้งค่ารูปภาพแนะนำ"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:60
+#: includes/post-types/sidebar.php:56
+msgid "Remove featured image"
+msgstr "ลบรูปภาพหลัก"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:62
+#: includes/post-types/sidebar.php:58
+msgid "Use as featured image"
+msgstr "ใช้เป็นรูปภาพแนะนำ"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:64
+msgid "Insert into pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:66
+msgid "Uploaded to this pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:68
+msgid "Pop-in variants list"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:70
+msgid "Pop-in variants list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:72
+msgid "Filter pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:79
+msgid "A Pop-in is a call to action which renders at the very top of a page, pushing the entire page content down."
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:16
+msgctxt "Post Type General Name"
+msgid "Sidebars"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:18
+msgctxt "Post Type Singular Name"
+msgid "Sidebar"
+msgstr "แถบด้านข้าง"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:20
+msgid "Sidebars"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:22
+#: includes/post-types/sidebar.php:73
+#: assets/scripts/blocks.js:9558
+msgid "Sidebar"
+msgstr "แถบด้านข้าง"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:24
+msgid "Sidebar Archives"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:26
+msgid "Sidebar Attributes"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:28
+msgid "Parent Sidebar:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:30
+msgid "All Sidebars"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:32
+msgid "Add New Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:36
+msgid "New Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:38
+msgid "Edit Sidebar"
+msgstr "แก้ไขแถบด้านข้าง"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:40
+msgid "Update Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:42
+msgid "View Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:44
+msgid "View Sidebars"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:46
+msgid "Search Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:48
+msgid "Not Found"
+msgstr "ไม่พบ"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:50
+msgid "Not Found in Trash"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:60
+msgid "Insert into sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:62
+msgid "Uploaded to this item"
+msgstr "อัปโหลดไปยังรายการนี้"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:64
+msgid "Sidebars list"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:66
+msgid "Sidebars list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:68
+msgid "Filter sidebar list"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:75
+msgid "Sidebar post type"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:15
+msgid "Most Recent"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:16
+msgid "Oldest First"
+msgstr "ก่อนเก่าที่สุด"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:17
+msgid "Title - Ascending"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:18
+msgid "Title - Descending"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
+#: includes/query-filters/sort-order.php:22
+msgid "Most Relevant"
+msgstr ""
+
+#. translators: [admin]
+#: includes/rest-api/post-data.php:40
+msgid "Raw Umbraco data for this item"
+msgstr ""
+
+#: includes/rest-api/users.php:82
+msgid "Sorry, you are not allowed to do that."
+msgstr "ขออภัย คุณไม่ได้รับอนุญาติให้ทำสิ่งนั้น"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:98
+#: includes/taxonomies/class-taxonomy-content-types.php:100
+msgctxt "taxonomy general name"
+msgid "Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:102
+msgctxt "taxonomy singular name"
+msgid "Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:104
+msgid "Search Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:107
+msgid "All Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:109
+msgid "Parent Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:111
+msgid "Parent Content Type:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:113
+msgid "Edit Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:115
+msgid "View Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:117
+msgid "Update Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:119
+msgid "Add New Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:121
+msgid "New Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:126
+msgid "No Content Types found."
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:128
+msgid "No Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:130
+msgid "Content Types list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:132
+msgid "Content Types list"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-content-types.php:134
+msgctxt "Content Types"
+msgid "Most Used"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:136
+msgid "&larr; Back to Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:192
+msgid "Description"
+msgstr "รายละเอียด"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:84
+msgctxt "taxonomy general name"
+msgid "Countries"
+msgstr "ประเทศ"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:86
+msgctxt "taxonomy singular name"
+msgid "Country"
+msgstr "ประเทศ"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:88
+msgid "Search Countries"
+msgstr "ค้นหาประเทศ"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:90
+msgid "All Countries"
+msgstr "ทุกประเทศ"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:92
+msgid "Parent Country"
+msgstr "ประเทศแม่"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:94
+msgid "Parent Country:"
+msgstr "ประเทศ:"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:96
+msgid "Edit Country"
+msgstr "แก้ไขประเทศ"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:98
+msgid "View Country"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:100
+msgid "Update Country"
+msgstr "อัปเดตประเทศ"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:102
+msgid "Add New Country"
+msgstr "เพิ่มอำเภอใหม่"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:104
+msgid "New Country Name"
+msgstr "ประเทศใหม่"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:106
+msgid "Add or remove Countries"
+msgstr "เพิ่มหรือลบประเทศ"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:108
+msgid "Choose from most frequently used Countries"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:110
+msgid "No Countries found."
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:112
+msgid "No Countries"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:114
+msgid "Countries list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:116
+msgid "Countries list"
+msgstr "รายชื่อประเทศ"
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-locations.php:118
+msgctxt "countries"
+msgid "Most Used"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:120
+msgid "&larr; Back to Countries"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:219
+msgid "Term settings"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:232
+msgid "Basic Settings"
+msgstr "ตั้งค่า พื้นฐาน"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:241
+msgid "Choose or upload an image"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:157
+msgctxt "taxonomy general name"
+msgid "Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:159
+msgctxt "taxonomy singular name"
+msgid "Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:161
+msgid "Search Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:163
+msgid "All Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:165
+msgid "Parent Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:167
+msgid "Parent Resource Type:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:169
+msgid "Edit Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:171
+msgid "View Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:173
+msgid "Update Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:175
+msgid "Add New Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:177
+msgid "New Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:179
+msgid "Add or remove Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:181
+msgid "Choose from most frequently used Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:183
+msgid "No Resource Types found."
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:185
+msgid "No Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:187
+msgid "Resource Types list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:189
+msgid "Resource Types list"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-resource-types.php:191
+msgctxt "Resource Types"
+msgid "Most Used"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:193
+msgid "&larr; Back to Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:156
+msgctxt "taxonomy general name"
+msgid "Topics"
+msgstr "หัวข้อ"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:158
+msgctxt "taxonomy singular name"
+msgid "Topic"
+msgstr "หัวข้อ"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:160
+msgid "Search Topics"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:162
+msgid "All Topics"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:164
+msgid "Parent Topic"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:166
+msgid "Parent Topic:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:168
+msgid "Edit Topic"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:170
+msgid "View Topic"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:172
+msgid "Update Topic"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:174
+msgid "Add New Topic"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:176
+msgid "New Topic"
+msgstr "หัวข้อใหม่"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:178
+msgid "Add or remove Topics"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:180
+msgid "Choose from most frequently used Topics"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:182
+msgid "No Topics found."
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:184
+msgid "No Topics"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:186
+msgid "Topics list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:188
+msgid "Topics list"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-topics.php:190
+msgctxt "topics"
+msgid "Most Used"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:192
+msgid "&larr; Back to Topics"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/custom-fields/precedence.php:26
+#: includes/taxonomies/custom-fields/precedence.php:32
+msgid "Taxonomy Precedence"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/custom-fields/precedence.php:34
+msgid "In which order taxonomies should be ranked when retrieving a term to display prominently for an item"
+msgstr ""
+
+#. translators: %s the button title
+#: includes/theme-setup/class-mobile-nav-walker.php:302
+msgid "Expand %s list"
+msgstr ""
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:187
+msgid "Main Menu"
+msgstr "เมนูหลัก"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:189
+msgid "Site Selector"
+msgstr ""
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:191
+msgid "Footer Main"
+msgstr ""
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:193
+msgid "Footer Legal"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:77
+#: includes/theme-setup/scripts-and-styles.php:233
+msgctxt "open double quote"
+msgid "“"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:78
+#: includes/theme-setup/scripts-and-styles.php:235
+msgctxt "close double quote"
+msgid "”"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:79
+#: includes/theme-setup/scripts-and-styles.php:237
+msgctxt "open single quote"
+msgid "‘"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:80
+#: includes/theme-setup/scripts-and-styles.php:239
+msgctxt "close single quote"
+msgid "’"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:231
+msgctxt "list item separator"
+msgid ","
+msgstr ","
+
+#. translators: [admin]
+#: includes/theme-setup/supports.php:75
+msgid "Standard Post Template"
+msgstr ""
+
+#. translators: [admin] user settings
+#: includes/users/contact-methods.php:17
+msgid "Twitter Username (without the @)"
+msgstr ""
+
+#. translators: [admin]
+#: includes/users/meta.php:19
+msgid "Amnesty Umbraco User Info"
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/cart.php:29
+msgid "Number of items in your cart"
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/checkout.php:26
+msgid "Thank You!"
+msgstr "ขอบคุณ!"
+
+#. translators: [admin]
+#: includes/woo/emails.php:21
+msgid "Title image"
+msgstr ""
+
+#. translators: [admin]
+#: includes/woo/emails.php:23
+msgid "URL to an image you want to show above the title. Upload images using the media uploader (Admin > Media)."
+msgstr ""
+
+#. translators: [admin]
+#: includes/woo/emails.php:62
+msgid "Footer image"
+msgstr ""
+
+#. translators: [admin]
+#: includes/woo/emails.php:64
+msgid "URL to an image you want to show in the footer. Upload images using the media uploader (Admin > Media)."
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/order.php:15
+msgid "Your order has been processed. Your order details are shown below for your reference:"
+msgstr ""
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:18
+msgid "Post Type Settings"
+msgstr ""
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:26
+#: partials/admin/permalinks-taxonomy.php:26
+msgid "URL base"
+msgstr ""
+
+#. translators: [admin] %s: the default slug for this item
+#: partials/admin/permalinks-post-type.php:30
+#: partials/admin/permalinks-taxonomy.php:30
+msgid "Default: %s"
+msgstr "ค่าเริ่มต้น: %s"
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:35
+#: partials/admin/permalinks-taxonomy.php:35
+msgid "Use hierarchical URLs"
+msgstr ""
+
+#. translators: [admin]
+#: partials/admin/permalinks-taxonomy.php:18
+msgid "Taxonomy Settings"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/categories.php:28
+msgid "Filter results by category"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
+#: partials/archive/filters-active.php:45
+msgid "Filters applied"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
+#: partials/archive/filters-active.php:80
+msgid "Clear all"
+msgstr "ล้างข้อมูล"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options
+#: partials/archive/header.php:28
+#: partials/search/header.php:26
+msgid "Results information"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subcategories.php:33
+#: partials/archive/subcategories.php:61
+msgid "Second level category"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subcategories.php:55
+msgid "List of subcategories"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subsubcategories.php:31
+#: partials/archive/subsubcategories.php:54
+msgid "Third level category"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ Accessibility text
+#: partials/article-share.php:12
+msgid "Social sharing options"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
+#: partials/article-share.php:14
+#: patterns/attachment-share.php:33
+#: patterns/post-share.php:23
+msgid "Share on Facebook"
+msgstr "แชร์บนเฟสบุ๊ค"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: partials/article-share.php:15
+#: patterns/attachment-share.php:34
+#: patterns/post-share.php:24
+msgid "Facebook Logo"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
+#: partials/article-share.php:19
+#: patterns/attachment-share.php:40
+#: patterns/post-share.php:30
+msgid "Share on Twitter"
+msgstr "แชร์บนทวิตเตอร์"
+
+#. translators: [front] ARIA
+#: partials/forms/taxonomy-filters.php:14
+msgid "Filter results by topic"
+msgstr ""
+
+#. translators: [front] search results left hand side of page button
+#: partials/forms/taxonomy-filters.php:32
+msgid "Apply"
+msgstr "ใช้"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:17
+msgid "Language Selection"
+msgstr ""
+
+#. translators: [front]
+#: partials/language-selector.php:19
+msgid "Which language would you like to use this site in?"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:20
+msgid "Choose a language"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:26
+msgid "Close"
+msgstr "ปิด"
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:17
+msgid "Page Header"
+msgstr ""
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:25
+msgid "Amnesty Group Websites"
+msgstr ""
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:33
+msgid "Primary navigation"
+msgstr ""
+
+#. translators: [front]
+#: partials/navigation/desktop.php:42
+msgid "Open navigation"
+msgstr ""
+
+#. translators: [front] Donate
+#: partials/orders/customer-details-with-shipping.php:13
+msgid "Customer Details"
+msgstr "รายละเอียดลูกค้า"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:17
+msgid "Email:"
+msgstr "อีเมล์:"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:21
+msgid "Tel:"
+msgstr "โทรศัพท์:"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:28
+msgid "Payment Method"
+msgstr "วิธีการชำระเงิน"
+
+#: partials/pagination.php:28
+#: partials/search/pagination.php:38
+msgid "Pagination"
+msgstr "การให้เลขหน้า"
+
+#. translators: [front] AIRA https://isaidotorgstg.wpengine.com/en/latest
+#: partials/pagination.php:39
+#: partials/search/pagination.php:49
+msgid "Page numbers"
+msgstr ""
+
+#: partials/post/post-content.php:16
+#: partials/post/post-search.php:27
+msgctxt "updated date label"
+msgid "Updated"
+msgstr "อัพเดท"
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/news/2021/05/china-three-child-policy-still-a-violation/ placeholder is category name
+#: partials/post/post-content.php:22
+msgid "Article category %s"
+msgstr ""
+
+#. translators: [front] ARIA
+#: partials/post/post-content.php:25
+#: partials/post/post-search.php:47
+msgid "Post published date"
+msgstr ""
+
+#. translators: [front] ARIA
+#: partials/post/post-content.php:27
+#: partials/post/post-search.php:49
+msgid "Post updated date"
+msgstr ""
+
+#. translators: [front] ARIA Donate %s: the product category name
+#: partials/product/category.php:24
+msgid "Product Category: %s"
+msgstr ""
+
+#. translators: [front] screen reader text for search field
+#: partials/search/forminput.php:13
+msgid "Search input"
+msgstr ""
+
+#. translators: [front]
+#: partials/search/forminput.php:14
+msgid "What are you looking for?"
+msgstr "คุณกำลังมองหาอะไร?"
+
+#: partials/search/horizontal-search.php:12
+#: partials/search/horizontal-search.php:52
+msgid "Year"
+msgstr "ปี"
+
+#: partials/search/horizontal-search.php:13
+#: partials/search/horizontal-search.php:62
+msgid "Month"
+msgstr "เดือน"
+
+#. translators: [front]
+#: partials/search/horizontal-search.php:39
+msgid "Search"
+msgstr "ค้นหา"
+
+#. translators: [front]
+#: partials/search/horizontal-search.php:77
+msgid "Filters"
+msgstr "กรอง"
+
+#. translators: [front] Label for category archive navigation
+#: partials/shop/catalogue-header.php:13
+msgid "Product information"
+msgstr "ข้อมูลสินค้า"
+
+#. translators: [front]
+#. translators: [front] Donate
+#: partials/shop/catalogue-header.php:17
+#: woocommerce/archive-product.php:48
+msgid "All products"
+msgstr "สินค้าทั้งหมด"
+
+#. translators: [front] Label for shop index
+#. translators: [front] Donate Label for shop index
+#: partials/shop/catalogue-header.php:25
+#: woocommerce/single-product/related.php:39
+msgid "Catalogue"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons-square.php
+msgctxt "Pattern title"
+msgid "25/25/25/25 Links with Icons (square border)"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons-square.php
+msgctxt "Pattern description"
+msgid "A 25/25/25/25 layout with links and icons with a square border."
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons.php
+msgctxt "Pattern title"
+msgid "25/25/25/25 Links with Icons"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons.php
+msgctxt "Pattern description"
+msgid "A 25/25/25/25 layout with links and icons."
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons-square.php
+msgctxt "Pattern title"
+msgid "33/33/33 Links with Icons (square border)"
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons-square.php
+msgctxt "Pattern description"
+msgid "A 33/33/33 layout with links and icons with a square border."
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons.php
+msgctxt "Pattern title"
+msgid "33-33-33 Links with Icons"
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons.php
+msgctxt "Pattern description"
+msgid "Three columns with a heading, image, body text, and a button."
+msgstr ""
+
+#: patterns/50-50-text-with-image-grey-left.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (grey background, text on left, image on right)"
+msgstr ""
+
+#: patterns/50-50-text-with-image-grey-left.php
+#: patterns/50-50-text-with-image-grey-right.php
+#: patterns/50-50-text-with-image-white-left.php
+#: patterns/50-50-text-with-image-white-right.php
+msgctxt "Pattern description"
+msgid "A 50/50 layout with text on one side and an image on the other."
+msgstr ""
+
+#: patterns/50-50-text-with-image-grey-right.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (grey background, text on right, image on left)"
+msgstr ""
+
+#: patterns/50-50-text-with-image-white-left.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (white background, text on left, image on right)"
+msgstr ""
+
+#: patterns/50-50-text-with-image-white-right.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (white background, text on right, image on left)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-left-grey.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on left, video on right and grey background)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-left-grey.php
+#: patterns/50-50-text-with-video-left.php
+#: patterns/50-50-text-with-video-right-grey.php
+#: patterns/50-50-text-with-video-right.php
+msgctxt "Pattern description"
+msgid "A 50/50 layout with text on one side and a video on the other."
+msgstr ""
+
+#: patterns/50-50-text-with-video-left.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on left, video on right)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-right-grey.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on right, video on left and grey background)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-right.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on right, video on left)"
+msgstr ""
+
+#: patterns/66-33-chapter.php
+msgctxt "Pattern title"
+msgid "66-33 Chapter"
+msgstr ""
+
+#: patterns/66-33-chapter.php
+msgctxt "Pattern description"
+msgid "A two column layout with a heading and body text in the left column and an image in the right column."
+msgstr ""
+
+#: patterns/66-33-text-key-facts.php
+msgctxt "Pattern title"
+msgid "66/33 Text Key Facts"
+msgstr ""
+
+#: patterns/66-33-text-key-facts.php
+msgctxt "Pattern description"
+msgid "Two columns with a heading, body text, and key facts."
+msgstr ""
+
+#: patterns/66-33-text-with-image.php
+msgctxt "Pattern title"
+msgid "66-33 Text with Image"
+msgstr ""
+
+#: patterns/66-33-text-with-image.php
+msgctxt "Pattern description"
+msgid "Two columns with a heading, body text including quote, and an image."
+msgstr ""
+
+#: patterns/66-33-text-with-video.php
+msgctxt "Pattern title"
+msgid "66/33 Text with Video"
+msgstr ""
+
+#: patterns/66-33-text-with-video.php
+msgctxt "Pattern description"
+msgid "Two columns with text on the left and a video on the right"
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404 Page Content"
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern description"
+msgid "Translatable content for the 404 page."
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: patterns/404.php:11
+msgid "Page Not Found"
+msgstr "ไม่พบหน้านี้"
+
+#: patterns/404.php:15
+msgid "The page you are looking for does not exist."
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: patterns/404.php:20
+msgid "Go to the Homepage"
+msgstr ""
+
+#: patterns/archive-heading.php
+msgctxt "Pattern title"
+msgid "Archive filters"
+msgstr ""
+
+#: patterns/archive-heading.php
+msgctxt "Pattern description"
+msgid "Outputs filters for post type archive pages"
+msgstr ""
+
+#: patterns/archive-hero.php
+msgctxt "Pattern title"
+msgid "Archive hero"
+msgstr ""
+
+#: patterns/archive-hero.php
+msgctxt "Pattern description"
+msgid "Outputs hero block for post type archive pages"
+msgstr ""
+
+#: patterns/archive-loop-results.php
+msgctxt "Pattern title"
+msgid "Archive loop results"
+msgstr ""
+
+#: patterns/archive-loop-results.php
+#: patterns/archive-loop.php
+msgctxt "Pattern description"
+msgid "Template for the loop on archive pages"
+msgstr ""
+
+#: patterns/archive-loop.php
+msgctxt "Pattern title"
+msgid "Archive loop"
+msgstr ""
+
+#: patterns/archive-slider.php
+msgctxt "Pattern title"
+msgid "Archive slider"
+msgstr ""
+
+#: patterns/archive-slider.php
+msgctxt "Pattern description"
+msgid "Generates a slider for all posts that are marked as featured for the current category"
+msgstr ""
+
+#: patterns/attachment-back-link.php
+msgctxt "Pattern title"
+msgid "Attachment Back Link"
+msgstr ""
+
+#: patterns/attachment-back-link.php
+#: patterns/post-back-link.php
+msgctxt "Pattern description"
+msgid "Output back link to return to item's category archive"
+msgstr ""
+
+#: patterns/attachment-content.php
+msgctxt "Pattern title"
+msgid "Attachment Content"
+msgstr ""
+
+#: patterns/attachment-content.php
+msgctxt "Pattern description"
+msgid "Output the content of an attachment"
+msgstr ""
+
+#: patterns/attachment-metadata.php
+msgctxt "Pattern title"
+msgid "Attachment Metadata"
+msgstr ""
+
+#: patterns/attachment-metadata.php
+msgctxt "Pattern description"
+msgid "Output contextual data for an attachment"
+msgstr ""
+
+#: patterns/attachment-published-date.php
+msgctxt "Pattern title"
+msgid "Attachment Published Date"
+msgstr ""
+
+#: patterns/attachment-published-date.php
+msgctxt "Pattern description"
+msgid "Output the published date metadata for an attachment"
+msgstr ""
+
+#: patterns/attachment-share.php
+msgctxt "Pattern title"
+msgid "Attachment Share"
+msgstr ""
+
+#: patterns/attachment-share.php
+#: patterns/post-share.php
+msgctxt "Pattern description"
+msgid "Output article sharing links"
+msgstr ""
+
+#: patterns/attachment-term-list.php
+msgctxt "Pattern title"
+msgid "Attachment Term List"
+msgstr ""
+
+#: patterns/attachment-term-list.php
+#: patterns/attachment-terms.php
+msgctxt "Pattern description"
+msgid "Output the taxonomy terms for an attachment"
+msgstr ""
+
+#: patterns/attachment-terms.php
+msgctxt "Pattern title"
+msgid "Attachment Terms"
+msgstr ""
+
+#: patterns/attachment-updated-date.php
+msgctxt "Pattern title"
+msgid "Attachment Updated Date"
+msgstr ""
+
+#: patterns/attachment-updated-date.php
+msgctxt "Pattern description"
+msgid "Output the \"updated date\" for an attachment"
+msgstr ""
+
+#. translators: [front]
+#: patterns/attachment-updated-date.php:32
+#: patterns/post-updated-date.php:26
+msgid "Post updated timestamp"
+msgstr ""
+
+#. translators: [front]
+#: patterns/attachment-updated-date.php:33
+#: patterns/post-updated-date.php:27
+msgctxt "prefix for post updated date"
+msgid "Updated:"
+msgstr ""
+
+#: patterns/audio-quote.php
+msgctxt "Pattern title"
+msgid "Quote with Audio above it"
+msgstr ""
+
+#: patterns/audio-quote.php
+msgctxt "Pattern description"
+msgid "A quote block with an audio block above it."
+msgstr ""
+
+#: patterns/audio-transcript.php
+msgctxt "Pattern title"
+msgid "Audio with Transcript"
+msgstr ""
+
+#: patterns/audio-transcript.php
+msgctxt "Pattern description"
+msgid "An Audio block with a Details block for a transcript below it."
+msgstr ""
+
+#: patterns/author-bio.php
+msgctxt "Pattern title"
+msgid "Author Biography"
+msgstr ""
+
+#: patterns/author-bio.php
+msgctxt "Pattern description"
+msgid "Outputs the Author biography, if any"
+msgstr ""
+
+#: patterns/author-bio.php:21
+msgid "Biography"
+msgstr "ประวัติ"
+
+#: patterns/author-hero.php
+msgctxt "Pattern title"
+msgid "Author Hero"
+msgstr ""
+
+#: patterns/author-hero.php
+msgctxt "Pattern description"
+msgid "Outputs the Author page' hero, if any"
+msgstr ""
+
+#: patterns/author-loop.php
+msgctxt "Pattern title"
+msgid "Author loop"
+msgstr ""
+
+#: patterns/author-loop.php
+msgctxt "Pattern description"
+msgid "Template for the loop on author pages"
+msgstr ""
+
+#: patterns/author-loop.php:17
+msgid "More from this author"
+msgstr ""
+
+#: patterns/author-sidebar.php
+msgctxt "Pattern title"
+msgid "Author sidebar"
+msgstr ""
+
+#: patterns/author-sidebar.php
+msgctxt "Pattern description"
+msgid "Template for the sidebar on author pages"
+msgstr ""
+
+#. translators: %s: the author's Twitter handle
+#: patterns/author-sidebar.php:12
+msgid "Tweets by %s"
+msgstr ""
+
+#: patterns/blog-home-content.php
+msgctxt "Pattern title"
+msgid "Blog home content"
+msgstr ""
+
+#: patterns/blog-home-content.php
+msgctxt "Pattern description"
+msgid "Outputs post content on the blog home if it is set to a static page"
+msgstr ""
+
+#: patterns/call-to-action-borders.php
+msgctxt "Pattern title"
+msgid "Call to Action Borders"
+msgstr ""
+
+#: patterns/call-to-action-borders.php
+msgctxt "Pattern description"
+msgid "Call to action with a top and bottom border containing a headings, paragraph, and button."
+msgstr ""
+
+#: patterns/call-to-action-grey.php
+msgctxt "Pattern title"
+msgid "Call to Action Grey"
+msgstr ""
+
+#: patterns/call-to-action-grey.php
+msgctxt "Pattern description"
+msgid "Call to action with a grey background containing headings, paragraph, and button."
+msgstr ""
+
+#: patterns/chunky-heading-with-links.php
+msgctxt "Pattern title"
+msgid "Chunky Heading with Links"
+msgstr ""
+
+#: patterns/chunky-heading-with-links.php
+msgctxt "Pattern description"
+msgid "A chunky heading with links to page points"
+msgstr ""
+
+#: patterns/custom-card-dark.php
+msgctxt "Pattern title"
+msgid "Custom Card Dark"
+msgstr ""
+
+#: patterns/custom-card-dark.php
+msgctxt "Pattern description"
+msgid "Custom card with a dark grey background containing a heading, image, paragraph, and button."
+msgstr ""
+
+#: patterns/custom-card-light.php
+msgctxt "Pattern title"
+msgid "Custom Card Light"
+msgstr ""
+
+#: patterns/custom-card-light.php
+msgctxt "Pattern description"
+msgid "Custom card with a light grey background containing a heading, image, paragraph, and button."
+msgstr ""
+
+#: patterns/evergreen-text-highlight.php
+msgctxt "Pattern title"
+msgid "Evergreen Text Highlight"
+msgstr ""
+
+#: patterns/evergreen-text-highlight.php
+msgctxt "Pattern description"
+msgid "A section with a grey background to highlight text."
+msgstr ""
+
+#: patterns/featured-image.php
+msgctxt "Pattern title"
+msgid "Featured Image"
+msgstr "รูปภาพแนะนำ"
+
+#: patterns/featured-image.php
+msgctxt "Pattern description"
+msgid "Featured image output with caption, copyright, etc."
+msgstr ""
+
+#: patterns/footer-content.php
+msgctxt "Pattern title"
+msgid "Footer Content"
+msgstr ""
+
+#: patterns/footer-content.php
+msgctxt "Pattern description"
+msgid "Outputs content for the footer template part"
+msgstr ""
+
+#: patterns/full-image-with-buttons.php
+msgctxt "Pattern title"
+msgid "Full Image with Buttons"
+msgstr ""
+
+#: patterns/full-image-with-buttons.php
+msgctxt "Pattern description"
+msgid "A full-width image with buttons below."
+msgstr ""
+
+#: patterns/home-intro.php
+msgctxt "Pattern title"
+msgid "Home intro"
+msgstr ""
+
+#: patterns/home-intro.php
+msgctxt "Pattern description"
+msgid "Outputs the content for the home template when set to static page"
+msgstr ""
+
+#: patterns/links-with-icons-single-square.php
+msgctxt "Pattern title"
+msgid "Links with Icons Single (square border)"
+msgstr ""
+
+#: patterns/links-with-icons-single-square.php
+msgctxt "Pattern description"
+msgid "Single column with a heading, image, body text, and a button. with a square border"
+msgstr ""
+
+#: patterns/links-with-icons-single.php
+msgctxt "Pattern title"
+msgid "Links with Icons Single"
+msgstr ""
+
+#: patterns/links-with-icons-single.php
+msgctxt "Pattern description"
+msgid "Single column with a heading, image, body text, and a button."
+msgstr ""
+
+#: patterns/page-content.php
+msgctxt "Pattern title"
+msgid "Page Content Pattern"
+msgstr ""
+
+#: patterns/page-content.php
+msgctxt "Pattern description"
+msgid "Page content pattern for the theme"
+msgstr ""
+
+#: patterns/petition-content.php
+msgctxt "Pattern title"
+msgid "Petition Content"
+msgstr ""
+
+#: patterns/petition-content.php
+msgctxt "Pattern description"
+msgid "Output the content of a single petition"
+msgstr ""
+
+#: patterns/post-back-link.php
+msgctxt "Pattern title"
+msgid "Post Back Link"
+msgstr ""
+
+#: patterns/post-byline-author.php
+msgctxt "Pattern title"
+msgid "Post Byline (Author)"
+msgstr ""
+
+#: patterns/post-byline-author.php
+#: patterns/post-byline-custom.php
+#: patterns/post-byline.php
+msgctxt "Pattern description"
+msgid "Output the public byline for a post"
+msgstr ""
+
+#. translators: [front] %s: prefix for a post's author attribution
+#: patterns/post-byline-author.php:45
+msgctxt "prefix for a post's author attribution"
+msgid "By %s"
+msgstr "โดย %s"
+
+#: patterns/post-byline-custom.php
+msgctxt "Pattern title"
+msgid "Post Byline (Custom)"
+msgstr ""
+
+#. translators: [front]
+#: patterns/post-byline-custom.php:38
+msgctxt "author attribution (as in \"written by\")"
+msgid "By"
+msgstr "โดย"
+
+#: patterns/post-byline.php
+msgctxt "Pattern title"
+msgid "Post Byline"
+msgstr ""
+
+#: patterns/post-content.php
+msgctxt "Pattern title"
+msgid "Post Content"
+msgstr "โพสต์เนื้อหา"
+
+#: patterns/post-content.php
+msgctxt "Pattern description"
+msgid "Output the content of a single post"
+msgstr ""
+
+#: patterns/post-header.php
+msgctxt "Pattern title"
+msgid "Post Header"
+msgstr ""
+
+#: patterns/post-header.php
+msgctxt "Pattern description"
+msgid "Outputs the post's header (deprecated - replaced by the hero), if any"
+msgstr ""
+
+#: patterns/post-hero.php
+msgctxt "Pattern title"
+msgid "Post Hero"
+msgstr ""
+
+#: patterns/post-hero.php
+msgctxt "Pattern description"
+msgid "Outputs the post's hero, if any"
+msgstr ""
+
+#: patterns/post-metadata.php
+msgctxt "Pattern title"
+msgid "Post Metadata"
+msgstr ""
+
+#: patterns/post-metadata.php
+msgctxt "Pattern description"
+msgid "Output contextual data for a post"
+msgstr ""
+
+#: patterns/post-published-date.php
+msgctxt "Pattern title"
+msgid "Post Published Date"
+msgstr "วันที่ประกาศผลงาน"
+
+#: patterns/post-published-date.php
+msgctxt "Pattern description"
+msgid "Output the published date metadata for a post"
+msgstr ""
+
+#: patterns/post-share.php
+msgctxt "Pattern title"
+msgid "Post Share"
+msgstr ""
+
+#: patterns/post-term-list.php
+msgctxt "Pattern title"
+msgid "Post Term List"
+msgstr ""
+
+#: patterns/post-term-list.php
+#: patterns/post-terms.php
+msgctxt "Pattern description"
+msgid "Output the taxonomy terms for a post"
+msgstr ""
+
+#: patterns/post-terms.php
+msgctxt "Pattern title"
+msgid "Post Terms"
+msgstr ""
+
+#: patterns/post-updated-date.php
+msgctxt "Pattern title"
+msgid "Post Updated Date"
+msgstr ""
+
+#: patterns/post-updated-date.php
+msgctxt "Pattern description"
+msgid "Output the \"updated date\" for a post"
+msgstr ""
+
+#: patterns/quote-audio.php
+msgctxt "Pattern title"
+msgid "Quote with Audio below it"
+msgstr ""
+
+#: patterns/quote-audio.php
+msgctxt "Pattern description"
+msgid "A quote block with an audio block below it."
+msgstr ""
+
+#: patterns/related-content.php
+msgctxt "Pattern title"
+msgid "Related Content"
+msgstr ""
+
+#: patterns/related-content.php
+msgctxt "Pattern description"
+msgid "Output Related Content for a post"
+msgstr ""
+
+#: patterns/search-results.php
+msgctxt "Pattern title"
+msgid "Search results pattern"
+msgstr ""
+
+#: patterns/search-results.php
+msgctxt "Pattern description"
+msgid "Search results pattern for the theme"
+msgstr ""
+
+#: patterns/search.php
+msgctxt "Pattern title"
+msgid "Search pattern"
+msgstr ""
+
+#: patterns/search.php
+msgctxt "Pattern description"
+msgid "Search pattern for the theme"
+msgstr ""
+
+#: patterns/shop-categories.php
+msgctxt "Pattern title"
+msgid "Shop Categories"
+msgstr "หมวดหมู่ร้านค้า"
+
+#: patterns/shop-categories.php
+msgctxt "Pattern description"
+msgid "Render category list on shop pages"
+msgstr ""
+
+#: patterns/taxonomy-hero.php
+msgctxt "Pattern title"
+msgid "Taxonomy hero"
+msgstr ""
+
+#: patterns/taxonomy-hero.php
+msgctxt "Pattern description"
+msgid "Outputs hero block for taxonomy archive pages"
+msgstr ""
+
+#. translators: [front] Donate %s: product category
+#: woocommerce/archive-product_cat.php:47
+msgid "Products in the %s category"
+msgstr ""
+
+#. translators: [front] Donate
+#: woocommerce/global/quantity-input.php:39
+#: woocommerce/global/quantity-input.php:51
+msgid "Qty"
+msgstr "จำนวน"
+
+#. translators: [front] Donate
+#: woocommerce/loop/result-count.php:27
+msgid "Showing one result"
+msgstr ""
+
+#. translators: [front] Donate %d: total results
+#: woocommerce/loop/result-count.php:33
+msgid "Showing all %d result"
+msgid_plural "Showing all %d results"
+msgstr[0] ""
+
+#. translators: [front] Donate 1: first result 2: last result 3: total results
+#: woocommerce/loop/result-count.php:43
+msgctxt "shown with first and last result on product pages"
+msgid "Showing %1$d&ndash;%2$d of %3$d result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] ""
+
+#. translators: [front] Donate
+#. translators: [admin]
+#: woocommerce/order/order-details.php:52
+#: assets/scripts/blocks.js:12844
+#: assets/scripts/blocks.js:35295
+msgid "Quantity"
+msgstr "จำนวน"
+
+#. translators: [front] Donate
+#: woocommerce/order/order-details.php:53
+msgid "Price"
+msgstr "ราคา"
+
+#. translators: [front] Donate related products
+#: woocommerce/single-product/related.php:36
+msgid "Related Items"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block title"
+msgid "Archive Filters"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block description"
+msgid "For presenting filters on archive pages"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block keyword"
+msgid "Archives"
+msgstr "คลังเก็บ"
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block keyword"
+msgid "Filters"
+msgstr "กรอง"
+
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block title"
+msgid "Archive Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block description"
+msgid "For presenting the archive header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block keyword"
+msgid "Archive Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block title"
+msgid "Pop-in"
+msgstr ""
+
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block description"
+msgid "For presenting dismissible content at the top of the site"
+msgstr ""
+
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block keyword"
+msgid "Pop-in"
+msgstr ""
+
+#: includes/full-site-editing/blocks/query-count/block.json
+msgctxt "block title"
+msgid "Query Count"
+msgstr ""
+
+#: includes/full-site-editing/blocks/query-count/block.json
+msgctxt "block description"
+msgid "Display the query results count"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block title"
+msgid "Search Form"
+msgstr "ฟอร์มการค้นหา"
+
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block description"
+msgid "For presenting the search form"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block keyword"
+msgid "Search Form"
+msgstr "ฟอร์มการค้นหา"
+
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block title"
+msgid "Search Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block description"
+msgid "For presenting the search page header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block keyword"
+msgid "Search Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/sidebar/block.json
+msgctxt "block title"
+msgid "Sidebar"
+msgstr "แถบด้านข้าง"
+
+#: includes/full-site-editing/blocks/sidebar/block.json
+msgctxt "block description"
+msgid "For presenting a sidebar on a post type"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Style variation name"
+msgid "Amnesty Trade Gothic"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Font family name"
+msgid "Amnesty Trade Gothic"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Font family name"
+msgid "Amnesty Trade Gothic Condensed"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Style variation name"
+msgid "Roboto"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Font family name"
+msgid "Roboto"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Font family name"
+msgid "Roboto Condensed"
+msgstr ""
+
+#: styles/03-rubik.json
+msgctxt "Style variation name"
+msgid "Rubik"
+msgstr ""
+
+#: styles/03-rubik.json
+msgctxt "Font family name"
+msgid "Rubik"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr "ขาว"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Grey Brand"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "เล็ก"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "กลาง"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "ใหญ่"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr "เบื้องต้น"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary State"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr "สำรอง"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Lightest Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Lighter Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "light Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Default Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Darker Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Darkest Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Twitter Blue"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Orange"
+msgstr "สีส้ม"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Quarter"
+msgstr "ไตรมาส"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Half"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Single"
+msgstr "โสด"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Double"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Quad"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Lato"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "PlayfairDisplay"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Regular"
+msgstr "ปกติ"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Larger"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr "ใหญ่"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 1"
+msgstr "หัวข้อเรื่อง 1"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 2"
+msgstr "หัวข้อเรื่อง 2"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 3"
+msgstr "หัวข้อเรื่อง 3"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 4"
+msgstr "หัวข้อเรื่อง 4"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 5"
+msgstr "หัวข้อเรื่อง 5"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 6"
+msgstr "หัวข้อเรื่อง 6"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Article Title"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "ส่วนหัว"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "ส่วนล่าง"
