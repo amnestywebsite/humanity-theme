@@ -1,11 +1,11 @@
-const { assign } = lodash;
-const { addFilter } = wp.hooks;
+import { assign } from 'lodash';
+import { addFilter } from '@wordpress/hooks';
 
 /**
  * Remove button styles
  */
 addFilter('blocks.registerBlockType', 'amnesty-core', (settings, name) => {
-  if (name !== 'core/details') {
+  if (name !== 'core/post-title') {
     return settings;
   }
 

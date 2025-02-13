@@ -41,11 +41,11 @@ if ( ! function_exists( 'humanity_register_block_styles' ) ) {
 	 * @return void
 	 */
 	function humanity_register_block_styles(): void {
-		if ( ! is_dir( __DIR__ . '/block-styles' ) ) {
+		if ( ! is_dir( __DIR__ . DIRECTORY_SEPARATOR . 'block-styles' ) ) {
 			return;
 		}
 
-		$iterator = new IteratorIterator( new DirectoryIterator( __DIR__ . '/block-styles' ) );
+		$iterator = new IteratorIterator( new DirectoryIterator( __DIR__ . DIRECTORY_SEPARATOR . 'block-styles' ) );
 
 		/**
 		 * Each entry is an object instance
@@ -59,3 +59,11 @@ if ( ! function_exists( 'humanity_register_block_styles' ) ) {
 		}
 	}
 }
+
+( function () {
+	foreach ( [ 'admin', 'editor', 'editor-plugins', 'frontend' ] as $slug ) {
+		if ( file_exists( __DIR__ . DIRECTORY_SEPARATOR . 'register-' . $slug . '-assets.php' ) ) {
+			require_once __DIR__ . DIRECTORY_SEPARATOR . 'register-' . $slug . '-assets.php';
+		}
+	}
+} )();

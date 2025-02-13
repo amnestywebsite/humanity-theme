@@ -11,37 +11,37 @@
               "fontFamily": "Roboto",
               "fontStyle": "normal",
               "fontWeight": "400",
-              "src": "file:./assets/fonts/roboto/roboto-400.woff2"
+              "src": "file:./fonts/roboto/roboto-400.woff2"
             },
             {
               "fontFamily": "Roboto",
               "fontStyle": "normal",
               "fontWeight": "700",
-              "src": "file:./assets/fonts/roboto/roboto-700.woff2"
+              "src": "file:./fonts/roboto/roboto-700.woff2"
             },
             {
               "fontFamily": "Roboto",
               "fontStyle": "italic",
               "fontWeight": "400",
-              "src": "file:./assets/fonts/roboto/roboto-400-italic.woff2"
+              "src": "file:./fonts/roboto/roboto-400-italic.woff2"
             },
             {
               "fontFamily": "Roboto",
               "fontStyle": "italic",
               "fontWeight": "700",
-              "src": "file:./assets/fonts/roboto/roboto-700-italic.woff2"
+              "src": "file:./fonts/roboto/roboto-700-italic.woff2"
             },
             {
               "fontFamily": "Roboto",
               "fontStyle": "normal",
               "fontWeight": "100",
-              "src": "file:./assets/fonts/roboto/roboto-100.woff2"
+              "src": "file:./fonts/roboto/roboto-100.woff2"
             },
             {
               "fontFamily": "Roboto",
               "fontStyle": "italic",
               "fontWeight": "100",
-              "src": "file:./assets/fonts/roboto/roboto-100-italic.woff2"
+              "src": "file:./fonts/roboto/roboto-100-italic.woff2"
             }
           ],
           "fontFamily": "Roboto, sans-serif",
@@ -54,37 +54,37 @@
               "fontFamily": "\"Roboto Condensed\"",
               "fontStyle": "normal",
               "fontWeight": "400",
-              "src": "file:./assets/fonts/roboto-condensed/roboto-condensed-400.woff2"
+              "src": "file:./fonts/roboto-condensed/roboto-condensed-400.woff2"
             },
             {
               "fontFamily": "\"Roboto Condensed\"",
               "fontStyle": "normal",
               "fontWeight": "700",
-              "src": "file:./assets/fonts/roboto-condensed/roboto-condensed-700.woff2"
+              "src": "file:./fonts/roboto-condensed/roboto-condensed-700.woff2"
             },
             {
               "fontFamily": "\"Roboto Condensed\"",
               "fontStyle": "italic",
               "fontWeight": "400",
-              "src": "file:./assets/fonts/roboto-condensed/roboto-condensed-400-italic.woff2"
+              "src": "file:./fonts/roboto-condensed/roboto-condensed-400-italic.woff2"
             },
             {
               "fontFamily": "\"Roboto Condensed\"",
               "fontStyle": "italic",
               "fontWeight": "700",
-              "src": "file:./assets/fonts/roboto-condensed/roboto-condensed-700-italic.woff2"
+              "src": "file:./fonts/roboto-condensed/roboto-condensed-700-italic.woff2"
             },
             {
               "fontFamily": "\"Roboto Condensed\"",
               "fontStyle": "normal",
               "fontWeight": "200",
-              "src": "file:./assets/fonts/roboto-condensed/roboto-condensed-200.woff2"
+              "src": "file:./fonts/roboto-condensed/roboto-condensed-200.woff2"
             },
             {
               "fontFamily": "\"Roboto Condensed\"",
               "fontStyle": "italic",
               "fontWeight": "200",
-              "src": "file:./assets/fonts/roboto-condensed/roboto-condensed-200-italic.woff2"
+              "src": "file:./fonts/roboto-condensed/roboto-condensed-200-italic.woff2"
             }
           ],
           "fontFamily": "\"Roboto Condensed\", sans-serif",
