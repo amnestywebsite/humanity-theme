@@ -67,6 +67,16 @@
   font-size: var(--wp--preset--font-size--heading-4);
 }
 
+.petition-item .petition-itemTitle > * {
+  // stylelint-disable-next-line value-no-vendor-prefix -- this is necessary
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .petition-item .petition-itemExcerpt {
   text-transform: uppercase;
   font-family: var(--wp--preset--font-family--secondary);
