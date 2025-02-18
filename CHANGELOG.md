@@ -1,3 +1,7 @@
+### v2.0.11
+Fixes:
+- Incorrect slug handling in Petition List block
+
 ### v2.0.10
 Fixes:
 - Correctly localise pagination strings in some patterns
