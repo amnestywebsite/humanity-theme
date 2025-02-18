@@ -12,9 +12,9 @@ if ( ! function_exists( 'register_petition_list_block' ) ) {
 	 */
 	function register_petition_list_block(): void {
 		$all_types = amnesty_get_post_types();
-		$petition  = get_option( 'aip_petition_slug' ) ?: 'petition';
 
-		if ( ! isset( $all_types[ $petition ] ) ) {
+		// note: this is always "petition", regardless of what is set in permalinks
+		if ( ! isset( $all_types['petition'] ) ) {
 			return;
 		}
 
@@ -45,7 +45,7 @@ if ( ! function_exists( 'register_petition_list_block' ) ) {
 						'default' => $default_petition,
 					],
 				],
-			] 
+			]
 		);
 	}
 }
