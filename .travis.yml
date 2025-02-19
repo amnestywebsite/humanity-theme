@@ -479,14 +479,6 @@ jobs:
     env:
       secure: "GSGf3OSN0sRxY85I9dM2Ns0/c37gl7d0ZGUZmEp+C2Up8PGzMEycy5sFm+upUp/HSuoOgWTEQxNXfNeg7uHzzWqWNKFUCGf0wFPGWoAgYtXPdOD/jD3u4uPoiZ6W/4qtC4ntWvgt2rsy3vy5zM21tgGckK9mFySmr4wA7Jn4cBm1TGjlqojbCGr5DhbTZNaOcWYg6Jx86S001jPvmc6m1qmx+uspfB9Hdbt8XcoXYUnSuEXesF2bI5pjbArCKrC0O2VNTAUpHTquiG5re08i7PxygKLMIQOqbyZ2yyAiHDT1OKwzz+LKdjVMEUcFT2VPyE6LauoJAI/fqQgt+stENfbnDC5ZauQUM4BOa13sPQhP9e+4QXhqtd6zbr9KUXogd9MSmVRm/L3CDNy59PeqRLO0nn44eYuilYvd1CBVum+2TZRLFm4zqRoLw+jND1kW+X/vV7x1ELJyBR1/94m1LyYEbUsg18OreJTj0xZQe7RTedaC/VdIGMk1Ufxk85pBXH8N986+FXmO9Q//GlpwJVYtxyGOH8C7IAZw00fdzIt2M7Sq1pwbubIeUe+RhTKSPmgI94G5H5VjUwGWzW/oZ2YYXoIYUl+26VoR6VhUM/uiP7sSY1G8qNtQRoEwhLdkCm/9pzVWskJr+x9/r2riL033prDWTq97urkm1apu1WQ="
   - stage: Deploy to [PRD]
-    name: LnBGxpTN
-    before_install: openssl aes-256-cbc -K $encrypted_264f0dad5034_key -iv $encrypted_264f0dad5034_iv -in private/key.enc -out ~/.ssh/id_rsa -d && chmod 0600 ~/.ssh/id_rsa
-    install: ./private/bin/install.sh
-    before_script: ./private/bin/build.sh
-    script: ./private/bin/deploy.sh
-    env:
-      secure: "cWwxWyRrjYuVyPCLbQx3hCYsFxI/WsXoY/CVcNjSpZiZgCzJQ9BRWxqq09rJz6rktkmpUWYWWZJhfSEeOtOZYysxE4GPWsdjMvs2bwin+uB8V/QP3ABOnXbtT7jZJQm4zzE27Kmn8GB31hemvHWcFunNd3E41msAWxqkOaRAfRXM8w/P4hSPswSSqqsESCdhvi1bI9CvcP0g2wEmRoI31939Kq07nxa2zGgkDvcLRa2EeKfkwtvn3sopxYm0BmHqKdjDtn6OMIxUhgbtLum8wne106GYa+G2TISW5lLOBbLROTsfqr61CGhKnE6v2pToums6jxq0mAKV3rlyA60U5Ef7/1r7vHVzpt7QPrwHJA96l+BTwB1Xtx754CPtqSe3ovWZrMGEBfM6eJ4YzQYLWGk29Gmrpv7LCBJczTL/YviRWn1awSKrV58k5cW+bnihrHCRhUcVPoTaDNhD45M/UPW1qDlI0duA7H1dVJSR0bqLoHme47du3gIATxVC/0AyrIIMOaaxM89m0mHsP31S0qcQQ5ZdvKIZ8kasXtgqlCglAUmMEz4bRBiYNOqw9M1yDh3ktBRW9eginpWEmGZCdiVMzwLSgOzOOlKiQn/DYOXPiclTOpFqvCbq4fkbGM8Fk6w75eWHeWD7joEB6v0WoaHBWSPYuycnzTNoVa/Jp84="
-  - stage: Deploy to [PRD]
     name: CTjlpqAf
     before_install: openssl aes-256-cbc -K $encrypted_264f0dad5034_key -iv $encrypted_264f0dad5034_iv -in private/key.enc -out ~/.ssh/id_rsa -d && chmod 0600 ~/.ssh/id_rsa
     install: ./private/bin/install.sh
@@ -534,14 +526,6 @@ jobs:
     script: ./private/bin/deploy.sh
     env:
       secure: "U9S+n9oUHvc8bC6Qu8EYhvWWUrsantLO/waUuJLBwEdvXUzGgIiBYSMjCSR6t6KZXefYZg7AZEVxrZJrmqxfLazCX7vwwy8Mcv4oLyA0F+YvelwZIyD7kPpB5d26NGyc0zGzMMc957crzoaWy8XA0WjBhl+z8Iz8X+J5zZ+fMYODHFVRsDX2RFCOl0nm1JrQQ5UaYu9jDF2p1E/pzTY0UYjze7+F8+uj+hGTRNqT+B/Z4Mu8dN9Lj4dH/FBQK9SltEkz9C2ODfGJruYJLDZS8XVvkIYZagm842tIiWTwRS3yiM9lhat4RVAitcD2It1aadaLFazwepVFRsALacVsgLbmXPay5JbOjlWQKSHl8Gcm1Q7I49yYXnd0//pPRxtXRVIwffbE1pYjKtEcuqkDIGpo1kR7akgqfYTGfzG1ExCTI69GfpL/bMgUlbDUZ1WmzNjO7tHb3VwphrvpMQvNJhxJIwcjjpaVitVjRcgD/wdLIbyUw2GWKz5VnFNeKzzuetr6S+lA9jcflO7+EeqdUl3hjohsN4ke1qap+9Knu0+j4V8yVyaqO+ZfWaurX1GM4tWxYs0loOaTlWRfZM/z6zOjoNUISiXddwkLIpVvxiTW53DsqnQzzWuH2IygFo08Ap4lCTPNTXM5TmXaT8yZu7AjY5jLKB1uJVEXB5MQLrY="
-  - stage: Deploy to [PRD]
-    name: RCPWMd3K
-    before_install: openssl aes-256-cbc -K $encrypted_264f0dad5034_key -iv $encrypted_264f0dad5034_iv -in private/key.enc -out ~/.ssh/id_rsa -d && chmod 0600 ~/.ssh/id_rsa
-    install: ./private/bin/install.sh
-    before_script: ./private/bin/build.sh
-    script: ./private/bin/deploy.sh
-    env:
-      secure: "ofr0hDcUA/IQ2pAyG9khGMdV9ursyPNZW1CUg8DlZdxvSjQ+LQLsYw+EnqetMXRGaIl+DZ5PFZ03h6m90tfqyOw/3TMUmeLa+5yQfwRGjueF/vWDw/eYq+xVngYI0NpyPKVhN80YtiTllyZVFAFA9uzFOqbov01SOmxxApprOzR0FTaYV4KeS3WAtpHKhtdDTXEg3kFhUhxdcLtZGIUDHxuK+MutGwQrQPuzucH85ZDFFDzWb7msqd2UvQ7ZVc8QYGZFFWr9L4ptSxh6/C4yykVBrV6EkHGlVzxUCzO/Ai1vI7U6nChkCEtx2MW8VtzM5OCmpAtOtEfgb99NwvDbuzKM2HlU7KaqrUKw1bOJabiNGTegufHxN/nx846ZFovw6rNMSbusBSHG3NFr6FktnYRo7IFdlCnjjd3iNzCsqFWqJDZapO8B+GnO0LHFybEdhe3sb6wK5BqEnOg3DMZV1AVNpYTeFkhMZpF8gS0VnpjB1zCxyF634tqw0YwDkUkIfQRwNFpg9Gv0fMjePQ228xL+7mL1Q5bA7i+RXg7VfgUeHO+fG8vReRATvLMHHf4pGCUcIu57fpn1NmZ1zeaZJIs+CFM7AT4dKXEjDm/HwWuaX41/5C17/D1l9nhaIRvqb01fQolzUAho0CinkaHOn7tZDVrKOt6HZdleZp0NWYc="
   - stage: Deploy to [PRD]
     name: P5ZRtPzl
     before_install: openssl aes-256-cbc -K $encrypted_264f0dad5034_key -iv $encrypted_264f0dad5034_iv -in private/key.enc -out ~/.ssh/id_rsa -d && chmod 0600 ~/.ssh/id_rsa
