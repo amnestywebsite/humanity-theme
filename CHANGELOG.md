@@ -1,3 +1,14 @@
+### v2.0.11
+Fixes:
+- Incorrect slug handling in Petition List block
+- Petition List block title truncation
+
+Localisation:
+- Add support for Thai language
+
+CI:
+- Update deployment targets
+
 ### v2.0.10
 Fixes:
 - Correctly localise pagination strings in some patterns
