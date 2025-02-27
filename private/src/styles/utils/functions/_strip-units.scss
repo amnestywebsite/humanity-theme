@@ -1,6 +1,0 @@
-/// Strip units from given number.
-/// @param  {string} $number - String to strip units from
-/// @return {number}
-@function strip-units($number) {
-  @return $number / ($number * 0 + 1);
-}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "amnesty-core/shared-assets",
+  "title": "Shared assets build",
+  "description": "This is a fake block to make wp-scripts build our non-specific shared (frontend/editor) assets",
+  "viewStyle": "file:./index.css",
+  "supports": {
+    "inserter": false
+  }
+}
