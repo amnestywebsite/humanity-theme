@@ -1,12 +1,12 @@
 <?php
 
-$slider_id   = $attributes['sliderId'] ?? '';
-$quantity    = $attributes['quantity'] ?? 1;
-$has_arrows  = $attributes['hasArrows'] ?? true;
-$show_tabs   = $attributes['showTabs'] ?? true;
-$has_content = $attributes['hasContent'] ?? false;
-$style       = $attributes['style'] ?? 'dark';
-$title       = $attributes['title'] ?? '';
+$slider_id    = $attributes['sliderId'] ?? '';
+$quantity     = $attributes['quantity'] ?? 1;
+$has_arrows   = $attributes['hasArrows'] ?? true;
+$show_tabs    = $attributes['showTabs'] ?? true;
+$has_content  = $attributes['hasContent'] ?? false;
+$style        = $attributes['style'] ?? 'dark';
+$slider_title = $attributes['title'] ?? '';
 
 $slider_classes = classnames(
 	'slider',
@@ -39,20 +39,20 @@ foreach ( $slide_blocks as $slide ) {
 $buttons = '';
 
 foreach ( $slide_titles as $index => $slide_title ) {
-	$buttons .= '<button class="slider-navButton" aria-label="Go to slide: ' . htmlspecialchars($slide_title) . '">' . htmlspecialchars($slide_title) . '</button>';
+	$buttons .= '<button class="slider-navButton">' . esc_html( $slide_title ) . '</button>';
 }
 
 // If there are fewer buttons than the $quantity, create additional buttons (blank or default)
 for ( $i = count( $slide_titles ); $i < $quantity; $i++ ) {
 	// Optionally, you could make this button blank or set a default aria-label if needed
-	$buttons .= '<button class="slider-navButton" aria-label="Go to slide"></button>';
+	$buttons .= '<button class="slider-navButton"></button>';
 }
 
 ?>
 
 <div id="slider-<?php echo esc_attr( $slider_id ); ?>" <?php echo wp_kses_data( $wrapper_attributes ); ?>>
-<?php if ( $title ) : ?>
-	<h2 class="slider-title"><?php echo wp_kses_post( $title ); ?></h2>
+<?php if ( $slider_title ) : ?>
+	<h2 class="slider-title"><?php echo wp_kses_post( $slider_title ); ?></h2>
 <?php endif; ?>
 
 	<div class="slides-container">
@@ -61,10 +61,10 @@ for ( $i = count( $slide_titles ); $i < $quantity; $i++ ) {
 		</div>
 		<?php if ( $has_arrows ) : ?>
 			<button class="slides-arrow slides-arrow--previous" aria-label="<?php esc_attr_e( 'Previous slide', 'amnesty' ); ?>">
-				<?php echo file_get_contents( get_template_directory() . '/assets/svg/arrow-left.svg' ); ?>
+				<span class="icon icon-arrow-left"></span>
 			</button>
 			<button class="slides-arrow slides-arrow--next" aria-label="<?php esc_attr_e( 'Next slide', 'amnesty' ); ?>">
-				<?php echo file_get_contents( get_template_directory() . '/assets/svg/arrow-right.svg' ); ?>
+				<span class="icon icon-arrow-right"></span>
 			</button>
 		<?php endif; ?>
 		<?php if ( $show_tabs ) : ?>

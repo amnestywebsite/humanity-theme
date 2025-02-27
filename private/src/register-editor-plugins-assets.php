@@ -1,4 +1,4 @@
-<?php
+<?php // phpcs:disable Squiz.Commenting.InlineComment.WrongStyle,PEAR.Commenting.InlineComment.WrongStyle
 
 declare( strict_types = 1 );
 

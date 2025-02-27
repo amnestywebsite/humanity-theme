@@ -15,6 +15,17 @@
   }
 }
 
+.icon-arrow-right {
+  @include i.icon(234px, 240px, 16px, 16px);
+  display: inline-block;
+  transform: rotate(180deg);
+
+  .rtl & {
+    @include i.icon(110px, 265px, 16px, 16px);
+    transform: rotate(180deg);
+  }
+}
+
 .icon-remove {
   @include i.icon(0, 285px, 16px, 16px);
   display: inline-block;
