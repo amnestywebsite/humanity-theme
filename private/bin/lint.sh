@@ -19,8 +19,8 @@ trap error_out 1 2 3 6
 # lint all the things
 composer lint
 cd ./private
-yarn lint:scripts
-yarn lint:styles
+yarn lint:scss
+yarn lint:js
 cd ..
 
 if which shfmt > /dev/null; then
