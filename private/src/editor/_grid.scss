@@ -128,8 +128,13 @@
   .post {
     position: relative;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 8px;
+    min-height: auto !important;
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--wp--preset--color--black) 5%, transparent);;
+    }
   }
 
   .post .editor-block-icon .dashicons-plus {
@@ -264,15 +269,6 @@
 .rtl .grid-itemTitle .block-editor-url-input__button {
   margin-right: 30px;
   margin-left: 0;
-}
-
-.wp-block-bigbite-postlist .post {
-  min-height: auto !important;
-  align-items: center;
-
-  &:hover {
-    background-color: color-mix(in srgb, var(--wp--preset--color--black) 5%, transparent);;
-  }
 }
 
 .wp-block-bigbite-postlist label,
