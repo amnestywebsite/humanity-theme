@@ -61,7 +61,7 @@ if ( ! function_exists( 'humanity_register_block_styles' ) ) {
 }
 
 ( function () {
-	foreach ( [ 'admin', 'editor', 'editor-plugins', 'frontend' ] as $slug ) {
+	foreach ( [ 'admin', 'editor', 'editor-plugins', 'frontend', 'shared' ] as $slug ) {
 		if ( file_exists( __DIR__ . DIRECTORY_SEPARATOR . 'register-' . $slug . '-assets.php' ) ) {
 			require_once __DIR__ . DIRECTORY_SEPARATOR . 'register-' . $slug . '-assets.php';
 		}

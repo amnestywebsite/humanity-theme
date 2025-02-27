@@ -4940,6 +4940,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wordpress/deprecated@npm:^4.18.0":
+  version: 4.18.0
+  resolution: "@wordpress/deprecated@npm:4.18.0"
+  dependencies:
+    "@babel/runtime": "npm:7.25.7"
+    "@wordpress/hooks": "npm:^4.18.0"
+  checksum: 10c0/4fbd771898e30051416d1b05143d42ff1b3f6b59221671729fa0e862976d9c66c9b4fbe4cdc73afa49031e783333fdeb2dc4e63f23bf16d5e01de59dbbcda41c
+  languageName: node
+  linkType: hard
+
 "@wordpress/dom-ready@npm:^4.16.0":
   version: 4.16.0
   resolution: "@wordpress/dom-ready@npm:4.16.0"
@@ -4975,6 +4985,16 @@ __metadata:
     "@babel/runtime": "npm:7.25.7"
     "@wordpress/deprecated": "npm:^4.17.0"
   checksum: 10c0/304ad22d52d3fd461afb5a4531bb39312bcd4f01d6e5aed01e1be349ac610293af95d3e500841544841c61e1a104d6c3cbc856e2dabe07c1a30b0b757a050232
+  languageName: node
+  linkType: hard
+
+"@wordpress/dom@npm:^4.18.0":
+  version: 4.18.0
+  resolution: "@wordpress/dom@npm:4.18.0"
+  dependencies:
+    "@babel/runtime": "npm:7.25.7"
+    "@wordpress/deprecated": "npm:^4.18.0"
+  checksum: 10c0/668729b5f87882453669e01a0774fb22d4c97a12a45fcd5f6e19e1442350d358780c8d7a0265fe0c0154f11f085f2bc35b49f284fd1238592dce8b75369f77d5
   languageName: node
   linkType: hard
 
@@ -5190,6 +5210,15 @@ __metadata:
   dependencies:
     "@babel/runtime": "npm:7.25.7"
   checksum: 10c0/e4ead5e4c8439cacb536ce54c4314780cd78c3cb664dcdd94dcc0fd905e007b918103675bb8c01eb294fa007ce42d14cf1e8a61fe7b4c0cbd365dc5e743c6b8f
+  languageName: node
+  linkType: hard
+
+"@wordpress/hooks@npm:^4.18.0":
+  version: 4.18.0
+  resolution: "@wordpress/hooks@npm:4.18.0"
+  dependencies:
+    "@babel/runtime": "npm:7.25.7"
+  checksum: 10c0/5b7297c8ea06e7066296776fdfc8ccc1785a30e980a949f8a7509730b9ee14f32d40ab637e7883f054ae7dfe64460e061716c08d9f485951c371bc8abacbe56e
   languageName: node
   linkType: hard
 
@@ -10387,6 +10416,7 @@ __metadata:
     "@wordpress/compose": "npm:^7.15.1"
     "@wordpress/core-data": "npm:^7.15.1"
     "@wordpress/data": "npm:^10.15.1"
+    "@wordpress/dom": "npm:^4.18.0"
     "@wordpress/editor": "npm:^14.15.1"
     "@wordpress/element": "npm:^6.15.1"
     "@wordpress/eslint-plugin": "npm:^22.2.0"

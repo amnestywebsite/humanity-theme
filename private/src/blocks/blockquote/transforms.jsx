@@ -1,17 +1,5 @@
-import { versionCompare } from '../../utils';
-
-const { createBlock } = '@wordpress/blocks';
-
-/**
- * backwards-compatible getPhrasingContentSchema
- */
-const getPhrasingContentSchema = () => {
-  if (versionCompare(window.WPVersion, '5.6') < 0) {
-    return wp.blocks.getPhrasingContentSchema();
-  }
-
-  return wp.dom.getPhrasingContentSchema();
-};
+import { createBlock } from '@wordpress/blocks';
+import { getPhrasingContentSchema } from '@wordpress/dom';
 
 const transforms = {
   from: [
