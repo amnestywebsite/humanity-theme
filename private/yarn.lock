@@ -10453,7 +10453,6 @@ __metadata:
     react-select: "npm:^5.9.0"
     sass: "npm:^1.83.1"
     sass-loader: "npm:^16.0.4"
-    sass-mq: "npm:^6.0.0"
     stylelint: "npm:^16.12.0"
     stylelint-config-recommended-scss: "npm:^14.1.0"
     stylelint-scss: "npm:^6.10.0"
@@ -15322,13 +15321,6 @@ __metadata:
     webpack:
       optional: true
   checksum: 10c0/d57c5fa35620e9022cfa3e5d49f3f9b3e54fb8b2fa9d021c10fe26c8c2f77103e038b6540eb20123a6f73aef23d2beb04033d3b7772588ca3f3c0ba2a4ee40ac
-  languageName: node
-  linkType: hard
-
-"sass-mq@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "sass-mq@npm:6.0.0"
-  checksum: 10c0/0f8ec468bb479327e988e2533b93a7eb84c64d6db45b52af16bff0ec8cd1eae18e806e29b0a1cf0136645f9a529e446ea4ce51b1d72c7f96798149b3616255c5
   languageName: node
   linkType: hard
 
