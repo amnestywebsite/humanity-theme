@@ -35,7 +35,7 @@
   display: table;
   padding: 10px 16px;
   max-width: 460px;
-  font-size: 1.5rem;
+  font-size: var(--wp--preset--fontSize--regular);
 
   @media all and (min-width: 465px) {
     padding: 10px 20px;
@@ -45,23 +45,14 @@
 
 .hero-title {
   margin: 0;
-  padding: 0 16px;
-  font-size: 4.5rem;
+  padding: 0 20px;
+  font-size: var(--wp--preset--fontSize--heading-1);
   line-height: 1.3 !important;
   background-color: rgba(0, 0, 0, 0.45);
   color: #fff;
   max-width: 840px;
   text-transform: uppercase;
   box-decoration-break: clone;
-
-  @media all and (min-width: 465px) {
-    font-size: 48px;
-    padding: 0 20px;
-  }
-
-  @media all and (min-width: 760px) {
-    font-size: 72px;
-  }
 }
 
 .hero-cta {
