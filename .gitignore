@@ -9,8 +9,8 @@
 web.config
 /db-config.php
 /index.php
+/private/.yarn
 /private/node_modules
-/source/.yarn
 /readme.html
 /wp-activate.php
 /wp-admin
