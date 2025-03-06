@@ -1,3 +1,5 @@
+@use '../../utils/mixins/states' as s;
+
 .wp-block-query-pagination-numbers {
   display: none;
   flex-basis: 100%;
@@ -5,7 +7,7 @@
   list-style: none;
   color: var(--wp--preset--color--black);
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     display: flex;
     flex-basis: auto;
   }
@@ -20,7 +22,7 @@
 }
 
 .wp-block-query-pagination-numbers a.page-numbers {
-  @include state-background(var(--wp--preset--color--grey--lighter));
+  @include s.state-background(var(--wp--preset--color--grey--lighter));
   text-decoration: underline;
   text-decoration-skip-ink: auto;
 }

@@ -1,3 +1,5 @@
+@use '../utils/mixins/states' as s;
+
 .wp-block-post {
   min-height: 460px;
   background: var(--wp--preset--color--white);
@@ -38,7 +40,7 @@
   margin-top: 12px;
   background-color: var(--wp--preset--color--black);
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     margin-top: auto;
   }
 }
@@ -64,7 +66,7 @@
 }
 
 .wp-block-post-terms.post-category {
-  @include state-background(var(--wp--preset--color--grey-dark));
+  @include s.state-background(var(--wp--preset--color--grey-dark));
   display: inline-block;
   padding: 4px 8px;
   font-family: var(--wp--preset--font-family--secondary);

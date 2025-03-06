@@ -51,7 +51,7 @@
   padding: 20px;
   text-align: center;
 
-  @include mq(small) {
+  @media all and (min-width: 760px) {
     padding: 36px 32px;
   }
 }

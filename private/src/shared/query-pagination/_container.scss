@@ -11,11 +11,11 @@
   line-height: 1.25;
   text-transform: uppercase;
 
-  @include mq(large) {
+  @media all and (min-width: 1110px) {
     width: 75%;
   }
 
-  @include mq(x-large) {
+  @media all and (min-width: 1200px) {
     width: 50%;
   }
 }
