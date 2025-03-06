@@ -2,6 +2,50 @@
 
 declare( strict_types = 1 );
 
+add_action( 'init', 'amnesty_register_localisation_setting', 1000 );
+
+if ( ! function_exists( 'amnesty_register_localisation_setting' ) ) {
+	/**
+	 * Register CMB2 setting with the REST API
+	 *
+	 * @return void
+	 */
+	function amnesty_register_localisation_setting(): void {
+		$schema = apply_filters(
+			'amnesty_localisation_options_rest_schema',
+			[
+				'type'       => 'object',
+				'properties' => [
+					'ol_locale_option'            => [
+						'type'        => 'string',
+						'description' => __( 'Ordered List Character Choice', 'amnesty' ),
+						'default'     => '',
+					],
+					'enforce_grouping_separators' => [
+						'type'        => 'string',
+						'description' => __( 'Always display numeric grouping separators', 'amnesty' ),
+						'default'     => '',
+					],
+				],
+			],
+		);
+
+		register_setting(
+			'options',
+			'amnesty_localisation_options_page',
+			[
+				'label'        => __( 'Localisation', 'amnesty' ),
+				'description'  => __( 'Localisation Settings', 'amnesty' ),
+				'type'         => 'object',
+				'show_in_rest' => [
+					'name'   => 'amnestyCoreI18n',
+					'schema' => $schema,
+				],
+			],
+		);
+	}
+}
+
 if ( ! function_exists( 'amnesty_register_localisation_options' ) ) {
 	/**
 	 * Register settings with CMB2 for localisation

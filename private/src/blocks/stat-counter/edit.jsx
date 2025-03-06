@@ -1,10 +1,10 @@
 import { isInteger } from 'lodash';
+import { apiFetch } from '@wordpress/api-fetch';
 import { BlockControls, InspectorControls, useBlockProps } from '@wordpress/block-editor';
 import { Button, RangeControl, TextControl, ToolbarGroup, PanelBody } from '@wordpress/components';
-import { useState } from '@wordpress/element';
+import { useEntityRecord } from '@wordpress/core-data';
+import { useEffect, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-
-const { currentLocale = 'en-GB', enforceGroupingSeparators } = window.amnestyCoreI18n;
 
 const toRawNumber = (value = '0') => {
   if (isInteger(value)) {
@@ -17,18 +17,20 @@ const toRawNumber = (value = '0') => {
   return inted;
 };
 
-const toFormattedString = (value) => {
+const toFormattedString = (value, locale = 'en_GB', group = false) => {
   if (!value) {
     return '';
   }
 
-  const options = {};
+  const options = {
+    useGrouping: 'auto',
+  };
 
-  if (enforceGroupingSeparators) {
-    options.useGrouping = true;
+  if (group) {
+    options.useGrouping = group;
   }
 
-  const formatted = toRawNumber(value).toLocaleString(currentLocale.replace('_', '-'), options);
+  const formatted = toRawNumber(value).toLocaleString(locale.replace('_', '-'), options);
 
   return formatted;
 };
@@ -36,9 +38,19 @@ const toFormattedString = (value) => {
 export default function Edit({ attributes, setAttributes }) {
   const blockProps = useBlockProps();
 
+  const [useGrouping, setUseGrouping] = useState(null);
   const [preview, setPreviewing] = useState(false);
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState('0');
   const [progress, setProgress] = useState(0);
+
+  const { language } = useEntityRecord('root', 'site');
+  const formatForLocale = (value, group = null) => toFormattedString(value, language, group);
+
+  useEffect(() => {
+    apiFetch({ path: '/wp/v2/settings' }).then((settings) => {
+      setUseGrouping(settings?.amnestyCoreI18n?.enforce_grouping_separators === 'on');
+    });
+  }, []);
 
   const countUp = () => {
     const duration = Math.abs(attributes.duration * 1000);
@@ -53,7 +65,7 @@ export default function Edit({ attributes, setAttributes }) {
       const newProgress = Math.min((timestamp - startTime) / duration, 1);
       const newCurrent = Math.floor(progress * end);
 
-      setCurrent(newCurrent);
+      setCurrent(formatForLocale(newCurrent, useGrouping));
       setProgress(newProgress);
 
       if (progress < 1) {
@@ -114,14 +126,14 @@ export default function Edit({ attributes, setAttributes }) {
           <TextControl
             /* translators: [admin] */
             label={__('Enter the value to which this field should count', 'amnesty')}
-            value={toFormattedString(attributes.value)}
-            onChange={(value) => setAttributes({ value: toFormattedString(value) })}
+            value={formatForLocale(attributes.value, useGrouping)}
+            onChange={(value) => setAttributes({ value })}
             placeholder={0}
           />
         )}
         {preview && (
           <div className="preview" style={{ opacity: progress }}>
-            {toFormattedString(current)}
+            {formatForLocale(current, useGrouping)}
           </div>
         )}
       </div>

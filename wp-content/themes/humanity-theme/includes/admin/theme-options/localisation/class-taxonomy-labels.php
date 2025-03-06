@@ -19,7 +19,54 @@ class Taxonomy_Labels {
 	 * Bind hooks
 	 */
 	public function __construct() {
+		add_action( 'amnesty_localisation_options_rest_schema', [ $this, 'schema' ] );
 		add_action( 'amnesty_register_localisation_options', [ $this, 'register' ] );
+	}
+
+	/**
+	 * Provide taxonomy label schema to the REST API option
+	 *
+	 * Not typehinting the arrays fully because they're massive
+	 *
+	 * @param array<mixed> $schema the existing schema
+	 *
+	 * @return array<mixed>
+	 */
+	public function schema( array $schema ): array {
+		$taxonomies = get_taxonomies(
+			[
+				'public'  => true,
+				'amnesty' => true,
+			],
+			'objects',
+		);
+
+		foreach ( $taxonomies as $tax_object ) {
+			$properties = [];
+
+			foreach ( $tax_object->labels as $key => $label ) {
+				$properties[ $key ] = [
+					'type'    => 'string',
+					'default' => $label,
+				];
+			}
+
+			$schema['properties'][ $tax_object->name . '_labels' ] = [
+				'description' => $tax_object->description,
+				'type'        => 'array',
+				'schema'      => [
+					'items' => [
+						'type'   => 'array',
+						'schema' => [
+							'type'       => 'object',
+							'properties' => $properties,
+						],
+					],
+				],
+			];
+		}
+
+		return $schema;
 	}
 
 	/**
@@ -37,7 +84,7 @@ class Taxonomy_Labels {
 			[
 				'public'  => true,
 				'amnesty' => true,
-			] 
+			],
 		);
 
 		foreach ( $taxonomies as $tax_slug ) {
@@ -73,7 +120,7 @@ class Taxonomy_Labels {
 					'sortable' => false,
 					'closed'   => true,
 				],
-			] 
+			]
 		);
 
 		foreach ( $all_labels as $key => $label ) {
@@ -86,7 +133,7 @@ class Taxonomy_Labels {
 					'tax_slug'       => $tax_slug,
 					'default_labels' => $default_labels,
 					'config_labels'  => $config_labels,
-				] 
+				]
 			);
 		}
 	}
@@ -129,7 +176,7 @@ class Taxonomy_Labels {
 				'type'        => 'text',
 				'description' => sprintf( $desc, $name ),
 				'default'     => $data['default_labels']->{$key} ?? '',
-			] 
+			]
 		);
 	}
 

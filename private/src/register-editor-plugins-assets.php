@@ -47,13 +47,7 @@ if ( ! function_exists( 'humanity_localise_editor' ) ) {
 			'closeDoubleQuote' => _x( '”', 'close double quote', 'amnesty' ),
 			'openSingleQuote'  => _x( '‘', 'open single quote', 'amnesty' ),
 			'closeSingleQuote' => _x( '’', 'close single quote', 'amnesty' ),
-			'currentLocale'    => get_locale(),
 		];
-
-		$options = get_option( 'amnesty_localisation_options_page' );
-		if ( isset( $options['enforce_grouping_separators'] ) ) {
-			$data['enforceGroupingSeparators'] = 'on' === $options['enforce_grouping_separators'];
-		}
 
 		wp_localize_script( 'humanity-theme-editor-plugins', 'amnestyCoreI18n', $data );
 		#endregion localisation
