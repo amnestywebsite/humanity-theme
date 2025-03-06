@@ -4,6 +4,7 @@
   "name": "amnesty-core/shared-assets",
   "title": "Shared assets build",
   "description": "This is a fake block to make wp-scripts build our non-specific shared (frontend/editor) assets",
+  "viewScript": "file:./index.js",
   "viewStyle": "file:./index.css",
   "supports": {
     "inserter": false
