@@ -19,14 +19,14 @@ if ( ! function_exists( 'humanity_register_frontend_assets' ) ) {
 			$deps = $data['dependencies'] ?? [];
 		}
 
-		wp_enqueue_script( 'humanity-theme', get_template_directory_uri() . '/build/frontend/index.js', $deps, $theme->get( 'Version' ), true );
-		wp_enqueue_style( 'humanity-theme', get_template_directory_uri() . '/build/frontend/index.css', [], $theme->get( 'Version' ) );
+		wp_enqueue_script( 'amnesty-theme', get_template_directory_uri() . '/build/frontend/index.js', $deps, $theme->get( 'Version' ), true );
+		wp_enqueue_style( 'amnesty-theme', get_template_directory_uri() . '/build/frontend/index.css', [], $theme->get( 'Version' ) );
 
 		$ol_characters = amnesty_get_option( 'ol_locale_option', 'amnesty_localisation_options_page' );
 
 		if ( $ol_characters ) {
 			$chosen_ol_format = sprintf( 'ol{list-style-type:%s;}', $ol_characters );
-			wp_add_inline_style( 'humanity-theme', $chosen_ol_format );
+			wp_add_inline_style( 'amnesty-theme', $chosen_ol_format );
 		}
 
 		$open_double  = _x( '“', 'open double quote', 'amnesty' );
@@ -35,7 +35,7 @@ if ( ! function_exists( 'humanity_register_frontend_assets' ) ) {
 		$close_single = _x( '’', 'close single quote', 'amnesty' );
 
 		$quotes = sprintf( 'blockquote{quotes:\'%s\' \'%s\' "%s" "%s"}', $open_double, $close_double, $open_single, $close_single );
-		wp_add_inline_style( 'humanity-theme', $quotes );
+		wp_add_inline_style( 'amnesty-theme', $quotes );
 	}
 }
 
@@ -60,7 +60,7 @@ if ( ! function_exists( 'humanity_localise_frontend' ) ) {
 			$data['enforceGroupingSeparators'] = 'on' === $options['enforce_grouping_separators'];
 		}
 
-		wp_localize_script( 'humanity-theme', 'amnestyCoreI18n', $data );
+		wp_localize_script( 'amnesty-theme', 'amnestyCoreI18n', $data );
 
 		$localise_with = [
 			'archive_base_url' => get_pagenum_link( 1, false ),
@@ -75,6 +75,6 @@ if ( ! function_exists( 'humanity_localise_frontend' ) ) {
 			$localise_with = array_merge( $localise_with, $pop_in );
 		}
 
-		wp_localize_script( 'humanity-theme', 'amnesty_data', $localise_with );
+		wp_localize_script( 'amnesty-theme', 'amnesty_data', $localise_with );
 	}
 }
