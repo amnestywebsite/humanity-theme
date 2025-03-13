@@ -22,7 +22,7 @@ if ( ! function_exists( 'humanity_register_editor_plugins_assets' ) ) {
 		}
 
 		wp_enqueue_script(
-			'humanity-theme-editor-plugins',
+			'amnesty-core-gutenberg',
 			get_template_directory_uri() . '/build/editor-plugins/index.js',
 			$deps,
 			$theme->get( 'Version' ),
@@ -49,7 +49,7 @@ if ( ! function_exists( 'humanity_localise_editor' ) ) {
 			'closeSingleQuote' => _x( '’', 'close single quote', 'amnesty' ),
 		];
 
-		wp_localize_script( 'humanity-theme-editor-plugins', 'amnestyCoreI18n', $data );
+		wp_localize_script( 'amnesty-core-gutenberg', 'amnestyCoreI18n', $data );
 		#endregion localisation
 
 		#region settings
@@ -77,7 +77,7 @@ if ( ! function_exists( 'humanity_localise_editor' ) ) {
 			$settings['locationSlug'] = amnesty_get_taxonomy_slug( 'location' );
 		}
 
-		wp_localize_script( 'humanity-theme-editor-plugins', 'aiSettings', $settings );
+		wp_localize_script( 'amnesty-core-gutenberg', 'aiSettings', $settings );
 		#endregion settings
 
 		#region data
