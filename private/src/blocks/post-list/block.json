@@ -9,7 +9,7 @@
   "icon": "admin-post",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
+  "editorStyle": ["file:./style-index.css", "file:./index.css"],
   "style": "file:./style-index.css",
   "render": "file:./render.php",
   "supports": {

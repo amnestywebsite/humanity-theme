@@ -1,5 +1,5 @@
 import { has } from 'lodash';
-import { InspectorControls } from '@wordpress/block-editor';
+import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
 import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
@@ -143,7 +143,7 @@ const Select = ({ attributes, setAttributes }) => {
           preview={preview}
           style={attributes.style}
           prefix={keyPrefix}
-          overrideTypes={{}}
+          overrideTypes={[]}
           showAuthor={attributes.displayAuthor}
           showPostDate={attributes.displayPostDate}
         />
@@ -298,12 +298,14 @@ export default function Edit(props) {
           />
         </PanelBody>
       </InspectorControls>
-      <Categories {...props} />
-      <Custom {...props} />
-      <Select {...props} />
-      <Taxonomy {...props} />
-      <Author {...props} />
-      <Feed {...props} />
+      <div {...useBlockProps()}>
+        <Categories {...props} />
+        <Custom {...props} />
+        <Select {...props} />
+        <Taxonomy {...props} />
+        <Author {...props} />
+        <Feed {...props} />
+      </div>
     </>
   );
 }

@@ -10,9 +10,14 @@ import { Post } from './Post.jsx';
  *
  * @returns {*}
  */
-export const PostList = (props) => {
-  const { filtered = false, loading = false, posts = [], action = () => {}, icon = null } = props;
-
+export const PostList = ({
+  filtered = false,
+  loading = false,
+  posts = [],
+  action = () => {},
+  icon = null,
+  ...props
+}) => {
   if (loading) {
     /* translators: [admin] */
     return <p>{__('Loading Posts…', 'amnesty')}</p>;

@@ -1,5 +1,5 @@
 import { InspectorControls } from '@wordpress/block-editor';
-import { RangeControl, ToggleControl } from '@wordpress/components';
+import { PanelBody, RangeControl, ToggleControl } from '@wordpress/components';
 import { createHigherOrderComponent } from '@wordpress/compose';
 import { __ } from '@wordpress/i18n';
 
@@ -22,26 +22,28 @@ const CategorySelectorComponent = createSelector({
 const CategorySelector = createHigherOrderComponent((OriginalComponent) => {
   const WrappedCategorySelectorComponent = (props) => (
     <InspectorControls>
-      <label>
-        {/* translators: [admin] */ __('Category:', 'amnesty')}
-        <br />
-        <OriginalComponent {...props} />
-        <br />
-      </label>
-      <RangeControl
-        /* translators: [admin] */
-        label={__('Number of posts to show:', 'amnesty')}
-        min={1}
-        max={8}
-        value={props.attributes.amount || 3}
-        onChange={(amount) => props.setAttributes({ amount: range(amount) })}
-      />
-      <ToggleControl
-        /* translators: [admin] */
-        label={__('Use related categories where supported', 'amnesty')}
-        checked={props.attributes.categoryRelated}
-        onChange={(categoryRelated) => props.setAttributes({ categoryRelated })}
-      />
+      <PanelBody>
+        <label>
+          {/* translators: [admin] */ __('Category:', 'amnesty')}
+          <br />
+          <OriginalComponent {...props} />
+          <br />
+        </label>
+        <RangeControl
+          /* translators: [admin] */
+          label={__('Number of posts to show:', 'amnesty')}
+          min={1}
+          max={8}
+          value={props.attributes.amount || 3}
+          onChange={(amount) => props.setAttributes({ amount: range(amount) })}
+        />
+        <ToggleControl
+          /* translators: [admin] */
+          label={__('Use related categories where supported', 'amnesty')}
+          checked={props.attributes.categoryRelated}
+          onChange={(categoryRelated) => props.setAttributes({ categoryRelated })}
+        />
+      </PanelBody>
     </InspectorControls>
   );
 
