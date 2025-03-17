@@ -1,8 +1,8 @@
 /* eslint-disable no-underscore-dangle */
-import { PanelBody, ToggleControl } from '@wordpress/components';
+import { PanelBody, SelectControl, ToggleControl } from '@wordpress/components';
+import { useEntityRecords } from '@wordpress/core-data';
+import { useEffect, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-
-import PostSelect from '../../../blocks/post-list/components/post-selector/PostSelector.jsx';
 
 /**
  * Render the Sidebar options
@@ -13,6 +13,29 @@ import PostSelect from '../../../blocks/post-list/components/post-selector/PostS
  * @returns {wp.element.Component|null}
  */
 const Sidebar = ({ createMetaUpdate, props }) => {
+  const { records, isResolving } = useEntityRecords('postType', 'sidebar');
+  const [options, setOptions] = useState([]);
+
+  useEffect(() => {
+    const optsArray = [
+      {
+        label: __('Use global default sidebar', 'amnesty'),
+        value: null,
+      },
+    ];
+
+    if (!isResolving && Array.isArray(records)) {
+      records.forEach((record) => {
+        optsArray.push({
+          label: record.title.raw,
+          value: record.id,
+        });
+      });
+    }
+
+    setOptions(optsArray);
+  }, [records, isResolving]);
+
   if (!['page', 'post'].includes(props.type)) {
     return null;
   }
@@ -59,11 +82,11 @@ const Sidebar = ({ createMetaUpdate, props }) => {
           )
         }
       />
-      <PostSelect
+      <SelectControl
         onChange={(sidebarId) =>
           createMetaUpdate('_sidebar_id', sidebarId, props.meta, props.oldMeta)
         }
-        value={props.meta._sidebar_id}
+        options={options}
       />
     </PanelBody>
   );
