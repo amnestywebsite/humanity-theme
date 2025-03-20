@@ -1,0 +1,12 @@
+on:
+  push:
+    branches-ignore:
+      - main
+      - staging
+      - develop
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+    with:
+      stage: ${{ github.ref_name }}

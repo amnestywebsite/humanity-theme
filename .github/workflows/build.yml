@@ -1,0 +1,38 @@
+on:
+  workflow_call:
+    inputs:
+      stage:
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        id: composer-dev-cache
+        with:
+          path: ./vendor
+          key: ${{ inputs.stage }}-dev-${{ hashFiles('./composer.lock') }}
+      - name: Install Composer Dependencies
+        if: steps.composer-dev-cache.outputs.cache-hit != 'true'
+        run: composer install
+      - uses: actions/cache@v4
+        id: phpcs-cache
+        with:
+          path: ./phpcs-cache
+          key: ${{ inputs.stage }}-phpcs-${{ hashFiles('./phpcs-cache') }}
+      - run: composer lint
+      - run: corepack enable
+      - run: cd private && yarn
+      - run: cd private && yarn lint
+      - run: cd private && yarn build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: humanity-theme
+          overwrite: true
+          path: |
+            .
+            !./private/node_modules
+            !./vendor

@@ -1,0 +1,25 @@
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+    with:
+      stage: ${{ github.ref_name }}
+  lang:
+    uses: ./.github/workflows/lang.yml
+    needs: build
+    with:
+      stage: ${{ github.ref_name }}
+  deploy:
+    needs: [build, lang]
+    secrets: inherit
+    uses: ./.github/workflows/deploy.yml
+    with:
+      target: ${{ matrix.target }}
+    strategy:
+      matrix:
+        target:
+          - REMOTE_RIKJ6NJG
+          - REMOTE_TQEI6PN8
