@@ -23,16 +23,17 @@ if [ -z "$REMOTE_URL" ] || [ -z "$GITHUB_USERNAME" ] || [ -z "$GITHUB_EMAIL" ]; 
 fi
 
 # known hosts setup
+mkdir -p ~/.ssh
 cat "$PWD/private/known_hosts" >> ~/.ssh/known_hosts
 
 # directory setup
 theme_dir="wp-content/themes/humanity-theme"
-source_dir="${TRAVIS_BUILD_DIR:-$PWD}/${theme_dir}"
-temp_dir="$(mktemp -d 2> /dev/null || mktemp -d -t "$TRAVIS_BRANCH")"
+source_dir="$PWD/$theme_dir"
+temp_dir="$(mktemp -d 2> /dev/null || mktemp -d -t "${GITHUB_REF_NAME/\//-/}")"
 cd "$temp_dir"
 
 # bring in repo from remote
-git clone --depth=50 "$REMOTE_URL" "$temp_dir"
+ssh-agent bash -c "ssh-add <(echo \"$SSH_KEY\"); git clone --depth=50 \"$REMOTE_URL\" \"$temp_dir\""
 git config user.name "$GITHUB_USERNAME"
 git config user.email "$GITHUB_EMAIL"
 
@@ -40,11 +41,10 @@ git config user.email "$GITHUB_EMAIL"
 mkdir -p "$temp_dir/${theme_dir}"
 
 # copy deployment files
-rsync --delete -a "$source_dir/" "$temp_dir/${theme_dir}" --exclude='.git/'
+rsync --delete -a "$source_dir/" "$temp_dir/$theme_dir" --exclude='.git/'
 
 # stage all changes
 git add --all .
-git add --force "./$theme_dir/assets"
 
 # nothing has changed, don't bother committing
 if [ -z "$(git status --porcelain)" ]; then
@@ -53,8 +53,8 @@ if [ -z "$(git status --porcelain)" ]; then
 fi
 
 # commit && deploy
-commit_message="$(printf "Travis CI build number %s\n\nCommit range: %s" "$TRAVIS_BUILD_NUMBER" "$TRAVIS_COMMIT_RANGE")"
+commit_message="$(printf "GitHub Actions build number %s\n\nCommit range: %s" "$GITHUB_RUN_ID" "$GITHUB_SHA")"
 git commit --author="$GITHUB_USERNAME <$GITHUB_EMAIL>" -m "$commit_message"
-git push origin master > /dev/null 2>&1 || exit 1
+ssh-agent bash -c "ssh-add <(echo \"$SSH_KEY\"); git push origin master > /dev/null 2>&1"
 
 echo "Deployment complete."

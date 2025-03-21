@@ -1,0 +1,53 @@
+on:
+  release:
+    types: [released]
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+    with:
+      stage: release
+  lang:
+    uses: ./.github/workflows/lang.yml
+    needs: build
+    with:
+      stage: release
+  deploy:
+    needs: [build, lang]
+    secrets: inherit
+    uses: ./.github/workflows/deploy.yml
+    with:
+      target: ${{ matrix.target }}
+    strategy:
+      matrix:
+        target:
+          - REMOTE_XQVHDONU
+          - REMOTE_8MZ1QJ5P
+          - REMOTE_BCDKFWF4
+          - REMOTE_XRWONKPA
+          - REMOTE_SUWSJWOQ
+          - REMOTE_010TDDVE
+          - REMOTE_DFOD8FOH
+          - REMOTE_JTO6MIPZ
+          - REMOTE_U0VS1DPC
+          - REMOTE_QEQJ6OJZ
+          - REMOTE_SIWVYQV9
+          - REMOTE_PXW6K9EK
+          - REMOTE_DSCAUN4N
+          - REMOTE_CTJLPQAF
+          - REMOTE_5QCXZJSN
+          - REMOTE_GRILAXXQ
+          - REMOTE_8I8A5YIV
+          - REMOTE_I4P65VXK
+          - REMOTE_KKK3NEBU
+          - REMOTE_RCPWMD3K
+          - REMOTE_P5ZRTPZL
+          - REMOTE_MNEUQUDQ
+          - REMOTE_WQ1F95LK
+          - REMOTE_JQDZJMDS
+          - REMOTE_PSH9FHC4
+          - REMOTE_BEMEBJ0I
+          - REMOTE_GIG4TDEB
+          - REMOTE_W3S9N9W9
+          - REMOTE_VYFAA1BZ
+          - REMOTE_SUPOPLFU
