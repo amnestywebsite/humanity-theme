@@ -1,0 +1,24 @@
+on:
+  workflow_call:
+    inputs:
+      stage:
+        required: true
+        type: string
+      suite:
+        required: true
+        type: string
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/cache@v4
+        id: gi-cache
+        with:
+          path: ./gi
+          key: ${{ inputs.stage }}-gi
+      - name: Download Ghost Inspector
+        if: steps.gi-cache.outputs.cache-hit != 'true'
+        run: curl -sL https://github.com/ghost-inspector/node-ghost-inspector/releases/latest/download/ghost-inspector-linux --output ./gi
+      - run: chmod +x ./gi
+      - run: ./gi suite execute ${{ inputs.suite }} --errorOnFail --errorOnScreenshotFail --apiKey=${{ secrets.GHOST_INSPECTOR_API_KEY }}
