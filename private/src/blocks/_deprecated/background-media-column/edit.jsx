@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import { isObject } from 'lodash';
-import { apiFetch } from '@wordpress/api-fetch';
+import apiFetch from '@wordpress/api-fetch';
 import {
   BlockAlignmentToolbar,
   BlockControls,
@@ -32,7 +32,7 @@ const ALLOWED_BLOCKS = [
 ];
 
 export default function Edit(props) {
-  const { attributes, setAttributes } = props;
+  const { attributes, clientId, setAttributes } = props;
   const { background, horizontalAlignment, image, uniqId, verticalAlignment } = attributes;
   const [focalPoint, setFocalPoint] = useState({ x: 0.5, y: 0.5 });
   const [opacity, setOpacity] = useState(1);
@@ -92,7 +92,7 @@ export default function Edit(props) {
     className: containerClasses,
   });
 
-  const css = getEditorCssV2(imageObject, uniqId, focalPoint, opacity);
+  const css = getEditorCssV2(imageObject, `block-${clientId}`, focalPoint, opacity);
 
   return (
     <>
