@@ -1,4 +1,3 @@
-import './style.scss';
 import './editor.scss';
 
 import { registerBlockType } from '@wordpress/blocks';
