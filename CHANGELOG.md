@@ -1,3 +1,10 @@
+### v2.0.12
+Fixes:
+- GTM initialisation when not running Consent Mode
+
+CI:
+- Remove old deployment targets
+
 ### v2.0.11
 Fixes:
 - Incorrect slug handling in Petition List block

@@ -1,0 +1,23 @@
+on:
+  workflow_call:
+    inputs:
+      target:
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: humanity-theme
+      - run: bash ./private/bin/deploy.sh
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          REMOTE_URL: ${{ secrets[inputs.target] }}
+          GITHUB_USERNAME: ${{ secrets.COMMITTER_NAME }}
+          GITHUB_EMAIL: ${{ secrets.COMMITTER_EMAIL }}

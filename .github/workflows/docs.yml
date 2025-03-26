@@ -1,0 +1,22 @@
+on:
+  workflow_call:
+    inputs:
+      stage:
+        required: true
+        type: string
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: humanity-theme
+      - run: wget -q https://github.com/phpDocumentor/phpDocumentor/releases/latest/download/phpDocumentor.phar
+      - run: php phpDocumentor.phar --extensions=php --defaultpackagename=Humanity --directory ./wp-content/themes/humanity-theme --target ./php-api-developer-documentation
+      - run: zip -r ./php-api-developer-documentation.zip ./php-api-developer-documentation
+      - uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          files: php-api-developer-documentation.zip
+          target_commitish: ${{ inputs.stage }}

@@ -1,0 +1,50 @@
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+    with:
+      stage: ${{ github.ref_name }}
+  lang:
+    uses: ./.github/workflows/lang.yml
+    needs: build
+    with:
+      stage: ${{ github.ref_name }}
+  docs:
+    uses: ./.github/workflows/docs.yml
+    needs: build
+    with:
+      stage: ${{ github.ref_name }}
+  bundle:
+    needs: [build, lang]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: humanity-theme
+      - run: cd ./wp-content/themes/humanity-theme && zip -r ../../../humanity-theme.zip .
+      - uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          files: ./humanity-theme.zip
+          target_commitish: ${{ inputs.stage }}
+  deploy-to-test:
+    needs: [build, lang]
+    secrets: inherit
+    uses: ./.github/workflows/deploy.yml
+    with:
+      target: REMOTE_MTIQTPPT
+  test:
+    needs: deploy-to-test
+    secrets: inherit
+    uses: ./.github/workflows/test.yml
+    with:
+      stage: ${{ github.ref_name }}
+      suite: ${{ matrix.suite }}
+    strategy:
+      matrix:
+        suite:
+        - 620b83b8329c2fb1fe6e1516
+        - 621372745f85360d3fd03197
