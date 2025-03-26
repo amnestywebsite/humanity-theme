@@ -15,7 +15,7 @@
   max-width: 480px !important;
 }
 
-.actionBlock .editor-plain-text {
+.actionBlock .block-editor-plain-text {
   border-radius: 0 !important;
 }
 
@@ -49,7 +49,7 @@
   position: relative;
 }
 
-.actionBlock-content .editor-plain-text:not(.btn) {
+.actionBlock-content .block-editor-plain-text:not(.btn) {
   padding: 8px !important;
   border: 1px dotted #000;
   line-height: 1.4 !important;
@@ -73,7 +73,7 @@
   }
 }
 
-.actionBlock-content .editor-plain-text.btn {
+.actionBlock-content .block-editor-plain-text.btn {
   padding: 14px 24px !important;
   font-family: var(--wp--preset--font-family--secondary);
 }
