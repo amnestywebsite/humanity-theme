@@ -1,0 +1,11 @@
+.wp-block-file__button,
+.btn--small {
+  font-size: var(--wp--preset--font-size--small);
+  padding: var(--wp--preset--spacing--quarter) var(--wp--preset--spacing--half);
+}
+
+.btn--large {
+  font-size: var(--wp--preset--font-size--heading-6) !important;
+  padding: 11px 20px;
+  line-height: 1;
+}
