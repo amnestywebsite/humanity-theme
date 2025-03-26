@@ -60,7 +60,7 @@ msgstr ""
 #: footer.php:67
 #: patterns/footer-content.php:123
 msgid "Follow us on:"
-msgstr ""
+msgstr "ติดตามเรา"
 
 #. translators: [front] ARIA
 #: footer.php:70
@@ -175,7 +175,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:181
 msgid "Related Content (Posts)"
-msgstr ""
+msgstr "เนื้อหาที่เกี่ยวข้อง"
 
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:183
@@ -837,7 +837,7 @@ msgstr ""
 #: assets/scripts/blocks.js:12450
 #: assets/scripts/blocks.js:13645
 msgid "Act Now"
-msgstr ""
+msgstr "ร่วมเปลี่ยนแปลง"
 
 #. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
 #: includes/blocks/menu/render.php:24
@@ -1074,7 +1074,7 @@ msgstr ""
 #: assets/scripts/blocks.js:28276
 #: assets/scripts/blocks.js:28427
 msgid "Related Content"
-msgstr ""
+msgstr "เนื้อหาที่เกี่ยวข้อง"
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:431
@@ -2270,7 +2270,7 @@ msgstr ""
 #. translators: [front]
 #: partials/search/forminput.php:14
 msgid "What are you looking for?"
-msgstr "คุณกำลังมองหาอะไร?"
+msgstr "เนื้อหาที่ต้องการ"
 
 #: partials/search/horizontal-search.php:12
 #: partials/search/horizontal-search.php:52
@@ -2964,7 +2964,7 @@ msgstr ""
 #: patterns/related-content.php
 msgctxt "Pattern title"
 msgid "Related Content"
-msgstr ""
+msgstr "เนื้อหาที่เกี่ยวข้อง"
 
 #: patterns/related-content.php
 msgctxt "Pattern description"
