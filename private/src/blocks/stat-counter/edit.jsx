@@ -1,5 +1,5 @@
 import { isInteger } from 'lodash';
-import { apiFetch } from '@wordpress/api-fetch';
+import apiFetch from '@wordpress/api-fetch';
 import { BlockControls, InspectorControls, useBlockProps } from '@wordpress/block-editor';
 import { Button, RangeControl, TextControl, ToolbarGroup, PanelBody } from '@wordpress/components';
 import { useEntityRecord } from '@wordpress/core-data';
