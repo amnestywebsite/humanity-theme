@@ -12,7 +12,7 @@ if ( $attributes['minHeight'] ) {
 }
 
 ?>
-<figure <?php echo get_block_wrapper_attributes( $extra_attrs ); // phpcs:ignore ?>>
+<figure <?php echo wp_kses_data( get_block_wrapper_attributes( $extra_attrs ) ); ?>>
 	<div class="iframe-wrapper" style="<?php echo esc_attr( $wrapper_style ); ?>">
 		<iframe src="<?php echo esc_url( $attributes['embedUrl'] ); ?>" title="<?php echo esc_attr( $attributes['title'] ); ?>" frameborder="0"></iframe>
 	</div>

@@ -16,9 +16,11 @@ $classes = classnames(
 	]
 );
 
+$block_attributes = get_block_wrapper_attributes( [ 'class' => $classes ] );
+
 ?>
 
-<div class="<?php echo esc_attr( $classes ); ?>" role="note" aria-label="<?php echo esc_attr( $heading ); ?>">
+<div <?php echo wp_kses_data( $block_attributes ); ?> role="note" aria-label="<?php echo esc_attr( $heading ); ?>">
 	<h2 class="callToAction-preHeading"><?php echo wp_kses_post( $pre_heading ); ?></h2>
 	<h1 class="callToAction-heading"><?php echo wp_kses_post( $heading ); ?></h1>
 	<p class="callToAction-content"><?php echo wp_kses_post( $cta_content ); ?></p>

@@ -11,9 +11,11 @@ $classes = classnames(
 	]
 );
 
+$block_attributes = get_block_wrapper_attributes( [ 'class' => $classes ] );
+
 ?>
 
-<blockquote class="<?php echo esc_attr( $classes ); ?>">
+<blockquote <?php echo wp_kses_data( $block_attributes ); ?>>
 <?php if ( $attributes['content'] ) : ?>
 	<?php echo wp_kses_post( wpautop( $attributes['content'] ) ); ?>
 <?php endif; ?>
