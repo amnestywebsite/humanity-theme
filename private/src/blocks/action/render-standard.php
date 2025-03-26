@@ -7,8 +7,10 @@ $block_classes = classnames(
 	]
 );
 
+$block_attributes = get_block_wrapper_attributes( [ 'class' => $block_classes ] );
+
 ?>
-<figure class="<?php echo esc_attr( $block_classes ); ?>">
+<figure <?php echo wp_kses_data( $block_attributes ); ?>>
 	<div class="actionBlock-figure">
 		<?php
 
