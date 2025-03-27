@@ -1,10 +1,8 @@
 <?php
 
-if ( empty( $attributes['uniqId'] ) ) {
-	$attributes['uniqId'] = amnesty_rand_str( 4 );
-}
-
 $classes = classnames(
+	'wp-block-cover',
+	'is-light',
 	'text-media--itemContainer',
 	[
 		"align{$attributes['horizontalAlignment']}"        => (bool) $attributes['horizontalAlignment'],
@@ -27,25 +25,22 @@ if ( 0 === absint( $attributes['image'] ) ) :
 endif;
 
 
-$opacity  = round( 1 - floatval( $attributes['opacity'] ), 2 );
 $x_offset = round( floatval( $attributes['focalPoint']['x'] ) * 100, 2 );
 $y_offset = round( floatval( $attributes['focalPoint']['y'] ) * 100, 2 );
-$gradient = '';
+$opacity  = round( floatval( $attributes['opacity'] ), 2 );
 
-if ( 0.0 !== $opacity ) {
-	$gradient = sprintf( 'linear-gradient(rgba(255,255,255,%1$f),rgba(255,255,255,%1$f)),', $opacity );
-}
-
-$image_small = wp_get_attachment_image_url( absint( $attributes['image'] ), 'lwi-block-sm@2x' );
-$image_large = wp_get_attachment_image_url( absint( $attributes['image'] ), 'lwi-block-lg@2x' );
-
-$css  = sprintf( '#%1$s{background-position:%2$f%% %3$f%%}', esc_attr( $attributes['uniqId'] ), $x_offset, $y_offset );
-$css .= sprintf( '#%1$s{background-image:%2$surl("%3$s")}', esc_attr( $attributes['uniqId'] ), $gradient, esc_url( $image_small ) );
-$css .= sprintf( '@media(min-width:1440px){#%1$s{background-image:%2$surl("%3$s")}}', esc_attr( $attributes['uniqId'] ), $gradient, esc_url( $image_large ) );
+$image = wp_get_attachment_image(
+	absint( $attributes['image'] ),
+	'post-thumbnail',
+	attr: [
+		'class' => 'wp-block-cover__image-background wp-image-' . $attributes['image'],
+		'style' => 'background-position:' . $x_offset . '% ' . $y_offset . '%;opacity:' . $opacity,
+	],
+);
 
 ?>
 
-<style class="aiic-ignore"><?php echo $css; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></style>
-<div id="<?php echo esc_attr( $attributes['uniqId'] ); ?>" class="<?php echo esc_attr( $classes ); ?>">
-	<?php echo wp_kses_post( $content ); ?>
+<div class="<?php echo esc_attr( $classes ); ?>">
+	<?php echo wp_kses_post( $image ); ?>
+	<div class="wp-block-cover__inner-container"><?php echo wp_kses_post( $content ); ?></div>
 </div>
