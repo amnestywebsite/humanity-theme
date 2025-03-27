@@ -10,8 +10,8 @@
 
 <!-- wp:group {"className":"is-style-light","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-light"><!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"style":{"spacing":{"padding":{"left":"1rem"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|single","bottom":"var:preset|spacing|single"}}}} -->
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--single);padding-bottom:var(--wp--preset--spacing--single)"><!-- wp:paragraph {"style":{"spacing":{"padding":{"left":"1rem"}}}} -->
 <p style="padding-left:1rem"></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->

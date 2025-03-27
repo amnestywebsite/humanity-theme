@@ -18,8 +18,8 @@
 <!-- /wp:cover --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"1rem"}}}} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|single","bottom":"var:preset|spacing|single"}}}} -->
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--single);padding-bottom:var(--wp--preset--spacing--single)"><!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"1rem"}}}} -->
 <p style="padding-right:1rem"></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
