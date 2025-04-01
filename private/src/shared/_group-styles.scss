@@ -65,6 +65,7 @@
 .wp-block-group.custom-card .wp-block-buttons,
 .wp-block-group.custom-card p,
 .wp-block-group.custom-card h2 {
+  box-sizing: border-box;
   max-width: 100%;
 }
 
