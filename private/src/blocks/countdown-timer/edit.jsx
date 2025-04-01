@@ -1,4 +1,9 @@
-import { AlignmentToolbar, BlockControls, InspectorControls } from '@wordpress/block-editor';
+import {
+  AlignmentToolbar,
+  BlockControls,
+  InspectorControls,
+  useBlockProps,
+} from '@wordpress/block-editor';
 import { DateTimePicker, TextControl, PanelBody } from '@wordpress/components';
 import { useEffect, useState } from '@wordpress/element';
 import { __, _n, _x, sprintf } from '@wordpress/i18n';
@@ -105,23 +110,27 @@ export default function Edit({ attributes, setAttributes }) {
       </BlockControls>
       <InspectorControls>
         <PanelBody>
-          <DateTimePicker
-            currentDate={attributes.date}
-            onChange={(date) => setAttributes({ date })}
-            is12Hour={true}
-          />
-          <TextControl
-            /* translators: [admin] */
-            label={__('Time Expired Text', 'amnesty')}
-            className="expiredTextBox"
-            value={attributes.expiredText}
-            onChange={(expiredText) => setAttributes({ expiredText })}
-            /* translators: [admin] */
-            placeholder={__('enter text here', 'amnesty')}
-          />
+          <div className="wp-block-amnesty-core-countdown-timer datetime-picker">
+            <DateTimePicker
+              currentDate={attributes.date}
+              onChange={(date) => setAttributes({ date })}
+              is12Hour={true}
+            />
+          </div>
+          <div style={{ marginTop: 20 }}>
+            <TextControl
+              /* translators: [admin] */
+              label={__('Time Expired Text', 'amnesty')}
+              className="expiredTextBox"
+              value={attributes.expiredText}
+              onChange={(expiredText) => setAttributes({ expiredText })}
+              /* translators: [admin] */
+              placeholder={__('enter text here', 'amnesty')}
+            />
+          </div>
         </PanelBody>
       </InspectorControls>
-      <div className="countdownContainer">
+      <div {...useBlockProps({ className: 'countdownContainer' })}>
         <div className="clockdiv" style={{ textAlign: attributes.alignment }}>
           {clockTemplate(state, attributes)}
         </div>

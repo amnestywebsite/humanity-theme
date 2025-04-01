@@ -21,3 +21,8 @@
 .section--textWhite .countdownClock {
   color: var(--wp--preset--color--white);
 }
+
+.wp-block-amnesty-core-countdown-timer.datetime-picker .components-base-control:where(:not(:last-child)),
+.wp-block-amnesty-core-countdown-timer.datetime-picker .components-radio-control:where(:not(:last-child)) {
+  margin-bottom: 0;
+}
