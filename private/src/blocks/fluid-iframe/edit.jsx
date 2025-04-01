@@ -69,7 +69,7 @@ const BlockInspectorControls = ({ attributes, setAttributes, resetEmbed }) => {
         />
         <hr />
         {attributes.embedUrl && (
-          <Button onClick={resetEmbed} isPrimary>
+          <Button onClick={resetEmbed} variant="primary">
             {/* translators: [admin] */ __('Reset Embed Url', 'amnesty')}
           </Button>
         )}

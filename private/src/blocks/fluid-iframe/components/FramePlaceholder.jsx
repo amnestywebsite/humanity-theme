@@ -21,7 +21,7 @@ export default function FramePlaceholder({ label, className, onSubmit, inputRef 
           /* translators: [admin] */
           placeholder={__('Enter URL to embed here…', 'amnesty')}
         />
-        <Button isLarge type="submit">
+        <Button isLarge variant="primary" type="submit">
           {/* translators: [admin] */ __('Embed', 'amnesty')}
         </Button>
       </form>
