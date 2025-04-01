@@ -1,8 +1,8 @@
 import classnames from 'classnames';
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, SelectControl } from '@wordpress/components';
+import { useEntityRecord, useEntityRecords } from '@wordpress/core-data';
 import { useSelect } from '@wordpress/data';
-import { useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
 const colours = [
@@ -19,34 +19,8 @@ const options = [
   { label: __('In-page Menu', 'amnesty'), value: 'inpage-menu' },
 ];
 
-const fetchMenu = (menus, menuId, setLoadingMenu, setMenus) => {
-  if (menus[menuId]) {
-    return;
-  }
-
-  setLoadingMenu(true);
-
-  wp.apiRequest({ path: `/amnesty/v1/menu/${menuId}` }).then((response) => {
-    setLoadingMenu(false);
-    setMenus({ ...menus, [menuId]: response });
-  });
-};
-
-const fetchList = (list, setList, setLoadingList) => {
-  setLoadingList(true);
-
-  wp.apiRequest({ path: '/amnesty/v1/menu' })
-    .then((response) => response.map((r) => ({ label: r.name, value: r.term_id })))
-    .then((response) => {
-      setLoadingList(false);
-      setList([...list, ...response]);
-    });
-};
-
-const StandardMenu = ({ attributes, className, loadingMenu, menus }) => {
-  const blockProps = useBlockProps({ className });
-
-  if (!attributes.menuId) {
+const StandardMenu = ({ loadingMenu, menu, items }) => {
+  if (!menu) {
     /* translators: [admin] */
     return <p>{__('Select a menu in the sidebar', 'amnesty')}</p>;
   }
@@ -56,36 +30,43 @@ const StandardMenu = ({ attributes, className, loadingMenu, menus }) => {
     return <p>{__('Loading Menu…', 'amnesty')}</p>;
   }
 
-  if (!menus[attributes.menuId]) {
-    return null;
+  if (!items) {
+    /* translators: [admin] */
+    return <p>{__('No menu items', 'amnesty')}</p>;
   }
 
   return (
-    <div {...blockProps}>
-      <ul
-        className="postlist-categories"
-        dangerouslySetInnerHTML={{ __html: menus[attributes.menuId].rendered }}
-      />
-    </div>
+    <ul className="postlist-categories">
+      {items?.map((item) => {
+        const itemClasses = classnames(
+          'menu-item',
+          `menu-item-type-${item.type}`,
+          `menu-item-object-${item.object}`,
+          `menu-item-${item.id}`,
+        );
+
+        return (
+          <li key={item.id} className={itemClasses}>
+            <a className="btn btn--white" href={item.url}>
+              {item.title.rendered}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 
-const InPageMenu = ({ attributes, sectionAttributes }) => (
-  <div
-    className={classnames('postlist-categoriesContainer', {
-      [`section--${attributes.color}`]: !!attributes.color,
-    })}
-  >
-    <ul className="postlist-categories">
-      {sectionAttributes.map((value, index) => (
-        <li key={index}>
-          <a className="btn btn--white" href={`#${value.sectionId}`}>
-            {value.sectionName}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
+const InPageMenu = ({ sectionAttributes }) => (
+  <ul className="postlist-categories">
+    {sectionAttributes.map((value, index) => (
+      <li key={index}>
+        <a className="btn btn--white" href={`#${value.sectionId}`}>
+          {value.sectionName}
+        </a>
+      </li>
+    ))}
+  </ul>
 );
 
 export default function Edit({ attributes, setAttributes }) {
@@ -95,33 +76,18 @@ export default function Edit({ attributes, setAttributes }) {
     return sectionBlocksWithIds.map((a) => a.attributes);
   });
 
-  const [loadingMenu, setLoadingMenu] = useState(false);
-  const [loadingList, setLoadingList] = useState(false);
-  const [list, setList] = useState([{ label: __('Select a menu…', 'amnesty'), value: '' }]);
-  const [menus, setMenus] = useState({});
+  const { records: menuRecords, isResolving } = useEntityRecords('root', 'menu', {
+    per_page: -1,
+    context: 'view',
+  });
 
-  const mounted = useRef();
-  useEffect(() => {
-    if (!mounted?.current) {
-      mounted.current = true;
+  const menus = [
+    { label: __('Select a menu…', 'amnesty'), value: '' },
+    ...(menuRecords?.map((m) => ({ label: m.name, value: m.id })) || []),
+  ];
 
-      if (attributes.menuId) {
-        fetchMenu(menus, attributes.menuId, setLoadingMenu, setMenus);
-      }
-
-      if (attributes.type === 'standard-menu') {
-        fetchList(list, setList, setLoadingList);
-      }
-    }
-  }, [attributes.menuId, attributes.type, list, menus]);
-
-  useEffect(() => {
-    if (attributes.type === 'standard-menu') {
-      fetchList(list, setList, setLoadingList);
-    }
-
-    fetchMenu(menus, attributes.menuId, setLoadingMenu, setMenus);
-  }, [attributes.menuId, attributes.type, list, menus]);
+  const { record: menu } = useEntityRecord('root', 'menu', attributes.menuId);
+  const { records: menuItems } = useEntityRecords('root', 'menuItem', { menus: attributes.menuId });
 
   const containerClasses = classnames('postlist-categoriesContainer', {
     [`section--${attributes.color}`]: !!attributes.color,
@@ -130,7 +96,7 @@ export default function Edit({ attributes, setAttributes }) {
   const Controls = () => (
     <InspectorControls>
       <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
-        {loadingList && <p>{/* translators: [admin] */ __('Loading Menus…', 'amnesty')}</p>}
+        {isResolving && <p>{/* translators: [admin] */ __('Loading Menus…', 'amnesty')}</p>}
         <SelectControl
           /* translators: [admin] */
           label={__('Menu', 'amnesty')}
@@ -138,16 +104,16 @@ export default function Edit({ attributes, setAttributes }) {
           help={__('Which type of menu you would like to add to the page', 'amnesty')}
           value={attributes.type}
           options={options}
-          onChange={(option) => setAttributes({ type: option })}
+          onChange={(type) => setAttributes({ type })}
         />
         {attributes.type === 'standard-menu' && (
           <SelectControl
             /* translators: [admin] */
             label={__('Menu', 'amnesty')}
-            options={list}
-            disabled={loadingList}
+            options={menus}
+            disabled={isResolving}
             value={attributes.menuId}
-            onChange={(menuId) => setAttributes({ menuId: parseInt(menuId, 10) })}
+            onChange={(menuId) => setAttributes({ menuId })}
           />
         )}
         <SelectControl
@@ -161,26 +127,28 @@ export default function Edit({ attributes, setAttributes }) {
     </InspectorControls>
   );
 
+  const blockProps = useBlockProps({
+    className: classnames(containerClasses, {
+      'postlist-categoriesContainer': attributes.type === 'inpage-menu',
+      [`section--${attributes.color}`]: !!attributes.color,
+    }),
+  });
+
   if (attributes.type === 'standard-menu') {
     return (
-      <>
+      <div {...blockProps}>
         <Controls />
-        <StandardMenu
-          attributes={attributes}
-          className={containerClasses}
-          loadingMenu={loadingMenu}
-          menus={menus}
-        />
-      </>
+        <StandardMenu loadingMenu={isResolving} menu={menu} items={menuItems} />
+      </div>
     );
   }
 
   if (attributes.type === 'inpage-menu') {
     return (
-      <>
+      <div {...blockProps}>
         <Controls />
         <InPageMenu attributes={attributes} sectionAttributes={sectionAttributes} />
-      </>
+      </div>
     );
   }
 
