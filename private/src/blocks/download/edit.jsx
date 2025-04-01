@@ -125,7 +125,7 @@ export default function Edit({ attributes, setAttributes }) {
               onChange={(buttonText) => setAttributes({ buttonText })}
             />
           </span>
-          <Button isDestructive isLink onClick={() => setAttributes({ files: [] })}>
+          <Button isDestructive variant="link" onClick={() => setAttributes({ files: [] })}>
             {/* translators: [admin] */ __('Clear File(s)', 'amnesty')}
           </Button>
         </div>

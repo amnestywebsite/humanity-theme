@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array $params {
+	 * @param array  $params {
 	 *     @type string $name    the identifier for the select
 	 *     @type string $label   the label shown for the select
 	 *     @type bool   $is_form whether to output a form or a div
@@ -16,10 +16,11 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 	 *     @type string $active  the pre-selected option's value
 	 *     @type array  $options the list of options in value=>label pairs
 	 * }
+	 * @param string $context the kses context. Default "filter"
 	 *
 	 * @return void
 	 */
-	function amnesty_render_custom_select( array $params = [] ): void {
+	function amnesty_render_custom_select( array $params = [], string $context = 'filter' ): void {
 		$params_to_attributes = [
 			'active'     => 'active',
 			'class'      => 'className',
@@ -66,7 +67,7 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 
 		$block = '<!-- wp:amnesty-core/custom-select ' . wp_json_encode( $attributes ) . ' /-->';
 
-		echo wp_kses( do_blocks( $block ), 'filter' );
+		echo wp_kses( do_blocks( $block ), $context );
 	}
 }
 

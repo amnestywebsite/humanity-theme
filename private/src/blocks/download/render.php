@@ -58,7 +58,8 @@ if ( count( $files ) >= 2 ) :
 			'label'      => wp_trim_words( $files[0]['title'], 8 ),
 			'is_control' => true,
 			'options'    => $options,
-		]
+		],
+		'post',
 	);
 
 	?>

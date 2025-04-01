@@ -28,17 +28,23 @@
 .wp-block-amnesty-core-block-download {
   padding: 2px;
   border: 1px dashed;
+  max-height: none !important;
 }
 
-.wp-block-amnesty-core-block-download > div:first-of-type {
-  max-height: none !important;
+.wp-block-amnesty-core-block-download,
+.wp-block-amnesty-core-block-download * {
+  box-sizing: border-box;
 }
 
 .wp-core-ui .wp-block-amnesty-core-block-download select {
   background: none;
 }
 
-.wp-block[data-type="amnesty-core/block-download"] .block-editor-media-placeholder.is-appender {
+.wp-block-amnesty-core-block-download .components-form-file-upload {
+  width: 100%;
+}
+
+.wp-block-amnesty-core-block-download .block-editor-media-placeholder.is-appender {
   outline: none;
 }
 
