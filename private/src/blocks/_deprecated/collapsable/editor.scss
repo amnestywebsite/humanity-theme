@@ -1,4 +1,11 @@
+.wp-block-amnesty-core-collapsable figcaption {
+  position: relative;
+}
+
 .wp-block-amnesty-core-collapsable .dashicon {
+  position: absolute;
+  top: 25%;
+  right: 0;
   cursor: pointer;
   pointer-events: all;
 }

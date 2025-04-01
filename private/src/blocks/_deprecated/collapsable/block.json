@@ -9,9 +9,9 @@
   "icon": "arrow-down-alt2",
   "textdomain": "amnesty",
   "editorScript": "file:./index.js",
-  "viewScript": "file:./view.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "viewStyle": "file:./style-view.css",
   "render": "file:./render.php",
   "supports": {
     "className": true,
