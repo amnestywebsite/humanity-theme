@@ -17,5 +17,8 @@
       "type": "string",
       "default": "1/2|1/2"
     }
+  },
+  "supports": {
+    "inserter": false
   }
 }
