@@ -7,6 +7,8 @@ namespace Amnesty;
 use WP_REST_Controller;
 use WP_REST_Server;
 
+use function Amnesty\related_content_field_request_args;
+
 add_action(
 	'rest_api_init',
 	function (): void {
@@ -220,31 +222,7 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 	 * @return array<string,array<string,mixed>>
 	 */
 	protected function get_args_for_request(): array {
-		$args = [];
-
-		$taxonomies = get_taxonomies(
-			[
-				'amnesty' => true,
-				'public'  => true,
-			],
-			'objects'
-		);
-
-		$taxonomies = apply_filters( 'amnesty_related_content_taxonomies', $taxonomies );
-
-		foreach ( $taxonomies as $taxonomy ) {
-			$args[ $taxonomy->name ] = [
-				// phpcs:ignore WordPress.WP.I18n.MissingTranslatorsComment
-				'description' => sprintf( __( 'The terms assigned to the post in the %s taxonomy.' ), $taxonomy->name ),
-				'type'        => 'array',
-				'items'       => [
-					'type' => 'integer',
-				],
-				'context'     => [ 'view', 'edit' ],
-			];
-		}
-
-		return $args;
+		return related_content_field_request_args();
 	}
 
 }

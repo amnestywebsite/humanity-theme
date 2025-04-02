@@ -188,6 +188,7 @@ require_once realpath( __DIR__ . '/includes/taxonomies/custom-fields/precedence.
  */
 #region features
 require_once realpath( __DIR__ . '/includes/features/related-content/class-related-content.php' );
+require_once realpath( __DIR__ . '/includes/features/related-content/rest-api-field.php' );
 require_once realpath( __DIR__ . '/includes/features/related-content/class-wp-rest-related-content-controller.php' );
 #endregion features
 
