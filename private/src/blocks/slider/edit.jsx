@@ -80,7 +80,7 @@ export default function Edit({ attributes, className, clientId, setAttributes })
     clientId,
     slides.map((s) => s.clientId),
   );
-  setSelectedSlide(clientId, slides[selectedSlideIndex].clientId);
+  setSelectedSlide(clientId, slides[selectedSlideIndex]?.clientId);
 
   useEffect(() => {
     if (!attributes.sliderId) {

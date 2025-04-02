@@ -1,9 +1,13 @@
-.slide .editor-url-input__button {
+.wp-block-amnesty-core-slide {
+  box-sizing: border-box;
+}
+
+.wp-block-amnesty-core-slide .editor-url-input__button {
   position: relative;
   margin-left: 16px;
 }
 
-.slide .editor-url-input__button-modal {
+.wp-block-amnesty-core-slide .editor-url-input__button-modal {
   position: absolute;
   left: 0;
   width: 340px;

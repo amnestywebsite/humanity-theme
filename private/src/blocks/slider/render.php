@@ -33,7 +33,9 @@ foreach ( $blocks as $block ) {
 $slide_titles = [];
 
 foreach ( $slide_blocks as $slide ) {
-	array_push( $slide_titles, $slide['attrs']['title'] );
+	if ( isset( $slide['attrs']['title'] ) ) {
+		$slide_titles[] = $slide['attrs']['title'];
+	}
 }
 
 $buttons = '';
