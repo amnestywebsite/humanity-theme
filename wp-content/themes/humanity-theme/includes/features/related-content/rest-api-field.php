@@ -47,8 +47,14 @@ function related_content_field_request_args(): array {
  * @return array<int,int>
  */
 function related_content_field_get_callback( array $post ): array {
-	$related = new Related_Content( false, $post['id'] );
+	$cache_key = sprintf( '%s-%s', __FUNCTION__, $post['id'] );
+	$cached    = wp_cache_get( $cache_key, 'related' );
 
+	if ( is_array( $cached ) ) {
+		return $cached;
+	}
+
+	$related    = new Related_Content( false, $post['id'] );
 	$taxonomies = [];
 
 	foreach ( array_keys( related_content_field_request_args() ) as $taxonomy ) {
@@ -59,7 +65,17 @@ function related_content_field_get_callback( array $post ): array {
 		$taxonomies[ $taxonomy ] = $post[ $taxonomy ];
 	}
 
-	return $related->get_api_data( $taxonomies );
+	$related = $related->get_api_data( $taxonomies );
+
+	$expiry = 10 * MINUTE_IN_SECONDS;
+	if ( count( $taxonomies ) && count( $related ) ) {
+		$expiry = HOUR_IN_SECONDS;
+	}
+
+	// phpcs:ignore WordPressVIPMinimum.Performance.LowExpiryCacheTime.CacheTimeUndetermined
+	wp_cache_set( $cache_key, $related, 'related', $expiry );
+
+	return $related;
 }
 
 /**
