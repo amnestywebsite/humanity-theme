@@ -4,7 +4,7 @@ import { each, filter, head, isEmpty, map } from 'lodash';
 import { InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl, ToggleControl } from '@wordpress/components';
 import { useEntityRecords } from '@wordpress/core-data';
-import { useEffect, useRef } from '@wordpress/element';
+import { useEffect, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
 import List from './components/List.jsx';
@@ -45,6 +45,19 @@ const filterTermsForRegionsOnly = (termsLoading, terms, regionsOnly) => {
   return unflatten(filtered);
 };
 
+function getCurrentTaxonomy(taxonomies, taxonomy) {
+  const filteredTaxonomies = filter(taxonomies, (t) => t.amnesty);
+  return head(filter(filteredTaxonomies, (t) => t.slug === taxonomy));
+}
+
+function getTaxonomyOptions(taxonomies) {
+  const filteredTaxonomies = filter(taxonomies, (t) => t.amnesty);
+  return map(filteredTaxonomies, (tax) => ({
+    label: tax.name,
+    value: tax.slug,
+  }));
+}
+
 export default function Edit({ attributes, className, setAttributes }) {
   const { records: taxonomies, isResolving: taxonomiesLoading } = useEntityRecords(
     'root',
@@ -56,26 +69,38 @@ export default function Edit({ attributes, className, setAttributes }) {
     { per_page: -1 },
   );
 
-  const filteredTerms = useRef(
-    filterTermsForRegionsOnly(termsLoading, terms, attributes.regionsOnly),
-  );
+  const [current, setCurrent] = useState();
+  const [options, setOptions] = useState();
+  const [theTerms, setTheTerms] = useState();
 
-  let current;
-  let options;
-
-  if (!taxonomiesLoading) {
-    const filteredTaxonomies = filter(taxonomies, (t) => t.amnesty);
-    current = head(filter(filteredTaxonomies, (t) => t.slug === attributes.taxonomy));
-    options = map(filteredTaxonomies, (tax) => ({ label: tax.name, value: tax.slug }));
-  }
-
-  if (current && !current?.hierarchical && attributes.depth !== 0) {
-    setAttributes({ depth: 0 });
-  }
-
+  // transform taxonomy entities
   useEffect(() => {
-    filteredTerms.current = filterTermsForRegionsOnly(termsLoading, terms, attributes.regionsOnly);
-  }, [attributes.regionsOnly, terms, termsLoading]);
+    if (!taxonomiesLoading) {
+      setCurrent(getCurrentTaxonomy(taxonomies, attributes.taxonomy));
+      setOptions(getTaxonomyOptions(taxonomies));
+    }
+  }, [taxonomies, taxonomiesLoading, attributes.taxonomy]);
+
+  // minimise depth if the currently-selected taxonomy is not hierarchical
+  useEffect(() => {
+    if (!taxonomiesLoading && current && !current?.hierarchical && attributes.depth !== 0) {
+      setAttributes({ depth: 0 });
+    }
+  }, [attributes.depth, current, setAttributes, taxonomiesLoading]);
+
+  // disable regions-only if the currently-selected taxonomy is not hierarchical
+  useEffect(() => {
+    if (!taxonomiesLoading && current && !current?.hierarchical && attributes.regionsOnly) {
+      setAttributes({ regionsOnly: false });
+    }
+  }, [attributes.regionsOnly, current, setAttributes, taxonomiesLoading]);
+
+  // manage available terms
+  useEffect(() => {
+    if (!taxonomiesLoading && !termsLoading && Array.isArray(terms)) {
+      setTheTerms(filterTermsForRegionsOnly(termsLoading, terms, attributes.regionsOnly));
+    }
+  }, [attributes.regionsOnly, taxonomiesLoading, termsLoading, terms]);
 
   const classes = classnames(className, {
     [`has-${attributes.background}-background-color`]: !!attributes.background,
@@ -105,21 +130,23 @@ export default function Edit({ attributes, className, setAttributes }) {
             onChange={(taxonomy) => setAttributes({ taxonomy })}
           />
           {current?.hierarchical && (
-            <RangeControl
-              /* translators: [admin] */
-              label={__('Max depth', 'amnesty')}
-              min={0}
-              max={3}
-              value={attributes.depth}
-              onChange={(depth) => setAttributes({ depth })}
-            />
+            <>
+              <RangeControl
+                /* translators: [admin] */
+                label={__('Max depth', 'amnesty')}
+                min={0}
+                max={3}
+                value={attributes.depth}
+                onChange={(depth) => setAttributes({ depth })}
+              />
+              <ToggleControl
+                /* translators: [admin] */
+                label={__('Show only Regions/Subregions', 'amnesty')}
+                checked={attributes.regionsOnly}
+                onChange={(regionsOnly) => setAttributes({ regionsOnly })}
+              />
+            </>
           )}
-          <ToggleControl
-            /* translators: [admin] */
-            label={__('Show only Regions/Subregions', 'amnesty')}
-            checked={attributes.regionsOnly}
-            onChange={(regionsOnly) => setAttributes({ regionsOnly })}
-          />
         </PanelBody>
       </InspectorControls>
       <aside {...useBlockProps({ className: classes })}>
@@ -133,7 +160,7 @@ export default function Edit({ attributes, className, setAttributes }) {
           placeholder={__('Explore by Region', 'amnesty')}
           withoutInteractiveFormatting={true}
         />
-        <List terms={filteredTerms.current} depth={0} maxDepth={attributes.depth} />
+        <List terms={theTerms} depth={0} maxDepth={attributes.depth} />
       </aside>
     </>
   );
