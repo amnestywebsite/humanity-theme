@@ -1,18 +1,16 @@
 <?php
 
-$wrapper_attributes = get_block_wrapper_attributes();
+$tweet_url  = get_permalink();
+$share_base = 'https://twitter.com/intent/tweet';
+$full_url   = sprintf( '%s?text=%s', $share_base, rawurlencode( $attributes['content'] ?? '' ) );
 
-$tweet_url     = get_permalink();
-$share_base    = 'https://twitter.com/intent/tweet';
-$full_url      = sprintf( '%s?text=%s', $share_base, rawurlencode( $attributes['content'] ?? '' ) );
-$block_classes = $attributes['className'] . ' tweetAction';
-
+$block_classes = 'tweetAction';
 if ( 'narrow' === $attributes['size'] ) {
 	$block_classes .= ' tweetAction--narrow';
 }
 ?>
 
-<div <?php echo wp_kses_data( $wrapper_attributes ); ?>>
+<div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
 	<div class="<?php echo esc_attr( $block_classes ); ?>">
 		<div class="tweetAction-header">
 			<span class="dashicons dashicons-twitter" aria-label="<?php /* translators: [front] ARIA */ esc_attr_e( 'Twitter Logo', 'amnesty' ); ?>"></span>

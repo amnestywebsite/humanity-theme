@@ -1,5 +1,5 @@
 .tweetAction {
-  padding: 21px;
+  padding: var(--wp--preset--spacing--single);
   max-width: 350px;
   background-color: var(--wp--preset--color--grey-lighter);
   flex: 1;
@@ -39,7 +39,7 @@
   margin-right: 14px;
   width: auto;
   height: auto;
-  font-size: 40px;
+  font-size: var(--wp--preset--font-size--x-large);
   color: var(--wp--preset--color--blue-twitter);
 }
 
@@ -50,15 +50,15 @@
 }
 
 .tweetAction-content {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 10px;
+  margin-top: var(--wp--preset--spacing--half);
+  margin-bottom: var(--wp--preset--spacing--half);
+  padding: var(--wp--preset--spacing--half);
   min-height: 150px;
   max-height: 278px;
   overflow-y: auto;
   background-color: var(--wp--preset--color--white);
   font-family: var(--wp--preset--font-family--primary);
-  font-size: 21px;
+  font-size: var(--wp--preset--font-size--heading-5);
 
   @media all and (min-width: 760px) {
     max-height: none;
@@ -66,18 +66,18 @@
   }
 }
 
-.is-style-alternative-style.tweetAction .dashicons-twitter {
+.wp-block-amnesty-core-tweet-block.is-style-alternative-style .tweetAction .dashicons-twitter {
   order: 2;
   transform: scale(1.4);
   color: var(--wp--preset--color--blue-twitter);
-  margin-top: 33px;
-  margin-bottom: 15px;
+  margin-top: var(--wp--preset--spacing--single);
+  margin-bottom: var(--wp--preset--spacing--half);
   margin-right: 0;
 }
 
-.is-style-alternative-style.tweetAction {
+.wp-block-amnesty-core-tweet-block.is-style-alternative-style .tweetAction {
   background-color: var(--wp--preset--color--white);
-  padding: 0;
+  padding: var(--wp--preset--spacing--single);
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -85,11 +85,11 @@
   flex-direction: column;
 }
 
-.is-style-alternative-style.tweetAction .tweetAction-content {
+.wp-block-amnesty-core-tweet-block.is-style-alternative-style .tweetAction .tweetAction-content {
   min-height: 20px;
 }
 
-.is-style-alternative-style.tweetAction .tweetButton {
+.wp-block-amnesty-core-tweet-block.is-style-alternative-style .tweetAction .tweetButton {
   align-self: center;
 }
 
@@ -98,24 +98,25 @@
 }
 
 .is-style-alternative-style .tweetAction-content {
-  padding: 0 60px;
+  padding: 0 var(--wp--preset--spacing--double);
   min-height: unset;
   max-height: unset;
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 24px;
+  font-size: var(--wp--preset--font-size--heading-5);
   text-align: center;
 }
 
-.is-style-alternative-style.tweetAction .btn {
-  background-color: var(--wp--preset--color--blue-twitter);
+.wp-block-amnesty-core-tweet-block.is-style-alternative-style .tweetAction .btn {
   border: none;
+  display: block;
   margin: 0 auto;
-  padding: 13px 24px;
+  padding: var(--wp--preset--spacing--half) var(--wp--preset--spacing--single);
   max-width: 230px;
   line-height: normal;
   color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--blue-twitter);
   font-family: var(--wp--preset--font-family--secondary);
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--regular);
 }
 
 .is-style-alternative-style .tweetButton {
@@ -124,26 +125,22 @@
   align-self: center;
 }
 
-.is-style-alternative-style.tweetBlock {
-  height: 100%;
-}
-
 .tweetAction-embed {
-  margin-top: 24px;
+  margin-top: var(--wp--preset--spacing--single);
 }
 
-.is-style-alternative-style.tweetAction .tweetAction-title {
+.wp-block-amnesty-core-tweet-block.is-style-alternative-style .tweetAction .tweetAction-title {
   text-align: center;
 }
 
 .tweetAction .tweetAction-textBox {
-  margin-bottom: 24px;
+  margin-bottom: var(--wp--preset--spacing--single);
   background-color: var(--wp--preset--color--white);
   display: flex;
   flex-direction: column;
 }
 
-.is-style-alternative-style.tweetAction .tweetAction-textBox {
+.wp-block-amnesty-core-tweet-block.is-style-alternative-style .tweetAction .tweetAction-textBox {
   text-align: center;
 }
 

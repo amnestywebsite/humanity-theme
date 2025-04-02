@@ -1,30 +1,30 @@
 .wp-block-amnesty-core-tweet-block .block-editor-plain-text {
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 
 .tweetAction-title {
-  display: inline-block !important;
-  padding: 10px !important;
+  display: inline-block;
+  padding: var(--wp--preset--spacing--half);
   max-width: calc(100% - 54px);
   background: transparent;
-  font-family: var(--wp--preset--font-family--secondary) !important;
-  font-size: 28px !important;
+  font-family: var(--wp--preset--font-family--secondary);
+  font-size: var(--wp--preset--font-size--heading-4);
   font-weight: bold;
-  line-height: 1.4 !important;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
 .tweetAction-content {
-  margin-top: 16px !important;
-  margin-bottom: 16px !important;
-  padding: 10px !important;
-  font-family: var(--wp--preset--font-family--primary) !important;
-  font-size: 21px !important;
+  margin-top: var(--wp--preset--spacing--half);
+  margin-bottom: var(--wp--preset--spacing--half);
+  padding: var(--wp--preset--spacing--half);
+  font-family: var(--wp--preset--font-family--primary);
+  font-size: var(--wp--preset--font-size--heading-5);
 }
 
 .tweetAction-button {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: var(--wp--preset--spacing--half);
+  padding-left: var(--wp--preset--spacing--half);
 }
 
 .block-editor-block-list__layout .tweetBlock {

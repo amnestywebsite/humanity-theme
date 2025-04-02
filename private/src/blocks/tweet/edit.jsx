@@ -33,7 +33,9 @@ const getContent = (content) => {
 };
 
 export default function Edit({ attributes, setAttributes }) {
-  const blockProps = useBlockProps({ className: 'tweetBlock' });
+  const blockClasses = classnames('tweetAction', {
+    'tweetAction--narrow': attributes.size === 'narrow',
+  });
   const buttonClasses = classnames(['btn', 'btn--fill', 'btn--large']);
 
   return (
@@ -62,8 +64,8 @@ export default function Edit({ attributes, setAttributes }) {
           />
         </PanelBody>
       </InspectorControls>
-      <div {...blockProps}>
-        <div className="tweetAction">
+      <div {...useBlockProps()}>
+        <div className={blockClasses}>
           <div className="tweetAction-header">
             <span className="dashicons dashicons-twitter" aria-label="Twitter Logo"></span>
             <PlainText
@@ -77,7 +79,7 @@ export default function Edit({ attributes, setAttributes }) {
           <div className="tweetAction-textBox">
             <PlainText
               className="tweetAction-content"
-              rows="8"
+              rows={attributes?.className?.match(/is-style-alternative-style/) ? 4 : 8}
               /* translators: [admin] */
               placeholder={__('(Place Tweet text proforma here)', 'amnesty')}
               value={attributes.content}
