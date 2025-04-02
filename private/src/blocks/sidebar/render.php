@@ -2,6 +2,11 @@
 
 declare( strict_types = 1 );
 
+// the templates handle the output
+if ( 'the_content' === current_filter() ) {
+	return;
+}
+
 $content_maximised = amnesty_validate_boolish(
 	get_post_meta( get_the_ID(), '_maximise_post_content', true ),
 	false,

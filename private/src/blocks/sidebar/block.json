@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
-	"apiVersion": 2,
+	"apiVersion": 3,
 	"name": "amnesty-core/sidebar",
 	"title": "Sidebar",
 	"description": "For presenting a sidebar on a post type",
@@ -12,5 +12,6 @@
 		"multiple": false
 	},
   "editorScript": "file:./index.js",
-  "style": "file:./style.css"
+  "style": "file:./style.css",
+  "render": "file:./render.php"
 }
