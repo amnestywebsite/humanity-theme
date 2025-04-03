@@ -3,21 +3,10 @@
   border-left: none;
 }
 
-.wp-block-quote::before,
-.wp-block-quote.has-text-align-center::before {
+.wp-block-quote:has(.has-text-align-center)::before {
   content: open-quote;
 }
-
-.wp-block-quote cite::after,
-.wp-block-quote.has-text-align-center cite::after {
-  content: "";
-  display: block;
-  margin: 8px auto 0;
-  max-width: 200px;
-  height: 8px;
-}
-
-.wp-block-quote.has-text-align-center::before {
+.wp-block-quote:has(.has-text-align-center)::before {
   position: absolute;
   left: 48%;
   font-family: var(--wp--preset--font-family--secondary) !important;
@@ -25,11 +14,11 @@
   font-size: 3.75rem !important;
   line-height: 1px;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 4.375rem !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 5rem !important;
   }
 }
@@ -44,15 +33,15 @@
   font-size: var(--wp--preset--font-size--large) !important;
 }
 
-.wp-block-quote.has-small-font-size p {
+.wp-block-quote .has-small-font-size {
   font-size: var(--wp--preset--font-size--small) !important;
 }
 
-.wp-block-quote.has-medium-font-size p {
+.wp-block-quote .has-medium-font-size {
   font-size: var(--wp--preset--font-size--medium) !important;
 }
 
-.wp-block-quote.has-large-font-size p {
+.wp-block-quote .has-large-font-size {
   font-size: var(--wp--preset--font-size--large) !important;
 }
 
@@ -65,21 +54,21 @@
   line-height: 40px !important;
   padding-bottom: 24px;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 1.25rem !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 1.5rem !important;
   }
 }
 
 .wp-block-quote.has-large-font-size cite {
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 1.25rem !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 1.5rem !important;
   }
 }
@@ -87,11 +76,11 @@
 .wp-block-quote.has-medium-font-size cite {
   font-size: 1rem !important;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 1.25rem !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 1.375rem !important;
   }
 }
@@ -99,31 +88,60 @@
 .wp-block-quote.has-small-font-size cite {
   font-size: 0.875rem !important;
 
-  @include mq(x-small) {
+  @media all and (min-width: 540px) {
     font-size: 1.125rem !important;
   }
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     font-size: 1.25rem !important;
   }
 }
 
-
-
-.wp-block-quote cite::after,
-.wp-block-quote.has-black-color cite::after,
-.wp-block-quote.has-text-align-center.has-black-color cite::after {
-  background-color: var(--wp--preset--color--black);
+.wp-block-quote cite::after {
+  content: none;
 }
 
-.wp-block-quote.has-white-color cite::after,
-.wp-block-quote.has-text-align-center.has-white-color cite::after {
-  background-color: var(--wp--preset--color--white);
+.wp-block-quote.is-style-default.alignleft,
+.rtl .wp-block-quote.is-style-default.alignright {
+  border-left: 8px solid;
+  margin-block-start: var(--wp--preset--spacing--single);
+  padding-left: 35px;
 }
 
-.wp-block-quote.has-amnesty-grey-brand-color cite::after,
-.wp-block-quote.has-text-align-center.has-amnesty-grey-brand-color cite::after {
-  background-color: var(--wp--preset--color--grey-light);
+.wp-block-quote.is-style-default.alignright,
+.rtl .wp-block-quote.is-style-default.alignleft {
+  border-right: 8px solid;
+  margin-block-start: var(--wp--preset--spacing--single);
+  padding-right: 35px;
+}
+
+.wp-block-quote.is-style-default p {
+  margin-block-start: 0;
+}
+
+.wp-block-quote.is-style-default p + p {
+  margin-block-start: var(--wp--preset--spacing--half);
+}
+
+.wp-block-quote.is-style-default cite {
+  padding-bottom: 0;
+}
+
+.wp-block-quote.is-style-default.has-text-align-center {
+  position: relative;
+  margin-top: 40px;
+}
+
+.wp-block-quote.is-style-default.has-text-align-center::before {
+  content: open-quote;
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 16px);
+  width: 32px;
+  font-family: var(--wp--preset--font-family--secondary);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55px;
 }
 
 .wp-block-quote.has-text-align-left {
@@ -161,7 +179,7 @@
 .wp-block-quote.has-text-align-left p::before {
   text-indent: -7px;
 
-  @include mq(medium) {
+  @media all and (min-width: 940px) {
     text-indent: -15px;
   }
 }
@@ -176,22 +194,6 @@
   display: inline-block;
 }
 
-.wp-block-quote.is-style-plain {
-  border: none !important;
-}
-
-.wp-block-quote.is-style-plain cite::after,
-.wp-block-quote.has-text-align-left cite::after,
-.wp-block-quote.has-text-align-right cite::after {
-  content: none;
-}
-
-.wp-block-quote.has-text-align-left::before,
-.wp-block-quote.has-text-align-right::before {
-  content: none;
-}
-
-// RTL styles
 .rtl .wp-block-quote.has-text-align-left {
   text-align: right;
   border-right: 8px solid var(--wp--preset--color--black);
