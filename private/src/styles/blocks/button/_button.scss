@@ -45,3 +45,7 @@
 .section--textWhite .btn {
   color: var(--wp--preset--color--black);
 }
+
+.section--textWhite .btn.btn--dark {
+  color: var(--wp--preset--color--white);
+}
