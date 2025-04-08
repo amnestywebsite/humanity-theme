@@ -1,3 +1,18 @@
+### v2.0.13
+Fixes:
+- Set title tag fallback to blog name
+
+Localisation:
+- Translate some strings into Thai
+
+Build:
+- Bump build dependencies to latest minor version
+- Bump @babel/runtime
+- Bump serialize-javascript
+
+CI:
+- Migrate from Travis CI to GitHub Actions
+
 ### v2.0.12
 Fixes:
 - GTM initialisation when not running Consent Mode
