@@ -390,9 +390,6 @@
       "link": {
         "color": {
           "text": "var(--wp--preset--color--black)"
-        },
-        "typography": {
-          "textDecoration": "none"
         }
       },
       "heading": {
