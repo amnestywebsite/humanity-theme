@@ -4,8 +4,7 @@
   position: relative;
   display: flex;
   margin: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-block: var(--wp--preset--spacing--double);
   width: 100%;
   max-width: $flexy-container;
   min-height: 540px;
@@ -13,8 +12,7 @@
   background-position: center center;
 
   @include mq(small) {
-    padding-top: 111px;
-    padding-bottom: 80px;
+    padding-block: var(--wp--preset--spacing--quad) calc(var(--wp--preset--spacing--single) * 3);
     height: auto;
   }
 }
@@ -23,11 +21,11 @@
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  padding: 0 24px !important;
+  padding: 0 var(--wp--preset--spacing--single) !important;
 }
 
 .hero-contentWrapper > * {
-  margin-bottom: 12px;
+  margin-block-end: var(--wp--preset--spacing--half);
 }
 
 .hero-content {

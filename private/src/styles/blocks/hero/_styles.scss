@@ -26,19 +26,6 @@
   text-align: start;
 }
 
-.rtl .wp-block-amnesty-core-hero.is-aligned-left .container {
-  justify-content: end;
-}
-
-.rtl .wp-block-amnesty-core-hero.is-aligned-left .hero-contentWrapper {
-  text-align: end;
-}
-
-.rtl .wp-block-amnesty-core-hero.is-aligned-left .hero-content {
-  margin-right: auto;
-  margin-left: 0;
-}
-
 .wp-block-amnesty-core-hero.is-aligned-center .container {
   justify-content: center;
 }
@@ -63,13 +50,5 @@
 }
 
 .wp-block-amnesty-core-hero.is-aligned-right .hero-content {
-  margin-left: auto;
-}
-
-.rtl .wp-block-amnesty-core-hero.is-aligned-right .container {
-  justify-content: start;
-}
-
-.rtl .wp-block-amnesty-core-hero.is-aligned-right .hero-contentWrapper {
-  text-align: start;
+  margin-inline-start: auto;
 }
