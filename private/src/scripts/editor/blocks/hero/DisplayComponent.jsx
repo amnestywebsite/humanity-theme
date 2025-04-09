@@ -71,8 +71,9 @@ const DisplayComponent = (props) => {
   }, [attributes.featuredVideoId, attributes.type]);
 
   // Set class names for the content back colours
-  const classes = classnames(className, {
+  const blockClasses = classnames(className, {
     [`has-${attributes.background}-background`]: attributes.background,
+    [`is-aligned-${attributes.align}`]: attributes.align,
     'has-video': !!attributes.featuredVideoId,
   });
 
@@ -129,7 +130,7 @@ const DisplayComponent = (props) => {
   return (
     <Fragment>
       {BlockInspectorControls}
-      <section className={classes} style={blockInlineStyle}>
+      <section className={blockClasses} style={blockInlineStyle}>
         {attributes.type === 'image' && (
           <div className="linkList-options">
             <BlockImageSelector imageId={attributes.imageID} setAttributes={setAttributes} />
