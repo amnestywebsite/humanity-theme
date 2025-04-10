@@ -1,24 +1,10 @@
-/**
- * Remove extra vertical spacing when nesting lists.
- */
-li > ul,
-li > ol {
-  margin-bottom: 0;
-}
-
 ul,
 ol {
-  margin-left: 18px;
-
-  .rtl & {
-    margin-right: 18px;
-    margin-left: 0;
-  }
+  margin-block: var(--wp--preset--spacing--half);
+  margin-inline-start: var(--wp--preset--spacing--double);
+  padding: 0;
 }
 
-.rtl .article-content {
-  ul,
-  ol {
-    margin-right: 18px;
-  }
+li {
+  margin-block: var(--wp--preset--spacing--quarter);
 }
