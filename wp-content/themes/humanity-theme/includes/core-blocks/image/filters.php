@@ -41,7 +41,7 @@ if ( ! function_exists( 'amnesty_add_image_metadata_to_image_block' ) ) {
 		$hide_copyright = ( $block['attrs']['hideImageCopyright'] ?? false );
 		$hide_caption   = ( $block['attrs']['hideImageCaption'] ?? true );
 		if ( str_contains( $block['attrs']['className'] ?? '', 'article-figure' ) ) {
-			$hide_caption = '1' === get_post_meta( get_the_ID(), '_hide_featured_image_caption' );
+			$hide_caption = '1' === get_post_meta( get_the_ID(), '_hide_featured_image_caption', true );
 		}
 
 		$new_image_tag .= $image_object->metadata( ! $hide_caption, ! $hide_copyright );
