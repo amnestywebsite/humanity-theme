@@ -7,31 +7,26 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-03-06 19:20+0000\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2025-04-08T08:58:08+00:00\n"
+"PO-Revision-Date: 2025-04-08T08:58:08+00:00\n"
 "Language: zh_HK\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: style.css\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:22
 #: includes/post-types/sidebar.php:73
-#: assets/scripts/blocks.js:9558
+#: assets/scripts/blocks.js:18060
+#: assets/scripts/blocks.js:19090
 msgid "Sidebar"
 msgstr "側邊欄"
 
 #. translators: [front] Donate
 #. translators: [admin]
 #: woocommerce/order/order-details.php:52
-#: assets/scripts/blocks.js:12844
-#: assets/scripts/blocks.js:35295
+#: assets/scripts/blocks.js:6079
+#: assets/scripts/blocks.js:9857
+#: assets/scripts/blocks.js:6132
+#: assets/scripts/blocks.js:10088
 msgid "Quantity"
 msgstr "數量"
 
@@ -52,16 +47,24 @@ msgstr "價格"
 #: partials/pagination.php:35
 #: partials/search/pagination.php:18
 #: partials/search/pagination.php:45
-#: assets/scripts/blocks.js:29560
-#: assets/scripts/blocks.js:30111
-#: assets/scripts/blocks.js:30201
-#: assets/scripts/blocks.js:30315
-#: assets/scripts/blocks.js:30426
-#: assets/scripts/blocks.js:30539
-#: assets/scripts/blocks.js:30584
-#: assets/scripts/blocks.js:30629
+#: assets/scripts/blocks.js:15270
+#: assets/scripts/blocks.js:15738
+#: assets/scripts/blocks.js:15794
+#: assets/scripts/blocks.js:15867
+#: assets/scripts/blocks.js:15933
+#: assets/scripts/blocks.js:15999
+#: assets/scripts/blocks.js:16022
+#: assets/scripts/blocks.js:16045
+#: assets/scripts/blocks.js:15918
+#: assets/scripts/blocks.js:16469
+#: assets/scripts/blocks.js:16559
+#: assets/scripts/blocks.js:16673
+#: assets/scripts/blocks.js:16784
+#: assets/scripts/blocks.js:16897
+#: assets/scripts/blocks.js:16942
+#: assets/scripts/blocks.js:16987
 msgid "Previous"
-msgstr "前一页"
+msgstr "前一頁"
 
 #. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #. translators: [front]
@@ -75,16 +78,29 @@ msgstr "前一页"
 #: partials/pagination.php:50
 #: partials/search/pagination.php:20
 #: partials/search/pagination.php:60
-#: assets/scripts/blocks.js:29557
-#: assets/scripts/blocks.js:30108
-#: assets/scripts/blocks.js:30198
-#: assets/scripts/blocks.js:30312
-#: assets/scripts/blocks.js:30423
-#: assets/scripts/blocks.js:30536
-#: assets/scripts/blocks.js:30581
-#: assets/scripts/blocks.js:30626
+#: assets/scripts/blocks.js:15265
+#: assets/scripts/blocks.js:15733
+#: assets/scripts/blocks.js:15789
+#: assets/scripts/blocks.js:15862
+#: assets/scripts/blocks.js:15928
+#: assets/scripts/blocks.js:15994
+#: assets/scripts/blocks.js:16017
+#: assets/scripts/blocks.js:16040
+#: assets/scripts/blocks.js:15915
+#: assets/scripts/blocks.js:16466
+#: assets/scripts/blocks.js:16556
+#: assets/scripts/blocks.js:16670
+#: assets/scripts/blocks.js:16781
+#: assets/scripts/blocks.js:16894
+#: assets/scripts/blocks.js:16939
+#: assets/scripts/blocks.js:16984
 msgid "Next"
-msgstr "后一页"
+msgstr "後一頁"
+
+#: assets/scripts/blocks.js:12975
+#: assets/scripts/blocks.js:13497
+msgid "Date:"
+msgstr ""
 
 #. translators: [front] Donate forms
 #: partials/orders/customer-details-with-shipping.php:17
@@ -155,7 +171,7 @@ msgstr[0] "顯示%1$d&ndash;%2$d 的 %3$d 結果"
 #: patterns/archive-loop-results.php:33
 #: woocommerce/loop/orderby.php:29
 msgid "Sort by"
-msgstr "分类"
+msgstr "分類"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:11
@@ -174,15 +190,18 @@ msgstr "跳到首頁"
 #. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
 #. translators: [admin]
 #: includes/blocks/term-list/render.php:56
-#: assets/scripts/blocks.js:31092
-#: assets/scripts/blocks.js:31148
+#: assets/scripts/blocks.js:16495
+#: assets/scripts/blocks.js:16542
+#: assets/scripts/blocks.js:17450
+#: assets/scripts/blocks.js:17506
 msgid "A-Z of Countries and Regions"
 msgstr "A-Z 國家和地區"
 
 #. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
 #. translators: [admin]
 #: includes/blocks/regions/render.php:20
-#: assets/scripts/blocks.js:28124
+#: assets/scripts/blocks.js:14089
+#: assets/scripts/blocks.js:14630
 msgid "Explore by Region"
 msgstr "按地區流覽"
 
@@ -203,10 +222,14 @@ msgstr "特赦核心"
 #: includes/blocks/iframe-button/register.php:29
 #: includes/blocks/iframe-button/render.php:21
 #: includes/blocks/petition-list/render.php:54
-#: assets/scripts/blocks.js:10391
-#: assets/scripts/blocks.js:10431
-#: assets/scripts/blocks.js:12450
-#: assets/scripts/blocks.js:13645
+#: assets/scripts/blocks.js:7246
+#: assets/scripts/blocks.js:7274
+#: assets/scripts/blocks.js:9417
+#: assets/scripts/blocks.js:12855
+#: assets/scripts/blocks.js:7523
+#: assets/scripts/blocks.js:7563
+#: assets/scripts/blocks.js:9634
+#: assets/scripts/blocks.js:13370
 msgid "Act Now"
 msgstr "立即行動"
 
@@ -229,36 +252,54 @@ msgstr "推特標誌"
 #. translators: [admin]
 #: includes/blocks/tweet-action/render.php:56
 #: includes/blocks/tweet-action/render.php:57
-#: assets/scripts/blocks.js:31277
-#: assets/scripts/blocks.js:31279
-#: assets/scripts/blocks.js:31370
-#: assets/scripts/blocks.js:31372
-#: assets/scripts/blocks.js:31412
-#: assets/scripts/blocks.js:31414
+#: assets/scripts/blocks.js:16668
+#: assets/scripts/blocks.js:16672
+#: assets/scripts/blocks.js:16754
+#: assets/scripts/blocks.js:16757
+#: assets/scripts/blocks.js:16782
+#: assets/scripts/blocks.js:16785
+#: assets/scripts/blocks.js:17635
+#: assets/scripts/blocks.js:17637
+#: assets/scripts/blocks.js:17728
+#: assets/scripts/blocks.js:17730
+#: assets/scripts/blocks.js:17770
+#: assets/scripts/blocks.js:17772
 msgid "Send this Tweet"
 msgstr "傳送此推文"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery
 #. translators: [admin]
 #: includes/blocks/slider/views/slide.php:20
-#: assets/scripts/blocks.js:29841
-#: assets/scripts/blocks.js:29911
-#: assets/scripts/blocks.js:29951
-#: assets/scripts/blocks.js:30032
+#: assets/scripts/blocks.js:15516
+#: assets/scripts/blocks.js:15606
+#: assets/scripts/blocks.js:15645
+#: assets/scripts/blocks.js:15662
+#: assets/scripts/blocks.js:16146
+#: assets/scripts/blocks.js:16275
+#: assets/scripts/blocks.js:16345
+#: assets/scripts/blocks.js:16385
 msgid "Tap here to return to gallery"
 msgstr "點選此處傳回函式庫"
 
 #. translators: [front]
 #. translators: [admin]
 #: includes/blocks/slider/views/slide.php:41
-#: assets/scripts/blocks.js:29857
-#: assets/scripts/blocks.js:29927
-#: assets/scripts/blocks.js:29967
-#: assets/scripts/blocks.js:30046
-#: assets/scripts/blocks.js:30187
-#: assets/scripts/blocks.js:30300
-#: assets/scripts/blocks.js:30411
-#: assets/scripts/blocks.js:30523
+#: assets/scripts/blocks.js:15519
+#: assets/scripts/blocks.js:15612
+#: assets/scripts/blocks.js:15651
+#: assets/scripts/blocks.js:15668
+#: assets/scripts/blocks.js:15783
+#: assets/scripts/blocks.js:15855
+#: assets/scripts/blocks.js:15921
+#: assets/scripts/blocks.js:15987
+#: assets/scripts/blocks.js:16160
+#: assets/scripts/blocks.js:16291
+#: assets/scripts/blocks.js:16361
+#: assets/scripts/blocks.js:16401
+#: assets/scripts/blocks.js:16545
+#: assets/scripts/blocks.js:16658
+#: assets/scripts/blocks.js:16769
+#: assets/scripts/blocks.js:16881
 msgid "Toggle Content"
 msgstr "切換內容"
 
@@ -267,7 +308,8 @@ msgstr "切換內容"
 #. translators: [admin]
 #: includes/blocks/download/render.php:23
 #: includes/blocks/download/render.php:68
-#: assets/scripts/blocks.js:11502
+#: assets/scripts/blocks.js:8466
+#: assets/scripts/blocks.js:8707
 msgid "Download"
 msgstr "下載"
 
@@ -292,10 +334,21 @@ msgstr "日期"
 msgid "Updated"
 msgstr "更新"
 
+#. translators: [front] %s: the title of the article
+#: includes/blocks/post-list/views/grid-item.php:10
+#: includes/blocks/post-list/views/list-item.php:10
+#: partials/post/post-full.php:16
+#: partials/post/post-none.php:10
+#: partials/post/post-search.php:31
+#, php-format
+msgid "Article: %s"
+msgstr ""
+
 #. translators: [front]
 #. translators: [admin]
 #: includes/blocks/post-list/views/list-item-author.php:9
-#: assets/scripts/blocks.js:27184
+#: assets/scripts/blocks.js:10764
+#: assets/scripts/blocks.js:10983
 msgid "Author"
 msgstr "作者"
 
@@ -303,7 +356,7 @@ msgstr "作者"
 #: includes/blocks/embed-sutori/render.php:27
 msgctxt "Toggle visibility of Sutori Timeline"
 msgid "Click to show/hide timeline"
-msgstr "单击以显示/隐藏时间线"
+msgstr "按一下以顯示/隱藏時間線"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:15
@@ -313,17 +366,17 @@ msgstr "最新"
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:16
 msgid "Oldest First"
-msgstr "最旧"
+msgstr "最舊"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:17
 msgid "Title - Ascending"
-msgstr "文章标题 – 顺序"
+msgstr "文章標題 – 順序"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:18
 msgid "Title - Descending"
-msgstr "文章标题 -逆序"
+msgstr "文章標題 -逆序"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
 #: includes/query-filters/sort-order.php:22
@@ -335,22 +388,100 @@ msgstr "最相關"
 #: includes/features/related-content/class-related-content.php:121
 #: includes/features/related-content/class-related-content.php:149
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:150
-#: assets/scripts/blocks.js:28263
-#: assets/scripts/blocks.js:28276
-#: assets/scripts/blocks.js:28427
+#: assets/scripts/blocks.js:14170
+#: assets/scripts/blocks.js:14171
+#: assets/scripts/blocks.js:14284
+#: assets/scripts/blocks.js:14700
+#: assets/scripts/blocks.js:14713
+#: assets/scripts/blocks.js:14875
 msgid "Related Content"
 msgstr "相關內容"
 
 #. translators: [API/admin]
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:186
 msgid "The featured image for the post."
-msgstr "設定精選圖片"
+msgstr "設定精選圖片。"
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:431
-#: assets/scripts/blocks.js:28227
+#: assets/scripts/blocks.js:14350
+#: assets/scripts/blocks.js:14933
 msgid "Country"
 msgstr "國家"
+
+#: includes/features/search/permalink.php:39
+msgid "The ID of the page that should display the search interface"
+msgstr ""
+
+#: includes/features/search/permalink.php:45
+msgid "Search page"
+msgstr "搜尋頁"
+
+#: includes/features/search/helpers.php:135
+msgid "January"
+msgstr "一月"
+
+#: includes/features/search/helpers.php:136
+msgid "Febuary"
+msgstr "二月"
+
+#: includes/features/search/helpers.php:137
+msgid "March"
+msgstr "三月"
+
+#: includes/features/search/helpers.php:138
+msgid "April"
+msgstr "四月"
+
+#: includes/features/search/helpers.php:139
+msgid "May"
+msgstr "五月"
+
+#: includes/features/search/helpers.php:140
+msgid "June"
+msgstr "六月"
+
+#: includes/features/search/helpers.php:141
+msgid "July"
+msgstr "7月"
+
+#: includes/features/search/helpers.php:142
+msgid "August"
+msgstr "八月"
+
+#: includes/features/search/helpers.php:143
+msgid "September"
+msgstr "九月"
+
+#: includes/features/search/helpers.php:144
+msgid "October"
+msgstr "十月"
+
+#: includes/features/search/helpers.php:145
+msgid "November"
+msgstr "十一月"
+
+#: includes/features/search/helpers.php:146
+msgid "December"
+msgstr "十二月"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title.
+#: includes/features/search/class-search-filters.php:149
+msgctxt "search results title"
+msgid "Search results"
+msgstr "結果"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
+#. translators: Singular/Plural number of posts.
+#: includes/features/search/class-search-filters.php:189
+#: includes/full-site-editing/blocks/query-count/render.php:18
+#: includes/full-site-editing/blocks/search-header/views/view.php:9
+#: partials/archive/header.php:17
+#: partials/search/header.php:15
+#, php-format
+msgid "%s result"
+msgid_plural "%s results"
+msgstr[0] "%s 個結果"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
 #: includes/features/search/class-search-filters.php:249
@@ -379,26 +510,6 @@ msgstr "對於%s月"
 msgctxt "search results title suffix for year published"
 msgid "in the year %s"
 msgstr "在%s年"
-
-#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
-#. translators: Singular/Plural number of posts.
-#: includes/features/search/class-search-filters.php:189
-#: includes/full-site-editing/blocks/query-count/render.php:18
-#: includes/full-site-editing/blocks/search-header/views/view.php:9
-#: partials/archive/header.php:17
-#: partials/search/header.php:15
-#, php-format
-msgid "%s result"
-msgid_plural "%s results"
-msgstr[0] "%s 个结果"
-
-#: includes/features/search/permalink.php:39
-msgid "The ID of the page that should display the search interface"
-msgstr ""
-
-#: includes/features/search/permalink.php:45
-msgid "Search page"
-msgstr "搜尋頁"
 
 #. translators: [admin]
 #: includes/admin/theme-options.php:18
@@ -448,12 +559,12 @@ msgstr "彈出"
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:155
 msgid "Index Page Filter Types"
-msgstr "索引页过滤器类型"
+msgstr "索引頁篩檢程式類型"
 
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:160
 msgid "Categories Only"
-msgstr "仅类别"
+msgstr "僅類別"
 
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:162
@@ -564,13 +675,13 @@ msgstr "逾時"
 #. translators: [admin]
 #: includes/admin/theme-options/pop-in.php:60
 msgid "After how many days should a dismissed pop-in be re-shown to the user?"
-msgstr "多少次后，應重新向用戶顯示已拒絕的彈出項？"
+msgstr "多少次後，應重新向用戶顯示已拒絕的彈出項？"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:19
 #: includes/admin/theme-options/localisation.php:23
 msgid "Localisation"
-msgstr "导航"
+msgstr "導航"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:32
@@ -580,7 +691,7 @@ msgstr "有序清單字元選擇"
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:36
 msgid "Please select"
-msgstr "请只选择一个项目"
+msgstr "請只選擇一個項目"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:40
@@ -705,12 +816,12 @@ msgstr "緬甸（緬甸）編號"
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:88
 msgid "Oriya numbering"
-msgstr "订单号"
+msgstr "訂單號"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:90
 msgid "Persian numbering"
-msgstr "页码"
+msgstr "頁碼"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:92
@@ -735,7 +846,7 @@ msgstr "泰盧固語編號"
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:100
 msgid "Thai numbering"
-msgstr "页码"
+msgstr "頁碼"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:102
@@ -750,12 +861,12 @@ msgstr "傳統亞美尼亞語編號"
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:106
 msgid "Traditional Chinese formal numbering"
-msgstr "附加信息"
+msgstr "附加資訊"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:108
 msgid "Traditional Chinese informal numbering"
-msgstr "附加信息"
+msgstr "附加資訊"
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:110
@@ -784,10 +895,14 @@ msgstr "大寫羅馬數位。"
 
 #. translators: [admin]
 #: includes/admin/theme-options/header.php:19
-#: assets/scripts/blocks.js:1040
-#: assets/scripts/blocks.js:12336
-#: assets/scripts/blocks.js:34263
-#: assets/scripts/blocks.js:34268
+#: assets/scripts/blocks.js:5220
+#: assets/scripts/blocks.js:5225
+#: assets/scripts/blocks.js:9188
+#: assets/scripts/blocks.js:17891
+#: assets/scripts/blocks.js:5100
+#: assets/scripts/blocks.js:5105
+#: assets/scripts/blocks.js:9389
+#: assets/scripts/blocks.js:18897
 msgid "Header"
 msgstr "頁首"
 
@@ -854,12 +969,12 @@ msgstr "分析"
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:37
 msgid "Google Tag Manager Code"
-msgstr "谷歌标签管理器代码"
+msgstr "穀歌標籤管理器代碼"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:39
 msgid "Paste your Google Tag Manager Code"
-msgstr "粘贴您的谷歌标签管理器代码"
+msgstr "粘貼您的穀歌標籤管理器代碼"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:48
@@ -881,7 +996,7 @@ msgstr "已啟用，已拒絕"
 
 #: includes/admin/theme-options/analytics.php:56
 msgid "Enabled, granted"
-msgstr "启用后台梯度"
+msgstr "啟用後臺梯度"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:65
@@ -896,12 +1011,12 @@ msgstr "貼上您的 Google 分析碼"
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:76
 msgid "Google Analytics v4 Code"
-msgstr "谷歌分析代码"
+msgstr "穀歌分析代碼"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:78
 msgid "Paste your Google Analytics v4 Code; you must also have entered your GA Code above"
-msgstr "粘貼您的谷歌分析v4代碼;您還必須在上面輸入您的GA代碼"
+msgstr "粘貼您的穀歌分析v4代碼;您還必須在上面輸入您的GA代碼"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:87
@@ -926,57 +1041,57 @@ msgstr "在此處貼上 VWO 帳號 ID"
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:114
 msgid "Site Meta Tags"
-msgstr "网站元标签"
+msgstr "網站元標籤"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:123
 msgid "Meta Tags"
-msgstr "网站元标签"
+msgstr "網站元標籤"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:125
 msgid "Add your site meta tags (&lt;meta name=\"thing\" /&gt;) here; useful for things like site verification tags"
-msgstr "在此处添加您的网站元标签（<元名称]\"东西\"/>）;有用的东西，如网站验证标签"
+msgstr "在此處添加您的網站元標籤（<元名稱]\"東西\"/>）;有用的東西，如網站驗證標籤"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:125
 #: includes/admin/theme-options/analytics.php:167
 msgid "If using WordPress SEO (Yoast) or similar, you may wish to use their built-in alternatives"
-msgstr "如果使用WordPress SEO（约斯特）或类似，您可能需要使用其内置的替代方案"
+msgstr "如果使用WordPress SEO（約斯特）或類似，您可能需要使用其內置的替代方案"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:129
 msgid "Add Tag"
-msgstr "添加标签"
+msgstr "添加標籤"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:131
 msgid "Remove Tag"
-msgstr "移除标记"
+msgstr "移除標記"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:143
 msgid "Meta Name"
-msgstr "Meta 名称"
+msgstr "Meta 名稱"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:145
 msgid "e.g. google-site-verification"
-msgstr "例如谷歌网站验证"
+msgstr "例如穀歌網站驗證"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:156
 #: includes/admin/theme-options/analytics.php:198
 msgid "Meta Value"
-msgstr "元数据值"
+msgstr "中繼資料值"
 
 #: includes/admin/theme-options/analytics.php:166
 msgid "RDF Tags"
-msgstr "在此处添加您的网站 rdf 标签（<元属性]\"东西\"/>）;有用的东西，如脸谱网页"
+msgstr "在此處添加您的網站 rdf 標籤（<元屬性]\"東西\"/>）;有用的東西，如臉譜網頁"
 
 #: includes/admin/theme-options/analytics.php:167
 msgid "Add your site rdf tags (&lt;meta property=\"thing\" /&gt;) here; useful for things like Facebook pages"
-msgstr "在此处添加您的网站 rdf 标签（<元属性]\"东西\"/>）;有用的东西，如脸谱网页"
+msgstr "在此處添加您的網站 rdf 標籤（<元屬性]\"東西\"/>）;有用的東西，如臉譜網頁"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:171
@@ -986,43 +1101,43 @@ msgstr "添加房源"
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:173
 msgid "Remove Property"
-msgstr "移除属性  Remove Property"
+msgstr "移除屬性  Remove Property"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:185
 msgid "Meta Property"
-msgstr "元属性"
+msgstr "元屬性"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:187
 msgid "e.g. fb:pages"
-msgstr "例如，fb：页"
+msgstr "例如，fb：頁"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:215
 msgid "Deprecated fields"
-msgstr "废弃的字段"
+msgstr "廢棄的欄位"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:224
 msgid "The below fields are deprecated. Avoid using them if they are not currently in use on this site"
-msgstr "下面的字段被弃用。如果当前未在此站点上使用，请避免使用它们"
+msgstr "下麵的欄位被棄用。如果當前未在此網站上使用，請避免使用它們"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:232
 msgid "Google Tag Manager Script"
-msgstr "谷歌標籤管理員腳本"
+msgstr "穀歌標籤管理員腳本"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:234
 #: includes/admin/theme-options/analytics.php:245
 msgid "Deprecated. Do not use unless already in use."
-msgstr "荒废的。除非已经在使用中，否则不要使用。"
+msgstr "荒廢的。除非已經在使用中，否則不要使用。"
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:243
 msgid "Google Tag Manager Noscript"
-msgstr "谷歌標籤管理器無腳本"
+msgstr "穀歌標籤管理器無腳本"
 
 #. translators: [admin]
 #: includes/admin/theme-options/social.php:19
@@ -1056,7 +1171,7 @@ msgstr "英斯塔格拉姆手柄"
 
 #: patterns/author-bio.php:21
 msgid "Biography"
-msgstr "简介"
+msgstr "簡介"
 
 #. translators: [admin]
 #: includes/admin/class-accessibility.php:84
@@ -1077,7 +1192,7 @@ msgstr "載入 Negishim 輔助功能小部件(希伯來文)。"
 #. translators: [admin]
 #: includes/users/meta.php:19
 msgid "Amnesty Umbraco User Info"
-msgstr "大赦国际乌姆布拉科用户信息"
+msgstr "大赦國際烏姆布拉科使用者資訊"
 
 #. translators: [admin] user settings
 #: includes/users/contact-methods.php:17
@@ -1085,19 +1200,97 @@ msgid "Twitter Username (without the @)"
 msgstr "推特使用者名 （不帶 *）"
 
 #. translators: [admin]
+#: includes/core-blocks/button/styles.php:43
+#: includes/core-blocks/social-icons/styles.php:18
+#: assets/scripts/blocks.js:2489
+#: assets/scripts/blocks.js:2566
+#: assets/scripts/blocks.js:2260
+#: assets/scripts/blocks.js:2314
+#, fuzzy
+msgctxt "block style"
+msgid "Dark"
+msgstr "深色"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:27
+#: assets/scripts/blocks.js:2571
+#: assets/scripts/blocks.js:2320
+#, fuzzy
+msgctxt "block style"
+msgid "Dark Circle"
+msgstr "暗圈"
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:52
+#: includes/core-blocks/social-icons/styles.php:36
+#: assets/scripts/blocks.js:2576
+#: assets/scripts/blocks.js:2616
+#: assets/scripts/blocks.js:2326
+#: assets/scripts/blocks.js:2370
+#, fuzzy
+msgctxt "block style"
+msgid "Light"
+msgstr "淺色"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:46
+#: assets/scripts/blocks.js:2581
+#: assets/scripts/blocks.js:2332
+msgctxt "block style"
+msgid "Light Circle"
+msgstr "光圈"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:55
+#, fuzzy
+msgctxt "block style"
+msgid "Yellow"
+msgstr "黃色"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:63
+#, fuzzy
+msgctxt "block style"
+msgid "Yellow Circle"
+msgstr "黃色圓圈"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:72
+#: assets/scripts/blocks.js:2586
+#: assets/scripts/blocks.js:2338
+#, fuzzy
+msgctxt "block style"
+msgid "Logos Only Dark"
+msgstr "徽標僅深色"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:81
+#: assets/scripts/blocks.js:2591
+#: assets/scripts/blocks.js:2344
+#, fuzzy
+msgctxt "block style"
+msgid "Logos Only Light"
+msgstr "徽標僅照明"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:90
+#, fuzzy
+msgctxt "block style"
+msgid "Logos Only Yellow"
+msgstr "徽標僅黃色"
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:61
+#: assets/scripts/blocks.js:2494
+#: assets/scripts/blocks.js:2266
+#, fuzzy
+msgctxt "block style"
+msgid "Back Link"
+msgstr "後連結"
+
+#. translators: [admin]
 #: includes/post-types/pop-in.php:20
 msgctxt "Post Type General Name"
-msgid "Pop-in variants"
-msgstr "流行變型"
-
-#. translators: [admin]
-#: includes/post-types/pop-in.php:22
-msgctxt "Post Type Singular Name"
-msgid "Pop-in"
-msgstr "彈出"
-
-#. translators: [admin]
-#: includes/post-types/pop-in.php:24
 msgid "Pop-in variants"
 msgstr "流行變型"
 
@@ -1176,8 +1369,10 @@ msgstr "在回收站中未找到彈出式變體"
 #: includes/post-types/pop-in.php:56
 #: includes/post-types/sidebar.php:52
 #: includes/taxonomies/class-taxonomy-locations.php:238
-#: assets/scripts/blocks.js:12153
-#: assets/scripts/blocks.js:34178
+#: assets/scripts/blocks.js:5145
+#: assets/scripts/blocks.js:8955
+#: assets/scripts/blocks.js:5015
+#: assets/scripts/blocks.js:9158
 msgid "Featured Image"
 msgstr "精選圖片"
 
@@ -1232,17 +1427,6 @@ msgstr "彈出式請求是一種行動調用，它呈現在頁面的正頂，向
 #. translators: [admin]
 #: includes/post-types/sidebar.php:16
 msgctxt "Post Type General Name"
-msgid "Sidebars"
-msgstr "側邊欄"
-
-#. translators: [admin]
-#: includes/post-types/sidebar.php:18
-msgctxt "Post Type Singular Name"
-msgid "Sidebar"
-msgstr "側邊欄"
-
-#. translators: [admin]
-#: includes/post-types/sidebar.php:20
 msgid "Sidebars"
 msgstr "側邊欄"
 
@@ -1376,6 +1560,13 @@ msgstr "頁腳影像"
 msgid "URL to an image you want to show in the footer. Upload images using the media uploader (Admin > Media)."
 msgstr "要在頁腳中顯示的圖像的 URL。使用媒體上傳器上傳圖像(管理 + 媒體)。"
 
+#. Author of the theme
+#. translators: [front]
+#: style.css
+#: includes/theme-setup/wp-head.php:18
+msgid "Amnesty International"
+msgstr "大赦國際"
+
 #. translators: [admin]
 #: includes/theme-setup/supports.php:75
 msgid "Standard Post Template"
@@ -1435,16 +1626,16 @@ msgstr "主要頁尾"
 msgid "Footer Legal"
 msgstr "頁法"
 
+#. Theme Name of the theme
+#: style.css
+#: includes/theme-setup/text-domain.php:33
+msgid "Humanity Theme"
+msgstr ""
+
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:84
 msgctxt "taxonomy general name"
 msgid "Countries"
-msgstr "國家"
-
-#. translators: [admin]
-#: includes/taxonomies/class-taxonomy-locations.php:86
-msgctxt "taxonomy singular name"
-msgid "Country"
 msgstr "國家"
 
 #. translators: [admin]
@@ -1620,12 +1811,6 @@ msgstr "主題清單導航"
 msgid "Topics list"
 msgstr "主題清單"
 
-#. translators: [admin] Tab heading when selecting from the most used terms.
-#: includes/taxonomies/class-taxonomy-topics.php:190
-msgctxt "topics"
-msgid "Most Used"
-msgstr "最常使用"
-
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:192
 msgid "&larr; Back to Topics"
@@ -1635,12 +1820,12 @@ msgstr "←返回主題"
 #: includes/taxonomies/custom-fields/precedence.php:26
 #: includes/taxonomies/custom-fields/precedence.php:32
 msgid "Taxonomy Precedence"
-msgstr "分类优先"
+msgstr "分類優先"
 
 #. translators: [admin]
 #: includes/taxonomies/custom-fields/precedence.php:34
 msgid "In which order taxonomies should be ranked when retrieving a term to display prominently for an item"
-msgstr "在哪个顺序分类时，检索一个术语，以突出显示一个项目"
+msgstr "在哪個順序分類時，檢索一個術語，以突出顯示一個專案"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:98
@@ -1653,7 +1838,7 @@ msgstr "內容類型"
 #: includes/taxonomies/class-taxonomy-content-types.php:102
 msgctxt "taxonomy singular name"
 msgid "Content Type"
-msgstr "内容類型"
+msgstr "內容類型"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:104
@@ -1719,12 +1904,6 @@ msgstr "內容類型列表導航"
 #: includes/taxonomies/class-taxonomy-content-types.php:132
 msgid "Content Types list"
 msgstr "內容類型清單"
-
-#. translators: [admin] Tab heading when selecting from the most used terms.
-#: includes/taxonomies/class-taxonomy-content-types.php:134
-msgctxt "Content Types"
-msgid "Most Used"
-msgstr "最常使用"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:136
@@ -1818,12 +1997,6 @@ msgstr "資源類型列表導航"
 msgid "Resource Types list"
 msgstr "資源類型清單"
 
-#. translators: [admin] Tab heading when selecting from the most used terms.
-#: includes/taxonomies/class-taxonomy-resource-types.php:191
-msgctxt "Resource Types"
-msgid "Most Used"
-msgstr "最常使用"
-
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:193
 msgid "&larr; Back to Resource Types"
@@ -1854,17 +2027,21 @@ msgstr "位置簡介"
 #. translators: [front] shown as a label for a country in search results
 #: includes/helpers/taxonomies.php:775
 msgid "Country Profile"
-msgstr "国家概况"
+msgstr "國家概況"
 
 #. translators: [admin]
 #: includes/rest-api/post-data.php:40
 msgid "Raw Umbraco data for this item"
-msgstr "此项目的原始乌姆布拉科数据"
+msgstr "此專案的原始烏姆布拉科資料"
+
+#: includes/rest-api/users.php:82
+msgid "Sorry, you are not allowed to do that."
+msgstr "很抱歉，目前的登入身分沒有進行這項操作的權限。"
 
 #. translators: [front]
 #: includes/mlp/language-selector.php:115
 msgid "Available languages"
-msgstr "可用语言"
+msgstr "可用語言"
 
 #. translators: [front] %1$s: the object type, %2$s: the object type's language
 #: includes/mlp/helpers.php:109
@@ -1882,7 +2059,7 @@ msgstr "頁腳選單"
 #: footer.php:67
 #: patterns/footer-content.php:123
 msgid "Follow us on:"
-msgstr "关注我们："
+msgstr "關注我們："
 
 #. translators: [front] ARIA
 #: footer.php:70
@@ -1907,7 +2084,7 @@ msgstr "在 Instagram 上關注我們"
 #. translators: [front]
 #: footer.php:82
 msgid "Follow us on Telegram"
-msgstr "在Telegram上关注我们"
+msgstr "在Telegram上關注我們"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ Accessibility text
 #: partials/article-share.php:12
@@ -1916,13 +2093,7 @@ msgstr "社交共用選項"
 
 #: patterns/author-loop.php:17
 msgid "More from this author"
-msgstr "更多来自本作者"
-
-#: partials/post/post-content.php:16
-#: partials/post/post-search.php:27
-msgctxt "updated date label"
-msgid "Updated"
-msgstr "更新"
+msgstr "更多來自本作者"
 
 #. translators: [front] ARIA
 #: partials/post/post-content.php:25
@@ -1934,7 +2105,7 @@ msgstr "發佈日期"
 #: partials/post/post-content.php:27
 #: partials/post/post-search.php:49
 msgid "Post updated date"
-msgstr "发布更新的时间戳"
+msgstr "發佈更新的時間戳記"
 
 #. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/news/2021/05/china-three-child-policy-still-a-violation/ placeholder is category name
 #: partials/post/post-content.php:22
@@ -1942,15 +2113,32 @@ msgstr "发布更新的时间戳"
 msgid "Article category %s"
 msgstr "文章類別 %s"
 
-#. translators: [front]
-#: partials/archive/categories.php:28
-msgid "Filter results by category"
-msgstr "依類別篩選結果"
+#. translators: [front] ARIA
+#: partials/forms/taxonomy-filters.php:14
+msgid "Filter results by topic"
+msgstr "按主題篩選結果"
 
 #. translators: [front] search results left hand side of page button
 #: partials/forms/taxonomy-filters.php:32
 msgid "Apply"
 msgstr "套用"
+
+#. translators: [front]
+#: partials/archive/subsubcategories.php:31
+#: partials/archive/subsubcategories.php:54
+msgid "Third level category"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subcategories.php:33
+#: partials/archive/subcategories.php:61
+msgid "Second level category"
+msgstr "第二層分類"
+
+#. translators: [front]
+#: partials/archive/subcategories.php:55
+msgid "List of subcategories"
+msgstr "子類別清單"
 
 #. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
 #: partials/archive/filters-active.php:45
@@ -1970,7 +2158,7 @@ msgstr "全部清除"
 #, php-format
 msgid "%1$s result for '%2$s'"
 msgid_plural "%1$s results for '%2$s'"
-msgstr[0] "%1$s 结果为\"%2$s\""
+msgstr[0] "%1$s 結果為\"%2$s\""
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options
 #: partials/archive/header.php:28
@@ -1979,9 +2167,9 @@ msgid "Results information"
 msgstr "結果資訊"
 
 #. translators: [front]
-#: partials/archive/subcategories.php:55
-msgid "List of subcategories"
-msgstr "子類別清單"
+#: partials/archive/categories.php:28
+msgid "Filter results by category"
+msgstr "依類別篩選結果"
 
 #: partials/pagination.php:28
 #: partials/search/pagination.php:38
@@ -2052,7 +2240,7 @@ msgstr "分類設置"
 #. translators: [front] ARIA
 #: partials/navigation/desktop.php:17
 msgid "Page Header"
-msgstr "页面页眉"
+msgstr "頁面頁眉"
 
 #. translators: [front] ARIA
 #: partials/navigation/desktop.php:25
@@ -2073,7 +2261,7 @@ msgstr "打開導航"
 #: patterns/attachment-updated-date.php:32
 #: patterns/post-updated-date.php:26
 msgid "Post updated timestamp"
-msgstr "发布更新的时间戳"
+msgstr "發佈更新的時間戳記"
 
 #. translators: [front]
 #: patterns/post-byline-custom.php:38
@@ -2094,64 +2282,6 @@ msgstr "由 %s"
 msgid "Product Category: %s"
 msgstr "產品類別: %s"
 
-#. translators: [front] ARIA
-#: partials/forms/taxonomy-filters.php:14
-msgid "Filter results by topic"
-msgstr "按主题筛选结果"
-
-#: includes/features/search/helpers.php:135
-msgid "January"
-msgstr "一月"
-
-#: includes/features/search/helpers.php:136
-msgid "Febuary"
-msgstr "二月"
-
-#: includes/features/search/helpers.php:137
-msgid "March"
-msgstr "三月"
-
-#: includes/features/search/helpers.php:138
-msgid "April"
-msgstr "四月"
-
-#: includes/features/search/helpers.php:139
-msgid "May"
-msgstr "五月"
-
-#: includes/features/search/helpers.php:140
-msgid "June"
-msgstr "六月"
-
-#: includes/features/search/helpers.php:141
-msgid "July"
-msgstr "7月"
-
-#: includes/features/search/helpers.php:142
-msgid "August"
-msgstr "八月"
-
-#: includes/features/search/helpers.php:143
-msgid "September"
-msgstr "九月"
-
-#: includes/features/search/helpers.php:144
-msgid "October"
-msgstr "十月"
-
-#: includes/features/search/helpers.php:145
-msgid "November"
-msgstr "十一月"
-
-#: includes/features/search/helpers.php:146
-msgid "December"
-msgstr "十二月"
-
-#. translators: [front]
-#: partials/search/horizontal-search.php:39
-msgid "Search"
-msgstr "搜尋"
-
 #: partials/search/horizontal-search.php:12
 #: partials/search/horizontal-search.php:52
 msgid "Year"
@@ -2161,6 +2291,11 @@ msgstr "年"
 #: partials/search/horizontal-search.php:62
 msgid "Month"
 msgstr "月"
+
+#. translators: [front]
+#: partials/search/horizontal-search.php:39
+msgid "Search"
+msgstr "搜尋"
 
 #. translators: [front]
 #: partials/search/horizontal-search.php:77
@@ -2212,12 +2347,6 @@ msgstr "電話："
 msgid "Payment Method"
 msgstr "付款方式"
 
-#. Theme Name of the theme
-#: style.css
-#: includes/theme-setup/text-domain.php:33
-msgid "Humanity Theme"
-msgstr ""
-
 #. Theme URI of the theme
 #: style.css
 msgid "https://github.com/amnestywebsite/humanity-theme"
@@ -2228,47 +2357,9 @@ msgstr ""
 msgid "The Amnesty International WordPress Humanity Theme"
 msgstr ""
 
-#. Author of the theme
-#. translators: [front]
-#: style.css
-#: includes/theme-setup/wp-head.php:18
-msgid "Amnesty International"
-msgstr "大赦國際"
-
 #. Author URI of the theme
 #: style.css
 msgid "https://www.amnesty.org"
-msgstr ""
-
-#. translators: [front] %s: the title of the article
-#: includes/blocks/post-list/views/grid-item.php:10
-#: includes/blocks/post-list/views/list-item.php:10
-#: partials/post/post-full.php:16
-#: partials/post/post-none.php:10
-#: partials/post/post-search.php:31
-msgid "Article: %s"
-msgstr ""
-
-#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title.
-#: includes/features/search/class-search-filters.php:149
-msgctxt "search results title"
-msgid "Search results"
-msgstr "结果"
-
-#: includes/rest-api/users.php:82
-msgid "Sorry, you are not allowed to do that."
-msgstr "很抱歉，目前的登入身分沒有進行這項操作的權限。"
-
-#. translators: [front]
-#: partials/archive/subcategories.php:33
-#: partials/archive/subcategories.php:61
-msgid "Second level category"
-msgstr ""
-
-#. translators: [front]
-#: partials/archive/subsubcategories.php:31
-#: partials/archive/subsubcategories.php:54
-msgid "Third level category"
 msgstr ""
 
 #. translators: [front]
@@ -2280,2421 +2371,2824 @@ msgstr "更新："
 
 #. translators: [admin]
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
-#: assets/scripts/bundle.js:1
-#: assets/scripts/blocks.js:11127
-#: assets/scripts/bundle.js:1995
+#: assets/scripts/blocks.js:8149
+#: assets/scripts/bundle.js:552
+#: assets/scripts/blocks.js:8332
+#: assets/scripts/bundle.js:632
 #, fuzzy
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] "%d日"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
-#: assets/scripts/bundle.js:1
-#: assets/scripts/bundle.js:2008
+#: assets/scripts/bundle.js:562
+#: assets/scripts/bundle.js:645
 msgctxt "time format(prefix translated separately) i.e. \"x, H:i:s\""
 msgid "%1$s, %2$s:%3$s:%4$s"
 msgstr "%1$s, %2$s:%3$s:%4$s"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
-#: assets/scripts/bundle.js:1
-#: assets/scripts/bundle.js:2022
+#: assets/scripts/bundle.js:575
+#: assets/scripts/bundle.js:659
 msgctxt "time format, H:i:s"
 msgid "%1$s:%2$s:%3$s"
 msgstr "%1$s:%2$s:%3$s"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11983
-#: assets/scripts/blocks.js:28653
+#: assets/scripts/blocks.js:14590
+#: assets/scripts/blocks.js:16926
+#: assets/scripts/blocks.js:15159
+#: assets/scripts/blocks.js:18018
 msgid "Hide Image Caption"
 msgstr "隱藏圖片說明文字"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11985
-#: assets/scripts/blocks.js:28659
+#: assets/scripts/blocks.js:14597
+#: assets/scripts/blocks.js:16927
+#: assets/scripts/blocks.js:15165
+#: assets/scripts/blocks.js:18020
 #, fuzzy
 msgid "Hide Image Credit"
 msgstr "隱藏影像的檔案"
 
 #. translators: [admin]
-#: includes/core-blocks/button/styles.php:43
-#: includes/core-blocks/social-icons/styles.php:18
-#: assets/scripts/blocks.js:141
-#: assets/scripts/blocks.js:189
-#, fuzzy
-msgctxt "block style"
-msgid "Dark"
-msgstr "深色"
-
-#. translators: [admin]
-#: includes/core-blocks/button/styles.php:61
-#: assets/scripts/blocks.js:147
-#, fuzzy
-msgctxt "block style"
-msgid "Back Link"
-msgstr "後連結"
-
-#. translators: [admin]
-#: includes/core-blocks/social-icons/styles.php:27
-#: assets/scripts/blocks.js:195
-#, fuzzy
-msgctxt "block style"
-msgid "Dark Circle"
-msgstr "暗圈"
-
-#. translators: [admin]
-#: includes/core-blocks/button/styles.php:52
-#: includes/core-blocks/social-icons/styles.php:36
-#: assets/scripts/blocks.js:201
-#: assets/scripts/blocks.js:245
-#, fuzzy
-msgctxt "block style"
-msgid "Light"
-msgstr "淺色"
-
-#. translators: [admin]
-#: includes/core-blocks/social-icons/styles.php:46
-#: assets/scripts/blocks.js:207
-msgctxt "block style"
-msgid "Light Circle"
-msgstr "光圈"
-
-#. translators: [admin]
-#: includes/core-blocks/social-icons/styles.php:55
-#, fuzzy
-msgctxt "block style"
-msgid "Yellow"
-msgstr "黃色"
-
-#. translators: [admin]
-#: includes/core-blocks/social-icons/styles.php:63
-#, fuzzy
-msgctxt "block style"
-msgid "Yellow Circle"
-msgstr "黃色圓圈"
-
-#. translators: [admin]
-#: includes/core-blocks/social-icons/styles.php:72
-#: assets/scripts/blocks.js:213
-#, fuzzy
-msgctxt "block style"
-msgid "Logos Only Dark"
-msgstr "徽標僅深色"
-
-#. translators: [admin]
-#: includes/core-blocks/social-icons/styles.php:81
-#: assets/scripts/blocks.js:219
-#, fuzzy
-msgctxt "block style"
-msgid "Logos Only Light"
-msgstr "徽標僅照明"
-
-#. translators: [admin]
-#: includes/core-blocks/social-icons/styles.php:90
-#, fuzzy
-msgctxt "block style"
-msgid "Logos Only Yellow"
-msgstr "徽標僅黃色"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:252
+#: assets/scripts/blocks.js:2622
+#: assets/scripts/blocks.js:2377
 msgctxt "block style"
 msgid "Grey"
 msgstr "灰色"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:261
+#: assets/scripts/blocks.js:2636
+#: assets/scripts/blocks.js:2386
 #, fuzzy
 msgctxt "block style"
 msgid "Responsive"
 msgstr "響應式"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:273
+#: assets/scripts/blocks.js:4586
+#: assets/scripts/blocks.js:4414
 msgid "Row Column"
 msgstr "行列"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:534
-#: assets/scripts/blocks.js:12869
-#: assets/scripts/blocks.js:14096
-#: assets/scripts/blocks.js:35629
-#: assets/scripts/blocks.js:35677
+#: assets/scripts/blocks.js:6382
+#: assets/scripts/blocks.js:6415
+#: assets/scripts/blocks.js:9778
+#: assets/scripts/blocks.js:9881
+#: assets/scripts/blocks.js:12890
+#: assets/scripts/blocks.js:6466
+#: assets/scripts/blocks.js:6514
+#: assets/scripts/blocks.js:10008
+#: assets/scripts/blocks.js:10113
+#: assets/scripts/blocks.js:13404
 #, fuzzy
 msgid "(Insert Title)"
 msgstr "( 插入標題 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:543
+#: assets/scripts/blocks.js:9788
+#: assets/scripts/blocks.js:10017
 #, fuzzy
 msgid "(Insert Content)"
 msgstr "( 插入內容 )"
 
-#: assets/scripts/blocks.js:989
+#: assets/scripts/blocks.js:17845
+#: assets/scripts/blocks.js:18846
 #, fuzzy
 msgid "Hide featured image"
 msgstr "隱藏精選圖片"
 
-#: assets/scripts/blocks.js:990
+#: assets/scripts/blocks.js:17846
+#: assets/scripts/blocks.js:18847
 msgid "Hide the featured image."
 msgstr ""
 
-#: assets/scripts/blocks.js:1002
+#: assets/scripts/blocks.js:17858
+#: assets/scripts/blocks.js:18859
 msgid "Hide featured image caption"
 msgstr ""
 
-#: assets/scripts/blocks.js:1003
+#: assets/scripts/blocks.js:17859
+#: assets/scripts/blocks.js:18860
 msgid "Hide the image caption for the featured image"
 msgstr ""
 
-#: assets/scripts/blocks.js:1042
+#: assets/scripts/blocks.js:17895
+#: assets/scripts/blocks.js:18899
 msgid "Use transparent header"
 msgstr ""
 
-#: assets/scripts/blocks.js:1043
+#: assets/scripts/blocks.js:17896
+#: assets/scripts/blocks.js:18900
 msgid "Enable transparent mode on the main header. Requires the use of a header block with a featured image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1136
+#: assets/scripts/blocks.js:17786
+#: assets/scripts/blocks.js:18774
 msgid "Enable public byline"
-msgstr "启用公共旁线"
+msgstr "啟用公共旁線"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1139
+#: assets/scripts/blocks.js:17789
+#: assets/scripts/blocks.js:18777
 msgid "Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated"
-msgstr "内容将不归因，除非启用并填充旁划线，否则作者信息将保持私密性"
+msgstr "內容將不歸因，除非啟用並填充旁劃線，否則作者資訊將保持私密性"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1152
+#: assets/scripts/blocks.js:17800
+#: assets/scripts/blocks.js:18790
 msgid "Use author profile for byline"
-msgstr "将作者简介用于旁划线"
+msgstr "將作者簡介用於旁劃線"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1163
+#: assets/scripts/blocks.js:17807
+#: assets/scripts/blocks.js:18801
 msgid "Byline Name"
 msgstr "旁名"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1165
+#: assets/scripts/blocks.js:17808
+#: assets/scripts/blocks.js:18803
 msgid "The individual, group, or entity to be named as the author"
-msgstr "个人、团体或实体将命名为作者"
+msgstr "個人、團體或實體將命名為作者"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1173
+#: assets/scripts/blocks.js:17815
+#: assets/scripts/blocks.js:18811
 msgid "Byline Context"
-msgstr "旁语下文"
+msgstr "旁語下文"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1175
+#: assets/scripts/blocks.js:17816
+#: assets/scripts/blocks.js:18813
 msgid "Additional context for the byline; e.g. job title, short summary, location, etc"
-msgstr "旁划线的其他上下文;例如职称、简要摘要、位置等"
+msgstr "旁劃線的其他上下文;例如職稱、簡要摘要、位置等"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1210
+#: assets/scripts/blocks.js:18024
+#: assets/scripts/blocks.js:19050
 #, fuzzy
 msgid "Disable Sharing"
 msgstr "禁用共用"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1212
+#: assets/scripts/blocks.js:18025
+#: assets/scripts/blocks.js:19052
 #, fuzzy
 msgid "Disable Share Buttons for this post"
-msgstr "關閉此頁面的共享按鈕"
+msgstr "關閉此頁面的共用按鈕"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1249
+#: assets/scripts/blocks.js:17935
+#: assets/scripts/blocks.js:18938
 msgid "Show published date"
 msgstr "顯示發佈日期"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1250
+#: assets/scripts/blocks.js:17939
+#: assets/scripts/blocks.js:18939
 msgid "Show the post published date"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1276
+#: assets/scripts/blocks.js:17955
+#: assets/scripts/blocks.js:18965
 msgid "Show updated date"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1277
+#: assets/scripts/blocks.js:17959
+#: assets/scripts/blocks.js:18966
 msgid "Show the \"updated at\" date"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1301
+#: assets/scripts/blocks.js:17972
+#: assets/scripts/blocks.js:18990
 msgid "Metadata"
 msgstr "Meta資料"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1327
+#: assets/scripts/blocks.js:17994
+#: assets/scripts/blocks.js:19016
 msgid "Disable Related Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:1329
+#: assets/scripts/blocks.js:17995
+#: assets/scripts/blocks.js:19018
 msgid "Removes the Related Content section for this post"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9524
-#: assets/scripts/blocks.js:13555
-#: assets/scripts/blocks.js:26411
-#: assets/scripts/blocks.js:26461
-#: assets/scripts/blocks.js:26828
+#: assets/scripts/blocks.js:12693
+#: assets/scripts/blocks.js:12797
+#: assets/scripts/blocks.js:13409
+#: assets/scripts/blocks.js:13487
+#: assets/scripts/blocks.js:17364
+#: assets/scripts/blocks.js:13203
+#: assets/scripts/blocks.js:13288
+#: assets/scripts/blocks.js:13976
+#: assets/scripts/blocks.js:14026
+#: assets/scripts/blocks.js:18444
 #, fuzzy
 msgid "Loading"
 msgstr "載入中"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9526
+#: assets/scripts/blocks.js:17367
+#: assets/scripts/blocks.js:18446
 #, fuzzy
 msgid "Select a sidebar"
 msgstr "選擇側邊欄"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9561
+#: assets/scripts/blocks.js:18064
+#: assets/scripts/blocks.js:19093
 msgid "Maximize Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9564
+#: assets/scripts/blocks.js:18067
+#: assets/scripts/blocks.js:19096
 msgid "Remove the sidebar and the sidebar area on posts and pages. Generally used to create pages with a full-width page design."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9581
+#: assets/scripts/blocks.js:18083
+#: assets/scripts/blocks.js:19113
 #, fuzzy
 msgid "Disable Sidebar"
 msgstr "關閉側邊列"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9584
+#: assets/scripts/blocks.js:18086
+#: assets/scripts/blocks.js:19116
 msgid "Remove the sidebar, but not the sidebar area; this keeps an empty space to the side of the content. Generally used for text heavy pages."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9638
-#: assets/scripts/blocks.js:25353
+#: assets/scripts/blocks.js:13213
+#: assets/scripts/blocks.js:18135
+#: assets/scripts/blocks.js:13764
+#: assets/scripts/blocks.js:19170
 #, fuzzy
 msgid "Select Term"
 msgstr "選取分類法項目"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9658
+#: assets/scripts/blocks.js:18152
+#: assets/scripts/blocks.js:19190
 #, fuzzy
 msgid "Feature on content type:"
 msgstr "內容類型的功能："
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9694
+#: assets/scripts/blocks.js:17697
+#: assets/scripts/blocks.js:18650
 msgid "Page Options"
 msgstr "頁面選項"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:9716
+#: assets/scripts/blocks.js:17706
+#: assets/scripts/blocks.js:18672
 msgid "Post Options"
 msgstr "文章選項"
 
-#: assets/scripts/blocks.js:9734
+#: assets/scripts/blocks.js:17711
+#: assets/scripts/blocks.js:18690
 #, fuzzy
 msgid "Appearance"
 msgstr "外觀"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10043
+#: assets/scripts/blocks.js:18306
+#: assets/scripts/blocks.js:19318
 msgid "Pop-in Settings"
-msgstr "弹出式设置"
+msgstr "彈出式設置"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10047
+#: assets/scripts/blocks.js:18312
+#: assets/scripts/blocks.js:19322
 msgid "Render Title"
-msgstr "渲染标题"
+msgstr "渲染標題"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10049
+#: assets/scripts/blocks.js:18313
+#: assets/scripts/blocks.js:19324
 msgid "Should the title be rendered when showing this pop-in to the user?"
-msgstr "向用户显示此弹出窗口时，应呈现标题吗？"
+msgstr "向使用者顯示此快顯視窗時，應呈現標題嗎？"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10150
-#: assets/scripts/blocks.js:10582
-#: assets/scripts/blocks.js:31216
-#: assets/scripts/blocks.js:32485
-#: assets/scripts/blocks.js:33668
-#: assets/scripts/blocks.js:34130
+#: assets/scripts/blocks.js:3474
+#: assets/scripts/blocks.js:4666
+#: assets/scripts/blocks.js:5094
+#: assets/scripts/blocks.js:7053
+#: assets/scripts/blocks.js:7428
+#: assets/scripts/blocks.js:16613
+#: assets/scripts/blocks.js:3281
+#: assets/scripts/blocks.js:4505
+#: assets/scripts/blocks.js:4967
+#: assets/scripts/blocks.js:7282
+#: assets/scripts/blocks.js:7714
+#: assets/scripts/blocks.js:17574
 #, fuzzy
 msgid "Size"
 msgstr "尺寸"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10155
-#: assets/scripts/blocks.js:33673
+#: assets/scripts/blocks.js:4671
+#: assets/scripts/blocks.js:7058
+#: assets/scripts/blocks.js:4510
+#: assets/scripts/blocks.js:7287
 #, fuzzy
 msgid "Standard"
 msgstr "標準"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10157
-#: assets/scripts/blocks.js:33675
+#: assets/scripts/blocks.js:4673
+#: assets/scripts/blocks.js:7060
+#: assets/scripts/blocks.js:4512
+#: assets/scripts/blocks.js:7289
 #, fuzzy
 msgid "Wide"
 msgstr "寬"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33680
+#: assets/scripts/blocks.js:4679
+#: assets/scripts/blocks.js:4517
 #, fuzzy
 msgid "Scroll To Link"
 msgstr "logo連結"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10193
-#: assets/scripts/blocks.js:33692
+#: assets/scripts/blocks.js:4689
+#: assets/scripts/blocks.js:7088
+#: assets/scripts/blocks.js:4529
+#: assets/scripts/blocks.js:7325
 #, fuzzy
 msgid "(Label)"
 msgstr "(標籤)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10169
-#: assets/scripts/blocks.js:11941
-#: assets/scripts/blocks.js:14047
-#: assets/scripts/blocks.js:14114
-#: assets/scripts/blocks.js:29048
-#: assets/scripts/blocks.js:31924
-#: assets/scripts/blocks.js:32541
-#: assets/scripts/blocks.js:33702
-#: assets/scripts/blocks.js:34592
+#: assets/scripts/blocks.js:2880
+#: assets/scripts/blocks.js:3529
+#: assets/scripts/blocks.js:4697
+#: assets/scripts/blocks.js:5540
+#: assets/scripts/blocks.js:7067
+#: assets/scripts/blocks.js:9145
+#: assets/scripts/blocks.js:12904
+#: assets/scripts/blocks.js:17116
+#: assets/scripts/blocks.js:2632
+#: assets/scripts/blocks.js:3337
+#: assets/scripts/blocks.js:4539
+#: assets/scripts/blocks.js:5429
+#: assets/scripts/blocks.js:7301
+#: assets/scripts/blocks.js:9352
+#: assets/scripts/blocks.js:13422
+#: assets/scripts/blocks.js:18169
 #, fuzzy
 msgid "Remove Image"
 msgstr "移除圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10201
-#: assets/scripts/blocks.js:33545
-#: assets/scripts/blocks.js:33731
+#: assets/scripts/blocks.js:4465
+#: assets/scripts/blocks.js:4716
+#: assets/scripts/blocks.js:7095
+#: assets/scripts/blocks.js:4281
+#: assets/scripts/blocks.js:4568
+#: assets/scripts/blocks.js:7333
 #, fuzzy
 msgid "Content"
 msgstr "內容"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10209
-#: assets/scripts/blocks.js:33741
+#: assets/scripts/blocks.js:4726
+#: assets/scripts/blocks.js:7104
+#: assets/scripts/blocks.js:4578
+#: assets/scripts/blocks.js:7341
 #, fuzzy
 msgid "Button Text"
 msgstr "按鈕文字"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33904
+#: assets/scripts/blocks.js:4872
+#: assets/scripts/blocks.js:4741
 #, fuzzy
 msgid "Custom Card"
 msgstr "自訂"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33906
+#: assets/scripts/blocks.js:4874
+#: assets/scripts/blocks.js:4743
 msgid "Custom Card block"
-msgstr "添加操作块"
+msgstr "添加操作塊"
 
 #. translators: [admin] text alignment. for RTL languages, localise as 'Right'
 #. translators: [admin]
-#: assets/scripts/blocks.js:10523
-#: assets/scripts/blocks.js:28684
-#: assets/scripts/blocks.js:29216
-#: assets/scripts/blocks.js:32450
-#: assets/scripts/blocks.js:34093
-#: assets/scripts/blocks.js:34568
+#: assets/scripts/blocks.js:3437
+#: assets/scripts/blocks.js:5055
+#: assets/scripts/blocks.js:5522
+#: assets/scripts/blocks.js:7381
+#: assets/scripts/blocks.js:14623
+#: assets/scripts/blocks.js:15395
+#: assets/scripts/blocks.js:3246
+#: assets/scripts/blocks.js:4930
+#: assets/scripts/blocks.js:5405
+#: assets/scripts/blocks.js:7655
+#: assets/scripts/blocks.js:15190
+#: assets/scripts/blocks.js:15574
 msgid "Left"
 msgstr "左"
 
+#. translators: [admin] text alignment/.
 #. translators: [admin] text alignment
 #. translators: [admin]
-#. translators: [admin] text alignment/.
-#: assets/scripts/blocks.js:10525
-#: assets/scripts/blocks.js:31221
-#: assets/scripts/blocks.js:31333
-#: assets/scripts/blocks.js:34566
+#: assets/scripts/blocks.js:5520
+#: assets/scripts/blocks.js:7383
+#: assets/scripts/blocks.js:16618
+#: assets/scripts/blocks.js:16729
+#: assets/scripts/blocks.js:5403
+#: assets/scripts/blocks.js:7657
+#: assets/scripts/blocks.js:17579
+#: assets/scripts/blocks.js:17691
 #, fuzzy
 msgid "Default"
 msgstr "預設"
 
 #. translators: [admin] text alignment. for RTL languages, localise as 'Left'
 #. translators: [admin]
-#: assets/scripts/blocks.js:10530
-#: assets/scripts/blocks.js:28674
-#: assets/scripts/blocks.js:29220
-#: assets/scripts/blocks.js:32460
-#: assets/scripts/blocks.js:34103
-#: assets/scripts/blocks.js:34572
+#: assets/scripts/blocks.js:3447
+#: assets/scripts/blocks.js:5065
+#: assets/scripts/blocks.js:5526
+#: assets/scripts/blocks.js:7386
+#: assets/scripts/blocks.js:14613
+#: assets/scripts/blocks.js:15399
+#: assets/scripts/blocks.js:3256
+#: assets/scripts/blocks.js:4940
+#: assets/scripts/blocks.js:5409
+#: assets/scripts/blocks.js:7662
+#: assets/scripts/blocks.js:15180
+#: assets/scripts/blocks.js:15578
 msgid "Right"
 msgstr "右"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10575
-#: assets/scripts/blocks.js:32446
-#: assets/scripts/blocks.js:34089
-#: assets/scripts/blocks.js:34559
+#: assets/scripts/blocks.js:3433
+#: assets/scripts/blocks.js:5051
+#: assets/scripts/blocks.js:5514
+#: assets/scripts/blocks.js:7420
+#: assets/scripts/blocks.js:3242
+#: assets/scripts/blocks.js:4926
+#: assets/scripts/blocks.js:5396
+#: assets/scripts/blocks.js:7707
 #, fuzzy
 msgid "Alignment"
 msgstr "對齊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10587
-#: assets/scripts/blocks.js:32490
-#: assets/scripts/blocks.js:35533
+#: assets/scripts/blocks.js:3479
+#: assets/scripts/blocks.js:6302
+#: assets/scripts/blocks.js:7433
+#: assets/scripts/blocks.js:3286
+#: assets/scripts/blocks.js:6370
+#: assets/scripts/blocks.js:7719
 msgid "Small"
 msgstr "小"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10589
-#: assets/scripts/blocks.js:35535
+#: assets/scripts/blocks.js:6304
+#: assets/scripts/blocks.js:7435
+#: assets/scripts/blocks.js:6372
+#: assets/scripts/blocks.js:7721
 msgid "Medium"
 msgstr "中"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10591
-#: assets/scripts/blocks.js:34139
-#: assets/scripts/blocks.js:35537
+#: assets/scripts/blocks.js:5103
+#: assets/scripts/blocks.js:6306
+#: assets/scripts/blocks.js:7437
+#: assets/scripts/blocks.js:4976
+#: assets/scripts/blocks.js:6374
+#: assets/scripts/blocks.js:7723
 msgid "Large"
 msgstr "大"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10596
-#: assets/scripts/blocks.js:28583
+#: assets/scripts/blocks.js:7443
+#: assets/scripts/blocks.js:14520
+#: assets/scripts/blocks.js:7728
+#: assets/scripts/blocks.js:15089
 #, fuzzy
 msgid "Text Colour"
 msgstr "文字顏色"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10601
-#: assets/scripts/blocks.js:12216
-#: assets/scripts/blocks.js:28587
-#: assets/scripts/blocks.js:32478
-#: assets/scripts/blocks.js:34121
+#: assets/scripts/blocks.js:3466
+#: assets/scripts/blocks.js:5084
+#: assets/scripts/blocks.js:7448
+#: assets/scripts/blocks.js:9023
+#: assets/scripts/blocks.js:14524
+#: assets/scripts/blocks.js:3274
+#: assets/scripts/blocks.js:4958
+#: assets/scripts/blocks.js:7733
+#: assets/scripts/blocks.js:9234
+#: assets/scripts/blocks.js:15093
 msgid "Black"
 msgstr "黑色"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10603
-#: assets/scripts/blocks.js:12859
-#: assets/scripts/blocks.js:13226
-#: assets/scripts/blocks.js:28059
-#: assets/scripts/blocks.js:28712
-#: assets/scripts/blocks.js:31885
-#: assets/scripts/blocks.js:32910
-#: assets/scripts/blocks.js:35324
-msgid "Grey"
-msgstr "灰色"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:10605
-#: assets/scripts/blocks.js:12217
-#: assets/scripts/blocks.js:13224
-#: assets/scripts/blocks.js:28057
-#: assets/scripts/blocks.js:28592
-#: assets/scripts/blocks.js:28707
-#: assets/scripts/blocks.js:31880
-#: assets/scripts/blocks.js:32476
-#: assets/scripts/blocks.js:34116
+#: assets/scripts/blocks.js:2840
+#: assets/scripts/blocks.js:3464
+#: assets/scripts/blocks.js:5079
+#: assets/scripts/blocks.js:7452
+#: assets/scripts/blocks.js:9027
+#: assets/scripts/blocks.js:10400
+#: assets/scripts/blocks.js:14032
+#: assets/scripts/blocks.js:14529
+#: assets/scripts/blocks.js:14647
+#: assets/scripts/blocks.js:2588
+#: assets/scripts/blocks.js:3272
+#: assets/scripts/blocks.js:4953
+#: assets/scripts/blocks.js:7737
+#: assets/scripts/blocks.js:9235
+#: assets/scripts/blocks.js:10468
+#: assets/scripts/blocks.js:14563
+#: assets/scripts/blocks.js:15098
+#: assets/scripts/blocks.js:15213
 msgid "White"
 msgstr "白色"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10611
+#: assets/scripts/blocks.js:7458
+#: assets/scripts/blocks.js:7743
 #, fuzzy
 msgid "Capitalise"
 msgstr "首個字元大寫"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10613
+#: assets/scripts/blocks.js:7459
+#: assets/scripts/blocks.js:7745
 #, fuzzy
 msgid "Capitalise the content."
 msgstr "充分利用內容。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10620
+#: assets/scripts/blocks.js:7466
+#: assets/scripts/blocks.js:7752
 #, fuzzy
 msgid "Line"
 msgstr "線條"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10622
+#: assets/scripts/blocks.js:7467
+#: assets/scripts/blocks.js:7754
 #, fuzzy
 msgid "Toggle display of line embellishment."
 msgstr "切換線條修飾的顯示。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10634
+#: assets/scripts/blocks.js:7475
+#: assets/scripts/blocks.js:7766
 #, fuzzy
 msgid "(Insert Quote Text)"
 msgstr "( 插入報價文字 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10644
+#: assets/scripts/blocks.js:7484
+#: assets/scripts/blocks.js:7776
 #, fuzzy
 msgid "(Insert Citation)"
 msgstr "( 插入引文 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10923
+#: assets/scripts/blocks.js:7635
+#: assets/scripts/blocks.js:7935
 #, fuzzy
 msgid "Blockquote"
 msgstr "引文區塊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10925
+#: assets/scripts/blocks.js:7637
+#: assets/scripts/blocks.js:7937
 #, fuzzy
 msgid "Add a blockquote block"
 msgstr "新增區塊引號塊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12212
-#: assets/scripts/blocks.js:12420
-#: assets/scripts/blocks.js:12663
-#: assets/scripts/blocks.js:13361
-#: assets/scripts/blocks.js:27213
-#: assets/scripts/blocks.js:28574
-#: assets/scripts/blocks.js:29404
-#: assets/scripts/blocks.js:32443
-#: assets/scripts/blocks.js:32734
-#: assets/scripts/blocks.js:32898
-#: assets/scripts/blocks.js:33499
-#: assets/scripts/blocks.js:34086
+#: assets/scripts/blocks.js:3429
+#: assets/scripts/blocks.js:3724
+#: assets/scripts/blocks.js:3886
+#: assets/scripts/blocks.js:4408
+#: assets/scripts/blocks.js:5047
+#: assets/scripts/blocks.js:9012
+#: assets/scripts/blocks.js:9388
+#: assets/scripts/blocks.js:9627
+#: assets/scripts/blocks.js:10358
+#: assets/scripts/blocks.js:10786
+#: assets/scripts/blocks.js:14509
+#: assets/scripts/blocks.js:15117
+#: assets/scripts/blocks.js:3239
+#: assets/scripts/blocks.js:3530
+#: assets/scripts/blocks.js:3694
+#: assets/scripts/blocks.js:4235
+#: assets/scripts/blocks.js:4923
+#: assets/scripts/blocks.js:9230
+#: assets/scripts/blocks.js:9604
+#: assets/scripts/blocks.js:9847
+#: assets/scripts/blocks.js:10605
+#: assets/scripts/blocks.js:11012
+#: assets/scripts/blocks.js:15080
+#: assets/scripts/blocks.js:15762
 #, fuzzy
 msgid "Options"
 msgstr "選項"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28577
+#: assets/scripts/blocks.js:14513
+#: assets/scripts/blocks.js:15083
 #, fuzzy
 msgid "Section Name"
 msgstr "章節名稱"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28600
+#: assets/scripts/blocks.js:14538
+#: assets/scripts/blocks.js:15106
 #, fuzzy
 msgid "Background Options"
 msgstr "背景選項"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28612
+#: assets/scripts/blocks.js:14549
+#: assets/scripts/blocks.js:15118
 #, fuzzy
 msgid "Edit image"
 msgstr "編輯圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28622
+#: assets/scripts/blocks.js:14561
+#: assets/scripts/blocks.js:15128
 #, fuzzy
 msgid "Remove image"
 msgstr "移除圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28627
+#: assets/scripts/blocks.js:14566
+#: assets/scripts/blocks.js:15133
 #, fuzzy
 msgid "Select background image"
 msgstr "選擇背景圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28637
+#: assets/scripts/blocks.js:14572
+#: assets/scripts/blocks.js:15143
 #, fuzzy
 msgid "Min image height as viewport percentage"
 msgstr "最小圖像高度作為視口百分比"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28647
+#: assets/scripts/blocks.js:14583
+#: assets/scripts/blocks.js:15153
 msgid "Toggle Background Overlay"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28665
+#: assets/scripts/blocks.js:14604
+#: assets/scripts/blocks.js:15171
 #, fuzzy
 msgid "Background Image Origin"
 msgstr "背景圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28669
-#: assets/scripts/blocks.js:35551
+#: assets/scripts/blocks.js:6319
+#: assets/scripts/blocks.js:14608
+#: assets/scripts/blocks.js:6388
+#: assets/scripts/blocks.js:15175
 #, fuzzy
 msgid "Top"
 msgstr "頂部"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28679
+#: assets/scripts/blocks.js:14618
+#: assets/scripts/blocks.js:15185
 msgid "Bottom"
 msgstr "底部"
 
-#. translators: [admin]
 #. translators: [admin] text alignment.
-#: assets/scripts/blocks.js:28689
-#: assets/scripts/blocks.js:29218
-#: assets/scripts/blocks.js:32455
-#: assets/scripts/blocks.js:34098
-#: assets/scripts/blocks.js:34570
+#. translators: [admin]
+#: assets/scripts/blocks.js:3442
+#: assets/scripts/blocks.js:5060
+#: assets/scripts/blocks.js:5524
+#: assets/scripts/blocks.js:14628
+#: assets/scripts/blocks.js:15397
+#: assets/scripts/blocks.js:3251
+#: assets/scripts/blocks.js:4935
+#: assets/scripts/blocks.js:5407
+#: assets/scripts/blocks.js:15195
+#: assets/scripts/blocks.js:15576
 #, fuzzy
 msgid "Centre"
 msgstr "中心"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28694
+#: assets/scripts/blocks.js:14633
+#: assets/scripts/blocks.js:15200
 msgid "Initial"
 msgstr "初始"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12214
-#: assets/scripts/blocks.js:12852
-#: assets/scripts/blocks.js:13391
-#: assets/scripts/blocks.js:28054
-#: assets/scripts/blocks.js:28703
-#: assets/scripts/blocks.js:31871
-#: assets/scripts/blocks.js:32469
-#: assets/scripts/blocks.js:34112
-#: assets/scripts/blocks.js:35317
+#: assets/scripts/blocks.js:2831
+#: assets/scripts/blocks.js:3457
+#: assets/scripts/blocks.js:5075
+#: assets/scripts/blocks.js:6101
+#: assets/scripts/blocks.js:9018
+#: assets/scripts/blocks.js:9866
+#: assets/scripts/blocks.js:10390
+#: assets/scripts/blocks.js:14029
+#: assets/scripts/blocks.js:14643
+#: assets/scripts/blocks.js:2579
+#: assets/scripts/blocks.js:3265
+#: assets/scripts/blocks.js:4949
+#: assets/scripts/blocks.js:6154
+#: assets/scripts/blocks.js:9232
+#: assets/scripts/blocks.js:10096
+#: assets/scripts/blocks.js:10635
+#: assets/scripts/blocks.js:14560
+#: assets/scripts/blocks.js:15209
 #, fuzzy
 msgid "Background Colour"
 msgstr "背景顏色"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28979
-#: assets/scripts/blocks.js:28983
+#: assets/scripts/blocks.js:14889
+#: assets/scripts/blocks.js:14893
+#: assets/scripts/blocks.js:15485
+#: assets/scripts/blocks.js:15489
 #, fuzzy
 msgid "Section"
 msgstr "區段"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33416
+#: assets/scripts/blocks.js:4527
+#: assets/scripts/blocks.js:4350
 msgid "50% | 50%"
 msgstr "50% |50%"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33423
+#: assets/scripts/blocks.js:4533
+#: assets/scripts/blocks.js:4357
 msgid "66.6% | 33.3%"
 msgstr "66.6% |33.3%"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33430
+#: assets/scripts/blocks.js:4539
+#: assets/scripts/blocks.js:4364
 msgid "33.3% | 66.6%"
 msgstr "33.3% |66.6%"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33437
+#: assets/scripts/blocks.js:4545
+#: assets/scripts/blocks.js:4371
 msgid "33.3% | 33.3% | 33.3%"
 msgstr "33.3% |33.3% |33.3%"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33444
+#: assets/scripts/blocks.js:4551
+#: assets/scripts/blocks.js:4378
 msgid "50% | 25% | 25%"
 msgstr "50% |25% |25%"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33451
+#: assets/scripts/blocks.js:4557
+#: assets/scripts/blocks.js:4385
 msgid "25% | 50% | 25%"
 msgstr "25% |50% |25%"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33458
+#: assets/scripts/blocks.js:4563
+#: assets/scripts/blocks.js:4392
 msgid "25% | 25% | 50%"
 msgstr "25% |25% |50%"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33465
+#: assets/scripts/blocks.js:4569
+#: assets/scripts/blocks.js:4399
 msgid "25% | 25% | 25% | 25%"
 msgstr "25% |25% |25% |25%"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33502
+#: assets/scripts/blocks.js:4412
+#: assets/scripts/blocks.js:4238
 #, fuzzy
 msgid "Layout Style"
 msgstr "佈局樣式"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33539
-#: assets/scripts/blocks.js:33549
+#: assets/scripts/blocks.js:4459
+#: assets/scripts/blocks.js:4469
+#: assets/scripts/blocks.js:4275
+#: assets/scripts/blocks.js:4285
 msgid "Columns"
 msgstr "列"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33547
+#: assets/scripts/blocks.js:4467
+#: assets/scripts/blocks.js:4283
 #, fuzzy
 msgid "Row"
 msgstr "列"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12018
+#: assets/scripts/blocks.js:16985
+#: assets/scripts/blocks.js:18053
 #, fuzzy
 msgid "Set featured video"
 msgstr "設定特色影片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12020
+#: assets/scripts/blocks.js:16986
+#: assets/scripts/blocks.js:18055
 #, fuzzy
 msgid "Remove featured video"
 msgstr "移除 V 影片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12091
-#: assets/scripts/blocks.js:34690
-#: assets/scripts/blocks.js:34700
+#: assets/scripts/blocks.js:5619
+#: assets/scripts/blocks.js:5627
+#: assets/scripts/blocks.js:17042
+#: assets/scripts/blocks.js:5527
+#: assets/scripts/blocks.js:5537
+#: assets/scripts/blocks.js:18126
 #, fuzzy
 msgid "Replace Video"
 msgstr "更換視訊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32488
-#: assets/scripts/blocks.js:34134
+#: assets/scripts/blocks.js:3477
+#: assets/scripts/blocks.js:5098
+#: assets/scripts/blocks.js:3284
+#: assets/scripts/blocks.js:4971
 #, fuzzy
 msgid "Normal"
 msgstr "一般"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12223
-#: assets/scripts/blocks.js:32497
-#: assets/scripts/blocks.js:34149
-#: assets/scripts/blocks.js:34758
+#: assets/scripts/blocks.js:3487
+#: assets/scripts/blocks.js:5113
+#: assets/scripts/blocks.js:5669
+#: assets/scripts/blocks.js:9038
+#: assets/scripts/blocks.js:3293
+#: assets/scripts/blocks.js:4986
+#: assets/scripts/blocks.js:5595
+#: assets/scripts/blocks.js:9241
 #, fuzzy
 msgid "Background Type"
 msgstr "背景類型"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12225
-#: assets/scripts/blocks.js:32500
-#: assets/scripts/blocks.js:34153
-#: assets/scripts/blocks.js:34762
+#: assets/scripts/blocks.js:3490
+#: assets/scripts/blocks.js:5117
+#: assets/scripts/blocks.js:5673
+#: assets/scripts/blocks.js:9043
+#: assets/scripts/blocks.js:3296
+#: assets/scripts/blocks.js:4990
+#: assets/scripts/blocks.js:5599
+#: assets/scripts/blocks.js:9243
 #, fuzzy
 msgid "Image"
 msgstr "圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12226
-#: assets/scripts/blocks.js:32502
-#: assets/scripts/blocks.js:34158
-#: assets/scripts/blocks.js:34767
+#: assets/scripts/blocks.js:3492
+#: assets/scripts/blocks.js:5122
+#: assets/scripts/blocks.js:5678
+#: assets/scripts/blocks.js:9047
+#: assets/scripts/blocks.js:3298
+#: assets/scripts/blocks.js:4995
+#: assets/scripts/blocks.js:5604
+#: assets/scripts/blocks.js:9244
 #, fuzzy
 msgid "Video"
 msgstr "影片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12149
-#: assets/scripts/blocks.js:34176
+#: assets/scripts/blocks.js:5142
+#: assets/scripts/blocks.js:8953
+#: assets/scripts/blocks.js:5013
+#: assets/scripts/blocks.js:9154
 #, fuzzy
 msgid "Background Image"
 msgstr "背景圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12242
-#: assets/scripts/blocks.js:32526
-#: assets/scripts/blocks.js:34184
+#: assets/scripts/blocks.js:3518
+#: assets/scripts/blocks.js:5151
+#: assets/scripts/blocks.js:9063
+#: assets/scripts/blocks.js:3322
+#: assets/scripts/blocks.js:5021
+#: assets/scripts/blocks.js:9260
 #, fuzzy
 msgid "Featured Video"
 msgstr "精選視頻"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34208
+#: assets/scripts/blocks.js:5164
+#: assets/scripts/blocks.js:5045
 #, fuzzy
 msgid "(Header Title)"
 msgstr "( 標題標題 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34218
+#: assets/scripts/blocks.js:5174
+#: assets/scripts/blocks.js:5055
 msgid "(Header Content)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34229
+#: assets/scripts/blocks.js:5183
+#: assets/scripts/blocks.js:5066
 #, fuzzy
 msgid "(Call to action)"
 msgstr "(行動號召)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32472
+#: assets/scripts/blocks.js:3460
+#: assets/scripts/blocks.js:3268
 msgid "Translucent black"
 msgstr "半透明黑色"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12857
-#: assets/scripts/blocks.js:32474
-#: assets/scripts/blocks.js:35247
-#: assets/scripts/blocks.js:35322
+#: assets/scripts/blocks.js:3462
+#: assets/scripts/blocks.js:6038
+#: assets/scripts/blocks.js:6106
+#: assets/scripts/blocks.js:9871
+#: assets/scripts/blocks.js:3270
+#: assets/scripts/blocks.js:6084
+#: assets/scripts/blocks.js:6159
+#: assets/scripts/blocks.js:10101
 #, fuzzy
 msgid "None"
 msgstr "無"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32515
+#: assets/scripts/blocks.js:3508
+#: assets/scripts/blocks.js:3311
 #, fuzzy
 msgid "Embed URL"
 msgstr "嵌入內容的網址"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32517
+#: assets/scripts/blocks.js:3509
+#: assets/scripts/blocks.js:3313
 #, fuzzy
 msgid "Setting this will override the call to action link and will now open a modal with the embed."
 msgstr "設置此設置將覆蓋對操作連結的調用,並且現在將打開具有嵌入的模式。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12338
-#: assets/scripts/blocks.js:32621
-#: assets/scripts/blocks.js:32625
+#: assets/scripts/blocks.js:3600
+#: assets/scripts/blocks.js:3604
+#: assets/scripts/blocks.js:9190
+#: assets/scripts/blocks.js:3417
+#: assets/scripts/blocks.js:3421
+#: assets/scripts/blocks.js:9391
 #, fuzzy
 msgid "Banner"
 msgstr "橫幅"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29499
-#: assets/scripts/blocks.js:32901
+#: assets/scripts/blocks.js:3890
+#: assets/scripts/blocks.js:15219
+#: assets/scripts/blocks.js:3697
+#: assets/scripts/blocks.js:15857
 #, fuzzy
 msgid "Background Style"
 msgstr "背景樣式"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11440
-#: assets/scripts/blocks.js:29227
-#: assets/scripts/blocks.js:32751
-#: assets/scripts/blocks.js:32905
-#: assets/scripts/blocks.js:35599
-#, fuzzy
-msgid "Light"
-msgstr "淺色"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:32928
+#: assets/scripts/blocks.js:3918
+#: assets/scripts/blocks.js:3724
 #, fuzzy
 msgid "(Pre-heading)"
 msgstr "( 標題前 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29610
-#: assets/scripts/blocks.js:32937
+#: assets/scripts/blocks.js:3929
+#: assets/scripts/blocks.js:15308
+#: assets/scripts/blocks.js:3733
+#: assets/scripts/blocks.js:15968
 #, fuzzy
 msgid "(Heading)"
 msgstr "( 標題 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29632
-#: assets/scripts/blocks.js:32946
-#: assets/scripts/blocks.js:34641
+#: assets/scripts/blocks.js:3940
+#: assets/scripts/blocks.js:5579
+#: assets/scripts/blocks.js:15328
+#: assets/scripts/blocks.js:3742
+#: assets/scripts/blocks.js:5478
+#: assets/scripts/blocks.js:15990
 #, fuzzy
 msgid "(Content)"
 msgstr "(內容)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33222
-#: assets/scripts/blocks.js:33226
+#: assets/scripts/blocks.js:4133
+#: assets/scripts/blocks.js:4137
+#: assets/scripts/blocks.js:3993
+#: assets/scripts/blocks.js:3997
 #, fuzzy
 msgid "Call To Action"
 msgstr "行動呼籲"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13557
-#: assets/scripts/blocks.js:26413
+#: assets/scripts/blocks.js:12800
+#: assets/scripts/blocks.js:13412
+#: assets/scripts/blocks.js:13290
+#: assets/scripts/blocks.js:13978
 #, fuzzy
 msgid "Select a category"
 msgstr "選擇一個類別"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13834
-#: assets/scripts/blocks.js:14336
-#: assets/scripts/blocks.js:25250
-#: assets/scripts/blocks.js:25304
-#: assets/scripts/blocks.js:25319
-#: assets/scripts/blocks.js:26263
-#: assets/scripts/blocks.js:26669
-#: assets/scripts/blocks.js:26968
+#: assets/scripts/blocks.js:11142
+#: assets/scripts/blocks.js:11353
+#: assets/scripts/blocks.js:11714
+#: assets/scripts/blocks.js:12426
+#: assets/scripts/blocks.js:12563
+#: assets/scripts/blocks.js:13131
+#: assets/scripts/blocks.js:13178
+#: assets/scripts/blocks.js:13187
+#: assets/scripts/blocks.js:11423
+#: assets/scripts/blocks.js:11684
+#: assets/scripts/blocks.js:12097
+#: assets/scripts/blocks.js:12963
+#: assets/scripts/blocks.js:13052
+#: assets/scripts/blocks.js:13661
+#: assets/scripts/blocks.js:13715
+#: assets/scripts/blocks.js:13730
 msgid "Loading…"
 msgstr "載入中…"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13843
+#: assets/scripts/blocks.js:11361
+#: assets/scripts/blocks.js:11693
 #, fuzzy
 msgid "Select a category."
 msgstr "選擇類別。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13853
-#: assets/scripts/blocks.js:26282
-#: assets/scripts/blocks.js:26688
-#: assets/scripts/blocks.js:26977
+#: assets/scripts/blocks.js:11158
+#: assets/scripts/blocks.js:11369
+#: assets/scripts/blocks.js:11722
+#: assets/scripts/blocks.js:12442
+#: assets/scripts/blocks.js:11442
+#: assets/scripts/blocks.js:11703
+#: assets/scripts/blocks.js:12106
+#: assets/scripts/blocks.js:12982
 #, fuzzy
 msgid "No Items found"
 msgstr "找不到項目"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14084
+#: assets/scripts/blocks.js:12880
+#: assets/scripts/blocks.js:13392
 #, fuzzy
 msgid "(Insert Tag)"
 msgstr "( 插入分頁 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14141
+#: assets/scripts/blocks.js:10998
+#: assets/scripts/blocks.js:11223
 #, fuzzy
 msgid "Add another item"
 msgstr "增加其他項目"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14341
-#: assets/scripts/blocks.js:25225
+#: assets/scripts/blocks.js:12566
+#: assets/scripts/blocks.js:13123
+#: assets/scripts/blocks.js:13057
+#: assets/scripts/blocks.js:13636
 #, fuzzy
 msgid "No Posts."
 msgstr "無帖子。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25206
+#: assets/scripts/blocks.js:13105
+#: assets/scripts/blocks.js:13617
 #, fuzzy
 msgid "Loading Posts…"
 msgstr "正在載入帖子..."
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25214
+#: assets/scripts/blocks.js:13112
+#: assets/scripts/blocks.js:13625
 #, fuzzy
 msgid "Your query yielded no results, please try again."
 msgstr "您的查詢沒有結果,請重試。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25252
+#: assets/scripts/blocks.js:13134
+#: assets/scripts/blocks.js:13663
 #, fuzzy
 msgid "Load More"
 msgstr "載入更多"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25291
+#: assets/scripts/blocks.js:13166
+#: assets/scripts/blocks.js:13702
 #, fuzzy
 msgid "Please enter your search query…"
 msgstr "請輸入您的搜尋查詢..."
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25299
+#: assets/scripts/blocks.js:13174
+#: assets/scripts/blocks.js:13710
 #, fuzzy
 msgid "Post Type:"
 msgstr "文章類型："
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25314
-#: assets/scripts/blocks.js:27291
+#: assets/scripts/blocks.js:10861
+#: assets/scripts/blocks.js:13183
+#: assets/scripts/blocks.js:11090
+#: assets/scripts/blocks.js:13725
 msgid "Taxonomy:"
-msgstr "分类法："
+msgstr "分類法："
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25326
+#: assets/scripts/blocks.js:13194
+#: assets/scripts/blocks.js:13737
 msgid "Select Taxonomy"
-msgstr "选择分类"
+msgstr "選擇分類"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25342
-#: assets/scripts/blocks.js:27298
+#: assets/scripts/blocks.js:10869
+#: assets/scripts/blocks.js:13202
+#: assets/scripts/blocks.js:11097
+#: assets/scripts/blocks.js:13753
 msgid "Terms:"
-msgstr "条款："
+msgstr "條款："
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25346
+#: assets/scripts/blocks.js:13206
+#: assets/scripts/blocks.js:13757
 msgid "No taxonomy selected"
-msgstr "未选择分类"
+msgstr "未選擇分類"
 
-#: assets/scripts/blocks.js:25456
+#: assets/scripts/blocks.js:13295
+#: assets/scripts/blocks.js:13867
 msgid "No terms selected"
-msgstr "未选择分类"
+msgstr "未選擇分類"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26272
+#: assets/scripts/blocks.js:12434
+#: assets/scripts/blocks.js:12972
 msgid "Select a taxonomy."
-msgstr "选择分类法。"
+msgstr "選擇分類法。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26463
+#: assets/scripts/blocks.js:13490
+#: assets/scripts/blocks.js:14028
 msgid "Select terms"
-msgstr "选择条款"
+msgstr "選擇條款"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26678
+#: assets/scripts/blocks.js:11150
+#: assets/scripts/blocks.js:11432
 msgid "Select an author."
-msgstr "选择一个作者。"
+msgstr "選擇一個作者。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26830
+#: assets/scripts/blocks.js:12696
+#: assets/scripts/blocks.js:13205
 msgid "Select author"
-msgstr "选择作者"
+msgstr "選擇作者"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27151
+#: assets/scripts/blocks.js:10732
+#: assets/scripts/blocks.js:10950
 #, fuzzy
 msgid "Link List"
 msgstr "連結清單"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27156
+#: assets/scripts/blocks.js:10737
+#: assets/scripts/blocks.js:10955
 #, fuzzy
 msgid "Grid"
 msgstr "網格"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27164
+#: assets/scripts/blocks.js:10744
+#: assets/scripts/blocks.js:10963
 #, fuzzy
 msgid "Category"
 msgstr "分類"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27169
-#: assets/scripts/blocks.js:27483
+#: assets/scripts/blocks.js:10556
+#: assets/scripts/blocks.js:10749
+#: assets/scripts/blocks.js:10794
+#: assets/scripts/blocks.js:10968
 #, fuzzy
 msgid "Object Selection"
 msgstr "物件選擇"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27174
+#: assets/scripts/blocks.js:10754
+#: assets/scripts/blocks.js:10973
 #, fuzzy
 msgid "Custom"
 msgstr "自訂"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27179
+#: assets/scripts/blocks.js:10759
+#: assets/scripts/blocks.js:10978
 msgid "Taxonomy"
-msgstr "分类法"
+msgstr "分類法"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27217
-#: assets/scripts/blocks.js:35511
+#: assets/scripts/blocks.js:6280
+#: assets/scripts/blocks.js:10790
+#: assets/scripts/blocks.js:6348
+#: assets/scripts/blocks.js:11016
 #, fuzzy
 msgid "Style"
 msgstr "樣式"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27225
+#: assets/scripts/blocks.js:10798
+#: assets/scripts/blocks.js:11024
 #, fuzzy
 msgid "Type"
 msgstr "類型"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27232
+#: assets/scripts/blocks.js:10807
+#: assets/scripts/blocks.js:11031
 #, fuzzy
 msgid "Category:"
 msgstr "分類:"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27244
-#: assets/scripts/blocks.js:27254
-#: assets/scripts/blocks.js:27264
+#: assets/scripts/blocks.js:10820
+#: assets/scripts/blocks.js:10829
+#: assets/scripts/blocks.js:10838
+#: assets/scripts/blocks.js:11043
+#: assets/scripts/blocks.js:11053
+#: assets/scripts/blocks.js:11063
 #, fuzzy
 msgid "Number of posts to show:"
 msgstr "顯示文章總數:"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27274
+#: assets/scripts/blocks.js:10847
+#: assets/scripts/blocks.js:11073
 #, fuzzy
 msgid "Use related categories where supported"
 msgstr "使用受支援的相關類別"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12474
-#: assets/scripts/blocks.js:27283
+#: assets/scripts/blocks.js:9441
+#: assets/scripts/blocks.js:10853
+#: assets/scripts/blocks.js:9658
+#: assets/scripts/blocks.js:11082
 #, fuzzy
 msgid "Hide Preview"
 msgstr "隱藏預覽"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27285
+#: assets/scripts/blocks.js:10856
+#: assets/scripts/blocks.js:11084
 #, fuzzy
 msgid "Show Preview"
 msgstr "顯示預覽"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14021
-#: assets/scripts/blocks.js:27311
+#: assets/scripts/blocks.js:10883
+#: assets/scripts/blocks.js:12989
+#: assets/scripts/blocks.js:11110
+#: assets/scripts/blocks.js:13525
 msgid "Author:"
 msgstr "作者："
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27322
+#: assets/scripts/blocks.js:10896
+#: assets/scripts/blocks.js:11121
 msgid "Display Post Author"
-msgstr "显示文章作者"
+msgstr "顯示文章作者"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27328
+#: assets/scripts/blocks.js:10903
+#: assets/scripts/blocks.js:11127
 msgid "Display Post Date"
-msgstr "显示发布日期"
+msgstr "顯示發佈日期"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27594
+#: assets/scripts/blocks.js:13566
+#: assets/scripts/blocks.js:14100
 #, fuzzy
 msgid "Post List"
 msgstr "帖子(文章)列表"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27599
+#: assets/scripts/blocks.js:13571
+#: assets/scripts/blocks.js:14105
 #, fuzzy
 msgid "List"
 msgstr "清單"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27601
+#: assets/scripts/blocks.js:13573
+#: assets/scripts/blocks.js:14107
 #, fuzzy
 msgid "post-list"
 msgstr "清單後"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27603
+#: assets/scripts/blocks.js:13575
+#: assets/scripts/blocks.js:14109
 msgid "Posts"
 msgstr "文章"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35252
+#: assets/scripts/blocks.js:6043
+#: assets/scripts/blocks.js:6089
 #, fuzzy
 msgid "Arrow"
 msgstr "箭頭"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35257
+#: assets/scripts/blocks.js:6048
+#: assets/scripts/blocks.js:6094
 #, fuzzy
 msgid "Ampersand"
 msgstr "符號"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35304
+#: assets/scripts/blocks.js:6088
+#: assets/scripts/blocks.js:6141
 msgid "Orientation"
 msgstr "方向"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35309
+#: assets/scripts/blocks.js:6093
+#: assets/scripts/blocks.js:6146
 msgid "Horizontal"
-msgstr "水平"
+msgstr "水準"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35311
+#: assets/scripts/blocks.js:6095
+#: assets/scripts/blocks.js:6148
 msgid "Vertical"
 msgstr "垂直"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35330
+#: assets/scripts/blocks.js:6114
+#: assets/scripts/blocks.js:6167
 #, fuzzy
 msgid "Hide Lines"
 msgstr "隱藏線條"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35338
+#: assets/scripts/blocks.js:6122
+#: assets/scripts/blocks.js:6175
 #, fuzzy
 msgid "Divider Style"
 msgstr "分隔線樣式"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35429
+#: assets/scripts/blocks.js:6188
+#: assets/scripts/blocks.js:6266
 #, fuzzy
 msgid "Pick an image"
 msgstr "選取影像"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35448
+#: assets/scripts/blocks.js:6202
+#: assets/scripts/blocks.js:6285
 #, fuzzy
 msgid "(Insert Fact)"
 msgstr "( 插入事實 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35516
+#: assets/scripts/blocks.js:6285
+#: assets/scripts/blocks.js:6353
 #, fuzzy
 msgid "Use Image"
 msgstr "使用圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35518
+#: assets/scripts/blocks.js:6287
+#: assets/scripts/blocks.js:6355
 #, fuzzy
 msgid "Use Text"
 msgstr "使用文字"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35520
+#: assets/scripts/blocks.js:6289
+#: assets/scripts/blocks.js:6357
 #, fuzzy
 msgid "Plain"
 msgstr "樸素"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35526
+#: assets/scripts/blocks.js:6295
+#: assets/scripts/blocks.js:6363
 #, fuzzy
 msgid "Icon Size"
 msgstr "圖示大小"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35531
+#: assets/scripts/blocks.js:6300
+#: assets/scripts/blocks.js:6368
 #, fuzzy
 msgid "Extra Small"
 msgstr "特小"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35544
+#: assets/scripts/blocks.js:6312
+#: assets/scripts/blocks.js:6381
 #, fuzzy
 msgid "Icon Position"
 msgstr "圖示位置"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35549
+#: assets/scripts/blocks.js:6317
+#: assets/scripts/blocks.js:6386
 #, fuzzy
 msgid "Middle"
 msgstr "中間"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35558
+#: assets/scripts/blocks.js:6325
+#: assets/scripts/blocks.js:6395
 #, fuzzy
 msgid "Hide Image Credit Display"
 msgstr "隱藏影像的檔案"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35567
+#: assets/scripts/blocks.js:6332
+#: assets/scripts/blocks.js:6404
 #, fuzzy
 msgid "Has Underline"
 msgstr "具有下劃線"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35573
+#: assets/scripts/blocks.js:6339
+#: assets/scripts/blocks.js:6410
 msgid "Font Size"
 msgstr "字體大小"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35585
+#: assets/scripts/blocks.js:6348
+#: assets/scripts/blocks.js:6422
 #, fuzzy
 msgid "Display Action"
 msgstr "顯示操作"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11431
-#: assets/scripts/blocks.js:32737
-#: assets/scripts/blocks.js:35592
+#: assets/scripts/blocks.js:3728
+#: assets/scripts/blocks.js:6355
+#: assets/scripts/blocks.js:8418
+#: assets/scripts/blocks.js:3533
+#: assets/scripts/blocks.js:6429
+#: assets/scripts/blocks.js:8636
 #, fuzzy
 msgid "Button Style"
 msgstr "按鈕樣式"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32741
-#: assets/scripts/blocks.js:35595
+#: assets/scripts/blocks.js:3732
+#: assets/scripts/blocks.js:6358
+#: assets/scripts/blocks.js:3537
+#: assets/scripts/blocks.js:6432
 #, fuzzy
 msgid "Primary (Yellow)"
 msgstr "主(黃色)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11435
-#: assets/scripts/blocks.js:12540
-#: assets/scripts/blocks.js:29225
-#: assets/scripts/blocks.js:32746
-#: assets/scripts/blocks.js:35597
-#, fuzzy
-msgid "Dark"
-msgstr "深色"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:35687
+#: assets/scripts/blocks.js:6425
+#: assets/scripts/blocks.js:6524
 #, fuzzy
 msgid "(Insert Body Text)"
 msgstr "( 插入正文文字 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35699
+#: assets/scripts/blocks.js:6436
+#: assets/scripts/blocks.js:6536
 #, fuzzy
 msgid "(Insert Link Text)"
 msgstr "( 插入連結文字 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:36001
+#: assets/scripts/blocks.js:6797
+#: assets/scripts/blocks.js:6984
 #, fuzzy
 msgid "Links with Icons"
 msgstr "連結與圖示"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:36003
+#: assets/scripts/blocks.js:6799
+#: assets/scripts/blocks.js:6986
 #, fuzzy
 msgid "Add a links-with-icons block"
 msgstr "新增帶有圖示的連結區"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:36315
+#: assets/scripts/blocks.js:6688
+#: assets/scripts/blocks.js:6869
 #, fuzzy
 msgid "Links with Icons Group"
 msgstr "圖示群組的連結"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:36317
+#: assets/scripts/blocks.js:6690
+#: assets/scripts/blocks.js:6871
 #, fuzzy
 msgid "Add a repeatable links-with-icons block"
 msgstr "新增可重複的連結,帶圖示區"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:36356
+#: assets/scripts/blocks.js:6726
+#: assets/scripts/blocks.js:6910
 #, fuzzy
 msgid "Square"
 msgstr "正方形"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34500
+#: assets/scripts/blocks.js:5464
+#: assets/scripts/blocks.js:5337
 #, fuzzy
 msgid "(Link Text)"
 msgstr "(連結文字)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34510
+#: assets/scripts/blocks.js:5472
+#: assets/scripts/blocks.js:5347
 #, fuzzy
 msgid "Remove Button"
 msgstr "刪除按鈕"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34547
+#: assets/scripts/blocks.js:5501
+#: assets/scripts/blocks.js:5384
 #, fuzzy
 msgid "Image Style"
 msgstr "圖片樣式"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34552
+#: assets/scripts/blocks.js:5506
+#: assets/scripts/blocks.js:5389
 #, fuzzy
 msgid "Fixed Height (600px)"
 msgstr "固定高度 (600px)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34554
+#: assets/scripts/blocks.js:5508
+#: assets/scripts/blocks.js:5391
 #, fuzzy
 msgid "Actual Height"
 msgstr "實際高度"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34561
+#: assets/scripts/blocks.js:5515
+#: assets/scripts/blocks.js:5398
 #, fuzzy
 msgid "Only has an effect on images smaller than their container"
 msgstr "只對小於其容器的影像有影響"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34634
+#: assets/scripts/blocks.js:5571
+#: assets/scripts/blocks.js:5471
 #, fuzzy
 msgid "(Title)"
 msgstr "( 標題 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34652
+#: assets/scripts/blocks.js:5588
+#: assets/scripts/blocks.js:5489
 #, fuzzy
 msgid "Add Button"
 msgstr "新增按鈕"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34672
-#: assets/scripts/blocks.js:34678
+#: assets/scripts/blocks.js:5603
+#: assets/scripts/blocks.js:5611
+#: assets/scripts/blocks.js:5509
+#: assets/scripts/blocks.js:5515
 #, fuzzy
 msgid "Choose Video"
 msgstr "選擇影片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34706
+#: assets/scripts/blocks.js:5634
+#: assets/scripts/blocks.js:5543
 #, fuzzy
 msgid "Remove Video"
 msgstr "移除視頻"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34781
+#: assets/scripts/blocks.js:5688
+#: assets/scripts/blocks.js:5618
 #, fuzzy
 msgid "Display Overlay"
 msgstr "顯示遮罩"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34787
+#: assets/scripts/blocks.js:5695
+#: assets/scripts/blocks.js:5624
 #, fuzzy
 msgid "Enable Parallax"
 msgstr "啟用視差"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:34810
+#: assets/scripts/blocks.js:5707
+#: assets/scripts/blocks.js:5647
 #, fuzzy
 msgid "(Insert Caption, if required)"
 msgstr "( 如果需要,插入標題 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35201
+#: assets/scripts/blocks.js:5963
+#: assets/scripts/blocks.js:6022
 msgid "Image Block"
-msgstr "添加带有可选叠加的灵活图像块"
+msgstr "添加帶有可選疊加的靈活圖像塊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35203
+#: assets/scripts/blocks.js:5965
+#: assets/scripts/blocks.js:6024
 #, fuzzy
 msgid "Add a flexible image block with optional overlay"
 msgstr "新增帶有選擇的靈活影像區"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31223
+#: assets/scripts/blocks.js:16620
+#: assets/scripts/blocks.js:17581
 #, fuzzy
 msgid "Narrow"
 msgstr "窄"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31228
+#: assets/scripts/blocks.js:16626
+#: assets/scripts/blocks.js:17586
 msgid "Embed Link"
-msgstr "嵌入链接"
+msgstr "嵌入連結"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31230
+#: assets/scripts/blocks.js:16627
+#: assets/scripts/blocks.js:17588
 msgid "Includes a link to current post/page in tweet"
-msgstr "包括推文中当前帖子/页面的链接"
+msgstr "包括推文中當前帖子/頁面的連結"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31249
+#: assets/scripts/blocks.js:16641
+#: assets/scripts/blocks.js:17607
 #, fuzzy
 msgid "(Action Title)"
 msgstr "( 操作標題 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31259
+#: assets/scripts/blocks.js:16650
+#: assets/scripts/blocks.js:17617
 #, fuzzy
 msgid "(Place Tweet text proforma here)"
 msgstr "(這裡放置推文文字形式)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31266
+#: assets/scripts/blocks.js:16658
+#: assets/scripts/blocks.js:17624
 msgid "A link to the current page/post will now appear below the Tweet content when published/updated."
 msgstr "發佈/更新時，推文內容下方將顯示當前頁面/帖子的連結。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31313
+#: assets/scripts/blocks.js:16709
+#: assets/scripts/blocks.js:17671
 msgid "Tweet Action"
 msgstr "推文操作"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31315
+#: assets/scripts/blocks.js:16711
+#: assets/scripts/blocks.js:17673
 #, fuzzy
 msgid "Add a Tweet Action block"
 msgstr "新增推文操作區塊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31335
+#: assets/scripts/blocks.js:16731
+#: assets/scripts/blocks.js:17693
 #, fuzzy
 msgid "Alternative"
 msgstr "替代的"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10482
+#: assets/scripts/blocks.js:7327
+#: assets/scripts/blocks.js:7614
 #, fuzzy
 msgid "Action"
 msgstr "動作"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:10484
+#: assets/scripts/blocks.js:7329
+#: assets/scripts/blocks.js:7616
 #, fuzzy
 msgid "Add an Action block"
 msgstr "新增操作區塊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13235
+#: assets/scripts/blocks.js:10260
+#: assets/scripts/blocks.js:10479
 #, fuzzy
 msgid "Select a menu…"
 msgstr "選擇選單..."
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13313
+#: assets/scripts/blocks.js:10327
+#: assets/scripts/blocks.js:10557
 #, fuzzy
 msgid "Select a menu in the sidebar"
 msgstr "在邊列中選擇選單"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13316
+#: assets/scripts/blocks.js:10332
+#: assets/scripts/blocks.js:10560
 #, fuzzy
 msgid "Loading Menu…"
 msgstr "載入選單中..."
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13363
+#: assets/scripts/blocks.js:10363
+#: assets/scripts/blocks.js:10607
 #, fuzzy
 msgid "Loading Menus…"
 msgstr "載入選單中..."
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13367
-#: assets/scripts/blocks.js:13382
-#: assets/scripts/blocks.js:13426
-#: assets/scripts/blocks.js:13431
+#: assets/scripts/blocks.js:10367
+#: assets/scripts/blocks.js:10381
+#: assets/scripts/blocks.js:10431
+#: assets/scripts/blocks.js:10436
+#: assets/scripts/blocks.js:10611
+#: assets/scripts/blocks.js:10626
+#: assets/scripts/blocks.js:10670
+#: assets/scripts/blocks.js:10675
 #, fuzzy
 msgid "Menu"
 msgstr "選單"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13369
+#: assets/scripts/blocks.js:10368
+#: assets/scripts/blocks.js:10613
 #, fuzzy
 msgid "Which type of menu you would like to add to the page"
 msgstr "要添加到頁面的功能表類型"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13373
+#: assets/scripts/blocks.js:10372
+#: assets/scripts/blocks.js:10617
 #, fuzzy
 msgid "Standard Menu"
 msgstr "標準"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13375
+#: assets/scripts/blocks.js:10374
+#: assets/scripts/blocks.js:10619
 #, fuzzy
 msgid "In-page Menu"
 msgstr "頁面功能表"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13433
+#: assets/scripts/blocks.js:10438
+#: assets/scripts/blocks.js:10677
 #, fuzzy
 msgid "Navigation"
 msgstr "導航"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12463
-#: assets/scripts/blocks.js:12585
+#: assets/scripts/blocks.js:9429
+#: assets/scripts/blocks.js:9558
+#: assets/scripts/blocks.js:9647
+#: assets/scripts/blocks.js:9769
 #, fuzzy
 msgid "Iframe URL"
 msgstr "Iframe 網址"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12465
-#: assets/scripts/blocks.js:12596
+#: assets/scripts/blocks.js:9430
+#: assets/scripts/blocks.js:9566
+#: assets/scripts/blocks.js:9649
+#: assets/scripts/blocks.js:9780
 #, fuzzy
 msgid "Enter URL to embed here…"
 msgstr "在這裡輸入網址以嵌入內容…"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11681
-#: assets/scripts/blocks.js:11746
-#: assets/scripts/blocks.js:11830
-#: assets/scripts/blocks.js:11904
-#: assets/scripts/blocks.js:12470
-#: assets/scripts/blocks.js:12599
+#: assets/scripts/blocks.js:8654
+#: assets/scripts/blocks.js:8731
+#: assets/scripts/blocks.js:8817
+#: assets/scripts/blocks.js:8902
+#: assets/scripts/blocks.js:9438
+#: assets/scripts/blocks.js:9572
+#: assets/scripts/blocks.js:8886
+#: assets/scripts/blocks.js:8951
+#: assets/scripts/blocks.js:9035
+#: assets/scripts/blocks.js:9109
+#: assets/scripts/blocks.js:9654
+#: assets/scripts/blocks.js:9783
 msgid "Embed"
 msgstr "嵌入"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12644
+#: assets/scripts/blocks.js:9611
+#: assets/scripts/blocks.js:9828
 #, fuzzy
 msgid "Write caption…"
 msgstr "撰寫說明…"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12666
+#: assets/scripts/blocks.js:9631
+#: assets/scripts/blocks.js:9850
 #, fuzzy
 msgid "Width"
 msgstr "寬度"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12673
+#: assets/scripts/blocks.js:9637
+#: assets/scripts/blocks.js:9857
 #, fuzzy
 msgid "Required when specifying a height"
 msgstr "指定高度時需要"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12680
+#: assets/scripts/blocks.js:9644
+#: assets/scripts/blocks.js:9864
 msgid "Height"
 msgstr "高度"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12687
+#: assets/scripts/blocks.js:9650
+#: assets/scripts/blocks.js:9871
 #, fuzzy
 msgid "Required when specifying a width"
 msgstr "指定寬度時需要"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12694
+#: assets/scripts/blocks.js:9657
+#: assets/scripts/blocks.js:9878
 msgid "Minimum Height"
 msgstr "最小高度"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12703
+#: assets/scripts/blocks.js:9665
+#: assets/scripts/blocks.js:9887
 #, fuzzy
 msgid "Required if not using width/height, optional otherwise"
 msgstr "如果不使用寬度/高度,則是必需的,否則可選"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12431
-#: assets/scripts/blocks.js:12711
+#: assets/scripts/blocks.js:9401
+#: assets/scripts/blocks.js:9672
+#: assets/scripts/blocks.js:9615
+#: assets/scripts/blocks.js:9895
 msgid "Iframe Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12433
-#: assets/scripts/blocks.js:12713
+#: assets/scripts/blocks.js:9402
+#: assets/scripts/blocks.js:9673
+#: assets/scripts/blocks.js:9617
+#: assets/scripts/blocks.js:9897
 msgid "Set the text alternative for the iframe"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12720
+#: assets/scripts/blocks.js:9681
+#: assets/scripts/blocks.js:9904
 #, fuzzy
 msgid "Reset Embed Url"
 msgstr "重置嵌入網址"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12753
+#: assets/scripts/blocks.js:9708
+#: assets/scripts/blocks.js:9937
 #, fuzzy
 msgid "Responsive Iframe"
 msgstr "回應式 Iframe"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12503
-#: assets/scripts/blocks.js:12758
+#: assets/scripts/blocks.js:9470
+#: assets/scripts/blocks.js:9713
+#: assets/scripts/blocks.js:9687
+#: assets/scripts/blocks.js:9942
 #, fuzzy
 msgid "Iframe"
 msgstr "Iframe"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12760
-#, fuzzy
-msgid "Responsive"
-msgstr "響應式"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:12762
+#: assets/scripts/blocks.js:9717
+#: assets/scripts/blocks.js:9946
 #, fuzzy
 msgid "Fluid"
 msgstr "寬版"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12423
+#: assets/scripts/blocks.js:9392
+#: assets/scripts/blocks.js:9607
 msgid "Iframe Height"
 msgstr "Iframe 高度"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12475
-#: assets/scripts/blocks.js:27819
-#: assets/scripts/blocks.js:30817
+#: assets/scripts/blocks.js:9444
+#: assets/scripts/blocks.js:13813
+#: assets/scripts/blocks.js:16207
+#: assets/scripts/blocks.js:9659
+#: assets/scripts/blocks.js:14325
+#: assets/scripts/blocks.js:17162
 #, fuzzy
 msgid "Preview"
 msgstr "預覽"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12496
+#: assets/scripts/blocks.js:9463
+#: assets/scripts/blocks.js:9680
 msgid "Iframe Button"
-msgstr "删除按钮"
+msgstr "刪除按鈕"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12498
+#: assets/scripts/blocks.js:9465
+#: assets/scripts/blocks.js:9682
 msgid "A button which, when clicked, will toggle visibility of an iframe"
-msgstr "一个按钮，当点击时，将切换一个iframe的可见性"
+msgstr "一個按鈕，當點擊時，將切換一個iframe的可見性"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12505
-#: assets/scripts/blocks.js:32801
-#: assets/scripts/blocks.js:32805
+#: assets/scripts/blocks.js:3793
+#: assets/scripts/blocks.js:3797
+#: assets/scripts/blocks.js:9472
+#: assets/scripts/blocks.js:3597
+#: assets/scripts/blocks.js:3601
+#: assets/scripts/blocks.js:9689
 #, fuzzy
 msgid "Button"
 msgstr "按鈕"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29044
+#: assets/scripts/blocks.js:17114
+#: assets/scripts/blocks.js:18165
 #, fuzzy
 msgid "Set Image"
 msgstr "設定圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29046
-#: assets/scripts/blocks.js:31915
+#: assets/scripts/blocks.js:2870
+#: assets/scripts/blocks.js:17115
+#: assets/scripts/blocks.js:2623
+#: assets/scripts/blocks.js:18167
 #, fuzzy
 msgid "Replace Image"
 msgstr "更換圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29232
+#: assets/scripts/blocks.js:15409
+#: assets/scripts/blocks.js:15590
 #, fuzzy
 msgid "Opaque"
 msgstr "不透明"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29234
+#: assets/scripts/blocks.js:15411
+#: assets/scripts/blocks.js:15592
 msgid "Translucent"
 msgstr "半透明"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29236
+#: assets/scripts/blocks.js:15413
+#: assets/scripts/blocks.js:15594
 msgid "Transparent"
 msgstr "透明"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29369
+#: assets/scripts/blocks.js:15069
+#: assets/scripts/blocks.js:15727
 #, fuzzy
 msgid "Do you wish to delete this slide? This action is irreversible"
 msgstr "是否要刪除此幻燈片?此操作不可逆"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29407
+#: assets/scripts/blocks.js:15121
+#: assets/scripts/blocks.js:15765
 #, fuzzy
 msgid "Show Arrows"
 msgstr "顯示箭頭"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29414
+#: assets/scripts/blocks.js:15128
+#: assets/scripts/blocks.js:15772
 #, fuzzy
 msgid "Has Content"
 msgstr "包含內容"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29420
+#: assets/scripts/blocks.js:15135
+#: assets/scripts/blocks.js:15778
 #, fuzzy
 msgid "By disabling this you will hide the content in *ALL* slides. To disable this on only one slide, select the desired slide and toggle the \"Hide Content\" field in the \"Slide Options\" panel."
 msgstr "通過禁用此功能,您將隱藏 [ALL] 幻燈片中的內容。要僅在一張幻燈片上禁用此功能,請選擇所需的幻燈片,並在「幻燈片選項」面板中切換「隱藏內容」欄位。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29431
+#: assets/scripts/blocks.js:15144
+#: assets/scripts/blocks.js:15789
 #, fuzzy
 msgid "Show Tabs"
 msgstr "顯示選項卡"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29437
+#: assets/scripts/blocks.js:15151
+#: assets/scripts/blocks.js:15795
 #, fuzzy
 msgid "Hide the tabs on the front end, these will still show in the panel to allow you to navigate through each slide."
 msgstr "隱藏前端的選項卡,這些選項卡仍顯示在面板中,以允許您瀏覽每張投影片。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29447
+#: assets/scripts/blocks.js:15159
+#: assets/scripts/blocks.js:15805
 #, fuzzy
 msgid "Timeline Options"
 msgstr "主題選項"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29450
+#: assets/scripts/blocks.js:15163
+#: assets/scripts/blocks.js:15808
 #, fuzzy
 msgid "Slider Title"
 msgstr "幻燈片標題"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29456
+#: assets/scripts/blocks.js:15170
+#: assets/scripts/blocks.js:15814
 #, fuzzy
 msgid "Timeline Style"
 msgstr "圖片樣式"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29464
+#: assets/scripts/blocks.js:15177
+#: assets/scripts/blocks.js:15822
 #, fuzzy
 msgid "Slide Options"
 msgstr "幻燈片選項"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29467
+#: assets/scripts/blocks.js:15181
+#: assets/scripts/blocks.js:15825
 #, fuzzy
 msgid "Slide Title"
 msgstr "幻燈片標題"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29473
+#: assets/scripts/blocks.js:15188
+#: assets/scripts/blocks.js:15831
 #, fuzzy
 msgid "Slide Timeline Text"
 msgstr "幻燈片標題"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29483
+#: assets/scripts/blocks.js:15201
+#: assets/scripts/blocks.js:15841
 msgid "Slide Background"
-msgstr "幻灯片背景"
+msgstr "幻燈片背景"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29492
+#: assets/scripts/blocks.js:15211
+#: assets/scripts/blocks.js:15850
 #, fuzzy
 msgid "Content Alignment"
 msgstr "內容對齊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29506
+#: assets/scripts/blocks.js:15227
+#: assets/scripts/blocks.js:15864
 #, fuzzy
 msgid "Hide Content"
 msgstr "隱藏內容"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29512
+#: assets/scripts/blocks.js:15234
+#: assets/scripts/blocks.js:15870
 #, fuzzy
 msgid "By enabling this you will hide the content on *THIS* slide. To disable content on all slides go to the \"Options\" and toggle the \"Has Content\" field."
 msgstr "以啟用此功能,您將隱藏 [THIS] 投影片上的內容。要禁用所有幻燈片上的內容,請轉到\"選項\"並切換\"有內容\"欄位。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29523
+#: assets/scripts/blocks.js:15244
+#: assets/scripts/blocks.js:15881
 #, fuzzy
 msgid "Remove Slide"
 msgstr "刪除幻燈片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29527
+#: assets/scripts/blocks.js:15249
+#: assets/scripts/blocks.js:15885
 #, fuzzy
 msgid "This is irreversible."
 msgstr "這將無法逆轉的。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29545
+#: assets/scripts/blocks.js:15255
+#: assets/scripts/blocks.js:15903
 #, fuzzy
 msgid "(Slider Title)"
 msgstr "幻燈片標題"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29569
+#: assets/scripts/blocks.js:15275
+#: assets/scripts/blocks.js:15927
 #, fuzzy
 msgid "Add a slide below."
-msgstr "在下面添加一張幻燈片。"
+msgstr "在下麵添加一張幻燈片。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29572
-#: assets/scripts/blocks.js:29692
+#: assets/scripts/blocks.js:15280
+#: assets/scripts/blocks.js:15374
+#: assets/scripts/blocks.js:15930
+#: assets/scripts/blocks.js:16050
 #, fuzzy
 msgid "Add Slide"
 msgstr "新增幻燈片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29595
+#: assets/scripts/blocks.js:15297
+#: assets/scripts/blocks.js:15953
 #, fuzzy
 msgid "(TimeLine Content)"
 msgstr "(橫幅內容)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29621
+#: assets/scripts/blocks.js:15318
+#: assets/scripts/blocks.js:15979
 #, fuzzy
 msgid "(Sub-Heading)"
 msgstr "(小標題)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29643
-#: assets/scripts/blocks.js:32765
+#: assets/scripts/blocks.js:3753
+#: assets/scripts/blocks.js:15337
+#: assets/scripts/blocks.js:3561
+#: assets/scripts/blocks.js:16001
 #, fuzzy
 msgid "(Button Text)"
 msgstr "( 按鈕文字 )"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:29672
-#: assets/scripts/blocks.js:29686
+#: assets/scripts/blocks.js:15355
+#: assets/scripts/blocks.js:15367
+#: assets/scripts/blocks.js:16030
+#: assets/scripts/blocks.js:16044
 #, fuzzy
 msgid "(No Title)"
 msgstr "(無標題)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30665
-#: assets/scripts/blocks.js:30670
+#: assets/scripts/blocks.js:16072
+#: assets/scripts/blocks.js:16077
+#: assets/scripts/blocks.js:17023
+#: assets/scripts/blocks.js:17028
 #, fuzzy
 msgid "Slider"
 msgstr "幻燈片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30672
+#: assets/scripts/blocks.js:16079
+#: assets/scripts/blocks.js:17030
 #, fuzzy
 msgid "Carousel"
 msgstr "輪播"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30674
+#: assets/scripts/blocks.js:16081
+#: assets/scripts/blocks.js:17032
 #, fuzzy
 msgid "Scroller"
 msgstr "捲動器"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11323
+#: assets/scripts/blocks.js:8343
+#: assets/scripts/blocks.js:8528
 msgid "Uploading…"
 msgstr "上傳..."
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11325
+#: assets/scripts/blocks.js:8345
+#: assets/scripts/blocks.js:8530
 msgid "Uploading failed"
-msgstr "上传失败"
+msgstr "上傳失敗"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11327
+#: assets/scripts/blocks.js:8347
+#: assets/scripts/blocks.js:8532
 msgid "Uploading complete"
-msgstr "上传完成"
+msgstr "上傳完成"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11409
+#: assets/scripts/blocks.js:8402
+#: assets/scripts/blocks.js:8614
 #, fuzzy
 msgid "Select File(s)"
-msgstr "选择子过滤器"
+msgstr "選擇子篩檢程式"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11411
+#: assets/scripts/blocks.js:8404
+#: assets/scripts/blocks.js:8616
 #, fuzzy
 msgid "Upload media files or pick from your media library."
 msgstr "上傳媒體檔或從媒體庫中選取。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11489
+#: assets/scripts/blocks.js:8459
+#: assets/scripts/blocks.js:8694
 #, fuzzy
 msgid "Select a file to download"
 msgstr "選擇要下載的檔"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11508
+#: assets/scripts/blocks.js:8474
+#: assets/scripts/blocks.js:8713
 #, fuzzy
 msgid "Clear File(s)"
 msgstr "清除檔案)"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11529
+#: assets/scripts/blocks.js:8507
+#: assets/scripts/blocks.js:8734
 #, fuzzy
 msgid "Resource Download"
 msgstr "資源下載"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11531
+#: assets/scripts/blocks.js:8509
+#: assets/scripts/blocks.js:8736
 #, fuzzy
 msgid "Add a button to download resource(s)"
 msgstr "新增用於下載資源的按鈕"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12810
+#: assets/scripts/blocks.js:9828
+#: assets/scripts/blocks.js:10054
 #, fuzzy
 msgid "Key Facts"
 msgstr "關鍵事實"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12812
+#: assets/scripts/blocks.js:9830
+#: assets/scripts/blocks.js:10056
 #, fuzzy
 msgid "Add a key facts block"
 msgstr "新增關鍵事實區塊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13049
-#: assets/scripts/blocks.js:13187
+#: assets/scripts/blocks.js:10041
+#: assets/scripts/blocks.js:10187
+#: assets/scripts/blocks.js:10293
+#: assets/scripts/blocks.js:10431
 #, fuzzy
 msgid "Further Reading"
 msgstr "進階閱讀"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13062
+#: assets/scripts/blocks.js:10052
+#: assets/scripts/blocks.js:10306
 #, fuzzy
 msgid "Type link"
 msgstr "類型連結"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13077
+#: assets/scripts/blocks.js:10070
+#: assets/scripts/blocks.js:10321
 #, fuzzy
 msgid "Open in new tab"
 msgstr "在新標籤中打開"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13085
-#: assets/scripts/blocks.js:13088
+#: assets/scripts/blocks.js:10079
+#: assets/scripts/blocks.js:10084
+#: assets/scripts/blocks.js:10329
+#: assets/scripts/blocks.js:10332
 #, fuzzy
 msgid "Add a link"
 msgstr "新增一個連結"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13175
+#: assets/scripts/blocks.js:10175
+#: assets/scripts/blocks.js:10419
 #, fuzzy
 msgid "Link Block"
 msgstr "連結塊"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13177
+#: assets/scripts/blocks.js:10177
+#: assets/scripts/blocks.js:10421
 #, fuzzy
 msgid "A collection of links, used for things such as further reading suggestions."
 msgstr "連結的集合，用於進一步閱讀建議等。"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13185
+#: assets/scripts/blocks.js:10185
+#: assets/scripts/blocks.js:10429
 #, fuzzy
 msgid "Links"
 msgstr "連結"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30789
+#: assets/scripts/blocks.js:16184
+#: assets/scripts/blocks.js:17134
 #, fuzzy
 msgid "Edit Counter"
 msgstr "編輯計數器"
 
-#: assets/scripts/blocks.js:30789
+#: assets/scripts/blocks.js:16184
+#: assets/scripts/blocks.js:17134
 #, fuzzy
 msgid "Preview Counter"
 msgstr "預覽計數器"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30797
+#: assets/scripts/blocks.js:16188
+#: assets/scripts/blocks.js:17142
 #, fuzzy
 msgid "Duration"
 msgstr "持續時間"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30799
+#: assets/scripts/blocks.js:16189
+#: assets/scripts/blocks.js:17144
 #, fuzzy
 msgid "How long it should take the counter to count up"
 msgstr "計數器應該花多長時間才能數數"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30816
+#: assets/scripts/blocks.js:16204
+#: assets/scripts/blocks.js:17161
 #, fuzzy
 msgid "Edit"
 msgstr "編輯"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30825
+#: assets/scripts/blocks.js:16211
+#: assets/scripts/blocks.js:17170
 #, fuzzy
 msgid "Enter the value to which this field should count"
 msgstr "輸入此欄位應計數的值"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11906
-#: assets/scripts/blocks.js:30904
-#: assets/scripts/blocks.js:30914
+#: assets/scripts/blocks.js:8904
+#: assets/scripts/blocks.js:16309
+#: assets/scripts/blocks.js:16319
+#: assets/scripts/blocks.js:9111
+#: assets/scripts/blocks.js:17262
+#: assets/scripts/blocks.js:17272
 #, fuzzy
 msgid "Counter"
 msgstr "計數器"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30906
+#: assets/scripts/blocks.js:16311
+#: assets/scripts/blocks.js:17264
 #, fuzzy
 msgid "Add a numeric field which, when scrolled into view, will count up from zero"
 msgstr "添加一個數位欄位，當滾動到視圖中時，該欄位將從零開始計數"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30912
+#: assets/scripts/blocks.js:16317
+#: assets/scripts/blocks.js:17270
 #, fuzzy
 msgid "Stat"
 msgstr "統計"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31849
+#: assets/scripts/blocks.js:2810
+#: assets/scripts/blocks.js:2557
 #, fuzzy
 msgid "Image Settings"
 msgstr "圖像設置"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31852
+#: assets/scripts/blocks.js:2814
+#: assets/scripts/blocks.js:2560
 #, fuzzy
 msgid "Focal Point"
 msgstr "焦點"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31860
+#: assets/scripts/blocks.js:2823
+#: assets/scripts/blocks.js:2568
 #, fuzzy
 msgid "Opacity"
 msgstr "透明度"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31874
+#: assets/scripts/blocks.js:2834
+#: assets/scripts/blocks.js:2582
 #, fuzzy
 msgid "Colour"
 msgstr "顏色"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31917
+#: assets/scripts/blocks.js:2873
+#: assets/scripts/blocks.js:2625
 #, fuzzy
 msgid "Add Image"
 msgstr "新增圖片"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32215
+#: assets/scripts/blocks.js:2675
+#: assets/scripts/blocks.js:2413
 #, fuzzy
 msgid "Background Media Column"
 msgstr "背景媒體列"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32217
+#: assets/scripts/blocks.js:2677
+#: assets/scripts/blocks.js:2415
 #, fuzzy
 msgid "Column layout for Background Media block"
 msgstr "背景媒體塊的列佈局"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32306
+#: assets/scripts/blocks.js:3161
+#: assets/scripts/blocks.js:2950
 #, fuzzy
 msgid "Background Media"
 msgstr "背景媒體"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32308
+#: assets/scripts/blocks.js:3163
+#: assets/scripts/blocks.js:2952
 #, fuzzy
 msgid "Two-column layout with background images"
 msgstr "帶背景圖像的兩列佈局"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32312
+#: assets/scripts/blocks.js:3167
+#: assets/scripts/blocks.js:2956
 msgid "Background"
 msgstr "背景"
 
 #. translators: [admin]
 #: includes/block-patterns/pattern-category.php:16
-#: assets/scripts/blocks.js:32314
+#: assets/scripts/blocks.js:3169
+#: assets/scripts/blocks.js:2958
 #, fuzzy
 msgid "Media"
 msgstr "媒體"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32316
+#: assets/scripts/blocks.js:3171
+#: assets/scripts/blocks.js:2960
 #, fuzzy
 msgid "Text"
 msgstr "文字"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28051
-#: assets/scripts/blocks.js:31049
+#: assets/scripts/blocks.js:14025
+#: assets/scripts/blocks.js:16462
+#: assets/scripts/blocks.js:14557
+#: assets/scripts/blocks.js:17407
 #, fuzzy
 msgid "Display Options"
 msgstr "顯示選項"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28066
-#: assets/scripts/blocks.js:31052
+#: assets/scripts/blocks.js:14042
+#: assets/scripts/blocks.js:16466
+#: assets/scripts/blocks.js:14572
+#: assets/scripts/blocks.js:17410
 #, fuzzy
 msgid "Choose taxonomy to display"
 msgstr "選擇要顯示的分類"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31130
+#: assets/scripts/blocks.js:16525
+#: assets/scripts/blocks.js:17488
 #, fuzzy
 msgid "Term A-Z"
 msgstr "術語 A-Z"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31132
+#: assets/scripts/blocks.js:16527
+#: assets/scripts/blocks.js:17490
 #, fuzzy
 msgid "List all visible terms in a taxonomy, grouped by first letter"
 msgstr "按第一個字母分組的分類中列出所有可見術語"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31135
+#: assets/scripts/blocks.js:16530
+#: assets/scripts/blocks.js:17493
 #, fuzzy
 msgid "Term List"
 msgstr "術語清單"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31137
+#: assets/scripts/blocks.js:16532
+#: assets/scripts/blocks.js:17495
 #, fuzzy
 msgid "A-Z Terms"
 msgstr "A-Z 條款"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31139
-#, fuzzy
-msgid "Countries"
-msgstr "國家"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:28074
+#: assets/scripts/blocks.js:14050
+#: assets/scripts/blocks.js:14580
 msgid "Max depth"
 msgstr "最大深度"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28083
+#: assets/scripts/blocks.js:14059
+#: assets/scripts/blocks.js:14589
 #, fuzzy
 msgid "Show only Regions/Subregions"
 msgstr "僅顯示區域/區域"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28141
+#: assets/scripts/blocks.js:14110
+#: assets/scripts/blocks.js:14647
 msgid "Terms List"
-msgstr "条款列表"
+msgstr "條款列表"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28143
+#: assets/scripts/blocks.js:14112
+#: assets/scripts/blocks.js:14649
 msgid "Terms"
-msgstr "条款"
+msgstr "條款"
 
-#: assets/scripts/blocks.js:13476
+#: assets/scripts/blocks.js:10482
+#: assets/scripts/blocks.js:10720
 msgid "Petition Settings"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27463
-#: assets/scripts/blocks.js:27473
+#: assets/scripts/blocks.js:10536
+#: assets/scripts/blocks.js:10546
+#: assets/scripts/blocks.js:10774
+#: assets/scripts/blocks.js:10784
 msgid "Petitions"
-msgstr "所有请愿书"
+msgstr "所有請願書"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27488
+#: assets/scripts/blocks.js:10561
+#: assets/scripts/blocks.js:10799
 msgid "Feed"
-msgstr "反馈"
+msgstr "回饋"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27497
+#: assets/scripts/blocks.js:10569
+#: assets/scripts/blocks.js:10808
 #, fuzzy
 msgid "Petition List"
 msgstr "所有請願書"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27499
+#: assets/scripts/blocks.js:10571
+#: assets/scripts/blocks.js:10810
 #, fuzzy
 msgid "Petition list"
 msgstr "所有請願書"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27501
+#: assets/scripts/blocks.js:10573
+#: assets/scripts/blocks.js:10812
 #, fuzzy
 msgid "Petition"
 msgstr "所有請願書"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27843
+#: assets/scripts/blocks.js:13821
+#: assets/scripts/blocks.js:14349
 #, fuzzy
 msgid "Write HTML…"
 msgstr "撰寫 HTML 程式碼…"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27845
+#: assets/scripts/blocks.js:13822
+#: assets/scripts/blocks.js:14351
 msgid "HTML"
 msgstr "HTML"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27869
+#: assets/scripts/blocks.js:13849
+#: assets/scripts/blocks.js:14375
 msgid "Raw Code"
-msgstr "原始代码"
+msgstr "原始代碼"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11142
-msgctxt "format for timer, i.e. \"x days, H:m:s\""
-msgid "%1$s, %2$s:%3$s:%4$s"
-msgstr "%1$s, %2$s:%3$s:%4$s"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:11156
-msgctxt "time format, i.e. \"H:m:s\""
-msgid "%1$s:%2$s:%3$s"
-msgstr "%1$s:%2$s:%3$s"
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:11203
+#: assets/scripts/blocks.js:8207
+#: assets/scripts/blocks.js:8408
 #, fuzzy
 msgid "Time Expired Text"
 msgstr "過期時間文本"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11208
+#: assets/scripts/blocks.js:8211
+#: assets/scripts/blocks.js:8413
 #, fuzzy
 msgid "enter text here"
 msgstr "在此處輸入文本"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11269
+#: assets/scripts/blocks.js:8274
+#: assets/scripts/blocks.js:8474
 #, fuzzy
 msgid "Countdown Timer"
 msgstr "倒數計時器"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11273
+#: assets/scripts/blocks.js:8278
+#: assets/scripts/blocks.js:8478
 #, fuzzy
 msgid "Countdown"
 msgstr "倒數計時"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11275
+#: assets/scripts/blocks.js:8280
+#: assets/scripts/blocks.js:8480
 #, fuzzy
 msgid "Timer"
 msgstr "計時器"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11655
+#: assets/scripts/blocks.js:8621
+#: assets/scripts/blocks.js:8860
 msgid "The Flourish embed source (not the full URL)."
-msgstr "浮华嵌入源"
+msgstr "浮華嵌入源"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11659
-#: assets/scripts/blocks.js:11808
+#: assets/scripts/blocks.js:8628
+#: assets/scripts/blocks.js:8791
+#: assets/scripts/blocks.js:8864
+#: assets/scripts/blocks.js:9013
 msgid "Preview Embed"
-msgstr "预览嵌入"
+msgstr "預覽嵌入"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11674
+#: assets/scripts/blocks.js:8647
+#: assets/scripts/blocks.js:8879
 msgid "Flourish Embed"
-msgstr "繁荣嵌入"
+msgstr "繁榮嵌入"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11679
+#: assets/scripts/blocks.js:8652
+#: assets/scripts/blocks.js:8884
 msgid "Flourish"
-msgstr "蓬勃发展"
+msgstr "蓬勃發展"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11805
+#: assets/scripts/blocks.js:8785
+#: assets/scripts/blocks.js:9010
 msgid "The Sutori embed code"
-msgstr "苏托里嵌入代码"
+msgstr "蘇托裡嵌入代碼"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11823
+#: assets/scripts/blocks.js:8810
+#: assets/scripts/blocks.js:9028
 msgid "Sutori Embed"
-msgstr "苏托里嵌入"
+msgstr "蘇托裡嵌入"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11828
+#: assets/scripts/blocks.js:8815
+#: assets/scripts/blocks.js:9033
 msgid "Sutori"
-msgstr "苏托里"
+msgstr "蘇托裡"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11706
+#: assets/scripts/blocks.js:8685
+#: assets/scripts/blocks.js:8911
 msgid "The embed code"
-msgstr "嵌入代码"
+msgstr "嵌入代碼"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11713
+#: assets/scripts/blocks.js:8693
+#: assets/scripts/blocks.js:8918
 msgid "The embed type"
-msgstr "嵌入类型"
+msgstr "嵌入類型"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11720
+#: assets/scripts/blocks.js:8701
+#: assets/scripts/blocks.js:8925
 msgid "The embed title"
-msgstr "嵌入标题"
+msgstr "嵌入標題"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11724
+#: assets/scripts/blocks.js:8704
+#: assets/scripts/blocks.js:8929
 msgid "Ending the Death Penalty"
-msgstr "结束死刑"
+msgstr "結束死刑"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11739
+#: assets/scripts/blocks.js:8724
+#: assets/scripts/blocks.js:8944
 msgid "Infogram Embed"
 msgstr "信息格拉姆嵌入"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11744
+#: assets/scripts/blocks.js:8729
+#: assets/scripts/blocks.js:8949
 msgid "Infogram"
-msgstr "信息图"
+msgstr "信息圖"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11867
-#: assets/scripts/blocks.js:11897
+#: assets/scripts/blocks.js:8859
+#: assets/scripts/blocks.js:8895
+#: assets/scripts/blocks.js:9072
+#: assets/scripts/blocks.js:9102
 msgid "Tickcounter Embed"
-msgstr "滴答声计数器嵌入"
+msgstr "滴答聲計數器嵌入"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11870
+#: assets/scripts/blocks.js:8862
+#: assets/scripts/blocks.js:9075
 msgid "This embed cannot be previewed in the editor. Preview the %s itself to see the embed in action"
-msgstr "此嵌入无法在编辑器中预览。预览%s本身，查看嵌入在操作中"
+msgstr "此嵌入無法在編輯器中預覽。預覽%s本身，查看嵌入在操作中"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11881
+#: assets/scripts/blocks.js:8874
+#: assets/scripts/blocks.js:9086
 msgid "The Tickcounter embed code"
-msgstr "滴答声计数器嵌入代码"
+msgstr "滴答聲計數器嵌入代碼"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11902
+#: assets/scripts/blocks.js:8900
+#: assets/scripts/blocks.js:9107
 msgid "Tickcounter"
-msgstr "滴答声计数器"
+msgstr "滴答聲計數器"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:28429
+#: assets/scripts/blocks.js:14286
+#: assets/scripts/blocks.js:14877
 msgid "Add a grid of posts that are related to the current post"
 msgstr ""
 
-#: assets/scripts/blocks.js:33302
+#: assets/scripts/blocks.js:4261
+#: assets/scripts/blocks.js:4098
 #, fuzzy
 msgid "Settings"
-msgstr "设置"
+msgstr "設置"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33306
+#: assets/scripts/blocks.js:4264
+#: assets/scripts/blocks.js:4102
 msgid "Collapsed by default"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33308
+#: assets/scripts/blocks.js:4265
+#: assets/scripts/blocks.js:4104
 msgid "Whether the block contents should be hidden by default"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33317
+#: assets/scripts/blocks.js:4273
+#: assets/scripts/blocks.js:4113
 msgid "Label this block with an HTML anchor (#example)."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33329
+#: assets/scripts/blocks.js:4281
+#: assets/scripts/blocks.js:4125
 msgid "Find out more"
 msgstr "查看更多"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33357
+#: assets/scripts/blocks.js:4311
+#: assets/scripts/blocks.js:4153
 msgid "Collapsable"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33362
+#: assets/scripts/blocks.js:4316
+#: assets/scripts/blocks.js:4158
 msgid "collapsible"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33364
+#: assets/scripts/blocks.js:4318
+#: assets/scripts/blocks.js:4160
 msgid "accordion"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33366
+#: assets/scripts/blocks.js:4320
+#: assets/scripts/blocks.js:4162
 msgid "drawer"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33368
+#: assets/scripts/blocks.js:4322
+#: assets/scripts/blocks.js:4164
 msgid "open"
 msgstr "開啟"
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33370
+#: assets/scripts/blocks.js:4324
+#: assets/scripts/blocks.js:4166
 msgid "closed"
 msgstr "關閉"
 
@@ -4884,46 +5378,6 @@ msgctxt "Pattern description"
 msgid "Two columns with text on the left and a video on the right"
 msgstr ""
 
-#: patterns/audio-quote.php
-msgctxt "Pattern title"
-msgid "Quote with Audio above it"
-msgstr ""
-
-#: patterns/audio-quote.php
-msgctxt "Pattern description"
-msgid "A quote block with an audio block above it."
-msgstr ""
-
-#: patterns/audio-transcript.php
-msgctxt "Pattern title"
-msgid "Audio with Transcript"
-msgstr ""
-
-#: patterns/audio-transcript.php
-msgctxt "Pattern description"
-msgid "An Audio block with a Details block for a transcript below it."
-msgstr ""
-
-#: patterns/call-to-action-borders.php
-msgctxt "Pattern title"
-msgid "Call to Action Borders"
-msgstr ""
-
-#: patterns/call-to-action-borders.php
-msgctxt "Pattern description"
-msgid "Call to action with a top and bottom border containing a headings, paragraph, and button."
-msgstr ""
-
-#: patterns/call-to-action-grey.php
-msgctxt "Pattern title"
-msgid "Call to Action Grey"
-msgstr ""
-
-#: patterns/call-to-action-grey.php
-msgctxt "Pattern description"
-msgid "Call to action with a grey background containing headings, paragraph, and button."
-msgstr ""
-
 #: patterns/chunky-heading-with-links.php
 msgctxt "Pattern title"
 msgid "Chunky Heading with Links"
@@ -4932,26 +5386,6 @@ msgstr ""
 #: patterns/chunky-heading-with-links.php
 msgctxt "Pattern description"
 msgid "A chunky heading with links to page points"
-msgstr ""
-
-#: patterns/custom-card-dark.php
-msgctxt "Pattern title"
-msgid "Custom Card Dark"
-msgstr ""
-
-#: patterns/custom-card-dark.php
-msgctxt "Pattern description"
-msgid "Custom card with a dark grey background containing a heading, image, paragraph, and button."
-msgstr ""
-
-#: patterns/custom-card-light.php
-msgctxt "Pattern title"
-msgid "Custom Card Light"
-msgstr ""
-
-#: patterns/custom-card-light.php
-msgctxt "Pattern description"
-msgid "Custom card with a light grey background containing a heading, image, paragraph, and button."
 msgstr ""
 
 #: patterns/evergreen-text-highlight.php
@@ -4994,6 +5428,80 @@ msgctxt "Pattern description"
 msgid "Single column with a heading, image, body text, and a button."
 msgstr ""
 
+#. translators: [admin]
+#: assets/scripts/blocks.js:2513
+#: assets/scripts/blocks.js:2281
+#, fuzzy
+msgctxt "block style"
+msgid "Square Border"
+msgstr ""
+
+#. translators: [admin] %s: the post type
+#: assets/scripts/blocks.js:9337
+#: assets/scripts/blocks.js:9559
+msgid "Blocks in this %s have been upgraded. Please preview the post before saving."
+msgstr ""
+
+#: patterns/audio-quote.php
+msgctxt "Pattern title"
+msgid "Quote with Audio above it"
+msgstr ""
+
+#: patterns/audio-quote.php
+msgctxt "Pattern description"
+msgid "A quote block with an audio block above it."
+msgstr ""
+
+#: patterns/audio-transcript.php
+msgctxt "Pattern title"
+msgid "Audio with Transcript"
+msgstr ""
+
+#: patterns/audio-transcript.php
+msgctxt "Pattern description"
+msgid "An Audio block with a Details block for a transcript below it."
+msgstr ""
+
+#: patterns/call-to-action-borders.php
+msgctxt "Pattern title"
+msgid "Call to Action Borders"
+msgstr ""
+
+#: patterns/call-to-action-borders.php
+msgctxt "Pattern description"
+msgid "Call to action with a top and bottom border containing a headings, paragraph, and button."
+msgstr ""
+
+#: patterns/call-to-action-grey.php
+msgctxt "Pattern title"
+msgid "Call to Action Grey"
+msgstr ""
+
+#: patterns/call-to-action-grey.php
+msgctxt "Pattern description"
+msgid "Call to action with a grey background containing headings, paragraph, and button."
+msgstr ""
+
+#: patterns/custom-card-dark.php
+msgctxt "Pattern title"
+msgid "Custom Card Dark"
+msgstr ""
+
+#: patterns/custom-card-dark.php
+msgctxt "Pattern description"
+msgid "Custom card with a dark grey background containing a heading, image, paragraph, and button."
+msgstr ""
+
+#: patterns/custom-card-light.php
+msgctxt "Pattern title"
+msgid "Custom Card Light"
+msgstr ""
+
+#: patterns/custom-card-light.php
+msgctxt "Pattern description"
+msgid "Custom card with a light grey background containing a heading, image, paragraph, and button."
+msgstr ""
+
 #: patterns/quote-audio.php
 msgctxt "Pattern title"
 msgid "Quote with Audio below it"
@@ -5005,132 +5513,110 @@ msgid "A quote block with an audio block below it."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:162
-msgctxt "block style"
-msgid "Square Border"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:168
+#: assets/scripts/blocks.js:2518
+#: assets/scripts/blocks.js:2287
 msgctxt "block style"
 msgid "Light Background"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:174
+#: assets/scripts/blocks.js:2523
+#: assets/scripts/blocks.js:2293
 msgctxt "block style"
 msgid "Dark Background"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:180
+#: assets/scripts/blocks.js:2528
+#: assets/scripts/blocks.js:2299
 msgctxt "block style"
 msgid "Top and Bottom Border"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32569
+#: assets/scripts/blocks.js:3546
+#: assets/scripts/blocks.js:3365
 msgid "Banner Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32578
+#: assets/scripts/blocks.js:3556
+#: assets/scripts/blocks.js:3374
 msgid "Banner Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12291
-#: assets/scripts/blocks.js:32589
+#: assets/scripts/blocks.js:3565
+#: assets/scripts/blocks.js:9102
+#: assets/scripts/blocks.js:3385
+#: assets/scripts/blocks.js:9309
 msgid "Call to action"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12273
+#: assets/scripts/blocks.js:9077
+#: assets/scripts/blocks.js:9291
 msgid "Hero Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12282
+#: assets/scripts/blocks.js:9090
+#: assets/scripts/blocks.js:9300
 msgid "Hero Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:12325
-#: assets/scripts/blocks.js:12334
+#: assets/scripts/blocks.js:9177
+#: assets/scripts/blocks.js:9186
+#: assets/scripts/blocks.js:9378
+#: assets/scripts/blocks.js:9387
 msgid "Hero"
 msgstr ""
 
-#. translators: [admin] %s: the post type
-#: assets/scripts/blocks.js:493
-msgid "Blocks in this %s have been upgraded. Please preview the post before saving."
-msgstr ""
-
 #. translators: [admin]
-#: assets/scripts/blocks.js:12534
+#: assets/scripts/blocks.js:9501
+#: assets/scripts/blocks.js:9718
 msgid "Primary"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13962
+#: assets/scripts/blocks.js:12947
+#: assets/scripts/blocks.js:13466
 msgid "Tag Name"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:13978
+#: assets/scripts/blocks.js:12964
+#: assets/scripts/blocks.js:13482
 msgid "Insert Title"
 msgstr ""
 
-#: assets/scripts/blocks.js:13993
-msgid "Date:"
-msgstr ""
-
-#: assets/scripts/blocks.js:14005
+#: assets/scripts/blocks.js:12982
+#: assets/scripts/blocks.js:13509
 msgid "Date may render differently on the site frontend"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:14031
+#: assets/scripts/blocks.js:12999
+#: assets/scripts/blocks.js:13535
 msgid "Author Name"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11989
+#: assets/scripts/blocks.js:16929
+#: assets/scripts/blocks.js:18024
 msgid "Hide Video Caption"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:11991
+#: assets/scripts/blocks.js:16930
+#: assets/scripts/blocks.js:18026
 msgid "Hide Video Credit"
-msgstr ""
-
-#: includes/full-site-editing/blocks/pop-in/block.json
-msgctxt "block title"
-msgid "Pop-in"
 msgstr ""
 
 #: includes/full-site-editing/blocks/pop-in/block.json
 msgctxt "block description"
 msgid "For presenting dismissible content at the top of the site"
-msgstr ""
-
-#: includes/full-site-editing/blocks/pop-in/block.json
-msgctxt "block keyword"
-msgid "Pop-in"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Black"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "White"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Primary"
 msgstr ""
 
 #: theme.json
@@ -5166,16 +5652,6 @@ msgstr ""
 #: theme.json
 msgctxt "Font family name"
 msgid "PlayfairDisplay"
-msgstr ""
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Header"
-msgstr ""
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Footer"
 msgstr ""
 
 #. translators: [admin]
@@ -5389,11 +5865,6 @@ msgid "Outputs post content on the blog home if it is set to a static page"
 msgstr ""
 
 #: patterns/featured-image.php
-msgctxt "Pattern title"
-msgid "Featured Image"
-msgstr ""
-
-#: patterns/featured-image.php
 msgctxt "Pattern description"
 msgid "Featured image output with caption, copyright, etc."
 msgstr ""
@@ -5547,11 +6018,6 @@ msgid "Output the \"updated date\" for a post"
 msgstr ""
 
 #: patterns/related-content.php
-msgctxt "Pattern title"
-msgid "Related Content"
-msgstr ""
-
-#: patterns/related-content.php
 msgctxt "Pattern description"
 msgid "Output Related Content for a post"
 msgstr ""
@@ -5596,39 +6062,34 @@ msgctxt "Pattern description"
 msgid "Outputs hero block for taxonomy archive pages"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:153
-msgctxt "block style"
-msgid "Search"
-msgstr ""
-
-#: assets/scripts/blocks.js:27690
+#: assets/scripts/blocks.js:13657
+#: assets/scripts/blocks.js:14196
 msgid "Select a meta key"
 msgstr ""
 
-#: assets/scripts/blocks.js:27717
+#: assets/scripts/blocks.js:13677
+#: assets/scripts/blocks.js:14223
 msgid "Choose a meta key"
 msgstr ""
 
-#: assets/scripts/blocks.js:27723
+#: assets/scripts/blocks.js:13685
+#: assets/scripts/blocks.js:14229
 msgid "Does this meta key have a single value?"
 msgstr ""
 
-#: assets/scripts/blocks.js:31440
+#: assets/scripts/blocks.js:17407
+#: assets/scripts/blocks.js:18471
 msgid "Archive Filters"
 msgstr ""
 
-#: assets/scripts/blocks.js:31495
+#: assets/scripts/blocks.js:17502
+#: assets/scripts/blocks.js:18526
 msgid "Query Count"
 msgstr ""
 
-#: assets/scripts/blocks.js:31496
+#: assets/scripts/blocks.js:17503
+#: assets/scripts/blocks.js:18527
 msgid "Display the query results count"
-msgstr ""
-
-#: includes/full-site-editing/blocks/archive-filters/block.json
-msgctxt "block title"
-msgid "Archive Filters"
 msgstr ""
 
 #: includes/full-site-editing/blocks/archive-filters/block.json
@@ -5641,11 +6102,6 @@ msgctxt "block keyword"
 msgid "Archives"
 msgstr ""
 
-#: includes/full-site-editing/blocks/archive-filters/block.json
-msgctxt "block keyword"
-msgid "Filters"
-msgstr ""
-
 #: includes/full-site-editing/blocks/archive-header/block.json
 msgctxt "block title"
 msgid "Archive Header"
@@ -5654,21 +6110,6 @@ msgstr ""
 #: includes/full-site-editing/blocks/archive-header/block.json
 msgctxt "block description"
 msgid "For presenting the archive header"
-msgstr ""
-
-#: includes/full-site-editing/blocks/archive-header/block.json
-msgctxt "block keyword"
-msgid "Archive Header"
-msgstr ""
-
-#: includes/full-site-editing/blocks/query-count/block.json
-msgctxt "block title"
-msgid "Query Count"
-msgstr ""
-
-#: includes/full-site-editing/blocks/query-count/block.json
-msgctxt "block description"
-msgid "Display the query results count"
 msgstr ""
 
 #: includes/full-site-editing/blocks/search-form/block.json
@@ -5681,11 +6122,6 @@ msgctxt "block description"
 msgid "For presenting the search form"
 msgstr ""
 
-#: includes/full-site-editing/blocks/search-form/block.json
-msgctxt "block keyword"
-msgid "Search Form"
-msgstr ""
-
 #: includes/full-site-editing/blocks/search-header/block.json
 msgctxt "block title"
 msgid "Search Header"
@@ -5696,16 +6132,6 @@ msgctxt "block description"
 msgid "For presenting the search page header"
 msgstr ""
 
-#: includes/full-site-editing/blocks/search-header/block.json
-msgctxt "block keyword"
-msgid "Search Header"
-msgstr ""
-
-#: includes/full-site-editing/blocks/sidebar/block.json
-msgctxt "block title"
-msgid "Sidebar"
-msgstr ""
-
 #: includes/full-site-editing/blocks/sidebar/block.json
 msgctxt "block description"
 msgid "For presenting a sidebar on a post type"
@@ -5713,11 +6139,6 @@ msgstr ""
 
 #: styles/01-amnesty-trade-gothic.json
 msgctxt "Style variation name"
-msgid "Amnesty Trade Gothic"
-msgstr ""
-
-#: styles/01-amnesty-trade-gothic.json
-msgctxt "Font family name"
 msgid "Amnesty Trade Gothic"
 msgstr ""
 
@@ -5733,37 +6154,12 @@ msgstr ""
 
 #: styles/02-roboto.json
 msgctxt "Font family name"
-msgid "Roboto"
-msgstr ""
-
-#: styles/02-roboto.json
-msgctxt "Font family name"
 msgid "Roboto Condensed"
 msgstr ""
 
 #: styles/03-rubik.json
 msgctxt "Style variation name"
 msgid "Rubik"
-msgstr ""
-
-#: styles/03-rubik.json
-msgctxt "Font family name"
-msgid "Rubik"
-msgstr ""
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Small"
-msgstr ""
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Medium"
-msgstr ""
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Large"
 msgstr ""
 
 #: theme.json
@@ -5889,4 +6285,252 @@ msgstr ""
 #: theme.json
 msgctxt "Font size name"
 msgid "Article Title"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:22
+msgctxt "Post Type Singular Name"
+msgid "Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:24
+msgid "Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:18
+msgctxt "Post Type Singular Name"
+msgid "Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:20
+msgid "Sidebars"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-content-types.php:134
+msgctxt "Content Types"
+msgid "Most Used"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:86
+msgctxt "taxonomy singular name"
+msgid "Country"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-resource-types.php:191
+msgctxt "Resource Types"
+msgid "Most Used"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-topics.php:190
+msgctxt "topics"
+msgid "Most Used"
+msgstr ""
+
+#: partials/post/post-content.php:16
+#: partials/post/post-search.php:27
+msgctxt "updated date label"
+msgid "Updated"
+msgstr ""
+
+#: patterns/featured-image.php
+msgctxt "Pattern title"
+msgid "Featured Image"
+msgstr ""
+
+#: patterns/related-content.php
+msgctxt "Pattern title"
+msgid "Related Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2499
+#: assets/scripts/blocks.js:2272
+msgctxt "block style"
+msgid "Search"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2845
+#: assets/scripts/blocks.js:3899
+#: assets/scripts/blocks.js:6108
+#: assets/scripts/blocks.js:7450
+#: assets/scripts/blocks.js:9873
+#: assets/scripts/blocks.js:10402
+#: assets/scripts/blocks.js:14034
+#: assets/scripts/blocks.js:14652
+#: assets/scripts/blocks.js:2593
+#: assets/scripts/blocks.js:3706
+#: assets/scripts/blocks.js:6161
+#: assets/scripts/blocks.js:7735
+#: assets/scripts/blocks.js:10103
+#: assets/scripts/blocks.js:10470
+#: assets/scripts/blocks.js:14565
+#: assets/scripts/blocks.js:15218
+msgid "Grey"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8159
+#: assets/scripts/blocks.js:8347
+msgctxt "format for timer, i.e. \"x days, H:m:s\""
+msgid "%1$s, %2$s:%3$s:%4$s"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8168
+#: assets/scripts/blocks.js:8361
+msgctxt "time format, i.e. \"H:m:s\""
+msgid "%1$s:%2$s:%3$s"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3737
+#: assets/scripts/blocks.js:6360
+#: assets/scripts/blocks.js:8422
+#: assets/scripts/blocks.js:9507
+#: assets/scripts/blocks.js:15403
+#: assets/scripts/blocks.js:3542
+#: assets/scripts/blocks.js:6434
+#: assets/scripts/blocks.js:8640
+#: assets/scripts/blocks.js:9724
+#: assets/scripts/blocks.js:15583
+msgid "Dark"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3742
+#: assets/scripts/blocks.js:3894
+#: assets/scripts/blocks.js:6362
+#: assets/scripts/blocks.js:8427
+#: assets/scripts/blocks.js:15405
+#: assets/scripts/blocks.js:3547
+#: assets/scripts/blocks.js:3701
+#: assets/scripts/blocks.js:6436
+#: assets/scripts/blocks.js:8645
+#: assets/scripts/blocks.js:15585
+msgid "Light"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9715
+#: assets/scripts/blocks.js:9944
+msgid "Responsive"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16534
+#: assets/scripts/blocks.js:17497
+msgid "Countries"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block title"
+msgid "Archive Filters"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block keyword"
+msgid "Filters"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block keyword"
+msgid "Archive Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block title"
+msgid "Pop-in"
+msgstr ""
+
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block keyword"
+msgid "Pop-in"
+msgstr ""
+
+#: includes/full-site-editing/blocks/query-count/block.json
+msgctxt "block title"
+msgid "Query Count"
+msgstr ""
+
+#: includes/full-site-editing/blocks/query-count/block.json
+msgctxt "block description"
+msgid "Display the query results count"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block keyword"
+msgid "Search Form"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block keyword"
+msgid "Search Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/sidebar/block.json
+msgctxt "block title"
+msgid "Sidebar"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Font family name"
+msgid "Amnesty Trade Gothic"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Font family name"
+msgid "Roboto"
+msgstr ""
+
+#: styles/03-rubik.json
+msgctxt "Font family name"
+msgid "Rubik"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
 msgstr ""
