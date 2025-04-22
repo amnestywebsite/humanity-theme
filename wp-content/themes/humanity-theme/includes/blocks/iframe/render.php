@@ -22,7 +22,7 @@ if ( ! function_exists( 'amnesty_render_iframe_block' ) ) {
 				'minHeight' => false,
 				'alignment' => false,
 				'title'     => '',
-			] 
+			]
 		);
 
 		$embed_url = $atts['embedUrl'];
@@ -51,8 +51,8 @@ if ( ! function_exists( 'amnesty_render_iframe_block' ) ) {
 			$style .= sprintf( 'min-height: %dpx;', $min_height );
 		}
 
-		spaceless();
+		ob_start();
 		require realpath( __DIR__ . '/views/responsive-iframe.php' );
-		return endspaceless( false );
+		return ob_get_clean();
 	}
 }
