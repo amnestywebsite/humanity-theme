@@ -9,6 +9,8 @@
   font-size: var(--wp--preset--font-size--x-small);
   color: var(--wp--preset--color--white);
   font-family: sans-serif;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
 
   &.btn--white {
     color: var(--wp--preset--color--black);
@@ -18,7 +20,6 @@
 .page-footer a:hover,
 .page-footer a:focus {
   text-decoration: underline;
-  text-decoration-skip-ink: auto;
 }
 
 .page-footerSections > li > a:first-of-type {
