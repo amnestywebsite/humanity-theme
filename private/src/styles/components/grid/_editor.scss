@@ -246,7 +246,12 @@
 .grid-itemMeta > span {
   padding: 2px 12px;
   background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
   line-height: 1.8;
+}
+
+.grid-itemMeta > span a {
+  color: var(--wp--preset--color--white);
 }
 
 .grid-itemTitle {
