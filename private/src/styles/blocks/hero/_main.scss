@@ -4,7 +4,8 @@
   position: relative;
   display: flex;
   margin: auto;
-  padding-block: var(--wp--preset--spacing--double);
+  padding-block: 80px;
+  padding-inline: 40px;
   width: 100%;
   max-width: $flexy-container;
   min-height: 540px;
@@ -12,16 +13,15 @@
   background-position: center center;
 
   @include mq(small) {
-    padding-block: var(--wp--preset--spacing--quad) calc(var(--wp--preset--spacing--single) * 3);
+    padding-block-start: 111px;
     height: auto;
   }
 }
 
-.wp-block-amnesty-core-hero .container {
-  z-index: 1;
+.hero-contentWrapper {
   display: flex;
-  justify-content: space-between;
-  padding: 0 var(--wp--preset--spacing--single) !important;
+  flex-direction: column;
+  align-items: start;
 }
 
 .hero-contentWrapper > * {
@@ -64,6 +64,11 @@
   @include mq(xx-small) {
     padding: 20px;
   }
+}
+
+.hero-innerBlocks {
+  display: flex;
+  justify-content: end;
 }
 
 .hero-videoContainer,
@@ -115,19 +120,6 @@
   @include mq(small) {
     display: flex;
   }
-}
-
-.wp-block-amnesty-core-hero.has-inner-blocks .container {
-  justify-content: space-between;
-  align-items: start;
-}
-
-.wp-block-amnesty-core-hero.has-inner-blocks .hero-title {
-  max-width: 840px;
-}
-
-.wp-block-amnesty-core-hero.has-inner-blocks .hero-content {
-  max-width: 460px;
 }
 
 .wp-block-amnesty-core-hero:has(+ main) {

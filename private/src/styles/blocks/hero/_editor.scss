@@ -1,22 +1,10 @@
-[data-type="amnesty-core/hero"] {
-  margin-inline: auto !important;
-  max-width: $flexy-container !important;
-  width: 100% !important;
-  float: none !important;
-}
-
-[data-type="amnesty-core/hero"] .wp-block {
-  max-width: 100%;
-}
-
 .wp-block-amnesty-core-hero,
 .wp-block-amnesty-core-hero * {
   box-sizing: border-box;
 }
 
-.wp-block-amnesty-core-hero .container {
-  justify-content: space-between !important;
-  gap: 40px !important;
+.wp-block-amnesty-core-hero {
+  gap: 40px;
 }
 
 .wp-block-amnesty-core-hero .hero-contentWrapper {
