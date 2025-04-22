@@ -23,5 +23,6 @@ if ( ! function_exists( 'humanity_register_admin_assets' ) ) {
 
 		wp_enqueue_script( 'theme-admin', get_template_directory_uri() . '/build/admin/index.js', $deps, $theme->get( 'Version' ), true );
 		wp_enqueue_style( 'theme-admin', get_template_directory_uri() . '/build/admin/index.css', [], $theme->get( 'Version' ) );
+		wp_add_inline_style( 'theme-admin', sprintf( ':root{--amnesty-icon-path:url("%s"),none}', esc_url( get_template_directory_uri() . '/assets/images/sprite.svg' ) ) );
 	}
 }
