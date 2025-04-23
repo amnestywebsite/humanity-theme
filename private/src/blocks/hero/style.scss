@@ -1,41 +1,45 @@
 @use "./variants";
 
+.wp-site-blocks > .wp-block-amnesty-core-hero.alignleft,
+.wp-site-blocks > .wp-block-amnesty-core-hero.alignright {
+  float: none;
+  margin: auto;
+}
+
 .wp-block-amnesty-core-hero {
   position: relative;
   display: flex;
   margin: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-block: 80px;
+  padding-inline: 40px;
   width: 100%;
   max-width: var(--wp--preset--layout--contentSize);
-  min-height: 23px;
+  min-height: 540px;
   background-size: cover;
   background-position: center center;
 
   @media all and (min-width: 760px) {
-    padding-top: 111px;
-    padding-bottom: 80px;
+    padding-block-start: 111px;
     height: auto;
   }
 }
 
-.wp-block-amnesty-core-hero .container {
-  z-index: 2;
+.hero-contentWrapper {
   display: flex;
-  justify-content: space-between;
-  padding: 0 24px !important;
-  position: relative;
+  flex-direction: column;
+  align-items: start;
+  max-width: 840px;
 }
 
 .hero-contentWrapper > * {
-  margin-bottom: 12px;
+  margin-block-end: var(--wp--preset--spacing--half);
 }
 
 .hero-content {
   display: table;
   padding: 10px 16px;
   max-width: 460px;
-  font-size: var(--wp--preset--fontSize--regular);
+  font-size: var(--wp--preset--font-size--heading-6);
 
   @media all and (min-width: 465px) {
     padding: 10px 20px;
@@ -43,26 +47,35 @@
   }
 }
 
-.hero-title {
+.hero-title span {
   margin: 0;
-  padding: 0 20px;
-  font-size: var(--wp--preset--fontSize--heading-1);
+  padding: 0 16px;
+  font-size: var(--wp--preset--font-size--heading-1);
   line-height: 1.3 !important;
   background-color: rgba(0, 0, 0, 0.45);
   color: #fff;
   max-width: 840px;
   text-transform: uppercase;
   box-decoration-break: clone;
+
+  @media all and (min-width: 465px) {
+    padding: 0 20px;
+  }
 }
 
 .hero-cta {
   display: inline-block;
   padding: 16px;
-  background-color: rgba(var(--wp--preset--color--black), .45);
+  background-color: color-mix(in srgb, var(--wp--preset--color--black) 45%, transparent);
 
   @media all and (min-width: 465px) {
     padding: 20px;
   }
+}
+
+.hero-innerBlocks {
+  display: flex;
+  justify-content: end;
 }
 
 .hero-videoContainer,
@@ -116,78 +129,6 @@
   }
 }
 
-.wp-block-amnesty-core-hero.has-dark-background .hero-title,
-.wp-block-amnesty-core-hero.has-dark-background .hero-content,
-.wp-block-amnesty-core-hero.has-dark-background .hero-cta {
-  color: var(--wp--preset--color--white);
-  background-color: var(--wp--preset--color--black);
-}
-
-.wp-block-amnesty-core-hero.has-light-background .hero-title,
-.wp-block-amnesty-core-hero.has-light-background .hero-content,
-.wp-block-amnesty-core-hero.has-light-background .hero-cta {
-  color: var(--wp--preset--color--black);
-  background-color: var(--wp--preset--color--white);
-}
-
-.wp-block-amnesty-core-hero.has-light-background .btn {
-  border: none;
-  color: var(--wp--preset--color--white);
-  background-color: var(--wp--preset--color--black);
-}
-
-.wp-block-amnesty-core-hero.is-aligned-left .container {
-  justify-content: start;
-}
-
-.wp-block-amnesty-core-hero.is-aligned-left .hero-contentWrapper {
-  text-align: start;
-}
-
-.rtl .wp-block-amnesty-core-hero.is-aligned-left .container {
-  justify-content: end;
-}
-
-.rtl .wp-block-amnesty-core-hero.is-aligned-left .hero-contentWrapper {
-  text-align: end;
-}
-
-.rtl .wp-block-amnesty-core-hero.is-aligned-left .hero-content {
-  margin-right: auto;
-  margin-left: 0;
-}
-
-.wp-block-amnesty-core-hero.is-aligned-center .container {
-  justify-content: center;
-}
-
-.wp-block-amnesty-core-hero.is-aligned-center .hero-contentWrapper {
-  align-items: center;
-  text-align: center;
-}
-
-.wp-block-amnesty-core-hero.is-aligned-center .hero-content {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.wp-block-amnesty-core-hero.is-aligned-right .container {
-  justify-content: end;
-}
-
-.wp-block-amnesty-core-hero.is-aligned-right .hero-contentWrapper {
-  align-items: end;
-  text-align: end;
-}
-
-.wp-block-amnesty-core-hero.is-aligned-right .hero-content {
-  margin-left: auto;
-}
-
-.rtl .wp-block-amnesty-core-hero.is-aligned-right .container {
-  justify-content: start;
-}
-
-.rtl .wp-block-amnesty-core-hero.is-aligned-right .hero-contentWrapper {
-  text-align: start;
+.wp-block-amnesty-core-hero:has(+ main) {
+  margin-bottom: var(--wp--preset--spacing--single);
 }

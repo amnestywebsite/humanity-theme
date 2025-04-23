@@ -1,28 +1,33 @@
-[data-type="amnesty-core/hero"] {
-  margin-inline: auto !important;
-  max-width: var(--wp--preset--layout--contentSize) !important;
-  width: 100% !important;
-  float: none !important;
-}
-
-[data-type="amnesty-core/hero"] .wp-block {
-  max-width: 100%;
-}
-
 .wp-block-amnesty-core-hero,
 .wp-block-amnesty-core-hero * {
   box-sizing: border-box;
 }
 
+.wp-block-amnesty-core-hero {
+  gap: 40px;
+}
+
+.wp-block-amnesty-core-hero.alignleft {
+  justify-content: start;
+}
+
+.wp-block-amnesty-core-hero.aligncenter {
+  justify-content: center;
+}
+
+.wp-block-amnesty-core-hero.alignright {
+  justify-content: end;
+}
+
 .wp-block-amnesty-core-hero .hero-contentWrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
+  max-width: 840px;
 }
 
 .wp-block-amnesty-core-hero .hero-contentWrapper > * {
-  margin-top: 0;
-  margin-bottom: 12px;
+  margin-block: 0 var(--wp--preset--spacing--quarter);
 }
 
 .wp-block-amnesty-core-hero .btn {
@@ -33,68 +38,9 @@
 
 .wp-block-amnesty-core-hero .btn .block-editor-url-input__button {
   position: relative;
-  margin-left: 16px;
-}
-
-.rtl .wp-block-amnesty-core-hero .btn .block-editor-url-input__button {
-  margin-left: 0;
-  margin-right: 16px;
+  margin-inline-start: var(--wp--preset--spacing--half);
 }
 
 .wp-block-amnesty-core-hero .block-editor-url-input__button-modal {
   position: absolute;
-}
-
-[data-type="amnesty-core/hero"] .has-donation-block .hero-contentWrapper,
-.wp-block-amnesty-core-hero .has-donation-block .hero-contentWrapper {
-  max-width: 840px;
-}
-
-[data-type="amnesty-core/hero"] .has-donation-block .hero-content,
-.wp-block-amnesty-core-hero .has-donation-block .hero-content {
-  max-width: 460px;
-}
-
-[data-type="amnesty-core/hero"] .wp-block[data-align],
-.wp-block[data-align] .wp-block-amnesty-core-hero {
-  height: auto;
-  min-height: 540px;
-}
-
-[data-type="amnesty-core/hero"].alignleft .container,
-.alignleft.wp-block-amnesty-core-hero .container {
-  justify-content: start;
-}
-
-[data-type="amnesty-core/hero"].alignleft .container.has-donation-block,
-.alignleft.wp-block-amnesty-core-hero .container.has-donation-block {
-  justify-content: space-between;
-}
-
-[data-type="amnesty-core/hero"].alignleft .hero-contentWrapper,
-.alignleft.wp-block-amnesty-core-hero .hero-contentWrapper {
-  align-items: start;
-  text-align: start;
-}
-
-[data-type="amnesty-core/hero"].aligncenter .container,
-.aligncenter.wp-block-amnesty-core-hero .container {
-  justify-content: center;
-}
-
-[data-type="amnesty-core/hero"].aligncenter .hero-contentWrapper,
-.aligncenter .wp-block-amnesty-core-hero .hero-contentWrapper {
-  align-items: center;
-  text-align: center;
-}
-
-[data-type="amnesty-core/hero"].alignright .container,
-.alignright.wp-block-amnesty-core-hero .container {
-  justify-content: end;
-}
-
-[data-type="amnesty-core/hero"].alignright .hero-contentWrapper,
-.alignright.wp-block-amnesty-core-hero .hero-contentWrapper {
-  align-items: end;
-  text-align: end;
 }
