@@ -40,5 +40,9 @@
 }
 
 .wp-block-button .wp-block-button__link:hover .icon-arrow-left {
-  @include icon(213px, 240px, 16px, 16px);
+  @include icon-position(213px, 240px);
+}
+
+.rtl .wp-block-button .wp-block-button__link:hover .icon-arrow-left {
+  @include icon-position(88px, 265px);
 }
