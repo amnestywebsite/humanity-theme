@@ -223,6 +223,7 @@ if ( ! function_exists( 'amnesty_petition_list_process_select' ) ) {
 				'post__in'      => $attributes['selectedPosts'],
 				'post_type'     => $post_types,
 				'no_found_rows' => true,
+				'orderby'       => 'post__in',
 			]
 		);
 
