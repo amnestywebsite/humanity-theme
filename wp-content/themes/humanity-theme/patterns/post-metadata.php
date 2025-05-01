@@ -45,7 +45,8 @@ $show_bottom_row = $show_byline || $show_publish_date || $show_updated_date;
 		<!-- /wp:group -->
 
 		<!-- wp:pattern {"slug":"amnesty/post-updated-date"} /-->
-	</div>
+		<!-- wp:pattern {"slug":"amnesty/post-content-warning"} /-->
+		</div>
 	<!-- /wp:group -->
 <?php endif; ?>
 </div>

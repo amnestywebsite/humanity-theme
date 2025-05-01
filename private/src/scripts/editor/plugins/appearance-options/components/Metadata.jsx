@@ -1,4 +1,5 @@
 import Byline from './Byline.jsx';
+import ContentWarning from './ContentWarning.jsx';
 import ShareButtons from './ShareButtons.jsx';
 
 const { PanelBody, ToggleControl } = wp.components;
@@ -72,6 +73,7 @@ const Metadata = ({ createMetaUpdate, props }) => (
     <PublishedDate createMetaUpdate={createMetaUpdate} props={props} />
     <UpdatedDate createMetaUpdate={createMetaUpdate} props={props} />
     <ShareButtons createMetaUpdate={createMetaUpdate} props={props} />
+    <ContentWarning />
     <Byline />
   </PanelBody>
 );
