@@ -12,7 +12,7 @@
 
   @include flexy-grid(1, flexy-gutter());
 
-  @include mq(x-small) {
+  @include mq(small) {
     @include flexy-grid(2, flexy-gutter());
 
     .article-sidebar & {
@@ -117,11 +117,11 @@ h3.grid-itemTitle > a {
 .grid-many {
   grid-template-columns: 1fr;
 
-  @include mq(x-small) {
+  @include mq(small) {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  @include mq($from: x-small, $until: medium) {
+  @include mq($from: small, $until: medium) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -134,7 +134,7 @@ h3.grid-itemTitle > a {
 .grid-2 {
   grid-template-columns: 1fr;
 
-  @include mq(x-small) {
+  @include mq(small) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -142,11 +142,11 @@ h3.grid-itemTitle > a {
 .grid-5 {
   grid-template-columns: 1fr;
 
-  @include mq(x-small) {
+  @include mq(small) {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  @include mq($from: x-small, $until: medium) {
+  @include mq($from: small, $until: medium) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -154,7 +154,7 @@ h3.grid-itemTitle > a {
 .grid-5 :nth-child(n+3) {
   grid-column: span 3;
 
-  @include mq($from: x-small, $until: medium) {
+  @include mq($from: small, $until: medium) {
     grid-column: span 1;
   }
 
@@ -166,7 +166,7 @@ h3.grid-itemTitle > a {
 .grid-5 :nth-child(-n+2) {
   grid-column: span 3;
 
-  @include mq($from: x-small, $until: medium) {
+  @include mq($from: small, $until: medium) {
     grid-column: span 1;
   }
 }
@@ -174,7 +174,7 @@ h3.grid-itemTitle > a {
 .grid-3 {
   grid-template-columns: 1fr;
 
-  @include mq(x-small) {
+  @include mq(small) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -186,11 +186,11 @@ h3.grid-itemTitle > a {
 .grid-6 {
   grid-template-columns: 1fr;
 
-  @include mq(x-small) {
+  @include mq(small) {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  @include mq($from: x-small, $until: medium) {
+  @include mq($from: small, $until: medium) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -198,11 +198,11 @@ h3.grid-itemTitle > a {
 .grid-6 :nth-child(-n+2) {
   grid-column: span 1;
 
-  @include mq(x-small) {
+  @include mq(small) {
     grid-column: span 2;
   }
 
-  @include mq($from: x-small, $until: medium) {
+  @include mq($from: small, $until: medium) {
     grid-column: span 1;
   }
 }
@@ -210,11 +210,11 @@ h3.grid-itemTitle > a {
 .grid-7 {
   grid-template-columns: 1fr;
 
-  @include mq(x-small) {
+  @include mq(small) {
     grid-template-columns: repeat(12, 1fr);
   }
 
-  @include mq($from: x-small, $until: medium) {
+  @include mq($from: small, $until: medium) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
