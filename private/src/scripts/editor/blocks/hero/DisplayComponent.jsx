@@ -30,10 +30,10 @@ const mediaPanelTitle = (type) => {
   return __('Featured Image', 'amnesty');
 };
 
-const useHasDonationBlock = (parentClientId) =>
+const useHasInnerBlocks = (parentClientId) =>
   useSelect((select) => {
     const { innerBlocks } = select('core/block-editor').getBlock(parentClientId);
-    return innerBlocks.filter((block) => block.name === 'amnesty-wc/donation').length;
+    return innerBlocks.length;
   });
 
 const DisplayComponent = (props) => {
@@ -47,7 +47,7 @@ const DisplayComponent = (props) => {
 
   const [mediaData, setMediaData] = useState({});
   const videoRef = useRef();
-  const hasDonationBlock = useHasDonationBlock(clientId);
+  const hasInnerBlocks = useHasInnerBlocks(clientId);
   const object = useEntityRecord('postType', postType, postId);
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const DisplayComponent = (props) => {
     // block attribute takes precedence over the featured image
     const id = attributes?.imageID || object.editedRecord.featured_media;
     fetchMediaData(id, setMediaData, mediaData);
-  }, [object.editedRecord.featured_media, attributes.imageID, attributes.type]);
+  }, [object.editedRecord.featured_media, attributes.imageID, attributes.type, mediaData]);
 
   useEffect(() => {
     if (attributes.type !== 'video') {
@@ -68,11 +68,13 @@ const DisplayComponent = (props) => {
     fetchMediaData(attributes.featuredVideoId, setMediaData, mediaData).then(() => {
       videoRef?.current?.load?.();
     });
-  }, [attributes.featuredVideoId, attributes.type]);
+  }, [attributes.featuredVideoId, attributes.type, mediaData]);
 
   // Set class names for the content back colours
-  const classes = classnames(className, {
+  const blockClasses = classnames(className, {
     [`has-${attributes.background}-background`]: attributes.background,
+    [`is-aligned-${attributes.align}`]: !!attributes.align,
+    'has-inner-blocks': hasInnerBlocks,
     'has-video': !!attributes.featuredVideoId,
   });
 
@@ -129,7 +131,7 @@ const DisplayComponent = (props) => {
   return (
     <Fragment>
       {BlockInspectorControls}
-      <section className={classes} style={blockInlineStyle}>
+      <section className={blockClasses} style={blockInlineStyle}>
         {attributes.type === 'image' && (
           <div className="linkList-options">
             <BlockImageSelector imageId={attributes.imageID} setAttributes={setAttributes} />
@@ -142,41 +144,41 @@ const DisplayComponent = (props) => {
             </video>
           </div>
         )}
-        <div className={`container ${hasDonationBlock ? 'has-donation-block' : ''}`}>
-          <div className="hero-contentWrapper">
-            <h1 className="hero-title">
-              <RichText
-                tagName="span"
-                placeholder={/* translators: [admin] */ __('Hero Title', 'amnesty')}
-                value={attributes.title}
-                onChange={(title) => setAttributes({ title })}
-                format="string"
-              />
-            </h1>
+        <div className="hero-contentWrapper">
+          <h1 className="hero-title">
             <RichText
-              tagName="p"
-              className="hero-content"
-              placeholder={/* translators: [admin] */ __('Hero Content', 'amnesty')}
-              value={attributes.content}
-              onChange={(content) => setAttributes({ content })}
+              tagName="span"
+              placeholder={/* translators: [admin] */ __('Hero Title', 'amnesty')}
+              value={attributes.title}
+              onChange={(title) => setAttributes({ title })}
               format="string"
             />
-            <div className="hero-cta">
-              <div className="btn btn--large">
-                <RichText
-                  tagName="span"
-                  placeholder={/* translators: [admin] */ __('Call to action', 'amnesty')}
-                  value={attributes.ctaText}
-                  onChange={(ctaText) => setAttributes({ ctaText })}
-                  format="string"
-                />
-                <URLInputButton
-                  url={attributes.ctaLink}
-                  onChange={(ctaLink) => setAttributes({ ctaLink })}
-                />
-              </div>
+          </h1>
+          <RichText
+            tagName="p"
+            className="hero-content"
+            placeholder={/* translators: [admin] */ __('Hero Content', 'amnesty')}
+            value={attributes.content}
+            onChange={(content) => setAttributes({ content })}
+            format="string"
+          />
+          <div className="hero-cta">
+            <div className="btn btn--large">
+              <RichText
+                tagName="span"
+                placeholder={/* translators: [admin] */ __('Call to action', 'amnesty')}
+                value={attributes.ctaText}
+                onChange={(ctaText) => setAttributes({ ctaText })}
+                format="string"
+              />
+              <URLInputButton
+                url={attributes.ctaLink}
+                onChange={(ctaLink) => setAttributes({ ctaLink })}
+              />
             </div>
           </div>
+        </div>
+        <div className="hero-innerBlocks">
           <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
         </div>
         <MediaMetadata
