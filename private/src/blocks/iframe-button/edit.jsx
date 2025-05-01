@@ -8,7 +8,7 @@ import { httpsOnly } from '../../utils';
 
 export default function Edit({ attributes, setAttributes }) {
   const [previewing, setIsPreviewing] = useState(false);
-  const [embedUrl, setEmbedUrl] = useState(httpsOnly(attributes.embedUrl));
+  const [embedUrl, setEmbedUrl] = useState(httpsOnly(attributes.iframeUrl));
   const inputRef = createRef();
 
   const classes = classnames('iframeButton wp-block-button');

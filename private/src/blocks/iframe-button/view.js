@@ -8,6 +8,6 @@ const init = (button) => {
   button.addEventListener('click', toggle);
 };
 
-export default () => {
+document.addEventListener('DOMContentLoaded', () => {
   Array.from(document.querySelectorAll('.iframeButton')).forEach(init);
-};
+});
