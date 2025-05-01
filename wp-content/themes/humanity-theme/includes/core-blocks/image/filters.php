@@ -16,12 +16,7 @@ if ( ! function_exists( 'amnesty_add_image_metadata_to_image_block' ) ) {
 	 * @return string
 	 */
 	function amnesty_add_image_metadata_to_image_block( string $content, array $block ): string {
-		if ( 'core/image' !== ( $block['blockName'] ?? null ) ) {
-			return $content;
-		}
-
-		// can't load image data
-		if ( ! isset( $block['attrs']['id'] ) ) {
+		if ( 'core/image' !== ( $block['blockName'] ?? null ) || ! isset( $block['attrs']['id'] ) ) {
 			return $content;
 		}
 
@@ -43,10 +38,13 @@ if ( ! function_exists( 'amnesty_add_image_metadata_to_image_block' ) ) {
 			false => str_replace( '<img ', '<img class="aiic-ignore" ', $image_tag[0] ),
 		};
 
-		$new_image_tag .= $image_object->metadata(
-			! ( $block['attrs']['hideImageCaption'] ?? true ),
-			! ( $block['attrs']['hideImageCopyright'] ?? false ),
-		);
+		$hide_copyright = ( $block['attrs']['hideImageCopyright'] ?? false );
+		$hide_caption   = ( $block['attrs']['hideImageCaption'] ?? true );
+		if ( str_contains( $block['attrs']['className'] ?? '', 'article-figure' ) ) {
+			$hide_caption = '1' === get_post_meta( get_the_ID(), '_hide_featured_image_caption', true );
+		}
+
+		$new_image_tag .= $image_object->metadata( ! $hide_caption, ! $hide_copyright );
 		$new_image_tag .= '</div>';
 
 		$content = str_replace( $opening_tag, $new_opening_tag, $content );
