@@ -66,6 +66,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .grid-itemMeta a {
@@ -73,7 +74,8 @@
 }
 
 // increased specificity to override global link decoration
-.single main .grid-itemMeta {
+.single main .grid-itemMeta,
+.single main .grid-itemMeta a {
   text-decoration: none;
 }
 
