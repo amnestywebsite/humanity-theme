@@ -1,6 +1,17 @@
-.wp-block-quote,
-.wp-block-quote.is-style-default {
-  border-left: none;
+.ltr .wp-block-quote,
+.ltr .wp-block-quote.is-style-default {
+  &:not(.alignleft):not(.alignright):not(.aligncenter) {
+    border-left: 8px solid;
+    padding-left: 35px;
+  }
+}
+
+.rtl .wp-block-quote,
+.rtl .wp-block-quote.is-style-default {
+  &:not(.alignleft):not(.alignright):not(.aligncenter) {
+    border-right: 8px solid;
+    padding-right: 35px;
+  }
 }
 
 .wp-block-quote:has(.has-text-align-center)::before {
