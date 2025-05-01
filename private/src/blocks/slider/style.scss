@@ -1,6 +1,6 @@
 @use '../../utils/mixins/icon' as i;
 
-[data-type="amnesty-core/block-slider"] {
+.wp-block-amnesty-core-block-slider {
   max-width: 100% !important;
   width: 100% !important;
 }
