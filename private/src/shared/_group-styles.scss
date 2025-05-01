@@ -80,3 +80,9 @@
 .wp-block-group.custom-card .wp-block-image > div {
   width: 100%;
 }
+
+.wp-block-group.is-style-square-border {
+  border: 1px solid #000;
+  padding: var(--wp--preset--spacing--single);
+  height: 100%;
+}
