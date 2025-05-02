@@ -2,6 +2,9 @@
 
 declare( strict_types = 1 );
 
+use function Inpsyde\MultilingualPress\languageByTag;
+use function Inpsyde\MultilingualPress\siteLanguageTag;
+
 if ( ! function_exists( 'current_url' ) ) {
 	/**
 	 * Retrieve the current URL
@@ -78,6 +81,14 @@ if ( ! function_exists( 'get_site_language_name' ) ) {
 
 		if ( $override ) {
 			return $override;
+		}
+
+		if ( is_multilingualpress_enabled() ) {
+			$lang = languageByTag( siteLanguageTag( $blog_id ) )?->nativeName();
+
+			if ( $lang ) {
+				return strip_language_name_parentheticals( $lang );
+			}
 		}
 
 		$lang = get_blog_option( $blog_id, 'WPLANG' );
