@@ -39,7 +39,7 @@ class Core_Site_List {
 	 */
 	public function __construct() {
 		$this->mo      = new MO();
-		$this->sites   = get_sites();
+		$this->sites   = get_sites( [ 'public' => 1 ] );
 		$this->current = get_current_blog_id();
 	}
 
