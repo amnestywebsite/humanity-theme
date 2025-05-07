@@ -2,6 +2,7 @@
 
 declare( strict_types = 1 );
 
+use Inpsyde\MultilingualPress\Framework\Api\Translation;
 use Inpsyde\MultilingualPress\Framework\Api\Translations;
 use Inpsyde\MultilingualPress\Framework\Api\TranslationSearchArgs;
 use Inpsyde\MultilingualPress\Framework\WordpressContext;
@@ -62,6 +63,11 @@ if ( ! function_exists( 'get_object_translations' ) ) {
 		}
 
 		$translations = resolve( Translations::class )->searchTranslations( $args );
+		$translations = array_filter(
+			$translations,
+			fn ( Translation $translation ): bool =>
+				absint( get_blog_option( $translation->remoteSiteId(), 'blog_public', 0 ) ) === 1,
+		);
 
 		wp_cache_add( $cache_key, $translations );
 
