@@ -104,7 +104,7 @@ class Taxonomy_Topics extends Taxonomy {
 		}
 
 		$path  = wp_parse_url( current_url(), PHP_URL_PATH ) ?: '/';
-		$regex = sprintf( '#^/[a-z]{2}/%s/([a-z-]+)/$#', preg_quote( $this->slug, '#' ) );
+		$regex = sprintf( '#^/[a-z-_]{2,}/%s/([a-z-]+)/$#', preg_quote( $this->slug, '#' ) );
 
 		// not an old topic url
 		if ( 1 !== preg_match( $regex, $path, $match ) || ! isset( $match[1] ) ) {

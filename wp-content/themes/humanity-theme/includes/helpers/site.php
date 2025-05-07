@@ -2,6 +2,9 @@
 
 declare( strict_types = 1 );
 
+use function Inpsyde\MultilingualPress\languageByTag;
+use function Inpsyde\MultilingualPress\siteLanguageTag;
+
 if ( ! function_exists( 'current_url' ) ) {
 	/**
 	 * Retrieve the current URL
@@ -80,6 +83,14 @@ if ( ! function_exists( 'get_site_language_name' ) ) {
 			return $override;
 		}
 
+		if ( is_multilingualpress_enabled() ) {
+			$lang = languageByTag( siteLanguageTag( $blog_id ) )?->nativeName();
+
+			if ( $lang ) {
+				return strip_language_name_parentheticals( $lang );
+			}
+		}
+
 		$lang = get_blog_option( $blog_id, 'WPLANG' );
 		$lang = $lang ?: get_site_option( 'WPLANG' );
 		$lang = $lang ?: ( $GLOBALS['wp_local_package'] ?? false );
@@ -106,8 +117,18 @@ if ( ! function_exists( 'strip_language_name_parentheticals' ) ) {
 			return $language;
 		}
 
+		/**
+		 * Since all Chinese locales use the same parent language, we instead use
+		 * the text _within_ the parentheticals, rather than the parent langauge text.
+		 * Otherwise, all would output simply "中文", and there would be no way to differentiate.
+		 */
+		if ( 1 === preg_match( '`^中文`', $language ) ) {
+			$stripped = preg_replace( '/.*?(?:[(（])(.*?)(?:[)）])\s*?/ui', '$1', $language );
+			return $stripped ?: $language;
+		}
+
 		$stripped = preg_replace( '/\s*?([(（]).*?([)）])\s*?/ui', '', $language );
-		return $stripped ?: '';
+		return $stripped ?: $language;
 	}
 }
 
