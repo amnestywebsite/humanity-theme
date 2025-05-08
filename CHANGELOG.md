@@ -1,3 +1,8 @@
+### v2.0.14
+Fixes:
+- Filter out non-public sites from language selector
+- Filter out non-public sites from language banner
+
 ### v2.0.13
 Fixes:
 - Set title tag fallback to blog name
