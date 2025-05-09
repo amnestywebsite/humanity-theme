@@ -221,11 +221,12 @@ if ( ! function_exists( 'amnesty_get_sites' ) ) {
 	 *
 	 * @package Amnesty\Multisite
 	 *
-	 * @param bool $filter whether to apply filters
+	 * @param bool $filter      whether to apply filters
+	 * @param bool $public_only whether to only return public sites
 	 *
 	 * @return array
 	 */
-	function amnesty_get_sites( bool $filter = true ) {
+	function amnesty_get_sites( bool $filter = true, bool $public_only = true ) {
 		if ( ! defined( 'MULTISITE' ) || ! MULTISITE ) {
 			return [];
 		}
@@ -235,7 +236,7 @@ if ( ! function_exists( 'amnesty_get_sites' ) ) {
 			return $cached;
 		}
 
-		$sites = ( new \Amnesty\Core_Site_List() )->get_sites();
+		$sites = ( new \Amnesty\Core_Site_List( $public_only ) )->get_sites();
 		wp_cache_set( 'amnesty_get_sites', $sites );
 
 		if ( ! $filter ) {
