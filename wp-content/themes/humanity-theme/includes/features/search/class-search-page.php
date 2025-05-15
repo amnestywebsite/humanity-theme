@@ -58,7 +58,11 @@ class Search_Page {
 			return $this->query;
 		}
 
-		$this->query = new WP_Query( $this->get_query_vars() );
+		if ( get_query_var( 's' ) ) {
+			$this->query = $GLOBALS['wp_query'];
+		} else {
+			$this->query = new WP_Query( $this->get_query_vars() );
+		}
 
 		$search_page_id = absint( get_option( 'amnesty_search_page' ) );
 
