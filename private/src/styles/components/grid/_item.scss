@@ -59,7 +59,6 @@
   max-width: 100%;
   overflow: hidden;
   text-transform: uppercase;
-  text-decoration: none;
   font-size: var(--wp--preset--font-size--regular);
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: bold;
@@ -70,6 +69,7 @@
 
 .grid-itemMeta a {
   color: var(--wp--preset--color--white);
+  text-decoration: none;
 }
 
 // increased specificity to override global link decoration
