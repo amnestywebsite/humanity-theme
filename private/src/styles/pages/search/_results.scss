@@ -49,7 +49,10 @@ body.page-template-searchpage .section .page-search input {
 }
 
 .search-results .wp-block-post-template {
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  list-style: none;
 }
 
 .search-results .wp-block-post-template .wp-block-post {
