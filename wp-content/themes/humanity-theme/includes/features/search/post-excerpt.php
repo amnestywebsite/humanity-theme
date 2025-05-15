@@ -24,7 +24,7 @@ if ( ! function_exists( 'get_first_paragraph' ) ) {
 
 		libxml_use_internal_errors( true );
 		$doc->loadHTML(
-			mb_convert_encoding( $html, 'HTML-ENTITIES', 'UTF-8' ),
+			$html,
 			LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD | LIBXML_NOXMLDECL | LIBXML_NOERROR | LIBXML_NOWARNING
 		);
 		libxml_use_internal_errors( false );
