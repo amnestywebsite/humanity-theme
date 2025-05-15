@@ -16,8 +16,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 0;
+  margin: 0;
   list-style: none;
+}
+
+.filter-wrapper .active-filters li {
+  margin-block: 0;
+  margin-inline: var(--wp--preset--spacing--quarter);
 }
 
 .filter-wrapper .clear-filter {

@@ -39,7 +39,7 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_numbers' ) )
 		$page_key            = isset( $block->context['queryId'] ) ? 'query-' . $block->context['queryId'] . '-page' : 'query-page';
 		$enhanced_pagination = $block->context['enhancedPagination'] ?? false;
 		$page                = absint( $_GET[ $page_key ] ?? $attributes['paged'] ?? 1 ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- taken from core
-		$max_page            = (int) $block->context['query']['pages'] ?? 0;
+		$max_page            = (int) ( $block->context['query']['pages'] ?? 0 );
 		$pretty_pagination   = isset( $attributes['pretty'] ) && $attributes['pretty'];
 		$wrapper_attributes  = get_block_wrapper_attributes();
 		$content             = '';

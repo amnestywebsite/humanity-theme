@@ -7,64 +7,143 @@
  * Inserter: no
  */
 
+$search_object = amnesty_get_searchpage_query_object();
 $location_slug = get_option( 'amnesty_location_slug' ) ?: 'location';
-$search_object = amnesty_get_searchpage_query_object( false );
 
-$block_args = [
-	'queryId' => 0,
-	'query'   => $search_object->get_block_vars(),
-];
+$has_term = function ( string $taxonomy = 'category' ): bool {
+	switch_to_blog( get_post()->blog_id );
+	$term = amnesty_get_a_post_term( get_the_ID(), $taxonomy );
+	restore_current_blog();
 
-// custom queries sometimes break retrieval in the site editor
-if ( is_admin() ) {
-	$block_args['query'] = [];
-}
+	return (bool) $term;
+};
 
-add_filter( 'query_loop_block_query_vars', fn () => $search_object->get_query_vars() );
+$term_link = function ( string $taxonomy = 'category' ): string {
+	switch_to_blog( get_post()->blog_id );
+	$term = amnesty_get_a_post_term( get_the_ID(), $taxonomy );
+	restore_current_blog();
 
-if ( amnesty_get_query_var( 'qyear' ) ) {
-	add_filter( 'query_loop_block_query_vars', fn ( array $vars ): array => $vars + [ 'year' => absint( amnesty_get_query_var( 'qyear' ) ) ] );
-}
+	$switch = isset( get_post()->blog_id ) && absint( get_post()->blog_id ) !== get_current_blog_id();
 
-if ( amnesty_get_query_var( 'qmonth' ) ) {
-	add_filter( 'query_loop_block_query_vars', fn ( array $vars ): array => $vars + [ 'monthnum' => absint( amnesty_get_query_var( 'qmonth' ) ) ] );
-}
+	return $term ? amnesty_cross_blog_term_link( $term, $switch ) : '';
+};
 
-// add filter to limit the post terms results for search
-add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
+$term_name = function ( string $taxonomy = 'category' ): ?string {
+	switch_to_blog( get_post()->blog_id );
+	$term = amnesty_get_a_post_term( get_the_ID(), $taxonomy );
+	restore_current_blog();
+
+	return $term->name;
+};
 
 ?>
 
-<!-- wp:query <?php echo wp_kses_data( wp_json_encode( $block_args ) ); ?> -->
-<div class="wp-block-query">
+<!-- wp:group {"tagName":"div"} -->
+<div class="wp-block-group">
 	<!-- wp:group {"tagName":"div","className":"section section--tinted search-results"} -->
 	<div class="wp-block-group section section--tinted search-results">
-		<!-- wp:amnesty-core/search-header /-->
-		<!-- wp:post-template {"layout":{"type":"constrained","justifyContent":"left"}} -->
+		<!-- wp:pattern {"slug":"amnesty/search-header"} /-->
 
-		<!-- wp:group {"tagName":"article","className":"post post--result"} -->
-		<article class="wp-block-group post post--result">
-			<!-- wp:group {"tagName":"div","className":"post-terms","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-			<div class="wp-block-group post-terms">
-				<!-- wp:post-terms {"term":"category","className":"post-category"} /-->
-				<!-- wp:post-terms {"term":"<?php echo esc_attr( $location_slug ); ?>","className":"post-location"} /-->
-				<!-- wp:post-terms {"term":"topic","className":"post-topic"} /-->
-			</div>
-			<!-- /wp:group -->
-			<!-- wp:post-title {"isLink":true,"className":"post-title"} /-->
-			<!-- wp:post-excerpt {"className":"post-excerpt"} /-->
-			<!-- wp:post-date {"className":"post-byline"} /-->
-		</article>
-		<!-- /wp:group -->
+	<?php if ( $search_object->get_wp_query()->have_posts() ) : ?>
 
-		<!-- /wp:post-template -->
+		<!-- wp:list {"className":"wp-block-post-template is-layout-constrained"} -->
+		<ul class="wp-block-list wp-block-post-template is-layout-constrained">
+
+		<?php while ( $search_object->get_wp_query()->have_posts() ) : ?>
+			<?php $search_object->get_wp_query()->the_post(); ?>
+
+			<!-- wp:list-item {"className":"wp-block-post"} -->
+			<li class="wp-block-list-item wp-block-post">
+				<!-- wp:group {"tagName":"article","className":"post post--result"} -->
+				<article class="wp-block-group post post--result">
+					<!-- wp:group {"tagName":"div","className":"post-terms","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+					<div class="wp-block-group post-terms">
+
+					<?php if ( $has_term() ) : ?>
+						<!-- wp:group {"tagName":"div","className":"taxonomy-category post-category wp-block-post-terms"} -->
+						<div class="wp-block-group taxonomy-category post-category wp-block-post-terms">
+							<!-- wp:paragraph -->
+							<p class="wp-block-paragraph">
+								<a href="<?php echo esc_url( $term_link() ); ?>" rel="tag">
+									<?php echo esc_html( $term_name() ); ?>
+								</a>
+							</p>
+							<!-- /wp:paragraph -->
+						</div>
+						<!-- /wp:group -->
+					<?php endif; ?>
+
+					<?php if ( $has_term( $location_slug ) ) : ?>
+						<!-- wp:group {"tagName":"div","className":"taxonomy-<?php echo esc_attr( $location_slug ); ?> post-<?php echo esc_attr( $location_slug ); ?> wp-block-post-terms"} -->
+						<div class="wp-block-group taxonomy-<?php echo esc_attr( $location_slug ); ?> post-<?php echo esc_attr( $location_slug ); ?> wp-block-post-terms">
+							<!-- wp:paragraph -->
+							<p class="wp-block-paragraph">
+								<a href="<?php echo esc_url( $term_link( $location_slug ) ); ?>" rel="tag">
+									<?php echo esc_html( $term_name( $location_slug ) ); ?>
+								</a>
+							</p>
+							<!-- /wp:paragraph -->
+						</div>
+						<!-- /wp:group -->
+					<?php endif; ?>
+
+					<?php if ( $has_term( 'topic' ) ) : ?>
+						<!-- wp:group {"tagName":"div","className":"taxonomy-topic post-topic wp-block-post-terms"} -->
+						<div class="wp-block-group taxonomy-topic post-topic wp-block-post-terms">
+							<!-- wp:paragraph -->
+							<p class="wp-block-paragraph">
+								<a href="<?php echo esc_url( $term_link( 'topic' ) ); ?>" rel="tag">
+									<?php echo esc_html( $term_name( 'topic' ) ); ?>
+								</a>
+							</p>
+							<!-- /wp:paragraph -->
+						</div>
+						<!-- /wp:group -->
+					<?php endif; ?>
+
+					</div>
+					<!-- /wp:group -->
+					<!-- wp:heading {"level":2,"className":"post-title wp-block-post-title"} -->
+					<h2 class="wp-block-heading post-title wp-block-post-title">
+						<a href="<?php echo esc_url( get_blog_permalink( get_post()->blog_id, get_the_ID() ) ); ?>" target="_self"><?php the_title(); ?></a>
+					</h2>
+					<!-- /wp:heading -->
+					<!-- wp:group {"tagName":"div","className":"post-excerpt wp-block-post-excerpt"} -->
+					<div class="wp-block-group post-excerpt wp-block-post-excerpt">
+						<!-- wp:paragraph {"className":"wp-block-post-excerpt__excerpt"} -->
+						<p class="wp-block-paragraph wp-block-post-excerpt__excerpt"><?php echo wp_kses_post( get_the_excerpt() ); ?></p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+					<!-- wp:group -->
+					<div class="wp-block-group post-byline wp-block-post-date">
+						<!-- wp:paragraph -->
+						<p class="wp-block-paragraph">
+							<time datetime="<?php echo esc_attr( get_the_modified_date( 'c' ) ); ?>"><?php echo esc_html( get_the_modified_date() ); ?></time>
+						</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+				</article>
+				<!-- /wp:group -->
+			</li>
+			<!-- /wp:list-item -->
+
+		<?php endwhile; ?>
+
+		</ul>
+		<!-- /wp:list -->
+
+	<?php endif; ?>
+
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:query-pagination {"align":"center","className":"section section--small","paginationArrow":"none","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} -->
-		<!-- wp:query-pagination-previous {"label":"<?php echo esc_html( __( 'Previous', 'amnesty' ) ); ?>","paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>} /-->
-		<!-- wp:query-pagination-numbers {"midSize":1,"paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>,"pretty":true,"className":"page-numbers"} /-->
-		<!-- wp:query-pagination-next {"label":"<?php echo esc_html( __( 'Next', 'amnesty' ) ); ?>","paged":<?php echo absint( get_query_var( 'paged' ) ?: 1 ); ?>} /-->
-	<!-- /wp:query-pagination -->
+<?php if ( $search_object->get_wp_query()->have_posts() ) : ?>
+	<!-- wp:pattern {"slug":"amnesty/search-pagination"} /-->
+<?php endif; ?>
+
 </div>
-<!-- /wp:query -->
+<!-- /wp:group -->
+
+<?php wp_reset_postdata(); ?>

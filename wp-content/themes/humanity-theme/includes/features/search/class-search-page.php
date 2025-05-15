@@ -56,6 +56,11 @@ class Search_Page {
 	public function get_wp_query(): ?WP_Query {
 		if ( is_null( $this->query ) ) {
 			$this->query = new WP_Query( $this->get_query_vars() );
+
+			$search_page_id = absint( get_option( 'amnesty_search_page' ) );
+
+			$this->query->posts = array_filter( $this->query->posts, fn ( $p ): bool => $p->ID !== $search_page_id );
+			$this->query->posts = array_values( $this->query->posts );
 		}
 
 		return $this->query;

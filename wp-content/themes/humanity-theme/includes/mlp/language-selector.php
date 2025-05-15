@@ -61,6 +61,7 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 				'direction' => $language->isRtl() ? 'rtl' : 'ltr',
 				'name'      => get_blog_option( $translation->remoteSiteId(), 'blogname' ),
 				'url'       => $translation->remoteUrl(),
+				'path'      => get_site( $translation->remoteSiteId() )->path,
 				'blog_id'   => $translation->remoteSiteId(),
 				'item_id'   => $translation->remoteContentId(),
 				'type'      => $translation->type(),

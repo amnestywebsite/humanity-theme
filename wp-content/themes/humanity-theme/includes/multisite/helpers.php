@@ -231,13 +231,15 @@ if ( ! function_exists( 'amnesty_get_sites' ) ) {
 			return [];
 		}
 
-		$cached = wp_cache_get( 'amnesty_get_sites' );
+		$cache_key = implode( '_', [ __FUNCTION__, ( $public_only ? 'public' : 'all' ) ] );
+		$cached    = wp_cache_get( $cache_key );
+
 		if ( is_array( $cached ) ) {
 			return $cached;
 		}
 
 		$sites = ( new \Amnesty\Core_Site_List( $public_only ) )->get_sites();
-		wp_cache_set( 'amnesty_get_sites', $sites );
+		wp_cache_set( $cache_key, $sites );
 
 		if ( ! $filter ) {
 			return $sites;
