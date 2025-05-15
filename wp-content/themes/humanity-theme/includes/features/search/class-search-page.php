@@ -54,14 +54,26 @@ class Search_Page {
 	 * @return WP_Query|null
 	 */
 	public function get_wp_query(): ?WP_Query {
-		if ( is_null( $this->query ) ) {
-			$this->query = new WP_Query( $this->get_query_vars() );
-
-			$search_page_id = absint( get_option( 'amnesty_search_page' ) );
-
-			$this->query->posts = array_filter( $this->query->posts, fn ( $p ): bool => $p->ID !== $search_page_id );
-			$this->query->posts = array_values( $this->query->posts );
+		if ( ! is_null( $this->query ) ) {
+			return $this->query;
 		}
+
+		$this->query = new WP_Query( $this->get_query_vars() );
+
+		$search_page_id = absint( get_option( 'amnesty_search_page' ) );
+
+		foreach ( $this->query->posts as $index => $item ) {
+			if ( $item->ID !== $search_page_id ) {
+				continue;
+			}
+
+			unset( $this->query->posts[ $index ] );
+			$this->query->post_count  -= 1;
+			$this->query->found_posts -= 1;
+		}
+
+		$this->query->posts = array_values( $this->query->posts );
+		$this->query->post  = $this->query->posts[0];
 
 		return $this->query;
 	}
