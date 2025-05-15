@@ -119,7 +119,7 @@ $term_name = function ( string $taxonomy = 'category' ): ?string {
 					<div class="wp-block-group post-byline wp-block-post-date">
 						<!-- wp:paragraph -->
 						<p class="wp-block-paragraph">
-							<time datetime="<?php echo esc_attr( get_the_modified_date( 'c' ) ); ?>"><?php echo esc_html( get_the_modified_date() ); ?></time>
+							<time datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time>
 						</p>
 						<!-- /wp:paragraph -->
 					</div>
