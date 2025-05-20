@@ -111,7 +111,7 @@ $term_name = function ( string $taxonomy = 'category' ): ?string {
 					<!-- wp:group {"tagName":"div","className":"post-excerpt wp-block-post-excerpt"} -->
 					<div class="wp-block-group post-excerpt wp-block-post-excerpt">
 						<!-- wp:paragraph {"className":"wp-block-post-excerpt__excerpt"} -->
-						<p class="wp-block-paragraph wp-block-post-excerpt__excerpt"><?php echo wp_kses_post( get_the_excerpt() ); ?></p>
+						<p class="wp-block-paragraph wp-block-post-excerpt__excerpt"><?php echo wp_kses_post( get_first_paragraph( get_the_content() ) ); ?></p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
