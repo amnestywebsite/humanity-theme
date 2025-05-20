@@ -36,10 +36,18 @@ class Core_Site_List {
 
 	/**
 	 * Construct the instance variables
+	 *
+	 * @param bool $public_only whether to only return public sites
 	 */
-	public function __construct() {
-		$this->mo      = new MO();
-		$this->sites   = get_sites( [ 'public' => 1 ] );
+	public function __construct( bool $public_only = true ) {
+		$this->mo = new MO();
+
+		$args = [];
+		if ( true === $public_only ) {
+			$args['public'] = 1;
+		}
+
+		$this->sites   = get_sites( $args );
 		$this->current = get_current_blog_id();
 	}
 
