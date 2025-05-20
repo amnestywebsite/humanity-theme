@@ -45,7 +45,7 @@ export const objectToQueryString = (object) =>
         val = objectToQueryString(object);
       }
 
-      return `${encodeURIComponent(prop)}=${encodeURIComponent(val).replace('%2C', ',')}`;
+      return `${encodeURIComponent(prop)}=${encodeURIComponent(val).replace(/%2C/g, ',')}`;
     })
     .filter(Boolean)
     .join('&');
