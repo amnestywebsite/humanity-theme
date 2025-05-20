@@ -3,7 +3,7 @@
  * base line-height. This allows us to keep a consistent vertical rhythm.
  */
 h1, h2, h3, h4, h5, h6, hgroup,
-ul, ol, dl,
+dl,
 blockquote, p, address,
 table,
 fieldset, figure,
@@ -16,7 +16,7 @@ pre,
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once,here.
  */
-ul, ol, dd,
+dd,
 %margin-left {
   margin-left: var(--wp--preset--spacing--double);
 }
