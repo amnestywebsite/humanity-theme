@@ -11,10 +11,6 @@ a {
   text-decoration: underline;
 }
 
-.single main a {
+.single main a:not(.btn) {
   text-decoration: underline;
-}
-
-.single main a.btn {
-  text-decoration: none;
 }

@@ -1,3 +1,30 @@
+### v2.1.1
+Fixes:
+- Remove rogue text decoration
+
+### v2.1.0
+Fixes:
+- Single article actions layout
+- Anchor point for nav submenus in RTL
+- Text decoration
+- Grid breakpoints for Post List blocks
+- Back button iconography
+- Icon spritesheet path
+- Slider navigation arrow visibility
+
+Build:
+- Introduce l10n.php compilation task
+- Windows asset paths
+
+Localisation:
+- Introduce support for ZH locales
+
+Improvements:
+- Rebuild search templates
+- Remove search page from search results
+- Prettify search filter results
+- Limit archive card tag output to primary category
+
 ### v2.0.14
 Fixes:
 - Filter out non-public sites from language selector
