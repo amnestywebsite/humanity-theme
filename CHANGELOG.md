@@ -1,3 +1,7 @@
+### v2.1.1
+Fixes:
+- Remove rogue text decoration
+
 ### v2.1.0
 Fixes:
 - Single article actions layout
