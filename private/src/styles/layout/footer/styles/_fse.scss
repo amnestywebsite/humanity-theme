@@ -42,12 +42,12 @@
 
 .amnesty-footer-template-part a {
   color: var(--wp--preset--color--white);
-  text-decoration: none;
+  text-decoration: none !important;
 
   &:hover,
   &:active,
   &:focus {
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
 }
 
