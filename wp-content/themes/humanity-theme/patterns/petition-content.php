@@ -17,8 +17,4 @@
 <!-- /wp:group -->
 <?php endif; ?>
 
-<!-- wp:group {"tagName":"div","className":"section section--small container article-container"} -->
-<div class="wp-block-group section section--small container article-container">
-	<!-- wp:post-content /-->
-</div>
-<!-- /wp:group -->
+<!-- wp:post-content {"className":"section section--small container article-container"} /-->

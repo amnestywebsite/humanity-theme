@@ -182,7 +182,6 @@ if ( ! function_exists( 'amnesty_petition_list_process_feed' ) ) {
 		$query = new WP_Query(
 			[
 				'post_type'      => $post_types,
-				'no_found_rows'  => true,
 				'posts_per_page' => $amount,
 				// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query
 				'tax_query'      => [
