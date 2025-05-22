@@ -42,6 +42,10 @@
   }
 }
 
+.btn:not(.is-style-link) a {
+  text-decoration: none;
+}
+
 .section--textWhite .btn {
   color: var(--wp--preset--color--black);
 }
