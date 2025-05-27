@@ -1,7 +1,10 @@
 <?php
 
-$first_url  = $files[0]['link'] ?? wp_get_attachment_url( $files[0]['id'] );
-$first_name = basename( $files[0]['link'] ?? wp_get_attachment_url( $files[0]['id'] ) );
+reset( $files );
+
+$first_key  = key( $files );
+$first_url  = $files[ $first_key ]['link'] ?? wp_get_attachment_url( $files[ $first_key ]['id'] );
+$first_name = basename( $first_url );
 $options    = [];
 
 foreach ( $files as $file ) {
@@ -16,7 +19,7 @@ foreach ( $files as $file ) {
 
 	amnesty_render_custom_select(
 		[
-			'label'      => wp_trim_words( $files[0]['title'], 8 ),
+			'label'      => wp_trim_words( $files[ $first_key ]['title'], 8 ),
 			'is_control' => true,
 			'options'    => $options,
 		]
