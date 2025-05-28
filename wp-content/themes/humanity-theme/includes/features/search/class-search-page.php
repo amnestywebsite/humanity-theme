@@ -77,7 +77,7 @@ class Search_Page {
 		}
 
 		$this->query->posts = array_values( $this->query->posts );
-		$this->query->post  = $this->query->posts[0];
+		$this->query->post  = $this->query->posts[0] ?? null;
 
 		return $this->query;
 	}
