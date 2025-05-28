@@ -54,3 +54,7 @@
 .article-sidebar .customCard {
   height: auto;
 }
+
+.article-sidebar iframe[width] {
+  max-width: 100%;
+}
