@@ -1,3 +1,8 @@
+### v2.1.2
+Fixes:
+- PHP Warning on search if no posts found
+- Incorrect pattern usage in petitions template
+
 ### v2.1.1
 Fixes:
 - Remove rogue text decoration
