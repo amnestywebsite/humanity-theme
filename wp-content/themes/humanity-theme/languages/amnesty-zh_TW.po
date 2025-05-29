@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-04-08T08:58:08+00:00\n"
 "PO-Revision-Date: 2025-04-08T08:58:08+00:00\n"
-"Language: zh_HK\n"
+"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. translators: [admin]
