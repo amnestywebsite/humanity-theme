@@ -1,3 +1,7 @@
+### v2.1.3
+Localisation:
+- Update ZH translations
+
 ### v2.1.2
 Fixes:
 - PHP Warning on search if no posts found
