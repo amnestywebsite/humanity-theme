@@ -7,6 +7,10 @@
  * Inserter: no
  */
 
+use function Inpsyde\MultilingualPress\translationIds;
+
+global $post;
+
 $should_switch_blog = ! empty( $post->blog_id ) && absint( $post->blog_id ) !== absint( get_current_blog_id() );
 
 if ( $should_switch_blog ) {
@@ -20,7 +24,13 @@ if ( $should_switch_blog ) {
 	restore_current_blog();
 }
 
-if ( ! $show_back_link || ! $main_category ) {
+$relations = translationIds( $main_category->term_id, 'term', $post?->blog_id ?? 0 );
+
+if ( isset( $relations[ get_current_blog_id() ] ) ) {
+	$main_category = get_term( $relations[ get_current_blog_id() ], $main_category->taxonomy );
+}
+
+if ( ! $show_back_link || ! is_a( $main_category, WP_Term::class ) ) {
 	return;
 }
 
