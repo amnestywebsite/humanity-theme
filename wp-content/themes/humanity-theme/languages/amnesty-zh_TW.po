@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-04-08T08:58:08+00:00\n"
 "PO-Revision-Date: 2025-04-08T08:58:08+00:00\n"
-"Language: zh_HK\n"
+"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. translators: [admin]
@@ -347,7 +347,7 @@ msgstr "更新"
 
 #. translators: [front] %s: the title of the article
 #: includes/blocks/post-list/views/grid-item.php:10
-#: includes/blocks/post-list/views/list-item.php:10
+#: includes/blocks/post-list/views/list-item.php:4
 #: partials/post/post-full.php:16
 #: partials/post/post-none.php:10
 #: partials/post/post-search.php:31
@@ -1638,7 +1638,7 @@ msgstr "頁法"
 
 #. Theme Name of the theme
 #: style.css
-#: includes/theme-setup/text-domain.php:33
+#: includes/theme-setup/text-domain.php:74
 msgid "Humanity Theme"
 msgstr ""
 

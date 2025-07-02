@@ -12,6 +12,8 @@ if ( ! get_the_ID() ) {
 	return;
 }
 
+global $post;
+
 $should_switch_blog = ! empty( $post->blog_id ) && absint( $post->blog_id ) !== absint( get_current_blog_id() );
 
 if ( $should_switch_blog ) {
