@@ -1,3 +1,7 @@
+### v2.1.5
+Fixes:
+- Prevent loading of back link pattern if no category found
+
 ### v2.1.4
 Fixes:
 - Several issues related to loading remote data on PDF template
