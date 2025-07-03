@@ -47,11 +47,6 @@ if ( ! function_exists( 'amnesty_get_option' ) ) {
 	 * @return mixed
 	 */
 	function amnesty_get_option( $key = '', $options = 'amnesty_theme_options_page', $default_value = false ) {
-		if ( function_exists( 'cmb2_get_option' ) ) {
-			// Use cmb2_get_option as it passes through some key filters.
-			return cmb2_get_option( $options, $key, $default_value );
-		}
-
 		// Fallback to get_option if CMB2 is not loaded yet.
 		$opts = get_option( $options, $default_value );
 		$val  = $default_value;
