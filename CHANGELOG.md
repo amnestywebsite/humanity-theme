@@ -1,3 +1,10 @@
+### v2.1.4
+Fixes:
+- Several issues related to loading remote data on PDF template
+
+CI:
+- Update build targets
+
 ### v2.1.3
 Localisation:
 - Update ZH translations
