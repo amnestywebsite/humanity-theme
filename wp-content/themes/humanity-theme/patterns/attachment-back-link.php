@@ -20,6 +20,10 @@ if ( $should_switch_blog ) {
 $show_back_link = ! amnesty_validate_boolish( amnesty_get_option( '_display_category_label' ) );
 $main_category  = amnesty_get_a_post_term( get_the_ID() );
 
+if ( ! $main_category ) {
+	return;
+}
+
 if ( $should_switch_blog ) {
 	restore_current_blog();
 }
