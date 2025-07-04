@@ -3,7 +3,7 @@
 /**
  * Title: Archive filters
  * Description: Outputs filters for post type archive pages
- * Slug: amnesty/archive-filters
+ * Slug: amnesty/archive-heading
  * Inserter: no
  */
 
