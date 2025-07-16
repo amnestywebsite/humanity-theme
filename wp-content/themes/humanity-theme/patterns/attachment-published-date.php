@@ -34,7 +34,8 @@ do_action( 'amnesty_before_published_date' );
 
 try {
 	$datetime = new DateTime( $post->post_date_gmt, new DateTimeZone( 'GMT' ) );
-	$format   = get_option( 'date_format' );
+	$datetime->setTimezone( wp_timezone() );
+	$format = get_option( 'date_format' );
 } catch ( DateMalformedStringException $e ) {
 	return;
 }
