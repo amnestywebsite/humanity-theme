@@ -1,3 +1,10 @@
+### v2.1.6
+Fixes:
+- Constrain iframe width in sidebars
+- Prevent array access error in download block
+- Typo in pattern slug
+- Incorrect date output in document pattern
+
 ### v2.1.5
 Fixes:
 - Prevent loading of back link pattern if no category found
