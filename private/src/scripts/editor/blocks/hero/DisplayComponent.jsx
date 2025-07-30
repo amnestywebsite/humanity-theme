@@ -33,7 +33,7 @@ const mediaPanelTitle = (type) => {
 const useHasDonationBlock = (parentClientId) =>
   useSelect((select) => {
     const { innerBlocks } = select('core/block-editor').getBlock(parentClientId);
-    return innerBlocks.filter((block) => block.name === 'amnesty-wc/donation').length;
+    return innerBlocks.filter((block) => block.name === 'humanity/stripe-form').length;
   });
 
 const DisplayComponent = (props) => {
@@ -177,7 +177,7 @@ const DisplayComponent = (props) => {
               </div>
             </div>
           </div>
-          <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
+          <InnerBlocks allowedBlocks={['humanity/stripe-form']} orientation="horizontal" />
         </div>
         <MediaMetadata
           media={mediaData}
