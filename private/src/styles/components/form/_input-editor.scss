@@ -15,8 +15,12 @@ label.components-toggle-control__label {
   font-weight: normal;
 }
 
-.postbox input[type="radio"]:checked::before {
-  display: none;
+input[type="radio"].components-radio-control__input:checked::after {
+  content: '';
+}
+
+input[type="checkbox"].components-checkbox-control__input:checked::after {
+  content: '';
 }
 
 .components-base-control.wp-block-post-title textarea.components-textarea-control__input {
