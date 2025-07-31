@@ -27,6 +27,11 @@ input[type="checkbox"].components-checkbox-control__input:checked::after {
   font-family: var(--wp--preset--font-family--secondary);
 }
 
+.components-text-control__input {
+  text-transform: none;
+  font-weight: normal;
+}
+
 .media-modal label,
 .media-modal input,
 .media-modal optgroup,
