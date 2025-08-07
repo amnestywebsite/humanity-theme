@@ -8,7 +8,6 @@ import { fetchMediaData } from '../utils';
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl } = wp.components;
 const { useEntityRecord } = wp.coreData;
-const { useSelect } = wp.data;
 const { PostFeaturedImage } = wp.editor;
 const { Fragment, useEffect, useRef, useState } = wp.element;
 const { __ } = wp.i18n;
@@ -30,24 +29,16 @@ const mediaPanelTitle = (type) => {
   return __('Featured Image', 'amnesty');
 };
 
-const useHasDonationBlock = (parentClientId) =>
-  useSelect((select) => {
-    const { innerBlocks } = select('core/block-editor').getBlock(parentClientId);
-    return innerBlocks.filter((block) => block.name === 'humanity/stripe-form').length;
-  });
-
 const DisplayComponent = (props) => {
   const {
     attributes,
     className,
-    clientId,
     context: { postId, postType },
     setAttributes,
   } = props;
 
   const [mediaData, setMediaData] = useState({});
   const videoRef = useRef();
-  const hasDonationBlock = useHasDonationBlock(clientId);
   const object = useEntityRecord('postType', postType, postId);
 
   useEffect(() => {
@@ -142,7 +133,7 @@ const DisplayComponent = (props) => {
             </video>
           </div>
         )}
-        <div className={`container ${hasDonationBlock ? 'has-donation-block' : ''}`}>
+        <div className="container">
           <div className="hero-contentWrapper">
             <h1 className="hero-title">
               <RichText
@@ -177,7 +168,7 @@ const DisplayComponent = (props) => {
               </div>
             </div>
           </div>
-          <InnerBlocks allowedBlocks={['humanity/stripe-form']} orientation="horizontal" />
+          <InnerBlocks orientation="horizontal" />
         </div>
         <MediaMetadata
           media={mediaData}
