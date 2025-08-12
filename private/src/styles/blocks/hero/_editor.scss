@@ -31,3 +31,9 @@
 .wp-block-amnesty-core-hero .block-editor-url-input__button-modal {
   position: absolute;
 }
+
+[data-type="amnesty-core/hero"].alignleft,
+[data-type="amnesty-core/hero"].alignright {
+  margin-inline: auto !important;
+  float: unset !important;
+}

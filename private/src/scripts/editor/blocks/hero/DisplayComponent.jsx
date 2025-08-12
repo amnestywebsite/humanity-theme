@@ -8,6 +8,7 @@ import { fetchMediaData } from '../utils';
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl } = wp.components;
 const { useEntityRecord } = wp.coreData;
+const { useSelect } = wp.data;
 const { PostFeaturedImage } = wp.editor;
 const { Fragment, useEffect, useRef, useState } = wp.element;
 const { __ } = wp.i18n;
@@ -33,6 +34,7 @@ const DisplayComponent = (props) => {
   const {
     attributes,
     className,
+    clientId,
     context: { postId, postType },
     setAttributes,
   } = props;
@@ -40,6 +42,10 @@ const DisplayComponent = (props) => {
   const [mediaData, setMediaData] = useState({});
   const videoRef = useRef();
   const object = useEntityRecord('postType', postType, postId);
+  const hasInnerBlocks = useSelect((select) => {
+    const { innerBlocks } = select('core/block-editor').getBlock(clientId);
+    return innerBlocks.length;
+  });
 
   useEffect(() => {
     if (attributes.type !== 'image') {
@@ -65,6 +71,7 @@ const DisplayComponent = (props) => {
   const blockClasses = classnames(className, {
     [`has-${attributes.background}-background`]: attributes.background,
     [`is-aligned-${attributes.align}`]: !!attributes.align,
+    'has-inner-blocks': hasInnerBlocks,
     'has-video': !!attributes.featuredVideoId,
   });
 
@@ -134,43 +141,41 @@ const DisplayComponent = (props) => {
             </video>
           </div>
         )}
-        <div className="container">
-          <div className="hero-contentWrapper">
-            <h1 className="hero-title">
-              <RichText
-                tagName="span"
-                placeholder={/* translators: [admin] */ __('Hero Title', 'amnesty')}
-                value={attributes.title}
-                onChange={(title) => setAttributes({ title })}
-                format="string"
-              />
-            </h1>
+        <div className="hero-contentWrapper">
+          <h1 className="hero-title">
             <RichText
-              tagName="p"
-              className="hero-content"
-              placeholder={/* translators: [admin] */ __('Hero Content', 'amnesty')}
-              value={attributes.content}
-              onChange={(content) => setAttributes({ content })}
+              tagName="span"
+              placeholder={/* translators: [admin] */ __('Hero Title', 'amnesty')}
+              value={attributes.title}
+              onChange={(title) => setAttributes({ title })}
               format="string"
             />
-            <div className="hero-cta">
-              <div className="btn btn--large">
-                <RichText
-                  tagName="span"
-                  placeholder={/* translators: [admin] */ __('Call to action', 'amnesty')}
-                  value={attributes.ctaText}
-                  onChange={(ctaText) => setAttributes({ ctaText })}
-                  format="string"
-                />
-                <URLInputButton
-                  url={attributes.ctaLink}
-                  onChange={(ctaLink) => setAttributes({ ctaLink })}
-                />
-              </div>
+          </h1>
+          <RichText
+            tagName="p"
+            className="hero-content"
+            placeholder={/* translators: [admin] */ __('Hero Content', 'amnesty')}
+            value={attributes.content}
+            onChange={(content) => setAttributes({ content })}
+            format="string"
+          />
+          <div className="hero-cta">
+            <div className="btn btn--large">
+              <RichText
+                tagName="span"
+                placeholder={/* translators: [admin] */ __('Call to action', 'amnesty')}
+                value={attributes.ctaText}
+                onChange={(ctaText) => setAttributes({ ctaText })}
+                format="string"
+              />
+              <URLInputButton
+                url={attributes.ctaLink}
+                onChange={(ctaLink) => setAttributes({ ctaLink })}
+              />
             </div>
-            <InnerBlocks orientation="horizontal" />
           </div>
         </div>
+        <InnerBlocks orientation="horizontal" />
         <MediaMetadata
           media={mediaData}
           showMediaCaption={showMediaCaption}
