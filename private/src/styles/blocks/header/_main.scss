@@ -201,14 +201,6 @@
   line-height: 1.6;
 }
 
-.page-heroAlignment--center .container .hero-content.has-donation-block {
-  align-items: center;
-
-  @include mq("md-small") {
-    align-items: flex-start;
-  }
-}
-
 .page-heroAlignment--center .container .hero-content .page-heroTitle {
   text-align: center;
 }
@@ -226,14 +218,6 @@
 
   @include mq("md-small") {
     text-align: end;
-  }
-}
-
-.page-heroAlignment--center .container .hero-content.has-donation-block .page-heroTitle {
-  text-align: center;
-
-  @include mq("md-small") {
-    text-align: left;
   }
 }
 
