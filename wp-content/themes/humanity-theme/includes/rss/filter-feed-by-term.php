@@ -31,7 +31,7 @@ if ( ! function_exists( 'amnesty_add_taxonomy_filters_to_rss' ) ) {
 	 *
 	 * @package Amnesty\RSS
 	 *
-	 * @param WP_Query $query the query to filter
+	 * @param WP_Query $query The query to filter
 	 *
 	 * @return void
 	 */

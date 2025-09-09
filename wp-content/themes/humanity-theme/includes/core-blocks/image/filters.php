@@ -8,8 +8,8 @@ if ( ! function_exists( 'amnesty_add_image_metadata_to_image_block' ) ) {
 	/**
 	 * Add image metadata to the core image block
 	 *
-	 * @param string $content the block content
-	 * @param array  $block   the parsed block
+	 * @param string $content The block content
+	 * @param array  $block   The parsed block
 	 *
 	 * @package Amnesty\CoreBlocks
 	 *

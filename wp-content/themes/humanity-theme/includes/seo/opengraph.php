@@ -6,11 +6,12 @@ use Yoast\WP\SEO\Values\Open_Graph\Images;
 
 if ( ! function_exists( 'amnesty_yoast_opengraph_mgm_image' ) ) {
 	/**
-	 * Add an opengraph image when available if the site is running Multisite Global Media
+	 * Add an opengraph image when available
+	 * if the site is running Multisite Global Media
 	 *
 	 * @package Amnesty\Plugins\Yoast
 	 *
-	 * @param \Yoast\WP\SEO\Values\Open_Graph\Images $images the image container object
+	 * @param \Yoast\WP\SEO\Values\Open_Graph\Images $images The image container object
 	 *
 	 * @return null
 	 */

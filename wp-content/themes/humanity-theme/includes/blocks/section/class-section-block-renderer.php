@@ -14,8 +14,8 @@ if ( ! function_exists( '\Amnesty\Blocks\amnesty_render_section_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
-	 * @param string              $content    the innerblocks content
+	 * @param array<string,mixed> $attributes The block attributes
+	 * @param string              $content    The innerblocks content
 	 *
 	 * @return string
 	 */
@@ -63,8 +63,8 @@ class Section_Block_Renderer {
 	/**
 	 * Constructor
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
-	 * @param string              $content    the inner blocks HTML
+	 * @param array<string,mixed> $attributes The block attributes
+	 * @param string              $content    The inner blocks HTML
 	 */
 	public function __construct( array $attributes, string $content = '' ) {
 		$this->attributes = wp_parse_args(
@@ -240,4 +240,5 @@ class Section_Block_Renderer {
 	protected function close_section() {
 		print '</section>';
 	}
+
 }

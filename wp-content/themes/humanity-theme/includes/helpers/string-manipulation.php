@@ -8,11 +8,11 @@ if ( ! function_exists( 'pascal' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $the_string the string to texturise
+	 * @param string $the_string The string to texturise
 	 *
 	 * @return string
 	 */
-	function pascal( $the_string = '' ) {
+	function pascal( string $the_string = '' ) {
 		$the_string = preg_replace( '/[\'"]/', '', $the_string );
 		$the_string = preg_replace( '/[^a-zA-Z0-9]+/', ' ', $the_string );
 		return preg_replace( '/\s+/', '', ucwords( $the_string ) );
@@ -25,11 +25,11 @@ if ( ! function_exists( 'camel' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $the_string the string to texturise
+	 * @param string $the_string The string to texturise
 	 *
 	 * @return string
 	 */
-	function camel( $the_string = '' ) {
+	function camel( string $the_string = '' ) {
 		return lcfirst( pascal( $the_string ) );
 	}
 }
@@ -40,11 +40,11 @@ if ( ! function_exists( 'sentence' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $the_string the string to texturise
+	 * @param string $the_string The string to texturise
 	 *
 	 * @return string
 	 */
-	function sentence( $the_string = '' ) {
+	function sentence( string $the_string = '' ) {
 		return preg_replace( '/([a-z])([A-Z])/', '$1 $2', pascal( $the_string ) );
 	}
 }
@@ -58,11 +58,11 @@ if ( ! function_exists( 'format_for_aria_label' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $the_string the string to normalise
+	 * @param string $the_string The string to normalise
 	 *
 	 * @return string
 	 */
-	function format_for_aria_label( $the_string = '' ) {
+	function format_for_aria_label( string $the_string = '' ) {
 		return ucwords( strtolower( normalize_whitespace( wp_strip_all_tags( $the_string ) ) ) );
 	}
 }
@@ -73,11 +73,11 @@ if ( ! function_exists( 'spaceless' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param callable $callback output buffer callback
+	 * @param callable|null $callback Output buffer callback
 	 *
 	 * @return void
 	 */
-	function spaceless( $callback = null ) {
+	function spaceless( ?callable $callback = null ) {
 		ob_start( $callback );
 	}
 }
@@ -89,11 +89,11 @@ if ( ! function_exists( 'endspaceless' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param bool $output whether to echo or return
+	 * @param bool $output Whether to echo or return
 	 *
 	 * @return string|void
 	 */
-	function endspaceless( $output = true ) {
+	function endspaceless( bool $output = true ) {
 		$data = trim( preg_replace( '~>[\b\s]*~', '>', ob_get_clean() ) );
 
 		if ( ! $output ) {
@@ -116,12 +116,12 @@ if ( ! function_exists( 'aria_selected' ) ) {
 	 * @since 1.0.0
 	 *
 	 * @param mixed $selected One of the values to compare
-	 * @param mixed $current  (true) The other value to compare if not just true
+	 * @param mixed $current  The other value to compare if not just true. Default true
 	 * @param bool  $output   Whether to echo or just return the string
 	 *
 	 * @return string html attribute
 	 */
-	function aria_selected( $selected, $current = true, $output = true ) {
+	function aria_selected( mixed $selected, mixed $current = true, bool $output = true ) {
 		$result = 'aria-selected="false"';
 
 		if ( (string) $selected === (string) $current ) {
@@ -143,7 +143,7 @@ if ( ! function_exists( 'amnesty_rand_str' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int $length the number of bytes to return
+	 * @param int $length The number of bytes to return
 	 *
 	 * @return string
 	 */
@@ -152,9 +152,8 @@ if ( ! function_exists( 'amnesty_rand_str' ) ) {
 
 		$prefix = $chars[ wp_rand( 0, mb_strlen( $chars, 'UTF-8' ) - 1 ) ];
 		$random = bin2hex( random_bytes( $length * 2 ) );
-		$string = mb_substr( $prefix . $random, 0, $length, 'UTF-8' );
 
-		return $string;
+		return mb_substr( $prefix . $random, 0, $length, 'UTF-8' );
 	}
 }
 
@@ -164,11 +163,11 @@ if ( ! function_exists( 'amnesty_hash_id' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param mixed $data the data to hash
+	 * @param mixed $data The data to hash
 	 *
 	 * @return string
 	 */
-	function amnesty_hash_id( $data = '' ): string {
+	function amnesty_hash_id( mixed $data = '' ): string {
 		$hash = md5( (string) $data );
 
 		preg_match( '/[a-zA-z]/', $hash, $index );
@@ -185,7 +184,7 @@ if ( ! function_exists( 'strip_query_string' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $url the URI to strip
+	 * @param string $url The URI to strip
 	 *
 	 * @return string
 	 */
@@ -201,7 +200,7 @@ if ( ! function_exists( 'query_string_to_array' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $query the query string
+	 * @param string $query The query string
 	 *
 	 * @return array
 	 */
@@ -222,7 +221,7 @@ if ( ! function_exists( 'remove_arabic_diacritics' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $the_string the text to strip
+	 * @param string $the_string The text to strip
 	 *
 	 * @return string
 	 */
@@ -248,7 +247,7 @@ if ( ! function_exists( 'remove_arabic_the' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $the_string the string to manipulate
+	 * @param string $the_string The string to manipulate
 	 *
 	 * @return string
 	 */

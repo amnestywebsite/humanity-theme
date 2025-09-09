@@ -6,7 +6,7 @@ if ( ! function_exists( 'get_first_paragraph' ) ) {
 	 *
 	 * @package Amnesty\Search
 	 *
-	 * @param string $html the html to search
+	 * @param string $html The html to search
 	 *
 	 * @return string
 	 */
@@ -75,8 +75,8 @@ if ( ! function_exists( 'amnesty_fallback_excerpt' ) ) {
 	 *
 	 * @package Amnesty\Search
 	 *
-	 * @param string  $excerpt the existing excerpt
-	 * @param WP_Post $post    the post object
+	 * @param string  $excerpt The existing excerpt
+	 * @param WP_Post $post    The post object
 	 *
 	 * @return string
 	 */

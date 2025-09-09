@@ -8,7 +8,9 @@ if ( ! function_exists( 'amnesty_jsonld_search_url' ) ) {
 	 *
 	 * @package Amnesty\Search
 	 *
-	 * @param string $original the original search URL
+	 * @param string $original The original search URL
+	 *
+	 * @return string
 	 */
 	function amnesty_jsonld_search_url( string $original = '' ): string {
 		if ( false === apply_filters( 'amnesty_prettify_search_url', true ) ) {
@@ -72,8 +74,8 @@ if ( ! function_exists( 'amnesty_maybe_override_search_uri' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string      $url  the generated URI
-	 * @param string|null $path the requested path
+	 * @param string      $url  The generated URI
+	 * @param string|null $path The requested path
 	 *
 	 * @return string
 	 */

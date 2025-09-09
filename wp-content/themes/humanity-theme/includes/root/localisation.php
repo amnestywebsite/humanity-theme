@@ -11,11 +11,11 @@ if ( ! function_exists( 'amnesty_body_class_text_direction' ) ) {
 	 *
 	 * @package Amnesty\L10n
 	 *
-	 * @param string|array $classes existing body classes.
+	 * @param string|array $classes Existing body classes.
 	 *
 	 * @return string|array
 	 */
-	function amnesty_body_class_text_direction( $classes = null ) {
+	function amnesty_body_class_text_direction( array|string|null $classes = null ) {
 		if ( is_rtl() ) {
 			return $classes;
 		}
@@ -39,11 +39,11 @@ if ( ! function_exists( 'amnesty_locale_datetime' ) ) {
 	 *
 	 * @package Amnesty\L10n
 	 *
-	 * @param string $epoch the epoch timestamp to convert
+	 * @param string $epoch The epoch timestamp to convert
 	 *
 	 * @return string
 	 */
-	function amnesty_locale_datetime( $epoch = '' ) {
+	function amnesty_locale_datetime( string $epoch = '' ) {
 		$date_fmt = get_option( 'date_format' );
 		$time_fmt = get_option( 'time_format' );
 
@@ -64,11 +64,11 @@ if ( ! function_exists( 'amnesty_locale_date' ) ) {
 	 *
 	 * @package Amnesty\L10n
 	 *
-	 * @param string $epoch the epoch timestamp to convert
+	 * @param string $epoch The epoch timestamp to convert
 	 *
 	 * @return string
 	 */
-	function amnesty_locale_date( $epoch = '' ) {
+	function amnesty_locale_date( string $epoch = '' ) {
 		$date_fmt = get_option( 'date_format' );
 
 		try {
@@ -95,7 +95,8 @@ if ( ! function_exists( 'amnesty_locale_date' ) ) {
 				IntlDateFormatter::FULL,
 				wp_timezone(),
 				IntlDateFormatter::GREGORIAN,
-				'LLLL' // full month name
+				// full month name
+				'LLLL',
 			);
 		}
 

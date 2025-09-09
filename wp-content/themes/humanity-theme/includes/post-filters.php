@@ -8,15 +8,15 @@ if ( ! function_exists( 'trim_text' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $input       text to trim.
-	 * @param int    $length      in characters to trim to.
-	 * @param bool   $ellipses    if ellipses (...) are to be added.
-	 * @param bool   $strip_html  if html tags are to be stripped.
-	 * @param bool   $strip_style if css style are to be stripped.
+	 * @param string $input       Text to trim.
+	 * @param int    $length      In characters to trim to.
+	 * @param bool   $ellipses    If ellipses (...) are to be added.
+	 * @param bool   $strip_html  If html tags are to be stripped.
+	 * @param bool   $strip_style If css style are to be stripped.
 	 *
 	 * @return string
 	 */
-	function trim_text( $input, $length, $ellipses = true, $strip_html = true, $strip_style = true ) {
+	function trim_text( string $input, int $length, bool $ellipses = true, bool $strip_html = true, bool $strip_style = true ): string {
 		if ( $strip_html ) {
 			$input = wp_strip_all_tags( $input );
 		}
@@ -52,14 +52,13 @@ if ( ! function_exists( 'remove_empty_p' ) ) {
 	 * Remove empty p tags from WordPress posts.
 	 *
 	 * @package Amnesty
+	 * @author  https://gist.github.com/ninnypants/1668216
 	 *
-	 * @author https://gist.github.com/ninnypants/1668216
-	 *
-	 * @param string - $content - Current content.
+	 * @param string $content Current content.
 	 *
 	 * @return string
 	 */
-	function remove_empty_p( $content = '' ) {
+	function remove_empty_p( string $content = '' ): string {
 		$content = preg_replace(
 			[
 				'#<p>\s*<(div|aside|section|article|header|footer)#',
@@ -95,7 +94,7 @@ if ( ! function_exists( 'remove_duplicate_image' ) ) {
 	 *
 	 * @return string
 	 */
-	function remove_duplicate_image( $post_content ) {
+	function remove_duplicate_image( string $post_content ): string {
 		$featured_image_id = get_post_thumbnail_id();
 		$featured_image    = wp_get_attachment_image_url( $featured_image_id, 'full' );
 
@@ -121,7 +120,9 @@ add_filter( 'the_content', 'remove_duplicate_image', 20, 1 );
 
 /**
  * Remove empty secctions from the content.
- * This is to adjust for user-error if empty section gutenblocks are added to the content.
+ *
+ * This is to adjust for user-error if empty section gutenblocks
+ * are added to the content.
  */
 add_filter(
 	'the_content',

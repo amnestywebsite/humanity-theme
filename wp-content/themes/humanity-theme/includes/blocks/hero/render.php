@@ -8,8 +8,8 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 	/**
 	 * Render a hero block
 	 *
-	 * @param array  $attributes the block attributes
-	 * @param string $content    the block inner content
+	 * @param array  $attributes The block attributes
+	 * @param string $content    The block inner content
 	 *
 	 * @package Amnesty\Blocks
 	 *
@@ -32,7 +32,8 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 				'featuredVideoId'  => 0,
 				'hideImageCaption' => true,
 				'hideImageCredit'  => false,
-				'imageID'          => 0, // this overrides the featured image
+				// this overrides the featured image
+				'imageID'          => 0,
 				'title'            => '',
 				'type'             => 'image',
 			]
@@ -61,8 +62,10 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 		// Build output for the image/video caption and credit
 		// $media_meta_output used in hero.php view
 		// Reverse the boolean value of the arguments to match the value of the arguments in the function
+		// phpcs:disable SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in view
 		$media_meta_output  = $image->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'], 'image' );
 		$media_meta_output .= $video->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'], 'video' );
+		// phpcs:enable SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable
 
 		spaceless();
 		require realpath( __DIR__ . '/views/hero.php' );

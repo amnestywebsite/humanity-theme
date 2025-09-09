@@ -8,11 +8,11 @@ if ( ! function_exists( 'modify_user_contact_methods' ) ) {
 	 *
 	 * @package Amnesty\Users
 	 *
-	 * @param array $user_contact list of contact methods
+	 * @param array $user_contact List of contact methods
 	 *
 	 * @return array
 	 */
-	function modify_user_contact_methods( $user_contact ) {
+	function modify_user_contact_methods( array $user_contact ) {
 		/* translators: [admin] user settings */
 		$user_contact['twitter'] = __( 'Twitter Username (without the @)', 'amnesty' );
 

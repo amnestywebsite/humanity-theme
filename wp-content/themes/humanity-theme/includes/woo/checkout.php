@@ -8,12 +8,12 @@ if ( ! function_exists( 'amnesty_modify_order_received_title' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param string $title the original title
-	 * @param mixed  $id    the object id
+	 * @param string $title The original title
+	 * @param mixed  $id    The object id
 	 *
 	 * @return string
 	 */
-	function amnesty_modify_order_received_title( string $title, $id = 0 ): string {
+	function amnesty_modify_order_received_title( string $title, mixed $id = 0 ): string {
 		if ( ! function_exists( 'is_order_received_page' ) ) {
 			return $title;
 		}
@@ -37,7 +37,7 @@ if ( ! function_exists( 'amnesty_filter_payment_gateways' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param array $gateways the payment gateway list
+	 * @param array $gateways The payment gateway list
 	 *
 	 * @return array
 	 */
@@ -57,7 +57,7 @@ if ( ! function_exists( 'amnesty_filter_payment_gateways' ) ) {
 		$cart_items   = WC()->cart->get_cart_contents();
 		$subscription = false;
 
-		foreach ( $cart_items as $key => $value ) {
+		foreach ( $cart_items as $value ) {
 			if ( ! amnesty_product_is_subscription( $value['product_id'] ) ) {
 				continue;
 			}

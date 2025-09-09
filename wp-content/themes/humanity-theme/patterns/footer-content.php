@@ -37,7 +37,7 @@ if ( $copyright ) {
 <!-- wp:columns -->
 <div class="wp-block-columns">
 <?php if ( isset( $footer_menu_items['top_level'] ) ) : ?>
-	<?php foreach ( $footer_menu_items['top_level'] as $_id => $item ) : ?>
+	<?php foreach ( $footer_menu_items['top_level'] as $item ) : ?>
 	<!-- wp:column -->
 	<div class="wp-block-column">
 		<!-- wp:heading {"level":4,"className":"linkGroup-title"} -->
@@ -99,7 +99,7 @@ if ( $copyright ) {
 	<div class="wp-block-column">
 		<!-- wp:list {"className":"amnesty-policy-links"} -->
 		<ul class="amnesty-policy-links">
-		<?php foreach ( $footer_policy_items['top_level'] as $_id => $item ) : ?>
+		<?php foreach ( $footer_policy_items['top_level'] as $item ) : ?>
 			<!-- wp:list-item -->
 			<li><a href="<?php echo esc_url( $item->url ?: get_permalink( $item->db_id ) ); ?>"><?php echo esc_html( $item->title ); ?></a></li>
 			<!-- /wp:list-item -->

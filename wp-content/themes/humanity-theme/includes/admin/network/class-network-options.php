@@ -46,7 +46,7 @@ class Network_Options {
 				'admin_menu_hook' => is_multisite() ? 'network_admin_menu' : 'admin_menu',
 				'tab_group'       => 'amnesty_network_options',
 				'display_cb'      => 'amnesty_network_options_display_with_tabs',
-			] 
+			]
 		);
 
 		// couldn't register CMB2 box
@@ -74,7 +74,7 @@ class Network_Options {
 				'desc'       => __( 'Manage available features', 'amnesty' ),
 				'type'       => 'group',
 				'repeatable' => false,
-			] 
+			]
 		);
 
 		$this->register_feature_languages( $features );
@@ -88,7 +88,7 @@ class Network_Options {
 	/**
 	 * Register the feature-specific options for languages
 	 *
-	 * @param string $features the features group ID
+	 * @param string $features The features group ID
 	 *
 	 * @return void
 	 */
@@ -101,7 +101,7 @@ class Network_Options {
 				'name'       => __( 'Dedicated language selector', 'amnesty' ),
 				'type'       => 'checkbox',
 				'default_cb' => true,
-			] 
+			]
 		);
 
 		$this->options->add_group_field(
@@ -115,14 +115,14 @@ class Network_Options {
 				'type'    => 'checkbox',
 				// theme companion is .org-specific
 				'default' => false,
-			] 
+			]
 		);
 	}
 
 	/**
 	 * Register the feature-specific options for pop-ins
 	 *
-	 * @param string $features the features group ID
+	 * @param string $features The features group ID
 	 *
 	 * @return void
 	 */
@@ -135,14 +135,14 @@ class Network_Options {
 				'name'    => __( 'Pop-in', 'amnesty' ),
 				'type'    => 'checkbox',
 				'default' => false,
-			] 
+			]
 		);
 	}
 
 	/**
 	 * Register the feature-specific options for post filters
 	 *
-	 * @param string $features the features group ID
+	 * @param string $features The features group ID
 	 *
 	 * @return void
 	 */
@@ -161,14 +161,14 @@ class Network_Options {
 					/* translators: [admin] */
 					'taxonomies' => __( 'Taxonomies & Terms', 'amnesty' ),
 				],
-			] 
+			]
 		);
 	}
 
 	/**
 	 * Register the feature-specific options for post single
 	 *
-	 * @param string $features the features group ID
+	 * @param string $features The features group ID
 	 *
 	 * @return void
 	 */
@@ -182,7 +182,7 @@ class Network_Options {
 				/* translators: [admin] */
 				'desc' => __( 'Enable the Related Content area on the post single template', 'amnesty' ),
 				'type' => 'checkbox',
-			] 
+			]
 		);
 	}
 
@@ -201,7 +201,7 @@ class Network_Options {
 				'desc'       => __( 'Manage available post types', 'amnesty' ),
 				'type'       => 'group',
 				'repeatable' => false,
-			] 
+			]
 		);
 
 		do_action( 'amnesty_register_post_type', $this->options, $post_types );
@@ -222,7 +222,7 @@ class Network_Options {
 				'desc'       => __( 'Manage available taxonomies', 'amnesty' ),
 				'type'       => 'group',
 				'repeatable' => false,
-			] 
+			]
 		);
 
 		do_action( 'amnesty_register_taxonomy', $this->options, $taxonomies );

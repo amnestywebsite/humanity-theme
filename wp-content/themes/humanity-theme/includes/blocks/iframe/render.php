@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_render_iframe_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes the block attributes
+	 * @param array $attributes The block attributes
 	 *
 	 * @return string
 	 */
@@ -22,7 +22,7 @@ if ( ! function_exists( 'amnesty_render_iframe_block' ) ) {
 				'minHeight' => false,
 				'alignment' => false,
 				'title'     => '',
-			] 
+			]
 		);
 
 		$embed_url = $atts['embedUrl'];
@@ -48,6 +48,7 @@ if ( ! function_exists( 'amnesty_render_iframe_block' ) ) {
 		}
 
 		if ( $min_height ) {
+			// phpcs:ignore SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in view
 			$style .= sprintf( 'min-height: %dpx;', $min_height );
 		}
 

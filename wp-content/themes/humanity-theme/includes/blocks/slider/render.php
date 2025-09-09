@@ -24,7 +24,7 @@ if ( ! function_exists( 'amnesty_render_slider_tabs' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $slides the list of slides in the slider
+	 * @param array $slides The list of slides in the slider
 	 *
 	 * @return void
 	 */
@@ -56,9 +56,9 @@ if ( ! function_exists( 'amnesty_render_slider_item' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array   $data - slide data.
-	 * @param string  $slider_id - slide id.
-	 * @param boolean $has_content - if content is available.
+	 * @param array   $data        Slide data.
+	 * @param string  $slider_id   Slide id.
+	 * @param boolean $has_content If content is available.
 	 *
 	 * @return void
 	 *
@@ -80,9 +80,10 @@ if ( ! function_exists( 'amnesty_render_slider_item' ) ) {
 				'imageId'          => 0,
 				'subheading'       => '',
 				'timelineContent'  => '',
-			] 
+			]
 		);
 
+		// phpcs:disable SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in view
 		$id               = $data['id'];
 		$alignment        = $data['alignment'];
 		$background       = $data['background'];
@@ -97,6 +98,7 @@ if ( ! function_exists( 'amnesty_render_slider_item' ) ) {
 		$show_toggle      = false;
 		$has_inner        = false;
 		$image_id         = absint( $data['imageId'] );
+		// phpcs:enable SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable
 
 		if ( '' !== $cta_text && '' !== $cta_link ) {
 			$show_cta_btn = true;
@@ -120,8 +122,8 @@ if ( ! function_exists( 'amnesty_render_slider_styles' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array  $attributes the block attributes
-	 * @param string $slider_id  the block identifier
+	 * @param array  $attributes The block attributes
+	 * @param string $slider_id  The block identifier
 	 *
 	 * @return void
 	 */
@@ -162,7 +164,7 @@ if ( ! function_exists( 'amnesty_render_block_slider' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes the block attributes
+	 * @param array $attributes The block attributes
 	 *
 	 * @return string
 	 */
@@ -177,7 +179,7 @@ if ( ! function_exists( 'amnesty_render_block_slider' ) ) {
 				'sliderTitle'          => '',
 				'slides'               => [],
 				'timelineCaptionStyle' => '',
-			] 
+			]
 		);
 
 		$slider_id     = $attributes['sliderId'];
@@ -211,8 +213,10 @@ if ( ! function_exists( 'amnesty_render_block_slider' ) ) {
 			amnesty_render_slider_tabs( $slides );
 		}
 
-		print '</div>'; // /.slides-container
-		print '</div>';// /.slider
+		// /.slides-container
+		print '</div>';
+		// /.slider
+		print '</div>';
 
 		return ob_get_clean();
 	}

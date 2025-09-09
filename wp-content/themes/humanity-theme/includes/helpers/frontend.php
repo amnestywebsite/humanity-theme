@@ -8,13 +8,13 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array $params {
-	 *     @type string $name    the identifier for the select
-	 *     @type string $label   the label shown for the select
-	 *     @type bool   $is_form whether to output a form or a div
-	 *     @type string $type    type of form. used when $is_form = true. accepts 'nav', 'filter'
-	 *     @type string $active  the pre-selected option's value
-	 *     @type array  $options the list of options in value=>label pairs
+	 * @param array $params Can contain: {
+	 *     @type string $name    The identifier for the select
+	 *     @type string $label   The label shown for the select
+	 *     @type bool   $is_form Whether to output a form or a div
+	 *     @type string $type    Type of form. used when $is_form = true. accepts 'nav', 'filter'
+	 *     @type string $active  The pre-selected option's value
+	 *     @type array  $options The list of options in value=>label pairs
 	 * }
 	 *
 	 * @return void
@@ -85,12 +85,16 @@ if ( ! function_exists( 'amnesty_get_query_var' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $variable the variable to retrieve
+	 * @param string $variable The variable to retrieve
 	 *
 	 * @return mixed
 	 */
 	function amnesty_get_query_var( string $variable ) {
-		/** Global WP object @var \WP $wp */
+		/**
+		 * Global WP object
+		 *
+		 * @var \WP $wp
+		 */
 		global $wp;
 
 		return get_query_var( $variable ) ?: ( $wp->query_vars[ $variable ] ?? '' );
@@ -103,7 +107,7 @@ if ( ! function_exists( 'amnesty_render_blocks' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array<int,array<string,mixed>> $blocks the blocks to render
+	 * @param array<int,array<string,mixed>> $blocks The blocks to render
 	 *
 	 * @return string
 	 */

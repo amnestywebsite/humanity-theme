@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_term_list_block_get_terms' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param string $taxonomy the taxonomy name
+	 * @param string $taxonomy The taxonomy name
 	 *
 	 * @return array<int,WP_Term>
 	 */
@@ -44,7 +44,7 @@ if ( ! function_exists( 'amnesty_render_term_list_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes the block's attributes
+	 * @param array $attributes The block's attributes
 	 *
 	 * @return string
 	 */
@@ -73,7 +73,7 @@ if ( ! function_exists( 'amnesty_render_term_list_block' ) ) {
 
 		$groups = group_terms_by_initial_ascii_letter( $terms );
 
-		foreach ( $groups as $key => &$terms ) {
+		foreach ( $groups as &$terms ) {
 			usort(
 				$terms,
 				fn ( WP_Term $a, WP_Term $b ): int =>
@@ -82,7 +82,8 @@ if ( ! function_exists( 'amnesty_render_term_list_block' ) ) {
 		}
 
 		$letters = array_keys( $groups );
-		$first   = $letters[0]; // used in view
+		// phpcs:ignore SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in view
+		$first = $letters[0];
 
 		spaceless();
 		require realpath( __DIR__ . '/views/term-list.php' );

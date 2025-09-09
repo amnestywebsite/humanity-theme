@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_overload_core_post_content_render' ) ) {
 	/**
 	 * Overrides the render method of core/post-content
 	 *
-	 * @param array<string,mixed> $settings the block settings
+	 * @param array<string,mixed> $settings The block settings
 	 *
 	 * @return array<string,mixed>
 	 */

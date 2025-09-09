@@ -18,7 +18,7 @@ if ( ! function_exists( 'amnesty_limit_location_taxonomy_archive_posts_per_page'
 	 *
 	 * @package Amnesty\Filters\WPQuery
 	 *
-	 * @param WP_Query $query the query object
+	 * @param WP_Query $query The query object
 	 *
 	 * @return void
 	 */

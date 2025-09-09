@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_core_register_category' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $categories - Current Gutenberg categories.
+	 * @param array $categories Current Gutenberg categories.
 	 *
 	 * @return array
 	 */
@@ -23,7 +23,7 @@ if ( ! function_exists( 'amnesty_core_register_category' ) ) {
 					/* translators: [admin] */
 					'title' => __( 'Amnesty Core', 'amnesty' ),
 				],
-			] 
+			]
 		);
 
 		return $categories;

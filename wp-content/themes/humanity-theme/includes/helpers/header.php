@@ -35,7 +35,7 @@ if ( ! function_exists( 'amnesty_get_header_style' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int $object_id the current object ID
+	 * @param int $object_id The current object ID
 	 *
 	 * @return string
 	 */
@@ -65,8 +65,8 @@ if ( ! function_exists( 'count_top_level_menu_items' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $location the menu location
-	 * @param string $menu     the menu name
+	 * @param string $location The menu location
+	 * @param string $menu     The menu name
 	 *
 	 * @return int
 	 */

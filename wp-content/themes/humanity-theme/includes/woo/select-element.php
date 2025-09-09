@@ -18,11 +18,11 @@ if ( ! function_exists( 'amnesty_wrap_select_html' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param string $html the html to wrap
+	 * @param string $html The html to wrap
 	 *
 	 * @return string
 	 */
-	function amnesty_wrap_select_html( $html = '' ) {
+	function amnesty_wrap_select_html( string $html = '' ) {
 		if ( false === strpos( $html, '<select' ) ) {
 			return $html;
 		}

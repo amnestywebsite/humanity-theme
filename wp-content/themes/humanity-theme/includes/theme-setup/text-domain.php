@@ -42,8 +42,8 @@ if ( ! function_exists( 'amnesty_mofile_domain_prefix' ) ) {
 	 *
 	 * @package Amnesty\ThemeSetup
 	 *
-	 * @param string $mofile the path to the mofile to load
-	 * @param string $domain the textdomain being loaded
+	 * @param string $mofile The path to the mofile to load
+	 * @param string $domain The textdomain being loaded
 	 *
 	 * @return string
 	 */
@@ -64,7 +64,7 @@ if ( ! function_exists( 'register_theme_as_translatable' ) ) {
 	 *
 	 * @see https://github.com/amnestywebsite/humanity-translation-management
 	 *
-	 * @param array<int,array<string,string>> $packages existing packages
+	 * @param array<int,array<string,string>> $packages Existing packages
 	 *
 	 * @return array<int,array<string,string>>
 	 */

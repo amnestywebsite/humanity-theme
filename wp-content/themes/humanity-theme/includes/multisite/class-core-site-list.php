@@ -23,21 +23,21 @@ class Core_Site_List {
 	/**
 	 * List of sites on network
 	 *
-	 * @var array
+	 * @var array<int,\stdClass>
 	 */
 	protected $sites = [];
 
 	/**
 	 * The current site
 	 *
-	 * @var integer
+	 * @var int
 	 */
 	protected $current = 1;
 
 	/**
 	 * Construct the instance variables
 	 *
-	 * @param bool $public_only whether to only return public sites
+	 * @param bool $public_only Whether to only return public sites
 	 */
 	public function __construct( bool $public_only = true ) {
 		$this->mo = new MO();
@@ -54,7 +54,7 @@ class Core_Site_List {
 	/**
 	 * Retrieve required info for rendering the language selector
 	 *
-	 * @return array
+	 * @return array<int,\stdClass>
 	 */
 	public function get_sites() {
 		$sites = [];
@@ -85,22 +85,22 @@ class Core_Site_List {
 	/**
 	 * Retrieve the current locale
 	 *
-	 * @param int $blog_id the blog context
+	 * @param int $blog_id The blog context
 	 *
 	 * @return string
 	 */
-	protected function get_locale( $blog_id = 0 ) {
+	protected function get_locale( int $blog_id = 0 ) {
 		return get_blog_option( $blog_id, 'WPLANG' ) ?: get_site_option( 'WPLANG' ) ?: $GLOBALS['wp_local_package'] ?: 'en_GB';
 	}
 
 	/**
 	 * Retrieve text direction for specified language.
 	 *
-	 * @param int $blog_id the blog context
+	 * @param int $blog_id The blog context
 	 *
 	 * @return string
 	 */
-	protected function get_direction( $blog_id = 0 ) {
+	protected function get_direction( int $blog_id = 0 ) {
 		$direction = get_blog_option( $blog_id, 'amnesty_text_direction' );
 		if ( $direction && in_array( $direction, [ 'ltr', 'rtl' ], true ) ) {
 			return $direction;

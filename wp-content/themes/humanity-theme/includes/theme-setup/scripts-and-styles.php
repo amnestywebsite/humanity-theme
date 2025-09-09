@@ -13,7 +13,7 @@ if ( ! function_exists( 'amnesty_asset_uri' ) ) {
 	 *
 	 * @return string
 	 */
-	function amnesty_asset_uri( $folder ) {
+	function amnesty_asset_uri( string $folder ) {
 		return get_template_directory_uri() . '/assets/' . $folder;
 	}
 }
@@ -168,7 +168,8 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 			'defaultSidebars' => [
 				'post'        => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar' ) ),
 				'page'        => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar_page' ) ),
-				'wp_template' => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar' ) ), // for the site editor
+				// for the site editor
+				'wp_template' => array_map( 'absint', (array) amnesty_get_option( '_default_sidebar' ) ),
 			],
 		];
 

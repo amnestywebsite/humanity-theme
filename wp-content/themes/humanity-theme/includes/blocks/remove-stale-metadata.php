@@ -8,12 +8,12 @@ if ( ! function_exists( 'amnesty_remove_hero_meta' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param integer $post_id Current post id.
+	 * @param int     $post_id Current post id.
 	 * @param WP_Post $post    Current post object.
 	 *
 	 * @return void
 	 */
-	function amnesty_remove_hero_meta( $post_id, $post ) {
+	function amnesty_remove_hero_meta( int $post_id, WP_Post $post ) {
 		$block_identifier = '<!-- wp:amnesty-core/block-hero';
 
 		if ( strpos( $post->post_content, $block_identifier ) !== false ) {

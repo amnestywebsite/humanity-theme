@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_prevent_sticky_posts_counting' ) ) {
 	 *
 	 * @package Amnesty\Filters\WPQuery
 	 *
-	 * @param WP_Query $query the query object
+	 * @param WP_Query $query The query object
 	 *
 	 * @return void
 	 */
@@ -57,8 +57,8 @@ if ( ! function_exists( 'amnesty_prepend_sticky_posts' ) ) {
 	 *
 	 * @package Amnesty\Filters\WPQuery
 	 *
-	 * @param array    $posts the collection of posts
-	 * @param WP_Query $query the query object
+	 * @param array    $posts The collection of posts
+	 * @param WP_Query $query The query object
 	 *
 	 * @return array
 	 */
@@ -97,7 +97,7 @@ if ( ! function_exists( 'amnesty_prepend_sticky_posts' ) ) {
 				'no_found_rows'       => true,
 				'ignore_sticky_posts' => true,
 				'AMNESTY_FILTER'      => __FUNCTION__,
-			] 
+			]
 		);
 
 		// no found stickies

@@ -8,11 +8,11 @@ if ( ! function_exists( 'amnesty_post_has_header' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param mixed $post the post to check
+	 * @param mixed $post The post to check
 	 *
 	 * @return bool
 	 */
-	function amnesty_post_has_header( $post = null ) {
+	function amnesty_post_has_header( mixed $post = null ): bool {
 		$content = get_the_content( null, false, $post );
 
 		return false !== strpos( $content, '<!-- wp:amnesty-core/block-hero' ) &&
@@ -26,11 +26,11 @@ if ( ! function_exists( 'amnesty_find_header_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $blocks the parsed blocks
+	 * @param array $blocks The parsed blocks
 	 *
 	 * @return array
 	 */
-	function amnesty_find_header_block( $blocks = [] ) {
+	function amnesty_find_header_block( array $blocks = [] ): array {
 		return amnesty_find_first_block_of_type( $blocks, 'amnesty-core/block-hero' );
 	}
 }
@@ -41,11 +41,11 @@ if ( ! function_exists( 'amnesty_get_header_data' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param mixed $post the post to get the data for
+	 * @param mixed $post The post to get the data for
 	 *
 	 * @return array
 	 */
-	function amnesty_get_header_data( $post = null ) {
+	function amnesty_get_header_data( mixed $post = null ): array {
 		if ( is_404() || is_search() ) {
 			return [
 				'name'    => '',
@@ -89,7 +89,7 @@ if ( ! function_exists( 'amnesty_get_header_data_from_meta' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param mixed $post the post to get the data for
+	 * @param mixed $post The post to get the data for
 	 *
 	 * @return array
 	 */
@@ -149,9 +149,9 @@ if ( ! function_exists( 'amnesty_remove_header_from_content' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param string|null $content the content string, if applicable
+	 * @param string|null $content The content string, if applicable
 	 *
-	 * @return void
+	 * @return mixed
 	 */
 	function amnesty_remove_header_from_content( ?string $content = null ) {
 		global $post;

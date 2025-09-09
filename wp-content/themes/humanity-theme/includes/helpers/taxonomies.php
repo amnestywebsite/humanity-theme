@@ -11,8 +11,8 @@ if ( ! function_exists( 'amnesty_get_object_taxonomies' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string|array<int,string>|WP_Post $target object or object type name
-	 * @param string                           $output the return type
+	 * @param string|array<int,string>|WP_Post $target Object or object type name
+	 * @param string                           $output The return type
 	 *
 	 * @return array<int,string|WP_Taxonomy>
 	 */
@@ -44,7 +44,7 @@ if ( ! function_exists( 'amnesty_get_prominent_term' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int $post_id the post to retrieve the term for
+	 * @param int $post_id The post to retrieve the term for
 	 *
 	 * @return WP_Term|null
 	 */
@@ -103,9 +103,9 @@ if ( ! function_exists( 'amnesty_get_a_post_term' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int    $post_id  the post id
-	 * @param string $taxonomy the taxonomy, defaults to category
-	 * @param array  $args     any additional args to pass to WP_Term_Query
+	 * @param int    $post_id  The post id
+	 * @param string $taxonomy The taxonomy, defaults to category
+	 * @param array  $args     Any additional args to pass to WP_Term_Query
 	 *
 	 * @return WP_Term|null
 	 */
@@ -131,11 +131,11 @@ if ( ! function_exists( 'amnesty_get_post_terms' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int $post_id the post whose terms are to be retrieved
+	 * @param int $post_id The post whose terms are to be retrieved
 	 *
 	 * @return array
 	 */
-	function amnesty_get_post_terms( $post_id = 0 ) {
+	function amnesty_get_post_terms( int $post_id = 0 ) {
 		$cache_key = md5( sprintf( '%s:%s', __FUNCTION__, $post_id ) );
 		$cached    = wp_cache_get( $cache_key );
 
@@ -184,12 +184,12 @@ if ( ! function_exists( 'get_term_top_most_parent' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int    $term_id  the term to find the elder for
-	 * @param string $taxonomy the taxonomy to which the term belongs
+	 * @param int    $term_id  The term to find the elder for
+	 * @param string $taxonomy The taxonomy to which the term belongs
 	 *
 	 * @return WP_Term
 	 */
-	function get_term_top_most_parent( $term_id, $taxonomy = 'category' ) {
+	function get_term_top_most_parent( int $term_id, string $taxonomy = 'category' ) {
 		// start from the current term
 		$parent = get_term_by( 'id', $term_id, $taxonomy );
 
@@ -209,13 +209,13 @@ if ( ! function_exists( 'determine_if_term_is_parent' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int    $current_id the prospective child term.
-	 * @param int    $parent_id  the prospective parent term.
-	 * @param string $taxonomy   the term taxonomy.
+	 * @param int    $current_id The prospective child term.
+	 * @param int    $parent_id  The prospective parent term.
+	 * @param string $taxonomy   The term taxonomy.
 	 *
 	 * @return bool
 	 */
-	function determine_if_term_is_parent( $current_id, $parent_id, $taxonomy = 'category' ) {
+	function determine_if_term_is_parent( int $current_id, int $parent_id, string $taxonomy = 'category' ) {
 		if ( ! $current_id ) {
 			return false;
 		}
@@ -258,7 +258,7 @@ if ( ! function_exists( 'is_current_category' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $cat the category to check
+	 * @param WP_Term $cat The category to check
 	 *
 	 * @return bool
 	 */
@@ -273,7 +273,7 @@ if ( ! function_exists( 'print_category_option' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $cat the category to print
+	 * @param WP_Term $cat The category to print
 	 *
 	 * @return void
 	 */
@@ -293,7 +293,7 @@ if ( ! function_exists( 'get_term_parent' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $term the child term
+	 * @param WP_Term $term The child term
 	 *
 	 * @return WP_Term
 	 */
@@ -312,7 +312,7 @@ if ( ! function_exists( 'has_term_parent' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $term the term to check
+	 * @param WP_Term $term The term to check
 	 *
 	 * @return bool
 	 */
@@ -327,8 +327,8 @@ if ( ! function_exists( 'amnesty_term_link' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $term          the term to retrieve a link for
-	 * @param string  $fallback_path a fallback path
+	 * @param WP_Term $term          The term to retrieve a link for
+	 * @param string  $fallback_path A fallback path
 	 *
 	 * @return string
 	 */
@@ -350,8 +350,8 @@ if ( ! function_exists( 'amnesty_cross_blog_term_link' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $term         the term to retrieve a link for
-	 * @param bool    $was_switched whether the term was from a different blog
+	 * @param WP_Term $term         The term to retrieve a link for
+	 * @param bool    $was_switched Whether the term was from a different blog
 	 *
 	 * @return string
 	 */
@@ -381,12 +381,7 @@ if ( ! function_exists( 'amnesty_get_locations_by_type' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array $args {
-	 *     @type string  $type        the location type
-	 *     @type WP_Term $term        a term parent
-	 *     @type bool    $show_hidden whether to include "hidden" terms
-	 *     @type array   $get_terms   args for get_terms
-	 * }
+	 * @param array{type:string,term:WP_Term,show_hidden:bool,get_terms:array<mixed>} $args Term query args
 	 *
 	 * @return array
 	 */
@@ -496,11 +491,11 @@ if ( ! function_exists( 'amnesty_get_location_type' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $location the term to query (optional)
+	 * @param WP_Term|null $location The term to query (optional)
 	 *
 	 * @return string
 	 */
-	function amnesty_get_location_type( WP_Term $location = null ): string {
+	function amnesty_get_location_type( ?WP_Term $location = null ): string {
 		$location = $location ?: get_queried_object();
 
 		return get_term_meta( $location->term_id, 'type', true ) ?: 'default';
@@ -513,11 +508,11 @@ if ( ! function_exists( 'amnesty_location_is_region' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $location the term to check (optional)
+	 * @param WP_Term|null $location The term to check (optional)
 	 *
 	 * @return bool
 	 */
-	function amnesty_location_is_region( WP_Term $location = null ): bool {
+	function amnesty_location_is_region( ?WP_Term $location = null ): bool {
 		return 'region' === amnesty_get_location_type( $location );
 	}
 }
@@ -528,11 +523,11 @@ if ( ! function_exists( 'amnesty_location_is_subregion' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $location the term to check (optional)
+	 * @param WP_Term|null $location The term to check (optional)
 	 *
 	 * @return bool
 	 */
-	function amnesty_location_is_subregion( WP_Term $location = null ): bool {
+	function amnesty_location_is_subregion( ?WP_Term $location = null ): bool {
 		return 'subregion' === amnesty_get_location_type( $location );
 	}
 }
@@ -544,11 +539,11 @@ if ( ! function_exists( 'amnesty_get_regional_media_contact' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $location the location to query
+	 * @param WP_Term|null $location The location to query
 	 *
 	 * @return array|null
 	 */
-	function amnesty_get_regional_media_contact( WP_Term $location = null ): ?array {
+	function amnesty_get_regional_media_contact( ?WP_Term $location = null ): ?array {
 		$location = $location ?: get_queried_object();
 
 		// which sub-region?
@@ -597,8 +592,8 @@ if ( ! function_exists( 'get_terms_from_query_var' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $qvar the query var
-	 * @param string $tax  optional taxonomy name
+	 * @param string $qvar The query var
+	 * @param string $tax  Optional taxonomy name
 	 *
 	 * @return array<int,WP_Term>
 	 */
@@ -639,7 +634,7 @@ if ( ! function_exists( 'amnesty_find_locations' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $term the search term
+	 * @param string $term The search term
 	 *
 	 * @return array
 	 */
@@ -703,7 +698,7 @@ if ( ! function_exists( 'amnesty_get_terms_from_query' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $taxonomy the taxonomy *name* (not slug)
+	 * @param string $taxonomy The taxonomy *name* (not slug)
 	 *
 	 * @return array
 	 */
@@ -721,8 +716,8 @@ if ( ! function_exists( 'is_term_in_list' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term|int        $term  the term to find
-	 * @param array<int,WP_Term> $terms the list of terms
+	 * @param WP_Term|int        $term  The term to find
+	 * @param array<int,WP_Term> $terms The list of terms
 	 *
 	 * @return bool
 	 */
@@ -744,7 +739,7 @@ if ( ! function_exists( 'amnesty_get_taxonomy_slug' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $taxonomy the taxonomy name
+	 * @param string $taxonomy The taxonomy name
 	 *
 	 * @return string
 	 */
@@ -759,7 +754,7 @@ if ( ! function_exists( 'amnesty_get_location_label' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param WP_Term $location the location object
+	 * @param WP_Term $location The location object
 	 *
 	 * @return string
 	 */
@@ -784,7 +779,7 @@ if ( ! function_exists( 'amnesty_taxonomy_to_option_list' ) ) {
 	/**
 	 * Given a taxonomy object, return an array of options for a select field
 	 *
-	 * @param WP_Taxonomy $taxonomy the taxonomy to retrieve terms from
+	 * @param WP_Taxonomy $taxonomy The taxonomy to retrieve terms from
 	 *
 	 * @return array<int,string>
 	 */
@@ -814,7 +809,7 @@ if ( ! function_exists( 'amnesty_filter_object_taxonomies_callback' ) ) {
 	/**
 	 * Filter object taxonomies to exclude the categories
 	 *
-	 * @param WP_Taxonomy $taxonomy the taxonomy object
+	 * @param WP_Taxonomy $taxonomy The taxonomy object
 	 *
 	 * @return bool
 	 */
@@ -836,7 +831,7 @@ if ( ! function_exists( 'group_terms_by_initial_ascii_letter' ) ) {
 	/**
 	 * Group an array of taxonomy terms by their first letters as ASCII
 	 *
-	 * @param array<int,WP_Term> $terms the terms to sort
+	 * @param array<int,WP_Term> $terms The terms to sort
 	 *
 	 * @return array<string,array<int,WP_Term>
 	 */
@@ -869,7 +864,7 @@ if ( ! function_exists( 'amnesty_limit_post_terms_results_for_archive' ) ) {
 	 * Limit the output of {get_the_terms()} to the current category,
 	 * where applicable.
 	 *
-	 * @param array<int,WP_Term>|WP_Error $terms the found terms
+	 * @param array<int,WP_Term>|WP_Error $terms The found terms
 	 *
 	 * @return array<int,WP_Term>|WP_Error
 	 */
@@ -892,7 +887,7 @@ if ( ! function_exists( 'amnesty_limit_post_terms_results_for_search' ) ) {
 	/**
 	 * Limit the number of terms returned for a post
 	 *
-	 * @param array<int,WP_Term> $terms the terms to limit
+	 * @param array<int,WP_Term> $terms The terms to limit
 	 *
 	 * @return array<int,WP_Term>
 	 */

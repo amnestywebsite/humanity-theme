@@ -17,7 +17,8 @@ if ( ! function_exists( 'amnesty_get_post_types' ) ) {
 	 * @param string       $operator Optional. The logical operation to perform. 'or' means only one
 	 *                               element from the array needs to match; 'and' means all elements
 	 *                               must match; 'not' means no elements may match. Default 'and'.
-	 * @return string[]|WP_Post_Type[] An array of post type names or objects.
+	 *
+	 * @return array<int,string|WP_Post_Type> An array of post type names or objects.
 	 */
 	function amnesty_get_post_types( array $args = [], string $output = 'names', string $operator = 'and' ): array {
 		if ( 'objects' === $output ) {

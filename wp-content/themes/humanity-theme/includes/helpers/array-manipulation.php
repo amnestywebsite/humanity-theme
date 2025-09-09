@@ -8,13 +8,13 @@ if ( ! function_exists( 'array_set' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array  $the_array the array to modify
-	 * @param string $key       the dot-notation key to set
-	 * @param mixed  $value     the data to set
+	 * @param array  $the_array The array to modify
+	 * @param string $key       The dot-notation key to set
+	 * @param mixed  $value     The data to set
 	 *
 	 * @return array the modified array
 	 */
-	function array_set( &$the_array, $key = '', $value = null ) {
+	function array_set( array &$the_array, string $key = '', mixed $value = null ) {
 		$key = strtok( $key, '.' );
 
 		while ( false !== $key ) {
@@ -42,13 +42,13 @@ if ( ! function_exists( 'array_get' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array  $the_array     the array to retrieve from
-	 * @param string $key           the key to retrieve
-	 * @param mixed  $default_value the default value to return
+	 * @param array  $the_array     The array to retrieve from
+	 * @param string $key           The key to retrieve
+	 * @param mixed  $default_value The default value to return
 	 *
 	 * @return mixed the found value or the default
 	 */
-	function array_get( $the_array, $key = '', $default_value = null ) {
+	function array_get( array $the_array, string $key = '', mixed $default_value = null ) {
 		$key = strtok( $key, '.' );
 
 		while ( false !== $key ) {
@@ -74,12 +74,12 @@ if ( ! function_exists( 'omit' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array        $the_array the array to manipulate
-	 * @param string|array $props     the array key(s) to omit
+	 * @param array        $the_array The array to manipulate
+	 * @param string|array $props     The array key(s) to omit
 	 *
 	 * @return array
 	 */
-	function omit( array $the_array, $props ): array {
+	function omit( array $the_array, string|array $props ): array {
 		return array_diff_key( $the_array, array_flip( (array) $props ) );
 	}
 }
@@ -91,11 +91,11 @@ if ( ! function_exists( 'array_dot' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array $arr the array to flatten
+	 * @param array $arr The array to flatten
 	 *
-	 * @return array the flattened array
+	 * @return array The flattened array
 	 */
-	function array_dot( $arr ) {
+	function array_dot( array $arr ) {
 		$it  = new RecursiveArrayIterator( $arr );
 		$it  = new RecursiveIteratorIterator( $it );
 		$res = [];
@@ -120,9 +120,9 @@ if ( ! function_exists( 'map_array_to_boolean' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array<mixed> $the_array the array to reduce
-	 * @param callable     $callback  the callback to apply to each element
-	 * @param string       $mode      reduce with OR or AND
+	 * @param array<mixed> $the_array The array to reduce
+	 * @param callable     $callback  The callback to apply to each element
+	 * @param string       $mode      Reduce with OR or AND
 	 *
 	 * @return bool|null
 	 */

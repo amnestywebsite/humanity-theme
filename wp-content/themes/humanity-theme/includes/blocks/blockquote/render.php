@@ -8,7 +8,7 @@ if ( ! function_exists( 'render_blockquote_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes the block attributes
+	 * @param array $attributes The block attributes
 	 *
 	 * @return string
 	 */
@@ -23,7 +23,7 @@ if ( ! function_exists( 'render_blockquote_block' ) ) {
 				'lined'      => true,
 				'content'    => '',
 				'citation'   => '',
-			] 
+			],
 		);
 
 		$classes = classnames(
@@ -34,7 +34,7 @@ if ( ! function_exists( 'render_blockquote_block' ) ) {
 				"is-{$attrs['colour']}"   => (bool) $attrs['colour'],
 				'is-capitalised'          => (bool) $attrs['capitalise'],
 				'is-lined'                => (bool) $attrs['lined'],
-			] 
+			],
 		);
 
 		$output = sprintf( '<blockquote class="%s">', esc_attr( $classes ) );

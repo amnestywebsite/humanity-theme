@@ -4,7 +4,7 @@
   "license": "none",
   "minimum-stability": "stable",
   "require-dev": {
-    "bigbite/phpcs-config": "v2.0.0"
+    "bigbite/phpcs-config": "v3.0.0-beta.1"
   },
   "config": {
     "allow-plugins": {

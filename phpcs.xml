@@ -3,5 +3,7 @@
   <description>PHPCS linting rules for the Humanity Theme</description>
   <config name="minimum_supported_wp_version" value="5.8" />
   <exclude-pattern>*.l10n.php$</exclude-pattern>
-  <rule ref="./vendor/bigbite/phpcs-config/BigBite" />
+  <rule ref="./vendor/bigbite/phpcs-config/BigBite">
+    <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed" />
+  </rule>
 </ruleset>

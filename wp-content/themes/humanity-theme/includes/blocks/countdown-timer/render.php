@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_render_countdown_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attrs the block attributes
+	 * @param array $attrs The block attributes
 	 *
 	 * @return string
 	 */

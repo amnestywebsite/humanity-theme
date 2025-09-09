@@ -17,7 +17,6 @@ if ( $taxonomies ) {
 	);
 }
 
-$has_other_active_filters = false;
 $query_vars_for_filters   = apply_filters( 'amnesty_archive_filter_query_vars', [ 'qyear', 'qmonth' ] );
 $active_filter_query_vars = [];
 

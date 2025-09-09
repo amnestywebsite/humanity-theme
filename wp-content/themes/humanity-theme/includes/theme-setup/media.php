@@ -21,7 +21,7 @@ if ( ! function_exists( 'amnesty_add_jfif_support' ) ) {
 	 *
 	 * @package Amnesty\ThemeSetup
 	 *
-	 * @param array<string,string> $mimes existing list of mime types
+	 * @param array<string,string> $mimes Existing list of mime types
 	 *
 	 * @return array<string,string>
 	 */
@@ -37,7 +37,7 @@ if ( ! function_exists( 'amnesty_remove_gutenberg_media_options' ) ) {
 	 *
 	 * @package Amnesty\ThemeSetup
 	 *
-	 * @param array<string,mixed> $settings the block editor settings
+	 * @param array<string,mixed> $settings The block editor settings
 	 *
 	 * @return array<string,mixed>
 	 */

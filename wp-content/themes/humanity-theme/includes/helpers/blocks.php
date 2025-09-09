@@ -8,8 +8,8 @@ if ( ! function_exists( 'amnesty_find_first_block_of_type' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<int,array<string,mixed>> $blocks     the parsed blocks
-	 * @param string                         $block_name the block to find
+	 * @param array<int,array<string,mixed>> $blocks     The parsed blocks
+	 * @param string                         $block_name The block to find
 	 *
 	 * @return array<string,mixed>
 	 */
@@ -34,7 +34,7 @@ if ( ! function_exists( 'amnesty_string_to_paragraphs' ) ) {
 	/**
 	 * Convert a string of text to paragraph block markup
 	 *
-	 * @param string $content the content to transform
+	 * @param string $content The content to transform
 	 *
 	 * @return string
 	 */

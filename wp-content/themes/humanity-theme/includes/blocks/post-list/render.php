@@ -8,14 +8,14 @@ if ( ! function_exists( 'amnesty_list_process_query' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param WP_Query     $query Current WP_Query.
-	 * @param object|false $term  a term to use, if supplied
-	 * @param bool         $show_author whether to render author
-	 * @param bool         $show_post_date whether to render post date
+	 * @param WP_Query     $query          Current WP_Query.
+	 * @param object|false $term           A term to use, if supplied
+	 * @param bool         $show_author    Whether to render author
+	 * @param bool         $show_post_date Whether to render post date
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_list_process_query( $query, $term = false, $show_author = false, $show_post_date = false ) {
+	function amnesty_list_process_query( WP_Query $query, object|false $term = false, bool $show_author = false, bool $show_post_date = false ): array|bool {
 		$posts = false;
 
 		if ( $query->have_posts() ) {
@@ -66,11 +66,11 @@ if ( ! function_exists( 'amnesty_list_process_category' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current Block attributes.
+	 * @param array $attributes Current Block attributes.
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_list_process_category( $attributes ) {
+	function amnesty_list_process_category( array $attributes ): array|bool {
 		if ( empty( $attributes ) || ! isset( $attributes['category'] ) || ! $attributes['category'] ) {
 			return false;
 		}
@@ -146,11 +146,11 @@ if ( ! function_exists( 'amnesty_list_process_author' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current Block attributes.
+	 * @param array $attributes Current Block attributes.
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_list_process_author( $attributes ) {
+	function amnesty_list_process_author( array $attributes ): array|bool {
 		if ( empty( $attributes ) || ! isset( $attributes['authors'] ) || ! $attributes['authors'] ) {
 			return false;
 		}
@@ -201,11 +201,11 @@ if ( ! function_exists( 'amnesty_list_process_custom' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current Block attributes.
+	 * @param array $attributes Current Block attributes.
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_list_process_custom( $attributes ) {
+	function amnesty_list_process_custom( array $attributes ): array|bool {
 		if ( empty( $attributes ) || ! isset( $attributes['custom'] ) || ! $attributes['custom'] ) {
 			return false;
 		}
@@ -226,9 +226,9 @@ if ( ! function_exists( 'amnesty_list_process_custom_item_data' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<string,mixed> $data the item data
-	 * @param bool                $show_author whether to render author info
-	 * @param bool                $show_date   whether to render specified date
+	 * @param array<string,mixed> $data        The item data
+	 * @param bool                $show_author Whether to render author info
+	 * @param bool                $show_date   Whether to render specified date
 	 *
 	 * @return array<string,mixed>
 	 */
@@ -258,11 +258,11 @@ if ( ! function_exists( 'amnesty_list_process_select' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current Block attributes.
+	 * @param array $attributes Current Block attributes.
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_list_process_select( $attributes ) {
+	function amnesty_list_process_select( array $attributes ): array|bool {
 		if ( empty( $attributes ) || ! isset( $attributes['selectedPosts'] ) || ! $attributes['selectedPosts'] ) {
 			return false;
 		}
@@ -296,11 +296,11 @@ if ( ! function_exists( 'amnesty_list_process_taxonomy' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current Block attributes.
+	 * @param array $attributes Current Block attributes.
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_list_process_taxonomy( $attributes ) {
+	function amnesty_list_process_taxonomy( array $attributes ): array|bool {
 		if ( empty( $attributes ) || ! isset( $attributes['taxonomy'] ) || ! $attributes['taxonomy'] ) {
 			return false;
 		}
@@ -346,11 +346,11 @@ if ( ! function_exists( 'amnesty_list_process_content' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current block attributes.
+	 * @param array $attributes Current block attributes.
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_list_process_content( $attributes ) {
+	function amnesty_list_process_content( array $attributes ): array|bool {
 		if ( empty( $attributes['type'] ) ) {
 			return amnesty_list_process_category( $attributes );
 		}
@@ -378,11 +378,11 @@ if ( ! function_exists( 'amnesty_render_list_item' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $data - Item data.
+	 * @param array $data Item data.
 	 *
 	 * @return void
 	 */
-	function amnesty_render_list_item( $data ) {
+	function amnesty_render_list_item( array $data ): void {
 		$title          = isset( $data['title'] ) ? $data['title'] : '';
 		$author         = isset( $data['author'] ) ? $data['author'] : '';
 		$post_date      = isset( $data['date'] ) ? $data['date'] : '';
@@ -404,11 +404,11 @@ if ( ! function_exists( 'amnesty_render_grid_item' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $data - Item data.
+	 * @param array $data Item data.
 	 *
 	 * @return void
 	 */
-	function amnesty_render_grid_item( $data ) {
+	function amnesty_render_grid_item( array $data ): void {
 		$title = isset( $data['title'] ) ? $data['title'] : '';
 
 		require realpath( __DIR__ . '/views/grid-item.php' );
@@ -421,11 +421,11 @@ if ( ! function_exists( 'amnesty_render_list_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current block attributes.
+	 * @param array $attributes Current block attributes.
 	 *
-	 * @return string
+	 * @return string|bool
 	 */
-	function amnesty_render_list_block( $attributes ) {
+	function amnesty_render_list_block( array $attributes ): string|bool {
 		// Prevent a bug in the admin panel where the editor
 		// shows a different post if the list item is selected
 		// using one of the selection methods.

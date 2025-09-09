@@ -8,14 +8,13 @@ if ( ! function_exists( 'amnesty_prevent_mlp_from_breaking_embargoes_on_translat
 	/**
 	 * Forcibly update a post on a remote site after MLP has duplicated it
 	 *
-	 * @see {amnesty_prevent_mlp_publishing_scheduled_posts()}
-	 *
 	 * @package Amnesty\Plugins\Multilingualpress
+	 * @see     amnesty_prevent_mlp_publishing_scheduled_posts()
 	 *
 	 * @access private
 	 *
-	 * @param int    $blog_id the target site
-	 * @param object $post    the target post object
+	 * @param int    $blog_id The target site
+	 * @param object $post    The target post object
 	 *
 	 * @return void
 	 */

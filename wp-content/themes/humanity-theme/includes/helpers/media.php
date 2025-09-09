@@ -13,7 +13,7 @@ if ( ! function_exists( 'amnesty_featured_image' ) ) {
 	 *
 	 * @return bool|false|string
 	 */
-	function amnesty_featured_image( $post_id = false, $size = 'full' ) {
+	function amnesty_featured_image( int|bool $post_id = false, string $size = 'full' ) {
 		if ( ! $post_id ) {
 			$post_id = get_the_ID();
 		}
@@ -88,11 +88,11 @@ if ( ! function_exists( 'amnesty_custom_image_sizes' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array $sizes the existing defined sizes
+	 * @param array $sizes The existing defined sizes
 	 *
 	 * @return array
 	 */
-	function amnesty_custom_image_sizes( $sizes ) {
+	function amnesty_custom_image_sizes( array $sizes ) {
 		return array_merge(
 			$sizes,
 			[

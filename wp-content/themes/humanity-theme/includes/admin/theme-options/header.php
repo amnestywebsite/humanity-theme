@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_register_theme_options_header' ) ) {
 	 *
 	 * @package Amnesty\ThemeOptions
 	 *
-	 * @param CMB2 $options the options object
+	 * @param CMB2 $options The options object
 	 *
 	 * @return void
 	 */

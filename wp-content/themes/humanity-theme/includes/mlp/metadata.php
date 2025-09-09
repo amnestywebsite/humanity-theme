@@ -36,8 +36,9 @@ if ( ! function_exists( 'amnesty_copyable_meta_keys' ) ) {
 			'download_id',
 			'download_text',
 			'term_slider',
-			'hideSidebar', // annual reports
-			'sidebarId', // annual reports
+			// annual reports v
+			'hideSidebar',
+			'sidebarId',
 		];
 
 		if ( defined( 'WPSEO_FILE' ) ) {
@@ -67,11 +68,11 @@ if ( ! function_exists( 'amnesty_copyable_meta_keys' ) ) {
 
 if ( ! function_exists( 'amnesty_multilingualpress_sync_postmeta' ) ) {
 	/**
-	 * Copy source postmeta to translation postmeta if "Copy content" is selected in MLP
+	 * Copy source meta to translation meta if "Copy content" is selected in MLP
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
 	 *
-	 * @param int $post_id the ID of the post that has been updated
+	 * @param int $post_id The ID of the post that has been updated
 	 *
 	 * @return void
 	 *

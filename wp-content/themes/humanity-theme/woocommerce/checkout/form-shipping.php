@@ -2,7 +2,8 @@
 /**
  * Checkout shipping information form
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/checkout/form-shipping.php.
+ * This template can be overridden by copying it to
+ *   yourtheme/woocommerce/checkout/form-shipping.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -13,7 +14,7 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
  * @version 3.6.0
- * @global WC_Checkout $checkout
+ * @global  WC_Checkout $checkout
  */
 
 defined( 'ABSPATH' ) || exit;

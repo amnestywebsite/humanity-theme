@@ -15,7 +15,7 @@ if ( ! function_exists( 'is_multilingualpress_enabled' ) ) {
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	function is_multilingualpress_enabled() {
 		return class_exists( '\\Inpsyde\\MultilingualPress\\MultilingualPress', false );
@@ -28,7 +28,7 @@ if ( ! function_exists( 'get_string_textdirection' ) ) {
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
 	 *
-	 * @param string $the_string the string to identify
+	 * @param string $the_string The string to identify
 	 *
 	 * @return string
 	 */
@@ -81,7 +81,7 @@ if ( ! function_exists( 'has_translations' ) ) {
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	function has_translations() {
 		return (bool) get_object_translations();
@@ -94,11 +94,11 @@ if ( ! function_exists( 'list_object_translations' ) ) {
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
 	 *
-	 * @param boolean $output whether to output or return
+	 * @param bool $output Whether to output or return
 	 *
 	 * @return void|string
 	 */
-	function list_object_translations( $output = false ) {
+	function list_object_translations( bool $output = false ) {
 		$translations = get_object_translations();
 
 		if ( ! $translations ) {

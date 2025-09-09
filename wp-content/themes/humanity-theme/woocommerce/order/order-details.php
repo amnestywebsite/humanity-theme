@@ -2,7 +2,8 @@
 /**
  * Order details
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/order/order-details.php.
+ * This template can be overridden by copying it to
+ *   yourtheme/woocommerce/order/order-details.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -17,7 +18,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
-$order = wc_get_order( $order_id ); // phpcs:ignore
+// phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
+$order = wc_get_order( $order_id );
 
 if ( ! $order ) {
 	return;
@@ -106,6 +108,7 @@ if ( $show_downloads ) {
  * Action hook fired after the order details.
  *
  * @since 4.4.0
+ *
  * @param WC_Order $order Order data.
  */
 do_action( 'woocommerce_after_order_details', $order );

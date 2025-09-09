@@ -33,8 +33,8 @@ class Get_Image_Data {
 	/**
 	 * Setup member vars
 	 *
-	 * @param int    $image_id  the image's ID
-	 * @param string $image_src the image's URI
+	 * @param int    $image_id  The image's ID
+	 * @param string $image_src The image's URI
 	 */
 	public function __construct( int $image_id, string $image_src = '' ) {
 		$this->image_id  = $image_id;
@@ -53,9 +53,9 @@ class Get_Image_Data {
 	/**
 	 * Get the image metadata HTML
 	 *
-	 * @param bool   $include_caption whether to output caption in metadata
-	 * @param bool   $include_credit  whether to output caption in metadata
-	 * @param string $type            the metadata type (enum: image,video)
+	 * @param bool   $include_caption Whether to output caption in metadata
+	 * @param bool   $include_credit  Whether to output caption in metadata
+	 * @param string $type            The metadata type (enum: image,video)
 	 *
 	 * @return string
 	 */
@@ -264,8 +264,8 @@ class Get_Image_Data {
 	 * Check whether the image is on a remote site,
 	 * and return credit from that site, if available
 	 *
-	 * @param string|null $caption the existing caption
-	 * @param object|null $image   the image object
+	 * @param string|null $caption The existing caption
+	 * @param object|null $image   The image object
 	 *
 	 * @return string|null
 	 */
@@ -307,8 +307,8 @@ class Get_Image_Data {
 	 * Check whether the image is on a remote site,
 	 * and return caption from that site, if available
 	 *
-	 * @param string|null $caption the existing caption
-	 * @param object|null $image   the image object
+	 * @param string|null $caption The existing caption
+	 * @param object|null $image   The image object
 	 *
 	 * @return string|null
 	 */

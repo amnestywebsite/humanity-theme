@@ -10,7 +10,7 @@ if ( ! function_exists( 'add_menu_separator' ) ) {
 	 *
 	 * @package Amnesty\Admin\Options
 	 *
-	 * @param int $position the position at which to insert the separator
+	 * @param int $position The position at which to insert the separator
 	 *
 	 * @return void
 	 */
@@ -30,6 +30,8 @@ if ( ! function_exists( 'add_menu_separator' ) ) {
 if ( ! function_exists( 'amnesty_reorganise_admin_menu' ) ) {
 	/**
 	 * Reorganise the admin menu
+	 *
+	 * @return void
 	 */
 	function amnesty_reorganise_admin_menu(): void {
 		if ( is_network_admin() ) {

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Custom Card Dark
- * Description: Custom card with a dark grey background containing a heading, image, paragraph, and button.
+ * Description: dark background behind heading, image, paragraph, button
  * Slug: amnesty/custom-card-dark
  * Keywords: custom, card, dark, grey
  * Categories: humanity-actions

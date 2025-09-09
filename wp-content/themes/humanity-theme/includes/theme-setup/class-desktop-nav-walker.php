@@ -4,7 +4,6 @@ declare( strict_types = 1 );
 
 namespace Amnesty;
 
-use stdClass;
 use Walker_Nav_Menu;
 
 /**
@@ -24,8 +23,10 @@ class Desktop_Nav_Walker extends Walker_Nav_Menu {
 	 * @param string    $output Used to append additional content (passed by reference).
 	 * @param int       $depth  Depth of menu item. Used for padding.
 	 * @param \stdClass $args   An object of wp_nav_menu() arguments.
+	 *
+	 * @return void
 	 */
-	public function start_lvl( &$output, $depth = 0, $args = null ) {
+	public function start_lvl( &$output, $depth = 0, $args = null ) { // phpcs:ignore Squiz.Commenting.FunctionComment
 		if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
 			$t = '';
 			$n = '';
@@ -42,7 +43,7 @@ class Desktop_Nav_Walker extends Walker_Nav_Menu {
 		 *
 		 * @since 4.8.0
 		 *
-		 * @param array<int,string> $classes Array of the CSS classes that are applied to the menu `<ul>` element.
+		 * @param array<int,string> $classes Array of CSS classes for the menu `<ul>` element.
 		 * @param \stdClass         $args    An object of `wp_nav_menu()` arguments.
 		 * @param int               $depth   Depth of menu item. Used for padding.
 		 */
@@ -62,8 +63,10 @@ class Desktop_Nav_Walker extends Walker_Nav_Menu {
 	 * @param string    $output Used to append additional content (passed by reference).
 	 * @param int       $depth  Depth of menu item. Used for padding.
 	 * @param \stdClass $args   An object of wp_nav_menu() arguments.
+	 *
+	 * @return void
 	 */
-	public function end_lvl( &$output, $depth = 0, $args = null ) {
+	public function end_lvl( &$output, $depth = 0, $args = null ) { // phpcs:ignore Squiz.Commenting.FunctionComment
 		if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
 			$t = '';
 			$n = '';

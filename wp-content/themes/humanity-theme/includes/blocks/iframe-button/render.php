@@ -8,7 +8,7 @@ if ( ! function_exists( 'render_iframe_button_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes the block attributes
+	 * @param array $attributes The block attributes
 	 *
 	 * @return string
 	 */
@@ -23,7 +23,7 @@ if ( ! function_exists( 'render_iframe_button_block' ) ) {
 				'iframeHeight' => 760,
 				'iframeUrl'    => '',
 				'title'        => '',
-			] 
+			]
 		);
 
 		if ( ! esc_url( $attributes['iframeUrl'] ) ) {

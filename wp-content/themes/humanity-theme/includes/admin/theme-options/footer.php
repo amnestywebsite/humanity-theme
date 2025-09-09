@@ -5,6 +5,8 @@ declare( strict_types = 1 );
 if ( ! function_exists( 'amnesty_register_theme_options_footer' ) ) {
 	/**
 	 * Register theme options for the site footer
+	 *
+	 * @return void
 	 */
 	function amnesty_register_theme_options_footer(): void {
 		$footer = new_cmb2_box(

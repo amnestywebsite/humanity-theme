@@ -8,7 +8,9 @@ if ( ! function_exists( 'amnesty_register_taxonomy_custom_fields' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param CMB2 $cmb2 the cmb2 object
+	 * @param CMB2 $cmb2 The cmb2 object
+	 *
+	 * @return void
 	 */
 	function amnesty_register_taxonomy_custom_fields( CMB2 $cmb2 ): void {
 		$taxonomies = get_taxonomies( [ 'amnesty' => true ], 'objects' );

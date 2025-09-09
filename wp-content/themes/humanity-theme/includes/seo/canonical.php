@@ -35,7 +35,7 @@ if ( ! function_exists( 'amnesty_wpseo_canonical_filter' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string|null $canonical the canonical URI
+	 * @param string|null $canonical The canonical URI
 	 *
 	 * @return string
 	 */

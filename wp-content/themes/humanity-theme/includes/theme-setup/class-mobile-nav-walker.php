@@ -6,6 +6,7 @@ namespace Amnesty;
 
 use stdClass;
 use Walker_Nav_Menu;
+use WP_Post;
 
 /**
  * Class Mobile_Nav_Walker extends Walker_Nav_Menu to add buttons to elements with child elements.
@@ -24,8 +25,10 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 	 * @param string   $output Used to append additional content (passed by reference).
 	 * @param int      $depth  Depth of menu item. Used for padding.
 	 * @param stdClass $args   An object of wp_nav_menu() arguments.
+	 *
+	 * @return void
 	 */
-	public function start_lvl( &$output, $depth = 0, $args = null ) {
+	public function start_lvl( &$output, $depth = 0, $args = null ) { // phpcs:ignore Squiz.Commenting.FunctionComment
 		parent::start_lvl( $output, $depth, $args );
 
 		// add the list item in as the first item in the sub list.
@@ -60,7 +63,7 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 	 *
 	 * @return void
 	 */
-	public function start_el( &$output, $item, $depth = 0, $args = [], $id = 0 ) {
+	public function start_el( &$output, $item, $depth = 0, $args = [], $id = 0 ) { // phpcs:ignore Squiz.Commenting.FunctionComment
 		if ( true === apply_filters( 'amnesty_mobile_nav_menu_item_skip', false, $item, $depth, $args ) ) {
 			return;
 		}
@@ -114,7 +117,7 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 
 		$link_attributes = $this->build_link_attributes( $args, $item, $depth );
 
-		/** This filter is documented in wp-includes/post-template.php */
+		// This filter is documented in wp-includes/post-template.php
 		$title = apply_filters( 'the_title', $item->title, $item->ID );
 
 		/**
@@ -168,7 +171,7 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 	 *
 	 * @return string
 	 */
-	protected function get_item_class_attr( array $class_list, $item, $args, $depth ): string {
+	protected function get_item_class_attr( array $class_list, WP_Post $item, stdClass $args, int $depth ): string {
 		/**
 		 * Filters the CSS class(es) applied to a menu item's list item element.
 		 *
@@ -199,7 +202,7 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 	 * @param int      $depth       Depth of page.
 	 * @param stdClass $args        An object of wp_nav_menu() arguments.
 	 */
-	public function end_el( &$output, $data_object, $depth = 0, $args = null ) {
+	public function end_el( &$output, $data_object, $depth = 0, $args = null ) { // phpcs:ignore Squiz.Commenting.FunctionComment
 		if ( true === apply_filters( 'amnesty_mobile_nav_menu_item_skip', false, $data_object, $depth, $args ) ) {
 			return;
 		}
@@ -210,13 +213,13 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 	/**
 	 * Build an item's HTML attribute list
 	 *
-	 * @param object $args  wp_nav_menu args
-	 * @param object $item  the item object
-	 * @param int    $depth the nesting depth
+	 * @param object $args  Wp_nav_menu args
+	 * @param object $item  The item object
+	 * @param int    $depth The nesting depth
 	 *
 	 * @return string
 	 */
-	protected function build_item_attributes( $args, $item, $depth ) {
+	protected function build_item_attributes( object $args, object $item, int $depth ) {
 		$atts = apply_filters( 'amnesty_mobile_nav_menu_item_attributes', [], $item, $args, $depth );
 
 		$attributes = '';
@@ -237,7 +240,7 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 	 *
 	 * @return string
 	 */
-	protected function build_link_attributes( $args, $item, $depth ) {
+	protected function build_link_attributes( object $args, object $item, int $depth ) {
 		$atts = [];
 
 		$atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
@@ -251,9 +254,7 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 		 * @since 3.6.0
 		 * @since 4.1.0 The `$depth` parameter was added.
 		 *
-		 * @param array $atts {
-		 *     The HTML attributes applied to the menu item's `<a>` element, empty strings are ignored.
-		 *
+		 * @param array $atts HTML attributes for the item's anchor tag: {
 		 *     @type string $title  Title attribute.
 		 *     @type string $target Target attribute.
 		 *     @type string $rel    The rel attribute.
@@ -280,14 +281,14 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 	/**
 	 * Build an item's output
 	 *
-	 * @param object $args         object of wp_nav_menu args
-	 * @param string $attributes   list of item's attributes
-	 * @param string $title        the item's title
-	 * @param bool   $has_children whether the item has child items
+	 * @param object $args         Object of wp_nav_menu args
+	 * @param string $attributes   List of item's attributes
+	 * @param string $title        The item's title
+	 * @param bool   $has_children Whether the item has child items
 	 *
 	 * @return string
 	 */
-	protected function build_item( $args, $attributes, $title, $has_children ) {
+	protected function build_item( object $args, string $attributes, string $title, bool $has_children ) {
 		if ( ! $has_children ) {
 			$item_output  = $args->before;
 			$item_output .= '<a' . $attributes . '>';

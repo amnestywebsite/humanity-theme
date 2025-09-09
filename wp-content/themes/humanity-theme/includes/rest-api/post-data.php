@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_rest_api_allow_writing_post_modified' ) ) {
 	 *
 	 * @package Amnesty\RestApi
 	 *
-	 * @param array<string,mixed> $schema the item schema
+	 * @param array<string,mixed> $schema The item schema
 	 *
 	 * @return array<string,mixed>
 	 */
@@ -55,7 +55,7 @@ if ( ! function_exists( 'amnesty_rest_api_cache_oembeds' ) ) {
 	 *
 	 * @package Amnesty\RestApi
 	 *
-	 * @param int $post_id the created post's ID
+	 * @param int $post_id The created post's ID
 	 *
 	 * @return void
 	 */

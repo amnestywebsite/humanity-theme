@@ -8,7 +8,7 @@ if ( ! function_exists( 'render_custom_card_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
+	 * @param array<string,mixed> $attributes The block attributes
 	 *
 	 * @return string
 	 */
@@ -29,11 +29,11 @@ if ( ! function_exists( 'render_custom_card_block' ) ) {
 				'linkText'      => '',
 				'scrollLink'    => '',
 				'style'         => 'standard',
-			] 
+			]
 		);
 
-		// used in view
 		// phpcs:disable WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned
+		// phpcs:ignore SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in view
 		$block_classes = classnames(
 			'customCard',
 			$attributes['className'],
@@ -41,11 +41,11 @@ if ( ! function_exists( 'render_custom_card_block' ) ) {
 				sprintf( 'align%s', $attributes['align'] ) => (bool) $attributes['align'],
 				'actionBlock--wide' => 'wide' === $attributes['style'],
 				'is-centred'        => (bool) $attributes['centred'],
-			] 
+			]
 		);
 		// phpcs:enable WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned
 
-		// used in view
+		// phpcs:ignore SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in view
 		$button_classes = classnames( 'btn', 'btn--fill', 'btn--large' );
 
 		spaceless();

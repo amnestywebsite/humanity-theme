@@ -11,8 +11,8 @@ if ( ! function_exists( 'amnesty_modify_button_block_metadata' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array<string,mixed> $settings the parsed block settings
-	 * @param array<string,mixed> $metadata the raw block metadata
+	 * @param array<string,mixed> $settings The parsed block settings
+	 * @param array<string,mixed> $metadata The raw block metadata
 	 *
 	 * @return array<string,mixed>
 	 */

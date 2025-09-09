@@ -12,7 +12,7 @@ add_action(
 	function (): void {
 		$controller = new WP_REST_Related_Content_Controller();
 		$controller->register_routes();
-	} 
+	}
 );
 
 /**
@@ -47,6 +47,8 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 	 * Registers the routes for the objects of the controller.
 	 *
 	 * @see register_rest_route()
+	 *
+	 * @return void
 	 */
 	public function register_routes() {
 		register_rest_route(
@@ -66,7 +68,7 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 					'permission_callback' => [ $this, 'get_items_permissions_check' ],
 					'args'                => $this->get_args_for_request(),
 				],
-			] 
+			]
 		);
 	}
 
@@ -75,11 +77,9 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 	 *
 	 * @param \WP_REST_Request $request Full details about the request.
 	 *
-	 * @return true|\WP_Error True if the request has read access, WP_Error object otherwise.
-	 *
-	 * phpcs:disable Generic.CodeAnalysis.UnusedFunctionParameter.FoundInExtendedClass
+	 * @return true|\WP_Error True if the request has read access, WP_Error otherwise.
 	 */
-	public function get_items_permissions_check( $request ) {
+	public function get_items_permissions_check( $request ) { // phpcs:ignore Squiz.Commenting.FunctionComment.TypeHintMissing
 		$post = get_post( $request['id'] );
 
 		if ( is_wp_error( $post ) ) {
@@ -109,9 +109,9 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 	 *
 	 * @param \WP_REST_Request $request Full details about the request.
 	 *
-	 * @return \WP_REST_Response|\WP_Error Response object on success, or WP_Error object on failure.
+	 * @return \WP_REST_Response|\WP_Error Response object, or WP_Error on failure.
 	 */
-	public function get_items( $request ) {
+	public function get_items( $request ) { // phpcs:ignore Squiz.Commenting.FunctionComment.TypeHintMissing
 		$post = get_post( absint( $request['id'] ) );
 
 		if ( is_wp_error( $post ) ) {
@@ -226,7 +226,7 @@ class WP_REST_Related_Content_Controller extends WP_REST_Controller {
 				'amnesty' => true,
 				'public'  => true,
 			],
-			'objects' 
+			'objects'
 		);
 
 		$taxonomies = apply_filters( 'amnesty_related_content_taxonomies', $taxonomies );

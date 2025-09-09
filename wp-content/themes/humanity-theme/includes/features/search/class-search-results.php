@@ -25,7 +25,7 @@ class Search_Results {
 	/**
 	 * Undocumented function
 	 *
-	 * @param \WP_Query $query the main query object
+	 * @param \WP_Query $query The main query object
 	 *
 	 * @return void
 	 */
@@ -38,8 +38,8 @@ class Search_Results {
 	/**
 	 * Rewrite search query SQL if documents are to be searched for
 	 *
-	 * @param string    $sql   the existing SQL query
-	 * @param \WP_Query $query the Query object
+	 * @param string    $sql   The existing SQL query
+	 * @param \WP_Query $query The Query object
 	 *
 	 * @return string
 	 */
@@ -64,7 +64,7 @@ class Search_Results {
 	 * Build the JOIN/WHERE portion of the SQL query that
 	 * directly relates to the selected taxonomy terms.
 	 *
-	 * @param array<string,array<int,int>> $terms the taxonomy terms
+	 * @param array<string,array<int,int>> $terms The taxonomy terms
 	 *
 	 * @return array<string,string>
 	 */
@@ -85,7 +85,7 @@ class Search_Results {
 	 * Check whether the searchpage has active taxonomy filters
 	 * Build tax_query argument list for them, if so
 	 *
-	 * @param array<string,array<int,int>> $terms the taxonomy terms
+	 * @param array<string,array<int,int>> $terms The taxonomy terms
 	 *
 	 * @return array<mixed>
 	 */
@@ -141,7 +141,7 @@ class Search_Results {
 	/**
 	 * Convert list of taxonomy slugs to term ids
 	 *
-	 * @param array<string,array<int,string>> $term_list the list of tax=>terms slugs
+	 * @param array<string,array<int,string>> $term_list The list of tax=>terms slugs
 	 *
 	 * @return array<string,array<int,int>>
 	 */
@@ -165,7 +165,7 @@ class Search_Results {
 	/**
 	 * Check whether we should add PDFs to the query
 	 *
-	 * @param \WP_Query $query the query to check
+	 * @param \WP_Query $query The query to check
 	 *
 	 * @return bool
 	 */

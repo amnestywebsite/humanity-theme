@@ -74,7 +74,7 @@ class Taxonomy_Locations extends Taxonomy {
 	/**
 	 * Declare the taxonomy labels
 	 *
-	 * @param bool $defaults whether to return default labels or not
+	 * @param bool $defaults Whether to return default labels or not
 	 *
 	 * @return object
 	 */
@@ -144,7 +144,7 @@ class Taxonomy_Locations extends Taxonomy {
 	/**
 	 * Load taxonomy template regardless of chosen slug
 	 *
-	 * @param string $template the current template choice
+	 * @param string $template The current template choice
 	 *
 	 * @return string
 	 */
@@ -156,7 +156,7 @@ class Taxonomy_Locations extends Taxonomy {
 	/**
 	 * Add term "type" to body class
 	 *
-	 * @param array $classes existing classes
+	 * @param array $classes Existing classes
 	 *
 	 * @return array
 	 */
@@ -184,9 +184,9 @@ class Taxonomy_Locations extends Taxonomy {
 	 *
 	 * Rewrites them to filtered search URIs
 	 *
-	 * @param string  $link     the generated link
-	 * @param WP_Term $term     the term object
-	 * @param string  $taxonomy the taxonomy slug
+	 * @param string  $link     The generated link
+	 * @param WP_Term $term     The term object
+	 * @param string  $taxonomy The taxonomy slug
 	 *
 	 * @return string
 	 */
@@ -277,7 +277,7 @@ class Taxonomy_Locations extends Taxonomy {
 	/**
 	 * Getter for the featuredImage rest field
 	 *
-	 * @param array<string,mixed> $term the term to retrieve the featured image for
+	 * @param array<string,mixed> $term The term to retrieve the featured image for
 	 *
 	 * @return array|null
 	 */

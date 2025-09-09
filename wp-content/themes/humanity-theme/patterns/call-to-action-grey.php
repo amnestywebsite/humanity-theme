@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Call to Action Grey
- * Description: Call to action with a grey background containing headings, paragraph, and button.
+ * Description: grey background with headings, paragraph, button
  * Slug: amnesty/call-to-action-grey
  * Keywords: call to action, grey
  * Categories: humanity-actions

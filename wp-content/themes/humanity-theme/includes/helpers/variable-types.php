@@ -10,12 +10,12 @@ if ( ! function_exists( 'amnesty_validate_boolish' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param mixed $variable     the variable to validate
-	 * @param mixed $default_value default value to use if $variable empty
+	 * @param mixed $variable      The variable to validate
+	 * @param mixed $default_value Default value to use if $variable empty
 	 *
 	 * @return bool
 	 */
-	function amnesty_validate_boolish( $variable = null, $default_value = false ) {
+	function amnesty_validate_boolish( mixed $variable = null, mixed $default_value = false ) {
 		if ( is_bool( $variable ) ) {
 			return $variable;
 		}
@@ -35,7 +35,7 @@ if ( ! function_exists( 'query_var_to_array' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $variable the query var
+	 * @param string $variable The query var
 	 *
 	 * @return array<mixed>
 	 */
@@ -60,7 +60,7 @@ if ( ! function_exists( 'intlist' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string $value the string to cast
+	 * @param string $value The string to cast
 	 *
 	 * @return array <int,int>
 	 */

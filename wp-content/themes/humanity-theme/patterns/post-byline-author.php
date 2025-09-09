@@ -20,7 +20,6 @@ if ( ! $use_author ) {
 }
 
 $author_id      = get_the_author_meta( 'ID' );
-$author_name    = get_the_author_meta( 'display_name' );
 $twitter_handle = get_the_author_meta( 'twitter' );
 $author_avatar  = get_avatar( $author_id, 60 );
 

@@ -95,7 +95,7 @@ abstract class Taxonomy {
 	/**
 	 * Declare the taxonomy labels
 	 *
-	 * @param bool $defaults whether to return default labels or not
+	 * @param bool $defaults Whether to return default labels or not
 	 *
 	 * @return object
 	 */
@@ -104,13 +104,13 @@ abstract class Taxonomy {
 	/**
 	 * Declare this taxonomy for feature support configuration
 	 *
-	 * @param mixed  $cmb2  the taxonomy options metabox
-	 * @param string $group the taxonomy options group
+	 * @param mixed  $cmb2  The taxonomy options metabox
+	 * @param string $group The taxonomy options group
 	 *
 	 * @return void
 	 */
-	public function declare( $cmb2, $group ): void {
-		$cmb2->add_group_field(
+	public function declare( mixed $cmb2, string $group ): void {
+		$cmb2?->add_group_field(
 			$group,
 			[
 				'id'      => $this->name,
@@ -141,7 +141,7 @@ abstract class Taxonomy {
 	/**
 	 * Load taxonomy template regardless of chosen slug
 	 *
-	 * @param string $template the current template choice
+	 * @param string $template The current template choice
 	 *
 	 * @return string
 	 */
@@ -158,7 +158,7 @@ abstract class Taxonomy {
 	/**
 	 * Increase the maximum number of items per page in the API
 	 *
-	 * @param array $params existing available API parameters
+	 * @param array $params Existing available API parameters
 	 *
 	 * @return array
 	 */
@@ -173,8 +173,8 @@ abstract class Taxonomy {
 	 * This will allow us to filter taxonomies by those specific to
 	 * the Amnesty WP Theme, which may be useful.
 	 *
-	 * @param WP_REST_Response $response the response object.
-	 * @param WP_Taxonomy      $taxonomy the taxonomy object.
+	 * @param WP_REST_Response $response The response object.
+	 * @param WP_Taxonomy      $taxonomy The taxonomy object.
 	 *
 	 * @return WP_REST_Response
 	 */
@@ -204,7 +204,7 @@ abstract class Taxonomy {
 	/**
 	 * Save the localised taxonomy slug
 	 *
-	 * @param array $data $_POST data
+	 * @param array $data Raw $_POST data
 	 *
 	 * @return void
 	 */
@@ -270,7 +270,7 @@ abstract class Taxonomy {
 	 * Flush output buffer (triggering callback in $this->form_open()),
 	 * and add a TinyMCE instance for HTML description
 	 *
-	 * @param WP_Term $term current term
+	 * @param WP_Term $term Current term
 	 *
 	 * @return void
 	 */
@@ -356,7 +356,7 @@ abstract class Taxonomy {
 	/**
 	 * Whether the taxonomy is enabled globally
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	protected function is_enabled() {
 		$options = get_site_option( 'amnesty_network_options' );

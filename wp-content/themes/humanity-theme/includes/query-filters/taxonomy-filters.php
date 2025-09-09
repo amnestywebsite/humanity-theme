@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_add_taxonomy_filter_support_to_query' ) ) {
 	 *
 	 * @package Amnesty\Filters\WPQuery
 	 *
-	 * @param WP_Query $query the query object
+	 * @param WP_Query $query The query object
 	 *
 	 * @return void
 	 */

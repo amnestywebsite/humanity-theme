@@ -6,7 +6,7 @@ if ( ! function_exists( 'amnesty_a11y_kses' ) ) {
 	/**
 	 * Allow a11y-related attributes in kses.
 	 *
-	 * @param array $allowed allowed attributes list
+	 * @param array $allowed Allowed attributes list
 	 *
 	 * @package Amnesty\Kses
 	 *
@@ -63,7 +63,7 @@ if ( ! function_exists( 'amnesty_add_a11y_labels_to_tables' ) ) {
 	 *
 	 * @package Amnesty\A11y
 	 *
-	 * @param string $content the post content
+	 * @param string $content The post content
 	 *
 	 * @return string
 	 */

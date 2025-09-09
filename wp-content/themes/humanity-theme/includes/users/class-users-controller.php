@@ -30,6 +30,8 @@ class Users_Controller extends \WP_REST_Users_Controller {
 	 * Registers the routes for the objects of the controller.
 	 *
 	 * @see register_rest_route()
+	 *
+	 * @return void
 	 */
 	public function register_routes() {
 		register_rest_route(
@@ -107,7 +109,7 @@ class Users_Controller extends \WP_REST_Users_Controller {
 	 *
 	 * @param WP_REST_Request $request Full details about the request.
 	 *
-	 * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
+	 * @return WP_REST_Response|WP_Error Response object or WP_Error on failure.
 	 */
 	public function get_items( $request ) {
 		// Retrieve the list of registered collection query parameters.
@@ -246,7 +248,7 @@ class Users_Controller extends \WP_REST_Users_Controller {
 	 *
 	 * @return WP_User|WP_Error True if ID is valid, WP_Error otherwise.
 	 */
-	protected function get_user( $id ) {
+	protected function get_user( $id ) { // phpcs:ignore Squiz.Commenting.FunctionComment.TypeHintMissing -- overload
 		$error = new WP_Error(
 			'rest_user_invalid_id',
 			/* translators: [admin] */
@@ -264,7 +266,6 @@ class Users_Controller extends \WP_REST_Users_Controller {
 		}
 
 		// multisite & member of blog check removed
-
 		return $user;
 	}
 
@@ -273,9 +274,9 @@ class Users_Controller extends \WP_REST_Users_Controller {
 	 *
 	 * @param WP_REST_Request $request Full details about the request.
 	 *
-	 * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
+	 * @return WP_REST_Response|WP_Error Response object, or WP_Error on failure.
 	 */
-	public function create_item( $request ) {
+	public function create_item( $request ) { // phpcs:ignore Squiz.Commenting.FunctionComment.TypeHintMissing -- overload
 		if ( ! is_multisite() ) {
 			return parent::create_item( $request );
 		}

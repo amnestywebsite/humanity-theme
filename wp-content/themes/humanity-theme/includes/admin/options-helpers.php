@@ -8,11 +8,11 @@ if ( ! function_exists( 'cmb2_validate_integer' ) ) {
 	 *
 	 * @package Amnesty\Plugins\CMB2
 	 *
-	 * @param mixed $value the value to validate and sanitise
+	 * @param mixed $value The value to validate and sanitise
 	 *
-	 * @return integer
+	 * @return int
 	 */
-	function cmb2_validate_integer( $value ) {
+	function cmb2_validate_integer( mixed $value ): int {
 		return is_numeric( $value ) ? absint( $value ) : 0;
 	}
 }
@@ -24,11 +24,11 @@ if ( ! function_exists( 'amnesty_options_display_with_tabs' ) ) {
 	 *
 	 * @package Amnesty\Plugins\CMB2
 	 *
-	 * @param CMB2_Options_Hookup $cmb_options - The CMB2_Options_Hookup object.
+	 * @param CMB2_Options_Hookup $cmb_options The CMB2_Options_Hookup object.
 	 *
 	 * @return void
 	 */
-	function amnesty_options_display_with_tabs( $cmb_options ) {
+	function amnesty_options_display_with_tabs( CMB2_Options_Hookup $cmb_options ): void {
 		// v nonce check not required here
 		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		$page = sanitize_text_field( $_GET['page'] ?? '' );
@@ -61,11 +61,11 @@ if ( ! function_exists( 'amnesty_network_options_display_with_tabs' ) ) {
 	 *
 	 * @package Amnesty\Plugins\CMB2
 	 *
-	 * @param CMB2_Options_Hookup $cmb_options - The CMB2_Options_Hookup object.
+	 * @param CMB2_Options_Hookup $cmb_options The CMB2_Options_Hookup object.
 	 *
 	 * @return void
 	 */
-	function amnesty_network_options_display_with_tabs( $cmb_options ) {
+	function amnesty_network_options_display_with_tabs( CMB2_Options_Hookup $cmb_options ): void {
 		// v nonce check not required here
 		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		$page = sanitize_text_field( $_GET['page'] ?? '' );
@@ -102,7 +102,7 @@ if ( ! function_exists( 'amnesty_options_page_tabs' ) ) {
 	 *
 	 * @return array Array of tab information.
 	 */
-	function amnesty_options_page_tabs( $cmb_options ) {
+	function amnesty_options_page_tabs( CMB2_Options_Hookup $cmb_options ): array {
 		$tab_group = $cmb_options->cmb->prop( 'tab_group' );
 		$tabs      = [];
 

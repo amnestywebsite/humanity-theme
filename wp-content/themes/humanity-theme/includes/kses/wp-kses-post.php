@@ -8,8 +8,8 @@ if ( ! function_exists( 'amnesty_wp_kses_post_allowed_html' ) ) {
 	 *
 	 * @see wp_kses_allowed_html
 	 *
-	 * @param array<string,mixed> $tags    the existing allowed tags/attributes
-	 * @param string              $context the kses context
+	 * @param array<string,mixed> $tags    The existing allowed tags/attributes
+	 * @param string              $context The kses context
 	 *
 	 * @return array<string,mixed>
 	 */
@@ -40,8 +40,8 @@ if ( ! function_exists( 'amnesty_wp_kses_post_allow_style_tag' ) ) {
 	/**
 	 * Allow the <style> tag to be output
 	 *
-	 * @param array<string,mixed> $tags    allowed tags
-	 * @param string              $context the kses context
+	 * @param array<string,mixed> $tags    Allowed tags
+	 * @param string              $context The kses context
 	 *
 	 * @return array<string,mixed>
 	 */

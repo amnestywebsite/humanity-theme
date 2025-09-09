@@ -47,11 +47,11 @@ if ( ! function_exists( 'amnesty_wc_number_format' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param mixed $number the number to format
+	 * @param mixed $number The number to format
 	 *
 	 * @return string the formatted number
 	 */
-	function amnesty_wc_price_format( $number = 0 ) {
+	function amnesty_wc_price_format( mixed $number = 0 ) {
 		$number   = floatval( $number );
 		$currency = amnesty_woocommerce_currency();
 

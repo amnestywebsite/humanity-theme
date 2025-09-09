@@ -74,7 +74,7 @@ $display_th = true;
 <?php if ( wc_tax_enabled() && WC()->cart->tax_display_cart === 'excl' ) : ?>
 	<?php if ( get_option( 'woocommerce_tax_total_display' ) === 'itemized' ) : ?>
 
-		<?php foreach ( WC()->cart->get_taxes() as $tax_id => $tax_total ) : ?>
+		<?php foreach ( WC()->cart->get_taxes() as $tax_id => $ignore ) : ?>
 			<?php foreach ( $recurring_carts as $recurring_cart_key => $recurring_cart ) : ?>
 				<?php if ( 0 === absint( $recurring_cart->next_payment_date ) ) continue // phpcs:ignore ?>
 
@@ -116,7 +116,7 @@ $display_th = true;
 	<?php endif; ?>
 <?php endif; ?>
 
-<?php foreach ( $recurring_carts as $recurring_cart_key => $recurring_cart ) : ?>
+<?php foreach ( $recurring_carts as $recurring_cart ) : ?>
 	<?php if ( 0 === absint( $recurring_cart->next_payment_date ) ) continue // phpcs:ignore ?>
 
 	<tr class="order-total recurring-total">

@@ -43,11 +43,11 @@ if ( ! function_exists( 'get_site_language_code' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int|null $blog_id the site to get the langauge code for
+	 * @param int|null $blog_id The site to get the langauge code for
 	 *
 	 * @return string
 	 */
-	function get_site_language_code( int $blog_id = null ): string {
+	function get_site_language_code( ?int $blog_id = null ): string {
 		if ( is_multisite() && $blog_id ) {
 			switch_to_blog( $blog_id );
 		}
@@ -72,11 +72,11 @@ if ( ! function_exists( 'get_site_language_name' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int|null $blog_id the site to get the language name for
+	 * @param int|null $blog_id The site to get the language name for
 	 *
 	 * @return string
 	 */
-	function get_site_language_name( int $blog_id = null ): string {
+	function get_site_language_name( ?int $blog_id = null ): string {
 		$override = get_blog_option( $blog_id, 'amnesty_language_name' );
 
 		if ( $override ) {
@@ -108,7 +108,7 @@ if ( ! function_exists( 'strip_language_name_parentheticals' ) ) {
 	/**
 	 * Strips locale names from language names
 	 *
-	 * @param string $language the language name
+	 * @param string $language The language name
 	 *
 	 * @return string
 	 */
@@ -120,7 +120,7 @@ if ( ! function_exists( 'strip_language_name_parentheticals' ) ) {
 		/**
 		 * Since all Chinese locales use the same parent language, we instead use
 		 * the text _within_ the parentheticals, rather than the parent langauge text.
-		 * Otherwise, all would output simply "中文", and there would be no way to differentiate.
+		 * Otherwise, all would output simply be "中文", with no way to differentiate.
 		 */
 		if ( 1 === preg_match( '`^中文`', $language ) ) {
 			$stripped = preg_replace( '/.*?(?:[(（])(.*?)(?:[)）])\s*?/ui', '$1', $language );
@@ -138,7 +138,7 @@ if ( ! function_exists( 'do_404' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param bool $nocache whether to send no-cache headers
+	 * @param bool $nocache Whether to send no-cache headers
 	 *
 	 * @return void
 	 */

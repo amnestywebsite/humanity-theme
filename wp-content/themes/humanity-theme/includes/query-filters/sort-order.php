@@ -39,11 +39,11 @@ if ( ! function_exists( 'amnesty_add_sort_parameters' ) ) {
 	 *
 	 * @package Amnesty\Filters\WPQuery
 	 *
-	 * @param string $current_url - Url to append sort query to.
+	 * @param string $current_url Url to append sort query to.
 	 *
 	 * @return string
 	 */
-	function amnesty_add_sort_parameters( $current_url = '' ) {
+	function amnesty_add_sort_parameters( string $current_url = '' ) {
 		$sort = get_query_var( 'sort' );
 
 		if ( ! $sort ) {
@@ -65,11 +65,11 @@ if ( ! function_exists( 'amnesty_sort_posts_in_main_query' ) ) {
 	 *
 	 * @package Amnesty\Filters\WPQuery
 	 *
-	 * @param WP_Query $query - Current WordPress query.
+	 * @param WP_Query $query Current WordPress query.
 	 *
 	 * @return void
 	 */
-	function amnesty_sort_posts_in_main_query( $query ) {
+	function amnesty_sort_posts_in_main_query( WP_Query $query ) {
 		if ( is_admin() || ! $query->is_main_query() ) {
 			return;
 		}

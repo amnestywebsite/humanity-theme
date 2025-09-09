@@ -10,7 +10,7 @@ if ( ! function_exists( 'amnesty_paginate_links' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array $args the pagination arguments.
+	 * @param array $args The pagination arguments.
 	 *
 	 * @return array
 	 */

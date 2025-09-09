@@ -11,8 +11,7 @@ defined( 'ABSPATH' ) || exit;
 
 global $product;
 
-$attribute_keys = array_keys( $attributes );
-$user_id        = get_current_user_id();
+$user_id = get_current_user_id();
 
 do_action( 'woocommerce_before_add_to_cart_form' );
 
@@ -26,7 +25,7 @@ do_action( 'woocommerce_before_add_to_cart_form' );
 	<?php else : ?>
 		<?php if ( ! $product->is_purchasable() && 0 !== $user_id && 'no' !== wcs_get_product_limitation( $product ) && wcs_is_product_limited_for_user( $product, $user_id ) ) : ?>
 			<?php $resubscribe_link = wcs_get_users_resubscribe_link_for_product( $product->get_id() ); ?>
-			<?php if ( ! empty( $resubscribe_link ) && 'any' === wcs_get_product_limitation( $product ) && wcs_user_has_subscription( $user_id, $product->get_id(), wcs_get_product_limitation( $product ) ) && ! wcs_user_has_subscription( $user_id, $product->get_id(), 'active' ) && ! wcs_user_has_subscription( $user_id, $product->get_id(), 'on-hold' ) ) : // customer has an inactive subscription, maybe offer the renewal button. ?>
+			<?php /* customer has an inactive subscription, maybe offer the renewal button. */ if ( ! empty( $resubscribe_link ) && 'any' === wcs_get_product_limitation( $product ) && wcs_user_has_subscription( $user_id, $product->get_id(), wcs_get_product_limitation( $product ) ) && ! wcs_user_has_subscription( $user_id, $product->get_id(), 'active' ) && ! wcs_user_has_subscription( $user_id, $product->get_id(), 'on-hold' ) ) : ?>
 				<a href="<?php echo esc_url( $resubscribe_link ); ?>" class="woocommerce-button button product-resubscribe-link"><?php /* translators: [front] Donate */ esc_html_e( 'Resubscribe', 'woocommerce-subscriptions' ); ?></a>
 			<?php else : ?>
 				<p class="limited-subscription-notice notice"><?php /* translators: [front] Donate */ esc_html_e( 'You have an active subscription to this product already.', 'woocommerce-subscriptions' ); ?></p>
@@ -62,7 +61,12 @@ do_action( 'woocommerce_before_add_to_cart_form' );
 
 			<?php
 			/**
-			 * Post WC 3.4 the woocommerce_before_add_to_cart_button hook is triggered by the callback @see woocommerce_single_variation_add_to_cart_button() hooked onto woocommerce_single_variation.
+			 * Post WC 3.4 the woocommerce_before_add_to_cart_button hook is triggered
+			 * by the callback
+			 *
+			 * @see woocommerce_single_variation_add_to_cart_button()
+			 *
+			 * hooked onto woocommerce_single_variation.
 			 */
 			if ( WC_Subscriptions::is_woocommerce_pre( '3.4' ) ) {
 				do_action( 'woocommerce_before_add_to_cart_button' );
@@ -81,7 +85,9 @@ do_action( 'woocommerce_before_add_to_cart_form' );
 				do_action( 'woocommerce_before_single_variation' );
 
 				/**
-				 * Hook woocommerce_single_variation. Used to output the cart button and placeholder for variation data.
+				 * Hook woocommerce_single_variation.
+				 *
+				 * Used to output the cart button and placeholder for variation data.
 				 *
 				 * @since  2.4.0
 				 * @hooked woocommerce_single_variation - 10 Empty div for variation data.
@@ -98,7 +104,12 @@ do_action( 'woocommerce_before_add_to_cart_form' );
 
 			<?php
 			/**
-			 * Post WC 3.4 the woocommerce_after_add_to_cart_button hook is triggered by the callback @see woocommerce_single_variation_add_to_cart_button() hooked onto woocommerce_single_variation.
+			 * Post WC 3.4 the woocommerce_after_add_to_cart_button hook is triggered
+			 * by the callback
+			 *
+			 * @see woocommerce_single_variation_add_to_cart_button()
+			 *
+			 * hooked onto woocommerce_single_variation.
 			 */
 			if ( WC_Subscriptions::is_woocommerce_pre( '3.4' ) ) {
 				do_action( 'woocommerce_after_add_to_cart_button' );

@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_render_regions_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes the block's attributes
+	 * @param array $attributes The block's attributes
 	 *
 	 * @return string
 	 */

@@ -8,12 +8,12 @@ if ( ! function_exists( 'render_background_media_column' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes the block attributes
-	 * @param mixed $content    the block content
+	 * @param array  $attributes The block attributes
+	 * @param string $content    The block content
 	 *
 	 * @return string
 	 */
-	function render_background_media_column( array $attributes, $content = '' ): string {
+	function render_background_media_column( array $attributes, string $content = '' ): string {
 		if ( empty( $attributes['uniqId'] ) ) {
 			$attributes['uniqId'] = amnesty_rand_str( 4 );
 		}
@@ -24,7 +24,7 @@ if ( ! function_exists( 'render_background_media_column' ) ) {
 				"align{$attributes['horizontalAlignment']}" => (bool) $attributes['horizontalAlignment'],
 				"is-vertically-aligned-{$attributes['verticalAlignment']}" => (bool) $attributes['verticalAlignment'],
 				"has-{$attributes['background']}-background-color" => (bool) $attributes['background'],
-			] 
+			]
 		);
 
 		if ( 0 === absint( $attributes['image'] ) ) {

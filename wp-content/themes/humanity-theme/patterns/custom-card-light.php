@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Custom Card Light
- * Description: Custom card with a light grey background containing a heading, image, paragraph, and button.
+ * Description: light background behind heading, image, paragraph, button
  * Slug: amnesty/custom-card-light
  * Keywords: custom, card, light, grey
  * Categories: humanity-actions

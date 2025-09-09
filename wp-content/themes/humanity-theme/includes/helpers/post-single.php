@@ -12,8 +12,8 @@ if ( ! function_exists( 'retrieve_main_category' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array $featured_categories any priority categories
-	 * @param array $all_categories      the full list of categories
+	 * @param array $featured_categories Any priority categories
+	 * @param array $all_categories      The full list of categories
 	 *
 	 * @return object
 	 */
@@ -44,11 +44,14 @@ if ( ! function_exists( 'amnesty_the_content' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param mixed  $post           Optional. The post ID/object for context
-	 * @param string $more_link_text Optional. Content for when there is more text.
-	 * @param bool   $strip_teaser   Optional. Strip teaser content before the more text. Default false.
+	 * @param mixed       $post           The post ID/object for context
+	 * @param string|null $more_link_text Content for when there is more text.
+	 * @param bool        $strip_teaser   Strip teaser content before the more text.
+	 *                                    Default false.
+	 *
+	 * @return void
 	 */
-	function amnesty_the_content( $post = null, $more_link_text = null, $strip_teaser = false ) {
+	function amnesty_the_content( mixed $post = null, ?string $more_link_text = null, bool $strip_teaser = false ) {
 		$post    = get_post( $post );
 		$content = get_the_content( $more_link_text, $strip_teaser, $post );
 
@@ -80,7 +83,7 @@ if ( ! function_exists( 'amnesty_image_has_mgm_prefix' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param integer $image_id the image to check
+	 * @param int $image_id The image to check
 	 *
 	 * @return bool
 	 */
@@ -107,7 +110,7 @@ if ( ! function_exists( 'amnesty_get_image_without_mgm_prefix' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int $image_id the full image ID
+	 * @param int $image_id The full image ID
 	 *
 	 * @return int
 	 */
@@ -134,8 +137,8 @@ if ( ! function_exists( 'amnesty_get_image_credit' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int    $image_id  the image ID
-	 * @param string $image_src the image URI
+	 * @param int    $image_id  The image ID
+	 * @param string $image_src The image URI
 	 *
 	 * @return string|null
 	 */
@@ -151,8 +154,8 @@ if ( ! function_exists( 'amnesty_get_image_caption' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int    $image_id  the image ID
-	 * @param string $image_src the image URI
+	 * @param int    $image_id  The image ID
+	 * @param string $image_src The image URI
 	 *
 	 * @return string|null
 	 */
@@ -168,7 +171,7 @@ if ( ! function_exists( 'amnesty_get_image_alt_text' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int $image_id the image ID
+	 * @param int $image_id The image ID
 	 *
 	 * @return string
 	 */
@@ -184,7 +187,7 @@ if ( ! function_exists( 'amnesty_get_attachment_url' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int|null $post_id the attachment ID
+	 * @param int|null $post_id The attachment ID
 	 *
 	 * @return string|false
 	 */
@@ -227,8 +230,8 @@ if ( ! function_exists( 'amnesty_get_attachment_image_src' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param int|null $post_id the image ID
-	 * @param string   $size    the image size to retrieve
+	 * @param int|null $post_id The image ID
+	 * @param string   $size    The image size to retrieve
 	 *
 	 * @return string|false
 	 */

@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_allow_position_inline_style' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<int,string> $safe the existing list of allowed properties
+	 * @param array<int,string> $safe The existing list of allowed properties
 	 *
 	 * @return array<int,string>
 	 */
@@ -23,7 +23,7 @@ if ( ! function_exists( 'amnesty_render_tickcounter_embed' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
+	 * @param array<string,mixed> $attributes The block attributes
 	 *
 	 * @return string
 	 */

@@ -7,8 +7,9 @@
  * @version  2.6.4
  */
 
+// Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 ?>
@@ -27,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</thead>
 
 		<tbody>
-		<?php foreach ( $subscriptions as $subscription_id => $subscription ) : ?>
+		<?php foreach ( $subscriptions as $subscription ) : ?>
 			<tr class="order woocommerce-orders-table__row woocommerce-orders-table__row--status-<?php echo esc_attr( $subscription->get_status() ); ?>">
 				<td class="subscription-id order-number woocommerce-orders-table__cell woocommerce-orders-table__cell-subscription-id woocommerce-orders-table__cell-order-number" data-title="<?php /* translators: [front] Donate */ esc_attr_e( 'ID', 'woocommerce-subscriptions' ); ?>">
 					<a href="<?php echo esc_url( $subscription->get_view_order_url() ); ?>"><?php echo esc_html( /* translators: %s the order number */ sprintf( _x( '#%s', 'hash before order number', 'woocommerce-subscriptions' ), $subscription->get_order_number() ) ); ?></a>

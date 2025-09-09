@@ -54,9 +54,9 @@ if ( ! function_exists( 'amnesty_rest_api_restricted_endpoints' ) ) {
 	 *
 	 * @package Amnesty\RestApi
 	 *
-	 * @param mixed           $response the API response data
-	 * @param WP_REST_Server  $server   the REST API server object
-	 * @param WP_REST_Request $request  the REST API request object
+	 * @param mixed           $response The API response data
+	 * @param WP_REST_Server  $server   The REST API server object
+	 * @param WP_REST_Request $request  The REST API request object
 	 *
 	 * @return mixed
 	 */

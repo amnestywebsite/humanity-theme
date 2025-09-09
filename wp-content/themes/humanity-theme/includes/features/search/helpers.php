@@ -31,7 +31,7 @@ if ( ! function_exists( 'amnesty_get_searchpage_query_object' ) ) {
 	 *
 	 * @package Amnesty\Search
 	 *
-	 * @param bool $execute whether to execute on instantiation
+	 * @param bool $execute Whether to execute on instantiation
 	 *
 	 * @return \Amnesty\Search_Page
 	 */
@@ -55,7 +55,7 @@ if ( ! function_exists( 'amnesty_load_searchpage_query_object' ) ) {
 	 *
 	 * @package Amnesty\Search
 	 *
-	 * @param WP_Query $query the global WP_Query object
+	 * @param WP_Query $query The global WP_Query object
 	 *
 	 * @return void
 	 */

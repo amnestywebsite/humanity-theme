@@ -24,7 +24,7 @@ $article_has_sidebar = $max_post_content ? '' : 'has-sidebar';
 		<!-- wp:post-content /-->
 	</article>
 	<!-- /wp:group -->
-<?php if ( get_the_ID() ) : // prevent weird output in the site editor ?>
+<?php if ( get_the_ID() ) : ?>
 	<!-- wp:group {"tagName":"footer","className":"article-footer"} -->
 	<footer class="wp-block-group article-footer">
 		<!-- wp:pattern {"slug":"amnesty/post-terms"} /-->

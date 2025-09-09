@@ -6,7 +6,7 @@ if ( ! function_exists( 'amnesty_strip_formatting_from_post_title' ) ) {
 	/**
 	 * Strip formatting from post title in post array
 	 *
-	 * @param array<string,mixed> $data the post array
+	 * @param array<string,mixed> $data The post array
 	 *
 	 * @return array<string,mixed>
 	 */

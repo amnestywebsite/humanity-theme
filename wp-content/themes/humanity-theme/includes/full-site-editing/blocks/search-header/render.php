@@ -6,9 +6,9 @@ if ( ! function_exists( 'render_search_header_block' ) ) {
 	/**
 	 * Render the post search header block
 	 *
-	 * @param array<string,mixed> $attributes block attributes
-	 * @param string              $content    block content
-	 * @param WP_Block            $block      block object
+	 * @param array<string,mixed> $attributes Block attributes
+	 * @param string              $content    Block content
+	 * @param WP_Block            $block      Block object
 	 *
 	 * @return string
 	 */

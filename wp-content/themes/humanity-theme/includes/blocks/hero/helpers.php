@@ -8,11 +8,11 @@ if ( ! function_exists( 'amnesty_post_has_hero' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param mixed $post the post to check
+	 * @param mixed $post The post to check
 	 *
 	 * @return bool
 	 */
-	function amnesty_post_has_hero( $post = null ): bool {
+	function amnesty_post_has_hero( mixed $post = null ): bool {
 		$content = get_the_content( null, false, $post );
 		return false !== strpos( $content, '<!-- wp:amnesty-core/hero' );
 	}
@@ -24,11 +24,11 @@ if ( ! function_exists( 'amnesty_get_hero_data' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param mixed $post the post to get the data for
+	 * @param mixed $post The post to get the data for
 	 *
 	 * @return array
 	 */
-	function amnesty_get_hero_data( $post = null ) {
+	function amnesty_get_hero_data( mixed $post = null ) {
 		if ( is_404() || is_search() ) {
 			return [
 				'name'    => '',
@@ -74,7 +74,7 @@ if ( ! function_exists( 'amnesty_remove_first_hero_from_content' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param string $content the post content
+	 * @param string $content The post content
 	 *
 	 * @return string
 	 */

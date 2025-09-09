@@ -10,11 +10,11 @@ if ( ! function_exists( 'classnames' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param array ...$args any supplied arguments
+	 * @param array ...$args Any supplied arguments
 	 *
 	 * @return string
 	 */
-	function classnames( ...$args ) {
+	function classnames( array ...$args ) {
 		return ( new Classnames( ...$args ) )->get();
 	}
 }
@@ -50,9 +50,9 @@ class Classnames {
 	/**
 	 * Execute processing
 	 *
-	 * @param array ...$args any supplied arguments
+	 * @param array ...$args Any supplied arguments
 	 */
-	public function __construct( ...$args ) {
+	public function __construct( array ...$args ) {
 		$this->args = $args;
 		$this->run();
 	}
@@ -103,11 +103,11 @@ class Classnames {
 	/**
 	 * Process a single argument
 	 *
-	 * @param mixed $item a single supplied argument
+	 * @param mixed $item A single supplied argument
 	 *
 	 * @return void
 	 */
-	protected function run_item( $item ) {
+	protected function run_item( mixed $item ) {
 		switch ( gettype( $item ) ) {
 			case 'string':
 				$this->dirty[] = $item;
@@ -143,11 +143,11 @@ class Classnames {
 	/**
 	 * Convert an object to an array
 	 *
-	 * @param mixed $the_object an object-type item
+	 * @param mixed $the_object An object-type item
 	 *
 	 * @return array
 	 */
-	protected function to_array( $the_object ) {
+	protected function to_array( mixed $the_object ) {
 		if ( method_exists( $the_object, 'to_array' ) ) {
 			return $the_object->to_array();
 		}
@@ -162,24 +162,24 @@ class Classnames {
 	/**
 	 * Check that an item's key is the class name to use
 	 *
-	 * @param mixed $key the current item's key
-	 * @param mixed $val the current item's value
+	 * @param mixed $key The current item's key
+	 * @param mixed $val The current item's value
 	 *
 	 * @return bool
 	 */
-	protected function key_is( $key, $val ) {
+	protected function key_is( mixed $key, mixed $val ) {
 		return is_string( $key ) && (bool) $key && (bool) $val;
 	}
 
 	/**
 	 * Check that an item's value is the class name to use
 	 *
-	 * @param mixed $key the current item's key
-	 * @param mixed $val the current item's value
+	 * @param mixed $key The current item's key
+	 * @param mixed $val The current item's value
 	 *
 	 * @return bool
 	 */
-	protected function val_is( $key, $val ) {
+	protected function val_is( mixed $key, mixed $val ) {
 		return ! is_string( $key ) && is_string( $val ) && (bool) $val;
 	}
 

@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_wc_order_button_html' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param string $html the original HTML
+	 * @param string $html The original HTML
 	 *
 	 * @return string
 	 */

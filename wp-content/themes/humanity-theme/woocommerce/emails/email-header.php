@@ -2,7 +2,8 @@
 /**
  * Email Header
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/emails/email-header.php.
+ * This template can be overridden by copying it to
+ *   yourtheme/woocommerce/emails/email-header.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -15,8 +16,9 @@
  * @version 4.0.0
  */
 
+// Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 // phpcs:disable

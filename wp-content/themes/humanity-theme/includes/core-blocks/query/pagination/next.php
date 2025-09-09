@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_override_core_query_pagination_next_render' ) )
 	/**
 	 * Overrides the render method of core/query-pagination-next
 	 *
-	 * @param array<string,mixed> $settings the block settings
+	 * @param array<string,mixed> $settings The block settings
 	 *
 	 * @return array<string,mixed>
 	 */
@@ -33,7 +33,7 @@ if ( ! function_exists( 'amnesty_get_next_posts_link' ) ) {
 	 *
 	 * @return string HTML-formatted next posts page link.
 	 */
-	function amnesty_get_next_posts_link( $label = null, $max_page = 0 ): string {
+	function amnesty_get_next_posts_link( string $label = null, int $max_page = 0 ): string {
 		global $paged, $wp_query;
 
 		if ( ! $max_page ) {
@@ -93,7 +93,7 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_next' ) ) {
 	 *
 	 * phpcs:disable Generic.Metrics.CyclomaticComplexity.TooHigh
 	 */
-	function amnesty_render_block_core_query_pagination_next( $attributes, $content, $block ) {
+	function amnesty_render_block_core_query_pagination_next( array $attributes, string $content, WP_Block $block ) {
 		$page_key            = isset( $block->context['queryId'] ) ? 'query-' . $block->context['queryId'] . '-page' : 'query-page';
 		$enhanced_pagination = isset( $block->context['enhancedPagination'] ) && $block->context['enhancedPagination'];
 		$page                = absint( $_GET[ $page_key ] ?? $attributes['paged'] ?? 1 ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- taken from core
@@ -132,7 +132,8 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_next' ) ) {
 		if ( ! isset( $block->context['query']['inherit'] ) || ! $block->context['query']['inherit'] ) {
 			$custom_query = new WP_Query( build_query_vars_from_query_block( $block, $page ) );
 			$max_page     = (int) $custom_query->max_num_pages;
-			wp_reset_postdata(); // Restore original Post Data.
+			// Restore original Post Data.
+			wp_reset_postdata();
 		}
 
 		$content = amnesty_get_next_posts_link( $label, $max_page );

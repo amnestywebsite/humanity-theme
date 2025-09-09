@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_add_custom_columns' ) ) {
 	 *
 	 * @package Amnesty\Admin\Options
 	 *
-	 * @param array $columns the table's columns
+	 * @param array $columns The table's columns
 	 *
 	 * @return array
 	 */
@@ -33,7 +33,7 @@ if ( ! function_exists( 'amnesty_remove_comments_column' ) ) {
 	 *
 	 * @package Amnesty\Admin\Options
 	 *
-	 * @param array $columns the table's columns
+	 * @param array $columns The table's columns
 	 *
 	 * @return array
 	 */
@@ -51,8 +51,8 @@ if ( ! function_exists( 'amnesty_render_custom_columns' ) ) {
 	 *
 	 * @package Amnesty\Admin\Options
 	 *
-	 * @param string $name the column name
-	 * @param int    $post_id the object ID
+	 * @param string $name    The column name
+	 * @param int    $post_id The object ID
 	 *
 	 * @return void
 	 */
@@ -87,7 +87,7 @@ if ( ! function_exists( 'amnesty_list_table_search' ) ) {
 	 *
 	 * @package Amnesty\Admin\Options
 	 *
-	 * @param \WP_Query $query the search query
+	 * @param \WP_Query $query The search query
 	 *
 	 * @return void
 	 */

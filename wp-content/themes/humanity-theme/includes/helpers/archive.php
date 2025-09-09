@@ -8,7 +8,7 @@ if ( ! function_exists( 'get_archive_slider_posts' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param \WP_Term $term the term to query against
+	 * @param \WP_Term $term The term to query against
 	 *
 	 * @return array<int,\WP_Post>
 	 */
@@ -24,11 +24,14 @@ if ( ! function_exists( 'get_archive_slider_posts' ) ) {
 
 		$raw_slider_items = new WP_Query(
 			[
-				'ignore_sticky_posts' => true, // perf: don't perform sticky logic
-				'no_found_rows'       => true, // perf: no pagination required
+				// perf: don't perform sticky logic
+				'ignore_sticky_posts' => true,
+				// perf: no pagination required
+				'no_found_rows'       => true,
 				'post_type'           => 'post',
 				'posts_per_page'      => 3,
-				'meta_query'          => [ // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
+				// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
+				'meta_query'          => [
 					'relation' => 'AND',
 					[
 						'key'     => 'term_slider',

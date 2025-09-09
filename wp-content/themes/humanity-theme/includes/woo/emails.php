@@ -9,7 +9,7 @@ if ( ! function_exists( 'amnesty_wc_email_add_image_setting' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param array $settings the existing settings fields
+	 * @param array $settings The existing settings fields
 	 *
 	 * @return array
 	 */
@@ -50,7 +50,7 @@ if ( ! function_exists( 'amnesty_wc_email_add_footer_setting' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param array $settings the existing settings
+	 * @param array $settings The existing settings
 	 *
 	 * @return array
 	 */

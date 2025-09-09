@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Call to Action Borders
- * Description: Call to action with a top and bottom border containing a headings, paragraph, and button.
+ * Description: borders top & bottom; with heading, paragraph, button.
  * Slug: amnesty/call-to-action-borders
  * Keywords: call to action, borders
  * Categories: humanity-actions

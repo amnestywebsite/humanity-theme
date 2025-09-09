@@ -10,13 +10,13 @@ if ( ! function_exists( 'amnesty_mlp_pretty_permalinks' ) ) {
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
 	 *
-	 * @param string $url     the permalink
-	 * @param int    $blog_id the link's blog id
-	 * @param int    $post_id the link's post id
+	 * @param string $url     The permalink
+	 * @param int    $blog_id The link's blog id
+	 * @param int    $post_id The link's post id
 	 *
 	 * @return string
 	 */
-	function amnesty_mlp_pretty_permalinks( $url = '', $blog_id = 0, $post_id = 0 ) {
+	function amnesty_mlp_pretty_permalinks( string $url = '', int $blog_id = 0, int $post_id = 0 ) {
 		return get_blog_permalink( $blog_id, $post_id );
 	}
 }

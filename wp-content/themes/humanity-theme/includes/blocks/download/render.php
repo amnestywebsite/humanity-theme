@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_render_download_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attrs the block attributes
+	 * @param array $attrs The block attributes
 	 *
 	 * @return string|null
 	 */
@@ -19,10 +19,12 @@ if ( ! function_exists( 'amnesty_render_download_block' ) ) {
 
 		$attrs = apply_filters( 'amnesty_download_block_attributes', $attrs );
 
+		// phpcs:disable SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in view
 		$files  = $attrs['files'];
 		$text   = isset( $attrs['buttonText'] ) ? $attrs['buttonText'] : /* translators: [front] */ __( 'Download', 'amnesty' );
 		$colour = sprintf( 'btn--%s', isset( $attrs['style'] ) ? $attrs['style'] : 'dark' );
 		$align  = isset( $attrs['alignment'] ) ? sprintf( 'align%s', $attrs['alignment'] ) : '';
+		// phpcs:enable SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable
 
 		if ( count( $files ) < 2 ) {
 			if ( empty( $files[0]['id'] ) ) {
@@ -53,7 +55,7 @@ if ( ! function_exists( 'amnesty_render_download_block__deprecated' ) ) {
 	/**
 	 * Render a download block (deprecated version)
 	 *
-	 * @package Amnesty\Blocks
+	 * @package    Amnesty\Blocks
 	 * @deprecated 1.0.0
 	 *
 	 * @return string

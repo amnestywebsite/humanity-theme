@@ -8,7 +8,7 @@ if ( ! function_exists( 'render_image_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
+	 * @param array<string,mixed> $attributes The block attributes
 	 *
 	 * @return string
 	 */
@@ -30,10 +30,10 @@ if ( ! function_exists( 'render_image_block' ) ) {
 				'type'       => '',
 				'videoID'    => 0,
 				'videoURL'   => '',
-			] 
+			]
 		);
 
-		// used in views
+		// phpcs:ignore SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in views
 		$block_classes = classnames(
 			'imageBlock',
 			[
@@ -41,15 +41,15 @@ if ( ! function_exists( 'render_image_block' ) ) {
 				'imageBlock--fixed' => 'fixed' === $attributes['style'],
 				'has-video'         => 'video' === $attributes['type'],
 				'has-parallax'      => (bool) $attributes['parallax'],
-			] 
+			]
 		);
 
-		// used in views
+		// phpcs:ignore SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in views
 		$caption_classes = classnames(
 			'imageBlock-caption',
 			[
 				sprintf( 'align%s', $attributes['align'] ) => 'default' !== $attributes['align'],
-			] 
+			]
 		);
 
 		if ( $attributes['parallax'] ) {
@@ -83,7 +83,7 @@ if ( ! function_exists( 'render_image_block' ) ) {
 			'u-cf',
 			[
 				sprintf( 'align%s', $attributes['align'] ) => 'default' !== $attributes['align'],
-			] 
+			]
 		);
 
 		return sprintf( '<div class="%s">%s</div>', esc_attr( $wrapper_classes ), $block );

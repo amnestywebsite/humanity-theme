@@ -18,7 +18,7 @@ if ( ! $twitter_handle ) {
 ?>
 <!-- wp:group {"tagName":"aside","className":"twitter-sidebar"} -->
 <aside class="twitter-sidebar">
-	<a class="twitter-timeline" href="https://twitter.com/<?php echo esc_attr( $twitter_handle ); ?>?ref_src=twsrc%5Etfw" data-tweet-limit="3" data-width="500">Tweets by <?php echo esc_html( $twitter_handle ); ?></a>
+	<a class="twitter-timeline" href="https://twitter.com/<?php echo esc_attr( $twitter_handle ); ?>?ref_src=twsrc%5Etfw" data-tweet-limit="3" data-width="500"><?php echo esc_html( $twitter_link_text ); ?></a>
 	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </aside>
 <!-- /wp:group -->

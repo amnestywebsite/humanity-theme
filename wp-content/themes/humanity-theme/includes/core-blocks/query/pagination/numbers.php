@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_override_core_query_pagination_numbers_render' 
 	/**
 	 * Overrides the render method of core/query-pagination-numbers
 	 *
-	 * @param array<string,mixed> $settings the block settings
+	 * @param array<string,mixed> $settings The block settings
 	 *
 	 * @return array<string,mixed>
 	 */
@@ -35,7 +35,7 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_numbers' ) )
 	 *
 	 * phpcs:disable Generic.Metrics.CyclomaticComplexity.MaxExceeded
 	 */
-	function amnesty_render_block_core_query_pagination_numbers( $attributes, $content, $block ) {
+	function amnesty_render_block_core_query_pagination_numbers( array $attributes, string $content, WP_Block $block ) {
 		$page_key            = isset( $block->context['queryId'] ) ? 'query-' . $block->context['queryId'] . '-page' : 'query-page';
 		$enhanced_pagination = $block->context['enhancedPagination'] ?? false;
 		$page                = absint( $_GET[ $page_key ] ?? $attributes['paged'] ?? 1 ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- taken from core
@@ -123,9 +123,11 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_numbers' ) )
 			}
 
 			$content = paginate_links( $paginate_args );
-			wp_reset_postdata(); // Restore original Post Data.
+			// Restore original Post Data.
+			wp_reset_postdata();
 
-			$wp_query = $prev_wp_query; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited -- taken from core
+			// phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited -- taken from core
+			$wp_query = $prev_wp_query;
 		}
 
 		if ( empty( $content ) ) {

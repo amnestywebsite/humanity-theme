@@ -11,8 +11,7 @@ if ( $query_object->get_count() <= get_option( 'posts_per_page' ) ) {
 	return;
 }
 
-$current_num = absint( get_query_var( 'paged' ) ) ?: 1;
-$num_pages   = absint( ceil( $query_object->get_count() / get_option( 'posts_per_page' ) ) );
+$num_pages = absint( ceil( $query_object->get_count() / get_option( 'posts_per_page' ) ) );
 
 /* translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label */
 $previous_link = get_previous_posts_link( '<span class="icon"></span><span>' . __( 'Previous', 'amnesty' ) . '</span>' );
@@ -25,7 +24,7 @@ $page_numbers = amnesty_paginate_links(
 		'prev_next' => false,
 		'type'      => 'array',
 		'total'     => $num_pages,
-	] 
+	]
 );
 
 if ( empty( $page_numbers ) ) {

@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_render_sutori_embed' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
+	 * @param array<string,mixed> $attributes The block attributes
 	 *
 	 * @return string
 	 */

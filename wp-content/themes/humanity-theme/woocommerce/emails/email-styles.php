@@ -2,7 +2,8 @@
 /**
  * Email Styles
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/emails/email-styles.php.
+ * This template can be overridden by copying it to
+ *   yourtheme/woocommerce/emails/email-styles.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -36,7 +37,6 @@ if ( wc_hex_is_light( $body ) ) {
 $bg_darker_10    = wc_hex_darker( $bg, 10 );
 $body_darker_10  = wc_hex_darker( $body, 10 );
 $base_lighter_20 = wc_hex_lighter( $base, 20 );
-$base_lighter_40 = wc_hex_lighter( $base, 40 );
 $text_lighter_20 = wc_hex_lighter( $text, 20 );
 $text_lighter_40 = wc_hex_lighter( $text, 40 );
 

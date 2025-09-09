@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_add_nav_menu_shortcode_support' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param array $items the nav menu item list
+	 * @param array $items The nav menu item list
 	 *
 	 * @return array
 	 */
@@ -29,7 +29,7 @@ if ( ! function_exists( 'amnesty_add_cart_class_to_menu_items' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param array $items the nav menu item list
+	 * @param array $items The nav menu item list
 	 *
 	 * @return array
 	 */

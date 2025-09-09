@@ -11,8 +11,8 @@ if ( ! function_exists( 'amnesty_add_name_like_support' ) ) {
 	 *
 	 * @package Amnesty\Filters\WPQuery
 	 *
-	 * @param string    $where the existing query WHERE clause(s)
-	 * @param \WP_Query $query the current query object
+	 * @param string    $where The existing query WHERE clause(s)
+	 * @param \WP_Query $query The current query object
 	 *
 	 * @return string
 	 */
@@ -23,6 +23,6 @@ if ( ! function_exists( 'amnesty_add_name_like_support' ) ) {
 
 		global $wpdb;
 
-		return $where .= $wpdb->prepare( " AND {$wpdb->posts}.post_name LIKE %s", $query->get( 'post_name__like' ) );
+		return $where . $wpdb->prepare( " AND {$wpdb->posts}.post_name LIKE %s", $query->get( 'post_name__like' ) );
 	}
 }

@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_yoast_fix_post_breadcrumb_schema' ) ) {
 	 *
 	 * @package Amnesty\Plugins\Yoast
 	 *
-	 * @param array|null $piece the schema array
+	 * @param array|null $piece The schema array
 	 *
 	 * @return array|null
 	 */

@@ -8,8 +8,8 @@ if ( ! function_exists( 'amnesty_slider_kses' ) ) {
 	 *
 	 * @package Amnesty\Kses
 	 *
-	 * @param array  $tags    currently-allowed HMTL tags/attributes
-	 * @param string $context the KSES context
+	 * @param array  $tags    Currently-allowed HMTL tags/attributes
+	 * @param string $context The KSES context
 	 *
 	 * @return array
 	 */
@@ -36,20 +36,20 @@ if ( ! function_exists( 'amnesty_slider_kses' ) ) {
 						'selected' => true,
 						'name'     => true,
 						'checked'  => true,
-					] 
+					]
 				),
 				'label'   => _wp_add_global_attributes( [] ),
 				'div'     => _wp_add_global_attributes(
 					[
 						'tabindex' => true,
-					] 
+					]
 				),
 				'select'  => _wp_add_global_attributes( [ 'name' => true ] ),
 				'option'  => _wp_add_global_attributes(
 					[
 						'value'    => true,
 						'selected' => true,
-					] 
+					]
 				),
 				'button'  => _wp_add_global_attributes(
 					[
@@ -58,16 +58,16 @@ if ( ! function_exists( 'amnesty_slider_kses' ) ) {
 						'data-slide-index' => true,
 						'key'              => true,
 						'style'            => true,
-					] 
+					]
 				),
 				'a'       => _wp_add_global_attributes(
 					[
 						'value'    => true,
 						'selected' => true,
 						'href'     => true,
-					] 
+					]
 				),
-			] 
+			]
 		);
 	}
 }

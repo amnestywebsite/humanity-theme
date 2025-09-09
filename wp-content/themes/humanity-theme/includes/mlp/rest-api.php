@@ -12,7 +12,7 @@ if ( ! function_exists( 'amnesty_rest_field_get_callback_mlp_post_relationships'
 	 *
 	 * @package Amnesty\Multilingualpress
 	 *
-	 * @param array $post the post data
+	 * @param array $post The post data
 	 *
 	 * @return array|null
 	 */
@@ -32,8 +32,8 @@ if ( ! function_exists( 'amnesty_rest_field_update_callback_mlp_post_relationshi
 	 *
 	 * @package Amnesty\Multilingualpress
 	 *
-	 * @param array   $value the value to set
-	 * @param WP_Post $post  the post to update
+	 * @param array   $value The value to set
+	 * @param WP_Post $post  The post to update
 	 *
 	 * @return bool
 	 */
@@ -85,7 +85,7 @@ if ( ! function_exists( 'amnesty_rest_field_get_callback_mlp_term_relationships'
 	 *
 	 * @package Amnesty\Multilingualpress
 	 *
-	 * @param array $term the term data
+	 * @param array $term The term data
 	 *
 	 * @return array|null
 	 */
@@ -105,8 +105,8 @@ if ( ! function_exists( 'amnesty_rest_field_update_callback_mlp_term_relationshi
 	 *
 	 * @package Amnesty\Multilingualpress
 	 *
-	 * @param array   $value the value to set
-	 * @param WP_Term $term the term to update
+	 * @param array   $value The value to set
+	 * @param WP_Term $term  The term to update
 	 *
 	 * @return bool
 	 */

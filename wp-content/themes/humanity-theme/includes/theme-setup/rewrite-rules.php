@@ -10,7 +10,7 @@ if ( ! function_exists( 'amnesty_fix_archive_pagination' ) ) {
 	 *
 	 * @package Amnesty\ThemeSetup
 	 *
-	 * @param array<string,string> $rules the list of generated rewrite rules
+	 * @param array<string,string> $rules The list of generated rewrite rules
 	 *
 	 * @return array<string,string>
 	 */

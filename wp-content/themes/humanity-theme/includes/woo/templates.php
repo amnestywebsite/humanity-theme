@@ -8,8 +8,8 @@ if ( ! function_exists( 'amnesty_maybe_filter_quantity_input_template' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param string $template      the original template
-	 * @param string $template_name the original template name
+	 * @param string $template      The original template
+	 * @param string $template_name The original template name
 	 *
 	 * @return string
 	 */

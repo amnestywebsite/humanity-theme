@@ -4,8 +4,8 @@ declare( strict_types = 1 );
 
 namespace Amnesty;
 
-use WP_REST_Request;
 use WP_Error;
+use WP_REST_Request;
 
 new Fetch_Menus();
 
@@ -33,11 +33,11 @@ class Fetch_Menus {
 	/**
 	 * Validate that a parameter is numeric.
 	 *
-	 * @param mixed $param - Paramater to check
+	 * @param mixed $param Paramater to check
 	 *
 	 * @return bool
 	 */
-	public function validate_numeric( $param ) {
+	public function validate_numeric( mixed $param ) {
 		return is_numeric( $param );
 	}
 
@@ -54,7 +54,7 @@ class Fetch_Menus {
 				'callback'            => [ $this, 'get_items' ],
 				'methods'             => 'GET',
 				'permission_callback' => 'is_user_logged_in',
-			] 
+			]
 		);
 
 		register_rest_route(
@@ -69,7 +69,7 @@ class Fetch_Menus {
 						'validate_callback' => [ $this, 'validate_numeric' ],
 					],
 				],
-			] 
+			]
 		);
 	}
 
@@ -85,7 +85,8 @@ class Fetch_Menus {
 	/**
 	 * Return an array containing the menu object and its rendered html.
 	 *
-	 * @param \WP_REST_Request $request - Current Request.
+	 * @param \WP_REST_Request $request Current Request.
+	 *
 	 * @return array|mixed|\WP_REST_Response
 	 */
 	public function get_item( WP_REST_Request $request ) {
@@ -112,7 +113,7 @@ class Fetch_Menus {
 				'link_after'      => '',
 				'items_wrap'      => '%3$s',
 				'depth'           => 0,
-			] 
+			]
 		);
 
 		return [
@@ -120,4 +121,5 @@ class Fetch_Menus {
 			'rendered' => $rendered,
 		];
 	}
+
 }

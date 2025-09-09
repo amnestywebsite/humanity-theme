@@ -83,13 +83,13 @@ abstract class Post_Type {
 	/**
 	 * Declare this post type for feature support configuration
 	 *
-	 * @param mixed  $cmb2  the post type options metabox
-	 * @param string $group the post type options group
+	 * @param mixed  $cmb2  The post type options metabox
+	 * @param string $group The post type options group
 	 *
 	 * @return void
 	 */
-	public function declare( $cmb2, $group ): void {
-		$cmb2->add_group_field(
+	public function declare( mixed $cmb2, string $group ): void {
+		$cmb2?->add_group_field(
 			$group,
 			[
 				'id'      => $this->slug,
@@ -133,7 +133,7 @@ abstract class Post_Type {
 	/**
 	 * Save the localised post type slug
 	 *
-	 * @param array $data the POSTed data
+	 * @param array $data The POSTed data
 	 *
 	 * @return void
 	 */
@@ -207,7 +207,7 @@ abstract class Post_Type {
 	/**
 	 * Default post slug has changed - update the database accordingly
 	 *
-	 * @param string $old_slug the previous slug
+	 * @param string $old_slug The previous slug
 	 *
 	 * @global $wpdb
 	 *

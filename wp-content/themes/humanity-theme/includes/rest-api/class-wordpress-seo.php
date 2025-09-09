@@ -80,10 +80,10 @@ class WordPress_Seo {
 	/**
 	 * Modify meta registration
 	 *
-	 * @param array<string,mixed> $args        meta registration params
-	 * @param array<string,mixed> $defaults    meta registration default params
-	 * @param string              $object_type object type meta is being registered for
-	 * @param string              $meta_key    the meta key being registered
+	 * @param array<string,mixed> $args        Meta registration params
+	 * @param array<string,mixed> $defaults    Meta registration default params
+	 * @param string              $object_type Object type meta is being registered for
+	 * @param string              $meta_key    The meta key being registered
 	 *
 	 * @return array
 	 */

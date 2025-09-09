@@ -8,11 +8,11 @@ if ( ! function_exists( 'amnesty_petition_list_process_content' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current block attributes.
+	 * @param array $attributes Current block attributes.
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_petition_list_process_content( $attributes ) {
+	function amnesty_petition_list_process_content( array $attributes ) {
 		if ( empty( $attributes['type'] ) ) {
 			return amnesty_list_process_category( $attributes );
 		}
@@ -43,11 +43,11 @@ if ( ! function_exists( 'amnesty_render_petition_item' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $data - Item data.
+	 * @param array $data Item data.
 	 *
 	 * @return void
 	 */
-	function amnesty_render_petition_item( $data ) {
+	function amnesty_render_petition_item( array $data ) {
 		$title = isset( $data['title'] ) ? $data['title'] : '';
 
 		/* translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/ */
@@ -110,11 +110,11 @@ if ( ! function_exists( 'amnesty_petition_list_process_query' ) ) {
 	 * @package Amnesty\Blocks
 	 *
 	 * @param WP_Query     $query Current WP_Query.
-	 * @param object|false $term  a term to use, if supplied
+	 * @param object|false $term  A term to use, if supplied
 	 *
 	 * @return array
 	 */
-	function amnesty_petition_list_process_query( $query, $term = false ) {
+	function amnesty_petition_list_process_query( WP_Query $query, object|false $term = false ) {
 		$posts = [];
 
 		if ( ! $query->have_posts() ) {
@@ -163,18 +163,18 @@ if ( ! function_exists( 'amnesty_petition_list_process_feed' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current Block attributes.
+	 * @param array $attributes Current Block attributes.
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_petition_list_process_feed( $attributes ) {
+	function amnesty_petition_list_process_feed( array $attributes ) {
 		if ( empty( $attributes ) ) {
 			return false;
 		}
 
 		$post_types = [ get_option( 'aip_petition_slug' ) ?: 'petition' ];
 
-		$amount = 3; // the default
+		$amount = 3;
 		if ( isset( $attributes['amount'] ) ) {
 			$amount = absint( $attributes['amount'] );
 		}
@@ -206,11 +206,11 @@ if ( ! function_exists( 'amnesty_petition_list_process_select' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current Block attributes.
+	 * @param array $attributes Current Block attributes.
 	 *
 	 * @return array|bool
 	 */
-	function amnesty_petition_list_process_select( $attributes ) {
+	function amnesty_petition_list_process_select( array $attributes ) {
 		if ( empty( $attributes ) || ! isset( $attributes['selectedPosts'] ) || ! $attributes['selectedPosts'] ) {
 			return false;
 		}
@@ -235,11 +235,11 @@ if ( ! function_exists( 'amnesty_render_petition_list_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes - Current block attributes.
+	 * @param array $attributes Current block attributes.
 	 *
 	 * @return string
 	 */
-	function amnesty_render_petition_list_block( $attributes ) {
+	function amnesty_render_petition_list_block( array $attributes ) {
 		// Prevent a bug in the admin panel where the editor
 		// shows a different post if the list item is selected
 		// using one of the selection methods.

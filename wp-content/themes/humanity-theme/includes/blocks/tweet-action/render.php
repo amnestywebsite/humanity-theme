@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_render_tweet_action' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes the block attributes
+	 * @param array $attributes The block attributes
 	 *
 	 * @return string
 	 */
@@ -19,7 +19,7 @@ if ( ! function_exists( 'amnesty_render_tweet_action' ) ) {
 				'className' => '',
 				'size'      => '',
 				'alignment' => 'center',
-			] 
+			]
 		);
 
 		$tweet_url     = get_permalink();

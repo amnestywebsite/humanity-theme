@@ -5,7 +5,6 @@ declare( strict_types = 1 );
 namespace Amnesty;
 
 use ReflectionMethod;
-use WP_Post;
 use WP_Query;
 use WP_Tax_Query;
 
@@ -40,7 +39,7 @@ class Search_Page {
 	/**
 	 * Instantiate class
 	 *
-	 * @param bool $execute whether to trigger query on instantiation
+	 * @param bool $execute Whether to trigger query on instantiation
 	 */
 	public function __construct( bool $execute = true ) {
 		if ( $execute ) {
@@ -152,8 +151,10 @@ class Search_Page {
 			'order'    => $order_vars['order'],
 			'orderby'  => $order_vars['orderby'],
 			'author'   => '',
-			'search'   => '', // if there's a term, we'll be on a different template
-			'exclude'  => [], // phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
+			// if there's a term, we'll be on a different template
+			'search'   => '',
+			// phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
+			'exclude'  => [],
 			'sticky'   => false,
 			'taxQuery' => $this->build_tax_args_for_query_block(),
 		];
@@ -216,8 +217,8 @@ class Search_Page {
 	/**
 	 * Build the WHERE portion of the SQL query
 	 *
-	 * @param \WP_Query            $query       temporary query for building search SQL
-	 * @param array<string,string> $search_args arguments relating to search term(s)
+	 * @param \WP_Query            $query       Temporary query for building search SQL
+	 * @param array<string,string> $search_args Arguments relating to search term(s)
 	 *
 	 * @return string
 	 */
@@ -298,8 +299,8 @@ class Search_Page {
 	/**
 	 * Build the WHERE SQL for search term(s)
 	 *
-	 * @param \WP_Query            $query       temporary query for building search SQL
-	 * @param array<string,string> $search_args arguments relating to search term(s)
+	 * @param \WP_Query            $query       Temporary query for building search SQL
+	 * @param array<string,string> $search_args Arguments relating to search term(s)
 	 *
 	 * @return string
 	 */
@@ -310,9 +311,8 @@ class Search_Page {
 
 		$parse_search = new ReflectionMethod( $query, 'parse_search' );
 		$parse_search->setAccessible( true );
-		$search_where = $parse_search->invokeArgs( $query, [ &$search_args ] );
 
-		return $search_where;
+		return $parse_search->invokeArgs( $query, [ &$search_args ] );
 	}
 
 	/**
@@ -332,8 +332,8 @@ class Search_Page {
 	/**
 	 * Build the ORDER BY portion of the SQL query
 	 *
-	 * @param \WP_Query            $query       temporary query for building search SQL
-	 * @param array<string,string> $search_args arguments relating to search term(s)
+	 * @param \WP_Query            $query       Temporary query for building search SQL
+	 * @param array<string,string> $search_args Arguments relating to search term(s)
 	 *
 	 * @return string
 	 */
@@ -417,7 +417,7 @@ class Search_Page {
 	 * Build the JOIN/WHERE portion of the SQL query that
 	 * directly relates to the selected taxonomy terms.
 	 *
-	 * @param bool $cached whether to use cached version or not
+	 * @param bool $cached Whether to use cached version or not
 	 *
 	 * @return array<string,string>
 	 */

@@ -7,11 +7,6 @@
  */
 
 $header_style = amnesty_get_header_style( amnesty_get_header_object_id() );
-$donate_url   = amnesty_get_option( '_header_donation' );
-$donate_txt   = amnesty_get_option( '_header_donation_label' );
-
-$menu_item_count = count_top_level_menu_items();
-$menu_item_lang  = strtolower( preg_replace( '/^(\w{2})[-_]\w{2}$/', '$1', get_locale() ) );
 
 ?>
 <header class="page-header is-<?php echo esc_attr( $header_style ); ?>" role="banner" aria-label="<?php /* translators: [front] ARIA */ esc_attr_e( 'Page Header', 'amnesty' ); ?>">

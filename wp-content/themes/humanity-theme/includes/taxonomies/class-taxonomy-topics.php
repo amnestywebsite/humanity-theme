@@ -78,9 +78,9 @@ class Taxonomy_Topics extends Taxonomy {
 	 *
 	 * Rewrites them to filtered search URIs
 	 *
-	 * @param string  $link     the generated link
-	 * @param WP_Term $term     the term object
-	 * @param string  $taxonomy the taxonomy slug
+	 * @param string  $link     The generated link
+	 * @param WP_Term $term     The term object
+	 * @param string  $taxonomy The taxonomy slug
 	 *
 	 * @return string
 	 */
@@ -135,7 +135,7 @@ class Taxonomy_Topics extends Taxonomy {
 	/**
 	 * Save the localised taxonomy slug
 	 *
-	 * @param array $data $_POST data
+	 * @param array $data Raw $_POST data
 	 *
 	 * @return void
 	 */
@@ -146,7 +146,7 @@ class Taxonomy_Topics extends Taxonomy {
 	/**
 	 * Declare the taxonomy labels
 	 *
-	 * @param bool $defaults whether to return default labels or not
+	 * @param bool $defaults Whether to return default labels or not
 	 *
 	 * @return object
 	 */

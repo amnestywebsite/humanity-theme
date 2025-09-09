@@ -75,8 +75,8 @@ class Related_Content {
 	/**
 	 * Immediately attempt to render the block.
 	 *
-	 * @param bool $output  whether to output on construct (default true)
-	 * @param int  $post_id manual specification of post ID (overrides global $post)
+	 * @param bool $output  Whether to output on construct (default true)
+	 * @param int  $post_id Manual specification of post ID (overrides global $post)
 	 */
 	public function __construct( bool $output = true, int $post_id = 0 ) {
 		$post_id = $post_id ?: get_the_ID();
@@ -164,7 +164,7 @@ class Related_Content {
 	/**
 	 * Retrieve the post data for the REST API
 	 *
-	 * @param array<string,array<int,array<string,mixed>>> $taxonomy_data the taxonomy data from the API
+	 * @param array<string,array<int,array<string,mixed>>> $taxonomy_data The taxonomy data from the API
 	 *
 	 * @return array<int,array<string,mixed>>
 	 */
@@ -172,7 +172,6 @@ class Related_Content {
 		// fetch data
 		$this->get_api_object_terms( $taxonomy_data );
 		$this->run_post_queries();
-		// /fetch data
 
 		if ( ! $this->post_ids ) {
 			return [];
@@ -186,7 +185,6 @@ class Related_Content {
 		}
 
 		$this->add_posts_data();
-		// /build data
 
 		return $this->block_data['custom'];
 	}
@@ -194,7 +192,7 @@ class Related_Content {
 	/**
 	 * Retrieve the terms declared as assigned to the post
 	 *
-	 * @param array<string,array<int,array<string,mixed>>> $taxonomy_data the taxonomy data from the API
+	 * @param array<string,array<int,array<string,mixed>>> $taxonomy_data The taxonomy data from the API
 	 *
 	 * @return void
 	 */
@@ -278,7 +276,6 @@ class Related_Content {
 		// fetch data
 		$this->get_object_terms();
 		$this->run_post_queries();
-		// /fetch data
 
 		// populated by run_post_queries
 		if ( ! $this->post_ids ) {
@@ -293,7 +290,6 @@ class Related_Content {
 		}
 
 		$this->add_posts_data();
-		// /build data
 
 		// create cache
 		if ( count( $this->block_data['custom'] ) ) {
@@ -384,8 +380,8 @@ class Related_Content {
 	/**
 	 * Retrieve posts in a taxonomy
 	 *
-	 * @param array<int,int> $post__not_in posts to exclude from results
-	 * @param string         $taxonomy     the taxonomy slug
+	 * @param array<int,int> $post__not_in Posts to exclude from results
+	 * @param string         $taxonomy     The taxonomy slug
 	 *
 	 * @return \WP_Query|null
 	 */
@@ -414,7 +410,7 @@ class Related_Content {
 	/**
 	 * Retrieve the country data for use in the block
 	 *
-	 * @param \WP_Term $country the country term object
+	 * @param \WP_Term $country The country term object
 	 *
 	 * @return void
 	 */

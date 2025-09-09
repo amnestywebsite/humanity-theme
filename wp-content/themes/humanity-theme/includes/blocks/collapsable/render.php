@@ -8,12 +8,12 @@ if ( ! function_exists( 'render_collapsable_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
-	 * @param mixed               $content    the block content
+	 * @param array<string,mixed> $attributes The block attributes
+	 * @param string              $content    The block content
 	 *
 	 * @return string
 	 */
-	function render_collapsable_block( array $attributes, $content = '' ): string {
+	function render_collapsable_block( array $attributes, string $content = '' ): string {
 		$attrs = wp_parse_args(
 			$attributes,
 			[
@@ -24,6 +24,7 @@ if ( ! function_exists( 'render_collapsable_block' ) ) {
 		);
 
 		if ( ! $content ) {
+			// phpcs:ignore SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable -- used in view
 			$content = '';
 		}
 

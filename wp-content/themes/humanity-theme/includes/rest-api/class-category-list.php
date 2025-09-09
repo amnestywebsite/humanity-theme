@@ -64,11 +64,11 @@ class Category_List {
 	/**
 	 * Sort a list of items
 	 *
-	 * @param integer $parent_id the parent ID
+	 * @param int $parent_id The parent ID
 	 *
 	 * @return array
 	 */
-	protected function sort( $parent_id = 0 ) {
+	protected function sort( int $parent_id = 0 ) {
 		$kids = array_values(
 			array_filter(
 				$this->results,

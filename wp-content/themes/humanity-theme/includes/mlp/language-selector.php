@@ -8,11 +8,10 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 	/**
 	 * Overload the site list using MLP, if available
 	 *
-	 * @see amnesty_get_sites()
-	 *
 	 * @package Amnesty\Plugins\Multilingualpress
+	 * @see     amnesty_get_sites()
 	 *
-	 * @param array $sites the original site list
+	 * @param array $sites The original site list
 	 *
 	 * @return array<string,object>
 	 */
@@ -21,7 +20,11 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 			return $sites;
 		}
 
-		/** Global WP object @var \WP $wp */
+		/**
+		 * Global WP object
+		 *
+		 * @var \WP $wp
+		 */
 		global $wp;
 
 		// skip if current route is download
@@ -75,7 +78,7 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 
 if ( ! function_exists( 'render_language_selector_dropdown' ) ) {
 	/**
-	 * Render the language selector as a dropdown within the full width (read: dotorg) nav
+	 * Render the language selector as a dropdown in the nav
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
 	 *
@@ -162,10 +165,10 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 	 * For non-current items only.
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
-	 * @see render_language_selector_dropdown()
+	 * @see     render_language_selector_dropdown()
 	 *
-	 * @param object $site  the site object
-	 * @param array  $sites the list of sites
+	 * @param object $site  The site object
+	 * @param array  $sites The list of sites
 	 *
 	 * @return string
 	 */
@@ -208,12 +211,12 @@ if ( ! function_exists( 'amnesty_wp_get_nav_menu_items' ) ) {
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
 	 *
-	 * @param array<int,stdClass> $items the existing items collection
-	 * @param stdClass            $menu  the menu object
+	 * @param array<int,stdClass> $items The existing items collection
+	 * @param stdClass            $menu  The menu object
 	 *
 	 * @return array
 	 */
-	function amnesty_wp_get_nav_menu_items( $items, $menu ) {
+	function amnesty_wp_get_nav_menu_items( array $items, stdClass $menu ) {
 		if ( 'site-selector' !== $menu->slug || is_admin() ) {
 			return $items;
 		}

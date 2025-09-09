@@ -8,10 +8,10 @@ if ( ! function_exists( 'add_action_once' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string   $action   the filter to bind to
-	 * @param callable $callback the callback to execute
-	 * @param int      $priority the priority to register with
-	 * @param int      $count    number of expected args
+	 * @param string   $action   The filter to bind to
+	 * @param callable $callback The callback to execute
+	 * @param int      $priority The priority to register with
+	 * @param int      $count    Number of expected args
 	 *
 	 * @return true
 	 */
@@ -31,10 +31,10 @@ if ( ! function_exists( 'add_filter_once' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param string   $filter   the filter to bind to
-	 * @param callable $callback the callback to execute
-	 * @param int      $priority the priority to register with
-	 * @param int      $count    number of expected args
+	 * @param string   $filter   The filter to bind to
+	 * @param callable $callback The callback to execute
+	 * @param int      $priority The priority to register with
+	 * @param int      $count    Number of expected args
 	 *
 	 * @return true
 	 */
@@ -54,12 +54,12 @@ if ( ! function_exists( 'bind_param_to_hook' ) ) {
 	 *
 	 * @package Amnesty
 	 *
-	 * @param callable $callback the callback to bind
-	 * @param mixed    $extra    the extra parameter
+	 * @param callable $callback The callback to bind
+	 * @param mixed    $extra    The extra parameter
 	 *
 	 * @return Closure
 	 */
-	function bind_param_to_hook( callable $callback, $extra ): Closure {
+	function bind_param_to_hook( callable $callback, mixed $extra ): Closure {
 		return fn ( ...$params ) => call_user_func_array( $callback, [ ...$params, $extra ] );
 	}
 }

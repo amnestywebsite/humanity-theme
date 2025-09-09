@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_render_menu_block_wp_nav' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $atts the block attributes
+	 * @param array $atts The block attributes
 	 *
 	 * @return string
 	 */
@@ -62,7 +62,7 @@ if ( ! function_exists( 'amnesty_render_menu_block_in_page' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $atts the block attributes
+	 * @param array $atts The block attributes
 	 *
 	 * @return string
 	 */
@@ -121,7 +121,7 @@ if ( ! function_exists( 'amnesty_render_menu_block_custom' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $atts the block attributes
+	 * @param array $atts The block attributes
 	 *
 	 * @return string
 	 */
@@ -158,11 +158,11 @@ if ( ! function_exists( 'amnesty_render_menu_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array $attributes the block attributes
+	 * @param array $attributes The block attributes
 	 *
 	 * @return string
 	 */
-	function amnesty_render_menu_block( $attributes = [] ) {
+	function amnesty_render_menu_block( array $attributes = [] ) {
 		$atts = wp_parse_args(
 			$attributes,
 			[

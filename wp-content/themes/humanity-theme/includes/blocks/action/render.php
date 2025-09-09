@@ -8,7 +8,7 @@ if ( ! function_exists( 'render_action_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
+	 * @param array<string,mixed> $attributes The block attributes
 	 *
 	 * @return string
 	 */
@@ -26,7 +26,7 @@ if ( ! function_exists( 'render_action_block' ) ) {
 				'link'          => '',
 				'linkText'      => '',
 				'style'         => 'standard',
-			] 
+			]
 		);
 
 		spaceless();

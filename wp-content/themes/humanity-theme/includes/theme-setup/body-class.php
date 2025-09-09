@@ -6,7 +6,7 @@ if ( ! function_exists( 'amnesty_body_class' ) ) {
 	/**
 	 * Add body classes conditionally
 	 *
-	 * @param array<int,string> $classes existing body classes
+	 * @param array<int,string> $classes Existing body classes
 	 *
 	 * @return array<int,string>
 	 */

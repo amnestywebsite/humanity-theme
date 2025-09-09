@@ -8,8 +8,8 @@ if ( ! function_exists( 'render_links_with_icons_block' ) ) {
 	 *
 	 * @package Amnesty\Blocks
 	 *
-	 * @param array  $attrs the block attributes
-	 * @param string $content the block content
+	 * @param array  $attrs   The block attributes
+	 * @param string $content The block content
 	 *
 	 * @return string
 	 */

@@ -8,12 +8,12 @@ if ( ! function_exists( 'get_blog_post_type' ) ) {
 	 *
 	 * @package Amnesty\Multisite
 	 *
-	 * @param int $blog_id the blog id to retrieve post from
-	 * @param int $post_id the post to retrieve
+	 * @param int      $blog_id The blog id to retrieve post from
+	 * @param int|null $post_id The post to retrieve
 	 *
 	 * @return string
 	 */
-	function get_blog_post_type( $blog_id, $post_id = null ) {
+	function get_blog_post_type( int $blog_id, ?int $post_id = null ) {
 		if ( ! function_exists( 'get_blog_post' ) ) {
 			return '';
 		}
@@ -32,10 +32,10 @@ if ( ! function_exists( 'get_blog_post_meta' ) ) {
 	/**
 	 * Multisite-aware get_post_meta
 	 *
-	 * @param int    $blog_id  the blog id to retrieve post from
-	 * @param int    $post_id  the post to retrieve
-	 * @param string $meta_key the meta key to retrieve
-	 * @param bool   $single   whether to return a single value
+	 * @param int    $blog_id  The blog id to retrieve post from
+	 * @param int    $post_id  The post to retrieve
+	 * @param string $meta_key The meta key to retrieve
+	 * @param bool   $single   Whether to return a single value
 	 *
 	 * @return mixed
 	 */
@@ -62,12 +62,12 @@ if ( ! function_exists( 'amnesty_post_type_is_enabled' ) ) {
 	 *
 	 * @package Amnesty\Multisite
 	 *
-	 * @param string $post_type     the post_type name
-	 * @param mixed  $default_value  a default value
+	 * @param string $post_type     The post_type name
+	 * @param mixed  $default_value A default value
 	 *
 	 * @return bool
 	 */
-	function amnesty_post_type_is_enabled( string $post_type = '', $default_value = null ) {
+	function amnesty_post_type_is_enabled( string $post_type = '', mixed $default_value = null ) {
 		if ( ! is_multisite() ) {
 			return true;
 		}
@@ -88,12 +88,12 @@ if ( ! function_exists( 'amnesty_taxonomy_is_enabled' ) ) {
 	 *
 	 * @package Amnesty\Multisite
 	 *
-	 * @param string $taxonomy      the taxonomy name
-	 * @param mixed  $default_value a default value
+	 * @param string $taxonomy      The taxonomy name
+	 * @param mixed  $default_value A default value
 	 *
 	 * @return bool
 	 */
-	function amnesty_taxonomy_is_enabled( string $taxonomy = '', $default_value = null ) {
+	function amnesty_taxonomy_is_enabled( string $taxonomy = '', mixed $default_value = null ) {
 		if ( ! is_multisite() ) {
 			return true;
 		}
@@ -125,12 +125,12 @@ if ( ! function_exists( 'amnesty_feature_is_enabled' ) ) {
 	 *
 	 * @package Amnesty\Multisite
 	 *
-	 * @param string $feature       the feature name
-	 * @param mixed  $default_value a default value
+	 * @param string $feature       The feature name
+	 * @param mixed  $default_value A default value
 	 *
 	 * @return bool
 	 */
-	function amnesty_feature_is_enabled( string $feature = '', $default_value = null ) {
+	function amnesty_feature_is_enabled( string $feature = '', mixed $default_value = null ) {
 		if ( ! is_multisite() ) {
 			return true;
 		}
@@ -151,12 +151,12 @@ if ( ! function_exists( 'amnesty_get_feature_value' ) ) {
 	 *
 	 * @package Amnesty\Multisite
 	 *
-	 * @param string $feature       the feature name
-	 * @param mixed  $default_value a default value
+	 * @param string $feature       The feature name
+	 * @param mixed  $default_value A default value
 	 *
 	 * @return mixed
 	 */
-	function amnesty_get_feature_value( string $feature = '', $default_value = null ) {
+	function amnesty_get_feature_value( string $feature = '', mixed $default_value = null ) {
 		if ( ! is_multisite() ) {
 			return $default_value;
 		}
@@ -173,7 +173,8 @@ if ( ! function_exists( 'amnesty_get_feature_value' ) ) {
 
 if ( ! function_exists( 'network_menu_page_url' ) ) {
 	/**
-	 * Get the URL to access a particular network menu page based on the slug it was registered with.
+	 * Get the URL to access a particular network menu page,
+	 * based on the slug it was registered with.
 	 *
 	 * If the slug hasn't been registered properly, no URL will be returned.
 	 *
@@ -183,12 +184,12 @@ if ( ! function_exists( 'network_menu_page_url' ) ) {
 	 *
 	 * @global array $_parent_pages
 	 *
-	 * @param string $menu_slug The slug name to refer to this menu by (should be unique for this menu).
+	 * @param string $menu_slug The unique slug name to refer to this menu by.
 	 * @param bool   $output    Whether or not to echo the URL. Default true.
 	 *
 	 * @return string The menu page URL.
 	 */
-	function network_menu_page_url( $menu_slug, $output = true ) {
+	function network_menu_page_url( string $menu_slug, bool $output = true ) {
 		global $_parent_pages;
 
 		if ( ! isset( $_parent_pages[ $menu_slug ] ) ) {
@@ -221,8 +222,8 @@ if ( ! function_exists( 'amnesty_get_sites' ) ) {
 	 *
 	 * @package Amnesty\Multisite
 	 *
-	 * @param bool $filter      whether to apply filters
-	 * @param bool $public_only whether to only return public sites
+	 * @param bool $filter      Whether to apply filters
+	 * @param bool $public_only Whether to only return public sites
 	 *
 	 * @return array
 	 */
@@ -255,9 +256,9 @@ if ( ! function_exists( 'get_blog_term_link' ) ) {
 	 *
 	 * @package Amnesty\Multisite
 	 *
-	 * @param int    $blog_id  the target site ID
-	 * @param int    $term_id  the target term ID
-	 * @param string $taxonomy the target term taxonomy
+	 * @param int    $blog_id  The target site ID
+	 * @param int    $term_id  The target term ID
+	 * @param string $taxonomy The target term taxonomy
 	 *
 	 * @return string
 	 */

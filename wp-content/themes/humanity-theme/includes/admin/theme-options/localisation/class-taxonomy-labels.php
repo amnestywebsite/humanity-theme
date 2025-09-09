@@ -28,7 +28,7 @@ class Taxonomy_Labels {
 	 * Allows taxonomies to be renamed in a way that also allows
 	 * them to be translated.
 	 *
-	 * @param \CMB2 $localisation the localisation CMB2 object
+	 * @param \CMB2 $localisation The localisation CMB2 object
 	 *
 	 * @return void
 	 */
@@ -37,7 +37,7 @@ class Taxonomy_Labels {
 			[
 				'public'  => true,
 				'amnesty' => true,
-			] 
+			]
 		);
 
 		foreach ( $taxonomies as $tax_slug ) {
@@ -48,8 +48,8 @@ class Taxonomy_Labels {
 	/**
 	 * Register label options for a taxonomy
 	 *
-	 * @param string $tax_slug     the taxonomy slug (dynamic)
-	 * @param \CMB2  $localisation the localisation CMB2 object
+	 * @param string $tax_slug     The taxonomy slug (dynamic)
+	 * @param \CMB2  $localisation The localisation CMB2 object
 	 *
 	 * @return void
 	 */
@@ -73,7 +73,7 @@ class Taxonomy_Labels {
 					'sortable' => false,
 					'closed'   => true,
 				],
-			] 
+			]
 		);
 
 		foreach ( $all_labels as $key => $label ) {
@@ -86,7 +86,7 @@ class Taxonomy_Labels {
 					'tax_slug'       => $tax_slug,
 					'default_labels' => $default_labels,
 					'config_labels'  => $config_labels,
-				] 
+				]
 			);
 		}
 	}
@@ -94,9 +94,9 @@ class Taxonomy_Labels {
 	/**
 	 * Register a label option for a taxonomy
 	 *
-	 * @param string              $key   the key of the label
-	 * @param array               $label the label data
-	 * @param array<string,mixed> $data  the taxonomy data
+	 * @param string              $key   The key of the label
+	 * @param array               $label The label data
+	 * @param array<string,mixed> $data  The taxonomy data
 	 *
 	 * @return void
 	 */
@@ -129,7 +129,7 @@ class Taxonomy_Labels {
 				'type'        => 'text',
 				'description' => sprintf( $desc, $name ),
 				'default'     => $data['default_labels']->{$key} ?? '',
-			] 
+			]
 		);
 	}
 

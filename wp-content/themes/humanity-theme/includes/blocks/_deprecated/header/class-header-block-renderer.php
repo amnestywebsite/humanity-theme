@@ -12,8 +12,8 @@ if ( ! function_exists( '\Amnesty\Blocks\amnesty_render_header_block' ) ) {
 	/**
 	 * Render a header block
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
-	 * @param string              $content    inner content
+	 * @param array<string,mixed> $attributes The block attributes
+	 * @param string              $content    Inner content
 	 *
 	 * @package Amnesty\Blocks
 	 *
@@ -70,8 +70,8 @@ class Header_Block_Renderer {
 	/**
 	 * Constructor
 	 *
-	 * @param array<string,mixed> $attributes the block attributes
-	 * @param string              $content    inner content
+	 * @param array<string,mixed> $attributes The block attributes
+	 * @param string              $content    Inner content
 	 */
 	public function __construct( array $attributes = [], string $content = '' ) {
 		$this->id = substr( md5( uniqid( (string) wp_rand(), true ) ), 0, 8 );

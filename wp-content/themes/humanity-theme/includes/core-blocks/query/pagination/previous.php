@@ -8,7 +8,7 @@ if ( ! function_exists( 'amnesty_override_core_query_pagination_previous_render'
 	/**
 	 * Overrides the render method of core/query-pagination-previous
 	 *
-	 * @param array<string,mixed> $settings the block settings
+	 * @param array<string,mixed> $settings The block settings
 	 *
 	 * @return array<string,mixed>
 	 */
@@ -25,11 +25,11 @@ if ( ! function_exists( 'amnesty_get_previous_posts_link' ) ) {
 	/**
 	 * Retrieves the previous posts page link.
 	 *
-	 * @param string $label Optional. Previous page link text.
+	 * @param string|null $label Optional previous page link text.
 	 *
 	 * @return string HTML-formatted previous page link.
 	 */
-	function amnesty_get_previous_posts_link( $label = null ): string {
+	function amnesty_get_previous_posts_link( ?string $label = null ): string {
 		global $paged;
 
 		if ( null === $label ) {
@@ -75,9 +75,7 @@ if ( ! function_exists( 'amnesty_render_block_core_query_pagination_previous' ) 
 	 * phpcs:disable Generic.Metrics.CyclomaticComplexity.TooHigh
 	 */
 	function amnesty_render_block_core_query_pagination_previous( array $attributes, string $content, WP_Block $block ): string {
-		$page_key            = isset( $block->context['queryId'] ) ? 'query-' . $block->context['queryId'] . '-page' : 'query-page';
 		$enhanced_pagination = isset( $block->context['enhancedPagination'] ) && $block->context['enhancedPagination'];
-		$page                = absint( $_GET[ $page_key ] ?? $attributes[ $page_key ] ?? 1 ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- taken from core
 		$wrapper_attributes  = get_block_wrapper_attributes();
 		$show_label          = (bool) $block->context['showLabel'] ?? true;
 		$label_text          = esc_html( $attributes['label'] ?? __( 'Previous', 'default' ) );

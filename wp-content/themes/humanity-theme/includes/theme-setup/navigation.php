@@ -57,11 +57,11 @@ if ( ! function_exists( 'amnesty_nav_should_display' ) ) {
 	 *
 	 * @package Amnesty\ThemeSetup
 	 *
-	 * @param string $name the nav to check.
+	 * @param string $name The nav to check.
 	 *
 	 * @return bool
 	 */
-	function amnesty_nav_should_display( $name = '' ) {
+	function amnesty_nav_should_display( string $name = '' ) {
 		$locations = get_nav_menu_locations();
 		if ( ! isset( $locations[ $name ] ) ) {
 			return false;
@@ -82,12 +82,12 @@ if ( ! function_exists( 'amnesty_nav' ) ) {
 	 *
 	 * @package Amnesty\ThemeSetup
 	 *
-	 * @param string $name   desired menu name to show.
-	 * @param string $walker custom walker to use.
+	 * @param string $name   Desired menu name to show.
+	 * @param string $walker Custom walker to use.
 	 *
 	 * @return void
 	 */
-	function amnesty_nav( $name = 'main-menu', $walker = '' ) {
+	function amnesty_nav( string $name = 'main-menu', string $walker = '' ) {
 		if ( ! amnesty_nav_should_display( $name ) ) {
 			return;
 		}
@@ -131,7 +131,7 @@ if ( ! function_exists( 'amnesty_get_nav_menu_items' ) ) {
 	/**
 	 * Retrieve menu items for a menu
 	 *
-	 * @param string $name the menu / theme location name
+	 * @param string $name The menu / theme location name
 	 *
 	 * @return array{top_level:array<int,object>,children:array<string,array<int,object>>}
 	 */

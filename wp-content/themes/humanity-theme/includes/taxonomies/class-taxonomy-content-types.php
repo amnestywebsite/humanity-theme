@@ -39,7 +39,7 @@ class Taxonomy_Content_Types {
 			'init',
 			function () {
 				$GLOBALS['wp']->add_query_var( "q{$this->slug}" );
-			} 
+			}
 		);
 
 		// Term Add
@@ -59,7 +59,7 @@ class Taxonomy_Content_Types {
 	/**
 	 * Add Amnesty prop to Category taxonomy
 	 *
-	 * @param string $taxonomy the taxonomy slug
+	 * @param string $taxonomy The taxonomy slug
 	 *
 	 * @return void
 	 */
@@ -88,7 +88,7 @@ class Taxonomy_Content_Types {
 	/**
 	 * Rename "Category" to "Content Type"
 	 *
-	 * @param bool $defaults whether to return default values or not
+	 * @param bool $defaults Whether to return default values or not
 	 *
 	 * @return object
 	 */
@@ -162,8 +162,8 @@ class Taxonomy_Content_Types {
 	 * This will allow us to filter taxonomies by those specific to
 	 * the Amnesty WP Theme, which may be useful.
 	 *
-	 * @param WP_REST_Response $response the response object.
-	 * @param WP_Taxonomy      $taxonomy the taxonomy object.
+	 * @param WP_REST_Response $response The response object.
+	 * @param WP_Taxonomy      $taxonomy The taxonomy object.
 	 *
 	 * @return WP_REST_Response
 	 */
@@ -184,7 +184,7 @@ class Taxonomy_Content_Types {
 	/**
 	 * Replace description textarea with TinyMCE instance
 	 *
-	 * @param \WP_Term $term the current term
+	 * @param \WP_Term $term The current term
 	 *
 	 * @return void
 	 */
@@ -199,7 +199,7 @@ class Taxonomy_Content_Types {
 	/**
 	 * Load taxonomy template regardless of chosen slug
 	 *
-	 * @param string $template the currently-chosen template
+	 * @param string $template The currently-chosen template
 	 *
 	 * @return string
 	 */
@@ -220,7 +220,7 @@ class Taxonomy_Content_Types {
 		ob_start(
 			function ( $buffer ) {
 				return preg_replace( '/<(tr|div) class="form-field term-description-wrap">(?!<\/\1>).*?<\/\1>/s', '', $buffer );
-			} 
+			}
 		);
 	}
 
@@ -255,7 +255,7 @@ class Taxonomy_Content_Types {
 	 * Flush output buffer (triggering callback in $this->form_open()),
 	 * and add a TinyMCE instance for HTML description
 	 *
-	 * @param WP_Term $term current term
+	 * @param WP_Term $term Current term
 	 *
 	 * @return void
 	 */

@@ -34,16 +34,6 @@ if ( ! $slider_items ) {
 	return;
 }
 
-$slider_data = [
-	'sliderId'             => 'categoryslider',
-	'timelineCaptionStyle' => 'dark',
-	'slides'               => $slider_items,
-	'hasContent'           => true,
-	'hasArrows'            => true,
-	'showTabs'             => true,
-	'hideContent'          => false,
-];
-
 ?>
 
 <!-- wp:group {"tagName":"div","className":"archive-slider"} -->

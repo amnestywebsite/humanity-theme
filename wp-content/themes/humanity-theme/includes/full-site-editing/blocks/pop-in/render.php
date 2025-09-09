@@ -6,8 +6,8 @@ if ( ! function_exists( 'render_pop_in_block' ) ) {
 	/**
 	 * Render the pop-in block
 	 *
-	 * @param array<string,mixed> $attributes block attributes
-	 * @param string              $content    block content
+	 * @param array<string,mixed> $attributes Block attributes
+	 * @param string              $content    Block content
 	 *
 	 * @return string
 	 */

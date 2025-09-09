@@ -8,12 +8,12 @@ if ( ! function_exists( 'amnesty_shortcode_cart_icon' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param mixed  $args    shortcode properties
-	 * @param string $content shortcode content
+	 * @param mixed  $args    Shortcode properties
+	 * @param string $content Shortcode content
 	 *
 	 * @return string
 	 */
-	function amnesty_shortcode_cart_icon( $args, string $content = '' ): string {
+	function amnesty_shortcode_cart_icon( mixed $args, string $content = '' ): string {
 		$label = $args['label'] ?? $content;
 		$hash  = bin2hex( random_bytes( 1 ) );
 		$label = sprintf( '<span id="%s" class="u-hiddenVisually">%s</span>', esc_attr( $hash ), esc_html( $label ) );
@@ -40,8 +40,8 @@ if ( ! function_exists( 'amnesty_nav_menu_cart_class' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param array  $classes the existing item classes
-	 * @param object $item    the menu item object
+	 * @param array  $classes The existing item classes
+	 * @param object $item    The menu item object
 	 *
 	 * @return array
 	 */
@@ -64,8 +64,8 @@ if ( ! function_exists( 'amnesty_add_icon_to_cart_removal_link' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param string $link     the original remove link
-	 * @param string $item_key the WC cart item key
+	 * @param string $link     The original remove link
+	 * @param string $item_key The WC cart item key
 	 *
 	 * @return string
 	 */
@@ -98,7 +98,7 @@ if ( ! function_exists( 'amnesty_remove_button_from_flash_message' ) ) {
 	 *
 	 * @package Amnesty\Plugins\WooCommerce
 	 *
-	 * @param string $message the flash message HTML
+	 * @param string $message The flash message HTML
 	 *
 	 * @return string
 	 */

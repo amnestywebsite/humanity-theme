@@ -30,7 +30,7 @@ class Search_Filters {
 	/**
 	 * Register rewrite rule for search pagination with no term
 	 *
-	 * @param array $rules existing search rewrite rules
+	 * @param array $rules Existing search rewrite rules
 	 *
 	 * @return array
 	 */
@@ -49,7 +49,7 @@ class Search_Filters {
 	/**
 	 * Force search to use a pretty format
 	 *
-	 * @param \WP $wp the global wp object
+	 * @param \WP $wp The global wp object
 	 *
 	 * @return void
 	 */
@@ -107,7 +107,7 @@ class Search_Filters {
 	 * Searches containing forward slashes are twice-encoded
 	 * to prevent routing 404s on some web servers
 	 *
-	 * @param WP_Query $query the main query object
+	 * @param WP_Query $query The main query object
 	 *
 	 * @return void
 	 */
@@ -128,7 +128,7 @@ class Search_Filters {
 	/**
 	 * Change the title tag output if there is no search term
 	 *
-	 * @param string $title the Yoast generated title
+	 * @param string $title The Yoast generated title
 	 *
 	 * @return string
 	 */
@@ -173,9 +173,9 @@ class Search_Filters {
 	/**
 	 * Change the title tag output if there is no search term
 	 *
-	 * @param string $title  the Yoast generated title
-	 * @param int    $count  the number of found posts
-	 * @param string $search the search term
+	 * @param string $title  The Yoast generated title
+	 * @param int    $count  The number of found posts
+	 * @param string $search The search term
 	 *
 	 * @return string
 	 */
@@ -209,8 +209,8 @@ class Search_Filters {
 	/**
 	 * Transform month number to month name
 	 *
-	 * @param string $value the query var value
-	 * @param string $key   the query var name
+	 * @param string $value The query var value
+	 * @param string $key   The query var name
 	 *
 	 * @return string
 	 */
@@ -231,7 +231,7 @@ class Search_Filters {
 	/**
 	 * Append search term info to title
 	 *
-	 * @param string $search_string the search query var
+	 * @param string $search_string The search query var
 	 *
 	 * @return string
 	 */
@@ -261,7 +261,7 @@ class Search_Filters {
 	/**
 	 * Append month filter info to title
 	 *
-	 * @param string $month the month query var
+	 * @param string $month The month query var
 	 *
 	 * @return string
 	 */
@@ -277,14 +277,14 @@ class Search_Filters {
 			/* translators: [front] appended to search results title (n results for...); %s: the month searched for */
 				_x( 'for the month of %s', 'search results title suffix for month published', 'amnesty' ),
 				esc_html( $months[ $month ] )
-			) 
+			)
 		);
 	}
 
 	/**
 	 * Append year info to title
 	 *
-	 * @param string $year the year query var
+	 * @param string $year The year query var
 	 *
 	 * @return string
 	 */
@@ -294,7 +294,7 @@ class Search_Filters {
 			/* translators: [front] appended to search results title (n results for...); %s: the year searched for */
 				_x( 'in the year %s', 'search results title suffix for year published', 'amnesty' ),
 				absint( $year )
-			) 
+			)
 		);
 	}
 
