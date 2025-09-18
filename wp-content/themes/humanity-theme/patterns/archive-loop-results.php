@@ -20,25 +20,19 @@ if ( $current_sort_option ) {
 	$available_sorts = [ $current_sort => $current_sort_option ] + $available_sorts;
 }
 
+$select_args = [
+	'label'      => __( 'Sort by', 'amnesty' ),
+	'show_label' => true,
+	'name'       => 'sort',
+	'is_form'    => true,
+	'multiple'   => false,
+	'options'    => $available_sorts,
+];
+
 ?>
 <!-- wp:group {"tagName":"header","className":"postlist-header"} -->
 <header class="wp-block-group postlist-header">
 	<!-- wp:amnesty-core/query-count /-->
-	<?php
-
-	// site editor expects blocks or nothing
-	if ( ! is_admin() && ! ( defined( 'REST_REQUEST' ) && ! REST_REQUEST ) ) {
-		amnesty_render_custom_select(
-			[
-				'label'      => __( 'Sort by', 'amnesty' ),
-				'show_label' => true,
-				'name'       => 'sort',
-				'is_form'    => true,
-				'multiple'   => false,
-				'options'    => $available_sorts,
-			]
-		);
-	}
-	?>
+	<!-- wp:amnesty-core/custom-select <?php echo wp_json_encode( $select_args ); ?> /-->
 </header>
 <!-- /wp:group -->

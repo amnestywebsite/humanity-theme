@@ -41,10 +41,6 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 		</div>
 	<?php endif; ?>
 	</div>
-<?php if ( $content ) : ?>
-	<div class="hero-innerBlocks">
-		<?php echo wp_kses_post( $content ); ?>
-	</div>
-<?php endif; ?>
+	<?php echo wp_kses_post( $content ); ?>
 	<?php echo wp_kses_post( $media_meta_output ); ?>
 </section>
