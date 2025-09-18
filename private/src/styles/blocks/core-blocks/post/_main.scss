@@ -3,6 +3,10 @@
   background: var(--wp--preset--color--white);
 }
 
+.tax-location .wp-block-post {
+  min-height: unset;
+}
+
 .wp-block-post > .wp-block-group:not(.post--result) {
   display: flex;
   flex-direction: column;

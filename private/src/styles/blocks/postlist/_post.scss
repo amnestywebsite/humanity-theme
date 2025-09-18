@@ -8,6 +8,10 @@
 }
 
 @include mq(medium-sm) {
+  .tax-location .post {
+    min-height: unset;
+  }
+
   .tax-location .post+.post {
     margin-left: flexy-gutter();
   }
