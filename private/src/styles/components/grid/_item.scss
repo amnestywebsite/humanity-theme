@@ -65,10 +65,11 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
 }
 
 .grid-itemMeta a {
-  color: var(--wp--preset--color--white);
+  color: inherit;
   text-decoration: none;
 }
 
