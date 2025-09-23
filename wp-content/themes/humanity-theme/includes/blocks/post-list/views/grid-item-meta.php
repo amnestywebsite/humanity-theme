@@ -1,12 +1,14 @@
 <?php
 
-if ( ! isset( $data['tag'], $data['tag_link'] ) ) {
+$has_data = isset( $data['tag'], $data['tag_link'] ) && (bool) $data['tag'];
+
+if ( ! $has_data ) {
 	return;
 }
 
 $output = esc_html( $data['tag'] );
 
-if ( isset( $data['tag_link'] ) && (bool) $data['tag_link'] ) {
+if ( (bool) $data['tag_link'] && (bool) $data['tag_link'] ) {
 	$output = sprintf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['tag_link'] ), esc_html( $data['tag'] ) );
 }
 
