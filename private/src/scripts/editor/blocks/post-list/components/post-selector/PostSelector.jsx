@@ -35,10 +35,15 @@ const PostSelector = (props) => {
             </label>
           </div>
           <div className="filter">
-            <label htmlFor="options">
+            <label htmlFor="postList-postType">
               {/* translators: [admin] */ __('Post Type:', 'amnesty')}{' '}
             </label>
-            <select name="options" id="options" onChange={props.handlePostTypeChange}>
+            <select
+              id="postList-postType"
+              name="options"
+              onChange={props.handlePostTypeChange}
+              value={props.state.type}
+            >
               {props.state.types.length < 1 ? (
                 // translators: [admin]
                 <option value="">{__('Loading…', 'amnesty')}</option>
@@ -50,60 +55,44 @@ const PostSelector = (props) => {
                 ))
               )}
             </select>
-            <label htmlFor="options">
+            <label htmlFor="postList-taxonomy">
               {/* translators: [admin] */ __('Taxonomy:', 'amnesty')}{' '}
             </label>
-            <select name="options" id="options" onChange={props.handleTaxonomyChange}>
+            <select name="options" id="postList-taxonomy" onChange={props.handleTaxonomyChange}>
               {props.state.taxonomies.length < 1 ? (
                 // translators: [admin]
                 <option value="">{__('Loading…', 'amnesty')}</option>
               ) : (
-                Object.keys(props.state.taxonomies).map((key, index) => {
-                  if (index === 0) {
-                    return (
-                      <>
-                        <option value="">
-                          {/* translators: [admin] */ __('Select Taxonomy', 'amnesty')}
-                        </option>
-                        <option key={key} value={props.state.taxonomies[key].rest_base}>
-                          {props.state.taxonomies[key].name}
-                        </option>
-                      </>
-                    );
-                  }
-                  return (
+                <>
+                  <option value="">
+                    {/* translators: [admin] */ __('Select Taxonomy', 'amnesty')}
+                  </option>
+                  {Object.keys(props.state.taxonomies).map((key) => (
                     <option key={key} value={props.state.taxonomies[key].rest_base}>
                       {props.state.taxonomies[key].name}
                     </option>
-                  );
-                })
+                  ))}
+                </>
               )}
             </select>
-            <label htmlFor="options">{/* translators: [admin] */ __('Terms:', 'amnesty')} </label>
-            <select name="options" id="options" onChange={props.handleTermChange}>
+            <label htmlFor="postList-terms">
+              {/* translators: [admin] */ __('Terms:', 'amnesty')}&nbsp;
+            </label>
+            <select name="options" id="postList-terms" onChange={props.handleTermChange}>
               {props.state.terms.length < 1 ? (
                 // translators: [admin]
                 <option value="">{__('No taxonomy selected', 'amnesty')}</option>
               ) : (
-                Object.keys(props.state.terms).map((key, index) => {
-                  if (index === 0) {
-                    return (
-                      <>
-                        <option value="">
-                          {/* translators: [admin] */ __('Select Term', 'amnesty')}
-                        </option>
-                        <option key={key} value={props.state.terms[key].id}>
-                          {props.state.terms[key].name}
-                        </option>
-                      </>
-                    );
-                  }
-                  return (
+                <>
+                  <option value="">
+                    {/* translators: [admin] */ __('Select Term', 'amnesty')}
+                  </option>
+                  {Object.keys(props.state.terms).map((key) => (
                     <option key={key} value={props.state.terms[key].id}>
                       {props.state.terms[key].name}
                     </option>
-                  );
-                })
+                  ))}
+                </>
               )}
             </select>
           </div>
