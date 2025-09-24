@@ -28,7 +28,10 @@ if ( $should_switch_blog ) {
 	restore_current_blog();
 }
 
-$relations = translationIds( $main_category->term_id, 'term', $post?->blog_id ?? 0 );
+$relations = [];
+if ( function_exists( '\Inpsyde\MultilingualPress\translationIds' ) ) {
+	$relations = translationIds( $main_category->term_id, 'term', $post?->blog_id ?? 0 );
+}
 
 if ( isset( $relations[ get_current_blog_id() ] ) ) {
 	$main_category = get_term( $relations[ get_current_blog_id() ], $main_category->taxonomy );
