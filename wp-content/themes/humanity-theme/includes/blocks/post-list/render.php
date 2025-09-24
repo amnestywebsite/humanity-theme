@@ -321,14 +321,14 @@ if ( ! function_exists( 'amnesty_list_process_taxonomy' ) ) {
 
 		$query = new WP_Query(
 			[
-				'type'           => 'post',
+				'post_type'      => 'post',
 				// phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_post__not_in
 				'post__not_in'   => [ get_the_ID() ],
 				'posts_per_page' => $amount,
 				'no_found_rows'  => true,
 				'tax_query'      => [ // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query
 					[
-						'taxonomy' => $taxonomy,
+						'taxonomy' => amnesty_get_taxonomy_slug_from_rest_base( $taxonomy ),
 						'terms'    => $terms,
 						'field'    => 'term_id',
 					],
