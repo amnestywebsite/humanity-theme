@@ -93,7 +93,7 @@ class DisplaySelect extends Component {
 
     let defaultType = this.props.postType;
 
-    if (this.props.overrideTypes && !this.props.overrideTypes.includes(defaultType)) {
+    if (this.props.overrideTypes && !this.props.overrideTypes[defaultType]) {
       Object.keys(this.props.overrideTypes).map((key, index) => {
         if (index === 0) {
           defaultType = key;
