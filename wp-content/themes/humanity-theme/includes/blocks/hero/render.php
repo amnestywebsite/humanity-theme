@@ -22,19 +22,19 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 		$attrs = wp_parse_args(
 			$attributes,
 			[
-				'align'            => '',
-				'background'       => '',
-				'className'        => 'wp-block-amnesty-core-hero',
-				'content'          => '',
-				'ctaLink'          => '',
-				'ctaText'          => '',
-				'featuredImageId'  => 0,
-				'featuredVideoId'  => 0,
-				'hideImageCaption' => true,
-				'hideImageCredit'  => false,
-				'imageID'          => 0, // this overrides the featured image
-				'title'            => '',
-				'type'             => 'image',
+				'align'              => '',
+				'background'         => '',
+				'className'          => 'wp-block-amnesty-core-hero',
+				'content'            => '',
+				'ctaLink'            => '',
+				'ctaText'            => '',
+				'featuredImageId'    => 0,
+				'featuredVideoId'    => 0,
+				'hideImageCaption'   => true,
+				'hideImageCopyright' => false,
+				'imageID'            => 0, // this overrides the featured image
+				'title'              => '',
+				'type'               => 'image',
 			]
 		);
 
@@ -58,11 +58,15 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 			);
 		}
 
+		if ( $image->credit() ) {
+			$attrs['className'] .= ' aimc-ignore';
+		}
+
 		// Build output for the image/video caption and credit
 		// $media_meta_output used in hero.php view
 		// Reverse the boolean value of the arguments to match the value of the arguments in the function
-		$media_meta_output  = $image->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'], 'image' );
-		$media_meta_output .= $video->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCredit'], 'video' );
+		$media_meta_output  = $image->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCopyright'], 'image' );
+		$media_meta_output .= $video->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCopyright'], 'video' );
 
 		spaceless();
 		require realpath( __DIR__ . '/views/hero.php' );

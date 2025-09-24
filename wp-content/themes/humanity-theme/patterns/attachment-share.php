@@ -29,8 +29,8 @@ spaceless();
 
 ?>
 
-<!-- wp:list {"className":"article-share"} -->
-<ul class="wp-block-list article-share"><!-- wp:list-item -->
+<!-- wp:list {"className":"aimc-ignore article-share"} -->
+<ul class="wp-block-list aimc-ignore article-share"><!-- wp:list-item -->
 	<li>
 		<a class="article-shareFacebook" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" title="<?php /* translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover  */ esc_attr_e( 'Share on Facebook', 'amnesty' ); ?>">
 			<img src="<?php echo esc_url( amnesty_asset_uri( 'images' ) ); ?>/icon-facebook.svg" alt="<?php /* translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ */ esc_attr_e( 'Facebook Logo', 'amnesty' ); ?>">
