@@ -119,6 +119,7 @@ class Search_Page {
 			'post_type' => $post_types,
 			'orderby'   => $order_vars['orderby'],
 			'order'     => $order_vars['order'],
+			'paged'     => absint( get_query_var( 'paged', 1 ) ),
 			// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query
 			'tax_query' => $this->build_tax_args(),
 			'year'      => absint( amnesty_get_query_var( 'qyear' ) ),
@@ -143,11 +144,15 @@ class Search_Page {
 		$post_types = array_values( array_filter( array_unique( (array) $post_types ) ) );
 		$order_vars = $this->get_order_vars();
 
+		$per_page = absint( get_option( 'posts_per_page' ) );
+		$page_no  = absint( get_query_var( 'paged', 1 ) );
+		$offset   = absint( ceil( ( $per_page * $page_no ) - $per_page ) );
+
 		return [
 			'inherit'  => false,
-			'perPage'  => absint( get_option( 'posts_per_page' ) ),
+			'perPage'  => $per_page,
 			'pages'    => 0,
-			'offset'   => 0,
+			'offset'   => $offset,
 			'postType' => $post_types,
 			'order'    => $order_vars['order'],
 			'orderby'  => $order_vars['orderby'],
