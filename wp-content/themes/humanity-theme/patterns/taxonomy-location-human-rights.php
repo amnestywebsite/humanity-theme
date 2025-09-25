@@ -54,7 +54,7 @@ if ( ! $penalty_status && ! $global_report ) {
 <!-- wp:buttons {"className":"is-content-justification-center"} -->
 <div class="wp-block-buttons is-content-justification-center"><?php foreach ( $global_report['links'] as $button ) : // phpcs:ignore Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace ?><!-- wp:button {"className":"is-style-<?php echo esc_attr( $button['style'] ); ?>"} -->
 <div class="wp-block-button is-style-<?php echo esc_attr( $button['style'] ); ?>"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( $button['link'] ); ?>"><?php echo esc_html( $button['text'] ); ?></a></div>
-<!-- /wp:button --><?php endforeach; // phpcs:ignore PEAR.WhiteSpace.ScopeClosingBrace.Indent ?></div>
+<!-- /wp:button --><?php endforeach; // phpcs:ignore PEAR.WhiteSpace.ScopeClosingBrace ?></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:group --></div>
