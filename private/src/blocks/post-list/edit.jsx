@@ -140,6 +140,7 @@ const Select = ({ attributes, setAttributes }) => {
         <DisplaySelect
           setAttributes={setAttributes}
           selectedPosts={attributes.selectedPosts || []}
+          defaultPostType={attributes.postType || 'post'}
           preview={preview}
           style={attributes.style}
           prefix={keyPrefix}

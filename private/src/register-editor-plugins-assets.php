@@ -16,14 +16,14 @@ if ( ! function_exists( 'humanity_register_editor_plugins_assets' ) ) {
 
 		$ds = DIRECTORY_SEPARATOR;
 
-		if ( file_exists( __DIR__ . $ds . 'editor-plugins' . $ds . 'index.asset.php' ) ) {
-			$data = require_once __DIR__ . $ds . 'editor-plugins' . $ds . 'index.asset.php';
+		if ( file_exists( __DIR__ . $ds . 'editorPlugins.asset.php' ) ) {
+			$data = require_once __DIR__ . $ds . 'editorPlugins.asset.php';
 			$deps = $data['dependencies'] ?? [];
 		}
 
 		wp_enqueue_script(
 			'amnesty-core-gutenberg',
-			get_template_directory_uri() . '/build/editor-plugins/index.js',
+			get_template_directory_uri() . '/build/editorPlugins.js',
 			$deps,
 			$theme->get( 'Version' ),
 			true,

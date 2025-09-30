@@ -27,11 +27,24 @@ export const uniqueBy = (arr, key) => {
  */
 export const uniqueById = (arr) => uniqueBy(arr, 'id');
 
+/**
+ * Decode HTML entities (excluding HTML tags)
+ *
+ * @param {string} string the string to decode
+ *
+ * @return {string}
+ */
+function decodeEntities(string) {
+  const txt = document.createElement('textarea');
+  txt.innerHTML = string;
+  return txt.value;
+}
+
 // strip HTML from a string
-const strip = (html) => {
+function strip(html) {
   const doc = new DOMParser().parseFromString(html, 'text/html');
   return doc.body.textContent || '';
-};
+}
 
 /**
  * PostSelector Component
@@ -39,6 +52,7 @@ const strip = (html) => {
 const DisplaySelect = ({
   preview,
   selectedPosts,
+  defaultPostType,
   setAttributes,
   overrideTypes,
   style,
@@ -81,7 +95,7 @@ const DisplaySelect = ({
 
   const [termFilter, setTermFilter] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
-  const [postType, setPostType] = useState('post');
+  const [postType, setPostType] = useState(defaultPostType);
   const [searchTerm, setSearchTerm] = useState('');
 
   const { records: availablePosts, isResolving: availablePostsResolving } = useEntityRecords(
@@ -143,16 +157,7 @@ const DisplaySelect = ({
       .sort((a, b) => {
         const aIndex = selectedPosts.indexOf(a.id);
         const bIndex = selectedPosts.indexOf(b.id);
-
-        if (aIndex > bIndex) {
-          return 1;
-        }
-
-        if (aIndex < bIndex) {
-          return -1;
-        }
-
-        return 0;
+        return Math.sign(aIndex - bIndex);
       });
 
     return items;
@@ -177,7 +182,7 @@ const DisplaySelect = ({
 
       return {
         id: item.id,
-        title: item.title.rendered,
+        title: decodeEntities(item.title.rendered),
         link: item.link,
         tag: tags.shift(),
         excerpt,

@@ -1,4 +1,4 @@
-import { DragDropContext, Droppable } from 'react-beautiful-dnd';
+import { DragDropContext, Droppable } from '@hello-pangea/dnd';
 import { __ } from '@wordpress/i18n';
 
 import { Post } from './Post.jsx';
@@ -10,14 +10,9 @@ import { Post } from './Post.jsx';
  *
  * @returns {*}
  */
-export const PostList = ({
-  filtered = false,
-  loading = false,
-  posts = [],
-  action = () => {},
-  icon = null,
-  ...props
-}) => {
+export const PostList = (props) => {
+  const { filtered = false, loading = false, posts = [], action = () => {}, icon = null } = props;
+
   if (loading) {
     /* translators: [admin] */
     return <p>{__('Loading Posts…', 'amnesty')}</p>;

@@ -13,7 +13,7 @@ if ( ! function_exists( 'humanity_register_editor_assets' ) ) {
 	function humanity_register_editor_assets(): void {
 		$theme = wp_get_theme();
 
-		wp_enqueue_style( 'amnesty-core-gutenberg', get_template_directory_uri() . '/build/editor/index.css', [], $theme->get( 'Version' ) );
+		wp_enqueue_style( 'amnesty-core-gutenberg', get_template_directory_uri() . '/build/editor.css', [], $theme->get( 'Version' ) );
 		wp_add_inline_style( 'amnesty-core-gutenberg', sprintf( ':root{--amnesty-icon-path:url("%s"),none}', esc_url( get_template_directory_uri() . '/images/sprite.svg' ) ) );
 
 		$ol_characters = amnesty_get_option( 'ol_locale_option', 'amnesty_localisation_options_page' );

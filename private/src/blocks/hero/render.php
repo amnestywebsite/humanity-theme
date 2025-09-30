@@ -28,6 +28,7 @@ $media_meta_output .= $video->metadata( ! $attributes['hideImageCaption'], ! $at
 
 $block_classes = [
 	// phpcs:disable WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned
+	'aimc-ignore'         => (bool) $image->credit(),
 	'has-dark-background' => ! (bool) $attributes['background'],
 	'has-innerBlocks'     => (bool) trim( $content ),
 	'has-video'           => 'video' === $attributes['type'],

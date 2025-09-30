@@ -903,3 +903,24 @@ if ( ! function_exists( 'amnesty_limit_post_terms_results_for_search' ) ) {
 		return $terms;
 	}
 }
+
+if ( ! function_exists( 'amnesty_get_taxonomy_slug_from_rest_base' ) ) {
+	/**
+	 * Retrieve a taxonomy slug from its rest base
+	 *
+	 * @param string $base the taxonomy rest base
+	 *
+	 * @return string
+	 */
+	function amnesty_get_taxonomy_slug_from_rest_base( string $base ): string {
+		$taxonomies = get_taxonomies( output: 'objects' );
+
+		foreach ( $taxonomies as $taxonomy ) {
+			if ( $taxonomy->rest_base === $base ) {
+				return $taxonomy->name;
+			}
+		}
+
+		return $base;
+	}
+}

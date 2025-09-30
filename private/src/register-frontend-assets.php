@@ -14,13 +14,13 @@ if ( ! function_exists( 'humanity_register_frontend_assets' ) ) {
 		$deps  = [];
 		$theme = wp_get_theme();
 
-		if ( file_exists( __DIR__ . '/frontend/index.asset.php' ) ) {
-			$data = require_once __DIR__ . '/frontend/index.asset.php';
+		if ( file_exists( __DIR__ . '/frontend.asset.php' ) ) {
+			$data = require_once __DIR__ . '/frontend.asset.php';
 			$deps = $data['dependencies'] ?? [];
 		}
 
-		wp_enqueue_script( 'amnesty-theme', get_template_directory_uri() . '/build/frontend/index.js', $deps, $theme->get( 'Version' ), true );
-		wp_enqueue_style( 'amnesty-theme', get_template_directory_uri() . '/build/frontend/index.css', [], $theme->get( 'Version' ) );
+		wp_enqueue_script( 'amnesty-theme', get_template_directory_uri() . '/build/frontend.js', $deps, $theme->get( 'Version' ), true );
+		wp_enqueue_style( 'amnesty-theme', get_template_directory_uri() . '/build/frontend.css', [], $theme->get( 'Version' ) );
 		wp_add_inline_style( 'amnesty-theme', sprintf( ':root{--amnesty-icon-path:url("%s"),none}', esc_url( get_template_directory_uri() . '/images/sprite.svg' ) ) );
 
 		$ol_characters = amnesty_get_option( 'ol_locale_option', 'amnesty_localisation_options_page' );

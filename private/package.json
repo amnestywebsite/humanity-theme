@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@braintree/sanitize-url": "^7.1.1",
+    "@hello-pangea/dnd": "^18.0.1",
     "@wordpress/api-fetch": "^7.15.1",
     "@wordpress/block-editor": "^14.10.1",
     "@wordpress/blocks": "^14.4.1",
@@ -70,7 +71,6 @@
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "memize": "^2.1.0",
-    "react-beautiful-dnd": "^13.1.1",
     "react-select": "^5.9.0"
   }
 }

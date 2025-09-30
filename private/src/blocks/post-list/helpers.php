@@ -313,7 +313,7 @@ if ( ! function_exists( 'amnesty_list_process_taxonomy' ) ) {
 			return false;
 		}
 
-		$taxonomy       = $attributes['taxonomy']['value'];
+		$taxonomy       = amnesty_get_taxonomy_slug_from_rest_base( $attributes['taxonomy']['value'] );
 		$terms          = array_column( $attributes['terms'], 'value' );
 		$amount         = $amount ?? $attributes['amount'];
 		$show_author    = $attributes['displayAuthor'];
@@ -321,7 +321,7 @@ if ( ! function_exists( 'amnesty_list_process_taxonomy' ) ) {
 
 		$query = new WP_Query(
 			[
-				'type'           => 'post',
+				'post_type'      => 'post',
 				// phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_post__not_in
 				'post__not_in'   => [ get_the_ID() ],
 				'posts_per_page' => $amount,
