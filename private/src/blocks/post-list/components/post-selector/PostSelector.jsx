@@ -22,13 +22,13 @@ function SearchBox({ value, onChange }) {
   );
 }
 
-function PostTypeOptions({ options, onChange }) {
+function PostTypeOptions({ options, selected, onChange }) {
   const id = `${randId()}-post-selector-post-type`;
 
   const label = (
     <label htmlFor={id}>{/* translators: [admin] */ __('Post Type:', 'amnesty')}&nbsp;</label>
   );
-
+  console.log({ selected });
   if (!options?.length) {
     return (
       <>
@@ -43,7 +43,7 @@ function PostTypeOptions({ options, onChange }) {
   return (
     <>
       {label}
-      <select id={id} name={id} onChange={onChange}>
+      <select id={id} name={id} onChange={onChange} value={selected}>
         {Object.keys(options).map((key) => (
           <option key={key} value={key}>
             {options[key].name}
@@ -140,7 +140,11 @@ const PostSelector = (props) => {
         <div className="post-selectorHeader">
           <SearchBox value={props.state.filter} onChange={props.handleInputFilterChange} />
           <div className="filter">
-            <PostTypeOptions options={props.state.types} onChange={props.handlePostTypeChange} />
+            <PostTypeOptions
+              selected={props.state.type}
+              options={props.state.types}
+              onChange={props.handlePostTypeChange}
+            />
             <TaxonomyOptions
               options={props.state.taxonomies}
               onChange={props.handleTaxonomyChange}

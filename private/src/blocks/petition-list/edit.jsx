@@ -11,6 +11,8 @@ export default function Edit({ attributes, setAttributes }) {
   const [preview, setPreview] = useState(attributes.selectedPosts.length > 0);
   const togglePreview = () => setPreview((prev) => !prev);
   const keyPrefix = Math.random().toString(36).substring(7);
+  // Petition post name may be different to its original codename.
+  const petitionsSlug = window.aiPostTypeCodenames.petition;
 
   return (
     <>
@@ -53,7 +55,7 @@ export default function Edit({ attributes, setAttributes }) {
         {attributes.type === 'feed' && (
           <DisplayFeed
             amount={attributes.amount || 3}
-            overrideTypes={{ petition: true }}
+            overrideTypes={{ [petitionsSlug]: true }}
             style="petition"
             prefix={keyPrefix}
             showAuthor={attributes.displayAuthor}
@@ -64,10 +66,10 @@ export default function Edit({ attributes, setAttributes }) {
           <DisplaySelect
             setAttributes={setAttributes}
             selectedPosts={attributes.selectedPosts || []}
+            defaultPostType={petitionsSlug}
             preview={preview}
-            style="petitions"
+            style="petition"
             prefix={keyPrefix}
-            overrideTypes={{ petition: true }}
             showAuthor={attributes.displayAuthor}
             showPostDate={attributes.displayPostDate}
           />

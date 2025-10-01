@@ -54,7 +54,6 @@ const DisplaySelect = ({
   selectedPosts,
   defaultPostType,
   setAttributes,
-  overrideTypes,
   style,
   prefix,
   showAuthor,
@@ -63,26 +62,23 @@ const DisplaySelect = ({
   const { records: allPostTypes, isResolving: allPostTypesResolving } = useEntityRecords(
     'root',
     'postType',
+    { per_page: -1 },
   );
 
   const [postTypes, setPostTypes] = useState([]);
   useEffect(() => {
-    if (Array.isArray(overrideTypes) && overrideTypes.length) {
-      setPostTypes(overrideTypes);
-      return;
-    }
-
     if (allPostTypesResolving) {
       setPostTypes([]);
       return;
     }
 
     setPostTypes(allPostTypes?.filter((type) => !!type.viewable));
-  }, [overrideTypes, allPostTypes, allPostTypesResolving]);
+  }, [allPostTypes, allPostTypesResolving]);
 
   const { records: taxonomies, isResolving: taxonomiesResolving } = useEntityRecords(
     'root',
     'taxonomy',
+    { per_page: -1 },
   );
 
   const [taxonomyFilter, setTaxonomyFilter] = useState(null);

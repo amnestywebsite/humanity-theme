@@ -16,14 +16,14 @@ const SelectPreview = ({ loading, posts = [], ...props }) => {
   }
 
   if (props.style === 'grid') {
-    return [1, 2, 3, 5, 6, 7].indexOf(posts.length) > -1 ? (
-      <div className={`grid grid-${posts.length}`}>
+    return posts.length % 4 === 0 ? (
+      <div className="grid grid-many">
         {posts.map((result) => (
           <GridItem key={`${props.prefix}-${result.id}`} {...result} />
         ))}
       </div>
     ) : (
-      <div className={`grid grid-many`}>
+      <div className={`grid grid-${posts.length}`}>
         {posts.map((result) => (
           <GridItem key={`${props.prefix}-${result.id}`} {...result} />
         ))}
@@ -33,7 +33,7 @@ const SelectPreview = ({ loading, posts = [], ...props }) => {
 
   if (props.style === 'petition') {
     return (
-      <div className={`grid grid-many petition-grid`}>
+      <div className="grid grid-many petition-grid">
         {posts.map((result) => (
           <PetitionItem key={`${props.prefix}-${result.id}`} {...result} />
         ))}
