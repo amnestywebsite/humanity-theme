@@ -2,6 +2,8 @@
 
 declare( strict_types = 1 );
 
+use Amnesty\Get_Image_Data;
+
 if ( ! function_exists( 'amnesty_petition_list_process_content' ) ) {
 	/**
 	 * Process the current attributes by calling the specific function dependant on block type.
@@ -59,8 +61,15 @@ if ( ! function_exists( 'amnesty_render_petition_item' ) ) {
 
 		$feature = wp_get_attachment_image_url( absint( $data['featured_image'] ?? 0 ), 'post-half@2x' );
 
+		$image_data = new Get_Image_Data( absint( $data['featured_image'] ) );
+		$classname  = 'grid-item petition-item';
+
+		if ( $image_data->credit() ) {
+			$classname .= ' aimc-ignore';
+		}
+
 		?>
-		<article class="grid-item petition-item" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>" tabindex="0">
+		<article class="<?php echo esc_attr( $classname ); ?>" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>" tabindex="0">
 			<figure>
 				<img class="petition-itemImage aiic-ignore" src="<?php echo esc_url( $feature ); ?>" alt="">
 				<?php if ( ! empty( $data['tag'] ) ) : ?>
