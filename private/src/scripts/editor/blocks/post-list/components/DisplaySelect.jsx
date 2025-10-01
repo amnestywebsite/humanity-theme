@@ -72,7 +72,7 @@ class DisplaySelect extends Component {
       pagesTotal: {},
       paging: false,
       posts: [],
-      type: 'post',
+      type: this.props.postType || 'post',
       types: [],
       taxonomies: [],
       taxonomy: '',
@@ -91,12 +91,11 @@ class DisplaySelect extends Component {
       initialLoading: true,
     });
 
-    let defaultType;
+    let defaultType = this.props.postType;
 
-    if (this.props.overrideTypes) {
+    if (this.props.overrideTypes && !this.props.overrideTypes[defaultType]) {
       Object.keys(this.props.overrideTypes).map((key, index) => {
         if (index === 0) {
-          // this.setState({ type: this.props.overrideTypes[key].rest_base });
           defaultType = key;
         }
         return key;
@@ -105,7 +104,7 @@ class DisplaySelect extends Component {
       this.setState(
         {
           types: this.props.overrideTypes,
-          type: defaultType !== null ? defaultType : 'post',
+          type: defaultType || 'post',
         },
         () => {
           this.retrieveSelectedPosts().then(() => {
@@ -122,8 +121,15 @@ class DisplaySelect extends Component {
       api.getPostTypes().then((data) => {
         const types = data;
         delete types.attachment;
-        delete types.wp_block;
+        delete types.nav_menu_item;
         delete types.sidebar;
+        delete types.wp_block;
+        delete types.wp_font_face;
+        delete types.wp_font_family;
+        delete types.wp_global_styles;
+        delete types.wp_navigation;
+        delete types.wp_template;
+        delete types.wp_template_part;
 
         this.setState(
           {
@@ -159,6 +165,7 @@ class DisplaySelect extends Component {
   getPosts = (args = {}) => {
     const pageKey = this.state.filter ? false : this.state.type;
     const { get } = lodash;
+
     const defaultArgs = {
       per_page: 10,
       type: this.state.type,
@@ -278,7 +285,7 @@ class DisplaySelect extends Component {
     const selected = this.props.selectedPosts;
     const { types } = this.state;
 
-    if (!selected.length > 0) {
+    if (!selected.length) {
       // return a fake promise that auto resolves.
       // this possibly needs refactoring.
       // eslint-disable-next-line no-promise-executor-return
@@ -347,6 +354,7 @@ class DisplaySelect extends Component {
    * @param string type - comes from the event object target.
    */
   handlePostTypeChange = ({ target: { value: type = '' } = {} } = {}) => {
+    this.props.setAttributes({ postType: type });
     this.setState({ type, loading: true }, () => {
       // fetch posts, then set loading = false
       this.getPosts().then(() => this.setState({ loading: false }));

@@ -1,4 +1,11 @@
 import { Draggable } from 'react-beautiful-dnd';
+
+function decodeEntities(string) {
+  const txt = document.createElement('textarea');
+  txt.innerHTML = string;
+  return txt.value;
+}
+
 /**
  * Post Component.
  *
@@ -36,7 +43,7 @@ export const Post = ({
         >
           <figure className="post-figure" style={style}></figure>
           <div className="post-body">
-            <h3 className="post-title">{postTitle}</h3>
+            <h3 className="post-title">{decodeEntities(postTitle)}</h3>
           </div>
           {icon && <button onClick={() => clickHandler(postId)}>{icon}</button>}
         </article>

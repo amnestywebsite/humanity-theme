@@ -315,6 +315,7 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                 preview={this.state.preview}
                 style={attributes.style}
                 prefix={this.state.keyPrefix}
+                postType={attributes.postType}
                 overrideTypes={postTypeOveride}
                 showAuthor={attributes.displayAuthor}
                 showPostDate={attributes.displayPostDate}

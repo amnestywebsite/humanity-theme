@@ -33,6 +33,10 @@ const blockAttributes = {
   selectedPosts: {
     type: 'array',
   },
+  postType: {
+    type: 'string',
+    default: 'post',
+  },
   taxonomyFilters: {
     type: 'array',
   },
