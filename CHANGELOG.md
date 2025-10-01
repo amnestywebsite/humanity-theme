@@ -1,3 +1,14 @@
+### v2.1.6
+Fixes:
+- Post List block:
+  - Object selection for non-default post-type
+  - Output of tag data if there is no tag text
+  - Output when a taxonomy's slug doesn't match its REST base
+- Search pagination
+- Errors in patterns when MultilingualPress is not active
+- Text decoration on single template
+- Image metadata appearance in both editor and frontend
+
 ### v2.1.5
 Fixes:
 - Constrain iframe width in sidebars
