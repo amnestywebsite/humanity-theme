@@ -27,19 +27,22 @@ if ( empty( $attachment_terms ) ) {
 	return;
 }
 
-foreach ( $attachment_terms as $index => $remote_term ) {
-	$relations = translationIds( $remote_term->term_id, 'term', $post?->blog_id ?? 0 );
+if ( function_exists( '\Inpsyde\MultilingualPress\translationIds' ) ) {
+	foreach ( $attachment_terms as $index => $remote_term ) {
+		$relations = translationIds( $remote_term->term_id, 'term', $post?->blog_id ?? 0 );
 
-	if ( ! isset( $relations[ get_current_blog_id() ] ) ) {
-		continue;
-	}
+		if ( ! isset( $relations[ get_current_blog_id() ] ) ) {
+			continue;
+		}
 
-	$local_term = get_term( $relations[ get_current_blog_id() ], $remote_term->taxonomy );
+		$local_term = get_term( $relations[ get_current_blog_id() ], $remote_term->taxonomy );
 
-	if ( is_a( $local_term, WP_Term::class ) ) {
-		$attachment_terms[ $index ] = $local_term;
+		if ( is_a( $local_term, WP_Term::class ) ) {
+			$attachment_terms[ $index ] = $local_term;
+		}
 	}
 }
+
 
 ?>
 <!-- wp:group {"tagName":"div","className":"article-metaData"} -->
