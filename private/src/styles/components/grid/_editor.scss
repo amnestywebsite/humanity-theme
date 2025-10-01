@@ -32,7 +32,7 @@
 .grid-itemMeta,
 .linkList-itemTitle,
 .linkList-itemMeta {
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   font-family: var(--wp--preset--font-family--secondary);
 }
