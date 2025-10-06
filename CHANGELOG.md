@@ -1,3 +1,8 @@
+### v2.1.7
+Fixes:
+- Type checking issue on featured image caption
+- Image credit on Petition List block
+
 ### v2.1.6
 Fixes:
 - Post List block:
