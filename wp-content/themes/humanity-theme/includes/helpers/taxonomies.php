@@ -910,9 +910,9 @@ if ( ! function_exists( 'amnesty_get_taxonomy_slug_from_rest_base' ) ) {
 	 *
 	 * @param string $base the taxonomy rest base
 	 *
-	 * @return string|null
+	 * @return string
 	 */
-	function amnesty_get_taxonomy_slug_from_rest_base( string $base ): ?string {
+	function amnesty_get_taxonomy_slug_from_rest_base( string $base ): string {
 		$taxonomies = get_taxonomies( output: 'objects' );
 
 		foreach ( $taxonomies as $taxonomy ) {
@@ -921,6 +921,6 @@ if ( ! function_exists( 'amnesty_get_taxonomy_slug_from_rest_base' ) ) {
 			}
 		}
 
-		return null;
+		return $base;
 	}
 }
