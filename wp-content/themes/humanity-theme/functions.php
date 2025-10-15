@@ -292,4 +292,8 @@ if ( is_multilingualpress_enabled() ) {
 }
 #endregion multilingualpress
 
+/**
+ * Theme Multisite Global Media includes
+ */
+require_once realpath( __DIR__ . '/includes/mgm/class-mgm-filters.php' );
 // phpcs:enable Squiz.Commenting.InlineComment.WrongStyle,PEAR.Commenting.InlineComment.WrongStyle
