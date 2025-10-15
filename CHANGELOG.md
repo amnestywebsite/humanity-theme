@@ -1,3 +1,7 @@
+### v2.1.8
+Fixes:
+- Ensure non-null return type when translating taxonomy REST base to its slug
+
 ### v2.1.7
 Fixes:
 - Type checking issue on featured image caption
