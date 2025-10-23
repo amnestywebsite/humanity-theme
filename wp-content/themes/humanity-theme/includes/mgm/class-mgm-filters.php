@@ -62,9 +62,14 @@ class MGM_Filters {
 	 */
 	public function hero( array $block ): array {
 		$image_id = absint( $block['attrs']['imageID'] ?? '0' );
+		$video_id = absint( $block['attrs']['featuredVideoId'] ?? '0' );
 
 		if ( $image_id ) {
 			$block['attrs']['imageID'] = $this->process( $image_id );
+		}
+
+		if ( $video_id ) {
+			$block['attrs']['featuredVideoId'] = $this->process( $video_id );
 		}
 
 		return $block;
