@@ -55,11 +55,11 @@ if ( ! function_exists( 'get_object_translations' ) ) {
 		$site = get_current_blog_id();
 		$args = TranslationSearchArgs::forContext( $cext )->forSiteId( $site )->includeBase();
 
-		$cache_key = md5( wp_json_encode( $args->toArray() ) );
+		$cache_key = md5( wp_json_encode( $args->toArray() ) ?: '' );
 		$cached    = wp_cache_get( $cache_key );
 
-		if ( $cached ) {
-			return $cached;
+		if ( is_array( $cached ) ) {
+			return apply_filters( __FUNCTION__, $cached );
 		}
 
 		$translations = resolve( Translations::class )->searchTranslations( $args );
@@ -71,7 +71,7 @@ if ( ! function_exists( 'get_object_translations' ) ) {
 
 		wp_cache_add( $cache_key, $translations );
 
-		return $translations;
+		return apply_filters( __FUNCTION__, $translations );
 	}
 }
 
