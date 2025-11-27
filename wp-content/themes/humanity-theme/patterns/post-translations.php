@@ -29,6 +29,10 @@ foreach ( $translations as $translation ) {
 	);
 }
 
+if ( ! count( $translation_links ) ) {
+	return;
+}
+
 $has_few = count( $translation_links ) < 7;
 
 if ( $has_few ) {
