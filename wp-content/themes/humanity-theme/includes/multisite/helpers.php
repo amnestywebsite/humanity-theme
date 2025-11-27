@@ -235,7 +235,11 @@ if ( ! function_exists( 'amnesty_get_sites' ) ) {
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( is_array( $cached ) ) {
-			return $cached;
+			if ( ! $filter ) {
+				return $cached;
+			}
+
+			return apply_filters( 'amnesty_get_sites', $cached );
 		}
 
 		$sites = ( new \Amnesty\Core_Site_List( $public_only ) )->get_sites();
@@ -266,6 +270,10 @@ if ( ! function_exists( 'get_blog_term_link' ) ) {
 		$link = get_term_link( $term_id, $taxonomy );
 		restore_current_blog();
 
-		return is_wp_error( $link ) ? home_url( '/', 'https' ) : $link;
+		if ( is_wp_error( $link ) ) {
+			return home_url( '/', 'https' );
+		}
+
+		return (string) $link;
 	}
 }
