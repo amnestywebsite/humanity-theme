@@ -31,6 +31,11 @@
   position: relative;
 }
 
+.article-metaData .wp-block-details.is-style-small summary {
+  margin: 0;
+  padding: 0;
+}
+
 .article-metaData .wp-block-details.is-style-small .wp-block-group {
   position: absolute;
   inset-inline-end: 0;
