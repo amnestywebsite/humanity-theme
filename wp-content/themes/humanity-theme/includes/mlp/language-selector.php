@@ -16,7 +16,7 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 	 *
 	 * @return array<string,object>
 	 */
-	function amnesty_get_object_translations( array $sites = [] ) {
+	function amnesty_get_object_translations( array $sites = [] ) { // phpcs:ignore Generic.Metrics.CyclomaticComplexity.TooHigh
 		if ( ! has_translations() || is_admin() ) {
 			return $sites;
 		}
@@ -61,15 +61,16 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 				'direction' => $language->isRtl() ? 'rtl' : 'ltr',
 				'name'      => get_blog_option( $translation->remoteSiteId(), 'blogname' ),
 				'url'       => $translation->remoteUrl(),
-				'path'      => get_site( $translation->remoteSiteId() )->path,
+				'path'      => get_site( $translation->remoteSiteId() )?->path,
 				'blog_id'   => $translation->remoteSiteId(),
+				'site_id'   => $translation->remoteSiteId(),
 				'item_id'   => $translation->remoteContentId(),
 				'type'      => $translation->type(),
 				'current'   => $translation->remoteSiteId() === get_current_blog_id(),
 			];
 		}
 
-		return $i18n_sites;
+		return $i18n_sites ?: $sites;
 	}
 }
 
