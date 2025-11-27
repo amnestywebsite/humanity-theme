@@ -1,15 +1,22 @@
 <?php
 
 /**
- * Title: Post Translations
+ * Title: Attachment Translations
  * Description: Output the list of translations for the entity
- * Slug: amnesty/post-translations
+ * Slug: amnesty/attachment-translations
  * Inserter: no
  */
 
-$translations = get_object_translations();
+use function Amnesty\SharePoint\get_document_languages;
 
-if ( ! count( $translations ) ) {
+if ( ! function_exists( '\Amnesty\SharePoint\get_document_languages' ) ) {
+	return;
+}
+
+$translations = get_document_languages( get_post() );
+
+// if there's only one item, it's the current language
+if ( count( $translations ) < 2 ) {
 	return;
 }
 
@@ -17,21 +24,12 @@ $translation_links = [];
 $list_separator    = _x( ',', 'list item separator', 'amnesty' );
 
 foreach ( $translations as $translation ) {
-	if ( ! $translation->remoteUrl() ) {
-		continue;
-	}
-
 	$translation_links[] = sprintf(
 		'<a href="%s" hreflang="%s">%s</a>',
-		esc_url( $translation->remoteUrl() ),
-		esc_attr( $translation->language()->bcp47tag() ),
-		esc_html( $translation->language()->name() ),
+		esc_url( get_blog_permalink( $translation->blog_id, $translation->item_id ) ),
+		esc_attr( $translation->lang_iso ),
+		esc_html( $translation->language ),
 	);
-}
-
-// if there's only one link, it's the current language
-if ( count( $translation_links ) < 2 ) {
-	return;
 }
 
 $has_few = count( $translation_links ) < 7;
@@ -72,7 +70,6 @@ if ( $has_few ) :
 	<?php
 
 else :
-
 
 	?>
 
