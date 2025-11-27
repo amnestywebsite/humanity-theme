@@ -35,16 +35,22 @@ $show_bottom_row = $show_byline || $show_publish_date || $show_updated_date;
 <?php endif; ?>
 
 <?php if ( $show_bottom_row ) : ?>
-	<!-- wp:group {"tagName":"div","className":"article-metaData"} -->
+	<!-- wp:group {"className":"article-metaData","layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
 	<div class="wp-block-group article-metaData">
-		<!-- wp:group {"tagName":"div"} -->
+		<!-- wp:group {"style":{"layout":{"columnSpan":1,"rowSpan":1}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 		<div class="wp-block-group">
 			<!-- wp:pattern {"slug":"amnesty/post-byline"} /-->
 			<!-- wp:pattern {"slug":"amnesty/post-published-date"} /-->
+			<!-- wp:pattern {"slug":"amnesty/post-updated-date"} /-->
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:pattern {"slug":"amnesty/post-updated-date"} /-->
+		<!-- wp:group {"style":{"layout":{"columnSpan":1,"rowSpan":1}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"right","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group">
+			<!-- wp:pattern {"slug":"amnesty/post-index-number"} /-->
+			<!-- wp:pattern {"slug":"amnesty/post-translations"} /-->
+		</div>
+		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 <?php endif; ?>
