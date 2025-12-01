@@ -1,22 +1,22 @@
-# Copyright (C) 2025 Amnesty International
-# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Humanity Theme 2.1.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/humanity-theme\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-11-27T13:04:46+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"PO-Revision-Date: 2025-11-27 13:11+0000\n"
+"Language: kk_KZ\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
 "X-Domain: amnesty\n"
 
 #. Theme Name of the theme
 #: style.css
-#: includes/theme-setup/text-domain.php:33
+#: includes/theme-setup/text-domain.php:74
 msgid "Humanity Theme"
 msgstr ""
 
@@ -876,7 +876,7 @@ msgstr ""
 
 #. translators: [front] %s: the title of the article
 #: includes/blocks/post-list/views/grid-item.php:10
-#: includes/blocks/post-list/views/list-item.php:10
+#: includes/blocks/post-list/views/list-item.php:4
 #: partials/post/post-full.php:16
 #: partials/post/post-none.php:10
 #: partials/post/post-search.php:31
@@ -1160,7 +1160,7 @@ msgstr ""
 #: assets/scripts/blocks.js:35133
 #: assets/scripts/blocks.js:34453
 msgid "Country"
-msgstr ""
+msgstr "Ел"
 
 #. translators: [API/admin]
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:186
@@ -1184,8 +1184,8 @@ msgstr ""
 #, php-format
 msgid "%s result"
 msgid_plural "%s results"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s нәтиже"
+msgstr[1] "%s нәтижелер"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
 #: includes/features/search/class-search-filters.php:249
@@ -1217,51 +1217,51 @@ msgstr ""
 
 #: includes/features/search/helpers.php:135
 msgid "January"
-msgstr ""
+msgstr "Қаңтар"
 
 #: includes/features/search/helpers.php:136
 msgid "Febuary"
-msgstr ""
+msgstr "Ақпан"
 
 #: includes/features/search/helpers.php:137
 msgid "March"
-msgstr ""
+msgstr "Наурыз"
 
 #: includes/features/search/helpers.php:138
 msgid "April"
-msgstr ""
+msgstr "Сәуір"
 
 #: includes/features/search/helpers.php:139
 msgid "May"
-msgstr ""
+msgstr "Мамыр"
 
 #: includes/features/search/helpers.php:140
 msgid "June"
-msgstr ""
+msgstr "Маусым"
 
 #: includes/features/search/helpers.php:141
 msgid "July"
-msgstr ""
+msgstr "Шілде"
 
 #: includes/features/search/helpers.php:142
 msgid "August"
-msgstr ""
+msgstr "Тамыз"
 
 #: includes/features/search/helpers.php:143
 msgid "September"
-msgstr ""
+msgstr "Қыркүйек"
 
 #: includes/features/search/helpers.php:144
 msgid "October"
-msgstr ""
+msgstr "Қазан"
 
 #: includes/features/search/helpers.php:145
 msgid "November"
-msgstr ""
+msgstr "Қараша"
 
 #: includes/features/search/helpers.php:146
 msgid "December"
-msgstr ""
+msgstr "Желтоқсан"
 
 #: includes/features/search/permalink.php:39
 msgid "The ID of the page that should display the search interface"
@@ -1280,7 +1280,7 @@ msgstr ""
 #, php-format
 msgid "%1$s result for '%2$s'"
 msgid_plural "%1$s results for '%2$s'"
-msgstr[0] ""
+msgstr[0] "\"%2$s\" бойынша %1$s нәтиже"
 msgstr[1] ""
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
@@ -1292,7 +1292,7 @@ msgstr[1] ""
 #: patterns/search-header.php:53
 #: woocommerce/loop/orderby.php:29
 msgid "Sort by"
-msgstr ""
+msgstr "Сұрыптау түрі"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #: includes/helpers/archive.php:66
@@ -1602,27 +1602,27 @@ msgstr ""
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:15
 msgid "Most Recent"
-msgstr ""
+msgstr "Ең жаңалары"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:16
 msgid "Oldest First"
-msgstr ""
+msgstr "Ең ескілерінен бастау"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:17
 msgid "Title - Ascending"
-msgstr ""
+msgstr "Атауы бойынша - жоғары қарай"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:18
 msgid "Title - Descending"
-msgstr ""
+msgstr "Атауы бойынша - төмен қарай"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
 #: includes/query-filters/sort-order.php:22
 msgid "Most Relevant"
-msgstr ""
+msgstr "Ең сәйкес нәтижелер"
 
 #. translators: [admin]
 #: includes/rest-api/post-data.php:40
@@ -2235,7 +2235,7 @@ msgstr ""
 #: patterns/attachment-share.php:35
 #: patterns/post-share.php:23
 msgid "Share on Facebook"
-msgstr ""
+msgstr "Facebook-те бөлісу"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
 #: partials/article-share.php:15
@@ -2249,7 +2249,7 @@ msgstr ""
 #: patterns/attachment-share.php:42
 #: patterns/post-share.php:30
 msgid "Share on Twitter"
-msgstr ""
+msgstr "Twitter-де бөлісу"
 
 #. translators: [front] ARIA
 #: partials/forms/taxonomy-filters.php:14
@@ -2269,7 +2269,7 @@ msgstr ""
 #. translators: [front]
 #: partials/language-selector.php:19
 msgid "Which language would you like to use this site in?"
-msgstr ""
+msgstr "Сайтты қай тілде пайдаланғыңыз келеді?"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:20
@@ -2370,17 +2370,17 @@ msgstr ""
 #. translators: [front]
 #: partials/search/forminput.php:14
 msgid "What are you looking for?"
-msgstr ""
+msgstr "Сіз не іздеп жатырсыз?"
 
 #: partials/search/horizontal-search.php:12
 #: partials/search/horizontal-search.php:52
 msgid "Year"
-msgstr ""
+msgstr "Жыл"
 
 #: partials/search/horizontal-search.php:13
 #: partials/search/horizontal-search.php:62
 msgid "Month"
-msgstr ""
+msgstr "Ай"
 
 #. translators: [front]
 #: partials/search/horizontal-search.php:39
@@ -2560,16 +2560,16 @@ msgstr ""
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:11
 msgid "Page Not Found"
-msgstr ""
+msgstr "Бет табылмады"
 
 #: patterns/404.php:15
 msgid "The page you are looking for does not exist."
-msgstr ""
+msgstr "Сіз іздеген бет жоқ"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:20
 msgid "Go to the Homepage"
-msgstr ""
+msgstr "Басты бетке өту"
 
 #: patterns/archive-heading.php
 msgctxt "Pattern title"
@@ -5757,7 +5757,7 @@ msgstr ""
 #: assets/scripts/blocks.js:37309
 #: assets/scripts/blocks.js:37024
 msgid "Countries"
-msgstr ""
+msgstr "Елдер"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:37392
