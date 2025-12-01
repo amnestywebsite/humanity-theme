@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Humanity Theme 2.1.0\n"
+"Project-Id-Version: Humanity Theme 2.1.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/humanity-theme\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-12-11T17:57:13+00:00\n"
-"PO-Revision-Date: 2025-02-12 11:34+0000\n"
-"Language: th\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.4\n"
+"POT-Creation-Date: 2025-11-27T13:04:46+00:00\n"
+"PO-Revision-Date: 2025-11-27 13:12+0000\n"
+"Language: uz_UZ@cyrillic\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
 "X-Domain: amnesty\n"
 
 #. Theme Name of the theme
@@ -46,7 +46,7 @@ msgstr ""
 #: includes/admin/theme-options/footer.php:15
 #: includes/admin/theme-options/footer.php:19
 msgid "Footer"
-msgstr "ส่วนล่าง"
+msgstr ""
 
 #. translators: [front] ARIA
 #: footer.php:35
@@ -58,7 +58,7 @@ msgstr ""
 #: footer.php:67
 #: patterns/footer-content.php:123
 msgid "Follow us on:"
-msgstr "ติดตามเรา"
+msgstr ""
 
 #. translators: [front] ARIA
 #: footer.php:70
@@ -124,7 +124,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:72
 msgid "Features"
-msgstr "คุณสมบัติ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:74
@@ -173,7 +173,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:181
 msgid "Related Content (Posts)"
-msgstr "เนื้อหาที่เกี่ยวข้อง"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:183
@@ -183,7 +183,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:199
 msgid "Post Types"
-msgstr "ประเภทการโพสต์"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:201
@@ -193,7 +193,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:220
 msgid "Taxonomies"
-msgstr "อนุกรมวิธาน"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/network/class-network-options.php:222
@@ -214,13 +214,13 @@ msgstr ""
 #: includes/admin/theme-options.php:18
 #: includes/admin/theme-options.php:23
 msgid "Theme Options"
-msgstr "ตัวเลือกธีม"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:21
 #: includes/admin/theme-options/analytics.php:25
 msgid "Analytics"
-msgstr "การวิเคราะห์"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:37
@@ -352,7 +352,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:171
 msgid "Add Property"
-msgstr "เพิ่มอสังหาริมทรัพย์"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/analytics.php:173
@@ -398,7 +398,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/theme-options/footer.php:28
 msgid "Section Title"
-msgstr "หัวข้อส่วน"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/footer.php:37
@@ -437,7 +437,7 @@ msgstr ""
 #: assets/scripts/blocks.js:28900
 #: assets/scripts/blocks.js:38424
 msgid "Header"
-msgstr "ส่วนหัว"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/header.php:28
@@ -458,7 +458,7 @@ msgstr ""
 #: includes/admin/theme-options/localisation.php:19
 #: includes/admin/theme-options/localisation.php:23
 msgid "Localisation"
-msgstr "แปลภาษา"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:32
@@ -468,7 +468,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:36
 msgid "Please select"
-msgstr "โปรดเลือก"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/localisation.php:40
@@ -671,9 +671,19 @@ msgid "Uppercase Roman numerals."
 msgstr ""
 
 #. translators: [admin]
+#: includes/admin/theme-options/localisation.php:126
+msgid "Always display numeric grouping separators"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:131
+msgid "Whether to use numeric grouping separators, such as thousands separators, even if the locale prefers otherwise."
+msgstr ""
+
+#. translators: [admin]
 #: includes/admin/theme-options/news.php:19
 msgid "News"
-msgstr "ข่าว"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/news.php:28
@@ -704,7 +714,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/theme-options/pop-in.php:58
 msgid "Timeout"
-msgstr "หมดเวลา"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/pop-in.php:60
@@ -714,12 +724,12 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/theme-options/social.php:19
 msgid "Social Media"
-msgstr "สื่อสังคม"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/social.php:28
 msgid "Facebook URL"
-msgstr "Facebook URL"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/social.php:37
@@ -729,7 +739,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/admin/theme-options/social.php:46
 msgid "Youtube URL"
-msgstr "Youtube URL"
+msgstr ""
 
 #. translators: [admin]
 #: includes/admin/theme-options/social.php:55
@@ -763,18 +773,18 @@ msgstr ""
 
 #: includes/block-patterns/pattern-category.php:15
 msgid "Actions"
-msgstr "การกระทำ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/block-patterns/pattern-category.php:16
 #: assets/scripts/blocks.js:24024
 #: assets/scripts/blocks.js:22482
 msgid "Media"
-msgstr "สื่อ"
+msgstr ""
 
 #: includes/block-patterns/pattern-category.php:17
 msgid "Templates"
-msgstr "แม่แบบ"
+msgstr ""
 
 #: includes/block-patterns/pattern-category.php:20
 msgid "Two Column"
@@ -786,7 +796,7 @@ msgstr ""
 
 #: includes/block-patterns/pattern-category.php:22
 msgid "Four Column"
-msgstr "สี่คอลัมน์"
+msgstr ""
 
 #: includes/block-patterns/pattern-category.php:23
 msgid "1/2, 1/2"
@@ -821,7 +831,7 @@ msgstr ""
 #: assets/scripts/blocks.js:29287
 #: assets/scripts/blocks.js:28231
 msgid "Download"
-msgstr "ดาวน์โหลด"
+msgstr ""
 
 #. translators: [front] no context avalible
 #: includes/blocks/embed-sutori/render.php:27
@@ -845,12 +855,12 @@ msgstr ""
 #: assets/scripts/blocks.js:29145
 #: assets/scripts/blocks.js:32890
 msgid "Act Now"
-msgstr "ร่วมเปลี่ยนแปลง"
+msgstr ""
 
 #. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
 #: includes/blocks/menu/render.php:24
 msgid "Category List"
-msgstr "รายการหมวดหมู่"
+msgstr ""
 
 #. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
 #: includes/blocks/menu/render.php:97
@@ -880,17 +890,17 @@ msgstr ""
 #: assets/scripts/blocks.js:31561
 #: assets/scripts/blocks.js:30494
 msgid "Author"
-msgstr "ผู้เขียน"
+msgstr ""
 
 #. translators: [front]
 #: includes/blocks/post-list/views/list-item-date.php:10
 msgid "Date"
-msgstr "วันที่"
+msgstr ""
 
 #. translators: [front]
 #: includes/blocks/post-list/views/list-item-date.php:23
 msgid "Updated"
-msgstr "อัพเดท"
+msgstr ""
 
 #. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
 #. translators: [admin]
@@ -939,7 +949,7 @@ msgstr ""
 #: assets/scripts/blocks.js:36459
 #: assets/scripts/blocks.js:36504
 msgid "Next"
-msgstr "ถัดไป"
+msgstr ""
 
 #. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #. translators: [front]
@@ -975,7 +985,7 @@ msgstr "ถัดไป"
 #: assets/scripts/blocks.js:36462
 #: assets/scripts/blocks.js:36507
 msgid "Previous"
-msgstr "ก่อนหน้า"
+msgstr ""
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery
 #. translators: [admin]
@@ -1060,7 +1070,7 @@ msgstr ""
 #: assets/scripts/blocks.js:21838
 msgctxt "block style"
 msgid "Dark"
-msgstr "เข้ม"
+msgstr ""
 
 #. translators: [admin]
 #: includes/core-blocks/button/styles.php:52
@@ -1071,7 +1081,7 @@ msgstr "เข้ม"
 #: assets/scripts/blocks.js:21894
 msgctxt "block style"
 msgid "Light"
-msgstr "สว่าง"
+msgstr ""
 
 #. translators: [admin]
 #: includes/core-blocks/button/styles.php:61
@@ -1143,14 +1153,14 @@ msgstr ""
 #: assets/scripts/blocks.js:34233
 #: assets/scripts/blocks.js:34395
 msgid "Related Content"
-msgstr "เนื้อหาที่เกี่ยวข้อง"
+msgstr ""
 
 #. translators: [admin]
 #: includes/features/related-content/class-related-content.php:431
 #: assets/scripts/blocks.js:35133
 #: assets/scripts/blocks.js:34453
 msgid "Country"
-msgstr "ประเทศ"
+msgstr "мамлакат"
 
 #. translators: [API/admin]
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:186
@@ -1161,7 +1171,7 @@ msgstr ""
 #: includes/features/search/class-search-filters.php:149
 msgctxt "search results title"
 msgid "Search results"
-msgstr "ผลการค้นหา"
+msgstr ""
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
 #. translators: Singular/Plural number of posts.
@@ -1174,7 +1184,8 @@ msgstr "ผลการค้นหา"
 #, php-format
 msgid "%s result"
 msgid_plural "%s results"
-msgstr[0] ""
+msgstr[0] "%s натижа"
+msgstr[1] "%s натижа"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
 #: includes/features/search/class-search-filters.php:249
@@ -1206,51 +1217,51 @@ msgstr ""
 
 #: includes/features/search/helpers.php:135
 msgid "January"
-msgstr "มกราคม"
+msgstr "январь"
 
 #: includes/features/search/helpers.php:136
 msgid "Febuary"
-msgstr ""
+msgstr "февраль"
 
 #: includes/features/search/helpers.php:137
 msgid "March"
-msgstr "มีนาคม"
+msgstr "март"
 
 #: includes/features/search/helpers.php:138
 msgid "April"
-msgstr "เมษายน"
+msgstr "апрель"
 
 #: includes/features/search/helpers.php:139
 msgid "May"
-msgstr "พฤษภาคม"
+msgstr "май"
 
 #: includes/features/search/helpers.php:140
 msgid "June"
-msgstr "มิถุนายน"
+msgstr "июнь"
 
 #: includes/features/search/helpers.php:141
 msgid "July"
-msgstr "กรกฎาคม"
+msgstr "июль"
 
 #: includes/features/search/helpers.php:142
 msgid "August"
-msgstr "สิงหาคม"
+msgstr "август"
 
 #: includes/features/search/helpers.php:143
 msgid "September"
-msgstr "กันยายน"
+msgstr "сентябрь"
 
 #: includes/features/search/helpers.php:144
 msgid "October"
-msgstr "ตุลาคม"
+msgstr "октябрь"
 
 #: includes/features/search/helpers.php:145
 msgid "November"
-msgstr "พฤศจิกายน"
+msgstr "ноябрь"
 
 #: includes/features/search/helpers.php:146
 msgid "December"
-msgstr "ธันวาคม"
+msgstr "декабрь"
 
 #: includes/features/search/permalink.php:39
 msgid "The ID of the page that should display the search interface"
@@ -1258,7 +1269,7 @@ msgstr ""
 
 #: includes/features/search/permalink.php:45
 msgid "Search page"
-msgstr "เพจการค้นหา"
+msgstr ""
 
 #. translators: 1: number of results for search query, 2: don't translate (dynamic search term)
 #: includes/full-site-editing/blocks/query-count/render.php:22
@@ -1269,7 +1280,8 @@ msgstr "เพจการค้นหา"
 #, php-format
 msgid "%1$s result for '%2$s'"
 msgid_plural "%1$s results for '%2$s'"
-msgstr[0] ""
+msgstr[0] "%1$s натижа \"%2$s\" учун"
+msgstr[1] ""
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
 #. translators: [front] Donate Label for post sorting options
@@ -1280,7 +1292,7 @@ msgstr[0] ""
 #: patterns/search-header.php:53
 #: woocommerce/loop/orderby.php:29
 msgid "Sort by"
-msgstr "เรียงตาม"
+msgstr "Саралаш"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #: includes/helpers/archive.php:66
@@ -1292,12 +1304,12 @@ msgstr ""
 #: includes/helpers/frontend.php:39
 #: includes/helpers/frontend.php:45
 msgid "Choose an option"
-msgstr "เลือก"
+msgstr ""
 
 #. translators: [front] ARIA page number pagination prefix, e.g. "[Page] 1" https://isaidotorgstg.wpengine.com/en/latest
 #: includes/helpers/pagination.php:33
 msgid "Page"
-msgstr "หน้า"
+msgstr ""
 
 #. translators: [front] shown as a label for a region in search results
 #: includes/helpers/taxonomies.php:771
@@ -1318,7 +1330,7 @@ msgstr ""
 #. translators: [front]
 #: includes/mlp/language-selector.php:117
 msgid "Available languages"
-msgstr "ภาษาที่ใช้ได้"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:20
@@ -1366,7 +1378,7 @@ msgstr ""
 #: includes/post-types/pop-in.php:38
 #: includes/post-types/sidebar.php:34
 msgid "Add New"
-msgstr "เพิ่มใหม่"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:40
@@ -1417,25 +1429,25 @@ msgstr ""
 #: assets/scripts/blocks.js:24539
 #: assets/scripts/blocks.js:28682
 msgid "Featured Image"
-msgstr "รูปภาพแนะนำ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:58
 #: includes/post-types/sidebar.php:54
 msgid "Set featured image"
-msgstr "ตั้งค่ารูปภาพแนะนำ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:60
 #: includes/post-types/sidebar.php:56
 msgid "Remove featured image"
-msgstr "ลบรูปภาพหลัก"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:62
 #: includes/post-types/sidebar.php:58
 msgid "Use as featured image"
-msgstr "ใช้เป็นรูปภาพแนะนำ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/pop-in.php:64
@@ -1477,7 +1489,7 @@ msgstr ""
 #: includes/post-types/sidebar.php:18
 msgctxt "Post Type Singular Name"
 msgid "Sidebar"
-msgstr "แถบด้านข้าง"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:20
@@ -1490,7 +1502,7 @@ msgstr ""
 #: assets/scripts/blocks.js:38822
 #: assets/scripts/blocks.js:38617
 msgid "Sidebar"
-msgstr "แถบด้านข้าง"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:24
@@ -1525,7 +1537,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/post-types/sidebar.php:38
 msgid "Edit Sidebar"
-msgstr "แก้ไขแถบด้านข้าง"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:40
@@ -1550,7 +1562,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/post-types/sidebar.php:48
 msgid "Not Found"
-msgstr "ไม่พบ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:50
@@ -1565,7 +1577,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/post-types/sidebar.php:62
 msgid "Uploaded to this item"
-msgstr "อัปโหลดไปยังรายการนี้"
+msgstr ""
 
 #. translators: [admin]
 #: includes/post-types/sidebar.php:64
@@ -1590,27 +1602,27 @@ msgstr ""
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:15
 msgid "Most Recent"
-msgstr ""
+msgstr "Энг сўнгги"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:16
 msgid "Oldest First"
-msgstr "ก่อนเก่าที่สุด"
+msgstr "Энг эскиси биринчи"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:17
 msgid "Title - Ascending"
-msgstr ""
+msgstr "Сарлавҳа - Ўсиш тартибида"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:18
 msgid "Title - Descending"
-msgstr ""
+msgstr "Сарлавҳа - Камайиш тартибида"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
 #: includes/query-filters/sort-order.php:22
 msgid "Most Relevant"
-msgstr ""
+msgstr "Энг мос"
 
 #. translators: [admin]
 #: includes/rest-api/post-data.php:40
@@ -1619,7 +1631,7 @@ msgstr ""
 
 #: includes/rest-api/users.php:82
 msgid "Sorry, you are not allowed to do that."
-msgstr "ขออภัย คุณไม่ได้รับอนุญาติให้ทำสิ่งนั้น"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:98
@@ -1713,44 +1725,44 @@ msgstr ""
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:192
 msgid "Description"
-msgstr "รายละเอียด"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:84
 msgctxt "taxonomy general name"
 msgid "Countries"
-msgstr "ประเทศ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:86
 msgctxt "taxonomy singular name"
 msgid "Country"
-msgstr "ประเทศ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:88
 msgid "Search Countries"
-msgstr "ค้นหาประเทศ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:90
 msgid "All Countries"
-msgstr "ทุกประเทศ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:92
 msgid "Parent Country"
-msgstr "ประเทศแม่"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:94
 msgid "Parent Country:"
-msgstr "ประเทศ:"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:96
 msgid "Edit Country"
-msgstr "แก้ไขประเทศ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:98
@@ -1760,22 +1772,22 @@ msgstr ""
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:100
 msgid "Update Country"
-msgstr "อัปเดตประเทศ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:102
 msgid "Add New Country"
-msgstr "เพิ่มอำเภอใหม่"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:104
 msgid "New Country Name"
-msgstr "ประเทศใหม่"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:106
 msgid "Add or remove Countries"
-msgstr "เพิ่มหรือลบประเทศ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:108
@@ -1800,7 +1812,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:116
 msgid "Countries list"
-msgstr "รายชื่อประเทศ"
+msgstr ""
 
 #. translators: [admin] Tab heading when selecting from the most used terms.
 #: includes/taxonomies/class-taxonomy-locations.php:118
@@ -1821,7 +1833,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:232
 msgid "Basic Settings"
-msgstr "ตั้งค่า พื้นฐาน"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:241
@@ -1930,13 +1942,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-topics.php:156
 msgctxt "taxonomy general name"
 msgid "Topics"
-msgstr "หัวข้อ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:158
 msgctxt "taxonomy singular name"
 msgid "Topic"
-msgstr "หัวข้อ"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:160
@@ -1981,7 +1993,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:176
 msgid "New Topic"
-msgstr "หัวข้อใหม่"
+msgstr ""
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:178
@@ -2044,7 +2056,7 @@ msgstr ""
 #. translators: [admin]
 #: includes/theme-setup/navigation.php:187
 msgid "Main Menu"
-msgstr "เมนูหลัก"
+msgstr ""
 
 #. translators: [admin]
 #: includes/theme-setup/navigation.php:189
@@ -2094,7 +2106,7 @@ msgstr ""
 #: patterns/post-translations.php:17
 msgctxt "list item separator"
 msgid ","
-msgstr ","
+msgstr ""
 
 #. translators: [admin]
 #: includes/theme-setup/supports.php:75
@@ -2119,7 +2131,7 @@ msgstr ""
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
 #: includes/woo/checkout.php:26
 msgid "Thank You!"
-msgstr "ขอบคุณ!"
+msgstr ""
 
 #. translators: [admin]
 #: includes/woo/emails.php:21
@@ -2162,7 +2174,7 @@ msgstr ""
 #: partials/admin/permalinks-taxonomy.php:30
 #, php-format
 msgid "Default: %s"
-msgstr "ค่าเริ่มต้น: %s"
+msgstr ""
 
 #. translators: [admin]
 #: partials/admin/permalinks-post-type.php:35
@@ -2188,7 +2200,7 @@ msgstr ""
 #. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
 #: partials/archive/filters-active.php:80
 msgid "Clear all"
-msgstr "ล้างข้อมูล"
+msgstr ""
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options
 #: partials/archive/header.php:28
@@ -2223,7 +2235,7 @@ msgstr ""
 #: patterns/attachment-share.php:35
 #: patterns/post-share.php:23
 msgid "Share on Facebook"
-msgstr "แชร์บนเฟสบุ๊ค"
+msgstr "Facebookда улашиш"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
 #: partials/article-share.php:15
@@ -2237,7 +2249,7 @@ msgstr ""
 #: patterns/attachment-share.php:42
 #: patterns/post-share.php:30
 msgid "Share on Twitter"
-msgstr "แชร์บนทวิตเตอร์"
+msgstr "Twitterда улашиш"
 
 #. translators: [front] ARIA
 #: partials/forms/taxonomy-filters.php:14
@@ -2247,7 +2259,7 @@ msgstr ""
 #. translators: [front] search results left hand side of page button
 #: partials/forms/taxonomy-filters.php:32
 msgid "Apply"
-msgstr "ใช้"
+msgstr ""
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:17
@@ -2257,7 +2269,7 @@ msgstr ""
 #. translators: [front]
 #: partials/language-selector.php:19
 msgid "Which language would you like to use this site in?"
-msgstr ""
+msgstr "Ушбу сайтдан қайси тилда фойдаланишни хоҳлайсиз?"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:20
@@ -2267,7 +2279,7 @@ msgstr ""
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:26
 msgid "Close"
-msgstr "ปิด"
+msgstr ""
 
 #. translators: [front] ARIA
 #: partials/navigation/desktop.php:17
@@ -2292,27 +2304,27 @@ msgstr ""
 #. translators: [front] Donate
 #: partials/orders/customer-details-with-shipping.php:13
 msgid "Customer Details"
-msgstr "รายละเอียดลูกค้า"
+msgstr ""
 
 #. translators: [front] Donate forms
 #: partials/orders/customer-details-with-shipping.php:17
 msgid "Email:"
-msgstr "อีเมล์:"
+msgstr ""
 
 #. translators: [front] Donate forms
 #: partials/orders/customer-details-with-shipping.php:21
 msgid "Tel:"
-msgstr "โทรศัพท์:"
+msgstr ""
 
 #. translators: [front] Donate forms
 #: partials/orders/customer-details-with-shipping.php:28
 msgid "Payment Method"
-msgstr "วิธีการชำระเงิน"
+msgstr ""
 
 #: partials/pagination.php:28
 #: partials/search/pagination.php:38
 msgid "Pagination"
-msgstr "การให้เลขหน้า"
+msgstr ""
 
 #. translators: [front] AIRA https://isaidotorgstg.wpengine.com/en/latest
 #: partials/pagination.php:39
@@ -2324,7 +2336,7 @@ msgstr ""
 #: partials/post/post-search.php:27
 msgctxt "updated date label"
 msgid "Updated"
-msgstr "อัพเดท"
+msgstr ""
 
 #. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/news/2021/05/china-three-child-policy-still-a-violation/ placeholder is category name
 #: partials/post/post-content.php:22
@@ -2358,39 +2370,39 @@ msgstr ""
 #. translators: [front]
 #: partials/search/forminput.php:14
 msgid "What are you looking for?"
-msgstr "เนื้อหาที่ต้องการ"
+msgstr "Нимани қидиряпсиз?"
 
 #: partials/search/horizontal-search.php:12
 #: partials/search/horizontal-search.php:52
 msgid "Year"
-msgstr "ปี"
+msgstr "йил"
 
 #: partials/search/horizontal-search.php:13
 #: partials/search/horizontal-search.php:62
 msgid "Month"
-msgstr "เดือน"
+msgstr "ой"
 
 #. translators: [front]
 #: partials/search/horizontal-search.php:39
 msgid "Search"
-msgstr "ค้นหา"
+msgstr ""
 
 #. translators: [front]
 #: partials/search/horizontal-search.php:77
 msgid "Filters"
-msgstr "กรอง"
+msgstr ""
 
 #. translators: [front] Label for category archive navigation
 #: partials/shop/catalogue-header.php:13
 msgid "Product information"
-msgstr "ข้อมูลสินค้า"
+msgstr ""
 
 #. translators: [front]
 #. translators: [front] Donate
 #: partials/shop/catalogue-header.php:17
 #: woocommerce/archive-product.php:48
 msgid "All products"
-msgstr "สินค้าทั้งหมด"
+msgstr ""
 
 #. translators: [front] Label for shop index
 #. translators: [front] Donate Label for shop index
@@ -2548,16 +2560,16 @@ msgstr ""
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:11
 msgid "Page Not Found"
-msgstr "ไม่พบหน้านี้"
+msgstr "Саҳифа топилмади"
 
 #: patterns/404.php:15
 msgid "The page you are looking for does not exist."
-msgstr ""
+msgstr "Сиз қидираётган саҳифа мавжуд эмас."
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:20
 msgid "Go to the Homepage"
-msgstr ""
+msgstr "Бош саҳифага ўтиш"
 
 #: patterns/archive-heading.php
 msgctxt "Pattern title"
@@ -2657,6 +2669,16 @@ msgctxt "Pattern description"
 msgid "Output article sharing links"
 msgstr ""
 
+#: patterns/attachment-sidebar.php
+msgctxt "Pattern title"
+msgid "Attachment Sidebar"
+msgstr ""
+
+#: patterns/attachment-sidebar.php
+msgctxt "Pattern description"
+msgid "Output sidebar on attachment template(s)"
+msgstr ""
+
 #: patterns/attachment-term-list.php
 msgctxt "Pattern title"
 msgid "Attachment Term List"
@@ -2728,7 +2750,7 @@ msgstr ""
 
 #: patterns/author-bio.php:21
 msgid "Biography"
-msgstr "ประวัติ"
+msgstr ""
 
 #: patterns/author-hero.php
 msgctxt "Pattern title"
@@ -2768,6 +2790,46 @@ msgstr ""
 #: patterns/author-sidebar.php:12
 #, php-format
 msgid "Tweets by %s"
+msgstr ""
+
+#: patterns/background-media-left-grey.php
+msgctxt "Pattern title"
+msgid "Background Media Left Grey"
+msgstr ""
+
+#: patterns/background-media-left-grey.php
+msgctxt "Pattern description"
+msgid "Group block with a grey background containing 2 columns with a cover block on the left and paragraph on the right."
+msgstr ""
+
+#: patterns/background-media-left-white.php
+msgctxt "Pattern title"
+msgid "Background Media Left White"
+msgstr ""
+
+#: patterns/background-media-left-white.php
+msgctxt "Pattern description"
+msgid "Group block with a white background containing 2 columns with a cover block on the left and paragraph on the right."
+msgstr ""
+
+#: patterns/background-media-right-grey.php
+msgctxt "Pattern title"
+msgid "Background Media Right Grey"
+msgstr ""
+
+#: patterns/background-media-right-grey.php
+msgctxt "Pattern description"
+msgid "Group block with a grey background containing 2 columns with a cover block on the right and paragraph on the left."
+msgstr ""
+
+#: patterns/background-media-right-white.php
+msgctxt "Pattern title"
+msgid "Background Media Right White"
+msgstr ""
+
+#: patterns/background-media-right-white.php
+msgctxt "Pattern description"
+msgid "Group block with a white background containing 2 columns with a cover block on the right and paragraph on the left."
 msgstr ""
 
 #: patterns/blog-home-content.php
@@ -2843,7 +2905,7 @@ msgstr ""
 #: patterns/featured-image.php
 msgctxt "Pattern title"
 msgid "Featured Image"
-msgstr "รูปภาพแนะนำ"
+msgstr ""
 
 #: patterns/featured-image.php
 msgctxt "Pattern description"
@@ -2942,7 +3004,7 @@ msgstr ""
 #, php-format
 msgctxt "prefix for a post's author attribution"
 msgid "By %s"
-msgstr "โดย %s"
+msgstr ""
 
 #: patterns/post-byline-custom.php
 msgctxt "Pattern title"
@@ -2953,7 +3015,7 @@ msgstr ""
 #: patterns/post-byline-custom.php:38
 msgctxt "author attribution (as in \"written by\")"
 msgid "By"
-msgstr "โดย"
+msgstr ""
 
 #: patterns/post-byline.php
 msgctxt "Pattern title"
@@ -2963,7 +3025,7 @@ msgstr ""
 #: patterns/post-content.php
 msgctxt "Pattern title"
 msgid "Post Content"
-msgstr "โพสต์เนื้อหา"
+msgstr ""
 
 #: patterns/post-content.php
 msgctxt "Pattern description"
@@ -2990,6 +3052,16 @@ msgctxt "Pattern description"
 msgid "Outputs the post's hero, if any"
 msgstr ""
 
+#: patterns/post-index-number.php
+msgctxt "Pattern title"
+msgid "Post Index Number"
+msgstr ""
+
+#: patterns/post-index-number.php
+msgctxt "Pattern description"
+msgid "Output the AIDAN index number for an entity"
+msgstr ""
+
 #: patterns/post-metadata.php
 msgctxt "Pattern title"
 msgid "Post Metadata"
@@ -3003,7 +3075,7 @@ msgstr ""
 #: patterns/post-published-date.php
 msgctxt "Pattern title"
 msgid "Post Published Date"
-msgstr "วันที่ประกาศผลงาน"
+msgstr ""
 
 #: patterns/post-published-date.php
 msgctxt "Pattern description"
@@ -3031,6 +3103,22 @@ msgctxt "Pattern title"
 msgid "Post Terms"
 msgstr ""
 
+#: patterns/post-translations.php
+msgctxt "Pattern title"
+msgid "Post Translations"
+msgstr ""
+
+#: patterns/post-translations.php
+msgctxt "Pattern description"
+msgid "Output the list of translations for the entity"
+msgstr ""
+
+#: patterns/post-translations.php:63
+#: patterns/post-translations.php:80
+msgctxt "prefix for list of post translations"
+msgid "Available in"
+msgstr ""
+
 #: patterns/post-updated-date.php
 msgctxt "Pattern title"
 msgid "Post Updated Date"
@@ -3054,11 +3142,31 @@ msgstr ""
 #: patterns/related-content.php
 msgctxt "Pattern title"
 msgid "Related Content"
-msgstr "เนื้อหาที่เกี่ยวข้อง"
+msgstr ""
 
 #: patterns/related-content.php
 msgctxt "Pattern description"
 msgid "Output Related Content for a post"
+msgstr ""
+
+#: patterns/search-header.php
+msgctxt "Pattern title"
+msgid "Search header pattern"
+msgstr ""
+
+#: patterns/search-header.php
+msgctxt "Pattern description"
+msgid "Search title, filters, etc."
+msgstr ""
+
+#: patterns/search-pagination.php
+msgctxt "Pattern title"
+msgid "Search pagination"
+msgstr ""
+
+#: patterns/search-pagination.php
+msgctxt "Pattern description"
+msgid "Pagination for search results"
 msgstr ""
 
 #: patterns/search.php
@@ -3074,7 +3182,7 @@ msgstr ""
 #: patterns/shop-categories.php
 msgctxt "Pattern title"
 msgid "Shop Categories"
-msgstr "หมวดหมู่ร้านค้า"
+msgstr ""
 
 #: patterns/shop-categories.php
 msgctxt "Pattern description"
@@ -3101,7 +3209,7 @@ msgstr ""
 #: woocommerce/global/quantity-input.php:39
 #: woocommerce/global/quantity-input.php:51
 msgid "Qty"
-msgstr "จำนวน"
+msgstr ""
 
 #. translators: [front] Donate
 #: woocommerce/loop/result-count.php:27
@@ -3114,6 +3222,7 @@ msgstr ""
 msgid "Showing all %d result"
 msgid_plural "Showing all %d results"
 msgstr[0] ""
+msgstr[1] ""
 
 #. translators: [front] Donate 1: first result 2: last result 3: total results
 #: woocommerce/loop/result-count.php:43
@@ -3122,6 +3231,7 @@ msgctxt "shown with first and last result on product pages"
 msgid "Showing %1$d&ndash;%2$d of %3$d result"
 msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
 msgstr[0] ""
+msgstr[1] ""
 
 #. translators: [front] Donate
 #. translators: [admin]
@@ -3131,453 +3241,30 @@ msgstr[0] ""
 #: assets/scripts/blocks.js:25656
 #: assets/scripts/blocks.js:29599
 msgid "Quantity"
-msgstr "จำนวน"
+msgstr ""
 
 #. translators: [front] Donate
 #: woocommerce/order/order-details.php:53
 msgid "Price"
-msgstr "ราคา"
+msgstr ""
 
 #. translators: [front] Donate related products
 #: woocommerce/single-product/related.php:36
 msgid "Related Items"
 msgstr ""
 
-#: includes/full-site-editing/blocks/archive-filters/block.json
-msgctxt "block title"
-msgid "Archive Filters"
+#. translators: [admin]
+#: assets/scripts/blocks.js:23337
+#: assets/scripts/blocks.js:21786
+msgctxt "block style"
+msgid "Search"
 msgstr ""
 
-#: includes/full-site-editing/blocks/archive-filters/block.json
-msgctxt "block description"
-msgid "For presenting filters on archive pages"
-msgstr ""
-
-#: includes/full-site-editing/blocks/archive-filters/block.json
-msgctxt "block keyword"
-msgid "Archives"
-msgstr "คลังเก็บ"
-
-#: includes/full-site-editing/blocks/archive-filters/block.json
-msgctxt "block keyword"
-msgid "Filters"
-msgstr "กรอง"
-
-#: includes/full-site-editing/blocks/archive-header/block.json
-msgctxt "block title"
-msgid "Archive Header"
-msgstr ""
-
-#: includes/full-site-editing/blocks/archive-header/block.json
-msgctxt "block description"
-msgid "For presenting the archive header"
-msgstr ""
-
-#: includes/full-site-editing/blocks/archive-header/block.json
-msgctxt "block keyword"
-msgid "Archive Header"
-msgstr ""
-
-#: includes/full-site-editing/blocks/pop-in/block.json
-msgctxt "block title"
-msgid "Pop-in"
-msgstr ""
-
-#: includes/full-site-editing/blocks/pop-in/block.json
-msgctxt "block description"
-msgid "For presenting dismissible content at the top of the site"
-msgstr ""
-
-#: includes/full-site-editing/blocks/pop-in/block.json
-msgctxt "block keyword"
-msgid "Pop-in"
-msgstr ""
-
-#: includes/full-site-editing/blocks/query-count/block.json
-msgctxt "block title"
-msgid "Query Count"
-msgstr ""
-
-#: includes/full-site-editing/blocks/query-count/block.json
-msgctxt "block description"
-msgid "Display the query results count"
-msgstr ""
-
-#: includes/full-site-editing/blocks/search-form/block.json
-msgctxt "block title"
-msgid "Search Form"
-msgstr "ฟอร์มการค้นหา"
-
-#: includes/full-site-editing/blocks/search-form/block.json
-msgctxt "block description"
-msgid "For presenting the search form"
-msgstr ""
-
-#: includes/full-site-editing/blocks/search-form/block.json
-msgctxt "block keyword"
-msgid "Search Form"
-msgstr "ฟอร์มการค้นหา"
-
-#: includes/full-site-editing/blocks/search-header/block.json
-msgctxt "block title"
-msgid "Search Header"
-msgstr ""
-
-#: includes/full-site-editing/blocks/search-header/block.json
-msgctxt "block description"
-msgid "For presenting the search page header"
-msgstr ""
-
-#: includes/full-site-editing/blocks/search-header/block.json
-msgctxt "block keyword"
-msgid "Search Header"
-msgstr ""
-
-#: includes/full-site-editing/blocks/sidebar/block.json
-msgctxt "block title"
-msgid "Sidebar"
-msgstr "แถบด้านข้าง"
-
-#: includes/full-site-editing/blocks/sidebar/block.json
-msgctxt "block description"
-msgid "For presenting a sidebar on a post type"
-msgstr ""
-
-#: styles/01-amnesty-trade-gothic.json
-msgctxt "Style variation name"
-msgid "Amnesty Trade Gothic"
-msgstr ""
-
-#: styles/01-amnesty-trade-gothic.json
-msgctxt "Font family name"
-msgid "Amnesty Trade Gothic"
-msgstr ""
-
-#: styles/01-amnesty-trade-gothic.json
-msgctxt "Font family name"
-msgid "Amnesty Trade Gothic Condensed"
-msgstr ""
-
-#: styles/02-roboto.json
-msgctxt "Style variation name"
-msgid "Roboto"
-msgstr ""
-
-#: styles/02-roboto.json
-msgctxt "Font family name"
-msgid "Roboto"
-msgstr ""
-
-#: styles/02-roboto.json
-msgctxt "Font family name"
-msgid "Roboto Condensed"
-msgstr ""
-
-#: styles/03-rubik.json
-msgctxt "Style variation name"
-msgid "Rubik"
-msgstr ""
-
-#: styles/03-rubik.json
-msgctxt "Font family name"
-msgid "Rubik"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Black"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "White"
-msgstr "ขาว"
-
-#: theme.json
-msgctxt "Color name"
-msgid "Grey Brand"
-msgstr ""
-
-#: theme.json
-msgctxt "Font size name"
+#. translators: [admin]
+#: assets/scripts/blocks.js:23351
+#: assets/scripts/blocks.js:21795
+msgctxt "block style"
 msgid "Small"
-msgstr "เล็ก"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Medium"
-msgstr "กลาง"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Large"
-msgstr "ใหญ่"
-
-#: theme.json
-msgctxt "Color name"
-msgid "Primary"
-msgstr "เบื้องต้น"
-
-#: theme.json
-msgctxt "Color name"
-msgid "Primary State"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Secondary"
-msgstr "สำรอง"
-
-#: theme.json
-msgctxt "Color name"
-msgid "Accent"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Lightest Grey"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Lighter Grey"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "light Grey"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Default Grey"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Dark Grey"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Darker Grey"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Darkest Grey"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Twitter Blue"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Orange"
-msgstr "สีส้ม"
-
-#: theme.json
-msgctxt "Space size name"
-msgid "Quarter"
-msgstr "ไตรมาส"
-
-#: theme.json
-msgctxt "Space size name"
-msgid "Half"
-msgstr ""
-
-#: theme.json
-msgctxt "Space size name"
-msgid "Single"
-msgstr "โสด"
-
-#: theme.json
-msgctxt "Space size name"
-msgid "Double"
-msgstr ""
-
-#: theme.json
-msgctxt "Space size name"
-msgid "Quad"
-msgstr ""
-
-#: theme.json
-msgctxt "Font family name"
-msgid "Lato"
-msgstr ""
-
-#: theme.json
-msgctxt "Font family name"
-msgid "PlayfairDisplay"
-msgstr ""
-
-#: theme.json
-msgctxt "Font size name"
-msgid "X Small"
-msgstr ""
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Regular"
-msgstr "ปกติ"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Larger"
-msgstr ""
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Extra Large"
-msgstr ""
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Huge"
-msgstr "ใหญ่"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Heading 1"
-msgstr "หัวข้อเรื่อง 1"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Heading 2"
-msgstr "หัวข้อเรื่อง 2"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Heading 3"
-msgstr "หัวข้อเรื่อง 3"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Heading 4"
-msgstr "หัวข้อเรื่อง 4"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Heading 5"
-msgstr "หัวข้อเรื่อง 5"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Heading 6"
-msgstr "หัวข้อเรื่อง 6"
-
-#: theme.json
-msgctxt "Font size name"
-msgid "Article Title"
-msgstr ""
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Header"
-msgstr "ส่วนหัว"
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Footer"
-msgstr "ส่วนล่าง"
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:126
-msgid "Always display numeric grouping separators"
-msgstr ""
-
-#. translators: [admin]
-#: includes/admin/theme-options/localisation.php:131
-msgid "Whether to use numeric grouping separators, such as thousands separators, even if the locale prefers otherwise."
-msgstr ""
-
-#: patterns/background-media-left-grey.php
-msgctxt "Pattern title"
-msgid "Background Media Left Grey"
-msgstr ""
-
-#: patterns/background-media-left-grey.php
-msgctxt "Pattern description"
-msgid "Group block with a grey background containing 2 columns with a cover block on the left and paragraph on the right."
-msgstr ""
-
-#: patterns/background-media-left-white.php
-msgctxt "Pattern title"
-msgid "Background Media Left White"
-msgstr ""
-
-#: patterns/background-media-left-white.php
-msgctxt "Pattern description"
-msgid "Group block with a white background containing 2 columns with a cover block on the left and paragraph on the right."
-msgstr ""
-
-#: patterns/background-media-right-grey.php
-msgctxt "Pattern title"
-msgid "Background Media Right Grey"
-msgstr ""
-
-#: patterns/background-media-right-grey.php
-msgctxt "Pattern description"
-msgid "Group block with a grey background containing 2 columns with a cover block on the right and paragraph on the left."
-msgstr ""
-
-#: patterns/background-media-right-white.php
-msgctxt "Pattern title"
-msgid "Background Media Right White"
-msgstr ""
-
-#: patterns/background-media-right-white.php
-msgctxt "Pattern description"
-msgid "Group block with a white background containing 2 columns with a cover block on the right and paragraph on the left."
-msgstr ""
-
-#: patterns/search-header.php
-msgctxt "Pattern title"
-msgid "Search header pattern"
-msgstr ""
-
-#: patterns/search-header.php
-msgctxt "Pattern description"
-msgid "Search title, filters, etc."
-msgstr ""
-
-#: patterns/search-pagination.php
-msgctxt "Pattern title"
-msgid "Search pagination"
-msgstr ""
-
-#: patterns/search-pagination.php
-msgctxt "Pattern description"
-msgid "Pagination for search results"
-msgstr ""
-
-#. translators: [admin]
-#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
-#: assets/scripts/blocks.js:28973
-#: assets/scripts/bundle.js:5627
-#: assets/scripts/blocks.js:27856
-#: assets/scripts/bundle.js:5763
-#, js-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
-#: assets/scripts/bundle.js:5637
-#: assets/scripts/bundle.js:5776
-#, js-format
-msgctxt "time format(prefix translated separately) i.e. \"x, H:i:s\""
-msgid "%1$s, %2$s:%3$s:%4$s"
-msgstr ""
-
-#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
-#: assets/scripts/bundle.js:5650
-#: assets/scripts/bundle.js:5790
-#, js-format
-msgctxt "time format, H:i:s"
-msgid "%1$s:%2$s:%3$s"
 msgstr ""
 
 #. translators: [admin]
@@ -3622,463 +3309,84 @@ msgctxt "block style"
 msgid "Responsive"
 msgstr ""
 
-#. translators: [admin] %s: the post type
-#: assets/scripts/blocks.js:30147
-#: assets/scripts/blocks.js:29070
-#, js-format
-msgid "Blocks in this %s have been upgraded. Please preview the post before saving."
+#. translators: [admin]
+#: assets/scripts/blocks.js:23530
+#: assets/scripts/blocks.js:21937
+msgid "Background Media Column"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27212
-#: assets/scripts/blocks.js:27245
-#: assets/scripts/blocks.js:30585
-#: assets/scripts/blocks.js:30687
-#: assets/scripts/blocks.js:33672
-#: assets/scripts/blocks.js:25990
-#: assets/scripts/blocks.js:26038
-#: assets/scripts/blocks.js:29519
-#: assets/scripts/blocks.js:29624
-#: assets/scripts/blocks.js:32924
-msgid "(Insert Title)"
+#: assets/scripts/blocks.js:23532
+#: assets/scripts/blocks.js:21939
+msgid "Column layout for Background Media block"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:30595
-#: assets/scripts/blocks.js:29528
-msgid "(Insert Content)"
+#: assets/scripts/blocks.js:23665
+#: assets/scripts/blocks.js:22081
+msgid "Image Settings"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:23337
-#: assets/scripts/blocks.js:21786
-msgctxt "block style"
-msgid "Search"
+#: assets/scripts/blocks.js:23669
+#: assets/scripts/blocks.js:22084
+msgid "Focal Point"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25429
-#: assets/scripts/blocks.js:23938
-msgid "Row Column"
-msgstr ""
-
-#: assets/scripts/blocks.js:38607
-#: assets/scripts/blocks.js:38373
-msgid "Hide featured image"
-msgstr ""
-
-#: assets/scripts/blocks.js:38608
-#: assets/scripts/blocks.js:38374
-msgid "Hide the featured image."
-msgstr ""
-
-#: assets/scripts/blocks.js:38620
-#: assets/scripts/blocks.js:38386
-msgid "Hide featured image caption"
-msgstr ""
-
-#: assets/scripts/blocks.js:38621
-#: assets/scripts/blocks.js:38387
-msgid "Hide the image caption for the featured image"
-msgstr ""
-
-#: assets/scripts/blocks.js:38657
-#: assets/scripts/blocks.js:38426
-msgid "Use transparent header"
-msgstr ""
-
-#: assets/scripts/blocks.js:38658
-#: assets/scripts/blocks.js:38427
-msgid "Enable transparent mode on the main header. Requires the use of a header block with a featured image"
+#: assets/scripts/blocks.js:23678
+#: assets/scripts/blocks.js:22092
+msgid "Opacity"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:38548
-#: assets/scripts/blocks.js:38301
-msgid "Enable public byline"
+#: assets/scripts/blocks.js:23686
+#: assets/scripts/blocks.js:24309
+#: assets/scripts/blocks.js:25915
+#: assets/scripts/blocks.js:26934
+#: assets/scripts/blocks.js:29828
+#: assets/scripts/blocks.js:30672
+#: assets/scripts/blocks.js:31190
+#: assets/scripts/blocks.js:34815
+#: assets/scripts/blocks.js:35423
+#: assets/scripts/blocks.js:22103
+#: assets/scripts/blocks.js:22789
+#: assets/scripts/blocks.js:24473
+#: assets/scripts/blocks.js:25678
+#: assets/scripts/blocks.js:28743
+#: assets/scripts/blocks.js:29607
+#: assets/scripts/blocks.js:30146
+#: assets/scripts/blocks.js:34080
+#: assets/scripts/blocks.js:34729
+msgid "Background Colour"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:38551
-#: assets/scripts/blocks.js:38304
-msgid "Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated"
+#: assets/scripts/blocks.js:23689
+#: assets/scripts/blocks.js:22106
+msgid "Colour"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:38562
-#: assets/scripts/blocks.js:38317
-msgid "Use author profile for byline"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38569
-#: assets/scripts/blocks.js:38328
-msgid "Byline Name"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38570
-#: assets/scripts/blocks.js:38330
-msgid "The individual, group, or entity to be named as the author"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38577
-#: assets/scripts/blocks.js:38338
-msgid "Byline Context"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38578
-#: assets/scripts/blocks.js:38340
-msgid "Additional context for the byline; e.g. job title, short summary, location, etc"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38786
-#: assets/scripts/blocks.js:38577
-msgid "Disable Sharing"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38787
-#: assets/scripts/blocks.js:38579
-msgid "Disable Share Buttons for this post"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38697
-#: assets/scripts/blocks.js:38465
-msgid "Show published date"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38701
-#: assets/scripts/blocks.js:38466
-msgid "Show the post published date"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38717
-#: assets/scripts/blocks.js:38492
-msgid "Show updated date"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38721
-#: assets/scripts/blocks.js:38493
-msgid "Show the \"updated at\" date"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38734
-#: assets/scripts/blocks.js:38517
-msgid "Metadata"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38756
-#: assets/scripts/blocks.js:38543
-msgid "Disable Related Content"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38757
-#: assets/scripts/blocks.js:38545
-msgid "Removes the Related Content section for this post"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33478
-#: assets/scripts/blocks.js:33579
-#: assets/scripts/blocks.js:34192
-#: assets/scripts/blocks.js:34267
-#: assets/scripts/blocks.js:38126
-#: assets/scripts/blocks.js:32723
-#: assets/scripts/blocks.js:32808
-#: assets/scripts/blocks.js:33492
-#: assets/scripts/blocks.js:33542
-#: assets/scripts/blocks.js:37971
-msgid "Loading"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38129
-#: assets/scripts/blocks.js:37973
-msgid "Select a sidebar"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38826
-#: assets/scripts/blocks.js:38620
-msgid "Maximize Content"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38829
-#: assets/scripts/blocks.js:38623
-msgid "Remove the sidebar and the sidebar area on posts and pages. Generally used to create pages with a full-width page design."
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38845
-#: assets/scripts/blocks.js:38640
-msgid "Disable Sidebar"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38848
-#: assets/scripts/blocks.js:38643
-msgid "Remove the sidebar, but not the sidebar area; this keeps an empty space to the side of the content. Generally used for text heavy pages."
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:34002
-#: assets/scripts/blocks.js:38897
-#: assets/scripts/blocks.js:33286
-#: assets/scripts/blocks.js:38697
-msgid "Select Term"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38914
-#: assets/scripts/blocks.js:38717
-msgid "Feature on content type:"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38459
-#: assets/scripts/blocks.js:38177
-msgid "Page Options"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:38468
-#: assets/scripts/blocks.js:38199
-msgid "Post Options"
-msgstr ""
-
-#: assets/scripts/blocks.js:38473
-#: assets/scripts/blocks.js:38217
-msgid "Appearance"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:39068
-#: assets/scripts/blocks.js:38845
-msgid "Pop-in Settings"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:39074
-#: assets/scripts/blocks.js:38849
-msgid "Render Title"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:39075
-#: assets/scripts/blocks.js:38851
-msgid "Should the title be rendered when showing this pop-in to the user?"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24326
-#: assets/scripts/blocks.js:25509
-#: assets/scripts/blocks.js:25934
-#: assets/scripts/blocks.js:27880
-#: assets/scripts/blocks.js:28252
-#: assets/scripts/blocks.js:37385
-#: assets/scripts/blocks.js:22805
-#: assets/scripts/blocks.js:24029
-#: assets/scripts/blocks.js:24491
-#: assets/scripts/blocks.js:26806
-#: assets/scripts/blocks.js:27238
-#: assets/scripts/blocks.js:37101
-msgid "Size"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25514
-#: assets/scripts/blocks.js:27885
-#: assets/scripts/blocks.js:24034
-#: assets/scripts/blocks.js:26811
-msgid "Standard"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25516
-#: assets/scripts/blocks.js:27887
-#: assets/scripts/blocks.js:24036
-#: assets/scripts/blocks.js:26813
-msgid "Wide"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:23735
-#: assets/scripts/blocks.js:24381
-#: assets/scripts/blocks.js:25540
-#: assets/scripts/blocks.js:26377
-#: assets/scripts/blocks.js:27894
-#: assets/scripts/blocks.js:29955
-#: assets/scripts/blocks.js:33686
-#: assets/scripts/blocks.js:37881
-#: assets/scripts/blocks.js:22156
-#: assets/scripts/blocks.js:22861
-#: assets/scripts/blocks.js:24063
-#: assets/scripts/blocks.js:24953
-#: assets/scripts/blocks.js:26825
-#: assets/scripts/blocks.js:28863
-#: assets/scripts/blocks.js:32942
-#: assets/scripts/blocks.js:37696
-msgid "Remove Image"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25532
-#: assets/scripts/blocks.js:27915
-#: assets/scripts/blocks.js:24053
-#: assets/scripts/blocks.js:26849
-msgid "(Label)"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25308
-#: assets/scripts/blocks.js:25559
-#: assets/scripts/blocks.js:27922
-#: assets/scripts/blocks.js:23805
-#: assets/scripts/blocks.js:24092
-#: assets/scripts/blocks.js:26857
-msgid "Content"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25569
-#: assets/scripts/blocks.js:27931
-#: assets/scripts/blocks.js:24102
-#: assets/scripts/blocks.js:26865
-msgid "Button Text"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:28154
-#: assets/scripts/blocks.js:27138
-msgid "Action"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:28156
-#: assets/scripts/blocks.js:27140
-msgid "Add an Action block"
-msgstr ""
-
-#. translators: [admin] text alignment. for RTL languages, localise as 'Right'
-#. translators: [admin]
-#: assets/scripts/blocks.js:24289
-#: assets/scripts/blocks.js:25895
-#: assets/scripts/blocks.js:26359
-#: assets/scripts/blocks.js:28205
-#: assets/scripts/blocks.js:35403
-#: assets/scripts/blocks.js:36172
-#: assets/scripts/blocks.js:22770
-#: assets/scripts/blocks.js:24454
-#: assets/scripts/blocks.js:24929
-#: assets/scripts/blocks.js:27179
-#: assets/scripts/blocks.js:34710
-#: assets/scripts/blocks.js:35094
-msgid "Left"
-msgstr ""
-
-#. translators: [admin] text alignment/.
-#. translators: [admin] text alignment
-#. translators: [admin]
-#: assets/scripts/blocks.js:26357
-#: assets/scripts/blocks.js:28207
-#: assets/scripts/blocks.js:37390
-#: assets/scripts/blocks.js:37501
-#: assets/scripts/blocks.js:24927
-#: assets/scripts/blocks.js:27181
-#: assets/scripts/blocks.js:37106
-#: assets/scripts/blocks.js:37218
-msgid "Default"
-msgstr ""
-
-#. translators: [admin] text alignment. for RTL languages, localise as 'Left'
-#. translators: [admin]
-#: assets/scripts/blocks.js:24299
-#: assets/scripts/blocks.js:25905
-#: assets/scripts/blocks.js:26363
-#: assets/scripts/blocks.js:28210
-#: assets/scripts/blocks.js:35393
-#: assets/scripts/blocks.js:36176
-#: assets/scripts/blocks.js:22780
-#: assets/scripts/blocks.js:24464
-#: assets/scripts/blocks.js:24933
-#: assets/scripts/blocks.js:27186
-#: assets/scripts/blocks.js:34700
-#: assets/scripts/blocks.js:35098
-msgid "Right"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24285
-#: assets/scripts/blocks.js:25891
-#: assets/scripts/blocks.js:26351
-#: assets/scripts/blocks.js:28244
-#: assets/scripts/blocks.js:22766
-#: assets/scripts/blocks.js:24450
-#: assets/scripts/blocks.js:24920
-#: assets/scripts/blocks.js:27231
-msgid "Alignment"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24331
-#: assets/scripts/blocks.js:27132
-#: assets/scripts/blocks.js:28257
-#: assets/scripts/blocks.js:22810
-#: assets/scripts/blocks.js:25894
-#: assets/scripts/blocks.js:27243
-msgid "Small"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:27134
-#: assets/scripts/blocks.js:28259
-#: assets/scripts/blocks.js:25896
-#: assets/scripts/blocks.js:27245
-msgid "Medium"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25943
-#: assets/scripts/blocks.js:27136
-#: assets/scripts/blocks.js:28261
-#: assets/scripts/blocks.js:24500
-#: assets/scripts/blocks.js:25898
-#: assets/scripts/blocks.js:27247
-msgid "Large"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:28267
-#: assets/scripts/blocks.js:35300
-#: assets/scripts/blocks.js:27252
-#: assets/scripts/blocks.js:34609
-msgid "Text Colour"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24318
-#: assets/scripts/blocks.js:25924
-#: assets/scripts/blocks.js:28272
-#: assets/scripts/blocks.js:29833
-#: assets/scripts/blocks.js:35304
-#: assets/scripts/blocks.js:22798
-#: assets/scripts/blocks.js:24482
-#: assets/scripts/blocks.js:27257
-#: assets/scripts/blocks.js:28745
-#: assets/scripts/blocks.js:34613
-msgid "Black"
+#: assets/scripts/blocks.js:23695
+#: assets/scripts/blocks.js:24316
+#: assets/scripts/blocks.js:25919
+#: assets/scripts/blocks.js:28276
+#: assets/scripts/blocks.js:29837
+#: assets/scripts/blocks.js:31200
+#: assets/scripts/blocks.js:34818
+#: assets/scripts/blocks.js:35309
+#: assets/scripts/blocks.js:35427
+#: assets/scripts/blocks.js:22112
+#: assets/scripts/blocks.js:22796
+#: assets/scripts/blocks.js:24477
+#: assets/scripts/blocks.js:27261
+#: assets/scripts/blocks.js:28746
+#: assets/scripts/blocks.js:29979
+#: assets/scripts/blocks.js:34083
+#: assets/scripts/blocks.js:34618
+#: assets/scripts/blocks.js:34733
+msgid "White"
 msgstr ""
 
 #. translators: [admin]
@@ -4102,25 +3410,979 @@ msgid "Grey"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:23695
-#: assets/scripts/blocks.js:24316
+#: assets/scripts/blocks.js:23725
+#: assets/scripts/blocks.js:37880
+#: assets/scripts/blocks.js:22147
+#: assets/scripts/blocks.js:37694
+msgid "Replace Image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:23728
+#: assets/scripts/blocks.js:22149
+msgid "Add Image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:23735
+#: assets/scripts/blocks.js:24381
+#: assets/scripts/blocks.js:25540
+#: assets/scripts/blocks.js:26377
+#: assets/scripts/blocks.js:27894
+#: assets/scripts/blocks.js:29955
+#: assets/scripts/blocks.js:33686
+#: assets/scripts/blocks.js:37881
+#: assets/scripts/blocks.js:22156
+#: assets/scripts/blocks.js:22861
+#: assets/scripts/blocks.js:24063
+#: assets/scripts/blocks.js:24953
+#: assets/scripts/blocks.js:26825
+#: assets/scripts/blocks.js:28863
+#: assets/scripts/blocks.js:32942
+#: assets/scripts/blocks.js:37696
+msgid "Remove Image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24016
+#: assets/scripts/blocks.js:22474
+msgid "Background Media"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24018
+#: assets/scripts/blocks.js:22476
+msgid "Two-column layout with background images"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24022
+#: assets/scripts/blocks.js:22480
+msgid "Background"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24026
+#: assets/scripts/blocks.js:22484
+msgid "Text"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24281
+#: assets/scripts/blocks.js:24573
+#: assets/scripts/blocks.js:24732
+#: assets/scripts/blocks.js:25251
+#: assets/scripts/blocks.js:25887
+#: assets/scripts/blocks.js:29822
+#: assets/scripts/blocks.js:30198
+#: assets/scripts/blocks.js:30434
+#: assets/scripts/blocks.js:31158
+#: assets/scripts/blocks.js:31583
+#: assets/scripts/blocks.js:35289
+#: assets/scripts/blocks.js:35894
+#: assets/scripts/blocks.js:22763
+#: assets/scripts/blocks.js:23054
+#: assets/scripts/blocks.js:23218
+#: assets/scripts/blocks.js:23759
+#: assets/scripts/blocks.js:24447
+#: assets/scripts/blocks.js:28741
+#: assets/scripts/blocks.js:29115
+#: assets/scripts/blocks.js:29358
+#: assets/scripts/blocks.js:30116
+#: assets/scripts/blocks.js:30523
+#: assets/scripts/blocks.js:34600
+#: assets/scripts/blocks.js:35282
+msgid "Options"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24285
+#: assets/scripts/blocks.js:25891
+#: assets/scripts/blocks.js:26351
+#: assets/scripts/blocks.js:28244
+#: assets/scripts/blocks.js:22766
+#: assets/scripts/blocks.js:24450
+#: assets/scripts/blocks.js:24920
+#: assets/scripts/blocks.js:27231
+msgid "Alignment"
+msgstr ""
+
+#. translators: [admin] text alignment. for RTL languages, localise as 'Right'
+#. translators: [admin]
+#: assets/scripts/blocks.js:24289
+#: assets/scripts/blocks.js:25895
+#: assets/scripts/blocks.js:26359
+#: assets/scripts/blocks.js:28205
+#: assets/scripts/blocks.js:35403
+#: assets/scripts/blocks.js:36172
+#: assets/scripts/blocks.js:22770
+#: assets/scripts/blocks.js:24454
+#: assets/scripts/blocks.js:24929
+#: assets/scripts/blocks.js:27179
+#: assets/scripts/blocks.js:34710
+#: assets/scripts/blocks.js:35094
+msgid "Left"
+msgstr ""
+
+#. translators: [admin] text alignment.
+#. translators: [admin]
+#: assets/scripts/blocks.js:24294
+#: assets/scripts/blocks.js:25900
+#: assets/scripts/blocks.js:26361
+#: assets/scripts/blocks.js:35408
+#: assets/scripts/blocks.js:36174
+#: assets/scripts/blocks.js:22775
+#: assets/scripts/blocks.js:24459
+#: assets/scripts/blocks.js:24931
+#: assets/scripts/blocks.js:34715
+#: assets/scripts/blocks.js:35096
+msgid "Centre"
+msgstr ""
+
+#. translators: [admin] text alignment. for RTL languages, localise as 'Left'
+#. translators: [admin]
+#: assets/scripts/blocks.js:24299
+#: assets/scripts/blocks.js:25905
+#: assets/scripts/blocks.js:26363
+#: assets/scripts/blocks.js:28210
+#: assets/scripts/blocks.js:35393
+#: assets/scripts/blocks.js:36176
+#: assets/scripts/blocks.js:22780
+#: assets/scripts/blocks.js:24464
+#: assets/scripts/blocks.js:24933
+#: assets/scripts/blocks.js:27186
+#: assets/scripts/blocks.js:34700
+#: assets/scripts/blocks.js:35098
+msgid "Right"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24312
+#: assets/scripts/blocks.js:22792
+msgid "Translucent black"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24314
+#: assets/scripts/blocks.js:26871
+#: assets/scripts/blocks.js:26939
+#: assets/scripts/blocks.js:30677
+#: assets/scripts/blocks.js:22794
+#: assets/scripts/blocks.js:25608
+#: assets/scripts/blocks.js:25683
+#: assets/scripts/blocks.js:29612
+msgid "None"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24318
+#: assets/scripts/blocks.js:25924
+#: assets/scripts/blocks.js:28272
+#: assets/scripts/blocks.js:29833
+#: assets/scripts/blocks.js:35304
+#: assets/scripts/blocks.js:22798
+#: assets/scripts/blocks.js:24482
+#: assets/scripts/blocks.js:27257
+#: assets/scripts/blocks.js:28745
+#: assets/scripts/blocks.js:34613
+msgid "Black"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24326
+#: assets/scripts/blocks.js:25509
+#: assets/scripts/blocks.js:25934
+#: assets/scripts/blocks.js:27880
+#: assets/scripts/blocks.js:28252
+#: assets/scripts/blocks.js:37385
+#: assets/scripts/blocks.js:22805
+#: assets/scripts/blocks.js:24029
+#: assets/scripts/blocks.js:24491
+#: assets/scripts/blocks.js:26806
+#: assets/scripts/blocks.js:27238
+#: assets/scripts/blocks.js:37101
+msgid "Size"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24329
+#: assets/scripts/blocks.js:25938
+#: assets/scripts/blocks.js:22808
+#: assets/scripts/blocks.js:24495
+msgid "Normal"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24331
+#: assets/scripts/blocks.js:27132
+#: assets/scripts/blocks.js:28257
+#: assets/scripts/blocks.js:22810
+#: assets/scripts/blocks.js:25894
+#: assets/scripts/blocks.js:27243
+msgid "Small"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24339
+#: assets/scripts/blocks.js:25953
+#: assets/scripts/blocks.js:26506
+#: assets/scripts/blocks.js:29848
+#: assets/scripts/blocks.js:22817
+#: assets/scripts/blocks.js:24510
+#: assets/scripts/blocks.js:25119
+#: assets/scripts/blocks.js:28752
+msgid "Background Type"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24342
+#: assets/scripts/blocks.js:25957
+#: assets/scripts/blocks.js:26510
+#: assets/scripts/blocks.js:29853
+#: assets/scripts/blocks.js:22820
+#: assets/scripts/blocks.js:24514
+#: assets/scripts/blocks.js:25123
+#: assets/scripts/blocks.js:28754
+msgid "Image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24344
+#: assets/scripts/blocks.js:25962
+#: assets/scripts/blocks.js:26515
+#: assets/scripts/blocks.js:29857
+#: assets/scripts/blocks.js:22822
+#: assets/scripts/blocks.js:24519
+#: assets/scripts/blocks.js:25128
+#: assets/scripts/blocks.js:28755
+msgid "Video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24360
+#: assets/scripts/blocks.js:22835
+msgid "Embed URL"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24361
+#: assets/scripts/blocks.js:22837
+msgid "Setting this will override the call to action link and will now open a modal with the embed."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24370
+#: assets/scripts/blocks.js:25991
+#: assets/scripts/blocks.js:29873
+#: assets/scripts/blocks.js:22846
+#: assets/scripts/blocks.js:24545
+#: assets/scripts/blocks.js:28771
+msgid "Featured Video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24398
+#: assets/scripts/blocks.js:22889
+msgid "Banner Title"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24408
+#: assets/scripts/blocks.js:22898
+msgid "Banner Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24417
+#: assets/scripts/blocks.js:29912
+#: assets/scripts/blocks.js:22909
+#: assets/scripts/blocks.js:28820
+msgid "Call to action"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24452
+#: assets/scripts/blocks.js:24456
+#: assets/scripts/blocks.js:30000
+#: assets/scripts/blocks.js:22941
+#: assets/scripts/blocks.js:22945
+#: assets/scripts/blocks.js:28902
+msgid "Banner"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24577
+#: assets/scripts/blocks.js:27185
+#: assets/scripts/blocks.js:29239
+#: assets/scripts/blocks.js:23057
+#: assets/scripts/blocks.js:25953
+#: assets/scripts/blocks.js:28160
+msgid "Button Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24581
+#: assets/scripts/blocks.js:27188
+#: assets/scripts/blocks.js:23061
+#: assets/scripts/blocks.js:25956
+msgid "Primary (Yellow)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24586
+#: assets/scripts/blocks.js:27190
+#: assets/scripts/blocks.js:29243
+#: assets/scripts/blocks.js:30317
+#: assets/scripts/blocks.js:36180
+#: assets/scripts/blocks.js:23066
+#: assets/scripts/blocks.js:25958
+#: assets/scripts/blocks.js:28164
+#: assets/scripts/blocks.js:29235
+#: assets/scripts/blocks.js:35103
+msgid "Dark"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24591
+#: assets/scripts/blocks.js:24740
+#: assets/scripts/blocks.js:27192
+#: assets/scripts/blocks.js:29248
+#: assets/scripts/blocks.js:36182
+#: assets/scripts/blocks.js:23071
+#: assets/scripts/blocks.js:23225
+#: assets/scripts/blocks.js:25960
+#: assets/scripts/blocks.js:28169
+#: assets/scripts/blocks.js:35105
+msgid "Light"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24602
+#: assets/scripts/blocks.js:36114
+#: assets/scripts/blocks.js:23085
+#: assets/scripts/blocks.js:35521
+msgid "(Button Text)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24642
+#: assets/scripts/blocks.js:24646
+#: assets/scripts/blocks.js:30282
+#: assets/scripts/blocks.js:23121
+#: assets/scripts/blocks.js:23125
+#: assets/scripts/blocks.js:29200
+msgid "Button"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24736
+#: assets/scripts/blocks.js:35996
+#: assets/scripts/blocks.js:23221
+#: assets/scripts/blocks.js:35377
+msgid "Background Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24764
+#: assets/scripts/blocks.js:23248
+msgid "(Pre-heading)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24775
+#: assets/scripts/blocks.js:36085
+#: assets/scripts/blocks.js:23257
+#: assets/scripts/blocks.js:35488
+msgid "(Heading)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24786
+#: assets/scripts/blocks.js:26416
+#: assets/scripts/blocks.js:36105
+#: assets/scripts/blocks.js:23266
+#: assets/scripts/blocks.js:25002
+#: assets/scripts/blocks.js:35510
+msgid "(Content)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:24979
+#: assets/scripts/blocks.js:24983
+#: assets/scripts/blocks.js:23517
+#: assets/scripts/blocks.js:23521
+msgid "Call To Action"
+msgstr ""
+
+#: assets/scripts/blocks.js:25107
+#: assets/scripts/blocks.js:23622
+msgid "Settings"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25110
+#: assets/scripts/blocks.js:23626
+msgid "Collapsed by default"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25111
+#: assets/scripts/blocks.js:23628
+msgid "Whether the block contents should be hidden by default"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25119
+#: assets/scripts/blocks.js:23637
+msgid "Label this block with an HTML anchor (#example)."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25127
+#: assets/scripts/blocks.js:23649
+msgid "Find out more"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25157
+#: assets/scripts/blocks.js:23677
+msgid "Collapsable"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25162
+#: assets/scripts/blocks.js:23682
+msgid "collapsible"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25164
+#: assets/scripts/blocks.js:23684
+msgid "accordion"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25166
+#: assets/scripts/blocks.js:23686
+msgid "drawer"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25168
+#: assets/scripts/blocks.js:23688
+msgid "open"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25170
+#: assets/scripts/blocks.js:23690
+msgid "closed"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25255
+#: assets/scripts/blocks.js:23762
+msgid "Layout Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25302
+#: assets/scripts/blocks.js:25312
+#: assets/scripts/blocks.js:23799
+#: assets/scripts/blocks.js:23809
+msgid "Columns"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25308
+#: assets/scripts/blocks.js:25559
+#: assets/scripts/blocks.js:27922
+#: assets/scripts/blocks.js:23805
+#: assets/scripts/blocks.js:24092
+#: assets/scripts/blocks.js:26857
+msgid "Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25310
+#: assets/scripts/blocks.js:23807
+msgid "Row"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25370
+#: assets/scripts/blocks.js:23874
+msgid "50% | 50%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25376
+#: assets/scripts/blocks.js:23881
+msgid "66.6% | 33.3%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25382
+#: assets/scripts/blocks.js:23888
+msgid "33.3% | 66.6%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25388
+#: assets/scripts/blocks.js:23895
+msgid "33.3% | 33.3% | 33.3%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25394
+#: assets/scripts/blocks.js:23902
+msgid "50% | 25% | 25%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25400
+#: assets/scripts/blocks.js:23909
+msgid "25% | 50% | 25%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25406
+#: assets/scripts/blocks.js:23916
+msgid "25% | 25% | 50%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25412
+#: assets/scripts/blocks.js:23923
+msgid "25% | 25% | 25% | 25%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25429
+#: assets/scripts/blocks.js:23938
+msgid "Row Column"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25514
+#: assets/scripts/blocks.js:27885
+#: assets/scripts/blocks.js:24034
+#: assets/scripts/blocks.js:26811
+msgid "Standard"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25516
+#: assets/scripts/blocks.js:27887
+#: assets/scripts/blocks.js:24036
+#: assets/scripts/blocks.js:26813
+msgid "Wide"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25522
+#: assets/scripts/blocks.js:24041
+msgid "Scroll To Link"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25532
+#: assets/scripts/blocks.js:27915
+#: assets/scripts/blocks.js:24053
+#: assets/scripts/blocks.js:26849
+msgid "(Label)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25569
+#: assets/scripts/blocks.js:27931
+#: assets/scripts/blocks.js:24102
+#: assets/scripts/blocks.js:26865
+msgid "Button Text"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25715
+#: assets/scripts/blocks.js:24265
+msgid "Custom Card"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25717
+#: assets/scripts/blocks.js:24267
+msgid "Custom Card block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25943
+#: assets/scripts/blocks.js:27136
+#: assets/scripts/blocks.js:28261
+#: assets/scripts/blocks.js:24500
+#: assets/scripts/blocks.js:25898
+#: assets/scripts/blocks.js:27247
+msgid "Large"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:25982
+#: assets/scripts/blocks.js:29774
+#: assets/scripts/blocks.js:24537
+#: assets/scripts/blocks.js:28678
+msgid "Background Image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26004
+#: assets/scripts/blocks.js:24569
+msgid "(Header Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26014
+#: assets/scripts/blocks.js:24579
+msgid "(Header Content)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26023
+#: assets/scripts/blocks.js:24590
+msgid "(Call to action)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26301
+#: assets/scripts/blocks.js:24861
+msgid "(Link Text)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26309
+#: assets/scripts/blocks.js:24871
+msgid "Remove Button"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26338
+#: assets/scripts/blocks.js:24908
+msgid "Image Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26343
+#: assets/scripts/blocks.js:24913
+msgid "Fixed Height (600px)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26345
+#: assets/scripts/blocks.js:24915
+msgid "Actual Height"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26352
+#: assets/scripts/blocks.js:24922
+msgid "Only has an effect on images smaller than their container"
+msgstr ""
+
+#. translators: [admin] text alignment/.
+#. translators: [admin] text alignment
+#. translators: [admin]
+#: assets/scripts/blocks.js:26357
+#: assets/scripts/blocks.js:28207
+#: assets/scripts/blocks.js:37390
+#: assets/scripts/blocks.js:37501
+#: assets/scripts/blocks.js:24927
+#: assets/scripts/blocks.js:27181
+#: assets/scripts/blocks.js:37106
+#: assets/scripts/blocks.js:37218
+msgid "Default"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26408
+#: assets/scripts/blocks.js:24995
+msgid "(Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26425
+#: assets/scripts/blocks.js:25013
+msgid "Add Button"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26440
+#: assets/scripts/blocks.js:26448
+#: assets/scripts/blocks.js:25033
+#: assets/scripts/blocks.js:25039
+msgid "Choose Video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26456
+#: assets/scripts/blocks.js:26464
+#: assets/scripts/blocks.js:37810
+#: assets/scripts/blocks.js:25051
+#: assets/scripts/blocks.js:25061
+#: assets/scripts/blocks.js:37653
+msgid "Replace Video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26471
+#: assets/scripts/blocks.js:25067
+msgid "Remove Video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26525
+#: assets/scripts/blocks.js:25142
+msgid "Display Overlay"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26532
+#: assets/scripts/blocks.js:25148
+msgid "Enable Parallax"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26544
+#: assets/scripts/blocks.js:25171
+msgid "(Insert Caption, if required)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26800
+#: assets/scripts/blocks.js:25546
+msgid "Image Block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26802
+#: assets/scripts/blocks.js:25548
+msgid "Add a flexible image block with optional overlay"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26876
+#: assets/scripts/blocks.js:25613
+msgid "Arrow"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26881
+#: assets/scripts/blocks.js:25618
+msgid "Ampersand"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26921
+#: assets/scripts/blocks.js:25665
+msgid "Orientation"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26926
+#: assets/scripts/blocks.js:25670
+msgid "Horizontal"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26928
+#: assets/scripts/blocks.js:25672
+msgid "Vertical"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26947
+#: assets/scripts/blocks.js:25691
+msgid "Hide Lines"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:26955
+#: assets/scripts/blocks.js:25699
+msgid "Divider Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27018
+#: assets/scripts/blocks.js:25790
+msgid "Pick an image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27032
+#: assets/scripts/blocks.js:25809
+msgid "(Insert Fact)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27110
+#: assets/scripts/blocks.js:31587
+#: assets/scripts/blocks.js:25872
+#: assets/scripts/blocks.js:30527
+msgid "Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27115
+#: assets/scripts/blocks.js:25877
+msgid "Use Image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27117
+#: assets/scripts/blocks.js:25879
+msgid "Use Text"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27119
+#: assets/scripts/blocks.js:25881
+msgid "Plain"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27125
+#: assets/scripts/blocks.js:25887
+msgid "Icon Size"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27130
+#: assets/scripts/blocks.js:25892
+msgid "Extra Small"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27134
+#: assets/scripts/blocks.js:28259
+#: assets/scripts/blocks.js:25896
+#: assets/scripts/blocks.js:27245
+msgid "Medium"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27142
+#: assets/scripts/blocks.js:25905
+msgid "Icon Position"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27147
+#: assets/scripts/blocks.js:25910
+msgid "Middle"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27149
+#: assets/scripts/blocks.js:35388
+#: assets/scripts/blocks.js:25912
+#: assets/scripts/blocks.js:34695
+msgid "Top"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27155
 #: assets/scripts/blocks.js:25919
-#: assets/scripts/blocks.js:28276
-#: assets/scripts/blocks.js:29837
-#: assets/scripts/blocks.js:31200
-#: assets/scripts/blocks.js:34818
-#: assets/scripts/blocks.js:35309
-#: assets/scripts/blocks.js:35427
-#: assets/scripts/blocks.js:22112
-#: assets/scripts/blocks.js:22796
-#: assets/scripts/blocks.js:24477
-#: assets/scripts/blocks.js:27261
-#: assets/scripts/blocks.js:28746
-#: assets/scripts/blocks.js:29979
-#: assets/scripts/blocks.js:34083
-#: assets/scripts/blocks.js:34618
-#: assets/scripts/blocks.js:34733
-msgid "White"
+msgid "Hide Image Credit Display"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27162
+#: assets/scripts/blocks.js:25928
+msgid "Has Underline"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27169
+#: assets/scripts/blocks.js:25934
+msgid "Font Size"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27178
+#: assets/scripts/blocks.js:25946
+msgid "Display Action"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27212
+#: assets/scripts/blocks.js:27245
+#: assets/scripts/blocks.js:30585
+#: assets/scripts/blocks.js:30687
+#: assets/scripts/blocks.js:33672
+#: assets/scripts/blocks.js:25990
+#: assets/scripts/blocks.js:26038
+#: assets/scripts/blocks.js:29519
+#: assets/scripts/blocks.js:29624
+#: assets/scripts/blocks.js:32924
+msgid "(Insert Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27255
+#: assets/scripts/blocks.js:26048
+msgid "(Insert Body Text)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27266
+#: assets/scripts/blocks.js:26060
+msgid "(Insert Link Text)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27518
+#: assets/scripts/blocks.js:26393
+msgid "Links with Icons Group"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27520
+#: assets/scripts/blocks.js:26395
+msgid "Add a repeatable links-with-icons block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27556
+#: assets/scripts/blocks.js:26434
+msgid "Square"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27627
+#: assets/scripts/blocks.js:26508
+msgid "Links with Icons"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:27629
+#: assets/scripts/blocks.js:26510
+msgid "Add a links-with-icons block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28154
+#: assets/scripts/blocks.js:27138
+msgid "Action"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28156
+#: assets/scripts/blocks.js:27140
+msgid "Add an Action block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:28267
+#: assets/scripts/blocks.js:35300
+#: assets/scripts/blocks.js:27252
+#: assets/scripts/blocks.js:34609
+msgid "Text Colour"
 msgstr ""
 
 #. translators: [admin]
@@ -4170,6 +4432,18 @@ msgstr ""
 #: assets/scripts/blocks.js:27461
 msgid "Add a blockquote block"
 msgstr ""
+
+#. translators: [admin]
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/blocks.js:28973
+#: assets/scripts/bundle.js:5627
+#: assets/scripts/blocks.js:27856
+#: assets/scripts/bundle.js:5763
+#, js-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28983
@@ -4245,44 +4519,6 @@ msgstr ""
 #: assets/scripts/blocks.js:29225
 #: assets/scripts/blocks.js:28140
 msgid "Upload media files or pick from your media library."
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24577
-#: assets/scripts/blocks.js:27185
-#: assets/scripts/blocks.js:29239
-#: assets/scripts/blocks.js:23057
-#: assets/scripts/blocks.js:25953
-#: assets/scripts/blocks.js:28160
-msgid "Button Style"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24586
-#: assets/scripts/blocks.js:27190
-#: assets/scripts/blocks.js:29243
-#: assets/scripts/blocks.js:30317
-#: assets/scripts/blocks.js:36180
-#: assets/scripts/blocks.js:23066
-#: assets/scripts/blocks.js:25958
-#: assets/scripts/blocks.js:28164
-#: assets/scripts/blocks.js:29235
-#: assets/scripts/blocks.js:35103
-msgid "Dark"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24591
-#: assets/scripts/blocks.js:24740
-#: assets/scripts/blocks.js:27192
-#: assets/scripts/blocks.js:29248
-#: assets/scripts/blocks.js:36182
-#: assets/scripts/blocks.js:23071
-#: assets/scripts/blocks.js:23225
-#: assets/scripts/blocks.js:25960
-#: assets/scripts/blocks.js:28169
-#: assets/scripts/blocks.js:35105
-msgid "Light"
 msgstr ""
 
 #. translators: [admin]
@@ -4443,160 +4679,6 @@ msgid "Counter"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:35370
-#: assets/scripts/blocks.js:37697
-#: assets/scripts/blocks.js:34679
-#: assets/scripts/blocks.js:37545
-msgid "Hide Image Caption"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:35377
-#: assets/scripts/blocks.js:37698
-#: assets/scripts/blocks.js:34685
-#: assets/scripts/blocks.js:37547
-msgid "Hide Image Credit"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:37700
-#: assets/scripts/blocks.js:37551
-msgid "Hide Video Caption"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:37701
-#: assets/scripts/blocks.js:37553
-msgid "Hide Video Credit"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:37753
-#: assets/scripts/blocks.js:37580
-msgid "Set featured video"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:37754
-#: assets/scripts/blocks.js:37582
-msgid "Remove featured video"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:26456
-#: assets/scripts/blocks.js:26464
-#: assets/scripts/blocks.js:37810
-#: assets/scripts/blocks.js:25051
-#: assets/scripts/blocks.js:25061
-#: assets/scripts/blocks.js:37653
-msgid "Replace Video"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25982
-#: assets/scripts/blocks.js:29774
-#: assets/scripts/blocks.js:24537
-#: assets/scripts/blocks.js:28678
-msgid "Background Image"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24281
-#: assets/scripts/blocks.js:24573
-#: assets/scripts/blocks.js:24732
-#: assets/scripts/blocks.js:25251
-#: assets/scripts/blocks.js:25887
-#: assets/scripts/blocks.js:29822
-#: assets/scripts/blocks.js:30198
-#: assets/scripts/blocks.js:30434
-#: assets/scripts/blocks.js:31158
-#: assets/scripts/blocks.js:31583
-#: assets/scripts/blocks.js:35289
-#: assets/scripts/blocks.js:35894
-#: assets/scripts/blocks.js:22763
-#: assets/scripts/blocks.js:23054
-#: assets/scripts/blocks.js:23218
-#: assets/scripts/blocks.js:23759
-#: assets/scripts/blocks.js:24447
-#: assets/scripts/blocks.js:28741
-#: assets/scripts/blocks.js:29115
-#: assets/scripts/blocks.js:29358
-#: assets/scripts/blocks.js:30116
-#: assets/scripts/blocks.js:30523
-#: assets/scripts/blocks.js:34600
-#: assets/scripts/blocks.js:35282
-msgid "Options"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:23686
-#: assets/scripts/blocks.js:24309
-#: assets/scripts/blocks.js:25915
-#: assets/scripts/blocks.js:26934
-#: assets/scripts/blocks.js:29828
-#: assets/scripts/blocks.js:30672
-#: assets/scripts/blocks.js:31190
-#: assets/scripts/blocks.js:34815
-#: assets/scripts/blocks.js:35423
-#: assets/scripts/blocks.js:22103
-#: assets/scripts/blocks.js:22789
-#: assets/scripts/blocks.js:24473
-#: assets/scripts/blocks.js:25678
-#: assets/scripts/blocks.js:28743
-#: assets/scripts/blocks.js:29607
-#: assets/scripts/blocks.js:30146
-#: assets/scripts/blocks.js:34080
-#: assets/scripts/blocks.js:34729
-msgid "Background Colour"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24339
-#: assets/scripts/blocks.js:25953
-#: assets/scripts/blocks.js:26506
-#: assets/scripts/blocks.js:29848
-#: assets/scripts/blocks.js:22817
-#: assets/scripts/blocks.js:24510
-#: assets/scripts/blocks.js:25119
-#: assets/scripts/blocks.js:28752
-msgid "Background Type"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24342
-#: assets/scripts/blocks.js:25957
-#: assets/scripts/blocks.js:26510
-#: assets/scripts/blocks.js:29853
-#: assets/scripts/blocks.js:22820
-#: assets/scripts/blocks.js:24514
-#: assets/scripts/blocks.js:25123
-#: assets/scripts/blocks.js:28754
-msgid "Image"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24344
-#: assets/scripts/blocks.js:25962
-#: assets/scripts/blocks.js:26515
-#: assets/scripts/blocks.js:29857
-#: assets/scripts/blocks.js:22822
-#: assets/scripts/blocks.js:24519
-#: assets/scripts/blocks.js:25128
-#: assets/scripts/blocks.js:28755
-msgid "Video"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24370
-#: assets/scripts/blocks.js:25991
-#: assets/scripts/blocks.js:29873
-#: assets/scripts/blocks.js:22846
-#: assets/scripts/blocks.js:24545
-#: assets/scripts/blocks.js:28771
-msgid "Featured Video"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:29887
 #: assets/scripts/blocks.js:28802
 msgid "Hero Title"
@@ -4609,14 +4691,6 @@ msgid "Hero Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:24417
-#: assets/scripts/blocks.js:29912
-#: assets/scripts/blocks.js:22909
-#: assets/scripts/blocks.js:28820
-msgid "Call to action"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:29987
 #: assets/scripts/blocks.js:29996
 #: assets/scripts/blocks.js:28889
@@ -4624,14 +4698,11 @@ msgstr ""
 msgid "Hero"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:24452
-#: assets/scripts/blocks.js:24456
-#: assets/scripts/blocks.js:30000
-#: assets/scripts/blocks.js:22941
-#: assets/scripts/blocks.js:22945
-#: assets/scripts/blocks.js:28902
-msgid "Banner"
+#. translators: [admin] %s: the post type
+#: assets/scripts/blocks.js:30147
+#: assets/scripts/blocks.js:29070
+#, js-format
+msgid "Blocks in this %s have been upgraded. Please preview the post before saving."
 msgstr ""
 
 #. translators: [admin]
@@ -4711,16 +4782,6 @@ msgid "Iframe"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:24642
-#: assets/scripts/blocks.js:24646
-#: assets/scripts/blocks.js:30282
-#: assets/scripts/blocks.js:23121
-#: assets/scripts/blocks.js:23125
-#: assets/scripts/blocks.js:29200
-msgid "Button"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:30311
 #: assets/scripts/blocks.js:29229
 msgid "Primary"
@@ -4793,6 +4854,12 @@ msgid "Fluid"
 msgstr ""
 
 #. translators: [admin]
+#: assets/scripts/blocks.js:30595
+#: assets/scripts/blocks.js:29528
+msgid "(Insert Content)"
+msgstr ""
+
+#. translators: [admin]
 #: assets/scripts/blocks.js:30634
 #: assets/scripts/blocks.js:29565
 msgid "Key Facts"
@@ -4802,18 +4869,6 @@ msgstr ""
 #: assets/scripts/blocks.js:30636
 #: assets/scripts/blocks.js:29567
 msgid "Add a key facts block"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24314
-#: assets/scripts/blocks.js:26871
-#: assets/scripts/blocks.js:26939
-#: assets/scripts/blocks.js:30677
-#: assets/scripts/blocks.js:22794
-#: assets/scripts/blocks.js:25608
-#: assets/scripts/blocks.js:25683
-#: assets/scripts/blocks.js:29612
-msgid "None"
 msgstr ""
 
 #. translators: [admin]
@@ -4928,192 +4983,43 @@ msgid "Petition Settings"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33582
-#: assets/scripts/blocks.js:34195
-#: assets/scripts/blocks.js:32810
-#: assets/scripts/blocks.js:33494
-msgid "Select a category"
+#: assets/scripts/blocks.js:31336
+#: assets/scripts/blocks.js:31346
+#: assets/scripts/blocks.js:30285
+#: assets/scripts/blocks.js:30295
+msgid "Petitions"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31937
-#: assets/scripts/blocks.js:32145
-#: assets/scripts/blocks.js:32500
-#: assets/scripts/blocks.js:33214
-#: assets/scripts/blocks.js:33351
-#: assets/scripts/blocks.js:33918
-#: assets/scripts/blocks.js:33973
-#: assets/scripts/blocks.js:33983
-#: assets/scripts/blocks.js:30935
-#: assets/scripts/blocks.js:31196
-#: assets/scripts/blocks.js:31609
-#: assets/scripts/blocks.js:32483
-#: assets/scripts/blocks.js:32572
-#: assets/scripts/blocks.js:33188
-#: assets/scripts/blocks.js:33247
-#: assets/scripts/blocks.js:33262
-msgid "Loading…"
+#: assets/scripts/blocks.js:31356
+#: assets/scripts/blocks.js:31546
+#: assets/scripts/blocks.js:30305
+#: assets/scripts/blocks.js:30479
+msgid "Object Selection"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:32153
-#: assets/scripts/blocks.js:31205
-msgid "Select a category."
+#: assets/scripts/blocks.js:31361
+#: assets/scripts/blocks.js:30310
+msgid "Feed"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31953
-#: assets/scripts/blocks.js:32161
-#: assets/scripts/blocks.js:32508
-#: assets/scripts/blocks.js:33230
-#: assets/scripts/blocks.js:30954
-#: assets/scripts/blocks.js:31215
-#: assets/scripts/blocks.js:31618
-#: assets/scripts/blocks.js:32502
-msgid "No Items found"
+#: assets/scripts/blocks.js:31369
+#: assets/scripts/blocks.js:30319
+msgid "Petition List"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33729
-#: assets/scripts/blocks.js:32986
-msgid "Tag Name"
+#: assets/scripts/blocks.js:31371
+#: assets/scripts/blocks.js:30321
+msgid "Petition list"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:33746
-#: assets/scripts/blocks.js:33002
-msgid "Insert Title"
-msgstr ""
-
-#: assets/scripts/blocks.js:33757
-#: assets/scripts/blocks.js:33017
-msgid "Date:"
-msgstr ""
-
-#: assets/scripts/blocks.js:33764
-#: assets/scripts/blocks.js:33029
-msgid "Date may render differently on the site frontend"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31680
-#: assets/scripts/blocks.js:33771
-#: assets/scripts/blocks.js:30621
-#: assets/scripts/blocks.js:33045
-msgid "Author:"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33781
-#: assets/scripts/blocks.js:33055
-msgid "Author Name"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33662
-#: assets/scripts/blocks.js:32912
-msgid "(Insert Tag)"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31796
-#: assets/scripts/blocks.js:30735
-msgid "Add another item"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33354
-#: assets/scripts/blocks.js:33910
-#: assets/scripts/blocks.js:32577
-#: assets/scripts/blocks.js:33163
-msgid "No Posts."
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33892
-#: assets/scripts/blocks.js:33144
-msgid "Loading Posts…"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33899
-#: assets/scripts/blocks.js:33152
-msgid "Your query yielded no results, please try again."
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33921
-#: assets/scripts/blocks.js:33190
-msgid "Load More"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33953
-#: assets/scripts/blocks.js:33229
-msgid "Please enter your search query…"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33961
-#: assets/scripts/blocks.js:33237
-msgid "Post Type:"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31658
-#: assets/scripts/blocks.js:33979
-#: assets/scripts/blocks.js:30601
-#: assets/scripts/blocks.js:33257
-msgid "Taxonomy:"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33988
-#: assets/scripts/blocks.js:33266
-msgid "Select Taxonomy"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31666
-#: assets/scripts/blocks.js:33993
-#: assets/scripts/blocks.js:30608
-#: assets/scripts/blocks.js:33277
-msgid "Terms:"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33997
-#: assets/scripts/blocks.js:33282
-msgid "No taxonomy selected"
-msgstr ""
-
-#: assets/scripts/blocks.js:34081
-#: assets/scripts/blocks.js:33383
-msgid "No terms selected"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33222
-#: assets/scripts/blocks.js:32492
-msgid "Select a taxonomy."
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:34270
-#: assets/scripts/blocks.js:33544
-msgid "Select terms"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:31945
-#: assets/scripts/blocks.js:30944
-msgid "Select an author."
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:33481
-#: assets/scripts/blocks.js:32725
-msgid "Select author"
+#: assets/scripts/blocks.js:31373
+#: assets/scripts/blocks.js:30323
+msgid "Petition"
 msgstr ""
 
 #. translators: [admin]
@@ -5135,14 +5041,6 @@ msgid "Category"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31356
-#: assets/scripts/blocks.js:31546
-#: assets/scripts/blocks.js:30305
-#: assets/scripts/blocks.js:30479
-msgid "Object Selection"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:31551
 #: assets/scripts/blocks.js:30484
 msgid "Custom"
@@ -5152,14 +5050,6 @@ msgstr ""
 #: assets/scripts/blocks.js:31556
 #: assets/scripts/blocks.js:30489
 msgid "Taxonomy"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:27110
-#: assets/scripts/blocks.js:31587
-#: assets/scripts/blocks.js:25872
-#: assets/scripts/blocks.js:30527
-msgid "Style"
 msgstr ""
 
 #. translators: [admin]
@@ -5197,6 +5087,30 @@ msgid "Show Preview"
 msgstr ""
 
 #. translators: [admin]
+#: assets/scripts/blocks.js:31658
+#: assets/scripts/blocks.js:33979
+#: assets/scripts/blocks.js:30601
+#: assets/scripts/blocks.js:33257
+msgid "Taxonomy:"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31666
+#: assets/scripts/blocks.js:33993
+#: assets/scripts/blocks.js:30608
+#: assets/scripts/blocks.js:33277
+msgid "Terms:"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:31680
+#: assets/scripts/blocks.js:33771
+#: assets/scripts/blocks.js:30621
+#: assets/scripts/blocks.js:33045
+msgid "Author:"
+msgstr ""
+
+#. translators: [admin]
 #: assets/scripts/blocks.js:31693
 #: assets/scripts/blocks.js:30632
 msgid "Display Post Author"
@@ -5209,35 +5123,190 @@ msgid "Display Post Date"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31336
-#: assets/scripts/blocks.js:31346
-#: assets/scripts/blocks.js:30285
-#: assets/scripts/blocks.js:30295
-msgid "Petitions"
+#: assets/scripts/blocks.js:31796
+#: assets/scripts/blocks.js:30735
+msgid "Add another item"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31361
-#: assets/scripts/blocks.js:30310
-msgid "Feed"
+#: assets/scripts/blocks.js:31937
+#: assets/scripts/blocks.js:32145
+#: assets/scripts/blocks.js:32500
+#: assets/scripts/blocks.js:33214
+#: assets/scripts/blocks.js:33351
+#: assets/scripts/blocks.js:33918
+#: assets/scripts/blocks.js:33973
+#: assets/scripts/blocks.js:33983
+#: assets/scripts/blocks.js:30935
+#: assets/scripts/blocks.js:31196
+#: assets/scripts/blocks.js:31609
+#: assets/scripts/blocks.js:32483
+#: assets/scripts/blocks.js:32572
+#: assets/scripts/blocks.js:33188
+#: assets/scripts/blocks.js:33247
+#: assets/scripts/blocks.js:33262
+msgid "Loading…"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31369
-#: assets/scripts/blocks.js:30319
-msgid "Petition List"
+#: assets/scripts/blocks.js:31945
+#: assets/scripts/blocks.js:30944
+msgid "Select an author."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31371
-#: assets/scripts/blocks.js:30321
-msgid "Petition list"
+#: assets/scripts/blocks.js:31953
+#: assets/scripts/blocks.js:32161
+#: assets/scripts/blocks.js:32508
+#: assets/scripts/blocks.js:33230
+#: assets/scripts/blocks.js:30954
+#: assets/scripts/blocks.js:31215
+#: assets/scripts/blocks.js:31618
+#: assets/scripts/blocks.js:32502
+msgid "No Items found"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:31373
-#: assets/scripts/blocks.js:30323
-msgid "Petition"
+#: assets/scripts/blocks.js:32153
+#: assets/scripts/blocks.js:31205
+msgid "Select a category."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33222
+#: assets/scripts/blocks.js:32492
+msgid "Select a taxonomy."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33354
+#: assets/scripts/blocks.js:33910
+#: assets/scripts/blocks.js:32577
+#: assets/scripts/blocks.js:33163
+msgid "No Posts."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33478
+#: assets/scripts/blocks.js:33579
+#: assets/scripts/blocks.js:34192
+#: assets/scripts/blocks.js:34267
+#: assets/scripts/blocks.js:38126
+#: assets/scripts/blocks.js:32723
+#: assets/scripts/blocks.js:32808
+#: assets/scripts/blocks.js:33492
+#: assets/scripts/blocks.js:33542
+#: assets/scripts/blocks.js:37971
+msgid "Loading"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33481
+#: assets/scripts/blocks.js:32725
+msgid "Select author"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33582
+#: assets/scripts/blocks.js:34195
+#: assets/scripts/blocks.js:32810
+#: assets/scripts/blocks.js:33494
+msgid "Select a category"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33662
+#: assets/scripts/blocks.js:32912
+msgid "(Insert Tag)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33729
+#: assets/scripts/blocks.js:32986
+msgid "Tag Name"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33746
+#: assets/scripts/blocks.js:33002
+msgid "Insert Title"
+msgstr ""
+
+#: assets/scripts/blocks.js:33757
+#: assets/scripts/blocks.js:33017
+msgid "Date:"
+msgstr ""
+
+#: assets/scripts/blocks.js:33764
+#: assets/scripts/blocks.js:33029
+msgid "Date may render differently on the site frontend"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33781
+#: assets/scripts/blocks.js:33055
+msgid "Author Name"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33892
+#: assets/scripts/blocks.js:33144
+msgid "Loading Posts…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33899
+#: assets/scripts/blocks.js:33152
+msgid "Your query yielded no results, please try again."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33921
+#: assets/scripts/blocks.js:33190
+msgid "Load More"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33953
+#: assets/scripts/blocks.js:33229
+msgid "Please enter your search query…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33961
+#: assets/scripts/blocks.js:33237
+msgid "Post Type:"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33988
+#: assets/scripts/blocks.js:33266
+msgid "Select Taxonomy"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:33997
+#: assets/scripts/blocks.js:33282
+msgid "No taxonomy selected"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34002
+#: assets/scripts/blocks.js:38897
+#: assets/scripts/blocks.js:33286
+#: assets/scripts/blocks.js:38697
+msgid "Select Term"
+msgstr ""
+
+#: assets/scripts/blocks.js:34081
+#: assets/scripts/blocks.js:33383
+msgid "No terms selected"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:34270
+#: assets/scripts/blocks.js:33544
+msgid "Select terms"
 msgstr ""
 
 #. translators: [admin]
@@ -5386,38 +5455,31 @@ msgid "Toggle Background Overlay"
 msgstr ""
 
 #. translators: [admin]
+#: assets/scripts/blocks.js:35370
+#: assets/scripts/blocks.js:37697
+#: assets/scripts/blocks.js:34679
+#: assets/scripts/blocks.js:37545
+msgid "Hide Image Caption"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:35377
+#: assets/scripts/blocks.js:37698
+#: assets/scripts/blocks.js:34685
+#: assets/scripts/blocks.js:37547
+msgid "Hide Image Credit"
+msgstr ""
+
+#. translators: [admin]
 #: assets/scripts/blocks.js:35384
 #: assets/scripts/blocks.js:34691
 msgid "Background Image Origin"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27149
-#: assets/scripts/blocks.js:35388
-#: assets/scripts/blocks.js:25912
-#: assets/scripts/blocks.js:34695
-msgid "Top"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:35398
 #: assets/scripts/blocks.js:34705
 msgid "Bottom"
-msgstr ""
-
-#. translators: [admin] text alignment.
-#. translators: [admin]
-#: assets/scripts/blocks.js:24294
-#: assets/scripts/blocks.js:25900
-#: assets/scripts/blocks.js:26361
-#: assets/scripts/blocks.js:35408
-#: assets/scripts/blocks.js:36174
-#: assets/scripts/blocks.js:22775
-#: assets/scripts/blocks.js:24459
-#: assets/scripts/blocks.js:24931
-#: assets/scripts/blocks.js:34715
-#: assets/scripts/blocks.js:35096
-msgid "Centre"
 msgstr ""
 
 #. translators: [admin]
@@ -5432,38 +5494,6 @@ msgstr ""
 #: assets/scripts/blocks.js:35005
 #: assets/scripts/blocks.js:35009
 msgid "Section"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:37879
-#: assets/scripts/blocks.js:37692
-msgid "Set Image"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:23725
-#: assets/scripts/blocks.js:37880
-#: assets/scripts/blocks.js:22147
-#: assets/scripts/blocks.js:37694
-msgid "Replace Image"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:36186
-#: assets/scripts/blocks.js:35110
-msgid "Opaque"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:36188
-#: assets/scripts/blocks.js:35112
-msgid "Translucent"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:36190
-#: assets/scripts/blocks.js:35114
-msgid "Transparent"
 msgstr ""
 
 #. translators: [admin]
@@ -5551,14 +5581,6 @@ msgid "Content Alignment"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:24736
-#: assets/scripts/blocks.js:35996
-#: assets/scripts/blocks.js:23221
-#: assets/scripts/blocks.js:35377
-msgid "Background Style"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:36004
 #: assets/scripts/blocks.js:35384
 msgid "Hide Content"
@@ -5609,35 +5631,9 @@ msgid "(TimeLine Content)"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:24775
-#: assets/scripts/blocks.js:36085
-#: assets/scripts/blocks.js:23257
-#: assets/scripts/blocks.js:35488
-msgid "(Heading)"
-msgstr ""
-
-#. translators: [admin]
 #: assets/scripts/blocks.js:36095
 #: assets/scripts/blocks.js:35499
 msgid "(Sub-Heading)"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24786
-#: assets/scripts/blocks.js:26416
-#: assets/scripts/blocks.js:36105
-#: assets/scripts/blocks.js:23266
-#: assets/scripts/blocks.js:25002
-#: assets/scripts/blocks.js:35510
-msgid "(Content)"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24602
-#: assets/scripts/blocks.js:36114
-#: assets/scripts/blocks.js:23085
-#: assets/scripts/blocks.js:35521
-msgid "(Button Text)"
 msgstr ""
 
 #. translators: [admin]
@@ -5646,6 +5642,24 @@ msgstr ""
 #: assets/scripts/blocks.js:35550
 #: assets/scripts/blocks.js:35564
 msgid "(No Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:36186
+#: assets/scripts/blocks.js:35110
+msgid "Opaque"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:36188
+#: assets/scripts/blocks.js:35112
+msgid "Translucent"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:36190
+#: assets/scripts/blocks.js:35114
+msgid "Transparent"
 msgstr ""
 
 #. translators: [admin]
@@ -5743,7 +5757,7 @@ msgstr ""
 #: assets/scripts/blocks.js:37309
 #: assets/scripts/blocks.js:37024
 msgid "Countries"
-msgstr ""
+msgstr "мамлакатлар"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:37392
@@ -5799,6 +5813,42 @@ msgstr ""
 msgid "Alternative"
 msgstr ""
 
+#. translators: [admin]
+#: assets/scripts/blocks.js:37700
+#: assets/scripts/blocks.js:37551
+msgid "Hide Video Caption"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:37701
+#: assets/scripts/blocks.js:37553
+msgid "Hide Video Credit"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:37753
+#: assets/scripts/blocks.js:37580
+msgid "Set featured video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:37754
+#: assets/scripts/blocks.js:37582
+msgid "Remove featured video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:37879
+#: assets/scripts/blocks.js:37692
+msgid "Set Image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:38129
+#: assets/scripts/blocks.js:37973
+msgid "Select a sidebar"
+msgstr ""
+
 #: assets/scripts/blocks.js:38169
 #: assets/scripts/blocks.js:37998
 msgid "Archive Filters"
@@ -5815,593 +5865,548 @@ msgid "Display the query results count"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:23665
-#: assets/scripts/blocks.js:22081
-msgid "Image Settings"
+#: assets/scripts/blocks.js:38459
+#: assets/scripts/blocks.js:38177
+msgid "Page Options"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:23669
-#: assets/scripts/blocks.js:22084
-msgid "Focal Point"
+#: assets/scripts/blocks.js:38468
+#: assets/scripts/blocks.js:38199
+msgid "Post Options"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:23678
-#: assets/scripts/blocks.js:22092
-msgid "Opacity"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:23689
-#: assets/scripts/blocks.js:22106
-msgid "Colour"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:23728
-#: assets/scripts/blocks.js:22149
-msgid "Add Image"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:23530
-#: assets/scripts/blocks.js:21937
-msgid "Background Media Column"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:23532
-#: assets/scripts/blocks.js:21939
-msgid "Column layout for Background Media block"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24016
-#: assets/scripts/blocks.js:22474
-msgid "Background Media"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24018
-#: assets/scripts/blocks.js:22476
-msgid "Two-column layout with background images"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24022
-#: assets/scripts/blocks.js:22480
-msgid "Background"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24026
-#: assets/scripts/blocks.js:22484
-msgid "Text"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24312
-#: assets/scripts/blocks.js:22792
-msgid "Translucent black"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24329
-#: assets/scripts/blocks.js:25938
-#: assets/scripts/blocks.js:22808
-#: assets/scripts/blocks.js:24495
-msgid "Normal"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24360
-#: assets/scripts/blocks.js:22835
-msgid "Embed URL"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24361
-#: assets/scripts/blocks.js:22837
-msgid "Setting this will override the call to action link and will now open a modal with the embed."
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24398
-#: assets/scripts/blocks.js:22889
-msgid "Banner Title"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24408
-#: assets/scripts/blocks.js:22898
-msgid "Banner Content"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24581
-#: assets/scripts/blocks.js:27188
-#: assets/scripts/blocks.js:23061
-#: assets/scripts/blocks.js:25956
-msgid "Primary (Yellow)"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24764
-#: assets/scripts/blocks.js:23248
-msgid "(Pre-heading)"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:24979
-#: assets/scripts/blocks.js:24983
-#: assets/scripts/blocks.js:23517
-#: assets/scripts/blocks.js:23521
-msgid "Call To Action"
-msgstr ""
-
-#: assets/scripts/blocks.js:25107
-#: assets/scripts/blocks.js:23622
-msgid "Settings"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25110
-#: assets/scripts/blocks.js:23626
-msgid "Collapsed by default"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25111
-#: assets/scripts/blocks.js:23628
-msgid "Whether the block contents should be hidden by default"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25119
-#: assets/scripts/blocks.js:23637
-msgid "Label this block with an HTML anchor (#example)."
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25127
-#: assets/scripts/blocks.js:23649
-msgid "Find out more"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25157
-#: assets/scripts/blocks.js:23677
-msgid "Collapsable"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25162
-#: assets/scripts/blocks.js:23682
-msgid "collapsible"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25164
-#: assets/scripts/blocks.js:23684
-msgid "accordion"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25166
-#: assets/scripts/blocks.js:23686
-msgid "drawer"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25168
-#: assets/scripts/blocks.js:23688
-msgid "open"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25170
-#: assets/scripts/blocks.js:23690
-msgid "closed"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25370
-#: assets/scripts/blocks.js:23874
-msgid "50% | 50%"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25376
-#: assets/scripts/blocks.js:23881
-msgid "66.6% | 33.3%"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25382
-#: assets/scripts/blocks.js:23888
-msgid "33.3% | 66.6%"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25388
-#: assets/scripts/blocks.js:23895
-msgid "33.3% | 33.3% | 33.3%"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25394
-#: assets/scripts/blocks.js:23902
-msgid "50% | 25% | 25%"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25400
-#: assets/scripts/blocks.js:23909
-msgid "25% | 50% | 25%"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25406
-#: assets/scripts/blocks.js:23916
-msgid "25% | 25% | 50%"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25412
-#: assets/scripts/blocks.js:23923
-msgid "25% | 25% | 25% | 25%"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25255
-#: assets/scripts/blocks.js:23762
-msgid "Layout Style"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25302
-#: assets/scripts/blocks.js:25312
-#: assets/scripts/blocks.js:23799
-#: assets/scripts/blocks.js:23809
-msgid "Columns"
-msgstr ""
-
-#. translators: [admin]
-#: assets/scripts/blocks.js:25310
-#: assets/scripts/blocks.js:23807
-msgid "Row"
+#: assets/scripts/blocks.js:38473
+#: assets/scripts/blocks.js:38217
+msgid "Appearance"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25522
-#: assets/scripts/blocks.js:24041
-msgid "Scroll To Link"
+#: assets/scripts/blocks.js:38548
+#: assets/scripts/blocks.js:38301
+msgid "Enable public byline"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25715
-#: assets/scripts/blocks.js:24265
-msgid "Custom Card"
+#: assets/scripts/blocks.js:38551
+#: assets/scripts/blocks.js:38304
+msgid "Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:25717
-#: assets/scripts/blocks.js:24267
-msgid "Custom Card block"
+#: assets/scripts/blocks.js:38562
+#: assets/scripts/blocks.js:38317
+msgid "Use author profile for byline"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26004
-#: assets/scripts/blocks.js:24569
-msgid "(Header Title)"
+#: assets/scripts/blocks.js:38569
+#: assets/scripts/blocks.js:38328
+msgid "Byline Name"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26014
-#: assets/scripts/blocks.js:24579
-msgid "(Header Content)"
+#: assets/scripts/blocks.js:38570
+#: assets/scripts/blocks.js:38330
+msgid "The individual, group, or entity to be named as the author"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26023
-#: assets/scripts/blocks.js:24590
-msgid "(Call to action)"
+#: assets/scripts/blocks.js:38577
+#: assets/scripts/blocks.js:38338
+msgid "Byline Context"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26301
-#: assets/scripts/blocks.js:24861
-msgid "(Link Text)"
+#: assets/scripts/blocks.js:38578
+#: assets/scripts/blocks.js:38340
+msgid "Additional context for the byline; e.g. job title, short summary, location, etc"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:26309
-#: assets/scripts/blocks.js:24871
-msgid "Remove Button"
+#: assets/scripts/blocks.js:38607
+#: assets/scripts/blocks.js:38373
+msgid "Hide featured image"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:26338
-#: assets/scripts/blocks.js:24908
-msgid "Image Style"
+#: assets/scripts/blocks.js:38608
+#: assets/scripts/blocks.js:38374
+msgid "Hide the featured image."
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:26343
-#: assets/scripts/blocks.js:24913
-msgid "Fixed Height (600px)"
+#: assets/scripts/blocks.js:38620
+#: assets/scripts/blocks.js:38386
+msgid "Hide featured image caption"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:26345
-#: assets/scripts/blocks.js:24915
-msgid "Actual Height"
+#: assets/scripts/blocks.js:38621
+#: assets/scripts/blocks.js:38387
+msgid "Hide the image caption for the featured image"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:26352
-#: assets/scripts/blocks.js:24922
-msgid "Only has an effect on images smaller than their container"
+#: assets/scripts/blocks.js:38657
+#: assets/scripts/blocks.js:38426
+msgid "Use transparent header"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:26408
-#: assets/scripts/blocks.js:24995
-msgid "(Title)"
+#: assets/scripts/blocks.js:38658
+#: assets/scripts/blocks.js:38427
+msgid "Enable transparent mode on the main header. Requires the use of a header block with a featured image"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26425
-#: assets/scripts/blocks.js:25013
-msgid "Add Button"
+#: assets/scripts/blocks.js:38697
+#: assets/scripts/blocks.js:38465
+msgid "Show published date"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26440
-#: assets/scripts/blocks.js:26448
-#: assets/scripts/blocks.js:25033
-#: assets/scripts/blocks.js:25039
-msgid "Choose Video"
+#: assets/scripts/blocks.js:38701
+#: assets/scripts/blocks.js:38466
+msgid "Show the post published date"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26471
-#: assets/scripts/blocks.js:25067
-msgid "Remove Video"
+#: assets/scripts/blocks.js:38717
+#: assets/scripts/blocks.js:38492
+msgid "Show updated date"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26525
-#: assets/scripts/blocks.js:25142
-msgid "Display Overlay"
+#: assets/scripts/blocks.js:38721
+#: assets/scripts/blocks.js:38493
+msgid "Show the \"updated at\" date"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26532
-#: assets/scripts/blocks.js:25148
-msgid "Enable Parallax"
+#: assets/scripts/blocks.js:38734
+#: assets/scripts/blocks.js:38517
+msgid "Metadata"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26544
-#: assets/scripts/blocks.js:25171
-msgid "(Insert Caption, if required)"
+#: assets/scripts/blocks.js:38756
+#: assets/scripts/blocks.js:38543
+msgid "Disable Related Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26800
-#: assets/scripts/blocks.js:25546
-msgid "Image Block"
+#: assets/scripts/blocks.js:38757
+#: assets/scripts/blocks.js:38545
+msgid "Removes the Related Content section for this post"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26802
-#: assets/scripts/blocks.js:25548
-msgid "Add a flexible image block with optional overlay"
+#: assets/scripts/blocks.js:38786
+#: assets/scripts/blocks.js:38577
+msgid "Disable Sharing"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26876
-#: assets/scripts/blocks.js:25613
-msgid "Arrow"
+#: assets/scripts/blocks.js:38787
+#: assets/scripts/blocks.js:38579
+msgid "Disable Share Buttons for this post"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26881
-#: assets/scripts/blocks.js:25618
-msgid "Ampersand"
+#: assets/scripts/blocks.js:38826
+#: assets/scripts/blocks.js:38620
+msgid "Maximize Content"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26921
-#: assets/scripts/blocks.js:25665
-msgid "Orientation"
+#: assets/scripts/blocks.js:38829
+#: assets/scripts/blocks.js:38623
+msgid "Remove the sidebar and the sidebar area on posts and pages. Generally used to create pages with a full-width page design."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26926
-#: assets/scripts/blocks.js:25670
-msgid "Horizontal"
+#: assets/scripts/blocks.js:38845
+#: assets/scripts/blocks.js:38640
+msgid "Disable Sidebar"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26928
-#: assets/scripts/blocks.js:25672
-msgid "Vertical"
+#: assets/scripts/blocks.js:38848
+#: assets/scripts/blocks.js:38643
+msgid "Remove the sidebar, but not the sidebar area; this keeps an empty space to the side of the content. Generally used for text heavy pages."
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26947
-#: assets/scripts/blocks.js:25691
-msgid "Hide Lines"
+#: assets/scripts/blocks.js:38914
+#: assets/scripts/blocks.js:38717
+msgid "Feature on content type:"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:26955
-#: assets/scripts/blocks.js:25699
-msgid "Divider Style"
+#: assets/scripts/blocks.js:39068
+#: assets/scripts/blocks.js:38845
+msgid "Pop-in Settings"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27018
-#: assets/scripts/blocks.js:25790
-msgid "Pick an image"
+#: assets/scripts/blocks.js:39074
+#: assets/scripts/blocks.js:38849
+msgid "Render Title"
 msgstr ""
 
 #. translators: [admin]
-#: assets/scripts/blocks.js:27032
-#: assets/scripts/blocks.js:25809
-msgid "(Insert Fact)"
+#: assets/scripts/blocks.js:39075
+#: assets/scripts/blocks.js:38851
+msgid "Should the title be rendered when showing this pop-in to the user?"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27115
-#: assets/scripts/blocks.js:25877
-msgid "Use Image"
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:5637
+#: assets/scripts/bundle.js:5776
+#, js-format
+msgctxt "time format(prefix translated separately) i.e. \"x, H:i:s\""
+msgid "%1$s, %2$s:%3$s:%4$s"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27117
-#: assets/scripts/blocks.js:25879
-msgid "Use Text"
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:5650
+#: assets/scripts/bundle.js:5790
+#, js-format
+msgctxt "time format, H:i:s"
+msgid "%1$s:%2$s:%3$s"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27119
-#: assets/scripts/blocks.js:25881
-msgid "Plain"
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block title"
+msgid "Archive Filters"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27125
-#: assets/scripts/blocks.js:25887
-msgid "Icon Size"
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block description"
+msgid "For presenting filters on archive pages"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27130
-#: assets/scripts/blocks.js:25892
-msgid "Extra Small"
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block keyword"
+msgid "Archives"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27142
-#: assets/scripts/blocks.js:25905
-msgid "Icon Position"
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block keyword"
+msgid "Filters"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27147
-#: assets/scripts/blocks.js:25910
-msgid "Middle"
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block title"
+msgid "Archive Header"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27155
-#: assets/scripts/blocks.js:25919
-msgid "Hide Image Credit Display"
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block description"
+msgid "For presenting the archive header"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27162
-#: assets/scripts/blocks.js:25928
-msgid "Has Underline"
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block keyword"
+msgid "Archive Header"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27169
-#: assets/scripts/blocks.js:25934
-msgid "Font Size"
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block title"
+msgid "Pop-in"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27178
-#: assets/scripts/blocks.js:25946
-msgid "Display Action"
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block description"
+msgid "For presenting dismissible content at the top of the site"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27255
-#: assets/scripts/blocks.js:26048
-msgid "(Insert Body Text)"
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block keyword"
+msgid "Pop-in"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27266
-#: assets/scripts/blocks.js:26060
-msgid "(Insert Link Text)"
+#: includes/full-site-editing/blocks/query-count/block.json
+msgctxt "block title"
+msgid "Query Count"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27627
-#: assets/scripts/blocks.js:26508
-msgid "Links with Icons"
+#: includes/full-site-editing/blocks/query-count/block.json
+msgctxt "block description"
+msgid "Display the query results count"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27629
-#: assets/scripts/blocks.js:26510
-msgid "Add a links-with-icons block"
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block title"
+msgid "Search Form"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27518
-#: assets/scripts/blocks.js:26393
-msgid "Links with Icons Group"
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block description"
+msgid "For presenting the search form"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27520
-#: assets/scripts/blocks.js:26395
-msgid "Add a repeatable links-with-icons block"
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block keyword"
+msgid "Search Form"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:27556
-#: assets/scripts/blocks.js:26434
-msgid "Square"
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block title"
+msgid "Search Header"
 msgstr ""
 
-#: patterns/attachment-sidebar.php
-msgctxt "Pattern title"
-msgid "Attachment Sidebar"
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block description"
+msgid "For presenting the search page header"
 msgstr ""
 
-#: patterns/attachment-sidebar.php
-msgctxt "Pattern description"
-msgid "Output sidebar on attachment template(s)"
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block keyword"
+msgid "Search Header"
 msgstr ""
 
-#: patterns/post-index-number.php
-msgctxt "Pattern title"
-msgid "Post Index Number"
+#: includes/full-site-editing/blocks/sidebar/block.json
+msgctxt "block title"
+msgid "Sidebar"
 msgstr ""
 
-#: patterns/post-index-number.php
-msgctxt "Pattern description"
-msgid "Output the AIDAN index number for an entity"
+#: includes/full-site-editing/blocks/sidebar/block.json
+msgctxt "block description"
+msgid "For presenting a sidebar on a post type"
 msgstr ""
 
-#: patterns/post-translations.php
-msgctxt "Pattern title"
-msgid "Post Translations"
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
 msgstr ""
 
-#: patterns/post-translations.php
-msgctxt "Pattern description"
-msgid "Output the list of translations for the entity"
+#: theme.json
+msgctxt "Color name"
+msgid "White"
 msgstr ""
 
-#: patterns/post-translations.php:63
-#: patterns/post-translations.php:80
-msgctxt "prefix for list of post translations"
-msgid "Available in"
+#: theme.json
+msgctxt "Color name"
+msgid "Grey Brand"
 msgstr ""
 
-#. translators: [admin]
-#: assets/scripts/blocks.js:23351
-#: assets/scripts/blocks.js:21795
-msgctxt "block style"
+#: theme.json
+msgctxt "Font size name"
 msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary State"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Lightest Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Lighter Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "light Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Default Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Darker Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Darkest Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Twitter Blue"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Orange"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Quarter"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Half"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Single"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Double"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Quad"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Lato"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "PlayfairDisplay"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Regular"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Larger"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 1"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 2"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 3"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 4"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 5"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 6"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Article Title"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Style variation name"
+msgid "Amnesty Trade Gothic"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Font family name"
+msgid "Amnesty Trade Gothic"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Font family name"
+msgid "Amnesty Trade Gothic Condensed"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Style variation name"
+msgid "Roboto"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Font family name"
+msgid "Roboto"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Font family name"
+msgid "Roboto Condensed"
+msgstr ""
+
+#: styles/03-rubik.json
+msgctxt "Style variation name"
+msgid "Rubik"
+msgstr ""
+
+#: styles/03-rubik.json
+msgctxt "Font family name"
+msgid "Rubik"
 msgstr ""
