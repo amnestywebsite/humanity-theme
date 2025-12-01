@@ -1160,7 +1160,7 @@ msgstr ""
 #: assets/scripts/blocks.js:35133
 #: assets/scripts/blocks.js:34453
 msgid "Country"
-msgstr ""
+msgstr "ქვეყანა"
 
 #. translators: [API/admin]
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:186
@@ -1184,8 +1184,8 @@ msgstr ""
 #, php-format
 msgid "%s result"
 msgid_plural "%s results"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s შედეგი"
+msgstr[1] "%s შედეგები"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
 #: includes/features/search/class-search-filters.php:249
@@ -1217,51 +1217,51 @@ msgstr ""
 
 #: includes/features/search/helpers.php:135
 msgid "January"
-msgstr ""
+msgstr "იანვარი"
 
 #: includes/features/search/helpers.php:136
 msgid "Febuary"
-msgstr ""
+msgstr "თებერვალი"
 
 #: includes/features/search/helpers.php:137
 msgid "March"
-msgstr ""
+msgstr "მარტი"
 
 #: includes/features/search/helpers.php:138
 msgid "April"
-msgstr ""
+msgstr "აპრილი"
 
 #: includes/features/search/helpers.php:139
 msgid "May"
-msgstr ""
+msgstr "მაისი"
 
 #: includes/features/search/helpers.php:140
 msgid "June"
-msgstr ""
+msgstr "ივნისი"
 
 #: includes/features/search/helpers.php:141
 msgid "July"
-msgstr ""
+msgstr "ივლისი"
 
 #: includes/features/search/helpers.php:142
 msgid "August"
-msgstr ""
+msgstr "აგვისტო"
 
 #: includes/features/search/helpers.php:143
 msgid "September"
-msgstr ""
+msgstr "სექტემბერი"
 
 #: includes/features/search/helpers.php:144
 msgid "October"
-msgstr ""
+msgstr "ოქტომბერი"
 
 #: includes/features/search/helpers.php:145
 msgid "November"
-msgstr ""
+msgstr "ნოემბერი"
 
 #: includes/features/search/helpers.php:146
 msgid "December"
-msgstr ""
+msgstr "დეკემბერი"
 
 #: includes/features/search/permalink.php:39
 msgid "The ID of the page that should display the search interface"
@@ -1280,7 +1280,7 @@ msgstr ""
 #, php-format
 msgid "%1$s result for '%2$s'"
 msgid_plural "%1$s results for '%2$s'"
-msgstr[0] ""
+msgstr[0] "%1$s შედეგი - ''%1$s-ზე''"
 msgstr[1] ""
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
@@ -1292,7 +1292,7 @@ msgstr[1] ""
 #: patterns/search-header.php:53
 #: woocommerce/loop/orderby.php:29
 msgid "Sort by"
-msgstr ""
+msgstr "დალაგება შემდეგის მიხედვით"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #: includes/helpers/archive.php:66
@@ -1602,27 +1602,27 @@ msgstr ""
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:15
 msgid "Most Recent"
-msgstr ""
+msgstr "უახლესი"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:16
 msgid "Oldest First"
-msgstr ""
+msgstr "უძველესი ჯერ"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:17
 msgid "Title - Ascending"
-msgstr ""
+msgstr "სათაური - აღმავალი"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:18
 msgid "Title - Descending"
-msgstr ""
+msgstr "სათაური - დაღმავალი"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
 #: includes/query-filters/sort-order.php:22
 msgid "Most Relevant"
-msgstr ""
+msgstr "ყველაზე შესაბამისი"
 
 #. translators: [admin]
 #: includes/rest-api/post-data.php:40
@@ -2235,7 +2235,7 @@ msgstr ""
 #: patterns/attachment-share.php:35
 #: patterns/post-share.php:23
 msgid "Share on Facebook"
-msgstr ""
+msgstr "გააზიარე ფეისბუკზე"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
 #: partials/article-share.php:15
@@ -2249,7 +2249,7 @@ msgstr ""
 #: patterns/attachment-share.php:42
 #: patterns/post-share.php:30
 msgid "Share on Twitter"
-msgstr ""
+msgstr "გააზიარე ტვიტერზე"
 
 #. translators: [front] ARIA
 #: partials/forms/taxonomy-filters.php:14
@@ -2269,7 +2269,7 @@ msgstr ""
 #. translators: [front]
 #: partials/language-selector.php:19
 msgid "Which language would you like to use this site in?"
-msgstr ""
+msgstr "რომელ ენაზე გსურს ამ საიტის გამოყენება?"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:20
@@ -2370,17 +2370,17 @@ msgstr ""
 #. translators: [front]
 #: partials/search/forminput.php:14
 msgid "What are you looking for?"
-msgstr ""
+msgstr "რას ეძებთ?"
 
 #: partials/search/horizontal-search.php:12
 #: partials/search/horizontal-search.php:52
 msgid "Year"
-msgstr ""
+msgstr "წელი"
 
 #: partials/search/horizontal-search.php:13
 #: partials/search/horizontal-search.php:62
 msgid "Month"
-msgstr ""
+msgstr "თვე"
 
 #. translators: [front]
 #: partials/search/horizontal-search.php:39
@@ -2560,16 +2560,16 @@ msgstr ""
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:11
 msgid "Page Not Found"
-msgstr ""
+msgstr "გვერდი არ იძებნება"
 
 #: patterns/404.php:15
 msgid "The page you are looking for does not exist."
-msgstr ""
+msgstr "გვერდი, რომელსაც ეძებთ, არ არსებობს"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:20
 msgid "Go to the Homepage"
-msgstr ""
+msgstr "გადასვლა მთავარ გვერდზე"
 
 #: patterns/archive-heading.php
 msgctxt "Pattern title"
@@ -5757,7 +5757,7 @@ msgstr ""
 #: assets/scripts/blocks.js:37309
 #: assets/scripts/blocks.js:37024
 msgid "Countries"
-msgstr ""
+msgstr "ქვეყნები"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:37392

@@ -198,12 +198,12 @@ msgstr "Страница не найдена"
 
 #: patterns/404.php:15
 msgid "The page you are looking for does not exist."
-msgstr "Страница, которую вы ищете, не существует."
+msgstr "Страницы, которую вы ищете, не существует."
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:20
 msgid "Go to the Homepage"
-msgstr "Перейти на главную страницу"
+msgstr "Вернуться на главную страницу"
 
 #. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
 #. translators: [admin]
@@ -369,27 +369,27 @@ msgstr "Нажмите, чтобы показать/скрыть временн�
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:15
 msgid "Most Recent"
-msgstr "Сначала новые"
+msgstr "Самые свежие"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:16
 msgid "Oldest First"
-msgstr "Сначала старые"
+msgstr "Сначала самые старые"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:17
 msgid "Title - Ascending"
-msgstr "ЗАГОЛОВОК А-Я"
+msgstr "Заголовки А-Я"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:18
 msgid "Title - Descending"
-msgstr "ЗАГОЛОВОК Я-А"
+msgstr "Заголовки Я-A"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
 #: includes/query-filters/sort-order.php:22
 msgid "Most Relevant"
-msgstr "ПО РЕЛЕВАНТНОСТИ"
+msgstr "Самые актуальные"
 
 #. translators: [front] shown on post single
 #. translators: [admin]
@@ -456,9 +456,9 @@ msgstr "в %s году"
 #, php-format
 msgid "%s result"
 msgid_plural "%s results"
-msgstr[0] "%s результат"
-msgstr[1] "%s результатов"
-msgstr[2] "%s результатов"
+msgstr[0] "Найден %s"
+msgstr[1] "Найдено %s"
+msgstr[2] ""
 
 #: includes/features/search/permalink.php:39
 msgid "The ID of the page that should display the search interface"
@@ -2045,7 +2045,7 @@ msgstr "Очистить все"
 #, php-format
 msgid "%1$s result for '%2$s'"
 msgid_plural "%1$s results for '%2$s'"
-msgstr[0] "%1$s результат для '%2$s'"
+msgstr[0] "Найден %1$s результат для \"%2$s\""
 msgstr[1] "%1$s результатов для '%2$s'"
 msgstr[2] "%1$s результатов для '%2$s'"
 
@@ -2262,7 +2262,7 @@ msgstr "Язык отображения"
 #. translators: [front]
 #: partials/language-selector.php:19
 msgid "Which language would you like to use this site in?"
-msgstr "На каком языке вы хотели бы использовать этот сайт?"
+msgstr "На каком языке вы хотите просматривать сайт?"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:20
