@@ -1192,28 +1192,28 @@ msgstr[1] "%s შედეგები"
 #, php-format
 msgctxt "search results title suffix for the search term"
 msgid "for “%s”"
-msgstr ""
+msgstr "'%s-ზე''"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
 #: includes/features/search/class-search-filters.php:255
 #, php-format
 msgctxt "search results title suffix for term exclusions"
 msgid "excluding “%s”"
-msgstr ""
+msgstr "'%s-ის'' გამოკლებით"
 
 #. translators: [front] appended to search results title (n results for...); %s: the month searched for
 #: includes/features/search/class-search-filters.php:278
 #, php-format
 msgctxt "search results title suffix for month published"
 msgid "for the month of %s"
-msgstr ""
+msgstr "%s თვეში"
 
 #. translators: [front] appended to search results title (n results for...); %s: the year searched for
 #: includes/features/search/class-search-filters.php:295
 #, php-format
 msgctxt "search results title suffix for year published"
 msgid "in the year %s"
-msgstr ""
+msgstr "%s წელს"
 
 #: includes/features/search/helpers.php:135
 msgid "January"
@@ -1638,13 +1638,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-content-types.php:100
 msgctxt "taxonomy general name"
 msgid "Content Types"
-msgstr ""
+msgstr "მასალის ტიპები"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:102
 msgctxt "taxonomy singular name"
 msgid "Content Type"
-msgstr ""
+msgstr "მასალის ტიპი"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:104
@@ -1731,13 +1731,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-locations.php:84
 msgctxt "taxonomy general name"
 msgid "Countries"
-msgstr ""
+msgstr "ქვეყნები"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:86
 msgctxt "taxonomy singular name"
 msgid "Country"
-msgstr ""
+msgstr "ქვეყანა"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:88
@@ -1844,13 +1844,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-resource-types.php:157
 msgctxt "taxonomy general name"
 msgid "Resource Types"
-msgstr ""
+msgstr "რესურსის ტიპები"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:159
 msgctxt "taxonomy singular name"
 msgid "Resource Type"
-msgstr ""
+msgstr "რესურსის ტიპი"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:161
@@ -1942,13 +1942,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-topics.php:156
 msgctxt "taxonomy general name"
 msgid "Topics"
-msgstr ""
+msgstr "თემები"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:158
 msgctxt "taxonomy singular name"
 msgid "Topic"
-msgstr ""
+msgstr "თემა"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:160
@@ -2078,28 +2078,28 @@ msgstr ""
 #: includes/theme-setup/scripts-and-styles.php:236
 msgctxt "open double quote"
 msgid "“"
-msgstr ""
+msgstr "“"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:80
 #: includes/theme-setup/scripts-and-styles.php:238
 msgctxt "close double quote"
 msgid "”"
-msgstr ""
+msgstr "”"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:81
 #: includes/theme-setup/scripts-and-styles.php:240
 msgctxt "open single quote"
 msgid "‘"
-msgstr ""
+msgstr "‘"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:82
 #: includes/theme-setup/scripts-and-styles.php:242
 msgctxt "close single quote"
 msgid "’"
-msgstr ""
+msgstr "’"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:234
@@ -3004,7 +3004,7 @@ msgstr ""
 #, php-format
 msgctxt "prefix for a post's author attribution"
 msgid "By %s"
-msgstr ""
+msgstr "ავტორი: %s"
 
 #: patterns/post-byline-custom.php
 msgctxt "Pattern title"

@@ -422,28 +422,28 @@ msgstr "Страна"
 #, php-format
 msgctxt "search results title suffix for the search term"
 msgid "for “%s”"
-msgstr "%s"
+msgstr "для “%s”"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
 #: includes/features/search/class-search-filters.php:255
 #, php-format
 msgctxt "search results title suffix for term exclusions"
 msgid "excluding “%s”"
-msgstr "исключая \"%s\""
+msgstr "исключая “%s”"
 
 #. translators: [front] appended to search results title (n results for...); %s: the month searched for
 #: includes/features/search/class-search-filters.php:278
 #, php-format
 msgctxt "search results title suffix for month published"
 msgid "for the month of %s"
-msgstr "за месяц %s"
+msgstr "за %s"
 
 #. translators: [front] appended to search results title (n results for...); %s: the year searched for
 #: includes/features/search/class-search-filters.php:295
 #, php-format
 msgctxt "search results title suffix for year published"
 msgid "in the year %s"
-msgstr "в %s году"
+msgstr "за %s год"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
 #. translators: Singular/Plural number of posts.
@@ -1721,13 +1721,13 @@ msgstr "В каком порядке таксономии должны быть 
 #: includes/taxonomies/class-taxonomy-content-types.php:100
 msgctxt "taxonomy general name"
 msgid "Content Types"
-msgstr "Типы контента"
+msgstr "Типы материалов"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:102
 msgctxt "taxonomy singular name"
 msgid "Content Type"
-msgstr "Тип содержимого"
+msgstr "Тип материалов"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:104
@@ -1809,13 +1809,13 @@ msgstr "← вернуться к типам контента"
 #: includes/taxonomies/class-taxonomy-resource-types.php:157
 msgctxt "taxonomy general name"
 msgid "Resource Types"
-msgstr "Типы ресурсов"
+msgstr "Типы источников"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:159
 msgctxt "taxonomy singular name"
 msgid "Resource Type"
-msgstr "Тип ресурса"
+msgstr "Тип источников"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:161
@@ -2163,7 +2163,7 @@ msgstr "От"
 #, php-format
 msgctxt "prefix for a post's author attribution"
 msgid "By %s"
-msgstr "От %s"
+msgstr "%s"
 
 #. translators: [front] ARIA Donate %s: the product category name
 #: partials/product/category.php:24
