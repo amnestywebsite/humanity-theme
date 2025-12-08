@@ -223,7 +223,7 @@ msgstr "Ядро амнистии"
 #: assets/scripts/blocks.js:12316
 #: assets/scripts/blocks.js:13664
 msgid "Act Now"
-msgstr "Закон сейчас"
+msgstr "Действуй"
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/  used by sections, when a form rather than an Iframe is used
 #: includes/blocks/petition-list/render.php:57
