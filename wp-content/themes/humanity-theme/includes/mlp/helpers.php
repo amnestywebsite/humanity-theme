@@ -44,9 +44,11 @@ if ( ! function_exists( 'get_object_translations' ) ) {
 	 *
 	 * @package Amnesty\Plugins\Multilingualpress
 	 *
+	 * @param bool $filter whether to apply filters, default true.
+	 *
 	 * @return array<int,\Inpsyde\MultilingualPress\Framework\Api\Translation>
 	 */
-	function get_object_translations() {
+	function get_object_translations( bool $filter = true ): array {
 		if ( ! is_multilingualpress_enabled() ) {
 			return [];
 		}
@@ -59,7 +61,11 @@ if ( ! function_exists( 'get_object_translations' ) ) {
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( is_array( $cached ) ) {
-			return apply_filters( __FUNCTION__, $cached );
+			if ( $filter ) {
+				return (array) apply_filters( __FUNCTION__, $cached );
+			}
+
+			return $cached;
 		}
 
 		$translations = resolve( Translations::class )->searchTranslations( $args );
@@ -71,7 +77,11 @@ if ( ! function_exists( 'get_object_translations' ) ) {
 
 		wp_cache_add( $cache_key, $translations );
 
-		return apply_filters( __FUNCTION__, $translations );
+		if ( $filter ) {
+			return (array) apply_filters( __FUNCTION__, $translations );
+		}
+
+		return $translations;
 	}
 }
 
