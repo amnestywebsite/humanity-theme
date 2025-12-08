@@ -7,7 +7,7 @@
  * Inserter: no
  */
 
-$translations = get_object_translations();
+$translations = get_object_translations( filter: false );
 
 if ( ! count( $translations ) ) {
 	return;
