@@ -1217,51 +1217,51 @@ msgstr "%s жыл ичинде"
 
 #: includes/features/search/helpers.php:135
 msgid "January"
-msgstr "Январь"
+msgstr "Հունվար"
 
 #: includes/features/search/helpers.php:136
 msgid "Febuary"
-msgstr "Февраль"
+msgstr "Փետրվար"
 
 #: includes/features/search/helpers.php:137
 msgid "March"
-msgstr "Март"
+msgstr "Մարտ"
 
 #: includes/features/search/helpers.php:138
 msgid "April"
-msgstr "Апрель"
+msgstr "Ապրիլ"
 
 #: includes/features/search/helpers.php:139
 msgid "May"
-msgstr "Май"
+msgstr "Մայիս"
 
 #: includes/features/search/helpers.php:140
 msgid "June"
-msgstr "Июнь"
+msgstr "Հունիս"
 
 #: includes/features/search/helpers.php:141
 msgid "July"
-msgstr "Июль"
+msgstr "Հուլիս"
 
 #: includes/features/search/helpers.php:142
 msgid "August"
-msgstr "Август"
+msgstr "Օգոստոս"
 
 #: includes/features/search/helpers.php:143
 msgid "September"
-msgstr "Сентябрь"
+msgstr "Սեպտեմբեր"
 
 #: includes/features/search/helpers.php:144
 msgid "October"
-msgstr "Октябрь"
+msgstr "Հոկտեմբեր"
 
 #: includes/features/search/helpers.php:145
 msgid "November"
-msgstr "Ноябрь"
+msgstr "Նոյեմբեր"
 
 #: includes/features/search/helpers.php:146
 msgid "December"
-msgstr "Декабрь"
+msgstr "Դեկտեմբեր"
 
 #: includes/features/search/permalink.php:39
 msgid "The ID of the page that should display the search interface"
@@ -1292,7 +1292,7 @@ msgstr[1] ""
 #: patterns/search-header.php:53
 #: woocommerce/loop/orderby.php:29
 msgid "Sort by"
-msgstr "Тизмектөө"
+msgstr "Դասավորել ըստ"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #: includes/helpers/archive.php:66
@@ -1602,27 +1602,27 @@ msgstr ""
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:15
 msgid "Most Recent"
-msgstr "Эң акыркы"
+msgstr "Ամենավերջինը"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:16
 msgid "Oldest First"
-msgstr "Эң алгачкыдан башта"
+msgstr "Նախ՝ ամենահինը"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:17
 msgid "Title - Ascending"
-msgstr "Аталышы - Өсүү тартибинде"
+msgstr "Վերնագիր՝ Աճման կարգով"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:18
 msgid "Title - Descending"
-msgstr "Аталышы - Түшүү тартибинде"
+msgstr "Վերնագիր՝ Նվազման կարգով"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
 #: includes/query-filters/sort-order.php:22
 msgid "Most Relevant"
-msgstr "Эң актуалдуу"
+msgstr "Ամենահամապատասխան"
 
 #. translators: [admin]
 #: includes/rest-api/post-data.php:40
@@ -1638,13 +1638,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-content-types.php:100
 msgctxt "taxonomy general name"
 msgid "Content Types"
-msgstr "Мазмундун түрлөрү"
+msgstr "Բովանդակության տեսակներ"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:102
 msgctxt "taxonomy singular name"
 msgid "Content Type"
-msgstr "Мазмундун түрү"
+msgstr "Բովանդակության տեսակ"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:104
@@ -1731,13 +1731,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-locations.php:84
 msgctxt "taxonomy general name"
 msgid "Countries"
-msgstr "Өлкөлөр"
+msgstr "Երկրներ"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:86
 msgctxt "taxonomy singular name"
 msgid "Country"
-msgstr "өлкө"
+msgstr "Երկիր"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:88
@@ -1844,13 +1844,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-resource-types.php:157
 msgctxt "taxonomy general name"
 msgid "Resource Types"
-msgstr "Изилдөөнүн түрлөрү"
+msgstr "Ռեսուրսի տեսակներ"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:159
 msgctxt "taxonomy singular name"
 msgid "Resource Type"
-msgstr "Изилдөөнүн түрү"
+msgstr "Ռեսուրսի տեսակ"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:161
@@ -1942,13 +1942,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-topics.php:156
 msgctxt "taxonomy general name"
 msgid "Topics"
-msgstr "Темалар"
+msgstr "Թեմաներ"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:158
 msgctxt "taxonomy singular name"
 msgid "Topic"
-msgstr "Тема"
+msgstr "Թեմա"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:160
@@ -2078,28 +2078,28 @@ msgstr ""
 #: includes/theme-setup/scripts-and-styles.php:236
 msgctxt "open double quote"
 msgid "“"
-msgstr "“"
+msgstr "«"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:80
 #: includes/theme-setup/scripts-and-styles.php:238
 msgctxt "close double quote"
 msgid "”"
-msgstr "”"
+msgstr "»"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:81
 #: includes/theme-setup/scripts-and-styles.php:240
 msgctxt "open single quote"
 msgid "‘"
-msgstr "‘"
+msgstr "«"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:82
 #: includes/theme-setup/scripts-and-styles.php:242
 msgctxt "close single quote"
 msgid "’"
-msgstr "’"
+msgstr "»"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:234
@@ -2235,7 +2235,7 @@ msgstr ""
 #: patterns/attachment-share.php:35
 #: patterns/post-share.php:23
 msgid "Share on Facebook"
-msgstr "Фейсбукта бөлүшүү"
+msgstr "Կիսվել Ֆեյսբուքում"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
 #: partials/article-share.php:15
@@ -2249,7 +2249,7 @@ msgstr ""
 #: patterns/attachment-share.php:42
 #: patterns/post-share.php:30
 msgid "Share on Twitter"
-msgstr "Твиттерде бөлүшүү"
+msgstr "Կիսվել Թվիթերում"
 
 #. translators: [front] ARIA
 #: partials/forms/taxonomy-filters.php:14
@@ -2269,7 +2269,7 @@ msgstr ""
 #. translators: [front]
 #: partials/language-selector.php:19
 msgid "Which language would you like to use this site in?"
-msgstr "Бул сайтты кайсы тилде колдонгуңуз келет?"
+msgstr "Ի՞նչ լեզվով կցանկանայիք օգտագործել այս կայքը"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:20
@@ -2370,17 +2370,17 @@ msgstr ""
 #. translators: [front]
 #: partials/search/forminput.php:14
 msgid "What are you looking for?"
-msgstr "Эмне маалымат издеп жатасыз?"
+msgstr "Ի՞նչ եք փնտրում։"
 
 #: partials/search/horizontal-search.php:12
 #: partials/search/horizontal-search.php:52
 msgid "Year"
-msgstr "Жыл"
+msgstr "Տարի"
 
 #: partials/search/horizontal-search.php:13
 #: partials/search/horizontal-search.php:62
 msgid "Month"
-msgstr "Ай"
+msgstr "Ամիս"
 
 #. translators: [front]
 #: partials/search/horizontal-search.php:39
@@ -2560,16 +2560,16 @@ msgstr ""
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:11
 msgid "Page Not Found"
-msgstr "Баракча табылган жок."
+msgstr "Էջը չի գտնվել"
 
 #: patterns/404.php:15
 msgid "The page you are looking for does not exist."
-msgstr "Сиз издеп жаткан баракча табылган жок."
+msgstr "Ձեր որոնած էջը գոյություն չունի"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:20
 msgid "Go to the Homepage"
-msgstr "Башкы бетке өтүү"
+msgstr "Անցնել գլխավոր էջ"
 
 #: patterns/archive-heading.php
 msgctxt "Pattern title"
@@ -3004,7 +3004,7 @@ msgstr ""
 #, php-format
 msgctxt "prefix for a post's author attribution"
 msgid "By %s"
-msgstr "%s үлүшү"
+msgstr "Կողմից"
 
 #: patterns/post-byline-custom.php
 msgctxt "Pattern title"
