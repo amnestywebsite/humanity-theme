@@ -269,7 +269,8 @@ class Taxonomy_Locations extends Taxonomy {
 			$this->name,
 			'featuredImage',
 			[
-				'get_callback' => [ static::class, 'featured_image_get_callback' ],
+				'get_callback'    => [ static::class, 'featured_image_get_callback' ],
+				'update_callback' => [ static::class, 'featured_image_set_callback' ],
 			]
 		);
 	}
@@ -291,6 +292,26 @@ class Taxonomy_Locations extends Taxonomy {
 		$image = wp_prepare_attachment_for_js( $image_id );
 
 		return $image ?: null;
+	}
+
+	/**
+	 * Setter for the featuredImage rest field
+	 *
+	 * @param int     $value the value to set
+	 * @param WP_Term $term  the term being updated
+	 *
+	 * @return bool
+	 */
+	public static function featured_image_set_callback( int $value, WP_Term $term ): bool {
+		$image = wp_get_attachment_image_url( absint( $value ) );
+
+		if ( false === $image ) {
+			return false;
+		}
+
+		$success = update_term_meta( $term->term_id, 'image_id', absint( $value ) );
+
+		return is_int( $success ) || true === $success;
 	}
 
 }
