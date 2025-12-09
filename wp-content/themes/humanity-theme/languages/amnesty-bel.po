@@ -2080,7 +2080,7 @@ msgstr ""
 #: includes/theme-setup/scripts-and-styles.php:236
 msgctxt "open double quote"
 msgid "“"
-msgstr "\""
+msgstr "“"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:80
@@ -2566,7 +2566,7 @@ msgstr "Старонка не знойдзеная"
 
 #: patterns/404.php:15
 msgid "The page you are looking for does not exist."
-msgstr "Старонка, якую вы шукаеце, не існуе."
+msgstr "Старонка, якую вы шукаеце, не існуе"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:20

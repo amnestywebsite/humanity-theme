@@ -1192,14 +1192,14 @@ msgstr[1] "%s შედეგები"
 #, php-format
 msgctxt "search results title suffix for the search term"
 msgid "for “%s”"
-msgstr "'%s-ზე''"
+msgstr "\"%s\"-ზე"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
 #: includes/features/search/class-search-filters.php:255
 #, php-format
 msgctxt "search results title suffix for term exclusions"
 msgid "excluding “%s”"
-msgstr "'%s-ის'' გამოკლებით"
+msgstr "\"%-ის'' გამოკლებით"
 
 #. translators: [front] appended to search results title (n results for...); %s: the month searched for
 #: includes/features/search/class-search-filters.php:278
