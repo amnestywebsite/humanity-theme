@@ -1184,8 +1184,8 @@ msgstr ""
 #, php-format
 msgid "%s result"
 msgid_plural "%s results"
-msgstr[0] "% натыйжа"
-msgstr[1] "% натыйжалар"
+msgstr[0] "%s натыйжа"
+msgstr[1] "%s натыйжалар"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
 #: includes/features/search/class-search-filters.php:249
