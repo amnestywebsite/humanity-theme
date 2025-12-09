@@ -3004,7 +3004,7 @@ msgstr ""
 #, php-format
 msgctxt "prefix for a post's author attribution"
 msgid "By %s"
-msgstr "Կողմից"
+msgstr "Կողմից %s"
 
 #: patterns/post-byline-custom.php
 msgctxt "Pattern title"
