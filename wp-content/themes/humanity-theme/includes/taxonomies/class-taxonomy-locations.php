@@ -311,7 +311,7 @@ class Taxonomy_Locations extends Taxonomy {
 
 		$success = update_term_meta( $term->term_id, 'image_id', absint( $value ) );
 
-		return ! is_int( $success ) || true === $success;
+		return is_int( $success ) || true === $success;
 	}
 
 }
