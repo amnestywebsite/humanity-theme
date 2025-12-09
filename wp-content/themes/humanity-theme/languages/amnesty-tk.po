@@ -1,17 +1,17 @@
-# Copyright (C) 2025 Amnesty International
-# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Humanity Theme 2.1.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/humanity-theme\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-11-27T13:04:46+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"PO-Revision-Date: 2025-11-27 13:08+0000\n"
+"Language: tk_TM\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
 "X-Domain: amnesty\n"
 
 #. Theme Name of the theme
@@ -1184,84 +1184,84 @@ msgstr ""
 #, php-format
 msgid "%s result"
 msgid_plural "%s results"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s netije"
+msgstr[1] "%s netije"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
 #: includes/features/search/class-search-filters.php:249
 #, php-format
 msgctxt "search results title suffix for the search term"
 msgid "for “%s”"
-msgstr ""
+msgstr "“%s” üçin"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
 #: includes/features/search/class-search-filters.php:255
 #, php-format
 msgctxt "search results title suffix for term exclusions"
 msgid "excluding “%s”"
-msgstr ""
+msgstr "“%s” goşmazdan"
 
 #. translators: [front] appended to search results title (n results for...); %s: the month searched for
 #: includes/features/search/class-search-filters.php:278
 #, php-format
 msgctxt "search results title suffix for month published"
 msgid "for the month of %s"
-msgstr ""
+msgstr "%s aý üçin"
 
 #. translators: [front] appended to search results title (n results for...); %s: the year searched for
 #: includes/features/search/class-search-filters.php:295
 #, php-format
 msgctxt "search results title suffix for year published"
 msgid "in the year %s"
-msgstr ""
+msgstr "%s ýylda"
 
 #: includes/features/search/helpers.php:135
 msgid "January"
-msgstr ""
+msgstr "Ýanwar"
 
 #: includes/features/search/helpers.php:136
 msgid "Febuary"
-msgstr ""
+msgstr "Fewral"
 
 #: includes/features/search/helpers.php:137
 msgid "March"
-msgstr ""
+msgstr "Mart"
 
 #: includes/features/search/helpers.php:138
 msgid "April"
-msgstr ""
+msgstr "Aprel"
 
 #: includes/features/search/helpers.php:139
 msgid "May"
-msgstr ""
+msgstr "Maý"
 
 #: includes/features/search/helpers.php:140
 msgid "June"
-msgstr ""
+msgstr "Iýun"
 
 #: includes/features/search/helpers.php:141
 msgid "July"
-msgstr ""
+msgstr "Iýul"
 
 #: includes/features/search/helpers.php:142
 msgid "August"
-msgstr ""
+msgstr "Awgust"
 
 #: includes/features/search/helpers.php:143
 msgid "September"
-msgstr ""
+msgstr "Sentýabr"
 
 #: includes/features/search/helpers.php:144
 msgid "October"
-msgstr ""
+msgstr "Oktýabr"
 
 #: includes/features/search/helpers.php:145
 msgid "November"
-msgstr ""
+msgstr "Noýabr"
 
 #: includes/features/search/helpers.php:146
 msgid "December"
-msgstr ""
+msgstr "Dekabr"
 
 #: includes/features/search/permalink.php:39
 msgid "The ID of the page that should display the search interface"
@@ -1292,7 +1292,7 @@ msgstr[1] ""
 #: patterns/search-header.php:53
 #: woocommerce/loop/orderby.php:29
 msgid "Sort by"
-msgstr ""
+msgstr "Şu boýunça sortla"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #: includes/helpers/archive.php:66
@@ -1602,27 +1602,27 @@ msgstr ""
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:15
 msgid "Most Recent"
-msgstr ""
+msgstr "Iň täzeler"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:16
 msgid "Oldest First"
-msgstr ""
+msgstr "Ilki iň köneler"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:17
 msgid "Title - Ascending"
-msgstr ""
+msgstr "Ady - aşakdan ýokarlygyna"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:18
 msgid "Title - Descending"
-msgstr ""
+msgstr "Ady - ýokardan aşaklygyna"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
 #: includes/query-filters/sort-order.php:22
 msgid "Most Relevant"
-msgstr ""
+msgstr "Iň laýyk"
 
 #. translators: [admin]
 #: includes/rest-api/post-data.php:40
@@ -1638,13 +1638,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-content-types.php:100
 msgctxt "taxonomy general name"
 msgid "Content Types"
-msgstr ""
+msgstr "Mazmun görnüşleri"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:102
 msgctxt "taxonomy singular name"
 msgid "Content Type"
-msgstr ""
+msgstr "Mazmun görnüşi"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:104
@@ -1731,13 +1731,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-locations.php:84
 msgctxt "taxonomy general name"
 msgid "Countries"
-msgstr ""
+msgstr "Ýurtlar"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:86
 msgctxt "taxonomy singular name"
 msgid "Country"
-msgstr ""
+msgstr "Ýurt"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:88
@@ -1844,13 +1844,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-resource-types.php:157
 msgctxt "taxonomy general name"
 msgid "Resource Types"
-msgstr ""
+msgstr "Resurs görnüşleri"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:159
 msgctxt "taxonomy singular name"
 msgid "Resource Type"
-msgstr ""
+msgstr "Resurs görnüşi"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:161
@@ -1942,13 +1942,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-topics.php:156
 msgctxt "taxonomy general name"
 msgid "Topics"
-msgstr ""
+msgstr "Mowzuklar"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:158
 msgctxt "taxonomy singular name"
 msgid "Topic"
-msgstr ""
+msgstr "Mowzuk"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:160
@@ -2078,28 +2078,28 @@ msgstr ""
 #: includes/theme-setup/scripts-and-styles.php:236
 msgctxt "open double quote"
 msgid "“"
-msgstr ""
+msgstr "“"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:80
 #: includes/theme-setup/scripts-and-styles.php:238
 msgctxt "close double quote"
 msgid "”"
-msgstr ""
+msgstr "”"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:81
 #: includes/theme-setup/scripts-and-styles.php:240
 msgctxt "open single quote"
 msgid "‘"
-msgstr ""
+msgstr "‘"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:82
 #: includes/theme-setup/scripts-and-styles.php:242
 msgctxt "close single quote"
 msgid "’"
-msgstr ""
+msgstr "’"
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:234
@@ -2235,7 +2235,7 @@ msgstr ""
 #: patterns/attachment-share.php:35
 #: patterns/post-share.php:23
 msgid "Share on Facebook"
-msgstr ""
+msgstr "Facebookda paýlaş"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
 #: partials/article-share.php:15
@@ -2249,7 +2249,7 @@ msgstr ""
 #: patterns/attachment-share.php:42
 #: patterns/post-share.php:30
 msgid "Share on Twitter"
-msgstr ""
+msgstr "Twitterde paýlaş"
 
 #. translators: [front] ARIA
 #: partials/forms/taxonomy-filters.php:14
@@ -2269,7 +2269,7 @@ msgstr ""
 #. translators: [front]
 #: partials/language-selector.php:19
 msgid "Which language would you like to use this site in?"
-msgstr ""
+msgstr "Bu websaýty haýsy dilde ulanmak isleýärsiňiz?"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:20
@@ -2370,17 +2370,17 @@ msgstr ""
 #. translators: [front]
 #: partials/search/forminput.php:14
 msgid "What are you looking for?"
-msgstr ""
+msgstr "Näme gözleýärsiňiz?"
 
 #: partials/search/horizontal-search.php:12
 #: partials/search/horizontal-search.php:52
 msgid "Year"
-msgstr ""
+msgstr "Ýyl"
 
 #: partials/search/horizontal-search.php:13
 #: partials/search/horizontal-search.php:62
 msgid "Month"
-msgstr ""
+msgstr "Aý"
 
 #. translators: [front]
 #: partials/search/horizontal-search.php:39
@@ -2560,16 +2560,16 @@ msgstr ""
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:11
 msgid "Page Not Found"
-msgstr ""
+msgstr "Sahypa tapylmady"
 
 #: patterns/404.php:15
 msgid "The page you are looking for does not exist."
-msgstr ""
+msgstr "Gözleýän sahypaňyz ýok."
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:20
 msgid "Go to the Homepage"
-msgstr ""
+msgstr "Baş Sahypa Geçiň"
 
 #: patterns/archive-heading.php
 msgctxt "Pattern title"
@@ -3004,7 +3004,7 @@ msgstr ""
 #, php-format
 msgctxt "prefix for a post's author attribution"
 msgid "By %s"
-msgstr ""
+msgstr "%s tarapyndan"
 
 #: patterns/post-byline-custom.php
 msgctxt "Pattern title"

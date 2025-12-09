@@ -25,6 +25,7 @@ jobs:
       - run: ./vendor/bin/wp i18n update-po wp-content/themes/humanity-theme/languages/amnesty.pot
       - run: ./vendor/bin/wp i18n make-mo wp-content/themes/humanity-theme/languages
       - run: ./vendor/bin/wp i18n make-json wp-content/themes/humanity-theme/languages --no-purge
+      - run: ./vendor/bin/wp i18n make-php wp-content/themes/humanity-theme/languages
       - uses: actions/upload-artifact@v4
         with:
           name: humanity-theme
