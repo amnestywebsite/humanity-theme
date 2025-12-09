@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: var(--wp--preset--spacing--half);
-  padding: var(--wp--preset--spacing--half) 0;
+  margin-block-end: var(--wp--preset--spacing--half);
+  padding-block: var(--wp--preset--spacing--half);
+  padding-inline: 0;
   border-bottom: 1px solid var(--wp--preset--color--black);
   color: var(--wp--preset--color--grey-darker);
   font-family: var(--wp--preset--font-family--secondary);
@@ -20,4 +21,23 @@
 
 .wp-block-details[open] summary::after {
   transform: rotate(180deg);
+}
+
+.wp-block-details.is-style-small summary {
+  margin-block-end: var(--wp--preset--spacing--quarter);
+  padding-block: var(--wp--preset--spacing--quarter);
+  border-bottom: none;
+  font-family: var(--wp--preset--font-family--primary);
+  font-size: var(--wp--preset--font-size--regular);
+
+  &::after {
+    @include icon-dimensions();
+    @include icon-size(16px, 16px);
+    @include icon-position(271px, 215px);
+    margin-inline-start: var(--wp--preset--spacing--quarter);
+  }
+}
+
+.wp-block-details.is-style-small p {
+  margin-block-end: var(--wp--preset--spacing--half);
 }

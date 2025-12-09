@@ -30,6 +30,9 @@ if ( ! function_exists( 'amnesty_wp_kses_post_allowed_html' ) ) {
 			]
 		);
 
+		// why this isn't default-available, i don't know
+		$tags['a'] = array_merge( $tags['a'], [ 'hreflang' => true ] );
+
 		return $tags;
 	}
 }

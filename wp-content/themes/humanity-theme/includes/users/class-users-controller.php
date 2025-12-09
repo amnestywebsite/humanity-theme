@@ -190,7 +190,7 @@ class Users_Controller extends \WP_REST_Users_Controller {
 
 		$users = [];
 
-		foreach ( $query->results as $user ) {
+		foreach ( $query->get_results() as $user ) {
 			$data    = $this->prepare_item_for_response( $user, $request );
 			$users[] = $this->prepare_response_for_collection( $data );
 		}

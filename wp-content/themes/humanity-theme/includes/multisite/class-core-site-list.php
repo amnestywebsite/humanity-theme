@@ -70,7 +70,7 @@ class Core_Site_List {
 				'direction' => $this->get_direction( $blog_id ),
 				'name'      => get_bloginfo( 'name' ),
 				'url'       => home_url( '/', 'https' ),
-				'path'      => get_site( $blog_id )->path,
+				'path'      => get_site( $blog_id )?->path,
 				'current'   => $this->current === $blog_id,
 				'site_id'   => $blog_id,
 				'post_id'   => intval( get_option( 'page_on_front', '0' ), 10 ),
