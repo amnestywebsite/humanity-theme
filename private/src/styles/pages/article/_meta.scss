@@ -19,6 +19,16 @@
   font-size: var(--wp--preset--font-size--regular);
 }
 
+.article-meta a:not(.btn) {
+  text-decoration: none !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline !important;
+  }
+}
+
 .article-metaDataRow > *:not(:last-child)::after {
   content: var(--list-separator);
 }
@@ -29,6 +39,11 @@
 
 .article-metaData .wp-block-details.is-style-small {
   position: relative;
+}
+
+.article-metaData .wp-block-details.is-style-small summary {
+  margin: 0;
+  padding: 0;
 }
 
 .article-metaData .wp-block-details.is-style-small .wp-block-group {

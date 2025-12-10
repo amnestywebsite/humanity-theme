@@ -8,9 +8,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-11-27T13:04:46+00:00\n"
-"PO-Revision-Date: 2025-11-27 13:13+0000\n"
-"Language: hy_AM\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"PO-Revision-Date: 2025-11-27 13:09+0000\n"
+"Language: be_BY\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.8\n"
 "X-Domain: amnesty\n"
 
@@ -1160,7 +1160,7 @@ msgstr ""
 #: assets/scripts/blocks.js:35133
 #: assets/scripts/blocks.js:34453
 msgid "Country"
-msgstr "өлкө"
+msgstr "Краіна"
 
 #. translators: [API/admin]
 #: includes/features/related-content/class-wp-rest-related-content-controller.php:186
@@ -1184,84 +1184,85 @@ msgstr ""
 #, php-format
 msgid "%s result"
 msgid_plural "%s results"
-msgstr[0] "% натыйжа"
-msgstr[1] "% натыйжалар"
+msgstr[0] "%s вынік"
+msgstr[1] "%s вынікаў"
+msgstr[2] ""
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
 #: includes/features/search/class-search-filters.php:249
 #, php-format
 msgctxt "search results title suffix for the search term"
 msgid "for “%s”"
-msgstr "“%s” үчүн"
+msgstr "для \"%s\""
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
 #: includes/features/search/class-search-filters.php:255
 #, php-format
 msgctxt "search results title suffix for term exclusions"
 msgid "excluding “%s”"
-msgstr "“%s” кошпогондо"
+msgstr "за выключэннем\"%s\""
 
 #. translators: [front] appended to search results title (n results for...); %s: the month searched for
 #: includes/features/search/class-search-filters.php:278
 #, php-format
 msgctxt "search results title suffix for month published"
 msgid "for the month of %s"
-msgstr "%s айы үчүн"
+msgstr "Для месяца %s"
 
 #. translators: [front] appended to search results title (n results for...); %s: the year searched for
 #: includes/features/search/class-search-filters.php:295
 #, php-format
 msgctxt "search results title suffix for year published"
 msgid "in the year %s"
-msgstr "%s жыл ичинде"
+msgstr "у %s годзе"
 
 #: includes/features/search/helpers.php:135
 msgid "January"
-msgstr "Январь"
+msgstr "Студзень"
 
 #: includes/features/search/helpers.php:136
 msgid "Febuary"
-msgstr "Февраль"
+msgstr "Люты"
 
 #: includes/features/search/helpers.php:137
 msgid "March"
-msgstr "Март"
+msgstr "Сакавік"
 
 #: includes/features/search/helpers.php:138
 msgid "April"
-msgstr "Апрель"
+msgstr "Красавік"
 
 #: includes/features/search/helpers.php:139
 msgid "May"
-msgstr "Май"
+msgstr "Травень"
 
 #: includes/features/search/helpers.php:140
 msgid "June"
-msgstr "Июнь"
+msgstr "Чэрвень"
 
 #: includes/features/search/helpers.php:141
 msgid "July"
-msgstr "Июль"
+msgstr "Ліпень"
 
 #: includes/features/search/helpers.php:142
 msgid "August"
-msgstr "Август"
+msgstr "Жнівень"
 
 #: includes/features/search/helpers.php:143
 msgid "September"
-msgstr "Сентябрь"
+msgstr "Верасень"
 
 #: includes/features/search/helpers.php:144
 msgid "October"
-msgstr "Октябрь"
+msgstr "Кастрычнік"
 
 #: includes/features/search/helpers.php:145
 msgid "November"
-msgstr "Ноябрь"
+msgstr "Лістапад"
 
 #: includes/features/search/helpers.php:146
 msgid "December"
-msgstr "Декабрь"
+msgstr "Снежань"
 
 #: includes/features/search/permalink.php:39
 msgid "The ID of the page that should display the search interface"
@@ -1280,8 +1281,9 @@ msgstr ""
 #, php-format
 msgid "%1$s result for '%2$s'"
 msgid_plural "%1$s results for '%2$s'"
-msgstr[0] "\"%2$s\" үчүн %1$s натыйжа"
+msgstr[0] "%1$s вынік для \"%2$s\""
 msgstr[1] ""
+msgstr[2] ""
 
 #. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
 #. translators: [front] Donate Label for post sorting options
@@ -1292,7 +1294,7 @@ msgstr[1] ""
 #: patterns/search-header.php:53
 #: woocommerce/loop/orderby.php:29
 msgid "Sort by"
-msgstr "Тизмектөө"
+msgstr "Сартаваць паводле"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
 #: includes/helpers/archive.php:66
@@ -1602,27 +1604,27 @@ msgstr ""
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:15
 msgid "Most Recent"
-msgstr "Эң акыркы"
+msgstr "Апошняе"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:16
 msgid "Oldest First"
-msgstr "Эң алгачкыдан башта"
+msgstr "Спачатку найстарэйшыя"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:17
 msgid "Title - Ascending"
-msgstr "Аталышы - Өсүү тартибинде"
+msgstr "Назва - па ўзрастанні"
 
 #. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
 #: includes/query-filters/sort-order.php:18
 msgid "Title - Descending"
-msgstr "Аталышы - Түшүү тартибинде"
+msgstr "Назва - ад нізу"
 
 #. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
 #: includes/query-filters/sort-order.php:22
 msgid "Most Relevant"
-msgstr "Эң актуалдуу"
+msgstr "Найбольш адпаведныя"
 
 #. translators: [admin]
 #: includes/rest-api/post-data.php:40
@@ -1638,13 +1640,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-content-types.php:100
 msgctxt "taxonomy general name"
 msgid "Content Types"
-msgstr "Мазмундун түрлөрү"
+msgstr "Тыпы кантэнту"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:102
 msgctxt "taxonomy singular name"
 msgid "Content Type"
-msgstr "Мазмундун түрү"
+msgstr "Тып кантэнту"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-content-types.php:104
@@ -1731,13 +1733,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-locations.php:84
 msgctxt "taxonomy general name"
 msgid "Countries"
-msgstr "Өлкөлөр"
+msgstr "Краіны"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:86
 msgctxt "taxonomy singular name"
 msgid "Country"
-msgstr "өлкө"
+msgstr "Краіна"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-locations.php:88
@@ -1844,13 +1846,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-resource-types.php:157
 msgctxt "taxonomy general name"
 msgid "Resource Types"
-msgstr "Изилдөөнүн түрлөрү"
+msgstr "Тыпы рэсурсаў"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:159
 msgctxt "taxonomy singular name"
 msgid "Resource Type"
-msgstr "Изилдөөнүн түрү"
+msgstr "Тып рэсурсу"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-resource-types.php:161
@@ -1942,13 +1944,13 @@ msgstr ""
 #: includes/taxonomies/class-taxonomy-topics.php:156
 msgctxt "taxonomy general name"
 msgid "Topics"
-msgstr "Темалар"
+msgstr "Тэмы"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:158
 msgctxt "taxonomy singular name"
 msgid "Topic"
-msgstr "Тема"
+msgstr "Тэма"
 
 #. translators: [admin]
 #: includes/taxonomies/class-taxonomy-topics.php:160
@@ -2092,14 +2094,14 @@ msgstr "”"
 #: includes/theme-setup/scripts-and-styles.php:240
 msgctxt "open single quote"
 msgid "‘"
-msgstr "‘"
+msgstr "\""
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:82
 #: includes/theme-setup/scripts-and-styles.php:242
 msgctxt "close single quote"
 msgid "’"
-msgstr "’"
+msgstr "\""
 
 #. translators: [front]
 #: includes/theme-setup/scripts-and-styles.php:234
@@ -2235,7 +2237,7 @@ msgstr ""
 #: patterns/attachment-share.php:35
 #: patterns/post-share.php:23
 msgid "Share on Facebook"
-msgstr "Фейсбукта бөлүшүү"
+msgstr "Падзяліцца ў Facebook"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
 #: partials/article-share.php:15
@@ -2249,7 +2251,7 @@ msgstr ""
 #: patterns/attachment-share.php:42
 #: patterns/post-share.php:30
 msgid "Share on Twitter"
-msgstr "Твиттерде бөлүшүү"
+msgstr "Падзяліцца ў Twitter"
 
 #. translators: [front] ARIA
 #: partials/forms/taxonomy-filters.php:14
@@ -2269,7 +2271,7 @@ msgstr ""
 #. translators: [front]
 #: partials/language-selector.php:19
 msgid "Which language would you like to use this site in?"
-msgstr "Бул сайтты кайсы тилде колдонгуңуз келет?"
+msgstr "- На якой мове вы хацелі б карыстацца гэтым сайтам?"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
 #: partials/language-selector.php:20
@@ -2370,17 +2372,17 @@ msgstr ""
 #. translators: [front]
 #: partials/search/forminput.php:14
 msgid "What are you looking for?"
-msgstr "Эмне маалымат издеп жатасыз?"
+msgstr "- Што вы шукаеце?"
 
 #: partials/search/horizontal-search.php:12
 #: partials/search/horizontal-search.php:52
 msgid "Year"
-msgstr "Жыл"
+msgstr "Год"
 
 #: partials/search/horizontal-search.php:13
 #: partials/search/horizontal-search.php:62
 msgid "Month"
-msgstr "Ай"
+msgstr "Месяц"
 
 #. translators: [front]
 #: partials/search/horizontal-search.php:39
@@ -2560,16 +2562,16 @@ msgstr ""
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:11
 msgid "Page Not Found"
-msgstr "Баракча табылган жок."
+msgstr "Старонка не знойдзеная"
 
 #: patterns/404.php:15
 msgid "The page you are looking for does not exist."
-msgstr "Сиз издеп жаткан баракча табылган жок."
+msgstr "Старонка, якую вы шукаеце, не існуе"
 
 #. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
 #: patterns/404.php:20
 msgid "Go to the Homepage"
-msgstr "Башкы бетке өтүү"
+msgstr "Зайсці на галоўную старонку"
 
 #: patterns/archive-heading.php
 msgctxt "Pattern title"
@@ -3004,7 +3006,7 @@ msgstr ""
 #, php-format
 msgctxt "prefix for a post's author attribution"
 msgid "By %s"
-msgstr "%s үлүшү"
+msgstr "Аўтар %s"
 
 #: patterns/post-byline-custom.php
 msgctxt "Pattern title"
@@ -3223,6 +3225,7 @@ msgid "Showing all %d result"
 msgid_plural "Showing all %d results"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #. translators: [front] Donate 1: first result 2: last result 3: total results
 #: woocommerce/loop/result-count.php:43
@@ -3232,6 +3235,7 @@ msgid "Showing %1$d&ndash;%2$d of %3$d result"
 msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #. translators: [front] Donate
 #. translators: [admin]
@@ -4444,6 +4448,7 @@ msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:28983
@@ -5757,7 +5762,7 @@ msgstr ""
 #: assets/scripts/blocks.js:37309
 #: assets/scripts/blocks.js:37024
 msgid "Countries"
-msgstr "Өлкөлөр"
+msgstr "Краіны"
 
 #. translators: [admin]
 #: assets/scripts/blocks.js:37392
