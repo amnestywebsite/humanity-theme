@@ -17,7 +17,7 @@ $translation_links = [];
 $list_separator    = _x( ',', 'list item separator', 'amnesty' );
 
 foreach ( $translations as $translation ) {
-	if ( ! $translation->remoteUrl() ) {
+	if ( ! $translation->remoteUrl() || $translation->remoteSiteId() === get_current_blog_id() ) {
 		continue;
 	}
 
@@ -25,12 +25,11 @@ foreach ( $translations as $translation ) {
 		'<a href="%s" hreflang="%s">%s</a>',
 		esc_url( $translation->remoteUrl() ),
 		esc_attr( $translation->language()->bcp47tag() ),
-		esc_html( $translation->language()->name() ),
+		esc_html( get_site_language_name( $translation->remoteSiteId() ) ),
 	);
 }
 
-// if there's only one link, it's the current language
-if ( count( $translation_links ) < 2 ) {
+if ( ! count( $translation_links ) ) {
 	return;
 }
 
@@ -61,7 +60,7 @@ if ( $has_few ) :
 	<p>
 		<?php
 
-		echo wp_kses_post( _x( 'Available in', 'prefix for list of post translations', 'amnesty' ) );
+		echo wp_kses_post( _x( 'Also available in', 'prefix for list of post translations', 'amnesty' ) );
 		echo '&nbsp;';
 		echo wp_kses_post( $translation_links );
 
@@ -78,7 +77,7 @@ else :
 
 <!-- wp:details {"className":"is-style-small"} -->
 <details class="wp-block-details is-style-small">
-	<summary><?php echo wp_kses_post( _x( 'Available in', 'prefix for list of post translations', 'amnesty' ) ); ?></summary>
+	<summary><?php echo wp_kses_post( _x( 'Also available in', 'prefix for list of post translations', 'amnesty' ) ); ?></summary>
 	<!-- wp:group -->
 	<div class="wp-block-group">
 		<?php echo wp_kses_post( $translation_links ); ?>
