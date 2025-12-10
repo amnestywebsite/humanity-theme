@@ -1,3 +1,37 @@
+### v2.2.0
+Fixes:
+- Apply filters to cached data correctly
+
+Features:
+- Introduce update callback for term images (#694)
+- Add pattern for listing an entity's list of translations (via MultilingualPress)
+- Add pattern for an entity's "Index Number"
+- Add a "small" variant of the Details block
+- Introduce concept of language tiers (translation comprehensiveness)
+
+Improvements:
+- Add support for `hreflang` on `<a>` tags
+
+Localisation:
+- Add (partial) support for several languages:
+  - Azerbaijani
+  - Belarusian
+  - Georgian
+  - Kazakh
+  - Kyrgyz
+  - Russian
+  - Tajik
+  - Turkmen
+  - Ukrainian
+  - Uzbek
+
+Build:
+- Bump js-yaml from 4.1.0 to 4.1.1 in /private
+- Bump brace-expansion from 1.1.11 to 1.1.12 in /private
+
+CI:
+- Add task to compile language files (MO, l10n.php, JSON)
+
 ### v2.1.8
 Fixes:
 - Ensure non-null return type when translating taxonomy REST base to its slug
