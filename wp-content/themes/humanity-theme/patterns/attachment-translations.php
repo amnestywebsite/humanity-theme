@@ -14,9 +14,17 @@ if ( ! function_exists( '\Amnesty\SharePoint\get_document_languages' ) ) {
 }
 
 $translations = get_document_languages( get_post() );
+$translations = array_filter(
+	$translations,
+	function ( object $translation ): bool {
+		return get_current_blog_id() !== $translation->blog_id || (
+			get_current_blog_id() === $translation->blog_id &&
+			get_queried_object_id() !== $translation->item_id
+		);
+	},
+);
 
-// if there's only one item, it's the current language
-if ( count( $translations ) < 2 ) {
+if ( ! count( $translations ) ) {
 	return;
 }
 
@@ -59,7 +67,7 @@ if ( $has_few ) :
 	<p>
 		<?php
 
-		echo wp_kses_post( _x( 'Available in', 'prefix for list of post translations', 'amnesty' ) );
+		echo wp_kses_post( _x( 'Also available in', 'prefix for list of post translations', 'amnesty' ) );
 		echo '&nbsp;';
 		echo wp_kses_post( $translation_links );
 
@@ -75,7 +83,7 @@ else :
 
 <!-- wp:details {"className":"is-style-small"} -->
 <details class="wp-block-details is-style-small">
-	<summary><?php echo wp_kses_post( _x( 'Available in', 'prefix for list of post translations', 'amnesty' ) ); ?></summary>
+	<summary><?php echo wp_kses_post( _x( 'Also available in', 'prefix for list of post translations', 'amnesty' ) ); ?></summary>
 	<!-- wp:group -->
 	<div class="wp-block-group">
 		<?php echo wp_kses_post( $translation_links ); ?>
