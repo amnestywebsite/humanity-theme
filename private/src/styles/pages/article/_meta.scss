@@ -17,6 +17,10 @@
   justify-content: space-between;
   padding: 10px 0;
   font-size: var(--wp--preset--font-size--regular);
+
+  @include mq($until: small) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 .article-meta a:not(.btn) {
