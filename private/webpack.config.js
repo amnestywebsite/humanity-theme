@@ -21,6 +21,7 @@ const getEntries = (env) => {
     blocks: path.resolve(__dirname, `${SRC_PATH}/scripts/blocks.js`),
     editor: path.resolve(__dirname, `${SRC_PATH}/scripts/editor.js`),
     admin: path.resolve(__dirname, `${SRC_PATH}/scripts/admin.js`),
+    print: path.resolve(__dirname, `${SRC_PATH}/scripts/print.js`),
   };
 
   if (!env?.entry) {

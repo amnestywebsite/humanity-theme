@@ -1,0 +1,10 @@
+@media print {
+  .container--feature,
+  .article-metaActions,
+  .article-meta .btn,
+  .article-share,
+  .article-footer,
+  .article-sidebar {
+    display: none !important;
+  }
+}
