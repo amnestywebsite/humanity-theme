@@ -68,7 +68,11 @@
 
 .hero-innerBlocks {
   display: flex;
-  justify-content: end;
+  justify-content: start;
+
+  @include mq(small) {
+    justify-content: end;
+  }
 }
 
 .hero-videoContainer,
