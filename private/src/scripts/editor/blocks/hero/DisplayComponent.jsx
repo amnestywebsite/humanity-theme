@@ -8,7 +8,6 @@ import { fetchMediaData } from '../utils';
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl } = wp.components;
 const { useEntityRecord } = wp.coreData;
-const { useSelect } = wp.data;
 const { PostFeaturedImage } = wp.editor;
 const { Fragment, useEffect, useRef, useState } = wp.element;
 const { __ } = wp.i18n;
@@ -30,24 +29,16 @@ const mediaPanelTitle = (type) => {
   return __('Featured Image', 'amnesty');
 };
 
-const useHasInnerBlocks = (parentClientId) =>
-  useSelect((select) => {
-    const { innerBlocks } = select('core/block-editor').getBlock(parentClientId);
-    return innerBlocks.length;
-  });
-
 const DisplayComponent = (props) => {
   const {
     attributes,
     className,
-    clientId,
     context: { postId, postType },
     setAttributes,
   } = props;
 
   const [mediaData, setMediaData] = useState({});
   const videoRef = useRef();
-  const hasInnerBlocks = useHasInnerBlocks(clientId);
   const object = useEntityRecord('postType', postType, postId);
 
   useEffect(() => {
@@ -58,7 +49,7 @@ const DisplayComponent = (props) => {
     // block attribute takes precedence over the featured image
     const id = attributes?.imageID || object.editedRecord.featured_media;
     fetchMediaData(id, setMediaData, mediaData);
-  }, [object.editedRecord.featured_media, attributes.imageID, attributes.type, mediaData]);
+  }, [object.editedRecord.featured_media, attributes.imageID, attributes.type]);
 
   useEffect(() => {
     if (attributes.type !== 'video') {
@@ -68,13 +59,11 @@ const DisplayComponent = (props) => {
     fetchMediaData(attributes.featuredVideoId, setMediaData, mediaData).then(() => {
       videoRef?.current?.load?.();
     });
-  }, [attributes.featuredVideoId, attributes.type, mediaData]);
+  }, [attributes.featuredVideoId, attributes.type]);
 
   // Set class names for the content back colours
-  const blockClasses = classnames(className, {
+  const classes = classnames(className, {
     [`has-${attributes.background}-background`]: attributes.background,
-    [`is-aligned-${attributes.align}`]: !!attributes.align,
-    'has-inner-blocks': hasInnerBlocks,
     'has-video': !!attributes.featuredVideoId,
   });
 
@@ -131,7 +120,7 @@ const DisplayComponent = (props) => {
   return (
     <Fragment>
       {BlockInspectorControls}
-      <section className={blockClasses} style={blockInlineStyle}>
+      <section className={classes} style={blockInlineStyle}>
         {attributes.type === 'image' && (
           <div className="linkList-options">
             <BlockImageSelector imageId={attributes.imageID} setAttributes={setAttributes} />
@@ -144,42 +133,42 @@ const DisplayComponent = (props) => {
             </video>
           </div>
         )}
-        <div className="hero-contentWrapper">
-          <h1 className="hero-title">
-            <RichText
-              tagName="span"
-              placeholder={/* translators: [admin] */ __('Hero Title', 'amnesty')}
-              value={attributes.title}
-              onChange={(title) => setAttributes({ title })}
-              format="string"
-            />
-          </h1>
-          <RichText
-            tagName="p"
-            className="hero-content"
-            placeholder={/* translators: [admin] */ __('Hero Content', 'amnesty')}
-            value={attributes.content}
-            onChange={(content) => setAttributes({ content })}
-            format="string"
-          />
-          <div className="hero-cta">
-            <div className="btn btn--large">
+        <div className="container">
+          <div className="hero-contentWrapper">
+            <h1 className="hero-title">
               <RichText
                 tagName="span"
-                placeholder={/* translators: [admin] */ __('Call to action', 'amnesty')}
-                value={attributes.ctaText}
-                onChange={(ctaText) => setAttributes({ ctaText })}
+                placeholder={/* translators: [admin] */ __('Hero Title', 'amnesty')}
+                value={attributes.title}
+                onChange={(title) => setAttributes({ title })}
                 format="string"
               />
-              <URLInputButton
-                url={attributes.ctaLink}
-                onChange={(ctaLink) => setAttributes({ ctaLink })}
-              />
+            </h1>
+            <RichText
+              tagName="p"
+              className="hero-content"
+              placeholder={/* translators: [admin] */ __('Hero Content', 'amnesty')}
+              value={attributes.content}
+              onChange={(content) => setAttributes({ content })}
+              format="string"
+            />
+            <div className="hero-cta">
+              <div className="btn btn--large">
+                <RichText
+                  tagName="span"
+                  placeholder={/* translators: [admin] */ __('Call to action', 'amnesty')}
+                  value={attributes.ctaText}
+                  onChange={(ctaText) => setAttributes({ ctaText })}
+                  format="string"
+                />
+                <URLInputButton
+                  url={attributes.ctaLink}
+                  onChange={(ctaLink) => setAttributes({ ctaLink })}
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="hero-innerBlocks">
-          <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
+          <InnerBlocks orientation="horizontal" />
         </div>
         <MediaMetadata
           media={mediaData}

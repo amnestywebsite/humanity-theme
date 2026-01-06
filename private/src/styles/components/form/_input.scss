@@ -2,7 +2,8 @@ label,
 input,
 optgroup,
 select,
-textarea {
+textarea,
+.checkboxGroup-label {
   font-family: var(--wp--preset--font-family--secondary);
   font-size: var(--wp--preset--font-size--small);
   text-transform: uppercase;
