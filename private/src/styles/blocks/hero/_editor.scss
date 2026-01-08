@@ -1,4 +1,5 @@
-[data-type="amnesty-core/hero"] {
+[data-type="amnesty-core/hero"],
+[data-type="amnesty-core/hero"][class*="align"] {
   margin-inline: auto !important;
   max-width: $flexy-container !important;
   width: 100% !important;
