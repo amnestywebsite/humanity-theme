@@ -1,3 +1,11 @@
+[data-type="amnesty-core/hero"][class*="align"] {
+  float: none;
+}
+
+[data-type="amnesty-core/hero"] .wp-block {
+  max-width: 100%;
+}
+
 .wp-block-amnesty-core-hero,
 .wp-block-amnesty-core-hero * {
   box-sizing: border-box;
