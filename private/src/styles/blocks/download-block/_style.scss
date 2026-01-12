@@ -10,12 +10,15 @@
   }
 }
 
-.download-block .checkboxGroup {
+.download-block .checkboxGroup,
+.download-block .customSelect {
   min-width: 200px;
 }
 
 .download-block .checkboxGroup-button,
-.download-block .checkboxGroup-list {
+.download-block .checkboxGroup-list,
+.download-block .customSelect-button,
+.download-block .customSelect-list {
   width: 100%;
 }
 

@@ -75,11 +75,13 @@
   }
 }
 
-.horizontal-search .checkboxGroup > * {
+.horizontal-search .checkboxGroup > *,
+.horizontal-search .customSelect > * {
   width: 100%;
 }
 
-.horizontal-search .basic-filters .checkboxGroup-button {
+.horizontal-search .basic-filters .checkboxGroup-button,
+.horizontal-search .basic-filters .customSelect-button {
   border-width: 2px;
   border-top-color: transparent;
   border-right-color: transparent;

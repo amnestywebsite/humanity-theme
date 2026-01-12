@@ -23,57 +23,62 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 		$params = wp_parse_args(
 			$params,
 			[
-				/* translators: [front] AM not sure yet */
+				'is_control' => true,
+				'is_form'    => false,
+				'is_nav'     => false,
+				'disabled'   => false,
+				'multiple'   => false,
 				'label'      => __( 'Choose an option', 'amnesty' ),
 				'show_label' => false,
-				'name'       => amnesty_rand_str( 8 ),
-				'is_form'    => false,
-				'is_control' => false,
-				'is_nav'     => false,
-				'multiple'   => false,
-				'disabled'   => false,
-				'active'     => '',
 				'class'      => '',
-				'options'    => [
-					/* translators: [front] AM not sure yet */
-					'label'   => __( 'Choose an option', 'amnesty' ),
-					'is_form' => false,
-					'active'  => '',
-					'class'   => '',
-					'options' => [
-						/* translators: [front] AM not sure yet */
-						'' => __( 'Choose an option', 'amnesty' ),
-					],
-				],
-			]
+				'name'       => amnesty_rand_str( 8 ),
+				'active'     => '',
+				'options'    => [],
+			],
 		);
 
-		$is_form = amnesty_validate_boolish( $params['is_form'] );
+		$block_args = [
+			'type'       => 'control',
+			'label'      => $params['label'],
+			'showLabel'  => $params['show_label'],
+			'className'  => $params['class'],
+			'name'       => $params['name'],
+			'multiple'   => $params['multiple'],
+			'isDisabled' => $params['disabled'],
+			'active'     => $params['active'],
+			'options'    => [],
+		];
 
-		if ( ! $is_form ) {
-			unset( $params['type'] );
-		}
-
-		if ( ! empty( $params['type'] ) && ! in_array( $params['type'], [ 'nav', 'filter' ], true ) ) {
-			$params['type'] = 'filter';
-		}
-
-		if ( true === $params['multiple'] ) {
-			require locate_template( 'partials/forms/multiselect.php' );
-			return;
-		}
-
-		if ( true === $params['is_form'] ) {
-			require locate_template( 'partials/forms/select-form.php' );
-			return;
+		if ( true === $params['is_control'] ) {
+			$block_args['type'] = 'control';
 		}
 
 		if ( true === $params['is_nav'] ) {
-			require locate_template( 'partials/forms/select-nav.php' );
-			return;
+			$block_args['type'] = 'navigation';
 		}
 
-		require locate_template( 'partials/forms/select-control.php' );
+		if ( true === $params['is_form'] ) {
+			$block_args['type'] = 'form';
+		}
+
+		if ( ! is_array( current( $params['options'] ) ) ) {
+			foreach ( $params['options'] as $value => $label ) {
+				$block_args['options'][] = compact( 'value', 'label' );
+			}
+		}
+
+		if ( is_array( $block_args['active'] ) && ! $block_args['multiple'] ) {
+			$block_args['active'] = array_shift( $block_args['active'] );
+		}
+
+		echo wp_kses_post(
+			do_blocks(
+				sprintf(
+					'<!-- wp:amnesty-core/custom-select %s /-->',
+					wp_kses_data( wp_json_encode( $block_args ) ),
+				),
+			),
+		);
 	}
 }
 
