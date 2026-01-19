@@ -169,7 +169,7 @@ if ( ! function_exists( 'amnesty_hash_id' ) ) {
 	 * @return string
 	 */
 	function amnesty_hash_id( $data = '' ): string {
-		$hash = md5( (string) $data );
+		$hash = hash( 'xxh3', (string) $data );
 
 		preg_match( '/[a-zA-z]/', $hash, $index );
 
