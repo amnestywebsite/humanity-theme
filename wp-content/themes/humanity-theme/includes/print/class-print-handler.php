@@ -42,6 +42,13 @@ class Print_Handler {
 			return $content;
 		}
 
+		$cache_key = __FUNCTION__ . hash( 'xxh3', $content );
+		$cached    = get_transient( $cache_key );
+
+		if ( is_string( $cached ) ) {
+			return $cached;
+		}
+
 		$dom = $this->create_dom( $content );
 
 		$links = $dom->getElementsByTagName( 'a' );
@@ -90,7 +97,11 @@ class Print_Handler {
 		$container->appendChild( $list );
 		$dom->appendChild( $container );
 
-		return (string) $dom->saveHTML();
+		$new_content = (string) $dom->saveHTML();
+
+		set_transient( $cache_key, $new_content, DAY_IN_SECONDS );
+
+		return $new_content;
 	}
 
 	/**

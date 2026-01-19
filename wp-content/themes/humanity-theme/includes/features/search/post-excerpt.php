@@ -15,8 +15,8 @@ if ( ! function_exists( 'get_first_paragraph' ) ) {
 			return '';
 		}
 
-		$cache_key = md5( $html );
-		$cached    = wp_cache_get( $cache_key );
+		$cache_key = hash( 'xxh3', $html );
+		$cached    = wp_cache_get( __FUNCTION__ . $cache_key );
 
 		if ( $cached ) {
 			return $cached;
@@ -33,7 +33,7 @@ if ( ! function_exists( 'get_first_paragraph' ) ) {
 		// ensure string is utf8
 		$encoded_content = mb_convert_encoding( $html, 'UTF-8' );
 		// encode everything
-		$encoded_content = htmlentities( $encoded_content, ENT_NOQUOTES, 'UTF-8' );
+		$encoded_content = htmlentities( (string) $encoded_content, ENT_NOQUOTES, 'UTF-8' );
 		// decode "standard" characters
 		$encoded_content = htmlspecialchars_decode( $encoded_content, ENT_NOQUOTES );
 		// convert left side of ISO-8859-1 to HTML numeric character reference
@@ -51,7 +51,13 @@ if ( ! function_exists( 'get_first_paragraph' ) ) {
 
 		$xpath = new DOMXPath( $doc );
 
-		foreach ( $xpath->query( '//p' ) as $para ) {
+		$paragraphs = $xpath->query( '//p' );
+
+		if ( ! $paragraphs ) {
+			return '';
+		}
+
+		foreach ( $paragraphs->getIterator() as $para ) {
 			// phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 			$innards = trim( wp_strip_all_tags( $para->textContent ) );
 
