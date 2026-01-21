@@ -1,5 +1,18 @@
-.wp-block-cover .wp-block-cover__image-background img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.wp-block-cover {
+  min-height: unset;
+}
+
+.wp-block-cover .wp-block-cover__image-background,
+.wp-block-cover video.wp-block-cover__video-background,
+.wp-block-cover-image .wp-block-cover__image-background,
+.wp-block-cover-image video.wp-block-cover__video-background {
+  &[data-object-fit="cover"] {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &[data-object-fit="contain"] {
+    object-fit: contain;
+  }
 }

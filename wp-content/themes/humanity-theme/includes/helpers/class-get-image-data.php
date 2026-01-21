@@ -60,8 +60,8 @@ class Get_Image_Data {
 	 * @return string
 	 */
 	public function metadata( bool $include_caption = true, bool $include_credit = true, string $type = 'image' ): string {
-		$caption = $this->caption();
-		$credit  = $this->credit();
+		$caption = apply_filters( 'amnesty_image_data_caption', $this->caption(), $this->image_id, $type, $this );
+		$credit  = apply_filters( 'amnesty_image_data_credit', $this->credit(), $this->image_id, $type, $this );
 
 		if ( ! $caption && ! $credit ) {
 			return '';
