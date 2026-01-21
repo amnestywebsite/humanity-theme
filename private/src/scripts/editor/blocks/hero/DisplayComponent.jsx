@@ -168,8 +168,8 @@ const DisplayComponent = (props) => {
               </div>
             </div>
           </div>
-          <InnerBlocks orientation="horizontal" />
         </div>
+        <InnerBlocks orientation="horizontal" />
         <MediaMetadata
           media={mediaData}
           showMediaCaption={showMediaCaption}
