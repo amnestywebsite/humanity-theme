@@ -256,29 +256,6 @@ require_once realpath( __DIR__ . '/includes/users/meta.php' );
 #endregion users
 
 /**
- * Theme WooCommerce includes
- */
-#region woocommerce
-if ( class_exists( '\WooCommerce', false ) ) {
-	// disable WooCommerce block templates -- it breaks lots of things in hybrid
-	add_filter( 'woocommerce_has_block_template', '__return_false', 999 );
-
-	require_once realpath( __DIR__ . '/includes/admin/woo/theme-options.php' );
-
-	require_once realpath( __DIR__ . '/includes/woo/helpers.php' );
-	require_once realpath( __DIR__ . '/includes/woo/cart.php' );
-	require_once realpath( __DIR__ . '/includes/woo/checkout.php' );
-	require_once realpath( __DIR__ . '/includes/woo/emails.php' );
-	require_once realpath( __DIR__ . '/includes/woo/form-fields.php' );
-	require_once realpath( __DIR__ . '/includes/woo/menus.php' );
-	require_once realpath( __DIR__ . '/includes/woo/order.php' );
-	require_once realpath( __DIR__ . '/includes/woo/product.php' );
-	require_once realpath( __DIR__ . '/includes/woo/select-element.php' );
-	require_once realpath( __DIR__ . '/includes/woo/templates.php' );
-}
-#endregion woocommerce
-
-/**
  * Theme MultilingualPress includes
  */
 #region multilingualpress

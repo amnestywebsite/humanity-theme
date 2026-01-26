@@ -91,8 +91,21 @@ const handleClickEvents = (event) => {
  *
  * @returns {Void}
  */
-const handleChangeEvents = (event) => {
-  if (event?.data?.input.closest('.checkboxGroup').matches('.autosubmit')) {
+const handleChangeEvents = ({ data }) => {
+  const { input } = data;
+
+  if (!input) {
+    return;
+  }
+
+  const cbGroup = input.closest('.checkboxGroup');
+  if (cbGroup && cbGroup.matches('.autosubmit')) {
+    searchForm.requestSubmit();
+    return;
+  }
+
+  const cbSelect = input.closest('.customSelect');
+  if (cbSelect && cbSelect.matches('.autosubmit')) {
     searchForm.requestSubmit();
   }
 };

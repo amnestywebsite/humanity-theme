@@ -24,12 +24,6 @@ if ( ! function_exists( 'amnesty_theme_support' ) ) {
 		add_theme_support( 'disable-custom-font-sizes' );
 
 		add_theme_support( 'block-template-parts' );
-
-		if ( class_exists( 'WooCommerce', false ) ) {
-			add_theme_support( 'woocommerce' );
-			add_theme_support( 'wc-product-gallery-lightbox' );
-			add_theme_support( 'wc-product-gallery-slider' );
-		}
 	}
 }
 

@@ -223,13 +223,7 @@ class Header_Block_Renderer {
 	 * @return void
 	 */
 	protected function inner_open() {
-		$classes = 'hero-content';
-
-		if ( $this->content ) {
-			$classes .= ' has-donation-block';
-		}
-
-		printf( '<div class="container"><div class="%s">', esc_attr( $classes ) );
+		printf( '<div class="container"><div class="hero-content">', esc_attr( $classes ) );
 	}
 
 	/**

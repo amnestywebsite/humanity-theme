@@ -43,11 +43,13 @@
   }
 }
 
-.news-sidebar .checkboxGroup {
+.news-sidebar .checkboxGroup,
+.news-sidebar .customSelect {
   display: inline-block;
 }
 
-.news-sidebar .checkboxGroup-list {
+.news-sidebar .checkboxGroup-list,
+.news-sidebar .customSelect-list {
   width: 100%;
 }
 
