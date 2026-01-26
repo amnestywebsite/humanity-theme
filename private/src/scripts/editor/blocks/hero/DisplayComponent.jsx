@@ -177,8 +177,8 @@ const DisplayComponent = (props) => {
               </div>
             </div>
           </div>
-          <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
         </div>
+        <InnerBlocks allowedBlocks={['amnesty-wc/donation']} orientation="horizontal" />
         <MediaMetadata
           media={mediaData}
           showMediaCaption={showMediaCaption}

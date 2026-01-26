@@ -68,6 +68,15 @@
   }
 }
 
+.hero-innerBlocks {
+  display: flex;
+  justify-content: start;
+
+  @include mq(small) {
+    justify-content: end;
+  }
+}
+
 .hero-videoContainer,
 .hero-video {
   display: none;
