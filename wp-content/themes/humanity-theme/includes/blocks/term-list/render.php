@@ -63,7 +63,7 @@ if ( ! function_exists( 'amnesty_render_term_list_block' ) ) {
 			return '';
 		}
 
-		$cache_key = md5( sprintf( '%s:%s', __FUNCTION__, $args['taxonomy'] ) );
+		$cache_key = hash( 'xxh3', sprintf( '%s:%s', __FUNCTION__, $args['taxonomy'] ) );
 		$terms     = wp_cache_get( $cache_key );
 
 		if ( ! $terms ) {
