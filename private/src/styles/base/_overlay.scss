@@ -9,14 +9,6 @@
   background-color: color-mix(in srgb, var(--wp--preset--color--black) 25%, transparent);
 }
 
-.admin-bar .overlay {
-  top: 118px;
-
-  @include mq(wp-adminbar) {
-    top: 104px;
-  }
-}
-
 html[class*="-open"] .overlay,
 html.search-active .overlay {
   display: block;

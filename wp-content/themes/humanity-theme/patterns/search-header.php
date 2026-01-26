@@ -14,8 +14,6 @@ add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
 
 $found_posts     = absint( $search_object->get_wp_query()->found_posts );
 $found_posts_fmt = number_format_i18n( $found_posts );
-$current_sort    = get_query_var( 'sort' ) ?: ( $GLOBALS['wp']->query_vars['sort'] ?? '' );
-$available_sorts = amnesty_valid_sort_parameters();
 
 /* translators: Singular/Plural number of posts. */
 $results = sprintf( _n( '%s result', '%s results', $found_posts, 'amnesty' ), $found_posts_fmt );
@@ -27,6 +25,27 @@ if ( is_search() && get_search_query() ) {
 
 $results = apply_filters( 'amnesty_search_results_title', $results, $found_posts, get_search_query() );
 
+
+
+$current_sort        = get_query_var( 'sort' ) ?: ( $GLOBALS['wp']->query_vars['sort'] ?? '' );
+$available_sorts     = amnesty_valid_sort_parameters();
+$current_sort_option = $available_sorts[ $current_sort ] ?? null;
+
+// move current sort to the top of the list
+if ( $current_sort_option ) {
+	unset( $available_sorts[ $current_sort ] );
+	$available_sorts = [ $current_sort => $current_sort_option ] + $available_sorts;
+}
+
+$select_args = [
+	'label'      => __( 'Sort by', 'amnesty' ),
+	'show_label' => true,
+	'name'       => 'sort',
+	'is_form'    => true,
+	'multiple'   => false,
+	'options'    => $available_sorts,
+];
+
 ?>
 
 <!-- wp:group {"tagName":"header","className":"postlist-header"} -->
@@ -36,30 +55,7 @@ $results = apply_filters( 'amnesty_search_results_title', $results, $found_posts
 		<?php echo esc_html( $results ); ?>
 	</h2>
 	<!-- /wp:heading -->
-	<?php
 
-	// goes haywire in admin
-	if ( ! is_admin() && ! ( defined( 'REST_REQUEST' ) && ! REST_REQUEST ) ) {
-		$current_sort_option = $available_sorts[ $current_sort ] ?? null;
-
-		// move current sort to the top of the list
-		if ( $current_sort_option ) {
-			unset( $available_sorts[ $current_sort ] );
-			$available_sorts = [ $current_sort => $current_sort_option ] + $available_sorts;
-		}
-
-		amnesty_render_custom_select(
-			[
-				'label'      => __( 'Sort by', 'amnesty' ),
-				'show_label' => true,
-				'name'       => 'sort',
-				'is_form'    => true,
-				'multiple'   => false,
-				'options'    => $available_sorts,
-			]
-		);
-	}
-
-	?>
+	<!-- wp:amnesty-core/custom-select <?php echo wp_json_encode( $select_args ); ?> /-->
 </header>
 <!-- /wp:group -->

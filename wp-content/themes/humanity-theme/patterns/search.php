@@ -58,8 +58,7 @@ $term_name = function ( string $taxonomy = 'category' ): ?string {
 				<article class="wp-block-group post post--result">
 					<!-- wp:group {"tagName":"div","className":"post-terms","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 					<div class="wp-block-group post-terms">
-
-					<?php if ( $has_term() ) : ?>
+						<?php if ( $has_term() ) : ?>
 						<!-- wp:group {"tagName":"div","className":"taxonomy-category post-category wp-block-post-terms"} -->
 						<div class="wp-block-group taxonomy-category post-category wp-block-post-terms">
 							<!-- wp:paragraph -->
@@ -71,9 +70,9 @@ $term_name = function ( string $taxonomy = 'category' ): ?string {
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
-					<?php endif; ?>
+						<?php endif; ?>
 
-					<?php if ( $has_term( $location_slug ) ) : ?>
+						<?php if ( $has_term( $location_slug ) ) : ?>
 						<!-- wp:group {"tagName":"div","className":"taxonomy-<?php echo esc_attr( $location_slug ); ?> post-<?php echo esc_attr( $location_slug ); ?> wp-block-post-terms"} -->
 						<div class="wp-block-group taxonomy-<?php echo esc_attr( $location_slug ); ?> post-<?php echo esc_attr( $location_slug ); ?> wp-block-post-terms">
 							<!-- wp:paragraph -->
@@ -85,9 +84,9 @@ $term_name = function ( string $taxonomy = 'category' ): ?string {
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
-					<?php endif; ?>
+						<?php endif; ?>
 
-					<?php if ( $has_term( 'topic' ) ) : ?>
+						<?php if ( $has_term( 'topic' ) ) : ?>
 						<!-- wp:group {"tagName":"div","className":"taxonomy-topic post-topic wp-block-post-terms"} -->
 						<div class="wp-block-group taxonomy-topic post-topic wp-block-post-terms">
 							<!-- wp:paragraph -->
@@ -99,10 +98,10 @@ $term_name = function ( string $taxonomy = 'category' ): ?string {
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
-					<?php endif; ?>
-
+						<?php endif; ?>
 					</div>
 					<!-- /wp:group -->
+
 					<!-- wp:heading {"level":2,"className":"post-title wp-block-post-title"} -->
 					<h2 class="wp-block-heading post-title wp-block-post-title">
 						<a href="<?php echo esc_url( get_blog_permalink( get_post()->blog_id, get_the_ID() ) ); ?>" target="_self"><?php the_title(); ?></a>
@@ -111,7 +110,7 @@ $term_name = function ( string $taxonomy = 'category' ): ?string {
 					<!-- wp:group {"tagName":"div","className":"post-excerpt wp-block-post-excerpt"} -->
 					<div class="wp-block-group post-excerpt wp-block-post-excerpt">
 						<!-- wp:paragraph {"className":"wp-block-post-excerpt__excerpt"} -->
-						<p class="wp-block-paragraph wp-block-post-excerpt__excerpt"><?php echo wp_kses_post( get_first_paragraph( get_the_content() ) ); ?></p>
+						<p class="wp-block-paragraph wp-block-post-excerpt__excerpt"><?php echo wp_kses_post( get_first_paragraph( get_the_content(), false ) ); ?></p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
