@@ -44,12 +44,15 @@
   }
 }
 
-.taxonomyArchive-filters .checkboxGroup {
+.taxonomyArchive-filters .checkboxGroup,
+.taxonomyArchive-filters .customSelect {
   flex: 1 1 auto;
   width: 100%;
 }
 
 .taxonomyArchive-filters .checkboxGroup-button,
-.taxonomyArchive-filters .checkboxGroup-list {
+.taxonomyArchive-filters .checkboxGroup-list,
+.taxonomyArchive-filters .customSelect-button,
+.taxonomyArchive-filters .customSelect-list {
   width: 100%;
 }

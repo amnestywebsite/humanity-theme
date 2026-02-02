@@ -68,8 +68,8 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 		$media_meta_output  = $image->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCopyright'], 'image' );
 		$media_meta_output .= $video->metadata( ! $attrs['hideImageCaption'], ! $attrs['hideImageCopyright'], 'video' );
 
-		spaceless();
+		ob_start();
 		require realpath( __DIR__ . '/views/hero.php' );
-		return endspaceless( false );
+		return ob_get_clean() ?: '';
 	}
 }

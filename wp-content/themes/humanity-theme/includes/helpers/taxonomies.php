@@ -49,7 +49,7 @@ if ( ! function_exists( 'amnesty_get_prominent_term' ) ) {
 	 * @return WP_Term|null
 	 */
 	function amnesty_get_prominent_term( int $post_id ): ?WP_Term {
-		$cache_key = md5( sprintf( '%s:%s', __FUNCTION__, $post_id ) );
+		$cache_key = hash( 'xxh3', sprintf( '%s:%s', __FUNCTION__, $post_id ) );
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( $cached ) {
@@ -136,7 +136,7 @@ if ( ! function_exists( 'amnesty_get_post_terms' ) ) {
 	 * @return array
 	 */
 	function amnesty_get_post_terms( $post_id = 0 ) {
-		$cache_key = md5( sprintf( '%s:%s', __FUNCTION__, $post_id ) );
+		$cache_key = hash( 'xxh3', sprintf( '%s:%s', __FUNCTION__, $post_id ) );
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( $cached ) {
@@ -609,7 +609,7 @@ if ( ! function_exists( 'get_terms_from_query_var' ) ) {
 			return [];
 		}
 
-		$cache_key = md5( sprintf( '%s:%s:%s:%s', __FUNCTION__, $qvar, $tax, wp_json_encode( $value_list ) ) );
+		$cache_key = hash( 'xxh3', sprintf( '%s:%s:%s:%s', __FUNCTION__, $qvar, $tax, wp_json_encode( $value_list ) ) );
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( is_array( $cached ) ) {

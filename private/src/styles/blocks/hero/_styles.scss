@@ -1,7 +1,12 @@
 .wp-block-amnesty-core-hero.has-inner-blocks {
   display: grid;
-  grid-template-columns: 840px 1fr;
-  gap: var(--wp--preset--spacing--double)
+  gap: var(--wp--preset--spacing--double);
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+
+  @include mq(small) {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
 }
 
 .wp-block-amnesty-core-hero.has-inner-blocks .hero-content {

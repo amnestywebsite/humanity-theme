@@ -17,7 +17,6 @@ if ( ! isset( $taxonomies ) ) {
 foreach ( $taxonomies as $tax_item ) {
 	amnesty_render_custom_select(
 		[
-			/* translators: [front] AM not sure yet */
 			'label'    => $tax_item->label,
 			'name'     => "q{$tax_item->name}",
 			'active'   => query_var_to_array( "q{$tax_item->name}" ),

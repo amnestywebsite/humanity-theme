@@ -1,3 +1,20 @@
+### v3.0.0
+**Breaking Changes**:
+- Remove WooCommerce support
+- Remove checkbox group implementation (superseded by https://github.com/amnestywebsite/humanity-custom-select)
+
+Fixes:
+- RWD issues on Hero block in both editor and frontend
+- Appearance of checkboxes and radios in the editor
+- Remove superfluous document padding
+- Remove top offset on overlay
+- Remove whitespace trimming on Hero block
+
+Improvements:
+- Update cache key hashing to use more performant algo
+- Remove current language from list of entity translations
+- Update Hero block to allow other InnerBlocks
+
 ### v2.2.0
 Fixes:
 - Apply filters to cached data correctly

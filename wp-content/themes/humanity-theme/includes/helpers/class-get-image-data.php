@@ -108,7 +108,7 @@ class Get_Image_Data {
 			return $credit;
 		}
 
-		$cache_key = md5( sprintf( '%s:%s', __FUNCTION__, $this->image_id ) );
+		$cache_key = hash( 'xxh3', sprintf( '%s:%s', __FUNCTION__, $this->image_id ) );
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( $cached ) {
@@ -214,7 +214,7 @@ class Get_Image_Data {
 			return $caption;
 		}
 
-		$cache_key = md5( sprintf( '%s:%s', __FUNCTION__, $this->image_id ) );
+		$cache_key = hash( 'xxh3', sprintf( '%s:%s', __FUNCTION__, $this->image_id ) );
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( $cached ) {
