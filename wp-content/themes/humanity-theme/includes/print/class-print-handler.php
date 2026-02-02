@@ -80,6 +80,10 @@ class Print_Handler {
 		// phpcs:ignore Generic.Commenting.DocComment.MissingShort
 		/** @var \DOMElement $link */
 		foreach ( $links->getIterator() as $link ) {
+			if ( ! $this->should_process( $link ) ) {
+				continue;
+			}
+
 			$id = $this->get_id( $index );
 
 			$this->build_list_item( $dom, $list, $link );
@@ -138,6 +142,46 @@ class Print_Handler {
 		libxml_use_internal_errors( false );
 
 		return $dom;
+	}
+
+	/**
+	 * Whether a specific link should be added to the list
+	 *
+	 * @param \DOMElement $item the link in question
+	 *
+	 * @return bool
+	 */
+	protected function should_process( DOMElement $item ): bool {
+		$parent = $item->parentNode;
+
+		// no context
+		if ( ! $parent ) {
+			return false;
+		}
+
+		// it's a footnote
+		if ( 'sup' === $parent->nodeName ) {
+			return false;
+		}
+
+		$gparent = $parent->parentNode;
+
+		// no context
+		if ( ! is_a( $gparent, DOMElement::class ) ) {
+			return false;
+		}
+
+		// it's a footnote list item
+		if ( str_contains( (string) $gparent->getAttribute( 'class' ), 'wp-block-footnotes' ) ) {
+			return false;
+		}
+
+		// it's a button (we'll likely add QR code)
+		if ( str_contains( $item->getAttribute( 'class' ), 'wp-element-button' ) ) {
+			return false;
+		}
+
+		return true;
 	}
 
 	/**
