@@ -8,7 +8,7 @@ This guide assumes you have an available Virtual Host or Docker environment thro
 ### Prerequisites
 - [`PHP`](https://www.php.net/) v8.2.*  
 - [`Composer`](https://getcomposer.org/) v2+  
-- [`Node`](https://nodejs.org/en/) v20+  
+- [`Node`](https://nodejs.org/en/) v22+  
 - [`Yarn`](https://yarnpkg.com/) v4+  
 - [`Docker`](https://docs.docker.com/engine/install/) Optional, in case you would like to use `@wordpress/env` to run a local environment.
 
@@ -18,7 +18,7 @@ This guide assumes you have an available Virtual Host or Docker environment thro
 - Install PHP dependencies: `composer install`  
   This step installs our [PHPCS](https://github.com/PHPCSStandards/PHP_CodeSniffer) toolchain, and will allow you to scan your code changes for any stylistic incompatibilities. It's important to run PHPCS (`composer lint`) prior to creating any Pull Requests, as PRs are auto-rejected if any issues are found.  
 - Install and build the theme assets: `cd ./private && yarn && yarn build`  
-  This project requires node v20+; you may need to enable corepack first: `corepack enable`.  
+  This project requires node v22+; you may need to enable corepack first: `corepack enable`.  
 - Download any Required or Recommended Plugins into the `./wp-content/plugins` directory, or add them to `.wp-env.json` if using `@wordpress/env` as a development environment. Follow plugin instructions for installation steps.
 
 #### Local development environment with `@wordpress/env`
