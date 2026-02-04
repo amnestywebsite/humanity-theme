@@ -108,7 +108,7 @@ class Section_Block_Renderer {
 		$this->render_caption();
 		$this->close_section();
 
-		return ob_get_clean();
+		return (string) ob_get_clean();
 	}
 
 	/**
@@ -166,6 +166,7 @@ class Section_Block_Renderer {
 		$classes = classnames(
 			'section',
 			[
+				'aimc-ignore'                              => $this->image->credit(),
 				'section--tinted'                          => 'grey' === $this->attributes['background'],
 				'section--textWhite'                       => 'white' === $this->attributes['textColour'],
 				'section--has-bg-image'                    => (bool) $this->attributes['backgroundImage'],
