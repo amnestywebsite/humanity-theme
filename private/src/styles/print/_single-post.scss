@@ -1,0 +1,10 @@
+@media print {
+  .single-post {
+    .article,
+    .article.has-sidebar {
+      width: 100%;
+      max-width: none;
+      flex: 1 1 100%;
+    }
+  }
+}

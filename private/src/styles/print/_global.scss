@@ -1,0 +1,28 @@
+@media print {
+  .overlay,
+  .language-selector,
+  .page-header,
+  .amnesty-footer-template-part,
+  .page-footer,
+  .btn--download {
+    display: none !important;
+  }
+
+  .page-hero,
+  .wp-block-amnesty-core-hero {
+    background-image: none !important;
+    min-height: 0 !important;
+    padding: var(--wp--preset--spacing--single) !important;
+  }
+
+  .page-hero .image-metadata,
+  .wp-block-amnesty-core-hero .image-metadata {
+    display: none !important;
+  }
+
+  .grid .grid-item[style] {
+    background-color: transparent;
+    background-image: none !important;
+    min-height: 0;
+  }
+}
