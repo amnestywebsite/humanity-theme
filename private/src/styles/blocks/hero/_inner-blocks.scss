@@ -1,0 +1,38 @@
+.wp-block-amnesty-core-hero.has-inner-blocks {
+  display: grid;
+  padding-inline: var(--wp--preset--spacing--single);
+  gap: var(--wp--preset--spacing--single);
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+
+
+  @include mq(small) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.wp-block-amnesty-core-hero.has-inner-blocks .hero-content {
+  max-width: 460px;
+}
+
+.wp-block-amnesty-core-hero.has-inner-blocks .hero-contentWrapper {
+  margin-inline: unset;
+  grid-column-start: 1;
+
+  @include mq(small) {
+    grid-column-end: 4;
+  }
+
+  @include mq(medium) {
+    grid-column-end: 3;
+  }
+}
+
+.wp-block-amnesty-core-hero.has-inner-blocks .hero-innerBlocks {
+  display: flex;
+
+  @include mq(small) {
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+}
