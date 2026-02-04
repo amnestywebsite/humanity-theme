@@ -96,7 +96,7 @@ if ( ! function_exists( 'amnesty_get_header_data_from_meta' ) ) {
 	function amnesty_get_header_data_from_meta( mixed $post = null ): array {
 		global $wpdb;
 
-		$cache_key = md5( sprintf( '%s:%s', __FUNCTION__, $post->ID ) );
+		$cache_key = hash( 'xxh3', sprintf( '%s:%s', __FUNCTION__, $post->ID ) );
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( is_array( $cached ) ) {

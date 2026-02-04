@@ -6,11 +6,12 @@ if ( ! function_exists( 'get_first_paragraph' ) ) {
 	 *
 	 * @package Amnesty\Search
 	 *
-	 * @param string $html the html to search
+	 * @param string $html  the html to search
+	 * @param bool   $autop whether to include the paragraph tag. default true.
 	 *
 	 * @return string
 	 */
-	function get_first_paragraph( string $html ): string {
+	function get_first_paragraph( string $html, bool $autop = true ): string {
 		if ( ! $html ) {
 			return '';
 		}
@@ -59,10 +60,12 @@ if ( ! function_exists( 'get_first_paragraph' ) ) {
 				continue;
 			}
 
-			$output = sprintf( '<p>%s</p>', $innards );
+			if ( $autop ) {
+				$innards = sprintf( '<p>%s</p>', $innards );
+			}
 
-			wp_cache_add( $cache_key, $output );
-			return wp_kses_post( $output );
+			wp_cache_add( $cache_key, $innards );
+			return wp_kses_post( $innards );
 		}
 
 		return '';

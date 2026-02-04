@@ -46,6 +46,10 @@ const handleClickEvents = (event) => {
   const { target } = event;
   const { dataset } = target;
 
+  if (!dataset.toggle && !target.classList.contains('overlay')) {
+    return;
+  }
+
   // click event is on a toggle
   if (dataset.toggle) {
     // no state set on html
