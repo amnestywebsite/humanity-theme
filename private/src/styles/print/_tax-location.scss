@@ -1,0 +1,13 @@
+@media print {
+  .tax-location {
+    .section--countrySelect,
+    .section--countrySelect + .section:has(nav),
+    .article-backLink {
+      display: none;
+    }
+
+    .hero-content {
+      margin-bottom: 0 !important;
+    }
+  }
+}

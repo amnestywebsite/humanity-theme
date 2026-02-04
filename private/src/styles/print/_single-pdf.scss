@@ -1,0 +1,10 @@
+@media print {
+  .attachment-pdf {
+    .article-metaData .wp-block-details,
+    .wp-block-file,
+    .wp-block-file + h3,
+    .download-block {
+      display: none;
+    }
+  }
+}

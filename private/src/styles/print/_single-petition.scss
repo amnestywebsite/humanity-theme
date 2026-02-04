@@ -1,0 +1,7 @@
+@media print {
+  .single-petition {
+    .responsive-iframe > .fluid-iframe {
+      display: none;
+    }
+  }
+}
