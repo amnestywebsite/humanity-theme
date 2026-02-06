@@ -10,7 +10,7 @@ registerBlockType('amnesty-core/hero', {
   icon: 'format-image',
   category: 'amnesty-core',
   supports: {
-    align: true,
+    align: ['left', 'center', 'right'],
     className: true,
   },
   keywords: [
