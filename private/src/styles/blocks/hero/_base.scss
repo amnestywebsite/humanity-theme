@@ -20,6 +20,7 @@
 .hero-contentWrapper {
   display: flex;
   flex-direction: column;
+  align-items: start;
   margin-inline: var(--wp--preset--spacing--single);
   width: 100%;
 }
