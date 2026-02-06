@@ -56,6 +56,10 @@
   }
 }
 
+.wp-block-amnesty-core-hero .hero-videoContainer + .container {
+  z-index: 1;
+}
+
 .wp-block[data-type="amnesty-core/hero"].alignleft .wp-block-amnesty-core-hero .hero-contentWrapper {
   align-items: start;
   text-align: start;

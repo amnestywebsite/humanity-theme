@@ -93,6 +93,10 @@
   transform: translate(-50%, -50%);
 }
 
+.hero-videoContainer + .hero-contentWrapper {
+  z-index: 1;
+}
+
 .wp-block-amnesty-core-hero:has(+ main) {
   margin-bottom: var(--wp--preset--spacing--single);
 }
