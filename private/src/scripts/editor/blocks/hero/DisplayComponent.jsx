@@ -70,7 +70,6 @@ const DisplayComponent = (props) => {
   // Set class names for the content back colours
   const blockClasses = classnames(className, {
     [`has-${attributes.background}-background`]: attributes.background,
-    [`is-aligned-${attributes.align}`]: !!attributes.align,
     'has-inner-blocks': hasInnerBlocks,
     'has-video': !!attributes.featuredVideoId,
   });
@@ -174,8 +173,8 @@ const DisplayComponent = (props) => {
               />
             </div>
           </div>
+          <InnerBlocks orientation="horizontal" />
         </div>
-        <InnerBlocks orientation="horizontal" />
         <MediaMetadata
           media={mediaData}
           showMediaCaption={showMediaCaption}

@@ -1,13 +1,5 @@
-[data-type="amnesty-core/hero"],
-[data-type="amnesty-core/hero"][class*="align"] {
-  margin-inline: auto !important;
-  max-width: $flexy-container !important;
-  width: 100% !important;
-  float: none !important;
-}
-
-[data-type="amnesty-core/hero"] .wp-block {
-  max-width: 100%;
+.wp-block[data-type="amnesty-core/hero"] {
+  width: 100%;
 }
 
 .wp-block-amnesty-core-hero,
@@ -15,18 +7,25 @@
   box-sizing: border-box;
 }
 
-.wp-block-amnesty-core-hero {
-  gap: 40px;
+.wp-block-amnesty-core-hero .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--wp--preset--spacing--single);
+  margin: 0;
 }
 
 .wp-block-amnesty-core-hero .hero-contentWrapper {
+  grid-column-start: 1;
+  grid-column-end: 4;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
+  margin: 0;
 }
 
 .wp-block-amnesty-core-hero .hero-contentWrapper > * {
-  margin-block: 0 var(--wp--preset--spacing--quarter);
+  margin-top: 0;
+  margin-bottom: var(--wp--preset--spacing--half);
 }
 
 .wp-block-amnesty-core-hero .btn {
@@ -44,8 +43,38 @@
   position: absolute;
 }
 
-[data-type="amnesty-core/hero"].alignleft,
-[data-type="amnesty-core/hero"].alignright {
-  margin-inline: auto !important;
-  float: unset !important;
+.wp-block-amnesty-core-hero.has-inner-blocks {
+  display: block;
+}
+
+.wp-block-amnesty-core-hero.has-inner-blocks .hero-contentWrapper {
+  margin-inline: unset;
+  grid-column-start: 1;
+
+  @include mq(small) {
+    grid-column-end: 4;
+  }
+}
+
+.wp-block-amnesty-core-hero .hero-videoContainer + .container {
+  z-index: 1;
+}
+
+.wp-block[data-type="amnesty-core/hero"].alignleft .wp-block-amnesty-core-hero .hero-contentWrapper {
+  align-items: start;
+  text-align: start;
+}
+
+.rtl .wp-block[data-type="amnesty-core/hero"][class*="align"] {
+  margin-inline: 0;
+}
+
+.wp-block[data-type="amnesty-core/hero"].aligncenter .wp-block-amnesty-core-hero .hero-contentWrapper {
+  align-items: center;
+  text-align: center;
+}
+
+.wp-block[data-type="amnesty-core/hero"].alignright .wp-block-amnesty-core-hero .hero-contentWrapper {
+  align-items: end;
+  text-align: end;
 }

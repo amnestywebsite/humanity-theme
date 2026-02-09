@@ -1,0 +1,23 @@
+.wp-block-amnesty-core-hero .image-metadata.is-image {
+  display: flex;
+}
+
+.wp-block-amnesty-core-hero .image-metadata.is-video {
+  display: none;
+}
+
+.wp-block-amnesty-core-hero.has-video .image-metadata.is-image {
+  display: flex;
+
+  @include mq(small) {
+    display: none;
+  }
+}
+
+.wp-block-amnesty-core-hero.has-video .image-metadata.is-video {
+  display: none;
+
+  @include mq(small) {
+    display: flex;
+  }
+}
