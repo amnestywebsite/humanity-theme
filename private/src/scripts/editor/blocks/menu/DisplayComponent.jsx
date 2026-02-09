@@ -141,6 +141,31 @@ class DisplayComponent extends Component {
     );
   }
 
+  renderCustomMenu() {
+    const { attributes } = this.props;
+    const { color } = attributes;
+
+    return (
+      <Fragment>
+        <div
+          className={classnames('postlist-categoriesContainer', {
+            [`section--${color}`]: !!color,
+          })}
+        >
+          <ul className="postlist-categories">
+            {attributes?.items?.map(({ id, label }) => (
+              <li key={id}>
+                <a className="btn btn--white" href={`#${id}`}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Fragment>
+    );
+  }
+
   render() {
     const { attributes, setAttributes } = this.props;
 
@@ -162,6 +187,8 @@ class DisplayComponent extends Component {
                 { label: __('Standard Menu', 'amnesty'), value: 'standard-menu' },
                 // translators: [admin]
                 { label: __('In-page Menu', 'amnesty'), value: 'inpage-menu' },
+                // translators: [admin]
+                { label: __('Custom Menu', 'amnesty'), value: 'custom-menu' },
               ]}
               onChange={(option) => setAttributes({ type: option })}
             />
@@ -186,6 +213,7 @@ class DisplayComponent extends Component {
         </InspectorControls>
         {attributes.type === 'standard-menu' && this.renderStandardMenu()}
         {attributes.type === 'inpage-menu' && this.renderInPageMenu()}
+        {attributes.type === 'custom-menu' && this.renderCustomMenu()}
       </Fragment>
     );
   }

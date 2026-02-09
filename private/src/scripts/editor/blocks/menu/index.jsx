@@ -25,6 +25,10 @@ registerBlockType('amnesty-core/block-menu', {
       type: 'string',
       default: 'standard-menu',
     },
+    items: {
+      type: 'array',
+      default: [],
+    },
   },
 
   edit: DisplayComponent,
