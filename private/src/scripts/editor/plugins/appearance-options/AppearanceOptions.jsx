@@ -7,7 +7,7 @@ import Sidebar from './components/Sidebar.jsx';
 import TermFeature from './components/TermFeature.jsx';
 
 const { PanelBody } = wp.components;
-const { PluginSidebar } = wp.editPost;
+const { PluginSidebar } = wp.editor;
 const { __ } = wp.i18n;
 
 /**
