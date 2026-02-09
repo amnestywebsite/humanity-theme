@@ -12,7 +12,7 @@ $search_object = amnesty_get_searchpage_query_object();
 // add filter to limit the post terms results for search
 add_filter( 'get_the_terms', 'amnesty_limit_post_terms_results_for_search' );
 
-$found_posts     = absint( $search_object->get_wp_query()->found_posts );
+$found_posts     = absint( $search_object?->get_wp_query()?->found_posts );
 $found_posts_fmt = number_format_i18n( $found_posts );
 
 /* translators: Singular/Plural number of posts. */
@@ -37,13 +37,19 @@ if ( $current_sort_option ) {
 	$available_sorts = [ $current_sort => $current_sort_option ] + $available_sorts;
 }
 
+$options = [];
+foreach ( $available_sorts as $value => $label ) {
+	$options[] = compact( 'value', 'label' );
+}
+
 $select_args = [
-	'label'      => __( 'Sort by', 'amnesty' ),
-	'show_label' => true,
-	'name'       => 'sort',
-	'is_form'    => true,
-	'multiple'   => false,
-	'options'    => $available_sorts,
+	'label'     => __( 'Sort by', 'amnesty' ),
+	'showLabel' => true,
+	'name'      => 'sort',
+	'type'      => 'form',
+	'multiple'  => false,
+	'options'   => $options,
+	'active'    => $current_sort_option,
 ];
 
 ?>

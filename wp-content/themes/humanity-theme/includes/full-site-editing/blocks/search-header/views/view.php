@@ -24,13 +24,19 @@ if ( $current_sort_option ) {
 	$available_sorts = [ $current_sort => $current_sort_option ] + $available_sorts;
 }
 
+$options = [];
+foreach ( $available_sorts as $value => $label ) {
+	$options[] = compact( 'value', 'label' );
+}
+
 $select_args = [
-	'label'      => __( 'Sort by', 'amnesty' ),
-	'show_label' => true,
-	'name'       => 'sort',
-	'is_form'    => true,
-	'multiple'   => false,
-	'options'    => $available_sorts,
+	'label'     => __( 'Sort by', 'amnesty' ),
+	'showLabel' => true,
+	'name'      => 'sort',
+	'type'      => 'form',
+	'multiple'  => false,
+	'options'   => $options,
+	'active'    => $current_sort_option,
 ];
 
 ?>
