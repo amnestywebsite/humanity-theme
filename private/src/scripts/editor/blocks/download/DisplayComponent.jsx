@@ -12,6 +12,7 @@ const {
 const { Button, PanelBody, SelectControl } = wp.components;
 const { dispatch } = wp.data;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const { __ } = wp.i18n;
 
 const MESSAGES = {
@@ -119,24 +120,26 @@ class DisplayComponent extends Component {
     const { attributes, setAttributes } = this.props;
     const { style } = attributes;
 
+    const buttonStyles = applyFilters('amnesty-download-block-button-styles', [
+      {
+        // translators: [admin]
+        label: __('Dark', 'amnesty'),
+        value: 'dark',
+      },
+      {
+        // translators: [admin]
+        label: __('Light', 'amnesty'),
+        value: 'white',
+      },
+    ]);
+
     return (
       <InspectorControls>
         <PanelBody>
           <SelectControl
             // translators: [admin]
             label={__('Button Style', 'amnesty')}
-            options={[
-              {
-                // translators: [admin]
-                label: __('Dark', 'amnesty'),
-                value: 'dark',
-              },
-              {
-                // translators: [admin]
-                label: __('Light', 'amnesty'),
-                value: 'white',
-              },
-            ]}
+            options={buttonStyles}
             value={style}
             onChange={(newStyle) => setAttributes({ style: newStyle })}
           />
