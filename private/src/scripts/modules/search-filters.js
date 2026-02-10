@@ -91,8 +91,8 @@ const handleClickEvents = (event) => {
  *
  * @returns {Void}
  */
-const handleChangeEvents = ({ data }) => {
-  const { input } = data;
+const handleChangeEvents = (event) => {
+  const input = event.target;
 
   if (!input) {
     return;
