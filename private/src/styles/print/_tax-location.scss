@@ -6,8 +6,35 @@
       display: none;
     }
 
+    .page-hero .page-heroTitle span {
+      box-shadow: none !important;
+      background: none !important;
+      color: var(--wp--preset--color--black);
+    }
+
     .hero-content {
       margin-bottom: 0 !important;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    .page-heroTitle {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    .page-hero:has(+ main) {
+      margin-bottom: 0 !important;
+    }
+
+    .article-content {
+      border-top: none !important;
+      padding-top: 0 !important;
+    }
+
+    .has-gutter {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
     }
   }
 }
