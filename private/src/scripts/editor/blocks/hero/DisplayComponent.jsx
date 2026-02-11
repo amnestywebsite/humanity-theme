@@ -8,6 +8,7 @@ import { fetchMediaData } from '../utils';
 const { InnerBlocks, InspectorControls, RichText, URLInputButton } = wp.blockEditor;
 const { PanelBody, SelectControl } = wp.components;
 const { useEntityRecord } = wp.coreData;
+const { useSelect } = wp.data;
 const { PostFeaturedImage } = wp.editor;
 const { Fragment, useEffect, useRef, useState } = wp.element;
 const { __ } = wp.i18n;
@@ -33,6 +34,7 @@ const DisplayComponent = (props) => {
   const {
     attributes,
     className,
+    clientId,
     context: { postId, postType },
     setAttributes,
   } = props;
@@ -40,6 +42,10 @@ const DisplayComponent = (props) => {
   const [mediaData, setMediaData] = useState({});
   const videoRef = useRef();
   const object = useEntityRecord('postType', postType, postId);
+  const hasInnerBlocks = useSelect((select) => {
+    const { innerBlocks } = select('core/block-editor').getBlock(clientId);
+    return innerBlocks.length;
+  });
 
   useEffect(() => {
     if (attributes.type !== 'image') {
@@ -64,6 +70,7 @@ const DisplayComponent = (props) => {
   // Set class names for the content back colours
   const classes = classnames(className, {
     [`has-${attributes.background}-background`]: attributes.background,
+    'has-inner-blocks': hasInnerBlocks,
     'has-video': !!attributes.featuredVideoId,
   });
 
@@ -168,8 +175,8 @@ const DisplayComponent = (props) => {
               </div>
             </div>
           </div>
+          <InnerBlocks orientation="horizontal" />
         </div>
-        <InnerBlocks orientation="horizontal" />
         <MediaMetadata
           media={mediaData}
           showMediaCaption={showMediaCaption}
