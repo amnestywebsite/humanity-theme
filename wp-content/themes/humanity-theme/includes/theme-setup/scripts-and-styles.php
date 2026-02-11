@@ -84,9 +84,7 @@ if ( ! function_exists( 'amnesty_styles' ) ) {
 		$quotes = sprintf( 'blockquote{quotes:\'%s\' \'%s\' "%s" "%s"}', $open_double, $close_double, $open_single, $close_single );
 		wp_add_inline_style( 'amnesty-theme', $quotes );
 
-		if ( is_singular( 'post' ) ) {
-			wp_enqueue_style( 'print-styles', amnesty_asset_uri( 'styles' ) . '/print.css', [], $theme->get( 'Version' ), 'print' );
-		}
+		wp_enqueue_style( 'print-styles', amnesty_asset_uri( 'styles' ) . '/print.css', [], $theme->get( 'Version' ), 'print' );
 	}
 }
 
