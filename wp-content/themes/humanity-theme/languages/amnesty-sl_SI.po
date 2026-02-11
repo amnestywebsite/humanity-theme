@@ -1,0 +1,5660 @@
+# Copyright (C) 2025 Amnesty International
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Humanity Theme 2.0.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/humanity-theme\n"
+"POT-Creation-Date: 2025-01-28T16:41:19+00:00\n"
+"PO-Revision-Date: 2025-01-28 16:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sl_SI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && "
+"n%100<=4 ? 2 : 3);\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Domain: amnesty\n"
+
+#. Theme Name of the theme
+#: style.css includes/theme-setup/text-domain.php:74
+msgid "Humanity Theme"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/amnestywebsite/humanity-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "The Amnesty International WordPress Humanity Theme"
+msgstr ""
+
+#. Author of the theme
+#. translators: [front]
+#: style.css includes/theme-setup/wp-head.php:18
+msgid "Amnesty International"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.amnesty.org"
+msgstr ""
+
+#. translators: [front] ARIA
+#. translators: [admin]
+#: footer.php:32 includes/admin/theme-options/footer.php:15
+#: includes/admin/theme-options/footer.php:19
+msgid "Footer"
+msgstr "Noga"
+
+#. translators: [front] ARIA
+#: footer.php:35
+msgid "Footer Menus"
+msgstr ""
+
+#. translators: [front] ARIA Social Media sharing options
+#. translators: [front] Social Media sharing options
+#: footer.php:67 patterns/footer-content.php:123
+msgid "Follow us on:"
+msgstr "Sledi Nam:"
+
+#. translators: [front] ARIA
+#: footer.php:70
+msgid "Follow us on Facebook"
+msgstr "Sledi nam na Facebooku"
+
+#. translators: [front] ARIA
+#: footer.php:73
+msgid "Follow us on Twitter"
+msgstr ""
+
+#. translators: [front] ARIA
+#: footer.php:76
+msgid "Subscribe to our YouTube channel"
+msgstr ""
+
+#. translators: [front]
+#: footer.php:79
+msgid "Follow us on Instagram"
+msgstr "Sledite nam na Instagramu"
+
+#. translators: [front]
+#: footer.php:82
+msgid "Follow us on Telegram"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:84
+#: includes/admin/class-accessibility.php:86
+msgid "Accessibility"
+msgstr "Dostopnost"
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:100
+msgid "Negishim"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-accessibility.php:102
+msgid "Load the Negishim Accessibility widget (Hebrew)."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:35
+msgid "Amnesty Permalinks"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:44
+msgid ""
+"If you like, you may enter custom URL slugs for post types and taxonomies "
+"here. This allows you to create URL structures in your language."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/class-permalink-settings.php:45
+msgid ""
+"Please note that changing these from their defaults may require you to set "
+"rewrite rules if you have existing content. Only change them if you know "
+"what you are doing."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:42
+msgid "Network Options"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:72
+msgid "Features"
+msgstr "Značilnosti"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:74
+msgid "Manage available features"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:101
+msgid "Dedicated language selector"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:112
+msgid "Language button menu"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:114
+msgid ""
+"Enables a button in the main navigation which triggers a language selection "
+"menu"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:135
+#: includes/admin/theme-options/pop-in.php:25
+#: includes/admin/theme-options/pop-in.php:29 includes/post-types/pop-in.php:26
+#: includes/post-types/pop-in.php:77
+msgid "Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:155
+msgid "Index Page Filter Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:160
+msgid "Categories Only"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:162
+msgid "Taxonomies & Terms"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:181
+msgid "Related Content (Posts)"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:183
+msgid "Enable the Related Content area on the post single template"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:199
+msgid "Post Types"
+msgstr "Vrste knjiženja"
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:201
+msgid "Manage available post types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:220
+msgid "Taxonomies"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/network/class-network-options.php:222
+msgid "Manage available taxonomies"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/settings-general.php:17
+msgid "Language Display Name"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/settings-general.php:44
+msgid "Override the site language display name on the site frontend"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options.php:18 includes/admin/theme-options.php:23
+msgid "Theme Options"
+msgstr "Možnosti Teme"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:21
+#: includes/admin/theme-options/analytics.php:25
+msgid "Analytics"
+msgstr "Analitika"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:37
+msgid "Google Tag Manager Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:39
+msgid "Paste your Google Tag Manager Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:48
+msgid "GTM Consent Mode"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:50
+msgid ""
+"The status, and default value of, Google's Consent Mode (see https://support."
+"google.com/analytics/answer/9976101). Note that, when using Consent Mode, "
+"you will have to implement targeting via a cookie control plugin such as "
+"Civic"
+msgstr ""
+
+#: includes/admin/theme-options/analytics.php:54
+msgid "Not Enabled"
+msgstr "Ni omogočeno"
+
+#: includes/admin/theme-options/analytics.php:55
+msgid "Enabled, denied"
+msgstr ""
+
+#: includes/admin/theme-options/analytics.php:56
+msgid "Enabled, granted"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:65
+msgid "Google Analytics Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:67
+msgid "Paste your Google Analytics Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:76
+msgid "Google Analytics v4 Code"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:78
+msgid ""
+"Paste your Google Analytics v4 Code; you must also have entered your GA Code "
+"above"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:87
+msgid "Hotjar Site ID:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:89
+msgid "Paste your Hotjar Site ID (example: 552474)"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:98
+msgid "VWO Account ID"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:100
+msgid "Paste your VWO Account ID here"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:114
+msgid "Site Meta Tags"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:123
+msgid "Meta Tags"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:125
+msgid ""
+"Add your site meta tags (&lt;meta name=\"thing\" /&gt;) here; useful for "
+"things like site verification tags"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:125
+#: includes/admin/theme-options/analytics.php:167
+msgid ""
+"If using WordPress SEO (Yoast) or similar, you may wish to use their built-"
+"in alternatives"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:129
+msgid "Add Tag"
+msgstr "Dodajanje oznako"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:131
+msgid "Remove Tag"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:143
+msgid "Meta Name"
+msgstr "Meta ime"
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:145
+msgid "e.g. google-site-verification"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:156
+#: includes/admin/theme-options/analytics.php:198
+msgid "Meta Value"
+msgstr ""
+
+#: includes/admin/theme-options/analytics.php:166
+msgid "RDF Tags"
+msgstr ""
+
+#: includes/admin/theme-options/analytics.php:167
+msgid ""
+"Add your site rdf tags (&lt;meta property=\"thing\" /&gt;) here; useful for "
+"things like Facebook pages"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:171
+msgid "Add Property"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:173
+msgid "Remove Property"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:185
+msgid "Meta Property"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:187
+msgid "e.g. fb:pages"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:215
+msgid "Deprecated fields"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:224
+msgid ""
+"The below fields are deprecated. Avoid using them if they are not currently "
+"in use on this site"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:232
+msgid "Google Tag Manager Script"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:234
+#: includes/admin/theme-options/analytics.php:245
+msgid "Deprecated. Do not use unless already in use."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/analytics.php:243
+msgid "Google Tag Manager Noscript"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:28
+msgid "Section Title"
+msgstr "Naslov razdelka"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:37
+msgid "Section Content"
+msgstr "Vsebina razdelka"
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:46
+msgid "Section Call to Action text"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:55
+msgid "Section Call to Action url"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:62
+#: includes/admin/theme-options/footer.php:67
+msgid "Copyright info"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/footer.php:69
+msgid ""
+"By default, the copyright info outputs the current year followed by the site "
+"name; add content to this field to override this."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:19 assets/scripts/blocks.js:5220
+#: assets/scripts/blocks.js:5225 assets/scripts/blocks.js:9188
+#: assets/scripts/blocks.js:17891 assets/scripts/blocks.js:5100
+#: assets/scripts/blocks.js:5105 assets/scripts/blocks.js:9389
+#: assets/scripts/blocks.js:18897
+msgid "Header"
+msgstr "Glava"
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:28
+msgid "Site Logotype"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:47
+msgid "Site Logomark"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/header.php:66
+msgid "Logo Link"
+msgstr "Povezava z logotipom"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:19
+#: includes/admin/theme-options/localisation.php:23
+msgid "Localisation"
+msgstr "Lokalizacija"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:32
+msgid "Ordered List Character Choice"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:36
+msgid "Please select"
+msgstr "Prosimo, izberite"
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:40
+msgid "Default; Western Arabic numerals"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:42
+msgid "Arabic-Indic numbers"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:44
+msgid "Bengali numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:46
+msgid "Cambodian/Khmer numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:48
+msgid "Devanagari numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:50
+msgid "Ethiopic numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:52
+msgid "Formal Korean Han numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:54
+msgid "Gujarati numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:56
+msgid "Gurmukhi numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:58
+msgid "Han \"Earthly Branch\" ordinals"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:60
+msgid "Han \"Heavenly Stem\" ordinals"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:62
+msgid "Japanese formal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:64
+msgid "Japanese informal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:66
+msgid "Kannada numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:68
+msgid "Korean hangul numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:70
+msgid "Korean hanja numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:72
+msgid "Laotian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:74
+msgid "Lowercase Armenian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:76
+msgid "Lowercase ASCII letters"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:78
+msgid "Lowercase classical Greek."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:80
+msgid "Lowercase Roman numerals."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:82
+msgid "Malayalam numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:84
+msgid "Mongolian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:86
+msgid "Myanmar (Burmese) numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:88
+msgid "Oriya numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:90
+msgid "Persian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:92
+msgid "Simplified Chinese formal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:94
+msgid "Simplified Chinese informal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:96
+msgid "Tamil numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:98
+msgid "Telugu numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:100
+msgid "Thai numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:102
+msgid "Tibetan numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:104
+msgid "Traditional Armenian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:106
+msgid "Traditional Chinese formal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:108
+msgid "Traditional Chinese informal numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:110
+msgid "Traditional Georgian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:112
+msgid "Traditional Hebrew numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:114
+msgid "Traditional uppercase Armenian numbering"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:116
+msgid "Uppercase ASCII letters"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/localisation.php:118
+msgid "Uppercase Roman numerals."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:19
+msgid "News"
+msgstr "Novice"
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:28
+msgid "Default Post sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:30
+#: includes/admin/theme-options/news.php:50
+msgid ""
+"Drag posts from the left column to the right column to attach them to this "
+"page.<br />Only the first sidebar selected will be used."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/news.php:48
+msgid "Default Page sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:38
+msgid "Active Pop-in Call to Action"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:40
+msgid "Drag a pop-in from the left column to the right column to activate."
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:58
+msgid "Timeout"
+msgstr "Pretek časa"
+
+#. translators: [admin]
+#: includes/admin/theme-options/pop-in.php:60
+msgid "After how many days should a dismissed pop-in be re-shown to the user?"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:19
+msgid "Social Media"
+msgstr "Socialni Mediji"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:28
+msgid "Facebook URL"
+msgstr "Facebook URL"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:37
+msgid "Twitter Handle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:46
+msgid "Youtube URL"
+msgstr "Youtube URL"
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:55
+msgid "Instagram Handle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/theme-options/social.php:64
+msgid "Telegram Handle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:31
+msgid "Shop Index Page"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:33
+msgid "Select the page used for the Shop Index"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:50
+msgid "Category Archive Page"
+msgstr ""
+
+#. translators: [admin]
+#: includes/admin/woo/theme-options.php:52
+msgid "Select the page used for the Product Category Archive"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:15
+msgid "Actions"
+msgstr "Dejanja"
+
+#. translators: [admin]
+#: includes/block-patterns/pattern-category.php:16
+#: assets/scripts/blocks.js:3169 assets/scripts/blocks.js:2958
+msgid "Media"
+msgstr "Mediji"
+
+#: includes/block-patterns/pattern-category.php:17
+msgid "Templates"
+msgstr "Predloge"
+
+#: includes/block-patterns/pattern-category.php:20
+msgid "Two Column"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:21
+msgid "Three Column"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:22
+msgid "Four Column"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:23
+msgid "1/2, 1/2"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:24
+msgid "1/3, 1/3, 1/3"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:25
+msgid "1/4, 1/4, 1/4, 1/4"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:26
+msgid "2/3, 1/3"
+msgstr ""
+
+#: includes/block-patterns/pattern-category.php:27
+msgid "1/3, 2/3"
+msgstr ""
+
+#. translators: [admin]
+#: includes/blocks/block-category.php:24
+msgid "Amnesty Core"
+msgstr ""
+
+#. translators: [front]
+#. translators: [front] Download block https://wordpresstheme.amnesty.org/blocks/015-download-resource
+#. translators: [admin]
+#: includes/blocks/download/render.php:23
+#: includes/blocks/download/render.php:68 assets/scripts/blocks.js:8466
+#: assets/scripts/blocks.js:8707
+msgid "Download"
+msgstr "Prenesi"
+
+#. translators: [front] no context avalible
+#: includes/blocks/embed-sutori/render.php:27
+msgctxt "Toggle visibility of Sutori Timeline"
+msgid "Click to show/hide timeline"
+msgstr ""
+
+#. translators: [front]
+#. translators: [front] AM I think this is used on the petition index or petition block
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars
+#. translators: [admin]
+#: includes/blocks/iframe-button/register.php:29
+#: includes/blocks/iframe-button/render.php:21
+#: includes/blocks/petition-list/render.php:54 assets/scripts/blocks.js:7246
+#: assets/scripts/blocks.js:7274 assets/scripts/blocks.js:9417
+#: assets/scripts/blocks.js:12855 assets/scripts/blocks.js:7523
+#: assets/scripts/blocks.js:7563 assets/scripts/blocks.js:9634
+#: assets/scripts/blocks.js:13370
+msgid "Act Now"
+msgstr "Podpiši Peticijo"
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:24
+msgid "Category List"
+msgstr ""
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest
+#: includes/blocks/menu/render.php:97 includes/blocks/menu/render.php:135
+msgid "List of page sections"
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/petition/nigeria-end-impunity-for-police-brutality-end-sars/  used by sections, when a form rather than an Iframe is used
+#: includes/blocks/petition-list/render.php:57
+msgctxt "User has signed this petition."
+msgid "Signed!"
+msgstr ""
+
+#. translators: [front] %s: the title of the article
+#: includes/blocks/post-list/views/grid-item.php:10
+#: includes/blocks/post-list/views/list-item.php:4
+#: partials/post/post-full.php:16 partials/post/post-none.php:10
+#: partials/post/post-search.php:31
+msgid "Article: %s"
+msgstr ""
+
+#. translators: [front]
+#. translators: [admin]
+#: includes/blocks/post-list/views/list-item-author.php:9
+#: assets/scripts/blocks.js:10764 assets/scripts/blocks.js:10983
+msgid "Author"
+msgstr "Avtor"
+
+#. translators: [front]
+#: includes/blocks/post-list/views/list-item-date.php:10
+msgid "Date"
+msgstr "Datum"
+
+#. translators: [front]
+#: includes/blocks/post-list/views/list-item-date.php:23
+msgid "Updated"
+msgstr "Posodobljeno"
+
+#. translators: [front] Deafult text can be changed in CMS for https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#. translators: [admin]
+#: includes/blocks/regions/render.php:20 assets/scripts/blocks.js:14089
+#: assets/scripts/blocks.js:14630
+msgid "Explore by Region"
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/countries/  https://wordpresstheme.amnesty.org/blocks/b026-regions-list-block
+#: includes/blocks/regions/render.php:67
+msgid "Hierarchical list of terms"
+msgstr ""
+
+#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#. translators: [front]
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Next post navigation label
+#. translators: [front]  https://isaidotorgstg.wpengine.com/en/latest
+#. translators: [front] https://www.amnesty.org/en/latest/ Next post navigation label
+#. translators: [admin]
+#: includes/blocks/slider/render.php:15 partials/archive/categories.php:50
+#: partials/pagination.php:12 partials/pagination.php:50
+#: partials/search/pagination.php:20 partials/search/pagination.php:60
+#: assets/scripts/blocks.js:15265 assets/scripts/blocks.js:15733
+#: assets/scripts/blocks.js:15789 assets/scripts/blocks.js:15862
+#: assets/scripts/blocks.js:15928 assets/scripts/blocks.js:15994
+#: assets/scripts/blocks.js:16017 assets/scripts/blocks.js:16040
+#: assets/scripts/blocks.js:15915 assets/scripts/blocks.js:16466
+#: assets/scripts/blocks.js:16556 assets/scripts/blocks.js:16670
+#: assets/scripts/blocks.js:16781 assets/scripts/blocks.js:16894
+#: assets/scripts/blocks.js:16939 assets/scripts/blocks.js:16984
+msgid "Next"
+msgstr "Naprej"
+
+#. translators: [front] ARIA https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#. translators: [front]
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest/ Previous post navigation label
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/latest
+#. translators: [front] https://www.amnesty.org/en/latest/ Previous post navigation label
+#. translators: [admin]
+#: includes/blocks/slider/render.php:16 partials/archive/categories.php:49
+#: partials/pagination.php:10 partials/pagination.php:35
+#: partials/search/pagination.php:18 partials/search/pagination.php:45
+#: assets/scripts/blocks.js:15270 assets/scripts/blocks.js:15738
+#: assets/scripts/blocks.js:15794 assets/scripts/blocks.js:15867
+#: assets/scripts/blocks.js:15933 assets/scripts/blocks.js:15999
+#: assets/scripts/blocks.js:16022 assets/scripts/blocks.js:16045
+#: assets/scripts/blocks.js:15918 assets/scripts/blocks.js:16469
+#: assets/scripts/blocks.js:16559 assets/scripts/blocks.js:16673
+#: assets/scripts/blocks.js:16784 assets/scripts/blocks.js:16897
+#: assets/scripts/blocks.js:16942 assets/scripts/blocks.js:16987
+msgid "Previous"
+msgstr "Nazaj"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider/ AM not seen this in use, might be to close a gallery
+#. translators: [admin]
+#: includes/blocks/slider/views/slide.php:20 assets/scripts/blocks.js:15516
+#: assets/scripts/blocks.js:15606 assets/scripts/blocks.js:15645
+#: assets/scripts/blocks.js:15662 assets/scripts/blocks.js:16146
+#: assets/scripts/blocks.js:16275 assets/scripts/blocks.js:16345
+#: assets/scripts/blocks.js:16385
+msgid "Tap here to return to gallery"
+msgstr ""
+
+#. translators: [front]
+#. translators: [admin]
+#: includes/blocks/slider/views/slide.php:41 assets/scripts/blocks.js:15519
+#: assets/scripts/blocks.js:15612 assets/scripts/blocks.js:15651
+#: assets/scripts/blocks.js:15668 assets/scripts/blocks.js:15783
+#: assets/scripts/blocks.js:15855 assets/scripts/blocks.js:15921
+#: assets/scripts/blocks.js:15987 assets/scripts/blocks.js:16160
+#: assets/scripts/blocks.js:16291 assets/scripts/blocks.js:16361
+#: assets/scripts/blocks.js:16401 assets/scripts/blocks.js:16545
+#: assets/scripts/blocks.js:16658 assets/scripts/blocks.js:16769
+#: assets/scripts/blocks.js:16881
+msgid "Toggle Content"
+msgstr "Preklopi vsebino"
+
+#. translators: [front] default for https://wordpresstheme.amnesty.org/blocks/b028-term-a-z/ editable in CMS
+#. translators: [admin]
+#: includes/blocks/term-list/render.php:56 assets/scripts/blocks.js:16495
+#: assets/scripts/blocks.js:16542 assets/scripts/blocks.js:17450
+#: assets/scripts/blocks.js:17506
+msgid "A-Z of Countries and Regions"
+msgstr ""
+
+#. translators: [front] ARIA
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: includes/blocks/tweet-action/render.php:41 partials/article-share.php:20
+#: patterns/attachment-share.php:41 patterns/post-share.php:31
+msgid "Twitter Logo"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b012-tweet-action
+#. translators: [admin]
+#: includes/blocks/tweet-action/render.php:56
+#: includes/blocks/tweet-action/render.php:57 assets/scripts/blocks.js:16668
+#: assets/scripts/blocks.js:16672 assets/scripts/blocks.js:16754
+#: assets/scripts/blocks.js:16757 assets/scripts/blocks.js:16782
+#: assets/scripts/blocks.js:16785 assets/scripts/blocks.js:17635
+#: assets/scripts/blocks.js:17637 assets/scripts/blocks.js:17728
+#: assets/scripts/blocks.js:17730 assets/scripts/blocks.js:17770
+#: assets/scripts/blocks.js:17772
+msgid "Send this Tweet"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:43
+#: includes/core-blocks/social-icons/styles.php:18
+#: assets/scripts/blocks.js:2489 assets/scripts/blocks.js:2566
+#: assets/scripts/blocks.js:2260 assets/scripts/blocks.js:2314
+msgctxt "block style"
+msgid "Dark"
+msgstr "Temno"
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:52
+#: includes/core-blocks/social-icons/styles.php:36
+#: assets/scripts/blocks.js:2576 assets/scripts/blocks.js:2616
+#: assets/scripts/blocks.js:2326 assets/scripts/blocks.js:2370
+msgctxt "block style"
+msgid "Light"
+msgstr "Svetlo"
+
+#. translators: [admin]
+#: includes/core-blocks/button/styles.php:61 assets/scripts/blocks.js:2494
+#: assets/scripts/blocks.js:2266
+msgctxt "block style"
+msgid "Back Link"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:27
+#: assets/scripts/blocks.js:2571 assets/scripts/blocks.js:2320
+msgctxt "block style"
+msgid "Dark Circle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:46
+#: assets/scripts/blocks.js:2581 assets/scripts/blocks.js:2332
+msgctxt "block style"
+msgid "Light Circle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:55
+msgctxt "block style"
+msgid "Yellow"
+msgstr "Rumena"
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:63
+msgctxt "block style"
+msgid "Yellow Circle"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:72
+#: assets/scripts/blocks.js:2586 assets/scripts/blocks.js:2338
+msgctxt "block style"
+msgid "Logos Only Dark"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:81
+#: assets/scripts/blocks.js:2591 assets/scripts/blocks.js:2344
+msgctxt "block style"
+msgid "Logos Only Light"
+msgstr ""
+
+#. translators: [admin]
+#: includes/core-blocks/social-icons/styles.php:90
+msgctxt "block style"
+msgid "Logos Only Yellow"
+msgstr ""
+
+#. translators: [front] shown on post single
+#. translators: [admin]
+#: includes/features/related-content/class-related-content.php:121
+#: includes/features/related-content/class-related-content.php:149
+#: includes/features/related-content/class-wp-rest-related-content-controller.php:150
+#: assets/scripts/blocks.js:14170 assets/scripts/blocks.js:14171
+#: assets/scripts/blocks.js:14284 assets/scripts/blocks.js:14700
+#: assets/scripts/blocks.js:14713 assets/scripts/blocks.js:14875
+msgid "Related Content"
+msgstr ""
+
+#. translators: [admin]
+#: includes/features/related-content/class-related-content.php:431
+#: assets/scripts/blocks.js:14350 assets/scripts/blocks.js:14933
+msgid "Country"
+msgstr "Država"
+
+#. translators: [API/admin]
+#: includes/features/related-content/class-wp-rest-related-content-controller.php:186
+msgid "The featured image for the post."
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title.
+#: includes/features/search/class-search-filters.php:149
+msgctxt "search results title"
+msgid "Search results"
+msgstr "Rezultati iskanja"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ search results title. %d: the number of search results found
+#. translators: Singular/Plural number of posts.
+#: includes/features/search/class-search-filters.php:189
+#: includes/full-site-editing/blocks/query-count/render.php:18
+#: includes/full-site-editing/blocks/search-header/views/view.php:9
+#: partials/archive/header.php:17 partials/search/header.php:15
+msgid "%s result"
+msgid_plural "%s results"
+msgstr[0] "%s rezultatov"
+msgstr[1] "%s rezultatov"
+msgstr[2] "%s rezultatov"
+msgstr[3] "%s rezultatov"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the search term
+#: includes/features/search/class-search-filters.php:249
+msgctxt "search results title suffix for the search term"
+msgid "for “%s”"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ appended to search results title (n results for...); %s: the negative search term(s)
+#: includes/features/search/class-search-filters.php:255
+msgctxt "search results title suffix for term exclusions"
+msgid "excluding “%s”"
+msgstr ""
+
+#. translators: [front] appended to search results title (n results for...); %s: the month searched for
+#: includes/features/search/class-search-filters.php:278
+msgctxt "search results title suffix for month published"
+msgid "for the month of %s"
+msgstr ""
+
+#. translators: [front] appended to search results title (n results for...); %s: the year searched for
+#: includes/features/search/class-search-filters.php:295
+msgctxt "search results title suffix for year published"
+msgid "in the year %s"
+msgstr ""
+
+#: includes/features/search/helpers.php:135
+msgid "January"
+msgstr "Januar"
+
+#: includes/features/search/helpers.php:136
+msgid "Febuary"
+msgstr ""
+
+#: includes/features/search/helpers.php:137
+msgid "March"
+msgstr "Marec"
+
+#: includes/features/search/helpers.php:138
+msgid "April"
+msgstr "April"
+
+#: includes/features/search/helpers.php:139
+msgid "May"
+msgstr "Maj"
+
+#: includes/features/search/helpers.php:140
+msgid "June"
+msgstr "Junij"
+
+#: includes/features/search/helpers.php:141
+msgid "July"
+msgstr "Julij"
+
+#: includes/features/search/helpers.php:142
+msgid "August"
+msgstr "Avgust"
+
+#: includes/features/search/helpers.php:143
+msgid "September"
+msgstr "September"
+
+#: includes/features/search/helpers.php:144
+msgid "October"
+msgstr "Oktober"
+
+#: includes/features/search/helpers.php:145
+msgid "November"
+msgstr "November"
+
+#: includes/features/search/helpers.php:146
+msgid "December"
+msgstr "December"
+
+#: includes/features/search/permalink.php:39
+msgid "The ID of the page that should display the search interface"
+msgstr ""
+
+#: includes/features/search/permalink.php:45
+msgid "Search page"
+msgstr "Poišči stran"
+
+#. translators: 1: number of results for search query, 2: don't translate (dynamic search term)
+#: includes/full-site-editing/blocks/query-count/render.php:22
+#: includes/full-site-editing/blocks/search-header/views/view.php:13
+#: partials/archive/header.php:21 partials/search/header.php:19
+msgid "%1$s result for '%2$s'"
+msgid_plural "%1$s results for '%2$s'"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post sorting options
+#. translators: [front] Donate Label for post sorting options
+#: includes/full-site-editing/blocks/search-header/views/view.php:40
+#: partials/archive/header.php:44 partials/search/header.php:36
+#: patterns/archive-loop-results.php:33 woocommerce/loop/orderby.php:29
+msgid "Sort by"
+msgstr "Razvrsti po"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b006-timeline-slider
+#: includes/helpers/archive.php:66
+msgid "View now"
+msgstr ""
+
+#. translators: [front] AM not sure yet
+#: includes/helpers/frontend.php:27 includes/helpers/frontend.php:39
+#: includes/helpers/frontend.php:45
+msgid "Choose an option"
+msgstr "Izberite možnost"
+
+#. translators: [front] ARIA page number pagination prefix, e.g. "[Page] 1" https://isaidotorgstg.wpengine.com/en/latest
+#: includes/helpers/pagination.php:33
+msgid "Page"
+msgstr "Stran"
+
+#. translators: [front] shown as a label for a region in search results
+#: includes/helpers/taxonomies.php:771
+msgid "Location Profile"
+msgstr ""
+
+#. translators: [front] shown as a label for a country in search results
+#: includes/helpers/taxonomies.php:775
+msgid "Country Profile"
+msgstr ""
+
+#. translators: [front] %1$s: the object type, %2$s: the object type's language
+#: includes/mlp/helpers.php:109
+msgid "View this %1$s in %2$s"
+msgstr ""
+
+#. translators: [front]
+#: includes/mlp/language-selector.php:115
+msgid "Available languages"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:20
+msgctxt "Post Type General Name"
+msgid "Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:22
+msgctxt "Post Type Singular Name"
+msgid "Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:24
+msgid "Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:28
+msgid "Pop-in Archives"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:30
+msgid "Pop-in Attributes"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:32
+msgid "Parent Pop-in:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:34
+msgid "All Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:36
+msgid "Add New Pop-in variant"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:38 includes/post-types/sidebar.php:34
+msgid "Add New"
+msgstr "Dodaj novo"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:40
+msgid "New Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:42
+msgid "Edit Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:44
+msgid "Update Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:46
+msgid "View Pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:48
+msgid "View Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:50
+msgid "Search Pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:52
+msgid "No pop-in variants found"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:54
+msgid "No pop-in variants found in Trash"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:56 includes/post-types/sidebar.php:52
+#: includes/taxonomies/class-taxonomy-locations.php:238
+#: assets/scripts/blocks.js:5145 assets/scripts/blocks.js:8955
+#: assets/scripts/blocks.js:5015 assets/scripts/blocks.js:9158
+msgid "Featured Image"
+msgstr "Naslovna slika"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:58 includes/post-types/sidebar.php:54
+msgid "Set featured image"
+msgstr "Nastavi prikazno sliko"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:60 includes/post-types/sidebar.php:56
+msgid "Remove featured image"
+msgstr "Odstrani prikazno sliko"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:62 includes/post-types/sidebar.php:58
+msgid "Use as featured image"
+msgstr "Uporabi kot prikazno sliko"
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:64
+msgid "Insert into pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:66
+msgid "Uploaded to this pop-in"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:68
+msgid "Pop-in variants list"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:70
+msgid "Pop-in variants list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:72
+msgid "Filter pop-in variants"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/pop-in.php:79
+msgid ""
+"A Pop-in is a call to action which renders at the very top of a page, "
+"pushing the entire page content down."
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:16
+msgctxt "Post Type General Name"
+msgid "Sidebars"
+msgstr "Stranske vrstice"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:18
+msgctxt "Post Type Singular Name"
+msgid "Sidebar"
+msgstr "Stranska vrstica"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:20
+msgid "Sidebars"
+msgstr "Stranske vrstice"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:22 includes/post-types/sidebar.php:73
+#: assets/scripts/blocks.js:18060 assets/scripts/blocks.js:19090
+msgid "Sidebar"
+msgstr "Stranska vrstica"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:24
+msgid "Sidebar Archives"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:26
+msgid "Sidebar Attributes"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:28
+msgid "Parent Sidebar:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:30
+msgid "All Sidebars"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:32
+msgid "Add New Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:36
+msgid "New Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:38
+msgid "Edit Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:40
+msgid "Update Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:42
+msgid "View Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:44
+msgid "View Sidebars"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:46
+msgid "Search Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:48
+msgid "Not Found"
+msgstr "Ni Najdeno"
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:50
+msgid "Not Found in Trash"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:60
+msgid "Insert into sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:62
+msgid "Uploaded to this item"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:64
+msgid "Sidebars list"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:66
+msgid "Sidebars list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:68
+msgid "Filter sidebar list"
+msgstr ""
+
+#. translators: [admin]
+#: includes/post-types/sidebar.php:75
+msgid "Sidebar post type"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:15
+msgid "Most Recent"
+msgstr "Najnovejše"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:16
+msgid "Oldest First"
+msgstr "Najstarejše"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:17
+msgid "Title - Ascending"
+msgstr "Naslov – A do Ž"
+
+#. translators: [front] https://www.amnesty.org/en/latest/ Post sort by option
+#: includes/query-filters/sort-order.php:18
+msgid "Title - Descending"
+msgstr "Naslov – Ž do A"
+
+#. translators: [front] https://www.amnesty.org/en/search/hey/ Post sort by option
+#: includes/query-filters/sort-order.php:22
+msgid "Most Relevant"
+msgstr ""
+
+#. translators: [admin]
+#: includes/rest-api/post-data.php:40
+msgid "Raw Umbraco data for this item"
+msgstr ""
+
+#: includes/rest-api/users.php:82
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:98
+#: includes/taxonomies/class-taxonomy-content-types.php:100
+msgctxt "taxonomy general name"
+msgid "Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:102
+msgctxt "taxonomy singular name"
+msgid "Content Type"
+msgstr "Tip Vsebine"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:104
+msgid "Search Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:107
+msgid "All Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:109
+msgid "Parent Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:111
+msgid "Parent Content Type:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:113
+msgid "Edit Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:115
+msgid "View Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:117
+msgid "Update Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:119
+msgid "Add New Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:121
+msgid "New Content Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:126
+msgid "No Content Types found."
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:128
+msgid "No Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:130
+msgid "Content Types list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:132
+msgid "Content Types list"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-content-types.php:134
+msgctxt "Content Types"
+msgid "Most Used"
+msgstr "Največkrat uporabljeni"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:136
+msgid "&larr; Back to Content Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-content-types.php:192
+msgid "Description"
+msgstr "Opis"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:84
+msgctxt "taxonomy general name"
+msgid "Countries"
+msgstr "Države"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:86
+msgctxt "taxonomy singular name"
+msgid "Country"
+msgstr "Država"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:88
+msgid "Search Countries"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:90
+msgid "All Countries"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:92
+msgid "Parent Country"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:94
+msgid "Parent Country:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:96
+msgid "Edit Country"
+msgstr "Uredi državo"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:98
+msgid "View Country"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:100
+msgid "Update Country"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:102
+msgid "Add New Country"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:104
+msgid "New Country Name"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:106
+msgid "Add or remove Countries"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:108
+msgid "Choose from most frequently used Countries"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:110
+msgid "No Countries found."
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:112
+msgid "No Countries"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:114
+msgid "Countries list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:116
+msgid "Countries list"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-locations.php:118
+msgctxt "countries"
+msgid "Most Used"
+msgstr "Največkrat uporabljeni"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:120
+msgid "&larr; Back to Countries"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:219
+msgid "Term settings"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:232
+msgid "Basic Settings"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-locations.php:241
+msgid "Choose or upload an image"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:157
+msgctxt "taxonomy general name"
+msgid "Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:159
+msgctxt "taxonomy singular name"
+msgid "Resource Type"
+msgstr "Tip vira"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:161
+msgid "Search Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:163
+msgid "All Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:165
+msgid "Parent Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:167
+msgid "Parent Resource Type:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:169
+msgid "Edit Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:171
+msgid "View Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:173
+msgid "Update Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:175
+msgid "Add New Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:177
+msgid "New Resource Type"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:179
+msgid "Add or remove Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:181
+msgid "Choose from most frequently used Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:183
+msgid "No Resource Types found."
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:185
+msgid "No Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:187
+msgid "Resource Types list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:189
+msgid "Resource Types list"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-resource-types.php:191
+msgctxt "Resource Types"
+msgid "Most Used"
+msgstr "Največkrat uporabljeni"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-resource-types.php:193
+msgid "&larr; Back to Resource Types"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:156
+msgctxt "taxonomy general name"
+msgid "Topics"
+msgstr "Teme"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:158
+msgctxt "taxonomy singular name"
+msgid "Topic"
+msgstr "Tema"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:160
+msgid "Search Topics"
+msgstr "Iskanje teme"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:162
+msgid "All Topics"
+msgstr "Vse teme"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:164
+msgid "Parent Topic"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:166
+msgid "Parent Topic:"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:168
+msgid "Edit Topic"
+msgstr "Uredi temo"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:170
+msgid "View Topic"
+msgstr "Poglej temo"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:172
+msgid "Update Topic"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:174
+msgid "Add New Topic"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:176
+msgid "New Topic"
+msgstr "Nova tema"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:178
+msgid "Add or remove Topics"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:180
+msgid "Choose from most frequently used Topics"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:182
+msgid "No Topics found."
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:184
+msgid "No Topics"
+msgstr "Brez teme"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:186
+msgid "Topics list navigation"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:188
+msgid "Topics list"
+msgstr ""
+
+#. translators: [admin] Tab heading when selecting from the most used terms.
+#: includes/taxonomies/class-taxonomy-topics.php:190
+msgctxt "topics"
+msgid "Most Used"
+msgstr "Največkrat uporabljeni"
+
+#. translators: [admin]
+#: includes/taxonomies/class-taxonomy-topics.php:192
+msgid "&larr; Back to Topics"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/custom-fields/precedence.php:26
+#: includes/taxonomies/custom-fields/precedence.php:32
+msgid "Taxonomy Precedence"
+msgstr ""
+
+#. translators: [admin]
+#: includes/taxonomies/custom-fields/precedence.php:34
+msgid ""
+"In which order taxonomies should be ranked when retrieving a term to display "
+"prominently for an item"
+msgstr ""
+
+#. translators: %s the button title
+#: includes/theme-setup/class-mobile-nav-walker.php:302
+msgid "Expand %s list"
+msgstr ""
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:187
+msgid "Main Menu"
+msgstr "Glavni meni"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:189
+msgid "Site Selector"
+msgstr ""
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:191
+msgid "Footer Main"
+msgstr "Noga - glavni del"
+
+#. translators: [admin]
+#: includes/theme-setup/navigation.php:193
+msgid "Footer Legal"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:77
+#: includes/theme-setup/scripts-and-styles.php:233
+msgctxt "open double quote"
+msgid "“"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:78
+#: includes/theme-setup/scripts-and-styles.php:235
+msgctxt "close double quote"
+msgid "”"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:79
+#: includes/theme-setup/scripts-and-styles.php:237
+msgctxt "open single quote"
+msgid "‘"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:80
+#: includes/theme-setup/scripts-and-styles.php:239
+msgctxt "close single quote"
+msgid "’"
+msgstr ""
+
+#. translators: [front]
+#: includes/theme-setup/scripts-and-styles.php:231
+msgctxt "list item separator"
+msgid ","
+msgstr ","
+
+#. translators: [admin]
+#: includes/theme-setup/supports.php:75
+msgid "Standard Post Template"
+msgstr ""
+
+#. translators: [admin] user settings
+#: includes/users/contact-methods.php:17
+msgid "Twitter Username (without the @)"
+msgstr ""
+
+#. translators: [admin]
+#: includes/users/meta.php:19
+msgid "Amnesty Umbraco User Info"
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/cart.php:29
+msgid "Number of items in your cart"
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/checkout.php:26
+msgid "Thank You!"
+msgstr "Hvala Vam!"
+
+#. translators: [admin]
+#: includes/woo/emails.php:21
+msgid "Title image"
+msgstr ""
+
+#. translators: [admin]
+#: includes/woo/emails.php:23
+msgid ""
+"URL to an image you want to show above the title. Upload images using the "
+"media uploader (Admin > Media)."
+msgstr ""
+
+#. translators: [admin]
+#: includes/woo/emails.php:62
+msgid "Footer image"
+msgstr ""
+
+#. translators: [admin]
+#: includes/woo/emails.php:64
+msgid ""
+"URL to an image you want to show in the footer. Upload images using the "
+"media uploader (Admin > Media)."
+msgstr ""
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/donate
+#: includes/woo/order.php:15
+msgid ""
+"Your order has been processed. Your order details are shown below for your "
+"reference:"
+msgstr ""
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:18
+msgid "Post Type Settings"
+msgstr ""
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:26
+#: partials/admin/permalinks-taxonomy.php:26
+msgid "URL base"
+msgstr ""
+
+#. translators: [admin] %s: the default slug for this item
+#: partials/admin/permalinks-post-type.php:30
+#: partials/admin/permalinks-taxonomy.php:30
+msgid "Default: %s"
+msgstr ""
+
+#. translators: [admin]
+#: partials/admin/permalinks-post-type.php:35
+#: partials/admin/permalinks-taxonomy.php:35
+msgid "Use hierarchical URLs"
+msgstr ""
+
+#. translators: [admin]
+#: partials/admin/permalinks-taxonomy.php:18
+msgid "Taxonomy Settings"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/categories.php:28
+msgid "Filter results by category"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
+#: partials/archive/filters-active.php:45
+msgid "Filters applied"
+msgstr ""
+
+#. translators: [front] https://www.amnesty.org/en/latest/?qlocation=1698,1713
+#: partials/archive/filters-active.php:80
+msgid "Clear all"
+msgstr "Počisti vse"
+
+#. translators: [front] https://isaidotorgstg.wpengine.com/en/search/hey/?qtopic=2063 Label for post results count & sort options
+#: partials/archive/header.php:28 partials/search/header.php:26
+msgid "Results information"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subcategories.php:33 partials/archive/subcategories.php:61
+msgid "Second level category"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subcategories.php:55
+msgid "List of subcategories"
+msgstr ""
+
+#. translators: [front]
+#: partials/archive/subsubcategories.php:31
+#: partials/archive/subsubcategories.php:54
+msgid "Third level category"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ Accessibility text
+#: partials/article-share.php:12
+msgid "Social sharing options"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
+#: partials/article-share.php:14 patterns/attachment-share.php:33
+#: patterns/post-share.php:23
+msgid "Share on Facebook"
+msgstr "Deli na Facebook-u"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share
+#: partials/article-share.php:15 patterns/attachment-share.php:34
+#: patterns/post-share.php:24
+msgid "Facebook Logo"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m004-social-share/ text shows on hover
+#: partials/article-share.php:19 patterns/attachment-share.php:40
+#: patterns/post-share.php:30
+msgid "Share on Twitter"
+msgstr "Delite na Twitterju"
+
+#. translators: [front] ARIA
+#: partials/forms/taxonomy-filters.php:14
+msgid "Filter results by topic"
+msgstr ""
+
+#. translators: [front] search results left hand side of page button
+#: partials/forms/taxonomy-filters.php:32
+msgid "Apply"
+msgstr "Išči"
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:17
+msgid "Language Selection"
+msgstr ""
+
+#. translators: [front]
+#: partials/language-selector.php:19
+msgid "Which language would you like to use this site in?"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:20
+msgid "Choose a language"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/global-elements/m005-language-selector
+#: partials/language-selector.php:26
+msgid "Close"
+msgstr "Zapri"
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:17
+msgid "Page Header"
+msgstr ""
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:25
+msgid "Amnesty Group Websites"
+msgstr ""
+
+#. translators: [front] ARIA
+#: partials/navigation/desktop.php:33
+msgid "Primary navigation"
+msgstr ""
+
+#. translators: [front]
+#: partials/navigation/desktop.php:42
+msgid "Open navigation"
+msgstr "Odprta navigacija"
+
+#. translators: [front] Donate
+#: partials/orders/customer-details-with-shipping.php:13
+msgid "Customer Details"
+msgstr "Podrobnosti kupca"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:17
+msgid "Email:"
+msgstr "E-pošta:"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:21
+msgid "Tel:"
+msgstr "Tel:"
+
+#. translators: [front] Donate forms
+#: partials/orders/customer-details-with-shipping.php:28
+msgid "Payment Method"
+msgstr "Plačilno sredstvo"
+
+#: partials/pagination.php:28 partials/search/pagination.php:38
+msgid "Pagination"
+msgstr "Paginiranje (zaznamovanje strani)"
+
+#. translators: [front] AIRA https://isaidotorgstg.wpengine.com/en/latest
+#: partials/pagination.php:39 partials/search/pagination.php:49
+msgid "Page numbers"
+msgstr ""
+
+#: partials/post/post-content.php:16 partials/post/post-search.php:27
+msgctxt "updated date label"
+msgid "Updated"
+msgstr "Posodobljeno"
+
+#. translators: [front] ARIA https://isaidotorgstg.wpengine.com/en/latest/news/2021/05/china-three-child-policy-still-a-violation/ placeholder is category name
+#: partials/post/post-content.php:22
+msgid "Article category %s"
+msgstr ""
+
+#. translators: [front] ARIA
+#: partials/post/post-content.php:25 partials/post/post-search.php:47
+msgid "Post published date"
+msgstr ""
+
+#. translators: [front] ARIA
+#: partials/post/post-content.php:27 partials/post/post-search.php:49
+msgid "Post updated date"
+msgstr ""
+
+#. translators: [front] ARIA Donate %s: the product category name
+#: partials/product/category.php:24
+msgid "Product Category: %s"
+msgstr ""
+
+#. translators: [front] screen reader text for search field
+#: partials/search/forminput.php:13
+msgid "Search input"
+msgstr ""
+
+#. translators: [front]
+#: partials/search/forminput.php:14
+msgid "What are you looking for?"
+msgstr "Kaj Iščeš?"
+
+#: partials/search/horizontal-search.php:12
+#: partials/search/horizontal-search.php:52
+msgid "Year"
+msgstr "Leto"
+
+#: partials/search/horizontal-search.php:13
+#: partials/search/horizontal-search.php:62
+msgid "Month"
+msgstr "Mesec"
+
+#. translators: [front]
+#: partials/search/horizontal-search.php:39
+msgid "Search"
+msgstr "Išči"
+
+#. translators: [front]
+#: partials/search/horizontal-search.php:77
+msgid "Filters"
+msgstr "Filtri"
+
+#. translators: [front] Label for category archive navigation
+#: partials/shop/catalogue-header.php:13
+msgid "Product information"
+msgstr "Informacije o izdelku"
+
+#. translators: [front]
+#. translators: [front] Donate
+#: partials/shop/catalogue-header.php:17 woocommerce/archive-product.php:48
+msgid "All products"
+msgstr "Vsi izdelki"
+
+#. translators: [front] Label for shop index
+#. translators: [front] Donate Label for shop index
+#: partials/shop/catalogue-header.php:25
+#: woocommerce/single-product/related.php:39
+msgid "Catalogue"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons-square.php
+msgctxt "Pattern title"
+msgid "25/25/25/25 Links with Icons (square border)"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons-square.php
+msgctxt "Pattern description"
+msgid "A 25/25/25/25 layout with links and icons with a square border."
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons.php
+msgctxt "Pattern title"
+msgid "25/25/25/25 Links with Icons"
+msgstr ""
+
+#: patterns/25-25-25-25-links-with-icons.php
+msgctxt "Pattern description"
+msgid "A 25/25/25/25 layout with links and icons."
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons-square.php
+msgctxt "Pattern title"
+msgid "33/33/33 Links with Icons (square border)"
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons-square.php
+msgctxt "Pattern description"
+msgid "A 33/33/33 layout with links and icons with a square border."
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons.php
+msgctxt "Pattern title"
+msgid "33-33-33 Links with Icons"
+msgstr ""
+
+#: patterns/33-33-33-links-with-icons.php
+msgctxt "Pattern description"
+msgid "Three columns with a heading, image, body text, and a button."
+msgstr ""
+
+#: patterns/50-50-text-with-image-grey-left.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (grey background, text on left, image on right)"
+msgstr ""
+
+#: patterns/50-50-text-with-image-grey-left.php
+#: patterns/50-50-text-with-image-grey-right.php
+#: patterns/50-50-text-with-image-white-left.php
+#: patterns/50-50-text-with-image-white-right.php
+msgctxt "Pattern description"
+msgid "A 50/50 layout with text on one side and an image on the other."
+msgstr ""
+
+#: patterns/50-50-text-with-image-grey-right.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (grey background, text on right, image on left)"
+msgstr ""
+
+#: patterns/50-50-text-with-image-white-left.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (white background, text on left, image on right)"
+msgstr ""
+
+#: patterns/50-50-text-with-image-white-right.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Image (white background, text on right, image on left)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-left-grey.php
+msgctxt "Pattern title"
+msgid ""
+"50/50 Text with Video (text on left, video on right and grey background)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-left-grey.php
+#: patterns/50-50-text-with-video-left.php
+#: patterns/50-50-text-with-video-right-grey.php
+#: patterns/50-50-text-with-video-right.php
+msgctxt "Pattern description"
+msgid "A 50/50 layout with text on one side and a video on the other."
+msgstr ""
+
+#: patterns/50-50-text-with-video-left.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on left, video on right)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-right-grey.php
+msgctxt "Pattern title"
+msgid ""
+"50/50 Text with Video (text on right, video on left and grey background)"
+msgstr ""
+
+#: patterns/50-50-text-with-video-right.php
+msgctxt "Pattern title"
+msgid "50/50 Text with Video (text on right, video on left)"
+msgstr ""
+
+#: patterns/66-33-chapter.php
+msgctxt "Pattern title"
+msgid "66-33 Chapter"
+msgstr ""
+
+#: patterns/66-33-chapter.php
+msgctxt "Pattern description"
+msgid ""
+"A two column layout with a heading and body text in the left column and an "
+"image in the right column."
+msgstr ""
+
+#: patterns/66-33-text-key-facts.php
+msgctxt "Pattern title"
+msgid "66/33 Text Key Facts"
+msgstr ""
+
+#: patterns/66-33-text-key-facts.php
+msgctxt "Pattern description"
+msgid "Two columns with a heading, body text, and key facts."
+msgstr ""
+
+#: patterns/66-33-text-with-image.php
+msgctxt "Pattern title"
+msgid "66-33 Text with Image"
+msgstr ""
+
+#: patterns/66-33-text-with-image.php
+msgctxt "Pattern description"
+msgid "Two columns with a heading, body text including quote, and an image."
+msgstr ""
+
+#: patterns/66-33-text-with-video.php
+msgctxt "Pattern title"
+msgid "66/33 Text with Video"
+msgstr ""
+
+#: patterns/66-33-text-with-video.php
+msgctxt "Pattern description"
+msgid "Two columns with text on the left and a video on the right"
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404 Page Content"
+msgstr "Vsebina strani 404"
+
+#: patterns/404.php
+msgctxt "Pattern description"
+msgid "Translatable content for the 404 page."
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: patterns/404.php:11
+msgid "Page Not Found"
+msgstr "Strani ni mogoče najti"
+
+#: patterns/404.php:15
+msgid "The page you are looking for does not exist."
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/the-theme/templates/t006-404
+#: patterns/404.php:20
+msgid "Go to the Homepage"
+msgstr ""
+
+#: patterns/archive-heading.php
+msgctxt "Pattern title"
+msgid "Archive filters"
+msgstr ""
+
+#: patterns/archive-heading.php
+msgctxt "Pattern description"
+msgid "Outputs filters for post type archive pages"
+msgstr ""
+
+#: patterns/archive-hero.php
+msgctxt "Pattern title"
+msgid "Archive hero"
+msgstr ""
+
+#: patterns/archive-hero.php
+msgctxt "Pattern description"
+msgid "Outputs hero block for post type archive pages"
+msgstr ""
+
+#: patterns/archive-loop-results.php
+msgctxt "Pattern title"
+msgid "Archive loop results"
+msgstr ""
+
+#: patterns/archive-loop-results.php patterns/archive-loop.php
+msgctxt "Pattern description"
+msgid "Template for the loop on archive pages"
+msgstr ""
+
+#: patterns/archive-loop.php
+msgctxt "Pattern title"
+msgid "Archive loop"
+msgstr ""
+
+#: patterns/archive-slider.php
+msgctxt "Pattern title"
+msgid "Archive slider"
+msgstr ""
+
+#: patterns/archive-slider.php
+msgctxt "Pattern description"
+msgid ""
+"Generates a slider for all posts that are marked as featured for the current "
+"category"
+msgstr ""
+
+#: patterns/attachment-back-link.php
+msgctxt "Pattern title"
+msgid "Attachment Back Link"
+msgstr ""
+
+#: patterns/attachment-back-link.php patterns/post-back-link.php
+msgctxt "Pattern description"
+msgid "Output back link to return to item's category archive"
+msgstr ""
+
+#: patterns/attachment-content.php
+msgctxt "Pattern title"
+msgid "Attachment Content"
+msgstr "Vsebina Priponke"
+
+#: patterns/attachment-content.php
+msgctxt "Pattern description"
+msgid "Output the content of an attachment"
+msgstr ""
+
+#: patterns/attachment-metadata.php
+msgctxt "Pattern title"
+msgid "Attachment Metadata"
+msgstr ""
+
+#: patterns/attachment-metadata.php
+msgctxt "Pattern description"
+msgid "Output contextual data for an attachment"
+msgstr ""
+
+#: patterns/attachment-published-date.php
+msgctxt "Pattern title"
+msgid "Attachment Published Date"
+msgstr ""
+
+#: patterns/attachment-published-date.php
+msgctxt "Pattern description"
+msgid "Output the published date metadata for an attachment"
+msgstr ""
+
+#: patterns/attachment-share.php
+msgctxt "Pattern title"
+msgid "Attachment Share"
+msgstr ""
+
+#: patterns/attachment-share.php patterns/post-share.php
+msgctxt "Pattern description"
+msgid "Output article sharing links"
+msgstr ""
+
+#: patterns/attachment-term-list.php
+msgctxt "Pattern title"
+msgid "Attachment Term List"
+msgstr ""
+
+#: patterns/attachment-term-list.php patterns/attachment-terms.php
+msgctxt "Pattern description"
+msgid "Output the taxonomy terms for an attachment"
+msgstr ""
+
+#: patterns/attachment-terms.php
+msgctxt "Pattern title"
+msgid "Attachment Terms"
+msgstr ""
+
+#: patterns/attachment-updated-date.php
+msgctxt "Pattern title"
+msgid "Attachment Updated Date"
+msgstr ""
+
+#: patterns/attachment-updated-date.php
+msgctxt "Pattern description"
+msgid "Output the \"updated date\" for an attachment"
+msgstr ""
+
+#. translators: [front]
+#: patterns/attachment-updated-date.php:32 patterns/post-updated-date.php:26
+msgid "Post updated timestamp"
+msgstr ""
+
+#. translators: [front]
+#: patterns/attachment-updated-date.php:33 patterns/post-updated-date.php:27
+msgctxt "prefix for post updated date"
+msgid "Updated:"
+msgstr "Posodobljeno:"
+
+#: patterns/audio-quote.php
+msgctxt "Pattern title"
+msgid "Quote with Audio above it"
+msgstr ""
+
+#: patterns/audio-quote.php
+msgctxt "Pattern description"
+msgid "A quote block with an audio block above it."
+msgstr ""
+
+#: patterns/audio-transcript.php
+msgctxt "Pattern title"
+msgid "Audio with Transcript"
+msgstr ""
+
+#: patterns/audio-transcript.php
+msgctxt "Pattern description"
+msgid "An Audio block with a Details block for a transcript below it."
+msgstr ""
+
+#: patterns/author-bio.php
+msgctxt "Pattern title"
+msgid "Author Biography"
+msgstr "Avtor biografija"
+
+#: patterns/author-bio.php
+msgctxt "Pattern description"
+msgid "Outputs the Author biography, if any"
+msgstr ""
+
+#: patterns/author-bio.php:21
+msgid "Biography"
+msgstr "Biografija"
+
+#: patterns/author-hero.php
+msgctxt "Pattern title"
+msgid "Author Hero"
+msgstr ""
+
+#: patterns/author-hero.php
+msgctxt "Pattern description"
+msgid "Outputs the Author page' hero, if any"
+msgstr ""
+
+#: patterns/author-loop.php
+msgctxt "Pattern title"
+msgid "Author loop"
+msgstr ""
+
+#: patterns/author-loop.php
+msgctxt "Pattern description"
+msgid "Template for the loop on author pages"
+msgstr ""
+
+#: patterns/author-loop.php:17
+msgid "More from this author"
+msgstr "Več s strani tega avtorja"
+
+#: patterns/author-sidebar.php
+msgctxt "Pattern title"
+msgid "Author sidebar"
+msgstr ""
+
+#: patterns/author-sidebar.php
+msgctxt "Pattern description"
+msgid "Template for the sidebar on author pages"
+msgstr ""
+
+#. translators: %s: the author's Twitter handle
+#: patterns/author-sidebar.php:12
+msgid "Tweets by %s"
+msgstr "Tweeti od %s"
+
+#: patterns/blog-home-content.php
+msgctxt "Pattern title"
+msgid "Blog home content"
+msgstr ""
+
+#: patterns/blog-home-content.php
+msgctxt "Pattern description"
+msgid "Outputs post content on the blog home if it is set to a static page"
+msgstr ""
+
+#: patterns/call-to-action-borders.php
+msgctxt "Pattern title"
+msgid "Call to Action Borders"
+msgstr ""
+
+#: patterns/call-to-action-borders.php
+msgctxt "Pattern description"
+msgid ""
+"Call to action with a top and bottom border containing a headings, "
+"paragraph, and button."
+msgstr ""
+
+#: patterns/call-to-action-grey.php
+msgctxt "Pattern title"
+msgid "Call to Action Grey"
+msgstr ""
+
+#: patterns/call-to-action-grey.php
+msgctxt "Pattern description"
+msgid ""
+"Call to action with a grey background containing headings, paragraph, and "
+"button."
+msgstr ""
+
+#: patterns/chunky-heading-with-links.php
+msgctxt "Pattern title"
+msgid "Chunky Heading with Links"
+msgstr ""
+
+#: patterns/chunky-heading-with-links.php
+msgctxt "Pattern description"
+msgid "A chunky heading with links to page points"
+msgstr ""
+
+#: patterns/custom-card-dark.php
+msgctxt "Pattern title"
+msgid "Custom Card Dark"
+msgstr ""
+
+#: patterns/custom-card-dark.php
+msgctxt "Pattern description"
+msgid ""
+"Custom card with a dark grey background containing a heading, image, "
+"paragraph, and button."
+msgstr ""
+
+#: patterns/custom-card-light.php
+msgctxt "Pattern title"
+msgid "Custom Card Light"
+msgstr ""
+
+#: patterns/custom-card-light.php
+msgctxt "Pattern description"
+msgid ""
+"Custom card with a light grey background containing a heading, image, "
+"paragraph, and button."
+msgstr ""
+
+#: patterns/evergreen-text-highlight.php
+msgctxt "Pattern title"
+msgid "Evergreen Text Highlight"
+msgstr ""
+
+#: patterns/evergreen-text-highlight.php
+msgctxt "Pattern description"
+msgid "A section with a grey background to highlight text."
+msgstr ""
+
+#: patterns/featured-image.php
+msgctxt "Pattern title"
+msgid "Featured Image"
+msgstr "Naslovna slika"
+
+#: patterns/featured-image.php
+msgctxt "Pattern description"
+msgid "Featured image output with caption, copyright, etc."
+msgstr ""
+
+#: patterns/footer-content.php
+msgctxt "Pattern title"
+msgid "Footer Content"
+msgstr "Vsebina Noge"
+
+#: patterns/footer-content.php
+msgctxt "Pattern description"
+msgid "Outputs content for the footer template part"
+msgstr ""
+
+#: patterns/full-image-with-buttons.php
+msgctxt "Pattern title"
+msgid "Full Image with Buttons"
+msgstr ""
+
+#: patterns/full-image-with-buttons.php
+msgctxt "Pattern description"
+msgid "A full-width image with buttons below."
+msgstr ""
+
+#: patterns/home-intro.php
+msgctxt "Pattern title"
+msgid "Home intro"
+msgstr ""
+
+#: patterns/home-intro.php
+msgctxt "Pattern description"
+msgid "Outputs the content for the home template when set to static page"
+msgstr ""
+
+#: patterns/links-with-icons-single-square.php
+msgctxt "Pattern title"
+msgid "Links with Icons Single (square border)"
+msgstr ""
+
+#: patterns/links-with-icons-single-square.php
+msgctxt "Pattern description"
+msgid ""
+"Single column with a heading, image, body text, and a button. with a square "
+"border"
+msgstr ""
+
+#: patterns/links-with-icons-single.php
+msgctxt "Pattern title"
+msgid "Links with Icons Single"
+msgstr ""
+
+#: patterns/links-with-icons-single.php
+msgctxt "Pattern description"
+msgid "Single column with a heading, image, body text, and a button."
+msgstr ""
+
+#: patterns/page-content.php
+msgctxt "Pattern title"
+msgid "Page Content Pattern"
+msgstr ""
+
+#: patterns/page-content.php
+msgctxt "Pattern description"
+msgid "Page content pattern for the theme"
+msgstr ""
+
+#: patterns/petition-content.php
+msgctxt "Pattern title"
+msgid "Petition Content"
+msgstr ""
+
+#: patterns/petition-content.php
+msgctxt "Pattern description"
+msgid "Output the content of a single petition"
+msgstr ""
+
+#: patterns/post-back-link.php
+msgctxt "Pattern title"
+msgid "Post Back Link"
+msgstr ""
+
+#: patterns/post-byline-author.php
+msgctxt "Pattern title"
+msgid "Post Byline (Author)"
+msgstr ""
+
+#: patterns/post-byline-author.php patterns/post-byline-custom.php
+#: patterns/post-byline.php
+msgctxt "Pattern description"
+msgid "Output the public byline for a post"
+msgstr ""
+
+#. translators: [front] %s: prefix for a post's author attribution
+#: patterns/post-byline-author.php:45
+msgctxt "prefix for a post's author attribution"
+msgid "By %s"
+msgstr "Od %s"
+
+#: patterns/post-byline-custom.php
+msgctxt "Pattern title"
+msgid "Post Byline (Custom)"
+msgstr ""
+
+#. translators: [front]
+#: patterns/post-byline-custom.php:38
+msgctxt "author attribution (as in \"written by\")"
+msgid "By"
+msgstr "Od"
+
+#: patterns/post-byline.php
+msgctxt "Pattern title"
+msgid "Post Byline"
+msgstr ""
+
+#: patterns/post-content.php
+msgctxt "Pattern title"
+msgid "Post Content"
+msgstr "Vsebina prispevka"
+
+#: patterns/post-content.php
+msgctxt "Pattern description"
+msgid "Output the content of a single post"
+msgstr ""
+
+#: patterns/post-header.php
+msgctxt "Pattern title"
+msgid "Post Header"
+msgstr ""
+
+#: patterns/post-header.php
+msgctxt "Pattern description"
+msgid "Outputs the post's header (deprecated - replaced by the hero), if any"
+msgstr ""
+
+#: patterns/post-hero.php
+msgctxt "Pattern title"
+msgid "Post Hero"
+msgstr ""
+
+#: patterns/post-hero.php
+msgctxt "Pattern description"
+msgid "Outputs the post's hero, if any"
+msgstr ""
+
+#: patterns/post-metadata.php
+msgctxt "Pattern title"
+msgid "Post Metadata"
+msgstr ""
+
+#: patterns/post-metadata.php
+msgctxt "Pattern description"
+msgid "Output contextual data for a post"
+msgstr ""
+
+#: patterns/post-published-date.php
+msgctxt "Pattern title"
+msgid "Post Published Date"
+msgstr ""
+
+#: patterns/post-published-date.php
+msgctxt "Pattern description"
+msgid "Output the published date metadata for a post"
+msgstr ""
+
+#: patterns/post-share.php
+msgctxt "Pattern title"
+msgid "Post Share"
+msgstr ""
+
+#: patterns/post-term-list.php
+msgctxt "Pattern title"
+msgid "Post Term List"
+msgstr ""
+
+#: patterns/post-term-list.php patterns/post-terms.php
+msgctxt "Pattern description"
+msgid "Output the taxonomy terms for a post"
+msgstr ""
+
+#: patterns/post-terms.php
+msgctxt "Pattern title"
+msgid "Post Terms"
+msgstr ""
+
+#: patterns/post-updated-date.php
+msgctxt "Pattern title"
+msgid "Post Updated Date"
+msgstr ""
+
+#: patterns/post-updated-date.php
+msgctxt "Pattern description"
+msgid "Output the \"updated date\" for a post"
+msgstr ""
+
+#: patterns/quote-audio.php
+msgctxt "Pattern title"
+msgid "Quote with Audio below it"
+msgstr ""
+
+#: patterns/quote-audio.php
+msgctxt "Pattern description"
+msgid "A quote block with an audio block below it."
+msgstr ""
+
+#: patterns/related-content.php
+msgctxt "Pattern title"
+msgid "Related Content"
+msgstr ""
+
+#: patterns/related-content.php
+msgctxt "Pattern description"
+msgid "Output Related Content for a post"
+msgstr ""
+
+#: patterns/search-results.php
+msgctxt "Pattern title"
+msgid "Search results pattern"
+msgstr ""
+
+#: patterns/search-results.php
+msgctxt "Pattern description"
+msgid "Search results pattern for the theme"
+msgstr ""
+
+#: patterns/search.php
+msgctxt "Pattern title"
+msgid "Search pattern"
+msgstr ""
+
+#: patterns/search.php
+msgctxt "Pattern description"
+msgid "Search pattern for the theme"
+msgstr ""
+
+#: patterns/shop-categories.php
+msgctxt "Pattern title"
+msgid "Shop Categories"
+msgstr ""
+
+#: patterns/shop-categories.php
+msgctxt "Pattern description"
+msgid "Render category list on shop pages"
+msgstr ""
+
+#: patterns/taxonomy-hero.php
+msgctxt "Pattern title"
+msgid "Taxonomy hero"
+msgstr ""
+
+#: patterns/taxonomy-hero.php
+msgctxt "Pattern description"
+msgid "Outputs hero block for taxonomy archive pages"
+msgstr ""
+
+#. translators: [front] Donate %s: product category
+#: woocommerce/archive-product_cat.php:47
+msgid "Products in the %s category"
+msgstr ""
+
+#. translators: [front] Donate
+#: woocommerce/global/quantity-input.php:39
+#: woocommerce/global/quantity-input.php:51
+msgid "Qty"
+msgstr "Količina"
+
+#. translators: [front] Donate
+#: woocommerce/loop/result-count.php:27
+msgid "Showing one result"
+msgstr ""
+
+#. translators: [front] Donate %d: total results
+#: woocommerce/loop/result-count.php:33
+msgid "Showing all %d result"
+msgid_plural "Showing all %d results"
+msgstr[0] "Prikazujem %d rezultat"
+msgstr[1] "Prikazujem %d rezultat"
+msgstr[2] "Prikazujem %d rezultat"
+msgstr[3] "Prikazujem %d rezultat"
+
+#. translators: [front] Donate 1: first result 2: last result 3: total results
+#: woocommerce/loop/result-count.php:43
+msgctxt "shown with first and last result on product pages"
+msgid "Showing %1$d&ndash;%2$d of %3$d result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] "Prikazano %1$d –%2$d izdelekov od %3$d izdelkov"
+msgstr[1] "Prikazano %1$d –%2$d izdelekov od %3$d izdelkov"
+msgstr[2] "Prikazano %1$d –%2$d izdelekov od %3$d izdelkov"
+msgstr[3] "Prikazano %1$d –%2$d izdelekov od %3$d izdelkov"
+
+#. translators: [front] Donate
+#. translators: [admin]
+#: woocommerce/order/order-details.php:52 assets/scripts/blocks.js:6079
+#: assets/scripts/blocks.js:9857 assets/scripts/blocks.js:6132
+#: assets/scripts/blocks.js:10088
+msgid "Quantity"
+msgstr "Količina"
+
+#. translators: [front] Donate
+#: woocommerce/order/order-details.php:53
+msgid "Price"
+msgstr "Cena"
+
+#. translators: [front] Donate related products
+#: woocommerce/single-product/related.php:36
+msgid "Related Items"
+msgstr "Sorodni elementi"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2499 assets/scripts/blocks.js:2272
+msgctxt "block style"
+msgid "Search"
+msgstr "Išči"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2513 assets/scripts/blocks.js:2281
+msgctxt "block style"
+msgid "Square Border"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2518 assets/scripts/blocks.js:2287
+msgctxt "block style"
+msgid "Light Background"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2523 assets/scripts/blocks.js:2293
+msgctxt "block style"
+msgid "Dark Background"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2528 assets/scripts/blocks.js:2299
+msgctxt "block style"
+msgid "Top and Bottom Border"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2622 assets/scripts/blocks.js:2377
+msgctxt "block style"
+msgid "Grey"
+msgstr "Siva"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2636 assets/scripts/blocks.js:2386
+msgctxt "block style"
+msgid "Responsive"
+msgstr "Odziven"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2675 assets/scripts/blocks.js:2413
+msgid "Background Media Column"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2677 assets/scripts/blocks.js:2415
+msgid "Column layout for Background Media block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2810 assets/scripts/blocks.js:2557
+msgid "Image Settings"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2814 assets/scripts/blocks.js:2560
+msgid "Focal Point"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2823 assets/scripts/blocks.js:2568
+msgid "Opacity"
+msgstr "Neprozornost"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2831 assets/scripts/blocks.js:3457
+#: assets/scripts/blocks.js:5075 assets/scripts/blocks.js:6101
+#: assets/scripts/blocks.js:9018 assets/scripts/blocks.js:9866
+#: assets/scripts/blocks.js:10390 assets/scripts/blocks.js:14029
+#: assets/scripts/blocks.js:14643 assets/scripts/blocks.js:2579
+#: assets/scripts/blocks.js:3265 assets/scripts/blocks.js:4949
+#: assets/scripts/blocks.js:6154 assets/scripts/blocks.js:9232
+#: assets/scripts/blocks.js:10096 assets/scripts/blocks.js:10635
+#: assets/scripts/blocks.js:14560 assets/scripts/blocks.js:15209
+msgid "Background Colour"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2834 assets/scripts/blocks.js:2582
+msgid "Colour"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2840 assets/scripts/blocks.js:3464
+#: assets/scripts/blocks.js:5079 assets/scripts/blocks.js:7452
+#: assets/scripts/blocks.js:9027 assets/scripts/blocks.js:10400
+#: assets/scripts/blocks.js:14032 assets/scripts/blocks.js:14529
+#: assets/scripts/blocks.js:14647 assets/scripts/blocks.js:2588
+#: assets/scripts/blocks.js:3272 assets/scripts/blocks.js:4953
+#: assets/scripts/blocks.js:7737 assets/scripts/blocks.js:9235
+#: assets/scripts/blocks.js:10468 assets/scripts/blocks.js:14563
+#: assets/scripts/blocks.js:15098 assets/scripts/blocks.js:15213
+msgid "White"
+msgstr "Bela"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2845 assets/scripts/blocks.js:3899
+#: assets/scripts/blocks.js:6108 assets/scripts/blocks.js:7450
+#: assets/scripts/blocks.js:9873 assets/scripts/blocks.js:10402
+#: assets/scripts/blocks.js:14034 assets/scripts/blocks.js:14652
+#: assets/scripts/blocks.js:2593 assets/scripts/blocks.js:3706
+#: assets/scripts/blocks.js:6161 assets/scripts/blocks.js:7735
+#: assets/scripts/blocks.js:10103 assets/scripts/blocks.js:10470
+#: assets/scripts/blocks.js:14565 assets/scripts/blocks.js:15218
+msgid "Grey"
+msgstr "Siva"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2870 assets/scripts/blocks.js:17115
+#: assets/scripts/blocks.js:2623 assets/scripts/blocks.js:18167
+msgid "Replace Image"
+msgstr "Zamenjaj fotografijo"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2873 assets/scripts/blocks.js:2625
+msgid "Add Image"
+msgstr "Dodaj obrazek"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:2880 assets/scripts/blocks.js:3529
+#: assets/scripts/blocks.js:4697 assets/scripts/blocks.js:5540
+#: assets/scripts/blocks.js:7067 assets/scripts/blocks.js:9145
+#: assets/scripts/blocks.js:12904 assets/scripts/blocks.js:17116
+#: assets/scripts/blocks.js:2632 assets/scripts/blocks.js:3337
+#: assets/scripts/blocks.js:4539 assets/scripts/blocks.js:5429
+#: assets/scripts/blocks.js:7301 assets/scripts/blocks.js:9352
+#: assets/scripts/blocks.js:13422 assets/scripts/blocks.js:18169
+msgid "Remove Image"
+msgstr "Odstrani sliko"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3161 assets/scripts/blocks.js:2950
+msgid "Background Media"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3163 assets/scripts/blocks.js:2952
+msgid "Two-column layout with background images"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3167 assets/scripts/blocks.js:2956
+msgid "Background"
+msgstr "Ozadje"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3171 assets/scripts/blocks.js:2960
+msgid "Text"
+msgstr "Besedilo"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3429 assets/scripts/blocks.js:3724
+#: assets/scripts/blocks.js:3886 assets/scripts/blocks.js:4408
+#: assets/scripts/blocks.js:5047 assets/scripts/blocks.js:9012
+#: assets/scripts/blocks.js:9388 assets/scripts/blocks.js:9627
+#: assets/scripts/blocks.js:10358 assets/scripts/blocks.js:10786
+#: assets/scripts/blocks.js:14509 assets/scripts/blocks.js:15117
+#: assets/scripts/blocks.js:3239 assets/scripts/blocks.js:3530
+#: assets/scripts/blocks.js:3694 assets/scripts/blocks.js:4235
+#: assets/scripts/blocks.js:4923 assets/scripts/blocks.js:9230
+#: assets/scripts/blocks.js:9604 assets/scripts/blocks.js:9847
+#: assets/scripts/blocks.js:10605 assets/scripts/blocks.js:11012
+#: assets/scripts/blocks.js:15080 assets/scripts/blocks.js:15762
+msgid "Options"
+msgstr "Možnosti"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3433 assets/scripts/blocks.js:5051
+#: assets/scripts/blocks.js:5514 assets/scripts/blocks.js:7420
+#: assets/scripts/blocks.js:3242 assets/scripts/blocks.js:4926
+#: assets/scripts/blocks.js:5396 assets/scripts/blocks.js:7707
+msgid "Alignment"
+msgstr "Poravnava"
+
+#. translators: [admin] text alignment. for RTL languages, localise as 'Right'
+#. translators: [admin]
+#: assets/scripts/blocks.js:3437 assets/scripts/blocks.js:5055
+#: assets/scripts/blocks.js:5522 assets/scripts/blocks.js:7381
+#: assets/scripts/blocks.js:14623 assets/scripts/blocks.js:15395
+#: assets/scripts/blocks.js:3246 assets/scripts/blocks.js:4930
+#: assets/scripts/blocks.js:5405 assets/scripts/blocks.js:7655
+#: assets/scripts/blocks.js:15190 assets/scripts/blocks.js:15574
+msgid "Left"
+msgstr "Levo"
+
+#. translators: [admin] text alignment.
+#. translators: [admin]
+#: assets/scripts/blocks.js:3442 assets/scripts/blocks.js:5060
+#: assets/scripts/blocks.js:5524 assets/scripts/blocks.js:14628
+#: assets/scripts/blocks.js:15397 assets/scripts/blocks.js:3251
+#: assets/scripts/blocks.js:4935 assets/scripts/blocks.js:5407
+#: assets/scripts/blocks.js:15195 assets/scripts/blocks.js:15576
+msgid "Centre"
+msgstr ""
+
+#. translators: [admin] text alignment. for RTL languages, localise as 'Left'
+#. translators: [admin]
+#: assets/scripts/blocks.js:3447 assets/scripts/blocks.js:5065
+#: assets/scripts/blocks.js:5526 assets/scripts/blocks.js:7386
+#: assets/scripts/blocks.js:14613 assets/scripts/blocks.js:15399
+#: assets/scripts/blocks.js:3256 assets/scripts/blocks.js:4940
+#: assets/scripts/blocks.js:5409 assets/scripts/blocks.js:7662
+#: assets/scripts/blocks.js:15180 assets/scripts/blocks.js:15578
+msgid "Right"
+msgstr "Desno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3460 assets/scripts/blocks.js:3268
+msgid "Translucent black"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3462 assets/scripts/blocks.js:6038
+#: assets/scripts/blocks.js:6106 assets/scripts/blocks.js:9871
+#: assets/scripts/blocks.js:3270 assets/scripts/blocks.js:6084
+#: assets/scripts/blocks.js:6159 assets/scripts/blocks.js:10101
+msgid "None"
+msgstr "Brez"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3466 assets/scripts/blocks.js:5084
+#: assets/scripts/blocks.js:7448 assets/scripts/blocks.js:9023
+#: assets/scripts/blocks.js:14524 assets/scripts/blocks.js:3274
+#: assets/scripts/blocks.js:4958 assets/scripts/blocks.js:7733
+#: assets/scripts/blocks.js:9234 assets/scripts/blocks.js:15093
+msgid "Black"
+msgstr "Črna"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3474 assets/scripts/blocks.js:4666
+#: assets/scripts/blocks.js:5094 assets/scripts/blocks.js:7053
+#: assets/scripts/blocks.js:7428 assets/scripts/blocks.js:16613
+#: assets/scripts/blocks.js:3281 assets/scripts/blocks.js:4505
+#: assets/scripts/blocks.js:4967 assets/scripts/blocks.js:7282
+#: assets/scripts/blocks.js:7714 assets/scripts/blocks.js:17574
+msgid "Size"
+msgstr "Velikost"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3477 assets/scripts/blocks.js:5098
+#: assets/scripts/blocks.js:3284 assets/scripts/blocks.js:4971
+msgid "Normal"
+msgstr "Običajno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3479 assets/scripts/blocks.js:6302
+#: assets/scripts/blocks.js:7433 assets/scripts/blocks.js:3286
+#: assets/scripts/blocks.js:6370 assets/scripts/blocks.js:7719
+msgid "Small"
+msgstr "Majhno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3487 assets/scripts/blocks.js:5113
+#: assets/scripts/blocks.js:5669 assets/scripts/blocks.js:9038
+#: assets/scripts/blocks.js:3293 assets/scripts/blocks.js:4986
+#: assets/scripts/blocks.js:5595 assets/scripts/blocks.js:9241
+msgid "Background Type"
+msgstr "Vrsta ozadja"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3490 assets/scripts/blocks.js:5117
+#: assets/scripts/blocks.js:5673 assets/scripts/blocks.js:9043
+#: assets/scripts/blocks.js:3296 assets/scripts/blocks.js:4990
+#: assets/scripts/blocks.js:5599 assets/scripts/blocks.js:9243
+msgid "Image"
+msgstr "Slika"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3492 assets/scripts/blocks.js:5122
+#: assets/scripts/blocks.js:5678 assets/scripts/blocks.js:9047
+#: assets/scripts/blocks.js:3298 assets/scripts/blocks.js:4995
+#: assets/scripts/blocks.js:5604 assets/scripts/blocks.js:9244
+msgid "Video"
+msgstr "Video"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3508 assets/scripts/blocks.js:3311
+msgid "Embed URL"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3509 assets/scripts/blocks.js:3313
+msgid ""
+"Setting this will override the call to action link and will now open a modal "
+"with the embed."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3518 assets/scripts/blocks.js:5151
+#: assets/scripts/blocks.js:9063 assets/scripts/blocks.js:3322
+#: assets/scripts/blocks.js:5021 assets/scripts/blocks.js:9260
+msgid "Featured Video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3546 assets/scripts/blocks.js:3365
+msgid "Banner Title"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3556 assets/scripts/blocks.js:3374
+msgid "Banner Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3565 assets/scripts/blocks.js:9102
+#: assets/scripts/blocks.js:3385 assets/scripts/blocks.js:9309
+msgid "Call to action"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3600 assets/scripts/blocks.js:3604
+#: assets/scripts/blocks.js:9190 assets/scripts/blocks.js:3417
+#: assets/scripts/blocks.js:3421 assets/scripts/blocks.js:9391
+msgid "Banner"
+msgstr "Banner"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3728 assets/scripts/blocks.js:6355
+#: assets/scripts/blocks.js:8418 assets/scripts/blocks.js:3533
+#: assets/scripts/blocks.js:6429 assets/scripts/blocks.js:8636
+msgid "Button Style"
+msgstr "Stil gumba"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3732 assets/scripts/blocks.js:6358
+#: assets/scripts/blocks.js:3537 assets/scripts/blocks.js:6432
+msgid "Primary (Yellow)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3737 assets/scripts/blocks.js:6360
+#: assets/scripts/blocks.js:8422 assets/scripts/blocks.js:9507
+#: assets/scripts/blocks.js:15403 assets/scripts/blocks.js:3542
+#: assets/scripts/blocks.js:6434 assets/scripts/blocks.js:8640
+#: assets/scripts/blocks.js:9724 assets/scripts/blocks.js:15583
+msgid "Dark"
+msgstr "Temno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3742 assets/scripts/blocks.js:3894
+#: assets/scripts/blocks.js:6362 assets/scripts/blocks.js:8427
+#: assets/scripts/blocks.js:15405 assets/scripts/blocks.js:3547
+#: assets/scripts/blocks.js:3701 assets/scripts/blocks.js:6436
+#: assets/scripts/blocks.js:8645 assets/scripts/blocks.js:15585
+msgid "Light"
+msgstr "Svetlo"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3753 assets/scripts/blocks.js:15337
+#: assets/scripts/blocks.js:3561 assets/scripts/blocks.js:16001
+msgid "(Button Text)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3793 assets/scripts/blocks.js:3797
+#: assets/scripts/blocks.js:9472 assets/scripts/blocks.js:3597
+#: assets/scripts/blocks.js:3601 assets/scripts/blocks.js:9689
+msgid "Button"
+msgstr "Gumb"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3890 assets/scripts/blocks.js:15219
+#: assets/scripts/blocks.js:3697 assets/scripts/blocks.js:15857
+msgid "Background Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3918 assets/scripts/blocks.js:3724
+msgid "(Pre-heading)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3929 assets/scripts/blocks.js:15308
+#: assets/scripts/blocks.js:3733 assets/scripts/blocks.js:15968
+msgid "(Heading)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:3940 assets/scripts/blocks.js:5579
+#: assets/scripts/blocks.js:15328 assets/scripts/blocks.js:3742
+#: assets/scripts/blocks.js:5478 assets/scripts/blocks.js:15990
+msgid "(Content)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4133 assets/scripts/blocks.js:4137
+#: assets/scripts/blocks.js:3993 assets/scripts/blocks.js:3997
+msgid "Call To Action"
+msgstr "Poziv k dejanju"
+
+#: assets/scripts/blocks.js:4261 assets/scripts/blocks.js:4098
+msgid "Settings"
+msgstr "Nastavitve"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4264 assets/scripts/blocks.js:4102
+msgid "Collapsed by default"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4265 assets/scripts/blocks.js:4104
+msgid "Whether the block contents should be hidden by default"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4273 assets/scripts/blocks.js:4113
+msgid "Label this block with an HTML anchor (#example)."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4281 assets/scripts/blocks.js:4125
+msgid "Find out more"
+msgstr "Izvej več"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4311 assets/scripts/blocks.js:4153
+msgid "Collapsable"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4316 assets/scripts/blocks.js:4158
+msgid "collapsible"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4318 assets/scripts/blocks.js:4160
+msgid "accordion"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4320 assets/scripts/blocks.js:4162
+msgid "drawer"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4322 assets/scripts/blocks.js:4164
+msgid "open"
+msgstr "odpri"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4324 assets/scripts/blocks.js:4166
+msgid "closed"
+msgstr "zaprto"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4412 assets/scripts/blocks.js:4238
+msgid "Layout Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4459 assets/scripts/blocks.js:4469
+#: assets/scripts/blocks.js:4275 assets/scripts/blocks.js:4285
+msgid "Columns"
+msgstr "Stolpci"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4465 assets/scripts/blocks.js:4716
+#: assets/scripts/blocks.js:7095 assets/scripts/blocks.js:4281
+#: assets/scripts/blocks.js:4568 assets/scripts/blocks.js:7333
+msgid "Content"
+msgstr "Vsebina"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4467 assets/scripts/blocks.js:4283
+msgid "Row"
+msgstr "Vrstica"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4527 assets/scripts/blocks.js:4350
+msgid "50% | 50%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4533 assets/scripts/blocks.js:4357
+msgid "66.6% | 33.3%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4539 assets/scripts/blocks.js:4364
+msgid "33.3% | 66.6%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4545 assets/scripts/blocks.js:4371
+msgid "33.3% | 33.3% | 33.3%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4551 assets/scripts/blocks.js:4378
+msgid "50% | 25% | 25%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4557 assets/scripts/blocks.js:4385
+msgid "25% | 50% | 25%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4563 assets/scripts/blocks.js:4392
+msgid "25% | 25% | 50%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4569 assets/scripts/blocks.js:4399
+msgid "25% | 25% | 25% | 25%"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4586 assets/scripts/blocks.js:4414
+msgid "Row Column"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4671 assets/scripts/blocks.js:7058
+#: assets/scripts/blocks.js:4510 assets/scripts/blocks.js:7287
+msgid "Standard"
+msgstr "Standardno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4673 assets/scripts/blocks.js:7060
+#: assets/scripts/blocks.js:4512 assets/scripts/blocks.js:7289
+msgid "Wide"
+msgstr "Široko"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4679 assets/scripts/blocks.js:4517
+msgid "Scroll To Link"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4689 assets/scripts/blocks.js:7088
+#: assets/scripts/blocks.js:4529 assets/scripts/blocks.js:7325
+msgid "(Label)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4726 assets/scripts/blocks.js:7104
+#: assets/scripts/blocks.js:4578 assets/scripts/blocks.js:7341
+msgid "Button Text"
+msgstr "Besedilo gumba"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4872 assets/scripts/blocks.js:4741
+msgid "Custom Card"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:4874 assets/scripts/blocks.js:4743
+msgid "Custom Card block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5103 assets/scripts/blocks.js:6306
+#: assets/scripts/blocks.js:7437 assets/scripts/blocks.js:4976
+#: assets/scripts/blocks.js:6374 assets/scripts/blocks.js:7723
+msgid "Large"
+msgstr "Veliko"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5142 assets/scripts/blocks.js:8953
+#: assets/scripts/blocks.js:5013 assets/scripts/blocks.js:9154
+msgid "Background Image"
+msgstr "Slika za ozadje"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5164 assets/scripts/blocks.js:5045
+msgid "(Header Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5174 assets/scripts/blocks.js:5055
+msgid "(Header Content)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5183 assets/scripts/blocks.js:5066
+msgid "(Call to action)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5464 assets/scripts/blocks.js:5337
+msgid "(Link Text)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5472 assets/scripts/blocks.js:5347
+msgid "Remove Button"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5501 assets/scripts/blocks.js:5384
+msgid "Image Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5506 assets/scripts/blocks.js:5389
+msgid "Fixed Height (600px)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5508 assets/scripts/blocks.js:5391
+msgid "Actual Height"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5515 assets/scripts/blocks.js:5398
+msgid "Only has an effect on images smaller than their container"
+msgstr ""
+
+#. translators: [admin] text alignment/.
+#. translators: [admin] text alignment
+#. translators: [admin]
+#: assets/scripts/blocks.js:5520 assets/scripts/blocks.js:7383
+#: assets/scripts/blocks.js:16618 assets/scripts/blocks.js:16729
+#: assets/scripts/blocks.js:5403 assets/scripts/blocks.js:7657
+#: assets/scripts/blocks.js:17579 assets/scripts/blocks.js:17691
+msgid "Default"
+msgstr "Privzeto"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5571 assets/scripts/blocks.js:5471
+msgid "(Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5588 assets/scripts/blocks.js:5489
+msgid "Add Button"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5603 assets/scripts/blocks.js:5611
+#: assets/scripts/blocks.js:5509 assets/scripts/blocks.js:5515
+msgid "Choose Video"
+msgstr "Izberi video"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5619 assets/scripts/blocks.js:5627
+#: assets/scripts/blocks.js:17042 assets/scripts/blocks.js:5527
+#: assets/scripts/blocks.js:5537 assets/scripts/blocks.js:18126
+msgid "Replace Video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5634 assets/scripts/blocks.js:5543
+msgid "Remove Video"
+msgstr "Odstrani videoposnetek"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5688 assets/scripts/blocks.js:5618
+msgid "Display Overlay"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5695 assets/scripts/blocks.js:5624
+msgid "Enable Parallax"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5707 assets/scripts/blocks.js:5647
+msgid "(Insert Caption, if required)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5963 assets/scripts/blocks.js:6022
+msgid "Image Block"
+msgstr "Image Block"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:5965 assets/scripts/blocks.js:6024
+msgid "Add a flexible image block with optional overlay"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6043 assets/scripts/blocks.js:6089
+msgid "Arrow"
+msgstr "Puščica"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6048 assets/scripts/blocks.js:6094
+msgid "Ampersand"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6088 assets/scripts/blocks.js:6141
+msgid "Orientation"
+msgstr "Usmerjenost"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6093 assets/scripts/blocks.js:6146
+msgid "Horizontal"
+msgstr "Horizontalno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6095 assets/scripts/blocks.js:6148
+msgid "Vertical"
+msgstr "Vertikalno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6114 assets/scripts/blocks.js:6167
+msgid "Hide Lines"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6122 assets/scripts/blocks.js:6175
+msgid "Divider Style"
+msgstr "Izgled razdeljevalnika črta-razmak"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6188 assets/scripts/blocks.js:6266
+msgid "Pick an image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6202 assets/scripts/blocks.js:6285
+msgid "(Insert Fact)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6280 assets/scripts/blocks.js:10790
+#: assets/scripts/blocks.js:6348 assets/scripts/blocks.js:11016
+msgid "Style"
+msgstr "Slog"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6285 assets/scripts/blocks.js:6353
+msgid "Use Image"
+msgstr "Uporabite sliko"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6287 assets/scripts/blocks.js:6355
+msgid "Use Text"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6289 assets/scripts/blocks.js:6357
+msgid "Plain"
+msgstr "Navadno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6295 assets/scripts/blocks.js:6363
+msgid "Icon Size"
+msgstr "Velikost ikone"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6300 assets/scripts/blocks.js:6368
+msgid "Extra Small"
+msgstr "Zelo majhen"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6304 assets/scripts/blocks.js:7435
+#: assets/scripts/blocks.js:6372 assets/scripts/blocks.js:7721
+msgid "Medium"
+msgstr "Srednje"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6312 assets/scripts/blocks.js:6381
+msgid "Icon Position"
+msgstr "Položaj ikone"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6317 assets/scripts/blocks.js:6386
+msgid "Middle"
+msgstr "Sredina"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6319 assets/scripts/blocks.js:14608
+#: assets/scripts/blocks.js:6388 assets/scripts/blocks.js:15175
+msgid "Top"
+msgstr "Zgoraj"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6325 assets/scripts/blocks.js:6395
+msgid "Hide Image Credit Display"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6332 assets/scripts/blocks.js:6404
+msgid "Has Underline"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6339 assets/scripts/blocks.js:6410
+msgid "Font Size"
+msgstr "Velikost pisave"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6348 assets/scripts/blocks.js:6422
+msgid "Display Action"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6382 assets/scripts/blocks.js:6415
+#: assets/scripts/blocks.js:9778 assets/scripts/blocks.js:9881
+#: assets/scripts/blocks.js:12890 assets/scripts/blocks.js:6466
+#: assets/scripts/blocks.js:6514 assets/scripts/blocks.js:10008
+#: assets/scripts/blocks.js:10113 assets/scripts/blocks.js:13404
+msgid "(Insert Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6425 assets/scripts/blocks.js:6524
+msgid "(Insert Body Text)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6436 assets/scripts/blocks.js:6536
+msgid "(Insert Link Text)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6688 assets/scripts/blocks.js:6869
+msgid "Links with Icons Group"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6690 assets/scripts/blocks.js:6871
+msgid "Add a repeatable links-with-icons block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6726 assets/scripts/blocks.js:6910
+msgid "Square"
+msgstr "Kvadrat"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6797 assets/scripts/blocks.js:6984
+msgid "Links with Icons"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:6799 assets/scripts/blocks.js:6986
+msgid "Add a links-with-icons block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7327 assets/scripts/blocks.js:7614
+msgid "Action"
+msgstr "Akcija"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7329 assets/scripts/blocks.js:7616
+msgid "Add an Action block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7443 assets/scripts/blocks.js:14520
+#: assets/scripts/blocks.js:7728 assets/scripts/blocks.js:15089
+msgid "Text Colour"
+msgstr "Barva besedila"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7458 assets/scripts/blocks.js:7743
+msgid "Capitalise"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7459 assets/scripts/blocks.js:7745
+msgid "Capitalise the content."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7466 assets/scripts/blocks.js:7752
+msgid "Line"
+msgstr "Vrstica"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7467 assets/scripts/blocks.js:7754
+msgid "Toggle display of line embellishment."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7475 assets/scripts/blocks.js:7766
+msgid "(Insert Quote Text)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7484 assets/scripts/blocks.js:7776
+msgid "(Insert Citation)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7635 assets/scripts/blocks.js:7935
+msgid "Blockquote"
+msgstr "Citat"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:7637 assets/scripts/blocks.js:7937
+msgid "Add a blockquote block"
+msgstr ""
+
+#. translators: [admin]
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/blocks.js:8149 assets/scripts/bundle.js:552
+#: assets/scripts/blocks.js:8332 assets/scripts/bundle.js:632
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dan"
+msgstr[1] "%d dan"
+msgstr[2] "%d dan"
+msgstr[3] "%d dan"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8159 assets/scripts/blocks.js:8347
+msgctxt "format for timer, i.e. \"x days, H:m:s\""
+msgid "%1$s, %2$s:%3$s:%4$s"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8168 assets/scripts/blocks.js:8361
+msgctxt "time format, i.e. \"H:m:s\""
+msgid "%1$s:%2$s:%3$s"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8207 assets/scripts/blocks.js:8408
+msgid "Time Expired Text"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8211 assets/scripts/blocks.js:8413
+msgid "enter text here"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8274 assets/scripts/blocks.js:8474
+msgid "Countdown Timer"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8278 assets/scripts/blocks.js:8478
+msgid "Countdown"
+msgstr "Odštevanje"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8280 assets/scripts/blocks.js:8480
+msgid "Timer"
+msgstr "Časovnik"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8343 assets/scripts/blocks.js:8528
+msgid "Uploading…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8345 assets/scripts/blocks.js:8530
+msgid "Uploading failed"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8347 assets/scripts/blocks.js:8532
+msgid "Uploading complete"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8402 assets/scripts/blocks.js:8614
+msgid "Select File(s)"
+msgstr "Izberi datoteko(e)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8404 assets/scripts/blocks.js:8616
+msgid "Upload media files or pick from your media library."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8459 assets/scripts/blocks.js:8694
+msgid "Select a file to download"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8474 assets/scripts/blocks.js:8713
+msgid "Clear File(s)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8507 assets/scripts/blocks.js:8734
+msgid "Resource Download"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8509 assets/scripts/blocks.js:8736
+msgid "Add a button to download resource(s)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8621 assets/scripts/blocks.js:8860
+msgid "The Flourish embed source (not the full URL)."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8628 assets/scripts/blocks.js:8791
+#: assets/scripts/blocks.js:8864 assets/scripts/blocks.js:9013
+msgid "Preview Embed"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8647 assets/scripts/blocks.js:8879
+msgid "Flourish Embed"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8652 assets/scripts/blocks.js:8884
+msgid "Flourish"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8654 assets/scripts/blocks.js:8731
+#: assets/scripts/blocks.js:8817 assets/scripts/blocks.js:8902
+#: assets/scripts/blocks.js:9438 assets/scripts/blocks.js:9572
+#: assets/scripts/blocks.js:8886 assets/scripts/blocks.js:8951
+#: assets/scripts/blocks.js:9035 assets/scripts/blocks.js:9109
+#: assets/scripts/blocks.js:9654 assets/scripts/blocks.js:9783
+msgid "Embed"
+msgstr "Vdelaj (HTML)"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8685 assets/scripts/blocks.js:8911
+msgid "The embed code"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8693 assets/scripts/blocks.js:8918
+msgid "The embed type"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8701 assets/scripts/blocks.js:8925
+msgid "The embed title"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8704 assets/scripts/blocks.js:8929
+msgid "Ending the Death Penalty"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8724 assets/scripts/blocks.js:8944
+msgid "Infogram Embed"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8729 assets/scripts/blocks.js:8949
+msgid "Infogram"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8785 assets/scripts/blocks.js:9010
+msgid "The Sutori embed code"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8810 assets/scripts/blocks.js:9028
+msgid "Sutori Embed"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8815 assets/scripts/blocks.js:9033
+msgid "Sutori"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8859 assets/scripts/blocks.js:8895
+#: assets/scripts/blocks.js:9072 assets/scripts/blocks.js:9102
+msgid "Tickcounter Embed"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8862 assets/scripts/blocks.js:9075
+msgid ""
+"This embed cannot be previewed in the editor. Preview the %s itself to see "
+"the embed in action"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8874 assets/scripts/blocks.js:9086
+msgid "The Tickcounter embed code"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8900 assets/scripts/blocks.js:9107
+msgid "Tickcounter"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:8904 assets/scripts/blocks.js:16309
+#: assets/scripts/blocks.js:16319 assets/scripts/blocks.js:9111
+#: assets/scripts/blocks.js:17262 assets/scripts/blocks.js:17272
+msgid "Counter"
+msgstr "Števec"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9077 assets/scripts/blocks.js:9291
+msgid "Hero Title"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9090 assets/scripts/blocks.js:9300
+msgid "Hero Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9177 assets/scripts/blocks.js:9186
+#: assets/scripts/blocks.js:9378 assets/scripts/blocks.js:9387
+msgid "Hero"
+msgstr "Hero"
+
+#. translators: [admin] %s: the post type
+#: assets/scripts/blocks.js:9337 assets/scripts/blocks.js:9559
+msgid ""
+"Blocks in this %s have been upgraded. Please preview the post before saving."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9392 assets/scripts/blocks.js:9607
+msgid "Iframe Height"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9401 assets/scripts/blocks.js:9672
+#: assets/scripts/blocks.js:9615 assets/scripts/blocks.js:9895
+msgid "Iframe Title"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9402 assets/scripts/blocks.js:9673
+#: assets/scripts/blocks.js:9617 assets/scripts/blocks.js:9897
+msgid "Set the text alternative for the iframe"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9429 assets/scripts/blocks.js:9558
+#: assets/scripts/blocks.js:9647 assets/scripts/blocks.js:9769
+msgid "Iframe URL"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9430 assets/scripts/blocks.js:9566
+#: assets/scripts/blocks.js:9649 assets/scripts/blocks.js:9780
+msgid "Enter URL to embed here…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9441 assets/scripts/blocks.js:10853
+#: assets/scripts/blocks.js:9658 assets/scripts/blocks.js:11082
+msgid "Hide Preview"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9444 assets/scripts/blocks.js:13813
+#: assets/scripts/blocks.js:16207 assets/scripts/blocks.js:9659
+#: assets/scripts/blocks.js:14325 assets/scripts/blocks.js:17162
+msgid "Preview"
+msgstr "Predogled"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9463 assets/scripts/blocks.js:9680
+msgid "Iframe Button"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9465 assets/scripts/blocks.js:9682
+msgid "A button which, when clicked, will toggle visibility of an iframe"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9470 assets/scripts/blocks.js:9713
+#: assets/scripts/blocks.js:9687 assets/scripts/blocks.js:9942
+msgid "Iframe"
+msgstr "Iframe"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9501 assets/scripts/blocks.js:9718
+msgid "Primary"
+msgstr "Primarna"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9611 assets/scripts/blocks.js:9828
+msgid "Write caption…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9631 assets/scripts/blocks.js:9850
+msgid "Width"
+msgstr "Širina"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9637 assets/scripts/blocks.js:9857
+msgid "Required when specifying a height"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9644 assets/scripts/blocks.js:9864
+msgid "Height"
+msgstr "Višina"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9650 assets/scripts/blocks.js:9871
+msgid "Required when specifying a width"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9657 assets/scripts/blocks.js:9878
+msgid "Minimum Height"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9665 assets/scripts/blocks.js:9887
+msgid "Required if not using width/height, optional otherwise"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9681 assets/scripts/blocks.js:9904
+msgid "Reset Embed Url"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9708 assets/scripts/blocks.js:9937
+msgid "Responsive Iframe"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9715 assets/scripts/blocks.js:9944
+msgid "Responsive"
+msgstr "Odziven"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9717 assets/scripts/blocks.js:9946
+msgid "Fluid"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9788 assets/scripts/blocks.js:10017
+msgid "(Insert Content)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9828 assets/scripts/blocks.js:10054
+msgid "Key Facts"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:9830 assets/scripts/blocks.js:10056
+msgid "Add a key facts block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10041 assets/scripts/blocks.js:10187
+#: assets/scripts/blocks.js:10293 assets/scripts/blocks.js:10431
+msgid "Further Reading"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10052 assets/scripts/blocks.js:10306
+msgid "Type link"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10070 assets/scripts/blocks.js:10321
+msgid "Open in new tab"
+msgstr "Odpri v novem zavihku"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10079 assets/scripts/blocks.js:10084
+#: assets/scripts/blocks.js:10329 assets/scripts/blocks.js:10332
+msgid "Add a link"
+msgstr "Dodaj povezavo"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10175 assets/scripts/blocks.js:10419
+msgid "Link Block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10177 assets/scripts/blocks.js:10421
+msgid ""
+"A collection of links, used for things such as further reading suggestions."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10185 assets/scripts/blocks.js:10429
+msgid "Links"
+msgstr "Povezave"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10260 assets/scripts/blocks.js:10479
+msgid "Select a menu…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10327 assets/scripts/blocks.js:10557
+msgid "Select a menu in the sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10332 assets/scripts/blocks.js:10560
+msgid "Loading Menu…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10363 assets/scripts/blocks.js:10607
+msgid "Loading Menus…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10367 assets/scripts/blocks.js:10381
+#: assets/scripts/blocks.js:10431 assets/scripts/blocks.js:10436
+#: assets/scripts/blocks.js:10611 assets/scripts/blocks.js:10626
+#: assets/scripts/blocks.js:10670 assets/scripts/blocks.js:10675
+msgid "Menu"
+msgstr "Meni"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10368 assets/scripts/blocks.js:10613
+msgid "Which type of menu you would like to add to the page"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10372 assets/scripts/blocks.js:10617
+msgid "Standard Menu"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10374 assets/scripts/blocks.js:10619
+msgid "In-page Menu"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10438 assets/scripts/blocks.js:10677
+msgid "Navigation"
+msgstr "Navigacija"
+
+#: assets/scripts/blocks.js:10482 assets/scripts/blocks.js:10720
+msgid "Petition Settings"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10536 assets/scripts/blocks.js:10546
+#: assets/scripts/blocks.js:10774 assets/scripts/blocks.js:10784
+msgid "Petitions"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10556 assets/scripts/blocks.js:10749
+#: assets/scripts/blocks.js:10794 assets/scripts/blocks.js:10968
+msgid "Object Selection"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10561 assets/scripts/blocks.js:10799
+msgid "Feed"
+msgstr "Krma"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10569 assets/scripts/blocks.js:10808
+msgid "Petition List"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10571 assets/scripts/blocks.js:10810
+msgid "Petition list"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10573 assets/scripts/blocks.js:10812
+msgid "Petition"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10732 assets/scripts/blocks.js:10950
+msgid "Link List"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10737 assets/scripts/blocks.js:10955
+msgid "Grid"
+msgstr "Mreža"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10744 assets/scripts/blocks.js:10963
+msgid "Category"
+msgstr "Kategorija"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10754 assets/scripts/blocks.js:10973
+msgid "Custom"
+msgstr "Po meri"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10759 assets/scripts/blocks.js:10978
+msgid "Taxonomy"
+msgstr "Teksonomija"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10798 assets/scripts/blocks.js:11024
+msgid "Type"
+msgstr "Vrsta"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10807 assets/scripts/blocks.js:11031
+msgid "Category:"
+msgstr "Kategorija:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10820 assets/scripts/blocks.js:10829
+#: assets/scripts/blocks.js:10838 assets/scripts/blocks.js:11043
+#: assets/scripts/blocks.js:11053 assets/scripts/blocks.js:11063
+msgid "Number of posts to show:"
+msgstr "Število objav za prikaz:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10847 assets/scripts/blocks.js:11073
+msgid "Use related categories where supported"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10856 assets/scripts/blocks.js:11084
+msgid "Show Preview"
+msgstr "Prikaži predogled"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10861 assets/scripts/blocks.js:13183
+#: assets/scripts/blocks.js:11090 assets/scripts/blocks.js:13725
+msgid "Taxonomy:"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10869 assets/scripts/blocks.js:13202
+#: assets/scripts/blocks.js:11097 assets/scripts/blocks.js:13753
+msgid "Terms:"
+msgstr "Pojmi:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10883 assets/scripts/blocks.js:12989
+#: assets/scripts/blocks.js:11110 assets/scripts/blocks.js:13525
+msgid "Author:"
+msgstr "Avtor:"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10896 assets/scripts/blocks.js:11121
+msgid "Display Post Author"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10903 assets/scripts/blocks.js:11127
+msgid "Display Post Date"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:10998 assets/scripts/blocks.js:11223
+msgid "Add another item"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11142 assets/scripts/blocks.js:11353
+#: assets/scripts/blocks.js:11714 assets/scripts/blocks.js:12426
+#: assets/scripts/blocks.js:12563 assets/scripts/blocks.js:13131
+#: assets/scripts/blocks.js:13178 assets/scripts/blocks.js:13187
+#: assets/scripts/blocks.js:11423 assets/scripts/blocks.js:11684
+#: assets/scripts/blocks.js:12097 assets/scripts/blocks.js:12963
+#: assets/scripts/blocks.js:13052 assets/scripts/blocks.js:13661
+#: assets/scripts/blocks.js:13715 assets/scripts/blocks.js:13730
+msgid "Loading…"
+msgstr "Nalaganje…"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11150 assets/scripts/blocks.js:11432
+msgid "Select an author."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11158 assets/scripts/blocks.js:11369
+#: assets/scripts/blocks.js:11722 assets/scripts/blocks.js:12442
+#: assets/scripts/blocks.js:11442 assets/scripts/blocks.js:11703
+#: assets/scripts/blocks.js:12106 assets/scripts/blocks.js:12982
+msgid "No Items found"
+msgstr "Nič ni bilo najdeno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:11361 assets/scripts/blocks.js:11693
+msgid "Select a category."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12434 assets/scripts/blocks.js:12972
+msgid "Select a taxonomy."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12566 assets/scripts/blocks.js:13123
+#: assets/scripts/blocks.js:13057 assets/scripts/blocks.js:13636
+msgid "No Posts."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12693 assets/scripts/blocks.js:12797
+#: assets/scripts/blocks.js:13409 assets/scripts/blocks.js:13487
+#: assets/scripts/blocks.js:17364 assets/scripts/blocks.js:13203
+#: assets/scripts/blocks.js:13288 assets/scripts/blocks.js:13976
+#: assets/scripts/blocks.js:14026 assets/scripts/blocks.js:18444
+msgid "Loading"
+msgstr "Nalaganje"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12696 assets/scripts/blocks.js:13205
+msgid "Select author"
+msgstr "Izberi uporabnika"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12800 assets/scripts/blocks.js:13412
+#: assets/scripts/blocks.js:13290 assets/scripts/blocks.js:13978
+msgid "Select a category"
+msgstr "Izberite kategorijo"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12880 assets/scripts/blocks.js:13392
+msgid "(Insert Tag)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12947 assets/scripts/blocks.js:13466
+msgid "Tag Name"
+msgstr "Dodaj ime oznake"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12964 assets/scripts/blocks.js:13482
+msgid "Insert Title"
+msgstr ""
+
+#: assets/scripts/blocks.js:12975 assets/scripts/blocks.js:13497
+msgid "Date:"
+msgstr "Datum:"
+
+#: assets/scripts/blocks.js:12982 assets/scripts/blocks.js:13509
+msgid "Date may render differently on the site frontend"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:12999 assets/scripts/blocks.js:13535
+msgid "Author Name"
+msgstr "Ime avtorja"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13105 assets/scripts/blocks.js:13617
+msgid "Loading Posts…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13112 assets/scripts/blocks.js:13625
+msgid "Your query yielded no results, please try again."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13134 assets/scripts/blocks.js:13663
+msgid "Load More"
+msgstr "Naloži več"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13166 assets/scripts/blocks.js:13702
+msgid "Please enter your search query…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13174 assets/scripts/blocks.js:13710
+msgid "Post Type:"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13194 assets/scripts/blocks.js:13737
+msgid "Select Taxonomy"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13206 assets/scripts/blocks.js:13757
+msgid "No taxonomy selected"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13213 assets/scripts/blocks.js:18135
+#: assets/scripts/blocks.js:13764 assets/scripts/blocks.js:19170
+msgid "Select Term"
+msgstr ""
+
+#: assets/scripts/blocks.js:13295 assets/scripts/blocks.js:13867
+msgid "No terms selected"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13490 assets/scripts/blocks.js:14028
+msgid "Select terms"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13566 assets/scripts/blocks.js:14100
+msgid "Post List"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13571 assets/scripts/blocks.js:14105
+msgid "List"
+msgstr "Seznam"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13573 assets/scripts/blocks.js:14107
+msgid "post-list"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13575 assets/scripts/blocks.js:14109
+msgid "Posts"
+msgstr "Prispevki"
+
+#: assets/scripts/blocks.js:13657 assets/scripts/blocks.js:14196
+msgid "Select a meta key"
+msgstr ""
+
+#: assets/scripts/blocks.js:13677 assets/scripts/blocks.js:14223
+msgid "Choose a meta key"
+msgstr ""
+
+#: assets/scripts/blocks.js:13685 assets/scripts/blocks.js:14229
+msgid "Does this meta key have a single value?"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13821 assets/scripts/blocks.js:14349
+msgid "Write HTML…"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13822 assets/scripts/blocks.js:14351
+msgid "HTML"
+msgstr "HTML"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:13849 assets/scripts/blocks.js:14375
+msgid "Raw Code"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14025 assets/scripts/blocks.js:16462
+#: assets/scripts/blocks.js:14557 assets/scripts/blocks.js:17407
+msgid "Display Options"
+msgstr "Možnosti prikaza"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14042 assets/scripts/blocks.js:16466
+#: assets/scripts/blocks.js:14572 assets/scripts/blocks.js:17410
+msgid "Choose taxonomy to display"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14050 assets/scripts/blocks.js:14580
+msgid "Max depth"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14059 assets/scripts/blocks.js:14589
+msgid "Show only Regions/Subregions"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14110 assets/scripts/blocks.js:14647
+msgid "Terms List"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14112 assets/scripts/blocks.js:14649
+msgid "Terms"
+msgstr "Pogoji"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14286 assets/scripts/blocks.js:14877
+msgid "Add a grid of posts that are related to the current post"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14513 assets/scripts/blocks.js:15083
+msgid "Section Name"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14538 assets/scripts/blocks.js:15106
+msgid "Background Options"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14549 assets/scripts/blocks.js:15118
+msgid "Edit image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14561 assets/scripts/blocks.js:15128
+msgid "Remove image"
+msgstr "Odstranite sliko"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14566 assets/scripts/blocks.js:15133
+msgid "Select background image"
+msgstr "Izberite sliko ozadja"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14572 assets/scripts/blocks.js:15143
+msgid "Min image height as viewport percentage"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14583 assets/scripts/blocks.js:15153
+msgid "Toggle Background Overlay"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14590 assets/scripts/blocks.js:16926
+#: assets/scripts/blocks.js:15159 assets/scripts/blocks.js:18018
+msgid "Hide Image Caption"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14597 assets/scripts/blocks.js:16927
+#: assets/scripts/blocks.js:15165 assets/scripts/blocks.js:18020
+msgid "Hide Image Credit"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14604 assets/scripts/blocks.js:15171
+msgid "Background Image Origin"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14618 assets/scripts/blocks.js:15185
+msgid "Bottom"
+msgstr "Spodaj"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14633 assets/scripts/blocks.js:15200
+msgid "Initial"
+msgstr "Prvotno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:14889 assets/scripts/blocks.js:14893
+#: assets/scripts/blocks.js:15485 assets/scripts/blocks.js:15489
+msgid "Section"
+msgstr "Oddelek"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15069 assets/scripts/blocks.js:15727
+msgid "Do you wish to delete this slide? This action is irreversible"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15121 assets/scripts/blocks.js:15765
+msgid "Show Arrows"
+msgstr "Pokaži puščice"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15128 assets/scripts/blocks.js:15772
+msgid "Has Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15135 assets/scripts/blocks.js:15778
+msgid ""
+"By disabling this you will hide the content in *ALL* slides. To disable this "
+"on only one slide, select the desired slide and toggle the \"Hide Content\" "
+"field in the \"Slide Options\" panel."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15144 assets/scripts/blocks.js:15789
+msgid "Show Tabs"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15151 assets/scripts/blocks.js:15795
+msgid ""
+"Hide the tabs on the front end, these will still show in the panel to allow "
+"you to navigate through each slide."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15159 assets/scripts/blocks.js:15805
+msgid "Timeline Options"
+msgstr "Možnosti časovnice"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15163 assets/scripts/blocks.js:15808
+msgid "Slider Title"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15170 assets/scripts/blocks.js:15814
+msgid "Timeline Style"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15177 assets/scripts/blocks.js:15822
+msgid "Slide Options"
+msgstr "Možnosti Slide-a"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15181 assets/scripts/blocks.js:15825
+msgid "Slide Title"
+msgstr "Naslov Drsnika"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15188 assets/scripts/blocks.js:15831
+msgid "Slide Timeline Text"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15201 assets/scripts/blocks.js:15841
+msgid "Slide Background"
+msgstr "Ozadje drsnika"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15211 assets/scripts/blocks.js:15850
+msgid "Content Alignment"
+msgstr "Poravnava vsebine"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15227 assets/scripts/blocks.js:15864
+msgid "Hide Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15234 assets/scripts/blocks.js:15870
+msgid ""
+"By enabling this you will hide the content on *THIS* slide. To disable "
+"content on all slides go to the \"Options\" and toggle the \"Has Content\" "
+"field."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15244 assets/scripts/blocks.js:15881
+msgid "Remove Slide"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15249 assets/scripts/blocks.js:15885
+msgid "This is irreversible."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15255 assets/scripts/blocks.js:15903
+msgid "(Slider Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15275 assets/scripts/blocks.js:15927
+msgid "Add a slide below."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15280 assets/scripts/blocks.js:15374
+#: assets/scripts/blocks.js:15930 assets/scripts/blocks.js:16050
+msgid "Add Slide"
+msgstr "Dodajte drsnik"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15297 assets/scripts/blocks.js:15953
+msgid "(TimeLine Content)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15318 assets/scripts/blocks.js:15979
+msgid "(Sub-Heading)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15355 assets/scripts/blocks.js:15367
+#: assets/scripts/blocks.js:16030 assets/scripts/blocks.js:16044
+msgid "(No Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15409 assets/scripts/blocks.js:15590
+msgid "Opaque"
+msgstr "Neprosojno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15411 assets/scripts/blocks.js:15592
+msgid "Translucent"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:15413 assets/scripts/blocks.js:15594
+msgid "Transparent"
+msgstr "Prosojno"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16072 assets/scripts/blocks.js:16077
+#: assets/scripts/blocks.js:17023 assets/scripts/blocks.js:17028
+msgid "Slider"
+msgstr "Drsnik"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16079 assets/scripts/blocks.js:17030
+msgid "Carousel"
+msgstr "Carousel galerija"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16081 assets/scripts/blocks.js:17032
+msgid "Scroller"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16184 assets/scripts/blocks.js:17134
+msgid "Edit Counter"
+msgstr ""
+
+#: assets/scripts/blocks.js:16184 assets/scripts/blocks.js:17134
+msgid "Preview Counter"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16188 assets/scripts/blocks.js:17142
+msgid "Duration"
+msgstr "Trajanje"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16189 assets/scripts/blocks.js:17144
+msgid "How long it should take the counter to count up"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16204 assets/scripts/blocks.js:17161
+msgid "Edit"
+msgstr "Uredi"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16211 assets/scripts/blocks.js:17170
+msgid "Enter the value to which this field should count"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16311 assets/scripts/blocks.js:17264
+msgid ""
+"Add a numeric field which, when scrolled into view, will count up from zero"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16317 assets/scripts/blocks.js:17270
+msgid "Stat"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16525 assets/scripts/blocks.js:17488
+msgid "Term A-Z"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16527 assets/scripts/blocks.js:17490
+msgid "List all visible terms in a taxonomy, grouped by first letter"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16530 assets/scripts/blocks.js:17493
+msgid "Term List"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16532 assets/scripts/blocks.js:17495
+msgid "A-Z Terms"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16534 assets/scripts/blocks.js:17497
+msgid "Countries"
+msgstr "Države"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16620 assets/scripts/blocks.js:17581
+msgid "Narrow"
+msgstr "Ozko"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16626 assets/scripts/blocks.js:17586
+msgid "Embed Link"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16627 assets/scripts/blocks.js:17588
+msgid "Includes a link to current post/page in tweet"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16641 assets/scripts/blocks.js:17607
+msgid "(Action Title)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16650 assets/scripts/blocks.js:17617
+msgid "(Place Tweet text proforma here)"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16658 assets/scripts/blocks.js:17624
+msgid ""
+"A link to the current page/post will now appear below the Tweet content when "
+"published/updated."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16709 assets/scripts/blocks.js:17671
+msgid "Tweet Action"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16711 assets/scripts/blocks.js:17673
+msgid "Add a Tweet Action block"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16731 assets/scripts/blocks.js:17693
+msgid "Alternative"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16929 assets/scripts/blocks.js:18024
+msgid "Hide Video Caption"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16930 assets/scripts/blocks.js:18026
+msgid "Hide Video Credit"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16985 assets/scripts/blocks.js:18053
+msgid "Set featured video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:16986 assets/scripts/blocks.js:18055
+msgid "Remove featured video"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17114 assets/scripts/blocks.js:18165
+msgid "Set Image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17367 assets/scripts/blocks.js:18446
+msgid "Select a sidebar"
+msgstr ""
+
+#: assets/scripts/blocks.js:17407 assets/scripts/blocks.js:18471
+msgid "Archive Filters"
+msgstr ""
+
+#: assets/scripts/blocks.js:17502 assets/scripts/blocks.js:18526
+msgid "Query Count"
+msgstr ""
+
+#: assets/scripts/blocks.js:17503 assets/scripts/blocks.js:18527
+msgid "Display the query results count"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17697 assets/scripts/blocks.js:18650
+msgid "Page Options"
+msgstr "Možnosti strani"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17706 assets/scripts/blocks.js:18672
+msgid "Post Options"
+msgstr "Možnosti objave"
+
+#: assets/scripts/blocks.js:17711 assets/scripts/blocks.js:18690
+msgid "Appearance"
+msgstr "Izgled"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17786 assets/scripts/blocks.js:18774
+msgid "Enable public byline"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17789 assets/scripts/blocks.js:18777
+msgid ""
+"Content will be unattributed, and the author information will remain "
+"private, unless the byline is enabled and populated"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17800 assets/scripts/blocks.js:18790
+msgid "Use author profile for byline"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17807 assets/scripts/blocks.js:18801
+msgid "Byline Name"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17808 assets/scripts/blocks.js:18803
+msgid "The individual, group, or entity to be named as the author"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17815 assets/scripts/blocks.js:18811
+msgid "Byline Context"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17816 assets/scripts/blocks.js:18813
+msgid ""
+"Additional context for the byline; e.g. job title, short summary, location, "
+"etc"
+msgstr ""
+
+#: assets/scripts/blocks.js:17845 assets/scripts/blocks.js:18846
+msgid "Hide featured image"
+msgstr ""
+
+#: assets/scripts/blocks.js:17846 assets/scripts/blocks.js:18847
+msgid "Hide the featured image."
+msgstr ""
+
+#: assets/scripts/blocks.js:17858 assets/scripts/blocks.js:18859
+msgid "Hide featured image caption"
+msgstr ""
+
+#: assets/scripts/blocks.js:17859 assets/scripts/blocks.js:18860
+msgid "Hide the image caption for the featured image"
+msgstr ""
+
+#: assets/scripts/blocks.js:17895 assets/scripts/blocks.js:18899
+msgid "Use transparent header"
+msgstr ""
+
+#: assets/scripts/blocks.js:17896 assets/scripts/blocks.js:18900
+msgid ""
+"Enable transparent mode on the main header. Requires the use of a header "
+"block with a featured image"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17935 assets/scripts/blocks.js:18938
+msgid "Show published date"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17939 assets/scripts/blocks.js:18939
+msgid "Show the post published date"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17955 assets/scripts/blocks.js:18965
+msgid "Show updated date"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17959 assets/scripts/blocks.js:18966
+msgid "Show the \"updated at\" date"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17972 assets/scripts/blocks.js:18990
+msgid "Metadata"
+msgstr "Meta podatki"
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17994 assets/scripts/blocks.js:19016
+msgid "Disable Related Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:17995 assets/scripts/blocks.js:19018
+msgid "Removes the Related Content section for this post"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18024 assets/scripts/blocks.js:19050
+msgid "Disable Sharing"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18025 assets/scripts/blocks.js:19052
+msgid "Disable Share Buttons for this post"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18064 assets/scripts/blocks.js:19093
+msgid "Maximize Content"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18067 assets/scripts/blocks.js:19096
+msgid ""
+"Remove the sidebar and the sidebar area on posts and pages. Generally used "
+"to create pages with a full-width page design."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18083 assets/scripts/blocks.js:19113
+msgid "Disable Sidebar"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18086 assets/scripts/blocks.js:19116
+msgid ""
+"Remove the sidebar, but not the sidebar area; this keeps an empty space to "
+"the side of the content. Generally used for text heavy pages."
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18152 assets/scripts/blocks.js:19190
+msgid "Feature on content type:"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18306 assets/scripts/blocks.js:19318
+msgid "Pop-in Settings"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18312 assets/scripts/blocks.js:19322
+msgid "Render Title"
+msgstr ""
+
+#. translators: [admin]
+#: assets/scripts/blocks.js:18313 assets/scripts/blocks.js:19324
+msgid "Should the title be rendered when showing this pop-in to the user?"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:562 assets/scripts/bundle.js:645
+msgctxt "time format(prefix translated separately) i.e. \"x, H:i:s\""
+msgid "%1$s, %2$s:%3$s:%4$s"
+msgstr ""
+
+#. translators: [front] https://wordpresstheme.amnesty.org/blocks/b021-countdown-timer
+#: assets/scripts/bundle.js:575 assets/scripts/bundle.js:659
+msgctxt "time format, H:i:s"
+msgid "%1$s:%2$s:%3$s"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block title"
+msgid "Archive Filters"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block description"
+msgid "For presenting filters on archive pages"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block keyword"
+msgid "Archives"
+msgstr "Arhivi"
+
+#: includes/full-site-editing/blocks/archive-filters/block.json
+msgctxt "block keyword"
+msgid "Filters"
+msgstr "Filtri"
+
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block title"
+msgid "Archive Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block description"
+msgid "For presenting the archive header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/archive-header/block.json
+msgctxt "block keyword"
+msgid "Archive Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block title"
+msgid "Pop-in"
+msgstr ""
+
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block description"
+msgid "For presenting dismissible content at the top of the site"
+msgstr ""
+
+#: includes/full-site-editing/blocks/pop-in/block.json
+msgctxt "block keyword"
+msgid "Pop-in"
+msgstr ""
+
+#: includes/full-site-editing/blocks/query-count/block.json
+msgctxt "block title"
+msgid "Query Count"
+msgstr ""
+
+#: includes/full-site-editing/blocks/query-count/block.json
+msgctxt "block description"
+msgid "Display the query results count"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block title"
+msgid "Search Form"
+msgstr "Iskalni obrazec"
+
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block description"
+msgid "For presenting the search form"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-form/block.json
+msgctxt "block keyword"
+msgid "Search Form"
+msgstr "Iskalni obrazec"
+
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block title"
+msgid "Search Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block description"
+msgid "For presenting the search page header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/search-header/block.json
+msgctxt "block keyword"
+msgid "Search Header"
+msgstr ""
+
+#: includes/full-site-editing/blocks/sidebar/block.json
+msgctxt "block title"
+msgid "Sidebar"
+msgstr "Stranska vrstica"
+
+#: includes/full-site-editing/blocks/sidebar/block.json
+msgctxt "block description"
+msgid "For presenting a sidebar on a post type"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Style variation name"
+msgid "Amnesty Trade Gothic"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Font family name"
+msgid "Amnesty Trade Gothic"
+msgstr ""
+
+#: styles/01-amnesty-trade-gothic.json
+msgctxt "Font family name"
+msgid "Amnesty Trade Gothic Condensed"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Style variation name"
+msgid "Roboto"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Font family name"
+msgid "Roboto"
+msgstr ""
+
+#: styles/02-roboto.json
+msgctxt "Font family name"
+msgid "Roboto Condensed"
+msgstr ""
+
+#: styles/03-rubik.json
+msgctxt "Style variation name"
+msgid "Rubik"
+msgstr ""
+
+#: styles/03-rubik.json
+msgctxt "Font family name"
+msgid "Rubik"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr "Črna"
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr "Bela"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Grey Brand"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Majhno"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Srednje"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Veliko"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr "Primarna"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary State"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr "Sekundarne"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr "Poudarek"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Lightest Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Lighter Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "light Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Default Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Darker Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Darkest Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Twitter Blue"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Orange"
+msgstr "Oranžna"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Quarter"
+msgstr "Četrtletje"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Half"
+msgstr "Polovica"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Single"
+msgstr "Posamezno"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Double"
+msgstr "Dvojno"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Quad"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Lato"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "PlayfairDisplay"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Regular"
+msgstr "Redno"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Larger"
+msgstr "Večje"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr "Zelo veliko"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr "Ogromno"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 1"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 2"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 3"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 4"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 5"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 6"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Article Title"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Glava"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Noga"
