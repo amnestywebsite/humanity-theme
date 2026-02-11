@@ -2,7 +2,7 @@ const presets = [
   [
     '@babel/preset-env',
     {
-      corejs: '3.40',
+      corejs: '3.48',
       useBuiltIns: 'usage',
       modules: 'auto',
       shippedProposals: true,
