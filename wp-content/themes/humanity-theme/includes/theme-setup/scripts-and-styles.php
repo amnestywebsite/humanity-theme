@@ -328,28 +328,3 @@ if ( ! function_exists( 'amnesty_enqueue_block_assets' ) ) {
 }
 
 add_action( 'enqueue_block_assets', 'amnesty_enqueue_block_assets' );
-
-if ( ! function_exists( 'amnesty_disable_cart_fragments' ) ) {
-	/**
-	 * Disable WooCommerce cart fragments on pages that don't require it
-	 *
-	 * @package Amnesty\ThemeSetup
-	 *
-	 * @return void
-	 */
-	function amnesty_disable_cart_fragments() {
-		// woocommerce isn't active
-		if ( ! defined( 'WC_PLUGIN_FILE' ) ) {
-			return;
-		}
-
-		// keep it for woocommerce pages
-		if ( is_woocommerce() || is_cart() || is_checkout() || is_checkout_pay_page() ) {
-			return;
-		}
-
-		wp_dequeue_script( 'wc-cart-fragments' );
-	}
-}
-
-add_action( 'wp_enqueue_scripts', 'amnesty_disable_cart_fragments', 200 );
