@@ -1,5 +1,5 @@
 const setupFormControl = (block) => {
-  const choices = block.querySelector('.checkboxGroup');
+  const choices = block.querySelector('.customSelect');
   const download = block.querySelector('.btn--download');
 
   if (!choices || !download) {
