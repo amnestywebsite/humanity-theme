@@ -1,3 +1,25 @@
+### v3.0.1
+Fixes:
+- Flags on section block when it contains a background image
+- Remove WooCommerce cart fragments mod
+- Hero block layout styling in both editor and frontend
+- Remove remaining WooCommerce FSE templates & pattern
+- Skip hero block rendering entirely if there's no content to render
+- Incorrect references to the custom select block
+- Incorrect CSS selector target in download block
+
+Localisation:
+- Add Slovenian translations
+
+Improvements:
+- Enable download block button colour configuration
+- Replace references to deprecated editor components
+- Update print stylesheet baseline
+
+Build:
+- Bump node version to 22
+- Upgrade build dependencies
+
 ### v3.0.0
 **Breaking Changes**:
 - Remove WooCommerce support
