@@ -1,3 +1,8 @@
+### v3.0.2
+Fixes:
+- Missing inputs on advanced search filters
+- Erroneous printf statement
+
 ### v3.0.1
 Fixes:
 - Flags on section block when it contains a background image
