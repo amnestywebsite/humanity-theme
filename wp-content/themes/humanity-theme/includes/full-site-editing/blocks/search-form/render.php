@@ -9,9 +9,8 @@ if ( ! function_exists( 'render_search_form_block' ) ) {
 	 * @return string
 	 */
 	function render_search_form_block(): string {
-		spaceless();
+		ob_start();
 		get_template_part( 'partials/search/horizontal-search' );
-
-		return endspaceless( false );
+		return ob_get_clean() ?: '';
 	}
 }

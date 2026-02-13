@@ -2,6 +2,58 @@
 
 declare( strict_types = 1 );
 
+if ( ! function_exists( 'amnesty_custom_select_kses' ) ) {
+	/**
+	 * Add required tags & attributes to KSES for Custom Select block
+	 *
+	 * @param array<string,array<string,bool>> $tags currently-allowed HTML tags/attributes
+	 *
+	 * @return array<string,array<string,bool>>
+	 */
+	function amnesty_custom_select_kses( array $tags ): array {
+		$attributes = _wp_add_global_attributes( [] );
+
+		$tags = array_merge_recursive(
+			$tags,
+			[
+				'form'  => array_merge(
+					$attributes,
+					[
+						'method'    => true,
+						'action'    => true,
+						'data-info' => true,
+					],
+				),
+				'label' => array_merge(
+					$attributes,
+					[
+						'for'      => true,
+						'tabindex' => true,
+					],
+				),
+				'input' => array_merge(
+					$attributes,
+					[
+						'type'         => true,
+						'name'         => true,
+						'value'        => true,
+						'min'          => true,
+						'max'          => true,
+						'step'         => true,
+						'placeholder'  => true,
+						'disabled'     => true,
+						'required'     => true,
+						'checked'      => true,
+						'autocomplete' => true,
+					],
+				),
+			]
+		);
+
+		return $tags;
+	}
+}
+
 if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 	/**
 	 * Render an accessible custom select-type element
@@ -71,6 +123,7 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 			$block_args['active'] = array_shift( $block_args['active'] );
 		}
 
+		add_filter( 'wp_kses_allowed_html', 'amnesty_custom_select_kses' );
 		echo wp_kses_post(
 			do_blocks(
 				sprintf(
@@ -79,6 +132,7 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 				),
 			),
 		);
+		remove_filter( 'wp_kses_allowed_html', 'amnesty_custom_select_kses' );
 	}
 }
 
