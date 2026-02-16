@@ -223,7 +223,7 @@ class Header_Block_Renderer {
 	 * @return void
 	 */
 	protected function inner_open() {
-		printf( '<div class="container"><div class="hero-content">', esc_attr( $classes ) );
+		echo '<div class="container"><div class="hero-content">';
 	}
 
 	/**
