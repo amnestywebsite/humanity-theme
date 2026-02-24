@@ -1,0 +1,18 @@
+.amnesty-action-button.is-pressed {
+	background: #fff !important;
+
+	svg {
+		background: #f8d72b !important;
+	}
+
+	path {
+		fill: #000;
+	}
+}
+
+.amnesty-data-handling-modal .components-modal__header + div {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr 40px;
+}

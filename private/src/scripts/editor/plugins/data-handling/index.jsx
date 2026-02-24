@@ -1,22 +1,16 @@
 import ActionButton from './fills/ActionButton.jsx';
 import DefaultFills from './fills/DefaultFills.jsx';
+import ModalNavigation from './components/ModalNavigation.jsx';
 
-const {
-  Button,
-  Fill,
-  Modal,
-  Slot,
-  // eslint-disable-next-line @wordpress/no-unsafe-wp-apis
-  __experimentalToggleGroupControl: ToggleGroupControl,
-  // eslint-disable-next-line @wordpress/no-unsafe-wp-apis
-  __experimentalToggleGroupControlOption: ToggleGroupControlOption,
-} = wp.components;
+const { Button, Fill, Modal, Slot } = wp.components;
 const { useEntityProp } = wp.coreData;
 const { useSelect } = wp.data;
 const { store: editorStore } = wp.editor;
 const { useCallback, useState } = wp.element;
 const { applyFilters } = wp.hooks;
 const { __ } = wp.i18n;
+
+const SlotFillNamespace = 'amnesty/metadata/group';
 
 const defaultGroups = [
   {
@@ -74,34 +68,38 @@ export default function DataHandling() {
     editMeta,
   };
 
+  if (!modalOpen) {
+    return <ActionButton isPressed={modalOpen} onClick={toggleModal} />;
+  }
+
   return (
     <>
       <ActionButton isPressed={modalOpen} onClick={toggleModal} />
-      {modalOpen && (
-        <Modal title={__('Metadata', 'amnesty')} size="large" onRequestClose={toggleModal}>
-          <ToggleGroupControl
-            isBlock
-            isDeselectable={false}
-            label={__('Options', 'amnesty')}
-            hideLabelFromVision
-            value={activeGroup}
-            onChange={(value) => setActiveGroup(value)}
-            style={{ marginBlockEnd: '50px' }}
-          >
-            {groups.map(({ value, label }) => (
-              <ToggleGroupControlOption key={value} value={value} label={label} />
-            ))}
-          </ToggleGroupControl>
-          <Slot name={`amnesty/metadata/group/${activeGroup}`} fillProps={fillProps} />
-          <hr style={{ marginBlockStart: '50px' }} />
+
+      <Modal
+        title={__('Metadata', 'amnesty')}
+        className="amnesty-data-handling-modal"
+        size="fill"
+        onRequestClose={toggleModal}
+      >
+        <ModalNavigation items={groups} current={activeGroup} onChange={setActiveGroup} />
+
+        <div>
+          <Slot name={`${SlotFillNamespace}/${activeGroup}`} fillProps={fillProps} />
+        </div>
+
+        <div>
+          <hr />
           <Button variant="primary" onClick={toggleModal}>
             {__('Confirm', 'amnesty')}
           </Button>
-        </Modal>
-      )}
+        </div>
+      </Modal>
+
       {groups.map(({ value }) => (
-        <Fill key={value} name={`amnesty/metadata/group/${value}`} />
+        <Fill key={value} name={`${SlotFillNamespace}/${value}`} />
       ))}
+
       <DefaultFills />
     </>
   );

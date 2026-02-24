@@ -90,22 +90,13 @@
 @import "pages/search";
 @import "pages/single";
 
+// Editor plugins
+@import "editor-plugins/data-handling";
+
 html {
   box-sizing: border-box;
 }
 
 *, *::after, *::before {
   box-sizing: inherit;
-}
-
-.amnesty-action-button.is-pressed {
-	background: #fff !important;
-
-	svg {
-		background: #f8d72b !important;
-	}
-
-	path {
-		fill: #000;
-	}
 }
