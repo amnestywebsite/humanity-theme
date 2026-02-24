@@ -12,26 +12,34 @@ const { Fill } = wp.components;
 export default function DefaultFills() {
   return (
     <>
-      <Fill name="amnesty/metadata/group/ownership">
-        <Byline />
-      </Fill>
+      <Fill name="amnesty/metadata/group/ownership">{(props) => <Byline {...props} />}</Fill>
       <Fill name="amnesty/metadata/group/editorial">
-        <PublishedDate />
-        <UpdatedDate />
+        {(props) => (
+          <>
+            <PublishedDate {...props} />
+            <UpdatedDate {...props} />
+          </>
+        )}
       </Fill>
       <Fill name="amnesty/metadata/group/curation">
-        <FeatureOnTermArchive />
-        <div style={{ height: '50px' }} />
-        <RelatedContent />
+        {(props) => (
+          <>
+            <FeatureOnTermArchive {...props} />
+            <div style={{ height: '50px' }} />
+            <RelatedContent {...props} />
+          </>
+        )}
       </Fill>
       <Fill name="amnesty/metadata/group/appearance">
-        <FeaturedImage />
-        <div style={{ height: '50px' }} />
-        <Sidebar />
+        {(props) => (
+          <>
+            <FeaturedImage {...props} />
+            <div style={{ height: '50px' }} />
+            <Sidebar {...props} />
+          </>
+        )}
       </Fill>
-      <Fill name="amnesty/metadata/group/visibility">
-        <ShareButtons />
-      </Fill>
+      <Fill name="amnesty/metadata/group/visibility">{(props) => <ShareButtons {...props} />}</Fill>
     </>
   );
 }

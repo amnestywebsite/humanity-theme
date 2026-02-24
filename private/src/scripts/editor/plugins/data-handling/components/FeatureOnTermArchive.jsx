@@ -1,8 +1,5 @@
 const { SelectControl } = wp.components;
-const { useEntityProp, useEntityRecords } = wp.coreData;
-const { useSelect } = wp.data;
-const { store: editorStore } = wp.editor;
-const { useCallback } = wp.element;
+const { useEntityRecords } = wp.coreData;
 const { __ } = wp.i18n;
 
 const options = [
@@ -12,10 +9,7 @@ const options = [
   },
 ];
 
-export default function FeatureOnTermArchive() {
-  const postId = useSelect((select) => select(editorStore).getCurrentPostId(), []);
-  const postType = useSelect((select) => select(editorStore).getCurrentPostType(), []);
-  const [meta, setMeta] = useEntityProp('postType', postType, 'meta', postId);
+export default function FeatureOnTermArchive({ postMeta: meta, editMeta }) {
   const { records, isResolving } = useEntityRecords('taxonomy', 'category');
 
   if (!isResolving && Array.isArray(records)) {
@@ -24,19 +18,12 @@ export default function FeatureOnTermArchive() {
     });
   }
 
-  const editFeatureOnTermArchive = useCallback(
-    (isAuthor) => {
-      setMeta({ ...meta, term_slider: isAuthor });
-    },
-    [meta, setMeta],
-  );
-
   return (
     <SelectControl
       label={__('Feature on content type:', 'amnesty')}
-      value={meta.term_slider}
+      value={meta?.term_slider}
       options={options}
-      onChange={editFeatureOnTermArchive}
+      onChange={(value) => editMeta('term_slider')(value)}
     />
   );
 }

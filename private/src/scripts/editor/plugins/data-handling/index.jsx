@@ -11,9 +11,10 @@ const {
   // eslint-disable-next-line @wordpress/no-unsafe-wp-apis
   __experimentalToggleGroupControlOption: ToggleGroupControlOption,
 } = wp.components;
+const { useEntityProp } = wp.coreData;
 const { useSelect } = wp.data;
 const { store: editorStore } = wp.editor;
-const { useState } = wp.element;
+const { useCallback, useState } = wp.element;
 const { applyFilters } = wp.hooks;
 const { __ } = wp.i18n;
 
@@ -38,11 +39,26 @@ const defaultGroups = [
     label: __('Visibility', 'amnesty'),
     value: 'visibility',
   },
+  {
+    label: __('Localisation', 'amnesty'),
+    value: 'localisation',
+  },
 ];
+
+function useEditPostMeta(meta, setMeta) {
+  return useCallback(
+    (key) => (value) => {
+      setMeta({ ...meta, [key]: value });
+    },
+    [meta, setMeta],
+  );
+}
 
 export default function DataHandling() {
   const postType = useSelect((select) => select(editorStore).getCurrentPostType(), []);
   const postId = useSelect((select) => select(editorStore).getCurrentPostId(), []);
+  const [meta, setMeta] = useEntityProp('postType', postType, 'meta', postId);
+  const editMeta = useEditPostMeta(meta, setMeta);
 
   const [modalOpen, setModalOpen] = useState(false);
   const toggleModal = () => setModalOpen(!modalOpen);
@@ -54,6 +70,13 @@ export default function DataHandling() {
   }
 
   const groups = applyFilters('amnesty/metadata/groups', defaultGroups);
+
+  const fillProps = {
+    postId,
+    postType,
+    postMeta: meta,
+    editMeta,
+  };
 
   return (
     <>
@@ -73,7 +96,7 @@ export default function DataHandling() {
               <ToggleGroupControlOption key={value} value={value} label={label} />
             ))}
           </ToggleGroupControl>
-          <Slot name={`amnesty/metadata/group/${activeGroup}`} />
+          <Slot name={`amnesty/metadata/group/${activeGroup}`} fillProps={fillProps} />
           <hr style={{ marginBlockStart: '50px' }} />
           <Button variant="primary" onClick={toggleModal}>
             {__('Confirm', 'amnesty')}
