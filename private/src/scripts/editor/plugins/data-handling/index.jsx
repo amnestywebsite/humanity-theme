@@ -39,10 +39,6 @@ const defaultGroups = [
     label: __('Visibility', 'amnesty'),
     value: 'visibility',
   },
-  {
-    label: __('Localisation', 'amnesty'),
-    value: 'localisation',
-  },
 ];
 
 function useEditPostMeta(meta, setMeta) {
