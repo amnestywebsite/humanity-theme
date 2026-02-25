@@ -1,9 +1,5 @@
 <?php
 
-if ( function_exists( 'is_shop' ) && is_shop() ) {
-	return;
-}
-
 if ( is_tax() ) {
 	get_template_part( 'partials/taxonomy/hero' );
 	return;
