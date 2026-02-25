@@ -1,5 +1,7 @@
 <?php
 
+$trimmed_content = remove_empty_p( trim( $content ) );
+
 $classname = [];
 
 if ( $attrs['align'] ) {
@@ -12,7 +14,7 @@ if ( 'video' === $attrs['type'] ) {
 	$classname[] = 'has-video';
 }
 
-if ( $content ) {
+if ( $trimmed_content ) {
 	$classname[] = 'has-inner-blocks';
 }
 
@@ -43,9 +45,9 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 	<?php endif; ?>
 	</div>
 
-<?php if ( $content ) : ?>
+<?php if ( $trimmed_content ) : ?>
 	<div class="hero-innerBlocks">
-		<?php echo wp_kses_post( $content ); ?>
+		<?php echo wp_kses_post( $trimmed_content ); ?>
 	</div>
 <?php endif; ?>
 
