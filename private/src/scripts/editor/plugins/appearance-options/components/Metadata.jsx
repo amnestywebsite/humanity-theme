@@ -16,7 +16,7 @@ function IndexNumber() {
 
   const editIndexNumber = useCallback(
     (indexNumber) => {
-      setMeta({ ...meta, amnesty_index_number: indexNumber });
+      setMeta({ ...meta, amnesty_index_number: indexNumber.trim() });
     },
     [meta, setMeta],
   );
