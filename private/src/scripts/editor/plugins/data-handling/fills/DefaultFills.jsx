@@ -12,34 +12,35 @@ const { Fill } = wp.components;
 export default function DefaultFills() {
   return (
     <>
-      <Fill name="amnesty/metadata/group/ownership">{(props) => <Byline {...props} />}</Fill>
-      <Fill name="amnesty/metadata/group/editorial">
-        {(props) => (
-          <>
-            <PublishedDate {...props} />
-            <UpdatedDate {...props} />
-          </>
-        )}
-      </Fill>
-      <Fill name="amnesty/metadata/group/curation">
-        {(props) => (
-          <>
-            <FeatureOnTermArchive {...props} />
-            <div style={{ height: '50px' }} />
-            <RelatedContent {...props} />
-          </>
-        )}
-      </Fill>
-      <Fill name="amnesty/metadata/group/appearance">
+      <Fill name="amnesty/metadata/group/post-options">
         {(props) => (
           <>
             <FeaturedImage {...props} />
             <div style={{ height: '50px' }} />
+            <RelatedContent {...props} />
+            <div style={{ height: '50px' }} />
+            <FeatureOnTermArchive {...props} />
+          </>
+        )}
+      </Fill>
+      <Fill name="amnesty/metadata/group/sidebar">
+        {(props) => (
+          <>
             <Sidebar {...props} />
           </>
         )}
       </Fill>
-      <Fill name="amnesty/metadata/group/visibility">{(props) => <ShareButtons {...props} />}</Fill>
+      <Fill name="amnesty/metadata/group/metadata">
+        {(props) => (
+          <>
+            <PublishedDate {...props} />
+            <UpdatedDate {...props} />
+            <div style={{ height: '50px' }} />
+            <ShareButtons {...props} />
+            <Byline {...props} />
+          </>
+        )}
+      </Fill>
     </>
   );
 }

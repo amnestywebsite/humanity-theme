@@ -9,6 +9,7 @@ const { __ } = wp.i18n;
 export default function ModalNavigation({ items, current, onChange }) {
   return (
     <ToggleGroupControl
+      __next40pxDefaultSize
       isBlock
       isDeselectable={false}
       label={__('Options', 'amnesty')}

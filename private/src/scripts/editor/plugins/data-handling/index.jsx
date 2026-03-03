@@ -8,30 +8,22 @@ const { useSelect } = wp.data;
 const { store: editorStore } = wp.editor;
 const { useCallback, useState } = wp.element;
 const { applyFilters } = wp.hooks;
-const { __ } = wp.i18n;
+const { __, sprintf } = wp.i18n;
 
 const SlotFillNamespace = 'amnesty/metadata/group';
 
 const defaultGroups = [
   {
-    label: __('Ownership', 'amnesty'),
-    value: 'ownership',
+    label: __('Post Options', 'amnesty'),
+    value: 'post-options',
   },
   {
-    label: __('Editorial', 'amnesty'),
-    value: 'editorial',
+    label: __('Sidebar', 'amnesty'),
+    value: 'sidebar',
   },
   {
-    label: __('Curation', 'amnesty'),
-    value: 'curation',
-  },
-  {
-    label: __('Appearance', 'amnesty'),
-    value: 'appearance',
-  },
-  {
-    label: __('Visibility', 'amnesty'),
-    value: 'visibility',
+    label: __('Metadata', 'amnesty'),
+    value: 'metadata',
   },
 ];
 
@@ -59,25 +51,32 @@ export default function DataHandling() {
     return null;
   }
 
-  const groups = applyFilters('amnesty/metadata/groups', defaultGroups);
+  const groups = applyFilters('amnesty.metadata.groups', defaultGroups);
 
   const fillProps = {
     postId,
     postType,
     postMeta: meta,
     editMeta,
+    modalOpen,
+    setModalOpen,
   };
 
   if (!modalOpen) {
     return <ActionButton isPressed={modalOpen} onClick={toggleModal} />;
   }
 
+  // translators: %s: the post type (e.g. "post", "page")
+  const title = sprintf(__('%s configuration', 'amnesty'), postType)
+    .toLowerCase()
+    .replace(/\b[a-z]/g, (c) => c.toUpperCase());
+
   return (
     <>
       <ActionButton isPressed={modalOpen} onClick={toggleModal} />
 
       <Modal
-        title={__('Metadata', 'amnesty')}
+        title={title}
         className="amnesty-data-handling-modal"
         size="fill"
         onRequestClose={toggleModal}
@@ -88,7 +87,7 @@ export default function DataHandling() {
           <Slot name={`${SlotFillNamespace}/${activeGroup}`} fillProps={fillProps} />
         </div>
 
-        <div>
+        <div style={{ textAlign: 'end' }}>
           <hr />
           <Button variant="primary" onClick={toggleModal}>
             {__('Confirm', 'amnesty')}

@@ -20,6 +20,7 @@ export default function FeatureOnTermArchive({ postMeta: meta, editMeta }) {
 
   return (
     <SelectControl
+      __next40pxDefaultSize
       label={__('Feature on content type:', 'amnesty')}
       value={meta?.term_slider}
       options={options}

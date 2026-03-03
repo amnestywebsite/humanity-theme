@@ -7,12 +7,12 @@ export default function Byline({ postMeta: meta, editMeta }) {
   return (
     <>
       <ToggleControl
-        label={__('Enable public byline', 'amnesty')}
+        label={__('Shwo public byline', 'amnesty')}
         help={__(
           'Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated',
           'amnesty',
         )}
-        value={meta?._display_author_info}
+        checked={meta?._display_author_info}
         onChange={(value) => editMeta('_display_author_info')(value)}
       />
       {meta?._display_author_info && (
@@ -25,12 +25,14 @@ export default function Byline({ postMeta: meta, editMeta }) {
       {meta?._display_author_info && !meta?.byline_is_author && (
         <>
           <TextControl
+            __next40pxDefaultSize
             label={__('Byline Name', 'amnesty')}
             help={__('The individual, group, or entity to be named as the author', 'amnesty')}
             value={meta?.byline_entity}
             onChange={(value) => editMeta('byline_entity')(value)}
           />
           <TextControl
+            __next40pxDefaultSize
             label={__('Byline Context', 'amnesty')}
             help={__(
               'Additional context for the byline; e.g. job title, short summary, location, etc',
