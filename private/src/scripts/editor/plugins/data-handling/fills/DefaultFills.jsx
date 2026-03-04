@@ -16,9 +16,9 @@ export default function DefaultFills() {
         {(props) => (
           <>
             <FeaturedImage {...props} />
-            <div style={{ height: '50px' }} />
+            <div className="amnesty-data-handling-spacer" />
             <RelatedContent {...props} />
-            <div style={{ height: '50px' }} />
+            <div className="amnesty-data-handling-spacer" />
             <FeatureOnTermArchive {...props} />
           </>
         )}
@@ -35,7 +35,7 @@ export default function DefaultFills() {
           <>
             <PublishedDate {...props} />
             <UpdatedDate {...props} />
-            <div style={{ height: '50px' }} />
+            <div className="amnesty-data-handling-spacer" />
             <ShareButtons {...props} />
             <Byline {...props} />
           </>

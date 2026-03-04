@@ -4,7 +4,6 @@ const { ToggleControl } = wp.components;
 const { __ } = wp.i18n;
 
 export default function FeaturedImage({ postMeta: meta, editMeta }) {
-  console.log({ meta });
   return (
     <>
       <ToggleControl

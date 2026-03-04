@@ -1,15 +1,15 @@
 import ActionButton from './fills/ActionButton.jsx';
 import DefaultFills from './fills/DefaultFills.jsx';
-import ModalNavigation from './components/ModalNavigation.jsx';
 
 const { Button, Fill, Modal, Slot } = wp.components;
 const { useEntityProp } = wp.coreData;
 const { useSelect } = wp.data;
 const { store: editorStore } = wp.editor;
-const { useCallback, useState } = wp.element;
+const { createRef, useCallback, useEffect, useRef, useState } = wp.element;
 const { applyFilters } = wp.hooks;
 const { __, sprintf } = wp.i18n;
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const SlotFillNamespace = 'amnesty/metadata/group';
 
 const defaultGroups = [
@@ -46,12 +46,75 @@ export default function DataHandling() {
   const toggleModal = () => setModalOpen(!modalOpen);
 
   const [activeGroup, setActiveGroup] = useState(defaultGroups[0].value);
+  const scrollRefs = useRef({});
+  const contentRef = useRef();
+
+  const groups = applyFilters('amnesty.metadata.groups', defaultGroups);
+  groups.forEach((group) => {
+    scrollRefs.current[group.value] = createRef();
+  });
+
+  useEffect(() => {
+    if (!modalOpen) {
+      return () => null;
+    }
+
+    const scrollContainer = contentRef.current;
+    if (!scrollContainer) {
+      return () => null;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const closest = {
+          target: null,
+          distance: null,
+        };
+
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          const { rootBounds } = entry;
+          if (!rootBounds) {
+            return;
+          }
+
+          const rootMidY = rootBounds.top + rootBounds.height / 2;
+          const targetDims = entry.boundingClientRect;
+          const targetIntersectPoint = targetDims.top;
+          const offset = Math.abs(targetIntersectPoint - rootMidY);
+
+          if (!closest.target || offset < closest.distance) {
+            closest.target = entry.target;
+            closest.distance = offset;
+          }
+        });
+
+        if (closest.target) {
+          setActiveGroup(closest.target.dataset.group);
+        }
+      },
+      {
+        root: scrollContainer,
+        rootMargin: '-50% 0px',
+        threshold: 0,
+      },
+    );
+
+    Object.keys(scrollRefs.current).forEach((group) => {
+      observer.observe(scrollRefs.current[group].current);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [modalOpen]);
 
   if (!postId || !postType || !['page', 'post'].includes(postType)) {
     return null;
   }
-
-  const groups = applyFilters('amnesty.metadata.groups', defaultGroups);
 
   const fillProps = {
     postId,
@@ -71,6 +134,14 @@ export default function DataHandling() {
     .toLowerCase()
     .replace(/\b[a-z]/g, (c) => c.toUpperCase());
 
+  const onButtonClick = (group) => (event) => {
+    event.preventDefault();
+    setActiveGroup(group);
+    scrollRefs.current[group].current.scrollIntoView({
+      behaviour: prefersReducedMotion ? 'instant' : 'smooth',
+    });
+  };
+
   return (
     <>
       <ActionButton isPressed={modalOpen} onClick={toggleModal} />
@@ -81,13 +152,39 @@ export default function DataHandling() {
         size="fill"
         onRequestClose={toggleModal}
       >
-        <ModalNavigation items={groups} current={activeGroup} onChange={setActiveGroup} />
+        <nav className="amnesty-data-handling-modal-navigation">
+          <ul>
+            {groups.map(({ value, label }) => (
+              <li key={value}>
+                <Button
+                  variant="link"
+                  isPressed={value === activeGroup}
+                  onClick={onButtonClick(value)}
+                  href={`#group-${value}`}
+                >
+                  {label}
+                </Button>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-        <div>
-          <Slot name={`${SlotFillNamespace}/${activeGroup}`} fillProps={fillProps} />
+        <div className="amnesty-data-handling-modal-content" ref={contentRef}>
+          {groups.map(({ value, label }) => (
+            <div
+              key={value}
+              id={`group-${value}`}
+              ref={scrollRefs.current[value]}
+              data-group={value}
+              className="amnesty-data-handling-modal-group"
+            >
+              <h2 className="amnesty-data-handling-modal-group-title">{label}</h2>
+              <Slot name={`${SlotFillNamespace}/${value}`} fillProps={fillProps} />
+            </div>
+          ))}
         </div>
 
-        <div style={{ textAlign: 'end' }}>
+        <div className="amnesty-data-handling-modal-actions">
           <hr />
           <Button variant="primary" onClick={toggleModal}>
             {__('Confirm', 'amnesty')}
