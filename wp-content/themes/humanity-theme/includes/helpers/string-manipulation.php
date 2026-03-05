@@ -13,9 +13,9 @@ if ( ! function_exists( 'pascal' ) ) {
 	 * @return string
 	 */
 	function pascal( $the_string = '' ) {
-		$the_string = preg_replace( '/[\'"]/', '', $the_string );
-		$the_string = preg_replace( '/[^a-zA-Z0-9]+/', ' ', $the_string );
-		return preg_replace( '/\s+/', '', ucwords( $the_string ) );
+		$the_string = (string) preg_replace( '/[\'"]/', '', $the_string );
+		$the_string = (string) preg_replace( '/[^a-zA-Z0-9]+/', ' ', $the_string );
+		return (string) preg_replace( '/\s+/', '', ucwords( $the_string ) );
 	}
 }
 
@@ -94,7 +94,7 @@ if ( ! function_exists( 'endspaceless' ) ) {
 	 * @return string|void
 	 */
 	function endspaceless( $output = true ) {
-		$data = trim( preg_replace( '~>[\b\s]*~', '>', ob_get_clean() ) );
+		$data = trim( (string) preg_replace( '~>[\b\s]*~', '>', (string) ob_get_clean() ) );
 
 		if ( ! $output ) {
 			return $data;
@@ -235,7 +235,7 @@ if ( ! function_exists( 'remove_arabic_diacritics' ) ) {
 		];
 
 		foreach ( $map as $from => $to ) {
-			$the_string = preg_replace( $from, $to, $the_string );
+			$the_string = (string) preg_replace( $from, $to, $the_string );
 		}
 
 		return $the_string;
@@ -258,5 +258,50 @@ if ( ! function_exists( 'remove_arabic_the' ) ) {
 		}
 
 		return $the_string;
+	}
+}
+
+if ( ! function_exists( 'validate_index_number' ) ) {
+	/**
+	 * Validates an Amnesty Index Number
+	 *
+	 * @param string $index the Index Number to validate
+	 *
+	 * @return bool
+	 */
+	function validate_index_number( string $index ): bool {
+		return 1 === preg_match(
+			'/^[a-zA-Z]{3}\s?\d{2}\/\d{3,4}\/\d{4}$/',
+			trim( $index ),
+		);
+	}
+}
+
+if ( ! function_exists( 'sanitise_index_number' ) ) {
+	/**
+	 * Sanitise an Amnesty Index Number
+	 *
+	 * @param string $index the Index Number to sanitise
+	 *
+	 * @return string
+	 */
+	function sanitise_index_number( string $index ): string {
+		if ( validate_index_number( $index ) ) {
+			return strtoupper( trim( $index ) );
+		}
+
+		$sanitised = strtoupper(
+			(string) preg_replace(
+				'/^.*?(\w{3}).*?(\d{2}).*?\/(\d{3,4}).*?(\d{4}).*?$/',
+				'$1 $2/$3/$4',
+				trim( $index ),
+			),
+		);
+
+		if ( validate_index_number( $sanitised ) ) {
+			return $sanitised;
+		}
+
+		return '';
 	}
 }
