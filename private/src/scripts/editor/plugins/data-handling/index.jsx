@@ -14,16 +14,16 @@ const SlotFillNamespace = 'amnesty/metadata/group';
 
 const defaultGroups = [
   {
-    label: __('Post Options', 'amnesty'),
-    value: 'post-options',
+    label: __('Header', 'amnesty'),
+    value: 'header',
   },
   {
-    label: __('Sidebar', 'amnesty'),
-    value: 'sidebar',
+    label: __('Features', 'amnesty'),
+    value: 'features',
   },
   {
-    label: __('Metadata', 'amnesty'),
-    value: 'metadata',
+    label: __('Curation', 'amnesty'),
+    value: 'curation',
   },
 ];
 
@@ -137,7 +137,7 @@ export default function DataHandling() {
   const onButtonClick = (group) => (event) => {
     event.preventDefault();
     setActiveGroup(group);
-    scrollRefs.current[group].current.scrollIntoView({
+    scrollRefs.current[group].current?.scrollIntoView({
       behaviour: prefersReducedMotion ? 'instant' : 'smooth',
     });
   };

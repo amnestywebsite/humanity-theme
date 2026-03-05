@@ -7,7 +7,7 @@ export default function Byline({ postMeta: meta, editMeta }) {
   return (
     <>
       <ToggleControl
-        label={__('Shwo public byline', 'amnesty')}
+        label={__('Show byline', 'amnesty')}
         help={__(
           'Content will be unattributed, and the author information will remain private, unless the byline is enabled and populated',
           'amnesty',

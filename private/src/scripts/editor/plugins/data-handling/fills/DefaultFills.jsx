@@ -6,38 +6,40 @@ import UpdatedDate from '../components/UpdatedDate.jsx';
 import RelatedContent from '../components/RelatedContent.jsx';
 import ShareButtons from '../components/ShareButtons.jsx';
 import Sidebar from '../components/Sidebar.jsx';
+import Spacer from '../components/Spacer.jsx';
 
 const { Fill } = wp.components;
 
 export default function DefaultFills() {
   return (
     <>
-      <Fill name="amnesty/metadata/group/post-options">
+      <Fill name="amnesty/metadata/group/header">
+        {(props) => (
+          <>
+            <Byline {...props} />
+            <Spacer />
+            <PublishedDate {...props} />
+            <UpdatedDate {...props} />
+            <Spacer />
+            <ShareButtons {...props} />
+          </>
+        )}
+      </Fill>
+      <Fill name="amnesty/metadata/group/features">
         {(props) => (
           <>
             <FeaturedImage {...props} />
-            <div className="amnesty-data-handling-spacer" />
-            <RelatedContent {...props} />
-            <div className="amnesty-data-handling-spacer" />
-            <FeatureOnTermArchive {...props} />
-          </>
-        )}
-      </Fill>
-      <Fill name="amnesty/metadata/group/sidebar">
-        {(props) => (
-          <>
+            <Spacer />
             <Sidebar {...props} />
+            <Spacer />
+            <RelatedContent {...props} />
           </>
         )}
       </Fill>
-      <Fill name="amnesty/metadata/group/metadata">
+      <Fill name="amnesty/metadata/group/curation">
         {(props) => (
           <>
-            <PublishedDate {...props} />
-            <UpdatedDate {...props} />
-            <div className="amnesty-data-handling-spacer" />
-            <ShareButtons {...props} />
-            <Byline {...props} />
+            <FeatureOnTermArchive {...props} />
           </>
         )}
       </Fill>

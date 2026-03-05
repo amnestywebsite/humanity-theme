@@ -26,7 +26,7 @@ export default function Sidebar({ postMeta: meta, editMeta }) {
   return (
     <>
       <ToggleControl
-        label={__('Hide sidebar contents', 'amnesty')}
+        label={__('Hide sidebar content', 'amnesty')}
         help={__(
           'Remove the sidebar, but not the sidebar area; this keeps an empty space to the side of the content. Generally used for text heavy pages.',
           'amnesty',
