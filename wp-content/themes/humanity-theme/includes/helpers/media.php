@@ -60,7 +60,6 @@ if ( ! function_exists( 'get_theme_image_sizes' ) ) {
 			'lwi-block-md@2x'  => [ 520, 520, false ],
 			'lwi-block-lg'     => [ 325, 325, false ],
 			'lwi-block-lg@2x'  => [ 650, 650, false ],
-			'wc-thumb'         => [ 335, 335, true ],
 			'action-wide'      => [ 480, 230, true ],
 			'action-standard'  => [ 350, 230, true ],
 		];
@@ -116,7 +115,6 @@ if ( ! function_exists( 'amnesty_custom_image_sizes' ) ) {
 				'lwi-block-md@2x'  => 'LWI Block Medium Retina',
 				'lwi-block-lg'     => 'LWI Block Large',
 				'lwi-block-lg@2x'  => 'LWI Block Large Retina',
-				'wc-thumb'         => 'WC thumb',
 				'action-wide'      => 'Action Wide',
 				'action-wide@2x'   => 'Action Wide Retina',
 			]

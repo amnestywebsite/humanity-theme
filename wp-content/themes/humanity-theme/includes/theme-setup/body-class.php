@@ -15,11 +15,6 @@ if ( ! function_exists( 'amnesty_body_class' ) ) {
 			$classes[] = 'fse';
 		}
 
-		if ( function_exists( 'is_shop' ) && is_shop() ) {
-			$classes[] = 'shop';
-			return $classes;
-		}
-
 		if ( is_tax() || is_page( 'petitions' ) ) {
 			$classes[] = 'has-hero';
 			return $classes;
