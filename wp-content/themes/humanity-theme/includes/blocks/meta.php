@@ -58,6 +58,14 @@ if ( ! function_exists( 'amnesty_core_register_meta' ) ) {
 		register_meta( 'post', 'show_published_date', $bool_true );
 		register_meta( 'post', 'show_updated_date', $bool_true );
 		register_meta( 'post', 'term_slider', $string );
+
+		register_meta(
+			'post',
+			'amnesty_index_number',
+			$string + [
+				'sanitize_callback' => 'sanitise_index_number',
+			],
+		);
 	}
 }
 
