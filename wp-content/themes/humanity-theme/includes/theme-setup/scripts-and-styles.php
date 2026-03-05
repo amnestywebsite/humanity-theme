@@ -60,13 +60,7 @@ if ( ! function_exists( 'amnesty_styles' ) ) {
 
 		$theme = wp_get_theme();
 
-		$style_deps = [];
-
-		if ( wp_style_is( 'woocommerce-general' ) ) {
-			$style_deps[] = 'woocommerce-general';
-		}
-
-		wp_enqueue_style( 'amnesty-theme', amnesty_asset_uri( 'styles' ) . '/bundle.css', $style_deps, $theme->get( 'Version' ), 'all' );
+		wp_enqueue_style( 'amnesty-theme', amnesty_asset_uri( 'styles' ) . '/bundle.css', [], $theme->get( 'Version' ), 'all' );
 		wp_add_inline_style( 'amnesty-theme', sprintf( ':root{--amnesty-icon-path:url("%s"),none}', esc_url( get_template_directory_uri() . '/assets/images/sprite.svg' ) ) );
 
 		$ol_characters = amnesty_get_option( 'ol_locale_option', 'amnesty_localisation_options_page' );
@@ -187,23 +181,6 @@ if ( ! function_exists( 'amnesty_gutenberg_assets' ) ) {
 		}
 
 		wp_localize_script( 'amnesty-core-blocks-js', 'aiSettings', $settings );
-
-		if ( current_theme_supports( 'woocommerce' ) ) {
-			$woo = [
-				'nonce' => wp_create_nonce( 'amnesty-wc' ),
-			];
-
-			if ( function_exists( 'amnesty_get_wooccm_fields' ) ) {
-				$woo['wooccm'] = amnesty_get_wooccm_fields(
-					function ( $field ) {
-						return empty( $field['disabled'] ) && 'select' === $field['type'];
-					}
-				);
-			}
-
-			wp_localize_script( 'amnesty-core-blocks-js', 'amnestyWC', $woo );
-		}
-
 		wp_set_script_translations( 'amnesty-core-blocks-js', 'amnesty', get_template_directory() . '/languages' );
 
 		wp_enqueue_style( 'amnesty-core-gutenberg', amnesty_asset_uri( 'styles' ) . '/blocks.css', [ 'wp-block-library-theme' ], $theme->get( 'Version' ), 'all' );
