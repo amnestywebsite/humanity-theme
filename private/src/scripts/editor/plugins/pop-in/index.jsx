@@ -3,12 +3,11 @@ import './block-restrictions';
 import { validateBool } from '../../blocks/utils';
 
 const { ToggleControl } = wp.components;
-const { compose, ifCondition } = wp.compose;
-const { select, useDispatch, useSelect } = wp.data;
-const { Fragment, useCallback } = wp.element;
+const { useDispatch, useSelect } = wp.data;
+const { store: editorStore } = wp.editor;
 const { PluginDocumentSettingPanel } = wp.editPost;
+const { useCallback } = wp.element;
 const { __ } = wp.i18n;
-const { registerPlugin } = wp.plugins;
 
 const useRenderTitle = (props) => {
   const { renderTitle } = useSelect(
@@ -36,11 +35,16 @@ const useRenderTitle = (props) => {
   return { renderTitle, onRenderTitleToggle };
 };
 
-const PopInSettings = (props) => {
+export default function PopInSettings(props) {
+  const postType = useSelect((select) => select(editorStore).getCurrentPostType(), []);
   const { renderTitle, onRenderTitleToggle } = useRenderTitle(props);
 
+  if (postType !== 'pop-in') {
+    return null;
+  }
+
   return (
-    <Fragment>
+    <>
       <PluginDocumentSettingPanel
         name="pop-in"
         title={/* translators: [admin] */ __('Pop-in Settings', 'amnesty')}
@@ -54,12 +58,6 @@ const PopInSettings = (props) => {
           onChange={(value) => onRenderTitleToggle(value)}
         />
       </PluginDocumentSettingPanel>
-    </Fragment>
+    </>
   );
-};
-
-registerPlugin('amnesty-core-pop-in', {
-  render: compose([
-    ifCondition(() => select('core/editor').getEditedPostAttribute('type') === 'pop-in'),
-  ])(PopInSettings),
-});
+}
