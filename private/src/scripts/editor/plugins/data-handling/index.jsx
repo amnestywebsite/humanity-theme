@@ -55,6 +55,14 @@ export default function DataHandling() {
   });
 
   useEffect(() => {
+    Object.keys(scrollRefs.current).forEach((group) => {
+      scrollRefs.current[group].current?.classList.remove('is-active-group');
+    });
+
+    scrollRefs.current[activeGroup].current?.classList.add('is-active-group');
+  }, [activeGroup, scrollRefs]);
+
+  useEffect(() => {
     if (!modalOpen) {
       return () => null;
     }

@@ -1,3 +1,17 @@
+@keyframes indicator {
+  0% {
+    background-color: transparent;
+  }
+
+  30% {
+    background-color: var(--wp--preset--color--grey-lighter);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
 .amnesty-action-button.is-pressed {
 	background: #fff !important;
 
@@ -41,17 +55,20 @@
   padding-inline-end: var(--wp--preset--spacing--single);
 }
 
-.amnesty-data-handling-modal-group + .amnesty-data-handling-modal-group {
-  margin-block-start: var(--wp--preset--spacing--double);
-  padding-block-start: var(--wp--preset--spacing--single);
-  border-block-start: 1px solid var(--wp--preset--color--grey-light);
+.amnesty-data-handling-modal-group-title {
+  margin-block: var(--wp--preset--spacing--single);
+  padding-block: var(--wp--preset--spacing--single);
+  border-block: 1px solid var(--wp--preset--color--grey-light);
 }
 
-.amnesty-data-handling-modal-group-title {
+.amnesty-data-handling-modal-group:first-of-type .amnesty-data-handling-modal-group-title {
   margin-block-start: 0;
-  margin-block-end: var(--wp--preset--spacing--single);
-  padding-block-end: var(--wp--preset--spacing--single);
-  border-block-end: 1px solid var(--wp--preset--color--grey-light);
+  padding-block-start: 0;
+  border-block-start: none;
+}
+
+.amnesty-data-handling-modal-group.is-active-group .amnesty-data-handling-modal-group-title {
+  animation: indicator 0.6s ease-out;
 }
 
 .amnesty-data-handling-modal-actions {
