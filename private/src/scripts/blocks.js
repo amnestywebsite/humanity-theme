@@ -12,9 +12,6 @@ import '../styles/gutenberg.scss';
 
 import './editor/block-styles';
 
-import './editor/plugins/appearance-options/index.jsx';
-import './editor/plugins/pop-in/index.jsx';
-
 import './editor/blocks/action/index.jsx';
 import './editor/blocks/blockquote/index.jsx';
 import './editor/blocks/core-mods';

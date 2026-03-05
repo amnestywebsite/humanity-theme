@@ -90,6 +90,9 @@
 @import "pages/search";
 @import "pages/single";
 
+// Editor plugins
+@import "editor-plugins/data-handling";
+
 html {
   box-sizing: border-box;
 }
