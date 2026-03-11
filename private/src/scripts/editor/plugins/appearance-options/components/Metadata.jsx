@@ -7,26 +7,45 @@ const { compose, ifCondition } = wp.compose;
 const { useEntityProp } = wp.coreData;
 const { useSelect } = wp.data;
 const { store: editorStore } = wp.editor;
+const { useState } = wp.element;
 const { __ } = wp.i18n;
 
 function IndexNumber() {
   const postId = useSelect((select) => select(editorStore).getCurrentPostId(), []);
   const postType = useSelect((select) => select(editorStore).getCurrentPostType(), []);
   const [meta, setMeta] = useEntityProp('postType', postType, 'meta', postId);
+  const [isValid, setIsValid] = useState(true);
 
   const editIndexNumber = useCallback(
     (indexNumber) => {
-      setMeta({ ...meta, amnesty_index_number: indexNumber.trim() });
+      const trimmed = indexNumber.trim();
+
+      if (!trimmed.length) {
+        setIsValid(true);
+        setMeta({ ...meta, amnesty_index_number: indexNumber });
+        return;
+      }
+
+      const valid = /^[A-Z]{3}\s\d{2}\/\d{3,4}\/\d{4}$/.test(trimmed);
+      setIsValid(valid);
+
+      setMeta({ ...meta, amnesty_index_number: indexNumber });
     },
     [meta, setMeta],
   );
 
   return (
-    <TextControl
-      label={__('Index Number', 'amnesty')}
-      value={meta?.amnesty_index_number ?? ''}
-      onChange={editIndexNumber}
-    />
+    <>
+      <TextControl
+        label={__('Index Number', 'amnesty')}
+        value={meta?.amnesty_index_number ?? ''}
+        placeholder={`ABC 12/3456/${new Date().getFullYear()}`}
+        onChange={editIndexNumber}
+      />
+      {!isValid && (
+        <small>{__('This input should meet AI Index Number formatting criteria', 'amnesty')}</small>
+      )}
+    </>
   );
 }
 
