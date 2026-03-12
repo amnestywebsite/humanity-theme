@@ -1,5 +1,6 @@
 const { SelectControl } = wp.components;
 const { useEntityRecords } = wp.coreData;
+const { useEffect } = wp.element;
 const { __ } = wp.i18n;
 
 const options = [
@@ -21,11 +22,13 @@ const options = [
 export default function FeatureOnTermArchive({ postMeta: meta, editMeta }) {
   const { records, isResolving } = useEntityRecords('taxonomy', 'category');
 
-  if (!isResolving && Array.isArray(records)) {
-    records.forEach(({ name, slug }) => {
-      options.push({ label: name, value: slug });
-    });
-  }
+  useEffect(() => {
+    if (!isResolving && Array.isArray(records)) {
+      records.forEach(({ name, slug }) => {
+        options.push({ label: name, value: slug });
+      });
+    }
+  }, [records, isResolving]);
 
   return (
     <SelectControl
