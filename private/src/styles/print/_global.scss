@@ -1,3 +1,17 @@
+// stylelint-disable rule-empty-line-before
+
+@media not print {
+	.print-only {
+		display: none !important;
+	}
+}
+
+@media print {
+	.not-print {
+		display: none !important;
+	}
+}
+
 @media print {
   .overlay,
   .language-selector,
