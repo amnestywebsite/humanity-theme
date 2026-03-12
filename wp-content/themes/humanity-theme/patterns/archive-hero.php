@@ -7,10 +7,6 @@
  * Inserter: no
  */
 
-if ( function_exists( 'is_shop' ) && is_shop() ) {
-	return;
-}
-
 if ( is_tax() ) {
 	return;
 }
