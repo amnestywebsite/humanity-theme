@@ -1,3 +1,17 @@
+### v3.0.3
+Fixes:
+- Remove old WooCommerce references
+- Update Index Number pattern to use real blocks
+- Prevent rendering of empty InnerBlocks area in Hero block
+
+Improvements:
+- Add print-only / not-print CSS classes
+- Replace / remove deprecated CSS declarations
+- Allow users to specify Index Number on pages and posts
+
+Build:
+- Upgrade build dependencies
+
 ### v3.0.2
 Fixes:
 - Missing inputs on advanced search filters
