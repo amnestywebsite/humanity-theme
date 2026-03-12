@@ -15,4 +15,6 @@ if ( ! $index_number ) {
 }
 ?>
 
-<span class="indexNumber"><?php echo esc_html__( 'Index Number:', 'aibrand' ), '&nbsp;', esc_html( $index_number ); ?></span>
+<!-- wp:paragraph {"className":"indexNumber"} -->
+<p class="indexNumber"><?php echo esc_html__( 'Index Number:', 'amnesty' ), '&nbsp;', esc_html( $index_number ); ?></p>
+<!-- /wp:paragraph -->
