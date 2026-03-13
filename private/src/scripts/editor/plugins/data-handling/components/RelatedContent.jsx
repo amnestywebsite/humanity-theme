@@ -23,8 +23,8 @@ export default function RelatedContent({ postMeta: meta, editMeta }) {
 
   return (
     <ToggleControl
-      label={__('Show Related Content', 'amnesty')}
-      help={__('Shows the Related Content section for this entity', 'amnesty')}
+      label={__('Show related content', 'amnesty')}
+      help={__('Shows the related content section for this entity', 'amnesty')}
       checked={checked}
       onChange={onChange}
     />

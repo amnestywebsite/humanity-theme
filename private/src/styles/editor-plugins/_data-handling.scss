@@ -52,7 +52,7 @@
 
 .amnesty-data-handling-modal-content {
   overflow-y: scroll;
-  padding-inline-end: var(--wp--preset--spacing--single);
+  padding-inline: var(--wp--preset--spacing--single);
 }
 
 .amnesty-data-handling-modal-group {
@@ -79,4 +79,20 @@
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: end;
+}
+
+.amnesty-data-handling-taxonomies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: var(--wp--preset--spacing--single);
+}
+
+.amnesty-data-handling-taxonomy-wrapper {
+  padding: var(--wp--preset--spacing--quarter);
+  border: 1px dotted;
+}
+
+.amnesty-data-handling-taxonomy-wrapper > .components-flex {
+  height: auto;
 }

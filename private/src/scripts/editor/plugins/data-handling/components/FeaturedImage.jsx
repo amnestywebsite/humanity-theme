@@ -1,6 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 
 const { ToggleControl } = wp.components;
+const { PostFeaturedImage } = wp.editor;
 const { useState } = wp.element;
 const { __ } = wp.i18n;
 
@@ -33,6 +34,7 @@ export default function FeaturedImage({ postMeta: meta, editMeta }) {
 
   return (
     <>
+      <PostFeaturedImage />
       <ToggleControl
         label={__('Show featured image', 'amnesty')}
         help={__('Show the featured image.', 'amnesty')}
