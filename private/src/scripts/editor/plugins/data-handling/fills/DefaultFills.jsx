@@ -1,13 +1,14 @@
 import Byline from '../components/Byline.jsx';
-import FeaturedImage from '../components/FeaturedImage.jsx';
+import Excerpt from '../components/Excerpt.jsx';
 import FeatureOnTermArchive from '../components/FeatureOnTermArchive.jsx';
+import FeaturedImage from '../components/FeaturedImage.jsx';
 import PublishedDate from '../components/PublishedDate.jsx';
-import UpdatedDate from '../components/UpdatedDate.jsx';
 import RelatedContent from '../components/RelatedContent.jsx';
 import ShareButtons from '../components/ShareButtons.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 import Spacer from '../components/Spacer.jsx';
 import Taxonomies from '../components/Taxonomies.jsx';
+import UpdatedDate from '../components/UpdatedDate.jsx';
 
 const { Fill } = wp.components;
 const { PostFeaturedImage, PostFeaturedImageCheck } = wp.editor;
@@ -45,6 +46,7 @@ export default function DefaultFills() {
       <Fill name="amnesty/metadata/group/curation">
         {(props) => (
           <>
+            <Excerpt {...props} />
             <Taxonomies {...props} />
             <FeatureOnTermArchive {...props} />
           </>
