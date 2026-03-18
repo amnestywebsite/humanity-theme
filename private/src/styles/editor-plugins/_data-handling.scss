@@ -80,3 +80,15 @@
   grid-column-end: 3;
   text-align: end;
 }
+
+.amnesty-data-handling-taxonomy {
+  margin-block-end: var(--wp--preset--spacing--single);
+}
+
+.amnesty-data-handling-taxonomy .components-search-control {
+  max-width: 400px;
+}
+
+.amnesty-data-handling-taxonomy .editor-post-taxonomies__hierarchical-terms-add {
+  display: none;
+}

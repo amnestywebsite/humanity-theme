@@ -7,6 +7,7 @@ import RelatedContent from '../components/RelatedContent.jsx';
 import ShareButtons from '../components/ShareButtons.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 import Spacer from '../components/Spacer.jsx';
+import Taxonomies from '../components/Taxonomies.jsx';
 
 const { Fill } = wp.components;
 const { PostFeaturedImage, PostFeaturedImageCheck } = wp.editor;
@@ -44,6 +45,7 @@ export default function DefaultFills() {
       <Fill name="amnesty/metadata/group/curation">
         {(props) => (
           <>
+            <Taxonomies {...props} />
             <FeatureOnTermArchive {...props} />
           </>
         )}
