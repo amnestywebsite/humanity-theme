@@ -1,6 +1,6 @@
 const { useSelect } = wp.data;
 const { PostExcerpt, PostExcerptCheck } = wp.editor;
-const editorStore = wp.editPost.store.name;
+const prefsStore = wp.preferences.store.name;
 
 /**
  * Render the component for managing an entity's excerpt
@@ -8,9 +8,9 @@ const editorStore = wp.editPost.store.name;
  * @return {JSX.Element}
  */
 export default function Excerpt() {
-  const panels = useSelect((select) => select(editorStore).getPreference('panels'));
+  const inactivePanels = useSelect((select) => select(prefsStore).get('core', 'inactivePanels'));
 
-  if (!panels['post-excerpt'].enabled) {
+  if (inactivePanels.includes('post-excerpt')) {
     return null;
   }
 
