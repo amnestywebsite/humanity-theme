@@ -9,6 +9,7 @@ import Sidebar from '../components/Sidebar.jsx';
 import Spacer from '../components/Spacer.jsx';
 
 const { Fill } = wp.components;
+const { PostFeaturedImage, PostFeaturedImageCheck } = wp.editor;
 
 export default function DefaultFills() {
   return (
@@ -28,6 +29,10 @@ export default function DefaultFills() {
       <Fill name="amnesty/metadata/group/features">
         {(props) => (
           <>
+            <PostFeaturedImageCheck>
+              <PostFeaturedImage />
+            </PostFeaturedImageCheck>
+            <Spacer height="20px" />
             <FeaturedImage {...props} />
             <Spacer />
             <Sidebar {...props} />
