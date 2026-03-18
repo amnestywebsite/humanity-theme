@@ -37,12 +37,13 @@ function useEditPostMeta(meta, setMeta) {
 }
 
 export default function DataHandling() {
+  const isNew = useSelect((select) => select(editorStore).isCleanNewPost(), []);
   const postType = useSelect((select) => select(editorStore).getCurrentPostType(), []);
   const postId = useSelect((select) => select(editorStore).getCurrentPostId(), []);
   const [meta, setMeta] = useEntityProp('postType', postType, 'meta', postId);
   const editMeta = useEditPostMeta(meta, setMeta);
 
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(isNew);
   const toggleModal = () => setModalOpen(!modalOpen);
 
   const [activeGroup, setActiveGroup] = useState(defaultGroups[0].value);
