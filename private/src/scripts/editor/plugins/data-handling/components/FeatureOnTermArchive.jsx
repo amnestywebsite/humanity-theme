@@ -3,12 +3,12 @@ const { useEntityRecords } = wp.coreData;
 const { useEffect } = wp.element;
 const { __ } = wp.i18n;
 
-const options = [
-  {
+const options = {
+  '': {
     label: __('Select Term', 'amnesty'),
     value: '',
   },
-];
+};
 
 /**
  * Render the component for managing an entity's term archive slider visibility
@@ -25,7 +25,9 @@ export default function FeatureOnTermArchive({ postMeta: meta, editMeta }) {
   useEffect(() => {
     if (!isResolving && Array.isArray(records)) {
       records.forEach(({ name, slug }) => {
-        options.push({ label: name, value: slug });
+        if (!options[slug]) {
+          options[slug] = { label: name, value: slug };
+        }
       });
     }
   }, [records, isResolving]);
@@ -35,7 +37,7 @@ export default function FeatureOnTermArchive({ postMeta: meta, editMeta }) {
       __next40pxDefaultSize
       label={__('Feature on content type:', 'amnesty')}
       value={meta?.term_slider}
-      options={options}
+      options={Object.values(options)}
       onChange={(value) => editMeta('term_slider')(value)}
     />
   );

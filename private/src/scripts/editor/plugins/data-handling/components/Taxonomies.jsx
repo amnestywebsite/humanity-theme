@@ -1,5 +1,13 @@
 const { PostTaxonomies, PostTaxonomiesCheck } = wp.editor;
 
+/**
+ * Wrapper component for the core taxonomy component
+ *
+ * @param {JSX.Element} children the taxonomy component tree
+ * @param {object}      taxonomy the taxonomy object
+ *
+ * @return {JSX.Element}
+ */
 function TaxonomyWrapper(children, taxonomy) {
   return (
     <div className={`amnesty-data-handling-taxonomy taxonomy-${taxonomy.slug}`}>

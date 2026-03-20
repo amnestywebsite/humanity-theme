@@ -5,11 +5,11 @@ const { Button, Fill, Modal, Slot } = wp.components;
 const { useEntityProp } = wp.coreData;
 const { useSelect } = wp.data;
 const { store: editorStore } = wp.editor;
-const { createRef, useCallback, useEffect, useRef, useState } = wp.element;
+const { createRef, useCallback, useEffect, useLayoutEffect, useRef, useState } = wp.element;
 const { applyFilters } = wp.hooks;
 const { __, sprintf } = wp.i18n;
 
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 const SlotFillNamespace = 'amnesty/metadata/group';
 
 const defaultGroups = [
@@ -46,22 +46,32 @@ export default function DataHandling() {
   const [modalOpen, setModalOpen] = useState(isNew);
   const toggleModal = () => setModalOpen(!modalOpen);
 
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(reducedMotionQuery.matches);
+
   const [activeGroup, setActiveGroup] = useState(defaultGroups[0].value);
   const scrollRefs = useRef({});
   const contentRef = useRef();
 
   const groups = applyFilters('amnesty.metadata.groups', defaultGroups);
   groups.forEach((group) => {
-    scrollRefs.current[group.value] = createRef();
+    if (!scrollRefs.current[group.value]) {
+      scrollRefs.current[group.value] = createRef();
+    }
   });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     Object.keys(scrollRefs.current).forEach((group) => {
-      scrollRefs.current[group].current?.classList.remove('is-active-group');
+      scrollRefs.current[group].current?.classList.toggle('is-active-group', group === activeGroup);
     });
-
-    scrollRefs.current[activeGroup].current?.classList.add('is-active-group');
   }, [activeGroup, scrollRefs]);
+
+  useEffect(() => {
+    const updatePrefersReducedMotion = () => setPrefersReducedMotion(reducedMotionQuery.matches);
+    reducedMotionQuery.addEventListener('change', updatePrefersReducedMotion);
+    return () => {
+      reducedMotionQuery.removeEventListener('change', updatePrefersReducedMotion);
+    };
+  }, []);
 
   useEffect(() => {
     if (!modalOpen) {
@@ -107,7 +117,7 @@ export default function DataHandling() {
       },
       {
         root: scrollContainer,
-        rootMargin: '-50% 0px',
+        rootMargin: '-50% 0px -50% 0px',
         threshold: 0,
       },
     );
@@ -147,7 +157,9 @@ export default function DataHandling() {
     event.preventDefault();
     setActiveGroup(group);
     scrollRefs.current[group].current?.scrollIntoView({
-      behaviour: prefersReducedMotion ? 'instant' : 'smooth',
+      behavior: prefersReducedMotion ? 'instant' : 'smooth',
+      block: 'start',
+      container: 'nearest',
     });
   };
 
