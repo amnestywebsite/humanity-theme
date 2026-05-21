@@ -77,7 +77,7 @@
     "flickity": "^2.3.0",
     "flickity-as-nav-for": "^2.0.1",
     "intersection-observer": "^0.12.2",
-    "js-cookie": "^3.0.5",
+    "js-cookie": "^3.0.7",
     "memize": "^2.1.1",
     "object-fit-images": "^3.2.4",
     "react-beautiful-dnd": "^13.1.1",
