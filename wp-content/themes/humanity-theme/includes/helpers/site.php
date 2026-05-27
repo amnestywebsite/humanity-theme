@@ -77,24 +77,29 @@ if ( ! function_exists( 'get_site_language_name' ) ) {
 	 * @return string
 	 */
 	function get_site_language_name( int $blog_id = null ): string {
-		$override = get_blog_option( $blog_id, 'amnesty_language_name' );
+		if ( ! is_int( $blog_id ) ) {
+			$blog_id = get_current_blog_id();
+		}
+
+		$override = amnesty_get_raw_blog_option( $blog_id, 'amnesty_language_name' );
 
 		if ( $override ) {
 			return $override;
 		}
 
+		$lang = false;
+
 		if ( is_multilingualpress_enabled() ) {
 			$lang = languageByTag( siteLanguageTag( $blog_id ) )?->nativeName();
-
-			if ( $lang ) {
-				return strip_language_name_parentheticals( $lang );
-			}
 		}
 
-		$lang = get_blog_option( $blog_id, 'WPLANG' );
+		if ( $lang ) {
+			return strip_language_name_parentheticals( $lang );
+		}
+
+		$lang = amnesty_get_raw_blog_option( $blog_id, 'WPLANG' );
 		$lang = $lang ?: get_site_option( 'WPLANG' );
-		$lang = $lang ?: ( $GLOBALS['wp_local_package'] ?? false );
-		$lang = $lang ?: 'en_GB';
+		$lang = $lang ?: ( $GLOBALS['wp_local_package'] ?? 'en_GB' );
 
 		if ( class_exists( 'Locale' ) ) {
 			$lang = Locale::getDisplayName( $lang, $lang );

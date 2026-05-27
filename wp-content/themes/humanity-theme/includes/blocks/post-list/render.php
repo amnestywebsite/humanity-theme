@@ -13,48 +13,47 @@ if ( ! function_exists( 'amnesty_list_process_query' ) ) {
 	 * @param bool         $show_author whether to render author
 	 * @param bool         $show_post_date whether to render post date
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_list_process_query( $query, $term = false, $show_author = false, $show_post_date = false ) {
-		$posts = false;
+	function amnesty_list_process_query( $query, $term = false, $show_author = false, $show_post_date = false ): ?array {
+		if ( ! $query->have_posts() ) {
+			return null;
+		}
 
-		if ( $query->have_posts() ) {
-			$posts = [];
+		$posts = [];
 
-			while ( $query->have_posts() ) {
-				$query->the_post();
+		while ( $query->have_posts() ) {
+			$query->the_post();
 
-				$item = [
-					'id'                => get_the_ID(),
-					'showAuthor'        => $show_author,
-					'showPostDate'      => $show_post_date,
-					'author'            => get_the_author(),
-					'date'              => get_the_date(),
-					'title'             => get_the_title(),
-					'link'              => get_the_permalink(),
-					'tag'               => false,
-					'tag_link'          => false,
-					'featured_image'    => amnesty_featured_image( get_the_ID(), 'post-half@2x' ),
-					'featured_image_id' => get_post_thumbnail_id( get_the_ID() ),
-					'excerpt'           => get_the_excerpt(),
-				];
+			$item = [
+				'id'                => get_the_ID(),
+				'showAuthor'        => $show_author,
+				'showPostDate'      => $show_post_date,
+				'author'            => get_the_author(),
+				'date'              => get_the_date(),
+				'title'             => get_the_title(),
+				'link'              => get_the_permalink(),
+				'tag'               => false,
+				'tag_link'          => false,
+				'featured_image'    => amnesty_featured_image( get_the_ID(), 'post-half@2x' ),
+				'featured_image_id' => get_post_thumbnail_id( get_the_ID() ),
+			];
 
-				if ( ! $term ) {
-					$term = amnesty_get_prominent_term( get_the_ID() );
-				}
-
-				// check the post has one of the terms from the category list, if it does render the first one as a label
-				if ( has_category( $term, get_the_ID() ) ) {
-					$terms            = get_the_category( get_the_ID() );
-					$item['tag']      = $terms[0]->name;
-					$item['tag_link'] = amnesty_term_link( $terms[0] );
-				}
-
-				$posts[] = $item;
+			if ( ! $term ) {
+				$term = amnesty_get_prominent_term( (int) get_the_ID() );
 			}
 
-			wp_reset_postdata();
+			// check the post has one of the terms from the category list, if it does render the first one as a label
+			if ( has_category( $term, get_the_ID() ) ) {
+				$terms            = get_the_category( get_the_ID() );
+				$item['tag']      = $terms[0]->name;
+				$item['tag_link'] = amnesty_term_link( $terms[0] );
+			}
+
+			$posts[] = $item;
 		}
+
+		wp_reset_postdata();
 
 		return $posts;
 	}
@@ -68,15 +67,16 @@ if ( ! function_exists( 'amnesty_list_process_category' ) ) {
 	 *
 	 * @param array $attributes - Current Block attributes.
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_list_process_category( $attributes ) {
-		if ( empty( $attributes ) || ! isset( $attributes['category'] ) || ! $attributes['category'] ) {
-			return false;
+	function amnesty_list_process_category( $attributes ): ?array { // phpcs:ignore Generic.Metrics.CyclomaticComplexity.TooHigh
+		if ( ! isset( $attributes['category'] ) || ! $attributes['category'] ) {
+			return null;
 		}
 
-		if ( empty( $attributes ) || ! isset( $attributes['amount'] ) || ! $attributes['amount'] ) {
-			$amount = 3;
+		$amount = 3;
+		if ( isset( $attributes['amount'] ) && (bool) $attributes['amount'] ) {
+			$amount = absint( $attributes['amount'] );
 		}
 
 		$category = json_decode( $attributes['category'] );
@@ -86,12 +86,7 @@ if ( ! function_exists( 'amnesty_list_process_category' ) ) {
 			// deprecated variant
 			$category__in = [ $category->value ];
 		} elseif ( is_array( $category ) ) {
-			$category__in = array_map(
-				function ( $c ) {
-					return $c->value;
-				},
-				$category
-			);
+			$category__in = array_map( fn ( $c ) => $c->value, $category );
 		}
 
 		if ( empty( $category__in ) ) {
@@ -101,12 +96,14 @@ if ( ! function_exists( 'amnesty_list_process_category' ) ) {
 		$post_categories = false;
 
 		if ( ! empty( $attributes['categoryRelated'] ) && is_singular( 'post' ) ) {
-			$post_categories = array_map(
-				function ( $term ) {
-					return $term->term_id;
-				},
-				wp_get_post_terms( get_queried_object_id(), 'category' )
-			);
+			$post_terms = wp_get_post_terms( get_queried_object_id(), 'category' );
+
+			if ( is_array( $post_terms ) ) {
+				$post_categories = array_map(
+					fn ( $term ) => $term->term_id,
+					$post_terms,
+				);
+			}
 		}
 
 		$category_override = false;
@@ -116,8 +113,6 @@ if ( ! function_exists( 'amnesty_list_process_category' ) ) {
 		} else {
 			$category_override = $category__in;
 		}
-
-		$amount = isset( $amount ) ? $amount : $attributes['amount'];
 
 		$show_author        = $attributes['displayAuthor'];
 		$show_post_date     = $attributes['displayPostDate'];
@@ -148,15 +143,16 @@ if ( ! function_exists( 'amnesty_list_process_author' ) ) {
 	 *
 	 * @param array $attributes - Current Block attributes.
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_list_process_author( $attributes ) {
-		if ( empty( $attributes ) || ! isset( $attributes['authors'] ) || ! $attributes['authors'] ) {
-			return false;
+	function amnesty_list_process_author( $attributes ): ?array {
+		if ( ! isset( $attributes['authors'] ) || ! $attributes['authors'] ) {
+			return null;
 		}
 
-		if ( empty( $attributes ) || ! isset( $attributes['amount'] ) || ! $attributes['amount'] ) {
-			$amount = 3;
+		$amount = 3;
+		if ( isset( $attributes['amount'] ) && (bool) $attributes['amount'] ) {
+			$amount = absint( $attributes['amount'] );
 		}
 
 		$authors = json_decode( $attributes['authors'] );
@@ -166,19 +162,12 @@ if ( ! function_exists( 'amnesty_list_process_author' ) ) {
 			// deprecated variant
 			$author__in = [ $authors->value ];
 		} elseif ( is_array( $authors ) ) {
-			$author__in = array_map(
-				function ( $c ) {
-					return $c->value;
-				},
-				$authors
-			);
+			$author__in = array_map( fn ( $c ) => $c->value, $authors );
 		}
 
 		if ( empty( $author__in ) ) {
 			return [];
 		}
-
-		$amount = isset( $amount ) ? $amount : $attributes['amount'];
 
 		$query = new WP_Query(
 			[
@@ -203,11 +192,11 @@ if ( ! function_exists( 'amnesty_list_process_custom' ) ) {
 	 *
 	 * @param array $attributes - Current Block attributes.
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_list_process_custom( $attributes ) {
-		if ( empty( $attributes ) || ! isset( $attributes['custom'] ) || ! $attributes['custom'] ) {
-			return false;
+	function amnesty_list_process_custom( $attributes ): ?array {
+		if ( ! isset( $attributes['custom'] ) || ! $attributes['custom'] ) {
+			return null;
 		}
 
 		$show_author = $attributes['displayAuthor'] ?? false;
@@ -260,11 +249,11 @@ if ( ! function_exists( 'amnesty_list_process_select' ) ) {
 	 *
 	 * @param array $attributes - Current Block attributes.
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_list_process_select( $attributes ) {
-		if ( empty( $attributes ) || ! isset( $attributes['selectedPosts'] ) || ! $attributes['selectedPosts'] ) {
-			return false;
+	function amnesty_list_process_select( $attributes ): ?array {
+		if ( ! isset( $attributes['selectedPosts'] ) || ! $attributes['selectedPosts'] ) {
+			return null;
 		}
 
 		$post_types = get_post_types(
@@ -273,12 +262,13 @@ if ( ! function_exists( 'amnesty_list_process_select' ) ) {
 			]
 		);
 
-		$show_author    = $attributes['displayAuthor'];
-		$show_post_date = $attributes['displayPostDate'];
+		$show_author    = $attributes['displayAuthor'] ?? false;
+		$show_post_date = $attributes['displayPostDate'] ?? false;
 
 		$query = new WP_Query(
 			[
 				'post__in'            => $attributes['selectedPosts'],
+				'post_status'         => 'publish',
 				'post_type'           => $post_types,
 				'no_found_rows'       => true,
 				'orderby'             => 'post__in',
@@ -298,26 +288,22 @@ if ( ! function_exists( 'amnesty_list_process_taxonomy' ) ) {
 	 *
 	 * @param array $attributes - Current Block attributes.
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_list_process_taxonomy( $attributes ) {
-		if ( empty( $attributes ) || ! isset( $attributes['taxonomy'] ) || ! $attributes['taxonomy'] ) {
-			return false;
+	function amnesty_list_process_taxonomy( $attributes ): ?array {
+		if ( ! isset( $attributes['taxonomy'], $attributes['terms'] ) || ! $attributes['taxonomy'] || ! $attributes['terms'] ) {
+			return null;
 		}
 
-		if ( empty( $attributes ) || ! isset( $attributes['amount'] ) || ! $attributes['amount'] ) {
-			$amount = 3;
-		}
-
-		if ( empty( $attributes['terms'] ) ) {
-			return false;
+		$amount = 3;
+		if ( isset( $attributes['amount'] ) && (bool) $attributes['amount'] ) {
+			$amount = absint( $attributes['amount'] );
 		}
 
 		$taxonomy       = $attributes['taxonomy']['value'];
 		$terms          = array_column( $attributes['terms'] ?? [], 'value' );
-		$amount         = isset( $amount ) ? $amount : $attributes['amount'];
-		$show_author    = $attributes['displayAuthor'];
-		$show_post_date = $attributes['displayPostDate'];
+		$show_author    = $attributes['displayAuthor'] ?? false;
+		$show_post_date = $attributes['displayPostDate'] ?? false;
 
 		$query = new WP_Query(
 			[
@@ -348,9 +334,9 @@ if ( ! function_exists( 'amnesty_list_process_content' ) ) {
 	 *
 	 * @param array $attributes - Current block attributes.
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_list_process_content( $attributes ) {
+	function amnesty_list_process_content( $attributes ): ?array {
 		if ( empty( $attributes['type'] ) ) {
 			return amnesty_list_process_category( $attributes );
 		}
@@ -382,13 +368,17 @@ if ( ! function_exists( 'amnesty_render_list_item' ) ) {
 	 *
 	 * @return void
 	 */
-	function amnesty_render_list_item( $data ) {
-		$title          = isset( $data['title'] ) ? $data['title'] : '';
-		$author         = isset( $data['author'] ) ? $data['author'] : '';
-		$post_date      = isset( $data['date'] ) ? $data['date'] : '';
-		$show_author    = isset( $data['showAuthor'] ) ? $data['showAuthor'] : '';
-		$show_post_date = isset( $data['showPostDate'] ) ? $data['showPostDate'] : '';
-		$post_updated   = isset( $data['id'] ) ? get_post_meta( $data['id'], 'amnesty_updated', true ) : '';
+	function amnesty_render_list_item( $data ): void {
+		$title          = $data['title'] ?? '';
+		$author         = $data['author'] ?? '';
+		$post_date      = $data['date'] ?? '';
+		$show_author    = $data['showAuthor'] ?? '';
+		$show_post_date = $data['showPostDate'] ?? '';
+
+		$post_updated = '';
+		if ( isset( $data['id'] ) ) {
+			$post_updated = get_post_meta( $data['id'], 'amnesty_updated', true );
+		}
 
 		if ( $show_post_date && $post_updated ) {
 			$post_updated = wp_date( get_option( 'date_format' ), strtotime( $post_updated ), new DateTimeZone( 'UTC' ) );
@@ -408,8 +398,8 @@ if ( ! function_exists( 'amnesty_render_grid_item' ) ) {
 	 *
 	 * @return void
 	 */
-	function amnesty_render_grid_item( $data ) {
-		$title = isset( $data['title'] ) ? $data['title'] : '';
+	function amnesty_render_grid_item( $data ): void {
+		$title = $data['title'] ?? '';
 
 		require realpath( __DIR__ . '/views/grid-item.php' );
 	}
@@ -425,7 +415,7 @@ if ( ! function_exists( 'amnesty_render_list_block' ) ) {
 	 *
 	 * @return string
 	 */
-	function amnesty_render_list_block( $attributes ) {
+	function amnesty_render_list_block( $attributes ): string {
 		// Prevent a bug in the admin panel where the editor
 		// shows a different post if the list item is selected
 		// using one of the selection methods.
@@ -434,10 +424,15 @@ if ( ! function_exists( 'amnesty_render_list_block' ) ) {
 		}
 
 		if ( doing_filter( 'get_the_excerpt' ) ) {
-			return false;
+			return '';
 		}
 
-		$data = amnesty_list_process_content( $attributes );
+		$cache_key = hash( 'xxh3', (string) wp_json_encode( $attributes ) );
+		$data      = wp_cache_get( $cache_key );
+
+		if ( ! is_array( $data ) ) {
+			$data = amnesty_list_process_content( $attributes );
+		}
 
 		if ( ! $data ) {
 			return '';
@@ -446,23 +441,25 @@ if ( ! function_exists( 'amnesty_render_list_block' ) ) {
 		ob_start();
 
 		if ( isset( $attributes['style'] ) && 'grid' === $attributes['style'] ) {
-			// Checks how many items in the array and outputs a different class based on value
-			if ( in_array( count( $data ), [ 1, 2, 3, 5, 6, 7 ], true ) ) {
-				printf( '<div class="grid grid-%s post-list">', esc_attr( count( $data ) ) );
-				array_map( 'amnesty_render_grid_item', $data );
-				print '</div>';
-			} else {
+			$quantity = count( $data );
+
+			if ( 0 === $quantity % 4 || $quantity > 8 ) {
 				printf( '<div class="grid grid-many">' );
 				array_map( 'amnesty_render_grid_item', $data );
 				print '</div>';
+			} else {
+				printf( '<div class="grid grid-%s post-list">', esc_attr( $quantity ) );
+				array_map( 'amnesty_render_grid_item', $data );
+				print '</div>';
 			}
-			return ob_get_clean();
+
+			return (string) ob_get_clean();
 		}
 
 		print '<ul class="linkList">';
 		array_map( 'amnesty_render_list_item', $data );
 		print '</ul>';
 
-		return ob_get_clean();
+		return (string) ob_get_clean();
 	}
 }

@@ -2,7 +2,82 @@
 
 declare( strict_types = 1 );
 
-add_filter( 'amnesty_get_sites', 'amnesty_get_object_translations' );
+if ( ! function_exists( 'amnesty_get_raw_blog_option' ) ) {
+	/**
+	 * [description]
+	 */
+	function amnesty_get_raw_blog_option( int $blog, string $key ): mixed {
+		global $wpdb;
+
+		$cache_key = sprintf( '%s:%s', $blog, $key );
+		$cached    = wp_cache_get( $cache_key );
+
+		if ( false !== $cached ) {
+			return $cached;
+		}
+
+		$table = $wpdb->base_prefix;
+		if ( BLOG_ID_CURRENT_SITE === $blog ) {
+			$table .= 'options';
+		} else {
+			$table .= $blog . '_options';
+		}
+
+		$option = $wpdb->get_row(
+			$wpdb->prepare(
+				"SELECT * from {$table} where option_name = %s limit 1",
+				[ $key ],
+			),
+		);
+
+		$value = $option?->option_value ?? null;
+
+		wp_cache_add( $cache_key, $value );
+
+		return $value;
+	}
+}
+
+if ( ! function_exists( 'amnesty_get_raw_blog_post' ) ) {
+	/**
+	 * [description]
+	 */
+	function amnesty_get_raw_blog_post( int $blog, int $post ): ?WP_Post {
+		global $wpdb;
+
+		$cache_key = sprintf( '%s:%s', $blog, $post );
+		$cached    = wp_cache_get( $cache_key );
+
+		if ( is_object( $cached ) ) {
+			return new WP_Post( $cached );
+		}
+
+		$table = $wpdb->base_prefix;
+		if ( BLOG_ID_CURRENT_SITE === $blog ) {
+			$table .= 'posts';
+		} else {
+			$table .= $blog . '_posts';
+		}
+
+		$item = $wpdb->get_row(
+			$wpdb->prepare(
+				"SELECT * from {$table} where id = %d limit 1",
+				[ $post ],
+			),
+			OBJECT,
+		);
+
+		wp_cache_add( $cache_key, $item );
+
+		if ( ! is_array( $item ) ) {
+			return null;
+		}
+
+		return new WP_Post( $item );
+	}
+}
+
+add_filter( 'amnesty_get_sites', 'amnesty_get_object_translations', 10 );
 
 if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 	/**
@@ -41,7 +116,8 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 
 			// if post isn't published, skip it
 			if ( 'post' === $translation->type() ) {
-				$post_object  = get_blog_post( $translation->remoteSiteId(), $translation->remoteContentId() );
+				$post_object = amnesty_get_raw_blog_post( $translation->remoteSiteId(), $translation->remoteContentId() );
+
 				$is_published = is_a( $post_object, '\WP_Post' ) && 0 !== absint( $post_object->ID ) &&
 					'attachment' !== $post_object->post_type && 'publish' === $post_object->post_status;
 
@@ -59,7 +135,7 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 				'lang'      => $lang,
 				'code'      => $language->isoCode(),
 				'direction' => $language->isRtl() ? 'rtl' : 'ltr',
-				'name'      => get_blog_option( $translation->remoteSiteId(), 'blogname' ),
+				'name'      => amnesty_get_raw_blog_option( $translation->remoteSiteId(), 'blogname' ),
 				'url'       => $translation->remoteUrl(),
 				'path'      => get_site( $translation->remoteSiteId() )?->path,
 				'blog_id'   => $translation->remoteSiteId(),
