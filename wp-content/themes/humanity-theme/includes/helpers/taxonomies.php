@@ -78,7 +78,10 @@ if ( ! function_exists( 'amnesty_get_prominent_term' ) ) {
 
 		if ( $order_prep ) {
 			// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
-			$query_sql .= $wpdb->prepare( " order by field(tax.taxonomy, {$order_prep}) asc", $precedence );
+			$query_sql .= (string) $wpdb->prepare(
+				" order by field(tax.taxonomy, {$order_prep}) asc",
+				$precedence,
+			);
 			// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
 		}
 
@@ -116,7 +119,7 @@ if ( ! function_exists( 'amnesty_get_a_post_term' ) ) {
 
 		$terms = wp_get_post_terms( $post_id, $taxonomy, $args );
 
-		if ( is_wp_error( $terms ) ) {
+		if ( ! is_array( $terms ) ) {
 			_doing_it_wrong( __FUNCTION__, esc_html( $terms->get_error_message() ), '1.11.4' );
 			return null;
 		}
@@ -165,12 +168,18 @@ if ( ! function_exists( 'amnesty_get_post_terms' ) ) {
 
 		if ( $order_prep ) {
 			// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
-			$query_sql .= $wpdb->prepare( " order by field(tax.taxonomy, {$order_prep}) asc, name asc", $precedence );
+			$query_sql .= (string) $wpdb->prepare(
+				" order by field(tax.taxonomy, {$order_prep}) asc, name asc",
+				$precedence,
+			);
 			// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
 		}
 
-		// phpcs:ignore WordPress.DB
-		$terms = array_map( fn ( $t ) => new WP_Term( $t ), $wpdb->get_results( $query_sql ) );
+		$terms = array_map(
+			fn ( $t ) => new WP_Term( $t ),
+			// phpcs:ignore WordPress.DB
+			(array) $wpdb->get_results( $query_sql ),
+		);
 
 		wp_cache_set( $cache_key, $terms );
 
@@ -226,7 +235,7 @@ if ( ! function_exists( 'determine_if_term_is_parent' ) ) {
 
 		$current = get_term_by( 'id', $current_id, $taxonomy );
 
-		if ( 0 === $current->parent ) {
+		if ( ! is_a( $current, WP_Term::class ) || 0 === $current->parent ) {
 			return false;
 		}
 
@@ -333,11 +342,31 @@ if ( ! function_exists( 'amnesty_term_link' ) ) {
 	 * @return string
 	 */
 	function amnesty_term_link( WP_Term $term, string $fallback_path = '' ) {
+		$cache_key = hash(
+			'xxh3',
+			(string) wp_json_encode(
+				[
+					'blog_id'  => get_current_blog_id(),
+					'term_id'  => $term->term_id,
+					'taxonomy' => $term->taxonomy,
+					'fallback' => $fallback_path,
+				],
+			),
+		);
+
+		$cached = wp_cache_get( $cache_key, __FUNCTION__ );
+
+		if ( is_string( $cached ) ) {
+			return $cached;
+		}
+
 		$link = get_term_link( $term );
 
-		if ( is_wp_error( $link ) ) {
-			return $fallback_path ? home_url( $fallback_path, 'https' ) : '';
+		if ( ! is_string( $link ) && $fallback_path ) {
+			$link = home_url( $fallback_path, 'https' );
 		}
+
+		wp_cache_set( $cache_key, $link, __FUNCTION__ );
 
 		return $link;
 	}
@@ -623,7 +652,7 @@ if ( ! function_exists( 'get_terms_from_query_var' ) ) {
 
 		$term_list = get_terms( $args );
 
-		if ( is_wp_error( $term_list ) ) {
+		if ( is_wp_error( $term_list ) || ! is_array( $term_list ) ) {
 			return [];
 		}
 
@@ -670,7 +699,7 @@ if ( ! function_exists( 'amnesty_find_locations' ) ) {
 		} else {
 			$words = explode( ' ', $term );
 			$words = array_filter( $words, fn ( string $w ): bool => '-' !== mb_substr( $w, 0, 1, 'UTF-8' ) );
-			$words = array_map( fn ( string $w ): string => preg_replace( '/[^a-z]+/i', '', $w ), $words );
+			$words = array_map( fn ( string $w ): string => (string) preg_replace( '/[^a-z]+/i', '', $w ), $words );
 			$words = array_map( 'ucfirst', $words );
 			$terms = [];
 
@@ -693,7 +722,7 @@ if ( ! function_exists( 'amnesty_find_locations' ) ) {
 			return [];
 		}
 
-		return $terms;
+		return (array) $terms;
 	}
 }
 
@@ -794,17 +823,32 @@ if ( ! function_exists( 'amnesty_taxonomy_to_option_list' ) ) {
 			'hide_reports' => true,
 		];
 
+		$cache_key = hash( 'xxh3', __FUNCTION__ . wp_json_encode( $args ) );
+		$cached    = wp_cache_get( $cache_key );
+
+		if ( is_array( $cached ) ) {
+			return $cached;
+		}
+
 		$opts = [];
 
 		$terms = get_terms( $args );
 
-		if ( ! count( $terms ) ) {
+		if ( ! is_array( $terms ) || ! count( $terms ) ) {
+			wp_cache_set( $cache_key, [], expire: 5 * MINUTE_IN_SECONDS );
 			return $opts;
 		}
 
+		/**
+		 * Term object
+		 *
+		 * @var WP_Term $term
+		 */
 		foreach ( $terms as $term ) {
 			$opts[ $term->term_id ] = $term->name;
 		}
+
+		wp_cache_set( $cache_key, $opts, expire: 30 * MINUTE_IN_SECONDS );
 
 		return $opts;
 	}
@@ -838,7 +882,7 @@ if ( ! function_exists( 'group_terms_by_initial_ascii_letter' ) ) {
 	 *
 	 * @param array<int,WP_Term> $terms the terms to sort
 	 *
-	 * @return array<string,array<int,WP_Term>
+	 * @return array<string,array<int,WP_Term>>
 	 */
 	function group_terms_by_initial_ascii_letter( array $terms ): array {
 		$groups = [];
@@ -874,7 +918,7 @@ if ( ! function_exists( 'amnesty_limit_post_terms_results_for_archive' ) ) {
 	 * @return array<int,WP_Term>|WP_Error
 	 */
 	function amnesty_limit_post_terms_results_for_archive( array|WP_Error $terms ): array|WP_Error {
-		if ( is_wp_error( $terms ) || ! is_category() || 1 === count( $terms ) ) {
+		if ( is_wp_error( $terms ) || ! is_category() || 1 === count( (array) $terms ) ) {
 			return $terms;
 		}
 
@@ -915,6 +959,11 @@ if ( ! function_exists( 'amnesty_get_taxonomy_slug_from_rest_base' ) ) {
 	function amnesty_get_taxonomy_slug_from_rest_base( string $base ): string {
 		$taxonomies = get_taxonomies( output: 'objects' );
 
+		/**
+		 * Taxonomy object
+		 *
+		 * @var WP_Taxonomy $taxonomy
+		 */
 		foreach ( $taxonomies as $taxonomy ) {
 			if ( $taxonomy->rest_base === $base ) {
 				return $taxonomy->name;

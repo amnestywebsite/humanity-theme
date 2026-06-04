@@ -81,9 +81,17 @@ if ( ! function_exists( 'get_site_language_name' ) ) {
 			$blog_id = get_current_blog_id();
 		}
 
+		$cache_key = __FUNCTION__ . ':' . $blog_id;
+		$cached    = wp_cache_get( $cache_key );
+
+		if ( is_string( $cached ) ) {
+			return $cached;
+		}
+
 		$override = amnesty_get_raw_blog_option( $blog_id, 'amnesty_language_name' );
 
 		if ( $override ) {
+			wp_cache_add( $cache_key, $override );
 			return $override;
 		}
 
@@ -93,19 +101,21 @@ if ( ! function_exists( 'get_site_language_name' ) ) {
 			$lang = languageByTag( siteLanguageTag( $blog_id ) )?->nativeName();
 		}
 
-		if ( $lang ) {
-			return strip_language_name_parentheticals( $lang );
+		if ( ! $lang ) {
+			$lang = amnesty_get_raw_blog_option( $blog_id, 'WPLANG' );
+			$lang = $lang ?: get_site_option( 'WPLANG' );
+			$lang = $lang ?: ( $GLOBALS['wp_local_package'] ?? 'en_GB' );
+
+			if ( class_exists( 'Locale' ) ) {
+				$lang = Locale::getDisplayName( $lang, $lang );
+			}
 		}
 
-		$lang = amnesty_get_raw_blog_option( $blog_id, 'WPLANG' );
-		$lang = $lang ?: get_site_option( 'WPLANG' );
-		$lang = $lang ?: ( $GLOBALS['wp_local_package'] ?? 'en_GB' );
+		$lang = strip_language_name_parentheticals( $lang );
 
-		if ( class_exists( 'Locale' ) ) {
-			$lang = Locale::getDisplayName( $lang, $lang );
-		}
+		wp_cache_add( $cache_key, $lang );
 
-		return strip_language_name_parentheticals( $lang );
+		return $lang;
 	}
 }
 

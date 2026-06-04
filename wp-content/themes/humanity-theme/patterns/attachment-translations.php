@@ -28,13 +28,13 @@ if ( ! count( $translations ) ) {
 	return;
 }
 
-$translation_links = [];
 $list_separator    = _x( ',', 'list item separator', 'amnesty' );
+$translation_links = [];
 
 foreach ( $translations as $translation ) {
 	$translation_links[] = sprintf(
 		'<a href="%s" hreflang="%s">%s</a>',
-		esc_url( get_blog_permalink( $translation->blog_id, $translation->item_id ) ),
+		esc_url( $translation->permalink ),
 		esc_attr( $translation->lang_iso ),
 		esc_html( $translation->language ),
 	);

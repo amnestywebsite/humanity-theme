@@ -4,7 +4,15 @@ declare( strict_types = 1 );
 
 if ( ! function_exists( 'amnesty_get_raw_blog_option' ) ) {
 	/**
-	 * [description]
+	 * Retrieve an option value from a site's database
+	 *
+	 * Used instead of get_blog_option when filters & switching blog context
+	 * need to be skipped.
+	 *
+	 * @param int    $blog ID of the site to retrieve the option from
+	 * @param string $key  the option name
+	 *
+	 * @return mixed
 	 */
 	function amnesty_get_raw_blog_option( int $blog, string $key ): mixed {
 		global $wpdb;
@@ -23,8 +31,10 @@ if ( ! function_exists( 'amnesty_get_raw_blog_option' ) ) {
 			$table .= $blog . '_options';
 		}
 
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery -- have to use a direct query to skip filters
 		$option = $wpdb->get_row(
 			$wpdb->prepare(
+				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- table name has to be interpolated
 				"SELECT * from {$table} where option_name = %s limit 1",
 				[ $key ],
 			),
@@ -40,7 +50,15 @@ if ( ! function_exists( 'amnesty_get_raw_blog_option' ) ) {
 
 if ( ! function_exists( 'amnesty_get_raw_blog_post' ) ) {
 	/**
-	 * [description]
+	 * Retrieve a post from a site's databse
+	 *
+	 * Used instead of get_blog_post when filters & switching blog context
+	 * need to be skipped.
+	 *
+	 * @param int $blog ID of the site to retrieve the post from
+	 * @param int $post ID of the post to retrieve
+	 *
+	 * @return WP_Post|null
 	 */
 	function amnesty_get_raw_blog_post( int $blog, int $post ): ?WP_Post {
 		global $wpdb;
@@ -59,8 +77,10 @@ if ( ! function_exists( 'amnesty_get_raw_blog_post' ) ) {
 			$table .= $blog . '_posts';
 		}
 
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery -- have to use a direct query to skip filters
 		$item = $wpdb->get_row(
 			$wpdb->prepare(
+				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- table name has to be interpolated
 				"SELECT * from {$table} where id = %d limit 1",
 				[ $post ],
 			),
@@ -252,7 +272,7 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 
 		// fallback to homepage if no translation
 		if ( ! count( $found ) ) {
-			$name = get_blog_option( $site->site_id, 'ammesty_language_name' ) ?: $site->lang;
+			$name = amnesty_get_raw_blog_option( $site->site_id, 'amnesty_language_name' ) ?: $site->lang;
 
 			return sprintf(
 				'<li id="menu-item-%3$s-%4$s" class="menu-item menu-item-%3$s-%4$s" dir="%5$s"><a href="%2$s">%1$s</a></li>',
@@ -265,8 +285,11 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 		}
 
 		$item = $found[0];
-		$link = 'post' === $item->type ? get_blog_permalink( $item->blog_id, $item->item_id ) : get_blog_term_link( $item->blog_id, $item->item_id );
-		$name = get_blog_option( $item->blog_id, 'ammesty_language_name' ) ?: $item->lang;
+		$name = amnesty_get_raw_blog_option( $item->blog_id, 'amnesty_language_name' ) ?: $item->lang;
+		$link = match ( $item->type ) {
+			'post' => get_blog_post_link( $item->blog_id, $item->item_id ),
+			default => get_blog_term_link( $item->blog_id, $item->item_id ),
+		};
 
 		return sprintf(
 			'<li id="menu-item-%3$s-%4$s" class="menu-item menu-item-%3$s-%4$s" dir="%5$s"><a href="%2$s">%1$s</a></li>',
