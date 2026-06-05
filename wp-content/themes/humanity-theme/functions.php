@@ -7,6 +7,17 @@
  */
 
 // phpcs:disable Squiz.Commenting.InlineComment.WrongStyle,PEAR.Commenting.InlineComment.WrongStyle
+add_filter( 'algolia_is_block_theme', '__return_false' );
+add_filter( 'algolia_load_scripts_in_footer', '__return_false' );
+add_filter( 'algolia_custom_template_location', function ( ?string $path, string $file ): ?string {
+	$theme_path = __DIR__ . DIRECTORY_SEPARATOR . 'algolia' . DIRECTORY_SEPARATOR;
+
+	if ( is_readable( $theme_path . $file ) ) {
+		return $theme_path . $file;
+	}
+
+	return $path;
+}, 10, 2 );
 
 /**
  * Theme root includes
@@ -100,6 +111,7 @@ require_once realpath( __DIR__ . '/includes/theme-setup/media.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/class-desktop-nav-walker.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/class-mobile-nav-walker.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/navigation.php' );
+require_once realpath( __DIR__ . '/includes/theme-setup/class-asset-loader.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/scripts-and-styles.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/analytics/google-tag-manager.php' );
 require_once realpath( __DIR__ . '/includes/theme-setup/analytics/google-analytics.php' );

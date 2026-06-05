@@ -10,7 +10,7 @@ import header from './modules/header';
 import mobileMenu from './modules/navigation';
 import subcatDrops from './modules/subcategory-dropdown';
 import latestFilters from './modules/latest-filters';
-import searchFilters from './modules/search-filters';
+import AlgoliaSearch from './modules/algolia-search';
 import filterPosts from './modules/filter-posts';
 import loadVideos from './modules/video-loaded';
 import fluidIframe from './modules/fluid-iframe';
@@ -37,7 +37,7 @@ const App = () => {
   subcatDrops();
   downloadBlock();
   latestFilters();
-  searchFilters();
+  AlgoliaSearch();
   filterPosts();
   fluidIframe();
   tweetAction();

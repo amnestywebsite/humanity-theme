@@ -2,11 +2,76 @@
 <main class="wp-block-group">
 	<!-- wp:group {"tagName":"div","className":"container has-gutter"} -->
 	<div class="wp-block-group container has-gutter">
-		<!-- wp:amnesty-core/search-form /-->
+        <!-- wp:group {"tagName":"div","className":"horizontal-search"} -->
+        <div class="wp-block-group horizontal-search">
+            <!-- wp:group {"tagName":"section","className":"section section--small section--dark postlist-categoriesContainer"} -->
+            <section class="wp-block-group section--small section--dark postlist-categoriesContainer">
+                <!-- wp:group {"tagName":"div","className":"container initial-filters"} -->
+                <div class="wp-block-group initial-filters">
+                    <!-- wp:group {"tagName":"div","className":"default-search-filters taxonomyArchive-filters"} -->
+                    <div class="wp-block-group default-search-filters taxonomyArchive-filters">
+                        <!-- wp:group {"tagName":"div","className":"search-input"} -->
+                        <div class="wp-block-group search-input">
+                            <!-- wp:group -->
+                            <div id="algolia-searchbox" class="wp-block-group"></div>
+                            <!-- /wp:group -->
+                            <!-- wp:group -->
+                            <div id="algolia-powered-by" class="wp-block-group"></div>
+                            <!-- /wp:group -->
+                        </div>
+
+                        <!-- wp:group {"tagName":"div","className":"basic-filters"} -->
+                        <div class="wp-block-group basic-filters">
+                            <!-- wp:group {"id":"facet-post-types","tagName":"div"} -->
+                            <div id="facet-post-types"></div>
+                            <!-- /wp:group -->
+                            <!-- wp:group {"id":"facet-categories","tagName":"div"} -->
+                            <div id="facet-categories"></div>
+                            <!-- /wp:group -->
+                            <!-- wp:group {"id":"facet-tags","tagName":"div"} -->
+                            <div id="facet-tags"></div>
+                            <!-- /wp:group -->
+                        </div>
+                        <!-- /wp:group -->
+                    </div>
+                    <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+            </section>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
 
 		<!-- wp:group {"tagName":"div"} -->
 		<div class="wp-block-group">
-			<!-- wp:pattern {"slug":"amnesty/search"} /-->
+            <!-- wp:group {"tagName":"div"} -->
+            <div class="wp-block-group">
+                <!-- wp:group {"tagName":"div","className":"section section--tinted"} -->
+                <div class="wp-block-group section section--tinted">
+                    <!-- wp:group {"tagName":"header","className":"postlist-header"} -->
+                    <header class="wp-block-group postlist-header">
+                        <!-- wp:heading {"className":"postlist-headerTitle"} -->
+                        <h2 class="wp-block-heading postlist-headerTitle"></h2>
+                        <!-- /wp:heading -->
+
+                        <!-- wp:amnesty-core/custom-select {"label":"Sort by","showLabel":true,"name":"sort","type":form","multiple":false,"options":[{"value":"date-desc","label":"Most Recent"},{"value":"date-asc","label":"Oldest First"},{"value":"relevance-desc","label":"Most Relevant"}],"active":""} /-->
+                    </header>
+                    <!-- /wp:group -->
+                    <!-- wp:group {"tagName":"div","className":"search-results"} -->
+                    <div class="wp-block-group search-results"></div>
+                    <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+
+                <!-- wp:group {"tagName":"section","className":"section section--small post-pagination"} -->
+                <section class="wp-block-group section section--small post-pagination">
+                    <!-- wp:group {"tagName":"nav","className":"post-paginationContainer","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+                    <nav class="wp-block-group post-paginationContainer"></nav>
+                    <!-- /wp:group -->
+                </section>
+                <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</div>
