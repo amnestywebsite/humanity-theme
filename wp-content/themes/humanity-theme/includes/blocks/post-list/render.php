@@ -20,6 +20,13 @@ if ( ! function_exists( 'amnesty_list_process_query' ) ) {
 			return null;
 		}
 
+		$cache_key = hash( 'xxh3', $query->request );
+		$cached    = wp_cache_get( $cache_key );
+
+		if ( is_array( $cached ) ) {
+			return $cached;
+		}
+
 		$posts = [];
 
 		while ( $query->have_posts() ) {
@@ -54,6 +61,8 @@ if ( ! function_exists( 'amnesty_list_process_query' ) ) {
 		}
 
 		wp_reset_postdata();
+
+		wp_cache_add( $cache_key, $posts );
 
 		return $posts;
 	}
