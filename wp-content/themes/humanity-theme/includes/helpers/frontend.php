@@ -127,24 +127,20 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( is_string( $cached ) ) {
-			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- already escaped in cache; kses perf is awful
-			echo $cached;
+			echo wp_kses_post( $cached );
 			return;
 		}
 
-		$markup = wp_kses_post(
-			do_blocks(
-				sprintf(
-					'<!-- wp:amnesty-core/custom-select %s /-->',
-					wp_kses_data( wp_json_encode( $block_args ) ),
-				),
+		$markup = do_blocks(
+			sprintf(
+				'<!-- wp:amnesty-core/custom-select %s /-->',
+				wp_kses_data( wp_json_encode( $block_args ) ),
 			),
 		);
 
 		wp_cache_set( $cache_key, $markup, expire: HOUR_IN_SECONDS );
 
-		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- it's escaped above
-		echo $markup;
+		echo wp_kses_post( $markup );
 	}
 }
 
