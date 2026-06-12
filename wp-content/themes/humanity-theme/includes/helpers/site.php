@@ -75,8 +75,12 @@ if ( ! function_exists( 'get_site_language_name' ) ) {
 	 * @param int|null $blog_id the site to get the language name for
 	 *
 	 * @return string
+	 *
+	 * phpcs:disable Generic.Metrics.CyclomaticComplexity.TooHigh
 	 */
 	function get_site_language_name( int $blog_id = null ): string {
+		// phpcs:enable Generic.Metrics.CyclomaticComplexity.TooHigh
+
 		if ( ! is_int( $blog_id ) ) {
 			$blog_id = get_current_blog_id();
 		}
