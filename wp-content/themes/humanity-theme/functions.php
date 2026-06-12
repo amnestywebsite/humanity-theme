@@ -41,6 +41,7 @@ require_once realpath( __DIR__ . '/includes/helpers/media.php' );
 require_once realpath( __DIR__ . '/includes/helpers/pagination.php' );
 require_once realpath( __DIR__ . '/includes/helpers/archive.php' );
 require_once realpath( __DIR__ . '/includes/helpers/list-alignment.php' );
+require_once realpath( __DIR__ . '/includes/helpers/performance.php' );
 #endregion helpers
 
 /**
