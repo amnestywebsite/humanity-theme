@@ -13,6 +13,7 @@
   },
   "scripts": {
     "lint": "./vendor/bin/phpcs wp-content/themes/humanity-theme",
+    "lang": ["@makePot", "@updatePoMo"],
     "makePot": "wp i18n make-pot wp-content/themes/humanity-theme wp-content/themes/humanity-theme/languages/amnesty.pot --domain=amnesty --exclude=private",
     "updatePoMo": [
       "wp i18n update-po wp-content/themes/humanity-theme/languages/amnesty.pot",
@@ -23,7 +24,8 @@
   },
   "scripts-descriptions": {
     "lint": "Runs PHP coding standard checks",
+    "lang": "Runs makePot and updatePoMo",
     "makePot": "Re-generates the POT language file",
-    "UpdatePoMo": "Updates PO, MO, JSON, and PHP translation files"
+    "updatePoMo": "Updates PO, MO, JSON, and PHP translation files"
   }
 }
