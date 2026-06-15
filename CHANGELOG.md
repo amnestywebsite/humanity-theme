@@ -2,6 +2,9 @@
 Fixes:
 - Taxonomy filters on RSS feed
 
+CI:
+- Update language file compilation scripts
+
 ### v3.0.3
 Fixes:
 - Remove old WooCommerce references
