@@ -266,14 +266,47 @@ if ( ! function_exists( 'get_blog_term_link' ) ) {
 	 * @return string
 	 */
 	function get_blog_term_link( int $blog_id, int $term_id, string $taxonomy = '' ): string {
+		$cache_key = hash( 'xxh3', 'blog:' . $blog_id . ';term:' . $term_id . ';taxonomy:' . $taxonomy );
+		$cached    = wp_cache_get( $cache_key, __FUNCTION__ );
+
+		if ( false !== $cached ) {
+			return (string) $cached;
+		}
+
 		switch_to_blog( $blog_id );
 		$link = get_term_link( $term_id, $taxonomy );
 		restore_current_blog();
 
-		if ( is_wp_error( $link ) ) {
-			return home_url( '/', 'https' );
+		if ( ! is_wp_error( $link ) ) {
+			wp_cache_add( $cache_key, $link, __FUNCTION__ );
+			return (string) $link;
 		}
 
-		return (string) $link;
+		return home_url( '/', 'https' );
+	}
+}
+
+if ( ! function_exists( 'get_blog_post_link' ) ) {
+	/**
+	 * Equivalent to {@see get_blog_permalink}, but with caching
+	 *
+	 * @param int $blog_id the target site ID
+	 * @param int $post_id the target post ID
+	 *
+	 * @return string
+	 */
+	function get_blog_post_link( int $blog_id, int $post_id ): string {
+		$cache_key = hash( 'xxh3', 'blog:' . $blog_id . ';post:' . $post_id );
+		$cached    = wp_cache_get( $cache_key, __FUNCTION__ );
+
+		if ( false !== $cached ) {
+			return (string) $cached;
+		}
+
+		$link = get_blog_permalink( $blog_id, $post_id );
+
+		wp_cache_add( $cache_key, $link, __FUNCTION__ );
+
+		return $link;
 	}
 }

@@ -1,3 +1,11 @@
+<?php
+
+// just to satisfy intellisense when editing this view
+$args    ??= [];
+$letters ??= [];
+$first   ??= '';
+
+?>
 <aside class="wp-block-amnesty-core-term-list">
 	<h2 class="<?php echo esc_attr( $args['alignment'] ? sprintf( 'u-text%s', ucfirst( $args['alignment'] ) ) : '' ); ?>"><?php echo esc_html( $args['title'] ); ?></h2>
 	<div class="navigation">

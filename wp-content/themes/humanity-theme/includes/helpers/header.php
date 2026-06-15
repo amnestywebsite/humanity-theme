@@ -78,7 +78,7 @@ if ( ! function_exists( 'count_top_level_menu_items' ) ) {
 		}
 
 		$menu_items = wp_get_nav_menu_items( $menu_object->term_id, [ 'update_post_term_cache' => false ] );
-		$top_level  = array_filter( $menu_items, fn ( $item ) => 0 === absint( $item->menu_item_parent ) );
+		$top_level  = array_filter( (array) $menu_items, fn ( $item ) => 0 === absint( $item->menu_item_parent ) );
 
 		return count( $top_level );
 	}
@@ -100,7 +100,7 @@ if ( ! function_exists( 'is_on_nav_submenu_page' ) ) {
 		}
 
 		$menu_items  = wp_get_nav_menu_items( $menu->term_id, [ 'update_post_term_cache' => false ] );
-		$child_items = array_filter( $menu_items, fn ( $item ) => 0 !== absint( $item->menu_item_parent ) );
+		$child_items = array_filter( (array) $menu_items, fn ( $item ) => 0 !== absint( $item->menu_item_parent ) );
 		$current_url = current_url();
 
 		foreach ( $child_items as $kid ) {

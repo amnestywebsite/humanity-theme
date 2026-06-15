@@ -12,27 +12,23 @@ if ( ! function_exists( 'amnesty_petition_list_process_content' ) ) {
 	 *
 	 * @param array $attributes - Current block attributes.
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_petition_list_process_content( $attributes ) {
-		if ( empty( $attributes['type'] ) ) {
+	function amnesty_petition_list_process_content( $attributes ): ?array {
+		if ( ! ( $attributes['type'] ?? false ) ) {
 			return amnesty_list_process_category( $attributes );
 		}
 
 		switch ( $attributes['type'] ) {
 			case 'custom':
 				return amnesty_list_process_custom( $attributes );
-			case 'category':
-				return amnesty_list_process_category( $attributes );
 			case 'select':
 				return amnesty_petition_list_process_select( $attributes );
 			case 'feed':
 				return amnesty_petition_list_process_feed( $attributes );
 			case 'template':
-				if ( empty( $attributes['query'] ) ) {
-					return '';
-				}
 				return amnesty_petition_list_process_query( $attributes['query'], false );
+			case 'category':
 			default:
 				return amnesty_list_process_category( $attributes );
 		}
@@ -121,14 +117,14 @@ if ( ! function_exists( 'amnesty_petition_list_process_query' ) ) {
 	 * @param WP_Query     $query Current WP_Query.
 	 * @param object|false $term  a term to use, if supplied
 	 *
-	 * @return array
+	 * @return array|null
 	 */
-	function amnesty_petition_list_process_query( $query, $term = false ) {
-		$posts = [];
-
+	function amnesty_petition_list_process_query( $query, $term = false ): ?array {
 		if ( ! $query->have_posts() ) {
-			return $posts;
+			return null;
 		}
+
+		$posts = [];
 
 		// phpcs:ignore WordPressVIPMinimum.Variables.RestrictedVariables.cache_constraints___COOKIE
 		$user_signed_petitions = sanitize_text_field( $_COOKIE['amnesty_petitions'] ?? '' );
@@ -146,11 +142,10 @@ if ( ! function_exists( 'amnesty_petition_list_process_query' ) ) {
 				'tag'            => false,
 				'tag_link'       => false,
 				'featured_image' => get_post_meta( get_the_ID(), '_thumbnail_id', true ),
-				'excerpt'        => get_the_excerpt(),
 				'has_signed'     => in_array( get_the_ID(), (array) $user_signed_petitions, true ),
 			];
 
-			$term = amnesty_get_a_post_term( get_the_ID(), 'topic' );
+			$term = amnesty_get_a_post_term( (int) get_the_ID(), 'topic' );
 
 			if ( is_a( $term, 'WP_Term' ) ) {
 				$item['tag']      = $term->name;
@@ -174,13 +169,9 @@ if ( ! function_exists( 'amnesty_petition_list_process_feed' ) ) {
 	 *
 	 * @param array $attributes - Current Block attributes.
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_petition_list_process_feed( $attributes ) {
-		if ( empty( $attributes ) ) {
-			return false;
-		}
-
+	function amnesty_petition_list_process_feed( $attributes ): ?array {
 		$post_types = [ get_option( 'aip_petition_slug' ) ?: 'petition' ];
 
 		$amount = 3; // the default
@@ -217,11 +208,11 @@ if ( ! function_exists( 'amnesty_petition_list_process_select' ) ) {
 	 *
 	 * @param array $attributes - Current Block attributes.
 	 *
-	 * @return array|bool
+	 * @return array|null
 	 */
-	function amnesty_petition_list_process_select( $attributes ) {
-		if ( empty( $attributes ) || ! isset( $attributes['selectedPosts'] ) || ! $attributes['selectedPosts'] ) {
-			return false;
+	function amnesty_petition_list_process_select( $attributes ): ?array {
+		if ( ! isset( $attributes['selectedPosts'] ) || ! $attributes['selectedPosts'] ) {
+			return null;
 		}
 
 		$post_types = [ get_option( 'aip_petition_slug' ) ?: 'petition' ];
@@ -249,7 +240,7 @@ if ( ! function_exists( 'amnesty_render_petition_list_block' ) ) {
 	 *
 	 * @return string
 	 */
-	function amnesty_render_petition_list_block( $attributes ) {
+	function amnesty_render_petition_list_block( $attributes ): string {
 		// Prevent a bug in the admin panel where the editor
 		// shows a different post if the list item is selected
 		// using one of the selection methods.
@@ -258,21 +249,27 @@ if ( ! function_exists( 'amnesty_render_petition_list_block' ) ) {
 		}
 
 		if ( doing_filter( 'get_the_excerpt' ) ) {
-			return false;
+			return '';
 		}
 
-		$data = amnesty_petition_list_process_content( $attributes );
+		$cache_key = hash( 'xxh3', (string) wp_json_encode( $attributes ) );
+		$data      = wp_cache_get( $cache_key );
+
+		if ( ! is_array( $data ) ) {
+			$data = amnesty_petition_list_process_content( $attributes );
+		}
 
 		if ( ! $data ) {
 			return '';
 		}
 
 		$grid_classes = [ 'grid' ];
+		$quantity     = count( $data );
 
-		if ( 0 === count( $data ) % 4 || count( $data ) > 8 ) {
+		if ( 0 === $quantity % 4 || $quantity > 8 ) {
 			$grid_classes[] = 'grid-many';
 		} else {
-			$grid_classes[] = 'grid-' . count( $data );
+			$grid_classes[] = 'grid-' . $quantity;
 		}
 
 		if ( ! empty( $attributes['grid_class'] ) ) {
@@ -285,6 +282,6 @@ if ( ! function_exists( 'amnesty_render_petition_list_block' ) ) {
 		array_map( 'amnesty_render_petition_item', $data );
 		print '</div>';
 
-		return ob_get_clean();
+		return (string) ob_get_clean();
 	}
 }
