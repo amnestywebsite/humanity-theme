@@ -1,3 +1,7 @@
+### v3.0.4
+Fixes:
+- Taxonomy filters on RSS feed
+
 ### v3.0.3
 Fixes:
 - Remove old WooCommerce references
