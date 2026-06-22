@@ -138,7 +138,7 @@ class Section_Block_Renderer {
 		$large_bg_image  = wp_get_attachment_image_url( $this->image->id(), 'hero-lg' );
 
 		printf(
-			( $this->image->credit() ? '<style class="aiic-ignore">' : '<style>' ) .
+			( $this->image->credit() ? '<style class="aiic-ignore aimc-ignore">' : '<style class="aiic-ignore">' ) .
 			'#section-%1$s{background-image:url("%2$s")}' .
 			'@media screen and (min-width:770px){' .
 			'#section-%1$s{background-image:url("%3$s")}' .

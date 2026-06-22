@@ -128,6 +128,7 @@ class DisplayCustom extends Component {
                 showPostDate={this.props.showPostDate}
                 createUpdate={this.createUpdateAttribute(index)}
                 createRemove={this.createRemoveItem(index)}
+                updateMedia={this.createUpdateMediaAttribute(index)}
               />
             ))}
           </ul>

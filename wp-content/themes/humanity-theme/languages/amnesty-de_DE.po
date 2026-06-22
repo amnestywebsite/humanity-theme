@@ -2287,7 +2287,7 @@ msgstr "Zahlungsart"
 
 #. Theme Name of the theme
 #: style.css
-#: includes/theme-setup/text-domain.php:74
+#: includes/theme-setup/text-domain.php:33
 msgid "Humanity Theme"
 msgstr ""
 
@@ -2313,7 +2313,7 @@ msgstr ""
 
 #. translators: [front] %s: the title of the article
 #: includes/blocks/post-list/views/grid-item.php:10
-#: includes/blocks/post-list/views/list-item.php:4
+#: includes/blocks/post-list/views/list-item.php:10
 #: partials/post/post-full.php:16
 #: partials/post/post-none.php:10
 #: partials/post/post-search.php:31

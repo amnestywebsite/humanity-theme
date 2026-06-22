@@ -26,7 +26,6 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 
 <section class="<?php echo esc_attr( $classname ); ?>" style="aiic:ignore;background-image:url('<?php echo esc_url( $background_image ); ?>')">
 	<?php echo wp_kses_post( $video_output ); ?>
-
 	<div class="hero-contentWrapper">
 	<?php if ( $attrs['title'] ) : ?>
 		<h1 class="hero-title">

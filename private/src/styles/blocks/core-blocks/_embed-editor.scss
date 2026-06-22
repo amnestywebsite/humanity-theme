@@ -1,0 +1,16 @@
+.wp-block-embed.aligncenter {
+  text-align: center;
+}
+
+.wp-block-embed.alignright {
+  display: flex;
+  justify-content: flex-end;
+
+  .rtl & {
+    justify-content: flex-start;
+  }
+}
+
+.wp-block-embed :where(figcaption) {
+  font-family: var(--wp--preset--font-family--primary);
+}

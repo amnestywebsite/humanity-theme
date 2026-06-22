@@ -1,6 +1,6 @@
 const LinkItem = (props) => (
   <li>
-    <article className="linkList-item">
+    <article className="linkList-item" style={{ backgroundImage: `url(${props.featured_image})` }}>
       {props.tag && (
         <span className="linkList-itemMeta">
           <a href="#">{props.tag.title}</a>

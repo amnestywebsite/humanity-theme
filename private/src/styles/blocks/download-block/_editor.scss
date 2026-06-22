@@ -38,6 +38,11 @@
   background: none;
 }
 
+.wp-core-ui .section--textWhite .download-block select {
+  background: none;
+  color: var(--wp--preset--color--white);
+}
+
 .wp-block[data-type="amnesty-core/block-download"] .block-editor-media-placeholder.is-appender {
   outline: none;
 }

@@ -5,7 +5,7 @@
 
 <?php if ( ! empty( $atts['caption'] ) ) : ?>
 	<figcaption>
-		<p><?php echo esc_html( $atts['caption'] ); ?></p>
+		<p><?php echo wp_kses_post( $atts['caption'] ); ?></p>
 	</figcaption>
 <?php endif; ?>
 </figure>

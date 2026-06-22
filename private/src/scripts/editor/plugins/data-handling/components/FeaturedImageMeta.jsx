@@ -15,7 +15,7 @@ const { __ } = wp.i18n;
  *
  * @return {JSX.Element}
  */
-export default function FeaturedImage({ postMeta: meta, editMeta }) {
+export default function FeaturedImageMeta({ postMeta: meta, editMeta }) {
   const [imageChecked, setImageChecked] = useState(!meta?._hide_featured_image);
   const [imageCaptionChecked, setImageCaptionChecked] = useState(
     !meta?._hide_featured_image_caption,
