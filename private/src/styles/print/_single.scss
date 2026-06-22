@@ -1,4 +1,5 @@
 @media print {
+  .container--feature,
   .article-metaActions,
   .article-meta .btn,
   .article-share,
@@ -14,5 +15,14 @@
 
   .article-metaData {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .article-sidebar {
+    display: none !important;
+  }
+
+  .content-links {
+    padding: var(--wp--preset--spacing--single);
+    background-color: var(--wp--preset--color--grey-lightest);
   }
 }
