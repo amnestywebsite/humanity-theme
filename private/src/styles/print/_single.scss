@@ -7,4 +7,12 @@
   .callToAction {
     display: none !important;
   }
+
+  .article-meta {
+    margin-bottom: var(--wp--preset--spacing--single);
+  }
+
+  .article-metaData {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
