@@ -270,5 +270,3 @@ if ( is_multilingualpress_enabled() ) {
 #endregion multilingualpress
 
 // phpcs:enable Squiz.Commenting.InlineComment.WrongStyle,PEAR.Commenting.InlineComment.WrongStyle
-
-require_once realpath( __DIR__ . '/includes/print/class-print-handler.php' );
