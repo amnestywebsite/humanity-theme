@@ -26,6 +26,7 @@ import iframeButton from './modules/iframe-button';
 import collapsableBlock from './modules/collapsable-block';
 import addFlickityToTabs from './modules/tabbed-content-flickity';
 import downloadBlock from './modules/download-block';
+import footnoteTooltips from './modules/footnotes';
 
 const App = () => {
   browserDetector();
@@ -51,6 +52,7 @@ const App = () => {
   iframeButton();
   collapsableBlock();
   addFlickityToTabs();
+  footnoteTooltips();
 
   fluidText(document.getElementsByClassName('article-shareTitle'), 0.9);
 
