@@ -56,6 +56,35 @@ if ( ! function_exists( 'get_blog_post_meta' ) ) {
 	}
 }
 
+if ( ! function_exists( 'get_blog_post_term' ) ) {
+	/**
+	 * Multisite-aware amnesty_get_a_post_term
+	 *
+	 * @package Amnesty\Multisite
+	 *
+	 * @param int    $blog_id  the blog id to retrieve post from
+	 * @param int    $post_id  the post to retrieve
+	 * @param string $taxonomy the taxonomy to retrieve a term from
+	 *
+	 * @return WP_Term|null
+	 */
+	function get_blog_post_term( int $blog_id, int $post_id, string $taxonomy = 'category' ): ?WP_Term {
+		$should_switch = is_multisite() && $blog_id && get_current_blog_id() !== $blog_id;
+
+		if ( $should_switch ) {
+			switch_to_blog( $blog_id );
+		}
+
+		$term = amnesty_get_a_post_term( $post_id, $taxonomy );
+
+		if ( $should_switch ) {
+			restore_current_blog();
+		}
+
+		return $term;
+	}
+}
+
 if ( ! function_exists( 'amnesty_post_type_is_enabled' ) ) {
 	/**
 	 * Check whether a post type is enabled via network admin
