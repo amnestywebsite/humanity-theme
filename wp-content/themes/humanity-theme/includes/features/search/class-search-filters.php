@@ -133,8 +133,8 @@ class Search_Filters {
 	 * @return string
 	 */
 	public function title_tag( string $title ): string {
-		// we're only targetting search
-		if ( false === strpos( current_url(), amnesty_search_url() ) ) {
+		// we're only targetting search; compare scheme-insensitively, as current_url() forces https
+		if ( false === strpos( set_url_scheme( current_url() ?: '', 'https' ), set_url_scheme( amnesty_search_url(), 'https' ) ) ) {
 			return $title;
 		}
 
@@ -180,8 +180,8 @@ class Search_Filters {
 	 * @return string
 	 */
 	public function results_title( string $title, int $count, string $search ): string {
-		// we're only targetting search
-		if ( false === strpos( current_url(), amnesty_search_url() ) ) {
+		// we're only targetting search; compare scheme-insensitively, as current_url() forces https
+		if ( false === strpos( set_url_scheme( current_url() ?: '', 'https' ), set_url_scheme( amnesty_search_url(), 'https' ) ) ) {
 			return $title;
 		}
 
