@@ -25,7 +25,14 @@ if ( ! function_exists( 'current_url' ) ) {
 		$query = query_string_to_array( $query );
 
 		if ( ! is_multisite() ) {
-			$home = home_url( $path, 'https' );
+			// the search URI override rewrites /search/<term>/ paths to the bare
+			// search URL, which is never the *current* URL; suspend it here
+			$had_filter = remove_filter( 'home_url', 'amnesty_maybe_override_search_uri', 10 );
+			$home       = home_url( $path, 'https' );
+
+			if ( $had_filter ) {
+				add_filter( 'home_url', 'amnesty_maybe_override_search_uri', 10, 2 );
+			}
 
 			return empty( $query ) ? $home : add_query_arg( $query, $home );
 		}
