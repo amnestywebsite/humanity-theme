@@ -66,7 +66,7 @@ function createEventHandler(article, references, tooltip) {
     }
 
     // mouse has entered the tooltip bounding box - do nothing, so that it stays open
-    if (event.target === tooltip || event.target.closest(tooltip.className) === tooltip) {
+    if (event.target === tooltip || tooltip.contains(event.target)) {
       return;
     }
 
