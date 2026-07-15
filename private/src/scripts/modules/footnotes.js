@@ -137,5 +137,12 @@ export default function footnoteTooltips() {
 
   observer.observe(tooltip);
 
-  article.addEventListener('mouseover', createEventHandler(article, refs, tooltip));
+  const handler = createEventHandler(article, refs, tooltip);
+  article.addEventListener('mouseover', handler);
+  article.addEventListener('focusin', handler);
+  article.addEventListener('keydown', ({ key }) => {
+    if (['Esc', 'Escape'].includes(key)) {
+      resetTooltip(tooltip);
+    }
+  });
 }
