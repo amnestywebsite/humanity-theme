@@ -50,6 +50,8 @@ export default class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Size', 'amnesty')}
               value={size}

@@ -169,6 +169,8 @@ export default class DisplayComponent extends Component {
     return (
       <PanelBody>
         <SelectControl
+          __next40pxDefaultSize
+          __nextHasNoMarginBottom
           // translators: [admin]
           label={__('Image Style', 'amnesty')}
           value={style}
@@ -181,6 +183,8 @@ export default class DisplayComponent extends Component {
           ]}
         />
         <SelectControl
+          __next40pxDefaultSize
+          __nextHasNoMarginBottom
           // translators: [admin]
           label={__('Alignment', 'amnesty')}
           // translators: [admin]
@@ -380,6 +384,8 @@ export default class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Type', 'amnesty')}
               options={[

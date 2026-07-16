@@ -57,6 +57,8 @@ registerBlockType('amnesty-core/key-facts', {
               max={4}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Colour', 'amnesty')}
               value={background}

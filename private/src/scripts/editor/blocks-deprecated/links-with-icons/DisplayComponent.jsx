@@ -85,6 +85,8 @@ export default class DisplayComponent extends Component {
             />
             {style !== 'square' && (
               <SelectControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Orientation', 'amnesty')}
                 value={orientation}
@@ -98,6 +100,8 @@ export default class DisplayComponent extends Component {
               />
             )}
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Colour', 'amnesty')}
               value={backgroundColor}
@@ -118,6 +122,8 @@ export default class DisplayComponent extends Component {
               />
             )}
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               className="radio-control-icons"
               // translators: [admin]
               label={__('Divider Style', 'amnesty')}

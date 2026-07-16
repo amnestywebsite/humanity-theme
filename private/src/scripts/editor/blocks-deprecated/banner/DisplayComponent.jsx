@@ -118,6 +118,8 @@ export default class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Alignment', 'amnesty')}
               options={[
@@ -141,6 +143,8 @@ export default class DisplayComponent extends Component {
               onChange={(newAlignment) => setAttributes({ alignment: newAlignment })}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Colour', 'amnesty')}
               options={[
@@ -157,6 +161,8 @@ export default class DisplayComponent extends Component {
               onChange={(newBackground) => setAttributes({ background: newBackground })}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Size', 'amnesty')}
               options={[
@@ -169,6 +175,8 @@ export default class DisplayComponent extends Component {
               onChange={(newSize) => setAttributes({ size: newSize })}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Type', 'amnesty')}
               options={[

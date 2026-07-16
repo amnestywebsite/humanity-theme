@@ -83,6 +83,8 @@ export default class BlockEdit extends Component {
         <InspectorControls>
           <PanelBody>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Size', 'amnesty')}
               value={style}

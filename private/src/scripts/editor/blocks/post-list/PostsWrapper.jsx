@@ -168,6 +168,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
             <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
               {defaultStyleOptions.length > 0 && (
                 <SelectControl
+                  __next40pxDefaultSize
+                  __nextHasNoMarginBottom
                   // translators: [admin]
                   label={__('Style', 'amnesty')}
                   options={defaultStyleOptions}
@@ -176,6 +178,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                 />
               )}
               <SelectControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Type', 'amnesty')}
                 options={defaultDisplayTypes}

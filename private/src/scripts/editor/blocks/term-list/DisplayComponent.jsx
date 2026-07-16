@@ -111,6 +111,8 @@ export default class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Display Options', 'amnesty')}>
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Choose taxonomy to display', 'amnesty')}
             options={options}

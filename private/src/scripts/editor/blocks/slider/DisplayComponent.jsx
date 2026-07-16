@@ -267,6 +267,8 @@ class DisplayComponent extends Component {
             value={attributes.sliderTitle}
           />
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Timeline Style', 'amnesty')}
             value={attributes.timelineCaptionStyle}
@@ -303,6 +305,8 @@ class DisplayComponent extends Component {
             />
             <hr />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Content Alignment', 'amnesty')}
               value={currentSlide.alignment}
@@ -310,6 +314,8 @@ class DisplayComponent extends Component {
               onChange={updateSlide('alignment')}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Style', 'amnesty')}
               value={currentSlide.background}

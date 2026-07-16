@@ -81,6 +81,8 @@ export default function DisplayComponent({ attributes, context, setAttributes })
       <InspectorControls>
         <PanelBody title={__('Settings', 'default')}>
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             label={__('Choose a meta key', 'amnesty')}
             value={attributes.metaKey}
             options={[{ label: __('None', 'default'), value: '' }, ...metaKeys]}

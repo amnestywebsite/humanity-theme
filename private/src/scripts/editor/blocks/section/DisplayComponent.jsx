@@ -144,6 +144,8 @@ class DisplayComponent extends Component {
             onChange={this.handleSave}
           />
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Text Colour', 'amnesty')}
             options={[
@@ -228,6 +230,8 @@ class DisplayComponent extends Component {
             onChange={() => setAttributes({ hideImageCopyright: !attributes.hideImageCopyright })}
           />
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Background Image Origin', 'amnesty')}
             options={[
@@ -266,6 +270,8 @@ class DisplayComponent extends Component {
             onChange={(value) => setAttributes({ backgroundImageOrigin: value })}
           />
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Background Colour', 'amnesty')}
             options={[

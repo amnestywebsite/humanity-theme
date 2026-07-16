@@ -113,6 +113,8 @@ const DisplayComponent = (props) => {
           // translators: [admin]
           <PanelBody title={__('Background Colour', 'amnesty')}>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Colour', 'amnesty')}
               value={background}
