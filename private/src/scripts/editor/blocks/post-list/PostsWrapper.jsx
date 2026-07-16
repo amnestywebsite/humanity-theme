@@ -235,6 +235,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
               )}
               {attributes.type === 'category' && (
                 <ToggleControl
+                  __next40pxDefaultSize
+                  __nextHasNoMarginBottom
                   // translators: [admin]
                   label={__('Use related categories where supported', 'amnesty')}
                   checked={attributes.categoryRelated}
@@ -283,12 +285,16 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                 </label>
               )}
               <ToggleControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Display Post Author', 'amnesty')}
                 checked={attributes.displayAuthor}
                 onChange={this.createUpdateAttribute('displayAuthor')}
               />
               <ToggleControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Display Post Date', 'amnesty')}
                 checked={attributes.displayPostDate}

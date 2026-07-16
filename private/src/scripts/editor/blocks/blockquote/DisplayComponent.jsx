@@ -109,6 +109,8 @@ class DisplayComponent extends Component {
             />
             {!this.isRightToLeft && (
               <ToggleControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Capitalise', 'amnesty')}
                 // translators: [admin]
@@ -118,6 +120,8 @@ class DisplayComponent extends Component {
               />
             )}
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Line', 'amnesty')}
               // translators: [admin]

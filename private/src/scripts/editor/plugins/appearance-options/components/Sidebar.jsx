@@ -19,6 +19,8 @@ const Sidebar = ({ createMetaUpdate, props }) => {
   return (
     <PanelBody title={/* translators: [admin] */ __('Sidebar', 'amnesty')} initialOpen={false}>
       <ToggleControl
+        __next40pxDefaultSize
+        __nextHasNoMarginBottom
         // translators: [admin]
         label={__('Maximize Content', 'amnesty')}
         help={
@@ -39,6 +41,8 @@ const Sidebar = ({ createMetaUpdate, props }) => {
         }
       />
       <ToggleControl
+        __next40pxDefaultSize
+        __nextHasNoMarginBottom
         // translators: [admin]
         label={__('Disable Sidebar', 'amnesty')}
         help={

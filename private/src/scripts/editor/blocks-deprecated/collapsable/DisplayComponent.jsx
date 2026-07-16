@@ -44,6 +44,8 @@ const DisplayComponent = ({ attributes, className, setAttributes }) => {
         <PanelBody title={__('Settings', 'amnesty')}>
           <PanelRow>
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Collapsed by default', 'amnesty')}
               // translators: [admin]

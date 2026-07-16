@@ -11,6 +11,8 @@ const { __ } = wp.i18n;
  */
 const RelatedContent = ({ createMetaUpdate, props }) => (
   <ToggleControl
+    __next40pxDefaultSize
+    __nextHasNoMarginBottom
     // translators: [admin]
     label={__('Disable Related Content', 'amnesty')}
     // translators: [admin]

@@ -115,6 +115,8 @@ export default class DisplayComponent extends Component {
             />
             {style !== 'square' && (
               <ToggleControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Hide Lines', 'amnesty')}
                 checked={hideLines}

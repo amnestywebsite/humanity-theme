@@ -218,6 +218,8 @@ class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Show Arrows', 'amnesty')}
             checked={attributes.hasArrows}
@@ -225,6 +227,8 @@ class DisplayComponent extends Component {
           />
 
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Has Content', 'amnesty')}
             checked={attributes.hasContent}
@@ -242,6 +246,8 @@ class DisplayComponent extends Component {
           />
 
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Show Tabs', 'amnesty')}
             checked={attributes.showTabs}
@@ -328,6 +334,8 @@ class DisplayComponent extends Component {
               onChange={updateSlide('background')}
             />
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Hide Content', 'amnesty')}
               checked={currentSlide.hideContent}

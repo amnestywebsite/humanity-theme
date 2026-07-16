@@ -89,11 +89,14 @@ export default function DisplayComponent({ attributes, context, setAttributes })
             onChange={(metaKey) => setAttributes({ metaKey })}
           />
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             label={__('Does this meta key have a single value?', 'amnesty')}
             checked={isSingle}
             onChange={() => setAttributes({ isSingle: !isSingle })}
           />
           <ToggleControl
+            __next40pxDefaultSize
             __nextHasNoMarginBottom
             label={
               postType?.labels.singular_name

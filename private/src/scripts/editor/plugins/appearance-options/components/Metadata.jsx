@@ -60,6 +60,8 @@ function IndexNumber() {
 const PublishedDate = ({ createMetaUpdate, props }) => (
   <>
     <ToggleControl
+      __next40pxDefaultSize
+      __nextHasNoMarginBottom
       label={/* translators: [admin] */ __('Show published date', 'amnesty')}
       help={/* translators: [admin] */ __('Show the post published date', 'amnesty')}
       checked={props.meta.show_published_date}
@@ -87,6 +89,8 @@ const PublishedDate = ({ createMetaUpdate, props }) => (
 const UpdatedDate = ({ createMetaUpdate, props }) => (
   <>
     <ToggleControl
+      __next40pxDefaultSize
+      __nextHasNoMarginBottom
       label={/* translators: [admin] */ __('Show updated date', 'amnesty')}
       help={/* translators: [admin] */ __('Show the "updated at" date', 'amnesty')}
       checked={props.meta.show_updated_date}

@@ -214,18 +214,24 @@ class DisplayComponent extends Component {
             allowReset
           />
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Toggle Background Overlay', 'amnesty')}
             checked={attributes.enableBackgroundGradient}
             onChange={(enableBackgroundGradient) => setAttributes({ enableBackgroundGradient })}
           />
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Hide Image Caption', 'amnesty')}
             checked={attributes.hideImageCaption}
             onChange={() => setAttributes({ hideImageCaption: !attributes.hideImageCaption })}
           />
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Hide Image Credit', 'amnesty')}
             checked={attributes.hideImageCopyright}

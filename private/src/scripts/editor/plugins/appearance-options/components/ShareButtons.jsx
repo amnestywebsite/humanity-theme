@@ -14,6 +14,8 @@ const { __ } = wp.i18n;
 const ShareButtons = ({ createMetaUpdate, props }) => (
   <>
     <ToggleControl
+      __next40pxDefaultSize
+      __nextHasNoMarginBottom
       // translators: [admin]
       label={__('Disable Sharing', 'amnesty')}
       // translators: [admin]

@@ -13,6 +13,8 @@ const { __ } = wp.i18n;
 const FeaturedImage = ({ createMetaUpdate, props }) => (
   <>
     <ToggleControl
+      __next40pxDefaultSize
+      __nextHasNoMarginBottom
       label={__('Hide featured image', 'amnesty')}
       help={__('Hide the featured image.', 'amnesty')}
       checked={props.meta._hide_featured_image}
@@ -26,6 +28,8 @@ const FeaturedImage = ({ createMetaUpdate, props }) => (
       }
     />
     <ToggleControl
+      __next40pxDefaultSize
+      __nextHasNoMarginBottom
       label={__('Hide featured image caption', 'amnesty')}
       help={__('Hide the image caption for the featured image', 'amnesty')}
       checked={props.meta._hide_featured_image_caption}

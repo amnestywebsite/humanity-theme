@@ -197,6 +197,8 @@ export default class DisplayComponent extends Component {
             />
           )}
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Show only Regions/Subregions', 'amnesty')}
             checked={attributes.regionsOnly}

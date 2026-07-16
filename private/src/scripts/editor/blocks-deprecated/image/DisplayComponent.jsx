@@ -409,12 +409,16 @@ export default class DisplayComponent extends Component {
 
           <PanelBody>
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Display Overlay', 'amnesty')}
               checked={hasOverlay}
               onChange={(newHasOverlay) => setAttributes({ hasOverlay: newHasOverlay })}
             />
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Enable Parallax', 'amnesty')}
               checked={parallax}

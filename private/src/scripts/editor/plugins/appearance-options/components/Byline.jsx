@@ -70,6 +70,8 @@ const Byline = () => {
     <>
       <PanelRow>
         <ToggleControl
+          __next40pxDefaultSize
+          __nextHasNoMarginBottom
           // translators: [admin]
           label={__('Enable public byline', 'amnesty')}
           help={
@@ -86,6 +88,8 @@ const Byline = () => {
       {bylineEnabled && (
         <PanelRow>
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Use author profile for byline', 'amnesty')}
             checked={bylineIsAuthor}

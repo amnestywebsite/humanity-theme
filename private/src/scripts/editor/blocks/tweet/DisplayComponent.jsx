@@ -64,6 +64,8 @@ export default class DisplayComponent extends Component {
               ]}
             />
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Embed Link', 'amnesty')}
               // translators: [admin]
