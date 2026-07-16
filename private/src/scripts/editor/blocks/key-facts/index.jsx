@@ -47,6 +47,8 @@ registerBlockType('amnesty-core/key-facts', {
         <InspectorControls>
           <PanelBody>
             <RangeControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Quantity', 'amnesty')}
               value={quantity}

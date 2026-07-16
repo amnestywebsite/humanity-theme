@@ -198,6 +198,8 @@ class DisplayComponent extends Component {
             </MediaUploadCheck>
           </div>
           <RangeControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Min image height as viewport percentage', 'amnesty')}
             onChange={(value) => setAttributes({ minHeight: !value ? 0 : value })}

@@ -182,6 +182,8 @@ export default class DisplayComponent extends Component {
           />
           {hierarchical && (
             <RangeControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Max depth', 'amnesty')}
               min={0}

@@ -213,6 +213,8 @@ export default class BlockEdit extends Component {
                 onChange={(newUnderline) => setAttributes({ underlined: newUnderline })}
               />
               <RangeControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Font Size', 'amnesty')}
                 value={factFontSize}

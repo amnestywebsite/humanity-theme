@@ -97,6 +97,8 @@ const DisplayComponent = (props) => {
               onChange={setFocalPoint}
             />
             <RangeControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Opacity', 'amnesty')}
               min={0}
