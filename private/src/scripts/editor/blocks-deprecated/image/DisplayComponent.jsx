@@ -43,6 +43,10 @@ export default class DisplayComponent extends Component {
       key = 'video';
     }
 
+    if (!mediaID) {
+      return;
+    }
+
     wp.apiRequest({ path: `/wp/v2/media/${mediaID}` }).then((response) =>
       this.setState({ [key]: response }),
     );
