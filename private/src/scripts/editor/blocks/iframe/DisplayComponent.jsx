@@ -46,8 +46,11 @@ class DisplayComponent extends Component {
             // translators: [admin]
             placeholder={__('Enter URL to embed here…', 'amnesty')}
           />
-          <Button isLarge type="submit">
-            {/* translators: [admin] */ __('Embed', 'amnesty')}
+          <Button type="submit">
+            {
+              /* translators: [admin] */
+              __('Embed', 'amnesty')
+            }
           </Button>
         </form>
       </Placeholder>

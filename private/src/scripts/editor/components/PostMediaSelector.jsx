@@ -112,7 +112,7 @@ class PostMediaSelector extends Component {
                 {!loading && mediaType === 'image' && <img src={media.source_url || media.url} />}
 
                 {loading && <Spinner />}
-                <Button onClick={open} isSecondary isLarge>
+                <Button onClick={open} isSecondary>
                   {replaceMediaLabel}
                 </Button>
               </div>

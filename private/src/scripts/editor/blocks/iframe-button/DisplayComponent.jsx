@@ -85,10 +85,10 @@ const DisplayComponent = (props) => {
           value={embedUrl}
           onChange={() => setEmbedUrl(inputRef.current.value)}
         />
-        <Button isLarge isPrimary onClick={embed}>
+        <Button isPrimary onClick={embed}>
           {/* translators: [admin] */ __('Embed', 'amnesty')}
         </Button>
-        <Button isLarge onClick={() => setIsPreviewing(!previewing)}>
+        <Button onClick={() => setIsPreviewing(!previewing)}>
           {previewing
             ? /* translators: [admin] */ __('Hide Preview', 'amnesty')
             : /* translators: [admin] */ __('Preview', 'amnesty')}

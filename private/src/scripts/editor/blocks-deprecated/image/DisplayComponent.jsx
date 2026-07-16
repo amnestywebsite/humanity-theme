@@ -326,7 +326,7 @@ export default class DisplayComponent extends Component {
               <video>
                 <source src={videoURL} />
               </video>
-              <Button onClick={open} isSecondary isLarge>
+              <Button onClick={open} isSecondary>
                 {/* translators: [admin] */ __('Replace Video', 'amnesty')}
               </Button>
             </div>
