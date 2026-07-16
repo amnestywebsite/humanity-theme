@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 
 const { InspectorControls, MediaUpload, PlainText, URLInputButton } = wp.blockEditor;
-const { IconButton, PanelBody, SelectControl } = wp.components;
+const { Button, PanelBody, SelectControl } = wp.components;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
 
@@ -100,7 +100,7 @@ export default class BlockEdit extends Component {
           <div className="actionBlock-figure">
             <div className="linkList-options">
               {imageID ? (
-                <IconButton
+                <Button
                   icon="no-alt"
                   // translators: [admin]
                   label={__('Remove Image', 'amnesty')}
@@ -118,7 +118,7 @@ export default class BlockEdit extends Component {
                       imageAlt: media.alt,
                     })
                   }
-                  render={({ open }) => <IconButton icon="format-image" onClick={open} />}
+                  render={({ open }) => <Button icon="format-image" onClick={open} />}
                 />
               )}
             </div>

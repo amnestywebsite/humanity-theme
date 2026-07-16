@@ -1,5 +1,5 @@
 const { RichText, URLInputButton, MediaUpload } = wp.blockEditor;
-const { IconButton } = wp.components;
+const { Button } = wp.components;
 const { __ } = wp.i18n;
 const { get } = lodash;
 
@@ -33,7 +33,7 @@ const GridItem = (props) => (
     </div>
     <div className="linkList-options">
       {props.featured_image_id && props.featured_image_id !== -1 && (
-        <IconButton
+        <Button
           icon="no-alt"
           onClick={() =>
             props.updateMedia({
@@ -43,7 +43,7 @@ const GridItem = (props) => (
           }
         >
           {/* translators: [admin] */ __('Remove Image', 'amnesty')}
-        </IconButton>
+        </Button>
       )}
       <MediaUpload
         onSelect={({ id, sizes, url }) =>
@@ -54,9 +54,9 @@ const GridItem = (props) => (
         }
         value={props.featured_image_id}
         allowedTypes={['image']}
-        render={({ open }) => <IconButton icon="format-image" onClick={open} />}
+        render={({ open }) => <Button icon="format-image" onClick={open} />}
       />
-      <IconButton onClick={props.createRemove} icon="trash" />
+      <Button onClick={props.createRemove} icon="trash" />
     </div>
   </article>
 );

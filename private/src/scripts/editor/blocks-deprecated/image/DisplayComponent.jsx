@@ -2,7 +2,7 @@ import classnames from 'classnames';
 
 const { React } = window;
 const { InspectorControls, MediaUpload, PlainText, RichText, URLInputButton } = wp.blockEditor;
-const { Button, IconButton, PanelBody, SelectControl, ToggleControl } = wp.components;
+const { Button, PanelBody, SelectControl, ToggleControl } = wp.components;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
 
@@ -130,7 +130,7 @@ export default class DisplayComponent extends Component {
         </div>
         <div className="linkList-options">
           {buttons.length > 1 && (
-            <IconButton
+            <Button
               icon="no-alt"
               // translators: [admin]
               label={__('Remove Button', 'amnesty')}
@@ -212,7 +212,7 @@ export default class DisplayComponent extends Component {
     return (
       <div className="linkList-options imageBlock-action">
         {imageID ? (
-          <IconButton
+          <Button
             icon="no-alt"
             // translators: [admin]
             label={__('Remove Image', 'amnesty')}
@@ -236,7 +236,7 @@ export default class DisplayComponent extends Component {
                 });
               });
             }}
-            render={({ open }) => <IconButton icon="format-image" onClick={open} />}
+            render={({ open }) => <Button icon="format-image" onClick={open} />}
           />
         )}
       </div>
@@ -272,7 +272,7 @@ export default class DisplayComponent extends Component {
         <div className="imageBlock-buttonsContainer">
           {buttons.map((button, index) => this.createButton(index, button))}
           {buttons.length < 1 && this.createButton(0)}
-          <IconButton
+          <Button
             icon="plus"
             // translators: [admin]
             label={__('Add Button', 'amnesty')}

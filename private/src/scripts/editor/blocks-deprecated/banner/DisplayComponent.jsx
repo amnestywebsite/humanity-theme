@@ -4,7 +4,7 @@ import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisib
 import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
 
 const { InspectorControls, MediaUpload, RichText, URLInputButton } = wp.blockEditor;
-const { IconButton, PanelBody, SelectControl, TextControl } = wp.components;
+const { Button, PanelBody, SelectControl, TextControl } = wp.components;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
 const { addQueryArgs } = wp.url;
@@ -211,7 +211,7 @@ export default class DisplayComponent extends Component {
           {type !== 'video' && (
             <div className="linkList-options">
               {imageID ? (
-                <IconButton
+                <Button
                   icon="no-alt"
                   // translators: [admin]
                   label={__('Remove Image', 'amnesty')}
@@ -222,7 +222,7 @@ export default class DisplayComponent extends Component {
                   allowedTypes={['image']}
                   value={imageID}
                   onSelect={(media) => setAttributes({ imageID: media.id })}
-                  render={({ open }) => <IconButton icon="format-image" onClick={open} />}
+                  render={({ open }) => <Button icon="format-image" onClick={open} />}
                 />
               )}
             </div>
