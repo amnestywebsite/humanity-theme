@@ -70,6 +70,8 @@ export default class BlockEdit extends Component {
               ]}
             />
             <TextControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Scroll To Link', 'amnesty')}
               value={attributes.scrollLink}

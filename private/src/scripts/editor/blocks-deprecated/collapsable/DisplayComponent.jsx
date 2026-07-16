@@ -54,6 +54,8 @@ const DisplayComponent = ({ attributes, className, setAttributes }) => {
           </PanelRow>
           <PanelRow>
             <TextControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               label={__('HTML anchor')}
               // translators: [admin]
               help={__('Label this block with an HTML anchor (#example).', 'amnesty')}

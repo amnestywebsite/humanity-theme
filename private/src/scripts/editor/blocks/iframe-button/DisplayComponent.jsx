@@ -34,6 +34,8 @@ const DisplayComponent = (props) => {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Iframe Height', 'amnesty')}
             value={attributes.iframeHeight}
@@ -42,6 +44,8 @@ const DisplayComponent = (props) => {
             onChange={(iframeHeight) => setAttributes({ iframeHeight })}
           />
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Iframe Title', 'amnesty')}
             // translators: [admin]

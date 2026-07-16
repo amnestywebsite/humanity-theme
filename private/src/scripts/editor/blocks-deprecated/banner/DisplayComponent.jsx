@@ -195,6 +195,8 @@ export default class DisplayComponent extends Component {
               setAttributes={setAttributes}
             />
             <TextControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Embed URL', 'amnesty')}
               // translators: [admin]

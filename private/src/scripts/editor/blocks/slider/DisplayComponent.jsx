@@ -261,6 +261,8 @@ class DisplayComponent extends Component {
 
         <PanelBody title={/* translators: [admin] */ __('Timeline Options', 'amnesty')}>
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Slider Title', 'amnesty')}
             onChange={this.createUpdateAttribute('sliderTitle')}
@@ -280,6 +282,8 @@ class DisplayComponent extends Component {
         {attributes.slides.length > 0 && (
           <PanelBody title={/* translators: [admin] */ __('Slide Options', 'amnesty')}>
             <TextControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Slide Title', 'amnesty')}
               onChange={updateSlide('title')}

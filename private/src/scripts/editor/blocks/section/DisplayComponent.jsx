@@ -138,6 +138,8 @@ class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Section Name', 'amnesty')}
             value={attributes.sectionName}
