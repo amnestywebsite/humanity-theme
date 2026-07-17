@@ -13,7 +13,6 @@
  */
 #region root
 require_once realpath( __DIR__ . '/includes/root/compatibility.php' );
-require_once realpath( __DIR__ . '/includes/root/caching.php' );
 require_once realpath( __DIR__ . '/includes/root/localisation.php' );
 require_once realpath( __DIR__ . '/includes/root/accessibility.php' );
 require_once realpath( __DIR__ . '/includes/root/permalinks.php' );
