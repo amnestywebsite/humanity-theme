@@ -4,8 +4,6 @@ const { apiFetch } = wp;
 const { InspectorControls, InnerBlocks, MediaUpload, MediaUploadCheck } = wp.blockEditor;
 const { Button, PanelBody, RangeControl, SelectControl, TextControl, ToggleControl } =
   wp.components;
-const { compose } = wp.compose;
-const { withDispatch } = wp.data;
 const { Component, Fragment } = wp.element;
 const { __, sprintf } = wp.i18n;
 
@@ -370,6 +368,4 @@ class DisplayComponent extends Component {
   }
 }
 
-export default compose(
-  withDispatch((dispatch) => dispatch('core/block-editor').setTemplateValidity(true)),
-)(DisplayComponent);
+export default DisplayComponent;
