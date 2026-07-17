@@ -193,12 +193,23 @@ if ( ! function_exists( 'amnesty_get_attachment_url' ) ) {
 			return false;
 		}
 
+		$cache_key = hash( 'xxh3', __FUNCTION__ . (string) $post_id . get_current_blog_id() );
+		$cached    = wp_cache_get( $cache_key );
+
+		if ( false !== $cached ) {
+			return $cached;
+		}
+
 		if ( ! class_exists( '\MultisiteGlobalMedia\Plugin', false ) ) {
-			return wp_get_attachment_url( $post_id );
+			$url = wp_get_attachment_url( $post_id );
+			wp_cache_add( $cache_key, $url );
+			return $url;
 		}
 
 		if ( ! amnesty_image_has_mgm_prefix( $post_id ) ) {
-			return wp_get_attachment_url( $post_id );
+			$url = wp_get_attachment_url( $post_id );
+			wp_cache_add( $cache_key, $url );
+			return $url;
 		}
 
 		$site_object = new Site();
@@ -216,6 +227,8 @@ if ( ! function_exists( 'amnesty_get_attachment_url' ) ) {
 		$switcher->switchToBlog( $site_object->id() );
 		$url = wp_get_attachment_url( $source_post_id );
 		$switcher->restoreBlog();
+
+		wp_cache_add( $cache_key, $url );
 
 		return $url;
 	}
@@ -237,12 +250,23 @@ if ( ! function_exists( 'amnesty_get_attachment_image_src' ) ) {
 			return false;
 		}
 
+		$cache_key = hash( 'xxh3', __FUNCTION__ . (string) $post_id . $size . get_current_blog_id() );
+		$cached    = wp_cache_get( $cache_key );
+
+		if ( false !== $cached ) {
+			return $cached;
+		}
+
 		if ( ! class_exists( '\MultisiteGlobalMedia\Plugin', false ) ) {
-			return wp_get_attachment_image_src( $post_id, $size )[0] ?? false;
+			$src = wp_get_attachment_image_src( $post_id, $size )[0] ?? false;
+			wp_cache_add( $cache_key, $src );
+			return $src;
 		}
 
 		if ( ! amnesty_image_has_mgm_prefix( $post_id ) ) {
-			return wp_get_attachment_image_src( $post_id, $size )[0] ?? false;
+			$src = wp_get_attachment_image_src( $post_id, $size )[0] ?? false;
+			wp_cache_add( $cache_key, $src );
+			return $src;
 		}
 
 		$site_object = new Site();
@@ -258,9 +282,11 @@ if ( ! function_exists( 'amnesty_get_attachment_image_src' ) ) {
 
 		// get its URL
 		$switcher->switchToBlog( $site_object->id() );
-		$url = wp_get_attachment_image_src( $source_post_id, $size )[0] ?? false;
+		$src = wp_get_attachment_image_src( $source_post_id, $size )[0] ?? false;
 		$switcher->restoreBlog();
 
-		return $url;
+		wp_cache_add( $cache_key, $src );
+
+		return $src;
 	}
 }

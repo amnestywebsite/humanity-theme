@@ -152,7 +152,7 @@ if ( ! function_exists( 'amnesty_get_nav_menu_items' ) ) {
 		$top_level  = [];
 		$children   = [];
 
-		foreach ( $menu_items as $item ) {
+		foreach ( (array) $menu_items as $item ) {
 			$parent_id = absint( $item->menu_item_parent );
 
 			if ( 0 === $parent_id ) {
