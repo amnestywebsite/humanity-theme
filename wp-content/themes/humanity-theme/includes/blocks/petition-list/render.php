@@ -82,13 +82,6 @@ if ( ! function_exists( 'amnesty_render_petition_item' ) ) {
 			</figure>
 
 			<div class="petition-item-content">
-				<div class="petition-itemExcerpt">
-				<?php
-				if ( ! empty( $data['excerpt'] ) ) {
-					echo esc_attr( $data['excerpt'] );
-				}
-				?>
-				</div>
 				<?php if ( $title ) : ?>
 				<h3 class="petition-itemTitle">
 					<?php
