@@ -150,6 +150,7 @@ require_once realpath( __DIR__ . '/includes/core-blocks/query/pagination/next.ph
 require_once realpath( __DIR__ . '/includes/core-blocks/query/pagination/numbers.php' );
 require_once realpath( __DIR__ . '/includes/core-blocks/query/pagination/previous.php' );
 require_once realpath( __DIR__ . '/includes/core-blocks/social-icons/styles.php' );
+require_once realpath( __DIR__ . '/includes/core-blocks/footnotes/attributes.php' );
 #endregion coreblocks
 
 /**

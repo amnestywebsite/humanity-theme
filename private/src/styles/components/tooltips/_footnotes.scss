@@ -1,0 +1,37 @@
+sup.fn {
+  position: relative;
+}
+
+.footnote-tooltip {
+  position: absolute;
+  bottom: 24px; // margin + embellishment / 2 + breathing room
+  left: var(--offset, -12px); // embellishment offset
+  display: none;
+  z-index: 1;
+  margin: 0;
+  padding: var(--wp--preset--spacing--half);
+  background: var(--wp--preset--color--white);
+  width: 250px;
+  line-height: normal;
+  border: 1px solid var(--wp--preset--color--grey-light);
+  box-shadow: 0 20px 48px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footnote-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: var(--embellish-offset, 12px);
+  display: block;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background: var(--wp--preset--color--white);
+  border-right: 1px solid var(--wp--preset--color--grey-light);
+  border-bottom: 1px solid var(--wp--preset--color--grey-light);
+  box-shadow: 0 20px 48px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footnote-tooltip.is-visible {
+  display: block;
+}
