@@ -1,10 +1,23 @@
 @media print {
+  .container--feature,
   .article-metaActions,
   .article-meta .btn,
   .article-share,
   .article-footer,
   .article-sidebar,
   .callToAction {
+    display: none !important;
+  }
+
+  .article-meta {
+    margin-bottom: var(--wp--preset--spacing--single);
+  }
+
+  .article-metaData {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .article-sidebar {
     display: none !important;
   }
 }

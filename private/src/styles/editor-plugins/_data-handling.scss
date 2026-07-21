@@ -81,6 +81,15 @@
   text-align: end;
 }
 
+.amnesty-data-handling-taxonomy-wrapper {
+  padding: var(--wp--preset--spacing--quarter);
+  border: 1px dotted;
+}
+
+.amnesty-data-handling-taxonomy-wrapper > .components-flex {
+  height: auto;
+}
+
 .amnesty-data-handling-taxonomy {
   margin-block-end: var(--wp--preset--spacing--single);
   max-width: 400px;
