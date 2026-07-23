@@ -73,7 +73,7 @@ export default class DisplayComponent extends Component {
 
     const path = addQueryArgs(`/wp/v2/${current.rest_base}/`, {
       hide_empty: 'false',
-      per_page: '250',
+      per_page: current.rest_base === 'category' ? 100 : 250,
     });
 
     if (cache[path]) {
