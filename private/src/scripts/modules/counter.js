@@ -60,6 +60,12 @@ const countUp = (target, end, duration = 2000, observerObj) => {
   requestAnimationFrame(step);
 };
 
+// Ensure bottom margin is never less than footer height so it triggers even with an empty footer.
+const bottomMargin = Math.min(
+  document.querySelector('.wp-site-blocks > footer, body > footer')?.offsetHeight ?? 0,
+  200,
+);
+
 // animate once the element's well into view
 const observer = new IntersectionObserver(
   (entries, observerObj) => {
@@ -79,7 +85,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    rootMargin: '0px 0px -200px 0px',
+    rootMargin: `0px 0px -${bottomMargin}px 0px`,
     threshold: [1],
   },
 );
