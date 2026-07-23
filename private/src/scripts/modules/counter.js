@@ -10,7 +10,7 @@ const toRawNumber = (value = '0') => {
   const trimmed = value.replace(/[^\d]/g, '');
   const inted = parseInt(trimmed, 10);
 
-  return inted;
+  return Number.isNaN(inted) ? 0 : inted;
 };
 
 // format a value as a locale-aware number
