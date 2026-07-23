@@ -499,7 +499,7 @@ class DisplayComponent extends Component {
 
                   if (selectedSlide === index) {
                     return (
-                      <div key={slide.title} className="slider-navButton is-active">
+                      <div key={slide.id} className="slider-navButton is-active">
                         <span>
                           {slideTitle
                             ? slide.title
@@ -511,7 +511,7 @@ class DisplayComponent extends Component {
 
                   return (
                     <button
-                      key={slide.title}
+                      key={slide.id}
                       className="slider-navButton"
                       onClick={this.createSelectSlide(index)}
                     >
