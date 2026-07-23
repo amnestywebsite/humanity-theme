@@ -196,6 +196,7 @@ export default class BlockEdit extends Component {
           )}
           {style === 'icon' && (
             <CheckboxControl
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Hide Image Credit Display', 'amnesty')}
               checked={uncredited}
@@ -205,6 +206,7 @@ export default class BlockEdit extends Component {
           {style === 'text' && (
             <Fragment>
               <CheckboxControl
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Has Underline', 'amnesty')}
                 checked={underlined}
@@ -223,6 +225,7 @@ export default class BlockEdit extends Component {
             </Fragment>
           )}
           <CheckboxControl
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Display Action', 'amnesty')}
             checked={hasButton}
