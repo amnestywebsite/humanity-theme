@@ -286,6 +286,7 @@ class DisplayComponent extends Component {
               value={currentSlide.title}
             />
             <TextareaControl
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Slide Timeline Text', 'amnesty')}
               onChange={updateSlide('timelineContent')}
