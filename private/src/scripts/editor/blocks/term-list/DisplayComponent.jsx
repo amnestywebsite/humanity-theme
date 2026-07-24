@@ -10,7 +10,7 @@ const groupTerms = (terms) => {
   const grouped = {};
 
   terms
-    .filter(({ hidden, type }) => type === 'default' && !hidden)
+    .filter(({ type }) => type === 'default')
     .forEach((term) => {
       const char = term.name.charAt(0).toUpperCase();
       if (!has(grouped, char)) {
