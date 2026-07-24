@@ -7,7 +7,7 @@ const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
 
 const getClosestSize = (media) => {
-  const sizeList = media.sizes || media.media_details.sizes;
+  const sizeList = media?.sizes || media?.media_details?.sizes || {};
   const sizes = {};
 
   Object.keys(sizeList).forEach((size) => {
@@ -58,8 +58,8 @@ export default class DisplayComponent extends Component {
       size = getClosestSize(media);
     }
 
-    const sizeList = media.sizes || media.media_details.sizes;
-    const url = sizeList[size].url || sizeList[size].source_url;
+    const sizeList = media?.sizes || media?.media_details?.sizes || {};
+    const url = sizeList[size]?.url || sizeList[size]?.source_url;
 
     this.setState({ image: media });
     this.props.setAttributes({ imageID: media.id, imageURL: url });
