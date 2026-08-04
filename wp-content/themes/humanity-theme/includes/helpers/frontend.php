@@ -123,16 +123,24 @@ if ( ! function_exists( 'amnesty_render_custom_select' ) ) {
 			$block_args['active'] = array_shift( $block_args['active'] );
 		}
 
-		add_filter( 'wp_kses_allowed_html', 'amnesty_custom_select_kses' );
-		echo wp_kses_post(
-			do_blocks(
-				sprintf(
-					'<!-- wp:amnesty-core/custom-select %s /-->',
-					wp_kses_data( wp_json_encode( $block_args ) ),
-				),
+		$cache_key = hash( 'xxh3', (string) wp_json_encode( $block_args ) );
+		$cached    = wp_cache_get( $cache_key );
+
+		if ( is_string( $cached ) ) {
+			echo wp_kses_post( $cached );
+			return;
+		}
+
+		$markup = do_blocks(
+			sprintf(
+				'<!-- wp:amnesty-core/custom-select %s /-->',
+				wp_kses_data( wp_json_encode( $block_args ) ),
 			),
 		);
-		remove_filter( 'wp_kses_allowed_html', 'amnesty_custom_select_kses' );
+
+		wp_cache_set( $cache_key, $markup, expire: HOUR_IN_SECONDS );
+
+		echo wp_kses_post( $markup );
 	}
 }
 

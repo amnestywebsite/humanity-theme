@@ -13,7 +13,7 @@ if ( ! function_exists( 'get_archive_slider_posts' ) ) {
 	 * @return array<int,\WP_Post>
 	 */
 	function get_archive_slider_posts( WP_Term $term ): array {
-		$cache_key = hash( 'xxh3', sprintf( '%s:%s:%s', __FUNCTION__, $term->slug, $term->taxonomy ) );
+		$cache_key = hash( 'xxh3', __FUNCTION__ . $term->slug . $term->taxonomy . get_current_blog_id() );
 		$cached    = wp_cache_get( $cache_key );
 
 		if ( $cached ) {

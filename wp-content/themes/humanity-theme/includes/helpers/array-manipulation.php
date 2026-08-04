@@ -104,7 +104,7 @@ if ( ! function_exists( 'array_dot' ) ) {
 			$keys = [];
 
 			foreach ( range( 0, $it->getDepth() ) as $depth ) {
-				$keys[] = $it->getSubIterator( $depth )->key();
+				$keys[] = $it->getSubIterator( $depth )?->key();
 			}
 
 			$res[ implode( '.', $keys ) ] = $leaf;
@@ -127,16 +127,14 @@ if ( ! function_exists( 'map_array_to_boolean' ) ) {
 	 * @return bool|null
 	 */
 	function map_array_to_boolean( array $the_array, callable $callback, string $mode = 'or' ): ?bool {
-		if ( ! in_array( strtolower( $mode ), [ 'or', 'and' ], true ) ) {
+		$reducer = match ( strtolower( $mode ) ) {
+			'and' => fn ( $input, $carry ) => $carry && (bool) $input,
+			'or' => fn ( $input, $carry ) => $carry || (bool) $input,
+			default => null,
+		};
+
+		if ( ! $reducer ) {
 			return null;
-		}
-
-		if ( 'or' === strtolower( $mode ) ) {
-			$reducer = fn ( $input, $carry ) => $carry || (bool) $input;
-		}
-
-		if ( 'and' === strtolower( $mode ) ) {
-			$reducer = fn ( $input, $carry ) => $carry && (bool) $input;
 		}
 
 		return array_reduce( array_map( $callback, $the_array ), $reducer, null );

@@ -13,7 +13,6 @@
  */
 #region root
 require_once realpath( __DIR__ . '/includes/root/compatibility.php' );
-require_once realpath( __DIR__ . '/includes/root/caching.php' );
 require_once realpath( __DIR__ . '/includes/root/localisation.php' );
 require_once realpath( __DIR__ . '/includes/root/accessibility.php' );
 require_once realpath( __DIR__ . '/includes/root/permalinks.php' );
@@ -41,6 +40,7 @@ require_once realpath( __DIR__ . '/includes/helpers/media.php' );
 require_once realpath( __DIR__ . '/includes/helpers/pagination.php' );
 require_once realpath( __DIR__ . '/includes/helpers/archive.php' );
 require_once realpath( __DIR__ . '/includes/helpers/list-alignment.php' );
+require_once realpath( __DIR__ . '/includes/helpers/performance.php' );
 #endregion helpers
 
 /**

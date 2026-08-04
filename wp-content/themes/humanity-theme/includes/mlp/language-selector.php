@@ -2,7 +2,7 @@
 
 declare( strict_types = 1 );
 
-add_filter( 'amnesty_get_sites', 'amnesty_get_object_translations' );
+add_filter( 'amnesty_get_sites', 'amnesty_get_object_translations', 10 );
 
 if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 	/**
@@ -41,7 +41,8 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 
 			// if post isn't published, skip it
 			if ( 'post' === $translation->type() ) {
-				$post_object  = get_blog_post( $translation->remoteSiteId(), $translation->remoteContentId() );
+				$post_object = amnesty_get_raw_blog_post( $translation->remoteSiteId(), $translation->remoteContentId() );
+
 				$is_published = is_a( $post_object, '\WP_Post' ) && 0 !== absint( $post_object->ID ) &&
 					'attachment' !== $post_object->post_type && 'publish' === $post_object->post_status;
 
@@ -59,7 +60,7 @@ if ( ! function_exists( 'amnesty_get_object_translations' ) ) {
 				'lang'      => $lang,
 				'code'      => $language->isoCode(),
 				'direction' => $language->isRtl() ? 'rtl' : 'ltr',
-				'name'      => get_blog_option( $translation->remoteSiteId(), 'blogname' ),
+				'name'      => amnesty_get_raw_blog_option( $translation->remoteSiteId(), 'blogname' ),
 				'url'       => $translation->remoteUrl(),
 				'path'      => get_site( $translation->remoteSiteId() )?->path,
 				'blog_id'   => $translation->remoteSiteId(),
@@ -176,7 +177,7 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 
 		// fallback to homepage if no translation
 		if ( ! count( $found ) ) {
-			$name = get_blog_option( $site->site_id, 'ammesty_language_name' ) ?: $site->lang;
+			$name = amnesty_get_raw_blog_option( $site->site_id, 'amnesty_language_name' ) ?: $site->lang;
 
 			return sprintf(
 				'<li id="menu-item-%3$s-%4$s" class="menu-item menu-item-%3$s-%4$s" dir="%5$s"><a href="%2$s">%1$s</a></li>',
@@ -189,8 +190,11 @@ if ( ! function_exists( 'render_language_selector_dropdown_item' ) ) {
 		}
 
 		$item = $found[0];
-		$link = 'post' === $item->type ? get_blog_permalink( $item->blog_id, $item->item_id ) : get_blog_term_link( $item->blog_id, $item->item_id );
-		$name = get_blog_option( $item->blog_id, 'ammesty_language_name' ) ?: $item->lang;
+		$name = amnesty_get_raw_blog_option( $item->blog_id, 'amnesty_language_name' ) ?: $item->lang;
+		$link = match ( $item->type ) {
+			'post' => get_blog_post_link( $item->blog_id, $item->item_id ),
+			default => get_blog_term_link( $item->blog_id, $item->item_id ),
+		};
 
 		return sprintf(
 			'<li id="menu-item-%3$s-%4$s" class="menu-item menu-item-%3$s-%4$s" dir="%5$s"><a href="%2$s">%1$s</a></li>',
