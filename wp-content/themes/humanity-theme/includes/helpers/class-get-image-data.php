@@ -98,6 +98,13 @@ class Get_Image_Data {
 			return '';
 		}
 
+		$cache_key = hash( 'xxh3', __FUNCTION__ . $this->image_id . get_current_blog_id() );
+		$cached    = (string) wp_cache_get( $cache_key );
+
+		if ( $cached ) {
+			return wp_kses_post( $cached );
+		}
+
 		$image  = get_post( $this->image_id );
 		$credit = '';
 
@@ -111,13 +118,6 @@ class Get_Image_Data {
 
 		if ( ! class_exists( '\MultisiteGlobalMedia\Plugin', false ) ) {
 			return $credit;
-		}
-
-		$cache_key = hash( 'xxh3', __FUNCTION__ . $this->image_id . get_current_blog_id() );
-		$cached    = wp_cache_get( $cache_key );
-
-		if ( $cached ) {
-			return $cached;
 		}
 
 		$site_object = new Site();
@@ -165,9 +165,21 @@ class Get_Image_Data {
 	 * @return string
 	 */
 	public function alt_text(): string {
+		if ( 0 === $this->image_id ) {
+			return '';
+		}
+
+		$cache_key = hash( 'xxh3', __FUNCTION__ . $this->image_id . get_current_blog_id() );
+		$cached    = (string) wp_cache_get( $cache_key );
+
+		if ( $cached ) {
+			return wp_kses_post( $cached );
+		}
+
 		$alt_text = get_post_meta( $this->image_id, '_wp_attachment_image_alt', true ) ?: '';
 
 		if ( ! class_exists( '\MultisiteGlobalMedia\Plugin', false ) ) {
+			wp_cache_add( $cache_key, $alt_text );
 			return $alt_text;
 		}
 
@@ -184,6 +196,7 @@ class Get_Image_Data {
 
 		// if the image ID doesn't include plugin's prefix
 		if ( ! $prefix->invoke( $attachment, $this->image_id, $site_object->idSitePrefix() ) ) {
+			wp_cache_add( $cache_key, $alt_text );
 			return $alt_text;
 		}
 
@@ -194,6 +207,8 @@ class Get_Image_Data {
 		$switcher->switchToBlog( $site_object->id() );
 		$alt_text = get_post_meta( $source_image_id, '_wp_attachment_image_alt', true ) ?: '';
 		$switcher->restoreBlog();
+
+		wp_cache_add( $cache_key, $alt_text );
 
 		return $alt_text;
 	}
@@ -208,6 +223,13 @@ class Get_Image_Data {
 			return '';
 		}
 
+		$cache_key = hash( 'xxh3', __FUNCTION__ . $this->image_id . get_current_blog_id() );
+		$cached    = (string) wp_cache_get( $cache_key );
+
+		if ( $cached ) {
+			return wp_kses_post( $cached );
+		}
+
 		$image   = get_post( $this->image_id );
 		$caption = '';
 
@@ -216,14 +238,8 @@ class Get_Image_Data {
 		}
 
 		if ( ! class_exists( '\MultisiteGlobalMedia\Plugin', false ) ) {
+			wp_cache_add( $cache_key, $caption );
 			return $caption;
-		}
-
-		$cache_key = hash( 'xxh3', sprintf( '%s:%s', __FUNCTION__, $this->image_id ) );
-		$cached    = wp_cache_get( $cache_key );
-
-		if ( $cached ) {
-			return $cached;
 		}
 
 		$site_object = new Site();

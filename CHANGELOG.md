@@ -1,3 +1,11 @@
+### v3.0.5
+Performance:
+- Many caching improvements across blocks and helper functions
+- Add new fast cross-blog helper functions
+
+Build:
+- Upgrade dependencies
+
 ### v3.0.4
 Fixes:
 - Taxonomy filters on RSS feed
