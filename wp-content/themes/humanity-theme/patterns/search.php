@@ -10,30 +10,35 @@
 $search_object = amnesty_get_searchpage_query_object();
 $location_slug = get_option( 'amnesty_location_slug' ) ?: 'location';
 
-$has_term = function ( string $taxonomy = 'category' ): bool {
-	switch_to_blog( get_post()->blog_id );
-	$term = amnesty_get_a_post_term( get_the_ID(), $taxonomy );
-	restore_current_blog();
+// results may come from another site on the network; switching is only possible (and needed) when they do
+$result_blog_id = function (): int {
+	$blog_id = absint( get_post()->blog_id ?? 0 );
 
-	return (bool) $term;
+	return ( is_multisite() && $blog_id && get_current_blog_id() !== $blog_id ) ? $blog_id : 0;
 };
 
-$term_link = function ( string $taxonomy = 'category' ): string {
-	switch_to_blog( get_post()->blog_id );
-	$term = amnesty_get_a_post_term( get_the_ID(), $taxonomy );
-	restore_current_blog();
-
-	$switch = isset( get_post()->blog_id ) && absint( get_post()->blog_id ) !== get_current_blog_id();
-
-	return $term ? amnesty_cross_blog_term_link( $term, $switch ) : '';
+$get_term = function ( string $taxonomy = 'category' ) use ( $result_blog_id ): ?WP_Term {
+	return get_blog_post_term( $result_blog_id(), get_the_ID(), $taxonomy );
 };
 
-$term_name = function ( string $taxonomy = 'category' ): ?string {
-	switch_to_blog( get_post()->blog_id );
-	$term = amnesty_get_a_post_term( get_the_ID(), $taxonomy );
-	restore_current_blog();
+$has_term = function ( string $taxonomy = 'category' ) use ( $get_term ): bool {
+	return (bool) $get_term( $taxonomy );
+};
 
-	return $term->name;
+$term_link = function ( string $taxonomy = 'category' ) use ( $get_term, $result_blog_id ): string {
+	$term = $get_term( $taxonomy );
+
+	return $term ? amnesty_cross_blog_term_link( $term, (bool) $result_blog_id() ) : '';
+};
+
+$term_name = function ( string $taxonomy = 'category' ) use ( $get_term ): ?string {
+	return $get_term( $taxonomy )?->name;
+};
+
+$post_permalink = function () use ( $result_blog_id ): string {
+	$blog_id = $result_blog_id();
+
+	return (string) ( $blog_id ? get_blog_permalink( $blog_id, get_the_ID() ) : get_permalink( get_the_ID() ) );
 };
 
 ?>
@@ -104,7 +109,7 @@ $term_name = function ( string $taxonomy = 'category' ): ?string {
 
 					<!-- wp:heading {"level":2,"className":"post-title wp-block-post-title"} -->
 					<h2 class="wp-block-heading post-title wp-block-post-title">
-						<a href="<?php echo esc_url( get_blog_permalink( get_post()->blog_id, get_the_ID() ) ); ?>" target="_self"><?php the_title(); ?></a>
+						<a href="<?php echo esc_url( $post_permalink() ); ?>" target="_self"><?php the_title(); ?></a>
 					</h2>
 					<!-- /wp:heading -->
 					<!-- wp:group {"tagName":"div","className":"post-excerpt wp-block-post-excerpt"} -->
