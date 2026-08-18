@@ -83,3 +83,9 @@ address {
 .is-layout-flex {
   display: flex;
 }
+
+@media not print {
+  .print-only {
+    display: none !important;
+  }
+}
