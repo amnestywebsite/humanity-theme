@@ -47,7 +47,7 @@ if ( ! function_exists( 'get_site_language_code' ) ) {
 	 *
 	 * @return string
 	 */
-	function get_site_language_code( int $blog_id = null ): string {
+	function get_site_language_code( ?int $blog_id = null ): string {
 		if ( is_multisite() && $blog_id ) {
 			switch_to_blog( $blog_id );
 		}
@@ -78,7 +78,7 @@ if ( ! function_exists( 'get_site_language_name' ) ) {
 	 *
 	 * phpcs:disable Generic.Metrics.CyclomaticComplexity.TooHigh
 	 */
-	function get_site_language_name( int $blog_id = null ): string {
+	function get_site_language_name( ?int $blog_id = null ): string {
 		// phpcs:enable Generic.Metrics.CyclomaticComplexity.TooHigh
 
 		if ( ! is_int( $blog_id ) ) {
