@@ -93,6 +93,12 @@
 // Editor plugins
 @import "editor-plugins/data-handling";
 
+// Workarounds
+// https://github.com/WordPress/gutenberg/issues/49796
+.block-editor-block-inspector .components-datetime .components-base-control {
+  margin-bottom: 0;
+}
+
 html {
   box-sizing: border-box;
 }

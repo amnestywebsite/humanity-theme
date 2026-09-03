@@ -22,6 +22,7 @@ registerBlockType('amnesty-core/block-section', {
     },
     sectionName: {
       type: 'string',
+      default: '',
     },
     backgroundImage: {
       type: 'string',

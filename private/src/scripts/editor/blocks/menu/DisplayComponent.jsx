@@ -177,6 +177,8 @@ class DisplayComponent extends Component {
               <p>{/* translators: [admin] */ __('Loading Menus…', 'amnesty')}</p>
             )}
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Menu', 'amnesty')}
               // translators: [admin]
@@ -194,6 +196,8 @@ class DisplayComponent extends Component {
             />
             {attributes.type === 'standard-menu' && (
               <SelectControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Menu', 'amnesty')}
                 options={this.state.list}
@@ -203,6 +207,8 @@ class DisplayComponent extends Component {
               />
             )}
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Colour', 'amnesty')}
               options={DisplayComponent.colours}

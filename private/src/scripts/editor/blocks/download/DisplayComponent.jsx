@@ -137,6 +137,8 @@ class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody>
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Button Style', 'amnesty')}
             options={buttonStyles}

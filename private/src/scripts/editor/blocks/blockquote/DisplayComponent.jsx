@@ -67,6 +67,8 @@ class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Alignment', 'amnesty')}
               value={align}
@@ -74,6 +76,8 @@ class DisplayComponent extends Component {
               options={this.getDirections()}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Size', 'amnesty')}
               value={size}
@@ -88,6 +92,8 @@ class DisplayComponent extends Component {
               ]}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Text Colour', 'amnesty')}
               value={colour}
@@ -103,6 +109,8 @@ class DisplayComponent extends Component {
             />
             {!this.isRightToLeft && (
               <ToggleControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Capitalise', 'amnesty')}
                 // translators: [admin]
@@ -112,6 +120,8 @@ class DisplayComponent extends Component {
               />
             )}
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Line', 'amnesty')}
               // translators: [admin]

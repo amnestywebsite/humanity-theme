@@ -168,6 +168,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
             <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
               {defaultStyleOptions.length > 0 && (
                 <SelectControl
+                  __next40pxDefaultSize
+                  __nextHasNoMarginBottom
                   // translators: [admin]
                   label={__('Style', 'amnesty')}
                   options={defaultStyleOptions}
@@ -176,6 +178,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                 />
               )}
               <SelectControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Type', 'amnesty')}
                 options={defaultDisplayTypes}
@@ -195,6 +199,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
               )}
               {attributes.type === 'category' && (
                 <RangeControl
+                  __next40pxDefaultSize
+                  __nextHasNoMarginBottom
                   // translators: [admin]
                   label={__('Number of posts to show:', 'amnesty')}
                   min={1}
@@ -205,6 +211,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
               )}
               {attributes.type === 'feed' && (
                 <RangeControl
+                  __next40pxDefaultSize
+                  __nextHasNoMarginBottom
                   // translators: [admin]
                   label={__('Number of posts to show:', 'amnesty')}
                   min={1}
@@ -215,6 +223,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
               )}
               {attributes.type === 'taxonomy' && (
                 <RangeControl
+                  __next40pxDefaultSize
+                  __nextHasNoMarginBottom
                   // translators: [admin]
                   label={__('Number of posts to show:', 'amnesty')}
                   min={1}
@@ -225,6 +235,8 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
               )}
               {attributes.type === 'category' && (
                 <ToggleControl
+                  __next40pxDefaultSize
+                  __nextHasNoMarginBottom
                   // translators: [admin]
                   label={__('Use related categories where supported', 'amnesty')}
                   checked={attributes.categoryRelated}
@@ -273,12 +285,16 @@ const PostsWrapper = createHigherOrderComponent((BlockEdit) => {
                 </label>
               )}
               <ToggleControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Display Post Author', 'amnesty')}
                 checked={attributes.displayAuthor}
                 onChange={this.createUpdateAttribute('displayAuthor')}
               />
               <ToggleControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Display Post Date', 'amnesty')}
                 checked={attributes.displayPostDate}

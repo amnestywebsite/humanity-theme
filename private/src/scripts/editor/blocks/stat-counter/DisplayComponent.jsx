@@ -15,7 +15,7 @@ const toRawNumber = (value = '0') => {
   const trimmed = value.replace(/[^\d]/g, '');
   const inted = parseInt(trimmed, 10);
 
-  return inted;
+  return Number.isNaN(inted) ? 0 : inted;
 };
 
 // format a value as a locale-aware number
@@ -106,6 +106,8 @@ export default class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody>
             <RangeControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Duration', 'amnesty')}
               // translators: [admin]
@@ -134,6 +136,8 @@ export default class DisplayComponent extends Component {
         <div className={blockClasses}>
           {!preview && (
             <TextControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Enter the value to which this field should count', 'amnesty')}
               value={toFormattedString(attributes.value)}
