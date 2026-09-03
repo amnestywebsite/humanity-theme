@@ -192,7 +192,7 @@ class DisplayComponent extends Component {
             />
             <SelectControl
               __nextHasNo__next40pxDefaultSize
-              __nextHasNoMarginBottomMarginBottom
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Size', 'amnesty')}
               options={[
