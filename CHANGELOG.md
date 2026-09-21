@@ -1,3 +1,7 @@
+### v3.0.6
+Fixes:
+- REST API route restriction check
+
 ### v3.0.5
 Performance:
 - Many caching improvements across blocks and helper functions

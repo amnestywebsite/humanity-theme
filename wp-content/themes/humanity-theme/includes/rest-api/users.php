@@ -67,8 +67,17 @@ if ( ! function_exists( 'amnesty_rest_api_restricted_endpoints' ) ) {
 			'/wp/v2/media-contact',
 		];
 
-		// restrict only certain endpoints
-		if ( ! in_array( $request->get_route(), $denied_endpoints, true ) ) {
+		$route    = strtolower( $request->get_route() );
+		$disallow = false;
+
+		foreach ( $denied_endpoints as $denied ) {
+			if ( str_starts_with( $route, $denied ) ) {
+				$disallow = true;
+			}
+		}
+
+		// route not disallowed by this restriction
+		if ( ! $disallow ) {
 			return $response;
 		}
 
@@ -77,6 +86,7 @@ if ( ! function_exists( 'amnesty_rest_api_restricted_endpoints' ) ) {
 			return $response;
 		}
 
+		// anonymous access is not allowed for this endpoint
 		return new WP_Error(
 			'rest_forbidden',
 			__( 'Sorry, you are not allowed to do that.', 'amnesty' ),
