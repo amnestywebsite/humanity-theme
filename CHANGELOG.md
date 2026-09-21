@@ -1,3 +1,7 @@
+### v3.0.7
+CI:
+- Remove old build targets
+
 ### v3.0.6
 Fixes:
 - REST API route restriction check
