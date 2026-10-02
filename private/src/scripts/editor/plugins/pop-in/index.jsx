@@ -4,8 +4,7 @@ import { validateBool } from '../../blocks/utils';
 
 const { ToggleControl } = wp.components;
 const { useDispatch, useSelect } = wp.data;
-const { store: editorStore } = wp.editor;
-const { PluginDocumentSettingPanel } = wp.editPost;
+const { PluginDocumentSettingPanel, store: editorStore } = wp.editor;
 const { useCallback } = wp.element;
 const { __ } = wp.i18n;
 
