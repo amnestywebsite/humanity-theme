@@ -8,6 +8,7 @@ use MultisiteGlobalMedia\Attachment;
 use MultisiteGlobalMedia\SingleSwitcher;
 use MultisiteGlobalMedia\Site;
 use ReflectionClass;
+use WP_Post;
 
 /**
  * Retrieve data for an image, potentially cross-site
@@ -97,10 +98,15 @@ class Get_Image_Data {
 			return '';
 		}
 
+		/**
+		 * This call never returns an array here
+		 *
+		 * @var WP_Post|null $image
+		 */
 		$image  = get_post( $this->image_id );
 		$credit = null;
 
-		if ( $image && 'attachment' === $image->post_type ) {
+		if ( is_a( $image, WP_Post::class ) && 'attachment' === $image->post_type ) {
 			$credit = wp_kses_post( $image->post_content );
 		}
 
@@ -143,7 +149,7 @@ class Get_Image_Data {
 		$image  = get_post( $source_image_id );
 		$credit = null;
 
-		if ( $image && 'attachment' === $image->post_type ) {
+		if ( is_a( $image, WP_Post::class ) && 'attachment' === $image->post_type ) {
 			$credit = wp_kses_post( $image->post_content );
 		}
 
@@ -203,10 +209,15 @@ class Get_Image_Data {
 			return '';
 		}
 
+		/**
+		 * This call never returns an array here
+		 *
+		 * @var WP_Post|null $image
+		 */
 		$image   = get_post( $this->image_id );
 		$caption = null;
 
-		if ( $image && 'attachment' === $image->post_type ) {
+		if ( is_a( $image, WP_Post::class ) && 'attachment' === $image->post_type ) {
 			$caption = wp_kses_post( $image->post_excerpt );
 		}
 
@@ -249,7 +260,7 @@ class Get_Image_Data {
 		$image   = get_post( $source_image_id );
 		$caption = null;
 
-		if ( $image && 'attachment' === $image->post_type ) {
+		if ( is_a( $image, WP_Post::class ) && 'attachment' === $image->post_type ) {
 			$caption = wp_kses_post( $image->post_excerpt );
 		}
 
@@ -275,7 +286,7 @@ class Get_Image_Data {
 		}
 
 		$domain   = wp_parse_url( $this->image_src, PHP_URL_HOST );
-		$basepath = strstr( trim( wp_parse_url( $this->image_src, PHP_URL_PATH ), '/' ), '/', true );
+		$basepath = strstr( trim( (string) wp_parse_url( $this->image_src, PHP_URL_PATH ), '/' ), '/', true );
 
 		// get sites with a domain that matches the image URI's
 		$sites = array_filter(
@@ -294,7 +305,7 @@ class Get_Image_Data {
 		switch_to_blog( $site_id );
 		$image = get_post( $this->image_id );
 
-		if ( $image ) {
+		if ( is_a( $image, WP_Post::class ) ) {
 			$caption = wp_kses_post( $image->post_content );
 		}
 
@@ -318,7 +329,7 @@ class Get_Image_Data {
 		}
 
 		$domain   = wp_parse_url( $this->image_src, PHP_URL_HOST );
-		$basepath = strstr( trim( wp_parse_url( $this->image_src, PHP_URL_PATH ), '/' ), '/', true );
+		$basepath = strstr( trim( (string) wp_parse_url( $this->image_src, PHP_URL_PATH ), '/' ), '/', true );
 
 		// get sites with a domain that matches the image URI's
 		$sites = array_filter(
@@ -337,7 +348,7 @@ class Get_Image_Data {
 		switch_to_blog( $site_id );
 		$image = get_post( $this->image_id );
 
-		if ( $image ) {
+		if ( is_a( $image, WP_Post::class ) ) {
 			$caption = wp_kses_post( $image->post_excerpt );
 		}
 

@@ -39,7 +39,7 @@ if ( ! function_exists( 'amnesty_get_hero_data' ) ) {
 
 		$post = get_post( $post );
 
-		if ( ! isset( $post->ID ) || ! $post->ID ) {
+		if ( ! is_a( $post, WP_Post::class ) || ! $post->ID ) {
 			return [
 				'name'    => '',
 				'attrs'   => [],
@@ -79,11 +79,11 @@ if ( ! function_exists( 'amnesty_remove_first_hero_from_content' ) ) {
 	 * @return string
 	 */
 	function amnesty_remove_first_hero_from_content( string $content ): string {
-		return preg_replace(
+		return (string) preg_replace(
 			'/<!--\s(wp:amnesty-core\/(?:hero))\s.*?(?:(?:\/-->)|(?:-->.*?<!--\s\/\1\s-->))\s*?/sm',
 			'',
 			$content,
-			1
+			1,
 		);
 	}
 }

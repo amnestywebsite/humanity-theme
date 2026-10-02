@@ -16,7 +16,7 @@ if ( ! function_exists( 'amnesty_build_new_image_block_tag' ) ) {
 	 * @return string
 	 */
 	function amnesty_build_new_image_block_tag( array $block, array $image_tag, Get_Image_Data $image_obj, bool $wrap = true ): string {
-		$new_image_tag = match ( str_contains( $image_tag[0], 'class' ) ) {
+		$new_image_tag = (string) match ( str_contains( $image_tag[0], 'class' ) ) {
 			true  => str_replace( 'class="', 'class="aiic-ignore ', $image_tag[0] ),
 			false => str_replace( '<img ', '<img class="aiic-ignore" ', $image_tag[0] ),
 		};
