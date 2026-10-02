@@ -9,7 +9,6 @@ const { createRef, useCallback, useEffect, useLayoutEffect, useRef, useState } =
 const { applyFilters } = wp.hooks;
 const { __, sprintf } = wp.i18n;
 
-const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 const SlotFillNamespace = 'amnesty/metadata/group';
 
 const defaultGroups = [
@@ -36,6 +35,40 @@ function useEditPostMeta(meta, setMeta) {
   );
 }
 
+function createObserverCallback(updateCb) {
+  return (entries) => {
+    const closest = {
+      target: null,
+      distance: null,
+    };
+
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      const { rootBounds } = entry;
+      if (!rootBounds) {
+        return;
+      }
+
+      const rootMidY = rootBounds.top + rootBounds.height / 2;
+      const targetDims = entry.boundingClientRect;
+      const targetIntersectPoint = targetDims.top;
+      const offset = Math.abs(targetIntersectPoint - rootMidY);
+
+      if (!closest.target || offset < closest.distance) {
+        closest.target = entry.target;
+        closest.distance = offset;
+      }
+    });
+
+    if (closest.target) {
+      updateCb(closest.target.dataset.group);
+    }
+  };
+}
+
 export default function DataHandling() {
   const isNew = useSelect((select) => select(editorStore).isCleanNewPost(), []);
   const postType = useSelect((select) => select(editorStore).getCurrentPostType(), []);
@@ -45,8 +78,6 @@ export default function DataHandling() {
 
   const [modalOpen, setModalOpen] = useState(isNew);
   const toggleModal = () => setModalOpen(!modalOpen);
-
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(reducedMotionQuery.matches);
 
   const [activeGroup, setActiveGroup] = useState(defaultGroups[0].value);
   const scrollRefs = useRef({});
@@ -61,17 +92,10 @@ export default function DataHandling() {
 
   useLayoutEffect(() => {
     Object.keys(scrollRefs.current).forEach((group) => {
-      scrollRefs.current[group].current?.classList.toggle('is-active-group', group === activeGroup);
+      const { current } = scrollRefs.current[group];
+      current?.classList.toggle('is-active-group', group === activeGroup);
     });
   }, [activeGroup, scrollRefs]);
-
-  useEffect(() => {
-    const updatePrefersReducedMotion = () => setPrefersReducedMotion(reducedMotionQuery.matches);
-    reducedMotionQuery.addEventListener('change', updatePrefersReducedMotion);
-    return () => {
-      reducedMotionQuery.removeEventListener('change', updatePrefersReducedMotion);
-    };
-  }, []);
 
   useEffect(() => {
     if (!modalOpen) {
@@ -83,44 +107,11 @@ export default function DataHandling() {
       return () => null;
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const closest = {
-          target: null,
-          distance: null,
-        };
-
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          }
-
-          const { rootBounds } = entry;
-          if (!rootBounds) {
-            return;
-          }
-
-          const rootMidY = rootBounds.top + rootBounds.height / 2;
-          const targetDims = entry.boundingClientRect;
-          const targetIntersectPoint = targetDims.top;
-          const offset = Math.abs(targetIntersectPoint - rootMidY);
-
-          if (!closest.target || offset < closest.distance) {
-            closest.target = entry.target;
-            closest.distance = offset;
-          }
-        });
-
-        if (closest.target) {
-          setActiveGroup(closest.target.dataset.group);
-        }
-      },
-      {
-        root: scrollContainer,
-        rootMargin: '-50% 0px -50% 0px',
-        threshold: 0,
-      },
-    );
+    const observer = new IntersectionObserver(createObserverCallback(setActiveGroup), {
+      root: scrollContainer,
+      rootMargin: '-50% 0px -50% 0px',
+      threshold: 0,
+    });
 
     Object.keys(scrollRefs.current).forEach((group) => {
       observer.observe(scrollRefs.current[group].current);
@@ -157,7 +148,7 @@ export default function DataHandling() {
     event.preventDefault();
     setActiveGroup(group);
     scrollRefs.current[group].current?.scrollIntoView({
-      behavior: prefersReducedMotion ? 'instant' : 'smooth',
+      behavior: 'instant',
       block: 'start',
       container: 'nearest',
     });
