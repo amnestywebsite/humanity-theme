@@ -17,7 +17,7 @@ if ( ! function_exists( 'amnesty_register_dompurify_script' ) ) {
 			'https://unpkg.com/dompurify@3.4.11/dist/purify.min.js',
 			[],
 			'3.4.11',
-			[ 'crossorigin' => 'anonymous' ],
+			true,
 		);
 	}
 }
