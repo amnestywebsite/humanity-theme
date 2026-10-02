@@ -296,7 +296,7 @@ class Get_Image_Data {
 		}
 
 		$domain   = wp_parse_url( $this->image_src, PHP_URL_HOST );
-		$basepath = strstr( trim( wp_parse_url( $this->image_src, PHP_URL_PATH ), '/' ), '/', true );
+		$basepath = strstr( trim( (string) wp_parse_url( $this->image_src, PHP_URL_PATH ), '/' ), '/', true );
 
 		// get sites with a domain that matches the image URI's
 		$sites = array_filter(
@@ -339,7 +339,7 @@ class Get_Image_Data {
 		}
 
 		$domain   = wp_parse_url( $this->image_src, PHP_URL_HOST );
-		$basepath = strstr( trim( wp_parse_url( $this->image_src, PHP_URL_PATH ), '/' ), '/', true );
+		$basepath = strstr( trim( (string) wp_parse_url( $this->image_src, PHP_URL_PATH ), '/' ), '/', true );
 
 		// get sites with a domain that matches the image URI's
 		$sites = array_filter(

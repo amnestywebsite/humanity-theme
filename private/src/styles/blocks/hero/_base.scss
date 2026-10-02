@@ -1,5 +1,6 @@
 .wp-block-amnesty-core-hero {
   position: relative;
+  overflow: hidden;
   display: flex;
   margin: auto;
   padding-top: 60px;
@@ -7,14 +8,22 @@
   width: 100%;
   max-width: $flexy-container;
   min-height: 540px;
-  background-size: cover;
-  background-position: center center;
 
   @include mq(small) {
     padding-top: 111px;
     padding-bottom: 80px;
     height: auto;
   }
+}
+
+.hero-backgroundImage {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-contentWrapper {
