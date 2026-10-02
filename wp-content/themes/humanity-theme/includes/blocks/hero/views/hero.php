@@ -1,5 +1,13 @@
 <?php
 
+// provided by ../render.php
+$content           ??= '';
+$attrs             ??= [];
+$image_id          ??= 0;
+$video_output      ??= '';
+$media_meta_output ??= '';
+// /provided by ../render.php
+
 $trimmed_content = remove_empty_p( trim( $content ) );
 
 $classname = [];
@@ -24,7 +32,10 @@ $background_image = wp_get_attachment_image_url( $image_id, 'hero-md' );
 
 ?>
 
-<section class="<?php echo esc_attr( $classname ); ?>" style="aiic:ignore;background-image:url('<?php echo esc_url( $background_image ); ?>')">
+<section class="<?php echo esc_attr( $classname ); ?>">
+	<?php if ( $background_image ) : ?>
+		<img class="hero-backgroundImage aiic-ignore" src="<?php echo esc_url( $background_image ); ?>" alt="">
+	<?php endif; ?>
 	<?php echo wp_kses_post( $video_output ); ?>
 	<div class="hero-contentWrapper">
 	<?php if ( $attrs['title'] ) : ?>

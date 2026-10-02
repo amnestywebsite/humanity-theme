@@ -22,7 +22,7 @@ if ( ! array_filter( $hero_data ) ) {
 	return;
 }
 
-echo wp_kses_post( render_hero_block( $hero_data['attrs'], $hero_data['content'], $hero_data['name'] ) );
+echo wp_kses_post( render_hero_block( $hero_data['attrs'], $hero_data['content'] ) );
 
 if ( ! is_admin() ) {
 	add_filter( 'the_content', 'amnesty_remove_first_hero_from_content', 0 );
