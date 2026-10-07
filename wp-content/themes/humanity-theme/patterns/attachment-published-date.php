@@ -36,7 +36,7 @@ try {
 	$datetime = new DateTime( $post->post_date_gmt, new DateTimeZone( 'GMT' ) );
 	$datetime->setTimezone( wp_timezone() );
 	$format = get_option( 'date_format' );
-} catch ( DateMalformedStringException $e ) {
+} catch ( Exception $e ) {
 	return;
 }
 

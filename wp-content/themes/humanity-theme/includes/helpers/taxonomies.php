@@ -571,7 +571,7 @@ if ( ! function_exists( 'amnesty_get_location_type' ) ) {
 	 *
 	 * @return string
 	 */
-	function amnesty_get_location_type( WP_Term $location = null ): string {
+	function amnesty_get_location_type( ?WP_Term $location = null ): string {
 		$location = $location ?: get_queried_object();
 
 		if ( ! is_a( $location, WP_Term::class ) ) {
@@ -592,7 +592,7 @@ if ( ! function_exists( 'amnesty_location_is_region' ) ) {
 	 *
 	 * @return bool
 	 */
-	function amnesty_location_is_region( WP_Term $location = null ): bool {
+	function amnesty_location_is_region( ?WP_Term $location = null ): bool {
 		return 'region' === amnesty_get_location_type( $location );
 	}
 }
@@ -607,7 +607,7 @@ if ( ! function_exists( 'amnesty_location_is_subregion' ) ) {
 	 *
 	 * @return bool
 	 */
-	function amnesty_location_is_subregion( WP_Term $location = null ): bool {
+	function amnesty_location_is_subregion( ?WP_Term $location = null ): bool {
 		return 'subregion' === amnesty_get_location_type( $location );
 	}
 }
@@ -623,7 +623,7 @@ if ( ! function_exists( 'amnesty_get_regional_media_contact' ) ) {
 	 *
 	 * @return array|null
 	 */
-	function amnesty_get_regional_media_contact( WP_Term $location = null ): ?array {
+	function amnesty_get_regional_media_contact( ?WP_Term $location = null ): ?array {
 		$location = $location ?: get_queried_object();
 
 		if ( ! is_a( $location, WP_Term::class ) ) {
