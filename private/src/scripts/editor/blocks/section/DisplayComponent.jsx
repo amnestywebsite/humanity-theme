@@ -4,8 +4,6 @@ const { apiFetch } = wp;
 const { InspectorControls, InnerBlocks, MediaUpload, MediaUploadCheck } = wp.blockEditor;
 const { Button, PanelBody, RangeControl, SelectControl, TextControl, ToggleControl } =
   wp.components;
-const { compose } = wp.compose;
-const { withDispatch } = wp.data;
 const { Component, Fragment } = wp.element;
 const { __, sprintf } = wp.i18n;
 
@@ -138,12 +136,16 @@ class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Section Name', 'amnesty')}
             value={attributes.sectionName}
             onChange={this.handleSave}
           />
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Text Colour', 'amnesty')}
             options={[
@@ -198,6 +200,8 @@ class DisplayComponent extends Component {
             </MediaUploadCheck>
           </div>
           <RangeControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Min image height as viewport percentage', 'amnesty')}
             onChange={(value) => setAttributes({ minHeight: !value ? 0 : value })}
@@ -208,24 +212,32 @@ class DisplayComponent extends Component {
             allowReset
           />
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Toggle Background Overlay', 'amnesty')}
             checked={attributes.enableBackgroundGradient}
             onChange={(enableBackgroundGradient) => setAttributes({ enableBackgroundGradient })}
           />
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Hide Image Caption', 'amnesty')}
             checked={attributes.hideImageCaption}
             onChange={() => setAttributes({ hideImageCaption: !attributes.hideImageCaption })}
           />
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Hide Image Credit', 'amnesty')}
             checked={attributes.hideImageCopyright}
             onChange={() => setAttributes({ hideImageCopyright: !attributes.hideImageCopyright })}
           />
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Background Image Origin', 'amnesty')}
             options={[
@@ -264,6 +276,8 @@ class DisplayComponent extends Component {
             onChange={(value) => setAttributes({ backgroundImageOrigin: value })}
           />
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Background Colour', 'amnesty')}
             options={[
@@ -354,6 +368,4 @@ class DisplayComponent extends Component {
   }
 }
 
-export default compose(
-  withDispatch((dispatch) => dispatch('core/block-editor').setTemplateValidity(true)),
-)(DisplayComponent);
+export default DisplayComponent;

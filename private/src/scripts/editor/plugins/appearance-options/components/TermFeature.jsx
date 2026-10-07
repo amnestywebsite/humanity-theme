@@ -44,6 +44,8 @@ const TermFeature = ({ createMetaUpdate, props }) => {
 
   return (
     <SelectControl
+      __next40pxDefaultSize
+      __nextHasNoMarginBottom
       // translators: [admin]
       label={__('Feature on content type:', 'amnesty')}
       value={props.meta.term_slider}

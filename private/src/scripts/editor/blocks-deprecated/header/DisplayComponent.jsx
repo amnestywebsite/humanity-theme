@@ -146,6 +146,8 @@ class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Alignment', 'amnesty')}
               options={[
@@ -169,6 +171,8 @@ class DisplayComponent extends Component {
               onChange={this.createUpdateAttribute('alignment')}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Colour', 'amnesty')}
               options={[
@@ -187,6 +191,8 @@ class DisplayComponent extends Component {
               onChange={this.createUpdateAttribute('background')}
             />
             <SelectControl
+              __nextHasNo__next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Size', 'amnesty')}
               options={[
@@ -206,6 +212,8 @@ class DisplayComponent extends Component {
             />
 
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Type', 'amnesty')}
               options={[

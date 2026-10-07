@@ -34,6 +34,8 @@ const DisplayComponent = (props) => {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Iframe Height', 'amnesty')}
             value={attributes.iframeHeight}
@@ -42,6 +44,8 @@ const DisplayComponent = (props) => {
             onChange={(iframeHeight) => setAttributes({ iframeHeight })}
           />
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Iframe Title', 'amnesty')}
             // translators: [admin]
@@ -81,10 +85,10 @@ const DisplayComponent = (props) => {
           value={embedUrl}
           onChange={() => setEmbedUrl(inputRef.current.value)}
         />
-        <Button isLarge isPrimary onClick={embed}>
+        <Button isPrimary onClick={embed}>
           {/* translators: [admin] */ __('Embed', 'amnesty')}
         </Button>
-        <Button isLarge onClick={() => setIsPreviewing(!previewing)}>
+        <Button onClick={() => setIsPreviewing(!previewing)}>
           {previewing
             ? /* translators: [admin] */ __('Hide Preview', 'amnesty')
             : /* translators: [admin] */ __('Preview', 'amnesty')}

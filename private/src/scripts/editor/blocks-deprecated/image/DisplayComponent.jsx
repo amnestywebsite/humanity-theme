@@ -2,12 +2,12 @@ import classnames from 'classnames';
 
 const { React } = window;
 const { InspectorControls, MediaUpload, PlainText, RichText, URLInputButton } = wp.blockEditor;
-const { Button, IconButton, PanelBody, SelectControl, ToggleControl } = wp.components;
+const { Button, PanelBody, SelectControl, ToggleControl } = wp.components;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
 
 const getClosestSize = (media) => {
-  const sizeList = media.sizes || media.media_details.sizes;
+  const sizeList = media?.sizes || media?.media_details?.sizes || {};
   const sizes = {};
 
   Object.keys(sizeList).forEach((size) => {
@@ -43,6 +43,10 @@ export default class DisplayComponent extends Component {
       key = 'video';
     }
 
+    if (!mediaID) {
+      return;
+    }
+
     wp.apiRequest({ path: `/wp/v2/media/${mediaID}` }).then((response) =>
       this.setState({ [key]: response }),
     );
@@ -54,8 +58,8 @@ export default class DisplayComponent extends Component {
       size = getClosestSize(media);
     }
 
-    const sizeList = media.sizes || media.media_details.sizes;
-    const url = sizeList[size].url || sizeList[size].source_url;
+    const sizeList = media?.sizes || media?.media_details?.sizes || {};
+    const url = sizeList[size]?.url || sizeList[size]?.source_url;
 
     this.setState({ image: media });
     this.props.setAttributes({ imageID: media.id, imageURL: url });
@@ -130,7 +134,7 @@ export default class DisplayComponent extends Component {
         </div>
         <div className="linkList-options">
           {buttons.length > 1 && (
-            <IconButton
+            <Button
               icon="no-alt"
               // translators: [admin]
               label={__('Remove Button', 'amnesty')}
@@ -169,6 +173,8 @@ export default class DisplayComponent extends Component {
     return (
       <PanelBody>
         <SelectControl
+          __next40pxDefaultSize
+          __nextHasNoMarginBottom
           // translators: [admin]
           label={__('Image Style', 'amnesty')}
           value={style}
@@ -181,6 +187,8 @@ export default class DisplayComponent extends Component {
           ]}
         />
         <SelectControl
+          __next40pxDefaultSize
+          __nextHasNoMarginBottom
           // translators: [admin]
           label={__('Alignment', 'amnesty')}
           // translators: [admin]
@@ -212,7 +220,7 @@ export default class DisplayComponent extends Component {
     return (
       <div className="linkList-options imageBlock-action">
         {imageID ? (
-          <IconButton
+          <Button
             icon="no-alt"
             // translators: [admin]
             label={__('Remove Image', 'amnesty')}
@@ -236,7 +244,7 @@ export default class DisplayComponent extends Component {
                 });
               });
             }}
-            render={({ open }) => <IconButton icon="format-image" onClick={open} />}
+            render={({ open }) => <Button icon="format-image" onClick={open} />}
           />
         )}
       </div>
@@ -272,7 +280,7 @@ export default class DisplayComponent extends Component {
         <div className="imageBlock-buttonsContainer">
           {buttons.map((button, index) => this.createButton(index, button))}
           {buttons.length < 1 && this.createButton(0)}
-          <IconButton
+          <Button
             icon="plus"
             // translators: [admin]
             label={__('Add Button', 'amnesty')}
@@ -322,7 +330,7 @@ export default class DisplayComponent extends Component {
               <video>
                 <source src={videoURL} />
               </video>
-              <Button onClick={open} isSecondary isLarge>
+              <Button onClick={open} isSecondary>
                 {/* translators: [admin] */ __('Replace Video', 'amnesty')}
               </Button>
             </div>
@@ -380,6 +388,8 @@ export default class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Type', 'amnesty')}
               options={[
@@ -403,12 +413,16 @@ export default class DisplayComponent extends Component {
 
           <PanelBody>
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Display Overlay', 'amnesty')}
               checked={hasOverlay}
               onChange={(newHasOverlay) => setAttributes({ hasOverlay: newHasOverlay })}
             />
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Enable Parallax', 'amnesty')}
               checked={parallax}

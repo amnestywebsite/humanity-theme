@@ -82,7 +82,7 @@ if ( ! function_exists( 'amnesty_render_term_list_block' ) ) {
 		}
 
 		$letters = array_keys( $groups );
-		$first   = $letters[0]; // used in view
+		$first   = empty( $letters ) ? '' : $letters[0]; // used in view
 
 		spaceless();
 		require realpath( __DIR__ . '/views/term-list.php' );

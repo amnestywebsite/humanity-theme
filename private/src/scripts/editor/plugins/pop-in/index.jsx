@@ -46,6 +46,8 @@ const PopInSettings = (props) => {
         title={/* translators: [admin] */ __('Pop-in Settings', 'amnesty')}
       >
         <ToggleControl
+          __next40pxDefaultSize
+          __nextHasNoMarginBottom
           // translators: [admin]
           label={__('Render Title', 'amnesty')}
           // translators: [admin]

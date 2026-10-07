@@ -31,6 +31,7 @@ const blockAttributes = {
   },
   scrollLink: {
     type: 'string',
+    default: '',
   },
   linkText: {
     type: 'string',

@@ -62,6 +62,8 @@ class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Style', 'amnesty')}
               options={[

@@ -17,6 +17,7 @@ if ( ! function_exists( 'amnesty_render_tweet_action' ) ) {
 			$attributes,
 			[
 				'className' => '',
+				'content'   => '',
 				'size'      => '',
 				'alignment' => 'center',
 			] 

@@ -17,11 +17,15 @@ const MediaMetadataVisibilityControls = ({ type, hideCaption, hideCopyright, set
   return (
     <>
       <ToggleControl
+        __next40pxDefaultSize
+        __nextHasNoMarginBottom
         label={captionLabel}
         checked={hideCaption}
         onChange={() => setAttributes({ hideImageCaption: !hideCaption })}
       />
       <ToggleControl
+        __next40pxDefaultSize
+        __nextHasNoMarginBottom
         label={copyrightLabel}
         checked={hideCopyright}
         onChange={() => setAttributes({ hideImageCopyright: !hideCopyright })}

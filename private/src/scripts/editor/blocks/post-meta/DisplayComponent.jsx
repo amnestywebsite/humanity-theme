@@ -81,17 +81,22 @@ export default function DisplayComponent({ attributes, context, setAttributes })
       <InspectorControls>
         <PanelBody title={__('Settings', 'default')}>
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             label={__('Choose a meta key', 'amnesty')}
             value={attributes.metaKey}
             options={[{ label: __('None', 'default'), value: '' }, ...metaKeys]}
             onChange={(metaKey) => setAttributes({ metaKey })}
           />
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             label={__('Does this meta key have a single value?', 'amnesty')}
             checked={isSingle}
             onChange={() => setAttributes({ isSingle: !isSingle })}
           />
           <ToggleControl
+            __next40pxDefaultSize
             __nextHasNoMarginBottom
             label={
               postType?.labels.singular_name

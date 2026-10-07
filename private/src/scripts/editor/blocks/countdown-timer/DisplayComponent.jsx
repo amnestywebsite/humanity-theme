@@ -111,6 +111,8 @@ const DisplayComponent = ({ attributes, setAttributes }) => {
             is12Hour={true}
           />
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Time Expired Text', 'amnesty')}
             className="expiredTextBox"

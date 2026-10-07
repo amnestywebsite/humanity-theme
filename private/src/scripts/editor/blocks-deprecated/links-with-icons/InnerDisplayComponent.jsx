@@ -149,6 +149,8 @@ export default class BlockEdit extends Component {
       <InspectorControls>
         <PanelBody>
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Style', 'amnesty')}
             value={style}
@@ -164,6 +166,8 @@ export default class BlockEdit extends Component {
           />
           {['icon', 'square'].includes(style) && (
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Icon Size', 'amnesty')}
               value={iconSize}
@@ -182,6 +186,8 @@ export default class BlockEdit extends Component {
           )}
           {['icon', 'square'].includes(style) && (
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Icon Position', 'amnesty')}
               value={imageLocation}
@@ -196,6 +202,7 @@ export default class BlockEdit extends Component {
           )}
           {style === 'icon' && (
             <CheckboxControl
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Hide Image Credit Display', 'amnesty')}
               checked={uncredited}
@@ -205,12 +212,15 @@ export default class BlockEdit extends Component {
           {style === 'text' && (
             <Fragment>
               <CheckboxControl
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Has Underline', 'amnesty')}
                 checked={underlined}
                 onChange={(newUnderline) => setAttributes({ underlined: newUnderline })}
               />
               <RangeControl
+                __next40pxDefaultSize
+                __nextHasNoMarginBottom
                 // translators: [admin]
                 label={__('Font Size', 'amnesty')}
                 value={factFontSize}
@@ -223,6 +233,7 @@ export default class BlockEdit extends Component {
             </Fragment>
           )}
           <CheckboxControl
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Display Action', 'amnesty')}
             checked={hasButton}
@@ -230,6 +241,8 @@ export default class BlockEdit extends Component {
           />
           {hasButton && style !== 'square' && (
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Button Style', 'amnesty')}
               options={[

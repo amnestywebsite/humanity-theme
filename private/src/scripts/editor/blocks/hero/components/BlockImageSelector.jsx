@@ -1,5 +1,5 @@
 const { MediaUpload } = wp.blockEditor;
-const { IconButton } = wp.components;
+const { Button } = wp.components;
 const { __ } = wp.i18n;
 
 /**
@@ -12,7 +12,7 @@ const { __ } = wp.i18n;
 const BlockImageSelector = ({ imageId, setAttributes }) => {
   if (imageId) {
     return (
-      <IconButton
+      <Button
         icon="no-alt"
         // translators: [admin]
         label={__('Remove Image', 'amnesty')}
@@ -26,7 +26,7 @@ const BlockImageSelector = ({ imageId, setAttributes }) => {
       allowedTypes={['image']}
       value={imageId}
       onSelect={({ id }) => setAttributes({ imageID: id })}
-      render={({ open }) => <IconButton icon="format-image" onClick={open} />}
+      render={({ open }) => <Button icon="format-image" onClick={open} />}
     />
   );
 };

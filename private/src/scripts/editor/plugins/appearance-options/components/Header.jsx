@@ -21,6 +21,8 @@ const Header = ({ createMetaUpdate, props }) => {
   return (
     <PanelBody title={/* translators: [admin] */ __('Header', 'amnesty')}>
       <ToggleControl
+        __next40pxDefaultSize
+        __nextHasNoMarginBottom
         label={__('Use transparent header', 'amnesty')}
         help={__(
           'Enable transparent mode on the main header. Requires the use of a header block with a featured image',

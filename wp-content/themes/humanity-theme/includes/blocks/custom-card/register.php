@@ -44,13 +44,14 @@ if ( ! function_exists( 'register_custom_card_block' ) ) {
 						'type' => 'string',
 					],
 					'scrollLink'    => [
-						'type' => 'string',
+						'type'    => 'string',
+						'default' => '',
 					],
 					'style'         => [
 						'type' => 'string',
 					],
 				],
-			] 
+			]
 		);
 	}
 }

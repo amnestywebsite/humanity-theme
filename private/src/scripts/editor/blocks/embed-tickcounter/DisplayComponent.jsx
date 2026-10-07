@@ -32,6 +32,8 @@ const DisplayComponent = (props) => {
         )}
       >
         <TextControl
+          __next40pxDefaultSize
+          __nextHasNoMarginBottom
           value={httpsOnly(attributes.source)}
           onChange={(source) => setAttributes({ source: httpsOnly(stripScript(source)) })}
           // translators: [admin]

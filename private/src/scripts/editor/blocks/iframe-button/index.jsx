@@ -23,6 +23,7 @@ registerBlockType('amnesty-core/iframe-button', {
     },
     iframeUrl: {
       type: 'string',
+      default: '',
     },
     iframeHeight: {
       type: 'number',
@@ -30,9 +31,11 @@ registerBlockType('amnesty-core/iframe-button', {
     },
     buttonText: {
       type: 'string',
+      default: '',
     },
     title: {
       type: 'string',
+      default: '',
     },
   },
   supports: {
