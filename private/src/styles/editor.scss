@@ -90,6 +90,9 @@
 @import "pages/search";
 @import "pages/single";
 
+// Editor plugins
+@import "editor-plugins/data-handling";
+
 // Workarounds
 // https://github.com/WordPress/gutenberg/issues/49796
 .block-editor-block-inspector .components-datetime .components-base-control {
