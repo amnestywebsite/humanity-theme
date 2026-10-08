@@ -9,7 +9,6 @@ const { createRef, useCallback, useEffect, useLayoutEffect, useRef, useState } =
 const { applyFilters } = wp.hooks;
 const { __, sprintf } = wp.i18n;
 
-const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 const SlotFillNamespace = 'amnesty/metadata/group';
 
 const defaultGroups = [
@@ -50,8 +49,6 @@ export default function DataHandling() {
   const [modalOpen, setModalOpen] = useState(isNew);
   const toggleModal = () => setModalOpen(!modalOpen);
 
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(reducedMotionQuery.matches);
-
   const [activeGroup, setActiveGroup] = useState(defaultGroups[0].value);
   const scrollRefs = useRef({});
   const contentRef = useRef();
@@ -65,17 +62,10 @@ export default function DataHandling() {
 
   useLayoutEffect(() => {
     Object.keys(scrollRefs.current).forEach((group) => {
-      scrollRefs.current[group].current?.classList.toggle('is-active-group', group === activeGroup);
+      const { current } = scrollRefs.current[group];
+      current?.classList.toggle('is-active-group', group === activeGroup);
     });
   }, [activeGroup, scrollRefs]);
-
-  useEffect(() => {
-    const updatePrefersReducedMotion = () => setPrefersReducedMotion(reducedMotionQuery.matches);
-    reducedMotionQuery.addEventListener('change', updatePrefersReducedMotion);
-    return () => {
-      reducedMotionQuery.removeEventListener('change', updatePrefersReducedMotion);
-    };
-  }, []);
 
   useEffect(() => {
     if (!modalOpen) {
@@ -161,7 +151,7 @@ export default function DataHandling() {
     event.preventDefault();
     setActiveGroup(group);
     scrollRefs.current[group].current?.scrollIntoView({
-      behavior: prefersReducedMotion ? 'instant' : 'smooth',
+      behavior: 'instant',
       block: 'start',
       container: 'nearest',
     });
