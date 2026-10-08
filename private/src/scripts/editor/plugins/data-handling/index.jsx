@@ -39,6 +39,40 @@ function useEditPostMeta(meta, setMeta) {
   );
 }
 
+function createObserverCallback(updateCb) {
+  return (entries) => {
+    const closest = {
+      target: null,
+      distance: null,
+    };
+
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      const { rootBounds } = entry;
+      if (!rootBounds) {
+        return;
+      }
+
+      const rootMidY = rootBounds.top + rootBounds.height / 2;
+      const targetDims = entry.boundingClientRect;
+      const targetIntersectPoint = targetDims.top;
+      const offset = Math.abs(targetIntersectPoint - rootMidY);
+
+      if (!closest.target || offset < closest.distance) {
+        closest.target = entry.target;
+        closest.distance = offset;
+      }
+    });
+
+    if (closest.target) {
+      updateCb(closest.target.dataset.group);
+    }
+  };
+}
+
 export default function DataHandling() {
   const isNew = useSelect((select) => select(editorStore).isCleanNewPost(), []);
   const postType = useSelect((select) => select(editorStore).getCurrentPostType(), []);
@@ -77,44 +111,11 @@ export default function DataHandling() {
       return () => null;
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const closest = {
-          target: null,
-          distance: null,
-        };
-
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          }
-
-          const { rootBounds } = entry;
-          if (!rootBounds) {
-            return;
-          }
-
-          const rootMidY = rootBounds.top + rootBounds.height / 2;
-          const targetDims = entry.boundingClientRect;
-          const targetIntersectPoint = targetDims.top;
-          const offset = Math.abs(targetIntersectPoint - rootMidY);
-
-          if (!closest.target || offset < closest.distance) {
-            closest.target = entry.target;
-            closest.distance = offset;
-          }
-        });
-
-        if (closest.target) {
-          setActiveGroup(closest.target.dataset.group);
-        }
-      },
-      {
-        root: scrollContainer,
-        rootMargin: '-50% 0px -50% 0px',
-        threshold: 0,
-      },
-    );
+    const observer = new IntersectionObserver(createObserverCallback(setActiveGroup), {
+      root: scrollContainer,
+      rootMargin: '-50% 0px -50% 0px',
+      threshold: 0,
+    });
 
     Object.keys(scrollRefs.current).forEach((group) => {
       observer.observe(scrollRefs.current[group].current);
