@@ -1,0 +1,372 @@
+const { __, sprintf } = wp.i18n;
+
+/* eslint-disable prettier/prettier */
+export const classifications = {
+  ACT: ['10', '30', '40', '50', '60'],
+  AFR: ['01', '02', '03', '04', '05', '12', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '59', '60', '63', '64', '65'],
+  AMR: ['01', '02', '03', '04', '05', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '56', '57', '58', '59', '60'],
+  ASA: ['01', '02', '03', '04', '05', '11', '12', '13', '14', '15', '16', '17', '18', '20', '21', '22', '23', '24', '25', '26', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58'],
+  DOC: ['10', '23'],
+  EUR: ['01', '02', '03', '04', '05', '06', '11', '12', '13', '14', '15', '17', '18', '19', '20', '21', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '68', '70', '71', '72'],
+  FIN: ['10', '20', '21', '40', '50', '60', '61'],
+  IOR: ['10', '30', '40', '51', '53', '60', '80'],
+  MDE: ['01', '02', '03', '04', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '28', '29', '30', '31'],
+  NWS: ['11', '21', '23'],
+  ORG: ['10', '20', '30', '41', '50', '60', '70', '71', '72', '81', '82'],
+  POL: ['10', '20', '30', '32', '40', '50'],
+  PRE: ['10'],
+};
+/* eslint-enable prettier/prettier */
+
+export const classificationNames = {
+  'ACT 10': __('Action/Techniques: General', 'amnesty'),
+  'ACT 30': __('Special Actions/Campaigns', 'amnesty'),
+  'ACT 40': __('Campaign Against Torture: General', 'amnesty'),
+  'ACT 50': __('Death Penalty Program: General', 'amnesty'),
+  'ACT 60': __('Urgent Actions: General', 'amnesty'),
+  'DOC 10': __('Information Handling: General', 'amnesty'),
+  'DOC 23': __('Information Technology', 'amnesty'),
+  'FIN 10': __('Finance: General', 'amnesty'),
+  'FIN 20': __('Financial Procedures', 'amnesty'),
+  'FIN 21': __('Guidelines for Fund-Raising', 'amnesty'),
+  'FIN 40': __('Financial Accounts', 'amnesty'),
+  'FIN 50': __('Relief', 'amnesty'),
+  'FIN 60': __('Sections and Finance', 'amnesty'),
+  'FIN 61': __('Sections’ Contributions', 'amnesty'),
+  'IOR 10': __('International Organisations: General', 'amnesty'),
+  'IOR 30': __('Intergovernmental Organisations (IGOs)', 'amnesty'),
+  'IOR 40': __('United Nations (UN): General', 'amnesty'),
+  'IOR 51': __('International Conventions/Covenants', 'amnesty'),
+  'IOR 53': __('Universal Jurisdiction', 'amnesty'),
+  'IOR 60': __('Regional Governmental Organisations: General', 'amnesty'),
+  'IOR 80': __('International Non-Governmental Organisations (INGOs)', 'amnesty'),
+  'NWS 11': __('Weekly News Service', 'amnesty'),
+  'NWS 21': __('AI Newsletter [Wire]', 'amnesty'),
+  'NWS 23': __('La Revista', 'amnesty'),
+  'ORG 10': __('Organisational: General', 'amnesty'),
+  'ORG 20': __('Working Rules', 'amnesty'),
+  'ORG 30': __('AI Development', 'amnesty'),
+  'ORG 41': __('Sections', 'amnesty'),
+  'ORG 50': __('Global Assembly: General', 'amnesty'),
+  'ORG 60': __('International Secretariat (IS): General', 'amnesty'),
+  'ORG 70': __('International Board: General', 'amnesty'),
+  'ORG 71': __('International Board Meetings: Agendas', 'amnesty'),
+  'ORG 72': __('International Board: Reports', 'amnesty'),
+  'ORG 81': __('International Meetings', 'amnesty'),
+  'ORG 82': __('International Committees', 'amnesty'),
+  'POL 10': __('Annual Report', 'amnesty'),
+  'POL 20': __('Statute', 'amnesty'),
+  'POL 30': __('Policy on Issues: General', 'amnesty'),
+  'POL 32': __('Human Rights Education', 'amnesty'),
+  'POL 40': __('Research: General', 'amnesty'),
+  'POL 50': __('AI Planning', 'amnesty'),
+  'PRE 10': __('Press Release', 'amnesty'),
+
+  'AFR 01': __('Africa', 'amnesty'),
+  'AFR 02': __('Central Africa', 'amnesty'),
+  'AFR 03': __('Southern Africa', 'amnesty'),
+  'AFR 04': __('East Africa', 'amnesty'),
+  'AFR 05': __('West Africa', 'amnesty'),
+  'AFR 12': __('Angola', 'amnesty'),
+  'AFR 14': __('Benin', 'amnesty'),
+  'AFR 15': __('Botswana', 'amnesty'),
+  'AFR 16': __('Burundi', 'amnesty'),
+  'AFR 17': __('Cameroon', 'amnesty'),
+  'AFR 18': __('Cape Verde', 'amnesty'),
+  'AFR 19': __('Central African Republic', 'amnesty'),
+  'AFR 20': __('Chad', 'amnesty'),
+  'AFR 21': __('Comoros', 'amnesty'),
+  'AFR 22': __('Congo, The Democratic Republic of the', 'amnesty'),
+  'AFR 23': __('Djibouti', 'amnesty'),
+  'AFR 24': __('Equatorial Guinea', 'amnesty'),
+  'AFR 25': __('Ethiopia', 'amnesty'),
+  'AFR 26': __('Gabon', 'amnesty'),
+  'AFR 27': __('Gambia', 'amnesty'),
+  'AFR 28': __('Ghana', 'amnesty'),
+  'AFR 29': __('Guinea', 'amnesty'),
+  'AFR 30': __('Guinea Bissau', 'amnesty'),
+  'AFR 31': __('Côte d’Ivoire', 'amnesty'),
+  'AFR 32': __('Kenya', 'amnesty'),
+  'AFR 33': __('Lesotho', 'amnesty'),
+  'AFR 34': __('Liberia', 'amnesty'),
+  'AFR 35': __('Madagascar', 'amnesty'),
+  'AFR 36': __('Malawi', 'amnesty'),
+  'AFR 37': __('Mali', 'amnesty'),
+  'AFR 38': __('Mauritania', 'amnesty'),
+  'AFR 39': __('Mauritius', 'amnesty'),
+  'AFR 41': __('Mozambique', 'amnesty'),
+  'AFR 42': __('Namibia', 'amnesty'),
+  'AFR 43': __('Niger', 'amnesty'),
+  'AFR 44': __('Nigeria', 'amnesty'),
+  'AFR 45': __('Réunion', 'amnesty'),
+  'AFR 46': __('Zimbabwe', 'amnesty'),
+  'AFR 47': __('Rwanda', 'amnesty'),
+  'AFR 48': __('Sao Tome and Principe', 'amnesty'),
+  'AFR 49': __('Senegal', 'amnesty'),
+  'AFR 50': __('Seychelles', 'amnesty'),
+  'AFR 51': __('Sierra Leone', 'amnesty'),
+  'AFR 52': __('Somalia', 'amnesty'),
+  'AFR 53': __('South Africa', 'amnesty'),
+  'AFR 54': __('Sudan', 'amnesty'),
+  'AFR 55': __('Eswatini', 'amnesty'),
+  'AFR 56': __('Tanzania', 'amnesty'),
+  'AFR 57': __('Togo', 'amnesty'),
+  'AFR 59': __('Uganda', 'amnesty'),
+  'AFR 60': __('Burkina Faso', 'amnesty'),
+  'AFR 63': __('Zambia', 'amnesty'),
+  'AFR 64': __('Eritrea', 'amnesty'),
+  'AFR 65': __('South Sudan', 'amnesty'),
+  'AMR 01': __('Americas', 'amnesty'),
+  'AMR 02': __('Central America', 'amnesty'),
+  'AMR 03': __('South America', 'amnesty'),
+  'AMR 04': __('North America', 'amnesty'),
+  'AMR 05': __('Caribbean', 'amnesty'),
+  'AMR 11': __('Anguilla', 'amnesty'),
+  'AMR 12': __('Antilles', 'amnesty'),
+  'AMR 13': __('Argentina', 'amnesty'),
+  'AMR 14': __('Bahamas', 'amnesty'),
+  'AMR 15': __('Barbados', 'amnesty'),
+  'AMR 16': __('Belize', 'amnesty'),
+  'AMR 17': __('Bermuda', 'amnesty'),
+  'AMR 18': __('Bolivia', 'amnesty'),
+  'AMR 19': __('Brazil', 'amnesty'),
+  'AMR 20': __('Canada', 'amnesty'),
+  'AMR 21': __('Cayman Islands', 'amnesty'),
+  'AMR 22': __('Chile', 'amnesty'),
+  'AMR 23': __('Colombia', 'amnesty'),
+  'AMR 24': __('Costa Rica', 'amnesty'),
+  'AMR 25': __('Cuba', 'amnesty'),
+  'AMR 26': __('Dominica', 'amnesty'),
+  'AMR 27': __('Dominican Republic', 'amnesty'),
+  'AMR 28': __('Ecuador', 'amnesty'),
+  'AMR 29': __('El Salvador', 'amnesty'),
+  'AMR 30': __('Falkland Islands', 'amnesty'),
+  'AMR 31': __('French Guiana', 'amnesty'),
+  'AMR 32': __('Grenada', 'amnesty'),
+  'AMR 33': __('Guadeloupe', 'amnesty'),
+  'AMR 34': __('Guatemala', 'amnesty'),
+  'AMR 35': __('Guyana', 'amnesty'),
+  'AMR 36': __('Haiti', 'amnesty'),
+  'AMR 37': __('Honduras', 'amnesty'),
+  'AMR 38': __('Jamaica', 'amnesty'),
+  'AMR 40': __('Martinique', 'amnesty'),
+  'AMR 41': __('Mexico', 'amnesty'),
+  'AMR 42': __('Montserrat', 'amnesty'),
+  'AMR 43': __('Nicaragua', 'amnesty'),
+  'AMR 44': __('Panama', 'amnesty'),
+  'AMR 45': __('Paraguay', 'amnesty'),
+  'AMR 46': __('Peru', 'amnesty'),
+  'AMR 47': __('Puerto Rico', 'amnesty'),
+  'AMR 48': __('Suriname', 'amnesty'),
+  'AMR 49': __('Trinidad and Tobago', 'amnesty'),
+  'AMR 50': __('Turks and Caicos Islands', 'amnesty'),
+  'AMR 51': __('United States of America', 'amnesty'),
+  'AMR 52': __('Uruguay', 'amnesty'),
+  'AMR 53': __('Venezuela', 'amnesty'),
+  'AMR 54': __('Virgin Islands UK', 'amnesty'),
+  'AMR 56': __('Saint Lucia', 'amnesty'),
+  'AMR 57': __('Saint Vincent and the Grenadines', 'amnesty'),
+  'AMR 58': __('Antigua and Barbuda', 'amnesty'),
+  'AMR 59': __('Saint Kitts and Nevis', 'amnesty'),
+  'AMR 60': __('Virgin Islands US', 'amnesty'),
+  'ASA 01': __('Asia and the Pacific', 'amnesty'),
+  'ASA 02': __('East Asia', 'amnesty'),
+  'ASA 03': __('South-East Asia', 'amnesty'),
+  'ASA 04': __('South Asia', 'amnesty'),
+  'ASA 05': __('Pacific', 'amnesty'),
+  'ASA 11': __('Afghanistan', 'amnesty'),
+  'ASA 12': __('Australia', 'amnesty'),
+  'ASA 13': __('Bangladesh', 'amnesty'),
+  'ASA 14': __('Bhutan', 'amnesty'),
+  'ASA 15': __('Brunei Darussalam', 'amnesty'),
+  'ASA 16': __('Myanmar', 'amnesty'),
+  'ASA 17': __('China', 'amnesty'),
+  'ASA 18': __('Fiji', 'amnesty'),
+  'ASA 20': __('India', 'amnesty'),
+  'ASA 21': __('Indonesia', 'amnesty'),
+  'ASA 22': __('Japan', 'amnesty'),
+  'ASA 23': __('Cambodia', 'amnesty'),
+  'ASA 24': __('North Korea', 'amnesty'),
+  'ASA 25': __('South Korea', 'amnesty'),
+  'ASA 26': __('Laos', 'amnesty'),
+  'ASA 28': __('Malaysia', 'amnesty'),
+  'ASA 29': __('Maldives', 'amnesty'),
+  'ASA 30': __('Mongolia', 'amnesty'),
+  'ASA 31': __('Nepal', 'amnesty'),
+  'ASA 32': __('Aotearoa New Zealand', 'amnesty'),
+  'ASA 33': __('Pakistan', 'amnesty'),
+  'ASA 34': __('Papua New Guinea', 'amnesty'),
+  'ASA 35': __('Philippines', 'amnesty'),
+  'ASA 36': __('Singapore', 'amnesty'),
+  'ASA 37': __('Sri Lanka', 'amnesty'),
+  'ASA 38': __('Taiwan', 'amnesty'),
+  'ASA 39': __('Thailand', 'amnesty'),
+  'ASA 40': __('Tonga', 'amnesty'),
+  'ASA 41': __('Viet Nam', 'amnesty'),
+  'ASA 42': __('Naoero', 'amnesty'),
+  'ASA 43': __('Solomon Islands', 'amnesty'),
+  'ASA 44': __('Vanuatu', 'amnesty'),
+  'ASA 45': __('Samoa', 'amnesty'),
+  'ASA 46': __('Kiribati', 'amnesty'),
+  'ASA 47': __('Tuvalu', 'amnesty'),
+  'ASA 48': __('New Caledonia', 'amnesty'),
+  'ASA 49': __('Palau', 'amnesty'),
+  'ASA 50': __('French Polynesia', 'amnesty'),
+  'ASA 51': __('Marshall Islands', 'amnesty'),
+  'ASA 52': __('Micronesia', 'amnesty'),
+  'ASA 53': __('Cook Islands', 'amnesty'),
+  'ASA 54': __('Niue', 'amnesty'),
+  'ASA 55': __('Guam', 'amnesty'),
+  'ASA 56': __('American Samoa', 'amnesty'),
+  'ASA 57': __('Timor-Leste', 'amnesty'),
+  'ASA 58': __('Pitcairn Islands', 'amnesty'),
+  'EUR 01': __('Europe and Central Asia', 'amnesty'),
+  'EUR 02': __('Eastern Europe', 'amnesty'),
+  'EUR 03': __('Western Europe', 'amnesty'),
+  'EUR 04': __('Eurasia', 'amnesty'),
+  'EUR 05': __('Balkans', 'amnesty'),
+  'EUR 06': __('Baltic States', 'amnesty'),
+  'EUR 11': __('Albania', 'amnesty'),
+  'EUR 12': __('Andorra', 'amnesty'),
+  'EUR 13': __('Austria', 'amnesty'),
+  'EUR 14': __('Belgium', 'amnesty'),
+  'EUR 15': __('Bulgaria', 'amnesty'),
+  'EUR 17': __('Cyprus', 'amnesty'),
+  'EUR 18': __('Denmark', 'amnesty'),
+  'EUR 19': __('Faroe Islands', 'amnesty'),
+  'EUR 20': __('Finland', 'amnesty'),
+  'EUR 21': __('France', 'amnesty'),
+  'EUR 23': __('Germany', 'amnesty'),
+  'EUR 24': __('Gibraltar', 'amnesty'),
+  'EUR 25': __('Greece', 'amnesty'),
+  'EUR 26': __('Greenland', 'amnesty'),
+  'EUR 27': __('Hungary', 'amnesty'),
+  'EUR 28': __('Iceland', 'amnesty'),
+  'EUR 29': __('Ireland', 'amnesty'),
+  'EUR 30': __('Italy', 'amnesty'),
+  'EUR 31': __('Liechtenstein', 'amnesty'),
+  'EUR 32': __('Luxembourg', 'amnesty'),
+  'EUR 33': __('Malta', 'amnesty'),
+  'EUR 34': __('Monaco', 'amnesty'),
+  'EUR 35': __('Netherlands', 'amnesty'),
+  'EUR 36': __('Norway', 'amnesty'),
+  'EUR 37': __('Poland', 'amnesty'),
+  'EUR 38': __('Portugal', 'amnesty'),
+  'EUR 39': __('Romania', 'amnesty'),
+  'EUR 40': __('San Marino', 'amnesty'),
+  'EUR 41': __('Spain', 'amnesty'),
+  'EUR 42': __('Sweden', 'amnesty'),
+  'EUR 43': __('Switzerland', 'amnesty'),
+  'EUR 44': __('Türkiye', 'amnesty'),
+  'EUR 45': __('United Kingdom', 'amnesty'),
+  'EUR 46': __('Russian Federation', 'amnesty'),
+  'EUR 47': __('Vatican City', 'amnesty'),
+  'EUR 49': __('Belarus', 'amnesty'),
+  'EUR 50': __('Ukraine', 'amnesty'),
+  'EUR 51': __('Estonia', 'amnesty'),
+  'EUR 52': __('Latvia', 'amnesty'),
+  'EUR 53': __('Lithuania', 'amnesty'),
+  'EUR 54': __('Armenia', 'amnesty'),
+  'EUR 55': __('Azerbaijan', 'amnesty'),
+  'EUR 56': __('Georgia', 'amnesty'),
+  'EUR 57': __('Kazakhstan', 'amnesty'),
+  'EUR 58': __('Kyrgyzstan', 'amnesty'),
+  'EUR 59': __('Moldova', 'amnesty'),
+  'EUR 60': __('Tajikistan', 'amnesty'),
+  'EUR 61': __('Turkmenistan', 'amnesty'),
+  'EUR 62': __('Uzbekistan', 'amnesty'),
+  'EUR 63': __('Bosnia and Herzegovina', 'amnesty'),
+  'EUR 64': __('Croatia', 'amnesty'),
+  'EUR 65': __('North Macedonia', 'amnesty'),
+  'EUR 66': __('Montenegro', 'amnesty'),
+  'EUR 68': __('Slovenia', 'amnesty'),
+  'EUR 70': __('Serbia', 'amnesty'),
+  'EUR 71': __('Czech Republic', 'amnesty'),
+  'EUR 72': __('Slovakia', 'amnesty'),
+  'MDE 01': __('Middle East and North Africa', 'amnesty'),
+  'MDE 02': __('Middle East', 'amnesty'),
+  'MDE 03': __('North Africa', 'amnesty'),
+  'MDE 04': __('Gulf States', 'amnesty'),
+  'MDE 11': __('Bahrain', 'amnesty'),
+  'MDE 12': __('Egypt', 'amnesty'),
+  'MDE 13': __('Iran', 'amnesty'),
+  'MDE 14': __('Iraq', 'amnesty'),
+  'MDE 15': __('Israel and the Occupied Palestinian Territory', 'amnesty'),
+  'MDE 16': __('Jordan', 'amnesty'),
+  'MDE 17': __('Kuwait', 'amnesty'),
+  'MDE 18': __('Lebanon', 'amnesty'),
+  'MDE 19': __('Libya', 'amnesty'),
+  'MDE 20': __('Oman', 'amnesty'),
+  'MDE 21': __('Palestine (State of)', 'amnesty'),
+  'MDE 22': __('Qatar', 'amnesty'),
+  'MDE 23': __('Saudi Arabia', 'amnesty'),
+  'MDE 24': __('Syria', 'amnesty'),
+  'MDE 25': __('United Arab Emirates', 'amnesty'),
+  'MDE 28': __('Algeria', 'amnesty'),
+  'MDE 29': __('Morocco and Western Sahara', 'amnesty'),
+  'MDE 30': __('Tunisia', 'amnesty'),
+  'MDE 31': __('Yemen', 'amnesty'),
+};
+
+/**
+ * Split an index number into its component parts
+ *
+ * @param {string} indexNumber the complete index number
+ *
+ * @return {object} the component parts of the index number
+ */
+export function splitIndexNumber(indexNumber) {
+  const [group, remainder] = indexNumber.split(' ');
+  const [subgroup, increment, year] = remainder.split('/');
+  return { group, subgroup, increment, year };
+}
+
+/**
+ * Combine an index number from its component parts
+ *
+ * @param {object} param0 the component parts of the index number
+ *
+ * @return {string} the complete index number
+ */
+export function joinIndexNumber({ group, subgroup, increment, year }) {
+  return sprintf('%1$s %2$s/%3$s/%4$s', group, subgroup, increment, year);
+}
+
+/**
+ * Test whether a given index number is valid
+ *
+ * @param {string} indexNumber the index number to test
+ *
+ * @return {boolean} whether it is a real index number
+ */
+export function isValidIndexNumber(indexNumber) {
+  const trimmed = indexNumber.trim();
+
+  if (!trimmed.length) {
+    return false;
+  }
+
+  const validFormat = /^[A-Z]{3}\s\d{2}\/\d{3,4}\/\d{4}$/.test(trimmed);
+
+  if (!validFormat) {
+    return false;
+  }
+
+  const parts = splitIndexNumber(trimmed);
+
+  if (!Object.prototype.hasOwnProperty.call(classifications, parts.group)) {
+    return false;
+  }
+
+  return classifications[parts.group].includes(parts.subgroup);
+}
+
+export function getClassification(indexNumber) {
+  if (!isValidIndexNumber(indexNumber)) {
+    return null;
+  }
+
+  const parts = splitIndexNumber(indexNumber);
+
+  return classificationNames[`${parts.group} ${parts.subgroup}`];
+}

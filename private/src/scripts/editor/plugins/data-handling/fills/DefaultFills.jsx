@@ -2,6 +2,7 @@ import Byline from '../components/Byline.jsx';
 import Excerpt from '../components/Excerpt.jsx';
 import FeatureOnTermArchive from '../components/FeatureOnTermArchive.jsx';
 import FeaturedImage from '../components/FeaturedImage.jsx';
+import IndexNumber from '../components/IndexNumber.jsx';
 import PublishedDate from '../components/PublishedDate.jsx';
 import RelatedContent from '../components/RelatedContent.jsx';
 import ShareButtons from '../components/ShareButtons.jsx';
@@ -49,6 +50,13 @@ export default function DefaultFills() {
             <Excerpt {...props} />
             <Taxonomies {...props} />
             <FeatureOnTermArchive {...props} />
+          </>
+        )}
+      </Fill>
+      <Fill name="amnesty/metadata/group/document">
+        {(props) => (
+          <>
+            <IndexNumber {...props} />
           </>
         )}
       </Fill>

@@ -25,6 +25,10 @@ const defaultGroups = [
     label: __('Curation', 'amnesty'),
     value: 'curation',
   },
+  {
+    label: __('Document', 'amnesty'),
+    value: 'document',
+  },
 ];
 
 function useEditPostMeta(meta, setMeta) {
