@@ -126,7 +126,7 @@ export default function DataHandling() {
     };
   }, [modalOpen]);
 
-  if (!postId || !postType || !['page', 'post'].includes(postType)) {
+  if (!postId || !postType) {
     return null;
   }
 
