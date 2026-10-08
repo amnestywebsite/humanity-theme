@@ -1,3 +1,11 @@
+### v3.1.0
+Features:
+- Reimplement Appearance Options as a new post management Modal
+
+Improvements:
+- Add support for WordPress 6.9
+- Add support for PHP 8.4
+
 ### v3.0.7
 CI:
 - Remove old build targets
