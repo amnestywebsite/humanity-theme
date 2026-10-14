@@ -26,7 +26,9 @@ if ( ! function_exists( 'render_stat_counter_block' ) ) {
 
 		$alignment = 'align' . $attributes['alignment'];
 		$duration  = intval( $attributes['duration'], 10 );
-		$value     = intval( $attributes['value'], 10 );
+
+		$value = (string) preg_replace( '/[^\d]+/', '', $attributes['value'] );
+		$value = intval( $value, 10 );
 
 		if ( 'on' === ( $options['enforce_grouping_separators'] ?? false ) ) {
 			$value = number_format_i18n( $value );
