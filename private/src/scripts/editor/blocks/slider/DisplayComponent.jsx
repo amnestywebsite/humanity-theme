@@ -218,6 +218,8 @@ class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Show Arrows', 'amnesty')}
             checked={attributes.hasArrows}
@@ -225,6 +227,8 @@ class DisplayComponent extends Component {
           />
 
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Has Content', 'amnesty')}
             checked={attributes.hasContent}
@@ -242,6 +246,8 @@ class DisplayComponent extends Component {
           />
 
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Show Tabs', 'amnesty')}
             checked={attributes.showTabs}
@@ -261,12 +267,16 @@ class DisplayComponent extends Component {
 
         <PanelBody title={/* translators: [admin] */ __('Timeline Options', 'amnesty')}>
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Slider Title', 'amnesty')}
             onChange={this.createUpdateAttribute('sliderTitle')}
             value={attributes.sliderTitle}
           />
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Timeline Style', 'amnesty')}
             value={attributes.timelineCaptionStyle}
@@ -278,12 +288,15 @@ class DisplayComponent extends Component {
         {attributes.slides.length > 0 && (
           <PanelBody title={/* translators: [admin] */ __('Slide Options', 'amnesty')}>
             <TextControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Slide Title', 'amnesty')}
               onChange={updateSlide('title')}
               value={currentSlide.title}
             />
             <TextareaControl
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Slide Timeline Text', 'amnesty')}
               onChange={updateSlide('timelineContent')}
@@ -303,6 +316,8 @@ class DisplayComponent extends Component {
             />
             <hr />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Content Alignment', 'amnesty')}
               value={currentSlide.alignment}
@@ -310,6 +325,8 @@ class DisplayComponent extends Component {
               onChange={updateSlide('alignment')}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Style', 'amnesty')}
               value={currentSlide.background}
@@ -317,6 +334,8 @@ class DisplayComponent extends Component {
               onChange={updateSlide('background')}
             />
             <ToggleControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Hide Content', 'amnesty')}
               checked={currentSlide.hideContent}
@@ -480,7 +499,7 @@ class DisplayComponent extends Component {
 
                   if (selectedSlide === index) {
                     return (
-                      <div key={slide.title} className="slider-navButton is-active">
+                      <div key={slide.id} className="slider-navButton is-active">
                         <span>
                           {slideTitle
                             ? slide.title
@@ -492,7 +511,7 @@ class DisplayComponent extends Component {
 
                   return (
                     <button
-                      key={slide.title}
+                      key={slide.id}
                       className="slider-navButton"
                       onClick={this.createSelectSlide(index)}
                     >

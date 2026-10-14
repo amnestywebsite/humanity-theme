@@ -1,3 +1,27 @@
+### v3.1.0
+Features:
+- Reimplement Appearance Options as a new post management Modal
+
+Improvements:
+- Add support for WordPress 6.9
+- Add support for PHP 8.4
+
+### v3.0.7
+CI:
+- Remove old build targets
+
+### v3.0.6
+Fixes:
+- REST API route restriction check
+
+### v3.0.5
+Performance:
+- Many caching improvements across blocks and helper functions
+- Add new fast cross-blog helper functions
+
+Build:
+- Upgrade dependencies
+
 ### v3.0.4
 Fixes:
 - Taxonomy filters on RSS feed

@@ -11,9 +11,6 @@ const PetitionItem = (props) => (
       )}
     </figure>
     <div className="petition-item-content">
-      {props.excerpt && (
-        <div className="petition-itemExcerpt" dangerouslySetInnerHTML={{ __html: props.excerpt }} />
-      )}
       <h3 className="petition-itemTitle">
         <a>{props.title}</a>
       </h3>

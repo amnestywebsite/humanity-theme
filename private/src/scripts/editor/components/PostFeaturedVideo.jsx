@@ -76,7 +76,7 @@ class PostFeaturedVideo extends Component {
                 <video>
                   <source src={media.source_url || media.url} />
                 </video>
-                <Button onClick={open} isSecondary isLarge>
+                <Button onClick={open} isSecondary>
                   {/* translators: [admin] */ __('Replace Video', 'amnesty')}
                 </Button>
               </div>

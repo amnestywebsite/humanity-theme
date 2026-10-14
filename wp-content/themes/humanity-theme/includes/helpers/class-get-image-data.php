@@ -91,11 +91,18 @@ class Get_Image_Data {
 	/**
 	 * Retrieve the credit (description)
 	 *
-	 * @return string|null
+	 * @return string
 	 */
-	public function credit(): ?string {
+	public function credit(): string {
 		if ( 0 === $this->image_id ) {
 			return '';
+		}
+
+		$cache_key = hash( 'xxh3', __FUNCTION__ . $this->image_id . get_current_blog_id() );
+		$cached    = (string) wp_cache_get( $cache_key );
+
+		if ( $cached ) {
+			return wp_kses_post( $cached );
 		}
 
 		/**
@@ -104,21 +111,15 @@ class Get_Image_Data {
 		 * @var WP_Post|null $image
 		 */
 		$image  = get_post( $this->image_id );
-		$credit = null;
+		$credit = '';
 
 		if ( is_a( $image, WP_Post::class ) && 'attachment' === $image->post_type ) {
 			$credit = wp_kses_post( $image->post_content );
 		}
 
 		if ( ! class_exists( '\MultisiteGlobalMedia\Plugin', false ) ) {
+			wp_cache_add( $cache_key, $credit );
 			return $credit;
-		}
-
-		$cache_key = hash( 'xxh3', sprintf( '%s:%s', __FUNCTION__, $this->image_id ) );
-		$cached    = wp_cache_get( $cache_key );
-
-		if ( $cached ) {
-			return $cached;
 		}
 
 		$site_object = new Site();
@@ -147,7 +148,7 @@ class Get_Image_Data {
 		$switcher->switchToBlog( $site_object->id() );
 
 		$image  = get_post( $source_image_id );
-		$credit = null;
+		$credit = '';
 
 		if ( is_a( $image, WP_Post::class ) && 'attachment' === $image->post_type ) {
 			$credit = wp_kses_post( $image->post_content );
@@ -166,9 +167,21 @@ class Get_Image_Data {
 	 * @return string
 	 */
 	public function alt_text(): string {
+		if ( 0 === $this->image_id ) {
+			return '';
+		}
+
+		$cache_key = hash( 'xxh3', __FUNCTION__ . $this->image_id . get_current_blog_id() );
+		$cached    = (string) wp_cache_get( $cache_key );
+
+		if ( $cached ) {
+			return wp_kses_post( $cached );
+		}
+
 		$alt_text = get_post_meta( $this->image_id, '_wp_attachment_image_alt', true ) ?: '';
 
 		if ( ! class_exists( '\MultisiteGlobalMedia\Plugin', false ) ) {
+			wp_cache_add( $cache_key, $alt_text );
 			return $alt_text;
 		}
 
@@ -185,6 +198,7 @@ class Get_Image_Data {
 
 		// if the image ID doesn't include plugin's prefix
 		if ( ! $prefix->invoke( $attachment, $this->image_id, $site_object->idSitePrefix() ) ) {
+			wp_cache_add( $cache_key, $alt_text );
 			return $alt_text;
 		}
 
@@ -196,17 +210,26 @@ class Get_Image_Data {
 		$alt_text = get_post_meta( $source_image_id, '_wp_attachment_image_alt', true ) ?: '';
 		$switcher->restoreBlog();
 
+		wp_cache_add( $cache_key, $alt_text );
+
 		return $alt_text;
 	}
 
 	/**
 	 * Retrieve the caption (excerpt)
 	 *
-	 * @return string|null
+	 * @return string
 	 */
-	public function caption(): ?string {
+	public function caption(): string {
 		if ( 0 === $this->image_id ) {
 			return '';
+		}
+
+		$cache_key = hash( 'xxh3', __FUNCTION__ . $this->image_id . get_current_blog_id() );
+		$cached    = (string) wp_cache_get( $cache_key );
+
+		if ( $cached ) {
+			return wp_kses_post( $cached );
 		}
 
 		/**
@@ -215,21 +238,15 @@ class Get_Image_Data {
 		 * @var WP_Post|null $image
 		 */
 		$image   = get_post( $this->image_id );
-		$caption = null;
+		$caption = '';
 
 		if ( is_a( $image, WP_Post::class ) && 'attachment' === $image->post_type ) {
 			$caption = wp_kses_post( $image->post_excerpt );
 		}
 
 		if ( ! class_exists( '\MultisiteGlobalMedia\Plugin', false ) ) {
+			wp_cache_add( $cache_key, $caption );
 			return $caption;
-		}
-
-		$cache_key = hash( 'xxh3', sprintf( '%s:%s', __FUNCTION__, $this->image_id ) );
-		$cached    = wp_cache_get( $cache_key );
-
-		if ( $cached ) {
-			return $cached;
 		}
 
 		$site_object = new Site();
@@ -258,7 +275,7 @@ class Get_Image_Data {
 		$switcher->switchToBlog( $site_object->id() );
 
 		$image   = get_post( $source_image_id );
-		$caption = null;
+		$caption = '';
 
 		if ( is_a( $image, WP_Post::class ) && 'attachment' === $image->post_type ) {
 			$caption = wp_kses_post( $image->post_excerpt );
@@ -275,12 +292,12 @@ class Get_Image_Data {
 	 * Check whether the image is on a remote site,
 	 * and return credit from that site, if available
 	 *
-	 * @param string|null $caption the existing caption
+	 * @param string      $caption the existing caption
 	 * @param object|null $image   the image object
 	 *
-	 * @return string|null
+	 * @return string
 	 */
-	protected function get_multisite_credit( ?string $caption, ?object $image ): ?string {
+	protected function get_multisite_credit( string $caption, ?object $image ): string {
 		if ( $caption || $image || ! $this->image_src || ! defined( 'DOMAIN_CURRENT_SITE' ) ) {
 			return $caption;
 		}
@@ -311,19 +328,19 @@ class Get_Image_Data {
 
 		restore_current_blog();
 
-		return $caption ?: null;
+		return $caption;
 	}
 
 	/**
 	 * Check whether the image is on a remote site,
 	 * and return caption from that site, if available
 	 *
-	 * @param string|null $caption the existing caption
-	 * @param object|null $image   the image object
+	 * @param string            $caption the existing caption
+	 * @param object|array|null $image   the image object
 	 *
-	 * @return string|null
+	 * @return string
 	 */
-	protected function get_multisite_caption( ?string $caption, ?object $image ): ?string {
+	protected function get_multisite_caption( string $caption, object|array|null $image ): string {
 		if ( $caption || $image || ! $this->image_src || ! defined( 'DOMAIN_CURRENT_SITE' ) ) {
 			return $caption;
 		}
@@ -354,7 +371,7 @@ class Get_Image_Data {
 
 		restore_current_blog();
 
-		return $caption ?: null;
+		return $caption;
 	}
 
 }

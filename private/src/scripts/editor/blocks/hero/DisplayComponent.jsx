@@ -86,6 +86,8 @@ const DisplayComponent = (props) => {
     <InspectorControls>
       <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')} initialOpen={true}>
         <SelectControl
+          __next40pxDefaultSize
+          __nextHasNoMarginBottom
           label={/* translators: [admin] */ __('Background Colour', 'amnesty')}
           options={[
             { label: /* translators: [admin] */ __('Black', 'amnesty'), value: 'dark' },
@@ -95,6 +97,8 @@ const DisplayComponent = (props) => {
           onChange={(background) => setAttributes({ background })}
         />
         <SelectControl
+          __next40pxDefaultSize
+          __nextHasNoMarginBottom
           label={/* translators: [admin] */ __('Background Type', 'amnesty')}
           options={[
             { label: /* translators: [admin] */ __('Image', 'amnesty'), value: 'image' },

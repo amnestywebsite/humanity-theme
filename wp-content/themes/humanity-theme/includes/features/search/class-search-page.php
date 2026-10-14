@@ -5,7 +5,6 @@ declare( strict_types = 1 );
 namespace Amnesty;
 
 use ReflectionMethod;
-use WP_Post;
 use WP_Query;
 use WP_Tax_Query;
 
@@ -66,8 +65,12 @@ class Search_Page {
 
 		$search_page_id = absint( get_option( 'amnesty_search_page' ) );
 
+		if ( ! $this->query ) {
+			return $this->query;
+		}
+
 		foreach ( $this->query->posts as $index => $item ) {
-			if ( $item->ID !== $search_page_id ) {
+			if ( is_object( $item ) && $item->ID !== $search_page_id ) {
 				continue;
 			}
 
@@ -90,8 +93,10 @@ class Search_Page {
 	public function get_results(): array {
 		$query = $this->get_wp_query();
 
-		$this->found_posts = $query->posts;
-		$this->found_rows  = $query->found_posts;
+		if ( $query ) {
+			$this->found_posts = $query->posts;
+			$this->found_rows  = $query->found_posts;
+		}
 
 		return $this->found_posts;
 	}
@@ -252,7 +257,7 @@ class Search_Page {
 			$year = $wpdb->prepare( "AND year({$wpdb->posts}.post_date) = %d", absint( amnesty_get_query_var( 'qyear' ) ) );
 		}
 
-		return $year;
+		return (string) $year;
 	}
 
 	/**
@@ -269,7 +274,7 @@ class Search_Page {
 			$month = $wpdb->prepare( "AND month({$wpdb->posts}.post_date) = %d", amnesty_get_query_var( 'qmonth' ) );
 		}
 
-		return $month;
+		return (string) $month;
 	}
 
 	/**
@@ -288,10 +293,10 @@ class Search_Page {
 		if ( 1 === count( $post_types ) ) {
 			$post_type_where = $wpdb->prepare( "{$wpdb->posts}.post_type = %s", $post_types[0] );
 		} else {
-			$post_type_where = "{$wpdb->posts}.post_type IN ('" . implode( "', '", esc_sql( $post_types ) ) . "')";
+			$post_type_where = "{$wpdb->posts}.post_type IN ('" . implode( "', '", (array) esc_sql( $post_types ) ) . "')";
 		}
 
-		$post_type_where .= $wpdb->prepare( " AND {$wpdb->posts}.post_status = %s", 'publish' );
+		$post_type_where .= (string) $wpdb->prepare( " AND {$wpdb->posts}.post_status = %s", 'publish' );
 
 		return (string) apply_filters(
 			'amnesty_searchpage_query_where_post_type',
@@ -491,7 +496,7 @@ class Search_Page {
 				continue;
 			}
 
-			$tax_query[ $tax_name ] = $tax_qvar;
+			$tax_query[ (string) $tax_name ] = $tax_qvar;
 		}
 
 		return array_filter( $tax_query );

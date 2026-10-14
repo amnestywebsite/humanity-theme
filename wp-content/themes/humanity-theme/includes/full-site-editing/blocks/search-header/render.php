@@ -13,6 +13,10 @@ if ( ! function_exists( 'render_search_header_block' ) ) {
 	 * @return string
 	 */
 	function render_search_header_block( array $attributes, string $content, WP_Block $block ): string {
+		if ( ! isset( $block->context['query'] ) ) {
+			return '';
+		}
+
 		/**
 		 * The core/query block neither instantiates nor executes
 		 * the query declared in it. For some reason, that's done
@@ -33,7 +37,7 @@ if ( ! function_exists( 'render_search_header_block' ) ) {
 		 *
 		 * - @jaymcp
 		 */
-		$query = build_query_vars_from_query_block( $block->context['query'], get_query_var( 'paged', 1 ) );
+		$query = build_query_vars_from_query_block( $block, get_query_var( 'paged', 1 ) );
 		$query = new WP_Query( $query );
 
 		spaceless();

@@ -10,7 +10,7 @@ const groupTerms = (terms) => {
   const grouped = {};
 
   terms
-    .filter(({ hidden, type }) => type === 'default' && !hidden)
+    .filter(({ type }) => !type || type === 'default')
     .forEach((term) => {
       const char = term.name.charAt(0).toUpperCase();
       if (!has(grouped, char)) {
@@ -73,7 +73,7 @@ export default class DisplayComponent extends Component {
 
     const path = addQueryArgs(`/wp/v2/${current.rest_base}/`, {
       hide_empty: 'false',
-      per_page: '250',
+      per_page: current.rest_base === 'category' ? 100 : 250,
     });
 
     if (cache[path]) {
@@ -111,6 +111,8 @@ export default class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Display Options', 'amnesty')}>
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Choose taxonomy to display', 'amnesty')}
             options={options}

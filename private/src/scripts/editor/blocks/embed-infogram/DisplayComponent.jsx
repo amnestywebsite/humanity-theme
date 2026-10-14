@@ -8,6 +8,8 @@ const DisplayComponent = (props) => {
   return (
     <Fragment>
       <TextControl
+        __next40pxDefaultSize
+        __nextHasNoMarginBottom
         // translators: [admin]
         label={__('The embed code', 'amnesty')}
         value={attributes.identifier}
@@ -15,6 +17,8 @@ const DisplayComponent = (props) => {
         placeholder="e.g. 75e11a7d-a5bb-45b2-9764-b5fdbdfdf489"
       />
       <TextControl
+        __next40pxDefaultSize
+        __nextHasNoMarginBottom
         // translators: [admin]
         label={__('The embed type', 'amnesty')}
         value={attributes.type}
@@ -22,6 +26,8 @@ const DisplayComponent = (props) => {
         placeholder="e.g. 'interactive'"
       />
       <TextControl
+        __next40pxDefaultSize
+        __nextHasNoMarginBottom
         // translators: [admin]
         label={__('The embed title', 'amnesty')}
         value={attributes.title}

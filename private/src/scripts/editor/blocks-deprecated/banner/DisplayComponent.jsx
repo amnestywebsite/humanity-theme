@@ -4,7 +4,7 @@ import MediaMetadataVisibilityControls from '../../components/MediaMetadataVisib
 import PostFeaturedVideo from '../../components/PostFeaturedVideo.jsx';
 
 const { InspectorControls, MediaUpload, RichText, URLInputButton } = wp.blockEditor;
-const { IconButton, PanelBody, SelectControl, TextControl } = wp.components;
+const { Button, PanelBody, SelectControl, TextControl } = wp.components;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
 const { addQueryArgs } = wp.url;
@@ -118,6 +118,8 @@ export default class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Alignment', 'amnesty')}
               options={[
@@ -141,6 +143,8 @@ export default class DisplayComponent extends Component {
               onChange={(newAlignment) => setAttributes({ alignment: newAlignment })}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Colour', 'amnesty')}
               options={[
@@ -157,6 +161,8 @@ export default class DisplayComponent extends Component {
               onChange={(newBackground) => setAttributes({ background: newBackground })}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Size', 'amnesty')}
               options={[
@@ -169,6 +175,8 @@ export default class DisplayComponent extends Component {
               onChange={(newSize) => setAttributes({ size: newSize })}
             />
             <SelectControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Background Type', 'amnesty')}
               options={[
@@ -187,6 +195,8 @@ export default class DisplayComponent extends Component {
               setAttributes={setAttributes}
             />
             <TextControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Embed URL', 'amnesty')}
               // translators: [admin]
@@ -211,7 +221,7 @@ export default class DisplayComponent extends Component {
           {type !== 'video' && (
             <div className="linkList-options">
               {imageID ? (
-                <IconButton
+                <Button
                   icon="no-alt"
                   // translators: [admin]
                   label={__('Remove Image', 'amnesty')}
@@ -222,7 +232,7 @@ export default class DisplayComponent extends Component {
                   allowedTypes={['image']}
                   value={imageID}
                   onSelect={(media) => setAttributes({ imageID: media.id })}
-                  render={({ open }) => <IconButton icon="format-image" onClick={open} />}
+                  render={({ open }) => <Button icon="format-image" onClick={open} />}
                 />
               )}
             </div>

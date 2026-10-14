@@ -4,7 +4,10 @@
   "license": "none",
   "minimum-stability": "stable",
   "require-dev": {
-    "bigbite/phpcs-config": "v2.0.0"
+    "bigbite/phpcs-config": "v2.0.0",
+    "phpcompatibility/php-compatibility": "^10.0.0@dev",
+    "phpcompatibility/phpcompatibility-paragonie": "^2.0@dev",
+    "phpcompatibility/phpcompatibility-wp": "^3.0@dev"
   },
   "config": {
     "allow-plugins": {

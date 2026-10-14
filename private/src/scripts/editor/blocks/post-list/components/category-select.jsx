@@ -12,7 +12,9 @@ class CategorySelect extends Component {
       options: [],
       route: '/amnesty/v1/categories',
     };
+  }
 
+  componentDidMount() {
     this.fetch();
   }
 

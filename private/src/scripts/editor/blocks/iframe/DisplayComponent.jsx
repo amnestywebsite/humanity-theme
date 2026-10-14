@@ -46,8 +46,11 @@ class DisplayComponent extends Component {
             // translators: [admin]
             placeholder={__('Enter URL to embed here…', 'amnesty')}
           />
-          <Button isLarge type="submit">
-            {/* translators: [admin] */ __('Embed', 'amnesty')}
+          <Button type="submit">
+            {
+              /* translators: [admin] */
+              __('Embed', 'amnesty')
+            }
           </Button>
         </form>
       </Placeholder>
@@ -113,6 +116,8 @@ class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Options', 'amnesty')}>
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Width', 'amnesty')}
             value={attributes.width}
@@ -127,6 +132,8 @@ class DisplayComponent extends Component {
             onChange={this.createUpdateAttribute('width')}
           />
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Height', 'amnesty')}
             value={attributes.height}
@@ -141,6 +148,8 @@ class DisplayComponent extends Component {
             onChange={this.createUpdateAttribute('height')}
           />
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Minimum Height', 'amnesty')}
             value={attributes.minHeight}
@@ -158,6 +167,8 @@ class DisplayComponent extends Component {
           />
           <hr />
           <TextControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Iframe Title', 'amnesty')}
             // translators: [admin]

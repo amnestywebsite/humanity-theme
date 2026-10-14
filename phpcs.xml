@@ -4,4 +4,8 @@
   <config name="minimum_supported_wp_version" value="5.8" />
   <exclude-pattern>*.l10n.php$</exclude-pattern>
   <rule ref="./vendor/bigbite/phpcs-config/BigBite" />
+  <rule ref="PHPCompatibility" />
+  <rule ref="PHPCompatibilityWP" />
+  <!-- Needs to be a separate ruleset due to https://github.com/squizlabs/PHP_CodeSniffer/issues/2197 -->
+  <rule ref="phpcs-testVersion-override.xml"/>
 </ruleset>

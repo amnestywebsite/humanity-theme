@@ -165,6 +165,7 @@ class DisplayComponent extends Component {
                   onChange={(link) => this.updateItemLink(index, link)}
                 />
                 <CheckboxControl
+                  __nextHasNoMarginBottom
                   className="newtab"
                   // translators: [admin]
                   label={__('Open in new tab', 'amnesty')}

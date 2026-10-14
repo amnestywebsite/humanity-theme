@@ -162,6 +162,8 @@ export default class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody title={/* translators: [admin] */ __('Display Options', 'amnesty')}>
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Background Colour', 'amnesty')}
             options={[
@@ -174,6 +176,8 @@ export default class DisplayComponent extends Component {
             onChange={(background) => setAttributes({ background })}
           />
           <SelectControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Choose taxonomy to display', 'amnesty')}
             options={options}
@@ -182,6 +186,8 @@ export default class DisplayComponent extends Component {
           />
           {hierarchical && (
             <RangeControl
+              __next40pxDefaultSize
+              __nextHasNoMarginBottom
               // translators: [admin]
               label={__('Max depth', 'amnesty')}
               min={0}
@@ -191,6 +197,8 @@ export default class DisplayComponent extends Component {
             />
           )}
           <ToggleControl
+            __next40pxDefaultSize
+            __nextHasNoMarginBottom
             // translators: [admin]
             label={__('Show only Regions/Subregions', 'amnesty')}
             checked={attributes.regionsOnly}
