@@ -1,0 +1,73 @@
+sup.fn {
+  @include mq(small) {
+    position: relative;
+  }
+}
+
+.footnote-tooltip {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  // display: none;
+  z-index: 1;
+  margin: 0;
+  flex-direction: column;
+  align-items: stretch;
+  padding-block: var(--wp--preset--spacing--single) var(--wp--preset--spacing--half);
+  padding-inline: var(--wp--preset--spacing--half);
+  width: 100%;
+  max-height: 200px;
+  background: var(--wp--preset--color--grey-lightest);
+  line-height: normal;
+  border: 1px solid var(--wp--preset--color--grey-light);
+  box-shadow: 0 20px 48px 0 rgba(0, 0, 0, 0.2);
+
+  @include mq(small) {
+    position: absolute;
+    bottom: 24px; // margin + embellishment / 2 + breathing room
+    left: var(--offset, -12px); // embellishment offset
+    padding-block: var(--wp--preset--spacing--half);
+    width: 250px;
+  }
+}
+
+.footnote-tooltip.is-visible {
+  display: flex;
+}
+
+.footnote-tooltip-inner {
+  display: block;
+  overflow-y: scroll;
+}
+
+.footnote-tooltip button {
+  appearance: none;
+  border: none;
+  background: none;
+  margin: 0;
+  margin-block-start: calc(-1 * var(--wp--preset--spacing--half));
+  padding: 0;
+  align-self: end;
+
+  @include mq(small) {
+    display: none;
+  }
+}
+
+@include mq(small) {
+  .footnote-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: var(--embellish-offset, 12px);
+    display: block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    background: var(--wp--preset--color--grey-lightest);
+    border-right: 1px solid var(--wp--preset--color--grey-light);
+    border-bottom: 1px solid var(--wp--preset--color--grey-light);
+    box-shadow: 0 20px 48px 0 rgba(0, 0, 0, 0.2);
+  }
+}
