@@ -1,0 +1,20 @@
+.wp-block-footnotes {
+  margin: 0;
+  padding-block: var(--wp--preset--spacing--half);
+  padding-inline-start: var(--wp--preset--spacing--single);
+  padding-inline-end: var(--wp--preset--spacing--half);
+  background-color: var(--wp--preset--color--grey-lightest);
+}
+
+.wp-block-footnotes ::marker {
+  color: #2196f3;
+}
+
+.wp-block-footnotes li {
+  margin-block-start: 0;
+  margin-block-end: var(--wp--preset--spacing--half);
+}
+
+.wp-block-footnotes li:last-of-type {
+  margin-block-end: 0;
+}

@@ -14,10 +14,10 @@ if ( ! function_exists( 'amnesty_register_dompurify_script' ) ) {
 	function amnesty_register_dompurify_script(): void {
 		wp_register_script(
 			'dompurify',
-			'https://unpkg.com/dompurify@3.4.11/dist/purify.min.js',
+			'https://unpkg.com/dompurify@3.4.17/dist/purify.min.js',
 			[],
-			'3.4.11',
-			true,
+			'3.4.17',
+			false,
 		);
 	}
 }

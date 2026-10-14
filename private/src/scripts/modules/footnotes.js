@@ -1,3 +1,5 @@
+const { __ } = wp.i18n;
+
 function createPositionAdjuster(article, tooltip) {
   const articleBounds = article.getBoundingClientRect();
 
@@ -45,11 +47,11 @@ function createPositionAdjuster(article, tooltip) {
   };
 }
 
-function resetTooltip(tooltip) {
+function resetTooltip(tooltip, tooltipContent) {
   tooltip.classList.remove('is-visible');
 
   /* eslint-disable-next-line no-param-reassign */
-  tooltip.innerHTML = '';
+  tooltipContent.innerHTML = '';
 
   if (tooltip.parentElement) {
     tooltip.parentElement.removeChild(tooltip);
@@ -57,7 +59,7 @@ function resetTooltip(tooltip) {
 }
 
 const CLOSE_DELAY = 400;
-function createEventHandler(article, references, tooltip) {
+function createEventHandler(references, tooltip, tooltipContent) {
   let timeout;
 
   return function (event) {
@@ -83,7 +85,7 @@ function createEventHandler(article, references, tooltip) {
 
     // mouse is within an unusable element - remove the tooltip, and bail
     if (!sup) {
-      timeout = setTimeout(() => resetTooltip(tooltip), CLOSE_DELAY);
+      timeout = setTimeout(() => resetTooltip(tooltip, tooltipContent), CLOSE_DELAY);
       return;
     }
 
@@ -91,27 +93,53 @@ function createEventHandler(article, references, tooltip) {
     const ref = sup.dataset.fn;
     // but there's no usable list item - remove the tooltip, and bail
     if (!Object.prototype.hasOwnProperty.call(references, ref)) {
-      timeout = setTimeout(() => resetTooltip(tooltip), CLOSE_DELAY);
+      timeout = setTimeout(() => resetTooltip(tooltip, tooltipContent), CLOSE_DELAY);
       return;
     }
 
     // now we're cooking.
+    event.preventDefault();
+
     // get the reference HTML, insert it into the tooltip,
     // and insert the tooltip into the superscript.
     // then show the tooltip.
 
     const data = references[ref].innerHTML;
     /* eslint-disable-next-line no-param-reassign */
-    tooltip.innerHTML = window.DOMPurify.sanitize(data);
+    tooltipContent.innerHTML = window.DOMPurify.sanitize(data);
 
     // strip out the jump link
     const ret = tooltip.querySelector(`a[href="#${ref}-link"]`);
-    tooltip.removeChild(ret);
+    tooltipContent.removeChild(ret);
 
     // insert the tooltip into the superscript, but outside of its anchor
     sup.appendChild(tooltip);
     tooltip.classList.add('is-visible');
   };
+}
+
+function createTooltip() {
+  const inner = document.createElement('span');
+  inner.classList.add('footnote-tooltip-inner');
+
+  const text = document.createElement('span');
+  text.classList.add('screen-reader-text');
+  text.textContent = __('Close Tooltip', 'amnesty');
+
+  const icon = document.createElement('span');
+  icon.classList.add('dashicons');
+  icon.classList.add('dashicons-no-alt');
+
+  const button = document.createElement('button');
+  button.appendChild(text);
+  button.appendChild(icon);
+
+  const outer = document.createElement('span');
+  outer.classList.add('footnote-tooltip');
+  outer.appendChild(button);
+  outer.appendChild(inner);
+
+  return [outer, inner, button];
 }
 
 export default function footnoteTooltips() {
@@ -128,21 +156,25 @@ export default function footnoteTooltips() {
     refs[ref.id] = ref;
   });
 
-  const tooltip = document.createElement('span');
-  tooltip.classList.add('footnote-tooltip');
+  const [tooltip, tooltipContent, closeButton] = createTooltip();
 
-  const observer = new IntersectionObserver(createPositionAdjuster(article, tooltip), {
+  const observerCallback = createPositionAdjuster(article, tooltip);
+  const observer = new IntersectionObserver(observerCallback, {
     root: article,
   });
 
   observer.observe(tooltip);
 
-  const handler = createEventHandler(article, refs, tooltip);
+  const handler = createEventHandler(refs, tooltip, tooltipContent);
   article.addEventListener('mouseover', handler);
-  article.addEventListener('focusin', handler);
+  article.addEventListener('touchend', handler);
   article.addEventListener('keydown', ({ key }) => {
     if (['Esc', 'Escape'].includes(key)) {
-      resetTooltip(tooltip);
+      resetTooltip(tooltip, tooltipContent);
     }
+  });
+
+  closeButton.addEventListener('click', () => {
+    resetTooltip(tooltip, tooltipContent);
   });
 }
