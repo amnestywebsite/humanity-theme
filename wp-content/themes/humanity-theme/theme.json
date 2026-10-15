@@ -260,6 +260,12 @@
       "fontSizes": [
         {
           "fluid": false,
+          "name": "XX Small",
+          "size": ".6rem",
+          "slug": "xx-small"
+        },
+        {
+          "fluid": false,
           "name": "X Small",
           "size": ".8rem",
           "slug": "x-small"
