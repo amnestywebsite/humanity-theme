@@ -30,7 +30,7 @@
 
 .amnesty-data-handling-modal .components-modal__header + div {
   display: grid;
-  height: 100%;
+  height: 97%; // magic. box sizing in the editor to thank.
   grid-template-columns: 0.5fr 2fr;
   grid-template-rows: 1fr 40px;
 }
