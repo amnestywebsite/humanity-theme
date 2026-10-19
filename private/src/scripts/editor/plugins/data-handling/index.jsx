@@ -1,4 +1,5 @@
 import ActionButton from './fills/ActionButton.jsx';
+import PostFills from './fills/PostFills.jsx';
 import DefaultFills from './fills/DefaultFills.jsx';
 
 const { Button, Fill, Modal, Slot } = wp.components;
@@ -191,7 +192,19 @@ export default function DataHandling() {
               className="amnesty-data-handling-modal-group"
             >
               <h2 className="amnesty-data-handling-modal-group-title">{label}</h2>
-              <Slot name={`${SlotFillNamespace}/${value}`} fillProps={fillProps} />
+              <Slot
+                name={`${SlotFillNamespace}/${value}`}
+                fillProps={fillProps}
+                bubblesVirtually={false}
+              >
+                {(fills) =>
+                  fills.length ? (
+                    fills
+                  ) : (
+                    <p>{__('No registered options for this post type', 'amnesty')}</p>
+                  )
+                }
+              </Slot>
             </div>
           ))}
         </div>
@@ -208,6 +221,7 @@ export default function DataHandling() {
         <Fill key={value} name={`${SlotFillNamespace}/${value}`} />
       ))}
 
+      <PostFills />
       <DefaultFills />
     </>
   );
