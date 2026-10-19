@@ -103,7 +103,16 @@ if ( ! function_exists( 'amnesty_scripts' ) ) {
 		wp_register_script( 'tickcounter-sdk', 'https://www.tickcounter.com/static/js/loader.js', [], $theme->get( 'Version' ), true );
 		wp_enqueue_script( 'infogram-embed', amnesty_asset_uri( 'scripts' ) . '/infogram-loader.js', [], $theme->get( 'Version' ), false );
 
-		wp_enqueue_script( 'amnesty-theme', amnesty_asset_uri( 'scripts' ) . '/bundle.js', [ 'lodash', 'wp-i18n' ], $theme->get( 'Version' ), true );
+		wp_enqueue_script(
+			'amnesty-theme',
+			amnesty_asset_uri( 'scripts' ) . '/bundle.js',
+			[
+				'lodash',
+				'wp-i18n',
+			],
+			$theme->get( 'Version' ),
+			true,
+		);
 
 		$localise_with = [
 			'archive_base_url' => get_pagenum_link( 1, false ),
@@ -299,18 +308,26 @@ if ( ! function_exists( 'amnesty_enqueue_block_assets' ) ) {
 		}
 
 		$theme = wp_get_theme();
-		$deps  = [
-			'wp-components',
-			'wp-core-data',
-			'wp-data',
-			'wp-editor',
-			'wp-element',
-			'wp-hooks',
-			'wp-i18n',
-		];
 
 		wp_enqueue_style( 'amnesty-core-editor', amnesty_asset_uri( 'styles' ) . '/editor.css', [], $theme->get( 'Version' ), 'all' );
-		wp_enqueue_script( 'amnesty-core-editor', amnesty_asset_uri( 'scripts' ) . '/editor.js', $deps, $theme->get( 'Version' ), true );
+
+		wp_enqueue_script(
+			'amnesty-core-editor',
+			amnesty_asset_uri( 'scripts' ) . '/editor.js',
+			[
+				'lodash',
+				'wp-components',
+				'wp-core-data',
+				'wp-data',
+				'wp-editor',
+				'wp-edit-post',
+				'wp-element',
+				'wp-hooks',
+				'wp-i18n',
+			],
+			$theme->get( 'Version' ),
+			true,
+		);
 	}
 }
 
