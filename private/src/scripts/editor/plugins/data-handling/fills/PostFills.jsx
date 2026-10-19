@@ -1,7 +1,7 @@
 import Byline from '../components/Byline.jsx';
 import Excerpt from '../components/Excerpt.jsx';
 import FeatureOnTermArchive from '../components/FeatureOnTermArchive.jsx';
-import FeaturedImage from '../components/FeaturedImage.jsx';
+import FeaturedImageMeta from '../components/FeaturedImageMeta.jsx';
 import PublishedDate from '../components/PublishedDate.jsx';
 import RelatedContent from '../components/RelatedContent.jsx';
 import ShareButtons from '../components/ShareButtons.jsx';
@@ -40,7 +40,7 @@ export default function DefaultFills() {
               <PostFeaturedImage />
             </PostFeaturedImageCheck>
             <Spacer height="20px" />
-            <FeaturedImage {...props} />
+            <FeaturedImageMeta {...props} />
             <Spacer />
             <RelatedContent {...props} />
           </>
