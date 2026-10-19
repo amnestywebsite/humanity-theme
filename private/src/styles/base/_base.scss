@@ -85,7 +85,7 @@ address {
 }
 
 @media not print {
-  .print-only {
-    display: none !important;
-  }
+	.print-only {
+		display: none !important;
+	}
 }
