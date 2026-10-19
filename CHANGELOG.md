@@ -1,3 +1,21 @@
+### v3.1.1
+Fixes:
+- Add missing lodash dependency to script enqueues
+- Print/not-print CSS target declarations
+- Rendering of post-type specific options in the modal UI
+
+Improvements:
+- Remove scroll animation from modal UI
+- Remove post type limitation from modal UI
+- Adjust modal UI content height
+
+Internal:
+- Move observer callback to external function
+- Remove temporary Index Number input from modal UI
+
+CI:
+- Add deployment target
+
 ### v3.1.0
 Features:
 - Reimplement Appearance Options as a new post management Modal
