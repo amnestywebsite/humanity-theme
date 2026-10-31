@@ -29,6 +29,23 @@
     padding: var(--wp--preset--spacing--single) !important;
   }
 
+  .wp-block-amnesty-core-hero .hero-title span,
+  .wp-block-amnesty-core-hero .hero-content,
+  .wp-block-amnesty-core-hero .hero-cta,
+  .page-heroContent,
+  .page-heroCta,
+  .page-heroTitle span {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--wp--preset--color--black) !important;
+  }
+
+  .wp-block-amnesty-core-hero.has-light-background .btn,
+  .page-heroBackground--light .btn {
+    border: 1px solid var(--wp--preset--color--black) !important;
+    background-color: transparent !important;
+  }
+
   .page-hero .image-metadata,
   .wp-block-amnesty-core-hero .image-metadata {
     display: none !important;
