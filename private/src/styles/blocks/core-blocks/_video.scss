@@ -2,3 +2,8 @@
 .wp-block-video video {
   max-width: 100%;
 }
+
+.wp-block-video figcaption {
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--grey-darker);
+}
