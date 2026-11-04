@@ -5,8 +5,8 @@ If you'd like to contribute to the theme, see the [contributing](#contributing).
 
 ## Minimum Requirements
 This theme requires:
-- WordPress 5.8+
-- PHP 8.2+ with the Intl extension
+- WordPress 6.9+
+- PHP 8.4+ with the Intl extension
 
 ## Required Plugins  
 We currently rely upon CMB2 and CMB2 extensions for settings management, but our eventual goal is to remove these dependencies.  
@@ -20,14 +20,14 @@ Our full list of dependencies is below:
 ## Plugin Integrations
 This theme hooks into the following plugins, should they be available:
 - [WordPress SEO](https://wordpress.org/plugins/wordpress-seo/)
-- [MultilingualPress](https://multilingualpress.org/)
+- [MultilingualPress](https://multilingualpress.org/) 
 - [Multisite Global Media](https://github.com/bueltge/multisite-global-media/)
 
 ## Companion Plugins  
 Plugins which can be used to extend the theme with additional functionality, originally designed specifically for Amnesty International.  
 
 ### Donations  
-The [Donations](https://github.com/amnestywebsite/humanity-donations) plugin works in conjunction with WooCommerce to provide the capability to accept one-off and recurring donations.  
+We now use a custom WP plugin for donations.  
 
 ### Petitions  
 The [Petitions](https://github.com/amnestywebsite/humanity-petitions) plugin provides the capability to create, curate, and manage petitions.  
