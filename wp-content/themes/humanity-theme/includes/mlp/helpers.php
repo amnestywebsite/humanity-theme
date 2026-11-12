@@ -6,6 +6,7 @@ use Inpsyde\MultilingualPress\Framework\Api\Translation;
 use Inpsyde\MultilingualPress\Framework\Api\Translations;
 use Inpsyde\MultilingualPress\Framework\Api\TranslationSearchArgs;
 use Inpsyde\MultilingualPress\Framework\WordpressContext;
+use Inpsyde\MultilingualPress\MultilingualPress;
 
 use function Inpsyde\MultilingualPress\resolve;
 
@@ -57,8 +58,9 @@ if ( ! function_exists( 'get_object_translations' ) ) {
 		$site = get_current_blog_id();
 		$args = TranslationSearchArgs::forContext( $cext )->forSiteId( $site )->includeBase();
 
-		$cache_key = hash( 'xxh3', wp_json_encode( $args->toArray() ) ?: '' );
-		$cached    = wp_cache_get( $cache_key );
+		$mlp_version = (string) get_network_option( null, MultilingualPress::OPTION_VERSION, '' );
+		$cache_key   = hash( 'xxh3', $mlp_version . ( wp_json_encode( $args->toArray() ) ?: '' ) );
+		$cached      = wp_cache_get( $cache_key, __FUNCTION__ );
 
 		if ( is_array( $cached ) ) {
 			if ( $filter ) {
@@ -75,7 +77,7 @@ if ( ! function_exists( 'get_object_translations' ) ) {
 				absint( get_blog_option( $translation->remoteSiteId(), 'blog_public', 0 ) ) === 1,
 		);
 
-		wp_cache_add( $cache_key, $translations );
+		wp_cache_add( $cache_key, $translations, __FUNCTION__, HOUR_IN_SECONDS );
 
 		if ( $filter ) {
 			return (array) apply_filters( __FUNCTION__, $translations );
