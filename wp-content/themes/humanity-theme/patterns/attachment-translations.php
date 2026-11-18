@@ -40,7 +40,7 @@ foreach ( $translations as $translation ) {
 	);
 }
 
-$has_few = count( $translation_links ) < 7;
+$has_few = count( $translation_links ) < 5;
 
 if ( $has_few ) {
 	$translation_links = implode( $list_separator, $translation_links );
@@ -58,6 +58,9 @@ if ( $has_few ) {
 	$translation_links = implode( "\n", $translation_links );
 }
 
+$list_label = _x( 'Also available in', 'prefix for list of post translations', 'amnesty' );
+$list_label = str_replace( ' ', '&nbsp;', $list_label );
+
 // AI requirements
 if ( $has_few ) :
 
@@ -67,9 +70,7 @@ if ( $has_few ) :
 	<p>
 		<?php
 
-		echo wp_kses_post( _x( 'Also available in', 'prefix for list of post translations', 'amnesty' ) );
-		echo '&nbsp;';
-		echo wp_kses_post( $translation_links );
+		echo wp_kses_post( $list_label ), '&nbsp;', wp_kses_post( $translation_links );
 
 		?>
 	</p>
@@ -83,7 +84,7 @@ else :
 
 <!-- wp:details {"className":"is-style-small"} -->
 <details class="wp-block-details is-style-small">
-	<summary><?php echo wp_kses_post( _x( 'Also available in', 'prefix for list of post translations', 'amnesty' ) ); ?></summary>
+	<summary><?php echo wp_kses_post( $list_label ); ?></summary>
 	<!-- wp:group -->
 	<div class="wp-block-group">
 		<?php echo wp_kses_post( $translation_links ); ?>
