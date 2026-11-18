@@ -99,10 +99,8 @@ if ( ! function_exists( 'amnesty_multilingualpress_sync_postmeta' ) ) {
 				continue;
 			}
 
-			$copy_content = isset( $data['remote-content-copy'] ) && 1 === absint( $data['remote-content-copy'] );
-
 			// content isn't marked for copy to remote
-			if ( ! $copy_content ) {
+			if ( ! isset( $data['remote-content-copy'] ) || 1 !== absint( $data['remote-content-copy'] ) ) {
 				continue;
 			}
 
