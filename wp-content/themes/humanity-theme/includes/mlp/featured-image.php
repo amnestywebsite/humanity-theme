@@ -4,9 +4,11 @@ declare( strict_types = 1 );
 
 use Inpsyde\MultilingualPress\Attachment\Copier;
 use Inpsyde\MultilingualPress\Framework\Admin\PersistentAdminNotices;
+use Inpsyde\MultilingualPress\Framework\Api\ContentRelations;
 use Inpsyde\MultilingualPress\Framework\Http\Request;
 use Inpsyde\MultilingualPress\TranslationUi\MetaboxFieldsHelper;
 use Inpsyde\MultilingualPress\TranslationUi\Post\MetaboxFields;
+use Inpsyde\MultilingualPress\TranslationUi\Post\PostRelationSaveHelper;
 use Inpsyde\MultilingualPress\TranslationUi\Post\RelationshipContext;
 use MultisiteGlobalMedia\Site;
 
@@ -97,6 +99,11 @@ if ( ! function_exists( 'amnesty_mlp_copy_featured_image' ) ) {
 
 		if ( $image_id !== $source_image ) {
 			amnesty_mlp_copy_global_featured_image( $context, $source_image, $image_id );
+			return;
+		}
+
+		if ( ! $is_ticked ) {
+			( new PostRelationSaveHelper( resolve( ContentRelations::class ) ) )->syncThumb( $context );
 		}
 	}
 }
