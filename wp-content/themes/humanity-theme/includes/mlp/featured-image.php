@@ -50,6 +50,15 @@ if ( ! function_exists( 'amnesty_mlp_copy_global_featured_image' ) ) {
 
 		update_post_meta( $remote_post_id, '_thumbnail_id', $target_image );
 
+		if ( $target_image !== $global_image && $media_site_id !== $remote_site_id && absint( get_post_field( 'post_parent', $target_image ) ) !== $remote_post_id ) {
+			wp_update_post(
+				[
+					'ID'          => $target_image,
+					'post_parent' => $remote_post_id,
+				]
+			);
+		}
+
 		restore_current_blog();
 	}
 }
