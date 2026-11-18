@@ -92,7 +92,6 @@ if ( ! function_exists( 'amnesty_multilingualpress_sync_postmeta' ) ) {
 		$mlp = $_POST['multilingualpress'];
 
 		$to_copy = [];
-		$feature = [];
 
 		foreach ( $mlp as $data ) {
 			// post is being unlinked
@@ -100,11 +99,10 @@ if ( ! function_exists( 'amnesty_multilingualpress_sync_postmeta' ) ) {
 				continue;
 			}
 
-			$copy_feature = isset( $data['remote-thumbnail-copy'] ) && 1 === absint( $data['remote-thumbnail-copy'] );
 			$copy_content = isset( $data['remote-content-copy'] ) && 1 === absint( $data['remote-content-copy'] );
 
 			// content isn't marked for copy to remote
-			if ( ! $copy_feature && ! $copy_content ) {
+			if ( ! $copy_content ) {
 				continue;
 			}
 
@@ -121,30 +119,12 @@ if ( ! function_exists( 'amnesty_multilingualpress_sync_postmeta' ) ) {
 				continue;
 			}
 
-			if ( $copy_feature ) {
-				$feature[] = compact( 'remote_site_id', 'remote_post_id' );
-			}
-
-			if ( $copy_content ) {
-				$to_copy[] = compact( 'remote_site_id', 'remote_post_id' );
-			}
+			$to_copy[] = compact( 'remote_site_id', 'remote_post_id' );
 		}
 
 		// no posts are marked for copy
-		if ( empty( $feature ) && empty( $to_copy ) ) {
+		if ( empty( $to_copy ) ) {
 			return;
-		}
-
-		// copy featured image to remote site(s)
-		if ( ! empty( $feature ) ) {
-			$source_feature = absint( get_post_meta( $post_id, '_thumbnail_id', true ) );
-
-			// we only need to do this if the image is from the global media library
-			if ( $source_feature && amnesty_image_has_mgm_prefix( $source_feature ) ) {
-				foreach ( $feature as $remote ) {
-					amnesty_copy_postmeta( $remote['remote_site_id'], $remote['remote_post_id'], [ '_thumbnail_id' => $source_feature ] );
-				}
-			}
 		}
 
 		$data_to_copy = [];
