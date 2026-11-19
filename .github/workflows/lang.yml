@@ -12,7 +12,6 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: humanity-theme
-      - run: sudo rm /etc/php/8.3/cli/conf.d/20-xdebug.ini
       - uses: actions/cache@v4
         id: composer-lang-cache
         with:
