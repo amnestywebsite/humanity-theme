@@ -4,6 +4,7 @@ declare( strict_types = 1 );
 
 use Inpsyde\MultilingualPress\Attachment\Copier;
 use Inpsyde\MultilingualPress\TranslationUi\Post\RelationshipContext;
+use MultisiteGlobalMedia\Site;
 
 use function Inpsyde\MultilingualPress\resolve;
 
@@ -53,10 +54,25 @@ if ( ! function_exists( 'amnesty_mlp_copy_block_attachment' ) ) {
 			return $state['ids'][ $attachment_id ];
 		}
 
+		$remote_site_id = $context->remoteSiteId();
+		$source_id      = amnesty_get_image_without_mgm_prefix( $attachment_id );
+		$source_site_id = $source_id !== $attachment_id ? ( new Site() )->id() : $context->sourceSiteId();
+
+		if ( $source_site_id === $remote_site_id ) {
+			$state['ids'][ $attachment_id ] = $source_id;
+			$state['changed']               = $state['changed'] || $source_id !== $attachment_id;
+
+			return $source_id;
+		}
+
+		switch_to_blog( $source_site_id );
+
 		try {
-			$remote_id = absint( resolve( Copier::class )->copyById( $context->sourceSiteId(), $context->remoteSiteId(), [ $attachment_id ] )[0] ?? 0 );
+			$remote_id = absint( resolve( Copier::class )->copyById( $source_site_id, $remote_site_id, [ $source_id ] )[0] ?? 0 );
 		} catch ( Throwable ) {
 			$remote_id = 0;
+		} finally {
+			restore_current_blog();
 		}
 
 		if ( ! $remote_id ) {
