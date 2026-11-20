@@ -37,6 +37,64 @@ if ( ! function_exists( 'amnesty_mlp_block_media_attributes' ) ) {
 	}
 }
 
+if ( ! function_exists( 'amnesty_mlp_attachment_urls' ) ) {
+	/**
+	 * Retrieve the URLs of an attachment's files on the current site, keyed by size
+	 *
+	 * @package Amnesty\Plugins\Multilingualpress
+	 *
+	 * @param int $attachment_id the attachment ID on the current site
+	 *
+	 * @return array<string,string>
+	 */
+	function amnesty_mlp_attachment_urls( int $attachment_id ): array {
+		$full = (string) wp_get_attachment_url( $attachment_id );
+		$urls = [
+			'full'     => $full,
+			'original' => (string) wp_get_original_image_url( $attachment_id ),
+		];
+
+		foreach ( array_keys( (array) ( wp_get_attachment_metadata( $attachment_id )['sizes'] ?? [] ) ) as $size ) {
+			$urls[ $size ] = (string) wp_get_attachment_image_url( $attachment_id, $size );
+		}
+
+		return array_filter( $urls );
+	}
+}
+
+if ( ! function_exists( 'amnesty_mlp_attachment_url_map' ) ) {
+	/**
+	 * Map the upload paths of a source attachment's files to the URLs of its copy
+	 *
+	 * @package Amnesty\Plugins\Multilingualpress
+	 *
+	 * @param array<string,string> $source_urls    the source URLs, from amnesty_mlp_attachment_urls()
+	 * @param int                  $remote_site_id the site the attachment was copied to
+	 * @param int                  $remote_id      the attachment ID on the remote site
+	 *
+	 * @return array<string,string>
+	 */
+	function amnesty_mlp_attachment_url_map( array $source_urls, int $remote_site_id, int $remote_id ): array {
+		switch_to_blog( $remote_site_id );
+
+		try {
+			$remote_urls = amnesty_mlp_attachment_urls( $remote_id );
+		} finally {
+			restore_current_blog();
+		}
+
+		$map = [];
+
+		foreach ( $source_urls as $size => $url ) {
+			if ( preg_match( '~/uploads/(.+)$~', $url, $matches ) ) {
+				$map[ $matches[1] ] = $remote_urls[ $size ] ?? $remote_urls['full'] ?? '';
+			}
+		}
+
+		return array_filter( $map );
+	}
+}
+
 if ( ! function_exists( 'amnesty_mlp_copy_block_attachment' ) ) {
 	/**
 	 * Copy an attachment used in a block to the translation's site
@@ -45,7 +103,7 @@ if ( ! function_exists( 'amnesty_mlp_copy_block_attachment' ) ) {
 	 *
 	 * @param int                 $attachment_id the attachment ID stored in the block
 	 * @param RelationshipContext $context       the relationship context
-	 * @param array<string,mixed> $state         the attachments copied so far
+	 * @param array<string,mixed> $state         the attachments and URLs copied so far
 	 *
 	 * @return int
 	 */
@@ -68,7 +126,8 @@ if ( ! function_exists( 'amnesty_mlp_copy_block_attachment' ) ) {
 		switch_to_blog( $source_site_id );
 
 		try {
-			$remote_id = absint( resolve( Copier::class )->copyById( $source_site_id, $remote_site_id, [ $source_id ] )[0] ?? 0 );
+			$source_urls = amnesty_mlp_attachment_urls( $source_id );
+			$remote_id   = absint( resolve( Copier::class )->copyById( $source_site_id, $remote_site_id, [ $source_id ] )[0] ?? 0 );
 		} catch ( Throwable ) {
 			$remote_id = 0;
 		} finally {
@@ -83,6 +142,7 @@ if ( ! function_exists( 'amnesty_mlp_copy_block_attachment' ) ) {
 
 		$state['ids'][ $attachment_id ] = $remote_id;
 		$state['changed']               = true;
+		$state['urls']                 += amnesty_mlp_attachment_url_map( $source_urls, $remote_site_id, $remote_id );
 
 		return $remote_id;
 	}
@@ -97,7 +157,7 @@ if ( ! function_exists( 'amnesty_mlp_copy_attribute_media' ) ) {
 	 * @param mixed               $value    the attribute value
 	 * @param array<int,string>   $segments the remaining attribute path
 	 * @param RelationshipContext $context  the relationship context
-	 * @param array<string,mixed> $state    the attachments copied so far
+	 * @param array<string,mixed> $state    the attachments and URLs copied so far
 	 *
 	 * @return mixed
 	 */
@@ -127,6 +187,30 @@ if ( ! function_exists( 'amnesty_mlp_copy_attribute_media' ) ) {
 		$remote_id = amnesty_mlp_copy_block_attachment( $attachment_id, $context, $state );
 
 		return is_string( $value ) ? (string) $remote_id : $remote_id;
+	}
+}
+
+if ( ! function_exists( 'amnesty_mlp_media_url_replacer' ) ) {
+	/**
+	 * Build a callback that points URLs of copied attachments at their copies
+	 *
+	 * @package Amnesty\Plugins\Multilingualpress
+	 *
+	 * @param array<string,string> $urls the remote URLs, keyed by source file path
+	 *
+	 * @return callable
+	 */
+	function amnesty_mlp_media_url_replacer( array $urls ): callable {
+		uksort( $urls, static fn ( string $a, string $b ): int => strlen( $b ) <=> strlen( $a ) );
+
+		$files   = array_map( static fn ( string $file ): string => preg_quote( $file, '~' ), array_keys( $urls ) );
+		$pattern = '~(?:(?:https?:)?//[^/\s"\'()<>&]+)?(?:/[^/\s"\'()<>&]+)*?/uploads/(' . implode( '|', $files ) . ')(?![\w.-])~';
+
+		return static function ( &$value ) use ( $pattern, $urls ): void {
+			if ( is_string( $value ) ) {
+				$value = preg_replace_callback( $pattern, static fn ( array $matches ): string => $urls[ $matches[1] ], $value ) ?? $value;
+			}
+		};
 	}
 }
 
@@ -178,6 +262,7 @@ if ( ! function_exists( 'amnesty_mlp_copy_content_media' ) ) {
 		$media_attributes = amnesty_mlp_block_media_attributes();
 		$state            = [
 			'ids'     => [],
+			'urls'    => [],
 			'changed' => false,
 		];
 
@@ -195,6 +280,21 @@ if ( ! function_exists( 'amnesty_mlp_copy_content_media' ) ) {
 
 		if ( ! $state['changed'] ) {
 			return $content;
+		}
+
+		if ( $state['urls'] ) {
+			$replace = amnesty_mlp_media_url_replacer( $state['urls'] );
+			$blocks  = amnesty_mlp_walk_media_blocks(
+				$blocks,
+				$media_attributes,
+				static function ( array $block ) use ( $replace ): array {
+					array_walk_recursive( $block['attrs'], $replace );
+					$replace( $block['innerHTML'] );
+					array_walk( $block['innerContent'], $replace );
+
+					return $block;
+				}
+			);
 		}
 
 		return serialize_blocks( $blocks );
