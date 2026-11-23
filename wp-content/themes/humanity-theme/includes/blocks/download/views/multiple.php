@@ -3,12 +3,12 @@
 reset( $files );
 
 $first_key  = key( $files );
-$first_url  = $files[ $first_key ]['link'] ?? wp_get_attachment_url( $files[ $first_key ]['id'] );
+$first_url  = $files[ $first_key ]['link'] ?? amnesty_get_attachment_url( (int) $files[ $first_key ]['id'] );
 $first_name = basename( $first_url );
 $options    = [];
 
 foreach ( $files as $file ) {
-	$key = $file['link'] ?? wp_get_attachment_url( $file['id'] );
+	$key = $file['link'] ?? amnesty_get_attachment_url( (int) $file['id'] );
 
 	$options[ $key ] = $file['title'];
 }
