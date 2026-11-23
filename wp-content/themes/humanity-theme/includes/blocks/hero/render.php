@@ -67,7 +67,7 @@ if ( ! function_exists( 'render_hero_block' ) ) {
 						<source src="%s">
 					</video>
 				</div>',
-				esc_url( wp_get_attachment_url( $attrs['featuredVideoId'] ) ),
+				esc_url( amnesty_get_attachment_url( (int) $attrs['featuredVideoId'] ) ),
 			);
 		}
 
