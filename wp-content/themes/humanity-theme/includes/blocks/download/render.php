@@ -29,7 +29,7 @@ if ( ! function_exists( 'amnesty_render_download_block' ) ) {
 				return null;
 			}
 
-			$url = $files[0]['link'] ?? amnesty_get_attachment_url( $files[0]['id'] );
+			$url = $files[0]['link'] ?? amnesty_get_attachment_url( (int) $files[0]['id'] );
 
 			if ( ! $url ) {
 				return '';
