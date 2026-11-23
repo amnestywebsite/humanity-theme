@@ -123,6 +123,8 @@ if ( ! function_exists( 'amnesty_mlp_copy_block_attachment' ) ) {
 			return $source_id;
 		}
 
+		$source_urls = [];
+
 		switch_to_blog( $source_site_id );
 
 		try {
