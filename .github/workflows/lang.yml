@@ -12,7 +12,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: humanity-theme
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         id: composer-lang-cache
         with:
           path: ./vendor
