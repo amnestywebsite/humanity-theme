@@ -253,6 +253,27 @@ if ( ! function_exists( 'amnesty_get_sites' ) ) {
 	}
 }
 
+if ( ! function_exists( 'amnesty_get_site_by_language_code' ) ) {
+	/**
+	 * Find a site object from a language code
+	 *
+	 * @param string $code the language code
+	 *
+	 * @return stdClass|null
+	 */
+	function amnesty_get_site_by_language_code( string $code ): ?stdClass {
+		$sites = amnesty_get_sites( public_only: true );
+
+		foreach ( $sites as $site ) {
+			if ( $site->code === $code ) {
+				return $site;
+			}
+		}
+
+		return null;
+	}
+}
+
 if ( ! function_exists( 'get_blog_term_link' ) ) {
 	/**
 	 * Equivalent to {@see get_term_link}, with blog switching built-in
