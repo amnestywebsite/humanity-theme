@@ -1,3 +1,11 @@
+### v3.2.0
+Features:
+- Implement footnotes as tooltips
+
+CI:
+- Upgrade used Actions
+- Remove erroneous build step
+
 ### v3.1.1
 Fixes:
 - Add missing lodash dependency to script enqueues
