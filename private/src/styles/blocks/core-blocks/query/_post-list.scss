@@ -1,6 +1,11 @@
-.wp-block-post-template.linkList > .wp-block-post {
+.wp-block-post-template.linkList > .wp-block-post,
+.wp-block-post-template.grid > .wp-block-post {
   min-height: 0;
   background: none;
+}
+
+.wp-block-post-template.grid > .wp-block-post {
+  margin-top: 0;
 }
 
 .wp-block-post > .wp-block-group.linkList-item {
@@ -16,4 +21,30 @@
 .linkList-item > .wp-block-post-title.linkList-itemTitle {
   margin-top: 12px;
   margin-bottom: 12px;
+}
+
+.wp-block-post > .wp-block-group.grid-item {
+  display: flex;
+  flex-direction: row;
+  min-height: 360px;
+  height: 100%;
+  background-color: var(--wp--preset--color--grey-light);
+  isolation: isolate;
+}
+
+.grid-item > .wp-block-post-featured-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: 0;
+}
+
+.grid-item > .wp-block-post-featured-image > div,
+.grid-item > .wp-block-post-featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
