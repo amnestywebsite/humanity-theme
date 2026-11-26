@@ -8,12 +8,6 @@
   margin-top: 0;
 }
 
-.wp-block-post > .wp-block-group.linkList-item {
-  display: block;
-  min-height: 171px;
-  background-color: var(--wp--preset--color--grey-lighter);
-}
-
 .linkList-item > .wp-block-post-terms.linkList-itemMeta {
   position: absolute;
 }
@@ -23,12 +17,8 @@
   margin-bottom: 12px;
 }
 
-.wp-block-post > .wp-block-group.grid-item {
-  display: flex;
-  flex-direction: row;
-  min-height: 360px;
+.wp-block-post > .grid-item {
   height: 100%;
-  background-color: var(--wp--preset--color--grey-light);
   isolation: isolate;
 }
 

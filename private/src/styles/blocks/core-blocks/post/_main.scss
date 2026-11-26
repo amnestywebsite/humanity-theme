@@ -7,7 +7,7 @@
   min-height: unset;
 }
 
-.wp-block-post > .wp-block-group:not(.post--result) {
+.wp-block-post > .wp-block-group:not(.post--result, .linkList-item, .grid-item) {
   display: flex;
   flex-direction: column;
   min-height: 460px;
