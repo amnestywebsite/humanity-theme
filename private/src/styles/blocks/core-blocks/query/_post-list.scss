@@ -57,3 +57,10 @@
 .wp-block-post-terms.grid-itemMeta a {
   text-decoration: none;
 }
+
+.wp-block-post-terms.linkList-itemMeta .wp-block-post-terms__separator,
+.wp-block-post-terms.linkList-itemMeta .wp-block-post-terms__separator ~ a,
+.wp-block-post-terms.grid-itemMeta .wp-block-post-terms__separator,
+.wp-block-post-terms.grid-itemMeta .wp-block-post-terms__separator ~ a {
+  display: none;
+}
