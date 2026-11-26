@@ -41,3 +41,37 @@ registerBlockVariation('core/query', {
     ],
   ],
 });
+
+registerBlockVariation('core/query', {
+  name: 'amnesty/post-grid',
+  title: __('Post Grid', 'amnesty'),
+  description: __('A grid of posts showing their featured image, category and title.', 'amnesty'),
+  icon: 'grid-view',
+  category: 'amnesty-core',
+  scope: ['inserter'],
+  attributes: { namespace: 'amnesty/post-grid', query: query() },
+  isActive: ['namespace'],
+  innerBlocks: [
+    [
+      'core/post-template',
+      { className: 'grid grid-3' },
+      [
+        [
+          'core/group',
+          { tagName: 'article', className: 'grid-item' },
+          [
+            ['core/post-featured-image', { sizeSlug: 'post-half@2x' }],
+            [
+              'core/group',
+              { className: 'grid-content' },
+              [
+                ['core/post-terms', { term: 'category', className: 'grid-itemMeta' }],
+                ['core/post-title', { level: 3, isLink: true, className: 'grid-itemTitle' }],
+              ],
+            ],
+          ],
+        ],
+      ],
+    ],
+  ],
+});
