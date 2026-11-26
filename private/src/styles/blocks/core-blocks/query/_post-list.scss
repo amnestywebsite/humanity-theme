@@ -1,0 +1,19 @@
+.wp-block-post-template.linkList > .wp-block-post {
+  min-height: 0;
+  background: none;
+}
+
+.wp-block-post > .wp-block-group.linkList-item {
+  display: block;
+  min-height: 171px;
+  background-color: var(--wp--preset--color--grey-lighter);
+}
+
+.linkList-item > .wp-block-post-terms.linkList-itemMeta {
+  position: absolute;
+}
+
+.linkList-item > .wp-block-post-title.linkList-itemTitle {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
