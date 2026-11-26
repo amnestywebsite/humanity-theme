@@ -48,3 +48,7 @@
   height: 100%;
   object-fit: cover;
 }
+
+.wp-block-post > .wp-block-group.grid-item:has(> .wp-block-post-featured-image .image-copyright) {
+  padding-bottom: 32px;
+}
