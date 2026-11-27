@@ -22,7 +22,7 @@ if ( get_query_var( 'qmonth' ) ) {
 	$month_param = absint( get_query_var( 'qmonth' ) );
 }
 
-$search_url = current_url();
+$search_url = remove_query_arg( 's', current_url() );
 if ( get_query_var( 'paged' ) ) {
 	$search_url = html_entity_decode( get_pagenum_link() );
 }
